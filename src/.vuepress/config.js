@@ -20,7 +20,7 @@ module.exports = {
     },
   },
   head: require('./config/head'),
-  dest: './public',
+  dest: './dist',
   markdown: {
     extendMarkdown: (md) => {
       md.set({

@@ -1,0 +1,25 @@
+{
+  "name": "IPFS blog",
+  "short_name": "IPFS blog",
+  "description": "This is the IPFS Starlog, a series of communications about the IPFS Project.",
+  "dir": "auto",
+  "lang": "en-US",
+  "display": "minimal-ui",
+  "orientation": "any",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "background_color": "#156ff7",
+  "theme_color": "#16161F",
+  "icons": [
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

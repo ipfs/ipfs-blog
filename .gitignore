@@ -1,7 +1,7 @@
 # fs & dev
 .DS_Store
 node_modules
-public
+dist
 .temp
 .eslintcache
 

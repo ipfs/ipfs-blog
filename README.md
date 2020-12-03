@@ -47,10 +47,10 @@ $ make
 
 ...
 
-Site built out to ./public dir
+Site built out to ./dist dir
 ```
 
-This will build out the static site, optimized and ready for deployment, to the `./public` directory.
+This will build out the static site, optimized and ready for deployment, to the `./dist` directory.
 
 ## Create a new blog post
 

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'source-serif-pro';
+  src: url('/fonts/source-serif-pro/source-serif-pro-regular.woff2')
+      format('woff2'),
+    url('/fonts/source-serif-pro/source-serif-pro-regular.woff') format('woff'),
+    url('/fonts/source-serif-pro/source-serif-pro-regular.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'source-serif-pro';
+  src: url('/fonts/source-serif-pro/source-serif-pro-semibold.woff2')
+      format('woff2'),
+    url('/fonts/source-serif-pro/source-serif-pro-semibold.woff') format('woff'),
+    url('/fonts/source-serif-pro/source-serif-pro-semibold.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url('/fonts/aileron/aileron-regular.woff2') format('woff2'),
+    url('/fonts/aileron/aileron-regular.woff') format('woff'),
+    url('/fonts/aileron/aileron-regular.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url('/fonts/aileron/aileron-semibold.woff2') format('woff2'),
+    url('/fonts/aileron/aileron-semibold.woff') format('woff'),
+    url('/fonts/aileron/aileron-semibold.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url('/fonts/aileron/aileron-bold.woff2') format('woff2'),
+    url('/fonts/aileron/aileron-bold.woff') format('woff'),
+    url('/fonts/aileron/aileron-bold.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
