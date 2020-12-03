@@ -1,0 +1,35 @@
+@import './typography.css';
+@import './embed-responsive.css';
+
+/* grid margins comp */
+.grid-margins {
+  @apply mx-15px;
+}
+
+@screen md {
+  .grid-margins {
+    @apply mx-58px;
+  }
+}
+/* 1440 max width + 58px left & right padding */
+@media only screen and (min-width: 1556px) {
+  .grid-margins {
+    @apply max-w-screen-xxl mx-auto;
+  }
+}
+/* hr-gradient comp */
+.hr-gradient,
+.hr-transparent {
+  height: 1px;
+  @apply border-0;
+}
+.hr-gradient {
+  @apply bg-gradient-3;
+}
+.hr-transparent {
+  @apply bg-white opacity-60;
+}
+
+.border-gray-30 {
+  border-color: rgba(142, 142, 147, 0.3);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "favicons-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "favicons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chris Waring <chris@wwaves.co> (https://wwaves.co/)",
+  "license": "MIT",
+  "dependencies": {
+    "favicons": "^6.0.0",
+    "fs-extra": "^9.0.0"
+  }
+}
