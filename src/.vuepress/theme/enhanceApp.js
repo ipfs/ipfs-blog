@@ -1,4 +1,6 @@
 import './styles/index.css'
+import Vuex from 'vuex'
+import { createStore } from '@theme/store/store'
 import VScrollLock from 'v-scroll-lock'
 import VueMq from 'vue-mq'
 import { VLazyImagePlugin } from 'v-lazy-image'
@@ -22,9 +24,13 @@ export default ({ Vue, router, siteData }) => {
     return originalPush.call(this, location)
   }
 
+  Vue.use(Vuex)
   Vue.use(VScrollLock)
   Vue.use(VueMq, { breakpoints })
   Vue.use(VLazyImagePlugin)
 
   Vue.directive(Transition.name, Transition.directive)
+
+  const store = createStore()
+  Vue.mixin({ store: store })
 }

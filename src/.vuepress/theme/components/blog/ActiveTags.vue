@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="activeTags.length"
+    v-if="activeTags.length || searchedText.length"
     class="border border-opacity-10 flex items-center rounded px-1 py-2"
   >
     <span class="p-1">
@@ -8,7 +8,17 @@
       <strong
         >{{ numberOfPosts }} result{{ numberOfPosts > 1 ? 's' : '' }}</strong
       >
-      (newest first) with tag{{ numberOfPosts > 1 ? 's' : '' }}:
+      (newest first)
+      <span v-if="searchedText.length">
+        for "
+        <span v-for="text in searchedText" :key="text" class=""
+          >{{ text }}
+        </span>
+        "
+      </span>
+      <span v-if="activeTags.length"
+        >with tag{{ numberOfPosts > 1 ? 's' : '' }}:</span
+      >
     </span>
     <ul class="tags flex" itemprop="keywords">
       <li
@@ -34,7 +44,12 @@ export default {
   },
   computed: {
     activeTags() {
-      return this.$route.query.tags ? this.$route.query.tags.split(',') : []
+      const queryTags = this.$route.query.tags
+      return queryTags ? queryTags.split(',') : []
+    },
+    searchedText() {
+      const queryText = this.$route.query.search
+      return queryText ? queryText.split(',') : []
     },
   },
   methods: {

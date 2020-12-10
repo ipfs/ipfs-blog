@@ -35,7 +35,8 @@ collaborative clusters can be found at
 and re-start replication whenever you want. Also, here's a quick video to show
 how easy it is:
 
-<!-- <script id="asciicast-yV2Bk4nlrPAQ6MQ4w6z3ea0uZ" src="https://asciinema.org/a/yV2Bk4nlrPAQ6MQ4w6z3ea0uZ.js" async></script> -->
+<iframe src="https://asciinema.org/a/yV2Bk4nlrPAQ6MQ4w6z3ea0uZ/iframe" style="width: 737px; height: 509px; overflow: hidden;" scrolling="no"></iframe>
+<p class="powered">asciicast powered by <a href="https://asciinema.org/" target="_top">asciinema</a></p>
 
 We hope that collaborative clusters will allow the community to participate in
 the distribution and seeding of data they care about, enabling easy "mirroring"

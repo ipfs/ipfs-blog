@@ -52,7 +52,7 @@ To ease the transition we support CID v0 converted to v1 (with `dag-pb` multicod
 
 These have been available in core for a while now and we finally got round to surfacing them in the CLI. e.g.
 
-```console
+```bash
 $ jsipfs dag put '""IPLD RULEZ""'
 bafyreia5coklfzblgd3reqwaieafmpasdceqmcnjrowre3623mtb4nxlhm
 

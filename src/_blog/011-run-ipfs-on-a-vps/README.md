@@ -37,7 +37,8 @@ It's usually not a good idea to run a public-facing service as root. So we'll cr
 
 ## Adding content to IPFS
 
-<!-- {{< asciinema id="player-container" data="asciicast-85339.json" width="88" height="50" >}} -->
+<iframe src="/blog/22-run-ipfs-on-a-vps/ascii" style="width: 737px; height: 509px; overflow: hidden;" scrolling="no"></iframe>
+<p class="powered">asciicast powered by <a href="https://asciinema.org/" target="_top">asciinema</a></p>
 
 First let's initialize the IPFS config:
 

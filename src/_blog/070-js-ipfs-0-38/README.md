@@ -9,7 +9,7 @@ header_image: js-ipfs-placeholder.png
 
 > Garbage collection, gossipsub, IPNS support for ipfs resolve, oh my!
 
-```console
+```bash
 $ npm install -g ipfs
 ```
 
@@ -25,7 +25,7 @@ This is essential for keeping your repo to a manageable size, but must be run ma
 
 Use it with the following command:
 
-```console
+```bash
 $ jsipfs repo gc
 removed Qmfoo
 removed Qmbar
@@ -33,7 +33,7 @@ removed Qmbar
 
 To prevent blocks being collected, pin them:
 
-```console
+```bash
 $ jsipfs pin add Qmbaz
 pinned Qmbaz recursively
 ```
@@ -50,7 +50,7 @@ Read more about the design at [`libp2p/specs/pubsub/gossipsub`](https://github.c
 
 You can now resolve [IPNS](https://docs.ipfs.io/guides/concepts/ipns/) names via `ipfs resolve`, what's more the recursive option is now on by default.
 
-```console
+```bash
 $ jsipfs resolve /ipns/Qmqux
 /ipfs/Qmgarply
 ```

@@ -1,8 +1,16 @@
+import { isArray } from 'lodash'
+
 export const getTags = (posts) => {
   const tags = []
 
   posts.forEach((post) => {
-    const postTags = post.frontmatter.tags.replaceAll(', ', ',').split(',')
+    if (!post.frontmatter.tags) {
+      return
+    }
+
+    const postTags = isArray(post.frontmatter.tags)
+      ? post.frontmatter.tags
+      : post.frontmatter.tags.replace(/, /g, ',').split(',')
 
     for (let i = 0; i < postTags.length; i++) {
       if (postTags[i] && !tags.includes(postTags[i])) {

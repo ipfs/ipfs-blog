@@ -91,7 +91,7 @@ go-ipfs has support for restricting peer connections to certain IP address range
 
 We had the first ever IPFS meetup in Cambridge, at MIT. It was sponsored by [Consensys](https://consensys.net), and hosted by the [MIT Bitcoin Club](http://bitcoin.mit.edu/). [@jbenet](https://github.com/jbenet), [@nicola](https://github.com/nicola), and [@CReckhow](https://twitter.com/CReckhow) each gave talks. A full writeup will appear on the blog as soon as we have edited the videos and posted them on the IPFS YouTube channel. We'll let you know when that happens, here.
 
-_Photo by [@nicocesar\_](https://twitter.com/nicocesar_).\_
+_Photo by [@nicocesar\_](https://twitter.com/nicocesar_)._
 
 ### Peergos
 

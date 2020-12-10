@@ -27,7 +27,7 @@ Previously go-ipfs generated 2048 bit RSA keys for new nodes, but it will now us
 
 Along with switching the default key type, we've added support for rotating Identity keys. If you would like to change the key type of your IPFS node, you can now do so with the rotate command. **NOTE: This will affect your Peer Id, so be sure you want to do this!** Your existing identity key will be backed up in the Keystore so that it can still be referenced for things like IPNS records.
 
-```console
+```bash
 $ ipfs key rotate -o my-old-key -t ed25519
 ```
 
@@ -35,7 +35,7 @@ $ ipfs key rotate -o my-old-key -t ed25519
 
 Speaking of backing up keys, we've added commands to allow you to export and import keys from the IPFS Keystore to a local .key file. This does not currently apply to the IPFS identity key, `self`, which is housed in the configuration file.
 
-```console
+```bash
 $ ipfs key gen mykey
 $ ipfs key export -o mykey.key mykey # ./<name>.key is the default path
 $ ipfs key import mykey mykey.key # on another node
@@ -47,7 +47,7 @@ Previously go-ipfs encoded the key names for IPNS paths as base58btc multihashes
 
 Many commands will accept a `--ipns-base` option that allows changing command outputs to use a particular encoding (i.e. base58btc multihash, or CIDv1 encoded in any supported base):
 
-```console
+```bash
 $ ipfs key list -l --ipns-base b58mh
 12D3KooWCjhz69LskTZEC5vFWs8eDpHo7kYbGzrC5EjU75BHSmVK self
 $ ipfs key list -l --ipns-base base36
@@ -58,7 +58,7 @@ k51qzi5uqu5dh9ihj4p2v5sl3hxvv27ryx2w0xrsv6jmmqi91t9xp8p9kaipc2 self
 
 In preparation for eventually changing the default PeerID representation multiaddresses can now contain strings like `/p2p/k51xyz...` in addition to the default `/p2p/Qmabc...`. There is a corresponding `--peerid-base` option to many functions that output peerIDs:
 
-```console
+```bash
 $ ipfs id --format "<id>" --peerid-base b58mh
 12D3KooWCjhz69LskTZEC5vFWs8eDpHo7kYbGzrC5EjU75BHSmVK
 $ ipfs id --format "<id>" --peerid-base base36
@@ -69,7 +69,7 @@ k51qzi5uqu5dh9ihj4p2v5sl3hxvv27ryx2w0xrsv6jmmqi91t9xp8p9kaipc2
 
 Initial support has been added for the `ipfs dag stat` command. Running this command will traverse the DAG for the given root CID and report statistics. By default, progress will be shown as the DAG is traversed. Supported statistics currently include DAG size and number of blocks.
 
-```console
+```bash
 $ ipfs dag stat bafybeihpetclqvwb4qnmumvcn7nh4pxrtugrlpw4jgjpqicdxsv7opdm6e # the IPFS webui
 Size: 30362191, NumBlocks: 346
 ```

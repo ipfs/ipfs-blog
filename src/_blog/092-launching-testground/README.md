@@ -24,7 +24,8 @@ As Testground graduates from the cozy incubation nest of the IPFS Project, we’
 
 Testground is a platform for testing, benchmarking, and simulating distributed and p2p systems at scale. It's designed to be multilingual and runtime-agnostic, scaling gracefully from 2 to 10k instances as needed.
 
-<!-- <script src="https://asciinema.org/a/wOeDmrj9HwA4ZYb9fIR6f4dxN.js" id="asciicast-wOeDmrj9HwA4ZYb9fIR6f4dxN" async></script> -->
+<iframe src="https://asciinema.org/a/wOeDmrj9HwA4ZYb9fIR6f4dxN/iframe" style="width: 737px; height: 509px; overflow: hidden;" scrolling="no"></iframe>
+<p class="powered">asciicast powered by <a href="https://asciinema.org/" target="_top">asciinema</a></p>
 
 Testground aims to support **a variety of testing workflows** such as experimental/iterative development, A/B testing, backwards/forward-compatibility testing, interoperability testing, and CI workflows.
 
