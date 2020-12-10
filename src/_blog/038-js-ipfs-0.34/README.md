@@ -42,7 +42,7 @@ IPNS over pubsub gets the word out quicker to peers that are interested when an 
 
 Smoosh your CIDs into whatever version you like - you can now add data under a version 0 CID and get it back using a version 1 CID and vice versa. Now that you have this freedom you can encode them with whatever multibase encoding you like. Version 0 CIDs are all base58btc but if you convert to a version 1 CID you can encode it with base2, base32, base64url or whatever:
 
-```console
+```bash
 # base2
 010111000000010010001000000100011011010100010010000001010010111001110001011010111100010100000111000011101010101010101101111100000001011101110001011110100001000100111010101101010111111001000111110001001010000101100010110000001000011110101110100100010101110110100010110100110000001110
 # base32

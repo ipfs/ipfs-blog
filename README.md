@@ -27,7 +27,7 @@ With `make`, [`node`](http://nodejs.org) and `npm` installed on your system, you
 
 **Run the site in dev mode**
 
-```console
+```bash
 $ make dev
 ...
 
@@ -42,7 +42,7 @@ Run it and open <http://localhost:1313/> in your browser, and start editing your
 
 **Build the production site**
 
-```console
+```bash
 $ make
 
 ...
@@ -72,7 +72,7 @@ Back in October last year, the Go Core Dev Team for the IPFS, IPLD, and libp2p p
 
 **To create your new post** find the last post in `content/post`, create a copy, and change the file name by incrementing the number in the title, and change the name to be a useful URL slug for your post. e.g.
 
-```console
+```bash
 $ cd content/post
 $ cp 66-london-hack-week-report.md 67-incredible-adventures.md
 ```

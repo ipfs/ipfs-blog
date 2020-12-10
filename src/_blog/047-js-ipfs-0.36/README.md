@@ -18,14 +18,14 @@ header_image: js-ipfs-placeholder.png
 
 As a stepping stone towards switching to CIDv1 by default for all CIDs, we're shipping a small change to v1 CIDs that means their string form is `base32` encoded instead of `base58btc`. So, instead of:
 
-```console
+```bash
 $ jsipfs add --cid-version 1 guardian.jpg
 added zb2rhk6GMPQF3hfzwXTaNYFLKomMeC6UXdUt6jZKPpeVirLtV guardian.jpg
 ```
 
 You'll now get back a `base32` encoded CID:
 
-```console
+```bash
 $ jsipfs add --cid-version 1 guardian.jpg
 added bafkreibu6pkzh33dfwfa3bg3twih7uiohu6d6cr34txljekdn3cvwoujiu guardian.jpg
 ```

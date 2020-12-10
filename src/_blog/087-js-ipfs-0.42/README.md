@@ -21,7 +21,7 @@ We've also merged some of our repos together which were logically intertwined. O
 
 Release Candidate builds of [`js-ipfs`](https://www.npmjs.com/package/ipfs) and [`js-ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) are now being published to npm with every build of master, so you can try out the very bleeding edge with:
 
-```console
+```bash
 $ npm install -g ipfs@next
 or
 $ npm install ipfs-http-client@next
@@ -33,13 +33,13 @@ This will download and install a version of `js-ipfs` and/or `js-ipfs-http-clien
 
 Publishing to Docker Hub has been restored so you can get a container running the latest and greatest `js-ipfs` with:
 
-```console
+```bash
 $ docker pull ipfs/js-ipfs
 ```
 
 You can also pull pre-releases at any time with:
 
-```console
+```bash
 $ docker pull ipfs/js-ipfs:next
 ```
 
@@ -49,13 +49,13 @@ Check out all the releases at: https://hub.docker.com/r/ipfs/js-ipfs
 
 The [MFS][] CLI now supports nanosecond mtimes, use it with the following commands:
 
-```console
+```bash
 $ jsipfs mkdir /directory --mtime 1000 --mtime-nsecs 5
 ```
 
 `--mode` and `--mtime` are now also supported when piping files to `jsipfs add`:
 
-```console
+```bash
 $ cat ./file.txt | jsipfs add --mode 0500
 ```
 

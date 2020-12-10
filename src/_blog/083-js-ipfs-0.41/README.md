@@ -53,7 +53,7 @@ Turns out, it's really important for package managers to retain file metadata, p
 
 For example, there's two new options to `jsipfs add` that allow `mode` and `mtime` to be preserved as the file is added to IPFS:
 
-```console
+```bash
 $ jsipfs add -r --preserve-mtime --preserve-mode ~/Desktop/gif
 added QmT6WX9McZyx5ZoisRgpsjYKDBWnYpMnBLpfAgjW5kavBA gif/yesthisisdog.jpg
 added QmXMrFfZ9zHLZKN7xP2dX76YFFhvBJsQkd4fLnTDkyR31Q gif
@@ -61,7 +61,7 @@ added QmXMrFfZ9zHLZKN7xP2dX76YFFhvBJsQkd4fLnTDkyR31Q gif
 
 Ok, no big changes there aside from the new options, buuut, now when you list directory contents you get `Mode` and `Mtime` info:
 
-```console
+```bash
 $ jsipfs ls QmXMrFfZ9zHLZKN7xP2dX76YFFhvBJsQkd4fLnTDkyR31Q -v
 Mode       Mtime                           Hash                                           Size  Name
 -rw-r--r-- Apr 16, 2018, 12:20:33 PM GMT+1 QmT6WX9McZyx5ZoisRgpsjYKDBWnYpMnBLpfAgjW5kavBA 87779 yesthisisdog.jpg

@@ -1,8 +1,11 @@
 <template>
   <main>
+    <Nav v-if="shouldDisplay('nav')" ref="nav" />
+    <MobileNav v-if="shouldDisplay('nav')" />
     <Transition :with-key="$page.key" appear :after-leave="leaveScroll">
       <component :is="layout" />
     </Transition>
+    <Footer v-if="shouldDisplay('footer')" />
   </main>
 </template>
 
@@ -11,12 +14,16 @@ import Vue from 'vue'
 import { setGlobalInfo } from '@app/util'
 import Transition from '@theme/components/base/Transitions.vue'
 import Footer from '@theme/components/Footer.vue'
+import Nav from '@theme/components/Nav.vue'
+import MobileNav from '@theme/components/MobileNav.vue'
 
 export default {
   name: 'GlobalLayout',
 
   components: {
     Footer,
+    Nav,
+    MobileNav,
     Transition,
   },
 

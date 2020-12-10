@@ -17,7 +17,7 @@ IPFS now supports the `jsipfs config profile` subcommand which you can use to up
 
 You can examine available profiles with the `jsipfs config profile ls` command:
 
-```console
+```bash
 $ jsipfs config profile ls
 server:
  Recommended for nodes with public IPv4 address (servers, VPSes, etc.)...
@@ -35,7 +35,7 @@ default-power:
 
 Apply them with `jsipfs config profile apply`:
 
-```console
+```bash
 $ jsipfs config profile apply lowpower
 ... output shows the difference between the old config and the new
 ```
@@ -44,13 +44,13 @@ You will need to restart your daemon for changes to take effect.
 
 Profiles can also be applied on init:
 
-```console
+```bash
 $ jsipfs init --profile server
 ```
 
 Or when starting the daemon (more on that in the 'Init and start' section below):
 
-```console
+```bash
 $ jsipfs daemon --init-profile server
 ```
 

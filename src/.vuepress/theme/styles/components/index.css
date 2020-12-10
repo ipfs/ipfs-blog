@@ -8,7 +8,7 @@
 
 @screen md {
   .grid-margins {
-    @apply mx-58px;
+    margin: 0 15%;
   }
 }
 /* 1440 max width + 58px left & right padding */

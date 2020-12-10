@@ -1,8 +1,9 @@
 <template>
   <Layout>
     <div class="bg-gradient-6 py-20 text-white">
-      <div class="grid-margins">
-        <h1 class="type-h1">
+      <div class="grid-margins mt-8">
+        <Breadcrumbs :crumbs="breadcrumbs" />
+        <h1 class="type-h1 mt-4">
           {{ $frontmatter.description }}
         </h1>
         <h2 class="mt-8 pr-40 type-h4">
@@ -22,7 +23,7 @@
           v-for="page in publicPages"
           :key="page.key"
           class="mb-4"
-          v-bind="page"
+          :card="page"
         />
       </div>
       <div>
@@ -33,7 +34,6 @@
           >Next</router-link
         >
       </div>
-      <NewsletterForm />
     </div>
   </Layout>
 </template>
@@ -43,35 +43,51 @@ import Layout from '@theme/layouts/Layout.vue'
 
 import Card from '@theme/components/blog/Card'
 import SortAndFilter from '@theme/components/blog/SortAndFilter'
-import NewsletterForm from '@theme/components/blog/NewsletterForm'
+import Breadcrumbs from '@theme/components/Breadcrumbs'
 import { getTags } from '@theme/util/tagUtils'
+import { parseProtectedPost } from '@theme/util/blogUtils'
+
+const protectedCardTypes = ['newslinks']
 
 export default {
   name: 'BlogIndex',
   components: {
     Card,
     Layout,
+    Breadcrumbs,
     SortAndFilter,
-    NewsletterForm,
   },
   data: function () {
     return {
       numberOfPagesToShow: 20,
       delayValues: [0, 0.15, 0.3],
       tags: [],
+      breadcrumbs: [
+        { title: 'Home', link: 'https://blog.ipfs.io/', external: true },
+        { title: 'Blog & News' },
+      ],
     }
   },
   computed: {
     activeTags() {
-      return (this.$route.query.tags || '').split(',')
+      const queryTags = this.$route.query.tags
+      return queryTags ? queryTags.split(',') : []
     },
     searchedText() {
-      return (this.$route.query.search || '').split(',')
+      const queryText = this.$route.query.search
+      return queryText ? queryText.split(',') : []
     },
     publicPages: function () {
-      console.log({ tags: this.activeTags, text: this.searchedText })
+      let result = []
+      this.$pagination.pages.forEach((page) => {
+        if (protectedCardTypes.includes(page.frontmatter.url)) {
+          result = [
+            ...result,
+            ...parseProtectedPost(page, this.activeTags, this.searchedText),
+          ]
+          return
+        }
 
-      return this.$pagination.pages.filter((page) => {
         for (let i = 0; i < this.activeTags.length; i++) {
           if (
             !page.frontmatter.tags ||
@@ -91,11 +107,15 @@ export default {
           }
         }
 
-        return (
+        if (
           page.frontmatter &&
           (page.frontmatter.sitemap ? !page.frontmatter.sitemap.exclude : true)
-        )
+        ) {
+          result.push(page)
+        }
       })
+
+      return result
     },
   },
   mounted() {

@@ -29,7 +29,7 @@ The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPF
 
 You can enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
 
-```console
+```bash
 $ jsipfs config Routing.Type dhtclient
 ```
 
@@ -68,7 +68,7 @@ With the release of `js-IPFS@0.48.0`, all blocks are now stored against the base
 
 You may notice this when starting up your node:
 
-```console
+```bash
 $ jsipfs daemon
 Initializing IPFS daemon...
 js-ipfs version: 0.48.0
@@ -79,7 +79,7 @@ Incompatible repo version. Migration needed. Pass --migrate for automatic migrat
 
 Just pass `--migrate` and your blockstore will be converted:
 
-```console
+```bash
 $ jsipfs daemon --migrate
 Initializing IPFS daemon...
 js-ipfs version: 0.48.0
