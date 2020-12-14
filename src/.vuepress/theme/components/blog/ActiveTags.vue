@@ -1,6 +1,8 @@
 <template>
   <div
-    v-if="activeTags.length || searchedText.length"
+    v-if="
+      activeTags.length || searchedText.length || activeCategory !== 'all types'
+    "
     class="border border-opacity-10 flex items-center rounded px-1 py-2"
   >
     <span class="p-1">
@@ -8,7 +10,7 @@
       <strong
         >{{ numberOfPosts }} result{{ numberOfPosts > 1 ? 's' : '' }}</strong
       >
-      (newest first)
+      (newest first) of {{ activeCategory }}
       <span v-if="searchedText.length">
         for "
         <span v-for="text in searchedText" :key="text" class=""
@@ -43,6 +45,11 @@ export default {
     },
   },
   computed: {
+    activeCategory() {
+      const queryCategory = this.$route.query.category
+
+      return queryCategory ? `type "${queryCategory}"` : 'all types'
+    },
     activeTags() {
       const queryTags = this.$route.query.tags
       return queryTags ? queryTags.split(',') : []

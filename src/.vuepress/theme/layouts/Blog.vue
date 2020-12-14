@@ -13,27 +13,38 @@
       </div>
     </div>
     <div class="pt-8 bg-white">
-      <SortAndFilter :number-of-posts="publicPages.length" :tags="tags" />
+      <SortAndFilter
+        :number-of-posts="pagesToShow.length"
+        :tags="tags"
+        :categories="categories"
+      />
       <div
         class="grid-margins pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
         itemscope
         itemtype="http://schema.org/Blog"
       >
         <Card
-          v-for="page in publicPages"
+          v-for="page in pagesToShow"
           :key="page.key"
           class="mb-4"
           :card="page"
         />
       </div>
-      <div>
-        <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink"
-          >Prev</router-link
+      <div
+        v-if="!infiniteScroll && pagesToShow.length < publicPages.length"
+        class="flex justify-center mt-8 pb-4"
+      >
+        <button
+          class="p-2 text-white bg-blueGreen rounded hover:opacity-75"
+          @click="handleLoadMoreClick"
         >
-        <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink"
-          >Next</router-link
-        >
+          Load More
+        </button>
       </div>
+      <div
+        v-else-if="pagesToShow.length < publicPages.length"
+        v-observe-visibility="handleBottomVisibilityChange"
+      ></div>
     </div>
   </Layout>
 </template>
@@ -47,7 +58,8 @@ import Breadcrumbs from '@theme/components/Breadcrumbs'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost } from '@theme/util/blogUtils'
 
-const protectedCardTypes = ['newslinks']
+const protectedCardTypes = ['newslink']
+const defaultCategory = 'Blog Post'
 
 export default {
   name: 'BlogIndex',
@@ -59,16 +71,21 @@ export default {
   },
   data: function () {
     return {
-      numberOfPagesToShow: 20,
+      categories: ['All Content', defaultCategory, ...protectedCardTypes],
+      numberOfPagesToShow: 21,
+      infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
       tags: [],
       breadcrumbs: [
-        { title: 'Home', link: 'https://blog.ipfs.io/', external: true },
+        { title: 'Home', link: 'https://ipfs.io/', external: true },
         { title: 'Blog & News' },
       ],
     }
   },
   computed: {
+    activeCategory() {
+      return this.$route.query.category
+    },
     activeTags() {
       const queryTags = this.$route.query.tags
       return queryTags ? queryTags.split(',') : []
@@ -80,12 +97,24 @@ export default {
     publicPages: function () {
       let result = []
       this.$pagination.pages.forEach((page) => {
-        if (protectedCardTypes.includes(page.frontmatter.url)) {
+        if (protectedCardTypes.includes(page.frontmatter.type)) {
           result = [
             ...result,
-            ...parseProtectedPost(page, this.activeTags, this.searchedText),
+            ...parseProtectedPost(
+              page,
+              this.activeTags,
+              this.searchedText,
+              this.activeCategory
+            ),
           ]
           return
+        }
+
+        if (
+          this.activeCategory &&
+          decodeURI(this.activeCategory) !== defaultCategory
+        ) {
+          return false
         }
 
         for (let i = 0; i < this.activeTags.length; i++) {
@@ -111,17 +140,35 @@ export default {
           page.frontmatter &&
           (page.frontmatter.sitemap ? !page.frontmatter.sitemap.exclude : true)
         ) {
-          result.push(page)
+          result.push({
+            ...page,
+            category: defaultCategory,
+          })
         }
       })
 
       return result
+    },
+    pagesToShow() {
+      return this.numberOfPagesToShow > this.publicPages.length
+        ? this.publicPages
+        : this.publicPages.slice(0, this.numberOfPagesToShow)
     },
   },
   mounted() {
     this.tags = getTags(this.publicPages)
   },
   methods: {
+    showMorePages() {
+      this.numberOfPagesToShow = this.numberOfPagesToShow + 21
+    },
+    handleLoadMoreClick() {
+      this.infiniteScroll = true
+      this.numberOfPagesToShow = 40
+    },
+    handleBottomVisibilityChange(isVisible) {
+      isVisible && this.showMorePages()
+    },
     delayVal: function () {
       this.current =
         this.current < this.delayValues.length - 1 ? this.current : -1

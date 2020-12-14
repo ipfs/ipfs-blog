@@ -1,7 +1,11 @@
 <template>
   <div class="grid-margins opacity-85">
     <LinksAndSocial />
-    <SearchCategoriesAndTags class="mt-2" :tags="tags" />
+    <SearchCategoriesAndTags
+      class="mt-2"
+      :tags="tags"
+      :categories="categories"
+    />
     <ActiveTags :number-of-posts="numberOfPosts" class="mt-4" />
   </div>
 </template>
@@ -19,6 +23,10 @@ export default {
     SearchCategoriesAndTags,
   },
   props: {
+    categories: {
+      type: Array,
+      required: true,
+    },
     tags: {
       type: Array,
       required: true,

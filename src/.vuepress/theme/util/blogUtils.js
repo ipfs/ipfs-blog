@@ -1,7 +1,8 @@
 export const parseProtectedPost = (
   post,
   activeTags = [],
-  searchedText = []
+  searchedText = [],
+  activeCategory = ''
 ) => {
   if (!post.frontmatter.data) {
     return []
@@ -10,6 +11,10 @@ export const parseProtectedPost = (
   const result = []
 
   post.frontmatter.data.forEach((item) => {
+    if (activeCategory && decodeURI(activeCategory) !== post.frontmatter.type) {
+      return false
+    }
+
     for (let i = 0; i < activeTags.length; i++) {
       if (!item.tags || !item.tags.includes(activeTags[i])) {
         return false
@@ -23,6 +28,7 @@ export const parseProtectedPost = (
     }
 
     result.push({
+      category: post.frontmatter.type,
       type: post.frontmatter.type,
       date: item.date,
       title: item.title,

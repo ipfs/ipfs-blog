@@ -233,7 +233,7 @@ module.exports = {
     margin: ['responsive', 'first', 'last'],
     scale: ['group-hover', 'hover'],
     rotate: ['group-hover'],
-    opacity: ['group-hover', 'responsive'],
+    opacity: ['group-hover', 'responsive', 'hover'],
   },
   plugins: [
     require('tailwindcss-typography')({ componentPrefix: 'type-' }),

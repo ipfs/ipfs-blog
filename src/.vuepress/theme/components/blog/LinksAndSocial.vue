@@ -15,7 +15,9 @@
         rel="noopener noreferrer"
         >RSS</a
       >, or social media.
-      <RSSSubscription class="flex justify-end" />
+      <div class="flex ml-2">
+        <RSSSubscription class="flex justify-end" />
+      </div>
     </div>
   </div>
 </template>

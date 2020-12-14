@@ -65,6 +65,10 @@ export default {
         ...this.$route.query,
         tags,
         search: texts,
+        category:
+          this.selectedCat === this.categories[0]
+            ? undefined
+            : this.selectedCat,
       }
 
       this.$router.replace({ path: currentPath, query: newQuery })
