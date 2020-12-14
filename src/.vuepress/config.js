@@ -36,8 +36,18 @@ module.exports = {
     dateFormat: 'DD MMMM YYYY',
     socialLinks: [
       {
+        text: 'Github',
+        link: 'https://github.com/ipfs',
+        icon: 'github-icon',
+      },
+      {
+        text: 'YouTube',
+        link: 'https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew',
+        icon: 'youtube-icon',
+      },
+      {
         text: 'Twitter',
-        link: 'https://twitter.com/protocollabs',
+        link: 'http://twitter.com/ipfs',
         icon: 'twitter-icon',
       },
       {
@@ -45,13 +55,21 @@ module.exports = {
         link: 'https://www.linkedin.com/company/protocollabs/',
         icon: 'linkedin-icon',
       },
+    ],
+    footerLinks: [
+      { text: 'Blog & News', link: '/' },
+      { text: 'Press', link: 'https://ipfs.io/media/' },
       {
-        text: 'YouTube',
-        link: 'https://www.youtube.com/ProtocolLabs/',
-        icon: 'youtube-icon',
+        text: 'Code of Conduct',
+        link:
+          'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
+      },
+      {
+        text: 'Security',
+        link:
+          'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
       },
     ],
-    footerLinks: [],
     footerLegal: '',
     headerLinks: [
       { text: 'About', link: 'https://ipfs.io/#why' },

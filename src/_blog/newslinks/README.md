@@ -1,6 +1,4 @@
 ---
-date: 2020-10-21
-url: newslinks
 title: Newslinks
 type: newslink
 data:

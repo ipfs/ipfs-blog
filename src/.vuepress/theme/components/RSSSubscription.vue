@@ -1,12 +1,26 @@
 <template>
   <div>
     <a
-      class="rss-link flex items-center text-gray-dark transition-filter duration-700 ease-in-out"
+      v-for="(link, index) in socialLinks"
+      :key="index"
+      class="mr-2"
+      :href="link.link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SVGIcon
+        class="w-6 h-6 opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        :name="link.icon"
+        :title="link.text"
+      />
+    </a>
+    <a
+      class="flex items-center text-gray-dark transition-filter duration-700 ease-in-out"
       href="/index.xml"
       rel="noopener noreferrer"
     >
       <SVGIcon
-        class="rss-icon w-6 h-6 fill-current mr-2"
+        class="w-6 h-6 opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
         name="rss"
         title="rss"
       />
@@ -18,15 +32,19 @@ import SVGIcon from '@theme/components/base/SVGIcon'
 export default {
   name: 'RSSSubscription',
   components: { SVGIcon },
+  data: () => ({
+    socialLinks: [
+      {
+        text: 'Twitter',
+        link: 'http://twitter.com/ipfs',
+        icon: 'twitter-icon',
+      },
+      {
+        text: 'YouTube',
+        link: 'https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew',
+        icon: 'youtube-icon',
+      },
+    ],
+  }),
 }
 </script>
-
-<style lang="postcss" scoped>
-.rss-link {
-  filter: grayscale(1);
-
-  &:hover {
-    filter: grayscale(0);
-  }
-}
-</style>
