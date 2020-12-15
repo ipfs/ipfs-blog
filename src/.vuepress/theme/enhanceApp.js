@@ -5,6 +5,7 @@ import VScrollLock from 'v-scroll-lock'
 import VueMq from 'vue-mq'
 import { VLazyImagePlugin } from 'v-lazy-image'
 import VueObserveVisibility from 'vue-observe-visibility'
+import VueSocialSharing from 'vue-social-sharing'
 
 import Transition from '@theme/components/directives/Transition.js'
 
@@ -30,6 +31,7 @@ export default ({ Vue, router, siteData }) => {
   Vue.use(VueMq, { breakpoints })
   Vue.use(VLazyImagePlugin)
   Vue.use(VueObserveVisibility)
+  Vue.use(VueSocialSharing)
 
   Vue.directive(Transition.name, Transition.directive)
 
