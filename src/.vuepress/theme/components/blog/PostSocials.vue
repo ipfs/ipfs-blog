@@ -22,7 +22,7 @@
 import SVGIcon from '@theme/components/base/SVGIcon'
 
 export default {
-  name: 'RSSSubscription',
+  name: 'PostSocials',
   components: { SVGIcon },
   data: () => ({
     socialLinks: [
@@ -37,7 +37,10 @@ export default {
         icon: 'facebook-icon',
       },
     ],
-    url: document.location.href,
+    url: '',
   }),
+  mounted() {
+    this.url = window.location.href
+  },
 }
 </script>

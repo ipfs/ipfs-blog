@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout v-if="!$frontmatter.type">
     <article itemscope itemtype="https://schema.org/BlogPosting">
       <PostHero
         :title="$page.title"
