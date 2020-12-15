@@ -37,9 +37,6 @@ export default {
     LazyImage,
     PostHero,
   },
-  mounted() {
-    console.log({ f: this.$frontmatter, p: this.$page })
-  },
 }
 </script>
 
