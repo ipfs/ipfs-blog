@@ -12,14 +12,13 @@
       >
       (newest first) of {{ activeCategory }}
       <span v-if="searchedText.length">
-        for "
+        for
         <span v-for="text in searchedText" :key="text" class=""
-          >{{ text }}
+          >"{{ text }}"
         </span>
-        "
       </span>
       <span v-if="activeTags.length"
-        >with tag{{ numberOfPosts > 1 ? 's' : '' }}:</span
+        >with tag{{ activeTags.length > 1 ? 's' : '' }}:</span
       >
     </span>
     <ul class="tags flex" itemprop="keywords">

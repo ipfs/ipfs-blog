@@ -4,6 +4,7 @@ url: /2020-09-24-go-ipfs-0-7-0/
 title: IPFS 0.7.0, the SECIO retirement edition, is here!
 description:
 author: Jacob Heun & Adin Schmahmann
+avatarUrl: /header_images/blog-placeholder.png
 tags: go-ipfs, release
 ---
 

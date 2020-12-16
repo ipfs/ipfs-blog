@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <!-- <PostAuthor v-if="author && author.name" v-bind="author" /> -->
+    <PostAuthor v-if="author && author.name" v-bind="author" />
     <div v-if="date">
       <time
         class="italic opacity-50"
@@ -20,13 +20,13 @@
 <script>
 import dayjs from 'dayjs'
 import PostTag from '@theme/components/blog/PostTag'
-// import PostAuthor from '@theme/components/blog/PostAuthor'
+import PostAuthor from '@theme/components/blog/PostAuthor'
 
 export default {
   name: 'PostMeta',
   components: {
     PostTag,
-    // PostAuthor,
+    PostAuthor,
   },
   props: {
     tags: {

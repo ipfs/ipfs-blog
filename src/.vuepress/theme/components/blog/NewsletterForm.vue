@@ -13,23 +13,22 @@
     </div>
     <form
       id="mc-embedded-subscribe-form"
-      action="https://ipfs.us4.list-manage.com/subscribe/post?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230"
-      method="post"
       name="mc-embedded-subscribe-form"
       class="flex"
+      action="https://ipfs.us4.list-manage.com/subscribe/post?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230"
+      method="post"
       target="_blank"
-      novalidate
     >
       <div id="mc_embed_signup_scroll" class="flex">
         <div class="fields flex flex-col">
           <input
             id="mce-EMAIL"
+            v-model="email"
             required
             type="email"
             aria-label="Email Address"
             class="text-black p-2 rounded"
             placeholder="email@your.domain"
-            value=""
             name="EMAIL"
           />
           <label class="pt-2 italic" for="gdpr_28879">
@@ -37,6 +36,7 @@
               id="gdpr_28879"
               type="checkbox"
               class=""
+              required
               name="gdpr[28879]"
               value="Y"
             /><span class="pl-2">Please send me the newsletter</span>
@@ -74,6 +74,9 @@
 export default {
   name: 'NewsletterForm',
   props: {},
+  data: () => ({
+    email: null,
+  }),
   computed: {},
   methods: {},
 }

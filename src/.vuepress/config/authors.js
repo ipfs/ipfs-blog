@@ -34,4 +34,49 @@ module.exports = new Map([
       twitter: '@jesseclayburgh',
     },
   ],
+  [
+    'jenn-turner',
+    {
+      name: 'Jenn Turner',
+      avatar: 'jenn-turner.jpg',
+      twitter: '@jennwrites',
+    },
+  ],
+  [
+    'dietrich-ayala',
+    {
+      name: 'Dietrich Ayala',
+      avatar: 'dietrich-ayala.jpg',
+      twitter: '@dietrich',
+    },
+  ],
+  [
+    'david-dias',
+    {
+      name: 'David Dias',
+      avatar: 'david-dias.jpg',
+      twitter: '@daviddias',
+    },
+  ],
+  [
+    'whyrusleeping',
+    {
+      name: 'whyrusleeping',
+      avatar: 'whyrusleeping.jpg',
+    },
+  ],
+  [
+    'lidel',
+    {
+      name: 'lidel',
+      avatar: 'lidel.jpg',
+    },
+  ],
+  [
+    'alan-shaw',
+    {
+      name: 'Alan Shaw',
+      avatar: 'alan-shaw.jpg',
+    },
+  ],
 ])

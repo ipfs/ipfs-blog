@@ -15,6 +15,12 @@
       ctx="_assets/avatars/"
       :alt="name"
     />
+    <LazyImage
+      v-else-if="avatarUrl"
+      class="avatar-image"
+      :src="avatarUrl"
+      :alt="name"
+    />
   </div>
 </template>
 
