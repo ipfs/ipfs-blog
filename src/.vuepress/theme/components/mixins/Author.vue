@@ -9,6 +9,10 @@ export default {
       type: String,
       default: null,
     },
+    avatarUrl: {
+      type: String,
+      default: null,
+    },
     twitter: {
       type: String,
       default: '',

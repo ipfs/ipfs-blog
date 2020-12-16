@@ -6,7 +6,11 @@
     itemscope
     class="flex items-center"
   >
-    <Avatar v-if="avatar || svgIcon" v-bind="$props" class="mr-2 bg-plBlack" />
+    <Avatar
+      v-if="avatar || svgIcon || avatarUrl"
+      v-bind="$props"
+      class="mr-2 bg-plBlack"
+    />
     <span itemprop="name" class="whitespace-no-wrap">{{ name }}</span>
   </div>
 </template>

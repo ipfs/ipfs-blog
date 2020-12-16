@@ -56,7 +56,7 @@ import Card from '@theme/components/blog/Card'
 import SortAndFilter from '@theme/components/blog/SortAndFilter'
 import Breadcrumbs from '@theme/components/Breadcrumbs'
 import { getTags } from '@theme/util/tagUtils'
-import { parseProtectedPost } from '@theme/util/blogUtils'
+import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 
 const protectedCardTypes = ['newslink']
 const defaultCategory = 'Blog Post'
@@ -111,29 +111,16 @@ export default {
         }
 
         if (
-          this.activeCategory &&
-          decodeURI(this.activeCategory) !== defaultCategory
+          !checkItem({
+            postType: defaultCategory,
+            tags: page.frontmatter.tags,
+            title: page.frontmatter.title,
+            activeTags: this.activeTags,
+            searchedText: this.searchedText,
+            activeCategory: this.activeCategory,
+          })
         ) {
           return false
-        }
-
-        for (let i = 0; i < this.activeTags.length; i++) {
-          if (
-            !page.frontmatter.tags ||
-            !page.frontmatter.tags.includes(this.activeTags[i])
-          ) {
-            return false
-          }
-        }
-
-        for (let i = 0; i < this.searchedText.length; i++) {
-          if (
-            !page.frontmatter.title
-              .toLocaleLowerCase()
-              .includes(this.searchedText[i].toLocaleLowerCase())
-          ) {
-            return false
-          }
         }
 
         if (
