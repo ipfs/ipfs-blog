@@ -10,10 +10,12 @@
     <span>and/or</span>
     <multiselect
       v-model="selectedTags"
-      class="flex-grow mx-2"
+      class="flex-grow mx-2 max-w-sm max-h-sm"
       tag-placeholder="search for this text"
       placeholder="Search for words or #tags"
-      :options="tags"
+      track-by="name"
+      label="name"
+      :options="resolvedTags"
       :multiple="true"
       :taggable="true"
       @tag="handleAddTag"
@@ -51,15 +53,20 @@ export default {
       searchedWords: [],
     }
   },
+  computed: {
+    resolvedTags() {
+      return this.tags.map((tag) => ({
+        name: `#${tag}`,
+        value: tag,
+      }))
+    },
+  },
   methods: {
     handleSearch() {
+      const tagArray = this.selectedTags.map((tag) => tag.value)
       const currentPath = this.$router.history.current.path
-      const tags = this.selectedTags
-        .filter((tag) => this.tags.includes(tag))
-        .join(',')
-      const texts = this.selectedTags
-        .filter((tag) => !this.tags.includes(tag))
-        .join(',')
+      const tags = tagArray.filter((tag) => this.tags.includes(tag)).join(',')
+      const texts = tagArray.filter((tag) => !this.tags.includes(tag)).join(',')
 
       const newQuery = {
         ...this.$route.query,
@@ -74,7 +81,10 @@ export default {
       this.$router.replace({ path: currentPath, query: newQuery })
     },
     handleAddTag(text) {
-      this.selectedTags.push(text)
+      this.selectedTags.push({
+        name: text,
+        value: text,
+      })
     },
   },
 }
@@ -85,5 +95,12 @@ export default {
 <style>
 .multiselect {
   width: auto;
+  height: 2.7rem;
+}
+
+.multiselect__tag,
+.multiselect__option--highlight,
+.multiselect__option--highlight::after {
+  @apply bg-blueGreen;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="bg-gradient-6 text-white">
-      <div class="pt-24 pb-10 grid-margins">
-        <Breadcrumbs :crumbs="breadcrumbs" />
+      <div class="pt-20 pb-10 grid-margins">
+        <Breadcrumbs :crumbs="breadcrumbs" class="mt-8" />
         <div class="grid grid-cols-2 pt-4">
           <div class="flex flex-col">
             <h1 class="type-h1">{{ title }}</h1>
-            <div class="mt-4">{{ author.name }}</div>
+            <PostAuthor v-if="author && author.name" v-bind="author" />
             <time
               class="italic opacity-50"
               pubdate
@@ -40,18 +40,20 @@
 
 <script>
 import dayjs from 'dayjs'
-import PostTag from '@theme/components/blog/PostTag'
-import PostSocials from '@theme/components/blog/PostSocials.vue'
 import Breadcrumbs from '@theme/components/Breadcrumbs'
 import LazyImage from '@theme/components/base/LazyImage'
+import PostAuthor from '@theme/components/blog/PostAuthor'
+import PostSocials from '@theme/components/blog/PostSocials.vue'
+import PostTag from '@theme/components/blog/PostTag'
 
 export default {
   name: 'PostHero',
   components: {
     Breadcrumbs,
     LazyImage,
-    PostTag,
+    PostAuthor,
     PostSocials,
+    PostTag,
   },
   props: {
     tags: {
