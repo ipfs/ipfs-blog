@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="inline-block">
+    <h2 class="text-xl inline-block">
       Event organizer, content creator, or journalist?
       <a
         class="text-blueGreen hover:underline ml-1 inline-block"
@@ -17,7 +17,7 @@
         >IPFS press kit.</a
       >
     </h2>
-    <div class="inline-block md:flex">
+    <div class="text-xl inline-block md:flex">
       Prefer your news a different way? Try our
       <a
         class="text-blueGreen hover:underline ml-1 inline-block"

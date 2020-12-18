@@ -8,7 +8,7 @@ const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
 module.exports = {
   title: 'IPFS Blog & News',
   description:
-    'This is the IPFS Starlog, a series of communications about the IPFS Project.',
+    'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
   domain: CANONICAL_BASE,
   authors,
   locales: {
@@ -16,7 +16,7 @@ module.exports = {
       lang: 'en-US',
       title: 'IPFS Blog & News',
       description:
-        'This is the IPFS Starlog, a series of communications about the IPFS Project.',
+        'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
     },
   },
   head: require('./config/head'),
@@ -57,10 +57,10 @@ module.exports = {
       },
     ],
     footerLinks: [
-      { text: 'Blog & News', link: '/' },
+      { text: 'Blog & news', link: '/' },
       { text: 'Press', link: 'https://ipfs.io/media/' },
       {
-        text: 'Code of Conduct',
+        text: 'Code of conduct',
         link:
           'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
       },
@@ -145,8 +145,7 @@ module.exports = {
             itemLayout: 'BlogPost',
             frontmatter: {
               title: 'Home',
-              description:
-                'This is the IPFS Starlog, a series of communications about the IPFS Project.',
+              description: 'Blog, news & more',
             },
             pagination: {
               lengthPerPage: Number.MAX_SAFE_INTEGER,

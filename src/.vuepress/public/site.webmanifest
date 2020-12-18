@@ -1,7 +1,7 @@
 {
   "name": "IPFS blog",
   "short_name": "IPFS blog",
-  "description": "This is the IPFS Starlog, a series of communications about the IPFS Project.",
+  "description": "All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.",
   "dir": "auto",
   "lang": "en-US",
   "display": "minimal-ui",

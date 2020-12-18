@@ -17,24 +17,28 @@
       | Except as
       <a
         class="text-blueGreen hover:underline"
-        href="https://ipfs.io/legal#report-copyright-infringement-on-the-ipfs-gateway-service"
+        href="https://protocol.ai/legal/"
+        target="_blank"
         >noted</a
       >, content licensed
       <a
         class="text-blueGreen hover:underline"
         href="https://creativecommons.org/licenses/by/3.0/"
+        target="_blank"
         >CC-BY 3.0</a
       >
       |
       <a
         class="text-blueGreen hover:underline"
-        href="https://ipfs.io/legal#terms-of-service"
+        href="https://protocol.ai/legal/#terms-of-service"
+        target="_blank"
         >Terms</a
       >
       |
       <a
         class="text-blueGreen hover:underline"
-        href="https://ipfs.io/legal#privacy-policy"
+        href="https://protocol.ai/legal/#privacy-policy"
+        target="_blank"
         >Privacy</a
       ></span
     >

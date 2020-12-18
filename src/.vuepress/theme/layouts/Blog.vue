@@ -6,7 +6,7 @@
         <h1 class="type-h1 mt-4">
           {{ $frontmatter.description }}
         </h1>
-        <h2 class="mt-8 pr-40 type-h4">
+        <h2 class="mt-8 type-h4">
           All the up-to-date IPFS info you need in one place, from blog posts
           and release notes to videos, tutorials, news coverage, and events.
         </h2>
@@ -29,6 +29,7 @@
           :key="page.key"
           class="mb-4"
           :card="page"
+          all
         />
       </div>
       <div
@@ -36,7 +37,7 @@
         class="flex justify-center mt-8 pb-4"
       >
         <button
-          class="p-2 text-white bg-blueGreen rounded hover:opacity-75"
+          class="px-3 py-2 text-white text-xl bg-blueGreen rounded hover:opacity-75"
           @click="handleLoadMoreClick"
         >
           Load More
@@ -62,7 +63,7 @@ import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 
 const protectedCardTypes = ['newslink']
-const defaultCategory = 'Blog Post'
+const defaultCategory = 'Blog posts'
 
 export default {
   name: 'BlogIndex',
@@ -74,13 +75,13 @@ export default {
   },
   data: function () {
     return {
-      categories: ['All Content', defaultCategory, ...protectedCardTypes],
+      categories: ['All content', defaultCategory, ...protectedCardTypes],
       numberOfPagesToShow: 21,
       infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
       breadcrumbs: [
         { title: 'Home', link: 'https://ipfs.io/', external: true },
-        { title: 'Blog & News' },
+        { title: 'Blog & news' },
       ],
     }
   },
