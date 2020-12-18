@@ -64,21 +64,14 @@ export default {
   methods: {
     handleSearch() {
       const tagArray = this.selectedTags.map((tag) => tag.value)
-      const currentPath = this.$router.history.current.path
-      const tags = tagArray.filter((tag) => this.tags.includes(tag)).join(',')
-      const texts = tagArray.filter((tag) => !this.tags.includes(tag)).join(',')
+      const tags = tagArray.filter((tag) => this.tags.includes(tag))
+      const texts = tagArray.filter((tag) => !this.tags.includes(tag))
+      const category =
+        this.selectedCat === this.categories[0] ? undefined : this.selectedCat
 
-      const newQuery = {
-        ...this.$route.query,
-        tags,
-        search: texts,
-        category:
-          this.selectedCat === this.categories[0]
-            ? undefined
-            : this.selectedCat,
-      }
-
-      this.$router.replace({ path: currentPath, query: newQuery })
+      this.$store.commit('appState/setActiveTags', tags)
+      this.$store.commit('appState/setActiveCategory', category)
+      this.$store.commit('appState/setSearchedText', texts)
     },
     handleAddTag(text) {
       this.selectedTags.push({

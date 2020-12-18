@@ -50,6 +50,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 import Layout from '@theme/layouts/Layout.vue'
 
 import Card from '@theme/components/blog/Card'
@@ -75,7 +77,6 @@ export default {
       numberOfPagesToShow: 21,
       infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
-      tags: [],
       breadcrumbs: [
         { title: 'Home', link: 'https://ipfs.io/', external: true },
         { title: 'Blog & News' },
@@ -83,16 +84,9 @@ export default {
     }
   },
   computed: {
-    activeCategory() {
-      return this.$route.query.category
-    },
-    activeTags() {
-      const queryTags = this.$route.query.tags
-      return queryTags ? queryTags.split(',') : []
-    },
-    searchedText() {
-      const queryText = this.$route.query.search
-      return queryText ? queryText.split(',') : []
+    ...mapState('appState', ['activeCategory', 'activeTags', 'searchedText']),
+    tags() {
+      return getTags(this.publicPages)
     },
     publicPages: function () {
       let result = []
@@ -143,7 +137,19 @@ export default {
     },
   },
   mounted() {
-    this.tags = getTags(this.publicPages)
+    const queryTags = this.$route.query.tags
+    const queryCategory = this.$route.query.category
+    const queryText = this.$route.query.search
+
+    if (queryTags && !this.activeTags.length) {
+      this.$store.commit('appState/setActiveTags', queryTags.split(','))
+    }
+    if (queryCategory && !this.activeTags.length) {
+      this.$store.commit('appState/setActiveCategory', queryCategory)
+    }
+    if (queryText && !this.activeTags.length) {
+      this.$store.commit('appState/setSearchedText', queryText.split(','))
+    }
   },
   methods: {
     showMorePages() {
