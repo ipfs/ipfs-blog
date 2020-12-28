@@ -1,21 +1,36 @@
 <template>
   <div>
-    <h2>
-      Event organizer, content creator, or journalist? Submit an item or view
-      the IPFS press kit.
+    <h2 class="inline-block">
+      Event organizer, content creator, or journalist?
+      <a
+        class="text-blueGreen hover:underline ml-1 inline-block"
+        href="https://protocol.ai/join"
+        rel="noopener noreferrer"
+      >
+        Submit</a
+      >
+      an item or view the
+      <a
+        class="text-blueGreen hover:underline ml-1 inline-block"
+        href="https://ipfs.io/media/"
+        rel="noopener noreferrer"
+        >IPFS press kit.</a
+      >
     </h2>
-    <div class="flex">
+    <div class="inline-block md:flex">
       Prefer your news a different way? Try our
-      <a class="text-blueGreen hover:underline ml-1" href="#newsletter-form"
+      <a
+        class="text-blueGreen hover:underline ml-1 inline-block"
+        href="#newsletter-form"
         >weekly newsletter</a
       >,
       <a
-        class="text-blueGreen hover:underline ml-1"
+        class="text-blueGreen hover:underline ml-1 inline-block"
         href="/index.xml"
         rel="noopener noreferrer"
         >RSS</a
       >, or social media.
-      <div class="flex ml-2">
+      <div class="flex ml-2 inline-block">
         <RSSSubscription class="flex justify-end" />
       </div>
     </div>

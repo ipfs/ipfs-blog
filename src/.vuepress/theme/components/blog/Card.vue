@@ -1,7 +1,7 @@
 <template>
   <div>
-    <RegularCard v-if="!card.type" v-bind="card" />
-    <component :is="computedCard" v-bind="card" />
+    <RegularCard v-if="!card.type" v-bind="card" class="card-post h-full" />
+    <component :is="computedCard" v-bind="card" class="card-post h-full" />
   </div>
 </template>
 
@@ -37,3 +37,11 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+@screen md {
+  .card-post {
+    max-height: 29rem;
+  }
+}
+</style>

@@ -1,8 +1,8 @@
 <template>
   <footer class="footer bg-gradient-6 text-white py-8 md:py-16">
     <div class="grid grid-cols-12 grid-margins">
-      <NewsletterForm class="col-start-1 col-span-12 pb-20" />
-      <div class="col-start-2 md:col-start-1 col-span-10 md:col-span-12">
+      <NewsletterForm class="col-start-1 col-span-12 pb-4 md:pb-20" />
+      <div class="col-start-0 md:col-start-1 col-span-12 md:col-span-12">
         <div class="flex flex-col md:flex-row md:items-top md:justify-between">
           <div class="flex flex-col md:flex-row md:items-center mb-8 md:mb-0">
             <ul class="flex flex-col md:flex-row mt-8 md:mt-0">

@@ -1,6 +1,9 @@
 <template>
-  <div id="newsletter-form" class="flex justify-between items-center">
-    <div class="flex-shrink max-w-xl">
+  <div
+    id="newsletter-form"
+    class="flex flex-col md:flex-row md:justify-between md:items-center"
+  >
+    <div class="flex-shrink max-w-xl mb-4 md:mb-0">
       <h2 class="type-h2">Stay informed</h2>
       <p class="mt-2">
         Sign up for the IPFS Weekly newsletter (<a

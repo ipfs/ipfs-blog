@@ -19,7 +19,7 @@
         :categories="categories"
       />
       <div
-        class="grid-margins pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+        class="grid-margins pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         itemscope
         itemtype="http://schema.org/Blog"
       >
@@ -128,12 +128,25 @@ export default {
         }
       })
 
-      return result
+      return result.sort((a, b) =>
+        a.frontmatter.date > b.frontmatter.date ? -1 : 1
+      )
     },
     pagesToShow() {
       return this.numberOfPagesToShow > this.publicPages.length
         ? this.publicPages
         : this.publicPages.slice(0, this.numberOfPagesToShow)
+    },
+  },
+  watch: {
+    activeCategory() {
+      this.updateQuery()
+    },
+    activeTags() {
+      this.updateQuery()
+    },
+    searchedText() {
+      this.updateQuery()
     },
   },
   mounted() {
@@ -152,6 +165,15 @@ export default {
     }
   },
   methods: {
+    updateQuery() {
+      const newQuery = {
+        ...this.$route.query,
+        tags: this.activeTags.join(','),
+        search: this.searchedText.join(','),
+        category: this.activeCategory,
+      }
+      this.$router.replace({ query: newQuery }).catch(() => {})
+    },
     showMorePages() {
       this.numberOfPagesToShow = this.numberOfPagesToShow + 21
     },

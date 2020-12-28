@@ -6,6 +6,8 @@
       class="flex-grow mx-2"
       :options="categories"
       :searchable="false"
+      :allow-empty="false"
+      deselect-label=""
     />
     <span>and/or</span>
     <multiselect

@@ -3,7 +3,7 @@
     <div class="bg-gradient-6 text-white">
       <div class="pt-20 pb-10 grid-margins">
         <Breadcrumbs :crumbs="breadcrumbs" class="mt-8" />
-        <div class="grid grid-cols-2 pt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
           <div class="flex flex-col">
             <h1 class="type-h1">{{ title }}</h1>
             <PostAuthor v-if="author && author.name" v-bind="author" />
@@ -16,8 +16,9 @@
               {{ resolvedDate }}
             </time>
           </div>
-          <div v-if="image" class="">
+          <div v-if="image" class="mt-4 md:mt-0 h-full">
             <LazyImage
+              img-class="h-full object-cover"
               :alt="$page.title"
               src-placeholder="/images/blog/og/default.png"
               :src="`/header_images/${image ? image : 'blog-placeholder.png'}`"

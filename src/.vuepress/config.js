@@ -6,7 +6,7 @@ const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
 
 module.exports = {
-  title: 'IPFS Blog',
+  title: 'IPFS Blog & News',
   description:
     'This is the IPFS Starlog, a series of communications about the IPFS Project.',
   domain: CANONICAL_BASE,
@@ -14,7 +14,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'IPFS Blog',
+      title: 'IPFS Blog & News',
       description:
         'This is the IPFS Starlog, a series of communications about the IPFS Project.',
     },
@@ -143,7 +143,7 @@ module.exports = {
             layout: 'Blog',
             itemLayout: 'BlogPost',
             frontmatter: {
-              title: 'Blog',
+              title: 'Home',
               description:
                 'This is the IPFS Starlog, a series of communications about the IPFS Project.',
             },
