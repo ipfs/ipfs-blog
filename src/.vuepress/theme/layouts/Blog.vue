@@ -84,7 +84,12 @@ export default {
     }
   },
   computed: {
-    ...mapState('appState', ['activeCategory', 'activeTags', 'searchedText']),
+    ...mapState('appState', [
+      'activeCategory',
+      'activeTags',
+      'searchedText',
+      'activeAuthor',
+    ]),
     tags() {
       return getTags(this.publicPages)
     },
@@ -98,7 +103,8 @@ export default {
               page,
               this.activeTags,
               this.searchedText,
-              this.activeCategory
+              this.activeCategory,
+              this.activeAuthor
             ),
           ]
           return
@@ -108,8 +114,10 @@ export default {
           !checkItem({
             postType: defaultCategory,
             tags: page.frontmatter.tags,
+            author: page.frontmatter.author,
             title: page.frontmatter.title,
             activeTags: this.activeTags,
+            activeAuthor: this.activeAuthor,
             searchedText: this.searchedText,
             activeCategory: this.activeCategory,
           })
@@ -137,15 +145,12 @@ export default {
         ? this.publicPages
         : this.publicPages.slice(0, this.numberOfPagesToShow)
     },
+    queryProptertyWatchlist() {
+      return `${this.activeCategory}|${this.activeTags}|${this.searchedText}|${this.activeAuthor}`
+    },
   },
   watch: {
-    activeCategory() {
-      this.updateQuery()
-    },
-    activeTags() {
-      this.updateQuery()
-    },
-    searchedText() {
+    queryProptertyWatchlist() {
       this.updateQuery()
     },
   },
@@ -153,15 +158,19 @@ export default {
     const queryTags = this.$route.query.tags
     const queryCategory = this.$route.query.category
     const queryText = this.$route.query.search
+    const queryAuthor = this.$route.query.author
 
     if (queryTags && !this.activeTags.length) {
       this.$store.commit('appState/setActiveTags', queryTags.split(','))
     }
-    if (queryCategory && !this.activeTags.length) {
+    if (queryCategory) {
       this.$store.commit('appState/setActiveCategory', queryCategory)
     }
-    if (queryText && !this.activeTags.length) {
+    if (queryText && !this.searchedText.length) {
       this.$store.commit('appState/setSearchedText', queryText.split(','))
+    }
+    if (queryAuthor) {
+      this.$store.commit('appState/setActiveAuthor', queryAuthor)
     }
   },
   methods: {
@@ -171,6 +180,7 @@ export default {
         tags: this.activeTags.join(','),
         search: this.searchedText.join(','),
         category: this.activeCategory,
+        author: this.activeAuthor,
       }
       this.$router.replace({ query: newQuery }).catch(() => {})
     },

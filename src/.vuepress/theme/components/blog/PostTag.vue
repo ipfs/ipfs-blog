@@ -3,11 +3,9 @@
     class="post-tag p-1 mr-1 bg-white text-blueGreen hover:underline rounded cursor-pointer"
   >
     <router-link v-if="link" :to="{ path: '/', query: { tags: tag } }">
-      {{ tag }}
+      #{{ tag }}
     </router-link>
-    <div v-else @click="handleTagClick">
-      {{ tag }}
-    </div>
+    <div v-else @click="handleTagClick">#{{ tag }}</div>
   </li>
 </template>
 

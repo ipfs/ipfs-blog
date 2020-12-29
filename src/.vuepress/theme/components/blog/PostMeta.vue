@@ -11,8 +11,18 @@
         {{ resolvedDate }}
       </time>
     </div>
-    <ul v-if="resolvedTags.length" class="tags flex mt-1" itemprop="keywords">
-      <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" />
+    <ul
+      v-if="resolvedTags.length"
+      class="tags flex flex-wrap"
+      itemprop="keywords"
+    >
+      <li
+        v-if="category"
+        class="p-1 mr-1 bg-white text-blueGreen hover:underline rounded cursor-pointer mt-1"
+      >
+        <div @click="handleCatClick">{{ category }}</div>
+      </li>
+      <PostTag v-for="tag in resolvedTags" :key="tag" class="mt-1" :tag="tag" />
     </ul>
   </div>
 </template>
@@ -41,6 +51,10 @@ export default {
       type: String,
       default: null,
     },
+    category: {
+      type: String,
+      default: null,
+    },
   },
   computed: {
     resolvedDate() {
@@ -55,6 +69,11 @@ export default {
         .replace(/, /g, ',')
         .split(',')
         .filter((tag) => tag)
+    },
+  },
+  methods: {
+    handleCatClick() {
+      this.$store.commit('appState/setActiveCategory', this.category)
     },
   },
 }

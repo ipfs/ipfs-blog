@@ -6,23 +6,33 @@
     itemscope
     class="flex items-center"
   >
-    <Avatar
-      v-if="avatar || svgIcon || avatarUrl"
-      v-bind="$props"
-      class="mr-2 bg-plBlack"
-    />
-    <span itemprop="name" class="whitespace-no-wrap">{{ name }}</span>
+    <span
+      itemprop="name"
+      class="whitespace-no-wrap hover:text-blueGreen hover:underline cursor-pointer"
+      @click="handleAuthorClick()"
+      >{{ name }}</span
+    >
   </div>
 </template>
 
 <script>
-import Avatar from '@theme/components/base/Avatar'
+import { mapState } from 'vuex'
 import Author from '@theme/components/mixins/Author'
 
 export default {
   name: 'PostAuthor',
-  components: { Avatar },
+  components: {},
   mixins: [Author],
+  computed: {
+    ...mapState('appState', ['activeAuthor']),
+  },
+  methods: {
+    handleAuthorClick() {
+      if (!this.activeAuthor !== this.name) {
+        this.$store.commit('appState/setActiveAuthor', this.name)
+      }
+    },
+  },
 }
 </script>
 

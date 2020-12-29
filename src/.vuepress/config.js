@@ -121,6 +121,7 @@ module.exports = {
           feeds: {
             rss2: {
               enable: true,
+              file_name: 'index.xml',
             },
             atom1: {
               enable: false,

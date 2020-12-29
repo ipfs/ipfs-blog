@@ -24,7 +24,7 @@
     ></multiselect>
 
     <button
-      class="p-2 text-white bg-blueGreen rounded opacity-75 hover:opacity-75"
+      class="p-2 text-white bg-blueGreen rounded opacity-75 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
       @click="handleSearch"
     >
       Search
@@ -97,5 +97,9 @@ export default {
 .multiselect__option--highlight,
 .multiselect__option--highlight::after {
   @apply bg-blueGreen;
+}
+
+.multiselect__placeholder {
+  font-size: 16px;
 }
 </style>

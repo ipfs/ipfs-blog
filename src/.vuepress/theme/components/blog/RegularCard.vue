@@ -27,12 +27,15 @@
       </div>
       <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
         <router-link :to="path">
-          <h1 class="type-h5 font-bold text-primary hover:underline">
+          <h1
+            class="type-h5 font-bold text-primary hover:underline overflow-ellipsis overflow-hidden"
+          >
             {{ title }}
           </h1>
         </router-link>
         <div>
           <PostMeta
+            category="Blog Post"
             :author="frontmatter.author"
             :date="frontmatter.date"
             :tags="frontmatter.tags"

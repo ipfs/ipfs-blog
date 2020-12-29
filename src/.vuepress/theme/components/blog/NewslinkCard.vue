@@ -16,7 +16,7 @@
         </UnstyledLink>
         <div>
           <PostMeta
-            :author="frontmatter.author"
+            category="newslink"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
             class="type-p4 text-primary"

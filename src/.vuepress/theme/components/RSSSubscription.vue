@@ -9,7 +9,7 @@
       rel="noopener noreferrer"
     >
       <SVGIcon
-        class="w-6 h-6 opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        class="w-6 h-6 opacity-50 hover:opacity-100 fill-current text-blueGreen transition transition-opacity duration-300 ease-in-out"
         :name="link.icon"
         :title="link.text"
       />
@@ -20,7 +20,7 @@
       rel="noopener noreferrer"
     >
       <SVGIcon
-        class="w-6 h-6 opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        class="w-6 h-6 color-green fill-current text-blueGreen opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
         name="rss"
         title="rss"
       />

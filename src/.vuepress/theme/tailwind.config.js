@@ -72,6 +72,9 @@ const theme = {
       'gray-dark': '#707175',
       'gray-default': '#d1d1d6',
     },
+    borderOpacity: {
+      10: '0.1',
+    },
     textColor: {
       primary: '#16161F',
     },

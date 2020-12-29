@@ -2,11 +2,17 @@ export const checkItem = ({
   postType,
   tags,
   title,
+  author = {},
   activeTags = [],
   searchedText = [],
   activeCategory = '',
+  activeAuthor = '',
 }) => {
   if (activeCategory && decodeURI(activeCategory) !== postType) {
+    return false
+  }
+
+  if (activeAuthor && decodeURI(activeAuthor) !== author.name) {
     return false
   }
 
@@ -31,7 +37,8 @@ export const parseProtectedPost = (
   post,
   activeTags = [],
   searchedText = [],
-  activeCategory = ''
+  activeCategory = '',
+  activeAuthor = ''
 ) => {
   if (!post.frontmatter.data) {
     return []
@@ -45,26 +52,30 @@ export const parseProtectedPost = (
         postType: post.frontmatter.type,
         tags: item.tags,
         title: item.title,
+        author: item.author,
         activeTags,
         searchedText,
         activeCategory,
+        activeAuthor,
       })
     ) {
       return false
     }
 
     result.push({
+      ...item,
       category: post.frontmatter.type,
       type: post.frontmatter.type,
       date: item.date,
       title: item.title,
+      author: { name: item.author },
       path: item.path,
-      ...item,
       frontmatter: {
+        ...item,
         date: item.date,
         title: item.title,
+        author: { name: item.author },
         path: item.path,
-        ...item,
       },
     })
   })
