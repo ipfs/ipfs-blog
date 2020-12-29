@@ -1,6 +1,9 @@
 <template>
   <li
-    class="post-tag p-1 mr-1 bg-white text-blueGreen hover:underline rounded cursor-pointer"
+    :class="[
+      'post-tag p-1 mr-1  hover:underline rounded cursor-pointer',
+      dark ? 'bg-blueGreen text-white' : 'bg-white text-blueGreen',
+    ]"
   >
     <router-link v-if="link" :to="{ path: '/', query: { tags: tag } }">
       #{{ tag }}
@@ -20,6 +23,10 @@ export default {
     tag: {
       type: String,
       required: true,
+    },
+    dark: {
+      type: Boolean,
+      default: null,
     },
   },
   methods: {

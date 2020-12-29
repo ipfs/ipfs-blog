@@ -34,11 +34,11 @@
     </div>
     <div class="grid-margins pt-8 flex justify-between items-center">
       <ul v-if="resolvedTags.length" class="tags flex mt-1" itemprop="keywords">
-        <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" link />
+        <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" link dark />
       </ul>
       <div class="flex">
         Share this item:
-        <PostSocials class="flex max-w-3xl" />
+        <PostSocials class="flex max-w-3xl ml-2" />
       </div>
     </div>
   </div>

@@ -41,6 +41,7 @@
   }
   a {
     @apply transition duration-200;
+    @apply text-blueGreen;
   }
   a.header-anchor {
     font-size: 0.85em;

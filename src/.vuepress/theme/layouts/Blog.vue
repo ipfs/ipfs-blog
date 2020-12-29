@@ -17,6 +17,7 @@
         :number-of-posts="pagesToShow.length"
         :tags="tags"
         :categories="categories"
+        :block-lazy-load="blockLazyLoad"
       />
       <div
         class="grid-margins pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -172,6 +173,15 @@ export default {
     if (queryAuthor) {
       this.$store.commit('appState/setActiveAuthor', queryAuthor)
     }
+
+    const latestWeeklyPost = this.publicPages.find(
+      (item) =>
+        item.frontmatter &&
+        item.frontmatter.tags &&
+        item.frontmatter.tags.includes('weekly')
+    )
+
+    this.$store.commit('appState/setLatestWeeklyPost', latestWeeklyPost)
   },
   methods: {
     updateQuery() {
@@ -183,6 +193,9 @@ export default {
         author: this.activeAuthor,
       }
       this.$router.replace({ query: newQuery }).catch(() => {})
+    },
+    blockLazyLoad() {
+      this.infiniteScroll = false
     },
     showMorePages() {
       this.numberOfPagesToShow = this.numberOfPagesToShow + 21

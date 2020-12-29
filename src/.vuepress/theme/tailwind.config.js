@@ -23,6 +23,13 @@ const theme = {
       140: '1.4',
       150: '1.5',
     },
+    lineClamp: {
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+    },
     maxWidth: {
       '1/6': '16.666667%',
       '1/5': '20%',
@@ -194,7 +201,7 @@ const theme = {
     },
     link: {
       fontWeight: theme('fontWeight.bold'),
-      color: theme('colors.webBlue'),
+      color: theme('colors.blueGreen'),
       '&:hover': {
         textDecoration: 'underline',
       },
@@ -241,5 +248,6 @@ module.exports = {
   plugins: [
     require('tailwindcss-typography')({ componentPrefix: 'type-' }),
     require('./tailwind.gradients'),
+    require('tailwindcss-line-clamp'),
   ],
 }

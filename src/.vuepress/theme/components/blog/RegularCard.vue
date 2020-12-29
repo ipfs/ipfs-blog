@@ -27,9 +27,7 @@
       </div>
       <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
         <router-link :to="path">
-          <h1
-            class="type-h5 font-bold text-primary hover:underline overflow-ellipsis overflow-hidden"
-          >
+          <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}
           </h1>
         </router-link>
@@ -45,7 +43,7 @@
         <footer class="flex-grow">
           <p
             v-if="frontmatter.description || frontmatter.description"
-            class="type-p1-serif text-primary"
+            class="type-p1-serif text-primary clamp-5"
             itemprop="description"
           >
             {{ frontmatter.description || frontmatter.description }}

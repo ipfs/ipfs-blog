@@ -10,6 +10,7 @@ const appState = {
     searchedText: [],
     activeCategory: null,
     activeAuthor: null,
+    latestWeeklyPost: null,
   },
   mutations: {
     toggleMobileNav: (state, data) => {
@@ -32,6 +33,9 @@ const appState = {
     },
     setActiveAuthor: (state, data) => {
       Vue.set(state, 'activeAuthor', data)
+    },
+    setLatestWeeklyPost: (state, data) => {
+      Vue.set(state, 'latestWeeklyPost', data)
     },
     clearFilters: (state) => {
       Vue.set(state, 'activeTags', [])

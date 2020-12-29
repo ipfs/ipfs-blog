@@ -22,6 +22,7 @@
       <a
         class="text-blueGreen hover:underline ml-1 inline-block"
         href="#newsletter-form"
+        @click="blockLazyLoad()"
         >weekly newsletter</a
       >,
       <a
@@ -45,7 +46,12 @@ export default {
   components: {
     RSSSubscription,
   },
-  props: {},
+  props: {
+    blockLazyLoad: {
+      type: Function,
+      default: null,
+    },
+  },
   computed: {},
   methods: {},
 }

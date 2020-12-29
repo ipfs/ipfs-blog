@@ -11,7 +11,7 @@
       hashtags=""
     >
       <SVGIcon
-        class="w-6 h-6 opacity-50 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        class="w-6 h-6 opacity-50 fill-current text-blueGreen hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
         :name="social.icon"
         :title="social.text"
       />

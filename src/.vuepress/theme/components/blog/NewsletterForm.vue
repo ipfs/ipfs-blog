@@ -6,10 +6,10 @@
     <div class="flex-shrink max-w-xl mb-4 md:mb-0">
       <h2 class="type-h2">Stay informed</h2>
       <p class="mt-2">
-        Sign up for the IPFS Weekly newsletter (<a
+        Sign up for the IPFS Weekly newsletter (<router-link
+          :to="latestWeeklyPost ? latestWeeklyPost.path : ''"
           class="text-blueGreen hover:underline"
-          href="/weekly-110"
-          >example</a
+          >example</router-link
         >) for the latest on releases, upcoming developments, community events,
         and more.
       </p>
@@ -22,8 +22,8 @@
       method="post"
       target="_blank"
     >
-      <div id="mc_embed_signup_scroll" class="flex">
-        <div class="fields flex flex-col">
+      <div id="mc_embed_signup_scroll" class="grid gric-col-2">
+        <div class="fields flex col-start-1 col-span-2">
           <input
             id="mce-EMAIL"
             v-model="email"
@@ -34,26 +34,26 @@
             placeholder="email@your.domain"
             name="EMAIL"
           />
-          <label class="pt-2 italic" for="gdpr_28879">
+          <div class="ml-4">
             <input
-              id="gdpr_28879"
-              type="checkbox"
-              class=""
-              required
-              name="gdpr[28879]"
-              value="Y"
-            /><span class="pl-2">Please send me the newsletter</span>
-          </label>
+              id="mc-embedded-subscribe"
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              class="p-2 text-white bg-blueGreen rounded cursor-pointer"
+            />
+          </div>
         </div>
-        <div class="ml-4">
+        <label class="pt-2 italic col-start-1 col-span-2" for="gdpr_28879">
           <input
-            id="mc-embedded-subscribe"
-            type="submit"
-            value="Subscribe"
-            name="subscribe"
-            class="p-2 text-white bg-blueGreen rounded"
-          />
-        </div>
+            id="gdpr_28879"
+            type="checkbox"
+            class=""
+            required
+            name="gdpr[28879]"
+            value="Y"
+          /><span class="pl-2">Please send me the newsletter</span>
+        </label>
       </div>
       <div id="mergeRow-gdpr">
         <div>
@@ -74,13 +74,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'NewsletterForm',
   props: {},
   data: () => ({
     email: null,
   }),
-  computed: {},
+  computed: {
+    ...mapState('appState', ['latestWeeklyPost']),
+  },
   methods: {},
 }
 </script>

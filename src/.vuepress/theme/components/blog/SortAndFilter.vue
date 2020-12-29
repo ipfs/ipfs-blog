@@ -1,6 +1,6 @@
 <template>
   <div class="grid-margins opacity-85">
-    <LinksAndSocial />
+    <LinksAndSocial :block-lazy-load="blockLazyLoad" />
     <SearchCategoriesAndTags
       class="mt-2"
       :tags="tags"
@@ -34,6 +34,10 @@ export default {
     numberOfPosts: {
       type: Number,
       required: true,
+    },
+    blockLazyLoad: {
+      type: Function,
+      default: null,
     },
   },
 }
