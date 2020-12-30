@@ -13,7 +13,7 @@
     </div>
     <ul
       v-if="resolvedTags.length"
-      class="tags flex flex-wrap"
+      class="tags mt-2 mb-1 flex flex-wrap"
       itemprop="keywords"
     >
       <li

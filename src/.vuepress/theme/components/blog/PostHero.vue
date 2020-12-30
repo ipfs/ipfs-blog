@@ -100,7 +100,7 @@ export default {
     breadcrumbs() {
       return [
         { title: 'Home', link: 'https://ipfs.io/', external: true },
-        { title: 'Blog & News', link: '/' },
+        { title: 'Blog & news', link: '/' },
         { title: this.title },
       ]
     },
