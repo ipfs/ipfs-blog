@@ -20,6 +20,7 @@
         :block-lazy-load="blockLazyLoad"
       />
       <div
+        v-if="mountFinish"
         class="grid-margins pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         itemscope
         itemtype="http://schema.org/Blog"
@@ -83,6 +84,7 @@ export default {
         { title: 'Home', link: 'https://ipfs.io/', external: true },
         { title: 'Blog & news' },
       ],
+      mountFinish: false,
     }
   },
   computed: {
@@ -183,6 +185,8 @@ export default {
     )
 
     this.$store.commit('appState/setLatestWeeklyPost', latestWeeklyPost)
+
+    this.mountFinish = true
   },
   methods: {
     updateQuery() {
