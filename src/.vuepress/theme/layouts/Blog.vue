@@ -34,7 +34,11 @@
         />
       </div>
       <div
-        v-if="!infiniteScroll && pagesToShow.length < publicPages.length"
+        v-if="
+          mountFinish &&
+          !infiniteScroll &&
+          pagesToShow.length < publicPages.length
+        "
         class="flex justify-center mt-8 pb-4"
       >
         <button

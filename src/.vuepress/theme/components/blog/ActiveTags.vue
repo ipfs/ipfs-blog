@@ -21,21 +21,22 @@
       >
     </span>
     <ul class="tags flex items-center" itemprop="keywords">
-      <li
+      <button
         v-for="tag in activeTags"
         :key="tag"
         class="multiselect__tag active-tag"
+        @click="tagClick(tag)"
       >
         <span>#{{ tag }}</span
-        ><i class="multiselect__tag-icon" @click="tagClick(tag)"></i>
-      </li>
+        ><i class="multiselect__tag-icon"></i>
+      </button>
     </ul>
-    <div
+    <button
       class="p-1 ml-auto opacity-50 hover:opacity-100 text-blueGreen transition transition-opacity duration-300 ease-in-out cursor-pointer"
       @click="handleClear()"
     >
       &#10005;
-    </div>
+    </button>
   </div>
 </template>
 

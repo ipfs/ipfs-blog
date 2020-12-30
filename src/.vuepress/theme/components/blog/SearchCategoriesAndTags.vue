@@ -1,16 +1,24 @@
 <template>
-  <div class="flex items-center justify-between">
+  <div
+    class="flex items-center justify-between"
+    @keyup.left="handleKeyUp(-1)"
+    @keyup.right="handleKeyUp(1)"
+  >
     <div>Sort items by type:</div>
     <multiselect
+      ref="select0"
       v-model="selectedCat"
       class="flex-grow mx-2"
       :options="categories"
       :searchable="false"
       :allow-empty="false"
       deselect-label=""
+      @select="focusOnSubmit()"
+      @open="setSelected(0)"
     />
     <span>and/or</span>
     <multiselect
+      ref="select1"
       v-model="selectedTags"
       class="flex-grow mx-2 max-w-sm max-h-sm"
       tag-placeholder="search for this text"
@@ -21,11 +29,15 @@
       :multiple="true"
       :taggable="true"
       @tag="handleAddTag"
+      @select="focusOnSubmit()"
+      @open="setSelected(1)"
     ></multiselect>
 
     <button
+      ref="select2"
       class="p-2 text-white bg-blueGreen rounded opacity-75 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
       @click="handleSearch"
+      @focus="setSelected(2)"
     >
       Search
     </button>
@@ -53,6 +65,7 @@ export default {
       selectedCat: this.categories[0],
       selectedTags: [],
       searchedWords: [],
+      selectedInput: 0,
     }
   },
   computed: {
@@ -80,6 +93,29 @@ export default {
         name: text,
         value: text,
       })
+    },
+    focusOnSubmit() {
+      this.$refs.select2.focus()
+    },
+    handleKeyUp(switcher) {
+      const futureFocus = this.selectedInput + switcher
+      let futureIndex = 2
+
+      if (switcher === -1) {
+        futureIndex = futureFocus >= 0 ? futureFocus : 2
+      } else {
+        futureIndex = futureFocus <= 2 ? futureFocus : 0
+      }
+
+      if (futureIndex === 2) {
+        this.focusOnSubmit()
+        this.selectedInput = 2
+      } else {
+        this.$refs['select' + futureIndex].$el.focus()
+      }
+    },
+    setSelected(index) {
+      this.selectedInput = index
     },
   },
 }
