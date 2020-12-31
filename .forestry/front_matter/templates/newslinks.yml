@@ -1,0 +1,29 @@
+---
+label: Newslinks
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: field_group_list
+  name: data
+  label: data
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: path
+    label: path
+  - type: datetime
+    name: date
+    label: date
+  - type: text
+    name: tags
+    label: tags
