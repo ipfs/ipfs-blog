@@ -1,0 +1,28 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: url
+  label: url
+- type: text
+  name: translationKey
+  label: translationKey
+- type: text
+  name: tags
+  label: tags
+- type: file
+  name: header_image
+  label: header_image
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: author
+  label: author
