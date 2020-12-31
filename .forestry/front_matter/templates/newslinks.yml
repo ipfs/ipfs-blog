@@ -27,3 +27,4 @@ fields:
   - type: text
     name: tags
     label: tags
+    description: separate tags by comma (,)
