@@ -1,15 +1,17 @@
 ---
-date: 2020-10-21
-url: /weekly-110/
+date: 2020-10-20 23:00:00 +0000
+url: "/weekly-110/"
 translationKey: ipfs-weekly-110
 tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 110
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut pulvinar. Nunc blandit nisi. Nam pulvinar augue nibh, sit amet varius magna egestas ac.
+description: Forestry test
 author: Jenn Turner
----
 
+---
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+
+(forestry edit test)
 
 ## Filecoin Mainnet takes off 🚀🚀🚀
 
@@ -31,10 +33,10 @@ Last week, the IPFS community virtually gathered together to talk about the late
 
 ## Brand new on IPFS
 
-- [Explore smarter data publishing](https://medium.com/qri-io/smarter-data-publishing-with-qri-4addb6917df8) with Qri, making publishing and sharing as easy as finding data.
-- [Berty](https://berty.tech/newsletter/news-47/) recently published their latest community update, including some news on gomobile-IPFS.
-- [MetaMask released Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785), allowing users to swap tokens directly from their wallets.
-- The latest [IPFS Podcast episode](https://twitter.com/FleekHQ/status/1316047508804640768?s=20) features Harrison Hines, talking about Fleek.
+* [Explore smarter data publishing](https://medium.com/qri-io/smarter-data-publishing-with-qri-4addb6917df8) with Qri, making publishing and sharing as easy as finding data.
+* [Berty](https://berty.tech/newsletter/news-47/) recently published their latest community update, including some news on gomobile-IPFS.
+* [MetaMask released Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785), allowing users to swap tokens directly from their wallets.
+* The latest [IPFS Podcast episode](https://twitter.com/FleekHQ/status/1316047508804640768?s=20) features Harrison Hines, talking about Fleek.
 
 ## People are building the coolest things with IPFS
 
@@ -72,4 +74,4 @@ Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), 
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 
-<p><a href="https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230" class="button button-primary">Sign up now</a></p>
+<p><a href="https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230" class="button button-primary">Sign up now</a></p>
