@@ -12,7 +12,11 @@ export const checkItem = ({
     return false
   }
 
-  if (activeAuthor && decodeURI(activeAuthor) !== author.name) {
+  if (
+    activeAuthor &&
+    ((author.name && !author.name.includes(decodeURI(activeAuthor))) ||
+      !author.name)
+  ) {
     return false
   }
 

@@ -7,11 +7,17 @@
     class="flex items-center"
   >
     <span
+      v-for="(piece, index) in resolvedAuthorName"
+      :key="piece"
       itemprop="name"
-      class="whitespace-no-wrap hover:text-blueGreen hover:underline cursor-pointer"
-      @click="handleAuthorClick()"
-      >{{ name }}</span
-    >
+      >{{ index === 0 ? '' : ',' }}
+      <span
+        class="whitespace-no-wrap hover:text-blueGreen hover:underline cursor-pointer"
+        @click="handleAuthorClick(piece)"
+      >
+        {{ piece }}
+      </span>
+    </span>
   </div>
 </template>
 
@@ -25,11 +31,20 @@ export default {
   mixins: [Author],
   computed: {
     ...mapState('appState', ['activeAuthor']),
+    resolvedAuthorName() {
+      const pieces = this.name.match(/[,&]/g)
+
+      if (!pieces) {
+        return [this.name]
+      }
+
+      return this.name.split(/[,&]/g)
+    },
   },
   methods: {
-    handleAuthorClick() {
-      if (!this.activeAuthor !== this.name) {
-        this.$store.commit('appState/setActiveAuthor', this.name)
+    handleAuthorClick(piece) {
+      if (!this.activeAuthor !== piece) {
+        this.$store.commit('appState/setActiveAuthor', piece)
       }
     },
   },
