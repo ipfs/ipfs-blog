@@ -13,6 +13,8 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 (forestry edit test)
 
+![](/header_images/082-ethdenver-2020.png)
+
 ## Filecoin Mainnet takes off 🚀🚀🚀
 
 Around 3pm UTC, on October 15, the Filecoin Mainnet went live! This was the culmination of years of effort, innovation, and teamwork. Join us in celebrating this momentous event by participating in [Filecoin Liftoff week](https://filecoin.io/blog/mainnet-liftoff-week/), running today through Friday, October 23.
