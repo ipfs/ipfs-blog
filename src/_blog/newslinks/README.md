@@ -2,10 +2,10 @@
 title: Newslinks
 type: newslink
 data:
-- name: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
-  title: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
-  path: https://www.coindesk.com/interplanetary-file-system-is-uncensorable-during-coronavirus-news-fog
-  date: 2020-03-18 06:00:00 +0000
+- name: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
+  title: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
+  path: https://containerjournal.com/topics/container-management/ipfs-emerges-as-tool-to-distribute-container-images/
+  date: 2020-03-02 07:00:00 +0000
   tags: ''
 - name: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   title: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
@@ -36,6 +36,11 @@ data:
   title: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
   path: https://cointelegraph.com/news/decentralized-web-protocol-ipfs-has-its-biggest-update-so-far
   date: 2020-04-28 06:00:00 +0000
+  tags: ''
+- name: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
+  title: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
+  path: https://www.coindesk.com/interplanetary-file-system-is-uncensorable-during-coronavirus-news-fog
+  date: 2020-03-18 06:00:00 +0000
   tags: ''
 
 ---
