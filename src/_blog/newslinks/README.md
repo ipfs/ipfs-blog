@@ -17,6 +17,8 @@ data:
   title: title 2
   path: https://ipfs.io/
   date: 2020-10-23
+  tags:
+  - link
 - name: link 3
   title: title 3
   path: https://ipfs.io/
