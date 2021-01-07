@@ -2,10 +2,10 @@
 title: Newslinks
 type: newslink
 data:
-- name: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
-  title: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
-  path: https://containerjournal.com/topics/container-management/ipfs-emerges-as-tool-to-distribute-container-images/
-  date: 2020-03-02 07:00:00 +0000
+- name: JavaScript apps going InterPlanetary (Alessandro Segala)
+  title: JavaScript apps going InterPlanetary (Alessandro Segala)
+  path: https://medium.com/@italypaleale/watch-javascript-apps-going-inter-planetary-e33dba615a48
+  date: 2020-01-20 07:00:00 +0000
   tags: ''
 - name: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   title: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
@@ -41,6 +41,11 @@ data:
   title: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
   path: https://www.coindesk.com/interplanetary-file-system-is-uncensorable-during-coronavirus-news-fog
   date: 2020-03-18 06:00:00 +0000
+  tags: ''
+- name: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
+  title: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
+  path: https://containerjournal.com/topics/container-management/ipfs-emerges-as-tool-to-distribute-container-images/
+  date: 2020-03-02 07:00:00 +0000
   tags: ''
 
 ---
