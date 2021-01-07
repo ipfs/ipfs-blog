@@ -2,11 +2,12 @@
 title: Newslinks
 type: newslink
 data:
-- name: foo
-  title: 'Most Influential 2020: Juan Benet: From Idea to Action - CoinDesk'
+- name: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
+  title: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   path: https://www.coindesk.com/juan-benet-most-influential-2020
   date: 2020-12-09 00:00:00 +0000
-  tags: []
+  tags:
+  - interview
 - name: test
   title: newslink to ipfs.io
   path: https://ipfs.io/
