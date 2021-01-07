@@ -7,7 +7,7 @@ tags:
 - test
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 110
-description: Forestry test
+description: Short description
 author: Jenn Turner
 
 ---
