@@ -2,6 +2,11 @@
 title: Newslinks
 type: newslink
 data:
+- name: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
+  title: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
+  path: https://cointelegraph.com/news/decentralized-web-protocol-ipfs-has-its-biggest-update-so-far
+  date: 2020-04-28 06:00:00 +0000
+  tags: ''
 - name: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   title: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   path: https://www.coindesk.com/juan-benet-most-influential-2020
