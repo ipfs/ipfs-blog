@@ -2,12 +2,11 @@
 title: Newslinks
 type: newslink
 data:
-- name: forestry newslink
-  title: Forestry test newslink
-  path: https://awesome-ipfs-vuepress.netlify.app/
-  date: 2021-01-06 00:00:00 +0000
-  tags:
-  - example
+- name: foo
+  title: 'Most Influential 2020: Juan Benet: From Idea to Action - CoinDesk'
+  path: https://www.coindesk.com/juan-benet-most-influential-2020
+  date: 2020-12-09 00:00:00 +0000
+  tags: []
 - name: test
   title: newslink to ipfs.io
   path: https://ipfs.io/
