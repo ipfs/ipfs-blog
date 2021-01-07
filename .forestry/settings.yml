@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: src/_blog/newslinks
-  label: newslinks
+  label: News Links
   create: all
   match: "**/*"
 - type: directory
