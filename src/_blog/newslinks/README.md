@@ -8,10 +8,10 @@ data:
   date: 2020-12-09 00:00:00 +0000
   tags:
   - interview
-- name: test
-  title: newslink to ipfs.io
-  path: https://ipfs.io/
-  date: 2020-10-15
+- name: IPFS is paving the way for a new digital economy (Modern Consensus)
+  title: IPFS is paving the way for a new digital economy (Modern Consensus)
+  path: https://modernconsensus.com/commentary/opinion/ipfs-is-paving-the-way-for-a-new-digital-economy/
+  date: 2020-10-08 06:00:00 +0000
   tags: weekly
 - name: link 2
   title: title 2
