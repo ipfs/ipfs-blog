@@ -11,7 +11,7 @@ sections:
   match: "**/*"
 - type: directory
   path: src/_blog
-  label: blog
+  label: Blog Posts
   create: all
   match: "**/*"
 upload_dir: src/.vuepress/public
