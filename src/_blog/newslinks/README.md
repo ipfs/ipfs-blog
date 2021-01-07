@@ -1,6 +1,6 @@
 ---
 title: Newslinks
-type: News coverage
+type: news
 data:
 - name: foo
   title: 'Most Influential 2020: Juan Benet: From Idea to Action - CoinDesk'
