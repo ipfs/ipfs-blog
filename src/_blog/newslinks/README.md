@@ -2,10 +2,10 @@
 title: Newslinks
 type: newslink
 data:
-- name: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
-  title: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
-  path: https://cointelegraph.com/news/decentralized-web-protocol-ipfs-has-its-biggest-update-so-far
-  date: 2020-04-28 06:00:00 +0000
+- name: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
+  title: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
+  path: https://www.coindesk.com/interplanetary-file-system-is-uncensorable-during-coronavirus-news-fog
+  date: 2020-03-18 06:00:00 +0000
   tags: ''
 - name: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
   title: 'Juan Benet: From Idea to Action (CoinDesk Most Influential 2020)'
@@ -32,5 +32,10 @@ data:
   date: 2020-04-30 06:00:00 +0000
   tags:
   - link
+- name: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
+  title: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
+  path: https://cointelegraph.com/news/decentralized-web-protocol-ipfs-has-its-biggest-update-so-far
+  date: 2020-04-28 06:00:00 +0000
+  tags: ''
 
 ---
