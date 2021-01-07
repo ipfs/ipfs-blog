@@ -1,8 +1,10 @@
 ---
-date: 2020-10-20 23:00:00 +0000
+date: 2020-10-20T23:00:00.000+00:00
 url: "/weekly-110/"
 translationKey: ipfs-weekly-110
-tags: weekly
+tags:
+- weekly
+- test
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 110
 description: Forestry test
@@ -10,10 +12,6 @@ author: Jenn Turner
 
 ---
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
-
-(forestry edit test)
-
-![](/header_images/082-ethdenver-2020.png)
 
 ## Filecoin Mainnet takes off 🚀🚀🚀
 
