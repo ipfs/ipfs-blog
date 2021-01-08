@@ -21,7 +21,7 @@
               {{ resolvedDate }}
             </time>
           </div>
-          <div v-if="image" class="mt-4 md:mt-0 h-full">
+          <div class="mt-4 md:mt-0 h-full">
             <LazyImage
               img-class="h-full object-cover"
               :alt="$page.title"
