@@ -32,13 +32,14 @@ export default {
   computed: {
     ...mapState('appState', ['activeAuthor']),
     resolvedAuthorName() {
-      const pieces = this.name.match(/[,&]/g)
+      const resolvedName = this.name.replace('and', ',')
+      const pieces = resolvedName.match(/[,&]/g)
 
       if (!pieces) {
-        return [this.name]
+        return [resolvedName]
       }
 
-      return this.name.split(/[,&]/g)
+      return resolvedName.split(/[,&]/g)
     },
   },
   methods: {

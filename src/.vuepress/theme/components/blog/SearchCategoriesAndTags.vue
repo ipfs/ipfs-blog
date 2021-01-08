@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-between"
+    class="flex flex-wrap items-center lg:justify-between"
     @keyup.left="handleKeyUp(-1)"
     @keyup.right="handleKeyUp(1)"
   >
@@ -20,7 +20,7 @@
     <multiselect
       ref="select1"
       v-model="selectedTags"
-      class="flex-grow mx-2 max-w-sm max-h-sm"
+      class="flex-grow ml-0 lg:mx-2 max-w-sm max-h-sm"
       tag-placeholder="search for this text"
       placeholder="Search for words or #tags"
       track-by="name"
@@ -93,6 +93,7 @@ export default {
         name: text,
         value: text,
       })
+      this.focusOnSubmit()
     },
     focusOnSubmit() {
       this.$refs.select2.focus()
