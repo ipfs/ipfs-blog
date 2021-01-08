@@ -31,7 +31,7 @@
         </UnstyledLink>
         <div>
           <PostMeta
-            category="newslink"
+            category="frontmatter.type"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
             class="type-p4 text-primary"
@@ -57,7 +57,7 @@ import UnstyledLink from '@theme/components/UnstyledLink'
 import PostMeta from '@theme/components/blog/PostMeta'
 
 export default {
-  name: 'BlogNewslinkCard',
+  name: 'LinkCard',
   components: {
     LazyImage,
     UnstyledLink,

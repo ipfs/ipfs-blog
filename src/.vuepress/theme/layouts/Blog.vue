@@ -67,8 +67,8 @@ import Breadcrumbs from '@theme/components/Breadcrumbs'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 
-const protectedCardTypes = ['newslink']
-const defaultCategory = 'Blog posts'
+const protectedCardTypes = ['News coverage', 'Release notes']
+const defaultCategory = 'Blog post'
 
 export default {
   name: 'BlogIndex',

@@ -7,11 +7,11 @@
 
 <script>
 import RegularCard from '@theme/components/blog/RegularCard'
-import NewslinkCard from '@theme/components/blog/NewslinkCard'
+import LinkCard from '@theme/components/blog/LinkCard'
 
 export default {
   name: 'BlogCard',
-  components: { RegularCard, NewslinkCard },
+  components: { RegularCard, LinkCard },
 
   inheritAttrs: false,
   props: {
@@ -27,8 +27,11 @@ export default {
       }
 
       switch (this.card.type) {
-        case 'newslink':
-          return NewslinkCard
+        case 'News coverage':
+          return LinkCard
+
+        case 'Release notes':
+          return LinkCard
 
         default:
           return null
