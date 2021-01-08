@@ -3,7 +3,7 @@
     <h2 class="text-xl mb-2 flex flex-wrap">
       Event organizer, content creator, or journalist?
       <a
-        class="text-blueGreen hover:underline ml-1"
+        class="text-blueGreen hover:underline mx-1"
         href="https://protocol.ai/join"
         rel="noopener noreferrer"
       >
