@@ -5,8 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: src/_blog/newslinks
+  label: News Links
+  create: all
+  match: "**/*"
+- type: directory
   path: src/_blog
-  label: blog
+  label: Blog Posts
   create: all
   match: "**/*"
 upload_dir: src/.vuepress/public
