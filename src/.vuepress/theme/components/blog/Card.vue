@@ -27,8 +27,12 @@ export default {
       }
 
       switch (this.card.type) {
+        case 'Academic paper':
+        case 'Event':
         case 'News coverage':
         case 'Release notes':
+        case 'Tutorial':
+        case 'Video':
           return LinkCard
 
         default:

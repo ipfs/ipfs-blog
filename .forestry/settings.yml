@@ -5,13 +5,38 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: src/_blog/newscoverage
-  label: News Coverage
+  path: src/_blog/academicpapers
+  label: Academic Papers
   create: all
   match: "**/*"
 - type: directory
   path: src/_blog
   label: Blog Posts
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/_blog/events
+  label: Events
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/_blog/newscoverage
+  label: News Coverage
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/_blog/releasenotes
+  label: Release Notes
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/_blog/tutorials
+  label: Tutorials
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/_blog/videos
+  label: Videos
   create: all
   match: "**/*"
 upload_dir: src/.vuepress/public
