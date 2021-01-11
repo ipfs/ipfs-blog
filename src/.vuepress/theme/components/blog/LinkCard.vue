@@ -9,7 +9,11 @@
       itemtype="https://schema.org/BlogPosting"
     >
       <div class="cover embed-responsive embed-responsive-og">
-        <UnstyledLink :to="path" external class="embed-responsive-item">
+        <UnstyledLink
+          :to="path"
+          :item="{ target: '_blank' }"
+          class="embed-responsive-item"
+        >
           <LazyImage
             class="h-full p-2"
             img-class="h-full"
@@ -24,14 +28,14 @@
         </UnstyledLink>
       </div>
       <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
-        <UnstyledLink :to="path" external>
+        <UnstyledLink :to="path" :item="{ target: '_blank' }">
           <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}
           </h1>
         </UnstyledLink>
         <div>
           <PostMeta
-            category="frontmatter.type"
+            :category="frontmatter.type"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
             class="type-p4 text-primary"

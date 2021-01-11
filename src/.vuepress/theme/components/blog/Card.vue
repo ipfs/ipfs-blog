@@ -28,8 +28,6 @@ export default {
 
       switch (this.card.type) {
         case 'News coverage':
-          return LinkCard
-
         case 'Release notes':
           return LinkCard
 
