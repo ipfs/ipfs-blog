@@ -80,6 +80,7 @@ export const parseProtectedPost = (
         title: item.title,
         author: { name: item.author },
         path: item.path,
+        type: post.frontmatter.type,
       },
     })
   })

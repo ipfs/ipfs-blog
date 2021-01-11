@@ -33,7 +33,7 @@
         </router-link>
         <div>
           <PostMeta
-            category="Blog Post"
+            category="Blog post"
             :author="frontmatter.author"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
