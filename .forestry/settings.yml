@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: EN
 - type: directory
   path: src/_blog/academicpapers
   label: Academic Papers
@@ -37,6 +39,13 @@ sections:
 - type: directory
   path: src/_blog/videos
   label: Videos
+  create: all
+  match: "**/*"
+- type: heading
+  label: ZH
+- type: directory
+  path: src/_blog_zh
+  label: ZH Blog posts
   create: all
   match: "**/*"
 upload_dir: src/.vuepress/public
