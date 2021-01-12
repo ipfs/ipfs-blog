@@ -43,4 +43,10 @@ data:
     tags:
       - 'ProtoSchool'
       - 'CID'
+  - name: 'Install IPFS on a Raspberry Pi 2'
+    title: 'Install IPFS on a Raspberry Pi 2'
+    path: https://www.siliconian.com/blog/16-bitcoin-blockchain/23-beginner-s-guide-to-installing-ipfs-on-a-raspberry-pi-2
+    date: 2015-05-02T07:00:00.000+00:00
+    tags:
+      - 'Raspberry Pi'
 ---
