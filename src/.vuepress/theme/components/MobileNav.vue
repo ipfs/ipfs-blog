@@ -11,7 +11,7 @@
             <nav>
               <ul>
                 <li
-                  v-for="page in $site.themeConfig.mobileNavLinks"
+                  v-for="page in $themeLocaleConfig.mobileNavLinks"
                   :key="page.title"
                   class="mb-3"
                 >

@@ -23,7 +23,7 @@ export default {
   components: { SVGIcon },
   computed: {
     socialLinks() {
-      return this.$site.themeConfig.socialLinks
+      return this.$themeLocaleConfig.socialLinks
     },
   },
 }

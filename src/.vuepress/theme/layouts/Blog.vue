@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="bg-gradient-6 py-20 text-white">
-      <div class="grid-margins mt-8">
+      <div class="relative grid-margins mt-8">
         <Breadcrumbs :crumbs="breadcrumbs" />
         <h1 class="type-h1 mt-4">
           {{ $frontmatter.description }}
@@ -10,6 +10,7 @@
           All the up-to-date IPFS info you need in one place, from blog posts
           and release notes to videos, tutorials, news coverage, and events.
         </h2>
+        <LanguageSelector class="absolute right-0" />
       </div>
     </div>
     <div class="pt-8 bg-white">
@@ -64,6 +65,7 @@ import Layout from '@theme/layouts/Layout.vue'
 import Card from '@theme/components/blog/Card'
 import SortAndFilter from '@theme/components/blog/SortAndFilter'
 import Breadcrumbs from '@theme/components/Breadcrumbs'
+import LanguageSelector from '@theme/components/base/LanguageSelector'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 
@@ -84,6 +86,7 @@ export default {
     Layout,
     Breadcrumbs,
     SortAndFilter,
+    LanguageSelector,
   },
   data: function () {
     return {

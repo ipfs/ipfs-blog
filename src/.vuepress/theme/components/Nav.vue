@@ -26,7 +26,7 @@
         </a>
         <ul class="nav__link-list hidden md:flex">
           <li
-            v-for="page in $site.themeConfig.headerLinks"
+            v-for="page in $themeLocaleConfig.headerLinks"
             :key="page.text"
             class="nav__link-item ml-16 first:m-0 font-semibold"
           >

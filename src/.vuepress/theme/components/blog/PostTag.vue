@@ -5,7 +5,7 @@
       dark ? 'bg-blueGreen text-white' : 'bg-white text-blueGreen',
     ]"
   >
-    <router-link v-if="link" :to="{ path: '/', query: { tags: tag } }">
+    <router-link v-if="link" :to="{ path: $localePath, query: { tags: tag } }">
       #{{ tag }}
     </router-link>
     <div v-else @click="handleTagClick">#{{ tag }}</div>

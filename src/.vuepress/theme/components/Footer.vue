@@ -53,7 +53,7 @@ export default {
   components: { SocialLinks, NewsletterForm, NavLink, FooterLegal },
   computed: {
     footerLinks() {
-      return this.$site.themeConfig.footerLinks
+      return this.$themeLocaleConfig.footerLinks
     },
   },
 }

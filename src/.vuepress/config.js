@@ -5,6 +5,62 @@ const authors = require('./config/authors')
 const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
 
+const themeConfigDefaults = {
+  dateFormat: 'DD MMMM YYYY',
+  socialLinks: [
+    {
+      text: 'Github',
+      link: 'https://github.com/ipfs',
+      icon: 'github-icon',
+    },
+    {
+      text: 'YouTube',
+      link: 'https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew',
+      icon: 'youtube-icon',
+    },
+    {
+      text: 'Twitter',
+      link: 'http://twitter.com/ipfs',
+      icon: 'twitter-icon',
+    },
+    {
+      text: 'LinkedIn',
+      link: 'https://www.linkedin.com/company/protocollabs/',
+      icon: 'linkedin-icon',
+    },
+  ],
+  footerLinks: [
+    { text: 'Blog & news', link: '/' },
+    { text: 'Press', link: 'https://ipfs.io/media/' },
+    {
+      text: 'Code of conduct',
+      link: 'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
+    },
+    {
+      text: 'Security',
+      link:
+        'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+    },
+  ],
+  footerLegal: '',
+  headerLinks: [
+    { text: 'About', link: 'https://ipfs.io/#why' },
+    { text: 'Install', link: 'https://ipfs.io/#install' },
+    { text: 'Docs', link: 'https://docs.ipfs.io/' },
+    { text: 'Team', link: 'https://ipfs.io/team' },
+    { text: 'Blog', link: '/' },
+    { text: 'Help', link: 'https://ipfs.io/help' },
+  ],
+  mobileNavLinks: [
+    { text: 'About', link: 'https://ipfs.io/#why' },
+    { text: 'Install', link: 'https://ipfs.io/#install' },
+    { text: 'Docs', link: 'https://docs.ipfs.io/' },
+    { text: 'Team', link: 'https://ipfs.io/team' },
+    { text: 'Blog', link: '/' },
+    { text: 'Help', link: 'https://ipfs.io/help' },
+  ],
+}
+
 module.exports = {
   title: 'IPFS Blog & News',
   description:
@@ -17,6 +73,12 @@ module.exports = {
       title: 'IPFS Blog & News',
       description:
         'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: 'IPFS Blog & News',
+      description:
+        'ZH - All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
     },
   },
   head: require('./config/head'),
@@ -33,60 +95,42 @@ module.exports = {
     },
   },
   themeConfig: {
-    dateFormat: 'DD MMMM YYYY',
-    socialLinks: [
-      {
-        text: 'Github',
-        link: 'https://github.com/ipfs',
-        icon: 'github-icon',
+    locales: {
+      '/': themeConfigDefaults,
+      '/zh/': {
+        ...themeConfigDefaults,
+        footerLinks: [
+          { text: 'Blog & news', link: '/zh/' },
+          { text: 'Press', link: 'https://ipfs.io/media/' },
+          {
+            text: 'Code of conduct',
+            link:
+              'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
+          },
+          {
+            text: 'Security',
+            link:
+              'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+          },
+        ],
+        headerLinks: [
+          { text: 'About', link: 'https://ipfs.io/#why' },
+          { text: 'Install', link: 'https://ipfs.io/#install' },
+          { text: 'Docs', link: 'https://docs.ipfs.io/' },
+          { text: 'Team', link: 'https://ipfs.io/team' },
+          { text: 'Blog', link: '/zh/' },
+          { text: 'Help', link: 'https://ipfs.io/help' },
+        ],
+        mobileNavLinks: [
+          { text: 'About', link: 'https://ipfs.io/#why' },
+          { text: 'Install', link: 'https://ipfs.io/#install' },
+          { text: 'Docs', link: 'https://docs.ipfs.io/' },
+          { text: 'Team', link: 'https://ipfs.io/team' },
+          { text: 'Blog', link: '/zh/' },
+          { text: 'Help', link: 'https://ipfs.io/help' },
+        ],
       },
-      {
-        text: 'YouTube',
-        link: 'https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew',
-        icon: 'youtube-icon',
-      },
-      {
-        text: 'Twitter',
-        link: 'http://twitter.com/ipfs',
-        icon: 'twitter-icon',
-      },
-      {
-        text: 'LinkedIn',
-        link: 'https://www.linkedin.com/company/protocollabs/',
-        icon: 'linkedin-icon',
-      },
-    ],
-    footerLinks: [
-      { text: 'Blog & news', link: '/' },
-      { text: 'Press', link: 'https://ipfs.io/media/' },
-      {
-        text: 'Code of conduct',
-        link:
-          'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
-      },
-      {
-        text: 'Security',
-        link:
-          'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
-      },
-    ],
-    footerLegal: '',
-    headerLinks: [
-      { text: 'About', link: 'https://ipfs.io/#why' },
-      { text: 'Install', link: 'https://ipfs.io/#install' },
-      { text: 'Docs', link: 'https://docs.ipfs.io/' },
-      { text: 'Team', link: 'https://ipfs.io/team' },
-      { text: 'Blog', link: '/' },
-      { text: 'Help', link: 'https://ipfs.io/help' },
-    ],
-    mobileNavLinks: [
-      { text: 'About', link: 'https://ipfs.io/#why' },
-      { text: 'Install', link: 'https://ipfs.io/#install' },
-      { text: 'Docs', link: 'https://docs.ipfs.io/' },
-      { text: 'Team', link: 'https://ipfs.io/team' },
-      { text: 'Blog', link: '/' },
-      { text: 'Help', link: 'https://ipfs.io/help' },
-    ],
+    },
   },
   plugins: [
     ['@vuepress/last-updated'],
@@ -141,6 +185,21 @@ module.exports = {
             dirname: '_blog',
             path: '/',
             itemPermalink: '/:slug',
+            layout: 'Blog',
+            itemLayout: 'BlogPost',
+            frontmatter: {
+              title: 'Home',
+              description: 'Blog, news & more',
+            },
+            pagination: {
+              lengthPerPage: Number.MAX_SAFE_INTEGER,
+            },
+          },
+          {
+            id: 'blog_zh',
+            dirname: '_blog_zh',
+            path: '/zh/',
+            itemPermalink: '/zh/:slug',
             layout: 'Blog',
             itemLayout: 'BlogPost',
             frontmatter: {

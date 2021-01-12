@@ -8,7 +8,7 @@
             <h1 class="type-h1">{{ title }}</h1>
             <router-link
               v-if="author && author.name"
-              :to="{ path: '/', query: { author: author.name } }"
+              :to="{ path: $localePath, query: { author: author.name } }"
             >
               <PostAuthor v-bind="author" />
             </router-link>
@@ -86,7 +86,7 @@ export default {
   computed: {
     resolvedDate() {
       return dayjs(this.date).format(
-        this.$themeConfig.dateFormat || 'YYYY-MM-DD'
+        this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD'
       )
     },
     resolvedTags() {
@@ -100,7 +100,7 @@ export default {
     breadcrumbs() {
       return [
         { title: 'Home', link: 'https://ipfs.io/', external: true },
-        { title: 'Blog & news', link: '/' },
+        { title: 'Blog & news', link: this.$localePath },
         { title: this.title },
       ]
     },

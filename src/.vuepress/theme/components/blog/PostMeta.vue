@@ -59,7 +59,7 @@ export default {
   computed: {
     resolvedDate() {
       return dayjs(this.date).format(
-        this.$themeConfig.dateFormat || 'YYYY-MM-DD'
+        this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD'
       )
     },
     resolvedTags() {
