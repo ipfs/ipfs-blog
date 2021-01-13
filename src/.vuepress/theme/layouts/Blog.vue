@@ -34,6 +34,7 @@
           all
         />
       </div>
+      <div v-else class="p-48" />
       <div
         v-if="
           mountFinish &&

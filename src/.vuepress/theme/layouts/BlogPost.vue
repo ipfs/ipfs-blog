@@ -20,6 +20,7 @@
           itemprop="articleBody"
           class="blog type-rich mb-10 mt-4 pt-4 border-t-2 border-gray border-opacity-25"
         />
+        <Comments v-if="showComments" />
       </div>
     </article>
   </Layout>
@@ -29,6 +30,7 @@
 import Layout from '@theme/layouts/Layout.vue'
 import LazyImage from '@theme/components/base/LazyImage'
 import PostHero from '@theme/components/blog/PostHero'
+import Comments from '@theme/components/blog/Comments'
 
 export default {
   name: 'BlogPost',
@@ -36,6 +38,13 @@ export default {
     Layout,
     LazyImage,
     PostHero,
+    Comments,
+  },
+  data: () => ({
+    showComments: null,
+  }),
+  mounted() {
+    this.showComments = window.location.hostname === 'blog.ipfs.io'
   },
 }
 </script>
