@@ -6,7 +6,7 @@ tags:
 - weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 110
-description: Short description
+description: ''
 author: Jenn Turner
 
 ---
