@@ -25,19 +25,15 @@ The full list of themes and discussion can be found in the [IPFS roadmap repo](h
 
 But these numbers alone don’t sufficiently illustrate the quality of discourse that was seen! The discussion on topics was rich, connecting experts and collaborators across the IPFS community. [We had nuances raised around optimal content routing strategies](https://github.com/ipfs/roadmap/issues/76)...
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-bottom:2em">
-<img alt="Proposals" src="/content-routing.png">
-</div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/content-routing.png"> </div>
 
 ...saw [discussion on various ways to integrate IPFS into browsers](https://github.com/ipfs/roadmap/issues/81)...
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-bottom:2em">
-<img alt="Proposals" src="/browser-integration.png">
-</div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/browser-integration.png"> </div>
 
 ...and even a [meetup organized to discuss approaches to upgrading IPFS’s security model](https://github.com/ipfs/roadmap/issues/65!)
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-top:0px;padding-bottom:2em">
+<div style="width:70%;margin-left:15%;padding-bottom:2em">
 <img alt="Proposals" src="/security-model.png">
 </div>
 
