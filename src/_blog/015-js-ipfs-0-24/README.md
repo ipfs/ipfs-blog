@@ -7,7 +7,6 @@ author: David Dias
 header_image: js-ipfs-placeholder.png
 tags:
   - 'js-ipfs'
-  - 'WebRTC'
 ---
 
 I am pleased to announce to everyone in our community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!

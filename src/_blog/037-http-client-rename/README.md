@@ -6,7 +6,6 @@ description:
 author: Alan Shaw
 tags:
   - 'breaking change'
-  - 'modules'
 ---
 
 👋 hey everyone! If you're using one of the many HTTP client libraries for IPFS then this blog post is for you!
