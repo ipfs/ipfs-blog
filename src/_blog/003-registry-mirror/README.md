@@ -1,15 +1,14 @@
 ---
 date: 2015-12-08
-url: /8-registry-mirror/
+url: "/8-registry-mirror/"
 title: Stellar Module Management - Install your Node.js modules using IPFS
-description:
+description: 
 author: David Dias
 draft: true
 tags:
-  - 'modules'
-  - 'conferences'
----
+- conferences
 
+---
 ![](img/node-interactive-logo.png)
 
 Node.js Interactive, the first Node.js conference organized by the Linux Foundation, happened on Dec 8-9 of 2015. There were hundreds of participants, and dozens of really amazing talks divided in 3 specific tracks: backend, frontend and IoT.
