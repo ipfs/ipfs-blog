@@ -2,6 +2,14 @@
 title: Tutorials
 type: Tutorial
 data:
+- name: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
+  title: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
+  path: https://proto.school/merkle-dags
+  date: 2021-01-14 07:00:00 +0000
+  tags:
+  - ipld
+  - " ProtoSchool"
+  - " DAG"
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
