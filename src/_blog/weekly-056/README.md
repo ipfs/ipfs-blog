@@ -2,10 +2,11 @@
 date: 2019-08-27
 url: /weekly-56/
 translationKey: ipfs-weekly-56
-tags: weekly
 title: IPFS Weekly 56
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

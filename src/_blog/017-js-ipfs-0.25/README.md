@@ -5,6 +5,8 @@ title: js-ipfs 0.25.0 released
 description:
 author: David Dias
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 Today, we've released js-ipfs 0.25.0. This release is mostly maintenance, bug fixing and bringing some of the internal components up to their latest versions.

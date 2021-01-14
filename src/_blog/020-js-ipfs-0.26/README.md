@@ -5,6 +5,9 @@ title: js-ipfs 0.26.0 released
 description:
 author: David Dias
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'AEgir'
 ---
 
 Today, we've released js-ipfs 0.26.0. This release brings bug fixes, performance improvements, git support, http gateway and more!
@@ -65,7 +68,7 @@ We have so much stuff in the pipeline. Some of it almost got into this release b
 
 ### Circuit Relay
 
-Circuit Relay is almost here. @dryajov showed us a demo of it working on the last IPFS All Hands and you can watch it on the uploaded recording in YouTube https://youtu.be/chAXj_vsR2s?t=25m01s. Since then, @dryajov @stebalian and @vyzo have been working on making sure interop is fully tested.
+Circuit Relay is almost here. @dryajov showed us a demo of it working on the last IPFS All Hands and you can watch it on the uploaded recording in YouTube https://youtu.be/chAXj_vsR2s?t=25m01s. Since then, @dryajov @stebalien and @vyzo have been working on making sure interop is fully tested.
 
 Follow the development on the _Awesome Endeavour PR_ - https://github.com/ipfs/js-ipfs/pull/830
 

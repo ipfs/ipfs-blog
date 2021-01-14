@@ -5,6 +5,9 @@ title: js-ipfs 0.36.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'breaking changes'
 ---
 
 > URL safe CIDs, refs commands, DOM File support and more!

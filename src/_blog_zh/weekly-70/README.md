@@ -2,9 +2,10 @@
 date: 2019-12-03
 url: /zh-cn/weekly-70/
 translationKey: ipfs-weekly-70
-tags: weekly
 title: IPFS 周报-70
 author: 默奕
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

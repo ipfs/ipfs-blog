@@ -1,10 +1,11 @@
 ---
 date: 2019-03-05
 url: /73-ipfs-weekly-32/
-tags: weekly
 title: IPFS Weekly 32
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋
@@ -33,7 +34,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Last week, [ipfs-webut v2.4](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.4.0) was released, including an improved and simplified file manager, some tweaks to usage analytics, and more. Read the full release notes for details.
+- Last week, [ipfs-webui v2.4](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.4.0) was released, including an improved and simplified file manager, some tweaks to usage analytics, and more. Read the full release notes for details.
 - The long awaited release of 🎉[go-ipfs 0.4.19 has arrived](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.19)🎉! This release includes loads of new features, perf improvements, refactors and more. Read the announcement and the looong changelog for the full rundown.
 - Did you know about [ipfs-publish](https://github.com/AuHau/ipfs-publish)? Created by Adam Uhlir, it allows you to enable automatic publishing of static webpages from Git repositories into IPFS. Check it out!
 

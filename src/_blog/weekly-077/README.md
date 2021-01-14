@@ -2,10 +2,14 @@
 date: 2020-02-11
 url: /weekly-77/
 translationKey: ipfs-weekly-77
-tags: weekly
 title: IPFS Weekly 77
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'project planning'
+  - 'content routing'
+  - 'Testground'
 ---
 
 # Welcome to the IPFS Weekly

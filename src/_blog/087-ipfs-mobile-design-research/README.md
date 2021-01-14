@@ -4,7 +4,9 @@ url: /2020-04-10-ipfs-mobile-design-research/
 title: IPFS Mobile Design Research
 description:
 author: Jim Kosem, Dietrich Ayala
-tags: mobile-design-guidelines, Mobile, Design, Research
+tags:
+  - 'mobile'
+  - 'research'
 ---
 
 The focus of development of IPFS to date has been primarily on desktop and server-class hardware. However, the growth of the internet for more than a decade has been almost entirely on mobile devices.

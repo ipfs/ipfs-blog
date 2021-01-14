@@ -5,7 +5,11 @@ title: 'IPFS 0.5 Content Routing Improvements: Deep Dive'
 description:
 author: Adin Schmahmann
 header_image: 104-dht-deep-dive.png
-tags: go-ipfs, 0.5 release
+tags:
+  - 'go-ipfs'
+  - content routing'
+  - 'DHT'
+  - 'Kademlia'
 ---
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">

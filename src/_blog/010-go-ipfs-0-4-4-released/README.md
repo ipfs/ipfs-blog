@@ -4,6 +4,9 @@ url: /21-go-ipfs-0-4-4-released/
 title: go-ipfs 0.4.4 has been released
 description:
 author: whyrusleeping & Lars Gierth
+tags:
+  - 'pinning'
+  - 'go-ipfs'
 ---
 
 [go-ipfs 0.4.4](https://dist.ipfs.io/#go-ipfs) has been released today,

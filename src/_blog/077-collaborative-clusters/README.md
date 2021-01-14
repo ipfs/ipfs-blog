@@ -5,6 +5,9 @@ title: Announcing collaborative clusters
 description:
 author: Hector Sanjuan
 header_image: 077-collaborative-clusters.png
+tags:
+  - 'IPFS Cluster'
+  - 'collaborative cluster'
 ---
 
 We are very excited to announce the first set of public _collaborative

@@ -4,6 +4,9 @@ url: /2020-02-01-async-await-refactor/
 title: The Async Await Refactor
 description:
 author: Alan Shaw
+tags:
+  - 'js-ipfs'
+  - 'async/await'
 ---
 
 We're on the cusp of completing a refactor in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove [Node.js streams](https://nodejs.org/dist/latest/docs/api/stream.html) and [pull streams](https://pull-stream.github.io/) from the code base entirely. We're using `async`/`await` everywhere (i.e. not the vanilla `then`/`catch` style of working with promises) and async iterables, allowing users to consume our streaming APIs with [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loops.

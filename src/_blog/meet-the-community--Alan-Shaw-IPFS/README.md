@@ -1,10 +1,13 @@
 ---
 date: 2019-05-20
 url: /meet-the-community-alan-shaw/
-tags: 'Meet the Community'
-title: Meet the Community, Alan Shaw @ IPFS / Protocol Labs
+title: 'Meet the Community: Alan Shaw @ IPFS'
 description:
 author: IPFS Events Team
+tags:
+  - 'community'
+  - 'interview'
+  - 'IPFS Camp'
 ---
 
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
@@ -73,5 +76,3 @@ Science Fair. I absolutely _love_ mad science and experimenting.
 ---
 
 Thank you for answering our questions, Alan, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
-
-> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to receive exclusive content and invites to upcoming events.

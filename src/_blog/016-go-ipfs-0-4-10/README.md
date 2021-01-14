@@ -3,7 +3,9 @@ date: 2017-06-28
 url: /27-go-ipfs-0-4-10/
 title: go-ipfs 0.4.10 released
 description:
-author: Jeromy Johnson
+author: Whyrusleeping
+tags:
+  - 'go-ipfs'
 ---
 
 Yesterday was the [3rd birthday of go-ipfs](https://github.com/ipfs/go-ipfs/commit/9d0e6a7ffb5deea2c8c8e555d7bf6bcab6fdc6ac).

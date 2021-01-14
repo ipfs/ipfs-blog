@@ -5,6 +5,9 @@ title: Hack with us at ETHDenver
 description:
 author: Jenn Turner
 header_image: 082-ethdenver-2020.png
+tags:
+  - 'conferences'
+  - 'community'
 ---
 
 ![IPFS at ETHDenver 2020](https://user-images.githubusercontent.com/50103/73981264-bbe13d00-48e6-11ea-8446-033257df44bc.png)

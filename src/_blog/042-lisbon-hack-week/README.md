@@ -1,10 +1,14 @@
 ---
 date: 2019-03-25
 url: /74-lisbon-hack-week/
-tags: hack week ipfs libp2p community researchers
 title: 2018 IPFS Hack Week in Lisbon
 description:
 author: André Cruz
+tags:
+  - 'conferences'
+  - 'community'
+  - 'research'
+  - 'libp2p'
 ---
 
 In the week of May 21, 2018, we hosted one more Hack Week in the sunny city of Lisbon.

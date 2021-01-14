@@ -4,6 +4,9 @@ url: /2019-08-29-pubsub-in-the-browser/
 title: PubSub in the browser with the JS IPFS HTTP API client
 description:
 author: Alan Shaw
+tags:
+  - 'pubsub'
+  - 'js-ipfs'
 ---
 
 > EXCELLENT NEWS! You can now pubsub with the JS IPFS HTTP API client in the BROWSER!

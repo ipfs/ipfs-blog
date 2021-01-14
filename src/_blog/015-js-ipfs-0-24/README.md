@@ -5,6 +5,8 @@ title: js-ipfs 0.24.0 released
 description:
 author: David Dias
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 I am pleased to announce to everyone in our community that js-ipfs 0.24.0 has been successfully launched! This new minor release brings new features, bug fixes and new examples so that you can jump in and start hacking your IPFS enabled apps right away!
@@ -18,7 +20,7 @@ I am pleased to announce to everyone in our community that js-ipfs 0.24.0 has be
 
 With this release, you won’t need to connect to Bootstrapper nodes manually, they will dialed from the start through their WebSockets endpoints. This also means that we’ve successfully deployed DNS support for multiaddrs, so that you can host your js-ipfs enabled app behind an HTTPS domain and dial to the Bootstrappers through WSS.
 
-### 🎈WebRTC is now a default transport
+### 🎈 WebRTC is now a default transport
 
 We now include WebRTC multiaddr by default on new js-ipfs init calls. This means that both your Node.js and Browser nodes will be able to dial each other using WebRTC and discover other nodes in the network through signalling Peer Discovery.
 

@@ -1,10 +1,12 @@
 ---
 date: 2019-01-24
 url: /65-london-hack-week-report/
-tags: hack week
 title: 2018 Q4 London Hack Week Summary
 description:
 author: David Dias
+tags:
+  - 'conferences'
+  - 'community'
 ---
 
 Back in October last year, the Go Core Dev Team for the IPFS, IPLD and libp2p projects spent some quality time together in London for a Hack Week. The overall feeling was excitment as it was the first time that many of the core contributors got the chance to meet in person.

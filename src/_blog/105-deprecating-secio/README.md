@@ -4,7 +4,10 @@ url: /2020-08-07-deprecating-secio/
 title: We're removing support for the SECIO security transport
 description:
 author: Jacob Heun
-tags: ipfs, libp2p, secio
+tags:
+  - 'libp2p'
+  - SECIO
+  - 'breaking change'
 ---
 
 We're removing support for the SECIO security transport in IPFS and libp2p. You can mitigate impact to your node(s) by updating to the latest versions. Newer nodes should not experience any signficant change when support is removed, but older nodes will start to experience performance degradation. Read on for more details.

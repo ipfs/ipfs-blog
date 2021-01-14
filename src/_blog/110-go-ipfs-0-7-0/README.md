@@ -5,7 +5,10 @@ title: IPFS 0.7.0, the SECIO retirement edition, is here!
 description:
 author: Jacob Heun & Adin Schmahmann
 avatarUrl: /header_images/blog-placeholder.png
-tags: go-ipfs, release
+tags:
+  - 'go-ipfs'
+  - 'breaking change'
+  - 'SECIO'
 ---
 
 In August we announced the [deprecation of the SECIO security transport](https://blog.ipfs.io/2020-08-07-deprecating-secio/). In this release we have disabled SECIO by default, which will have an impact on older nodes on the network. The best way to mitigate the impact of this change is to [upgrade your IPFS nodes](https://docs.ipfs.io/recent-releases/go-ipfs-0-7/update-procedure) as soon as possible! Not only will upgrading ensure you're using the latest security transports, you'll get access to all of the [performance improvements](https://blog.ipfs.io/2020-07-20-dht-deep-dive/) we've made this year to content routing.

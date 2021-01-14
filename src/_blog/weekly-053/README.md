@@ -2,10 +2,12 @@
 date: 2019-08-06
 url: /weekly-53/
 translationKey: ipfs-weekly-53
-tags: weekly
 title: IPFS Weekly 53
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'project planning'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

@@ -1,15 +1,16 @@
 ---
 date: 2020-10-20T23:00:00.000+00:00
-url: "/weekly-110/"
+url: '/weekly-110/'
 translationKey: ipfs-weekly-110
-tags:
-- weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 110
 description: ''
 author: Jenn Turner
-
+tags:
+  - 'weekly'
+  - 'Filecoin'
 ---
+
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
 
 ## Filecoin Mainnet takes off 🚀🚀🚀
@@ -32,10 +33,10 @@ Last week, the IPFS community virtually gathered together to talk about the late
 
 ## Brand new on IPFS
 
-* [Explore smarter data publishing](https://medium.com/qri-io/smarter-data-publishing-with-qri-4addb6917df8) with Qri, making publishing and sharing as easy as finding data.
-* [Berty](https://berty.tech/newsletter/news-47/) recently published their latest community update, including some news on gomobile-IPFS.
-* [MetaMask released Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785), allowing users to swap tokens directly from their wallets.
-* The latest [IPFS Podcast episode](https://twitter.com/FleekHQ/status/1316047508804640768?s=20) features Harrison Hines, talking about Fleek.
+- [Explore smarter data publishing](https://medium.com/qri-io/smarter-data-publishing-with-qri-4addb6917df8) with Qri, making publishing and sharing as easy as finding data.
+- [Berty](https://berty.tech/newsletter/news-47/) recently published their latest community update, including some news on gomobile-IPFS.
+- [MetaMask released Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785), allowing users to swap tokens directly from their wallets.
+- The latest [IPFS Podcast episode](https://twitter.com/FleekHQ/status/1316047508804640768?s=20) features Harrison Hines, talking about Fleek.
 
 ## People are building the coolest things with IPFS
 

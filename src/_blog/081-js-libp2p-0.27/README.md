@@ -5,6 +5,12 @@ title: js-libp2p 0.27 released
 description:
 author: Jacob Heun
 header_image: 081-js-libp2p-0.27.png
+tags:
+  - 'libp2p'
+  - 'async/await'
+  - 'docs'
+  - 'API'
+  - 'breaking change'
 ---
 
 It's heeeeere! After a very long road, and a lot of [lessons learned](/2020-02-06-big-refactors/), the Async Await refactor of js-libp2p has landed in the **0.27** release. If you're not familiar with the refactor you can read up more about the reasons and history in a recent blog post by the wonderful Alan Shaw, [The Async Await Refactor](/2020-02-01-async-await-refactor/). In addition to the efforts mentioned there, the refactor to js-libp2p includes a slew of additional improvements, the highlights of which you can read about below.

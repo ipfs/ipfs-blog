@@ -2,11 +2,12 @@
 date: 2020-07-22
 url: /weekly-97/
 translationKey: ipfs-weekly-97
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 97
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to IPFS Weekly #97

@@ -4,6 +4,8 @@ url: /054-go-ipfs-0.4.22/
 title: go-ipfs 0.4.22 released
 description:
 author: Steven Allen
+tags:
+  - 'go-ipfs'
 ---
 
 **We've released a PATCH version of go-ipfs based on 0.4.21 containing some critical fixes.**

@@ -4,6 +4,8 @@ url: /39-go-libp2p-6-0-0/
 title: go-libp2p 6.0.0 released
 description:
 author: Steven Allen
+tags:
+  - 'libp2p'
 ---
 
 # 🔦 go-libp2p 6.0.0 release notes

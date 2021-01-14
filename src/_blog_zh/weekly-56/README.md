@@ -2,9 +2,10 @@
 date: 2019-08-27
 url: /zh-cn/ipfs-weekly-56/
 translationKey: ipfs-weekly-56
-tags: weekly
 title: IPFS 周报-56
 author: 默奕
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

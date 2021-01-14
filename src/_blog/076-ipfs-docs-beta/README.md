@@ -5,6 +5,9 @@ title: The new IPFS Docs beta is live! 📚 🆕
 description:
 author: Jessica Schilling
 header_image: 076-ipfs-docs-beta.png
+tags:
+  - 'docs'
+  - 'community'
 ---
 
 **We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.

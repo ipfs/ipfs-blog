@@ -1,10 +1,12 @@
 ---
 date: 2019-03-26
 url: /76-ipfs-weekly-35/
-tags: weekly
 title: IPFS Weekly 35
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'CRDTs'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

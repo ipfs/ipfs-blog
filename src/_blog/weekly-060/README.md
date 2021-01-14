@@ -2,10 +2,11 @@
 date: 2019-09-24
 url: /weekly-60/
 translationKey: ipfs-weekly-60
-tags: weekly
 title: IPFS Weekly 60
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

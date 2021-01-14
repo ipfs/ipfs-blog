@@ -2,11 +2,13 @@
 date: 2020-07-07
 url: /weekly-96/
 translationKey: ipfs-weekly-96
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly’s Q2 2020 Recap Issue
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 # Welcome to the IPFS Weekly!

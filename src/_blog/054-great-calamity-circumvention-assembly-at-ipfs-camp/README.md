@@ -1,10 +1,13 @@
 ---
 date: 2019-08-12
 url: /2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/
-tags: IPFS, IPFS Camp
 title: The Great Calamity Circumvention Assembly at IPFS Camp 2019
 description:
 author: Alan Shaw
+tags:
+  - 'IPFS Camp'
+  - 'community'
+  - 'conferences'
 ---
 
 > This is the story of the Deep Dive sessions at IPFS Camp 2019 as told from the perspective of a DWeb historical researcher in the far future.

@@ -4,6 +4,8 @@ url: /2020-02-06-big-refactors/
 title: Big Refactors
 description:
 author: Alan Shaw
+tags:
+  - 'project planning'
 ---
 
 > If you're considering a refactor that'll touch **~70** interdependent repos, you've come to the right place for some perspective! This is the sister post to [The Async Await Refactor](/2020-02-01-async-await-refactor/) and covers some of the learnings of completing a big code refactor with a distributed team.

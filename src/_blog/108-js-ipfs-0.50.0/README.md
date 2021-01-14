@@ -5,6 +5,10 @@ title: js-IPFS 0.50.0 runs in shared webworkers and has faster pinning
 header_image: js-ipfs-placeholder.png
 description:
 author: Alex Potsides
+tags:
+  - 'js-ipfs'
+  - 'browsers'
+  - 'breaking change'
 ---
 
 # 🔦 Highlights

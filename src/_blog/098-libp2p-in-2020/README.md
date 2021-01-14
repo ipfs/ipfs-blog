@@ -1,11 +1,13 @@
 ---
 date: 2020-06-09
 url: /2020-06-09-libp2p-in-2020/
-tags: lipb2p
 header_image: blog-header-libp2p.png
 title: libp2p in 2020
 description:
 author: The libp2p Team
+tags:
+  - 'recap'
+  - 'libp2p'
 ---
 
 If you’re doing anything in the decentralized, peer-to-peer space, you’ve probably heard of libp2p - a modular networking stack for peer-to-peer applications. libp2p consists of many modular libraries from which p2p network developers can select and reuse just the protocols they need, while making it easy to upgrade and interoperate between applications. This helps web3 developers get up and running **faster**, build **more resilient** decentralized applications, and utilize **advanced features** like decentralized publish-subscribe and a distributed hash table.

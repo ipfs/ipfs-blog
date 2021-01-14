@@ -2,7 +2,6 @@
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai)
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 
 > Source for the [IPFS Blog](https://blog.ipfs.io)
 
@@ -21,29 +20,21 @@
 
 ## Usage
 
-The IPFS blog is a static website, built with `hugo`. We use `node`, `npm`, `less`, and a few other helpful modules to optimize the site for deployment.
-
-With `make`, [`node`](http://nodejs.org) and `npm` installed on your system, you can:
+TK (dependencies etc)
 
 **Run the site in dev mode**
 
 ```bash
-$ make dev
+$ instructions TK
 ...
 
-Web Server is available at http://localhost:1313/
+Web Server is available at http://localhost:8080/
 ```
-
-The first time you run it, it will install all the dependencies ✨, Then it will watch for changes in the source code and rebuild the site when you save your changes.
-
-Run it and open <http://localhost:1313/> in your browser, and start editing your new blog post.
-
-**Note**: In dev mode, you will see all posts, even ones where you set the `date` field to be in the future, say to schedule a post for a specific date. Posts with a `date` value in the future will not appear on the live site until that date arrives. There is a nightly CI job that runs at 00:00 UTC that will cause posts that are merged to master to go live on the `date` you set.
 
 **Build the production site**
 
 ```bash
-$ make
+$ instructions TK
 
 ...
 
@@ -54,55 +45,84 @@ This will build out the static site, optimized and ready for deployment, to the 
 
 ## Create a new blog post
 
-Each blog post is a markdown file, with a little metadata at the top (known as YAML front matter) to help us create the post index page.
+Forestry instructions TK, including info on metadata, tags, custom header image, and other best practices
 
-A blog post looks like this:
+## Canonical tag list
 
-```markdown
----
-date: 2019-01-24
-title: 2018 Q4 London Hack Week Summary
-author: David Dias
----
+Please note uppercase letters, where they exist, for consistency.
+If you need to add a tag, think carefully, and then add it to this list too.
 
-Back in October last year, the Go Core Dev Team for the IPFS, IPLD, and libp2p projects spent some quality time together.
-
-...
-```
-
-**To create your new post** find the last post in `content/post`, create a copy, and change the file name by incrementing the number in the title, and change the name to be a useful URL slug for your post. e.g.
-
-```bash
-$ cd content/post
-$ cp 66-london-hack-week-report.md 67-incredible-adventures.md
-```
-
-Now edit the metadata at the top of the file.
-
-- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io), please update at posting time to reflect current date - **required** (posts will not be displayed until this date on the live blog, but you will see them locally when using `make dev`)
-- `author` - used to give you credit for your words - **required**
-- `title` - used as the `h1` on the post-page, and the name of the post on the index page. **required**
-- `tags` - don't appear to be used right now, but set them anyway as we'll want to add a _see more posts like this one_ feature one day.
-- `url` - can be used to override the post URL if needed. Please start and end URLs with a `/` (`/my/url/`).
-- `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.io/). If no image is set, a [default header image](https://raw.githubusercontent.com/ipfs/blog/blog-picture-list/static/header_images/blog-placeholder.png) is shown. See [Custom header image](#custom-header-image) for more details.
-- `snippet` - the short string of text that is displayed for each post on the [blog homepage](https://blog.ipfs.io). If no snippet is set, the first ~20 words are shown.
-
-We have a process for creating and reviewing content before it gets published. **Please review [PIPELINE.md](./PIPELINE.md) for the details.**
-
-#### Custom header image
-
-Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.io/). To set an image:
-
-1. Create the image you want to use and crop it to `500px` by `250px`.
-1. Move the image into `static\header_images`.
-1. Rename the image to match the file name of your post. For example, the `085-announcing-rust-ipfs.md` post uses `085-announcing-rust-ipfs.png` as the header.
-1. In the post markdown, edit the front-matter to include the `header_image` variable:
-
-   ```markdown
-   header_image: 085-announcing-rust-ipfs.png
-   ```
-
-1. Push your changes.
+- AEgir
+- API
+- async/await
+- Bitswap
+- blockstore
+- bootstrap nodes
+- breaking change
+- browsers
+- case study
+- CDN
+- censorship
+- CID
+- CLI tools
+- collaborative cluster
+- community (include ecosystem/collabs here)
+- conferences
+- containerization
+- content routing
+- CRDTs
+- DAG
+- datastore
+- demo
+- DHT
+- DNSLink
+- Docker
+- docs
+- Drand
+- encryption
+- Ethereum
+- Filecoin
+- gateways
+- go-ipfs
+- Gossipsub
+- identity
+- infrastructure
+- interoperability
+- interview
+- IoT
+- IPFS Camp
+- IPFS Cluster
+- IPFS Companion
+- IPFS Desktop
+- IPFS Web UI
+- IPLD
+- IPNS
+- js-ipfs
+- Kademlia
+- Kubernetes
+- libp2p
+- Linux
+- MacOS
+- MFS
+- mobile (including Android, iOS)
+- official meetup
+- package managers
+- pinning
+- project planning
+- pubsub
+- QUIC
+- recap (annual, quarterly, etc)
+- research
+- Rust
+- SECIO
+- security
+- static publishing
+- streaming
+- Testground
+- tutorial
+- Windows
+- weekly
+- whitepaper
 
 ### Editing
 
@@ -116,14 +136,17 @@ Submit a Github PR with your changes, and request a review.
 
 ### Publishing
 
-CircleCI builds the static site, Pins it to our IPFS Cluster, and provides a preview link for a review on the Gateway. Merges to to `master` do the same steps plus update the DNSLink for the domain.
+Most publishing activities can take place in Forestry, but ...
+
+CircleCI builds the static site, pins it to our IPFS Cluster, and provides a preview link for a review on the gateway. Merges to to `master` do the same steps plus update the DNSLink for the domain.
 
 In order for CircleCI to build the site after your merge, you _must_ be a member of the [website-deployers](https://github.com/orgs/ipfs/teams/website-deployers/members), comms, GUI or admin teams on the IPFS GitHub org and you _must_ subscribe to the CircleCI builds for the ipfs/blog repository. Create a free CircleCI account, and then [subscribe to the repo here](https://circleci.com/gh/ipfs/workflows/blog/tree/master).
 
 After the CircleCI build completes, it will take a few minutes for the DNS update to propagate and your changes to show up on the website.
 
-### Translating 🌐✍️🖖
+### Translating 🌐✍️
 
+**To be replaced with VuePress-accurate translation instructions**
 Every post can be optionally translated by:
 
 1. Ensuring `config.toml` includes relevant [language code](http://www.rssboard.org/rss-language-codes) in `[languages]` section

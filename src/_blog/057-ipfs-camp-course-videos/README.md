@@ -4,6 +4,9 @@ url: /2019-09-18-ipfs-camp-course-videos/
 title: IPFS Camp course videos released 🍿
 description:
 author: Teri Chadbourne
+tags:
+  - 'IPFS Camp'
+  - 'conferences'
 ---
 
 If you've been following the updates from IPFS Camp here in the blog, you've likely already explored the videos from our [lightning talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks), [deep dives](https://github.com/ipfs/camp#-deep-dives), and [poster projects](https://github.com/ipfs/camp#-poster-projects). **Today we're excited to announce the release of the videos from our [core and elective courses](https://github.com/ipfs/camp#-core--elective-courses)**!

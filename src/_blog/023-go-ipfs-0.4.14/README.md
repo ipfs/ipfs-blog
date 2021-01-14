@@ -3,7 +3,9 @@ date: 2018-03-26
 url: /34-go-ipfs-0.4.14/
 title: go-ipfs 0.4.14 released
 description:
-author: whyrusleeping & victorbjelkholm
+author: Whyrusleeping, Victor Bjelkholm
+tags:
+  - 'go-ipfs'
 ---
 
 [go-ipfs 0.4.14](https://dist.ipfs.io/#go-ipfs) has been released today. Not

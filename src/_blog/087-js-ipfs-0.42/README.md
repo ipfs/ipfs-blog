@@ -5,6 +5,9 @@ title: js-ipfs 0.42.0 released
 header_image: js-ipfs-placeholder.png
 description:
 author: Alex Potsides
+tags:
+  - 'js-ipfs'
+  - 'breaking change'
 ---
 
 # 🔦 Highlights

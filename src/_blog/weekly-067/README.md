@@ -2,10 +2,12 @@
 date: 2019-11-12
 url: /weekly-67/
 translationKey: ipfs-weekly-67
-tags: weekly
 title: IPFS Weekly 67
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'project planning'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

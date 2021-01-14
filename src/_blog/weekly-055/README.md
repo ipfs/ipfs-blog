@@ -2,10 +2,11 @@
 date: 2019-08-20
 url: /weekly-55/
 translationKey: ipfs-weekly-55
-tags: weekly
 title: IPFS Weekly 55
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋
@@ -24,7 +25,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases! Check out the [IPFS blog for more details](https://blog.ipfs.io/2019-08-14-ipfs-release-process/).
 
-### The IPFS/LibP2P Help Desk is coming to ETHBerlin!
+### The IPFS/libP2P Help Desk is coming to ETHBerlin!
 
 To help developers quickly hop over hurdles and get back to building awesome hacks, [ETHBerlin will have a dedicated IPFS/libp2p help desk](https://medium.com/pinata/the-ipfs-libp2p-help-desk-is-coming-to-ethberlin-9754fadaf095) available for hackers to visit during the hackathon.
 

@@ -2,11 +2,12 @@
 date: 2020-08-19
 url: /weekly-101/
 translationKey: ipfs-weekly-101
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 101
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to IPFS Weekly #101

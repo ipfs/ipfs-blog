@@ -2,11 +2,13 @@
 date: 2020-09-02
 url: /weekly-103/
 translationKey: ipfs-weekly-103
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 103
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'security'
 ---
 
 # Welcome to IPFS Weekly #103

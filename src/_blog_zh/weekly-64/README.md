@@ -2,9 +2,10 @@
 date: 2019-10-23
 url: /zh-cn/weekly-64/
 translationKey: ipfs-weekly-64
-tags: weekly
 title: IPFS 周报-64
 author: 默奕
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

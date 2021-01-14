@@ -4,7 +4,9 @@ url: /2020-09-18-ipfs-meetup-sep2020/
 title: The IPFS Remember September 2020 Meetup
 description:
 author: Dietrich Ayala
-tags: ipfs, events, meetups
+tags:
+  - 'official meetup'
+  - 'community'
 ---
 
 Fall is upon us, and so the IPFS community met again to share tales of glory and challenges surmounted as we collectively work to overthrow the hegemony of location-based addressing and the notion that security can only be derived from trust models defined by centralized authorities!

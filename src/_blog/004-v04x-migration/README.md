@@ -1,10 +1,15 @@
 ---
 date: 2016-02-12
 url: /9-v04x-migration/
-tags: gateway, bootstrap, infrastructure
 title: Migrating ipfs.io from go-ipfs 0.3.x to 0.4.0
 description:
 author: Lars Gierth
+tags:
+  - 'gateways'
+  - 'bootstrap nodes'
+  - 'infrastructure'
+  - 'breaking change'
+  - 'go-ipfs'
 ---
 
 Good news everyone! We'll soon release go-ipfs 0.4.0,

@@ -5,6 +5,10 @@ title: New improvements to IPFS Bitswap for faster container image distribution
 description:
 author: Dirk McCormick (IPFS) and Edgar Lee (Netflix)
 header_image: 083-improved-bitswap-with-netflix.png
+tags:
+  - 'community'
+  - 'Bitswap'
+  - 'containerization'
 ---
 
 Web 2.0 services increasingly depend on large scale computing infrastructure to support fast iteration and deployment cycles. In order to build, test, and release software faster, these services are often seeking ways to upgrade their systems to take advantage of new learnings and tools from distributed peer-to-peer networks.

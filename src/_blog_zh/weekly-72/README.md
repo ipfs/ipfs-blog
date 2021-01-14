@@ -2,9 +2,11 @@
 date: 2019-12-17
 url: /zh-cn/weekly-72/
 translationKey: ipfs-weekly-72
-tags: weekly
 title: IPFS 回顾 2019 年第4季度 🎉
 author: 默奕
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 这是一个特殊的周刊，我们回顾了 IPFS 社区在今年过去几个月中所完成的工作。

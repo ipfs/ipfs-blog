@@ -1,10 +1,11 @@
 ---
 date: 2019-07-02
 url: /97-ipfs-weekly-48/
-tags: weekly
 title: IPFS Weekly 48
 description:
 author: Jenn Turner
+tags:
+  - 'IPFS Camp'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

@@ -1,10 +1,12 @@
 ---
 date: 2019-07-09
 url: /98-ipfs-weekly-49/
-tags: weekly
 title: Recapping IPFS in Q2 2019 🎉
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 We’re officially halfway through 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.io/) community has accomplished so far in 2019. From milestones like shipping IPFS Camp and new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.

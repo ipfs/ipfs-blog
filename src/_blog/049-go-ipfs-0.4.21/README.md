@@ -4,6 +4,10 @@ url: /93-go-ipfs-0.4.21/
 title: go-ipfs 0.4.21 released
 description:
 author: Molly Mackinlay
+tags:
+  - 'go-ipfs'
+  - 'SECIO'
+  - 'breaking change'
 ---
 
 > Key bug fixes, experimental TLS1.3 support, reduced memory usage, base32 CIDv1 CIDs and more!

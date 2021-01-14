@@ -2,11 +2,13 @@
 date: 2020-10-07
 url: /weekly-108/
 translationKey: ipfs-weekly-108
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly’s Q3 2020 Recap Issue
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 # Welcome to the IPFS Weekly!

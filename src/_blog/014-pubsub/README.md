@@ -3,7 +3,9 @@ date: 2017-05-17
 url: /25-pubsub/
 title: Take a look at pubsub on IPFS
 description:
-author: Jeromy Johnson
+author: Whyrusleeping
+tags:
+  - 'pubsub'
 ---
 
 We recently merged a simple, experimental pubsub implementation into IPFS. This

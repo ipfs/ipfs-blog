@@ -2,11 +2,12 @@
 date: 2020-06-24
 url: /weekly-94/
 translationKey: ipfs-weekly-94
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 94
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to IPFS Weekly #94

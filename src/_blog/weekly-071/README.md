@@ -2,10 +2,11 @@
 date: 2019-12-10
 url: /weekly-71/
 translationKey: ipfs-weekly-71
-tags: weekly
 title: IPFS Weekly 71
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

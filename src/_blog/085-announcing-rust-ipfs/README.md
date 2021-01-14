@@ -5,6 +5,9 @@ title: Announcing Rust IPFS, and a call for contributors
 description:
 author: Mark Robert Henderson and Molly Mackinlay
 header_image: 085-announcing-rust-ipfs.png
+tags:
+  - 'Rust'
+  - 'community'
 ---
 
 <p align="center">

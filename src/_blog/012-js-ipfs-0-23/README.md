@@ -5,6 +5,12 @@ title: js-ipfs 0.23.0 released
 description:
 author: David Dias & Victor Bjelkholm
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'API'
+  - 'interoperability'
+  - 'js-ipfs'
+  - 'bootstrap nodes'
+  - 'datastore'
 ---
 
 Today we're happy to announce that we have released js-ipfs version 0.23.0.

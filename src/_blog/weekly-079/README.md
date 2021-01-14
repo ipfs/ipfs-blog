@@ -2,10 +2,12 @@
 date: 2020-02-25
 url: /weekly-79/
 translationKey: ipfs-weekly-79
-tags: weekly
 title: IPFS Weekly 79
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'streaming'
 ---
 
 # Welcome to the IPFS Weekly

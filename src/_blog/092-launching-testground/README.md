@@ -5,7 +5,8 @@ title: Launching Testground v0.5
 description:
 author: Raul Kripalani
 header_image: 092-launching-testground.png
-tags: testground, release
+tags:
+  - 'Testground'
 ---
 
 ![Launching Testground](/header_images/092-launching-testground.png)

@@ -4,6 +4,9 @@ url: /78-ipfs-2019-roadmap/
 title: 'Achievement Unlocked: The 2019 IPFS Roadmap'
 description:
 author: Molly Mackinlay
+tags:
+  - 'project planning'
+  - 'community'
 ---
 
 In Q4 2018, we undertook a new planning process for the IPFS project to more clearly define our [vision](https://github.com/ipfs/roadmap#ipfs-mission-statement), [goals](https://github.com/ipfs/roadmap#2019-goal-expanded), and [roadmap](https://github.com/ipfs/roadmap#2019-epics) for the year. Our motivation was to improve coordination between our expanding working groups and to focus our efforts for the year on some larger-scale improvements to the IPFS network around scalability, performance, and usability to unlock the next tiers of adoption and usage. 😇

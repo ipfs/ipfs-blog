@@ -4,6 +4,9 @@ url: /44-ipld-explorer-cli-0-14/
 title: ipld-explorer-cli 0.14 released
 description:
 author: Alan Shaw
+tags:
+  - 'IPLD'
+  - 'CLI tools'
 ---
 
 There's a new version of the [ipld-explorer-cli](http://npm.im/ipld-explorer-cli) tool for exploring [IPLD](https://ipld.io/) data! Let's break down those acronyms and explain why I'm so excited about this.

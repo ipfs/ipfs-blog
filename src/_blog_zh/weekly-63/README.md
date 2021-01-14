@@ -2,9 +2,11 @@
 date: 2019-10-15
 url: /zh-cn/ipfs-weekly-63/
 translationKey: ipfs-weekly-63
-tags: weekly
 title: 2019 第三季度 IPFS 回顾 🎉
 author: 默奕
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 每一天都使我们接近 2019 年底！为了庆祝，我们整理了一个非常特殊的问题，回顾 [IPFS](https://ipfs.io/) 社区在 2019 年迄今已完成的所有工作。从里程碑意义到重新混合工作组和发布新版本，再到许多敬畏的（和新的！ ）加入我们的贡献者，以及今年余下的时间会发生什么。我们希望您喜欢本季度回顾！

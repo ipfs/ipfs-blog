@@ -5,6 +5,8 @@ title: js-ipfs 0.32.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 A pinch of IPNS, some chunking of files and you'll have a delicious IPFS stew for supper.

@@ -5,6 +5,8 @@ title: js-ipfs 0.38.0 released
 description:
 author: Alex Potsides
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 > Garbage collection, gossipsub, IPNS support for ipfs resolve, oh my!

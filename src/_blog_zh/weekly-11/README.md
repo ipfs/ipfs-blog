@@ -2,9 +2,10 @@
 date: 2018-09-25
 url: /zh-cn/45-ipfs-weekly-11/
 translationKey: 45-ipfs-weekly-11
-tags: weekly
 title: IPFS 周报-11
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎回到 IPFS 周报！👋

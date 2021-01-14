@@ -5,6 +5,9 @@ title: js-ipfs 0.40.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'CID'
 ---
 
 # 🔦 Highlights

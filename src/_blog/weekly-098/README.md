@@ -2,11 +2,13 @@
 date: 2020-07-29
 url: /weekly-98/
 translationKey: ipfs-weekly-98
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 98
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'IPFS Cluster'
 ---
 
 # Welcome to IPFS Weekly #98

@@ -1,10 +1,12 @@
 ---
 date: 2015-11-27
 url: /3-ipscend/
-tags: codec
 title: ipscend - Publish static web content to IPFS
 description:
 author: David Dias
+tags:
+  - 'static publishing'
+  - 'tutorial'
 ---
 
 [![](img/ipscend.png)](https://github.com/diasdavid/ipscend)

@@ -3,7 +3,11 @@ date: 2018-05-19
 url: /37-ipfs-conf-dev-meetings-and-user-registry/
 title: 'Announcements: IPFS Conf,  Developer Meetings for IPFS & libp2p and a User Registry'
 description:
-author: flyingzumwalt
+author: Matt Zumwalt
+tags:
+  - 'conferences'
+  - 'IPFS Camp'
+  - 'community'
 ---
 
 > **Update** The target timeline for IPFS Conf has been changed to 2019. The original post listed a tentative date of November 2018.

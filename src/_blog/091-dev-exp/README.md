@@ -4,7 +4,9 @@ url: /2020-05-05-developer-experience/
 title: Improving the IPFS Developer experience
 description:
 author: Hector Sanjuan
-tags: Developer, Experience
+tags:
+  - 'project planning'
+  - 'community'
 ---
 
 Since its founding in 2014, the IPFS project has been stewarded by the [core IPFS working groups](https://github.com/ipfs/team-mgmt/blob/master/TEAMS_ROLES_STRUCTURES.md#active-teams), including developers, designers, researchers and project managers that work very hard towards its [success](https://blog.ipfs.io/weekly-84/).

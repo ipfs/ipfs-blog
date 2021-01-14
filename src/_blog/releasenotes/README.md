@@ -8,6 +8,18 @@ data:
     date: 2021-01-11T07:00:00.000+00:00
     tags:
       - 'IPFS Companion'
+  - name: 'go-libp2p 0.13.0'
+    title: 'go-libp2p 0.13.0'
+    path: https://github.com/libp2p/go-libp2p/releases/tag/v0.13.0
+    date: 2020-12-19T00:00:00.000+00:00
+    tags:
+      - 'libp2p'
+  - name: 'js-libp2p 0.30.0'
+    title: 'js-libp2p 0.30.0'
+    path: https://github.com/libp2p/js-libp2p/releases/tag/v0.30.0
+    date: 2020-12-16T00:00:00.000+00:00
+    tags:
+      - 'libp2p'
   - name: 'js-ipfs 0.52.3'
     title: 'js-ipfs 0.52.3'
     path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.52.3

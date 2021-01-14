@@ -2,9 +2,10 @@
 date: 2019-08-20
 url: /zh-cn/ipfs-weekly-55/
 translationKey: ipfs-weekly-55
-tags: weekly
 title: IPFS 周报-55
 author: 默奕
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

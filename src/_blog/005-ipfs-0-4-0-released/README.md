@@ -1,10 +1,15 @@
 ---
 date: 2016-04-07
 url: /14-ipfs-0-4-0-released/
-tags: modules
 title: go-ipfs 0.4.0 has been released
 description:
-author: Kyle Drake and @whyrusleeping
+author: Kyle Drake, Whyrusleeping
+tags:
+  - 'modules'
+  - 'breaking change'
+  - 'gateways'
+  - 'bootstrap nodes'
+  - 'go-ipfs'
 ---
 
 [go-ipfs 0.4.0](http://dist.ipfs.io/#go-ipfs) has been

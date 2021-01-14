@@ -1,10 +1,11 @@
 ---
 date: 2019-02-12
 url: /69-ipfs-weekly-29/
-tags: weekly
 title: IPFS Weekly 29
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋
