@@ -19,9 +19,7 @@ Now that the brainstorm period is over, all we can say is: **THANK YOU**! We’v
 
 The full list of themes and discussion can be found in the [IPFS roadmap repo](https://github.com/ipfs/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3A%222021+Theme+Proposal%22).
 
-<div style="width:70%;margin-left:15%;padding-top:0px;padding-bottom:2em">
-<img alt="Proposals" src="/proposals.png">
-</div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/proposals.png"> </div>
 
 <figcaption style="text-align:center;font-style:italic;padding-bottom:2em">Just a handful of the proposed themes</figcaption>
 
