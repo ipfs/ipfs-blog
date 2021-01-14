@@ -8,9 +8,7 @@ description:
 author: Dietrich Ayala
 ---
 
-<p style="text-align: center;">
-   ![IPFS logo and ION logo](./ipfs-ion-header.png)
-</p>
+![IPFS logo and ION logo](./ipfs-ion-header.png)
 
 Identity is a key part of how we all interact with each other on the internet every day—sometimes every moment of every day. And sometimes each raging moment as we do the “forgot your password?” dance yet again. Regardless, forging a path forward for user-controlled online identity is a table-stakes requirement for the dweb to succeed.
 
@@ -22,17 +20,13 @@ However, today we’re celebrating the launch of a decentralized identity protoc
 
 Microsoft has been increasingly present in open-source tools and services in the past few years, and has now [launched a standards-based decentralized identity service called ION](https://techcommunity.microsoft.com/t5/identity-standards-blog/ion-booting-up-the-network/ba-p/1441552).
 
-<p style="text-align: center;">
-   ![ION logo](./ion-logo.png)
-</p>
+![ION logo](./ion-logo.png)
 
 ION has been under development for over a year, and is an instance implementation of [Sidetree (a blockchain-agnostic distributed PKI protocol)](https://github.com/decentralized-identity/sidetree) that runs on the Bitcoin blockchain.
 
 And it stores transaction data on IPFS.
 
-<p style="text-align: center;">
-   ![ION architecture diagram](./ion-architecture.png)
-</p>
+![ION architecture diagram](./ion-architecture.png)
 
 Like HTTP, IPFS does not have user identity built into the protocol. However, IPFS provides resiliency, validation, and future-proofing features that HTTP cannot:
 

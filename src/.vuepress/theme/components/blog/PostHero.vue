@@ -4,7 +4,7 @@
       <div class="pt-20 pb-10 grid-margins">
         <Breadcrumbs :crumbs="breadcrumbs" class="mt-8" />
         <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
-          <div class="flex flex-col">
+          <div class="flex flex-col md:pr-8">
             <h1 class="type-h1">{{ title }}</h1>
             <router-link
               v-if="author && author.name"
@@ -21,9 +21,9 @@
               {{ resolvedDate }}
             </time>
           </div>
-          <div class="mt-4 md:mt-0 h-full">
+          <div class="mt-4 md:mt-0">
             <LazyImage
-              img-class="h-full object-cover"
+              img-class="object-contain"
               :alt="$page.title"
               src-placeholder="/images/blog/og/default.png"
               :src="`/header_images/${image ? image : 'blog-placeholder.png'}`"
