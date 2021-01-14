@@ -8,7 +8,6 @@
       width="100%"
       scrolling="no"
       referrerpolicy="no-referrer-when-downgrade"
-      height="38px"
     />
   </div>
 </template>
