@@ -26,7 +26,7 @@ With `js-IPFS@0.51.0` types are now a first-class citizen within the codebase.  
 Going forward all new code will be required to have types so to help contributors with that [aegir](https://github.com/ipfs/aegir) recently added stricter linting for JSDoc comments and we also [added a typecheck github action](https://github.com/ipfs/js-ipfs/pull/3327) to `js-IPFS` so any errors or missing types should be easy to spot in a PR.
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">
-<img src="/111-js-ipfs-0-51-0/types.png">
+<img src="/types.png">
 </p>
 
 ## SECIO Removal
