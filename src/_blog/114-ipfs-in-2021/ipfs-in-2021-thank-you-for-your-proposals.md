@@ -11,7 +11,7 @@ author: David Choi, Kadir Topal
 ---
 In November, [we asked the IPFS community to nominate and discuss potential themes](/2020-11-19-community-rfp/) for the project to tackle in 2021. It’s been amazing to see the insight, creativity, and passion from this amazing community to better understand where the IPFS Project needs to improve, upgrade, and focus in 2021. Using the thinking surfaced, we hope to help synthesize a few broad areas of work that the project could focus on next year (and even beyond) - and share those back with the community for feedback in January.
 
-Now that the brainstorm period is over, all we can say is: **THANK YOU**! We’ve been blown away by the level of participation, thoughtfulness in discussion, and time and energy spent to help chart our shared course and priorities for next year. In just ~3 weeks, the community contributed:
+Now that the brainstorm period is over, all we can say is: **THANK YOU**! We’ve been blown away by the level of participation, thoughtfulness in discussion, and time and energy spent to help chart our shared course and priorities for next year. In just \~3 weeks, the community contributed:
 
 * **27** theme proposals, spanning all areas of the protocol from performance improvements to new features to tooling you’d like to see
 * **70+** comments on and 85+ reactions to these proposals
@@ -19,7 +19,7 @@ Now that the brainstorm period is over, all we can say is: **THANK YOU**! We’v
 
 The full list of themes and discussion can be found in the [IPFS roadmap repo](https://github.com/ipfs/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3A%222021+Theme+Proposal%22).
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-top:0px;padding-bottom:2em">
+<div style="width:70%;margin-left:15%;padding-top:0px;padding-bottom:2em">
 <img alt="Proposals" src="/proposals.png">
 </div>
 
@@ -27,13 +27,13 @@ The full list of themes and discussion can be found in the [IPFS roadmap repo](h
 
 But these numbers alone don’t sufficiently illustrate the quality of discourse that was seen! The discussion on topics was rich, connecting experts and collaborators across the IPFS community. [We had nuances raised around optimal content routing strategies](https://github.com/ipfs/roadmap/issues/76)...
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-top:0px;padding-bottom:2em">
+<div style="width:70%;margin-left:15%;margin-top:-1em;padding-bottom:2em">
 <img alt="Proposals" src="/content-routing.png">
 </div>
 
 ...saw [discussion on various ways to integrate IPFS into browsers](https://github.com/ipfs/roadmap/issues/81)...
 
-<div style="width:70%;margin-left:15%;margin-top:-1em;padding-top:0px;padding-bottom:2em">
+<div style="width:70%;margin-left:15%;margin-top:-1em;padding-bottom:2em">
 <img alt="Proposals" src="/browser-integration.png">
 </div>
 
