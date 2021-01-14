@@ -44,7 +44,9 @@ export default {
     showComments: null,
   }),
   mounted() {
-    this.showComments = window.location.hostname === 'blog.ipfs.io'
+    this.showComments =
+      window.location.hostname === 'blog.ipfs.io' ||
+      window.location.hostname === 'ipfsblog-vuepress.netlify.app'
   },
 }
 </script>
