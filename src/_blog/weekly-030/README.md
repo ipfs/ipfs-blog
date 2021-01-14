@@ -1,10 +1,12 @@
 ---
 date: 2019-02-19
 url: /70-ipfs-weekly-30/
-tags: weekly
 title: IPFS Weekly 30
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'Docker'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

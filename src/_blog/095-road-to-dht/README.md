@@ -5,7 +5,10 @@ title: The Road to the New DHT
 description:
 author: Adin Schmahmann
 header_image: 095-road-to-dht.png
-tags: go-ipfs, 0.5 release
+tags:
+  - 'go-ipfs'
+  - 'DHT'
+  - 'Testground'
 ---
 
 <p style="max-width:1000px;margin-left:auto;margin-right:auto;">

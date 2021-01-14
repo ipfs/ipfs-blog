@@ -2,11 +2,12 @@
 date: 2020-09-09
 url: /weekly-104/
 translationKey: ipfs-weekly-104
-tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 104
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!

@@ -2,11 +2,12 @@
 date: 2020-08-12
 url: /weekly-100/
 translationKey: ipfs-weekly-100
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 100 🎉
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to IPFS Weekly #100
@@ -21,7 +22,7 @@ Soon, support for the SECIO security transport in IPFS and libp2p will be remove
 
 ## Join us at the Randomness Summit Thursday
 
-A one day conference about Randomness Beacons: the research done, the current use-cases and challenges and the systems available, all taking place this week! Speakers include Juan Benet, Vitalik Buterin, Justin Drake and others, and the event is free to attend.
+A one-day conference about Randomness Beacons: the research done, the current use-cases and challenges and the systems available, all taking place this week! Speakers include Juan Benet, Vitalik Buterin, Justin Drake and others, and the event is free to attend.
 
 [Register now](https://randomness2020.com/)
 

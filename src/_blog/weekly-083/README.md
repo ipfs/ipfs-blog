@@ -2,11 +2,12 @@
 date: 2020-03-31
 url: /weekly-83/
 translationKey: ipfs-weekly-83
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 83
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to the IPFS Weekly

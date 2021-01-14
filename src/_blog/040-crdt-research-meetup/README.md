@@ -1,10 +1,14 @@
 ---
 date: 2019-03-22
 url: /67-crdt-research-meetup/
-tags: crdt research meetup videos ipfs
 title: 2018 CRDT Research Meetup - Lisbon
 description:
 author: Pedro Teixeira
+tags:
+  - 'conferences'
+  - 'community'
+  - 'CRDTs'
+  - 'research'
 ---
 
 We hosted the first Lisbon CRDT Research Meetup on April 2018. It was a brilliant event with the presence of many of the authors of the CRDT research literature and representatives from the Labs it originated, namely: [HASLab](https://haslab.uminho.pt/), [NOVA-LINCS](http://nova-lincs.di.fct.unl.pt/), [FCT](https://www.fct.unl.pt/), [UMinho](https://uminho.pt/), [UNL](https://www.unl.pt/).

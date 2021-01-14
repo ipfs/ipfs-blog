@@ -1,10 +1,13 @@
 ---
 date: 2019-05-06
 url: /meet-the-community-edgar-lee/
-tags: 'Meet the Community'
-title: Meet the Community, Edgar Lee @ Netflix
+title: 'Meet the Community: Edgar Lee @ Netflix'
 description:
 author: IPFS Events Team
+tags:
+  - 'IPFS Camp'
+  - 'community'
+  - 'interview'
 ---
 
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.

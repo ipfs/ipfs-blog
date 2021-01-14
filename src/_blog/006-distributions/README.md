@@ -1,8 +1,7 @@
 ---
 date: 2016-06-01
 url: /17-distributions/
-tags: dist, distributions
-title: IPFS distributions
+title: IPFS Distributions Website
 description:
 author: Richard Littauer
 ---

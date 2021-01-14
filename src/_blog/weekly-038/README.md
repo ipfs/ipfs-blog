@@ -1,10 +1,12 @@
 ---
 date: 2019-04-16
 url: /82-ipfs-weekly-38/
-tags: weekly
 title: IPFS Weekly 38
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'project planning'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

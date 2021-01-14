@@ -4,6 +4,8 @@ url: /55-js-libp2p-0-24/
 title: js-libp2p 0.24.0 released
 description:
 author: Jacob Heun
+tags:
+  - 'libp2p'
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">js-libp2p v0.24.0 is here <a href="https://twitter.com/hashtag/libp2p?src=hash&amp;ref_src=twsrc%5Etfw">#libp2p</a> <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a>! We’ve added support for custom routers, turned relay on by default and threw in some extra goodies and improvements. Highlights are here: <a href="https://t.co/4UHH80rOfp">https://t.co/4UHH80rOfp</a></p>&mdash; Jacob Heun (@jacobheun) <a href="https://twitter.com/jacobheun/status/1063430636189437954?ref_src=twsrc%5Etfw">November 16, 2018</a></blockquote>

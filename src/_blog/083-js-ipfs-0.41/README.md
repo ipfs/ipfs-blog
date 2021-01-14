@@ -5,6 +5,10 @@ title: js-ipfs 0.41.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'async/await'
+  - 'breaking change'
 ---
 
 # 🔦 Highlights

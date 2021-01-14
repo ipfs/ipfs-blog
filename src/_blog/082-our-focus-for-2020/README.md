@@ -5,6 +5,8 @@ title: IPFS Project Focus for 2020
 description:
 author: Molly Mackinlay
 header_image: 082-our-focus-for-2020.png
+tags:
+  - 'project planning'
 ---
 
 _"The mission of IPFS is to create a resilient, upgradeable, open network to preserve and grow humanity’s knowledge."_

@@ -5,7 +5,13 @@ title: IPFS Pinning Summit Recap
 description:
 author: Molly Mackinlay & Pooja Shah
 header_image: 093-ipfs-pinning-summit-recap.png
-tags: ipfs, infrastructure, summit, pinning, filecoin
+tags:
+  - 'infrastructure'
+  - 'pinning'
+  - 'Filecoin'
+  - 'conferences'
+  - 'community'
+  - 'project planning'
 ---
 
 <p align="center">

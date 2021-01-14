@@ -4,7 +4,9 @@ url: /2020-08-14-ipfs-meetup-aug2020/
 title: Reliving the IPFS August 2020 Meetup
 description:
 author: Emily Vaughan, Dietrich Ayala
-tags: ipfs, events
+tags:
+  - 'official meetup'
+  - 'community'
 ---
 
 The IPFS community got together last week for the August virtual meetup. This event continues a series we started with the [IPFS 0.5 Launch Meetup](https://www.youtube.com/watch?v=G8FvB_0HlCE), and continued with the IPFS Pinning Summit and a IPFS June Meetup to kick off the summer.

@@ -5,6 +5,8 @@ title: js-libp2p 0.25.0 released
 description:
 author: Jacob Heun
 header_image: 045-js-libp2p-0.25.png
+tags:
+  - 'libp2p'
 ---
 
 > Save the routers, save the world.

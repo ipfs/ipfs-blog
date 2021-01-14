@@ -4,6 +4,10 @@ url: /1-run-ipfs-on-docker/
 title: Run IPFS in a Docker container
 description:
 author: Kyle Drake
+tags:
+  - 'Docker'
+  - 'containerization'
+  - 'tutorial'
 ---
 
 In recent years, Docker and a few other projects have redefined how we run server applications. In the future, we might be running containerized apps in our personal devices. At its core, this fast-paced improvement is a combination of good interfaces to standardize how to do things, and great tooling to make using containers easy.

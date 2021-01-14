@@ -1,10 +1,12 @@
 ---
 date: 2019-07-31
 url: /2019-07-31-operation-task-force/
-tags: IPFS, Project
 title: IPFS Project Q3 Priorities & Working Groups
 description:
 author: Dietrich Ayala
+tags:
+  - 'project planning'
+  - 'community'
 ---
 
 IPFS is growing! This year we've grown immensely in network size, number of apps building with IPFS, number of end-users of IPFS-powered apps, and the number of developers contributing to the codebase.

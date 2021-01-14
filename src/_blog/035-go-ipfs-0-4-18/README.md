@@ -3,7 +3,13 @@ date: 2018-11-07
 url: /53-go-ipfs-0-4-18/
 title: go-ipfs 0.4.18 released
 description:
-author: Steven Allen and Erik Ingenito
+author: Steven Allen, Erik Ingenito
+tags:
+  - 'go-ipfs'
+  - 'QUIC'
+  - 'pubsub'
+  - 'Gossipsub'
+  - 'IPFS Web UI'
 ---
 
 [go-ipfs 0.4.18](https://dist.ipfs.io/#go-ipfs) has been released! This is one of largest go-ipfs releases to date; 3 months in the making. _Thanks to all our contributors for your awesome work!_

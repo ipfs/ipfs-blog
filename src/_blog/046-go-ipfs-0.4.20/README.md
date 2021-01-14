@@ -4,6 +4,10 @@ url: /83-go-ipfs-0-4-20/
 title: go-ipfs 0.4.20 released
 description:
 author: Steven Allen
+tags:
+  - 'go-ipfs'
+  - 'Docker'
+  - 'IPFS Web UI'
 ---
 
 We're excited to release go-ipfs 0.4.20, trail-blazing the way to the distributed web. This release includes some critical

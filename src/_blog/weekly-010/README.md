@@ -1,10 +1,12 @@
 ---
 date: 2016-05-08
 url: /16-ipfs-weekly-10/
-tags: weekly
 title: IPFS Weekly 10
 description:
 author: Richard Littauer
+tags:
+  - 'weekly'
+  - 'AEgir'
 ---
 
 [IPFS](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](https://github.com/ipfs) or join us on [IRC](https://webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -91,7 +93,7 @@ go-ipfs has support for restricting peer connections to certain IP address range
 
 We had the first ever IPFS meetup in Cambridge, at MIT. It was sponsored by [Consensys](https://consensys.net), and hosted by the [MIT Bitcoin Club](http://bitcoin.mit.edu/). [@jbenet](https://github.com/jbenet), [@nicola](https://github.com/nicola), and [@CReckhow](https://twitter.com/CReckhow) each gave talks. A full writeup will appear on the blog as soon as we have edited the videos and posted them on the IPFS YouTube channel. We'll let you know when that happens, here.
 
-_Photo by [@nicocesar\_](https://twitter.com/nicocesar_)._
+_Photo by [@nicocesar\_](https://twitter.com/nicocesar_).\_
 
 ### Peergos
 

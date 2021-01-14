@@ -4,6 +4,10 @@ url: /2019-10-03-ipfs-camp-sci-fi-fair-videos/
 title: IPFS Camp Sci-Fi videos 🧬
 description:
 author: Arkadiy Kukarkin
+tags:
+  - 'IPFS Camp'
+  - 'conferences'
+  - 'community'
 ---
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

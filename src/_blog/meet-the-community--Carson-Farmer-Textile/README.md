@@ -1,10 +1,13 @@
 ---
 date: 2019-05-13
 url: /meet-the-community-carson-farmer/
-tags: 'Meet the Community'
-title: Meet the Community, Carson Farmer @ Textile
+title: 'Meet the Community: Carson Farmer @ Textile'
 description:
 author: IPFS Events Team
+tags:
+  - 'community'
+  - 'interview'
+  - 'IPFS Camp'
 ---
 
 > With the first-ever IPFS Camp right around the corner, we’re interviewing some of the community members who are making this highly anticipated event a reality.
@@ -41,5 +44,3 @@ I think for me, IPFS Camp is just going to be a great opportunity to get some di
 ---
 
 Thank you for answering our questions, Carson, looking forward to meet you at [IPFS Camp](https://camp.ipfs.io)
-
-> 💌 This interview first appeared in the [IPFS Events newsletter](http://eepurl.com/giMQzj), subscribe to be notified and receive invites to upcoming events.

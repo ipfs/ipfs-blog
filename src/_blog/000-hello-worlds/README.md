@@ -4,6 +4,8 @@ url: /0-hello-worlds/
 title: Hello Worlds
 description:
 author: Juan Benet
+tags:
+  - 'community'
 ---
 
 ```sh
@@ -15,7 +17,7 @@ hello worlds
 
 Greetings Internet!
 
-This post kicks off the official IPFS (InterPlanetary File System) Blog. This is long overdue-- the project is many months old. We will be making a series of posts explaining various aspects of IPFS, its development, our growing community, and so on. This blog will also be used to make all important announcements henceforth.
+This post kicks off the official IPFS (InterPlanetary File System) Blog. This is long overdue -- the project is many months old. We will be making a series of posts explaining various aspects of IPFS, its development, our growing community, and so on. This blog will also be used to make all important announcements henceforth.
 
 <!--more-->
 

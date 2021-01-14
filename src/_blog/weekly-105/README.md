@@ -2,11 +2,13 @@
 date: 2020-09-16
 url: /weekly-105/
 translationKey: ipfs-weekly-105
-tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 105
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'case study'
 ---
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀

@@ -1,10 +1,11 @@
 ---
 date: 2019-07-16
 url: /weekly-50/
-tags: weekly
 title: IPFS Weekly 50
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

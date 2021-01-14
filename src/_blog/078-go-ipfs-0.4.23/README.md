@@ -4,6 +4,8 @@ url: /2020-01-30-go-ipfs-0-4-23/
 title: go-ipfs 0.4.23 released
 description:
 author: Alan Shaw
+tags:
+  - 'go-ipfs'
 ---
 
 > Would sir/madam care for another patch release while they wait?

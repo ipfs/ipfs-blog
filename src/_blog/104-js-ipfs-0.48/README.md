@@ -5,6 +5,9 @@ title: js-IPFS 0.48.0 released with connectivity improvements and smaller blocks
 header_image: js-ipfs-placeholder.png
 description:
 author: Alex Potsides
+tags:
+  - 'js-ipfs'
+  - 'blockstore'
 ---
 
 # 🔦 Highlights

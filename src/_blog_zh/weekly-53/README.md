@@ -2,9 +2,11 @@
 date: 2019-08-06
 url: /zh-cn/ipfs-weekly-53/
 translationKey: ipfs-weekly-53
-tags: weekly
 title: IPFS 周报-53
 author: 默奕
+tags:
+  - 'weekly'
+  - 'project planning'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

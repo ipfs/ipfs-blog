@@ -1,10 +1,11 @@
 ---
 date: 2019-06-18
 url: /95-ipfs-weekly-46/
-tags: weekly
 title: IPFS Weekly 46
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

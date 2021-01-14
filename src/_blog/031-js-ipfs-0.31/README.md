@@ -5,6 +5,8 @@ title: js-ipfs 0.31.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 Restoring IPFS magic one alakazam at a time...no we're not talking pokemon.

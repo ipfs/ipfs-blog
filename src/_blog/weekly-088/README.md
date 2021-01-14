@@ -2,11 +2,12 @@
 date: 2020-05-05
 url: /weekly-88/
 translationKey: ipfs-weekly-88
-tags: weekly
 header_image: weekly-newsletter.png
 title: IPFS Weekly 88
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 # Welcome to the IPFS Weekly

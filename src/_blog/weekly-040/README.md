@@ -1,10 +1,11 @@
 ---
 date: 2019-04-30
 url: /85-ipfs-weekly-40/
-tags: weekly
 title: IPFS Weekly 40
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

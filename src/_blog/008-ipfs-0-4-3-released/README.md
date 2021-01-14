@@ -1,10 +1,12 @@
 ---
 date: 2016-09-20
 url: /19-ipfs-0-4-3-released/
-tags: modules
 title: go-ipfs 0.4.3 has been released
 description:
 author: Lars Gierth
+tags:
+  - 'modules'
+  - 'go-ipfs'
 ---
 
 [go-ipfs 0.4.3](https://dist.ipfs.io/#go-ipfs) has been released today,

@@ -4,8 +4,11 @@ url: /2020-07-09-case-study-audius/
 title: Introducing the IPFS Case Study Series!
 description:
 author: Jessica Schilling
-tags: casestudy, case-study, Audius, examples, using-ipfs, collaborators
 header_image: 102-case-study-audius.png
+tags:
+  - 'community'
+  - 'case study'
+  - 'streaming'
 ---
 
 ![IPFS Case Study Seriew - Audius](./case-study-audius.jpg)

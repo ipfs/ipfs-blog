@@ -5,7 +5,10 @@ title: Gossipsub v1.1 brings hardening extensions to PubSub
 description:
 author: David Dias
 header_image: 094-gossipsub-v1.1-headerimage.jpeg
-tags: ipfs, libp2p, pubsub, gossipsub
+tags:
+  - 'libp2p'
+  - 'pubsub'
+  - 'Gossipsub'
 ---
 
 <p style="max-width:780px;margin-left:auto;margin-right:auto;">

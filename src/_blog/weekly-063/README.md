@@ -2,10 +2,12 @@
 date: 2019-10-15
 url: /weekly-63/
 translationKey: ipfs-weekly-63
-tags: weekly
 title: Recapping IPFS in Q3 2019 🎉
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 Every day brings us closer to the end of 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.io/) community has accomplished so far in 2019. From milestones like remixing our working group and shipping new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.

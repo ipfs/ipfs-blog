@@ -1,10 +1,11 @@
 ---
 date: 2016-01-11
 url: /4-ipfs-weekly-1/
-tags: weekly
 title: IPFS Weekly 1
 description:
 author: Richard Littauer, Andrew Chin
+tags:
+  - 'weekly'
 ---
 
 Welcome to the first edition of IPFS Weekly!

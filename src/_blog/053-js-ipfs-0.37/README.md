@@ -5,6 +5,9 @@ title: js-ipfs 0.37.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'async/await'
 ---
 
 > New constructor, better DNSLink support and delegated routing!

@@ -4,7 +4,10 @@ url: /2020-06-26-go-ipfs-0-6-0/
 title: IPFS 0.6.0 is here! QUIC, Noise, Peering and more!
 description:
 author: Jacob Heun
-tags: go-ipfs, release
+tags:
+  - 'go-ipfs'
+  - 'QUIC'
+  - 'gateways'
 ---
 
 # 🔦 Go-IPFS 0.6.0 Highlights

@@ -5,6 +5,8 @@ title: js-ipfs 0.35.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 > Small, acyclic and flexible, just the way you like it

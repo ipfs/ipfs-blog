@@ -5,6 +5,9 @@ title: js-ipfs 0.33.0 released
 description:
 author: Alan Shaw
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
+  - 'IPFS Web UI'
 ---
 
 All new Web UI - Check on your node stats, explore the IPLD powered Merkle forest, see peers around the world and manage your files, without needing to touch the CLI.

@@ -1,10 +1,12 @@
 ---
 date: 2019-01-08
 url: /62-ipfs-weekly-24/
-tags: weekly
 title: IPFS Weekly 24
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'recap'
 ---
 
 # Welcome to the first IPFS Weekly of 2019! 🎉

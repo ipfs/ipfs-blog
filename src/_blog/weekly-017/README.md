@@ -1,10 +1,11 @@
 ---
 date: 2018-11-06
 url: /52-ipfs-weekly-17/
-tags: weekly
 title: IPFS Weekly 17
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋

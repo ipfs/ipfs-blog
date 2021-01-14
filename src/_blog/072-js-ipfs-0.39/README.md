@@ -5,6 +5,8 @@ title: js-ipfs 0.39.0 released
 description:
 author: Alex Potsides
 header_image: js-ipfs-placeholder.png
+tags:
+  - 'js-ipfs'
 ---
 
 > Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command!

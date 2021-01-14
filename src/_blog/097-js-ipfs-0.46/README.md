@@ -5,6 +5,8 @@ title: js-IPFS 0.46.0 released with new faster bitswap and go-IPFS 0.5 compat
 header_image: js-ipfs-placeholder.png
 description:
 author: Alex Potsides
+tags:
+  - 'js-ipfs'
 ---
 
 # 🔦 Highlights

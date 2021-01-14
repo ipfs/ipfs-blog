@@ -1,12 +1,16 @@
 ---
 date: 2019-10-29
 url: /073-go-ipfs-as-a-library/
-title: A new Tutorial has been created - Learn how to use go-ipfs as a Library
+title: Learn How to Use go-ipfs as a Library
 description:
 author: David Dias
+tags:
+  - 'tutorial'
+  - 'go-ipfs'
+  - 'API'
 ---
 
-The title says it all. Learn how to use [go-ipfs as a Library with the new Tutorial](https://github.com/ipfs/go-ipfs/tree/master/docs/examples/go-ipfs-as-a-library) and take full advantage of the [go-ipfs Core API](https://godoc.org/github.com/ipfs/interface-go-ipfs-core).
+The title says it all. Learn how to use [go-ipfs as a library with the new tutorial](https://github.com/ipfs/go-ipfs/tree/master/docs/examples/go-ipfs-as-a-library) and take full advantage of the [go-ipfs Core API](https://godoc.org/github.com/ipfs/interface-go-ipfs-core).
 
 ![](https://ipfs.io/ipfs/QmWgSVDmVDCPcf8zMHzXJTnDf6SFf9FpWXGDpXMozaBgQ6/go-ipfs-as-a-library.gif)
 

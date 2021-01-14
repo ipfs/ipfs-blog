@@ -1,10 +1,12 @@
 ---
 date: 2019-08-14
 url: /2019-08-14-ipfs-release-process/
-tags: IPFS, go-ipfs, release process,
 title: Improving the IPFS Release Process
 description:
 author: Steven Allen, Alan Shaw, David Dias, Molly Mackinlay, Eric Ronne, Agata Krych
+tags:
+  - 'go-ipfs'
+  - 'project planning'
 ---
 
 **go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**

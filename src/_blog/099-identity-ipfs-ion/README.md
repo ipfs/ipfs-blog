@@ -1,11 +1,13 @@
 ---
 date: 2020-06-11
 url: /2020-06-11-identity-ipfs-ion/
-tags: [ipfs, identity]
 header_image: blog-header-ion.png
 title: Decentralized Identity, IPFS and ION
 description:
 author: Dietrich Ayala
+tags:
+  - 'identity'
+  - 'community'
 ---
 
 <p style="text-align: center;">

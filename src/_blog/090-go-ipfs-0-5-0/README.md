@@ -5,7 +5,8 @@ title: IPFS 0.5.0 is here! Our largest upgrade to IPFS yet
 description:
 author: Molly Mackinlay
 header_image: 090-go-ipfs-0-5-0.png
-tags: go-ipfs, release
+tags:
+  - 'go-ipfs'
 ---
 
 ![Announcing IPFS 0.5](/header_images/090-go-ipfs-0-5-0.png)

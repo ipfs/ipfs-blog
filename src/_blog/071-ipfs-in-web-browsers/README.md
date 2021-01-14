@@ -5,6 +5,8 @@ title: IPFS Browser Update
 description:
 author: Dietrich Ayala
 header_image: 071-ipfs-in-web-browsers.png
+tags:
+  - 'browsers'
 ---
 
 Decentralization can feel slow in providing user-centric approaches to the internet's biggest problems. Right now, software that is fully in the control of the user is often too technical, too fragile, and too time-consuming to be the default choice.

@@ -2,9 +2,11 @@
 date: 2019-11-12
 url: /zh-ch/weekly-67/
 translationKey: ipfs-weekly-67
-tags: weekly
 title: IPFS 周报-67
 author: 默奕
+tags:
+  - 'weekly'
+  - 'project planning'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

@@ -4,6 +4,9 @@ url: /20-q3-review/
 title: Join us for the Q3 Roadmap review calls
 description:
 author: Richard littauer
+tags:
+  - 'project planning'
+  - 'commiunity'
 ---
 
 Our next weekly call will be focused on roadmaps. We will be planning our roadmaps for the rest of 2016. _You're invited to join in!_ We want to make sure the community is heard and involved as much as possible.

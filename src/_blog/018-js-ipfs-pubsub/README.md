@@ -4,6 +4,9 @@ url: /29-js-ipfs-pubsub/
 title: Distributed pubsub primitives for js-ipfs in the Browser
 description:
 author: Pedro Teixeira
+tags:
+  - 'pubsub'
+  - 'tutorial'
 ---
 
 IPFS pubsub was first introduced in September 2016 behind an experimental flag. This initial implementation allowed [orbit](https://orbit.chat/), a chat application built on top of IPFS, to become fully distributed. [@haadcode](https://github.com/haadcode) presented that work at [DEVCON2](https://www.youtube.com/watch?v=vQrbxyDPSXg). Later, [the IPFS team announced that pubsub ](https://ipfs.io/blog/25-pubsub) was ready for the whole community to use.

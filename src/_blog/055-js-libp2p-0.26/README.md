@@ -5,6 +5,11 @@ title: js-libp2p 0.26.0 released
 description:
 author: Jacob Heun
 header_image: 055-js-libp2p-0.26.png
+tags:
+  - 'libp2p'
+  - 'Gossipsub'
+  - 'breaking change'
+  - 'async/await'
 ---
 
 > Gossipsub support and Promisify API

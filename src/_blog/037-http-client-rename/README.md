@@ -4,6 +4,9 @@ url: /58-http-client-rename/
 title: The HTTP client libraries are being renamed!
 description:
 author: Alan Shaw
+tags:
+  - 'breaking change'
+  - 'modules'
 ---
 
 👋 hey everyone! If you're using one of the many HTTP client libraries for IPFS then this blog post is for you!

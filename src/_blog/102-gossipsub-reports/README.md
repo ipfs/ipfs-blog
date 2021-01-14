@@ -1,11 +1,14 @@
 ---
 date: 2020-07-07
 url: /gossipsubv1.1-eval-report-and-security-audit/
-title: A comprehensive Evaluation of GossipSub-v1.1 (and a new Logo!)
+title: Comprehensive Evaluation of Gossipsub v1.1
 header_image: 102-header-image-gossipsub-reports.png
 description:
 author: David Dias
-tags: go-libp2p, gossipsub, pubsub, libp2p
+tags:
+  - 'libp2p'
+  - 'Gossipsub'
+  - 'pubsub'
 ---
 
 <p align="center">

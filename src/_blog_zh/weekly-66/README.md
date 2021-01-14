@@ -2,9 +2,10 @@
 date: 2019-11-05
 url: /zh-ch/weekly-66/
 translationKey: ipfs-weekly-66
-tags: weekly
 title: IPFS 周报-66
 author: 默奕
+tags:
+  - 'weekly'
 ---
 
 ## 欢迎来到 IPFS 周刊。👋

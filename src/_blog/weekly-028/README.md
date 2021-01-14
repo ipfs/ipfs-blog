@@ -1,10 +1,11 @@
 ---
 date: 2019-02-05
 url: /68-ipfs-weekly-28/
-tags: weekly
 title: IPFS Weekly 28
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
 ---
 
 ## Welcome to the IPFS Weekly. 👋
@@ -22,9 +23,9 @@ Here are some of the highlights since the last IPFS Weekly.
 - [js.ipfs.io](https://js.ipfs.io/) is now translated in 9 languages!! The latest addition being Chinese. All thanks to the [Transifex project that the Web Browsers Working Group kicked off](https://github.com/ipfs/js.ipfs.io#internationalization-i18n) and our amazing community of contributors 👏👏👏
 - Manage your IPFS installs with [this new CLI tool](https://www.youtube.com/watch?v=C7A3-ycCRWU), [iim](https://github.com/alanshaw/iim), created by [Alan Shaw](https://twitter.com/_alanshaw/status/1090754167512145920).
 
-## Meet Michelle Hertz
+## Meet Michelle Hertzfeld
 
-Michelle Hertz works on the IPFS [Decentralized Data Stewardship working group](https://github.com/ipfs/decentralized-data-stewardship) at Protocol Labs. Before Protocol Labs, Michelle worked at [18F](https://18f.gsa.gov/) as a UX developer and Front End Design Supervisor. At 18F, she assisted in helping various government departments in the United States create more user-centric web interfaces. She is passionate about building products that meets the needs of the user.
+Michelle Hertzfeld works on the IPFS [Decentralized Data Stewardship working group](https://github.com/ipfs/decentralized-data-stewardship) at Protocol Labs. Before Protocol Labs, Michelle worked at [18F](https://18f.gsa.gov/) as a UX developer and Front End Design Supervisor. At 18F, she assisted in helping various government departments in the United States create more user-centric web interfaces. She is passionate about building products that meets the needs of the user.
 
 ## IPFS in the wild
 

@@ -2,11 +2,14 @@
 date: 2020-09-23
 url: /weekly-106/
 translationKey: ipfs-weekly-106
-tags: weekly
 header_image: weekly-newsletter.png
 title: Welcome to IPFS Weekly 106
 description:
 author: Jenn Turner
+tags:
+  - 'weekly'
+  - 'Filecoin'
+  - 'case study'
 ---
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀

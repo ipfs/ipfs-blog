@@ -1,10 +1,12 @@
 ---
 date: 2016-04-20
 url: /15-ipfs-weekly-9/
-tags: weekly
 title: IPFS Weekly 9
 description:
 author: Richard Littauer
+tags:
+  - 'weekly'
+  - 'package managers'
 ---
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -103,7 +105,7 @@ Last Monday members of the IPFS comminuty attended a [blockchain workshop](http:
 
 ### BitCoin News
 
-BitCoin news had a discussion on using IPFS and Bitcoin for Decentralised Citizen Journalism. [Check it out](http://thebitcoinnews.com/decentralised-citizen-journalism-we-discuss-the-impact-of-bitcoin-and-ipfs/)!
+BitCoin News had a discussion on using IPFS and Bitcoin for Decentralised Citizen Journalism. [Check it out](http://thebitcoinnews.com/decentralised-citizen-journalism-we-discuss-the-impact-of-bitcoin-and-ipfs/)!
 
 ### BitDevsNYC
 
