@@ -26,5 +26,3 @@ fields:
 - type: text
   name: author
   label: author
-pages:
-- src/_blog/welcome-to-ipfs-weekly-111.md
