@@ -4,11 +4,13 @@
       v-for="social in socialLinks"
       :key="social.text"
       :network="social.network"
-      :url="url"
-      title=""
+      :url="url ? url : currentUrl"
+      :title="title ? title : ''"
       description=""
-      quote=""
+      :quote="`${title} ${url ? url : currentUrl} via ${host}`"
       hashtags=""
+      :twitter-user="social.twitterHandle"
+      class="mr-1 last:mr-0"
     >
       <SVGIcon
         class="w-6 h-6 opacity-50 fill-current text-blueGreen hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
@@ -24,12 +26,23 @@ import SVGIcon from '@theme/components/base/SVGIcon'
 export default {
   name: 'PostSocials',
   components: { SVGIcon },
+  props: {
+    url: {
+      type: String,
+      default: '',
+    },
+    title: {
+      type: String,
+      default: '',
+    },
+  },
   data: () => ({
     socialLinks: [
       {
         text: 'Twitter',
         network: 'twitter',
         icon: 'twitter-icon',
+        twitterHandle: 'IPFS',
       },
       {
         text: 'Facebook',
@@ -37,10 +50,12 @@ export default {
         icon: 'facebook-icon',
       },
     ],
-    url: '',
+    currentUrl: '',
+    host: '',
   }),
   mounted() {
-    this.url = window.location.href
+    this.currentUrl = window.location.href
+    this.host = window.location.host
   },
 }
 </script>
