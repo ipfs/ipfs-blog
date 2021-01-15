@@ -11,6 +11,7 @@ const appState = {
     activeCategory: null,
     activeAuthor: null,
     latestWeeklyPost: null,
+    videoModalCard: null,
   },
   mutations: {
     toggleMobileNav: (state, data) => {
@@ -42,6 +43,9 @@ const appState = {
       Vue.set(state, 'searchedText', [])
       Vue.set(state, 'activeCategory', null)
       Vue.set(state, 'activeAuthor', null)
+    },
+    setVideoModalCard: (state, card) => {
+      Vue.set(state, 'videoModalCard', card)
     },
   },
 }

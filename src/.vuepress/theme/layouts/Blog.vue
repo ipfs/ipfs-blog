@@ -31,6 +31,7 @@
           :key="page.key"
           class="mb-4"
           :card="page"
+          :open-video-modal="openVideoModal"
           all
         />
       </div>
@@ -55,6 +56,7 @@
         v-observe-visibility="handleBottomVisibilityChange"
       ></div>
     </div>
+    <VideoModal v-if="mountFinish" ref="videoModal" />
   </Layout>
 </template>
 
@@ -64,6 +66,7 @@ import { mapState } from 'vuex'
 import Layout from '@theme/layouts/Layout.vue'
 
 import Card from '@theme/components/blog/Card'
+import VideoModal from '@theme/components/blog/VideoModal'
 import SortAndFilter from '@theme/components/blog/SortAndFilter'
 import Breadcrumbs from '@theme/components/Breadcrumbs'
 import LanguageSelector from '@theme/components/base/LanguageSelector'
@@ -88,6 +91,7 @@ export default {
     Breadcrumbs,
     SortAndFilter,
     LanguageSelector,
+    VideoModal,
   },
   data: function () {
     return {
@@ -108,6 +112,7 @@ export default {
       'activeTags',
       'searchedText',
       'activeAuthor',
+      'videoModalCard',
     ]),
     tags() {
       return getTags(this.publicPages)
@@ -235,6 +240,9 @@ export default {
       this.current =
         this.current < this.delayValues.length - 1 ? this.current : -1
       return this.delayValues[++this.current]
+    },
+    openVideoModal: function () {
+      this.$refs.videoModal.openModal()
     },
   },
 }
