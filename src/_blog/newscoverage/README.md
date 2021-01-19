@@ -9,8 +9,9 @@ data:
   tags:
   - browsers
 - name: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The Answer
+    (New America)
   title: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The
-    Answer
+    Answer  (New America)
   path: https://www.newamerica.org/oti/blog/decentralization-competition/
   date: 2021-01-12T07:00:00.000+00:00
   tags:
