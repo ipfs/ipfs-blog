@@ -2,6 +2,11 @@
 title: News Coverage
 type: News coverage
 data:
+- name: Brave Bets on the Decentralized Web (The Register)
+  title: Brave Bets on the Decentralized Web (The Register)
+  path: https://www.theregister.com/2021/01/19/brave_decentralized_browser/
+  date: 
+  tags: ''
 - name: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
   title: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
   path: https://www.theverge.com/2021/1/19/22238334/brave-browser-ipfs-peer-to-peer-decentralized-transfer-protocol-http-nodes
