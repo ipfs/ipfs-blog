@@ -2,17 +2,23 @@
 title: News Coverage
 type: News coverage
 data:
+- name: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
+  title: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
+  path: https://www.theverge.com/2021/1/19/22238334/brave-browser-ipfs-peer-to-peer-decentralized-transfer-protocol-http-nodes
+  date: 2021-01-19 07:00:00 +0000
+  tags:
+  - browsers
 - name: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The Answer
   title: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The
     Answer
   path: https://www.newamerica.org/oti/blog/decentralization-competition/
-  date: 2021-01-12 07:00:00 +0000
+  date: 2021-01-12T07:00:00.000+00:00
   tags:
   - browsers
 - name: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   title: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   path: https://www.coindesk.com/cloudflare-unveils-gateway-to-distributed-web-with-ens-ipfs-integration
-  date: 2021-01-13 07:00:00 +0000
+  date: 2021-01-13T07:00:00.000+00:00
   tags:
   - community
   - " static publishing"
