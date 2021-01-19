@@ -198,8 +198,8 @@ module.exports = {
           {
             id: 'blog_zh',
             dirname: '_blog_zh',
-            path: '/zh/',
-            itemPermalink: '/zh/:slug',
+            path: '/zh-cn/',
+            itemPermalink: '/zh-cn/:slug',
             layout: 'Blog',
             itemLayout: 'BlogPost',
             frontmatter: {

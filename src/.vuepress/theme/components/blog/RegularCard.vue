@@ -16,10 +16,10 @@
             img-class="h-full"
             itemprop="image"
             :alt="title"
-            :src="`/header_images/${
+            :src="`${
               frontmatter.header_image
                 ? frontmatter.header_image
-                : 'blog-placeholder.png'
+                : '/header-image-placeholder.png'
             }`"
             :ctx="regularPath"
           />

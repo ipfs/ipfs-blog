@@ -5,9 +5,6 @@
  * at runtime from the original $page.frontmatter.author
  * key.
  *
- * Avatar images should be stored in the site root:
- * _assets/avatars/firstname-surname.jpg
- *
  */
 module.exports = new Map([
   [

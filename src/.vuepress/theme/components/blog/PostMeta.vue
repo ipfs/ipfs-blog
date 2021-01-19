@@ -11,11 +11,7 @@
         {{ resolvedDate }}
       </time>
     </div>
-    <ul
-      v-if="resolvedTags.length"
-      class="tags mt-2 mb-1 flex flex-wrap"
-      itemprop="keywords"
-    >
+    <ul class="tags mt-2 mb-1 flex flex-wrap" itemprop="keywords">
       <li
         v-if="category"
         class="p-1 mr-1 bg-white text-blueGreen hover:underline rounded cursor-pointer mt-1"
