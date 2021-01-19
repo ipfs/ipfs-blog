@@ -2,6 +2,13 @@
 title: News Coverage
 type: News coverage
 data:
+- name: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The Answer
+  title: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The
+    Answer
+  path: https://www.newamerica.org/oti/blog/decentralization-competition/
+  date: 2021-01-12 07:00:00 +0000
+  tags:
+  - browsers
 - name: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   title: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   path: https://www.coindesk.com/cloudflare-unveils-gateway-to-distributed-web-with-ens-ipfs-integration

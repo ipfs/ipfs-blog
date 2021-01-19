@@ -6,8 +6,8 @@ fields:
   name: date
   label: date
 - type: text
-  name: url
-  label: url
+  name: permalink
+  label: permalink
 - type: text
   name: translationKey
   label: translationKey
