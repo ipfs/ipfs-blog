@@ -21,13 +21,13 @@ export default {
   components: {},
   computed: {
     embedSrc() {
-      return `https://discuss.ipfs.io/embed/comments?embed_url=https://blog.ipfs.io${this.$frontmatter.url}`
+      return `https://discuss.ipfs.io/embed/comments?embed_url=https://blog.ipfs.io${this.$frontmatter.permalink}`
     },
   },
   mounted() {
     window.DiscourseEmbed = {
       discourseUrl: 'https://discuss.ipfs.io/',
-      discourseEmbedUrl: `https://blog.ipfs.io${this.$frontmatter.url}`,
+      discourseEmbedUrl: `https://blog.ipfs.io${this.$frontmatter.permalink}`,
     }
     const d = document.createElement('script')
     d.type = 'text/javascript'

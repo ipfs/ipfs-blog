@@ -26,7 +26,7 @@
               img-class="object-contain"
               :alt="$page.title"
               src-placeholder="/images/blog/og/default.png"
-              :src="`/header_images/${image ? image : 'blog-placeholder.png'}`"
+              :src="`${image ? image : '/header-image-placeholder.png'}`"
             />
           </div>
         </div>
