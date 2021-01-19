@@ -2,6 +2,11 @@
 title: News Coverage
 type: News coverage
 data:
+- name: Brave Integrates IPFS (Brave Blog)
+  title: Brave Integrates IPFS (Brave Blog)
+  path: https://brave.com/brave-integrates-ipfs/
+  date: 2021-01-19 07:00:00 +0000
+  tags: ''
 - name: Brave Bets on the Decentralized Web (The Register)
   title: Brave Bets on the Decentralized Web (The Register)
   path: https://www.theregister.com/2021/01/19/brave_decentralized_browser/
