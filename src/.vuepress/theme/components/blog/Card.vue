@@ -42,11 +42,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-@screen md {
-  .card-post {
-    max-height: 29rem;
-  }
-}
-</style>
