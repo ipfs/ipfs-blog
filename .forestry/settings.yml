@@ -17,30 +17,30 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: src/_blog/events
+  path: src/_blog
   label: Events
   create: all
-  match: "**/*"
+  match: "**/events.md"
 - type: directory
-  path: src/_blog/newscoverage
+  path: src/_blog
   label: News Coverage
   create: all
-  match: "**/*"
+  match: "**/newscoverage.md"
 - type: directory
-  path: src/_blog/releasenotes
+  path: src/_blog
   label: Release Notes
   create: all
-  match: "**/*"
+  match: "**/releasenotes.md"
 - type: directory
-  path: src/_blog/tutorials
+  path: src/_blog
   label: Tutorials
   create: all
-  match: "**/*"
+  match: "**/tutorials.md"
 - type: directory
-  path: src/_blog/videos
+  path: src/_blog
   label: Videos
   create: all
-  match: "**/*"
+  match: "**/videos.md"
 - type: heading
   label: ZH
 - type: directory
