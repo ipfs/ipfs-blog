@@ -1,15 +1,17 @@
 <template>
   <footer class="footer bg-gradient-6 text-white py-8 md:py-16">
     <div class="grid grid-cols-12 grid-margins">
-      <NewsletterForm class="col-start-1 col-span-12 pb-4 md:pb-20" />
+      <NewsletterForm class="col-start-1 col-span-12 lg:pb-20" />
       <div class="col-start-0 md:col-start-1 col-span-12 md:col-span-12">
-        <div class="flex flex-col md:flex-row md:items-top md:justify-between">
-          <div class="flex flex-col md:flex-row md:items-center mb-8 md:mb-0">
-            <ul class="flex flex-col md:flex-row mt-8 md:mt-0">
+        <div class="flex flex-col lg:flex-row lg:items-top lg:justify-between">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center mb-4 md:mb-8 lg:mb-0"
+          >
+            <ul class="flex flex-col sm:flex-row mt-4 md:mt-8 lg:mt-0">
               <li
                 v-for="(item, index) in footerLinks"
                 :key="'link-' + index"
-                class="md:mr-10 last:mr-0"
+                class="sm:mr-10 last:mr-0"
                 :class="[{ 'mb-4': item.children && item.children.length }]"
               >
                 <NavLink
@@ -36,7 +38,7 @@
           </div>
           <SocialLinks class="flex items-center" />
         </div>
-        <FooterLegal class="mt-8" />
+        <FooterLegal class="mt-4 md:mt-8" />
       </div>
     </div>
   </footer>

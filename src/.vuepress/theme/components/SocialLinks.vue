@@ -3,7 +3,7 @@
     <a
       v-for="(link, index) in socialLinks"
       :key="index"
-      class="mr-5"
+      class="mr-5 last:mr-0"
       :href="link.link"
       target="_blank"
       rel="noopener noreferrer"

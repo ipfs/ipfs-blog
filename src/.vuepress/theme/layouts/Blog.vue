@@ -192,12 +192,16 @@ export default {
       this.$store.commit('appState/setActiveAuthor', queryAuthor)
     }
 
-    const latestWeeklyPost = this.publicPages.find(
-      (item) =>
-        item.frontmatter &&
-        item.frontmatter.tags &&
-        item.frontmatter.tags.includes('weekly')
-    )
+    const latestWeeklyPost = this.publicPages
+      .filter(
+        (item) =>
+          item.frontmatter &&
+          item.frontmatter.tags &&
+          item.frontmatter.tags.includes('weekly')
+      )
+      .sort(
+        (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+      )[0]
 
     this.$store.commit('appState/setLatestWeeklyPost', latestWeeklyPost)
 
