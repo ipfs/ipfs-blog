@@ -27,4 +27,5 @@ fields:
   name: author
   label: author
 pages:
+- src/_blog/ipfs-in-brave-native-access-to-the-distributed-web.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
