@@ -7,10 +7,10 @@ sections:
 - type: heading
   label: EN
 - type: directory
-  path: src/_blog/academicpapers
+  path: src/_blog
   label: Academic Papers
   create: all
-  match: "**/*"
+  match: "**/academicpapers.md"
 - type: directory
   path: src/_blog
   label: Blog Posts
