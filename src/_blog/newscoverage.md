@@ -2,16 +2,22 @@
 title: News Coverage
 type: News coverage
 data:
+- name: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
+  title: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
+  path: https://decrypt.co/54686/how-to-use-the-uncensorable-web-on-privacy-browser-brave
+  date: 2021-01-19 07:00:00 +0000
+  tags:
+  - browsers
 - name: Brave Becomes First Browser to Add Native IPFS Support (ZDNet)
   title: Brave Becomes First Browser to Add Native IPFS Support (ZDNet)
   path: https://www.zdnet.com/article/brave-becomes-first-browser-to-add-native-support-for-the-ipfs-protocol/
-  date: 2021-01-19 07:00:00 +0000
+  date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
 - name: Brave Integrates IPFS (Brave Blog)
   title: Brave Integrates IPFS (Brave Blog)
   path: https://brave.com/brave-integrates-ipfs/
-  date: 2021-01-19 07:00:00 +0000
+  date: 2021-01-19T07:00:00.000+00:00
   tags: ''
 - name: Brave Bets on the Decentralized Web (The Register)
   title: Brave Bets on the Decentralized Web (The Register)
@@ -21,7 +27,7 @@ data:
 - name: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
   title: Brave Takes Step Towards Enabling a Decentralized Web (The Verge)
   path: https://www.theverge.com/2021/1/19/22238334/brave-browser-ipfs-peer-to-peer-decentralized-transfer-protocol-http-nodes
-  date: 2021-01-19 07:00:00 +0000
+  date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
 - name: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The Answer
