@@ -1,9 +1,9 @@
 <template>
   <div
     id="newsletter-form"
-    class="flex flex-col md:flex-row md:justify-between md:items-center"
+    class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
   >
-    <div class="flex-shrink max-w-xl mb-4 md:mb-0">
+    <div class="flex-shrink lg:max-w-sm xl:max-w-xl mb-4 lg:mb-0">
       <h2 class="type-h2">Stay informed</h2>
       <p class="mt-2">
         Sign up for the IPFS Weekly newsletter (<router-link
@@ -17,30 +17,32 @@
     <form
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
-      class="flex"
+      class="flex lg:justify-end max-w-lg xl:w-2/5"
       action="https://ipfs.us4.list-manage.com/subscribe/post?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230"
       method="post"
       target="_blank"
     >
-      <div id="mc_embed_signup_scroll" class="grid gric-col-2">
-        <div class="fields flex flex-wrap col-start-1 col-span-2">
+      <div id="mc_embed_signup_scroll" class="grid gric-col-2 w-full">
+        <div
+          class="fields flex flex-col sm:flex-row flex-wrap col-start-1 col-span-2"
+        >
           <input
             id="mce-EMAIL"
             v-model="email"
             required
             type="email"
             aria-label="Email Address"
-            class="text-black p-2 rounded"
+            class="flex-grow text-black p-2 rounded"
             placeholder="email@your.domain"
             name="EMAIL"
           />
-          <div class="sm:ml-4">
+          <div class="sm:ml-4 sm:pt-0 pt-2">
             <input
               id="mc-embedded-subscribe"
               type="submit"
               value="Subscribe"
               name="subscribe"
-              class="p-2 text-white bg-blueGreen rounded cursor-pointer"
+              class="p-2 text-white bg-blueGreen rounded cursor-pointer w-full"
             />
           </div>
         </div>

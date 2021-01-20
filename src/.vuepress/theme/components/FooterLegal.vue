@@ -1,13 +1,18 @@
 <template>
   <div class="flex items-center">
-    <a href="https://protocol.ai" target="_blank" class="mr-1"
-      ><SVGIcon
-        name="logo-icon"
-        title="Protocol Labs"
-        :class-list="['w-4', 'h-4', 'fill-current']"
-    /></a>
-    <span
-      >©
+    <span>
+      <a
+        href="https://protocol.ai"
+        target="_blank"
+        class="mr-1 inline-block align-middle"
+      >
+        <SVGIcon
+          name="logo-icon"
+          title="Protocol Labs"
+          :class-list="['w-4', 'h-4', 'fill-current']"
+        />
+      </a>
+      ©
       <a
         class="text-blueGreen hover:underline"
         href="https://protocol.ai"
