@@ -4,19 +4,26 @@
     itemprop="publisher author"
     itemtype="http://schema.org/Person"
     itemscope
-    class="flex items-center"
+    class="flex flex-row flex-wrap"
   >
     <span
       v-for="(piece, index) in resolvedAuthorName"
       :key="piece"
       itemprop="name"
-      >{{ index === 0 ? '' : ',' }}
+      class="flex flex-row"
+    >
       <span
-        class="whitespace-no-wrap hover:text-blueGreen hover:underline cursor-pointer"
+        class="hover:text-blueGreen hover:underline cursor-pointer"
         @click="handleAuthorClick(piece)"
       >
         {{ piece }}
       </span>
+      <span>{{
+        resolvedAuthorName.length !== 1 &&
+        index !== resolvedAuthorName.length - 1
+          ? ',&nbsp;'
+          : ''
+      }}</span>
     </span>
   </div>
 </template>

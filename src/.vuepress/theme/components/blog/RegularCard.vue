@@ -40,10 +40,10 @@
             class="type-p4 text-primary"
           />
         </div>
-        <footer class="flex-grow">
+        <footer class="flex-grow mt-2">
           <p
             v-if="frontmatter.description || frontmatter.description"
-            class="type-p1-serif text-primary clamp-5"
+            class="type-p1-serif text-primary clamp-3"
             itemprop="description"
           >
             {{ frontmatter.description || frontmatter.description }}

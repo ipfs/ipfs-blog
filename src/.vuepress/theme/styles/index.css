@@ -3,3 +3,8 @@
 body {
   @apply bg-gray-light antialiased;
 }
+
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
