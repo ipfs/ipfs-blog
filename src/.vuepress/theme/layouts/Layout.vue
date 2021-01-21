@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <slot name="header"></slot>
     <DynamicContent
       v-if="$page.frontmatter.body"
@@ -7,7 +7,7 @@
     />
     <slot></slot>
     <slot name="footer"></slot>
-  </div>
+  </main>
 </template>
 
 <script>

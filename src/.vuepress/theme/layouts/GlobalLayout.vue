@@ -1,12 +1,12 @@
 <template>
-  <main>
+  <div class="flex flex-col min-h-screen">
     <Nav v-if="shouldDisplay('nav')" ref="nav" />
     <MobileNav v-if="shouldDisplay('nav')" />
-    <Transition :with-key="$page.key" appear :after-leave="leaveScroll">
+    <Transition appear :after-leave="leaveScroll">
       <component :is="layout" />
     </Transition>
     <Footer v-if="shouldDisplay('footer')" />
-  </main>
+  </div>
 </template>
 
 <script>
