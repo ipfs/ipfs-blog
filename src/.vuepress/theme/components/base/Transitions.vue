@@ -10,9 +10,7 @@
     @leave="leave"
     @after-leave="afterLeave"
   >
-    <main :key="withKey">
-      <slot></slot>
-    </main>
+    <slot></slot>
   </transition>
 </template>
 
@@ -35,10 +33,6 @@ export default {
     appear: {
       type: Boolean,
       default: false,
-    },
-    withKey: {
-      type: String,
-      default: null,
     },
     beforeEnter: Func,
     enter: Func,

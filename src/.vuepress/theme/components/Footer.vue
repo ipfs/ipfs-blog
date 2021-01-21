@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-gradient-6 text-white py-8 md:py-16">
+  <footer class="footer bg-gradient-6 text-white py-8 md:py-16 mt-auto">
     <div class="grid grid-cols-12 grid-margins">
       <NewsletterForm class="col-start-1 col-span-12 lg:pb-20" />
       <div class="col-start-0 md:col-start-1 col-span-12 md:col-span-12">
