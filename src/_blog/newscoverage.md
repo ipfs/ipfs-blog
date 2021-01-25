@@ -2,16 +2,23 @@
 title: News Coverage
 type: News coverage
 data:
+- name: Story from Tech Brave Becomes First Browser to Offer Native IPFS Integration
+    (Coindesk)
+  title: Story from Tech Brave Becomes First Browser to Offer Native IPFS Integration
+    (Coindesk)
+  path: https://www.coindesk.com/brave-browser-native-ipfs-integration-decentralized-web
+  date: 2021-01-19 07:00:00 +0000
+  tags: ''
 - name: Brave browser now supports peer-to-peer IPFS protocol (Engadget)
   title: Brave browser now supports peer-to-peer IPFS protocol (Engadget)
   path: https://www.engadget.com/brave-ipfs-update-190545662.html
-  date: 2021-01-19 07:00:00 +0000
+  date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
 - name: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
   title: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
   path: https://decrypt.co/54686/how-to-use-the-uncensorable-web-on-privacy-browser-brave
-  date: 2021-01-19 07:00:00 +0000
+  date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
 - name: Brave Becomes First Browser to Add Native IPFS Support (ZDNet)
