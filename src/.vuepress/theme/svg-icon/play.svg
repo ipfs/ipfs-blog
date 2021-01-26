@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.51 47.51"><circle fill="#231f20" opacity="0.8" cx="23.75" cy="23.75" r="23.75"/><polygon fill="#ffffff" points="37.16 23.75 16.05 11.57 16.05 35.94 37.16 23.75"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.51 47.51">
+    <title>Play icon</title>
+    <g>
+        <circle fill="#231f20" opacity="0.8" cx="23.75" cy="23.75" r="23.75" />
+        <polygon fill="#ffffff" points="37.16 23.75 16.05 11.57 16.05 35.94 37.16 23.75" />
+    </g>
+</svg>

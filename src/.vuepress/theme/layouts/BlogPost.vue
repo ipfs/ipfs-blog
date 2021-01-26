@@ -12,8 +12,11 @@
         <div v-if="$frontmatter.image" class="blog type-rich my-12">
           <LazyImage
             :alt="$page.title"
-            src-placeholder="/images/blog/og/default.png"
-            :src="$frontmatter.image"
+            :src="
+              $frontmatter.image
+                ? $frontmatter.image
+                : '/header-image-placeholder.png'
+            "
           />
         </div>
         <Content

@@ -74,7 +74,7 @@ module.exports = {
       description:
         'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
     },
-    '/zh/': {
+    '/zh-cn/': {
       lang: 'zh-CN',
       title: 'IPFS Blog & News',
       description:
@@ -97,10 +97,10 @@ module.exports = {
   themeConfig: {
     locales: {
       '/': themeConfigDefaults,
-      '/zh/': {
+      '/zh-cn/': {
         ...themeConfigDefaults,
         footerLinks: [
-          { text: 'Blog & news', link: '/zh/' },
+          { text: 'Blog & news', link: '/zh-cn/' },
           { text: 'Press', link: 'https://ipfs.io/media/' },
           {
             text: 'Code of conduct',
@@ -118,7 +118,7 @@ module.exports = {
           { text: 'Install', link: 'https://ipfs.io/#install' },
           { text: 'Docs', link: 'https://docs.ipfs.io/' },
           { text: 'Team', link: 'https://ipfs.io/team' },
-          { text: 'Blog', link: '/zh/' },
+          { text: 'Blog', link: '/zh-cn' },
           { text: 'Help', link: 'https://ipfs.io/help' },
         ],
         mobileNavLinks: [
@@ -126,7 +126,7 @@ module.exports = {
           { text: 'Install', link: 'https://ipfs.io/#install' },
           { text: 'Docs', link: 'https://docs.ipfs.io/' },
           { text: 'Team', link: 'https://ipfs.io/team' },
-          { text: 'Blog', link: '/zh/' },
+          { text: 'Blog', link: '/zh-cn/' },
           { text: 'Help', link: 'https://ipfs.io/help' },
         ],
       },

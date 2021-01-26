@@ -21,7 +21,6 @@
         :block-lazy-load="blockLazyLoad"
       />
       <div
-        v-if="mountFinish"
         class="grid-margins pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         itemscope
         itemtype="http://schema.org/Blog"
@@ -35,13 +34,8 @@
           all
         />
       </div>
-      <div v-else class="p-48" />
       <div
-        v-if="
-          mountFinish &&
-          !infiniteScroll &&
-          pagesToShow.length < publicPages.length
-        "
+        v-if="!infiniteScroll && pagesToShow.length < publicPages.length"
         class="flex justify-center mt-8 pb-4"
       >
         <button
@@ -56,7 +50,7 @@
         v-observe-visibility="handleBottomVisibilityChange"
       ></div>
     </div>
-    <VideoModal v-if="mountFinish" ref="videoModal" />
+    <VideoModal ref="videoModal" />
   </Layout>
 </template>
 
@@ -103,7 +97,6 @@ export default {
         { title: 'Home', link: 'https://ipfs.io/', external: true },
         { title: 'Blog & news' },
       ],
-      mountFinish: false,
     }
   },
   computed: {
@@ -209,8 +202,6 @@ export default {
       )[0]
 
     this.$store.commit('appState/setLatestWeeklyPost', latestWeeklyPost)
-
-    this.mountFinish = true
   },
   methods: {
     updateQuery() {

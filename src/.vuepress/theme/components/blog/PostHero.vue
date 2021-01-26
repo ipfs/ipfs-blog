@@ -25,7 +25,6 @@
             <LazyImage
               img-class="object-contain"
               :alt="$page.title"
-              src-placeholder="/images/blog/og/default.png"
               :src="`${image ? image : '/header-image-placeholder.png'}`"
             />
           </div>

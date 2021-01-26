@@ -1,6 +1,6 @@
 ---
 date: 2019-11-05
-permalink: /zh-ch/weekly-66/
+permalink: /zh-cn/weekly-66/
 translationKey: ipfs-weekly-66
 title: IPFS 周报-66
 author: 默奕

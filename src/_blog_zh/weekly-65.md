@@ -1,6 +1,6 @@
 ---
 date: 2019-10-29
-permalink: /zh-ch/weekly-65/
+permalink: /zh-cn/weekly-65/
 translationKey: ipfs-weekly-65
 title: IPFS 周报-65
 author: 默奕

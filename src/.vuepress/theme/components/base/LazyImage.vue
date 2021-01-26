@@ -75,9 +75,11 @@ export default {
   @apply text-transparent;
   visibility: hidden;
 }
+
 .v-lazy-image {
   @apply opacity-0 transition-opacity duration-700;
 }
+
 .v-lazy-image-loaded {
   @apply opacity-100;
 }
