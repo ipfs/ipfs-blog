@@ -21,6 +21,9 @@ fields:
   - type: text
     name: path
     label: path
+  - type: file
+    name: card_image
+    label: card_image
   - type: datetime
     name: date
     label: date

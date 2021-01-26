@@ -19,11 +19,14 @@
             img-class="h-full"
             itemprop="image"
             :alt="title"
-            :src="`${
-              frontmatter.header_image
-                ? frontmatter.header_image
-                : '/header-image-placeholder.png'
-            }`"
+            :src="
+              frontmatter.card_image
+                ? frontmatter.card_image
+                : `/${frontmatter.type
+                    .toLowerCase()
+                    .split(' ')
+                    .join('-')}-placeholder.png`
+            "
           />
         </UnstyledLink>
       </div>
