@@ -21,8 +21,10 @@ fields:
   - type: text
     name: path
     label: path
-  - type: file
-    name: card_image
+  - name: card_image
+    type: file
+    config:
+      maxSize: 64
     label: card_image
   - type: datetime
     name: date
