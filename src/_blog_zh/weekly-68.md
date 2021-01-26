@@ -1,6 +1,6 @@
 ---
 date: 2019-11-19
-permalink: /zh-ch/weekly-68/
+permalink: /zh-cn/weekly-68/
 translationKey: ipfs-weekly-68
 title: IPFS 周报-68
 author: 默奕

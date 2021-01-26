@@ -1,6 +1,6 @@
 ---
 date: 2019-11-12
-permalink: /zh-ch/weekly-67/
+permalink: /zh-cn/weekly-67/
 translationKey: ipfs-weekly-67
 title: IPFS 周报-67
 author: 默奕
