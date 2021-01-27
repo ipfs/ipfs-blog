@@ -18,6 +18,7 @@ sections:
   label: Blog Posts
   create: all
   match: "**/*"
+  exclude: "/**/@(academicpapers|events|newscoverage|releasenotes|tutorials|videos).md"
   templates:
   - blog-post
 - type: directory
