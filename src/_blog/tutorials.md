@@ -42,6 +42,7 @@ data:
   tags:
   - ProtoSchool
   - CID
+  card_image: "/2020-09-11-tutorial-protoschool-datalinks.png"
 - name: 'ProtoSchool: Blogging on the Decentralized Web'
   title: 'ProtoSchool: Blogging on the Decentralized Web'
   path: https://proto.school/blog
