@@ -164,6 +164,7 @@ data:
   date: 2017-05-10T07:00:00.000+00:00
   tags:
   - censorship
+  card_image: "/2017-05-10-news-wikipedia-observer.png"
 - name: Ethereum Meets Zcash? Why IPFS Plans a Multi-Blockchain Browser (CoinDesk)
   title: Ethereum Meets Zcash? Why IPFS Plans a Multi-Blockchain Browser (CoinDesk)
   path: https://www.coindesk.com/ethereum-meets-zcash-why-ipfs-plans-a-multi-blockchain-browser/
