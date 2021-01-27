@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-gray-pale rounded flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-gray-pale rounded flex flex-col transform hover:scale-105 duration-300 ease-in-out p-2"
     itemprop="mainEntityOfPage"
   >
     <article
@@ -12,7 +12,7 @@
         <a
           target="_blank"
           :href="path"
-          class="embed-responsive-item p-2"
+          class="embed-responsive-item"
           @click="handleVideoClick"
         >
           <div class="h-full w-full relative">
@@ -35,7 +35,7 @@
           </div>
         </a>
       </div>
-      <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
+      <div class="pt-1 pb-4 px-2 flex flex-grow flex-col">
         <a
           :href="path"
           target="_blank"

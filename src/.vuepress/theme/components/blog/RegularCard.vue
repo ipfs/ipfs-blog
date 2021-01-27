@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-gray-pale rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-aquaMuted bg-opacity-50 rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out p-2"
     itemprop="mainEntityOfPage"
     :to="path"
   >
@@ -12,7 +12,7 @@
       <div class="cover embed-responsive embed-responsive-og">
         <router-link :to="path" class="embed-responsive-item">
           <LazyImage
-            class="h-full p-2"
+            class="h-full"
             img-class="h-full"
             itemprop="image"
             :alt="title"
@@ -25,7 +25,7 @@
           />
         </router-link>
       </div>
-      <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
+      <div class="pt-1 pb-4 px-2 flex flex-grow flex-col">
         <router-link :to="path">
           <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}
