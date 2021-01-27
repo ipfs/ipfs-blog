@@ -75,6 +75,7 @@ data:
   title: IPFS is paving the way for a new digital economy (Modern Consensus)
   path: https://modernconsensus.com/commentary/opinion/ipfs-is-paving-the-way-for-a-new-digital-economy/
   date: 2020-10-08T06:00:00.000+00:00
+  card_image: "/2020-10-08-digitaleconomy-modernconsensus.png"
 - name: The Decentralized Web Could Help Preserve The Internet’s Data For 1,000 Years.
     Here’s Why We Need IPFS To Build It (TechDirt)
   title: The Decentralized Web Could Help Preserve The Internet’s Data For 1,000 Years.
