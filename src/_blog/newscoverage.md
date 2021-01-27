@@ -188,6 +188,7 @@ data:
   date: 2015-10-12T07:00:00.000+00:00
   tags:
   - interview
+  card_image: "/2015-10-12-news-juanbenet-epicenterbitcoin.png"
 - name: Decentralizing the Web with IPFS (Reseller Club)
   title: Decentralizing the Web with IPFS (Reseller Club)
   path: https://blog.resellerclub.com/decentralizing-the-web-with-ipfs/
