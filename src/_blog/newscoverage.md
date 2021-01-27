@@ -107,8 +107,7 @@ data:
   title: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
   path: https://containerjournal.com/topics/container-management/ipfs-emerges-as-tool-to-distribute-container-images/
   date: 2020-03-02T07:00:00.000+00:00
-  tags:
-  - Docker
+  tags: Docker, containerization
   card_image: "/2020-03-02-news-images-containerjournal.png"
 - name: IPFS, libp2p and Filecoin with Juan Benet (Zero Knowledge)
   title: IPFS, libp2p and Filecoin with Juan Benet (Zero Knowledge)
