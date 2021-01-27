@@ -193,6 +193,7 @@ data:
   title: Decentralizing the Web with IPFS (Reseller Club)
   path: https://blog.resellerclub.com/decentralizing-the-web-with-ipfs/
   date: 2015-10-12T07:00:00.000+00:00
+  card_image: "/2015-10-12-news-decentralizingweb-resellerclub.png"
 - name: FreeNAS Alpha Ships with IPFS as a Transport
   title: FreeNAS Alpha Ships with IPFS as a Transport
   path: http://www.freenas.org/whats-new/2015/10/announcing-freenas-10-alpha.html
