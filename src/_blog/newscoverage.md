@@ -123,8 +123,8 @@ data:
   tags:
   - community
   card_image: "/2019-09-06-news-supplychain-rtrade.png"
-- name: CloudFlare Goes InterPlanetary
-  title: CloudFlare Goes InterPlanetary
+- name: Cloudflare Goes InterPlanetary (Cloudflare Blog)
+  title: Cloudflare Goes InterPlanetary (Cloudflare Blog)
   path: https://blog.cloudflare.com/distributed-web-gateway/
   date: 2018-09-17T07:00:00.000+00:00
   tags: CDN, community
