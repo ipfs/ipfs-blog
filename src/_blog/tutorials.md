@@ -19,6 +19,7 @@ data:
   - ProtoSchool
   - DAG
   - CID
+  card_image: "/2021-01-12-tutorial-protoschool-contentaddressing.png"
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
