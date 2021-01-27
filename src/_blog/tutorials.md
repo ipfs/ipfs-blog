@@ -64,5 +64,6 @@ data:
   date: 2015-05-02T07:00:00.000+00:00
   tags:
   - ProtoSchool
+  card_image: "/2015-05-02-tutorial-raspberrypi-siliconian.png"
 
 ---
