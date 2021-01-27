@@ -115,6 +115,7 @@ data:
   date: 2019-12-04T07:00:00.000+00:00
   tags:
   - interview
+  card_image: "/2020-03-02-news-juanbenet-zeroknowledge.png"
 - name: Enterprise IPFS for True Supply Chain Provenance (RTrade)
   title: Enterprise IPFS for True Supply Chain Provenance (RTrade)
   path: https://medium.com/rtrade-technologies/enterprise-ipfs-for-true-supply-chain-provenance-part-1-89524337f27
