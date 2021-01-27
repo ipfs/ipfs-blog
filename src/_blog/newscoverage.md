@@ -7,7 +7,7 @@ data:
   path: https://www.coindesk.com/brave-browser-native-ipfs-integration-decentralized-web
   date: 2021-01-19T07:00:00.000+00:00
   tags: browsers
-  card_image: "/glen-carrie-ypttedpwpgs-unsplash-710x458.webp"
+  card_image: "/2021-01-19-news-brave-coindesk.png"
 - name: Brave browser now supports peer-to-peer IPFS protocol (Engadget)
   title: Brave browser now supports peer-to-peer IPFS protocol (Engadget)
   path: https://www.engadget.com/brave-ipfs-update-190545662.html
