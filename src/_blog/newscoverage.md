@@ -88,6 +88,7 @@ data:
   date: 2020-04-30T06:00:00.000+00:00
   tags:
   - go-ipfs
+  card_image: "/2020-04-30-news-latestipfs-devops.png"
 - name: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
   title: Decentralized Web Protocol IPFS Has Its Biggest Update So Far (Cointelegraph)
   path: https://cointelegraph.com/news/decentralized-web-protocol-ipfs-has-its-biggest-update-so-far
