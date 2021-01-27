@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-gray-pale rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-gray-pale rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out p-2"
     itemprop="mainEntityOfPage"
   >
     <article
@@ -8,14 +8,14 @@
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
-      <div class="cover embed-responsive embed-responsive-og">
-        <UnstyledLink
-          :to="path"
-          :item="{ target: '_blank' }"
-          class="embed-responsive-item"
-        >
+      <UnstyledLink
+        :to="path"
+        :item="{ target: '_blank' }"
+        class="embed-responsive-item"
+      >
+        <div class="cover embed-responsive embed-responsive-og">
           <LazyImage
-            class="h-full p-2"
+            class="h-full embed-responsive-item"
             img-class="h-full"
             itemprop="image"
             :alt="title"
@@ -28,9 +28,9 @@
                     .join('-')}-placeholder.png`
             "
           />
-        </UnstyledLink>
-      </div>
-      <div class="pt-1 pb-4 px-4 flex flex-grow flex-col">
+        </div>
+      </UnstyledLink>
+      <div class="pt-1 pb-4 px-2 flex flex-grow flex-col">
         <UnstyledLink :to="path" :item="{ target: '_blank' }">
           <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}

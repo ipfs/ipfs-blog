@@ -36,20 +36,18 @@
         <div class="mt-3 flex flex-wrap" itemprop="keywords">
           <button
             v-if="videoModalCard.frontmatter.type"
-            class="px-2 py-1 bg-gray-pale text-blueGreen hover:underline rounded-lg text-sm mr-1"
+            class="p-1 bg-blueGreen text-white hover:underline rounded text-sm mr-1"
             @click="handleCatClick()"
           >
             {{ videoModalCard.frontmatter.type }}
           </button>
-          <button
+          <PostTag
             v-for="tag in resolvedTags"
             :key="tag"
             :tag="tag"
-            class="px-2 py-1 bg-gray-pale text-blueGreen hover:underline rounded-lg text-sm mr-1 last:mr-0"
-            @click="handleTagClick(tag)"
-          >
-            #{{ tag }}
-          </button>
+            :callback="closeModal"
+            class-name="text-sm"
+          />
         </div>
       </div>
       <footer class="flex-grow">
@@ -85,10 +83,11 @@ import { mapState } from 'vuex'
 import dayjs from 'dayjs'
 import UnstyledLink from '@theme/components/UnstyledLink'
 import PostSocials from '@theme/components/blog/PostSocials.vue'
+import PostTag from '@theme/components/blog/PostTag'
 
 export default {
   name: 'VideoModalContent',
-  components: { UnstyledLink, PostSocials },
+  components: { UnstyledLink, PostSocials, PostTag },
   props: {
     closeModal: {
       type: Function,
@@ -144,10 +143,6 @@ export default {
         'appState/setActiveCategory',
         this.videoModalCard.frontmatter.type
       )
-      this.closeModal()
-    },
-    handleTagClick(tag) {
-      this.$store.commit('appState/setActiveTags', [tag])
       this.closeModal()
     },
   },

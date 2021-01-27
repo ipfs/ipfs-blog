@@ -11,15 +11,16 @@
         {{ resolvedDate }}
       </time>
     </div>
-    <ul class="tags mt-2 mb-1 flex flex-wrap" itemprop="keywords">
-      <li
+    <div class="tags mt-2 mb-1 flex flex-wrap" itemprop="keywords">
+      <button
         v-if="category"
-        class="p-1 mr-1 bg-white text-blueGreen hover:underline rounded cursor-pointer mt-1"
+        class="p-1 mr-1 bg-blueGreen text-white font-semibold hover:underline rounded cursor-pointer mt-1"
+        @click="handleCatClick"
       >
-        <div @click="handleCatClick">{{ category }}</div>
-      </li>
+        {{ category }}
+      </button>
       <PostTag v-for="tag in resolvedTags" :key="tag" class="mt-1" :tag="tag" />
-    </ul>
+    </div>
   </div>
 </template>
 

@@ -68,6 +68,7 @@ const theme = {
       deepBlue: '#002256',
       plBlack: '#16161F',
       blueGreen: '#3e9096',
+      aquaMuted: '#9ad4db',
       gray: {
         dark: '#707175',
         default: '#d1d1d6',
