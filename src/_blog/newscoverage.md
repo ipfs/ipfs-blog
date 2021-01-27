@@ -226,7 +226,7 @@ data:
   card_image: "/2020-09-18-news-permanent-vice.png"
 - name: First Steps Toward Implementing Distributed Permanent Web (Hacked.com)
   title: First Steps Toward Implementing Distributed Permanent Web (Hacked.com)
-  path: https://hacked.com/first-steps-toward-implementing-distributed-permanent-web-ipfs/
+  path: https://web.archive.org/web/20150919135028/https://hacked.com/first-steps-toward-implementing-distributed-permanent-web-ipfs/
   date: 2015-09-10T07:00:00.000+00:00
 - name: HTTP is Obsolete. It’s Time for the Distributed, Permanent Web (Neocities)
   title: HTTP is Obsolete. It’s Time for the Distributed, Permanent Web (Neocities)
