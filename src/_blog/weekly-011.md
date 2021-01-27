@@ -1,14 +1,15 @@
 ---
 date: 2018-09-25
-permalink: /45-ipfs-weekly-11/
+permalink: "/45-ipfs-weekly-11/"
 translationKey: 45-ipfs-weekly-11
 title: IPFS Weekly 11
-description:
+description: 
 author: Jenn Turner
 tags:
-  - 'weekly'
----
+- weekly
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 ## Welcome back to the IPFS Weekly. 👋
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
