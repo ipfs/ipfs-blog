@@ -169,6 +169,7 @@ data:
   title: Ethereum Meets Zcash? Why IPFS Plans a Multi-Blockchain Browser (CoinDesk)
   path: https://www.coindesk.com/ethereum-meets-zcash-why-ipfs-plans-a-multi-blockchain-browser/
   date: 2017-04-29T07:00:00.000+00:00
+  card_image: "/2017-04-29-news-multiblockchain-coindesk.png"
 - name: OpenBazaar Integrating IPFS to Help Keep Stores Open Longer (Nasdaq)
   title: OpenBazaar Integrating IPFS to Help Keep Stores Open Longer (Nasdaq)
   path: http://www.nasdaq.com/article/openbazaar-integrating-interplanetary-file-system-to-help-keep-stores-open-longer-cm606534
