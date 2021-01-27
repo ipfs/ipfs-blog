@@ -129,12 +129,13 @@ data:
   date: 2018-09-17T07:00:00.000+00:00
   tags: CDN, community
   card_image: "/2018-09-17-news-gateway-cloudflare.png"
-- name: Building Cooperation and Trust into the Web
-  title: Building Cooperation and Trust into the Web
+- name: Building Cooperation and Trust into the Web (Mozilla Hacks)
+  title: Building Cooperation and Trust into the Web (Mozilla Hacks)
   path: https://hacks.mozilla.org/2018/08/dweb-building-cooperation-and-trust-into-the-web-with-ipfs/
   date: 2018-08-29T07:00:00.000+00:00
   tags:
   - community
+  card_image: "/2018-08-29-news-supplychain-rtrade.png"
 - name: Deconstructing the Power Structures of Large-Scale Social Computing Networks
   title: Deconstructing the Power Structures of Large-Scale Social Computing Networks
   path: https://infocivics.com/
