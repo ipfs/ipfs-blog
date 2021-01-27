@@ -70,6 +70,7 @@ data:
   date: 2020-12-09T00:00:00.000+00:00
   tags:
   - interview
+  card_image: "/2020-12-08-news-juanbenet-coindesk.png"
 - name: IPFS is paving the way for a new digital economy (Modern Consensus)
   title: IPFS is paving the way for a new digital economy (Modern Consensus)
   path: https://modernconsensus.com/commentary/opinion/ipfs-is-paving-the-way-for-a-new-digital-economy/
