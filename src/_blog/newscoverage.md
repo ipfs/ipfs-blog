@@ -2,6 +2,10 @@
 title: News Coverage
 type: News coverage
 data:
+- name: IFPS — Technology That's Out of This World (Sprint)
+  title: IFPS — Technology That's Out of This World (Sprint)
+  path: https://web.archive.org/web/20200221031918/https://business.sprint.com/blog/ipfs-technology/
+  date: 2019-05-22 06:00:00 +0000
 - name: Brave Becomes First Browser to Offer Native IPFS Integration (Coindesk)
   title: Brave Becomes First Browser to Offer Native IPFS Integration (Coindesk)
   path: https://www.coindesk.com/brave-browser-native-ipfs-integration-decentralized-web
