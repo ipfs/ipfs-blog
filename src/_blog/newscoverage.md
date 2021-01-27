@@ -196,7 +196,7 @@ data:
   card_image: "/2015-10-12-news-decentralizingweb-resellerclub.png"
 - name: FreeNAS Alpha Ships with IPFS as a Transport
   title: FreeNAS Alpha Ships with IPFS as a Transport
-  path: http://www.freenas.org/whats-new/2015/10/announcing-freenas-10-alpha.html
+  path: https://web.archive.org/web/20151011192538/http://www.freenas.org/whats-new/2015/10/announcing-freenas-10-alpha.html
   date: 2015-10-09T07:00:00.000+00:00
   tags:
   - community
