@@ -34,6 +34,7 @@ data:
   path: https://brave.com/brave-integrates-ipfs/
   date: 2021-01-19T07:00:00.000+00:00
   tags: ''
+  card_image: "/2021-01-19-news-brave-braveblog.png"
 - name: Brave Bets on the Decentralized Web (The Register)
   title: Brave Bets on the Decentralized Web (The Register)
   path: https://www.theregister.com/2021/01/19/brave_decentralized_browser/
