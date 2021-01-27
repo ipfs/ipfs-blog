@@ -232,6 +232,7 @@ data:
   title: HTTP is Obsolete. It’s Time for the Distributed, Permanent Web (Neocities)
   path: https://blog.neocities.org/its-time-for-the-permanent-web.html
   date: 2015-09-08T07:00:00.000+00:00
+  card_image: "/2015-09-08-news-dweb-neocities.png"
 - name: Juan Benet Interview (Software Engineering Daily)
   title: Juan Benet Interview (Software Engineering Daily)
   path: https://softwareengineeringdaily.com/2015/08/25/interplanetary-file-system-ipfs-with-juan-benet/
