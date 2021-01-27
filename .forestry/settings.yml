@@ -18,21 +18,29 @@ sections:
   label: Blog Posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 - type: directory
   path: src/_blog
   label: Events
-  create: all
+  create: documents
   match: "**/events.md"
+  templates:
+  - newslinks
 - type: directory
   path: src/_blog
   label: News Coverage
-  create: all
+  create: documents
   match: "**/newscoverage.md"
+  templates:
+  - newslinks
 - type: directory
   path: src/_blog
   label: Release Notes
-  create: all
+  create: documents
   match: "**/releasenotes.md"
+  templates:
+  - newslinks
 - type: directory
   path: src/_blog
   label: Tutorials
@@ -41,8 +49,10 @@ sections:
 - type: directory
   path: src/_blog
   label: Videos
-  create: all
+  create: documents
   match: "**/videos.md"
+  templates:
+  - newslinks
 - type: heading
   label: ZH
 - type: directory
@@ -50,6 +60,8 @@ sections:
   label: ZH Blog posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 upload_dir: src/.vuepress/public
 public_path: ''
 front_matter_path: ''
