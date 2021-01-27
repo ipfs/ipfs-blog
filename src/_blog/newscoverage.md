@@ -153,6 +153,7 @@ data:
   title: Protocol Labs (BlueYard Capital)
   path: https://medium.com/@BlueYard/protocol-labs-35ceff61b031
   date: 2017-05-18T07:00:00.000+00:00
+  card_image: "/2017-05-18-pl-blueyard.png"
 - name: Protocol Labs (Union Square Ventures)
   title: Protocol Labs (Union Square Ventures)
   path: https://www.usv.com/blog/protocol-labs
