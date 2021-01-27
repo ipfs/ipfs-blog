@@ -33,3 +33,5 @@ fields:
     name: tags
     label: tags
     description: separate tags by comma (,)
+pages:
+- src/_blog/academicpapers.md
