@@ -1,17 +1,18 @@
 ---
 date: 2020-02-11
-permalink: /weekly-77/
+permalink: "/weekly-77/"
 translationKey: ipfs-weekly-77
 title: IPFS Weekly 77
-description:
+description: 
 author: Jenn Turner
 tags:
-  - 'weekly'
-  - 'project planning'
-  - 'content routing'
-  - 'Testground'
----
+- weekly
+- project planning
+- content routing
+- Testground
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 # Welcome to the IPFS Weekly
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
