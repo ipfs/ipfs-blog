@@ -214,6 +214,7 @@ data:
   title: Why the Internet Needs IPFS Before It's Too Late (TechCrunch)
   path: https://techcrunch.com/2015/10/04/why-the-internet-needs-ipfs-before-its-too-late/
   date: 2015-10-04T07:00:00.000+00:00
+  card_image: "/2015-10-04-news-toolate-techcrunch.png"
 - name: A For-Life, Decentralized, Privacy-Respecting Web (Maxim Veksler)
   title: A For-Life, Decentralized, Privacy-Respecting Web (Maxim Veksler)
   path: https://medium.com/@mvxlr/ipfs-inter-planetary-file-system-65466e4129c6
