@@ -148,6 +148,7 @@ data:
     (Coin Center)
   path: https://coincenter.org/entry/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web
   date: 2017-06-20T07:00:00.000+00:00
+  card_image: "/2017-06-20-news-distributedstorage-coincenter.png"
 - name: Protocol Labs (BlueYard Capital)
   title: Protocol Labs (BlueYard Capital)
   path: https://medium.com/@BlueYard/protocol-labs-35ceff61b031
