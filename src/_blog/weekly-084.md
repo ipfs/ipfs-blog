@@ -1,15 +1,16 @@
 ---
 date: 2020-04-08
-permalink: /weekly-84/
+permalink: "/weekly-84/"
 translationKey: ipfs-weekly-84
-title: IPFS Weekly Q1 2020 Recap 🎉
-description:
+title: "IPFS Weekly Q1 2020 Recap \U0001F389"
+description: 
 author: Jenn Turner
 tags:
-  - 'weekly'
-  - 'recap'
----
+- weekly
+- recap
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 ## Celebrate Q1 in the IPFS Community
 
 A quick look back at what we accomplished together in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
