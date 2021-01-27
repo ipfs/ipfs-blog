@@ -34,6 +34,7 @@ data:
   tags:
   - ProtoSchool
   - API
+  card_image: "/2020-09-11-tutorial-protoschool-regularfilesapi.png"
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
