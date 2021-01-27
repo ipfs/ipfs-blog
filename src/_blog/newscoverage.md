@@ -28,6 +28,7 @@ data:
   date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
+  card_image: "/2021-01-19-news-brave-zdnet.png"
 - name: Brave Integrates IPFS (Brave Blog)
   title: Brave Integrates IPFS (Brave Blog)
   path: https://brave.com/brave-integrates-ipfs/
