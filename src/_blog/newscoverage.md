@@ -122,6 +122,7 @@ data:
   date: 2019-09-06T07:00:00.000+00:00
   tags:
   - community
+  card_image: "/2019-09-06-news-supplychain-rtrade.png"
 - name: 'IPFS: Technology That’s Out of This World (Sprint)'
   title: 'IPFS: Technology That’s Out of This World (Sprint)'
   path: https://business.sprint.com/blog/ipfs-technology/
