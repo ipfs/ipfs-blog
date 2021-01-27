@@ -21,7 +21,7 @@ data:
   date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
-  card_image: "/2021-01-19-news-brave-decrypt.jpg"
+  card_image: "/2021-01-19-news-brave-decrypt.png"
 - name: Brave Becomes First Browser to Add Native IPFS Support (ZDNet)
   title: Brave Becomes First Browser to Add Native IPFS Support (ZDNet)
   path: https://www.zdnet.com/article/brave-becomes-first-browser-to-add-native-support-for-the-ipfs-protocol/
