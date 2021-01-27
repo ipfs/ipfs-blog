@@ -1,14 +1,15 @@
 ---
 date: 2019-01-08
-permalink: /62-ipfs-weekly-24/
+permalink: "/62-ipfs-weekly-24/"
 title: IPFS Weekly 24
-description:
+description: 
 author: Jenn Turner
 tags:
-  - 'weekly'
-  - 'recap'
----
+- weekly
+- recap
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 # Welcome to the first IPFS Weekly of 2019! 🎉
 
 For this first week back, we’ve put together a very special issue looking back on all that you, the [InterPlanetary File System (IPFS)](https://ipfs.io/) community, accomplished in the last year.
