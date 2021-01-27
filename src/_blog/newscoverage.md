@@ -102,6 +102,7 @@ data:
   date: 2020-03-18T06:00:00.000+00:00
   tags:
   - censorship
+  card_image: "/2020-03-18-covid-coindesk.png"
 - name: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
   title: IPFS Emerges as Tool to Distribute Container Images (Container Journal)
   path: https://containerjournal.com/topics/container-management/ipfs-emerges-as-tool-to-distribute-container-images/
