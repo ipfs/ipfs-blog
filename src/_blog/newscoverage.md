@@ -2,10 +2,8 @@
 title: News Coverage
 type: News coverage
 data:
-- name: Story from Tech Brave Becomes First Browser to Offer Native IPFS Integration
-    (Coindesk)
-  title: Story from Tech Brave Becomes First Browser to Offer Native IPFS Integration
-    (Coindesk)
+- name: Brave Becomes First Browser to Offer Native IPFS Integration (Coindesk)
+  title: Brave Becomes First Browser to Offer Native IPFS Integration (Coindesk)
   path: https://www.coindesk.com/brave-browser-native-ipfs-integration-decentralized-web
   date: 2021-01-19T07:00:00.000+00:00
   tags: browsers
