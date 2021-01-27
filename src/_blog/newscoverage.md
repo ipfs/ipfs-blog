@@ -109,6 +109,7 @@ data:
   date: 2020-03-02T07:00:00.000+00:00
   tags:
   - Docker
+  card_image: "/2020-03-02-news-images-containerjournal.png"
 - name: IPFS, libp2p and Filecoin with Juan Benet (Zero Knowledge)
   title: IPFS, libp2p and Filecoin with Juan Benet (Zero Knowledge)
   path: https://www.zeroknowledge.fm/106?t=0
