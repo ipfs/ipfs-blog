@@ -4,12 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: src/_blog/academicpapers.md
-  label: Academic Papers
-  match: "**/*"
 - type: heading
   label: EN
+- type: document
+  path: src/_blog/**/academicpapers.md
+  label: Academic Papers
+  match: "**/*"
 - type: directory
   path: src/_blog
   label: Blog Posts
