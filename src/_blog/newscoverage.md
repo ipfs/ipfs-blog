@@ -242,7 +242,7 @@ data:
   card_image: "/2015-08-25-juanbenet-softwareengineeringdaily.png"
 - name: IPFS at Battlemesh 2015
   title: IPFS at Battlemesh 2015
-  path: http://battlemesh.org/
+  path: https://battlemesh.org/BattleMeshV8/Agenda
   date: 2015-08-03T07:00:00.000+00:00
   tags:
   - conferences
