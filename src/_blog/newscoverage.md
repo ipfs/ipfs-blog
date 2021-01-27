@@ -181,6 +181,7 @@ data:
   title: A Protocol That Changes Everything (John Lilic)
   path: https://www.linkedin.com/pulse/introduction-ipfs-interplanetary-file-system-brief-post-john-lilic
   date: 2015-10-19T07:00:00.000+00:00
+  card_image: "/2015-10-18-news-changeseverything.png"
 - name: Epicenter Bitcoin Interviews Juan Benet
   title: Epicenter Bitcoin Interviews Juan Benet
   path: https://epicenter.tv/episode/100/
