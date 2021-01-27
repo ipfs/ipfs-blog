@@ -223,6 +223,7 @@ data:
   title: IPFS Wants to Create a Permanent Web (Motherboard)
   path: https://motherboard.vice.com/en_us/article/78xgaq/the-interplanetary-file-system-wants-to-create-a-permanent-web
   date: 2015-09-19T07:00:00.000+00:00
+  card_image: "/2020-09-18-news-permanent-vice.png"
 - name: First Steps Toward Implementing Distributed Permanent Web (Hacked.com)
   title: First Steps Toward Implementing Distributed Permanent Web (Hacked.com)
   path: https://hacked.com/first-steps-toward-implementing-distributed-permanent-web-ipfs/
