@@ -6,10 +6,13 @@ webhook_url:
 sections:
 - type: heading
   label: EN
-- type: document
-  path: src/_blog/**/academicpapers.md
+- type: directory
+  path: src/_blog
   label: Academic Papers
-  match: "**/*"
+  create: documents
+  match: "**/academicpapers.md"
+  templates:
+  - newslinks
 - type: directory
   path: src/_blog
   label: Blog Posts
