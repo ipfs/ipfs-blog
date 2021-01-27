@@ -50,6 +50,7 @@ data:
   tags:
   - ProtoSchool
   - static publishing
+  card_image: "/2020-09-11-tutorial-protoschool-blogging.png"
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
