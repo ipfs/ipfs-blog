@@ -80,7 +80,7 @@ data:
     Here’s Why We Need IPFS To Build It (TechDirt)
   title: The Decentralized Web Could Help Preserve The Internet’s Data For 1,000 Years.
     Here’s Why We Need IPFS To Build It (TechDirt)
-  path: https://www.techdirt.com/articles/20200504/16050844431/decentralized-web-could-help-preserve-internets-data-1000-years-heres-why-we-need-ipfs-to-build-it.shtml#comments
+  path: https://www.techdirt.com/articles/20200504/16050844431/decentralized-web-could-help-preserve-internets-data-1000-years-heres-why-we-need-ipfs-to-build-it.shtml#
   date: 2020-05-05T06:00:00.000+00:00
 - name: Latest Version of Open Source IPFS Improves Performance (DevOps.com)
   title: Latest Version of Open Source IPFS Improves Performance (DevOps.com)
