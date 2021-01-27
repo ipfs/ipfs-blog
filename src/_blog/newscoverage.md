@@ -246,18 +246,13 @@ data:
   date: 2015-08-03T07:00:00.000+00:00
   tags:
   - conferences
-- name: Portland Ctrl IPFS Meetup
-  title: Portland Ctrl IPFS Meetup
-  path: https://attending.io/events/ipfs-portland-meetup-the-permanent-distributed-web
-  date: 2015-07-22T07:00:00.000+00:00
-  tags:
-  - conferences
 - name: Holger Krekels EuroPython 2015 Keynote
   title: Holger Krekels EuroPython 2015 Keynote
   path: http://dietzel.me/2015/08/02/EuroPython-2015-Holger-Krekels-Keynote-about-the-interplanetary-filesystem-Wed-22nd-July-2015/
   date: 2015-05-22T07:00:00.000+00:00
   tags:
   - conferences
+  card_image: "/2015-08-02-news-holgerkrekel-europython.png"
 - name: IPFS at Data Terra Nemo 2015
   title: IPFS at Data Terra Nemo 2015
   path: https://dtn.is/2015.html
