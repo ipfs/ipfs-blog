@@ -55,6 +55,7 @@ data:
   date: 2021-01-12T07:00:00.000+00:00
   tags:
   - browsers
+  card_image: "/2021-01-12-news-bigtech-newamerica.png"
 - name: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   title: Cloudflare Unveils Gateway to Distributed Web With ENS, IPFS Integration
   path: https://www.coindesk.com/cloudflare-unveils-gateway-to-distributed-web-with-ens-ipfs-integration
