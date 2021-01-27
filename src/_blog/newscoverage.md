@@ -123,16 +123,12 @@ data:
   tags:
   - community
   card_image: "/2019-09-06-news-supplychain-rtrade.png"
-- name: 'IPFS: Technology That’s Out of This World (Sprint)'
-  title: 'IPFS: Technology That’s Out of This World (Sprint)'
-  path: https://business.sprint.com/blog/ipfs-technology/
-  date: 2019-05-22T07:00:00.000+00:00
 - name: CloudFlare Goes InterPlanetary
   title: CloudFlare Goes InterPlanetary
   path: https://blog.cloudflare.com/distributed-web-gateway/
   date: 2018-09-17T07:00:00.000+00:00
-  tags:
-  - CDN
+  tags: CDN, community
+  card_image: "/2018-09-17-news-gateway-cloudflare.png"
 - name: Building Cooperation and Trust into the Web
   title: Building Cooperation and Trust into the Web
   path: https://hacks.mozilla.org/2018/08/dweb-building-cooperation-and-trust-into-the-web-with-ipfs/
