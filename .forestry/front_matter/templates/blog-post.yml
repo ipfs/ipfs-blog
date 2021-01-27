@@ -2,6 +2,12 @@
 label: Blog post
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
 - type: datetime
   name: date
   label: date
@@ -11,18 +17,12 @@ fields:
 - type: text
   name: translationKey
   label: translationKey
-- type: text
-  name: tags
-  label: tags
 - type: file
   name: header_image
   label: header_image
 - type: text
-  name: title
-  label: title
-- type: textarea
-  name: description
-  label: description
+  name: tags
+  label: tags
 - type: text
   name: author
   label: author
