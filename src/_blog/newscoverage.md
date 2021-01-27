@@ -46,6 +46,7 @@ data:
   date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
+  card_image: "/2021-01-19-news-brave-verge.png"
 - name: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The Answer
     (New America)
   title: We Need Alternatives to Big Tech; These Decentralized Tools Might Be The
