@@ -81,6 +81,7 @@ module.exports = {
         'ZH - All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
     },
   },
+  shouldPrefetch: () => false,
   head: require('./config/head'),
   dest: './dist',
   markdown: {
