@@ -62,6 +62,7 @@ data:
   tags:
   - community
   - " static publishing"
+  card_image: "/2021-01-13-news-cloudflare-coindesk.png"
 - name: 'Juan Benet: From Idea to Action (CoinDesk)'
   title: 'Juan Benet: From Idea to Action (CoinDesk)'
   path: https://www.coindesk.com/juan-benet-most-influential-2020
