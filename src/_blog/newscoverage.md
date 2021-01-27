@@ -176,6 +176,7 @@ data:
   date: 2016-04-14T07:00:00.000+00:00
   tags:
   - community
+  card_image: "/2016-04-14-openbazaar-nasdaq.png"
 - name: A Protocol That Changes Everything (John Lilic)
   title: A Protocol That Changes Everything (John Lilic)
   path: https://www.linkedin.com/pulse/introduction-ipfs-interplanetary-file-system-brief-post-john-lilic
