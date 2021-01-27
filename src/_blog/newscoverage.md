@@ -14,6 +14,7 @@ data:
   date: 2021-01-19T07:00:00.000+00:00
   tags:
   - browsers
+  card_image: "/2021-01-19-news-brave-engadget.png"
 - name: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
   title: How to Use the Uncensorable Web on Privacy Browser Brave (Decrypt)
   path: https://decrypt.co/54686/how-to-use-the-uncensorable-web-on-privacy-browser-brave
