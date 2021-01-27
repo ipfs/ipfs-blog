@@ -47,6 +47,8 @@ sections:
   label: Tutorials
   create: all
   match: "**/tutorials.md"
+  templates:
+  - newslinks
 - type: directory
   path: src/_blog
   label: Videos
