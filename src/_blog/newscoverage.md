@@ -95,6 +95,7 @@ data:
   date: 2020-04-28T06:00:00.000+00:00
   tags:
   - go-ipfs
+  card_image: "/2020-04-28-latestipfs-cointelegraph.png"
 - name: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
   title: InterPlanetary File System Is Uncensorable During Coronavirus News Fog (Coindesk)
   path: https://www.coindesk.com/interplanetary-file-system-is-uncensorable-during-coronavirus-news-fog
