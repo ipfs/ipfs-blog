@@ -259,6 +259,7 @@ data:
   date: 2015-05-23T07:00:00.000+00:00
   tags:
   - conferences
+  card_image: "/2015-05-23-news-dataterranemo.png"
 - name: Juan Benet at O'Reilly Fluent Conf
   title: Juan Benet at O'Reilly Fluent Conf
   path: https://www.oreilly.com/library/view/fluent-conference-2015/9781491927786/
