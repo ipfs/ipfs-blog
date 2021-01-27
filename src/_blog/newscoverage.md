@@ -206,7 +206,7 @@ data:
   - community
 - name: IPFS at AndYetConf 2015
   title: IPFS at AndYetConf 2015
-  path: http://andyetconf.com/
+  path: http://talks.benet.ai/2015-10-06-ipfs-013-andyetconf
   date: 2015-10-06T07:00:00.000+00:00
   tags:
   - conferences
