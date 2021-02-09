@@ -2,7 +2,9 @@
 date: 2020-12-16 07:00:00 +0000
 permalink: '/weekly-118/'
 translationKey: ipfs-weekly-118
-tags: weekly, pinning
+tags:
+  - 'weekly'
+  - 'pinning'
 header_image: /header-image-weekly-newsletter.png
 title: Welcome to IPFS Weekly 118
 description: ''

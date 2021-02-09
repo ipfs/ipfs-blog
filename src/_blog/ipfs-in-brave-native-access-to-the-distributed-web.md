@@ -1,15 +1,17 @@
 ---
 date: 2021-01-19 07:00:00 +0000
-permalink: "/2021-01-19-ipfs-in-brave/"
+permalink: '/2021-01-19-ipfs-in-brave/'
 translationKey: ''
-tags: browsers
-header_image: "/2021-01-19-ipfs-in-brave.png"
+tags:
+  - browsers
+header_image: '/2021-01-19-ipfs-in-brave.png'
 title: IPFS in Brave - Native Access to the Distributed Web
-description: Announcing the integration of IPFS in the Brave browser, completing the
+description:
+  Announcing the integration of IPFS in the Brave browser, completing the
   vision of a native distributed web experience in a modern web browser.
 author: Dietrich Ayala
-
 ---
+
 We are excited to announce that IPFS is now natively supported in the Brave web browser. With [over 20 million users](https://brave.com/20m-mau/), Brave has made the distributed web easily available for the people who need it most. This is the first time a major browser has implemented native support for IPFS, and is a major step towards a more resilient, user-first internet.
 
 While the IPFS protocol is still in development, making it more easily available is important for users who have real problems in their daily online lives - internet outages and shutdowns, censorship of critical information such as COVID-19 news, high cost of internet access, and the ability to share and collaborate in offline or disconnected environments. These aren’t problems everyone has, and people who don’t have these problems at all may not understand why IPFS is so important. But for those who desperately need a resilient internet that puts them in control of their online experiences, IPFS is now just one-click to install in the Brave browser.
@@ -46,12 +48,12 @@ In 2020, [we started working with Igalia](https://blog.ipfs.io/2021-01-15-ipfs-a
 
 This initial release of native support for IPFS in Brave provides basic node functionality. There’s still a lot to do - here’s a list of some planned work for this year, and areas we’d like to experiment in, as well:
 
-* Improve performance and stability - reduce memory, CPU, and bandwidth use
-* Ease both publishing and sharing of IPFS content in browser UI
-* Add features for revisitation, co-hosting, and offline/local collaboration
-* Define the application model for IPFS web apps
-* Experiment with integrating the features and economic models of Basic Attention Token and Filecoin
-* Develop the security and privacy user interface and visual language for IPFS in the browser address bar
-* Add IPFS support to Brave’s Android browser
+- Improve performance and stability - reduce memory, CPU, and bandwidth use
+- Ease both publishing and sharing of IPFS content in browser UI
+- Add features for revisitation, co-hosting, and offline/local collaboration
+- Define the application model for IPFS web apps
+- Experiment with integrating the features and economic models of Basic Attention Token and Filecoin
+- Develop the security and privacy user interface and visual language for IPFS in the browser address bar
+- Add IPFS support to Brave’s Android browser
 
 [Install Brave now!](https://brave.com/) Try the IPFS features and let us know how it went. You can report issues in [Brave’s GitHub repo](https://github.com/brave/brave-browser), in the [IPFS In Web Browsers](https://github.com/ipfs/in-web-browsers) repo, or join us in discussion on the [IPFS forums](https://discuss.ipfs.io/).

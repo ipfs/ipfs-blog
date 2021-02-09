@@ -2,11 +2,14 @@
 date: 2021-01-14 07:00:00 +0000
 permalink: '/2021-01-14-explore-merkle-dags-at-protoschool/'
 translationKey: ''
-tags: ProtoSchool, IPLD, DAG
 header_image: '/115-protoschool-merkle-dags.png'
 title: Explore Merkle DAGs at ProtoSchool
 description: ''
 author: Teri Chadbourne
+tags:
+  - ProtoSchool
+  - IPLD
+  - DAG
 ---
 
 The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial on [Merkle DAGs](https://proto.school/merkle-dags), the cornerstone of our freshly launched [IPLD (InterPlanetary Data) course](https;//proto.school/course/ipld). 🎉

@@ -3,7 +3,7 @@
     <Nav v-if="shouldDisplay('nav')" ref="nav" />
     <MobileNav v-if="shouldDisplay('nav')" />
     <Transition :with-key="$page.key" appear :after-leave="leaveScroll">
-      <component :is="layout" />
+      <component :is="layout" class="flex flex-col flex-grow" />
     </Transition>
     <Footer v-if="shouldDisplay('footer')" />
   </div>

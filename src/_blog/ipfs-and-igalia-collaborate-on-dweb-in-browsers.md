@@ -2,7 +2,6 @@
 date: 2021-01-15 07:00:00 +0000
 url: '/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/'
 translationKey: ''
-tags: community, browsers
 header_image: '/ipfs-and-igalia-collaborate-on-dweb-in-browsers-header-image.png'
 title: IPFS and Igalia collaborate on dweb in browsers
 description:
@@ -10,6 +9,9 @@ description:
   in Chromium, Firefox, and WebKit and help the distributed web community. This blog
   post provides an overview of the 2020 accomplishments, as well as future work.
 author: Frédéric Wang, Dietrich Ayala
+tags:
+  - community
+  - browsers
 ---
 
 ## TL;DR

@@ -1,15 +1,19 @@
 ---
 title: Join us at ETHDenver 2021, year of the Spork Marmot!
-description: Return of the IPFS Help Desk, plus join us for a full day of hacking
+description:
+  Return of the IPFS Help Desk, plus join us for a full day of hacking
   IPFS!
 date: 2021-02-02 07:00:00 +0000
-permalink: "/2021-02-02-ipfs-at-ethdenver/"
+permalink: '/2021-02-02-ipfs-at-ethdenver/'
 translationKey: ''
-header_image: "/eth1.png"
-tags: conferences, community, Ethereum
+header_image: '/eth1.png'
+tags:
+  - conferences
+  - community
+  - Ethereum
 author: Jenn Turner
-
 ---
+
 ![Join us at ETHDenver, where Flying Bufficorns and Spork Marmots reign free](/2021-02-02-ipfs-at-ethdenver-flyingspork.png)
 
 It’s hard to explain what [ETHDenver](https://www.ethdenver.com/) is, exactly. Is it a conference? Yes. Is it a hackathon? Is it a week of technical workshops directed by industry leaders? Yes. Is it an art exhibition? Also, yes. Is it a live dj set? Again, yes. But even those labels don’t do justice to the magic that happens when all of those things combine and settle on the Denver tech scene.
@@ -20,10 +24,10 @@ That is why we’re so excited to be part of this year’s ETHDenver, which is 1
 
 In years past, the IPFS community has had a large presence at ETHDenver, partially due to the incredibly welcoming and encouraging decentralization community built locally in Denver. [Last year](https://blog.ipfs.io/2020-02-07-ethdenver-2020/), we were truly blown away by how much we saw the ETHDenver community embrace IPFS. After all was said and done:
 
-* 24 out of 52 submissions utilized IPFS in their project, with
-* 8 of the 16 finalist projects, and
-* 3 out of the 5 winners triumphing, having used IPFS.
-* And 80+ bounties were awarded for using IPFS!
+- 24 out of 52 submissions utilized IPFS in their project, with
+- 8 of the 16 finalist projects, and
+- 3 out of the 5 winners triumphing, having used IPFS.
+- And 80+ bounties were awarded for using IPFS!
 
 Not only that, last year [Cryptorado](https://cryptorado.org/#/) organized the [Decentralized Network Summit](https://dnsummit.cryptorado.org/), inviting the IPFS community to a day full of speakers and workshops from the folks at 3Box, NEAR, Unstoppable Domains, Pinata, Tupelo, Textile, Kauri, The Graph and more, drawing 100+ attendees. It was a wonderful day full of meeting and making new friends, enjoying the company of old ones, and most importantly, intriguing conversations.
 
@@ -35,9 +39,9 @@ Since we can’t be together in Denver for another full day of Decentralized Sum
 
 **Hack the Help Desk! Tuesday, February 9** (all times local to Denver, Mountain Time)
 
-* Session 1: Virtual Castle at Help Desk - 9am to 11am
-* Session 2: TBD Zoom - 11am to 1pm
-* Session 3: TBD Zoom - 1pm to 3pm
+- Session 1: Virtual Castle at Help Desk - 9am to 11am
+- Session 2: TBD Zoom - 11am to 1pm
+- Session 3: TBD Zoom - 1pm to 3pm
 
 We are so excited to be a part of this amazing experience once again, and stay tuned for more information on our bounties and IPFS community presentations! We can’t wait to share more with you very soon, but for now, make sure you won’t miss out!
 

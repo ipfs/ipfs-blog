@@ -7,7 +7,7 @@ author: Adin Schmahmann
 header_image: /104-dht-deep-dive-header-image.png
 tags:
   - 'go-ipfs'
-  - content routing'
+  - 'content routing'
   - 'DHT'
   - 'Kademlia'
 ---

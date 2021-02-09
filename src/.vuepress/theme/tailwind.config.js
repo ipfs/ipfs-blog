@@ -41,6 +41,7 @@ const theme = {
       '-10': '-10',
     },
     minHeight: {
+      28: '7rem',
       500: '500px',
     },
     rotate: {

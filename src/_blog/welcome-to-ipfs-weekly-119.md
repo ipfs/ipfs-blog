@@ -1,14 +1,15 @@
 ---
 date: 2021-01-20 07:00:00 +0000
-permalink: "/weekly-119/"
+permalink: '/weekly-119/'
 translationKey: ipfs-weekly-119
-tags: weekly
-header_image: "/header-image-weekly-newsletter.png"
+tags:
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 title: Welcome to IPFS Weekly 119
 description: ''
 author: Jenn Turner
-
 ---
+
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ![IPFS in Brave - Native Access to the Distributed Web](/2021-01-19-ipfs-in-brave.png)
@@ -41,10 +42,10 @@ What was once a single lesson on data structures is now a meaty multiple-choice 
 
 ## Brand new on IPFS
 
-* [js-ipfs 0.53](https://blog.ipfs.io/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
-* Answering the question “Is [Berty](https://berty.tech/blog/blockchain-berty/) based on blockchain?” because in some cases yes, but others no.
-* It’s that time of year again, except this time [Textile](https://blog.textile.io/textile-going-virtual-at-ethdenver/) going virtual with EthDenver.
-* The [Beyond Bitswap project](https://research.protocol.ai/blog/2021/beyond-swapping-bits-project-review-and-preview/) review has launched and released a new Bitswap paper!
+- [js-ipfs 0.53](https://blog.ipfs.io/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
+- Answering the question “Is [Berty](https://berty.tech/blog/blockchain-berty/) based on blockchain?” because in some cases yes, but others no.
+- It’s that time of year again, except this time [Textile](https://blog.textile.io/textile-going-virtual-at-ethdenver/) going virtual with EthDenver.
+- The [Beyond Bitswap project](https://research.protocol.ai/blog/2021/beyond-swapping-bits-project-review-and-preview/) review has launched and released a new Bitswap paper!
 
 ## People are building the coolest stuff with IPFS
 
@@ -75,4 +76,5 @@ Discover how to build a Substack on IPFS [using Pinata](https://medium.com/pinat
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
+
 <p><a href="https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230" class="button button-primary">Sign up now</a></p>

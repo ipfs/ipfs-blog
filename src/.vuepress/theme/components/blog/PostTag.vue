@@ -3,12 +3,11 @@
     v-if="link"
     :to="{ path: $localePath, query: { tags: tag } }"
     :class="computedClass"
+    @click.native="handleTagClick"
   >
     #{{ tag }}
   </router-link>
-  <button v-else :class="computedClass" @click="handleTagClick">
-    #{{ tag }}
-  </button>
+  <button v-else :class="computedClass" @click="addNewTag">#{{ tag }}</button>
 </template>
 
 <script>
@@ -50,6 +49,9 @@ export default {
   methods: {
     handleTagClick() {
       this.$store.commit('appState/setActiveTags', [this.tag])
+    },
+    addNewTag() {
+      this.$store.commit('appState/addNewTag', [this.tag])
       this.callback()
     },
   },

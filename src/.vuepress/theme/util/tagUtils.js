@@ -1,7 +1,7 @@
-import { isArray } from 'lodash'
+import isArray from 'lodash/isArray'
 
-export const getTags = (posts) => {
-  const tags = []
+export const getTags = (activeTags, posts) => {
+  const tags = [...activeTags]
 
   posts.forEach((post) => {
     if (!post.frontmatter.tags) {

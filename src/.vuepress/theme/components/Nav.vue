@@ -24,11 +24,13 @@
             :class-list="['w-32', 'fill-current']"
           />
         </a>
-        <ul class="nav__link-list hidden md:flex">
+        <ul
+          class="nav__link-list hidden md:flex justify-between w-full max-w-xl ml-8"
+        >
           <li
             v-for="page in $themeLocaleConfig.headerLinks"
             :key="page.text"
-            class="nav__link-item ml-16 first:m-0 font-semibold"
+            class="nav__link-item first:m-0 font-semibold"
           >
             <Link class="nav__link" :item="page" />
           </li>
@@ -46,7 +48,7 @@
 </template>
 
 <script>
-import { throttle } from 'lodash'
+import throttle from 'lodash/throttle'
 import { mapState } from 'vuex'
 import SVGIcon from '@theme/components/base/SVGIcon'
 import Link from '@theme/components/base/Link'
@@ -92,7 +94,7 @@ export default {
   methods: {
     handleScroll() {
       // responsive force: lower on mobile higher on desktop
-      const SCROLL_FORCE = ['sm', 'md'].includes(this.$mq) ? 100 : 250
+      const SCROLL_FORCE = ['sm', 'md'].includes(this.$mq) ? 20 : 40
 
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
@@ -105,7 +107,7 @@ export default {
       // true if scrolling up
       this.showNav = currentScrollPosition < this.lastScrollPosition
 
-      const isOffset = currentScrollPosition > this.navHeight
+      const isOffset = currentScrollPosition > this.navHeight / 2
 
       const isScrollThresholdMet =
         Math.abs(currentScrollPosition - this.lastScrollPosition) > SCROLL_FORCE

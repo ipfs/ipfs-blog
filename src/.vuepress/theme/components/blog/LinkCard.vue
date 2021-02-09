@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-gray-pale rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out p-2"
+    class="group bg-gray-pale rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
     itemprop="mainEntityOfPage"
   >
     <article
@@ -16,9 +16,10 @@
         <div class="cover embed-responsive embed-responsive-og">
           <LazyImage
             class="h-full embed-responsive-item"
-            img-class="h-full"
+            img-class="h-full object-cover"
             itemprop="image"
             :alt="title"
+            src-placeholder="/card-placeholder.png"
             :src="
               frontmatter.card_image
                 ? frontmatter.card_image
@@ -30,7 +31,7 @@
           />
         </div>
       </UnstyledLink>
-      <div class="pt-1 pb-4 px-2 flex flex-grow flex-col">
+      <div class="p-4 flex flex-grow flex-col">
         <UnstyledLink :to="path" :item="{ target: '_blank' }">
           <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}
@@ -79,13 +80,6 @@ export default {
     frontmatter: {
       type: Object,
       default: () => ({}),
-      validator: function (frontmatter) {
-        if (frontmatter.description && frontmatter.description.length > 200) {
-          return false
-        }
-
-        return true
-      },
     },
     path: {
       type: String,

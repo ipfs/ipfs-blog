@@ -10,7 +10,7 @@
     @leave="leave"
     @after-leave="afterLeave"
   >
-    <main :key="withKey">
+    <main :key="withKey" class="flex flex-col flex-grow">
       <slot></slot>
     </main>
   </transition>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-aquaMuted bg-opacity-50 rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out p-2"
+    class="group bg-blueGreen bg-opacity-25 rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
     itemprop="mainEntityOfPage"
     :to="path"
   >
@@ -13,7 +13,7 @@
         <router-link :to="path" class="embed-responsive-item">
           <LazyImage
             class="h-full"
-            img-class="h-full"
+            img-class="h-full object-cover"
             itemprop="image"
             :alt="title"
             :src="`${
@@ -21,11 +21,12 @@
                 ? frontmatter.header_image
                 : '/header-image-placeholder.png'
             }`"
+            src-placeholder="/card-placeholder.png"
             :ctx="regularPath"
           />
         </router-link>
       </div>
-      <div class="pt-1 pb-4 px-2 flex flex-grow flex-col">
+      <div class="p-4 flex flex-grow flex-col">
         <router-link :to="path">
           <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
             {{ title }}
@@ -71,13 +72,6 @@ export default {
     frontmatter: {
       type: Object,
       default: () => ({}),
-      validator: function (frontmatter) {
-        if (frontmatter.description && frontmatter.description.length > 200) {
-          return false
-        }
-
-        return true
-      },
     },
     regularPath: {
       type: String,
