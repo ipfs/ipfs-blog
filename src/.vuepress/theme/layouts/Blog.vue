@@ -13,11 +13,10 @@
         <LanguageSelector class="absolute right-0" />
       </div>
     </div>
-    <div class="pt-8 bg-white">
+    <div class="pt-8 pb-4 bg-white flex-grow">
       <SortAndFilter
         :number-of-posts="pagesToShow.length"
         :tags="tags"
-        :categories="categories"
         :block-lazy-load="blockLazyLoad"
       />
       <div
@@ -35,7 +34,7 @@
         />
       </div>
       <div
-        v-if="!infiniteScroll && pagesToShow.length < publicPages.length"
+        v-if="pagesToShow.length < publicPages.length"
         class="flex justify-center mt-8 pb-4"
       >
         <button
@@ -45,10 +44,17 @@
           Load More
         </button>
       </div>
-      <div
-        v-else-if="pagesToShow.length < publicPages.length"
-        v-observe-visibility="handleBottomVisibilityChange"
-      ></div>
+      <!-- <div
+        v-if="infiniteScroll && pagesToShow.length < publicPages.length"
+        v-observe-visibility="{
+          callback: handleBottomVisibilityChange,
+          intersection: {
+            rootMargin: '-360px 0px -360px 0px',
+            threshold: 1.0,
+          },
+        }"
+        class="teste"
+      ></div> -->
     </div>
     <VideoModal ref="videoModal" />
   </Layout>
@@ -66,15 +72,10 @@ import Breadcrumbs from '@theme/components/Breadcrumbs'
 import LanguageSelector from '@theme/components/base/LanguageSelector'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
+import uniq from 'lodash/uniq'
+import pick from 'lodash/pick'
+import isEqual from 'lodash/isEqual'
 
-const protectedCardTypes = [
-  'Academic paper',
-  'Event',
-  'News coverage',
-  'Release notes',
-  'Tutorial',
-  'Video',
-]
 const defaultCategory = 'Blog post'
 
 export default {
@@ -89,8 +90,7 @@ export default {
   },
   data: function () {
     return {
-      categories: ['All content', defaultCategory, ...protectedCardTypes],
-      numberOfPagesToShow: 21,
+      numberOfPagesToShow: 24,
       infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
       breadcrumbs: [
@@ -101,6 +101,9 @@ export default {
   },
   computed: {
     ...mapState('appState', [
+      'categoriesList',
+      'tagsList',
+      'authorsList',
       'activeCategory',
       'activeTags',
       'searchedText',
@@ -108,12 +111,12 @@ export default {
       'videoModalCard',
     ]),
     tags() {
-      return getTags(this.publicPages)
+      return getTags(this.activeTags, this.publicPages)
     },
     publicPages: function () {
       let result = []
       this.$pagination.pages.forEach((page) => {
-        if (protectedCardTypes.includes(page.frontmatter.type)) {
+        if (this.categoriesList.includes(page.frontmatter.type)) {
           result = [
             ...result,
             ...parseProtectedPost(
@@ -171,24 +174,104 @@ export default {
       this.updateQuery()
     },
   },
-  mounted() {
-    const queryTags = this.$route.query.tags
-    const queryCategory = this.$route.query.category
-    const queryText = this.$route.query.search
-    const queryAuthor = this.$route.query.author
+  created() {
+    let categories = []
+    let tagsArray = []
+    let authorsArray = []
 
-    if (queryTags && !this.activeTags.length) {
-      this.$store.commit('appState/setActiveTags', queryTags.split(','))
+    this.$pagination.pages.forEach((page) => {
+      const { type, tags, data, author } = page.frontmatter
+
+      if (type) {
+        categories.push(type)
+      }
+
+      if (tags) {
+        tagsArray.push(tags)
+      }
+
+      if (data) {
+        tagsArray.push(
+          uniq(
+            data
+              .filter((subPage) => subPage.tags)
+              .map((subPage) => subPage.tags)
+              .flat(2)
+          )
+        )
+      }
+
+      if (author) {
+        authorsArray.push(author.name.split(',').map((author) => author.trim()))
+      }
+    })
+
+    categories = uniq(categories, true)
+    tagsArray = uniq(tagsArray.flat(2), true)
+    authorsArray = uniq(authorsArray.flat(2), true)
+
+    this.$store.commit('appState/setCategoriesList', [
+      defaultCategory,
+      ...categories,
+    ])
+    this.$store.commit('appState/setTagsList', tagsArray)
+    this.$store.commit('appState/setAuthorsList', authorsArray)
+  },
+  mounted() {
+    const observer = new IntersectionObserver(
+      this.handleBottomVisibilityChange,
+      {
+        threshold: 1.0,
+      }
+    )
+
+    observer.observe(document.querySelector('footer.footer ul'))
+
+    const { query } = this.$route
+    const newQuery = pick(Object.assign({}, query), [
+      'category',
+      'tags',
+      'search',
+      'author',
+    ])
+
+    let queryCategory = query.category || ''
+
+    if (queryCategory && !this.categoriesList.includes(queryCategory)) {
+      queryCategory = ''
+      delete newQuery.category
     }
-    if (queryCategory) {
-      this.$store.commit('appState/setActiveCategory', queryCategory)
+
+    let queryTags = query.tags ? query.tags.split(',') : []
+
+    if (queryTags.length > 0) {
+      queryTags = queryTags.filter((tag) => this.tagsList.includes(tag))
+
+      if (queryTags.length === 0) {
+        delete newQuery.tags
+      }
     }
-    if (queryText && !this.searchedText.length) {
-      this.$store.commit('appState/setSearchedText', queryText.split(','))
+
+    let queryAuthor = query.author
+
+    if (queryAuthor && !this.authorsList.includes(queryAuthor)) {
+      queryAuthor = ''
+      delete newQuery.author
     }
-    if (queryAuthor) {
-      this.$store.commit('appState/setActiveAuthor', queryAuthor)
+
+    if (!isEqual(query, newQuery)) {
+      this.$router.replace({ query: newQuery })
     }
+
+    const queryText = query.search
+
+    this.$store.commit('appState/setActiveTags', queryTags)
+    this.$store.commit('appState/setActiveCategory', queryCategory)
+    this.$store.commit(
+      'appState/setSearchedText',
+      queryText ? queryText.split(',') : []
+    )
+    this.$store.commit('appState/setActiveAuthor', queryAuthor || '')
 
     const latestWeeklyPost = this.publicPages
       .filter(
@@ -212,20 +295,34 @@ export default {
         category: this.activeCategory,
         author: this.activeAuthor,
       }
+
+      Object.keys(newQuery).forEach((entry) => {
+        const value = newQuery[entry]
+        if (value === '' || value.length === 0) {
+          delete newQuery[entry]
+        }
+      })
+
       this.$router.replace({ query: newQuery }).catch(() => {})
     },
     blockLazyLoad() {
       this.infiniteScroll = false
     },
     showMorePages() {
-      this.numberOfPagesToShow = this.numberOfPagesToShow + 21
+      this.numberOfPagesToShow = this.numberOfPagesToShow + 24
     },
     handleLoadMoreClick() {
       this.infiniteScroll = true
-      this.numberOfPagesToShow = 40
+      this.numberOfPagesToShow = this.numberOfPagesToShow + 24
     },
     handleBottomVisibilityChange(isVisible) {
-      isVisible && this.showMorePages()
+      if (
+        isVisible &&
+        this.infiniteScroll &&
+        this.pagesToShow.length < this.publicPages.length
+      ) {
+        this.showMorePages()
+      }
     },
     delayVal: function () {
       this.current =

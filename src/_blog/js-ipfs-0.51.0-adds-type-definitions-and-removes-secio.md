@@ -2,11 +2,13 @@
 date: 2020-10-29 06:00:00 +0000
 permalink: '/2020-10-29-js-ipfs-0-50/'
 translationKey: ''
-tags: js-ipfs, SECIO
-header_image: '/js-ipfs-placeholder-header-image.png'
+header_image: '/header-image-js-ipfs-placeholder.png'
 title: js-IPFS 0.51.0 adds type definitions and removes SECIO
 description: ''
 author: Alex Potsides
+tags:
+  - js-ipfs
+  - SECIO
 ---
 
 # 🔦 Highlights

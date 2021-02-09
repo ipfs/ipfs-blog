@@ -2,7 +2,8 @@
 date: 2019-09-10
 permalink: /zh-cn/ipfs-weekly-58/
 translationKey: ipfs-weekly-58
-tags: weekly
+tags:
+  - weekly
 title: IPFS 周报-58
 author: 默奕
 ---

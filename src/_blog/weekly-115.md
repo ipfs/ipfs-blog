@@ -2,7 +2,8 @@
 date: 2020-11-25 07:00:00 +0000
 permalink: '/weekly-115/'
 translationKey: ipfs-weekly-115
-tags: weekly
+tags:
+  - weekly
 header_image: /header-image-weekly-newsletter.png
 title: Welcome to IPFS Weekly 115
 description: ''

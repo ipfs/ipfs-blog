@@ -1,51 +1,55 @@
 <template>
-  <div
-    class="flex flex-wrap items-center lg:justify-between"
-    @keyup.left="handleKeyUp(-1)"
-    @keyup.right="handleKeyUp(1)"
-  >
-    <div>Sort items by type:</div>
-    <multiselect
-      ref="select0"
-      v-model="selectedCat"
-      class="flex-grow mx-2"
-      :options="categories"
-      :searchable="false"
-      :allow-empty="false"
-      deselect-label=""
-      @select="focusOnSubmit()"
-      @open="setSelected(0)"
-    />
-    <span>and/or</span>
-    <multiselect
-      ref="select1"
-      v-model="selectedTags"
-      class="flex-grow ml-0 lg:mx-2 max-w-sm max-h-sm"
-      tag-placeholder="search for this text"
-      placeholder="Search for words or #tags"
-      track-by="name"
-      label="name"
-      :options="resolvedTags"
-      :multiple="true"
-      :taggable="true"
-      @tag="handleAddTag"
-      @select="focusOnSubmit()"
-      @open="setSelected(1)"
-    ></multiselect>
-
-    <button
-      ref="select2"
-      class="p-2 text-white bg-blueGreen rounded opacity-75 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
-      @click="handleSearch"
-      @focus="setSelected(2)"
+  <div>
+    <div class="mb-2">Filter items by type:</div>
+    <div
+      class="flex flex-col xl:flex-row"
+      @keyup.left="handleKeyUp(-1)"
+      @keyup.right="handleKeyUp(1)"
     >
-      Search
-    </button>
+      <multiselect
+        ref="select0"
+        :value="activeCategory !== '' ? activeCategory : 'All content'"
+        class="mb-2 xl:mb-0 xl:mr-2 xl:max-w-xs"
+        :options="['All content', ...categoriesList]"
+        :searchable="false"
+        :allow-empty="false"
+        deselect-label=""
+        @input="setActiveCategory"
+        @open="setSelected(0)"
+      />
+      <multiselect
+        ref="select1"
+        v-model="selectedTags"
+        class="mb-2 xl:mb-0 xl:mr-2"
+        tag-placeholder="search for this text"
+        placeholder="Search for words or #tags"
+        track-by="name"
+        label="name"
+        :limit="['xxl'].includes(this.$mq) ? tagsLimit : tagsList.length"
+        :options="resolvedTags"
+        :multiple="true"
+        :taggable="true"
+        @tag="handleAddTag"
+        @remove="removeTag"
+        @select="focusOnSubmit"
+        @open="setSelected(1)"
+      ></multiselect>
+
+      <button
+        ref="select2"
+        class="h-full p-2 text-white bg-blueGreen rounded opacity-75 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        @click="handleSearch"
+        @focus="setSelected(2)"
+      >
+        Search
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
 import Multiselect from 'vue-multiselect'
+import { mapState } from 'vuex'
 
 export default {
   name: 'SearchCategoriesAndTags',
@@ -55,47 +59,166 @@ export default {
       type: Array,
       default: () => ['list', 'of', 'tags', '#'],
     },
-    categories: {
-      type: Array,
-      default: () => ['list', 'of', 'cats'],
-    },
   },
   data() {
     return {
-      selectedCat: this.categories[0],
       selectedTags: [],
       searchedWords: [],
       selectedInput: 0,
+      tagsLimit: 99,
     }
   },
   computed: {
+    ...mapState('appState', [
+      'categoriesList',
+      'tagsList',
+      'activeCategory',
+      'activeTags',
+      'searchedText',
+    ]),
     resolvedTags() {
       return this.tags.map((tag) => ({
         name: `#${tag}`,
         value: tag,
       }))
     },
+    queryProptertyWatchlist() {
+      return `${this.activeTags}|${this.searchedText}`
+    },
+  },
+  watch: {
+    queryProptertyWatchlist() {
+      this.updateTagsWithQuery()
+    },
+  },
+  mounted() {
+    this.updateTagsWithQuery()
+  },
+  created() {
+    this.calculateTagsLimit()
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.tagsEvent)
+    }
+  },
+  destroyed() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.tagsEvent)
+    }
   },
   methods: {
+    tagsEvent() {
+      if (['xxl'].includes(this.$mq)) {
+        this.calculateTagsLimit()
+      }
+    },
+    calculateTagsLimit(newTags) {
+      // The max value a char chan occupy in px
+      const multiplier = 8
+      // Width of the help text - "X or more"
+      const helpTextWidth = 75
+      // Padding and margin for the each tag
+      const tagPadding = 46
+      let limit = this.tagsList.length
+
+      if (typeof window !== 'undefined' && this.$refs.select1) {
+        const tagsEl = this.$refs.select1.$el.childNodes[2]
+        const tagsStyles = window.getComputedStyle(tagsEl)
+        // Width of the tags container
+        const availableWidth =
+          tagsEl.getBoundingClientRect().width -
+          parseFloat(tagsStyles.paddingLeft) -
+          parseFloat(tagsStyles.paddingRight)
+
+        const tagNames = (newTags || this.selectedTags).map((tag) => tag.name)
+        const tags = tagNames.map(
+          (tagName) => tagPadding + tagName.length * multiplier
+        )
+        const estimatedTagsWidth = tags.reduce((a, b) => a + b, 0)
+
+        if (estimatedTagsWidth > availableWidth) {
+          let charCount = helpTextWidth
+
+          for (let i = 0; i < tags.length; i++) {
+            if (charCount + tags[i] > availableWidth) {
+              break
+            }
+
+            charCount += tags[i]
+
+            limit = i + 1
+          }
+        }
+      }
+
+      this.tagsLimit = limit
+    },
+    updateTagsWithQuery() {
+      const { query } = this.$route
+
+      const queryTags = query.tags ? query.tags.split(',') : []
+      const querySearch = query.search ? query.search.split(',') : []
+
+      const tagArray = this.selectedTags.map((tag) => tag.value)
+      const tagsToAdd = [...queryTags, ...querySearch].filter(
+        (tag) => !tagArray.includes(tag)
+      )
+      const tagsToRemove = tagArray.filter(
+        (tag) => this.tagsList.includes(tag) && !queryTags.includes(tag)
+      )
+      const textsToRemove = tagArray.filter(
+        (tag) => !this.tagsList.includes(tag) && !querySearch.includes(tag)
+      )
+
+      const newTags = this.selectedTags.filter(
+        (tag) =>
+          !tagsToRemove.includes(tag.value) &&
+          !textsToRemove.includes(tag.value)
+      )
+
+      tagsToAdd.forEach((tag) => {
+        const isTag = this.tagsList.includes(tag)
+
+        newTags.push({
+          name: (isTag ? '#' : '') + tag,
+          value: tag,
+        })
+      })
+
+      this.selectedTags = newTags
+    },
+    setActiveCategory(category) {
+      this.$store.commit(
+        'appState/setActiveCategory',
+        this.categoriesList.includes(category) ? category : ''
+      )
+    },
+    removeTag(tagToRemove) {
+      if (this.activeTags.length > 0 || this.searchedText.length > 0) {
+        this.selectedTags = this.selectedTags.filter(
+          (tag) => tag.value !== tagToRemove.value
+        )
+        this.handleSearch()
+      }
+    },
     handleSearch() {
       const tagArray = this.selectedTags.map((tag) => tag.value)
-      const tags = tagArray.filter((tag) => this.tags.includes(tag))
-      const texts = tagArray.filter((tag) => !this.tags.includes(tag))
-      const category =
-        this.selectedCat === this.categories[0] ? undefined : this.selectedCat
+      const tags = tagArray.filter((tag) => this.tagsList.includes(tag))
+      const texts = tagArray.filter((tag) => !this.tagsList.includes(tag))
 
       this.$store.commit('appState/setActiveTags', tags)
-      this.$store.commit('appState/setActiveCategory', category)
       this.$store.commit('appState/setSearchedText', texts)
     },
     handleAddTag(text) {
-      this.selectedTags.push({
+      const option = {
         name: text,
         value: text,
-      })
-      this.focusOnSubmit()
+      }
+      this.selectedTags.push(option)
+      this.calculateTagsLimit([...this.selectedTags, option])
+      this.$refs.select2.focus()
     },
-    focusOnSubmit() {
+    focusOnSubmit(option) {
+      this.calculateTagsLimit()
       this.$refs.select2.focus()
     },
     handleKeyUp(switcher) {
@@ -109,7 +232,7 @@ export default {
       }
 
       if (futureIndex === 2) {
-        this.focusOnSubmit()
+        this.$refs.select2.focus()
         this.selectedInput = 2
       } else {
         this.$refs['select' + futureIndex].$el.focus()
@@ -125,18 +248,50 @@ export default {
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 
 <style>
-.multiselect {
-  width: auto;
-  height: 2.7rem;
-}
-
 .multiselect__tag,
+.multiselect__tag-icon:hover,
 .multiselect__option--highlight,
 .multiselect__option--highlight::after {
   @apply bg-blueGreen;
 }
 
-.multiselect__placeholder {
-  font-size: 16px;
+.multiselect__placeholder,
+.multiselect__input {
+  height: 1.5rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 0.3125rem;
+  font-size: 1rem;
+}
+
+.multiselect--active .multiselect__tags {
+  padding-botom: 0;
+}
+
+.multiselect__tags {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multiselect__tags-wrap {
+  margin-bottom: -0.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multiselect__tag {
+  margin-bottom: 0.5rem;
+}
+
+.multiselect--active .multiselect__tags-wrap {
+  padding-bottom: 0.5rem;
+}
+
+.multiselect__single,
+.multiselect__strong {
+  margin-bottom: 0;
 }
 </style>

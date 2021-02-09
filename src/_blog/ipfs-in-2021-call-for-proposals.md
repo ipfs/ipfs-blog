@@ -2,11 +2,13 @@
 date: 2020-11-19 07:00:00 +0000
 permalink: '/2020-11-19-community-rfp/'
 translationKey: ''
-tags: project planning, community
 header_image: '/113-community-rfp.jpg'
 title: 'IPFS in 2021: Call for Proposals'
 description: ''
 author: David Choi, Kadir Topal
+tags:
+  - project planning
+  - community
 ---
 
 # 2021 IPFS Project Planning

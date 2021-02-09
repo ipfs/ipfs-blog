@@ -8,8 +8,11 @@ const appState = {
     navHeight: 0,
     activeTags: [],
     searchedText: [],
-    activeCategory: null,
-    activeAuthor: null,
+    categoriesList: [],
+    tagsList: [],
+    authorsList: [],
+    activeCategory: '',
+    activeAuthor: '',
     latestWeeklyPost: null,
     videoModalCard: null,
   },
@@ -23,14 +26,26 @@ const appState = {
     setRouterLocation: (state, data) => {
       Vue.set(state, 'routerLocation', data)
     },
+    setTagsList: (state, data) => {
+      Vue.set(state, 'tagsList', data)
+    },
     setActiveTags: (state, data) => {
       Vue.set(state, 'activeTags', data)
+    },
+    addNewTag: (state, data) => {
+      Vue.set(state, 'activeTags', [...new Set([...state.activeTags, ...data])])
     },
     setSearchedText: (state, data) => {
       Vue.set(state, 'searchedText', data)
     },
+    setCategoriesList: (state, data) => {
+      Vue.set(state, 'categoriesList', data)
+    },
     setActiveCategory: (state, data) => {
       Vue.set(state, 'activeCategory', data)
+    },
+    setAuthorsList: (state, data) => {
+      Vue.set(state, 'authorsList', data)
     },
     setActiveAuthor: (state, data) => {
       Vue.set(state, 'activeAuthor', data)
@@ -41,8 +56,8 @@ const appState = {
     clearFilters: (state) => {
       Vue.set(state, 'activeTags', [])
       Vue.set(state, 'searchedText', [])
-      Vue.set(state, 'activeCategory', null)
-      Vue.set(state, 'activeAuthor', null)
+      Vue.set(state, 'activeCategory', '')
+      Vue.set(state, 'activeAuthor', '')
     },
     setVideoModalCard: (state, card) => {
       Vue.set(state, 'videoModalCard', card)

@@ -2,7 +2,9 @@
 date: 2020-12-09 07:00:00 +0000
 permalink: '/weekly-117/'
 translationKey: ipfs-weekly-117
-tags: weekly, browsers
+tags:
+  - 'weekly'
+  - 'browsers'
 header_image: /header-image-weekly-newsletter.png
 title: Welcome to IPFS Weekly 117
 description: ''

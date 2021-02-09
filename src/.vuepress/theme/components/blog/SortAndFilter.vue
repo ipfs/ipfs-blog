@@ -1,11 +1,7 @@
 <template>
   <div class="grid-margins opacity-85">
     <LinksAndSocial :block-lazy-load="blockLazyLoad" />
-    <SearchCategoriesAndTags
-      class="mt-2"
-      :tags="tags"
-      :categories="categories"
-    />
+    <SearchCategoriesAndTags class="mt-2 xl:-mb-10 min-h-28" :tags="tags" />
     <ActiveTags :number-of-posts="numberOfPosts" class="mt-4" />
   </div>
 </template>
@@ -23,10 +19,6 @@ export default {
     SearchCategoriesAndTags,
   },
   props: {
-    categories: {
-      type: Array,
-      required: true,
-    },
     tags: {
       type: Array,
       required: true,

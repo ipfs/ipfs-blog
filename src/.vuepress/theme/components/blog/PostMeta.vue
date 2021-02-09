@@ -11,7 +11,7 @@
         {{ resolvedDate }}
       </time>
     </div>
-    <div class="tags mt-2 mb-1 flex flex-wrap" itemprop="keywords">
+    <div class="tags mt-2 flex flex-wrap" itemprop="keywords">
       <button
         v-if="category"
         class="p-1 mr-1 bg-blueGreen text-white font-semibold hover:underline rounded cursor-pointer mt-1"

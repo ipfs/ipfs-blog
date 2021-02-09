@@ -2,11 +2,13 @@
 date: 2020-12-21 07:00:00 +0000
 permalink: '/2020-12-21-ipfs-in-2021/'
 translationKey: ''
-tags: project planning, community
 header_image: '/114-ipfs-2021.jpg'
 title: 'IPFS in 2021: Thank You for Your Proposals!'
 description: ''
 author: David Choi, Kadir Topal
+tags:
+  - project planning
+  - community
 ---
 
 In November, [we asked the IPFS community to nominate and discuss potential themes](/2020-11-19-community-rfp/) for the project to tackle in 2021. It’s been amazing to see the insight, creativity, and passion from this amazing community to better understand where the IPFS Project needs to improve, upgrade, and focus in 2021. Using the thinking surfaced, we hope to help synthesize a few broad areas of work that the project could focus on next year (and even beyond) - and share those back with the community for feedback in January.

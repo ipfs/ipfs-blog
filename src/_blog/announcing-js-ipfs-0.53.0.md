@@ -1,14 +1,16 @@
 ---
 date: 2021-01-19 07:00:00 +0000
-permalink: "/2021-01-19-js-ipfs-0-50/"
+permalink: '/2021-01-19-js-ipfs-0-50/'
 translationKey: ''
-tags: js-ipfs, breaking change
-header_image: "/header-image-js-ipfs-placeholder.png"
+header_image: '/header-image-js-ipfs-placeholder.png'
 title: Announcing js-IPFS 0.53.0
 description: js-IPFS 0.53.0 arrives with experimental gRPC server and libp2p-0.30.x
 author: Alex Potsides
-
+tags:
+  - js-ipfs
+  - breaking change
 ---
+
 ## 🔦 Highlights
 
 > full-duplex streaming browser APIs and the latest libp2p
@@ -56,7 +58,7 @@ const createClient = require('ipfs-client')
 
 const client = createClient({
   grpc: '/ipv4/127.0.0.1/tcp/5003/ws',
-  http: '/ipv4/127.0.0.1/tcp/5002/http'
+  http: '/ipv4/127.0.0.1/tcp/5002/http',
 })
 
 const id = await client.id()
@@ -87,23 +89,23 @@ Expect a blog post here soon with a deep dive, but in the mean time see the [lib
 
 ## ✨New features
 
-* add grpc server and client ([#3403](https://github.com/ipfs/js-ipfs/issues/3403)) ([a9027e0](https://github.com/ipfs/js-ipfs/commit/a9027e0ec0cea9a4f34b4f2f52e09abb35237384)), closes [#2519](https://github.com/ipfs/js-ipfs/issues/2519) [#2838](https://github.com/ipfs/js-ipfs/issues/2838) [#2943](https://github.com/ipfs/js-ipfs/issues/2943) [#2854](https://github.com/ipfs/js-ipfs/issues/2854) [#2864](https://github.com/ipfs/js-ipfs/issues/2864)
-* allow passing a http.Agent to ipfs-http-client in node ([#3474](https://github.com/ipfs/js-ipfs/issues/3474)) ([fe93ba0](https://github.com/ipfs/js-ipfs/commit/fe93ba01a0c62cead7cc4e0023de2d2a00adbc02)), closes [/tools.ietf.org/html/rfc2616#section-8](https://github.com//tools.ietf.org/html/rfc2616/issues/section-8) [#3464](https://github.com/ipfs/js-ipfs/issues/3464)
-* allow passing a http.Agent to the grpc client ([#3477](https://github.com/ipfs/js-ipfs/issues/3477)) ([c5f0bc5](https://github.com/ipfs/js-ipfs/commit/c5f0bc5eeee15369b7d02901035b04184a8608d2)), closes [#3474](https://github.com/ipfs/js-ipfs/issues/3474)
-* update libp2p to 0.30 ([#3427](https://github.com/ipfs/js-ipfs/issues/3427)) ([a39e6fb](https://github.com/ipfs/js-ipfs/commit/a39e6fb372bf9e7782462b6a4b7530a3f8c9b3f1))
+- add grpc server and client ([#3403](https://github.com/ipfs/js-ipfs/issues/3403)) ([a9027e0](https://github.com/ipfs/js-ipfs/commit/a9027e0ec0cea9a4f34b4f2f52e09abb35237384)), closes [#2519](https://github.com/ipfs/js-ipfs/issues/2519) [#2838](https://github.com/ipfs/js-ipfs/issues/2838) [#2943](https://github.com/ipfs/js-ipfs/issues/2943) [#2854](https://github.com/ipfs/js-ipfs/issues/2854) [#2864](https://github.com/ipfs/js-ipfs/issues/2864)
+- allow passing a http.Agent to ipfs-http-client in node ([#3474](https://github.com/ipfs/js-ipfs/issues/3474)) ([fe93ba0](https://github.com/ipfs/js-ipfs/commit/fe93ba01a0c62cead7cc4e0023de2d2a00adbc02)), closes [/tools.ietf.org/html/rfc2616#section-8](https://github.com//tools.ietf.org/html/rfc2616/issues/section-8) [#3464](https://github.com/ipfs/js-ipfs/issues/3464)
+- allow passing a http.Agent to the grpc client ([#3477](https://github.com/ipfs/js-ipfs/issues/3477)) ([c5f0bc5](https://github.com/ipfs/js-ipfs/commit/c5f0bc5eeee15369b7d02901035b04184a8608d2)), closes [#3474](https://github.com/ipfs/js-ipfs/issues/3474)
+- update libp2p to 0.30 ([#3427](https://github.com/ipfs/js-ipfs/issues/3427)) ([a39e6fb](https://github.com/ipfs/js-ipfs/commit/a39e6fb372bf9e7782462b6a4b7530a3f8c9b3f1))
 
 ### 🔨 Breaking changes
 
-* The websocket transport will only dial DNS+WSS addresses - see https://github.com/libp2p/js-libp2p-websockets/releases/tag/v0.15.0
+- The websocket transport will only dial DNS+WSS addresses - see https://github.com/libp2p/js-libp2p-websockets/releases/tag/v0.15.0
 
 ### 🕷️ Bug fixes
 
-* files ls should return string ([#3352](https://github.com/ipfs/js-ipfs/pull/3352)) ([16ecc74](https://github.com/ipfs/js-ipfs/commit/16ecc7485dfbb1f0c827c5f804974bb804f3dafd))
-* fixes "interface-ipfs-core" link ([#3334](https://github.com/ipfs/js-ipfs/pull/3334)) ([3e7e222](https://github.com/ipfs/js-ipfs/commit/3e7e22239e334705acd665408e77c84e65da2b32))
-* packages/ipfs-core/src/index.js attempts to export undefined Buffer ([#3312](https://github.com/ipfs/js-ipfs/issues/3312)) ([5cc6dfe](https://github.com/ipfs/js-ipfs/commit/5cc6dfebf96ad9509e7ded175291789e32402eec))
-* HTTP client factory: Invalid URL in React Navtive ([#3331](https://github.com/ipfs/js-ipfs/issues/3331)) ([4eb196c](https://github.com/ipfs/js-ipfs/commit/4eb196c07129d0ee90a7ad55feca69b6b349d8b7))
-* Invalid version error triggered in cli pin add/rm ([#3306](https://github.com/ipfs/js-ipfs/pull/3306)) ([69757f3](https://github.com/ipfs/js-ipfs/commit/69757f3c321c5d135ebde7a262c169427e4f1105))
-* Loading ipfs-js bundle in worker fails with ReferenceError: window is not defined ([#2349](https://github.com/ipfs/js-ipfs/issues/2349)) ([3f72e50](https://github.com/ipfs/aegir/commit/3f72e5074145a8f2ec03143db4230514af664f95))
+- files ls should return string ([#3352](https://github.com/ipfs/js-ipfs/pull/3352)) ([16ecc74](https://github.com/ipfs/js-ipfs/commit/16ecc7485dfbb1f0c827c5f804974bb804f3dafd))
+- fixes "interface-ipfs-core" link ([#3334](https://github.com/ipfs/js-ipfs/pull/3334)) ([3e7e222](https://github.com/ipfs/js-ipfs/commit/3e7e22239e334705acd665408e77c84e65da2b32))
+- packages/ipfs-core/src/index.js attempts to export undefined Buffer ([#3312](https://github.com/ipfs/js-ipfs/issues/3312)) ([5cc6dfe](https://github.com/ipfs/js-ipfs/commit/5cc6dfebf96ad9509e7ded175291789e32402eec))
+- HTTP client factory: Invalid URL in React Navtive ([#3331](https://github.com/ipfs/js-ipfs/issues/3331)) ([4eb196c](https://github.com/ipfs/js-ipfs/commit/4eb196c07129d0ee90a7ad55feca69b6b349d8b7))
+- Invalid version error triggered in cli pin add/rm ([#3306](https://github.com/ipfs/js-ipfs/pull/3306)) ([69757f3](https://github.com/ipfs/js-ipfs/commit/69757f3c321c5d135ebde7a262c169427e4f1105))
+- Loading ipfs-js bundle in worker fails with ReferenceError: window is not defined ([#2349](https://github.com/ipfs/js-ipfs/issues/2349)) ([3f72e50](https://github.com/ipfs/aegir/commit/3f72e5074145a8f2ec03143db4230514af664f95))
 
 ## 🗺️ What’s next?
 
@@ -113,80 +115,80 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 
 ## 😍 Huge thank you to everyone that made this release possible
 
-* [@a1300](https://github.com/a1300) (3 commits, 3 PRs, 10 issues, 11 comments)
-* [@achingbrain](https://github.com/achingbrain) (51 commits, 34 PRs, 5 issues, 87 comments)
-* [@acolytec3](https://github.com/acolytec3) (3 commits, 3 PRs, 2 issues, 7 comments)
-* [@acostalima](https://github.com/acostalima) (1 issue, 9 comments)
-* [@adamprocter](https://github.com/adamprocter) (1 comment)
-* [@ampcpmgp](https://github.com/ampcpmgp) (1 issue, 1 comment)
-* [@andykitt](https://github.com/andykitt) (1 comment)
-* [@aphelionz](https://github.com/aphelionz) (1 PR, 1 comment)
-* [@aschmahmann](https://github.com/aschmahmann) (1 comment)
-* [@AuHau](https://github.com/AuHau) (1 PR, 2 issues, 5 comments)
-* [@carsonfarmer](https://github.com/carsonfarmer) (1 issue, 3 comments)
-* [@codecov-io](https://github.com/codecov-io) (3 comments)
-* [@dapplion](https://github.com/dapplion) (3 issues, 6 comments)
-* [@daviddias](https://github.com/daviddias) (1 commit, 1 PR, 2 issues, 3 comments)
-* [@DeedleFake](https://github.com/DeedleFake) (1 comment)
-* [@deefactorial](https://github.com/deefactorial) (1 issue)
-* [@dependabot[bot]](https://github.com/dependabot%5Bbot%5D) (2 commits)
-* [@elchenberg](https://github.com/elchenberg) (1 comment)
-* [@EmanHerawy](https://github.com/EmanHerawy) (1 issue)
-* [@gbaranski](https://github.com/gbaranski) (5 comments)
-* [@Gozala](https://github.com/Gozala) (14 commits, 14 PRs, 12 issues, 80 comments)
-* [@hacdias](https://github.com/hacdias) (20 commits, 7 PRs, 1 issue, 10 comments)
-* [@HexaField](https://github.com/HexaField) (3 commits, 9 PRs, 5 issues, 10 comments)
-* [@hugomrdias](https://github.com/hugomrdias) (17 commits, 16 PRs, 25 comments)
-* [@hunterInt](https://github.com/hunterInt) (1 issue, 8 comments)
-* [@icidasset](https://github.com/icidasset) (1 commit, 2 PRs, 1 issue, 14 comments)
-* [@ikreymer](https://github.com/ikreymer) (1 commit, 1 PR, 1 issue)
-* [@jacobfriedman](https://github.com/jacobfriedman) (1 commit, 1 PR, 6 comments)
-* [@jacobheun](https://github.com/jacobheun) (6 commits, 1 issue, 26 comments)
-* [@james2mid](https://github.com/james2mid) (1 issue, 1 comment)
-* [@JonasKruckenberg](https://github.com/JonasKruckenberg) (1 comment)
-* [@JonathanLorimer](https://github.com/JonathanLorimer) (1 comment)
-* [@julianmrodri](https://github.com/julianmrodri) (2 comments)
-* [@lidel](https://github.com/lidel) (2 commits, 2 PRs, 5 comments)
-* [@lovemyliwu](https://github.com/lovemyliwu) (3 commits, 3 PRs, 6 comments)
-* [@lucasvuotto](https://github.com/lucasvuotto) (3 comments)
-* [@markg85](https://github.com/markg85) (1 comment)
-* [@mburns](https://github.com/mburns) (2 commits, 1 PR, 1 comment)
-* [@mdtanrikulu](https://github.com/mdtanrikulu) (1 comment)
-* [@mgoelzer](https://github.com/mgoelzer) (1 issue)
-* [@mikeal](https://github.com/mikeal) (1 commit, 1 PR, 1 comment)
-* [@mtiger2k](https://github.com/mtiger2k) (2 issues, 1 comment)
-* [@mvdan](https://github.com/mvdan) (1 comment)
-* [@oed](https://github.com/oed) (2 comments)
-* [@on-meetsys](https://github.com/on-meetsys) (1 comment)
-* [@OR13](https://github.com/OR13) (5 comments)
-* [@peterjanbrone](https://github.com/peterjanbrone) (1 commit, 1 PR, 1 comment)
-* [@raphael10-collab](https://github.com/raphael10-collab) (1 issue)
-* [@robertkiel](https://github.com/robertkiel) (1 PR, 2 comments)
-* [@rvagg](https://github.com/rvagg) (5 comments)
-* [@ryanio](https://github.com/ryanio) (2 comments)
-* [@samlior](https://github.com/samlior) (1 commit, 1 PR)
-* [@scenaristeur](https://github.com/scenaristeur) (1 issue)
-* [@snickell](https://github.com/snickell) (1 comment)
-* [@stbrody](https://github.com/stbrody) (1 issue, 3 comments)
-* [@tabcat](https://github.com/tabcat) (1 issue, 2 comments)
-* [@technicallyty](https://github.com/technicallyty) (1 comment)
-* [@TheoXD](https://github.com/TheoXD) (1 comment)
-* [@thotheolh](https://github.com/thotheolh) (1 comment)
-* [@ukstv](https://github.com/ukstv) (1 issue, 2 comments)
-* [@valmack](https://github.com/valmack) (6 issues, 7 comments)
-* [@vasco-santos](https://github.com/vasco-santos) (119 commits, 50 PRs, 11 issues, 123 comments)
-* [@vaultec81](https://github.com/vaultec81) (1 comment)
-* [@VexyCats](https://github.com/VexyCats) (1 issue)
-* [@vmx](https://github.com/vmx) (15 commits, 2 PRs, 16 comments)
-* [@vogdb](https://github.com/vogdb) (1 issue, 5 comments)
-* [@warpfork](https://github.com/warpfork) (2 comments)
-* [@welcome](undefined) (15 comments)
-* [@wemeetagain](https://github.com/wemeetagain) (3 commits, 1 PR, 1 issue, 1 comment)
-* [@workingtim](https://github.com/workingtim) (2 issues, 2 comments)
-* [@woss](https://github.com/woss) (1 issue, 4 comments)
-* [@wqsz7xn](https://github.com/wqsz7xn) (1 commit, 1 PR, 1 comment)
-* [@Xmader](https://github.com/Xmader) (1 PR, 10 comments)
-* [@xmaysonnave](https://github.com/xmaysonnave) (1 issue, 3 comments)
+- [@a1300](https://github.com/a1300) (3 commits, 3 PRs, 10 issues, 11 comments)
+- [@achingbrain](https://github.com/achingbrain) (51 commits, 34 PRs, 5 issues, 87 comments)
+- [@acolytec3](https://github.com/acolytec3) (3 commits, 3 PRs, 2 issues, 7 comments)
+- [@acostalima](https://github.com/acostalima) (1 issue, 9 comments)
+- [@adamprocter](https://github.com/adamprocter) (1 comment)
+- [@ampcpmgp](https://github.com/ampcpmgp) (1 issue, 1 comment)
+- [@andykitt](https://github.com/andykitt) (1 comment)
+- [@aphelionz](https://github.com/aphelionz) (1 PR, 1 comment)
+- [@aschmahmann](https://github.com/aschmahmann) (1 comment)
+- [@AuHau](https://github.com/AuHau) (1 PR, 2 issues, 5 comments)
+- [@carsonfarmer](https://github.com/carsonfarmer) (1 issue, 3 comments)
+- [@codecov-io](https://github.com/codecov-io) (3 comments)
+- [@dapplion](https://github.com/dapplion) (3 issues, 6 comments)
+- [@daviddias](https://github.com/daviddias) (1 commit, 1 PR, 2 issues, 3 comments)
+- [@DeedleFake](https://github.com/DeedleFake) (1 comment)
+- [@deefactorial](https://github.com/deefactorial) (1 issue)
+- [@dependabot[bot]](https://github.com/dependabot%5Bbot%5D) (2 commits)
+- [@elchenberg](https://github.com/elchenberg) (1 comment)
+- [@EmanHerawy](https://github.com/EmanHerawy) (1 issue)
+- [@gbaranski](https://github.com/gbaranski) (5 comments)
+- [@Gozala](https://github.com/Gozala) (14 commits, 14 PRs, 12 issues, 80 comments)
+- [@hacdias](https://github.com/hacdias) (20 commits, 7 PRs, 1 issue, 10 comments)
+- [@HexaField](https://github.com/HexaField) (3 commits, 9 PRs, 5 issues, 10 comments)
+- [@hugomrdias](https://github.com/hugomrdias) (17 commits, 16 PRs, 25 comments)
+- [@hunterInt](https://github.com/hunterInt) (1 issue, 8 comments)
+- [@icidasset](https://github.com/icidasset) (1 commit, 2 PRs, 1 issue, 14 comments)
+- [@ikreymer](https://github.com/ikreymer) (1 commit, 1 PR, 1 issue)
+- [@jacobfriedman](https://github.com/jacobfriedman) (1 commit, 1 PR, 6 comments)
+- [@jacobheun](https://github.com/jacobheun) (6 commits, 1 issue, 26 comments)
+- [@james2mid](https://github.com/james2mid) (1 issue, 1 comment)
+- [@JonasKruckenberg](https://github.com/JonasKruckenberg) (1 comment)
+- [@JonathanLorimer](https://github.com/JonathanLorimer) (1 comment)
+- [@julianmrodri](https://github.com/julianmrodri) (2 comments)
+- [@lidel](https://github.com/lidel) (2 commits, 2 PRs, 5 comments)
+- [@lovemyliwu](https://github.com/lovemyliwu) (3 commits, 3 PRs, 6 comments)
+- [@lucasvuotto](https://github.com/lucasvuotto) (3 comments)
+- [@markg85](https://github.com/markg85) (1 comment)
+- [@mburns](https://github.com/mburns) (2 commits, 1 PR, 1 comment)
+- [@mdtanrikulu](https://github.com/mdtanrikulu) (1 comment)
+- [@mgoelzer](https://github.com/mgoelzer) (1 issue)
+- [@mikeal](https://github.com/mikeal) (1 commit, 1 PR, 1 comment)
+- [@mtiger2k](https://github.com/mtiger2k) (2 issues, 1 comment)
+- [@mvdan](https://github.com/mvdan) (1 comment)
+- [@oed](https://github.com/oed) (2 comments)
+- [@on-meetsys](https://github.com/on-meetsys) (1 comment)
+- [@OR13](https://github.com/OR13) (5 comments)
+- [@peterjanbrone](https://github.com/peterjanbrone) (1 commit, 1 PR, 1 comment)
+- [@raphael10-collab](https://github.com/raphael10-collab) (1 issue)
+- [@robertkiel](https://github.com/robertkiel) (1 PR, 2 comments)
+- [@rvagg](https://github.com/rvagg) (5 comments)
+- [@ryanio](https://github.com/ryanio) (2 comments)
+- [@samlior](https://github.com/samlior) (1 commit, 1 PR)
+- [@scenaristeur](https://github.com/scenaristeur) (1 issue)
+- [@snickell](https://github.com/snickell) (1 comment)
+- [@stbrody](https://github.com/stbrody) (1 issue, 3 comments)
+- [@tabcat](https://github.com/tabcat) (1 issue, 2 comments)
+- [@technicallyty](https://github.com/technicallyty) (1 comment)
+- [@TheoXD](https://github.com/TheoXD) (1 comment)
+- [@thotheolh](https://github.com/thotheolh) (1 comment)
+- [@ukstv](https://github.com/ukstv) (1 issue, 2 comments)
+- [@valmack](https://github.com/valmack) (6 issues, 7 comments)
+- [@vasco-santos](https://github.com/vasco-santos) (119 commits, 50 PRs, 11 issues, 123 comments)
+- [@vaultec81](https://github.com/vaultec81) (1 comment)
+- [@VexyCats](https://github.com/VexyCats) (1 issue)
+- [@vmx](https://github.com/vmx) (15 commits, 2 PRs, 16 comments)
+- [@vogdb](https://github.com/vogdb) (1 issue, 5 comments)
+- [@warpfork](https://github.com/warpfork) (2 comments)
+- [@welcome](undefined) (15 comments)
+- [@wemeetagain](https://github.com/wemeetagain) (3 commits, 1 PR, 1 issue, 1 comment)
+- [@workingtim](https://github.com/workingtim) (2 issues, 2 comments)
+- [@woss](https://github.com/woss) (1 issue, 4 comments)
+- [@wqsz7xn](https://github.com/wqsz7xn) (1 commit, 1 PR, 1 comment)
+- [@Xmader](https://github.com/Xmader) (1 PR, 10 comments)
+- [@xmaysonnave](https://github.com/xmaysonnave) (1 issue, 3 comments)
 
 ## 🙌🏽 Want to contribute?
 
@@ -200,17 +202,17 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 
 The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
 
-[UnixFS]: https://docs.ipfs.io/guides/concepts/unixfs/
-[CID]: https://docs.ipfs.io/guides/concepts/cid/
-[MFS]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.io/guides/concepts/cid/
+[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
-[AbortSignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
-[Multihash]: https://multiformats.io/multihash
-[DHT]: https://docs.ipfs.io/concepts/dht/
-[Multiaddr]: https://multiformats.io/multiaddr/
-[DAG]: https://docs.ipfs.io/concepts/merkle-dag/
-[Core-API]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api
-[gRPC]: https://en.wikipedia.org/wiki/GRPC
-[gRPC-web]: https://github.com/grpc/grpc-web
-[TLS]: https://en.wikipedia.org/wiki/Transport_Layer_Security
+[abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
+[multihash]: https://multiformats.io/multihash
+[dht]: https://docs.ipfs.io/concepts/dht/
+[multiaddr]: https://multiformats.io/multiaddr/
+[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api
+[grpc]: https://en.wikipedia.org/wiki/GRPC
+[grpc-web]: https://github.com/grpc/grpc-web
+[tls]: https://en.wikipedia.org/wiki/Transport_Layer_Security

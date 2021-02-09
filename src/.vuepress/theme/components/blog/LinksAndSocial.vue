@@ -1,9 +1,9 @@
 <template>
   <div class="mb-10">
-    <h2 class="text-xl mb-2 flex flex-wrap">
+    <h2 class="mb-2">
       Event organizer, content creator, or journalist?
       <a
-        class="text-blueGreen hover:underline mx-1"
+        class="text-blueGreen hover:underline"
         href="https://protocol.ai/join"
         rel="noopener noreferrer"
       >
@@ -11,28 +11,29 @@
       >
       an item or view the
       <a
-        class="text-blueGreen hover:underline ml-1"
+        class="text-blueGreen hover:underline"
         href="https://ipfs.io/media/"
         rel="noopener noreferrer"
         >IPFS press kit.</a
       >
     </h2>
-    <div class="text-xl flex flex-wrap md:flex">
-      Prefer your news a different way? Try our
+    <div>
+      {{ `Prefer your news a different way? Try our, ` }}
       <a
-        class="text-blueGreen hover:underline ml-1"
+        class="text-blueGreen hover:underline"
         href="#newsletter-form"
         @click="blockLazyLoad()"
         >weekly newsletter</a
-      >,
+      >{{ `, ` }}
       <a
-        class="text-blueGreen hover:underline ml-1"
+        class="text-blueGreen hover:underline"
         href="/index.xml"
         rel="noopener noreferrer"
         >RSS</a
-      >, or social media.
-      <div class="flex ml-2 items-center">
-        <RSSSubscription class="flex justify-end" />
+      >{{ `, ` }}
+      <span class="mr-1">or social media.</span>
+      <div class="inline-flex">
+        <RSSSubscription class="flex" />
       </div>
     </div>
   </div>

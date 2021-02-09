@@ -1,16 +1,18 @@
 ---
 date: 2021-01-21 07:00:00 +0000
-permalink: "/2021-01-21-how-we-put-ipfs-in-brave/"
+permalink: '/2021-01-21-how-we-put-ipfs-in-brave/'
 translationKey: ''
-tags: browsers
-header_image: "/2021-01-21-how-we-put-ipfs-in-brave.jpg"
+tags:
+  - browsers
+header_image: '/2021-01-21-how-we-put-ipfs-in-brave.jpg'
 title: How we put IPFS in Brave
-description: This integration marks a major milestone for IPFS, and lays the groundwork
+description:
+  This integration marks a major milestone for IPFS, and lays the groundwork
   for further experiments into improving the experience of interacting with the network
   via web browsers.
 author: Mitch Wagner
-
 ---
+
 You may have heard the news: as of [release 1.19.86](https://github.com/brave/brave-browser/releases/tag/v1.19.86), the Brave browser has officially added [InterPlanetary File System (IPFS)](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/) support! This work is the result of a multi-year effort to bring the two projects together. In this post, we discuss the process in bringing this collaboration to fruition, and take a look under the hood to see how we accomplished this integration!
 
 ## Collaboration
@@ -56,7 +58,7 @@ This integration marks a major milestone for IPFS, and lays the groundwork for f
 
 In particular, having native URI resolution in the browser’s address bar opens up a number of different research questions. How should new concepts, like the integrity guarantees IPFS affords, be communicated to users? How do we explain the principles of peer-to-peer networking to a large user base? And perhaps most importantly, how do we bring awareness of non-traditional URIs to users, and help them acclimate to a world where links are preceded by letters other than “http”?
 
-Indeed, such research is [already underway](https://github.com/ipfs/browser-design-guidelines), particularly in the [mobile space](https://blog.ipfs.io/2020-04-24-ipfs-mobile-design-research-findings/), thanks to the introduction of IPFS in the [Opera for Android browser](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/) last year.  Nevertheless, there remains a tremendous amount of work to do. By integrating with Brave, the IPFS network extends its reach to millions of potential participants - people from every background imaginable. New interfaces and metaphors are needed to make interaction simple, intuitive, and accessible for all of these users.
+Indeed, such research is [already underway](https://github.com/ipfs/browser-design-guidelines), particularly in the [mobile space](https://blog.ipfs.io/2020-04-24-ipfs-mobile-design-research-findings/), thanks to the introduction of IPFS in the [Opera for Android browser](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/) last year. Nevertheless, there remains a tremendous amount of work to do. By integrating with Brave, the IPFS network extends its reach to millions of potential participants - people from every background imaginable. New interfaces and metaphors are needed to make interaction simple, intuitive, and accessible for all of these users.
 
 IPFS’s collaboration with Brave also provides further momentum for changes taking place with browser ecosystems. This includes increasing the URIs and network protocols browsers are capable of recognizing - the IANA standards body recently approved a number of URI schemes, including [ipfs and ipns](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) - as well as pushing to introduce native handling of these protocols in the browser itself, rather than delegating that functionality to separate applications or third-party gateways.
 

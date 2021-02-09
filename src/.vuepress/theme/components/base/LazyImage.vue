@@ -71,16 +71,22 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.v-lazy-image[src=''] {
-  @apply text-transparent;
-  visibility: hidden;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .v-lazy-image {
-  @apply opacity-0 transition-opacity duration-700;
+  @apply opacity-0;
 }
 
+.v-lazy-image[src='/card-placeholder.png'],
 .v-lazy-image-loaded {
-  @apply opacity-100;
+  animation: fade-in 0.7s ease-in-out forwards;
 }
 </style>
