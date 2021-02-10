@@ -30,7 +30,7 @@ fields:
   - type: datetime
     name: date
     label: date
-  - type: text
-    name: tags
+  - name: tags
+    type: tag_list
+    default: []
     label: tags
-    description: separate tags by comma (,)
