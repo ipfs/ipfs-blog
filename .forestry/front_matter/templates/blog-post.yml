@@ -21,11 +21,12 @@ fields:
   name: header_image
   label: header_image
 - type: text
-  name: tags
-  label: tags
-- type: text
   name: author
   label: author
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/hey-ethdenver-hack-on-ipfs-with-these-bounties.md
