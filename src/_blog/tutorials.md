@@ -7,6 +7,7 @@ data:
   path: https://coywolf.pro/webmaster/ipfs-distributed-web-cloudflare-host-site/
   date: 2021-02-10 07:00:00 +0000
   tags: static publishing, IPFS Desktop
+  card_image: "/tutorial-20210210-cloudflare-ipfs.png"
 - name: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
   title: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
   path: https://proto.school/merkle-dags
