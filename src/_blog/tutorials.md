@@ -2,6 +2,11 @@
 title: Tutorials
 type: Tutorial
 data:
+- name: How to Leverage Cloudflare and IPFS to Host a Free High-Availability Site
+  title: How to Leverage Cloudflare and IPFS to Host a Free High-Availability Site
+  path: https://coywolf.pro/webmaster/ipfs-distributed-web-cloudflare-host-site/
+  date: 2021-02-10 07:00:00 +0000
+  tags: static publishing, IPFS Desktop
 - name: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
   title: 'ProtoSchool: Merkle DAGs — Structuring Data for the Distributed Web'
   path: https://proto.school/merkle-dags
