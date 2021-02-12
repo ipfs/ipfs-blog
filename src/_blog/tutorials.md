@@ -22,10 +22,11 @@ data:
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
-  date: 2020-09-12T00:00:00.000+00:00
+  date: 2020-03-16 00:00:00 +0000
   tags:
   - ProtoSchool
   - CID
+  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
 - name: 'ProtoSchool: Regular Files API'
   title: 'ProtoSchool: Regular Files API'
   path: https://proto.school/regular-files-api
