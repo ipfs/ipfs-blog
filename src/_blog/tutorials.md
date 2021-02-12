@@ -19,13 +19,6 @@ data:
   - ProtoSchool
   - DAG
   card_image: "/2021-01-14-tutorial-protoschool-merkledags.png"
-- name: 'ProtoSchool: Mutable File System'
-  title: 'ProtoSchool: Mutable File System'
-  path: https://proto.school/mutable-file-system
-  date: 2020-09-12T00:00:00.000+00:00
-  tags:
-  - ProtoSchool
-  - MFS
 - name: 'ProtoSchool: Regular Files API'
   title: 'ProtoSchool: Regular Files API'
   path: https://proto.school/regular-files-api
@@ -41,6 +34,15 @@ data:
   tags:
   - ProtoSchool
   - CID
+- name: 'ProtoSchool: Mutable File System'
+  title: 'ProtoSchool: Mutable File System'
+  path: https://proto.school/mutable-file-system
+  date: 2019-06-11 00:00:00 +0000
+  tags:
+  - ProtoSchool
+  - MFS
+  - js-ipfs
+  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
