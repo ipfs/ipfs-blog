@@ -46,7 +46,7 @@ data:
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
-  date: 2020-09-12T00:00:00.000+00:00
+  date: 2018-07-31 06:00:00 +0000
   tags:
   - ProtoSchool
   - CID
