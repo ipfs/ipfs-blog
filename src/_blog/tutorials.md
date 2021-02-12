@@ -43,6 +43,24 @@ data:
   - ProtoSchool
   - API
   card_image: "/2020-09-11-tutorial-protoschool-regularfilesapi.png"
+- name: 'ProtoSchool: Anatomy of a CID'
+  title: 'ProtoSchool: Anatomy of a CID'
+  path: https://proto.school/anatomy-of-a-cid
+  date: 2020-09-12T00:00:00.000+00:00
+  tags:
+  - ProtoSchool
+  - CID
+- name: 'ProtoSchool: Blogging on the Decentralized Web'
+  title: 'ProtoSchool: Blogging on the Decentralized Web'
+  path: https://proto.school/blog
+  date: 2018-08-01 00:00:00 +0000
+  tags:
+  - ProtoSchool
+  - static publishing
+  - js-ipfs
+  - " IPLD"
+  - DAG
+  card_image: "/2020-09-11-tutorial-protoschool-blogging.png"
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
@@ -51,21 +69,6 @@ data:
   - ProtoSchool
   - CID
   card_image: "/2020-09-11-tutorial-protoschool-datalinks.png"
-- name: 'ProtoSchool: Blogging on the Decentralized Web'
-  title: 'ProtoSchool: Blogging on the Decentralized Web'
-  path: https://proto.school/blog
-  date: 2020-09-12T00:00:00.000+00:00
-  tags:
-  - ProtoSchool
-  - static publishing
-  card_image: "/2020-09-11-tutorial-protoschool-blogging.png"
-- name: 'ProtoSchool: Anatomy of a CID'
-  title: 'ProtoSchool: Anatomy of a CID'
-  path: https://proto.school/anatomy-of-a-cid
-  date: 2020-09-12T00:00:00.000+00:00
-  tags:
-  - ProtoSchool
-  - CID
 - name: Install IPFS on a Raspberry Pi 2
   title: Install IPFS on a Raspberry Pi 2
   path: https://www.siliconian.com/blog/16-bitcoin-blockchain/23-beginner-s-guide-to-installing-ipfs-on-a-raspberry-pi-2
