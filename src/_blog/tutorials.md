@@ -19,15 +19,6 @@ data:
   - ProtoSchool
   - DAG
   card_image: "/2021-01-14-tutorial-protoschool-merkledags.png"
-- name: 'ProtoSchool: Content Addressing on the Decentralized Web'
-  title: 'ProtoSchool: Content Addressing on the Decentralized Web'
-  path: https://proto.school/content-addressing
-  date: 2021-01-13T01:00:00.000+00:00
-  tags:
-  - ProtoSchool
-  - DAG
-  - CID
-  card_image: "/2021-01-12-tutorial-protoschool-contentaddressing.png"
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
@@ -50,6 +41,17 @@ data:
   tags:
   - ProtoSchool
   - CID
+- name: 'ProtoSchool: Content Addressing on the Decentralized Web'
+  title: 'ProtoSchool: Content Addressing on the Decentralized Web'
+  path: https://proto.school/content-addressing
+  date: 2019-01-03 01:00:00 +0000
+  tags:
+  - ProtoSchool
+  - DAG
+  - CID
+  - js-ipfs
+  - IPLD
+  card_image: "/2021-01-12-tutorial-protoschool-contentaddressing.png"
 - name: 'ProtoSchool: Blogging on the Decentralized Web'
   title: 'ProtoSchool: Blogging on the Decentralized Web'
   path: https://proto.school/blog
