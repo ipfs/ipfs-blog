@@ -19,14 +19,6 @@ data:
   - ProtoSchool
   - DAG
   card_image: "/2021-01-14-tutorial-protoschool-merkledags.png"
-- name: 'ProtoSchool: Regular Files API'
-  title: 'ProtoSchool: Regular Files API'
-  path: https://proto.school/regular-files-api
-  date: 2020-09-12T00:00:00.000+00:00
-  tags:
-  - ProtoSchool
-  - API
-  card_image: "/2020-09-11-tutorial-protoschool-regularfilesapi.png"
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
@@ -34,6 +26,15 @@ data:
   tags:
   - ProtoSchool
   - CID
+- name: 'ProtoSchool: Regular Files API'
+  title: 'ProtoSchool: Regular Files API'
+  path: https://proto.school/regular-files-api
+  date: 2020-09-12T00:00:00.000+00:00
+  tags:
+  - ProtoSchool
+  - API
+  - js-ipfs
+  card_image: "/2020-09-11-tutorial-protoschool-regularfilesapi.png"
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
