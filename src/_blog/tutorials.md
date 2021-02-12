@@ -15,9 +15,10 @@ data:
   path: https://proto.school/merkle-dags
   date: 2021-01-14T07:00:00.000+00:00
   tags:
-  - ipld
   - ProtoSchool
   - DAG
+  - IPLD
+  - CID
   card_image: "/2021-01-14-tutorial-protoschool-merkledags.png"
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
