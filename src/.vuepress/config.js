@@ -140,7 +140,6 @@ module.exports = {
       {
         normalSuffix: '/',
         indexSuffix: '/',
-        notFoundPath: '/404/',
       },
     ],
     [
