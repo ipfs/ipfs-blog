@@ -44,17 +44,6 @@
           Load More
         </button>
       </div>
-      <!-- <div
-        v-if="infiniteScroll && pagesToShow.length < publicPages.length"
-        v-observe-visibility="{
-          callback: handleBottomVisibilityChange,
-          intersection: {
-            rootMargin: '-360px 0px -360px 0px',
-            threshold: 1.0,
-          },
-        }"
-        class="teste"
-      ></div> -->
     </div>
     <VideoModal ref="videoModal" />
   </Layout>
