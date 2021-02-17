@@ -2,6 +2,14 @@
 title: Tutorials
 type: Tutorial
 data:
+- name: 'ProtoSchool: Introduction to libp2p '
+  title: 'ProtoSchool: Introduction to libp2p '
+  path: https://proto.school/introduction-to-libp2p
+  card_image: "/2021-02-17-cardheader-protoschool-intro-to-libp2p.jpg"
+  date: 2021-02-17 07:00:00 +0000
+  tags:
+  - ProtoSchool
+  - libp2p
 - name: How to Leverage Cloudflare and IPFS to Host a Free High-Availability Site
   title: How to Leverage Cloudflare and IPFS to Host a Free High-Availability Site
   path: https://coywolf.pro/webmaster/ipfs-distributed-web-cloudflare-host-site/
@@ -23,7 +31,7 @@ data:
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
-  date: 2020-03-16 00:00:00 +0000
+  date: 2020-03-16T00:00:00.000+00:00
   tags:
   - ProtoSchool
   - CID
@@ -40,7 +48,7 @@ data:
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
-  date: 2019-06-11 00:00:00 +0000
+  date: 2019-06-11T00:00:00.000+00:00
   tags:
   - ProtoSchool
   - MFS
@@ -49,7 +57,7 @@ data:
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
-  date: 2019-01-03 01:00:00 +0000
+  date: 2019-01-03T01:00:00.000+00:00
   tags:
   - ProtoSchool
   - DAG
@@ -60,7 +68,7 @@ data:
 - name: 'ProtoSchool: Blogging on the Decentralized Web'
   title: 'ProtoSchool: Blogging on the Decentralized Web'
   path: https://proto.school/blog
-  date: 2018-08-01 00:00:00 +0000
+  date: 2018-08-01T00:00:00.000+00:00
   tags:
   - ProtoSchool
   - static publishing
@@ -71,7 +79,7 @@ data:
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
-  date: 2018-07-31 06:00:00 +0000
+  date: 2018-07-31T06:00:00.000+00:00
   tags:
   - ProtoSchool
   - CID
