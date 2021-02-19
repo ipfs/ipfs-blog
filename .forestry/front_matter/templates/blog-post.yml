@@ -29,6 +29,7 @@ fields:
   label: tags
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
+- src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
 - src/_blog/hey-ethdenver-hack-on-ipfs-with-these-bounties.md
 - src/_blog/how-we-put-ipfs-in-brave.md
 - src/_blog/introducing-js-ipfs-0.54.0.md
