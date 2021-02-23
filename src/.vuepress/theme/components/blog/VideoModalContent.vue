@@ -56,7 +56,7 @@
             videoModalCard.frontmatter.description ||
             videoModalCard.frontmatter.description
           "
-          class="type-p1-serif text-primary clamp-5"
+          class="type-p1 text-primary clamp-5"
           itemprop="description"
         >
           {{

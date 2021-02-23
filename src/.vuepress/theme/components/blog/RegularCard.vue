@@ -44,7 +44,7 @@
         <footer class="flex-grow mt-2">
           <p
             v-if="frontmatter.description || frontmatter.description"
-            class="type-p1-serif text-primary clamp-3"
+            class="type-p1 text-primary clamp-3"
             itemprop="description"
           >
             {{ frontmatter.description || frontmatter.description }}

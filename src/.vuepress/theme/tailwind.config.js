@@ -96,12 +96,13 @@ const theme = {
     },
   },
   fontFamily: {
-    sans: ['aileron', 'sans-serif'],
+    sans: ['inter', 'sans-serif'],
     serif: ['source-serif-pro', 'serif'],
+    display: ['montserrat', 'sans-serif'],
   },
   textStyles: (theme) => ({
     h1: {
-      fontFamily: theme('fontFamily.sans'),
+      fontFamily: theme('fontFamily.display'),
       lineHeight: theme('lineHeight.120'),
       fontWeight: theme('fontWeight.semibold'),
       letterSpacing: theme('letterSpacing.tight'),
@@ -113,8 +114,8 @@ const theme = {
     h2: {
       fontSize: theme('fontSize.30'),
       lineHeight: theme('lineHeight.120'),
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.bold'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.semibold'),
       letterSpacing: theme('letterSpacing.tight'),
       '@screen sm': {
         fontSize: theme('fontSize.36'),
@@ -122,7 +123,7 @@ const theme = {
       },
     },
     h3: {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.semibold'),
       fontSize: theme('fontSize.24'),
       letterSpacing: theme('letterSpacing.normal'),
@@ -132,7 +133,7 @@ const theme = {
       },
     },
     h4: {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.normal'),
       fontSize: theme('fontSize.24'),
       letterSpacing: theme('letterSpacing.normal'),
@@ -143,7 +144,7 @@ const theme = {
       },
     },
     h5: {
-      fontFamily: theme('fontFamily.sans'),
+      fontFamily: theme('fontFamily.display'),
       fontWeight: theme('fontWeight.normal'),
       fontSize: theme('fontSize.18'),
       letterSpacing: theme('letterSpacing.normal'),
