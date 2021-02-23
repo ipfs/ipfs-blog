@@ -12,8 +12,7 @@ header_image: "/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png"
 author: Adin Schmahmann
 
 ---
-
-## What's new in go-ipfs 0.8.0? 
+## What's new in go-ipfs 0.8.0?
 
 This release is focused on making it easier to work with pins! We have some snazzy new features around being able to ask remote services to pin data for you, and modifying large pin sets is much faster than ever before.
 
@@ -23,14 +22,17 @@ This release is focused on making it easier to work with pins! We have some snaz
 
 There is now support for asking remote services to pin data for you.
 
-This features a redesign of how we're thinking about pinning and includes some commonly requested features such as:
- * Pins can have names (and coming soon metadata)
- * Data can be pinned in either the foreground or background
- * Pins can be searched for by name, CID, or status
+This feature is a redesign of how we're thinking about pinning and includes some commonly requested features such as:
 
-Command-line users benefit from `ipfs pin remote` commands, simplifying remote pinning operations. The built-in pinning service API client also executes all necessary remote calls under the hood. Additionally, HTTP API users now have access to new commands under `/api/v0/pin/remote`.
+* Pins can have names (and coming soon metadata)
+* Data can be pinned in either the foreground or background
+* Pins can be searched for by name, CID, or status
 
-As long as the service supports the vendor-agnostic [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/), it can be used directly in go-ipfs.
+Command-line users benefit from `ipfs pin remote` commands, simplifying remote pinning operations. The built-in pinning service API client also executes all necessary remote calls under the hood:
+
+![go-ipfs 0.8.0 + pinning service flow diagram](/blog-125-go-ipfs-0-8-0-diagram.png)
+
+As long as a pinning service supports the vendor-agnostic [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/), it can be used directly in go-ipfs. (If you're a Pinata user, you can already [check out their docs](https://pinata.cloud/documentation#PinningServicesAPI) for how to set everything up.)
 
 Examples include:
 
@@ -55,13 +57,16 @@ More examples can be found under `ipfs pin remote --help`.
 
 A few notes:
 
- * Remote pinning services work with recursive pins. This means commands like `ipfs pin remote ls` will not list indirectly pinned CIDs.
- * By default, only finished, successful pins are listed. To list or remove pending/failed pins, pass explicit statuses: e.g. `--status=queued,pinning,pinned,failed`
- * While pinning service data is stored in the configuration file it cannot be edited directly via the `ipfs config` commands due to the sensitive nature of pinning service API keys. The `ipfs pin remote service` commands can be used for interacting with remote service settings.
- * An OpenAPI [ipfs-pinning-service.yaml](https://github.com/ipfs/pinning-services-api-spec/blob/main/ipfs-pinning-service.yaml) makes it easy to create or [generate](https://github.com/ipfs/pinning-services-api-spec#code-generation) a compatible client/server. Anyone can implement it and allow for pin management.
+* Remote pinning services work with recursive pins. This means commands like `ipfs pin remote ls` will not list indirectly pinned CIDs.
+* By default, only finished, successful pins are listed. To list or remove pending/failed pins, pass explicit statuses: e.g. `--status=queued,pinning,pinned,failed`
+* While pinning service data is stored in the configuration file it cannot be edited directly via the `ipfs config` commands due to the sensitive nature of pinning service API keys. The `ipfs pin remote service` commands can be used for interacting with remote service settings.
+* An OpenAPI [ipfs-pinning-service.yaml](https://github.com/ipfs/pinning-services-api-spec/blob/main/ipfs-pinning-service.yaml) makes it easy to create or [generate](https://github.com/ipfs/pinning-services-api-spec#code-generation) a compatible client/server. Anyone can implement it and allow for pin management.
+* Additionally, HTTP API users now have access to new commands under `/api/v0/pin/remote`.
 
 ## 🏠 Remote MFS pinning policy
+
 Every service added via `ipfs pin remote service add` can be tasked to update a pin every time the MFS root changes:
+
 ```sh
 $ ipfs config --json Pinning.RemoteServices.mysrv.Policies.MFS.Enable
 ```
@@ -76,15 +81,19 @@ The pinning subsystem has been redesigned to be much faster and more flexible in
 Part of the redesign was set up to account for being able to interact with local pins the same way we can now interact with remote pins (e.g. names, being allowed to pin the same CID multiple times, etc.). Keep posted for more improvements to pinning.
 
 ### 🔒 DNSLink names on https:// subdomains
-Previously, DNSLink names would have trouble loading over subdomain gateways with HTTPS support since there is no way to get multi-level wildcard certificates (e.g. `en.wikipedia-on-ipfs.org.ipns.dweb.link` cannot be covered by `*.ipns.dweb.link`). Therefore, when trying to load DNSLink names over https:// subdomains go-ipfs we now forward to an encoded DNS name. Since DNS names cannot contain `.` in them they are escaped using `-`.
+
+Previously, DNSLink names would have trouble loading over subdomain gateways with HTTPS support since there is no way to get multi-level wildcard certificates (e.g. `en.wikipedia-on-ipfs.org.ipns.dweb.link` cannot be covered by `*.ipns.dweb.link`). Therefore, when trying to load DNSLink names over https:// subdomains in go-ipfs, we now forward to an encoded DNS name. Since DNS names cannot contain `.` in them they are escaped using `-`.
 
 `/ipns/en.wikipedia-on-ipfs.org` →
 
 `ipns://en.wikipedia-on-ipfs.org` →
 
-`https://dweb.link/ipns/en.wikipedia-on-ipfs.org`
+`https://dweb.link/ipns/en.wikipedia-on-ipfs.org` →
 
 `https://en-wikipedia--on--ipfs-org.ipns.dweb.link` 👈 a single DNS label, no TLS error
+
+Note: The last redirect is specific to HTTPS, and is triggered only when `X-Forwarded-Proto: https` header is present.  
+Recipes for setting up your own public gateway can be found in [configuration docs](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes).
 
 ### 💨 QUIC update
 
@@ -99,6 +108,10 @@ Go 1.15 (the latest version of Go) [no longer supports](https://github.com/golan
 ### Changelog
 
 For a full list of updates included in this release, you can review the changelog within this [release post](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0).
+
+### Coming soon ...
+
+If you're an [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop) or [IPFS Web UI](https://github.com/ipfs-shipyard/ipfs-webui) fan, you're in luck. These pinning improvements will land soon in GUI form, too — upcoming releases of Desktop and Web UI will allow you to use any remote pinning service that supports the IPFS Pinning Service API.
 
 ### Thank you contributors!
 
