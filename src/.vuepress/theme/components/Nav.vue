@@ -25,7 +25,7 @@
           />
         </a>
         <ul
-          class="nav__link-list hidden md:flex justify-between w-full max-w-xl ml-8"
+          class="nav__link-list hidden md:flex justify-between w-full max-w-lg ml-8"
         >
           <li
             v-for="page in $themeLocaleConfig.headerLinks"
