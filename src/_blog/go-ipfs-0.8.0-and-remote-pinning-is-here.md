@@ -6,7 +6,7 @@ tags:
 title: go-IPFS 0.8.0, and Remote Pinning, is here!
 description: See what's new in go-ipfs 0.8.0 (spoiler - pins are easier)!
 date: 2021-02-20 05:00:00 +0000
-permalink: "/2021-02-19-go-ipfs-0-6-0/"
+permalink: "/2021-02-19-go-ipfs-0-8-0/"
 translationKey: ''
 header_image: "/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png"
 author: Adin Schmahmann
