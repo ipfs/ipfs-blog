@@ -42,7 +42,7 @@
               type="submit"
               value="Subscribe"
               name="subscribe"
-              class="p-2 text-white bg-blueGreen rounded cursor-pointer w-full"
+              class="p-2 text-white font-semibold bg-blueGreen rounded cursor-pointer w-full"
             />
           </div>
         </div>
