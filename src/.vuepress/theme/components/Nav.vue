@@ -32,7 +32,7 @@
             :key="page.text"
             class="nav__link-item first:m-0 font-semibold"
           >
-            <Link class="nav__link" :item="page" />
+            <Link class="nav__link font-display font-medium" :item="page" />
           </li>
         </ul>
         <button

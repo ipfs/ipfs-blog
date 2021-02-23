@@ -104,7 +104,7 @@ const theme = {
     h1: {
       fontFamily: theme('fontFamily.display'),
       lineHeight: theme('lineHeight.120'),
-      fontWeight: theme('fontWeight.semibold'),
+      fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       fontSize: theme('fontSize.35'),
       '@screen sm': {
@@ -125,7 +125,7 @@ const theme = {
     h3: {
       fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.semibold'),
-      fontSize: theme('fontSize.24'),
+      fontSize: theme('fontSize.20'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
@@ -139,15 +139,15 @@ const theme = {
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.28'),
+        fontSize: theme('fontSize.24'),
         lineHeight: theme('lineHeight.140'),
       },
     },
     h5: {
       fontFamily: theme('fontFamily.display'),
-      fontWeight: theme('fontWeight.normal'),
+      fontWeight: theme('fontWeight.medium'),
       fontSize: theme('fontSize.18'),
-      letterSpacing: theme('letterSpacing.normal'),
+      letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
         fontSize: theme('fontSize.22'),
