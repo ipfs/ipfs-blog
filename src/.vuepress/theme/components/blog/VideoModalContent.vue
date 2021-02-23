@@ -24,7 +24,7 @@
           frameborder="0"
         ></iframe>
       </div>
-      <div>
+      <div class="text-sm">
         <time
           class="text-gray-dark"
           pubdate
@@ -66,7 +66,7 @@
         </p>
       </footer>
       <div class="flex items-end mt-4">
-        <span class="text-sm opacity-50">Share this item:</span>
+        <span class="text-sm text-gray-dark">Share this item:</span>
         <PostSocials
           class="flex ml-2"
           :url="videoModalCard.path"
