@@ -158,10 +158,10 @@ const theme = {
       fontWeight: theme('fontWeight.normal'),
       fontSize: theme('fontSize.15'),
       letterSpacing: theme('letterSpacing.normal'),
-      lineHeight: theme('lineHeight.130'),
+      lineHeight: theme('lineHeight.140'),
       '@screen sm': {
         fontSize: theme('fontSize.15'),
-        lineHeight: theme('lineHeight.140'),
+        lineHeight: theme('lineHeight.150'),
       },
     },
     p2: {
