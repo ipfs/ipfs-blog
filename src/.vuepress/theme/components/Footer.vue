@@ -16,7 +16,7 @@
               >
                 <NavLink
                   :item="item"
-                  class="type-p3 hover:opacity-75 transition transition-opacity duration-300 ease-in-out font-semibold"
+                  class="type-p3 hover:opacity-75 transition transition-opacity duration-300 ease-in-out"
                 />
                 <ul
                   v-if="item.children && item.children.length"

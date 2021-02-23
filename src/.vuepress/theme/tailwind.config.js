@@ -172,10 +172,10 @@ const theme = {
       lineHeight: theme('lineHeight.130'),
     },
     p3: {
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.normal'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.medium'),
       fontSize: theme('fontSize.16'),
-      letterSpacing: theme('letterSpacing.normal'),
+      letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.140'),
     },
     p4: {

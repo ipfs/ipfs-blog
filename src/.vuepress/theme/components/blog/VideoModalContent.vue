@@ -26,7 +26,7 @@
       </div>
       <div>
         <time
-          class="italic opacity-50"
+          class="text-gray-dark"
           pubdate
           itemprop="datePublished"
           :datetime="videoModalCard.frontmatter.date"
