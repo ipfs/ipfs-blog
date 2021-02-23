@@ -57,7 +57,7 @@ export default {
 <style lang="postcss">
 .blog > h1,
 .blog > h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid #d1d1d663;
 }
 </style>

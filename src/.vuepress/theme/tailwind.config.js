@@ -112,14 +112,14 @@ const theme = {
       },
     },
     h2: {
-      fontSize: theme('fontSize.30'),
+      fontSize: theme('fontSize.28'),
       lineHeight: theme('lineHeight.120'),
       fontFamily: theme('fontFamily.display'),
       fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       '@screen sm': {
-        fontSize: theme('fontSize.36'),
-        lineHeight: theme('lineHeight.125'),
+        fontSize: theme('fontSize.34'),
+        lineHeight: theme('lineHeight.120'),
       },
     },
     h3: {
@@ -129,7 +129,7 @@ const theme = {
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.30'),
+        fontSize: theme('fontSize.27'),
       },
     },
     h4: {
@@ -202,7 +202,7 @@ const theme = {
     rich: {
       extends: 'p1',
       h1: {
-        extends: 'h1',
+        extends: 'h2',
       },
       h2: {
         extends: 'h2',
