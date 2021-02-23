@@ -5,7 +5,7 @@
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
-      <h1 class="type-h5 font-bold text-primary mr-4">
+      <h1 class="type-h5 text-primary mr-4">
         <UnstyledLink
           :to="videoModalCard.path"
           :item="{ target: '_blank' }"

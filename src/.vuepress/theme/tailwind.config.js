@@ -115,7 +115,7 @@ const theme = {
       fontSize: theme('fontSize.30'),
       lineHeight: theme('lineHeight.120'),
       fontFamily: theme('fontFamily.display'),
-      fontWeight: theme('fontWeight.semibold'),
+      fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       '@screen sm': {
         fontSize: theme('fontSize.36'),
@@ -123,8 +123,8 @@ const theme = {
       },
     },
     h3: {
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.semibold'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.medium'),
       fontSize: theme('fontSize.20'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
@@ -156,22 +156,12 @@ const theme = {
     p1: {
       fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.normal'),
-      fontSize: theme('fontSize.16'),
+      fontSize: theme('fontSize.15'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.18'),
+        fontSize: theme('fontSize.15'),
         lineHeight: theme('lineHeight.140'),
-      },
-    },
-    'p1-serif': {
-      fontFamily: theme('fontFamily.serif'),
-      fontWeight: theme('fontWeight.normal'),
-      fontSize: theme('fontSize.16'),
-      lineHeight: theme('lineHeight.150'),
-      letterSpacing: theme('letterSpacing.tight'),
-      '@screen sm': {
-        fontSize: theme('fontSize.18'),
       },
     },
     p2: {
@@ -210,7 +200,7 @@ const theme = {
       },
     },
     rich: {
-      extends: 'p1-serif',
+      extends: 'p1',
       h1: {
         extends: 'h1',
       },

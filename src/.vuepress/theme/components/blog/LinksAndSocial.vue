@@ -18,7 +18,7 @@
       >
     </h2>
     <div>
-      {{ `Prefer your news a different way? Try our, ` }}
+      {{ `Prefer your news a different way? Try our ` }}
       <a
         class="text-blueGreen hover:underline"
         href="#newsletter-form"

@@ -28,7 +28,7 @@
       </div>
       <div class="p-4 flex flex-grow flex-col">
         <router-link :to="path">
-          <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
+          <h1 class="type-h5 text-primary hover:underline clamp-3">
             {{ title }}
           </h1>
         </router-link>

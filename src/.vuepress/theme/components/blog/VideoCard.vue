@@ -43,7 +43,7 @@
           class="text-left"
           @click="handleVideoClick"
         >
-          <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
+          <h1 class="type-h5 text-primary hover:underline clamp-3">
             {{ title }}
           </h1>
         </a>
