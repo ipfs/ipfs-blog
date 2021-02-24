@@ -145,7 +145,7 @@ const theme = {
     },
     h5: {
       fontFamily: theme('fontFamily.display'),
-      fontWeight: theme('fontWeight.medium'),
+      fontWeight: theme('fontWeight.semibold'),
       fontSize: theme('fontSize.18'),
       letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.130'),
