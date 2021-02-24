@@ -27,6 +27,10 @@ fields:
     config:
       maxSize: 64
     label: card_image
+    description: The card image should have an approximately <strong>1.9:1 aspect
+      ratio </strong>to display correctly inside the cards.<br>If your image doesn't
+      meet the requirements you can crop it at <a href="https://ipfs-blog.netlify.app/image-crop"
+      title="https://ipfs-blog.netlify.app/image-crop" target="_blank">https://ipfs-blog.netlify.app/image-crop</a>
   - type: datetime
     name: date
     label: date
