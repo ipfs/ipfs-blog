@@ -3,7 +3,7 @@
     <PostAuthor v-if="author && author.name" v-bind="author" />
     <div v-if="date">
       <time
-        class="italic opacity-50"
+        class="text-gray-dark"
         pubdate
         itemprop="datePublished"
         :datetime="date"

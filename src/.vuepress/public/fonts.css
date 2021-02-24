@@ -1,4 +1,94 @@
 @font-face {
+  font-family: 'inter';
+  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/inter/Inter-Regular') format('woff'),
+    url('/fonts/inter/Inter-Regular.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+    url('/fonts/inter/Inter-SemiBold') format('woff'),
+    url('/fonts/inter/Inter-SemiBold.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('/fonts/inter/Inter-SemiBoldItalic.woff2') format('woff2'),
+    url('/fonts/inter/Inter-SemiBoldItalic') format('woff'),
+    url('/fonts/inter/Inter-SemiBoldItalic.otf') format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-Light') format('woff'),
+    url('/fonts/montserrat/Montserrat-Light.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-LightItalic.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-LightItalic') format('woff'),
+    url('/fonts/montserrat/Montserrat-LightItalic.otf') format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-Medium') format('woff'),
+    url('/fonts/montserrat/Montserrat-Medium.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-MediumItalic.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-MediumItalic') format('woff'),
+    url('/fonts/montserrat/Montserrat-MediumItalic.otf') format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-SemiBold') format('woff'),
+    url('/fonts/montserrat/Montserrat-SemiBold.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat/Montserrat-BoldItalic.woff2') format('woff2'),
+    url('/fonts/montserrat/Montserrat-SemiBoldItalic') format('woff'),
+    url('/fonts/montserrat/Montserrat-SemiBoldItalic.otf') format('opentype');
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
   font-family: 'source-serif-pro';
   src: url('/fonts/source-serif-pro/source-serif-pro-regular.woff2')
       format('woff2'),
@@ -20,34 +110,4 @@
   font-display: auto;
   font-style: normal;
   font-weight: 600;
-}
-
-@font-face {
-  font-family: 'aileron';
-  src: url('/fonts/aileron/aileron-regular.woff2') format('woff2'),
-    url('/fonts/aileron/aileron-regular.woff') format('woff'),
-    url('/fonts/aileron/aileron-regular.otf') format('opentype');
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'aileron';
-  src: url('/fonts/aileron/aileron-semibold.woff2') format('woff2'),
-    url('/fonts/aileron/aileron-semibold.woff') format('woff'),
-    url('/fonts/aileron/aileron-semibold.otf') format('opentype');
-  font-display: auto;
-  font-style: normal;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'aileron';
-  src: url('/fonts/aileron/aileron-bold.woff2') format('woff2'),
-    url('/fonts/aileron/aileron-bold.woff') format('woff'),
-    url('/fonts/aileron/aileron-bold.otf') format('opentype');
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
 }

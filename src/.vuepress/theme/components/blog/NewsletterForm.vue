@@ -5,7 +5,7 @@
   >
     <div class="flex-shrink lg:max-w-sm xl:max-w-xl mb-4 lg:mb-0">
       <h2 class="type-h2">Stay informed</h2>
-      <p class="mt-2">
+      <p class="mt-2 mr-2">
         Sign up for the IPFS Weekly newsletter (<router-link
           :to="latestWeeklyPost ? latestWeeklyPost.path : ''"
           class="text-blueGreen hover:underline"
@@ -42,11 +42,11 @@
               type="submit"
               value="Subscribe"
               name="subscribe"
-              class="p-2 text-white bg-blueGreen rounded cursor-pointer w-full"
+              class="p-2 text-white font-semibold bg-blueGreen rounded cursor-pointer w-full"
             />
           </div>
         </div>
-        <label class="pt-2 italic col-start-1 col-span-2" for="gdpr_28879">
+        <label class="pt-2 col-start-1 col-span-2" for="gdpr_28879">
           <input
             id="gdpr_28879"
             type="checkbox"

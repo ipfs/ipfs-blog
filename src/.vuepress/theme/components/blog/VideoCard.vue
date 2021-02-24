@@ -43,7 +43,7 @@
           class="text-left"
           @click="handleVideoClick"
         >
-          <h1 class="type-h5 font-bold text-primary hover:underline clamp-3">
+          <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
             {{ title }}
           </h1>
         </a>
@@ -59,7 +59,7 @@
         <footer class="flex-grow">
           <p
             v-if="frontmatter.description || frontmatter.description"
-            class="type-p1-serif text-primary clamp-5"
+            class="type-p1 text-sm text-primary clamp-5"
             itemprop="description"
           >
             {{ frontmatter.description || frontmatter.description }}

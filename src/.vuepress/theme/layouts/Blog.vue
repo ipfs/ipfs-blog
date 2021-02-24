@@ -38,7 +38,7 @@
         class="flex justify-center mt-8 pb-4"
       >
         <button
-          class="px-3 py-2 text-white text-xl bg-blueGreen rounded hover:opacity-75"
+          class="px-3 py-2 text-white text-xl bg-blueGreen font-semibold rounded hover:opacity-75"
           @click="handleLoadMoreClick"
         >
           Load More

@@ -13,7 +13,7 @@
               <PostAuthor v-bind="author" />
             </router-link>
             <time
-              class="italic opacity-50"
+              class="text-gray"
               pubdate
               itemprop="datePublished"
               :datetime="date"

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center text-sm">
     <span>
       <a
         href="https://protocol.ai"

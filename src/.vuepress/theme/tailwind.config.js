@@ -96,14 +96,15 @@ const theme = {
     },
   },
   fontFamily: {
-    sans: ['aileron', 'sans-serif'],
+    sans: ['inter', 'sans-serif'],
     serif: ['source-serif-pro', 'serif'],
+    display: ['montserrat', 'sans-serif'],
   },
   textStyles: (theme) => ({
     h1: {
-      fontFamily: theme('fontFamily.sans'),
+      fontFamily: theme('fontFamily.display'),
       lineHeight: theme('lineHeight.120'),
-      fontWeight: theme('fontWeight.semibold'),
+      fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       fontSize: theme('fontSize.35'),
       '@screen sm': {
@@ -111,42 +112,42 @@ const theme = {
       },
     },
     h2: {
-      fontSize: theme('fontSize.30'),
+      fontSize: theme('fontSize.28'),
       lineHeight: theme('lineHeight.120'),
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.bold'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       '@screen sm': {
-        fontSize: theme('fontSize.36'),
-        lineHeight: theme('lineHeight.125'),
+        fontSize: theme('fontSize.34'),
+        lineHeight: theme('lineHeight.120'),
       },
     },
     h3: {
-      fontFamily: theme('fontFamily.serif'),
-      fontWeight: theme('fontWeight.semibold'),
-      fontSize: theme('fontSize.24'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.medium'),
+      fontSize: theme('fontSize.20'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.30'),
+        fontSize: theme('fontSize.27'),
       },
     },
     h4: {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.normal'),
       fontSize: theme('fontSize.24'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.28'),
+        fontSize: theme('fontSize.24'),
         lineHeight: theme('lineHeight.140'),
       },
     },
     h5: {
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.normal'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.semibold'),
       fontSize: theme('fontSize.18'),
-      letterSpacing: theme('letterSpacing.normal'),
+      letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
         fontSize: theme('fontSize.22'),
@@ -155,22 +156,12 @@ const theme = {
     p1: {
       fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.normal'),
-      fontSize: theme('fontSize.16'),
+      fontSize: theme('fontSize.15'),
       letterSpacing: theme('letterSpacing.normal'),
-      lineHeight: theme('lineHeight.130'),
+      lineHeight: theme('lineHeight.140'),
       '@screen sm': {
-        fontSize: theme('fontSize.18'),
-        lineHeight: theme('lineHeight.140'),
-      },
-    },
-    'p1-serif': {
-      fontFamily: theme('fontFamily.serif'),
-      fontWeight: theme('fontWeight.normal'),
-      fontSize: theme('fontSize.16'),
-      lineHeight: theme('lineHeight.150'),
-      letterSpacing: theme('letterSpacing.tight'),
-      '@screen sm': {
-        fontSize: theme('fontSize.18'),
+        fontSize: theme('fontSize.15'),
+        lineHeight: theme('lineHeight.150'),
       },
     },
     p2: {
@@ -181,10 +172,10 @@ const theme = {
       lineHeight: theme('lineHeight.130'),
     },
     p3: {
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.normal'),
+      fontFamily: theme('fontFamily.display'),
+      fontWeight: theme('fontWeight.medium'),
       fontSize: theme('fontSize.16'),
-      letterSpacing: theme('letterSpacing.normal'),
+      letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.140'),
     },
     p4: {
@@ -209,9 +200,9 @@ const theme = {
       },
     },
     rich: {
-      extends: 'p1-serif',
+      extends: 'p1',
       h1: {
-        extends: 'h1',
+        extends: 'h2',
       },
       h2: {
         extends: 'h2',

@@ -5,7 +5,7 @@
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
-      <h1 class="type-h5 font-bold text-primary mr-4">
+      <h1 class="type-h5 text-primary mr-4">
         <UnstyledLink
           :to="videoModalCard.path"
           :item="{ target: '_blank' }"
@@ -24,9 +24,9 @@
           frameborder="0"
         ></iframe>
       </div>
-      <div>
+      <div class="text-sm">
         <time
-          class="italic opacity-50"
+          class="text-gray-dark"
           pubdate
           itemprop="datePublished"
           :datetime="videoModalCard.frontmatter.date"
@@ -56,7 +56,7 @@
             videoModalCard.frontmatter.description ||
             videoModalCard.frontmatter.description
           "
-          class="type-p1-serif text-primary clamp-5"
+          class="type-p1 text-primary clamp-5"
           itemprop="description"
         >
           {{
@@ -66,7 +66,7 @@
         </p>
       </footer>
       <div class="flex items-end mt-4">
-        <span class="text-sm opacity-50">Share this item:</span>
+        <span class="text-sm text-gray-dark">Share this item:</span>
         <PostSocials
           class="flex ml-2"
           :url="videoModalCard.path"
