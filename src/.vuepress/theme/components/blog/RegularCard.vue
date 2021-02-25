@@ -41,13 +41,12 @@
             class="type-p4 text-primary"
           />
         </div>
-        <footer class="flex-grow mt-2">
+        <footer v-if="frontmatter" class="flex-grow mt-2">
           <p
-            v-if="frontmatter.description || frontmatter.description"
             class="type-p1 text-sm text-primary clamp-3"
             itemprop="description"
           >
-            {{ frontmatter.description || frontmatter.description }}
+            {{ frontmatter.description }}
           </p>
         </footer>
       </div>
@@ -62,16 +61,15 @@ import PostMeta from '@theme/components/blog/PostMeta'
 export default {
   name: 'BlogRegularCard',
   components: { LazyImage, PostMeta },
-
   inheritAttrs: false,
   props: {
     title: {
       type: String,
-      required: true,
+      default: '',
     },
     frontmatter: {
       type: Object,
-      default: () => ({}),
+      default: null,
     },
     regularPath: {
       type: String,

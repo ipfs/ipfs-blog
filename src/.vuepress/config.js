@@ -210,6 +210,20 @@ module.exports = {
               lengthPerPage: Number.MAX_SAFE_INTEGER,
             },
           },
+          {
+            id: 'image_crop',
+            dirname: 'image_crop',
+            path: '/image-crop/',
+            itemPermalink: '/image-crop/:slug',
+            layout: 'ImageCrop',
+            frontmatter: {
+              title: 'Image Crop',
+              description: 'Crop the card image',
+            },
+            pagination: {
+              lengthPerPage: Number.MAX_SAFE_INTEGER,
+            },
+          },
         ],
       },
     ],

@@ -3,7 +3,7 @@ title: Hey ETHDenver, hack on IPFS with these bounties!
 description:
   Win prizes of up to $500 for building on IPFS, especially when you build
   with the recent browser integrations at ETHDenver
-date: 2021-02-04 07:00:00 +0000
+date: 2021-02-04T07:00:00+0000
 permalink: '/2021-02-04-ethdenver-bounties/'
 translationKey: ''
 header_image: '/eth2.png'

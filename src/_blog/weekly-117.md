@@ -1,5 +1,5 @@
 ---
-date: 2020-12-09 07:00:00 +0000
+date: 2020-12-09T07:00:00+0000
 permalink: '/weekly-117/'
 translationKey: ipfs-weekly-117
 tags:

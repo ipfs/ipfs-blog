@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <PostAuthor v-if="author && author.name" v-bind="author" />
+    <PostAuthor v-if="author" v-bind="author" />
     <div v-if="date">
       <time
         class="text-gray-dark"

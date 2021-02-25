@@ -1,5 +1,5 @@
 ---
-date: 2020-11-19 07:00:00 +0000
+date: 2020-11-19T07:00:00+0000
 permalink: '/2020-11-19-community-rfp/'
 translationKey: ''
 header_image: '/113-community-rfp.jpg'

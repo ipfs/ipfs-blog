@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="name"
     itemprop="publisher author"
     itemtype="http://schema.org/Person"
     itemscope

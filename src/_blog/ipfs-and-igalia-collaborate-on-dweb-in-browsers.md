@@ -1,5 +1,5 @@
 ---
-date: 2021-01-15 07:00:00 +0000
+date: 2021-01-15T07:00:00+0000
 url: '/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/'
 translationKey: ''
 header_image: '/ipfs-and-igalia-collaborate-on-dweb-in-browsers-header-image.png'

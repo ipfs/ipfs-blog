@@ -1,5 +1,5 @@
 ---
-date: 2021-01-21 07:00:00 +0000
+date: 2021-01-21T07:00:00+0000
 permalink: '/2021-01-21-how-we-put-ipfs-in-brave/'
 translationKey: ''
 tags:

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <RegularCard v-if="!card.type" v-bind="card" class="card-post h-full" />
     <component
       :is="computedCard"
       v-bind="card"
@@ -18,7 +17,6 @@ import VideoCard from '@theme/components/blog/VideoCard'
 export default {
   name: 'BlogCard',
   components: { RegularCard, LinkCard, VideoCard },
-
   inheritAttrs: false,
   props: {
     card: {
@@ -33,7 +31,7 @@ export default {
   computed: {
     computedCard() {
       if (!this.card.type) {
-        return null
+        return RegularCard
       }
 
       switch (this.card.type) {
@@ -48,7 +46,7 @@ export default {
           return VideoCard
 
         default:
-          return null
+          return RegularCard
       }
     },
   },
