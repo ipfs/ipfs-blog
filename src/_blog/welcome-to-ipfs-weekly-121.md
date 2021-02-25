@@ -3,7 +3,7 @@ title: Welcome to IPFS Weekly 121
 description:
   ETHDenver 2021 kicks off this week, discover a love letter to IPFS, plus
   catch up on all of the presentation from the January virtual meetup!
-date: 2021-02-03 07:00:00 +0000
+date: 2021-02-03T07:00:00+0000
 permalink: '/weekly-121/'
 translationKey: ''
 header_image: '/header-image-weekly-newsletter.png'

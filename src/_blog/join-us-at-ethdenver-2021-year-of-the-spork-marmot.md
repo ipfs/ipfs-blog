@@ -3,7 +3,7 @@ title: Join us at ETHDenver 2021, year of the Spork Marmot!
 description:
   Return of the IPFS Help Desk, plus join us for a full day of hacking
   IPFS!
-date: 2021-02-02 07:00:00 +0000
+date: 2021-02-02T07:00:00+0000
 permalink: '/2021-02-02-ipfs-at-ethdenver/'
 translationKey: ''
 header_image: '/eth1.png'

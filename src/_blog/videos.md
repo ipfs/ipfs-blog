@@ -5,7 +5,7 @@ data:
   - name: Introducing IPFS Support in the Brave Browser
     title: Introducing IPFS Support in the Brave Browser
     path: https://www.youtube.com/watch?v=jTDkTQiKzJA
-    date: 2021-01-19 07:00:00 +0000
+    date: 2021-01-19T07:00:00.000+00:00
   - name: Mapping the InterPlanetary File System (Protocol Labs Research Series)
     title: Mapping the InterPlanetary File System (Protocol Labs Research Series)
     path: https://www.youtube.com/watch?v=jQI37Y25jwk

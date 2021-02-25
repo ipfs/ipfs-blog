@@ -50,7 +50,7 @@
         <div>
           <PostMeta
             :category="frontmatter.type"
-            :author="frontmatter.author"
+            :author="null"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
             class="type-p4 text-primary"

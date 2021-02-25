@@ -245,8 +245,6 @@ export default {
 }
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-
 <style>
 .multiselect__tag,
 .multiselect__tag-icon:hover,
@@ -270,13 +268,12 @@ export default {
 
 .multiselect__tags {
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .multiselect__tags-wrap {
-  margin-bottom: -0.5rem;
   padding: 0;
   display: flex;
   flex-wrap: wrap;

@@ -6,13 +6,11 @@ import VueMq from 'vue-mq'
 import { VLazyImagePlugin } from 'v-lazy-image'
 import VueObserveVisibility from 'vue-observe-visibility'
 import VueSocialSharing from 'vue-social-sharing'
-import ImageCrop from '@theme/layouts/ImageCrop'
-
 import Transition from '@theme/components/directives/Transition.js'
 
-export default ({ Vue, router, siteData }) => {
-  router.addRoutes([{ path: '/image-crop', component: ImageCrop }])
+import 'vue-multiselect/dist/vue-multiselect.min.css'
 
+export default ({ Vue, router, siteData }) => {
   const { breakpoints } = siteData.themeConfig
 
   /**

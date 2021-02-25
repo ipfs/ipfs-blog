@@ -7,7 +7,7 @@
       {
         '-translate-y-full': navVisibility.navSticky,
         navVisible: navVisibility.navVisible,
-        navSticky: navVisibility.navSticky,
+        navSticky: navVisibility.navSticky && !mobileNavActive,
         mobileNavOpen: mobileNavActive,
       },
     ]"

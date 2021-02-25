@@ -1,17 +1,17 @@
 ---
 tags:
-- go-ipfs
-- release notes
-- pinning
+  - go-ipfs
+  - release notes
+  - pinning
 title: go-IPFS 0.8.0, and Remote Pinning, is here!
 description: See what's new in go-ipfs 0.8.0 (spoiler - pins are easier)!
-date: 2021-02-20 05:00:00 +0000
-permalink: "/2021-02-19-go-ipfs-0-8-0/"
+date: 2021-02-20T05:00:00+0000
+permalink: '/2021-02-19-go-ipfs-0-8-0/'
 translationKey: ''
-header_image: "/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png"
+header_image: '/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png'
 author: Adin Schmahmann
-
 ---
+
 ## What's new in go-ipfs 0.8.0?
 
 This release is focused on making it easier to work with pins! We have some snazzy new features around being able to ask remote services to pin data for you, and modifying large pin sets is much faster than ever before.
@@ -24,9 +24,9 @@ There is now support for asking remote services to pin data for you.
 
 This feature is a redesign of how we're thinking about pinning and includes some commonly requested features such as:
 
-* Pins can have names (and coming soon metadata)
-* Data can be pinned in either the foreground or background
-* Pins can be searched for by name, CID, or status
+- Pins can have names (and coming soon metadata)
+- Data can be pinned in either the foreground or background
+- Pins can be searched for by name, CID, or status
 
 Command-line users benefit from `ipfs pin remote` commands, simplifying remote pinning operations. The built-in pinning service API client also executes all necessary remote calls under the hood:
 
@@ -57,11 +57,11 @@ More examples can be found under `ipfs pin remote --help`.
 
 A few notes:
 
-* Remote pinning services work with recursive pins. This means commands like `ipfs pin remote ls` will not list indirectly pinned CIDs.
-* By default, only finished, successful pins are listed. To list or remove pending/failed pins, pass explicit statuses: e.g. `--status=queued,pinning,pinned,failed`
-* While pinning service data is stored in the configuration file it cannot be edited directly via the `ipfs config` commands due to the sensitive nature of pinning service API keys. The `ipfs pin remote service` commands can be used for interacting with remote service settings.
-* An OpenAPI [ipfs-pinning-service.yaml](https://github.com/ipfs/pinning-services-api-spec/blob/main/ipfs-pinning-service.yaml) makes it easy to create or [generate](https://github.com/ipfs/pinning-services-api-spec#code-generation) a compatible client/server. Anyone can implement it and allow for pin management.
-* Additionally, HTTP API users now have access to new commands under `/api/v0/pin/remote`.
+- Remote pinning services work with recursive pins. This means commands like `ipfs pin remote ls` will not list indirectly pinned CIDs.
+- By default, only finished, successful pins are listed. To list or remove pending/failed pins, pass explicit statuses: e.g. `--status=queued,pinning,pinned,failed`
+- While pinning service data is stored in the configuration file it cannot be edited directly via the `ipfs config` commands due to the sensitive nature of pinning service API keys. The `ipfs pin remote service` commands can be used for interacting with remote service settings.
+- An OpenAPI [ipfs-pinning-service.yaml](https://github.com/ipfs/pinning-services-api-spec/blob/main/ipfs-pinning-service.yaml) makes it easy to create or [generate](https://github.com/ipfs/pinning-services-api-spec#code-generation) a compatible client/server. Anyone can implement it and allow for pin management.
+- Additionally, HTTP API users now have access to new commands under `/api/v0/pin/remote`.
 
 ## 🏠 Remote MFS pinning policy
 

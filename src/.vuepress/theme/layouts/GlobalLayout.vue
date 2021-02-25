@@ -41,7 +41,12 @@ export default {
       this.$root.$emit('triggerScroll')
     },
     shouldDisplay(name) {
-      const { display } = this.$page.frontmatter
+      const { display, layout } = this.$page.frontmatter
+
+      if (layout === 'ImageCrop') {
+        return false
+      }
+
       return display
         ? display[name] !== undefined
           ? display[name]

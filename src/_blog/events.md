@@ -6,7 +6,7 @@ data:
     title: IPFS Community Meetup, February 2021
     path: https://www.meetup.com/San-Francisco-IPFS/events/276018298/
     card_image: '/2021-02-23-event-meetup.png'
-    date: 2021-02-23 07:00:00 +0000
+    date: 2021-01-23T07:00:00.000+00:00
     tags:
       - official meetup
   - name: Kick off the New Year with IPFS

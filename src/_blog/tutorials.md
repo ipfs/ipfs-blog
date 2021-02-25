@@ -2,11 +2,11 @@
 title: Tutorials
 type: Tutorial
 data:
-- name: 'ProtoSchool: Introduction to libp2p '
-  title: 'ProtoSchool: Introduction to libp2p '
+- name: 'ProtoSchool: Introduction to libp2p'
+  title: 'ProtoSchool: Introduction to libp2p'
   path: https://proto.school/introduction-to-libp2p
   card_image: "/2021-02-17-cardheader-protoschool-intro-to-libp2p.jpg"
-  date: 2021-02-17 07:00:00 +0000
+  date: 2021-02-17T07:00:00.000+00:00
   tags:
   - ProtoSchool
   - libp2p

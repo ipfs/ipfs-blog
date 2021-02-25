@@ -1,5 +1,5 @@
 ---
-date: 2021-01-19 07:00:00 +0000
+date: 2021-01-19T07:00:00+0000
 permalink: '/2021-01-19-js-ipfs-0-50/'
 translationKey: ''
 header_image: '/header-image-js-ipfs-placeholder.png'

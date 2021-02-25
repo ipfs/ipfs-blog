@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center h-screen grid-margins">
-    <div v-if="croppedImage" class="flex flex-col">
+  <div class="flex justify-center items-center h-screen w-full px-4">
+    <div v-if="croppedImage" class="flex flex-col grid-margins">
       <div>
         <img :src="croppedImage" />
       </div>
@@ -19,7 +19,10 @@
         </button>
       </div>
     </div>
-    <div v-if="image && !croppedImage" class="relative w-full cropper">
+    <div
+      v-if="image && !croppedImage"
+      class="relative w-full cropper grid-margins"
+    >
       <cropper
         ref="cropper"
         class="cropper"
