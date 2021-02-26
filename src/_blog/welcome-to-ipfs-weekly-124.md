@@ -1,8 +1,7 @@
 ---
 tags: []
 title: Welcome to IPFS Weekly 124
-description: The latest on go-ipfs 0.8.0, plus ProtoSchool adds libp2p to the curriculum
-  and save the date for the March meetup!
+description: The latest on go-ipfs 0.8.0, plus ProtoSchool adds libp2p!
 date: 2021-02-24 07:00:00 +0000
 permalink: "/weekly-124/"
 translationKey: ipfs-weekly-124
