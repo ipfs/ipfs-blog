@@ -46,8 +46,7 @@ fields:
     label: Date
     config:
       required: true
-    description: For blog posts and news/other links, use date of publication. For
-      events, use the date of the event itself.
+    description: Use the date of the event itself.
   - name: tags
     type: tag_list
     default: []
