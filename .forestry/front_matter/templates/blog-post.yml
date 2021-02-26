@@ -1,5 +1,5 @@
 ---
-label: Blog post
+label: Blog post + card
 hide_body: false
 display_field: title
 fields:
