@@ -16,7 +16,7 @@ sections:
 - type: directory
   path: src/_blog
   label: Blog Posts
-  create: all
+  create: documents
   match: "**/*"
   exclude: "/**/@(academicpapers|events|newscoverage|releasenotes|tutorials|videos).md"
   templates:
