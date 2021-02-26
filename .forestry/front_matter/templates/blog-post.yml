@@ -19,6 +19,11 @@ fields:
     max: 110
   description: Appears as subtitle on post's card. Max length 3 lines (approx 110
     characters) before truncating.
+- type: text
+  name: author
+  label: Author
+  description: 'Separate multiple authors with commas: <em>Cayce Pollard, Hobbs Baranov,
+    Prince</em>'
 - type: datetime
   name: date
   label: Date
@@ -48,11 +53,6 @@ fields:
     least 400px tall.</strong> Need help? <a href="https://ipfs-blog.netlify.app/image-crop/"
     title="Use this crop/scale tool" target="_blank">Use this crop/scale tool</a>
     to save a revised image to your local machine, then upload here.
-- type: text
-  name: author
-  label: Author
-  description: 'Separate multiple authors with commas: <em>Cayce Pollard, Hobbs Baranov,
-    Prince</em>'
 - name: tags
   type: tag_list
   default: []
