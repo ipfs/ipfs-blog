@@ -28,7 +28,10 @@ fields:
       required: true
   - type: text
     name: path
-    label: path
+    label: URL
+    description: 'Full URL of the event link. Example: <em>https://www.meetup.com/IPFS/events/12345/</em>'
+    config:
+      required: true
   - name: card_image
     type: file
     config:
