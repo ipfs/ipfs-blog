@@ -36,7 +36,12 @@ fields:
     without the slashes: <em>2022-09-23-descriptive-title</em>'
 - type: file
   name: header_image
-  label: header_image
+  label: Header image
+  description: Appears both on the post's card and as the header image on the post
+    page. <br><strong>Must be twice as wide as it is tall (2:1 aspect ratio) and at
+    least 400px tall.</strong> Don't have that? <a href="/image-crop/" title="" target="_blank">Use
+    this handy tool</a> to crop and save a revised image to your local machine, then
+    upload here.
 - type: text
   name: author
   label: Author
