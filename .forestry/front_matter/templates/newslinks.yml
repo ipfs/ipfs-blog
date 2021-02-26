@@ -32,6 +32,12 @@ fields:
     description: 'Full URL of the event link. Example: <em>https://www.meetup.com/IPFS/events/12345/</em>'
     config:
       required: true
+  - type: datetime
+    name: date
+    label: Date
+    config:
+      required: true
+    description: Use the date of the event itself.
   - name: card_image
     type: file
     config:
@@ -41,12 +47,6 @@ fields:
       at least 400px tall.</strong> Need help? <a href="https://ipfs-blog.netlify.app/image-crop/"
       title="Use this crop/scale tool" target="_blank">Use this crop/scale tool</a>
       to save a revised image to your local machine, then upload here.
-  - type: datetime
-    name: date
-    label: Date
-    config:
-      required: true
-    description: Use the date of the event itself.
   - name: tags
     type: tag_list
     default: []
