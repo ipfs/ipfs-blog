@@ -5,17 +5,14 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: type
-  label: type
+  label: Type
 - type: field_group_list
   name: data
   label: data
   fields:
-  - type: text
-    name: name
-    label: name
   - type: text
     name: title
     label: title
