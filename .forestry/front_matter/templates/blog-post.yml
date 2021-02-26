@@ -22,7 +22,9 @@ fields:
   label: header_image
 - type: text
   name: author
-  label: author
+  label: Author
+  description: 'Separate multiple authors with commas: <em>Cayce Pollard, Hobbs Baranov,
+    Prince</em>'
 - name: tags
   type: tag_list
   default: []
