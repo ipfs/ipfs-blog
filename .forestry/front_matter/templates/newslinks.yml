@@ -11,6 +11,7 @@ fields:
   config:
     required: true
     max: 65
+  hidden: true
 - type: text
   name: type
   label: Type
