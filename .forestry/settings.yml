@@ -30,8 +30,8 @@ sections:
   - newslinks
 - type: directory
   path: src/_blog
-  label: News Coverage
-  create: documents
+  label: News coverage
+  create: none
   match: "**/newscoverage.md"
   templates:
   - newslinks
