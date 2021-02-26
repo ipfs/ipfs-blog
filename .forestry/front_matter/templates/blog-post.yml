@@ -21,7 +21,8 @@ fields:
 - type: datetime
   name: date
   label: Date
-  description: Date of publication for the blog post.
+  description: '"Published on" date. Remember this is <em>only</em> a list date for
+    display; posts are not automatically published!'
   config:
     required: true
 - type: text
