@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Card Types
+  label: Content Types
 - type: directory
   path: src/_blog
   label: Academic Papers
@@ -57,11 +57,11 @@ sections:
   templates:
   - newslinks
 - type: heading
-  label: ZH
+  label: Translations
 - type: directory
   path: src/_blog_zh
-  label: ZH Blog posts
-  create: all
+  label: Chinese blog posts
+  create: documents
   match: "**/*"
   templates:
   - blog-post
