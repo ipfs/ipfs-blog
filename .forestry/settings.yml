@@ -8,7 +8,7 @@ sections:
   label: Content Types
 - type: directory
   path: src/_blog
-  label: Academic Papers
+  label: Academic papers
   create: documents
   match: "**/academicpapers.md"
   templates:
