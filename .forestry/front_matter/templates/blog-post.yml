@@ -39,9 +39,9 @@ fields:
   label: Header image
   description: Appears both on the post's card and as the header image on the post
     page. <br><strong>Must be twice as wide as it is tall (2:1 aspect ratio) and at
-    least 400px tall.</strong> Don't have that? <a href="/image-crop/" title="" target="_blank">Use
-    this handy tool</a> to crop and save a revised image to your local machine, then
-    upload here.
+    least 400px tall.</strong> Need help? <a href="https://ipfs-blog.netlify.app/image-crop/"
+    title="Use this crop/scale tool" target="_blank">Use this crop/scale tool</a>
+    to save a revised image to your local machine, then upload here.
 - type: text
   name: author
   label: Author
