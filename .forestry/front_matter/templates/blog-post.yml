@@ -9,7 +9,7 @@ fields:
     of post's card. Max length 3 lines (approx 60 characters) before truncating.
   config:
     min: 
-    max: 65
+    max: 
     required: true
 - type: textarea
   name: description
