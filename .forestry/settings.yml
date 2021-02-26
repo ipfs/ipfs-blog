@@ -18,7 +18,7 @@ sections:
   label: Blog Posts
   create: documents
   match: "**/*"
-  exclude: "@(tutorials|events).md"
+  exclude: "{tutorials,events}.md"
   templates:
   - blog-post
 - type: directory
