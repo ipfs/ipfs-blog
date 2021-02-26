@@ -7,7 +7,11 @@ fields:
   label: title
 - type: textarea
   name: description
-  label: description
+  label: Description
+  config:
+    max: 110
+  description: Appears as subtitle on post's card. Max length 3 lines (approx 110
+    characters) before truncating.
 - type: datetime
   name: date
   label: date
