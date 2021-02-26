@@ -56,14 +56,21 @@ fields:
   type: tag_list
   default: []
   label: Tags
-  description: AEgir.....API.....async/await.....Bitswap.....blockstore<br>bootstrap
-    nodes<br>breaking change<br>browsers<br>case study<br>CDN<br>censorship<br>CID<br>CLI
-    tools<br>collaborative cluster<br>community<br>conferences<br>containerization<br>content
-    routing<br>CRDTs<br>DAG<br>datastore<br>demo<br>DHT<br>DNSLink<br>Docker<br>docs<br>Drand<br>encryption<br>Ethereum<br>Filecoin<br>gateways<br>go-ipfs<br>Gossipsub<br>identity<br>infrastructure<br>interoperability<br>interview<br>IoT<br>IPFS
-    Camp<br>IPFS Cluster<br>IPFS Companion<br>IPFS Desktop<br>IPFS Web UI<br>IPLD<br>IPNS<br>js-ipfs<br>Kademlia<br>Kubernetes<br>libp2p<br>Linux<br>MacOS<br>MFS<br>mobile
-    (including Android, iOS)<br>official meetup<br>package managers<br>pinning<br>project
-    planning<br>pubsub<br>QUIC<br>recap<br>research<br>Rust<br>SECIO<br>security<br>static
-    publishing<br>streaming<br>Testground<br>tutorial<br>Windows<br>weekly<br>whitepaper
+  description: "<strong>Please copy/paste applicable values from this canonical tags
+    list:</strong><br>AEgir ..... API ..... async/await ..... Bitswap ..... blockstore
+    ..... bootstrap nodes ..... breaking change ..... browsers ..... case study .....
+    CDN ..... censorship ..... CID .....CLI tools ..... collaborative cluster .....
+    community ..... conferences ..... containerization ..... content routing .....
+    CRDTs ..... DAG ..... datastore ..... demo ..... DHT..... DNSLink ..... Docker
+    ..... docs ..... Drand ..... encryption ..... Ethereum ..... Filecoin ..... gateways
+    ..... go-ipfs ..... Gossipsub ..... identity ..... infrastructure ..... interoperability
+    ..... interview ..... IoT ..... IPFS Camp ..... IPFS Cluster ..... IPFS Companion
+    ..... IPFS Desktop ..... IPFS Web UI ..... IPLD ..... IPNS ..... js-ipfs .....
+    Kademlia ..... Kubernetes ..... libp2p ..... Linux ..... MacOS ..... MFS .....
+    mobile ..... official meetup ..... package managers ..... pinning ..... project
+    planning ..... pubsub ..... QUIC ..... recap ..... research ..... Rust ..... SECIO
+    ..... security ..... static publishing ..... streaming ..... Testground .....
+    tutorial ..... Windows ..... weekly ..... whitepaper"
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
