@@ -18,9 +18,9 @@ fields:
 - type: text
   name: permalink
   label: Permalink
-  description: URL for this post. Must start and end with slashes. For blog posts,
-    include the date (<em>/2022-09-23-descriptive-title/</em>); for weekly newsletters,
-    use the edition number(<em>/weekly-123/</em>).
+  description: 'URL for this post. Must start and end with slashes. <br>For blog posts,
+    include the date: <em>/2022-09-23-descriptive-title/</em><br>For weekly newsletters,
+    use the edition number: <em>/weekly-123/</em>'
 - type: text
   name: translationKey
   label: translationKey
