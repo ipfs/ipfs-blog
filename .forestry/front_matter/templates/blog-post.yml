@@ -8,8 +8,9 @@ fields:
   description: Appears as the "headline" of the post itself, as well as the title
     of post's card. Max length 3 lines (approx 60 characters) before truncating.
   config:
-    min: 1
+    min: 
     max: 65
+    required: true
 - type: textarea
   name: description
   label: Description
@@ -22,12 +23,16 @@ fields:
   label: Date
   description: For blog posts and news/other links, use date of publication. For events,
     use the date of the event itself.
+  config:
+    required: true
 - type: text
   name: permalink
   label: Permalink
   description: 'URL for this post. Must start and end with slashes. <br>For blog posts,
     include the date: <em>/2022-09-23-descriptive-title/</em><br>For weekly newsletters,
     use the edition number: <em>/weekly-123/</em>'
+  config:
+    required: true
 - type: text
   name: translationKey
   label: Translation key
