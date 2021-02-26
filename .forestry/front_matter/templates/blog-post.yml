@@ -50,7 +50,7 @@ fields:
 - name: tags
   type: tag_list
   default: []
-  label: tags
+  label: Tags
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
