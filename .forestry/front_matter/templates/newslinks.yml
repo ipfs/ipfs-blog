@@ -44,7 +44,9 @@ fields:
       maxSize: 64
     label: Card image
     description: <strong>Must be twice as wide as it is tall (2:1 aspect ratio) and
-      at least 400px tall.</strong> Need help? <a href="https://ipfs-blog.netlify.app/image-crop/"
+      at least 400px tall.</strong> <strong>Please name your image something that
+      can be easily searched for in the media directory (consider including a date
+      if that's helpful).</strong><br>Need help? <a href="https://ipfs-blog.netlify.app/image-crop/"
       title="Use this crop/scale tool" target="_blank">Use this crop/scale tool</a>
       to save a revised image to your local machine, then upload here.
   - name: tags
