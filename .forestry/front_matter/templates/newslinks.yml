@@ -6,6 +6,11 @@ fields:
 - type: text
   name: title
   label: Title
+  description: Appears as the card title. Max length 3 lines (approx 60 characters)
+    before truncating.
+  config:
+    required: true
+    max: 65
 - type: text
   name: type
   label: Type
@@ -15,7 +20,7 @@ fields:
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
   - type: text
     name: path
     label: path
