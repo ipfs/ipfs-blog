@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: EN
+  label: Card Types
 - type: directory
   path: src/_blog
   label: Academic Papers
