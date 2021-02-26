@@ -16,7 +16,7 @@ fields:
   hidden: true
 - type: field_group_list
   name: data
-  label: Events
+  label: Links
   fields:
   - type: text
     name: title
@@ -65,4 +65,4 @@ fields:
       ... pinning ... project planning ... pubsub ... QUIC ... recap ... research
       ... Rust ... SECIO ... security ... static publishing ... streaming ... Testground
       ... tutorial ... Windows ... weekly ... whitepaper"
-  description: <strong>To add a new event link, click the "Add Datum" button.</strong>
+  description: <strong>To add a new link, click the "Add Link" button.</strong>
