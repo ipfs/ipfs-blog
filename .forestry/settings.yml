@@ -9,7 +9,7 @@ sections:
 - type: directory
   path: src/_blog
   label: Academic papers
-  create: documents
+  create: none
   match: "**/academicpapers.md"
   templates:
   - newslinks
