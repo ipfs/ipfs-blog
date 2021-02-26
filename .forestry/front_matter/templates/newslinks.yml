@@ -26,18 +26,18 @@ fields:
     config:
       max: 65
       required: true
-  - type: text
-    name: path
-    label: URL
-    description: 'Full URL of the event link. Example: <em>https://www.meetup.com/IPFS/events/12345/</em>'
-    config:
-      required: true
   - type: datetime
     name: date
     label: Date
     config:
       required: true
     description: Use the date of the event itself.
+  - type: text
+    name: path
+    label: URL
+    description: 'Full URL of the event link. Example: <em>https://www.meetup.com/IPFS/events/12345/</em>'
+    config:
+      required: true
   - name: card_image
     type: file
     config:
