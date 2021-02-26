@@ -15,7 +15,7 @@ sections:
   - newslinks
 - type: directory
   path: src/_blog
-  label: Blog Posts
+  label: Blog posts
   create: documents
   match: "**/*"
   exclude: "{academicpapers,events,newscoverage,releasenotes,tutorials,videos}.md"
@@ -24,7 +24,7 @@ sections:
 - type: directory
   path: src/_blog
   label: Events
-  create: documents
+  create: none
   match: "**/events.md"
   templates:
   - newslinks
