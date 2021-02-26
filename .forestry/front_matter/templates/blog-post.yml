@@ -56,9 +56,10 @@ fields:
   type: tag_list
   default: []
   label: Tags
-  description: AEgir &amp;nbsp;API async/await Bitswap blockstore<br>bootstrap nodes<br>breaking
-    change<br>browsers<br>case study<br>CDN<br>censorship<br>CID<br>CLI tools<br>collaborative
-    cluster<br>community<br>conferences<br>containerization<br>content routing<br>CRDTs<br>DAG<br>datastore<br>demo<br>DHT<br>DNSLink<br>Docker<br>docs<br>Drand<br>encryption<br>Ethereum<br>Filecoin<br>gateways<br>go-ipfs<br>Gossipsub<br>identity<br>infrastructure<br>interoperability<br>interview<br>IoT<br>IPFS
+  description: AEgir.....API.....async/await.....Bitswap.....blockstore<br>bootstrap
+    nodes<br>breaking change<br>browsers<br>case study<br>CDN<br>censorship<br>CID<br>CLI
+    tools<br>collaborative cluster<br>community<br>conferences<br>containerization<br>content
+    routing<br>CRDTs<br>DAG<br>datastore<br>demo<br>DHT<br>DNSLink<br>Docker<br>docs<br>Drand<br>encryption<br>Ethereum<br>Filecoin<br>gateways<br>go-ipfs<br>Gossipsub<br>identity<br>infrastructure<br>interoperability<br>interview<br>IoT<br>IPFS
     Camp<br>IPFS Cluster<br>IPFS Companion<br>IPFS Desktop<br>IPFS Web UI<br>IPLD<br>IPNS<br>js-ipfs<br>Kademlia<br>Kubernetes<br>libp2p<br>Linux<br>MacOS<br>MFS<br>mobile
     (including Android, iOS)<br>official meetup<br>package managers<br>pinning<br>project
     planning<br>pubsub<br>QUIC<br>recap<br>research<br>Rust<br>SECIO<br>security<br>static
