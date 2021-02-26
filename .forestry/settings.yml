@@ -37,22 +37,22 @@ sections:
   - newslinks
 - type: directory
   path: src/_blog
-  label: Release Notes
-  create: documents
+  label: Release notes
+  create: none
   match: "**/releasenotes.md"
   templates:
   - newslinks
 - type: directory
   path: src/_blog
   label: Tutorials
-  create: all
+  create: none
   match: "**/tutorials.md"
   templates:
   - newslinks
 - type: directory
   path: src/_blog
   label: Videos
-  create: documents
+  create: none
   match: "**/videos.md"
   templates:
   - newslinks
