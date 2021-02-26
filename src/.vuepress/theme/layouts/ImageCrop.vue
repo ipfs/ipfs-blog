@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center h-screen w-full px-4">
+  <div class="flex justify-center items-center h-screen w-full p-4">
     <div v-if="croppedImage" class="flex flex-col grid-margins">
       <div>
         <img :src="croppedImage" />
@@ -21,20 +21,11 @@
     </div>
     <div
       v-if="image && !croppedImage"
-      class="relative w-full cropper grid-margins"
+      class="flex flex-col justify-center relative w-full h-screen grid-margins"
     >
-      <cropper
-        ref="cropper"
-        class="cropper"
-        :debounce="false"
-        :src="image"
-        :stencil-props="{
-          aspectRatio: 1.91,
-        }"
-      />
-      <div class="flex flex-col absolute buttons">
+      <div class="flex justify-center mb-3">
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mb-4"
+          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="zoom(1.5)"
         >
           <SVGIcon
@@ -44,7 +35,7 @@
           />
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mb-4"
+          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="zoom(0.5)"
         >
           <SVGIcon
@@ -54,7 +45,7 @@
           />
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mb-4"
+          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="crop"
         >
           <SVGIcon
@@ -73,6 +64,19 @@
             title="Delete"
           />
         </button>
+      </div>
+      <cropper
+        ref="cropper"
+        class="cropper"
+        :debounce="false"
+        :src="image"
+        :stencil-props="{
+          aspectRatio: 1.91,
+        }"
+      />
+      <div class="mt-3 mx-auto max-w-lg text-center">
+        <strong>Pro tip:</strong> Avoid words in images, as they detract from
+        post or card titles and can be hard to read at small sizes.
       </div>
     </div>
     <div
@@ -184,11 +188,5 @@ export default {
 
 .cropper {
   max-height: 70vh;
-}
-
-.buttons {
-  top: 50%;
-  left: 2rem;
-  transform: translateY(-50%);
 }
 </style>
