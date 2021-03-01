@@ -8,7 +8,7 @@
       <p class="mt-2 mr-2">
         Sign up for the IPFS Weekly newsletter (<router-link
           :to="latestWeeklyPost ? latestWeeklyPost.path : ''"
-          class="text-blueGreen hover:underline"
+          class="text-blueGreenLight hover:underline"
           >example</router-link
         >) for the latest on releases, upcoming developments, community events,
         and more.

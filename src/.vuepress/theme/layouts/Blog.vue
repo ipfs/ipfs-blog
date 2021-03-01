@@ -2,18 +2,17 @@
   <Layout>
     <div class="bg-gradient-6 py-20 text-white">
       <div class="relative grid-margins mt-8">
-        <Breadcrumbs :crumbs="breadcrumbs" />
         <h1 class="type-h1 mt-4">
           {{ $frontmatter.description }}
         </h1>
-        <h2 class="mt-8 type-h4">
+        <h2 class="mt-8 type-h4 max-w-4xl">
           All the up-to-date IPFS info you need in one place, from blog posts
           and release notes to videos, tutorials, news coverage, and events.
         </h2>
-        <LanguageSelector class="absolute right-0" />
+        <LanguageSelector class="absolute right-0 language-selector" />
       </div>
     </div>
-    <div class="pt-8 pb-4 bg-white flex-grow">
+    <div class="pt-8 pb-4 bg-white flex-grow bg-gray-background">
       <SortAndFilter
         :number-of-posts="pagesToShow.length"
         :tags="tags"
@@ -57,7 +56,6 @@ import Layout from '@theme/layouts/Layout.vue'
 import Card from '@theme/components/blog/Card'
 import VideoModal from '@theme/components/blog/VideoModal'
 import SortAndFilter from '@theme/components/blog/SortAndFilter'
-import Breadcrumbs from '@theme/components/Breadcrumbs'
 import LanguageSelector from '@theme/components/base/LanguageSelector'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
@@ -72,7 +70,6 @@ export default {
   components: {
     Card,
     Layout,
-    Breadcrumbs,
     SortAndFilter,
     LanguageSelector,
     VideoModal,
@@ -82,10 +79,6 @@ export default {
       numberOfPagesToShow: 24,
       infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
-      breadcrumbs: [
-        { title: 'Home', link: 'https://ipfs.io/', external: true },
-        { title: 'Blog & news' },
-      ],
     }
   },
   computed: {
@@ -324,3 +317,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.language-selector {
+  bottom: -3rem;
+}
+</style>

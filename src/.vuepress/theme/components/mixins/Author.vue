@@ -1,15 +1,7 @@
 <script>
 export default {
   props: {
-    avatar: {
-      type: String,
-      default: null,
-    },
     svgIcon: {
-      type: String,
-      default: null,
-    },
-    avatarUrl: {
       type: String,
       default: null,
     },

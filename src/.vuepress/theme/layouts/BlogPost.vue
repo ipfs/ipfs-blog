@@ -8,7 +8,7 @@
         :tags="$frontmatter.tags"
         :image="$frontmatter.header_image"
       />
-      <div class="grid-margins">
+      <div class="grid-margins max-w-5xl">
         <div v-if="$frontmatter.image" class="blog type-rich my-12">
           <LazyImage
             :alt="$page.title"
@@ -21,7 +21,7 @@
         </div>
         <Content
           itemprop="articleBody"
-          class="blog type-rich mb-10 mt-4 pt-4 border-t-2 border-gray border-opacity-25"
+          class="blog type-rich mb-10 mt-4 pt-4 border-t-2 border-gray border-opacity-25 px-2 sm:px-6 md:px-0"
         />
         <Comments v-if="showComments" />
       </div>

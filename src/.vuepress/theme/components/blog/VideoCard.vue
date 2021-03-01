@@ -1,12 +1,13 @@
 <template>
   <div
-    class="group bg-gray-pale rounded flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-white rounded flex flex-col transform hover:scale-105 duration-300 ease-in-out"
     itemprop="mainEntityOfPage"
   >
     <article
       itemprop="blogPost"
       itemscope
       itemtype="https://schema.org/BlogPosting"
+      class="flex flex-col flex-grow"
     >
       <div class="cover embed-responsive overflow-visible embed-responsive-og">
         <a
@@ -37,34 +38,19 @@
         </a>
       </div>
       <div class="p-4 flex flex-grow flex-col">
-        <a
-          :href="path"
-          target="_blank"
-          class="text-left"
-          @click="handleVideoClick"
-        >
-          <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-            {{ title }}
-          </h1>
-        </a>
-        <div>
+        <div class="flex flex-grow">
           <PostMeta
             :category="frontmatter.type"
             :author="null"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
+            :title="title"
+            :description="frontmatter.description"
+            :post-path="path"
+            :onclick="handleVideoClick"
             class="type-p4 text-primary"
           />
         </div>
-        <footer class="flex-grow">
-          <p
-            v-if="frontmatter.description || frontmatter.description"
-            class="type-p1 text-sm text-primary clamp-5"
-            itemprop="description"
-          >
-            {{ frontmatter.description || frontmatter.description }}
-          </p>
-        </footer>
       </div>
     </article>
   </div>

@@ -57,10 +57,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.avatar {
-  height: 2.3em;
-  width: 2.3em;
-}
-</style>

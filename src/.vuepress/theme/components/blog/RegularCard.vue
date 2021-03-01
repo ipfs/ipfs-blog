@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-blueGreen bg-opacity-25 rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-white rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
     itemprop="mainEntityOfPage"
     :to="path"
   >
@@ -8,6 +8,7 @@
       itemprop="blogPost"
       itemscope
       itemtype="https://schema.org/BlogPosting"
+      class="flex flex-col flex-grow"
     >
       <div class="cover embed-responsive embed-responsive-og">
         <router-link :to="path" class="embed-responsive-item">
@@ -27,28 +28,18 @@
         </router-link>
       </div>
       <div class="p-4 flex flex-grow flex-col">
-        <router-link :to="path">
-          <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-            {{ title }}
-          </h1>
-        </router-link>
-        <div>
+        <div class="flex flex-grow">
           <PostMeta
             category="Blog post"
             :author="frontmatter.author"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
+            :description="frontmatter.description"
+            :title="title"
+            :post-path="path"
             class="type-p4 text-primary"
           />
         </div>
-        <footer v-if="frontmatter" class="flex-grow mt-2">
-          <p
-            class="type-p1 text-sm text-primary clamp-3"
-            itemprop="description"
-          >
-            {{ frontmatter.description }}
-          </p>
-        </footer>
       </div>
     </article>
   </div>
