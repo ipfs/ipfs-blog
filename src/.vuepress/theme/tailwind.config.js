@@ -111,7 +111,7 @@ const theme = {
       fontWeight: theme('fontWeight.medium'),
       letterSpacing: theme('letterSpacing.tight'),
       fontSize: theme('fontSize.35'),
-      '@screen sm': {
+      '@screen lg': {
         fontSize: theme('fontSize.50'),
       },
     },

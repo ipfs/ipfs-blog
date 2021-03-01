@@ -52,7 +52,7 @@
     <div class="tags mt-auto pt-2 flex flex-wrap" itemprop="keywords">
       <button
         v-if="category"
-        class="p-1 mr-1 bg-aquaMuted bg-opacity-50 text-blueGreen font-semibold hover:underline rounded cursor-pointer mt-1"
+        class="p-1 mr-1 bg-aquaMuted leading-none bg-opacity-50 text-blueGreen font-semibold hover:bg-blueGreen hover:text-white transition duration-300 ease-in-out rounded cursor-pointer mt-1"
         @click="handleCatClick"
       >
         {{ category }}

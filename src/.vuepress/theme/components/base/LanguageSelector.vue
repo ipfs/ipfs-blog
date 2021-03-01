@@ -8,11 +8,11 @@
     >
       <UnstyledLink
         v-if="$localePath !== locale.path"
-        class="text-blueGreen hover:underline mx-1"
+        class="text-blueGreen hover:underline mx-2 text-sm"
         :to="locale.path"
         >{{ locale.lang }}</UnstyledLink
       >
-      <div v-else class="mx-1">{{ locale.lang }}</div>
+      <div v-else class="mx-2 text-sm">{{ locale.lang }}</div>
     </div>
   </div>
 </template>

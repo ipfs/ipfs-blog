@@ -36,7 +36,7 @@
         <div class="mt-3 flex flex-wrap" itemprop="keywords">
           <button
             v-if="videoModalCard.frontmatter.type"
-            class="p-1 bg-blueGreen text-white hover:underline rounded text-sm mr-1"
+            class="p-1 bg-aquaMuted leading-none bg-opacity-50 rounded text-blueGreen font-semibold hover:bg-blueGreen hover:text-white text-sm mr-1"
             @click="handleCatClick()"
           >
             {{ videoModalCard.frontmatter.type }}

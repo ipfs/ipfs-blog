@@ -5,7 +5,7 @@
         <h1 class="type-h1 mt-4">
           {{ $frontmatter.description }}
         </h1>
-        <h2 class="mt-8 type-h4 max-w-3xl">
+        <h2 class="mt-8 type-h4 max-w-4xl">
           All the up-to-date IPFS info you need in one place, from blog posts
           and release notes to videos, tutorials, news coverage, and events.
         </h2>

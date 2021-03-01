@@ -23,7 +23,7 @@
           </div>
           <div class="mt-4 md:mt-0">
             <LazyImage
-              img-class="object-contain rounded"
+              img-class="object-contain rounded w-full"
               :alt="$page.title"
               :src="`${image ? image : '/header-image-placeholder.png'}`"
             />
@@ -32,16 +32,16 @@
       </div>
     </div>
     <div
-      class="grid-margins pt-8 flex flex-wrap justify-between items-center max-w-4xl"
+      class="grid-margins pt-8 flex flex-wrap justify-between items-center max-w-5xl px-2 sm:px-6 md:px-0"
     >
       <div
         v-if="resolvedTags.length"
-        class="tags flex flex-wrap"
+        class="tags flex flex-wrap text-sm text-gray-dark"
         itemprop="keywords"
       >
         <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" link dark />
       </div>
-      <div class="flex my-1">
+      <div class="flex my-1 text-sm text-gray-dark">
         Share this item:
         <PostSocials class="flex max-w-3xl ml-2" />
       </div>
