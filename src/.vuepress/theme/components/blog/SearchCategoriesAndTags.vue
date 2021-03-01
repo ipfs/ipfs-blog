@@ -13,6 +13,7 @@
         :options="['All content', ...categoriesList]"
         :searchable="false"
         :allow-empty="false"
+        select-label="Press 'enter' to select"
         deselect-label=""
         @input="setActiveCategory"
         @open="setSelected(0)"
@@ -29,6 +30,8 @@
         :options="resolvedTags"
         :multiple="true"
         :taggable="true"
+        select-label="Press 'enter' to select"
+        deselect-label="Press 'enter' to remove"
         @tag="handleAddTag"
         @remove="removeTag"
         @select="focusOnSubmit"
@@ -253,6 +256,11 @@ export default {
   @apply bg-blueGreen;
 }
 
+.multiselect__option--highlight.multiselect__option--selected,
+.multiselect__option--highlight.multiselect__option--selected::after {
+  @apply bg-aquaMuted;
+}
+
 .multiselect__placeholder,
 .multiselect__input {
   height: 1.5rem;
@@ -262,15 +270,10 @@ export default {
   font-size: 1rem;
 }
 
-.multiselect--active .multiselect__tags {
-  padding-botom: 0;
-}
-
 .multiselect__tags {
-  padding-top: 0.5rem;
-  padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
+  border: none;
 }
 
 .multiselect__tags-wrap {
@@ -283,7 +286,7 @@ export default {
   margin-bottom: 0.5rem;
 }
 
-.multiselect--active .multiselect__tags-wrap {
+.multiselect--active .multiselect__tags {
   padding-bottom: 0.5rem;
 }
 

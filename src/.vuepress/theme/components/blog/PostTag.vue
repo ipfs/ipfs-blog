@@ -38,10 +38,10 @@ export default {
   computed: {
     computedClass() {
       return [
-        'post-tag p-1 mr-1 hover:underline rounded cursor-pointer',
+        'post-tag p-1 mr-1 rounded cursor-pointer transition duration-300 ease-in-out',
         this.dark
-          ? 'bg-blueGreen text-white'
-          : 'bg-white text-blueGreen border',
+          ? 'bg-gray-muted text-black hover:underline my-1'
+          : 'bg-white text-charcoalMuted hover:bg-charcoalMuted hover:text-white',
         this.className,
       ]
     },

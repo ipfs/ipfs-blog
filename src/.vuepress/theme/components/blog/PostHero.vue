@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-gradient-6 text-white">
-      <div class="pt-20 pb-10 grid-margins">
+      <div class="pt-20 pb-10 grid-margins max-w-6xl">
         <Breadcrumbs :crumbs="breadcrumbs" class="mt-8" />
         <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
           <div class="flex flex-col md:pr-8">
@@ -23,7 +23,7 @@
           </div>
           <div class="mt-4 md:mt-0">
             <LazyImage
-              img-class="object-contain"
+              img-class="object-contain rounded"
               :alt="$page.title"
               :src="`${image ? image : '/header-image-placeholder.png'}`"
             />
@@ -31,15 +31,17 @@
         </div>
       </div>
     </div>
-    <div class="grid-margins pt-8 flex justify-between items-center">
+    <div
+      class="grid-margins pt-8 flex flex-wrap justify-between items-center max-w-4xl"
+    >
       <div
         v-if="resolvedTags.length"
-        class="tags flex mt-1"
+        class="tags flex flex-wrap"
         itemprop="keywords"
       >
         <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" link dark />
       </div>
-      <div class="flex">
+      <div class="flex my-1">
         Share this item:
         <PostSocials class="flex max-w-3xl ml-2" />
       </div>
@@ -101,11 +103,7 @@ export default {
         .filter((tag) => tag)
     },
     breadcrumbs() {
-      return [
-        { title: 'Home', link: 'https://ipfs.io/', external: true },
-        { title: 'Blog & news', link: this.$localePath },
-        { title: this.title },
-      ]
+      return [{ title: 'Blog & news', link: this.$localePath }]
     },
   },
 }

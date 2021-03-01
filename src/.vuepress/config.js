@@ -1,8 +1,7 @@
 const { reverse, sortBy } = require('lodash')
-const authors = require('./config/authors')
 
 // configure this to an absolute url to enable a generated sitemap & blog RSS feeds
-const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
+const CANONICAL_BASE = process.env.CANONICAL_BASE || 'https://blog.ipfs.io/'
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
 
 const themeConfigDefaults = {
@@ -66,16 +65,15 @@ module.exports = {
   description:
     'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
   domain: CANONICAL_BASE,
-  authors,
   locales: {
     '/': {
-      lang: 'en-US',
+      lang: 'EN',
       title: 'IPFS Blog & News',
       description:
         'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
     },
     '/zh-cn/': {
-      lang: 'zh-CN',
+      lang: '中文',
       title: 'IPFS Blog & News',
       description:
         'ZH - All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
@@ -151,7 +149,7 @@ module.exports = {
           }
         : false,
     ],
-    [require('./plugins/pageData'), { authors }],
+    [require('./plugins/pageData')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
     // [require('./plugins/vuepress-plugin-ga-dnt'), { ga: 'UA-xxxxxx' }],
     ['vuepress-plugin-img-lazy'],
@@ -251,14 +249,6 @@ module.exports = {
           new Date($page.frontmatter.date).toISOString(),
         modifiedAt: ($page) =>
           $page.lastUpdated && new Date($page.lastUpdated).toISOString(),
-        customMeta: (add, ctx) => {
-          const { $site } = ctx
-          if ($site.authors instanceof Map) {
-            // select first object from the authors list
-            const { twitter } = $site.authors.values().next().value
-            add('twitter:site', twitter)
-          }
-        },
       },
     ],
     ['vuepress-plugin-robots', { host: CANONICAL_BASE }],
@@ -270,7 +260,7 @@ module.exports = {
     ],
     ['vuepress-plugin-ipfs', IPFS_DEPLOY],
   ],
-  extraWatchFiles: ['.vuepress/config/head.js', '.vuepress/config/authors.js'],
+  extraWatchFiles: ['.vuepress/config/head.js'],
   chainWebpack: (config, isServer) => {
     config.module.rules.delete('svg')
 

@@ -5,7 +5,7 @@
       <div class="inline mr-1">
         <UnstyledLink
           v-if="crumb.link"
-          class="text-blueGreen hover:underline"
+          class="text-blueGreenLight hover:underline"
           :external="crumb.external"
           :to="crumb.link"
         >
