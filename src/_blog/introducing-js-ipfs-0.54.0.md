@@ -1,7 +1,7 @@
 ---
 title: Introducing js-IPFS 0.54.0
 description: js-IPFS 0.54.0 brings UPnP NAT Hole Punching to your js-IPFS node
-date: 2021-02-03T07:00:00+0000
+date: 2021-02-03
 permalink: '/2021-02-03-js-ipfs-0-54/'
 translationKey: ''
 header_image: '/header-image-js-ipfs-placeholder.png'

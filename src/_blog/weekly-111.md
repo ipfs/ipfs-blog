@@ -1,5 +1,5 @@
 ---
-date: 2020-10-28T06:00:00+0000
+date: 2020-10-28
 permalink: '/weekly-111/'
 translationKey: ipfs-weekly-111
 tags:

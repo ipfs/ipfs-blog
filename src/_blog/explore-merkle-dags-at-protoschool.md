@@ -1,5 +1,5 @@
 ---
-date: 2021-01-14T07:00:00+0000
+date: 2021-01-14
 permalink: '/2021-01-14-explore-merkle-dags-at-protoschool/'
 translationKey: ''
 header_image: '/115-protoschool-merkle-dags.png'

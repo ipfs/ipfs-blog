@@ -1,5 +1,5 @@
 ---
-date: 2020-12-21T07:00:00+0000
+date: 2020-12-21
 permalink: '/2020-12-21-ipfs-in-2021/'
 translationKey: ''
 header_image: '/114-ipfs-2021.jpg'

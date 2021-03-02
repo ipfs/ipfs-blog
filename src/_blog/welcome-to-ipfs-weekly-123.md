@@ -5,7 +5,7 @@ title: Welcome to IPFS Weekly 123
 description:
   See what people built at ETHDenver, hang out with IPFS and friends, plus
   your files for keeps forever - we promise!
-date: 2021-02-17T07:00:00+0000
+date: 2021-02-17
 permalink: '/weekly-123/'
 translationKey: ipfs-weekly-123
 header_image: '/header-image-weekly-newsletter.png'

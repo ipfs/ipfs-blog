@@ -7,7 +7,7 @@ title: libp2p comes to ProtoSchool
 description:
   The ProtoSchool team is pleased to announce the launch of a shiny new
   multiple-choice tutorial introducing libp2p
-date: 2021-02-17T07:00:00+0000
+date: 2021-02-17
 permalink: '/2021-02-17-libp2p-comes-to-protoschool/'
 translationKey: ''
 header_image: '/124-libp2p-comes-to-protoschool.png'
