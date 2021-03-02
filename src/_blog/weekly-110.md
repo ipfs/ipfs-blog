@@ -1,5 +1,5 @@
 ---
-date: 2020-10-20T23:00:00.000+00:00
+date: 2020-10-20
 permalink: '/weekly-110/'
 translationKey: ipfs-weekly-110
 header_image: /header-image-weekly-newsletter.png

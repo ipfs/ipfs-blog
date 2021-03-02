@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 120
 description: ''
-date: 2021-01-27T07:00:00+0000
+date: 2021-01-27
 permalink: '/weekly-120/'
 translationKey: ipfs-weekly-120
 header_image: '/header-image-weekly-newsletter.png'

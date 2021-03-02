@@ -6,7 +6,7 @@ description:
   Opera adds support for IPFS addressing to Opera Touch, relive the Brave
   x IPFS partnership AMA, and join the first forum for researchers and academics working
   in the IPFS space!
-date: 2021-02-10T07:00:00+0000
+date: 2021-02-10
 permalink: '/weekly-122/'
 translationKey: ipfs-weekly-122
 header_image: '/header-image-weekly-newsletter.png'
