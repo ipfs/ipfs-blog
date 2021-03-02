@@ -48,7 +48,7 @@ fields:
     description: <strong>Must be twice as wide as it is tall (2:1 aspect ratio) and
       at least 400px tall.</strong> <strong>Name the image file something that can
       be easily searched for in the media directory later (consider adding a date).</strong><br>Need
-      help? <a href="https://ipfs-blog.netlify.app/image-crop/" title="Use this crop/scale
+      help? <a href="https://ipfs-blog.on.fleek.co/image-crop/" title="Use this crop/scale
       tool" target="_blank">Use this crop/scale tool</a> to save a revised image to
       your local machine, then upload here.
   - name: tags
