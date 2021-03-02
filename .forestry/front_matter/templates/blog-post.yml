@@ -31,6 +31,8 @@ fields:
     display; posts are not automatically published!'
   config:
     required: true
+    date_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
 - type: text
   name: permalink
   label: Permalink
