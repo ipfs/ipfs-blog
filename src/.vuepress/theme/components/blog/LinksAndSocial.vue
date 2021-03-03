@@ -5,6 +5,7 @@
       <a
         class="text-blueGreen hover:underline"
         href="https://airtable.com/shrNH8YWole1xc70I"
+        target="_blank"
         rel="noopener noreferrer"
       >
         Submit</a
