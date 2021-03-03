@@ -10,7 +10,7 @@
               v-if="author && author.name"
               :to="{ path: $localePath, query: { author: author.name } }"
             >
-              <PostAuthor v-bind="author" />
+              <PostAuthor v-bind="author" light />
             </router-link>
             <time
               class="text-gray"
