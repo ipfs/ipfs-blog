@@ -51,7 +51,7 @@
     "tailwindcss-line-clamp": "^1.0.5",
     "tailwindcss-touch": "^1.0.1",
     "vue": "^2.6.12",
-    "vuepress": "^1.7.1",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-ipfs": "^1.0.2",
