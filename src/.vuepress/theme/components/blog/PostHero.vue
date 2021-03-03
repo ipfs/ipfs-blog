@@ -25,7 +25,7 @@
             <LazyImage
               img-class="object-contain rounded w-full"
               :alt="$page.title"
-              :src="`${image ? image : '/header-image-placeholder.png'}`"
+              :src="`${image ? image : '/blog-post-placeholder.png'}`"
             />
           </div>
         </div>
