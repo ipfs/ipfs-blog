@@ -72,8 +72,8 @@ use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: dist
-  install_dependencies_command: npm install
+  install_dependencies_command: npm install --save vuepress
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv/src"
-  instant_preview_command: npm run dev
+  instant_preview_command: npm install && npm run dev
