@@ -12,7 +12,7 @@
       class="flex flex-row"
     >
       <span
-        class="hover:text-blueGreen hover:underline cursor-pointer"
+        class="text-blueGreenLight hover:underline cursor-pointer"
         @click="handleAuthorClick(piece)"
       >
         {{ piece }}
