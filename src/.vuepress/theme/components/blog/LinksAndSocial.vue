@@ -4,7 +4,7 @@
       Event organizer, content creator, or journalist?
       <a
         class="text-blueGreen hover:underline"
-        href="https://protocol.ai/join"
+        href="https://airtable.com/shrNH8YWole1xc70I"
         rel="noopener noreferrer"
       >
         Submit</a
