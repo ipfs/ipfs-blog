@@ -243,7 +243,7 @@ module.exports = {
         image: ($page, $site) =>
           $page.frontmatter.header_image
             ? ($site.domain || '') + $page.frontmatter.header_image
-            : ($site.domain || '') + '/ipfs-logo-256-ice.png',
+            : ($site.domain || '') + '/social-card.png',
         publishedAt: ($page) =>
           $page.frontmatter.date &&
           new Date($page.frontmatter.date).toISOString(),
