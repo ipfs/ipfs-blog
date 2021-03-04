@@ -9,7 +9,6 @@
   </RouterLink>
   <a v-else :href="link" :target="target" :rel="rel">
     {{ item.text }}
-    <OutboundLink v-if="isBlankTarget" />
   </a>
 </template>
 
