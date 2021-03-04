@@ -1,8 +1,13 @@
 <template>
-  <RouterLink v-if="isInternal" :to="link" :exact="exact">
+  <RouterLink
+    v-if="isInternal"
+    :to="link"
+    :exact="exact"
+    @click="onClick(item)"
+  >
     {{ item.text }}
   </RouterLink>
-  <a v-else :href="link" :target="target" :rel="rel">
+  <a v-else :href="link" :target="target" :rel="rel" @click="onClick(item)">
     {{ item.text }}
   </a>
 </template>
@@ -17,6 +22,10 @@ export default {
     item: {
       type: Object,
       required: true,
+    },
+    onClick: {
+      type: Function,
+      default: () => {},
     },
   },
 

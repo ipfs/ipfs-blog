@@ -151,7 +151,6 @@ module.exports = {
     ],
     [require('./plugins/pageData')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
-    // [require('./plugins/vuepress-plugin-ga-dnt'), { ga: 'UA-xxxxxx' }],
     ['vuepress-plugin-img-lazy'],
     [
       '@vuepress/blog',

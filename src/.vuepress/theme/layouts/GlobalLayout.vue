@@ -17,6 +17,8 @@ import Footer from '@theme/components/Footer.vue'
 import Nav from '@theme/components/Nav.vue'
 import MobileNav from '@theme/components/MobileNav.vue'
 
+import countly from '../util/countly'
+
 export default {
   name: 'GlobalLayout',
 
@@ -33,6 +35,10 @@ export default {
       setGlobalInfo('layout', layout)
       return Vue.component(layout)
     },
+  },
+
+  beforeMount() {
+    countly.loadScript()
   },
 
   methods: {

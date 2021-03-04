@@ -54,6 +54,8 @@
 import Multiselect from 'vue-multiselect'
 import { mapState } from 'vuex'
 
+import countly from '../../util/countly'
+
 export default {
   name: 'SearchCategoriesAndTags',
   components: { Multiselect },
@@ -93,9 +95,6 @@ export default {
     queryProptertyWatchlist() {
       this.updateTagsWithQuery()
     },
-  },
-  mounted() {
-    this.updateTagsWithQuery()
   },
   created() {
     this.calculateTagsLimit()
@@ -190,6 +189,13 @@ export default {
       this.selectedTags = newTags
     },
     setActiveCategory(category) {
+      const categoryTracking = {
+        category: category,
+        method: 'filter-select',
+      }
+
+      countly.trackEvent(countly.events.FILTER, categoryTracking)
+
       this.$store.commit(
         'appState/setActiveCategory',
         this.categoriesList.includes(category) ? category : ''
@@ -216,11 +222,26 @@ export default {
         name: text,
         value: text,
       }
+
+      const textTracking = {
+        text: text,
+        method: 'filter-select',
+      }
+
+      countly.trackEvent(countly.events.FILTER, textTracking)
+
       this.selectedTags.push(option)
       this.calculateTagsLimit([...this.selectedTags, option])
       this.$refs.select2.focus()
     },
     focusOnSubmit(option) {
+      const tagTracking = {
+        tag: option.value,
+        method: 'filter-select',
+      }
+
+      countly.trackEvent(countly.events.FILTER, tagTracking)
+
       this.calculateTagsLimit()
       this.$refs.select2.focus()
     },
@@ -254,6 +275,15 @@ export default {
 .multiselect__option--highlight,
 .multiselect__option--highlight::after {
   @apply bg-blueGreen;
+}
+
+.multiselect__tag-icon::after {
+  color: white;
+  opacity: 0.5;
+}
+
+.multiselect__tag-icon:hover::after {
+  opacity: 1;
 }
 
 .multiselect__option--highlight.multiselect__option--selected,

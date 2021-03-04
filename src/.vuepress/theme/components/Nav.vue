@@ -32,7 +32,11 @@
             :key="page.text"
             class="nav__link-item first:m-0 font-semibold"
           >
-            <Link class="nav__link font-display font-medium" :item="page" />
+            <Link
+              class="nav__link font-display font-medium"
+              :item="page"
+              :on-click="onClickNavLink"
+            />
           </li>
         </ul>
         <button
@@ -52,6 +56,8 @@ import throttle from 'lodash/throttle'
 import { mapState } from 'vuex'
 import SVGIcon from '@theme/components/base/SVGIcon'
 import Link from '@theme/components/base/Link'
+
+import countly from '../util/countly'
 
 export default {
   name: 'Nav',
@@ -130,6 +136,13 @@ export default {
     },
     toggleMobileMenu() {
       this.$store.commit('appState/toggleMobileNav', !this.mobileNavActive)
+    },
+    onClickNavLink(item) {
+      countly.trackEvent(countly.events.LINK_CLICK_NAV, {
+        view: this.$route.path,
+        href: item.link,
+        text: item.text,
+      })
     },
   },
 }

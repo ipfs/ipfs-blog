@@ -62,6 +62,7 @@ import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 import uniq from 'lodash/uniq'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
+import countly from '../util/countly'
 
 const defaultCategory = 'Blog post'
 
@@ -257,6 +258,46 @@ export default {
 
     const queryText = query.search
 
+    if (queryCategory !== '') {
+      const categoryTracking = {
+        category: queryCategory,
+        method: 'urlQuery',
+      }
+
+      countly.trackEvent(countly.events.FILTER, categoryTracking)
+    }
+
+    if (queryTags.length > 0) {
+      queryTags.forEach((tag) => {
+        const tagTracking = {
+          tag: tag,
+          method: 'urlQuery',
+        }
+
+        countly.trackEvent(countly.events.FILTER, tagTracking)
+      })
+    }
+
+    if (queryText) {
+      queryText.split(',').forEach((text) => {
+        const textTracking = {
+          text: text,
+          method: 'urlQuery',
+        }
+
+        countly.trackEvent(countly.events.FILTER, textTracking)
+      })
+    }
+
+    if (queryAuthor) {
+      const authorTracking = {
+        author: queryAuthor,
+        method: 'urlQuery',
+      }
+
+      countly.trackEvent(countly.events.FILTER, authorTracking)
+    }
+
     this.$store.commit('appState/setActiveTags', queryTags)
     this.$store.commit('appState/setActiveCategory', queryCategory)
     this.$store.commit(
@@ -304,6 +345,8 @@ export default {
       this.numberOfPagesToShow = this.numberOfPagesToShow + 24
     },
     handleLoadMoreClick() {
+      countly.trackEvent(countly.events.LOAD_MORE_BUTTON)
+
       this.infiniteScroll = true
       this.numberOfPagesToShow = this.numberOfPagesToShow + 24
     },

@@ -42,12 +42,15 @@
           </button>
         </div>
       </div>
-      <div v-if="numberOfPosts === 0" class="flex mt-2">
-        Try removing some your search parameters, or&nbsp;
-        <button class="text-blueGreen" @click="handleClear()">
-          return to the blog & news index
-        </button>
-        .
+      <div v-if="numberOfPosts === 0" class="mt-2">
+        {{ 'Try removing some your search parameters, or ' }}
+        <router-link
+          :to="{ path: '/' }"
+          class="text-blueGreen"
+          @click.native="handleClear()"
+        >
+          return to the blog & news index.
+        </router-link>
       </div>
     </div>
     <button

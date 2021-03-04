@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import countly from '../../util/countly'
+
 export default {
   name: 'PostTag',
   props: {
@@ -34,6 +36,10 @@ export default {
       type: Function,
       default: () => {},
     },
+    parent: {
+      type: String,
+      default: 'card',
+    },
   },
   computed: {
     computedClass() {
@@ -48,11 +54,21 @@ export default {
   },
   methods: {
     handleTagClick() {
+      this.trackTag()
       this.$store.commit('appState/setActiveTags', [this.tag])
     },
     addNewTag() {
+      this.trackTag()
       this.$store.commit('appState/addNewTag', [this.tag])
       this.callback()
+    },
+    trackTag() {
+      const tagTracking = {
+        tag: this.tag,
+        method: `${this.parent}-select`,
+      }
+
+      countly.trackEvent(countly.events.FILTER, tagTracking)
     },
   },
 }

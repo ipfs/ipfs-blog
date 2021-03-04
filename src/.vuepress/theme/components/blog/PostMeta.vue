@@ -68,6 +68,7 @@ import utc from 'dayjs/plugin/utc'
 import PostTag from '@theme/components/blog/PostTag'
 import PostAuthor from '@theme/components/blog/PostAuthor'
 import UnstyledLink from '@theme/components/UnstyledLink'
+import countly from '../../util/countly'
 
 export default {
   name: 'PostMeta',
@@ -132,6 +133,13 @@ export default {
   },
   methods: {
     handleCatClick() {
+      const categoryTracking = {
+        category: this.category,
+        method: 'card-select',
+      }
+
+      countly.trackEvent(countly.events.FILTER, categoryTracking)
+
       this.$store.commit('appState/setActiveCategory', this.category)
     },
   },

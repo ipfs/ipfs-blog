@@ -33,6 +33,7 @@
 <script>
 import { mapState } from 'vuex'
 import Author from '@theme/components/mixins/Author'
+import countly from '../../util/countly'
 
 export default {
   name: 'PostAuthor',
@@ -46,6 +47,10 @@ export default {
     name: {
       type: String,
       default: '',
+    },
+    parent: {
+      type: String,
+      default: 'card',
     },
   },
   computed: {
@@ -68,8 +73,15 @@ export default {
     },
   },
   methods: {
-    handleAuthorClick(piece) {
-      this.$store.commit('appState/setActiveAuthor', piece)
+    handleAuthorClick(authorName) {
+      const authorTracking = {
+        author: authorName,
+        method: `${this.parent}-select`,
+      }
+
+      countly.trackEvent(countly.events.FILTER, authorTracking)
+
+      this.$store.commit('appState/setActiveAuthor', authorName)
     },
   },
 }
