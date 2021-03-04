@@ -2,6 +2,10 @@
 title: Release Notes
 type: Release notes
 data:
+- title: go-ipfs 0.8.8
+  date: 2021-02-18
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0
+  tags: []
 - title: IPFS Cluster 1.13.1
   date: 2021-01-14
   path: https://github.com/ipfs/ipfs-cluster/releases/tag/v0.13.1
