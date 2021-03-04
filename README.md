@@ -13,11 +13,25 @@ This work is part of a larger product-market fit realignment/enhancement effort 
 
 This site uses the `staging` branch as a work-in-progress scratchpad for blog content. Once approved for go-live, `staging` is merged into `main`; the production site is automatically deployed from the latest `main` using [Fleek](https://fleek.co/).
 
-Post authors and editors are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing, including perks like WYSIWYG editing and image upload/crop tools. If you're an IPFS core team member and don't have Forestry access, contact @jessicaschilling to arrange access and a quick orientation session. (If you prefer writing in Markdown, don't fear: Forestry also has a raw Markdown view.) 
+Post authors and editors are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing, including perks like WYSIWYG editing image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact @jessicaschilling to arrange access and a quick orientation session. (If you prefer writing in Markdown, don't fear: Forestry also has a raw Markdown view.) 
 
-### Forestry tips
+### Forestry authoring/editing tips
 
-Foo
+- Use the "Content Types" section of the left-hand menu to drill down to the type of item (e.g. blog post, video, news coverage, event) you want to create or edit.
+- Use the [image crop/scale tool](https://ipfs-blog.on.fleek.co/image-crop/) to resize and save images so they're the perfect dimensions for link cards and blog post header images. (Don't have an image? Don't worry; the site falls back to generic images in all cases.)
+- If you're in edit mode for a blog post, you can switch between WYSIWYG and raw Markdown (for example, if you want to add HTML embed code to the Markdown) by choosing "Raw Editor/WYSIWYG Editor" from the dots menu at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
+
+### Forestry build preview tips
+While WYSIWYG mode can often give you a good enough idea of what a blog post will look like, you can also load Forestry's built-in _build preview_ in a new tab by clicking the eye icon at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036918-f4766480-7cfa-11eb-9cf3-a0082e61a7a0.png)
+
+This build preview lets you preview changes to any content type (not just blog posts), and _does not_ require you to save your changes in order to see them.
+
+Other tips for using Forestry build previews:
+- Click the eye icon to regenerate a build preview at any time from the edit page. You may need to reload the build preview page if you don't see changes come through immediately.
+- Occasionally, a build preview page gets stuck at a URL ending in `forestry/pending` or simply won't load. Try these troubleshooting tips:
+     - Remove `forestry/pending` from the URL and try again.
+     - Check the Previews section of Forestry's [`Site > Settings` page](https://app.forestry.io/sites/lg5t7mxcqbr-da/#/settings/previews) to see the preview server's current status, start/stop/restart the server, or examine the logs for errors. Simply restarting the preview server can correct a multitude of problems.
+     - If all else fails, save your changes, wait a few minutes, and take a look at [Fleek's build of the latest version of the `staging` branch](https://ipfs-blog-staging.on.fleek.co/). It's a considerably slower build/deploy time, but does reflect the latest changes once it finishes deploying.
 
 ### To deploy to the live site
 
