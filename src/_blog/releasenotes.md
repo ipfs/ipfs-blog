@@ -2,6 +2,10 @@
 title: Release Notes
 type: Release notes
 data:
+- title: IPFS Desktop 0.14.0
+  date: 2021-02-23
+  path: https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.14.0
+  tags: []
 - title: go-ipfs 0.8.0
   date: 2021-02-18
   path: https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0
