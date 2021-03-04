@@ -15,7 +15,7 @@
             :src="
               $frontmatter.image
                 ? $frontmatter.image
-                : '/header-image-placeholder.png'
+                : '/blog-post-placeholder.png'
             "
           />
         </div>

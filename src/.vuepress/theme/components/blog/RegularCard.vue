@@ -20,7 +20,7 @@
             :src="`${
               frontmatter.header_image
                 ? frontmatter.header_image
-                : '/header-image-placeholder.png'
+                : '/blog-post-placeholder.png'
             }`"
             src-placeholder="/card-placeholder.png"
             :ctx="regularPath"
