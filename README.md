@@ -1,7 +1,12 @@
-# IPFS Blog (v2 Beta)
+# IPFS Blog & News
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](https://protocol.ai)
-[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg)](https://protocol.ai)
+[![](https://img.shields.io/badge/project-IPFS-blue.svg?)](http://ipfs.io/)
+[![](https://img.shields.io/badge/platform-VuePress-green.svg)](https://vuepress.vuejs.org/)
+[![](https://img.shields.io/badge/cms-Forestry-000000.svg)](https://forestry.io)
+[![](https://img.shields.io/badge/deployed%20on-Fleek-ff69b4.svg)](http://fleek.co/)
+
+![Picture of IPFS blog displayed on a laptop](https://user-images.githubusercontent.com/1507828/110040308-d2331580-7cff-11eb-8a05-8f5bad5ca819.png)
 
 This repository is home to in-development work on a VuePress/Forestry-based replacement for [the existing IPFS blog](https://blog.ipfs.io). Target go-live is in late Q1 2021. Contact @jessicaschilling with any questions.
 
