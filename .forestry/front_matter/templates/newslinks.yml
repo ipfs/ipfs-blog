@@ -24,7 +24,7 @@ fields:
     description: Appears as the card headline. Max length 3 lines (approx 60 characters)
       before truncating.
     config:
-      max: 65
+      max: 
       required: true
   - type: datetime
     name: date
