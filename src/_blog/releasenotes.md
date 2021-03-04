@@ -6,6 +6,7 @@ data:
   date: 2021-01-29
   path: https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.17.3
   tags: []
+  card_image: "/release-notes-placeholder.png"
 - title: IPFS Companion 2.17.2
   date: 2021-01-20
   path: https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.17.2
@@ -15,6 +16,7 @@ data:
   date: 2021-02-23
   path: https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.14.0
   tags: []
+  card_image: "/release-notes-placeholder.png"
 - title: go-ipfs 0.8.0
   date: 2021-02-18
   path: https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0
