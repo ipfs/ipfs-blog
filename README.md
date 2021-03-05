@@ -42,6 +42,9 @@ Other tips for using Forestry build previews:
 
 Forestry writes directly to `staging`, with previews available at https://ipfs-blog-staging.on.fleek.co/. Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1). *Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging.*
 
+### Need to add a redirect?
+Please add a new line to [`src/.vuepress/redirects`](https://github.com/ipfs/ipfs-blog/blob/main/src/.vuepress/redirects) and make a PR of the changes to `main`.
+
 ### Just want to add a new "link card"?
 
 Feel free to use Forestry to add details for "link cards" like videos, release notes or news items, and submit a PR for review/merge. However, if you're in a hurry, simply fill in the [public submission form](https://airtable.com/shrNH8YWole1xc70I) and a site maintainer will take care of the rest.
