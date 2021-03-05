@@ -255,7 +255,7 @@ module.exports = {
     [
       '@vuepress/html-redirect',
       {
-        duration: 0,
+        countdown: 0,
       },
     ],
     ['vuepress-plugin-ipfs', IPFS_DEPLOY],
