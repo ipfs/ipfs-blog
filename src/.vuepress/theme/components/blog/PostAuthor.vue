@@ -11,10 +11,7 @@
       itemprop="name"
       class="flex flex-row"
     >
-      <span
-        class="hover:text-blueGreen hover:underline cursor-pointer"
-        @click="handleAuthorClick(piece)"
-      >
+      <span :class="computedClassName" @click="handleAuthorClick(piece)">
         {{ piece }}
       </span>
       <span>{{
@@ -35,6 +32,12 @@ export default {
   name: 'PostAuthor',
   components: {},
   mixins: [Author],
+  props: {
+    light: {
+      type: Boolean,
+      default: null,
+    },
+  },
   computed: {
     ...mapState('appState', ['activeAuthor']),
     resolvedAuthorName() {
@@ -46,6 +49,12 @@ export default {
       }
 
       return resolvedName.split(/[,&]/g)
+    },
+    computedClassName() {
+      return [
+        'hover:underline cursor-pointer',
+        this.light ? 'text-blueGreenLight' : 'hover:text-blueGreen',
+      ]
     },
   },
   methods: {

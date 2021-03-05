@@ -1,7 +1,7 @@
 const { reverse, sortBy } = require('lodash')
 
 // configure this to an absolute url to enable a generated sitemap & blog RSS feeds
-const CANONICAL_BASE = process.env.CANONICAL_BASE || 'https://blog.ipfs.io/'
+const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
 
 const themeConfigDefaults = {
@@ -241,9 +241,9 @@ module.exports = {
             : 'website',
         url: (_, $site, path) => ($site.domain || '') + path,
         image: ($page, $site) =>
-          $page.frontmatter.image
-            ? ($site.domain || '') + $page.frontmatter.image
-            : ($site.domain || '') + '/images/og-default.jpg',
+          $page.frontmatter.header_image
+            ? ($site.domain || '') + $page.frontmatter.header_image
+            : ($site.domain || '') + '/social-card.png',
         publishedAt: ($page) =>
           $page.frontmatter.date &&
           new Date($page.frontmatter.date).toISOString(),

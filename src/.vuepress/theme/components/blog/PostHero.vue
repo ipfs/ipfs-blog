@@ -10,7 +10,7 @@
               v-if="author && author.name"
               :to="{ path: $localePath, query: { author: author.name } }"
             >
-              <PostAuthor v-bind="author" />
+              <PostAuthor v-bind="author" light />
             </router-link>
             <time
               class="text-gray"
@@ -25,7 +25,7 @@
             <LazyImage
               img-class="object-contain rounded w-full"
               :alt="$page.title"
-              :src="`${image ? image : '/header-image-placeholder.png'}`"
+              :src="`${image ? image : '/blog-post-placeholder.png'}`"
             />
           </div>
         </div>

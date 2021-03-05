@@ -1,5 +1,5 @@
 ---
-date: 2020-10-29T06:00:00+0000
+date: 2020-10-29
 permalink: '/2020-10-29-js-ipfs-0-50/'
 translationKey: ''
 header_image: '/header-image-js-ipfs-placeholder.png'

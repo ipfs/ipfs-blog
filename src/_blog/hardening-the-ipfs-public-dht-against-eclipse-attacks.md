@@ -1,5 +1,5 @@
 ---
-date: 2020-10-30T06:00:00+0000
+date: 2020-10-30
 permalink: '/2020-10-30-dht-hardening/'
 translationKey: ''
 header_image: '/112-dht-hardening.jpg'

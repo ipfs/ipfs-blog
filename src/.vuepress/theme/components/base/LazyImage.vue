@@ -5,8 +5,8 @@
       :class="imgClass"
       :sizes="sizes"
       :srcset="srcsetString"
-      :src="requireAsset(src, ctx)"
-      :src-placeholder="requireAsset(srcPlaceholder, ctx)"
+      :src="withBase(src, ctx)"
+      :src-placeholder="withBase(srcPlaceholder, ctx)"
       loading="lazy"
     />
     <p v-if="caption" class="type-p4 mt-3">{{ caption }}</p>
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import requireAsset from '@theme/components/mixins/requireAsset'
+import withBase from '@theme/components/mixins/requireAsset'
 
 export default {
   name: 'LazyImage',
-  mixins: [requireAsset],
+  mixins: [withBase],
   props: {
     alt: {
       type: String,
@@ -60,7 +60,7 @@ export default {
       if (srcsetObject) {
         return Object.keys(srcsetObject)
           .map(function (key, index) {
-            return `${self.requireAsset(srcsetObject[key], self.ctx)} ${key}`
+            return `${self.withBase(srcsetObject[key], self.ctx)} ${key}`
           })
           .join(', ')
       }
