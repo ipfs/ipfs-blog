@@ -2,6 +2,12 @@
 title: Release Notes
 type: Release notes
 data:
+- title: js-ipfs 0.54.3
+  date: 2021-03-09
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.54.3
+  tags:
+  - js-ipfs
+  - AEgir
 - title: IPFS Companion 2.17.3
   date: 2021-01-29
   path: https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.17.3
