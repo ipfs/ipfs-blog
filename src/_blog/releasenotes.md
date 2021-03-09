@@ -17,22 +17,26 @@ data:
 - title: IPFS Companion 2.17.2
   date: 2021-01-20
   path: https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.17.2
-  tags: []
+  tags:
+  - IPFS Companion
   card_image: "/release-notes-placeholder.png"
 - title: IPFS Desktop 0.14.0
   date: 2021-02-23
   path: https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.14.0
-  tags: []
+  tags:
+  - IPFS Desktop
   card_image: "/release-notes-placeholder.png"
 - title: go-ipfs 0.8.0
   date: 2021-02-18
   path: https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0
-  tags: []
+  tags:
+  - go-ipfs
   card_image: "/release-notes-placeholder.png"
 - title: IPFS Cluster 0.13.1
   date: 2021-01-14
   path: https://github.com/ipfs/ipfs-cluster/releases/tag/v0.13.1
-  tags: []
+  tags:
+  - IPFS Cluster
   card_image: "/release-notes-placeholder.png"
 - name: IPFS Companion 2.17.0
   title: IPFS Companion 2.17.0
