@@ -37,6 +37,10 @@ export default {
       type: Boolean,
       default: null,
     },
+    name: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
     ...mapState('appState', ['activeAuthor']),
