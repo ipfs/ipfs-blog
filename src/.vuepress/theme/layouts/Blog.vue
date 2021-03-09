@@ -138,8 +138,8 @@ export default {
         }
       })
 
-      return result.sort((a, b) =>
-        a.frontmatter.date > b.frontmatter.date ? -1 : 1
+      return result.sort(
+        (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
       )
     },
     pagesToShow() {

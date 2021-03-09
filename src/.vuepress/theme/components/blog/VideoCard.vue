@@ -41,7 +41,6 @@
         <div class="flex flex-grow">
           <PostMeta
             :category="frontmatter.type"
-            :author="null"
             :date="frontmatter.date"
             :tags="frontmatter.tags"
             :title="title"
