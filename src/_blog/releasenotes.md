@@ -11,7 +11,8 @@ data:
 - title: IPFS Companion 2.17.3
   date: 2021-01-29
   path: https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.17.3
-  tags: []
+  tags:
+  - IPFS Companion
   card_image: "/release-notes-placeholder.png"
 - title: IPFS Companion 2.17.2
   date: 2021-01-20
