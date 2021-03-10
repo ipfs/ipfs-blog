@@ -49,8 +49,11 @@ export default {
   mounted() {
     this.showComments =
       window.location.hostname === 'blog.ipfs.io' ||
+      window.location.hostname === 'blog.ipfs.io.ipns.localhost:8080' ||
       window.location.hostname === 'ipfs-blog.on.fleek.co' ||
-      window.location.hostname === 'ipfs-blog-staging.on.fleek.co'
+      window.location.hostname === 'ipfs-blog.on.fleek.co.ipns.localhost:8080' ||
+      window.location.hostname === 'ipfs-blog-staging.on.fleek.co' ||
+      window.location.hostname === 'ipfs-blog-staging.on.fleek.co.ipns.localhost:8080'
   },
 }
 </script>
