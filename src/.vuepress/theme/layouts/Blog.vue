@@ -150,10 +150,18 @@ export default {
     queryProptertyWatchlist() {
       return `${this.activeCategory}|${this.activeTags}|${this.searchedText}|${this.activeAuthor}`
     },
+    urlUpdate() {
+      return this.$route.query
+    },
   },
   watch: {
     queryProptertyWatchlist() {
       this.updateQuery()
+    },
+    urlUpdate() {
+      if (Object.keys(this.$route.query).length === 0) {
+        this.$store.commit('appState/clearFilters')
+      }
     },
   },
   created() {
