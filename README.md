@@ -40,7 +40,9 @@ Other tips for using Forestry build previews:
 
 ### To deploy to the live site
 
-Forestry writes directly to `staging`, with previews available at https://ipfs-blog-staging.on.fleek.co/. **Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** *Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging.*
+Forestry writes directly to `staging`, with staging previews available at https://ipfs-blog-staging.on.fleek.co/. 
+
+**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** *Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging.*
 
 **PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits.** As our overall workflow continues to solidify, this suggested direction may change.
 
