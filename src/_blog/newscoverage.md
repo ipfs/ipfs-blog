@@ -2,6 +2,12 @@
 title: News Coverage
 type: News coverage
 data:
+- title: Announcing IPFS for Creators
+  date: 2021-03-06
+  path: https://medium.com/mintgate/announcing-ipfs-for-creators-259a8f16e13
+  card_image: "/2021-03-15-cardheader-ipfs-for-creators.png"
+  tags:
+  - tutorial
 - name: Cointelegraph Top 100 - Juan Benet [Cointelegraph]
   title: Cointelegraph Top 100 - Juan Benet (Cointelegraph)
   path: https://cointelegraph.com/top-people-in-crypto-and-blockchain/juan-benet
