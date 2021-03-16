@@ -1,30 +1,38 @@
 /* apply custom rich type formatting */
 .type-rich {
   @apply text-primary;
+
   > * + * {
     margin-top: 1.5em;
   }
+
   li + li {
     margin-top: 1em;
   }
+
   b,
   strong {
     @apply font-bold;
   }
+
   i,
   em {
     @apply italic;
   }
+
   ul {
     @apply list-disc;
   }
+
   ol {
     @apply list-decimal;
   }
+
   ul,
   ol {
     @apply pl-5;
   }
+
   li > ul,
   li > ol {
     @apply pt-5;
@@ -39,10 +47,12 @@
       @apply bg-gradient-5 h-full left-0 absolute;
     }
   }
+
   a {
     @apply transition duration-200;
     @apply text-blueGreen;
   }
+
   a.header-anchor {
     font-size: 0.85em;
     margin-left: -0.87em;
@@ -54,6 +64,7 @@
   a.header-anchor:hover {
     @apply underline;
   }
+
   h1:hover .header-anchor,
   h2:hover .header-anchor,
   h3:hover .header-anchor,
@@ -61,5 +72,9 @@
   h5:hover .header-anchor,
   h6:hover .header-anchor {
     @apply opacity-100;
+  }
+
+  img {
+    margin: 0 auto;
   }
 }
