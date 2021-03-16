@@ -81,6 +81,7 @@
 import { mapState } from 'vuex'
 
 import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
 import UnstyledLink from '@theme/components/UnstyledLink'
 import PostSocials from '@theme/components/blog/PostSocials.vue'
 import PostTag from '@theme/components/blog/PostTag'
@@ -120,9 +121,10 @@ export default {
         : `https://www.youtube.com/embed/${id}?${start ? `start=${start}` : ''}`
     },
     resolvedDate() {
-      return dayjs(this.videoModalCard.date).format(
-        this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD'
-      )
+      dayjs.extend(utc)
+      return dayjs
+        .utc(this.date)
+        .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
     },
     resolvedTags() {
       if (

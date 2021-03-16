@@ -51,6 +51,7 @@
 
 <script>
 import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
 import Breadcrumbs from '@theme/components/Breadcrumbs'
 import LazyImage from '@theme/components/base/LazyImage'
 import PostAuthor from '@theme/components/blog/PostAuthor'
@@ -90,9 +91,10 @@ export default {
   },
   computed: {
     resolvedDate() {
-      return dayjs(this.date).format(
-        this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD'
-      )
+      dayjs.extend(utc)
+      return dayjs
+        .utc(this.date)
+        .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
     },
     resolvedTags() {
       if (!this.tags || Array.isArray(this.tags)) return this.tags
