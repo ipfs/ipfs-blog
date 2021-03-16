@@ -64,6 +64,7 @@
 
 <script>
 import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
 import PostTag from '@theme/components/blog/PostTag'
 import PostAuthor from '@theme/components/blog/PostAuthor'
 import UnstyledLink from '@theme/components/UnstyledLink'
@@ -115,9 +116,10 @@ export default {
   },
   computed: {
     resolvedDate() {
-      return dayjs(this.date).format(
-        this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD'
-      )
+      dayjs.extend(utc)
+      return dayjs
+        .utc(this.date)
+        .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
     },
     resolvedTags() {
       if (!this.tags || Array.isArray(this.tags)) return this.tags
