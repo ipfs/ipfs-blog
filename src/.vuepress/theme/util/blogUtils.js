@@ -14,7 +14,10 @@ export const checkItem = ({
 
   if (
     activeAuthor &&
-    ((author.name && !author.name.includes(decodeURI(activeAuthor))) ||
+    ((author.name &&
+      !author.name
+        .toLowerCase()
+        .includes(decodeURI(activeAuthor.toLowerCase()))) ||
       !author.name)
   ) {
     return false

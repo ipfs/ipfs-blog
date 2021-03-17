@@ -192,7 +192,9 @@ export default {
       }
 
       if (author) {
-        authorsArray.push(author.name.split(',').map((author) => author.trim()))
+        authorsArray.push(
+          author.name.split(/,|and|&/).map((author) => author.trim())
+        )
       }
     })
 

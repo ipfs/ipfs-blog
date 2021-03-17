@@ -12,7 +12,10 @@
         <router-link
           :to="{ path: $localePath, query: { author: piece.trim() } }"
         >
-          <span :class="computedClassName" @click="handleAuthorClick(piece)">
+          <span
+            :class="computedClassName"
+            @click="handleAuthorClick(piece.trim())"
+          >
             {{ piece }}
           </span>
         </router-link>
