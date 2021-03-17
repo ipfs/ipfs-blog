@@ -10,7 +10,7 @@ tags:
   - 'community'
 ---
 
-![IPFS at ETHDenver 2020](https://user-images.githubusercontent.com/50103/73981264-bbe13d00-48e6-11ea-8446-033257df44bc.png)
+![IPFS at ETHDenver 2020](/ipfs-ethdenver-2020.png)
 
 Next week, the IPFS team will be heading to Denver, Colorado for [ETHDenver](https://www.ethdenver.com/), one of the biggest Ethereum and decentralized web developer-focused events in the US. We’re very excited to connect with the dweb community during a week full of presentations, workshops, [#BUIDLathon](https://www.ethdenver.com/buidlweek/)-ing, and community gathering.
 

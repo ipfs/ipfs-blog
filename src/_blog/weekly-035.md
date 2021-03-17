@@ -1,15 +1,15 @@
 ---
 date: 2019-03-26
-permalink: "/76-ipfs-weekly-35/"
+permalink: '/76-ipfs-weekly-35/'
 title: IPFS Weekly 35
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-- CRDTs
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+  - CRDTs
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 ## Welcome to the IPFS Weekly. 👋
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
@@ -68,7 +68,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [IPFS-Lite is an embeddable, lightweight IPFS-network peer for IPLD applications](https://github.com/hsanjuan/ipfs-lite)
 - [Happy 5th birthday, 18F!](https://18f.gsa.gov/2019/03/19/18F-5-Anniversary-achieve/)
 
-![](https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4)
+![](/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

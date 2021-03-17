@@ -11,9 +11,7 @@ tags:
   - 'Gossipsub'
 ---
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
-  <img src="/094-gossipsub-v1.1-header-image+grid.jpeg">
-</p>
+![](/094-gossipsub-v1.1-header-image+grid.jpeg =780x)
 
 The gossip you’ve heard on the streets is correct, Gossipsub v1.1 is here and it packs several security hardening extensions along with new testing, documentation, and an updated specification.
 
@@ -49,9 +47,7 @@ Additionally, with the new release, the [reference implementation of Gossipsub](
 
 We’ve prepared a brand new example for you to give the latest Gossipsub a try. In this example, you get to experiment with a chat application powered by libp2p. It will enable you to join different channels by subscribing to PubSub topics and see other peers joining the room as they subscribe to the topic.
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
-  <img src="https://raw.githubusercontent.com/libp2p/go-libp2p-examples/master/pubsub/chat/chat-example.gif">
-</p>
+![](/chat-example.gif =780x)
 
 You can find the code for this example at https://github.com/libp2p/go-libp2p-examples/tree/master/pubsub/chat
 
@@ -59,9 +55,7 @@ You can find the code for this example at https://github.com/libp2p/go-libp2p-ex
 
 We are also releasing a brand new libp2p Test Plan that uses [Testground](https://github.com/testground/testground) to benchmark Gossipsub v1.1.
 
-<p style="max-width:780px;margin-left:auto;margin-right:auto;">
-  <img src="/img/gossipsubv1.1-jupyter.gif">
-</p>
+![](/gossipsubv1.1-jupyter.gif =780x)
 
 With this Test Plan, you can run an emulation (yes, it will run real Gossipsub nodes!) of a Gossipsub Network in which you can adjust:
 

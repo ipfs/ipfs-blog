@@ -11,7 +11,7 @@ tags:
 
 **go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**
 
-![go-ipfs-release-process-illustration](https://user-images.githubusercontent.com/618519/62986422-653fee00-bdf0-11e9-8f61-197117b61da2.png)
+![go-ipfs-release-process-illustration](/go-ipfs-release-process.png)
 
 IPFS is growing and maturing. We're seeing many more users in our network and
 have recognised the need to level up our release process to deliver a more

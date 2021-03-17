@@ -20,13 +20,13 @@ A short summary of the findings is below. You can read the full findings and det
 
 We surveyed the two most used mobile browsers, Android’s Chrome and iOS’s Safari. Neither of these browsers has native P2P capabilities, but we surveyed them to understand mobile users’ first stop on the internet and how they may think about sharing to and from there.
 
-![Google Android sharing photo interaction](https://raw.githubusercontent.com/ipfs/mobile-design-guidelines/master/.gitbook/assets/android-chrome-share.png)
+![Google Android sharing photo interaction](/android-chrome-share.png)
 
 Mobile sharing of files is a very common activity for all ranges of users, but the type of file shared varies from the desktop. We chose sharing photos as an interaction to study on both Android and iOS. This was to understand clearly how mobile users experience getting a file from their phone to another device.
 
 We then tested a variety of publicly released mobile P2P apps. This was to understand previous approaches to designing and developing mobile P2P applications. The applications explored in the survey were spread across three main areas of use: messaging, posting and community boards. From this we learned which features, interface components, and design patterns are currently used in designing for P2P on mobile, to inform future designs for IPFS.
 
-![Status.im's key recovery process](https://raw.githubusercontent.com/ipfs/mobile-design-guidelines/master/.gitbook/assets/status-recover.png)
+![Status.im's key recovery process](/status-recover.png)
 
 After in-depth review, we found many intriguing approaches to several shared core areas:
 

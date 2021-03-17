@@ -24,7 +24,7 @@ It’s a new year, and with it time to update the [IPFS Project Roadmap](https:/
 - **Millions of users** access the IPFS HTTP Gateway every week 🎉
 - There are **hundreds of dapps, tools, & projects** in the wider IPFS Ecosystem including newcomers like [Anytype](https://anytype.io/), [Microsoft ION](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/toward-scalable-decentralized-identifier-systems/ba-p/560168), [Haven](https://gethaven.app/) by OB1, [Brave](https://brave.com/), [3box](https://3box.io/), [EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) and more!! 🙌
 
-![IPFS Ecosystem Diagram](https://user-images.githubusercontent.com/618519/74373908-3819cb80-4d92-11ea-816a-1b6f04002b4c.png)
+![IPFS Ecosystem Diagram](/ipfs-ecosystem-diagram.png)
 See our [Ecosystem Update from IPFS Camp](https://www.youtube.com/watch?v=jpQnQbfhuBc&feature=youtu.be) to learn more about 2019 adoption!
 
 This growth caused us to shift some of our attention midyear to support new usage and demand - re-focusing some of our working groups on improving documentation, gateway performance, and testing tools to validate large-scale network upgrades (see our [Operation Task-Force blog post](https://blog.ipfs.io/2019-07-31-operation-task-force/) for details). We still made progress on our Package Managers goal, but less than we hoped given **also** investing heavily in other critical areas to support the ecosystem. 🤞
@@ -51,9 +51,8 @@ Our Package Managers goal also helped focus our user research, quarterly objecti
 
 We also formed collaborations with IPFS users to partner on improving IPFS for package management use cases. One of our main collaborations was with [Netflix](https://netflix.com) to optimize the speed of fetching large container images with [Bitswap](https://github.com/ipfs/go-bitswap), our peer-to-peer data transfer algorithm. You can read more about that specific collaboration—and the resulting improvements in Bitswap performance!—in our [new blog post](/2020-02-14-improved-bitswap-for-container-distribution/)!
 
-<p align="center">
-<img width="400" alt="5ms-1024MB" src="https://user-images.githubusercontent.com/169124/73398685-ef531480-42b3-11ea-8054-d572abf7eea1.png"><img width="400" alt="5ms-40MB" src="https://user-images.githubusercontent.com/169124/73398687-ef531480-42b3-11ea-930f-d63afee8e465.png">
-</p>
+![5ms-1024mb](/5ms-1024MB.png =400x)
+![5ms-40mb](/5ms-40MB.png =400x)
 
 IPFS Cluster also released _[collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/)_, a new feature to enable package manager maintainers and mirrors to add and replicate repositories across a community of IPFS nodes. With collaborative clusters, any maintainer can push new updates to the pinset of data to mirror, which is then sharded and sync’d across all mirroring nodes. We’ve already seen package managers like Pac-Man added to collaborative clusters along with many “data package managers” like Wikipedia and Project Gutenberg, [follow these instructions to add your own!](https://collab.ipfscluster.io/)
 
@@ -75,7 +74,7 @@ We got [**11** awesome proposals](https://github.com/ipfs/roadmap/issues), with 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Blown away by all the great <a href="https://twitter.com/IPFSbot?ref_src=twsrc%5Etfw">@IPFSbot</a> 2020 Theme suggestions! I love this community so much 🥰 - extra inspired today looking at all the amazing paths ahead of us to make humanity’s knowledge &amp; tools more accessible, resilient, and empowering! 🤩 🚀<a href="https://t.co/MbNS0q8mlC">https://t.co/MbNS0q8mlC</a> <a href="https://t.co/WTg03R5iPa">pic.twitter.com/WTg03R5iPa</a></p>&mdash; Molly (@momack28) <a href="https://twitter.com/momack28/status/1193400070625824768?ref_src=twsrc%5Etfw">November 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
-During our IPFS Planning “Spike”, we took stock of our wider ecosystem and project health. We synthesized feedback from [top IPFS users](https://user-images.githubusercontent.com/618519/69945610-c58d9500-149e-11ea-9be8-7429c4d9a201.png), sourcing many ideas and needs from the ‘core needs & gaps’ section of each 2020 Theme Proposal. We also reflected on the biggest pain points and risks to the IPFS Project’s long term goals and mission to refocus on our north star. Looking at the skills and capacity of our core working groups, we created a set of [decision-making criteria](https://github.com/ipfs/roadmap#2020-h1-priority-selection-criteria) to identify where to allocate this subset of IPFS contributors for maximum impact, expanded on a set of top candidates (sourced both from the 2020 theme proposals and the exploration of wider project pain points), and ultimately made a decision.
+During our IPFS Planning “Spike”, we took stock of our wider ecosystem and project health. We synthesized feedback from [top IPFS users](/top-ipfs-users.png), sourcing many ideas and needs from the ‘core needs & gaps’ section of each 2020 Theme Proposal. We also reflected on the biggest pain points and risks to the IPFS Project’s long term goals and mission to refocus on our north star. Looking at the skills and capacity of our core working groups, we created a set of [decision-making criteria](https://github.com/ipfs/roadmap#2020-h1-priority-selection-criteria) to identify where to allocate this subset of IPFS contributors for maximum impact, expanded on a set of top candidates (sourced both from the 2020 theme proposals and the exploration of wider project pain points), and ultimately made a decision.
 
 ### 2020 Focus: Improving Content Routing
 
@@ -85,11 +84,7 @@ During our IPFS Planning “Spike”, we took stock of our wider ecosystem and p
 
 To achieve this goal, we’ve formed a Content Routing team (and spun down our Package Managers working group) to focus our main engineering effort on this problem for the next 6 months. Improving content routing performance requires making improvements and bugfixes to the go-libp2p DHT _at scale_, and changing how we form, query, and resolve content in the IPFS network to be faster and more resilient. This involves a combination of research, design, implementation, and testing. Making changes to the _configuration of the entire network_ is non-trivial, which is why we’ve been investing in the [InterPlanetary Testground](https://github.com/ipfs/testground/), a new set of tools for testing next generation P2P applications, to help us diagnose issues and evaluate improvements prior to rolling out upgrades to the entire public network. You can follow along with the team's work in the [Content Routing ZenHub Roadmap](https://app.zenhub.com/workspaces/content-routing-2020-5e29be25ab9d8da0b032cfcc/roadmap):
 
-<p align="center">
-<a href="https://app.zenhub.com/workspaces/content-routing-2020-5e29be25ab9d8da0b032cfcc/roadmap">
-<img width="600" alt="Screen Shot 2020-02-10 at 8 08 00 PM" src="https://user-images.githubusercontent.com/618519/74210567-0fce8780-4c41-11ea-892c-a49657adc76d.png">
-</a>
-</p>
+[![2020-roadmap](/2020-roadmap.png)](https://app.zenhub.com/workspaces/content-routing-2020-5e29be25ab9d8da0b032cfcc/roadmap)
 
 We considered a number of other potential goals—especially all the great [2020 Theme Proposals](https://github.com/ipfs/roadmap/issues/)—before selecting this priority. However, we decided it was more important to focus core working group development time on the main blockers and pain points to enable the entire ecosystem to grow and succeed. Many of our theme proposals are actually very well suited for community ownership via [DevGrants](https://github.com/ipfs/devgrants) and collaborations. Some of them, like [“IPFS in Rust”](https://github.com/ipfs/roadmap/issues/54) and [“Examples and Tutorials”](https://github.com/ipfs/roadmap/issues/50), already have grants or bounties associated with them, and community teams actively pushing forward! 🙌
 

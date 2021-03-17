@@ -1,14 +1,14 @@
 ---
 date: 2019-04-02
-permalink: "/77-ipfs-weekly-36/"
+permalink: '/77-ipfs-weekly-36/'
 title: IPFS Weekly 36
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 ## Welcome to the IPFS Weekly. 👋
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
@@ -67,7 +67,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - The [AKASHA Foundation](https://akasha.org/about/), a non-profit born at the intersection of blockchain and collective intelligence, is currently hiring!
 - Check out this web app to check [a public IPFS gateway state](https://ipfs.fooock.com/)
 
-![](https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4)
+![](/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

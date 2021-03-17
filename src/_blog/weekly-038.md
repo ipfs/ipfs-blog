@@ -1,15 +1,15 @@
 ---
 date: 2019-04-16
-permalink: "/82-ipfs-weekly-38/"
+permalink: '/82-ipfs-weekly-38/'
 title: IPFS Weekly 38
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-- project planning
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+  - project planning
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 ## Welcome to the IPFS Weekly. 👋
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
@@ -73,7 +73,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [Genobank DNA Wallet](https://coinlist.co/build/nucypher/projects/a9f305f4-d0ff-4501-840e-4566608303ab) – A Decentralised and anonymous DNA wallet. Enables users to extract DNA, establish ownership, share (P2P) & control using Nucypher and Blockchain.
 - [deima](https://boramalper.github.io/deima/) is a decentralised image host that allows you to upload your images to IPFS distributed network.
 
-![](https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4)
+![](/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

@@ -16,7 +16,7 @@ The [ProtoSchool](https://proto.school) team is pleased to announce the launch o
 
 This new content is inspired by feedback on our Decentralized Data Structures tutorial, which originally explored both content addressing and data structures. Based on learner feedback, we’ve split the content in two! You’ll now find the majority of our original content in our rebranded tutorial, [Content Addressing on the Decentralized Web](https://proto.school/content-addressing), which highlights the key differences in how data is shared and retrieved on the centralized web and decentralized web. Meanwhile, our brand new tutorial, [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags), is chock full of new content exploring the intricacies of the magical data structure that much of the decentralized web relies on.
 
-<img src="/dag-deduplication.png" alt="Merkle DAG diagram"/>
+![Merkle DAG diagram](/dag-deduplication.png)
 
 In IPFS, as across the decentralized web, content addressing enables us to securely locate and identify data stored by peers. The Content Identifiers (CIDs) we often use to link to individual files, or pieces of data, can also be used to express complex webs of data in their entirety, when we structure that data as content-addressable Merkle DAGs. Merkle DAGs, structured using schemas provided by IPLD, are key to the interoperability of IPFS, libp2p, Filecoin, and other distributed protocols. In this new code-free ProtoSchool tutorial, we take a deep dive into the properties that make Merkle DAGs the backbone of the distributed web, and explore the many benefits that the data structure unlocks, from verifiability to distributability to deduplication. [Check it out!](https://proto.school/merkle-dags)
 
@@ -50,7 +50,7 @@ Prefer your learning in video format? Check out these presentations on the super
 
 ProtoSchool is a team effort, and we depend on folks in the IPFS and dweb community to outline new content, add new features, fix bugs, catch typos, and test-drive new tutorials like this one. There are many ways to [contribute to the project](https://proto.school/contribute), no matter your background, and our new multiple-choice format makes it super easy to [create new tutorials](https://proto.school/build) without any coding experience. In fact, the awesome Mitch Wagner, who created our latest tutorial, built it with the help of our user-friendly ProtoWizard CLI!
 
-<img src="/protowizard.png" alt="Screenshot of ProtoWizard CLI"/>
+![Screenshot of ProtoWizard CLI](/protowizard.png)
 
 One of the easiest ways to help is by sharing your feedback as you explore our tutorials. You’ll find a link at the bottom of every lesson to help you submit your suggestions.
 

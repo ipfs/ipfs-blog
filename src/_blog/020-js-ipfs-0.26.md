@@ -101,7 +101,7 @@ If you run into any hurdles, please open an issue on [ipfs/js-ipfs/issues](https
 
 I'm glad you asked!
 
-![](https://camo.githubusercontent.com/2820cc493393fa993bef64b044c6d3ce1d4b56a4/68747470733a2f2f63646e2e7261776769742e636f6d2f6a62656e65742f636f6e747269627574652d697066732d6769662f6d61737465722f696d672f636f6e747269627574652e676966)
+![](/contribute-to-ipfs.gif)
 
 We keep curating and updating our [Waffle Board](https://waffle.io/ipfs/js-ipfs) to ensure it signals what is actively being worked on and what is next. We also review issues and tag them with difficulty and a [`help wanted`](https://waffle.io/ipfs/js-ipfs?search=help%20wanted) label, so that it is easy to find place where you can contribute to the project.
 

@@ -48,7 +48,7 @@ If you'd like to dig a little deeper, we recommend checking out the **Understand
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
-[![Video: Understanding How IPFS Deals with Files](/img/057-ipfs-camp-course-videos/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
+[![Video: Understanding How IPFS Deals with Files](/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 

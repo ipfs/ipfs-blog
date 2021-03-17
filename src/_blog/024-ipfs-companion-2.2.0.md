@@ -49,7 +49,7 @@ Power users can provide own config (eg. to enable experimental pubsub) via _Pref
 
 **Note:** The embedded node _does not run_ when external node is selected.
 Every time you switch back to the embedded node, a new instance is created
-on-demand. It can take [a few seconds](https://user-images.githubusercontent.com/157609/38493690-4a77bd9e-3bf3-11e8-85da-ba06fd94cdbf.gif)
+on-demand. It can take [a few seconds](/embedded-js-ipfs.gif)
 for a brand-new node to find peers.
 
 ### …and more!
@@ -58,9 +58,9 @@ For a longer walkthrough of new features see [Release Notes for v2.2.0](https://
 
 # Install it today!
 
-| Firefox                                                                                                                                    | Chrome / Chromium                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Get the add-on](https://ipfs.io/ipfs/QmSX44XockQifmxE8Wdevkaa6vaqTXtGdH9t9aHWXZkuJq)](https://addons.mozilla.org/addon/ipfs-companion/) | [![Install](https://ipfs.io/ipfs/QmPinSJKFYCMuTDh484dLk5Av4HpZRzBRR1KPv7TM7CBVF)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
+| Firefox                                                                                    | Chrome / Chromium                                                                                                              |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| [![Get the add-on](/firefox-add-on.png)](https://addons.mozilla.org/addon/ipfs-companion/) | [![Install](/chrome-web-store.png)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
 
 # Want to contribute?
 

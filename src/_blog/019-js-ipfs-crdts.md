@@ -25,7 +25,7 @@ One set of use cases for CRDTs is when nodes need to collaboratively write to a 
 
 In [this 10-minute video](https://www.youtube.com/watch?v=-kdx8rJd8rQ) I show you how we can use the [js-ipfs](https://github.com/ipfs/js-ipfs) library and conflict-free replicated data types (CRDTs) to build a simple text editor that allows several peers to collaborate in real-time. The resulting interactions between the nodes are conflict-free, support offline use, and allow nodes to come in and out of the network while continuously converging data to a single state in all the nodes.
 
-[![https://www.youtube.com/watch?v=-kdx8rJd8rQ](https://user-images.githubusercontent.com/1211152/28122513-4cbdaabc-6716-11e7-8626-ad8154687fe1.png)](https://www.youtube.com/watch?v=-kdx8rJd8rQ)
+[![https://www.youtube.com/watch?v=-kdx8rJd8rQ](/ipfs-using-crdt.png)](https://www.youtube.com/watch?v=-kdx8rJd8rQ)
 
 ## Final remarks
 
