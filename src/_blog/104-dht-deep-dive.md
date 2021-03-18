@@ -12,9 +12,7 @@ tags:
   - 'Kademlia'
 ---
 
-<p style="max-width:1000px;margin-left:aut o;margin-right:auto;">
-  <img src="/104-dht-deep-dive-header-image.png">
-</p>
+![](/104-dht-deep-dive-header-image.png =1000x)
 
 At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/). While there have been many improvements, the changes to IPFS’s Distributed Hash Table (DHT) were especially critical to improving the performance and stability of finding data in IPFS. For some background on how we arrived at the most recent set of DHT changes, take a look at [The Road to the New DHT](https://blog.ipfs.io/2020-05-19-road-to-dht/), or try them out yourself in the [latest version of go-ipfs](https://dist.ipfs.io/#go-ipfs).
 
@@ -139,10 +137,8 @@ Throughout the development process we ran many Testground tests to get an unders
 
 As can be seen in the graphs, the most drastic changes are to 95th percentile lookup times and to the operations that spent more time doing their lookups and could not terminate as early. This meant IPFS Provide and IPNS Put, which require actually completing a search through the network, got a very large boost (for Provide 24x speedup on average and 33x speedup for the 95th percentile). This was followed by IPNS Get which needs to find many records, then Find Peer which is looking for one very specific record, and finally the time to find just one IPFS Provider record was sped up by 2.2x on average and 6.4x for the 95th percentile.
 
-<p style="max-width:1000px;margin-left:auto;margin-right:auto;">
-  <img src="/104-dht-deep-dive-find-time-dht.png">
-  <img src="/104-dht-deep-dive-ipns-time-dht.png">
-</p>
+![](/104-dht-deep-dive-find-time-dht.png =1000x)
+![](/104-dht-deep-dive-ipns-time-dht.png =1000x)
 
 ## Parting Thoughts
 

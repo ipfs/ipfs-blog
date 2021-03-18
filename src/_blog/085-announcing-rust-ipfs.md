@@ -10,9 +10,7 @@ tags:
   - 'community'
 ---
 
-<p align="center">
-<img src="https://github.com/rs-ipfs/logo/raw/master/rust-ipfs-logo-256w.png">
-</p>
+![](https://github.com/rs-ipfs/logo/raw/master/rust-ipfs-logo-256w.png)
 
 Calling all rustaceans, rustafarians, ferrosities, and rustlers - we’ve got an exciting update!
 Active full time work on a Rust-IPFS implementation has commenced, building on the great work by
@@ -45,7 +43,7 @@ Instead of forking and/or starting fresh, this project aims to support and build
 
 ## What can be expected, and when?
 
-![Rust IPFS Timeline](https://gateway.ipfs.io/ipfs/QmU7sssvo52Rrwj7MWZNpeHnFjjdG271Dx5zfGkZSbgVnN)
+![Rust IPFS Timeline](/rust-ipfs-timeline.png)
 
 As you can see in the [Rust-IPFS DevGrant Roadmap](https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust) implementation work
 takes place mostly over early Q2 2020 and covers the use case of **IPLD applications**,

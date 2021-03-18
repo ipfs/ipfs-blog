@@ -47,9 +47,7 @@ As you add and remove pins, this DAG grows and shrinks. [CID]s of intermediate n
 
 `js-ipfs@0.50.0` has changed the default storage of pins to use the datastore instead of a [DAG] and has seen a corresponding speedup as the number of pinned blocks in your repo increases:
 
-<p style="max-width:1000px;margin-left:auto;margin-right:auto;">
-  <img src="/108-js-ipfs-0.50.0-pinning-performance.png">
-</p>
+![](/108-js-ipfs-0.50.0-pinning-performance.png =1000x)
 
 In the diagram above you can see that as the number of pinned items increases, so does the time it takes to add the next pin. There's a steep increase at 8,192 pins, which is when the first bucket is considered full and multiple buckets are created which then involves more operations to add the next pin.
 

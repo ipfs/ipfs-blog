@@ -16,11 +16,7 @@ tags:
 
 <br/>
 
-<div align="center">
-  <a href="https://camp.ipfs.io">
-    <img src="https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4/"></img>
-  </a>
-</div>
+[![](/ipfs-camp-2019.png)](https://camp.ipfs.io)
 
 <br/>
 
@@ -28,7 +24,7 @@ The Camp will bring together the Core Developers and Contributors to the IPFS pr
 
 Join us on 27-30th June at the beautiful Campus La Mola in Barcelona for an action-packed program of workshops, talks and deep dives on everything IPFS.
 
-![](https://ipfs.io/ipfs/QmUiucP3oRVnqvuM6hnrF9D5H6tRSeVhyWk6ggkhf4ebEH)
+![](/ipfs-camp-2019-campus.jpeg)
 
 Registration is a 2-step process. The 1st step is an application were you can tell us why you are excited to attend the camp and what you would like to share with the other attendees. The next step is a review and selection of the best applications by the IPFS team. If you’re application is selected we’ll send you a link to register by April 30th. IPFS Camp is limited to 150 hackers.
 

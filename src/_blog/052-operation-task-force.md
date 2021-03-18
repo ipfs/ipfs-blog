@@ -11,7 +11,7 @@ tags:
 
 IPFS is growing! This year we've grown immensely in network size, number of apps building with IPFS, number of end-users of IPFS-powered apps, and the number of developers contributing to the codebase.
 
-![ecosystem diagram edited](https://user-images.githubusercontent.com/618519/62986295-b8657100-bdef-11e9-9d0b-db7a08568d15.png)
+![ecosystem diagram edited](/ecosystem-diagram.png)
 
 Along with that growth, we've also experienced some challenges:
 

@@ -1,26 +1,32 @@
 <template>
-  <div
-    itemprop="publisher author"
-    itemtype="http://schema.org/Person"
-    itemscope
-    class="flex flex-row flex-wrap"
-  >
-    <span
+  <div class="flex flex-row flex-wrap">
+    <div
       v-for="(piece, index) in resolvedAuthorName"
       :key="piece"
-      itemprop="name"
-      class="flex flex-row"
+      itemprop="publisher author"
+      itemtype="http://schema.org/Person"
+      itemscope
+      class="flex flex-row flex-wrap"
     >
-      <span :class="computedClassName" @click="handleAuthorClick(piece)">
-        {{ piece }}
+      <span itemprop="name" class="flex flex-row">
+        <router-link
+          :to="{ path: $localePath, query: { author: piece.trim() } }"
+        >
+          <span
+            :class="computedClassName"
+            @click="handleAuthorClick(piece.trim())"
+          >
+            {{ piece }}
+          </span>
+        </router-link>
+        <span>{{
+          resolvedAuthorName.length !== 1 &&
+          index !== resolvedAuthorName.length - 1
+            ? ',&nbsp;'
+            : ''
+        }}</span>
       </span>
-      <span>{{
-        resolvedAuthorName.length !== 1 &&
-        index !== resolvedAuthorName.length - 1
-          ? ',&nbsp;'
-          : ''
-      }}</span>
-    </span>
+    </div>
   </div>
 </template>
 
@@ -63,9 +69,7 @@ export default {
   },
   methods: {
     handleAuthorClick(piece) {
-      if (!this.activeAuthor !== piece) {
-        this.$store.commit('appState/setActiveAuthor', piece)
-      }
+      this.$store.commit('appState/setActiveAuthor', piece)
     },
   },
 }

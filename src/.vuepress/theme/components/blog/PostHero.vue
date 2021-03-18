@@ -6,12 +6,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
           <div class="flex flex-col md:pr-8">
             <h1 class="type-h1">{{ title }}</h1>
-            <router-link
-              v-if="author && author.name"
-              :to="{ path: $localePath, query: { author: author.name } }"
-            >
-              <PostAuthor v-bind="author" light />
-            </router-link>
+            <PostAuthor v-bind="author" light />
             <time
               class="text-gray"
               pubdate

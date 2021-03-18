@@ -27,11 +27,11 @@ The IPFS Web UI has been given a HUGE revamp and is now 10x, no, 100x better tha
 - See all of your **connected peers**, geolocated by their IP address
 - **Review the settings** for your IPFS node, and update them to better suit your needs
 
-![Screenshot of the status page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-status.png)
+![Screenshot of the status page](/ipfs-webui-status.png)
 
-| Files                                                                                                                                           | Explore                                                                                                                                            | Peers                                                                                                                                         | Settings                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Screenshot of the file browser page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-files.png) | ![Screenshot of the IPLD explorer page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-explore.png) | ![Screenshot of the swarm peers map](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-peers.png) | ![Screenshot of the settings page](https://raw.githubusercontent.com/ipfs-shipyard/ipfs-webui/master/docs/screenshots/ipfs-webui-settings.png) |
+| Files                                                         | Explore                                                          | Peers                                                       | Settings                                                     |
+| ------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Screenshot of the file browser page](/ipfs-webui-files.png) | ![Screenshot of the IPLD explorer page](/ipfs-webui-explore.png) | ![Screenshot of the swarm peers map](/ipfs-webui-peers.png) | ![Screenshot of the settings page](/ipfs-webui-settings.png) |
 
 ## 🛠 CID tool
 

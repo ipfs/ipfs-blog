@@ -1,14 +1,14 @@
 ---
 date: 2016-01-11
-permalink: "/4-ipfs-weekly-1/"
+permalink: '/4-ipfs-weekly-1/'
 title: IPFS Weekly 1
-description: 
+description:
 author: Richard Littauer, Andrew Chin
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 Welcome to the first edition of IPFS Weekly!
 
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we will try to highlight some of the development that happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [github](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
@@ -53,7 +53,7 @@ Here are some of the highlights for the [December 14](//github.com/ipfs/pm/issue
 ### Updates
 
 - [**(registry-mirror)**](//github.com/diasdavid/registry-mirror) [@diasdavid](//github.com/diasdavid) worked on the npm on IPFS project. This involved some new features, moving the mirror to a different server, and making it work better with larger dirs and with 0.4.0.
-- [**(js-ipfs)**](//github.com/ipfs/js-ipfs [@diasdavid](//github.com/diasdavid) pushed some major updates for [js-ipfs](//github.com/ipfs/js-ipfs-repo), too.
+- [**(js-ipfs)**](//github.com/ipfs/js-ipfs) [@diasdavid](//github.com/diasdavid) pushed some major updates for [js-ipfs](//github.com/ipfs/js-ipfs-repo), too.
 
 Not much else to report this week; a lot of people are off to enjoy CCC, and the holidays.
 

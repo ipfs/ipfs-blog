@@ -1,14 +1,14 @@
 ---
 date: 2019-04-23
-permalink: "/84-ipfs-weekly-39/"
+permalink: '/84-ipfs-weekly-39/'
 title: IPFS Weekly 39
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 ## Welcome to the IPFS Weekly. 👋
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
@@ -58,7 +58,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 - qri (“query”) is versioned, scriptable, exportable, collaborative datasets and [version 0.7.1](https://github.com/qri-io/frontend/releases/tag/v0.7.1) is out now.
 - The [Textile team](https://www.textile.photos/) recently shipped the latest [Textile Update | March 2019](https://medium.com/textileio/textile-update-march-2019-5da0c1581d3e).
 
-![](https://ipfs.io/ipfs/Qmd11gtyigpCjo4MfzXuj9MKuMF3Dj1EZEvbNRZeQE1jd4)
+![](/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

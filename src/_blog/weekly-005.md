@@ -1,14 +1,14 @@
 ---
 date: 2016-03-04
-permalink: "/10-ipfs-weekly-5/"
+permalink: '/10-ipfs-weekly-5/'
 title: IPFS Weekly 5
-description: 
+description:
 author: Richard Littauer, Andrew Chin
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 [IPFS](//ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](//github.com/ipfs) or join us on [IRC](//webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
 
 If you would like to get this update as an email, sign up for our [weekly newsletter](http://eepurl.com/gL2Pi5)!
@@ -17,7 +17,7 @@ This weekly covers the last month. Here are some of the highlights for the Febru
 
 ## Highlight
 
-![](https://cdn-images-1.medium.com/max/2000/1*czZJ7mvEAqL4wNAg-jt9Ow.jpeg)
+![](/weekly-5-hightlight.jpeg)
 
 Our friends and users at ConsenSys wrote an excellent "[Introduction to IPFS](https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0#.48ki3fymw)", which starts with a less-technical preface, and then dives deep into a full explanation of how the IPFS object model works. It walks through multiple examples, including directory structures, version control systems, and blockchains. This is a great post to familiarize yourself with how the low level IPFS objects work, with graph visualizations and in-depth explanations. It also features a fantastic cover image! Thanks [@ChrisLundkvist](https://twitter.com/ChrisLundkvist) and [@ConsenSysAndrew](https://twitter.com/ConsenSysAndrew)!
 

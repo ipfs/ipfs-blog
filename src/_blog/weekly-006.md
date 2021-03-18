@@ -1,14 +1,14 @@
 ---
 date: 2016-03-09
-permalink: "/11-ipfs-weekly-6/"
+permalink: '/11-ipfs-weekly-6/'
 title: IPFS Weekly 6
-description: 
+description:
 author: Richard Littauer, Andrew Chin
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 [IPFS](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identities, aiming to make the web faster, safer, and more open. In these posts, we highlight some of the development that has happened in the past week. For anyone looking to get involved, follow the embedded hyperlinks, search the wealth of information on [GitHub](https://github.com/ipfs) or join us on [IRC](https://webchat.freenode.net/?channels=ipfs) (#ipfs on the Freenode network).
 
 If you would like to get this update as an email, sign up for our [weekly newsletter](http://eepurl.com/gL2Pi5)!
@@ -19,7 +19,7 @@ Here are some of the highlights for the [first week of March](https://github.com
 
 #### [**station**](https://github.com/ipfs/station)
 
-![Station](https://ipfs.io/ipfs/QmZV7iGTu91w1YePo1EG98siCPxPFrw9Uzf7wAmARusET5)
+![Station](/station.png)
 
 The new version of [station](https://github.com/ipfs/station) is ready for developer preview! `station` is one of the easiest ways to get an IPFS daemon running on your machine. It acts as a service and you get many convenient features, such as the ability to turn an IPFS node on through a GUI and drag and drop to share through IPFS. To try it out, you need Node.js 4 ([installation instructions here](https://nodejs.org/en/)) and npm 3 (which comes with Node) installed. Then, do the following:
 
@@ -98,7 +98,7 @@ central server for message exchange between peers.
 
 #### [**fc00**](https://github.com/fc00/spec)
 
-![lgierth in Paris](https://ipfs.io/ipfs/QmYBv9R3nHMm8XnTHuNhFDJeQxSE9g3G4edpL13eAje3Cc)
+![lgierth in Paris](/lgierth-in-paris.jpeg)
 
 [@lgierth](https://github.com/lgierth) spent a productive week in Paris, and chatted with [@cjdelisle](https://github.com/cjdelisle) and [@ansuz](https://github.com/ansuz) at [@xwiki](https://twitter.com/xwiki) about the state and future of cjdns/fc00, layed out ideas for routing improvements, and drafted spec documents for the switch and cryptoauth layers. You can find those specs [here](https://github.com/fc00/spec/pulls) (they'll be updated soon). Work will continue on these for the rest of March. The switch and routing layers of fc00 might be the foundation of a smarter swarm for IPFS/libp2p, so this is all very exciting.
 
@@ -118,7 +118,7 @@ central server for message exchange between peers.
 
 #### [IPFS Dead drop](https://github.com/c-base/ipfs-deaddrop)
 
-![cbase deadrop](https://ipfs.io/ipfs/QmTK8Djb6hFfHD3hGLv4w3RRYsZXLsTkQ4hYzXuM7ba3Sk 'Photo taken and cropped from https://www.flickr.com/photos/bergie/24769765569/in/datetaken-public/')
+![cbase deadrop](/ipfs-dead-drop.ppeg 'Photo taken and cropped from https://www.flickr.com/photos/bergie/24769765569/in/datetaken-public/')
 
 Some members of [c-base](http://www.c-base.org/) have written a dead drop-like system that automatically uploads files from a USB memory stick to IPFS. When you plug a USB memory into the device, it will automatically access the memory stick and publish all the files on the web. Thanks to IPFS the files are instantly available to the whole world. Check out [deaddrops.com](https://deaddrops.com/) for more information about dead drops.
 
