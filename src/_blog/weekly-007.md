@@ -51,11 +51,11 @@ The new [libp2p-swarm](//github.com/diasdavid/js-libp2p-swarm) has been released
 
 [@jbenet](//github.com/@jbenet) gave a talk [titled Datastructures In and On IPFS](http://www.infoq.com/presentations/data-ipfs-ipld) at last year's [QCon SF](https://qconsf.com/sf2015/schedule/tabular). [The video](http://www.infoq.com/presentations/data-ipfs-ipld) was released this week, so now you can all see it! The talk includes a typical introduction (skip if you know IPFS well), and then dives into datastructures, including Merkle Links, Mazieres links, how IPNS works, IPRS records, versioning, Keychain (PKI on IPFS), Persona (identity), and more.
 
-![datastructures-talk-img](/007_talk.png)
+![datastructures-talk-img](/007-talk.png)
 
 The [IPFS powered USB deaddrop at c-base](//github.com/c-base/ipfs-deaddrop) was demonstrated at the [LoganCIJ 2016 Symposium](https://logancij.com/schedule/), in the Investigative Journalism conference. [More pictures here](https://www.flickr.com/photos/bergie/sets/72157665764801046). If you want to build your own IPFS USB deaddrops, check out the c-base project here: [c-base/ipfs-deaddrop](//github.com/c-base/ipfs-deaddrop).
 
-![c-base-deaddrop](/007_cbase_deaddrop.jpg)
+![c-base-deaddrop](/007-cbase-deaddrop.jpeg)
 
 The [IPFS Copenhagen Meetup](http://www.meetup.com/Copenhagen-IPFS-Meetup/) organized by [@NeoTeo](//github.com/@NeoTeo) had another meeting a few days ago. If you're in the area, sign up at [the Meetup.com page](http://www.meetup.com/Copenhagen-IPFS-Meetup) so you don't miss the next one!
 
