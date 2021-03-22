@@ -86,7 +86,9 @@ export default {
 }
 
 .v-lazy-image[src='/card-placeholder.png'],
+.v-lazy-image[src='card-placeholder.png'],
 .v-lazy-image-loaded {
+  @apply bg-gray;
   animation: fade-in 0.7s ease-in-out forwards;
 }
 </style>
