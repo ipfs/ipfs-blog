@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import withBase from '@theme/components/mixins/requireAsset'
+import withBase from '@theme/components/mixins/withBase'
 
 export default {
   name: 'LazyImage',
