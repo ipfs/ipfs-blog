@@ -2,6 +2,12 @@
 title: Release Notes
 type: Release notes
 data:
+- title: IPFS Remote Pinning GitHub Action
+  date: 2021-03-21
+  path: https://github.com/marketplace/actions/ipfs-remote-pinning
+  card_image: "/2021-03-23-cardheader-ipfs-remote-pinning.png"
+  tags:
+  - pinning
 - title: js-ipfs 0.54.3
   date: 2021-03-09
   path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.54.3
