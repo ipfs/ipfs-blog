@@ -33,7 +33,8 @@ fields:
       required: true
       date_format: YYYY/MM/DD
       export_format: YYYY-MM-DD
-    description: Use the date of the event itself.
+    description: For <strong>events</strong>, use the date of the event itself.<br>For
+      all other link types, use the date the original item was published.
   - type: text
     name: path
     label: URL
