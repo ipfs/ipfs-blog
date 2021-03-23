@@ -2,6 +2,12 @@
 title: News Coverage
 type: News coverage
 data:
+- title: IPFS at Fission Demo Day, March 2021
+  date: 2021-03-18
+  path: https://blog.fission.codes/fission-demo-day-march-2021/
+  card_image: "/2021-03-23-cardheader-fission-demo-day.jpg"
+  tags:
+  - demo
 - title: Announcing IPFS for Creators
   date: 2021-03-06
   path: https://medium.com/mintgate/announcing-ipfs-for-creators-259a8f16e13
