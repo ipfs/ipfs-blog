@@ -2,6 +2,17 @@
 title: Videos
 type: Video
 data:
+- title: 'Beeple Explains: What is an NFT?'
+  date: 2021-03-21
+  path: https://www.youtube.com/watch?v=13U573keZ3A
+  tags:
+  - NFTs
+- title: Minty Fresh NFTs with IPFS
+  date: 2021-03-18
+  path: https://www.youtube.com/watch?v=WNukgBtlWeU
+  tags:
+  - demo
+  - NFTs
 - name: Introducing IPFS Support in the Brave Browser
   title: Introducing IPFS Support in the Brave Browser
   path: https://www.youtube.com/watch?v=jTDkTQiKzJA
