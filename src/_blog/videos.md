@@ -2,6 +2,11 @@
 title: Videos
 type: Video
 data:
+- title: Free Lotus Deal Data Retrieval via IPFS
+  date: 2021-03-01
+  path: https://www.youtube.com/watch?v=oeCaKXbhPls
+  tags:
+  - Filecoin
 - title: 'Beeple Explains: What is an NFT?'
   date: 2021-03-21
   path: https://www.youtube.com/watch?v=13U573keZ3A
