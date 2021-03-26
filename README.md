@@ -10,7 +10,7 @@
 
 This repository contains code and content for the [IPFS Blog & News](https://blog.ipfs.io) website. To contribute to the site, please follow the instructions below for _post authors/editors_ and _site developers_.
 
-**If you're a member of the wider IPFS community and just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
+**If you just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
 
 
 ## For post authors/editors
@@ -21,9 +21,9 @@ Forestry uses the `staging` branch as a work-in-progress scratchpad for blog con
 
 ### Forestry authoring/editing tips
 
-- Use the "Content Types" section of the left-hand menu to drill down to the type of item (blog post, video, news coverage, event) you want to create/edit.
-- For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.io/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry; the site falls back to generic images in all cases.)
-- To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor/WYSIWYG Editor" from the dots menu at the top right of the page (this is useful if you want to add any HTML, such as a video or Twitter embed):<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
+- Use the "Content Types" section of Forestry's left-hand menu to drill down to the type of item (blog post, video, news coverage, event) you want to create/edit.
+- For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.io/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry, there are generic fallback images.)
+- To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page (this is useful if you want to add any HTML, such as a video or Twitter embed):<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
 
 ### Forestry build preview tips
 While WYSIWYG mode usually gives you a good enough idea of what a blog post will look like, you can also load Forestry's own _build preview_ in a new tab by clicking the eye icon at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036918-f4766480-7cfa-11eb-9cf3-a0082e61a7a0.png)
@@ -39,7 +39,7 @@ A few tips:
 
 ### To deploy to the live site
 
-Changes you save in Forestry are written directly to the `staging` branch, including generating a staging preview at https://ipfs-blog-staging.on.fleek.co/.
+Changes you _save_ in Forestry are written directly to the `staging` branch and automatically generate a staging preview at https://ipfs-blog-staging.on.fleek.co/.
 
 **Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** *Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer.*
 
