@@ -10,7 +10,7 @@ import Transition from '@theme/components/directives/Transition.js'
 
 import 'vue-multiselect/dist/vue-multiselect.min.css'
 
-export default ({ Vue, router, siteData }) => {
+export default ({ Vue, router, siteData, isServer }) => {
   const { breakpoints } = siteData.themeConfig
 
   /**
@@ -25,6 +25,14 @@ export default ({ Vue, router, siteData }) => {
     if (onResolve || onReject)
       return originalPush.call(this, location, onResolve, onReject)
     return originalPush.call(this, location)
+  }
+
+  if (!isServer) {
+    // track page view via Countly when route changes
+    router.afterEach((to) => {
+      if (!window.Countly) return
+      window.Countly.q.push(['track_pageview', to.path])
+    })
   }
 
   Vue.use(Vuex)

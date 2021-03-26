@@ -47,6 +47,7 @@
             :tag="tag"
             :callback="closeModal"
             class-name="text-sm"
+            parent="video-modal"
           />
         </div>
       </div>
@@ -85,6 +86,8 @@ import utc from 'dayjs/plugin/utc'
 import UnstyledLink from '@theme/components/UnstyledLink'
 import PostSocials from '@theme/components/blog/PostSocials.vue'
 import PostTag from '@theme/components/blog/PostTag'
+
+import countly from '../../util/countly'
 
 export default {
   name: 'VideoModalContent',
@@ -141,6 +144,13 @@ export default {
   },
   methods: {
     handleCatClick() {
+      const categoryTracking = {
+        category: this.videoModalCard.frontmatter.type,
+        method: 'video-modal-select',
+      }
+
+      countly.trackEvent(countly.events.FILTER, categoryTracking)
+
       this.$store.commit(
         'appState/setActiveCategory',
         this.videoModalCard.frontmatter.type

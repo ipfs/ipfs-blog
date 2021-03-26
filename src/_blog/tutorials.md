@@ -73,7 +73,7 @@ data:
       - ProtoSchool
       - static publishing
       - js-ipfs
-      - ' IPLD'
+      - IPLD
       - DAG
     card_image: '/2020-09-11-tutorial-protoschool-blogging.png'
   - name: 'ProtoSchool: P2P Data Links with Content Addressing'

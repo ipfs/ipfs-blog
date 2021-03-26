@@ -5,6 +5,7 @@
         href="https://protocol.ai"
         target="_blank"
         class="mr-1 inline-block align-middle"
+        @click="(event) => onLinkClick(event, true)"
       >
         <SVGIcon
           name="logo-icon"
@@ -17,6 +18,7 @@
         class="text-blueGreenLight hover:underline"
         href="https://protocol.ai"
         target="_blank"
+        @click="onLinkClick"
         >Protocol Labs</a
       >
       | Except as
@@ -24,12 +26,14 @@
         class="text-blueGreenLight hover:underline"
         href="https://protocol.ai/legal/"
         target="_blank"
+        @click="onLinkClick"
         >noted</a
       >, content licensed
       <a
         class="text-blueGreenLight hover:underline"
         href="https://creativecommons.org/licenses/by/3.0/"
         target="_blank"
+        @click="onLinkClick"
         >CC-BY 3.0</a
       >
       |
@@ -37,6 +41,7 @@
         class="text-blueGreenLight hover:underline"
         href="https://protocol.ai/legal/#terms-of-service"
         target="_blank"
+        @click="onLinkClick"
         >Terms</a
       >
       |
@@ -44,6 +49,7 @@
         class="text-blueGreenLight hover:underline"
         href="https://protocol.ai/legal/#privacy-policy"
         target="_blank"
+        @click="onLinkClick"
         >Privacy</a
       ></span
     >
@@ -53,8 +59,27 @@
 <script>
 import SVGIcon from '@theme/components/base/SVGIcon.vue'
 
+import countly from '../util/countly'
+
 export default {
   name: 'FooterLegal',
   components: { SVGIcon },
+  methods: {
+    onLinkClick(event, isSvg) {
+      const href = isSvg
+        ? event.srcElement.parentElement.href
+        : event.srcElement.href
+
+      const text = isSvg
+        ? event.srcElement.firstChild.textContent
+        : event.srcElement.text
+
+      countly.trackEvent(countly.events.LINK_CLICK_FOOTER, {
+        view: this.$route.path,
+        text: text.trim(),
+        href: href,
+      })
+    },
+  },
 }
 </script>

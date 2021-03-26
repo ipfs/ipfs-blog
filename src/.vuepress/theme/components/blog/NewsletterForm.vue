@@ -21,6 +21,7 @@
       action="https://ipfs.us4.list-manage.com/subscribe/post?u=25473244c7d18b897f5a1ff6b&amp;id=cad54b2230"
       method="post"
       target="_blank"
+      @submit="subscribeClick"
     >
       <div id="mc_embed_signup_scroll" class="grid gric-col-2 w-full">
         <div
@@ -78,6 +79,8 @@
 <script>
 import { mapState } from 'vuex'
 
+import countly from '../../util/countly'
+
 export default {
   name: 'NewsletterForm',
   props: {},
@@ -87,6 +90,10 @@ export default {
   computed: {
     ...mapState('appState', ['latestWeeklyPost']),
   },
-  methods: {},
+  methods: {
+    subscribeClick() {
+      countly.trackEvent(countly.events.NEWSLETTER_SUBSCRIBE)
+    },
+  },
 }
 </script>

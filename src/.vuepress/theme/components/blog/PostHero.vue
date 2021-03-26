@@ -6,7 +6,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
           <div class="flex flex-col md:pr-8">
             <h1 class="type-h1">{{ title }}</h1>
-            <PostAuthor v-bind="author" light />
+            <PostAuthor v-bind="author" light parent="blog-post" />
             <time
               class="text-gray"
               pubdate
@@ -34,7 +34,14 @@
         class="tags flex flex-wrap text-sm text-gray-dark"
         itemprop="keywords"
       >
-        <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" link dark />
+        <PostTag
+          v-for="tag in resolvedTags"
+          :key="tag"
+          :tag="tag"
+          link
+          dark
+          parent="blog-post"
+        />
       </div>
       <div class="flex my-1 text-sm text-gray-dark">
         Share this item:

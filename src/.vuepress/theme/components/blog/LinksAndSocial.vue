@@ -7,6 +7,7 @@
         href="https://airtable.com/shrNH8YWole1xc70I"
         target="_blank"
         rel="noopener noreferrer"
+        @click="trackSubmitItem"
       >
         Submit</a
       >
@@ -15,6 +16,7 @@
         class="text-blueGreen hover:underline"
         href="https://ipfs.io/media/"
         rel="noopener noreferrer"
+        @click="trackPressKit"
         >IPFS press kit.</a
       >
     </h2>
@@ -43,6 +45,8 @@
 <script>
 import RSSSubscription from '@theme/components/RSSSubscription.vue'
 
+import countly from '../../util/countly'
+
 export default {
   name: 'LinksAndSocial',
   components: {
@@ -55,6 +59,13 @@ export default {
     },
   },
   computed: {},
-  methods: {},
+  methods: {
+    trackSubmitItem() {
+      countly.trackEvent(countly.events.LINK_CLICK_SUBMIT_ITEM)
+    },
+    trackPressKit() {
+      countly.trackEvent(countly.events.LINK_CLICK_PRESS_KIT)
+    },
+  },
 }
 </script>
