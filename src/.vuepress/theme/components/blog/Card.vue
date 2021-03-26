@@ -12,11 +12,10 @@
 <script>
 import RegularCard from '@theme/components/blog/RegularCard'
 import LinkCard from '@theme/components/blog/LinkCard'
-import VideoCard from '@theme/components/blog/VideoCard'
 
 export default {
   name: 'BlogCard',
-  components: { RegularCard, LinkCard, VideoCard },
+  components: { RegularCard, LinkCard },
   inheritAttrs: false,
   props: {
     card: {
@@ -40,10 +39,8 @@ export default {
         case 'News coverage':
         case 'Release notes':
         case 'Tutorial':
-          return LinkCard
-
         case 'Video':
-          return VideoCard
+          return LinkCard
 
         default:
           return RegularCard

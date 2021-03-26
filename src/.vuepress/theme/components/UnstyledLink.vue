@@ -2,7 +2,7 @@
   <RouterLink v-if="isInternal" :to="link" :exact="exact">
     <slot />
   </RouterLink>
-  <a v-else :href="link" :target="target" :rel="rel">
+  <a v-else :href="link" :rel="rel" target="_blank">
     <slot />
   </a>
 </template>
