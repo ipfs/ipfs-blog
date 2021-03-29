@@ -9,12 +9,35 @@
       itemtype="https://schema.org/BlogPosting"
       class="flex flex-col flex-grow"
     >
-      <UnstyledLink
-        :to="path"
-        :item="{ target: '_blank' }"
-        class="embed-responsive-item"
-      >
-        <div class="cover embed-responsive embed-responsive-og">
+      <UnstyledLink :to="path" class="embed-responsive-item">
+        <!--
+            Because of an unknown firefox issue, we removed the VideoCard component and inlined it here.
+            See here: https://github.com/ipfs/ipfs-blog/pull/94
+        -->
+        <div
+          v-if="frontmatter.type === 'Video'"
+          class="cover embed-responsive embed-responsive-og"
+          @click="handleVideoClick"
+        >
+          <LazyImage
+            class="h-full embed-responsive-item"
+            img-class="w-full h-full object-cover"
+            itemprop="image"
+            :alt="title"
+            src-placeholder="/card-placeholder.png"
+            :src="thumbnailPath"
+          />
+          <div
+            class="absolute top-0 flex justify-center items-center w-full h-full bg-black bg-opacity-25"
+          >
+            <SVGIcon
+              name="play"
+              title="Play"
+              :class-list="['w-16', 'h-16', 'fill-current']"
+            />
+          </div>
+        </div>
+        <div v-else class="cover embed-responsive embed-responsive-og">
           <LazyImage
             class="h-full embed-responsive-item"
             img-class="h-full object-cover"
@@ -41,7 +64,7 @@
             :title="title"
             :description="frontmatter.description"
             :post-path="path"
-            external
+            :onclick="frontmatter.type === 'Video' ? handleVideoClick : null"
             class="type-p4 text-primary"
           />
         </div>
@@ -54,6 +77,7 @@
 import LazyImage from '@theme/components/base/LazyImage'
 import UnstyledLink from '@theme/components/UnstyledLink'
 import PostMeta from '@theme/components/blog/PostMeta'
+import SVGIcon from '@theme/components/base/SVGIcon.vue'
 
 export default {
   name: 'LinkCard',
@@ -61,6 +85,7 @@ export default {
     LazyImage,
     UnstyledLink,
     PostMeta,
+    SVGIcon,
   },
   inheritAttrs: false,
   props: {
@@ -75,6 +100,48 @@ export default {
     path: {
       type: String,
       required: true,
+    },
+    openVideoModal: {
+      type: Function,
+      default: () => {},
+    },
+  },
+  computed: {
+    thumbnailPath() {
+      if (!this.path.includes('youtube')) {
+        return ''
+      }
+
+      const newPath = new URL(this.path)
+      const id =
+        newPath.searchParams.get('v') || newPath.searchParams.get('list')
+
+      return `http://img.youtube.com/vi/${id}/0.jpg`
+    },
+  },
+  methods: {
+    handleVideoClick(event) {
+      /* Only uses the anchor default behavior when it's a
+         new tab click  - ctrl/cmd + click or "open in a
+         new tab" option */
+      if (
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.metaKey ||
+        (event.button && event.button === 1)
+      ) {
+        return
+      }
+
+      event.preventDefault()
+
+      this.$store.commit('appState/setVideoModalCard', {
+        frontmatter: this.frontmatter,
+        path: this.path,
+        title: this.title,
+      })
+
+      this.openVideoModal()
     },
   },
 }

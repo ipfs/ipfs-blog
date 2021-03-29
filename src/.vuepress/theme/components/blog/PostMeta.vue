@@ -10,27 +10,13 @@
         {{ resolvedDate }}
       </time>
     </div>
-    <router-link
-      v-if="title && !external && !onclick"
-      :to="postPath"
-      :title="title"
-    >
-      <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-        {{ title }}
-      </h1>
-    </router-link>
-    <UnstyledLink
-      v-if="title && external && !onclick"
-      :to="postPath"
-      :item="{ target: '_blank' }"
-      :title="title"
-    >
+    <UnstyledLink v-if="!onclick" :to="postPath" :title="title">
       <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
         {{ title }}
       </h1>
     </UnstyledLink>
     <a
-      v-if="title && onclick"
+      v-if="onclick"
       :href="postPath"
       target="_blank"
       class="text-left"
@@ -105,10 +91,6 @@ export default {
     postPath: {
       type: String,
       default: '',
-    },
-    external: {
-      type: Boolean,
-      default: false,
     },
     onclick: {
       type: Function,
