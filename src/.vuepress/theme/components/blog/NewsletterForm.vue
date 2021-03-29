@@ -24,9 +24,7 @@
       @submit="subscribeClick"
     >
       <div id="mc_embed_signup_scroll" class="grid gric-col-2 w-full">
-        <div
-          class="fields flex flex-col sm:flex-row flex-wrap col-start-1 col-span-2"
-        >
+        <div class="fields flex flex-col sm:flex-row col-start-1 col-span-2">
           <input
             id="mce-EMAIL"
             v-model="email"
