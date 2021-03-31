@@ -1,6 +1,8 @@
 ---
 title: Academic Papers
 type: Academic paper
+sitemap:
+  exclude: true
 data:
   - name: 'IPFS: Content Addressed, Versioned, P2P File System'
     title: 'IPFS: Content Addressed, Versioned, P2P File System'

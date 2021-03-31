@@ -175,6 +175,7 @@ module.exports = {
         sitemap: {
           hostname: CANONICAL_BASE,
           changefreq: 'weekly',
+          exclude: ['/image-crop/', '/404.html'],
         },
         directories: [
           {
@@ -202,20 +203,6 @@ module.exports = {
             frontmatter: {
               title: 'Home',
               description: 'Blog, news & more',
-            },
-            pagination: {
-              lengthPerPage: Number.MAX_SAFE_INTEGER,
-            },
-          },
-          {
-            id: 'image_crop',
-            dirname: 'image_crop',
-            path: '/image-crop/',
-            itemPermalink: '/image-crop/:slug',
-            layout: 'ImageCrop',
-            frontmatter: {
-              title: 'Image Crop',
-              description: 'Crop the card image',
             },
             pagination: {
               lengthPerPage: Number.MAX_SAFE_INTEGER,
@@ -293,4 +280,12 @@ module.exports = {
             .end()
           .end()
   },
+  additionalPages: [
+    {
+      path: '/image-crop/',
+      frontmatter: {
+        layout: 'ImageCrop',
+      },
+    },
+  ],
 }

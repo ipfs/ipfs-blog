@@ -1,6 +1,8 @@
 ---
 title: Tutorials
 type: Tutorial
+sitemap:
+  exclude: true
 data:
   - name: 'ProtoSchool: Introduction to libp2p'
     title: 'ProtoSchool: Introduction to libp2p'
