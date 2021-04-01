@@ -91,6 +91,8 @@ module.exports = {
       md.use(require('markdown-it-footnote'))
       md.use(require('markdown-it-task-lists'))
       md.use(require('markdown-it-deflist'))
+      md.use(require('markdown-it-imsize'))
+      md.use(require('markdown-it-image-lazy-loading'))
     },
   },
   themeConfig: {
@@ -151,7 +153,6 @@ module.exports = {
     ],
     [require('./plugins/pageData')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
-    ['vuepress-plugin-img-lazy'],
     [
       '@vuepress/blog',
       {
@@ -249,6 +250,15 @@ module.exports = {
   extraWatchFiles: ['.vuepress/config/head.js'],
   chainWebpack: (config, isServer) => {
     config.module.rules.delete('svg')
+
+    config.module
+      .rule('images')
+      .use('url-loader')
+      .loader('url-loader')
+      .tap((options) => {
+        options.limit = -1
+        return options
+      })
 
     // prettier-ignore
     config.module

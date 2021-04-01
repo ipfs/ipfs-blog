@@ -74,7 +74,7 @@ const theme = {
       charcoalMuted: '#7f8491',
       gray: {
         dark: '#707175',
-        default: '#d1d1d6',
+        DEFAULT: '#d1d1d6',
         light: '#f5f6f7',
         pale: '#edf0f4',
         background: '#f1f3f2',

@@ -58,7 +58,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 - qri (“query”) is versioned, scriptable, exportable, collaborative datasets and [version 0.7.1](https://github.com/qri-io/frontend/releases/tag/v0.7.1) is out now.
 - The [Textile team](https://www.textile.photos/) recently shipped the latest [Textile Update | March 2019](https://medium.com/textileio/textile-update-march-2019-5da0c1581d3e).
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

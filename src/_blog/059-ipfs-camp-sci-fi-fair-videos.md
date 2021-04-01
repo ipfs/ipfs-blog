@@ -41,7 +41,7 @@ _Hector explains the topology of the RPi cluster (feat. many blinkenlights)_
 
 Hector and the rest of the [IPFS Cluster](https://cluster.ipfs.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
 
-![@achingbrain's npm-in-a-box](/059-ipfs-camp-sci-fi-fair-videos-npm-in-box.jpg)
+![@achingbrain's npm-in-a-box](../assets/059-ipfs-camp-sci-fi-fair-videos-npm-in-box.jpg)
 _[Alex Potsides’s](https://github.com/achingbrain) npm-in-a-box project_
 
 **BONUS:** If you like big IPFS nodes running on small computers (and/or "The IT Crowd"), you may also enjoy Alex's ["npm in a box"](https://github.com/ipfs-shipyard/npm-on-ipfs), which packs the entire NPM package repository on a very portable (and pretty sleek looking) RPi based IPFS node with a BIG archival grade hard drive. Take this with you on your field trip and your team will never see an npm timeout ever again.
@@ -63,19 +63,19 @@ These are just some of the projects that made it to the Fair: head over to the [
 
 Our tireless camera crew could only be in one place at a time (we're working on it), which has left some of our favorite projects sadly underdocumented in the video department. Here are some stills that fill in the gaps:
 
-![@MarneeDear's FARS + @gorhgorh's minitel IPFS](/059-ipfs-camp-sci-fi-fair-videos-marnee-minitel.jpg)
+![@MarneeDear's FARS + @gorhgorh's minitel IPFS](../assets/059-ipfs-camp-sci-fi-fair-videos-marnee-minitel.jpg)
 _[Marnee Dearman](https://github.com/MarneeDear)'s IPFS-over-Ham Radio FARS project and Jérôme's IPFS Chat on a French Minitel terminal_
 
-![@vasa-develop's 3D collaboration](/059-ipfs-camp-sci-fi-fair-videos-vasa.jpg)
+![@vasa-develop's 3D collaboration](../assets/059-ipfs-camp-sci-fi-fair-videos-vasa.jpg)
 _[Vasa](https://github.com/vasa-develop)'s CRDT-based collaborative 3D modeling interface_
 
-![@gorhgorh's catbot](/059-ipfs-camp-sci-fi-fair-videos-catbot.jpg)
+![@gorhgorh's catbot](../assets/059-ipfs-camp-sci-fi-fair-videos-catbot.jpg)
 _[Jérôme Loï](https://github.com/goth goth)'s libp2p-powered Lazer Catbot (unfortunately no cats were on premises)_
 
-![the elusive @rklaehn](/059-ipfs-camp-sci-fi-fair-videos-actyx.jpg)
+![the elusive @rklaehn](../assets/059-ipfs-camp-sci-fi-fair-videos-actyx.jpg)
 _Actyx's [Rüdiger](https://github.com/rklaehn) has somehow managed to avoid ALL photos at the fair, so here's a shot of him demoing their amazing industrial automation system from the lightning talks_
 
-![@aschmahmann's Fast IPNS](/059-ipfs-camp-sci-fi-fair-videos-ipns.jpg)
+![@aschmahmann's Fast IPNS](../assets/059-ipfs-camp-sci-fi-fair-videos-ipns.jpg)
 _Last but not least, [Adin](https://github.com/aschmahmann)'s "Fast IPNS" demo (it was VERY FAST!)_
 
 ## Keep Exploring!

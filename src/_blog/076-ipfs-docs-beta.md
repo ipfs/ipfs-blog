@@ -16,7 +16,7 @@ tags:
 <br/>
 _New year, new look._
 
-![Mind map of docs beta nav](/076-ipfs-docs-beta-site-mindmap.png)
+![Mind map of docs beta nav](../assets/076-ipfs-docs-beta-site-mindmap.png)
 <br/>
 _Here’s a mind map of how the docs beta’s navigation works._
 

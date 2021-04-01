@@ -16,7 +16,7 @@ Thanks for being part of our community, we truly couldn’t make IPFS what it is
 
 # Milestones
 
-![](/050-ipfs-camp-recap-gif.gif)
+![](../assets/050-ipfs-camp-recap-gif.gif)
 
 ## The first IPFS Camp was a blast
 

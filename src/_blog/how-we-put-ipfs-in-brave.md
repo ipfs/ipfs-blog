@@ -19,19 +19,19 @@ You may have heard the news: as of [release 1.19.86](https://github.com/brave/br
 
 Both Brave and IPFS have a long history of successful partnerships with other projects and vendors. Brave now ships with built-in wallets for cryptocurrencies, private windows that leverage Tor, and a highly integrated VPN option. IPFS, meanwhile, has collaborated with such names as Microsoft (developing a [decentralized identity stack](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/)), Netflix (experimenting [fetching Docker images via IPFS](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/)), and NixOS (decentralizing [source code and build products](https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/)).
 
-_![Early experiment showcasing IPFS URI resolution in Brave](/2021-01-21-ipfs-early.png)  
+_![Early experiment showcasing IPFS URI resolution in Brave](../assets/2021-01-21-ipfs-early.png)  
 Early experiment showcasing IPFS URI resolution in Brave_
 
 This integration between IPFS and Brave is itself the product of a long-running experimental collaboration that began in [2017](https://github.com/brave/browser-laptop/issues/9556#issuecomment-352453877), back in the days when the Brave UI was still powered by Muon (a fork of Electron). In fact, this initiative got as far as a [proof of concept implementation](https://github.com/brave/browser-laptop/issues/9556#issuecomment-369757871) that provided for the resolution of the IPFS URIs in Brave’s address bar!
 
-_![An initial attempt at streaming IPFS files in Brave via IPFS Companion](/2021-01-21-ipfs-streaming.jpg)  
+_![An initial attempt at streaming IPFS files in Brave via IPFS Companion](../assets/2021-01-21-ipfs-streaming.jpg)  
 An initial attempt at streaming IPFS files in Brave via IPFS Companion_
 
 Shortly after this initial success, however, Brave switched to Chromium for its engine. While this was a set-back for IPFS integration in the short-term, this early work laid the foundation for recent efforts at combining the two projects. The switch also gave Brave full compatibility with Chromium browser extensions to Brave, allowing users to take full advantage of the [IPFS Companion extension](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch?hl=en) while we developed a native solution.
 
 Over the next two years, the teams behind Brave and IPFS would continue to come together to work toward full IPFS compatibility within the browser. [New plans](https://github.com/brave/brave-browser/issues/819#issuecomment-415792868) were made, and contributors from both teams and [the broader community](https://github.com/brave/brave-core-crx-packager/pull/21) began to chart the path toward this vision. In the interim, control over the browser source code allowed the teams to more tightly integrate the IPFS Companion extension into Brave: the Chrome sockets API (not normally exposed to Chrome Apps) made it possible to [embed a js-ipfs node with true TCP transport](https://github.com/brave/brave-browser/issues/819#issuecomment-456039555) within the extension, and Brave updated their settings menu to include a [one-click install](https://github.com/brave/brave-browser/issues/819#issuecomment-552444341) of the Companion.
 
-![One-click install of the IPFS Companion in the Brave settings menu](/2021-01-21-ipfs-install.png)  
+![One-click install of the IPFS Companion in the Brave settings menu](../assets/2021-01-21-ipfs-install.png)  
 _One-click install of the IPFS Companion in the Brave settings menu_
 
 Eventually, a confluence of factors, including the [deprecation of the Chrome sockets API](https://9to5google.com/2020/01/15/google-killing-chrome-apps/), generated [a push](https://github.com/brave/brave-browser/issues/10220) to get a full IPFS node running, fully managed, within Brave. After six months of work, we have finally realized this long-term goal!

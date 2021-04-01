@@ -17,7 +17,7 @@ tags:
 
 ## Meet the Community: Carson Farmet, Core Developer @ Textile.io
 
-![](/carson-farmer.jpg)
+![](../assets/carson-farmer.jpg)
 
 ### Tell us a bit about yourself and your background. How did you get involved with IPFS and what’s your relationship with Protocol Labs?
 

@@ -24,7 +24,7 @@ While the IPFS protocol is still in development, making it more easily available
 
 Brave has integrated IPFS into its desktop web browser for Windows, macOS, and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content, or a native IPFS address such as <code>ipfs://</code> or <code>ipns://</code> it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway. The default gateway used is dweb.link, which is run by Protocol Labs. Users can also specify a gateway of their choice in the browser settings. You can access the IPFS administrative UI at <code>brave://ipfs,</code>, or enable IPFS Companion and select “My Node” button in the main menu.
 
-![Screencast gif showing how an IPFS address triggers the infobar in Brave for enabling a full IPFS node.](/2021-01-19-brave-enable-ipfs.gif)
+![Screencast gif showing how an IPFS address triggers the infobar in Brave for enabling a full IPFS node.](../assets/2021-01-19-brave-enable-ipfs.gif)
 
 ## Why Web Browsers?
 

@@ -67,7 +67,7 @@ From the research, we developed an initial set of principles to address issues a
 
 We’ve also created a handy cheat sheet for the design principles which you can download below.
 
-![Design principles cheat sheet](/100-IPFS-mobile-design-guidelines-cheat-sheet-preview.png)
+![Design principles cheat sheet](../assets/100-IPFS-mobile-design-guidelines-cheat-sheet-preview.png)
 
 _Download full size in [PDF](/100-IPFS-mobile-design-guidelines-cheat-sheet.pdf) or [PNG](/100-IPFS-mobile-design-guidelines-cheat-sheet.png)_
 
@@ -81,7 +81,7 @@ With the design principles developed, we then created use case scenarios to illu
 - IPFS’s unique ability to transfer files without centralised servers can help offline users in particular.
 - A safe means for helping users connect with and contact one another.
 
-![Illustrations of the Scenarios](/100-IPFS-mobile-design-guidelines-scenarios.png)
+![Illustrations of the Scenarios](../assets/100-IPFS-mobile-design-guidelines-scenarios.png)
 
 _Illustrations of the Scenarios_
 
@@ -97,7 +97,7 @@ Read the full conclusion of [these findings](https://protocol-labs.gitbook.io/ip
 
 While we refined our understanding of IPFS and P2P mobile design with this project, we need more research to realise the full value of the network to users. This is especially true for emerging markets and under-served and marginalised users. Their need for data privacy, portability, and stability is as great, if not greater, than for those where the internet works most of the time. These users also serve as a way to understand not only under-explored markets, but also more resilient methods of computing that helps everyone.
 
-![Illustrations of the design principles](/100-IPFS-mobile-design-guidelines-principles.png)
+![Illustrations of the design principles](../assets/100-IPFS-mobile-design-guidelines-principles.png)
 
 _Illustrations of the design principles_
 

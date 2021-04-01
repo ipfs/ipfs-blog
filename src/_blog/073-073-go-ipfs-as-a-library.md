@@ -12,7 +12,7 @@ tags:
 
 The title says it all. Learn how to use [go-ipfs as a library with the new tutorial](https://github.com/ipfs/go-ipfs/tree/master/docs/examples/go-ipfs-as-a-library) and take full advantage of the [go-ipfs Core API](https://godoc.org/github.com/ipfs/interface-go-ipfs-core).
 
-![](/go-ipfs-as-a-library.gif)
+![](../assets/go-ipfs-as-a-library.gif)
 
 Let us know what you think by opening a topic with your questions and feedback at https://discuss.ipfs.io.
 

@@ -25,7 +25,7 @@ See [ipfs/js-ipfs-bitswap#204](https://github.com/ipfs/js-ipfs-bitswap/pull/204)
 
 The Bitswap module has had a bit of an overhaul and is now much faster at pulling blocks from other nodes across the network. Before, we waited a little while before sending our wantlist to newly connected peers—we’ve reduced that window and seen a massive speedup (smaller bars are better):
 
-![Graphs showing Bitswap speedups](/097-js-ipfs-0.46-bitswap-speedup.png)
+![Graphs showing Bitswap speedups](../assets/097-js-ipfs-0.46-bitswap-speedup.png)
 
 As you can see, the new js-IPFS is about 3x faster at pulling large files from other nodes on the network than the previous release, and that increases to about 5x as the files get smaller.
 

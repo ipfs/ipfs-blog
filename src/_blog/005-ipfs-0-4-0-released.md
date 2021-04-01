@@ -17,7 +17,7 @@ communication protocols, increased performance, improvements to IPNS (the
 Interplanetary Naming System), many bugfixes, and lots of new features to make
 IPFS even more powerful.
 
-![0.4.0](/005-ipfs-0-4-0-released-fireworks.jpg)
+![0.4.0](../assets/005-ipfs-0-4-0-released-fireworks.jpg)
 
 ## The IPFS **Files API**
 

@@ -11,7 +11,7 @@ tags:
   - 'Testground'
 ---
 
-![](/095-road-to-dht-header-image.png =1000x)
+![](../assets/095-road-to-dht-header-image.png =1000x)
 
 At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5.0](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/). This upgrade brings major performance and reliability improvements to IPFS — especially on the content discovery and routing front. These gains are brought to you largely by our rework of the Distributed Hash Table (DHT) which powers most peer and content discovery in the IPFS Public Network.
 
@@ -20,7 +20,7 @@ We’d like to take you through our journey to _re-write_ the DHT - from identif
 **If you want to make use of these new improvements, please [upgrade IPFS now](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
 <br />
 
-![](/095-road-to-dht-brendan-quote.png =1000x)
+![](../assets/095-road-to-dht-brendan-quote.png =1000x)
 
 ## First a refresher: What’s the DHT?
 
@@ -57,7 +57,7 @@ With this analysis and the feedback synthesized from our core users and communit
 
 This meant some hard calls on prioritization: focusing our working groups on a targeted set of improvements to the DHT and routing logic to ensure we resolved these underlying performance and reliability concerns. In turn, we adjusted our product roadmap and stood up new core working groups, including one focused strictly on content routing and another on a new test infrastructure: [Testground](https://docs.testground.ai/).
 
-![](/092-launching-testground-hero-image.png =1000x)
+![](../assets/092-launching-testground-header-image.png =1000x)
 
 ## Test, test, test
 

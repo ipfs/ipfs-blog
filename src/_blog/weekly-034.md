@@ -59,7 +59,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [Almonit](almonit.eth): A decentralized website made with ENS + IPFS
 - Deploy DNSLink TXT Records To AWS Route53 Domains with [dnslink-route53](https://github.com/RTradeLtd/dnslink-route53)
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

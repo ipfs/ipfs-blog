@@ -5,8 +5,8 @@
       :class="imgClass"
       :sizes="sizes"
       :srcset="srcsetString"
-      :src="withBase(src, ctx)"
-      :src-placeholder="withBase(srcPlaceholder, ctx)"
+      :src="requireAsset(src)"
+      :src-placeholder="requireAsset(srcPlaceholder)"
       loading="lazy"
     />
     <p v-if="caption" class="type-p4 mt-3">{{ caption }}</p>
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import withBase from '@theme/components/mixins/withBase'
+import requireAsset from '@theme/components/mixins/requireAsset'
 
 export default {
   name: 'LazyImage',
-  mixins: [withBase],
+  mixins: [requireAsset],
   props: {
     alt: {
       type: String,
@@ -60,7 +60,7 @@ export default {
       if (srcsetObject) {
         return Object.keys(srcsetObject)
           .map(function (key, index) {
-            return `${self.withBase(srcsetObject[key], self.ctx)} ${key}`
+            return `${self.requireAsset(srcsetObject[key], self.ctx)} ${key}`
           })
           .join(', ')
       }
@@ -85,8 +85,8 @@ export default {
   @apply opacity-0;
 }
 
-.v-lazy-image[src='/card-placeholder.png'],
-.v-lazy-image[src='card-placeholder.png'],
+.v-lazy-image[src*='card-placeholder'],
+.v-lazy-image[src*='blog-post-placeholder'],
 .v-lazy-image-loaded {
   @apply bg-gray;
   animation: fade-in 0.7s ease-in-out forwards;

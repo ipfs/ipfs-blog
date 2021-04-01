@@ -49,7 +49,7 @@ Power users can provide own config (eg. to enable experimental pubsub) via _Pref
 
 **Note:** The embedded node _does not run_ when external node is selected.
 Every time you switch back to the embedded node, a new instance is created
-on-demand. It can take [a few seconds](/embedded-js-ipfs.gif)
+on-demand. It can take [a few seconds](../assets/embedded-js-ipfs.gif)
 for a brand-new node to find peers.
 
 ### …and more!
@@ -58,9 +58,9 @@ For a longer walkthrough of new features see [Release Notes for v2.2.0](https://
 
 # Install it today!
 
-| Firefox                                                                                    | Chrome / Chromium                                                                                                              |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| [![Get the add-on](/firefox-add-on.png)](https://addons.mozilla.org/addon/ipfs-companion/) | [![Install](/chrome-web-store.png)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
+| Firefox                                                                                             | Chrome / Chromium                                                                                                                       |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Get the add-on](../assets/firefox-add-on.png)](https://addons.mozilla.org/addon/ipfs-companion/) | [![Install](../assets/chrome-web-store.png)](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) |
 
 # Want to contribute?
 

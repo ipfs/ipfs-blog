@@ -12,7 +12,7 @@ tags:
   - 'Kademlia'
 ---
 
-![](/104-dht-deep-dive-header-image.png =1000x)
+![](../assets/104-dht-deep-dive-header-image.png =1000x)
 
 At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/). While there have been many improvements, the changes to IPFS’s Distributed Hash Table (DHT) were especially critical to improving the performance and stability of finding data in IPFS. For some background on how we arrived at the most recent set of DHT changes, take a look at [The Road to the New DHT](https://blog.ipfs.io/2020-05-19-road-to-dht/), or try them out yourself in the [latest version of go-ipfs](https://dist.ipfs.io/#go-ipfs).
 
@@ -118,9 +118,9 @@ While the lookup algorithm is what allows us to put and get records into the DHT
   - Get: Do a lookup for the `K` closest peers to `X=SHA256(H)`, but instead of just asking each peer in the lookup “who are the `K` closest peers to `X` you know about?” also ask “please send me the record corresponding to `X` if you have it”.
     - The peer adds all new providers it has learned about and continues until the lookup terminates. Depending on which API is used, the lookup can also be forced to abort after receiving a certain number of provider records.
 - IPNS Records (For an IPNS key where the multihash of the public key is `H`)
-  - Put: Do a standard lookup for the `K` closest peers to `SHA256(/ipns/H)`
+  - Put: Do a standard lookup for the `K` closest peers to `SHA256(../assets/ipns/H)`
     - Put the IPNS record at those `K` closest peers (and also store it ourselves)
-  - Get: Do a lookup for the `K` closest peers to `X=SHA256(/ipns/H)`, but instead of just asking each peer in the lookup “who are the `K` closest peers to `X` you know about?” also ask “please send me the record corresponding to `X` if you have it”.
+  - Get: Do a lookup for the `K` closest peers to `X=SHA256(../assets/ipns/H)`, but instead of just asking each peer in the lookup “who are the `K` closest peers to `X` you know about?” also ask “please send me the record corresponding to `X` if you have it”.
     - If a user receives a newer record (i.e., a record that has a higher IPNS sequence number), it updates its existing one and continues until the lookup terminates. This is needed in order to make sure that the user gets the latest record. Recall that IPNS records are mutable and therefore, we need to make sure that we point a request to the latest version of the content.
       - The default in go-ipfs will abort early after receiving 16 records, but it can be set to go until the query terminates
     - Once the lookup is done, if any of the `K` closest peers to `X` did not have the newest IPNS record, send them the newest record
@@ -137,8 +137,8 @@ Throughout the development process we ran many Testground tests to get an unders
 
 As can be seen in the graphs, the most drastic changes are to 95th percentile lookup times and to the operations that spent more time doing their lookups and could not terminate as early. This meant IPFS Provide and IPNS Put, which require actually completing a search through the network, got a very large boost (for Provide 24x speedup on average and 33x speedup for the 95th percentile). This was followed by IPNS Get which needs to find many records, then Find Peer which is looking for one very specific record, and finally the time to find just one IPFS Provider record was sped up by 2.2x on average and 6.4x for the 95th percentile.
 
-![](/104-dht-deep-dive-find-time-dht.png =1000x)
-![](/104-dht-deep-dive-ipns-time-dht.png =1000x)
+![](../assets/104-dht-deep-dive-find-time-dht.png =1000x)
+![](../assets/104-dht-deep-dive-ipns-time-dht.png =1000x)
 
 ## Parting Thoughts
 

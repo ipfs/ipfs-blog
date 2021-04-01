@@ -18,13 +18,13 @@ We kicked off our time together with a [Welcome from David Dias](https://www.you
 
 ### Why IPFS? -- Juan Benet
 
-[![Screen Shot 2019-09-30 at 6 19 45 PM](/why-ipfs-juan-benet.png)](https://www.youtube.com/watch?v=zE_WSLbqqvo&feature=youtu.be)
+[![Screen Shot 2019-09-30 at 6 19 45 PM](../assets/why-ipfs-juan-benet.png)](https://www.youtube.com/watch?v=zE_WSLbqqvo&feature=youtu.be)
 
 Juan Benet, the original creator of IPFS, used [his keynote on "Why IPFS?"](https://www.youtube.com/watch?v=zE_WSLbqqvo&feature=youtu.be) to help attendees zoom out to the wider context around our moment in time, how technology is evolving, and how IPFS fits into the bigger picture. He described the history of the internet, some potential predictions about the future, and how IPFS can address some major problems in the web as it exists today (notably censorship, inefficiency, and poor offline usability). Persistence, innovation, and determination are required to ensure we continue making progress for the long haul!
 
 ### IPFS Ecosystem Progress Report - Molly Mackinlay
 
-[![Screen Shot 2019-09-30 at 6 19 33 PM](/ipfs-ecosystem-molly-mackinlay.png)](https://www.youtube.com/watch?v=jpQnQbfhuBc&feature=youtu.be)
+[![Screen Shot 2019-09-30 at 6 19 33 PM](../assets/ipfs-ecosystem-molly-mackinlay.png)](https://www.youtube.com/watch?v=jpQnQbfhuBc&feature=youtu.be)
 
 Want to learn about how the IPFS Community and Ecosystem have been growing? [This video](https://www.youtube.com/watch?v=jpQnQbfhuBc&feature=youtu.be) from Molly Mackinlay, IPFS Project Lead, is a great overview of the scale, progress, and important milestones IPFS has achieved so far in 2019. IPFS-powered apps and tools now reach **millions of monthly end users**, and _hundreds of thousands of nodes_ participate in the public IPFS network daily!
 
@@ -36,7 +36,7 @@ To close, Juan set us back out through the airlock back toward Earth with his [I
 
 ### Recap
 
-[![Screen Shot 2019-10-02 at 7 44 37 PM](/ipfs-camp-2019-recap.png)](https://youtu.be/cQJXnJDbXv4)
+[![Screen Shot 2019-10-02 at 7 44 37 PM](../assets/ipfs-camp-2019-recap.png)](https://youtu.be/cQJXnJDbXv4)
 
 Curious how everything fit together, or want to understand how the pieces of IPFS Camp became a greater whole? Check out [this overview from Molly](https://youtu.be/cQJXnJDbXv4) on how different components like the Poster Sessions & Deep Dives, SciFi Fair, Lightning Talks, and the Core & Elective Courses, wove together into a great community event. Many connections between different attendees and projects emerged from IPFS Camp too - spurring new collaborations and integrations. These great recaps from [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), [Berty](https://berty.tech/blog/ipfs-camp/), and of course [the IPFS blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/) highlight a few!
 
@@ -46,13 +46,13 @@ IPFS Camp was all about sharing and forming connections between projects and ind
 
 ### Netflix Containers - Edgar Lee
 
-[![Screen Shot 2019-09-30 at 5 23 20 PM](/netflix-containers-edgar-lee.png)](https://youtu.be/wNfk05D887M)
+[![Screen Shot 2019-09-30 at 5 23 20 PM](../assets/netflix-containers-edgar-lee.png)](https://youtu.be/wNfk05D887M)
 
 In [this interview](https://youtu.be/wNfk05D887M), we heard from Edgar about how he's exploring distributing container layers through IPFS, and how it's changing his workflow at Netflix. His work on [p2plab](https://github.com/Netflix/p2plab) is already helping benchmark (and improve!!) IPFS throughput in reproducible and quantifiable ways.
 
 ### Audius - Hareesh Nagaraj
 
-[![Screen Shot 2019-09-30 at 5 32 15 PM](/audius-hareesh-nagaraj.png)](https://youtu.be/3pSV6ai6QUI)
+[![Screen Shot 2019-09-30 at 5 32 15 PM](../assets/audius-hareesh-nagaraj.png)](https://youtu.be/3pSV6ai6QUI)
 
 We [spoke](https://youtu.be/3pSV6ai6QUI) to Hareesh from [Audius](https://audius.co/), a decentralized music streaming platform, about how they're using IPFS as their primary file storing system. Check out their recent [launch blog post](https://techcrunch.com/2019/09/24/audius-music/) to learn more.
 

@@ -13,8 +13,8 @@ tags:
 
 The [ProtoSchool](https://proto.school/#/) team is pleased to announce the launch of a shiny new multiple-choice tutorial on the **[Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid)**, built by the fabulous [José Bateira](https://github.com/zebateira)! It’s our first multiple-choice content and the first to explore Multiformats. 🎉
 
-![Table of Contents](/084-explore-the-anatomy-of-a-cid-on-protoschool-table-of-contents.png)
-![Sample Lesson](/084-explore-the-anatomy-of-a-cid-on-protoschool-sample-lesson.png)
+![Table of Contents](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-table-of-contents.png)
+![Sample Lesson](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-sample-lesson.png)
 
 Content identifiers (CIDs) and cryptographic hashing make content addressing possible, allowing us to securely locate and identify data on the decentralized web. The string representations of CIDs used by IPFS look like random characters strung together, but there’s a lot more going on under the hood. In this new tutorial we explore all of the data revealed by these self-describing content-addressed identifiers, digging deep into multihash, multicodec, multibase, and version prefixes.
 
@@ -26,7 +26,7 @@ We also take a look at the evolution of the [CID specification](https://github.c
 
 Did you know you can paste any IPFS CID into the [**CID Inspector**](https://cid.ipfs.io/) for a human-friendly breakdown of its multihash format and length, multicodec, multibase, and version? It can even convert CIDv0 to CIDv1! The awesome [Oli Evans](https://github.com/olizilla) built this super-useful visualization tool that we explore in this new tutorial and which you can now access from our coding challenges.
 
-![CID Inspector](/084-explore-the-anatomy-of-a-cid-on-protoschool-cid-inspector.png)
+![CID Inspector](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-cid-inspector.png)
 
 ### IPFS Camp Course: Understanding How IPFS Deals with Files
 
@@ -34,7 +34,7 @@ If you’d like to dig a little deeper into CIDs via video, we recommend checkin
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
-[![Video: Understanding How IPFS Deals with Files](/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
+[![Video: Understanding How IPFS Deals with Files](../assets/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 
@@ -44,7 +44,7 @@ _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 
 The new [Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid) tutorial is our first to include **multiple-choice quizzes** to keep you sharp on the concepts introduced in each lesson. 😉
 
-![Multiple-Choice Quiz](/084-explore-the-anatomy-of-a-cid-on-protoschool-quiz.png)
+![Multiple-Choice Quiz](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-quiz.png)
 
 Kudos to [Teri Chadbourne](https://github.com/terichadbourne) and [Diogo Silva](https://github.com/fsdiogo), who laid the groundwork for our multiple choice lessons.
 
@@ -56,11 +56,11 @@ We also offer a **text-based** tutorial on [Decentralized Data Structures](https
 
 We’re excited to create beginner-friendly content suitable for a variety of learners, regardless of their coding experience. To that end, we recently added **spiffy new icons** throughout the site to represent our coding challenges, multiple-choice quizzes, and text-only lessons, making it easy to identify lesson formats before you get started.
 
-![Lesson Type Icons](/084-explore-the-anatomy-of-a-cid-on-protoschool-type-icons.png)
+![Lesson Type Icons](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-type-icons.png)
 
 We also updated our [tutorial listings](https://proto.school/#/tutorials) with a **handy toggle to help you hide coding challenges** if you’d like to stick to text-based and multiple-choice content. 👏
 
-![Toggle Coding Challenges](/084-explore-the-anatomy-of-a-cid-on-protoschool-toggle-coding-challenges.png)
+![Toggle Coding Challenges](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-toggle-coding-challenges.png)
 
 A shoutout to [Teri Chadbourne](https://github.com/terichadbourne) for taking the lead on these improvements, and to [Agata Krych](https://github.com/akrych) for the aforementioned spiffy new icons.
 

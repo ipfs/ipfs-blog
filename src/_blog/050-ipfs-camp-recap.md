@@ -20,7 +20,7 @@ If you aren't familiar with the [InterPlanetary Space Training Camp](https://cam
 
 > Specialized and focused trainings on building for the DWeb.
 
-![](/core-elective-courses.png)
+![](../assets/core-elective-courses.png)
 
 Catch up on all the recordings and materials at 📼 👩🏽‍🏫 [https://github.com/ipfs/camp#-core--elective-courses](https://github.com/ipfs/camp#-core--elective-courses)
 
@@ -28,7 +28,7 @@ Catch up on all the recordings and materials at 📼 👩🏽‍🏫 [https://gi
 
 > Collaborate in Groups to understand, explain and present how multiple parts of the DWeb Stack work
 
-![](/poster-projects.png)
+![](../assets/poster-projects.png)
 
 Catch up on all the recordings & notes at 📼 📒 [https://github.com/ipfs/camp#-poster-projects](https://github.com/ipfs/camp#-poster-projects)
 
@@ -36,13 +36,13 @@ Catch up on all the recordings & notes at 📼 📒 [https://github.com/ipfs/cam
 
 > Form small teams to understand, research and come up with solutions to one of the many open problems
 
-![](/deep-dives.png)
+![](../assets/deep-dives.png)
 
 Catch up on all the recordings & notes at 📼 📒 [https://github.com/ipfs/camp#-deep-dives](https://github.com/ipfs/camp#-deep-dives)
 
 #### [**⚡️ Lightning Talks**](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks) - Learn what is the latest from multiple projects in the IPFS ecosystem
 
-![](/lightning-talks.png)
+![](../assets/lightning-talks.png)
 
 Catch up on all the recordings at 📼 [https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks](https://github.com/ipfs/camp#%EF%B8%8F-lightning-talks)
 
@@ -50,7 +50,7 @@ Catch up on all the recordings at 📼 [https://github.com/ipfs/camp#%EF%B8%8F-l
 
 > Get blown away by huge Sci-Fi experiments, soon to be seen in a Network close to you
 
-![](/sci-fi-fair.png)
+![](../assets/sci-fi-fair.png)
 
 Catch up on all the interviews at 📼 [https://github.com/ipfs/camp#-sci-fi-fair](https://github.com/ipfs/camp#-sci-fi-fair)
 
@@ -58,7 +58,7 @@ Catch up on all the interviews at 📼 [https://github.com/ipfs/camp#-sci-fi-fai
 
 > Gather folks around shared topics of interest and discuss collaborations.
 
-![](/unconf.png)
+![](../assets/unconf.png)
 
 Catch up on all the artefacts at 📒 [https://github.com/ipfs/camp#-unconf](https://github.com/ipfs/camp#-unconf)
 
@@ -66,7 +66,7 @@ Catch up on all the artefacts at 📒 [https://github.com/ipfs/camp#-unconf](htt
 
 And it was a blast. Here is a quick video recap as a souvenir for everyone that was there, and a postcard for everyone that didn't get a chance this time around:
 
-[![](/050-ipfs-camp-recap-youtube-preview.jpg)](https://youtu.be/kc_dxO-V8YM)
+[![](../assets/050-ipfs-camp-recap-youtube-preview.jpg)](https://youtu.be/kc_dxO-V8YM)
 
 However, the IPFS Camp spirit doesn't stop here, now it is all about continuing the dialog that got started and taking all the learnings and materials to local IPFS Communities, showing and teaching more folks how to build on the P2P Web. All the content produced can be found in the IPFS Camp Repo -- http://github.com/ipfs/camp. We will be posting all the recordings soon as well.
 
@@ -77,7 +77,7 @@ Last, but definitely not the least, a huge THANK YOU ❤️ to everyone that con
 - An outstanding [Production Team](https://camp.ipfs.io/team) that created the phenomenal experience for everyone
 - The over 4000 IPFS Community members that have been building this project with us since the beginning
 
-![](/050-ipfs-camp-recap-gif.gif)
+![](../assets/050-ipfs-camp-recap-gif.gif)
 
 On behalf of the whole IPFS Project, thank you all for being part of this project and community, such an ambitious goal couldn't be achieved without all your energy, passion and dedication to make it happen. Onwards!
 

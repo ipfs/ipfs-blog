@@ -68,7 +68,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [IPFS-Lite is an embeddable, lightweight IPFS-network peer for IPLD applications](https://github.com/hsanjuan/ipfs-lite)
 - [Happy 5th birthday, 18F!](https://18f.gsa.gov/2019/03/19/18F-5-Anniversary-achieve/)
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

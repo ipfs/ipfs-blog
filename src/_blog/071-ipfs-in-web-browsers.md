@@ -15,7 +15,7 @@ But we're making headway. Today, we'd like to share some collaborations the IPFS
 
 ## Stages
 
-![Stages of browser integration](/071-ipfs-in-web-browsers-stages-of-browser-integration.png)
+![Stages of browser integration](../assets/071-ipfs-in-web-browsers-stages-of-browser-integration.png)
 
 The path to a truly decentralized web is a long one. For over 30 years the browser has been a [_client_](<https://en.wikipedia.org/wiki/Client_(computing)>) – but a foundational concept in P2P systems is that a participant is both a client _and a [server](<https://en.wikipedia.org/wiki/Server_(computing)>)\_. Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
 
@@ -31,7 +31,7 @@ Brave has tended to live up to its name since the beginning - riling up the brow
 
 Today you can open [`brave://settings/extensions`](brave://settings/extensions) in Brave and see a toggle for enabling IPFS Companion.
 
-![Enabling IPFS Companion in Brave](/071-ipfs-in-web-browsers-enabling-ipfs-companion-in-brave.gif)
+![Enabling IPFS Companion in Brave](../assets/071-ipfs-in-web-browsers-enabling-ipfs-companion-in-brave.gif)
 
 Removing this install step _really matters_ for adoption. While technical users are familiar with browser extensions, it's less comfortable for non-technical users, and Brave users have the additional overhead of going to the _Chrome_ web app store to find and install them.
 
@@ -49,7 +49,7 @@ These powerful APIs enable the js-ipfs node embedded in the browser to provide a
 
 By default, our browser extension still expects [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop) to be installed, however you can select the experimental option shown below in order to run _a standalone IPFS node_ in Brave itself. Mind this is an _early preview_ of both a full JS IPFS node and a gateway running in a browser extension. Performance and features will improve over time.
 
-![IPFS configuration option for embedded node using Chrome sockets API in Brave](/071-ipfs-in-web-browsers-enable-embedded-node-in-brave.png)
+![IPFS configuration option for embedded node using Chrome sockets API in Brave](../assets/071-ipfs-in-web-browsers-enable-embedded-node-in-brave.png)
 
 At IPFS Camp earlier this year, Brave engineer Jocelyn Liu demoed some of these features at the science fair, including one-click install of Companion, the embedded gateway, and also talks about what's to come: tackling the current connectivity limitations such as the lack of DHT support in js-ipfs, and also plans Brave has for the design of the address bar when loading IPFS content.
 
@@ -61,7 +61,7 @@ Opera is another [early leader](https://blogs.opera.com/mobile/2018/12/ofa-49-wi
 
 Earlier this year [Opera announced they were working on support for IPFS](https://twitter.com/ensdomains/status/1102884419017297921)! We've been talking ever since, and are looking forward to the launch of IPFS support in their Android browser by the end of this year.
 
-![Opera announcing ENS and IPFS at EthCC March 2019](/071-ipfs-in-web-browsers-opera-announcement.png)
+![Opera announcing ENS and IPFS at EthCC March 2019](../assets/071-ipfs-in-web-browsers-opera-announcement.png)
 
 ## Firefox
 

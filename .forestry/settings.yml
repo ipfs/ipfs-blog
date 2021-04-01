@@ -65,10 +65,10 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-upload_dir: src/.vuepress/public
-public_path: ''
+upload_dir: src/assets
+public_path: "../assets"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: dist
