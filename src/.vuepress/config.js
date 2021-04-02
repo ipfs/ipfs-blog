@@ -87,10 +87,6 @@ module.exports = {
       md.set({
         breaks: true,
       })
-      md.use(require('markdown-it-video'))
-      md.use(require('markdown-it-footnote'))
-      md.use(require('markdown-it-task-lists'))
-      md.use(require('markdown-it-deflist'))
     },
   },
   themeConfig: {
