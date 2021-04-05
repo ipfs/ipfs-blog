@@ -15,12 +15,12 @@ If you're a regular reader of the IPFS blog, you might notice something a little
 
 Starting with rounds of user interviewing and testing at the end of 2020, we set about improving this blog to give the global IPFS community more of what readers asked for: more worldwide IPFS news, more links to tutorials and other learning resources, and an easier place to find information about things like IPFS events and the latest release notes for IPFS projects and repos. To that end, we're excited to say that this new IPFS Blog & News site is your home for **not only the latest from the IPFS blog, but also info on ...**
 
-* **Events**, hackathons, and other virtual and real-world get-togethers
-* **News coverage** from global media sources
-* **IPFS tutorials** and other how-tos from across the internet
-* **Videos** on IPFS and related projects that have made the blog team go "wow"
-* **Release notes** for `go-ipfs`, `js-ipfs`, GUI tools like IPFS Companion and IPFS Desktop, and other key  projects and repos
-* **Academic papers** featuring IPFS
+* [**Events**](https://blog.ipfs.io/?category=Event), hackathons, and other virtual and real-world get-togethers
+* [**News coverage**](https://blog.ipfs.io/?category=News%20coverage) from global media sources
+* [**IPFS tutorials** ](https://blog.ipfs.io/?category=Tutorial)and other how-tos from across the internet
+* [**Videos**](https://blog.ipfs.io/?category=Video) on IPFS and related projects that have made the blog team go "wow"
+* [**Release notes**](https://blog.ipfs.io/?category=Release%20notes) for `go-ipfs`, `js-ipfs`, GUI tools like IPFS Companion and IPFS Desktop, and other key  projects and repos
+* [**Academic papers**](https://blog.ipfs.io/?category=Academic%20paper) featuring IPFS
 
 Plus, we've added **subject tags**, **author indexing**, and **text search** to make it easier to find just what you're looking for — and to explore new ideas and topics from there.
 
