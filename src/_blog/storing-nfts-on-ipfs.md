@@ -2,8 +2,8 @@
 tags:
 - NFTs
 title: Storing NFTs on IPFS
-description: Learn best practices for addressing and storing NFT data using IPFS to
-  stand the test of time.
+description: Stand the test of time — learn best practices for IPFS addressing and
+  storage for NFT data.
 author: Yusef Napora, Mitch Wagner
 date: 2021-04-05
 permalink: "/2021-04-05-storing-nfts-on-ipfs/"
