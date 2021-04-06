@@ -17,7 +17,7 @@ Starting with rounds of user interviewing and testing at the end of 2020, we set
 
 * [**Events**](/?category=Event), hackathons, and other virtual and real-world get-togethers
 * [**News coverage**](/?category=News%20coverage) from global media sources
-* [**IPFS tutorials** ](/?category=Tutorial)and other how-tos from across the internet
+* [**IPFS tutorials**](/?category=Tutorial) and other how-tos from across the internet
 * [**Videos**](/?category=Video) on IPFS and related projects that have made the blog team go "wow"
 * [**Release notes**](/?category=Release%20notes) for `go-ipfs`, `js-ipfs`, GUI tools like IPFS Companion and IPFS Desktop, and other key  projects and repos
 * [**Academic papers**](/?category=Academic%20paper) featuring IPFS
