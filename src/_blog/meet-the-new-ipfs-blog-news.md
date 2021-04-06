@@ -26,7 +26,7 @@ Plus, we've added **subject tags**, **author indexing**, and **text search** to 
 
 ## Be a part of the new site!
 
-Ever wanted to be a citizen reporter? Here's your chance. As a member of the global IPFS community, **your voice is important** in making sure the new IPFS Blog & News becomes a truly useful one-stop shop for information and events. If you've got an item that you think belongs on the site — like a meetup, an interesting news link, or a helpful tutorial or video — **submit it using** [**this handy form**](https://airtable.com/shrNH8YWole1xc70I). It only takes a moment, and it helps _everyone_ in the IPFS ecosystem learn from and engage with each other!
+Ever wanted to be a citizen reporter? Here's your chance. As a member of the global IPFS community, **your voice is important** in making sure the new IPFS Blog & News becomes a truly useful one-stop shop for information and events. If you've got an item that you think belongs on the site — like a meetup, an interesting news link, or a helpful tutorial or video — **submit it using** [**this handy form**](https://airtable.com/shrNH8YWole1xc70I) and a member of the blog team will review. It only takes a moment, and it helps _everyone_ in the IPFS ecosystem learn from and engage with each other!
 
 <div><a href="https://airtable.com/shrNH8YWole1xc70I" target="_blank" rel="noopener noreferrer" class="p-2 text-white font-semibold bg-blueGreen rounded cursor-pointer w-full"><span class="text-white">Submit a link</span></a></div>
 
