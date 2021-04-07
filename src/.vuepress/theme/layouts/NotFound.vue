@@ -16,11 +16,23 @@
 
 <script>
 import Layout from '@theme/layouts/Layout.vue'
+import countly from '../util/countly'
 
 export default {
   name: 'NotFound',
   components: {
     Layout,
+  },
+  created() {
+    if (typeof this.$ssrContext !== 'undefined') {
+      this.$ssrContext.userHeadTags += `<base href="/" />`
+    }
+  },
+  mounted() {
+    countly.trackEvent(countly.events.NOT_FOUND, {
+      path: this.$route.path,
+      referrer: typeof window !== 'undefined' ? document.referrer : null,
+    })
   },
 }
 </script>
