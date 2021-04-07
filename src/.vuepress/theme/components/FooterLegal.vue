@@ -51,6 +51,14 @@
         target="_blank"
         @click="onLinkClick"
         >Privacy</a
+      >
+      |
+      <a
+        class="text-blueGreenLight hover:underline"
+        href="https://ipfs.io/legal/"
+        target="_blank"
+        @click="onLinkClick"
+        >DMCA</a
       ></span
     >
   </div>
