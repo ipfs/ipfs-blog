@@ -22,6 +22,10 @@ module.exports = [
       href: '/apple-touch-icon.png',
     },
   ],
+  [
+    'meta',
+    { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+  ],
   ['meta', { name: 'theme-color', content: '#16161F' }],
   ['meta', { name: 'msapplication-TileColor', content: '#156ff7' }],
   ['meta', { name: 'apple-mobile-web-app-title', content: 'IPFS Blog & News' }],
