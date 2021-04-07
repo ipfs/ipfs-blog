@@ -239,6 +239,7 @@ module.exports = {
           $page.lastUpdated && new Date($page.lastUpdated).toISOString(),
       },
     ],
+    [require('./plugins/vuepress-plugin-og-image')],
     ['vuepress-plugin-robots', { host: CANONICAL_BASE }],
     [
       '@vuepress/html-redirect',
