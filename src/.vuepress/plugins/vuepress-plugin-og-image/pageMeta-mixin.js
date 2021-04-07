@@ -1,3 +1,5 @@
+const { normalize } = require('path')
+
 export default {
   created() {
     if (typeof this.$ssrContext !== 'undefined') {
@@ -5,7 +7,8 @@ export default {
       const og = meta && meta.find((m) => m.property === 'og:image')
       if (meta && og) {
         try {
-          const imgPath = require('@source/assets/' + og.content)
+          const assetPath = normalize(og.content).replace(/^\/|\/$/g, '')
+          const imgPath = require('@source/assets/' + assetPath)
           const { pageMeta } = this.$ssrContext
           this.$ssrContext.pageMeta = pageMeta.replace(
             new RegExp(og.content, 'g'),
