@@ -9,7 +9,6 @@ const favicons = ['16x16', '32x32', '48x48'].map((size) => [
 ])
 
 module.exports = [
-  ['link', { rel: 'stylesheet', href: '/fonts.css' }],
   ['link', { rel: 'manifest', href: '/site.webmanifest' }],
   [
     'link',
