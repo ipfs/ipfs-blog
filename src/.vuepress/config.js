@@ -138,6 +138,7 @@ module.exports = {
       {
         normalSuffix: '/',
         indexSuffix: '/',
+        notFoundPath: '/ipfs-404.html',
       },
     ],
     [
@@ -175,7 +176,7 @@ module.exports = {
         sitemap: {
           hostname: CANONICAL_BASE,
           changefreq: 'weekly',
-          exclude: ['/image-crop/', '/404.html'],
+          exclude: ['/image-crop/', '/ipfs-404.html'],
         },
         directories: [
           {

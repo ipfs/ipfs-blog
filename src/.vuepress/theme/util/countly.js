@@ -8,6 +8,7 @@ export const events = {
   LOAD_MORE_BUTTON: 'loadMoreButton',
   NEWSLETTER_SUBSCRIBE: 'newsletterSubscribe',
   FILTER: 'filter',
+  NOT_FOUND: '404NotFound',
 }
 /*
   Load Countly script.
