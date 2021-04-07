@@ -6,16 +6,17 @@ export default {
       const meta = this.$frontmatter.meta
       const og = meta && meta.find((m) => m.property === 'og:image')
       if (meta && og) {
+        const ogPath = new URL(og.content, 'http://locahost').pathname
+        const assetPath = normalize(ogPath).replace(/^\/|\/$/g, '')
         try {
-          const assetPath = normalize(og.content).replace(/^\/|\/$/g, '')
           const imgPath = require('@source/assets/' + assetPath)
           const { pageMeta } = this.$ssrContext
           this.$ssrContext.pageMeta = pageMeta.replace(
-            new RegExp(og.content, 'g'),
+            new RegExp(ogPath, 'g'),
             imgPath
           )
         } catch (e) {
-          throw new Error(`could not load og:image ${og.content}`)
+          throw new Error(`could not load og:image ${ogPath}`)
         }
       }
     }
