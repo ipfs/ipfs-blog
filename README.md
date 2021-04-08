@@ -12,7 +12,6 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 **If you just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
 
-
 ## For post authors/editors
 
 While it's possible to manually PR a new blog post from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact Jessica Schilling.
@@ -26,26 +25,29 @@ Forestry uses the `staging` branch as a work-in-progress scratchpad for blog con
 - To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page (this is useful if you want to add any HTML, such as a video or Twitter embed):<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
 
 ### Forestry build preview tips
+
 While WYSIWYG mode usually gives you a good enough idea of what a blog post will look like, you can also load Forestry's own _build preview_ in a new tab by clicking the eye icon at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036918-f4766480-7cfa-11eb-9cf3-a0082e61a7a0.png)
 
 This build preview lets you preview changes to any content type (not just blog posts), and _does not_ require you to save your changes in order to see them.
 
 A few tips:
+
 - Click the eye icon to _regenerate_ a build preview at any time from a Forestry edit page. You may need to reload the build preview tab if you don't see changes come through immediately.
 - Occasionally, a build preview page gets stuck at a URL ending in `forestry/pending` or simply won't load. In this case, try the following:
-     - Remove `forestry/pending` from the URL and try again.
-     - Check the Previews section of Forestry's [`Site > Settings` page](https://app.forestry.io/sites/lg5t7mxcqbr-da/#/settings/previews) to see the preview server's current status, start/stop/restart the server, or examine the logs for errors. Simply restarting the preview server can fix many problems.
-     - If all else fails, save your changes, wait a few minutes, and take a look at [Fleek's build of the latest version of the `staging` branch](https://ipfs-blog-staging.on.fleek.co/). It's a considerably slower build/deploy time, but does reflect the latest changes once it finishes deploying.
+  - Remove `forestry/pending` from the URL and try again.
+  - Check the Previews section of Forestry's [`Site > Settings` page](https://app.forestry.io/sites/lg5t7mxcqbr-da/#/settings/previews) to see the preview server's current status, start/stop/restart the server, or examine the logs for errors. Simply restarting the preview server can fix many problems.
+  - If all else fails, save your changes, wait a few minutes, and take a look at [Fleek's build of the latest version of the `staging` branch](https://ipfs-blog-staging.on.fleek.co/). It's a considerably slower build/deploy time, but does reflect the latest changes once it finishes deploying.
 
 ### To deploy to the live site
 
 Changes you _save_ in Forestry are written directly to the `staging` branch and automatically generate a staging preview at https://ipfs-blog-staging.on.fleek.co/.
 
-**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** *Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer.*
+**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** _Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer._
 
 _Note for PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits._ As our overall workflow continues to solidify, this direction may change.
 
 ### To add a URL redirect for a blog post
+
 Please add a new line to [`src/.vuepress/redirects`](https://github.com/ipfs/ipfs-blog/blob/main/src/.vuepress/redirects) and make a PR of the change to `main`.
 
 ## For site developers
@@ -53,6 +55,7 @@ Please add a new line to [`src/.vuepress/redirects`](https://github.com/ipfs/ipf
 ⚠️ **Important!** All _site development work_ (as opposed to blog posts) should be based on and merged into `main`, **not** `staging`.
 
 ### Build and run locally
+
 This site is built in [Vuepress](https://vuepress.vuejs.org/guide/), and uses Vue/JavaScript for functional code and Markdown for post content.
 
 To build a local copy, run the following:
@@ -81,6 +84,7 @@ To build a local copy, run the following:
 You can close the local server with `CTRL` + `c`. To restart the local server, run `npm start` from inside the `ipfs-blog` directory.
 
 ### PR and preview
+
 Once you're happy with your local changes, please make a PR **against the `main` branch**. Including detailed notes on your PR - particularly screenshots to depict any changes in UI - will help speed up approval and deployment.
 
 All PRs against `main` automatically generate Fleek previews to make it easier to "check your work". You can view your PR's preview by clicking `Details` in the `fleek/build` check at the bottom of your PR page:<br/>

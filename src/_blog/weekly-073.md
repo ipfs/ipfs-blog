@@ -1,15 +1,15 @@
 ---
 date: 2020-01-14
-permalink: "/weekly-73/"
+permalink: '/weekly-73/'
 translationKey: ipfs-weekly-73
 title: IPFS Weekly 73
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 # Welcome back to the IPFS Weekly
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀

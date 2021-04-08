@@ -1,15 +1,15 @@
 ---
 date: 2020-02-18
-permalink: "/weekly-78/"
+permalink: '/weekly-78/'
 translationKey: ipfs-weekly-78
 title: IPFS Weekly 78
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 # Welcome to the IPFS Weekly
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀

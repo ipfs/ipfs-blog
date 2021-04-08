@@ -1,16 +1,16 @@
 ---
 date: 2019-12-17
-permalink: "/weekly-72/"
+permalink: '/weekly-72/'
 translationKey: ipfs-weekly-72
 title: "IPFS Weekly 72: Recapping IPFS in Q4 2019 \U0001F389"
-description: 
+description:
 author: Jenn Turner
 tags:
-- weekly
-- recap
-header_image: "/header-image-weekly-newsletter.png"
-
+  - weekly
+  - recap
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 We’ve put together a very special issue looking back on all that you, the InterPlanetary File System (IPFS) community, accomplished over the past few months of 2019. From milestones like releases, projects like ProtoSchool, to the many new (and awesome) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
 
 Thanks for being part of our community, we truly couldn’t make IPFS what it is without you. ❤️

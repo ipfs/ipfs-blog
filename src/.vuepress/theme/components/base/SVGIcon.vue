@@ -8,10 +8,7 @@
     :viewBox="icon.viewBox"
   >
     <title v-if="!ariaHide" :id="`svg-title--${name}`">{{ title }}</title>
-    <use
-      :xlink:href="`#${icon.id}`"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    />
+    <use :href="`#${icon.id}`" />
   </svg>
 </template>
 

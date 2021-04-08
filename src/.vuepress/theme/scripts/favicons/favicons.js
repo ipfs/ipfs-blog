@@ -58,7 +58,7 @@ const callback = function (error, response) {
   writeFile('html.json', JSON.stringify(response.html))
 }
 
-var writeFile = function (fileName, content) {
+const writeFile = function (fileName, content) {
   fs.writeFile(path.resolve(buildDir, fileName), content, (err) => {
     if (err) {
       console.error(err)
