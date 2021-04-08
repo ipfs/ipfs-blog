@@ -116,7 +116,7 @@ export default {
       const id =
         newPath.searchParams.get('v') || newPath.searchParams.get('list')
 
-      return `http://img.youtube.com/vi/${id}/0.jpg`
+      return `https://img.youtube.com/vi/${id}/0.jpg`
     },
   },
   methods: {
