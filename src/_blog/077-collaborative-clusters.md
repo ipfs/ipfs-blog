@@ -31,8 +31,7 @@ We hope that collaborative clusters will allow the community to participate in t
 
 ## Creating your own Clusters
 
-Collaborative clusters are no different from normal IPFS Clusters, with the exception that
-they include a list of _trusted peers_ (peers that can modify the cluster pinset).
+Collaborative clusters are no different from normal IPFS Clusters, with the exception that they include a list of _trusted peers_ (peers that can modify the cluster pinset).
 
 The process of setting up one of these and letting other peers easily join as followers is documented at [https://cluster.ipfs.io/documentation/collaborative/](https://cluster.ipfs.io/documentation/collaborative/).
 
