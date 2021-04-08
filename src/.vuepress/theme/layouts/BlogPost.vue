@@ -61,15 +61,11 @@ export default {
     }
 
     this.showComments =
+      !!ipfsPathPrefix ||
+      window.location.hostname.includes('.ipns.localhost') ||
       window.location.hostname === 'blog.ipfs.io' ||
-      window.location.hostname === 'blog.ipfs.io.ipns.localhost:8080' ||
-      window.location.hostname === '127.0.0.1:8080/ipns/blog.ipfs.io/' ||
       window.location.hostname === 'ipfs-blog.on.fleek.co' ||
-      window.location.hostname ===
-        'ipfs-blog.on.fleek.co.ipns.localhost:8080' ||
-      window.location.hostname === 'ipfs-blog-staging.on.fleek.co' ||
-      window.location.hostname ===
-        'ipfs-blog-staging.on.fleek.co.ipns.localhost:8080'
+      window.location.hostname === 'ipfs-blog-staging.on.fleek.co'
   },
 }
 </script>
