@@ -64,7 +64,6 @@ module.exports = {
   title: 'IPFS Blog & News',
   description:
     'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
-  domain: CANONICAL_BASE,
   locales: {
     '/': {
       lang: 'EN',
@@ -96,6 +95,7 @@ module.exports = {
     },
   },
   themeConfig: {
+    domain: CANONICAL_BASE,
     locales: {
       '/': themeConfigDefaults,
       '/zh-cn/': {
@@ -227,11 +227,11 @@ module.exports = {
           ['_blog'].some((folder) => $page.regularPath.startsWith('/' + folder))
             ? 'article'
             : 'website',
-        url: (_, $site, path) => ($site.domain || '') + path,
+        url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
         image: ($page, $site) =>
           $page.frontmatter.header_image
-            ? ($site.domain || '') + $page.frontmatter.header_image
-            : ($site.domain || '') + '/social-card.png',
+            ? ($site.themeConfig.domain || '') + $page.frontmatter.header_image
+            : ($site.themeConfig.domain || '') + '/social-card.png',
         publishedAt: ($page) =>
           $page.frontmatter.date &&
           new Date($page.frontmatter.date).toISOString(),
