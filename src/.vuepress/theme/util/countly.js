@@ -44,6 +44,8 @@ export function loadScript() {
   Track an event to countly with the provided data
 */
 export function trackEvent(event, data = {}) {
+  if (!window.Countly) return
+
   window.Countly.q.push([
     'add_event',
     {
