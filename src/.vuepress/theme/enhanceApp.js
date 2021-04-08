@@ -27,7 +27,7 @@ export default ({ Vue, router, siteData, isServer }) => {
     return originalPush.call(this, location)
   }
 
-  if (!isServer) {
+  if (!isServer && process.env.NODE_ENV === 'production') {
     // track page view via Countly when route changes
     router.afterEach((to) => {
       if (!window.Countly) return

@@ -44,15 +44,17 @@ export function loadScript() {
   Track an event to countly with the provided data
 */
 export function trackEvent(event, data = {}) {
-  // console.info('[countly]', 'trackEvent()', event, data)
-
-  window.Countly.q.push([
-    'add_event',
-    {
-      key: event,
-      segmentation: data,
-    },
-  ])
+  if (process.env.NODE_ENV === 'production') {
+    window.Countly.q.push([
+      'add_event',
+      {
+        key: event,
+        segmentation: data,
+      },
+    ])
+  } else {
+    console.info('[countly]', 'trackEvent()', event, data)
+  }
 }
 
 export default {
