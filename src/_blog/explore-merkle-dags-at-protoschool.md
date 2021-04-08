@@ -41,9 +41,9 @@ Prefer your learning in video format? Check out these presentations on the super
 🎬 [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg) (IPFS Camp 2019): This presentation by Alan Shaw and Mikeal Rogers offers a deep dive on key IPFS concepts like immutability, content addressing, hashing, the anatomy of CIDs, what the heck a Merkle DAG is, and how chunk size affects file imports. It also covers the joys and pitfalls of the Mutable File System (MFS), the layer of abstraction in IPFS that lets you work with immutable files and directories as if you were using a traditional name-based file system.
 
 <div style="display:flex; justify-content:flex-start; flex-wrap:wrap;">
-<a href="https://youtu.be/VtzpJU4Cns8"><img src="/talk-rod.png" style="max-width:400px; margin-right:5px" alt="Video: Content-Addressed Distributed Data Structures"/></a>
-<a href="https://youtu.be/YIc6MNfv5iQ"><img src="/talk-tara.png" style="max-width:400px; margin-right:5px" alt="Video: How Merkle Trees Enable the Distributed Web"/></a>
-<a href="https://youtu.be/Z5zNPwMDYGg"><img src="/core-a-thumbnail.png" style="max-width:400px;" alt="Video: Understanding How IPFS Deals with Files"/></a>
+<a href="https://youtu.be/VtzpJU4Cns8"><img src="../assets/talk-rod.png" style="max-width:400px; margin-right:5px" alt="Video: Content-Addressed Distributed Data Structures"/></a>
+<a href="https://youtu.be/YIc6MNfv5iQ"><img src="../assets/talk-tara.png" style="max-width:400px; margin-right:5px" alt="Video: How Merkle Trees Enable the Distributed Web"/></a>
+<a href="https://youtu.be/Z5zNPwMDYGg"><img src="../assets/core-a-thumbnail.png" style="max-width:400px;" alt="Video: Understanding How IPFS Deals with Files"/></a>
 </div>
 
 ## Help us improve ProtoSchool
