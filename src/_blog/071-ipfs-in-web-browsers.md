@@ -17,7 +17,7 @@ But we're making headway. Today, we'd like to share some collaborations the IPFS
 
 ![Stages of browser integration](../assets/071-ipfs-in-web-browsers-stages-of-browser-integration.png)
 
-The path to a truly decentralized web is a long one. For over 30 years the browser has been a [_client_](https://en.wikipedia.org/wiki/Client_(computing)) – but a foundational concept in P2P systems is that a participant is both a client _and a [server](https://en.wikipedia.org/wiki/Server_(computing))_. Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
+The path to a truly decentralized web is a long one. For over 30 years the browser has been a [_client_](https://en.wikipedia.org/wiki/Client_(computing)) – but a foundational concept in P2P systems is that a participant is both a client _and a_ [_server_](https://en.wikipedia.org/wiki/Server_(computing)). Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
 
 From the beginning, IPFS had an HTTP gateway. The gateway lets HTTP clients like web browsers publish to and read from the IPFS network. Now there are [lots of different public HTTP gateways to the IPFS network](https://ipfs.github.io/public-gateway-checker/), and the gateway we run at ipfs.io serves over _five million_ requests per day.
 
@@ -53,7 +53,7 @@ By default, our browser extension still expects [IPFS Desktop](https://github.co
 
 At IPFS Camp earlier this year, Brave engineer Jocelyn Liu demoed some of these features at the science fair, including one-click install of Companion, the embedded gateway, and also talks about what's to come: tackling the current connectivity limitations such as the lack of DHT support in js-ipfs, and also plans Brave has for the design of the address bar when loading IPFS content.
 
-<iframe src="https://www.youtube-nocookie.com/embed/oMqe9LfnIDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oMqe9LfnIDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Opera
 
@@ -67,11 +67,11 @@ Earlier this year [Opera announced they were working on support for IPFS](https:
 
 We've been working with Mozilla on initial APIs since 2018, when the [libdweb project](https://github.com/mozilla/libdweb) emerged, providing browser extension APIs for many of the primitives a P2P system needs: filesystem access, TCP, UDP and protocol registration and handling. Earlier in 2018 the [ipfs:// scheme was whitelisted in Firefox](https://blog.mozilla.org/addons/2018/01/26/extensions-firefox-59/), so now with libdweb we were able to experiment with a proper [ipfs:// protocol handler](https://github.com/ipfs-shipyard/ipfs-companion/pull/533), which we demoed at Lab Day in August 2018:
 
-<iframe src="https://www.youtube-nocookie.com/embed/fS8pLOQdOoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fS8pLOQdOoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
 
-<iframe src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Unfortunately, libdweb is still an experimental set of APIs - not included in Firefox yet. We're hoping to see more progress soon from Mozilla on shipping libdweb APIs in Firefox for at least some extensions this year!
 
