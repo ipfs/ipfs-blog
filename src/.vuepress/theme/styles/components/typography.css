@@ -44,7 +44,7 @@
     &:before {
       content: '';
       width: 4px;
-      @apply bg-gradient-5 h-full left-0 absolute;
+      @apply bg-gradient-6 h-full left-0 absolute;
     }
   }
 
