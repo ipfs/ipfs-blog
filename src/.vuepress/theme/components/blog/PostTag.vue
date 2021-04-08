@@ -3,6 +3,7 @@
     v-if="link"
     :to="{ path: $localePath, query: { tags: tag } }"
     :class="computedClass"
+    rel="nofollow"
     @click.native="handleTagClick"
   >
     #{{ tag }}
