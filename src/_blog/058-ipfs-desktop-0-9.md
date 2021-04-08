@@ -53,7 +53,7 @@ Other notable features from previous releases include:
 
 You can also take a look at this video:
 
-<iframe src="https://www.youtube-nocookie.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Let's talk about future...
 
