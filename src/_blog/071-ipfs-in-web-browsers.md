@@ -1,14 +1,14 @@
 ---
 date: 2019-10-08
-permalink: /2019-10-08-ipfs-browsers-update/
+permalink: "/2019-10-08-ipfs-browsers-update/"
 title: IPFS Browser Update
-description:
+description: 
 author: Dietrich Ayala
-header_image: /071-ipfs-in-web-browsers-header-image.png
+header_image: "/071-ipfs-in-web-browsers-header-image.png"
 tags:
-  - 'browsers'
----
+- browsers
 
+---
 Decentralization can feel slow in providing user-centric approaches to the internet's biggest problems. Right now, software that is fully in the control of the user is often too technical, too fragile, and too time-consuming to be the default choice.
 
 But we're making headway. Today, we'd like to share some collaborations the IPFS project has had in the works for a while, which bring us a few steps closer to making unmediated access to information _just work_... by solving that "last mile" problem and _integrating IPFS directly into web browsers_.
@@ -17,7 +17,7 @@ But we're making headway. Today, we'd like to share some collaborations the IPFS
 
 ![Stages of browser integration](../assets/071-ipfs-in-web-browsers-stages-of-browser-integration.png)
 
-The path to a truly decentralized web is a long one. For over 30 years the browser has been a [_client_](<https://en.wikipedia.org/wiki/Client_(computing)>) – but a foundational concept in P2P systems is that a participant is both a client _and a [server](<https://en.wikipedia.org/wiki/Server_(computing)>)\_. Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
+The path to a truly decentralized web is a long one. For over 30 years the browser has been a [_client_](https://en.wikipedia.org/wiki/Client_(computing)) – but a foundational concept in P2P systems is that a participant is both a client _and a_ [_server_](https://en.wikipedia.org/wiki/Server_(computing)). Web browser vendors and web standards bodies have not designed for this architectural shift, so we're breaking it down into steps.
 
 From the beginning, IPFS had an HTTP gateway. The gateway lets HTTP clients like web browsers publish to and read from the IPFS network. Now there are [lots of different public HTTP gateways to the IPFS network](https://ipfs.github.io/public-gateway-checker/), and the gateway we run at ipfs.io serves over _five million_ requests per day.
 
@@ -43,9 +43,9 @@ But that isn't all. One of the biggest barriers to even just experimenting with 
 
 These powerful APIs enable the js-ipfs node embedded in the browser to provide a _true_ P2P experience without the need for an external daemon:
 
-- The embedded HTTP Gateway removes reliance on public gateways, by connecting over HTTP to a local IPFS node
-- TCP transport improves connectivity - not only by enabling transport interoperability with go-ipfs nodes, but also makes direct browser-to-browser communication within the same network possible
-- UDP sockets enable DNS-based service discovery of go-ipfs in LAN, and we are working on additional browser-to-browser discovery methods that work in offline environments
+* The embedded HTTP Gateway removes reliance on public gateways, by connecting over HTTP to a local IPFS node
+* TCP transport improves connectivity - not only by enabling transport interoperability with go-ipfs nodes, but also makes direct browser-to-browser communication within the same network possible
+* UDP sockets enable DNS-based service discovery of go-ipfs in LAN, and we are working on additional browser-to-browser discovery methods that work in offline environments
 
 By default, our browser extension still expects [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#ipfs-desktop) to be installed, however you can select the experimental option shown below in order to run _a standalone IPFS node_ in Brave itself. Mind this is an _early preview_ of both a full JS IPFS node and a gateway running in a browser extension. Performance and features will improve over time.
 
@@ -53,7 +53,7 @@ By default, our browser extension still expects [IPFS Desktop](https://github.co
 
 At IPFS Camp earlier this year, Brave engineer Jocelyn Liu demoed some of these features at the science fair, including one-click install of Companion, the embedded gateway, and also talks about what's to come: tackling the current connectivity limitations such as the lack of DHT support in js-ipfs, and also plans Brave has for the design of the address bar when loading IPFS content.
 
-<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/oMqe9LfnIDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oMqe9LfnIDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Opera
 
@@ -67,11 +67,11 @@ Earlier this year [Opera announced they were working on support for IPFS](https:
 
 We've been working with Mozilla on initial APIs since 2018, when the [libdweb project](https://github.com/mozilla/libdweb) emerged, providing browser extension APIs for many of the primitives a P2P system needs: filesystem access, TCP, UDP and protocol registration and handling. Earlier in 2018 the [ipfs:// scheme was whitelisted in Firefox](https://blog.mozilla.org/addons/2018/01/26/extensions-firefox-59/), so now with libdweb we were able to experiment with a proper [ipfs:// protocol handler](https://github.com/ipfs-shipyard/ipfs-companion/pull/533), which we demoed at Lab Day in August 2018:
 
-<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/fS8pLOQdOoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fS8pLOQdOoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We used yet more APIs in libdweb to implement [local discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553):
 
-<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FRzyWUXIyeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Unfortunately, libdweb is still an experimental set of APIs - not included in Firefox yet. We're hoping to see more progress soon from Mozilla on shipping libdweb APIs in Firefox for at least some extensions this year!
 
@@ -91,10 +91,10 @@ Web browsers have been solely a client for over 30 years - putting all power in 
 
 Consider this a sneak peek. There's more on the way:
 
-- In Brave, the gateway is, well... a gateway to even more: We're working on local discovery (mDNS) of IPFS nodes, and also Brave-to-Brave connectivity for embedded nodes.
-- We're continuing our experiments with [libdweb](https://github.com/mozilla/libdweb) in Firefox, both on desktop and Android.
-- [Puma Browser](https://www.pumabrowser.com/), the first mobile browser with support for [Coil's micropayments for publishers](https://www.grantfortheweb.org/), is interested in IPFS support.
-- Keeping a close eye on [Bundled HTTP Exchanges](https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html) and ways IPFS could provide decentralized alternative to centralized HTTP CDNs.
-- We're exploring what a native Chromium implementation might look like...
+* In Brave, the gateway is, well... a gateway to even more: We're working on local discovery (mDNS) of IPFS nodes, and also Brave-to-Brave connectivity for embedded nodes.
+* We're continuing our experiments with [libdweb](https://github.com/mozilla/libdweb) in Firefox, both on desktop and Android.
+* [Puma Browser](https://www.pumabrowser.com/), the first mobile browser with support for [Coil's micropayments for publishers](https://www.grantfortheweb.org/), is interested in IPFS support.
+* Keeping a close eye on [Bundled HTTP Exchanges](https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html) and ways IPFS could provide decentralized alternative to centralized HTTP CDNs.
+* We're exploring what a native Chromium implementation might look like...
 
 If you're an experienced Chromium developer or mobile app developer and you're interested in working on some of these projects, contact Dietrich Ayala on [Twitter](https://twitter.com/dietrich), the [fediverse](https://mastodon.social/@dietrich), [Secure Scuttlebutt](@vB/yLGZ7vBGgPMTG5NEczZc6ufr0YqhxRScOk6jPi60=.ed25519) or [LinkedIn](https://www.linkedin.com/in/dietrich).

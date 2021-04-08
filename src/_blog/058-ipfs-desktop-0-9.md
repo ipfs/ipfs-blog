@@ -1,13 +1,13 @@
 ---
 date: 2019-09-19
-permalink: /2019-09-19-ipfs-desktop-0-9/
+permalink: "/2019-09-19-ipfs-desktop-0-9/"
 title: IPFS Desktop 0.9 released
-description:
+description: 
 author: Henrique Dias
 tags:
-  - 'IPFS Desktop'
----
+- IPFS Desktop
 
+---
 IPFS Desktop has come a long way to reach its current form. We are here to celebrate and announce the [release of 0.9.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases) and share the story of this application and, of course, all the exciting new features.
 
 ## Once upon a time...
@@ -46,14 +46,14 @@ Adding `ipfs` command line tools to your system was actually introduced in 0.8.0
 
 Other notable features from previous releases include:
 
-- **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io) in your browser or any other application, that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
-- **Easily add files to IPFS**. Just drag and drop them to the application icon, either on the menubar for macOS users, or the shortcut icon for Windows users.
-- **Add screenshots to IPFS**. You can click on 'Take Screenshot' on the app's menu or enable the global shortcut on "Settings". After taking a screenshot, a shareable link will be copied to your clipboard!
-- **Download any CID content**. If you would like to download the contents of some CID or IPFS/IPNS path, you can copy it, go to the dropdown menu and select 'Download Hash'. Then, just pick wherever you want to write those files to! This is also available through a global shortcut.
+* **Handle `ipfs://`, `ipns://` and `dweb:` links**. If you have IPFS Desktop installed and you click on [ipns://ipfs.io](ipns://ipfs.io) in your browser or any other application, that request will go through be redirected to your own gateway via the app, or to the public gateway if yours is not online.
+* **Easily add files to IPFS**. Just drag and drop them to the application icon, either on the menubar for macOS users, or the shortcut icon for Windows users.
+* **Add screenshots to IPFS**. You can click on 'Take Screenshot' on the app's menu or enable the global shortcut on "Settings". After taking a screenshot, a shareable link will be copied to your clipboard!
+* **Download any CID content**. If you would like to download the contents of some CID or IPFS/IPNS path, you can copy it, go to the dropdown menu and select 'Download Hash'. Then, just pick wherever you want to write those files to! This is also available through a global shortcut.
 
 You can also take a look at this video:
 
-<iframe width="2000" height="600" src="https://www.youtube-nocookie.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-7jAIVeg2vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Let's talk about future...
 
