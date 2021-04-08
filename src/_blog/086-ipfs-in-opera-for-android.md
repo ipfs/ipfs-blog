@@ -10,13 +10,13 @@ tags:
   - 'mobile'
 ---
 
-![IPFS built-in to Opera for Android](/086-ipfs-in-opera-for-android-banner.png)
+![IPFS built-in to Opera for Android](../assets/086-ipfs-in-opera-for-android-banner.png)
 
 As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
 
 Today, **Opera for Android 57** is live in the Google Play Store with default support for IPFS with a native handler for `ipfs://` addresses that redirects to the HTTP gateway of your choosing! [Install Opera Android with IPFS now](https://play.google.com/store/apps/details?id=com.opera.browser).
 
-[![Screenshot of Opera for Android in the Google Play Store, linked to the URL of that page](/086-ipfs-in-opera-for-android-play-store.png)](https://play.google.com/store/apps/details?id=com.opera.browser)
+[![Screenshot of Opera for Android in the Google Play Store, linked to the URL of that page](../assets/086-ipfs-in-opera-for-android-play-store.png)](https://play.google.com/store/apps/details?id=com.opera.browser)
 
 This release is a huge leap forward for the IPFS project, with a couple of important milestones:
 
@@ -34,7 +34,7 @@ IPFS and other peer-to-peer protocols are a paradigmatic change to the network a
 
 IPFS support is enabled by default, so as a user you don’t need to do anything to turn it on.
 
-![Screenshots of entering an ipfs:// address in Opera for Android, and loading it.](/086-ipfs-in-opera-for-android-protocol-demo.png)
+![Screenshots of entering an ipfs:// address in Opera for Android, and loading it.](../assets/086-ipfs-in-opera-for-android-protocol-demo.png)
 
 You can load an IPFS content address such as:
 
@@ -82,7 +82,7 @@ You can easily check compatibility and level of implementation using the [IPFS p
 
 Here’s what it looks like in a browser that doesn't support IPFS addresses. In Opera for Android, the image loads the same in both cases.
 
-![Screenshot of a failed image test in the IPFS protocol handler smoketests.](/086-ipfs-in-opera-for-android-test-page.png)
+![Screenshot of a failed image test in the IPFS protocol handler smoketests.](../assets/086-ipfs-in-opera-for-android-test-page.png)
 
 ## HTTP Gateways
 
@@ -90,7 +90,7 @@ Opera for Android 57 adds IPFS support by navigating native IPFS addresses to an
 
 The default gateway in this release of Opera for Android is `dweb.link`, but you can also easily configure the gateway in the Crypto Wallet settings, as shown here:
 
-![IPFS HTTP gateway configuration in the Crypto Wallet settings in Opera for Android](/086-ipfs-in-opera-for-android-settings.gif)
+![IPFS HTTP gateway configuration in the Crypto Wallet settings in Opera for Android](../assets/086-ipfs-in-opera-for-android-settings.gif)
 
 The setting has several choices of gateway built in, and also allows you to set a _custom_ gateway. Perhaps you run your own gateway, are running an IPFS node on your device with a local gateway, or want to use one of the many [public gateways provided by the community](https://ipfs.github.io/public-gateway-checker/).
 

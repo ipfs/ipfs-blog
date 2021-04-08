@@ -17,7 +17,7 @@ In 2020 we announced a big moment for IPFS: The first official support of IPFS p
 
 First, Opera has now added support for IPFS addressing to Opera Touch, their iOS browser.
 
-![A screenshot of Wikipedia on IPFS in Opera Touch](/opera-ios-wikipedia-short.png 'Wikipedia on IPFS in Opera Touch')
+![A screenshot of Wikipedia on IPFS in Opera Touch](../assets/opera-ios-wikipedia-short.png 'Wikipedia on IPFS in Opera Touch')
 
 Second, support for IPFS addressing in Opera desktop browser for Windows, macOS and Linux will be coming in their next release, currently planned for March 2021.
 
@@ -27,7 +27,7 @@ With these releases, Opera will not support ipfs:// and ipns:// addressing acros
 
 First, install Opera Touch on your iOS device. If you’re reading this on an iOS device, [click to install now](https://apps.apple.com/us/app/opera-touch-web-browser/id1411869974)
 
-![](/opera-ios-app-store-short.png)
+![](../assets/opera-ios-app-store-short.png)
 
 ## How Does it Work?
 

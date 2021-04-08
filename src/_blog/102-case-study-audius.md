@@ -11,7 +11,7 @@ tags:
   - 'streaming'
 ---
 
-![IPFS Case Study Seriew - Audius](/102-case-study-audius-header-image.jpg)
+![IPFS Case Study Seriew - Audius](../assets/102-case-study-audius-header-image.png)
 
 ## You asked, we delivered!
 

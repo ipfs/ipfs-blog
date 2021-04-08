@@ -31,4 +31,4 @@ You can't _yet_ "follow" the blog with ipfs, but we're working on it and expect 
 
 Don't miss any InterPlanetary updates!
 
-![](/000-hello-worlds-earthrise.png)
+![](../assets/000-hello-worlds-earthrise.png)

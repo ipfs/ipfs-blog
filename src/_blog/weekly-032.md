@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 <br/>
 
-[![](/ipfs-camp-2019.png)](https://camp.ipfs.io)
+[![](../assets/ipfs-camp-2019.png)](https://camp.ipfs.io)
 
 <br/>
 

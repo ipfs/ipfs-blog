@@ -6,7 +6,7 @@ description:
 author: Richard Littauer
 ---
 
-[![](/006-distributions-screenshot.png)](https://dist.ipfs.io/)
+[![](../assets/006-distributions-screenshot.png)](https://dist.ipfs.io/)
 
 [dist.ipfs.io](https://dist.ipfs.io/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downloading all official binaries that the IPFS Team produces.
 

@@ -14,7 +14,7 @@ tags:
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
 
-![IPFS built-in to Opera for Android](/opera-android-banner.png)
+![IPFS built-in to Opera for Android](../assets/opera-android-banner.png)
 
 ## IPFS in Opera for Android
 

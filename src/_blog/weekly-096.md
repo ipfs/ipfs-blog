@@ -27,7 +27,7 @@ We introduced the [IPFS Grants Platform](https://blog.ipfs.io/2020-04-20-ipfs-gr
 
 The [IPFS Distributions website](https://dist.ipfs.io/) got a fun IPFS rebrand.
 
-![New updates to go-ipfs](/090-go-ipfs-0-5-0-header-image.png)
+![New updates to go-ipfs](../assets/090-go-ipfs-0-5-0-header-image.png)
 
 Our largest upgrade to IPFS yet happened with [go-ipfs 0.5](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/)! And, we hosted [a launch meetup](https://www.youtube.com/watch?list=PLuhRWgmPaHtQ26F2MIuogvo0so9QUgH1r&v=RxJSUBeqOKU&feature=emb_log) with community members to share our many updates!
 
@@ -53,7 +53,7 @@ We take some significant steps to improve the [IPFS Developer experience](https:
 
 [OrbitDB releases v0.24](https://github.com/orbitdb/orbit-db/issues/772#issuecomment-632357888) with support for both go-ipfs 0.5 and js-ipfs 0.44.
 
-![Launching Testground](/092-launching-testground-header-image.png)
+![Launching Testground](../assets/092-launching-testground-header-image.png)
 
 We launched [Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), a platform for testing, benchmarking, and simulating distributed and p2p systems at scale. Designed to be multilingual and runtime-agnostic, scaling from 2 to 10k instances.
 
@@ -83,7 +83,7 @@ Textile released the [Buckets JS library](https://textileio.github.io/js-hub/doc
 
 Jim Kosem shares the new [IPFS Mobile Design Guidelines](https://blog.ipfs.io/2020-06-25-ipfs-mobile-design-guidelines/), based on research conducted earlier in the quarter. Go download the pdf!
 
-![IPFS and ION](/099-identity-ipfs-ion-header.png)
+![IPFS and ION](../assets/099-identity-ipfs-ion-header.png)
 
 [ION](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/), launched by Microsoft, has been under development for over a year, and is an instance implementation of Sidetree that runs on the Bitcoin blockchain. And it stores transaction data on IPFS.
 

@@ -73,7 +73,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [Genobank DNA Wallet](https://coinlist.co/build/nucypher/projects/a9f305f4-d0ff-4501-840e-4566608303ab) – A Decentralised and anonymous DNA wallet. Enables users to extract DNA, establish ownership, share (P2P) & control using Nucypher and Blockchain.
 - [deima](https://boramalper.github.io/deima/) is a decentralised image host that allows you to upload your images to IPFS distributed network.
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

@@ -101,7 +101,7 @@ If you run into any hurdles, please open an issue on [ipfs/js-ipfs/issues](https
 
 I'm glad you asked!
 
-![](/contribute-to-ipfs.gif)
+![](../assets/contribute-to-ipfs.gif)
 
 We keep curating and updating our [Waffle Board](https://waffle.io/ipfs/js-ipfs) to ensure it signals what is actively being worked on and what is next. We also review issues and tag them with difficulty and a [`help wanted`](https://waffle.io/ipfs/js-ipfs?search=help%20wanted) label, so that it is easy to find place where you can contribute to the project.
 

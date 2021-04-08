@@ -30,7 +30,7 @@ This feature is a redesign of how we're thinking about pinning and includes some
 
 Command-line users benefit from `ipfs pin remote` commands, simplifying remote pinning operations. The built-in pinning service API client also executes all necessary remote calls under the hood:
 
-![go-ipfs 0.8.0 + pinning service flow diagram](/blog-125-go-ipfs-0-8-0-diagram.png)
+![go-ipfs 0.8.0 + pinning service flow diagram](../assets/blog-125-go-ipfs-0-8-0-diagram.png)
 
 As long as a pinning service supports the vendor-agnostic [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/), it can be used directly in go-ipfs. (If you're a Pinata user, you can already [check out their docs](https://pinata.cloud/documentation#PinningServicesAPI) for how to set everything up.)
 

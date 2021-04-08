@@ -11,6 +11,7 @@
       <span itemprop="name" class="flex flex-row">
         <router-link
           :to="{ path: $localePath, query: { author: piece.trim() } }"
+          rel="nofollow"
         >
           <span
             :class="computedClassName"

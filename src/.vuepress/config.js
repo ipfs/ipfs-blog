@@ -64,7 +64,6 @@ module.exports = {
   title: 'IPFS Blog & News',
   description:
     'All the latest information about the IPFS Project in one place: blog posts, release notes, videos, news coverage, and more.',
-  domain: CANONICAL_BASE,
   locales: {
     '/': {
       lang: 'EN',
@@ -91,9 +90,12 @@ module.exports = {
       md.use(require('markdown-it-footnote'))
       md.use(require('markdown-it-task-lists'))
       md.use(require('markdown-it-deflist'))
+      md.use(require('markdown-it-imsize'))
+      md.use(require('markdown-it-image-lazy-loading'))
     },
   },
   themeConfig: {
+    domain: CANONICAL_BASE,
     locales: {
       '/': themeConfigDefaults,
       '/zh-cn/': {
@@ -152,7 +154,6 @@ module.exports = {
     ],
     [require('./plugins/pageData')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
-    ['vuepress-plugin-img-lazy'],
     [
       '@vuepress/blog',
       {
@@ -226,11 +227,11 @@ module.exports = {
           ['_blog'].some((folder) => $page.regularPath.startsWith('/' + folder))
             ? 'article'
             : 'website',
-        url: (_, $site, path) => ($site.domain || '') + path,
+        url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
         image: ($page, $site) =>
           $page.frontmatter.header_image
-            ? ($site.domain || '') + $page.frontmatter.header_image
-            : ($site.domain || '') + '/social-card.png',
+            ? ($site.themeConfig.domain || '') + $page.frontmatter.header_image
+            : ($site.themeConfig.domain || '') + '/social-card.png',
         publishedAt: ($page) =>
           $page.frontmatter.date &&
           new Date($page.frontmatter.date).toISOString(),
@@ -238,6 +239,7 @@ module.exports = {
           $page.lastUpdated && new Date($page.lastUpdated).toISOString(),
       },
     ],
+    [require('./plugins/vuepress-plugin-og-image')],
     ['vuepress-plugin-robots', { host: CANONICAL_BASE }],
     [
       '@vuepress/html-redirect',
@@ -250,6 +252,15 @@ module.exports = {
   extraWatchFiles: ['.vuepress/config/head.js'],
   chainWebpack: (config, isServer) => {
     config.module.rules.delete('svg')
+
+    config.module
+      .rule('images')
+      .use('url-loader')
+      .loader('url-loader')
+      .tap((options) => {
+        options.limit = -1
+        return options
+      })
 
     // prettier-ignore
     config.module

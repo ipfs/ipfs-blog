@@ -13,8 +13,8 @@ tags:
 
 Today we're excited to announce the launch of a [brand new ProtoSchool tutorial exploring the **Regular Files API**](https://proto.school/#/regular-files-api), built by the awesome [Gil Domingues](https://github.com/dominguesgm). 🎉
 
-![Tutorial Table of Contents](/074-explore-the-files-api-on-protoschool-toc_screenshot.png)
-![Code Challenge](/074-explore-the-files-api-on-protoschool-challenge_screenshot.png)
+![Tutorial Table of Contents](../assets/074-explore-the-files-api-on-protoschool-toc_screenshot.png)
+![Code Challenge](../assets/074-explore-the-files-api-on-protoschool-challenge_screenshot.png)
 
 This new tutorial explores the methods at the top-level of js-ipfs (`add`, `get`, `cat`, etc.) that are custom-built for working with files. We refer to these methods as the Regular Files API to distinguish them from the Mutable File System (MFS). MFS mimics a more traditional file system interface with methods like `files.cp` and `files.mkdir`, but it hides the complexity of immutable content addressing in IPFS. Check out the [first lesson](https://proto.school/#/regular-files-api/01) of the new tutorial for more on the differences between these two approaches, as well as some important distinctions between the Files API and the DAG API.
 
@@ -48,7 +48,7 @@ If you'd like to dig a little deeper, we recommend checking out the **Understand
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
-[![Video: Understanding How IPFS Deals with Files](/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
+[![Video: Understanding How IPFS Deals with Files](../assets/core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 

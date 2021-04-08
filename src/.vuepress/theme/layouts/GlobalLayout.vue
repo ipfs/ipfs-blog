@@ -38,7 +38,9 @@ export default {
   },
 
   beforeMount() {
-    countly.loadScript()
+    if (!this.$isServer && this.$themeConfig.domain) {
+      countly.loadScript()
+    }
   },
 
   methods: {

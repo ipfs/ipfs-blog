@@ -44,8 +44,6 @@ export function loadScript() {
   Track an event to countly with the provided data
 */
 export function trackEvent(event, data = {}) {
-  // console.info('[countly]', 'trackEvent()', event, data)
-
   window.Countly.q.push([
     'add_event',
     {

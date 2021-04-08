@@ -12,7 +12,7 @@ author: Jenn Turner
 
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
-![IPFS in Brave - Native Access to the Distributed Web](/2021-01-19-ipfs-in-brave.png)
+![IPFS in Brave - Native Access to the Distributed Web](../assets/2021-01-19-ipfs-in-brave.png)
 
 ## IPFS now natively supported in Brave web browser
 
@@ -26,7 +26,7 @@ Join us on January 22, as we kick off 2021 with some very big plans! Our feature
 
 [Register to attend](https://www.meetup.com/San-Francisco-IPFS/events/275755941/)
 
-![IPFS in Browsers](/ipfs-and-igalia-collaborate-on-dweb-in-browsers-header-image.png)
+![IPFS in Browsers](../assets/ipfs-and-igalia-collaborate-on-dweb-in-browsers-header-image.png)
 
 ## Igalia and IPFS join forces to empower the dweb
 

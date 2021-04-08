@@ -31,7 +31,7 @@ This workshop introduced a few awesome visualization and learning tools that you
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
 
-[![Video: Understanding How IPFS Deals with Files](/057-ipfs-camp-course-videos-core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
+[![Video: Understanding How IPFS Deals with Files](../assets/057-ipfs-camp-course-videos-core-a-thumbnail.png)](https://youtu.be/Z5zNPwMDYGg)
 
 _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 
@@ -41,7 +41,7 @@ This course covers all the stuff that happens _after_ you add a file to IPFS, hi
 
 Watch the video below or check out the slides (available on [Google Slides with speaker notes](https://docs.google.com/presentation/d/1UOX-a1lCxi-LOyEOe9VEFRcxg_j93Xkywwa4Y95TJaw/edit?usp=sharing) or as a [PDF](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_D/IPFS_Camp_Core_Course_D_Slides.pdf))!
 
-[![Video: The Lifecycle of Data in DWeb](/057-ipfs-camp-course-videos-core-d-thumbnail.png)](https://youtu.be/fLUq0RkiTBA)
+[![Video: The Lifecycle of Data in DWeb](../assets/057-ipfs-camp-course-videos-core-d-thumbnail.png)](https://youtu.be/fLUq0RkiTBA)
 
 _Video: [The Lifecycle of Data in DWeb](https://youtu.be/fLUq0RkiTBA)_
 

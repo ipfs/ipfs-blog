@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-white rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-white rounded overflow-hidden flex flex-col"
     itemprop="mainEntityOfPage"
   >
     <article
@@ -20,7 +20,7 @@
           @click="handleVideoClick"
         >
           <LazyImage
-            class="h-full embed-responsive-item"
+            class="h-full embed-responsive-item transform hover:scale-105 duration-500 ease-in-out"
             img-class="w-full h-full object-cover"
             itemprop="image"
             :alt="title"
@@ -39,7 +39,7 @@
         </div>
         <div v-else class="cover embed-responsive embed-responsive-og">
           <LazyImage
-            class="h-full embed-responsive-item"
+            class="h-full embed-responsive-item transform hover:scale-105 duration-500 ease-in-out"
             img-class="h-full object-cover"
             itemprop="image"
             :alt="title"

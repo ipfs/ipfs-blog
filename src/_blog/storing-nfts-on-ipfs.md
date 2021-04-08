@@ -1,16 +1,17 @@
 ---
 tags:
-- NFTs
+  - NFTs
 title: Storing NFTs on IPFS
-description: Stand the test of time — learn best practices for IPFS addressing and
+description:
+  Stand the test of time — learn best practices for IPFS addressing and
   storage for NFT data.
 author: Yusef Napora, Mitch Wagner
 date: 2021-04-05
-permalink: "/2021-04-05-storing-nfts-on-ipfs/"
+permalink: '/2021-04-05-storing-nfts-on-ipfs/'
 translationKey: ''
-header_image: "/128-nft-header.png"
-
+header_image: '/128-nft-header.png'
 ---
+
 Permanence and immutability are part of the core value proposition of a non-fungible token (NFT). Unfortunately, many NFTs being targeted at consumers today offer neither of these properties due to fundamental design flaws. It is common to hear claims that NFTs “live on a blockchain forever”, but frequently, due to the cost and space limitations of storing data on a blockchain, only the ownership _record_ is actually stored, with metadata linking to the actual content of the NFT.
 
 All too often, [these links are fragile](https://www.vice.com/en/article/pkdj79/peoples-expensive-nfts-keep-vanishing-this-is-why), and direct the user to a specific _location_ using the HTTP protocol, rather than a specific asset. This means that the content pointed to by the link could change or go offline at any point in the future, leaving the original asset lost forever (and the record of ownership worthless).
@@ -22,6 +23,7 @@ The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs t
 IPFS [content identifiers](https://docs.ipfs.io/guides/concepts/cid/) (CIDs) are an extremely robust and flexible way to uniquely identify any content, no matter where or how it is stored. To take maximum advantage of these strengths, developers should adhere to the following recommendations and conventions for linking to IPFS data.
 
 ### Linking Overview
+
 This blog post is not intended to be a comprehensive explanation of CIDs (for that, see other [fantastic resources](https://docs.ipfs.io/how-to/address-ipfs-on-web/#dweb-addressing-in-brief)). However, readers should be aware of the following distinctions:
 
 #### CID
@@ -36,7 +38,7 @@ We recommend converting CIDs to IPFS URIs whenever storing them on disk, especia
 
 #### IPFS URI
 
- A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), or URI, is used to specify a particular piece of content in a given context. The context is determined by the URI scheme (appended to the URI as a prefix, followed by `://`). The URI scheme for IPFS is simply `ipfs`. The URI can optionally include a path appended to the end.
+A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), or URI, is used to specify a particular piece of content in a given context. The context is determined by the URI scheme (appended to the URI as a prefix, followed by `://`). The URI scheme for IPFS is simply `ipfs`. The URI can optionally include a path appended to the end.
 
 Examples:
 
@@ -61,7 +63,7 @@ Developers should format links differently, depending on context.
 
 #### On-Chain
 
-An NFT smart contract should return an IPFS URI to the assets and metadata associated with each token. 
+An NFT smart contract should return an IPFS URI to the assets and metadata associated with each token.
 
 For example: `ipfs://bafybeibnsoufr2renqzsh347nrx54wcubt5lgkeivez63xvivplfwhtpym/metadata.json`
 

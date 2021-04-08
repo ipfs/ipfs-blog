@@ -47,14 +47,29 @@ export default {
     showComments: null,
   }),
   mounted() {
+    const ipfsPathRegExp = /^(\/(?:ipfs|ipns)\/[^/]+)/
+    const ipfsPathPrefix =
+      (window.location.pathname.match(ipfsPathRegExp) || [])[1] || ''
+
+    if (ipfsPathPrefix) {
+      Array.from(document.querySelectorAll('iframe')).forEach((iframe) => {
+        const src = iframe.getAttribute('src')
+        if (src.startsWith('/')) {
+          iframe.setAttribute('src', ipfsPathPrefix + src)
+        }
+      })
+    }
+
     this.showComments =
       window.location.hostname === 'blog.ipfs.io' ||
       window.location.hostname === 'blog.ipfs.io.ipns.localhost:8080' ||
       window.location.hostname === '127.0.0.1:8080/ipns/blog.ipfs.io/' ||
       window.location.hostname === 'ipfs-blog.on.fleek.co' ||
-      window.location.hostname === 'ipfs-blog.on.fleek.co.ipns.localhost:8080' ||
+      window.location.hostname ===
+        'ipfs-blog.on.fleek.co.ipns.localhost:8080' ||
       window.location.hostname === 'ipfs-blog-staging.on.fleek.co' ||
-      window.location.hostname === 'ipfs-blog-staging.on.fleek.co.ipns.localhost:8080'
+      window.location.hostname ===
+        'ipfs-blog-staging.on.fleek.co.ipns.localhost:8080'
   },
 }
 </script>

@@ -46,7 +46,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - [Matters.news](https://matters.news/faq) is a news publishing site hosted on IPFS with approximately 10K+ active users!
 - [galacteek](https://github.com/eversum/galacteek) is an experimental multi-platform Qt5-based browser/toolbox for the IPFS peer-to-peer network.
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 

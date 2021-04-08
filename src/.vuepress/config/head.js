@@ -9,7 +9,6 @@ const favicons = ['16x16', '32x32', '48x48'].map((size) => [
 ])
 
 module.exports = [
-  ['link', { rel: 'stylesheet', href: '/fonts.css' }],
   ['link', { rel: 'manifest', href: '/site.webmanifest' }],
   [
     'link',
@@ -23,8 +22,12 @@ module.exports = [
       href: '/apple-touch-icon.png',
     },
   ],
+  [
+    'meta',
+    { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+  ],
   ['meta', { name: 'theme-color', content: '#16161F' }],
   ['meta', { name: 'msapplication-TileColor', content: '#156ff7' }],
-  ['meta', { name: 'apple-mobile-web-app-title', content: 'Protocol Labs' }],
-  ['meta', { name: 'application-name', content: 'Protocol Labs' }],
+  ['meta', { name: 'apple-mobile-web-app-title', content: 'IPFS Blog & News' }],
+  ['meta', { name: 'application-name', content: 'IPFS Blog & News' }],
 ].concat(favicons)

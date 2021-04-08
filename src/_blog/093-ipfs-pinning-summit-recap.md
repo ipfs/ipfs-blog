@@ -14,7 +14,7 @@ tags:
   - 'project planning'
 ---
 
-![](/093-ipfs-pinning-summit-recap-header-image.png)
+![](../assets/093-ipfs-pinning-summit-recap-header-image.png)
 
 The first-ever [IPFS Pinning Summit](https://ipfspinningsummit.com/) brought together [IPFS pinning services](https://docs.ipfs.io/guides/concepts/pinning/), infra providers, and users for 2 days of presentations & meetings to discuss the current state of IPFS infrastructure, services, and tools - and the future opportunities in this space.
 

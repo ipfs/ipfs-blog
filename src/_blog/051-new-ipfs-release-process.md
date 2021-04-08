@@ -11,7 +11,7 @@ tags:
 
 **go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases!**
 
-![go-ipfs-release-process-illustration](/go-ipfs-release-process.png)
+![go-ipfs-release-process-illustration](../assets/go-ipfs-release-process.png)
 
 IPFS is growing and maturing. We're seeing many more users in our network and
 have recognised the need to level up our release process to deliver a more

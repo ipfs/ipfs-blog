@@ -43,7 +43,7 @@ Instead of forking and/or starting fresh, this project aims to support and build
 
 ## What can be expected, and when?
 
-![Rust IPFS Timeline](/rust-ipfs-timeline.png)
+![Rust IPFS Timeline](../assets/rust-ipfs-timeline.png)
 
 As you can see in the [Rust-IPFS DevGrant Roadmap](https://github.com/ipfs/devgrants/tree/master/open-grants/ipfs-rust) implementation work
 takes place mostly over early Q2 2020 and covers the use case of **IPLD applications**,

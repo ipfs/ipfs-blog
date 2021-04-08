@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group bg-white rounded overflow-hidden flex flex-col transform hover:scale-105 duration-300 ease-in-out"
+    class="group bg-white rounded overflow-hidden flex flex-col"
     itemprop="mainEntityOfPage"
     :to="path"
   >
@@ -13,8 +13,8 @@
       <div class="cover embed-responsive embed-responsive-og">
         <router-link :to="path" class="embed-responsive-item">
           <LazyImage
-            class="h-full"
-            img-class="h-full object-cover"
+            class="h-full transform hover:scale-105 duration-500 ease-in-out"
+            img-class="w-full h-full object-cover"
             itemprop="image"
             :alt="title"
             :src="`${

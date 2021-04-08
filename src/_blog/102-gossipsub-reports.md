@@ -11,7 +11,7 @@ tags:
   - 'pubsub'
 ---
 
-![Gossipsub logo](/Gossipsub_fullcolor.png =400x)
+![Gossipsub logo](../assets/Gossipsub_fullcolor.png =400x)
 
 We are back with a direct follow up on the [Gossipsub v1.1 release from May](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1) with the much awaited Evaluation Report and three other presents we have for you.
 
@@ -23,7 +23,7 @@ You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7
 
 ## 📊 Evaluation Report
 
-[![](/report-eval.png =600x)](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4)
+[![](../assets/report-eval.png =600x)](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4)
 
 We are sharing with you a comprehensive, 61-page evaluation report, in which you can learn how we approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions we were able to take from such evaluation. With this evaluation, we demonstrate that GossipSub is resilient against all of the attacks studied, capable of recovering the mesh and meeting the message delivery deadline requirements of the Filecoin and the ETH2.0 blockchains.
 
@@ -43,7 +43,7 @@ These are all very challenging attacks, which we wanted to test GossipSub agains
 
 ## 🔏 Security Audit by Least Authority
 
-![](/report-la.png =600x)
+![](../assets/report-la.png =600x)
 
 Additionally, we are delighted to release Least Authority’s audit report for GossipSub. Least Authority has carried out an extensive audit on GossipSub v1.1 hardening extensions, both in theory and in implementation.
 
@@ -53,7 +53,7 @@ Least Authority produced a report detailing all of the tests they have carried o
 
 ## 📜 Gossipsub Paper
 
-[![](/paper.png =600x)](https://arxiv.org/abs/2007.02754)
+[![](../assets/paper.png =600x)](https://arxiv.org/abs/2007.02754)
 
 Finally, we are proud to share with you a preprint of a 16-page paper that puts everything together, justifies our design choices, and outlines the most important results we have gathered throughout. With this paper we want to put everything in one place, from the spec, to the details of the test setup, and the insights we have gathered from the most challenging of attacks, in a concise manner. The paper benchmarks performance of GossipSub with Bitcoin’s broadcast/flooding protocol, ETH1.0’s pubsub protocol and the vanilla version of GossipSup (the one without mitigation strategies and the scoring function integrated). The performance improvements brought by GossipSub v1.1 are really impressive and certainly rewarding of the effort that has gone into the design and testing of the protocol.
 

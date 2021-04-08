@@ -19,7 +19,7 @@ Here are some of the highlights for the [first week of March](https://github.com
 
 #### [**station**](https://github.com/ipfs/station)
 
-![Station](/station.png)
+![Station](../assets/station.png)
 
 The new version of [station](https://github.com/ipfs/station) is ready for developer preview! `station` is one of the easiest ways to get an IPFS daemon running on your machine. It acts as a service and you get many convenient features, such as the ability to turn an IPFS node on through a GUI and drag and drop to share through IPFS. To try it out, you need Node.js 4 ([installation instructions here](https://nodejs.org/en/)) and npm 3 (which comes with Node) installed. Then, do the following:
 
@@ -98,7 +98,7 @@ central server for message exchange between peers.
 
 #### [**fc00**](https://github.com/fc00/spec)
 
-![lgierth in Paris](/lgierth-in-paris.jpeg)
+![lgierth in Paris](../assets/lgierth-in-paris.jpeg)
 
 [@lgierth](https://github.com/lgierth) spent a productive week in Paris, and chatted with [@cjdelisle](https://github.com/cjdelisle) and [@ansuz](https://github.com/ansuz) at [@xwiki](https://twitter.com/xwiki) about the state and future of cjdns/fc00, layed out ideas for routing improvements, and drafted spec documents for the switch and cryptoauth layers. You can find those specs [here](https://github.com/fc00/spec/pulls) (they'll be updated soon). Work will continue on these for the rest of March. The switch and routing layers of fc00 might be the foundation of a smarter swarm for IPFS/libp2p, so this is all very exciting.
 
@@ -118,7 +118,7 @@ central server for message exchange between peers.
 
 #### [IPFS Dead drop](https://github.com/c-base/ipfs-deaddrop)
 
-![cbase deadrop](/ipfs-dead-drop.ppeg 'Photo taken and cropped from https://www.flickr.com/photos/bergie/24769765569/in/datetaken-public/')
+![cbase deadrop](../assets/ipfs-dead-drop.jpeg 'Photo taken and cropped from https://www.flickr.com/photos/bergie/24769765569/in/datetaken-public/')
 
 Some members of [c-base](http://www.c-base.org/) have written a dead drop-like system that automatically uploads files from a USB memory stick to IPFS. When you plug a USB memory into the device, it will automatically access the memory stick and publish all the files on the web. Thanks to IPFS the files are instantly available to the whole world. Check out [deaddrops.com](https://deaddrops.com/) for more information about dead drops.
 

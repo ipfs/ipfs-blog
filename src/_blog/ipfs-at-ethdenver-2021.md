@@ -16,7 +16,7 @@ header_image: '/2021-03-01-cardheader-ipfs-at-ethdenver.png'
 
 The annual premier hackathon event for the North American Ethereum community, ETHDenver and ColoradoJam, has come to a close. The 2021 event was 100% virtual, utilizing the gaming platform Gamerjibe as a virtual event venue, creating a unique and refreshing way for the dweb community to gather together.
 
-![ETHDenver & ColoradoJam 2021 Bounty, Track & Quadratic Funding Winners](/2021-02-26-blog-ethdenver-winners.png)
+![ETHDenver & ColoradoJam 2021 Bounty, Track & Quadratic Funding Winners](../assets/2021-02-26-blog-ethdenver-winners.png)
 
 ## Event highlights
 
@@ -29,7 +29,7 @@ When it came to building with IPFS, we saw NFT marketplaces, decentralized and o
 
 See all of the [ETHDenver submissions here](https://ethdenver2021.devfolio.co/submissions) and read [about the winners](https://medium.com/ethdenver/ethdenver-coloradojam-2021-bounty-track-quadratic-funding-winners-805cf5f2de76), too!
 
-![Folks from Slate and Textile chill in the bean bag area of the Shill Zone](/2021-02-26-blog-virtual-castle.jpeg)
+![Folks from Slate and Textile chill in the bean bag area of the Shill Zone](../assets/2021-02-26-blog-virtual-castle.jpeg)
 
 ## The Virtual Castle
 
@@ -37,7 +37,7 @@ Alongside the event Discord, the livestream, and the hacks, ETHDenver also creat
 
 In lieu of a sponsor booth, the IPFS Help Desk returned! Folks from IPFS, Slate, Fleek, Pinata, Opera, and Foundation all took turns hosting as their digital avatars, even occasionally running into a rainbow Pegabufficorn.
 
-![The IPFS Help Desk at ETHDenver 2021](/2021-02-26-blog-help-desk.png)
+![The IPFS Help Desk at ETHDenver 2021](../assets/2021-02-26-blog-help-desk.png)
 
 ## On the main stage
 

@@ -1,16 +1,17 @@
 ---
 tags:
-- identity
+  - identity
 title: Own Your Identity with ION
-description: The new decentralized identity network launches with all transaction
+description:
+  The new decentralized identity network launches with all transaction
   data distributed with IPFS.
 author: Dietrich Ayala
 date: 2021-03-24
-permalink: "/2021-03-24-own-your-identity-with-ion/"
+permalink: '/2021-03-24-own-your-identity-with-ion/'
 translationKey: ''
-header_image: "/2021-03-26-cardheader-127-ion-header.png"
-
+header_image: '/2021-03-26-cardheader-127-ion-header.png'
 ---
+
 **We are many people!** Whether on Twitter, Zoom or paying the electricity bill, we assume identities to interact with others online. How much of that identity is you? How much of “you” is decided by those services? Why can’t the bag of bits that is “you” stick around while hopping from online service to online service?
 
 Well now it can! Decentralized identity services have matured to a point where usage is simple, they’re backed by public networks firmly rooted into the global business firmament, and now we’re seeing those businesses deploy them in earnest.
@@ -25,7 +26,7 @@ We’ve been working with them to support their use of IPFS since 2019. IPFS com
 
 Additionally, ION has a network explorer at [identity.foundation/ion/explorer/](https://identity.foundation/ion/explorer/).
 
-![ION network explorer](/ion-explorer.png)
+![ION network explorer](../assets/ion-explorer.png)
 
 ## Using and Contributing to ION
 

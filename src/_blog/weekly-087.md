@@ -14,7 +14,7 @@ tags:
 
 Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
 
-![Announcing IPFS 0.5](/090-go-ipfs-0-5-0-header-image.png)
+![Announcing IPFS 0.5](../assets/090-go-ipfs-0-5-0-header-image.png)
 
 ## go-ipfs 0.5.0 is officially here 🚀
 

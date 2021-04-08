@@ -11,11 +11,11 @@ tags:
   - 'libp2p'
 ---
 
-![](/ipfs-devs-meeting-july-2018.png)
+![](../assets/ipfs-devs-meeting-july-2018.png)
 
 Last July we hosted the first ever IPFS and Libp2p developer meetings to bring together a small group of core developers and major users of the protocols. They were a huge success! We are incredibly thankful for everyone's participation, energy, enthusiasm - and for sharing their knowledge with the whole group.
 
-![](/devs-meeting-july-2018-group.gif)
+![](../assets/devs-meeting-july-2018-group.gif)
 
 The week was great for core developers, contributors and researchers to spend time together diving deep on open design problems, demoing exciting new tools and products being built on or around IPFS and Libp2p, and exploring the path forward for the protocols and working groups. Check out the [jam-packed schedule](https://developersmeetingsberlin2018.sched.com/) to see what we discussed.
 

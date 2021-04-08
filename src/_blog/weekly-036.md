@@ -67,7 +67,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 - The [AKASHA Foundation](https://akasha.org/about/), a non-profit born at the intersection of blockchain and collective intelligence, is currently hiring!
 - Check out this web app to check [a public IPFS gateway state](https://ipfs.fooock.com/)
 
-![](/ipfs-camp-2019.png)
+![](../assets/ipfs-camp-2019.png)
 
 ## Join us at the first ever IPFS Camp
 
