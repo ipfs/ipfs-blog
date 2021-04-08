@@ -1,16 +1,17 @@
 ---
 tags:
-- weekly
+  - weekly
 title: Welcome to IPFS Weekly 123
-description: See ETHDenver projects, hang out with IPFS and friends, plus your files
+description:
+  See ETHDenver projects, hang out with IPFS and friends, plus your files
   for keeps forever - we promise!
 date: 2021-02-17
-permalink: "/weekly-123/"
+permalink: '/weekly-123/'
 translationKey: ipfs-weekly-123
-header_image: "/header-image-weekly-newsletter.png"
+header_image: '/header-image-weekly-newsletter.png'
 author: Jenn Turner
-
 ---
+
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## Your files 💖 for keeps forever 💖 with IPFS

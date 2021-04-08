@@ -1,15 +1,15 @@
 ---
 date: 2018-07-09
-permalink: "/40-js-ipfs-0-30/"
+permalink: '/40-js-ipfs-0-30/'
 title: js-ipfs 0.30.0 released
-description: 
+description:
 author: Alan Shaw
-header_image: "/header-image-js-ipfs-placeholder.png"
+header_image: '/header-image-js-ipfs-placeholder.png'
 tags:
-- js-ipfs
-- breaking change
-
+  - js-ipfs
+  - breaking change
 ---
+
 Feature parity with go-ipfs just got a whole lot closer!
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">js-ipfs 0.30 has been released live at the <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> Dev Meeting. Thank you everyone for all the love ❤️ <a href="https://t.co/YB9NfGM7WC">https://t.co/YB9NfGM7WC</a> and big hi5 to <a href="https://twitter.com/_alanshaw?ref_src=twsrc%5Etfw">@_alanshaw</a> for driving the whole release forward and being an awesome Lead Maintainer for <a href="https://twitter.com/hashtag/JS?src=hash&amp;ref_src=twsrc%5Etfw">#JS</a> <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> 🚀 <a href="https://t.co/6arftXUxBe">pic.twitter.com/6arftXUxBe</a></p>&mdash; David Dias (@daviddias) <a href="https://twitter.com/daviddias/status/1016364733107228673?ref_src=twsrc%5Etfw">July 9, 2018</a></blockquote>
