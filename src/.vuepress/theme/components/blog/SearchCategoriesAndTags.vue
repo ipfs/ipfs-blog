@@ -26,7 +26,7 @@
         placeholder="Search for words or #tags"
         track-by="name"
         label="name"
-        :limit="['xxl'].includes(this.$mq) ? tagsLimit : tagsList.length"
+        :limit="['xxl'].includes($mq) ? tagsLimit : tagsList.length"
         :options="resolvedTags"
         :multiple="true"
         :taggable="true"

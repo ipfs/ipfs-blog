@@ -1,16 +1,16 @@
 ---
 tags:
-- weekly
-- NFTs
+  - weekly
+  - NFTs
 title: Welcome to IPFS Weekly 128
 description: NFTs, NFTs, NFTs, plus a new GitHub action for IPFS!
 author: Jenn Turner
 date: 2021-03-24
-permalink: "/weekly-128/"
+permalink: '/weekly-128/'
 translationKey: ipfs-weekly-128
-header_image: "/header-image-weekly-newsletter.png"
-
+header_image: '/header-image-weekly-newsletter.png'
 ---
+
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## IPFS x NFTHack, a brief recap
@@ -19,12 +19,12 @@ NFTHack has come and gone, but if you missed it, check out all of the cool build
 
 Quick stats from NFTHack:
 
-* 👤 134 Users
-  * Almost 1/4 of all hackers at the event.
-* 🏗 \~10% of ALL projects used the JS client for nft.storage (182 projects total)
-  * 1,219 total downloads from npm (Mar 15 → Mar 21)
-* 📌 1,204 NFTs stored
-* 💿 890MB of NFT data stored
+- 👤 134 Users
+  - Almost 1/4 of all hackers at the event.
+- 🏗 \~10% of ALL projects used the JS client for nft.storage (182 projects total)
+  - 1,219 total downloads from npm (Mar 15 → Mar 21)
+- 📌 1,204 NFTs stored
+- 💿 890MB of NFT data stored
 
 Looking for more on NFTs? [Join our April meetup](https://www.meetup.com/San-Francisco-IPFS/events/276123324/) to learn more about what people are building with IPFS x NFTs.
 
@@ -42,10 +42,10 @@ Interested in learning about how to retrieve Filecoin deals for free via IPFS? C
 
 ## Brand new on IPFS
 
-* [Nft.storage](https://nft.storage/) is a brand new service in private BETA, built specifically for storing off-chain NFT data.
-* [Taopaipai](https://mp.weixin.qq.com/s/uHU4dNuC96YTh0_BydpH5A), a leading photography service in China, will be using IPFS to store their photographs.
-* Introducing [chat.fullstack.cash](https://chat.fullstack.cash/), an instant messenger chat app built on IPFS!
-* A new GitHub Action [‘IPFS Remote Pinning’](https://github.com/marketplace/actions/ipfs-remote-pinning) helps you publish to IPFS Pinning Services.
+- [Nft.storage](https://nft.storage/) is a brand new service in private BETA, built specifically for storing off-chain NFT data.
+- [Taopaipai](https://mp.weixin.qq.com/s/uHU4dNuC96YTh0_BydpH5A), a leading photography service in China, will be using IPFS to store their photographs.
+- Introducing [chat.fullstack.cash](https://chat.fullstack.cash/), an instant messenger chat app built on IPFS!
+- A new GitHub Action [‘IPFS Remote Pinning’](https://github.com/marketplace/actions/ipfs-remote-pinning) helps you publish to IPFS Pinning Services.
 
 ## Around the ecosystem 🌏
 
@@ -80,4 +80,5 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
+
 <p><a href="https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230" class="button button-primary">Sign up now</a></p>

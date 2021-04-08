@@ -4,23 +4,23 @@ title: Meet the New IPFS Blog & News
 description: Introducing your new portal for the IPFS blog, news, and more!
 author: Jessica Schilling
 date: 2021-04-07
-permalink: "/2021-04-07-relaunched-ipfs-blog-news/"
+permalink: '/2021-04-07-relaunched-ipfs-blog-news/'
 translationKey: ''
-header_image: "/2021-04-05-cardheader-newblog.png"
-
+header_image: '/2021-04-05-cardheader-newblog.png'
 ---
-If you're a regular reader of the IPFS blog, you might notice something a little different around here: **The  IPFS Starlog is now the new and improved** [**IPFS Blog & News**](/)**!**
+
+If you're a regular reader of the IPFS blog, you might notice something a little different around here: **The IPFS Starlog is now the new and improved** [**IPFS Blog & News**](/)**!**
 
 ## What's new
 
 Starting with rounds of user interviewing and testing at the end of 2020, we set about improving this blog to give the global IPFS community more of what readers asked for: more worldwide IPFS news, more links to tutorials and other learning resources, and an easier place to find information about things like IPFS events and the latest release notes for IPFS projects and repos. To that end, we're excited to say that this new IPFS Blog & News site is your home for **not only the latest from the IPFS blog, but also info on ...**
 
-* [**Events**](/?category=Event), hackathons, and other virtual and real-world get-togethers
-* [**News coverage**](/?category=News%20coverage) from global media sources
-* [**IPFS tutorials**](/?category=Tutorial) and other how-tos from across the internet
-* [**Videos**](/?category=Video) on IPFS and related projects that have made the blog team go "wow"
-* [**Release notes**](/?category=Release%20notes) for `go-ipfs`, `js-ipfs`, GUI tools like IPFS Companion and IPFS Desktop, and other key  projects and repos
-* [**Academic papers**](/?category=Academic%20paper) featuring IPFS
+- [**Events**](/?category=Event), hackathons, and other virtual and real-world get-togethers
+- [**News coverage**](/?category=News%20coverage) from global media sources
+- [**IPFS tutorials**](/?category=Tutorial) and other how-tos from across the internet
+- [**Videos**](/?category=Video) on IPFS and related projects that have made the blog team go "wow"
+- [**Release notes**](/?category=Release%20notes) for `go-ipfs`, `js-ipfs`, GUI tools like IPFS Companion and IPFS Desktop, and other key projects and repos
+- [**Academic papers**](/?category=Academic%20paper) featuring IPFS
 
 Plus, we've added **subject tags**, **author indexing**, and **text search** to make it easier to find just what you're looking for — and to explore new ideas and topics from there.
 
