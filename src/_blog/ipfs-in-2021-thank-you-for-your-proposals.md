@@ -21,22 +21,22 @@ Now that the brainstorm period is over, all we can say is: **THANK YOU**! We’v
 
 The full list of themes and discussion can be found in the [IPFS roadmap repo](https://github.com/ipfs/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3A%222021+Theme+Proposal%22).
 
-<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/proposals.png"> </div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="../assets/proposals.png"> </div>
 
 <figcaption style="text-align:center;font-style:italic;padding-bottom:2em">Just a handful of the proposed themes</figcaption>
 
 But these numbers alone don’t sufficiently illustrate the quality of discourse that was seen! The discussion on topics was rich, connecting experts and collaborators across the IPFS community. [We had nuances raised around optimal content routing strategies](https://github.com/ipfs/roadmap/issues/76)...
 
-<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/content-routing.png"> </div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="../assets/content-routing.png"> </div>
 
 ...saw [discussion on various ways to integrate IPFS into browsers](https://github.com/ipfs/roadmap/issues/81)...
 
-<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="/browser-integration.png"> </div>
+<div style="width:70%;margin-left:15%;padding-bottom:2em"> <img alt="Proposals" src="../assets/browser-integration.png"> </div>
 
 ...and even a [meetup organized to discuss approaches to upgrading IPFS’s security model](https://github.com/ipfs/roadmap/issues/65!)
 
 <div style="width:70%;margin-left:15%;padding-bottom:2em">
-<img alt="Proposals" src="/security-model.png">
+<img alt="Proposals" src="../assets/security-model.png">
 </div>
 
 Thank you again for the time, thoughtfulness, and energy you all brought to this process!
