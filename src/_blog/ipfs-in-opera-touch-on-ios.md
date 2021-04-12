@@ -9,6 +9,8 @@ header_image: "/opera-ipfs-header.png"
 tags:
 - browsers
 - mobile
+- opera
+- ipfs
 author: Dietrich Ayala
 
 ---
