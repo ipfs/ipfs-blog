@@ -1,15 +1,15 @@
 ---
 date: 2020-03-30
-permalink: /2020-03-30-ipfs-in-opera-for-android/
+permalink: "/2020-03-30-ipfs-in-opera-for-android/"
 title: IPFS in Opera for Android
-description:
+description: 
 author: Dietrich Ayala
-header_image: /086-ipfs-in-opera-for-android-header-image.png
+header_image: "/086-ipfs-in-opera-for-android-header-image.png"
 tags:
-  - 'browsers'
-  - 'mobile'
----
+- browsers
+- mobile
 
+---
 ![IPFS built-in to Opera for Android](../assets/086-ipfs-in-opera-for-android-banner.png)
 
 As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
@@ -38,7 +38,7 @@ IPFS support is enabled by default, so as a user you don’t need to do anything
 
 You can load an IPFS content address such as:
 
-> [ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/](ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/)
+> <a href="ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/">ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/</a>
 
 If you click the link above in Opera for Android you’ll see Wikipedia, served from IPFS!
 
@@ -98,7 +98,7 @@ Making the default gateway configurable puts you, the user, in control of how yo
 
 ## Get Involved
 
-If you’re interested in IPFS in web browsers, join our channel on IRC on Freenode [#ipfs-in-web-browsers](ircs://irc.freenode.net/#ipfs-in-web-browsers) and [Matrix](https://matrix.to/#/!LiCFQLjSxdKuUVxokg:matrix.org?via=matrix.org&via=tomesh.net) to participate in the discussion!
+If you’re interested in IPFS in web browsers, join our channel on IRC on Freenode <a href="ircs://irc.freenode.net/#ipfs-in-web-browsers">#ipfs-in-web-browsers</a> and [Matrix](https://matrix.to/#/!LiCFQLjSxdKuUVxokg:matrix.org?via=matrix.org&via=tomesh.net) to participate in the discussion!
 
 You can file issues and follow along with our browser integration work at [ipfs/in-web-browsers](https://github.com/ipfs/in-web-browsers).
 
