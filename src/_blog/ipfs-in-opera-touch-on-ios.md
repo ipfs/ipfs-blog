@@ -10,7 +10,6 @@ tags:
 - browsers
 - mobile
 - opera
-- ipfs
 author: Dietrich Ayala
 
 ---
