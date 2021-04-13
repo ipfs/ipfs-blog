@@ -58,23 +58,91 @@ fields:
     target="_blank">Use this crop/scale tool</a> to save a revised image to your local
     machine, then upload here.
 - name: tags
-  type: tag_list
-  default: []
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+      section: ''
+      file: 
+      path: ''
+    options:
+    - whitepaper
+    - Kademlia
+    - security
+    - CDN
+    - DHT
+    - gaming
+    - hackathon
+    - official meetup
+    - conferences
+    - demo
+    - tutorial
+    - browsers
+    - community
+    - static publishing
+    - interview
+    - go-ipfs
+    - censorship
+    - Docker
+    - containerization
+    - identity
+    - pinning
+    - js-ipfs
+    - AEgir
+    - IPFS Companion
+    - IPFS Desktop
+    - IPFS Cluster
+    - libp2p
+    - IPFS Web UI
+    - ProtoSchool
+    - DAG
+    - IPLD
+    - CID
+    - API
+    - MFS
+    - Filecoin
+    - NFTs
+    - research
+    - infrastructure
+    - IPFS Camp
+    - weekly
+    - Ethereum
+    - release notes
+    - mobile
+    - opera
+    - breaking change
+    - project planning
+    - SECIO
+    - case study
+    - recap
+    - package managers
+    - content routing
+    - blockstore
+    - streaming
+    - Gossipsub
+    - pubsub
+    - QUIC
+    - gateways
+    - datastore
+    - Testground
+    - Rust
+    - Bitswap
+    - async/await
+    - docs
+    - collaborative cluster
+    - CRDTs
+    - CLI tools
+    - encryption
+    - Windows
+    - interoperability
+    - bootstrap nodes
   label: Tags
-  description: "<strong>Please copy/paste applicable values from this canonical tags
-    list (capitalization counts!):</strong><br>AEgir ... API ... async/await ... Bitswap
-    ... blockstore ... bootstrap nodes ... breaking change ... browsers ... case study
-    ... CDN ... censorship ... CID ...CLI tools ... collaborative cluster ... community
-    ... conferences ... containerization ... content routing ... CRDTs ... DAG ...
-    datastore ... demo ... DHT ... DNSLink ... Docker ... docs ... Drand ... encryption
-    ... Ethereum ... Filecoin ... gateways ... go-ipfs ... Gossipsub ... identity
-    ... infrastructure ... interoperability ... interview ... IoT ... IPFS Camp ...
-    IPFS Cluster ... IPFS Companion ... IPFS Desktop ... IPFS Web UI ... IPLD ...
-    IPNS ... js-ipfs ... Kademlia ... Kubernetes ... libp2p ... Linux ... MacOS ...
-    MFS ... mobile ... NFTs ... official meetup ... package managers ... pinning ...
-    project planning ... pubsub ... QUIC ... recap ... research ... Rust ... SECIO
-    ... security ... static publishing ... streaming ... Testground ... tutorial ...
-    TypeScript ... Windows ... weekly ... whitepaper"
+  description: <strong>Select all tags that apply.</strong> If you <em>really</em>
+    need to add a new tag, please <a href="https://github.com/ipfs/ipfs-blog/issues"
+    target="_blank">file an issue</a> with the details.
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
