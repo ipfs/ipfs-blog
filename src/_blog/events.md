@@ -10,7 +10,7 @@ data:
   card_image: "/2021-04-12-cardheader-gamedevjs-2021.png"
   tags:
   - gaming
-  - " hackathon"
+  - hackathon
 - title: IPFS Community Meetup, March 2021
   date: 2021-03-23
   path: https://www.meetup.com/San-Francisco-IPFS/events/276123396/
