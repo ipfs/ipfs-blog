@@ -4,6 +4,13 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: CivHacks 2021
+  date: 2021-04-23
+  path: https://www.civhacks.com/
+  card_image: "/2021-04-13-cardheader-civhacks.png"
+  tags:
+  - event
+  - hackathon
 - title: Gamedev.js Jam 2021
   date: 2021-04-13
   path: https://gamedevjs.com/jam/2021/
