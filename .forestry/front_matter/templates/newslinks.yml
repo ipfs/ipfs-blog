@@ -133,5 +133,7 @@ fields:
       - interoperability
       - boostrap nodes
     label: Tags
-    description: "<strong>Please select values from the list.</strong>"
+    description: <strong>Select all tags that apply.</strong> If you <em>really</em>
+      need to add a new tag, please <a href="https://github.com/ipfs/ipfs-blog/issues"
+      target="_blank">file an issue</a> with the details.
   description: <strong>To add a new link, click the "Add Link" button.</strong>
