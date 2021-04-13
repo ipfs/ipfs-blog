@@ -69,76 +69,76 @@ fields:
       file: 
       path: ''
     options:
-    - whitepaper
-    - Kademlia
-    - security
-    - CDN
-    - DHT
-    - gaming
-    - hackathon
-    - official meetup
-    - conferences
-    - demo
-    - tutorial
-    - browsers
-    - community
-    - static publishing
-    - interview
-    - go-ipfs
-    - censorship
-    - Docker
-    - containerization
-    - identity
-    - pinning
-    - js-ipfs
     - AEgir
+    - API
+    - async/await
+    - Bitswap
+    - blockstore
+    - bootstrap nodes
+    - breaking change
+    - browsers
+    - case study
+    - CDN
+    - censorship
+    - CID
+    - CLI tools
+    - collaborative cluster
+    - community
+    - conferences
+    - containerization
+    - content routing
+    - CRDTs
+    - DAG
+    - datastore
+    - demo
+    - DHT
+    - Docker
+    - docs
+    - encryption
+    - Ethereum
+    - Filecoin
+    - gaming
+    - gateways
+    - go-ipfs
+    - Gossipsub
+    - hackathon
+    - identity
+    - infrastructure
+    - interoperability
+    - interview
+    - IPFS Camp
+    - IPFS Cluster
     - IPFS Companion
     - IPFS Desktop
-    - IPFS Cluster
-    - libp2p
     - IPFS Web UI
-    - ProtoSchool
-    - DAG
     - IPLD
-    - CID
-    - API
+    - js-ipfs
+    - Kademlia
+    - libp2p
     - MFS
-    - Filecoin
-    - NFTs
-    - research
-    - infrastructure
-    - IPFS Camp
-    - weekly
-    - Ethereum
-    - release notes
     - mobile
+    - NFTs
+    - official meetup
     - opera
-    - breaking change
-    - project planning
-    - SECIO
-    - case study
-    - recap
     - package managers
-    - content routing
-    - blockstore
-    - streaming
-    - Gossipsub
+    - pinning
+    - project planning
+    - ProtoSchool
     - pubsub
     - QUIC
-    - gateways
-    - datastore
-    - Testground
+    - recap
+    - release notes
+    - research
     - Rust
-    - Bitswap
-    - async/await
-    - docs
-    - collaborative cluster
-    - CRDTs
-    - CLI tools
-    - encryption
+    - SECIO
+    - security
+    - static publishing
+    - streaming
+    - Testground
+    - tutorial
+    - weekly
+    - whitepaper
     - Windows
-    - interoperability
-    - bootstrap nodes
   label: Tags
   description: <strong>Select all tags that apply.</strong> If you <em>really</em>
     need to add a new tag, please <a href="https://github.com/ipfs/ipfs-blog/issues"
