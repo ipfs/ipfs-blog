@@ -20,9 +20,9 @@ Today, **Opera for Android 57** is live in the Google Play Store with default su
 
 This release is a huge leap forward for the IPFS project, with a couple of important milestones:
 
-- This is the first time IPFS features are _enabled by default_, right out of the box, in a production release of a major web browser.
-- This is the first time IPFS is implemented as an _addressable protocol_ in a production release of a mainstream web browser. You can type ipfs:// in the address bar, and Opera for Android will load the provided content address.
-- This is the first _mobile_ web browser that is shipping IPFS features in a production release, easing access to decentralized content on the devices used by most internet users around the world.
+* This is the first time IPFS features are _enabled by default_, right out of the box, in a production release of a major web browser.
+* This is the first time IPFS is implemented as an _addressable protocol_ in a production release of a mainstream web browser. You can type ipfs:// in the address bar, and Opera for Android will load the provided content address.
+* This is the first _mobile_ web browser that is shipping IPFS features in a production release, easing access to decentralized content on the devices used by most internet users around the world.
 
 This is not just a win for IPFS, but for the distributed web, peer-to-peer, and the idea of content addressability:
 
@@ -62,10 +62,10 @@ IPFS support in Opera for Android is enabled by a native protocol handler that u
 
 IPFS features in this implementation:
 
-- Implements the [IPFS Web Browser Addressing specification](https://github.com/ipfs/in-web-browsers/blob/master/ADDRESSING.md), both "ipfs://" and "ipns://"
-- Configurable HTTP gateway, with options to use gateways like `dweb.link`, Infura, or a local node
-- Supports [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
-- Supports mixed protocol use, such as loading images over IPFS in an HTTP web page
+* Implements the [IPFS Web Browser Addressing specification](https://github.com/ipfs/in-web-browsers/blob/master/ADDRESSING.md), both `ipfs://` and `ipns://`
+* Configurable HTTP gateway, with options to use gateways like `dweb.link`, Infura, or a local node
+* Supports [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
+* Supports mixed protocol use, such as loading images over IPFS in an HTTP web page
 
 Read on to learn more about these features.
 
@@ -76,7 +76,7 @@ Opera has implemented the protocol handler using the IPFS Web Browser Addressing
 Implementation of this specification means a browser supports schemes such as `ipfs://` or `ipns://`.
 In addition to navigating to content with these schemes in the address bar, mixed content scenarios are also possible. Examples are XMLHTTPRequest or Fetch requests, external style sheets, or images:
 
-> &lt;img src="ipfs://..."&gt;
+> <img src="ipfs://...">
 
 You can easily check compatibility and level of implementation using the [IPFS protocol handler smoketest page](https://ipfs.github.io/in-web-browsers/ipfs-protocol-handler-support-tests.html).
 
