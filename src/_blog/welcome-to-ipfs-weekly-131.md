@@ -48,15 +48,15 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 
 [Chief of Staff:](https://jobs.lever.co/protocol/dc3ca53d-b456-4f91-806d-4ec6b5821dc5) As Chief of Staff, you’ll play a key role enabling and supporting our CEO. The Chief of Staff will have an impact on the efficiency and productivity of the company, streamlining business initiatives, driving program management and communicating cross functional objectives. **Protocol Labs**, Remote.
 
-Software Engineers: Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. **Protocol Labs**, Remote.
+[Software Engineers](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. **Protocol Labs**, Remote.
 
-Research Scientists: Seeking research scientists in the following areas: cryptography, distributed systems, networking, independent research. **Protocol Labs**, Remote.
+[Research Scientists](https://jobs.lever.co/protocol): Seeking research scientists in the following areas: cryptography, distributed systems, networking, independent research. **Protocol Labs**, Remote.
 
-Senior Full Stack Engineer: This role is for someone with solid coding experience who likes to experiment, design, and learn new things. We are looking to fill this position soon. We are looking for someone who can rapidly scope and build new web applications and work with APIs and backend services. **Textile**, Remote.
+[Senior Full Stack Engineer](https://textile.breezy.hr/p/d59ca1308346-senior-full-stack-engineer): This role is for someone with solid coding experience who likes to experiment, design, and learn new things. We are looking to fill this position soon. We are looking for someone who can rapidly scope and build new web applications and work with APIs and backend services. **Textile**, Remote.
 
-Senior Go Engineer: As a Senior Go Engineer, you will be responsible for writing and maintaining code on the Textile Go libraries, including Threads, Buckets, Hub, and Powergate. This role is for someone with solid coding experience and the ability to lead new features. **Textile**, Remote.
+[Senior Go Engineer](https://textile.breezy.hr/p/421d4f71a227-senior-go-engineer): As a Senior Go Engineer, you will be responsible for writing and maintaining code on the Textile Go libraries, including [Threads](https://github.com/textileio/go-threads), [Buckets](https://github.com/textileio/go-buckets), [Hub](https://github.com/textileio/textile), and [Powergate](https://github.com/textileio/powergate). This role is for someone with solid coding experience and the ability to lead new features. **Textile**, Remote.
 
-Consensus Protocol and DLT Engineer:  Consensus is looking for a Lead Engineer with solid experience in building or working with consensus mechanisms such as Snow family, Clique, Aura, pBFT. Knowledge and experience with Ethereum, EVM and Smart Contracts is crucial as EVM-compatibility is key in the market. **Consensus**, Humanode, Remote.
+[Consensus Protocol and DLT Engineer](https://angel.co/company/humanode-2/jobs/1265884-consensus-protocol-and-dlt-engineer):  Consensus is looking for a Lead Engineer with solid experience in building or working with consensus mechanisms such as Snow family, Clique, Aura, pBFT. Knowledge and experience with Ethereum, EVM and Smart Contracts is crucial as EVM-compatibility is key in the market. **Consensus**, Humanode, Remote.
 
 **IPFS strives to make the web faster, safer, and more open.**
 
