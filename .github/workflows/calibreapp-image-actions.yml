@@ -1,4 +1,9 @@
 name: Compress Images
+with:
+  jpegQuality: '100'
+  jpegProgressive: true
+  pngQuality: '100'
+  webpQuality: '100'
 on:
   pull_request:
     paths:
