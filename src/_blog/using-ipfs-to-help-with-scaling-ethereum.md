@@ -35,11 +35,11 @@ More details for all prizes [here](https://hackmd.io/dHL5Hkb-SdOtlxTw7d7P_w?view
 
 ## But, where to get started… 🤔
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/PD0e89b4NBk](https://www.youtube.com/embed/PD0e89b4NBk "https://www.youtube.com/embed/PD0e89b4NBk")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PD0e89b4NBk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Learn how to use IPFS to deploy infrastructure in this video from IPFS Camp 2019.
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/Q0oe6i7d1u4](https://www.youtube.com/embed/Q0oe6i7d1u4 "https://www.youtube.com/embed/Q0oe6i7d1u4")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q0oe6i7d1u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Discover how Filecoin integrations create powerful opportunities for Web3 infrastructure.
 

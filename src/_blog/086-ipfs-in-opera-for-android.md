@@ -76,7 +76,9 @@ Opera has implemented the protocol handler using the IPFS Web Browser Addressing
 Implementation of this specification means a browser supports schemes such as `ipfs://` or `ipns://`.
 In addition to navigating to content with these schemes in the address bar, mixed content scenarios are also possible. Examples are XMLHTTPRequest or Fetch requests, external style sheets, or images:
 
-> <img src="ipfs://...">
+```html
+<img src="ipfs://...">
+```
 
 You can easily check compatibility and level of implementation using the [IPFS protocol handler smoketest page](https://ipfs.github.io/in-web-browsers/ipfs-protocol-handler-support-tests.html).
 
