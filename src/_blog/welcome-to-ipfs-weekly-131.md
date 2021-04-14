@@ -1,7 +1,8 @@
 ---
 publishing_date: 
 title: Welcome to IPFS Weekly 131
-description: ''
+description: Uniswap Interface hosting, a call for Filecoin user testers, and more
+  from around the ecosystem!
 author: Emily Vaughan
 date: 2021-04-14
 permalink: "/weekly-131/"
