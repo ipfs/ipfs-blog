@@ -1,6 +1,6 @@
 ---
 date: 2021-01-15
-url: '/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/'
+permalink: '/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/'
 translationKey: ''
 header_image: '/ipfs-and-igalia-collaborate-on-dweb-in-browsers-header-image.png'
 title: IPFS and Igalia collaborate on dweb in browsers
