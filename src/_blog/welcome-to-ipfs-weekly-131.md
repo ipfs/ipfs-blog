@@ -5,7 +5,7 @@ description: ''
 author: Emily Vaughan
 date: 2021-04-14
 permalink: "/weekly-131/"
-translationKey: weekly-131
+translationKey: ipfs-weekly-131
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,15 +13,15 @@ tags:
 ---
 Here’s what’s happening in the InterPlanetary File System galaxy!
 
-Decentralized Uniswap Interface Hosting on IPFS
+## Decentralized Uniswap Interface Hosting on IPFS
 
 Uniswap has merged the code to continuously deploy its interface on Crust Network! Hosting a website/DApp frontend on IPFS grants you several benefits, such as serverless hosting, potential resilience to DNS hijacks (together with IPNS/ENS), and high uptime. Uniswap, as one of the most widely used DEX’s (Decentralized Exchange), has been integrated with IPFS for approximately a year. This article explains the whole process in more detail, and also describes how to host a website in a more decentralized way using Crust.
 
-Help improve the Filecoin storage network!
+## Help improve the Filecoin storage network!
 
 The user research team at Protocol Labs is seeking members of the IPFS ecosystem to participate in an hour-long user testing session for the Filecoin storage network between April 19 and April 30. (No prior experience with Filecoin needed!) Participants who are selected and successfully complete these sessions will receive an Amazon gift card valued at $150 USD as compensation for their time. Complete this short survey to apply!
 
-Brand new on IPFS
+## Brand new on IPFS
 
 Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. Read more.
 
@@ -31,7 +31,7 @@ Apps are open for the Filecoin Launchpad Accelerator II. For startups building a
 
 Want to build a no-code NFT file but not sure where to start? Look no further! Learn how to do it with Zapier and IPFS.
 
-Around the ecosystem 🌏
+## Around the ecosystem 🌏
 
 * VideoCoin is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. Read more.
 * The Pinata team joined the NonFunGerbils podcast to chat about how IPFS and Pinata work, as well as current and future best practices for NFTs, and more. Listen.
@@ -39,11 +39,11 @@ Around the ecosystem 🌏
 * Want to catch up on crypto pop culture news? Check out the podcast and video series Pop Crypto Recap by Unstoppable Domains. Watch.
 * Cloudflare is running a series of developer challenges to play with some of their new features. Join the fun.
 
-Upcoming 📅
+## Upcoming 📅
 
 The April IPFS meetup will be an opportunity to showcase what the community has been building with NFTs! Sign up here to present, or register to attend on April 27th and be prepared to learn more about the world of IPFS x NFTs!
 
-Want to help build the new internet?
+## Want to help build the new internet?
 
 Chief of Staff: As Chief of Staff, you’ll play a key role enabling and supporting our CEO. The Chief of Staff will have an impact on the efficiency and productivity of the company, streamlining business initiatives, driving program management and communicating cross functional objectives. Protocol Labs, Remote.
 
@@ -59,4 +59,6 @@ Consensus Protocol and DLT Engineer:  Consensus is looking for a Lead Engineer w
 
 **IPFS strives to make the web faster, safer, and more open.**
 
-Get involved with IPFS by checking us out on GitHub, joining discussions on our community forum, or hitting us up in chat. Have a suggestion? Email us.
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+
+Get the IPFS Weekly in your inbox, each Tuesday. <p><a href="[https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230 "https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230")" class="button button-primary">Sign up now</a></p>
