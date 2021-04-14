@@ -16,33 +16,33 @@ Here’s what’s happening in the InterPlanetary File System galaxy!
 
 ## Decentralized Uniswap Interface Hosting on IPFS
 
-Uniswap has merged the code to continuously deploy its interface on Crust Network! Hosting a website/DApp frontend on IPFS grants you several benefits, such as serverless hosting, potential resilience to DNS hijacks (together with IPNS/ENS), and high uptime. Uniswap, as one of the most widely used DEX’s (Decentralized Exchange), has been integrated with IPFS for approximately a year. This article explains the whole process in more detail, and also describes how to host a website in a more decentralized way using Crust.
+Uniswap has merged the code to continuously deploy its interface on Crust Network! Hosting a website/DApp frontend on IPFS grants you several benefits, such as serverless hosting, potential resilience to DNS hijacks (together with IPNS/ENS), and high uptime. Uniswap, as one of the most widely used DEX’s (Decentralized Exchange), has been integrated with IPFS for approximately a year. [This article](https://medium.com/crustnetwork/decentralized-uniswap-interface-hosting-on-ipfs-18a78d1209ac) explains the whole process in more detail, and also describes how to host a website in a more decentralized way using Crust.
 
 ## Help improve the Filecoin storage network!
 
-The user research team at Protocol Labs is seeking members of the IPFS ecosystem to participate in an hour-long user testing session for the Filecoin storage network between April 19 and April 30. (No prior experience with Filecoin needed!) Participants who are selected and successfully complete these sessions will receive an Amazon gift card valued at $150 USD as compensation for their time. Complete this short survey to apply!
+The user research team at Protocol Labs is seeking members of the IPFS ecosystem to participate in an hour-long user testing session for the Filecoin storage network between April 19 and April 30. (No prior experience with Filecoin needed!) Participants who are selected and successfully complete these sessions will receive an Amazon gift card valued at $150 USD as compensation for their time. Complete this [short survey](https://airtable.com/shrOEfGSKe1WVALKi?prefill_Study=Filecoin%20storage%20and%20retrieval) to apply!
 
 ## Brand new on IPFS
 
-Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. Read more.
+Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. [Read more.](https://consensys.net/blog/press-release/palm-a-new-nft-ecosystem-and-studio-for-creators-announces-launch-of-first-project-with-damien-hirst/)
 
-IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! Check out our new blog.
+IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! [Check out our new blog.](https://blog.ipfs.io/)
 
-Apps are open for the Filecoin Launchpad Accelerator II. For startups building apps for the dweb through IPFS, Filecoin, and Ethereum networks.
+[Apps are open for the Filecoin Launchpad Accelerator II.](https://t.co/mg4k3PNQ8y?amp=1) For startups building apps for the dweb through IPFS, Filecoin, and Ethereum networks.
 
-Want to build a no-code NFT file but not sure where to start? Look no further! Learn how to do it with Zapier and IPFS.
+Want to build a no-code NFT file but not sure where to start? Look no further! [Learn how to do it with Zapier and IPFS.](https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7)
 
 ## Around the ecosystem 🌏
 
-* VideoCoin is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. Read more.
-* The Pinata team joined the NonFunGerbils podcast to chat about how IPFS and Pinata work, as well as current and future best practices for NFTs, and more. Listen.
-* Omni Analytics developed a Filecoin Miner Index API to help enthusiasts get a high-level overview of the health and performance of storage miners. Learn more.
-* Want to catch up on crypto pop culture news? Check out the podcast and video series Pop Crypto Recap by Unstoppable Domains. Watch.
-* Cloudflare is running a series of developer challenges to play with some of their new features. Join the fun.
+* VideoCoin is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. [Read more.](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/)
+* The Pinata team joined the NonFunGerbils podcast to chat about how IPFS and Pinata work, as well as current and future best practices for NFTs, and more. [Listen.](https://t.co/ig8zG1GQbP?amp=1)
+* Omni Analytics developed a Filecoin Miner Index API to help enthusiasts get a high-level overview of the health and performance of storage miners. [Learn more.](https://t.co/JdwItOWl4T?amp=1)
+* Want to catch up on crypto pop culture news? Check out the podcast and video series Pop Crypto Recap by Unstoppable Domains. [Watch.](https://t.co/LN88co720P?amp=1)
+* Cloudflare is running a series of developer challenges to play with some of their new features. [Join the fun.](https://t.co/Zrbg89xd2E?amp=1)
 
 ## Upcoming 📅
 
-The April IPFS meetup will be an opportunity to showcase what the community has been building with NFTs! Sign up here to present, or register to attend on April 27th and be prepared to learn more about the world of IPFS x NFTs!
+The April IPFS meetup will be an opportunity to showcase what the community has been building with NFTs! [Sign up here](https://protocollabs.typeform.com/to/hLGfKhxn) to present, or [register to attend](https://www.meetup.com/San-Francisco-IPFS/events/276123324/) on April 27th and be prepared to learn more about the world of IPFS x NFTs!
 
 ## Want to help build the new internet?
 
