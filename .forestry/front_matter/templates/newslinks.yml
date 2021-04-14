@@ -38,9 +38,8 @@ fields:
   - name: publishing_date
     type: datetime
     label: Publishing Date
-    description: When the event link should be published.<br>Use this to schedule
-      publishing the event in the future.<br>If you don't want to schedule, just ignore
-      this.
+    description: When the link should be published.<br>Use this to schedule publishing
+      the link in the future.<br>If you don't want to schedule, just ignore this.
     config:
       required: false
       date_format: 
