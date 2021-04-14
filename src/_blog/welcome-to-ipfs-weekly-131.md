@@ -24,21 +24,22 @@ The user research team at Protocol Labs is seeking members of the IPFS ecosystem
 
 ## Brand new on IPFS
 
-Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. [Read more.](https://consensys.net/blog/press-release/palm-a-new-nft-ecosystem-and-studio-for-creators-announces-launch-of-first-project-with-damien-hirst/)
-
-IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! [Check out our new blog.](https://blog.ipfs.io/)
-
-[Apps are open for the Filecoin Launchpad Accelerator II.](https://t.co/mg4k3PNQ8y?amp=1) For startups building apps for the dweb through IPFS, Filecoin, and Ethereum networks.
-
-Want to build a no-code NFT file but not sure where to start? Look no further! [Learn how to do it with Zapier and IPFS.](https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7)
+* Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. [Read more.](https://consensys.net/blog/press-release/palm-a-new-nft-ecosystem-and-studio-for-creators-announces-launch-of-first-project-with-damien-hirst/)
+* IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! [Check out our new blog.](https://blog.ipfs.io/)
+* [Apps are open for the Filecoin Launchpad Accelerator II.](https://t.co/mg4k3PNQ8y?amp=1) For startups building apps for the dweb through IPFS, Filecoin, and Ethereum networks.
+* Want to build a no-code NFT file but not sure where to start? Look no further! [Learn how to do it with Zapier and IPFS.](https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7)
 
 ## Around the ecosystem 🌏
 
-* VideoCoin is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. [Read more.](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/)
-* The Pinata team joined the NonFunGerbils podcast to chat about how IPFS and Pinata work, as well as current and future best practices for NFTs, and more. [Listen.](https://t.co/ig8zG1GQbP?amp=1)
-* Omni Analytics developed a Filecoin Miner Index API to help enthusiasts get a high-level overview of the health and performance of storage miners. [Learn more.](https://t.co/JdwItOWl4T?amp=1)
-* Want to catch up on crypto pop culture news? Check out the podcast and video series Pop Crypto Recap by Unstoppable Domains. [Watch.](https://t.co/LN88co720P?amp=1)
-* Cloudflare is running a series of developer challenges to play with some of their new features. [Join the fun.](https://t.co/Zrbg89xd2E?amp=1)
+VideoCoin is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. [Read more.](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/)
+
+The Pinata team joined the NonFunGerbils podcast to chat about how IPFS and Pinata work, as well as current and future best practices for NFTs, and more. [Listen.](https://t.co/ig8zG1GQbP?amp=1)
+
+Omni Analytics developed a Filecoin Miner Index API to help enthusiasts get a high-level overview of the health and performance of storage miners. [Learn more.](https://t.co/JdwItOWl4T?amp=1)
+
+Want to catch up on crypto pop culture news? Check out the podcast and video series Pop Crypto Recap by Unstoppable Domains. [Watch.](https://t.co/LN88co720P?amp=1)
+
+Cloudflare is running a series of developer challenges to play with some of their new features. [Join the fun.](https://t.co/Zrbg89xd2E?amp=1)
 
 ## Upcoming 📅
 
@@ -46,7 +47,7 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 
 ## Want to help build the new internet?
 
-[Chief of Staff:](https://jobs.lever.co/protocol/dc3ca53d-b456-4f91-806d-4ec6b5821dc5) As Chief of Staff, you’ll play a key role enabling and supporting our CEO. The Chief of Staff will have an impact on the efficiency and productivity of the company, streamlining business initiatives, driving program management and communicating cross functional objectives. **Protocol Labs**, Remote.
+[Chief of Staff](https://jobs.lever.co/protocol/dc3ca53d-b456-4f91-806d-4ec6b5821dc5): As Chief of Staff, you’ll play a key role enabling and supporting our CEO. The Chief of Staff will have an impact on the efficiency and productivity of the company, streamlining business initiatives, driving program management and communicating cross functional objectives. **Protocol Labs**, Remote.
 
 [Software Engineers](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. **Protocol Labs**, Remote.
 
@@ -62,4 +63,4 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 
 Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
-Get the IPFS Weekly in your inbox, each Tuesday. <p><a href="[https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230 "https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230")" class="button button-primary">Sign up now</a></p>
+Get the IPFS Weekly in your inbox, each Tuesday. [**Sign up now.**](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230)
