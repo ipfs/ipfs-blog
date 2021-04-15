@@ -22,7 +22,8 @@ Forestry uses the `staging` branch as a work-in-progress scratchpad for blog con
 
 - Use the "Content Types" section of Forestry's left-hand menu to drill down to the type of item (blog post, video, news coverage, event) you want to create/edit.
 - For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.io/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry, there are generic fallback images.)
-- To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page (this is useful if you want to add any HTML, such as a video or Twitter embed):<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
+- Want to embed a YouTube video in a blog post? Switch to raw markdown view and use `@[youtube](videoID)`, substituting the video's unique ID from the URL (e.g. `https://www.youtube.com/watch?v=eFbKKsEoQNg`) for `videoID`.
+- To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
 
 ### Forestry build preview tips
 
