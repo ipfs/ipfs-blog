@@ -4,6 +4,21 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: IPFS Community Meetup, April 2021
+  date: 2021-04-27
+  publishing_date: 
+  path: https://www.meetup.com/San-Francisco-IPFS/events/276123324/
+  card_image: "/2021-04-15-cardheader-ipfs-meetup-nft-april2021.png"
+  tags:
+  - NFTs
+  - official meetup
+- title: Cal Hacks hello:world
+  date: 2021-04-16
+  publishing_date: 2021-04-15 17:06:47 +0000
+  path: https://helloworld.calhacks.io/
+  card_image: "/2021-04-15-cardheader-hello-world.png"
+  tags:
+  - hackathon
 - title: Gamedev.js Jam 2021
   date: 2021-04-13
   path: https://gamedevjs.com/jam/2021/
