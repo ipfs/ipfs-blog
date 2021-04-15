@@ -4,6 +4,12 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Build a No Code NFT File Tool With Zapier and IPFS
+  date: 2021-04-09
+  path: https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7
+  card_image: "/2021-04-15-cardheader-zapier-nft-tool.png"
+  tags:
+  - NFTs
 - title: Decentralized Uniswap Interface Hosting on IPFS
   date: 2021-03-31
   path: https://medium.com/crustnetwork/decentralized-uniswap-interface-hosting-on-ipfs-18a78d1209ac
