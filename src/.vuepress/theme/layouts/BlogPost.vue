@@ -79,13 +79,18 @@ export default {
 
 .blog > iframe {
   @apply mx-auto;
+}
+
+.blog > iframe[src*='youtube'],
+.blog > iframe[src*='vimeo'] {
   @apply max-w-full;
   height: auto;
   aspect-ratio: 16 / 9;
 }
 
 @supports not (aspect-ratio: 1 / 1) {
-  .blog > iframe {
+  .blog > iframe[src*='youtube'],
+  .blog > iframe[src*='vimeo'] {
     @apply h-52;
     @apply sm:h-80;
   }
