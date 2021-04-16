@@ -247,6 +247,7 @@ module.exports = {
         countdown: 0,
       },
     ],
+    'vuepress-plugin-chunkload-redirect',
     ['vuepress-plugin-ipfs', IPFS_DEPLOY],
   ],
   extraWatchFiles: ['.vuepress/config/head.js'],

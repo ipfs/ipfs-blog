@@ -54,6 +54,7 @@
     "vue": "^2.6.12",
     "vuepress": "^1.8.2",
     "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-chunkload-redirect": "^1.0.3",
     "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-ipfs": "^1.0.2",
     "vuepress-plugin-robots": "^1.0.1",
