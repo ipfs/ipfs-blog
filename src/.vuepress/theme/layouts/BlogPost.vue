@@ -76,4 +76,23 @@ export default {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #d1d1d663;
 }
+
+.blog > iframe {
+  @apply mx-auto;
+}
+
+.blog > iframe[src*='youtube'],
+.blog > iframe[src*='vimeo'] {
+  @apply max-w-full;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+  .blog > iframe[src*='youtube'],
+  .blog > iframe[src*='vimeo'] {
+    @apply h-52;
+    @apply sm:h-80;
+  }
+}
 </style>
