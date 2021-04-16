@@ -3,6 +3,7 @@ const { reverse, sortBy } = require('lodash')
 // configure this to an absolute url to enable a generated sitemap & blog RSS feeds
 const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
+const SPEEDCURVE_ID = process.env.SPEEDCURVE_ID || ''
 
 const themeConfigDefaults = {
   dateFormat: 'DD MMMM YYYY',
@@ -134,6 +135,7 @@ module.exports = {
     },
   },
   plugins: [
+    [require('./plugins/vuepress-plugin-speedcurve'), { id: SPEEDCURVE_ID }],
     ['@vuepress/last-updated'],
     [
       'vuepress-plugin-clean-urls',
