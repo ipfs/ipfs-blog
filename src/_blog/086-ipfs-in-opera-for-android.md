@@ -7,6 +7,7 @@ author: Dietrich Ayala
 header_image: "/086-ipfs-in-opera-for-android-header-image.png"
 tags:
 - browsers
+- opera
 - mobile
 
 ---
