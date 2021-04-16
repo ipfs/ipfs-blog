@@ -1,5 +1,5 @@
 <template>
-  <Layout v-if="!$frontmatter.type">
+  <Layout v-if="isVisible">
     <article itemscope itemtype="https://schema.org/BlogPosting">
       <PostHero
         :title="$page.title"
@@ -46,7 +46,18 @@ export default {
   data: () => ({
     showComments: null,
   }),
+  computed: {
+    // hidden field set in plugins/pageData.js
+    isVisible() {
+      return !this.$root.$page.hidden
+    },
+  },
   mounted() {
+    if (!this.isVisible) {
+      // path to 404 is relative to support ipfs sub path deployments
+      return this.$router.replace({ path: '../404' })
+    }
+
     const ipfsPathRegExp = /^(\/(?:ipfs|ipns)\/[^/]+)/
     const ipfsPathPrefix =
       (window.location.pathname.match(ipfsPathRegExp) || [])[1] || ''

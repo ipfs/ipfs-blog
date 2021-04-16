@@ -1,4 +1,4 @@
-export const checkItem = ({
+export function checkItem({
   postType,
   tags,
   title,
@@ -7,7 +7,7 @@ export const checkItem = ({
   searchedText = [],
   activeCategory = '',
   activeAuthor = '',
-}) => {
+}) {
   if (activeCategory && decodeURI(activeCategory) !== postType) {
     return false
   }
@@ -40,13 +40,13 @@ export const checkItem = ({
   return true
 }
 
-export const parseProtectedPost = (
+export function parseProtectedPost(
   post,
   activeTags = [],
   searchedText = [],
   activeCategory = '',
   activeAuthor = ''
-) => {
+) {
   if (!post.frontmatter.data) {
     return []
   }
@@ -55,6 +55,7 @@ export const parseProtectedPost = (
 
   post.frontmatter.data.forEach((item) => {
     if (
+      item.hidden ||
       !checkItem({
         postType: post.frontmatter.type,
         tags: item.tags,
