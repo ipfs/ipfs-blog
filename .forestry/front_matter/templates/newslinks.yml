@@ -45,7 +45,8 @@ fields:
       date_format: 
       time_format: 
       display_utc: true
-    default: now
+      export_format: YYYY-MM-DDThh:mm:ssZ
+    default: ''
   - type: text
     name: path
     label: URL
