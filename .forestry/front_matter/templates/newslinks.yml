@@ -35,9 +35,9 @@ fields:
       export_format: YYYY-MM-DD
     description: For <strong>events</strong>, use the date of the event itself.<br>For
       all other link types, use the date the original item was published.
-  - name: publishing_date
+  - name: publish_date
     type: datetime
-    label: Publishing Date
+    label: Publish Date
     description: '<strong>(WIP: Auto publishing feature is in the works)<br></strong><br>When
       the link should be published.<br>Use this to schedule publishing the link in
       the future.<br>If you don''t want to schedule, just ignore this.<br><br><strong><em>WARNING</em></strong><em>:
