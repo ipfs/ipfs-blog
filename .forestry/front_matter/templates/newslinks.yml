@@ -38,13 +38,13 @@ fields:
   - name: publish_date
     type: datetime
     label: Publish Date
-    description: '<strong>(WIP: Auto publishing feature is in the works)<br></strong><br>When
+    description: 'When
       the link should be published.<br>Use this to schedule publishing the link in
-      the future.<br>If you don''t want to schedule, just ignore this.<br><br><strong><em>WARNING</em></strong><em>:
+      the future.<br>If you don't want to schedule, leave this blank.<br><br><strong><em>WARNING</em></strong><em>:
       Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
-      target="_blank"><em>ipfs/ipfs-blog</em></a><em> public github repo as soon as
-      you hit the save button. So any sensitive information will also be publicly
-      available on github, but hidden from the website blog.ipfs.io.</em>'
+      target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
+      you hit the Save button. This means anything you save will also be publicly
+      visible on GitHub, but not on the blog.ipfs.io site. Be careful if you are drafting something sensitive!</em>'
     config:
       required: false
       date_format: 
