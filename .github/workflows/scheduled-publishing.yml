@@ -1,7 +1,7 @@
 name: Check for scheduled posts to publish
 on:
   schedule:
-    - cron: '* 4,16 * * *'
+    - cron: '0 4,16 * * *'
 jobs:
   check-n-publish:
     name: Check for scheduled posts and publish if any found
