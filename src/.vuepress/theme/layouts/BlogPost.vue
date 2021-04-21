@@ -53,6 +53,13 @@ export default {
     },
   },
   mounted() {
+    if (!this.isVisible && this.$root.$page.frontmatter.type) {
+      const type = this.$root.$page.frontmatter.type
+
+      // path is relative to support ipfs sub path deployments
+      return this.$router.replace({ path: `../?category=${type.slug}` })
+    }
+
     if (!this.isVisible) {
       // path to 404 is relative to support ipfs sub path deployments
       return this.$router.replace({ path: '../404' })
