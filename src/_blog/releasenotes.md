@@ -6,7 +6,7 @@ sitemap:
 data:
 - title: ipfs-webui v2.12.0
   date: 2021-04-19
-  publish_date: 2021-04-21T12:00:00+00:00
+  publish_date: 
   path: https://github.com/ipfs/ipfs-webui/releases/tag/v2.12.0
   tags:
   - release notes
