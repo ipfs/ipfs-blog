@@ -17,7 +17,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 @[youtube](13rHbWCYNWA)
 
-Uniswap has merged the code to continuously deploy its interface on Crust Network! Hosting a website/DApp frontend on IPFS grants you several benefits, such as serverless hosting, potential resilience to DNS hijacks (together with IPNS/ENS), and high uptime. Uniswap, as one of the most widely used DEX’s (Decentralized Exchange), has been integrated with IPFS for approximately a year. [This article](https://medium.com/crustnetwork/decentralized-uniswap-interface-hosting-on-ipfs-18a78d1209ac) explains the whole process in more detail, and also describes how to host a website in a more decentralized way using Crust.
+Last week at Scaling Ethereum, Dietrich Ayala helped kick off the hackathon by presenting a talk on how IPFS is being used to scale Ethereum, the problems IPFS addresses, an introduction to the web3 stack, as well as a quick walkthrough of approaches and resources to use IPFS today. In case you missed the talk, [**catch up here**](https://www.youtube.com/watch?v=13rHbWCYNWA) and be sure to check out our [**recent blog post**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/) that highlights where you can find us at Scaling Ethereum, the prizes that Protocol Labs is offering, as well as some videos that will help you get started.
 
 ## Filecoin Launchpad Accelerator II - Apply now!
 
