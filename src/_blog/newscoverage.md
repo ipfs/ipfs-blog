@@ -4,6 +4,13 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Buying an NFT? Things you need to know!
+  date: 2021-04-20
+  publish_date: 
+  path: https://blog.indorse.io/buying-an-nft-things-you-need-to-know-e4f73adb8572
+  card_image: "/1-zpchrqpbdtgx_i4bbm0x3w.png"
+  tags:
+  - NFTs
 - title: Palm, A New NFT Ecosystem and Studio for Creators, Announces Launch of First
     Project with Damien Hirst
   date: 2021-03-30
