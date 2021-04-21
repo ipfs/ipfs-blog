@@ -40,7 +40,7 @@ fields:
     label: Publish Date
     description: 'When
       the link should be published.<br>Use this to schedule publishing the link in
-      the future.<br>If you don't want to schedule, leave this blank.<br><br><strong><em>WARNING</em></strong><em>:
+      the future.<br>If you don''t want to schedule, leave this blank.<br><br><strong><em>WARNING</em></strong><em>:
       Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
       target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
       you hit the Save button. This means anything you save will also be publicly
