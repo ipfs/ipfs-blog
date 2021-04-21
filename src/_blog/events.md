@@ -4,6 +4,12 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: CivHacks 2021
+  date: 2021-04-23
+  path: https://www.civhacks.com/
+  card_image: "/2021-04-13-cardheader-civhacks.png"
+  tags:
+  - hackathon
 - title: IPFS Community Meetup, April 2021
   date: 2021-04-27
   path: https://www.meetup.com/San-Francisco-IPFS/events/276123324/
