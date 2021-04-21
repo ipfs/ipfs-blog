@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 132
 description: 'Last week at Scaling Ethereum, FLAII Applications are now open, plus
-  check out whats brand new on IPFS. '
+  check out what''s brand new on IPFS. '
 author: Emily Vaughan
 date: 2021-04-21
 permalink: "/weekly-132/"
