@@ -26,8 +26,8 @@ fields:
     Prince</em>'
 - type: datetime
   name: date
-  label: Date
-  description: '"Published on" date.<br><br>To schedule this post for future publishing,
+  label: Publish Date
+  description: '"Published on" date. To schedule this post for future publishing,
     simply set the date to the future.<br><br><strong><em>WARNING</em></strong><em>:
     Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
     target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
