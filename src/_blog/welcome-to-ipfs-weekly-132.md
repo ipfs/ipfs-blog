@@ -15,6 +15,8 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## Deploying Web3: IPFS Architecture, Topologies, and Menageries
 
+@[youtube](13rHbWCYNWA)
+
 Uniswap has merged the code to continuously deploy its interface on Crust Network! Hosting a website/DApp frontend on IPFS grants you several benefits, such as serverless hosting, potential resilience to DNS hijacks (together with IPNS/ENS), and high uptime. Uniswap, as one of the most widely used DEX’s (Decentralized Exchange), has been integrated with IPFS for approximately a year. [This article](https://medium.com/crustnetwork/decentralized-uniswap-interface-hosting-on-ipfs-18a78d1209ac) explains the whole process in more detail, and also describes how to host a website in a more decentralized way using Crust.
 
 ## Help improve the Filecoin storage network!
