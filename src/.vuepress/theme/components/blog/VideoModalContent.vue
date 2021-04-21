@@ -35,11 +35,11 @@
             class="p-1 bg-aquaMuted leading-none bg-opacity-50 rounded text-blueGreen font-semibold hover:bg-blueGreen hover:text-white text-sm mr-1"
             @click="handleCatClick()"
           >
-            {{ videoModalCard.frontmatter.type }}
+            {{ videoModalCard.frontmatter.type.name }}
           </button>
           <PostTag
             v-for="tag in resolvedTags"
-            :key="tag"
+            :key="tag.slug"
             :tag="tag"
             :callback="closeModal"
             class-name="text-sm"
@@ -141,7 +141,7 @@ export default {
   methods: {
     handleCatClick() {
       const categoryTracking = {
-        category: this.videoModalCard.frontmatter.type,
+        category: this.videoModalCard.frontmatter.type.name,
         method: 'video-modal-select',
       }
 

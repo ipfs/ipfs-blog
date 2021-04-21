@@ -33,7 +33,7 @@ export default {
         return RegularCard
       }
 
-      switch (this.card.type) {
+      switch (this.card.type.name) {
         case 'Academic paper':
         case 'Event':
         case 'News coverage':
