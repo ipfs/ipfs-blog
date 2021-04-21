@@ -129,14 +129,8 @@ export default {
           return false
         }
 
-        if (
-          page.frontmatter &&
-          (page.frontmatter.sitemap ? !page.frontmatter.sitemap.exclude : true)
-        ) {
-          result.push({
-            ...page,
-            category: defaultCategory,
-          })
+        if (page.frontmatter && !page.frontmatter.hidden) {
+          result.push({ ...page, category: defaultCategory })
         }
       })
 

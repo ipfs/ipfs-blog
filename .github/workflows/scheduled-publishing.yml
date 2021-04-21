@@ -1,0 +1,26 @@
+name: Check for scheduled posts to publish
+on:
+  schedule:
+    - cron: '* 4,16 * * *'
+jobs:
+  check-n-publish:
+    name: Check for scheduled posts and publish if any found
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Check for scheduled posts
+        run: echo "::set-output name=should_publish::$(${{ github.workspace }}/scripts/scheduled-publishing.js)"
+        id: should_publish_step
+      - name: Trigger Fleek Build
+        if: ${{ steps.should_publish_step.outputs.should_publish == 'true' }}
+        id: deploy
+        uses: fleekhq/action-deploy@v1
+        with:
+          apiKey: ${{ secrets.FLEEK_API_KEY }}
+      - name: Scheduled posts published
+        if: ${{ steps.should_publish_step.outputs.should_publish == 'true' }}
+        run: echo "Check https://blog.ipfs.io"
+

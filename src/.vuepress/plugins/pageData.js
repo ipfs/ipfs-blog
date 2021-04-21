@@ -1,4 +1,32 @@
 const slug = require('slug')
+const dayjs = require('dayjs')
+
+function shouldBeHidden(frontmatter) {
+  const isDateInFuture = (date) => dayjs(new Date(date)).isAfter(dayjs())
+  let shouldHide = frontmatter.hidden || false
+
+  // sitemap config
+  if (frontmatter.sitemap) {
+    shouldHide = shouldHide || frontmatter.sitemap.exclude
+  }
+
+  // scheduled posts
+  // see auto-publishing of scheduled posts here: https://github.com/ipfs/ipfs-blog/issues/147
+  if (
+    !shouldHide &&
+    frontmatter.permalink && // permalink is unique to posts
+    frontmatter.date
+  ) {
+    shouldHide = shouldHide || isDateInFuture(frontmatter.date)
+  }
+
+  // scheduled links (path is unique to links)
+  if (!shouldHide && frontmatter.path && frontmatter.publish_date) {
+    shouldHide = shouldHide || isDateInFuture(frontmatter.publish_date)
+  }
+
+  return shouldHide
+}
 
 module.exports = (options, context) => ({
   extendPageData($page) {
@@ -18,8 +46,8 @@ module.exports = (options, context) => ({
       frontmatter.authorKey = authorKey
     }
 
-    // exclude a page from the feed & robots if excluded from sitemap
-    if (frontmatter.sitemap && frontmatter.sitemap.exclude) {
+    // exclude hidden pages (sitemap config, future publishes, etc)
+    if (shouldBeHidden(frontmatter)) {
       frontmatter.feed = {
         enable: false,
       }
@@ -30,6 +58,18 @@ module.exports = (options, context) => ({
       } else {
         frontmatter.meta = [noIndex]
       }
+
+      frontmatter.hidden = true
+      $page.hidden = true
+    }
+
+    // set links has hidden (future publishes, etc)
+    if (frontmatter.data) {
+      frontmatter.data.forEach((item) => {
+        if (shouldBeHidden(item)) {
+          item.hidden = true
+        }
+      })
     }
   },
 })

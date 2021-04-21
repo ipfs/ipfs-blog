@@ -27,23 +27,16 @@ fields:
 - type: datetime
   name: date
   label: Date
-  description: '"Published on" date. Remember this is <em>only</em> a list date for
-    display; posts are not automatically published!'
+  description: '"Published on" date.<br><br>To schedule this post for future publishing, simply
+    set the date to the future.<br><br><strong><em>WARNING</em></strong><em>: Data
+    is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title="" target="_blank"><em>ipfs/ipfs-blog</em></a><em>
+    public GitHub repo as soon as you hit the save button. So any sensitive information
+    will also be publicly available on GitHub, but hidden from the website blog.ipfs.io.</em>'
   config:
     required: true
     date_format: YYYY/MM/DD
     export_format: YYYY-MM-DD
-- name: publishing_date
-  type: datetime
-  label: Publishing Date
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: true
-  description: When the post should be published.<br>Use this to schedule publishing
-    the post in the future.<br>If you don't want to schedule, just ignore this.
-  default: now
+    display_utc: false
 - type: text
   name: permalink
   label: Permalink
