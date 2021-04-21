@@ -4,6 +4,14 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Fleek Makes Deploying and Maintaining an ENS+IPFS Website Easier than Ever
+  date: 2021-02-06
+  path: https://medium.com/the-ethereum-name-service/cloudflare-and-fleek-make-ens-ipfs-site-deployment-as-easy-as-ever-262c990a7514
+  card_image: "/2021-04-20-cardheader-fleek-ens-ipfs.jpg"
+  tags:
+  - tutorial
+  - static publishing
+  - Ethereum
 - title: Build a No Code NFT File Tool With Zapier and IPFS
   date: 2021-04-09
   path: https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7
