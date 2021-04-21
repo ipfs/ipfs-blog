@@ -27,12 +27,16 @@ fields:
 - type: datetime
   name: date
   label: Date
-  description: '"Published on" date. Remember this is <em>only</em> a list date for
-    display; posts are not automatically published!'
+  description: '"Published on" date.<br><br>To schedule this post for future publishing, simply
+    set the date to the future.<br><br><strong><em>WARNING</em></strong><em>: Data
+    is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title="" target="_blank"><em>ipfs/ipfs-blog</em></a><em>
+    public GitHub repo as soon as you hit the save button. So any sensitive information
+    will also be publicly available on GitHub, but hidden from the website blog.ipfs.io.</em>'
   config:
     required: true
     date_format: YYYY/MM/DD
     export_format: YYYY-MM-DD
+    display_utc: false
 - type: text
   name: permalink
   label: Permalink
@@ -58,23 +62,91 @@ fields:
     target="_blank">Use this crop/scale tool</a> to save a revised image to your local
     machine, then upload here.
 - name: tags
-  type: tag_list
-  default: []
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+      section: ''
+      file: 
+      path: ''
+    options:
+    - AEgir
+    - API
+    - async/await
+    - Bitswap
+    - blockstore
+    - bootstrap nodes
+    - breaking change
+    - browsers
+    - case study
+    - CDN
+    - censorship
+    - CID
+    - CLI tools
+    - collaborative cluster
+    - community
+    - conferences
+    - containerization
+    - content routing
+    - CRDTs
+    - DAG
+    - datastore
+    - demo
+    - DHT
+    - Docker
+    - docs
+    - encryption
+    - Ethereum
+    - Filecoin
+    - gaming
+    - gateways
+    - go-ipfs
+    - Gossipsub
+    - hackathon
+    - identity
+    - infrastructure
+    - interoperability
+    - interview
+    - IPFS Camp
+    - IPFS Cluster
+    - IPFS Companion
+    - IPFS Desktop
+    - IPFS Web UI
+    - IPLD
+    - js-ipfs
+    - Kademlia
+    - libp2p
+    - MFS
+    - mobile
+    - NFTs
+    - official meetup
+    - opera
+    - package managers
+    - pinning
+    - project planning
+    - ProtoSchool
+    - pubsub
+    - QUIC
+    - recap
+    - release notes
+    - research
+    - Rust
+    - SECIO
+    - security
+    - static publishing
+    - streaming
+    - Testground
+    - tutorial
+    - weekly
+    - whitepaper
+    - Windows
   label: Tags
-  description: "<strong>Please copy/paste applicable values from this canonical tags
-    list (capitalization counts!):</strong><br>AEgir ... API ... async/await ... Bitswap
-    ... blockstore ... bootstrap nodes ... breaking change ... browsers ... case study
-    ... CDN ... censorship ... CID ...CLI tools ... collaborative cluster ... community
-    ... conferences ... containerization ... content routing ... CRDTs ... DAG ...
-    datastore ... demo ... DHT ... DNSLink ... Docker ... docs ... Drand ... encryption
-    ... Ethereum ... Filecoin ... gateways ... go-ipfs ... Gossipsub ... identity
-    ... infrastructure ... interoperability ... interview ... IoT ... IPFS Camp ...
-    IPFS Cluster ... IPFS Companion ... IPFS Desktop ... IPFS Web UI ... IPLD ...
-    IPNS ... js-ipfs ... Kademlia ... Kubernetes ... libp2p ... Linux ... MacOS ...
-    MFS ... mobile ... NFTs ... official meetup ... package managers ... pinning ...
-    project planning ... pubsub ... QUIC ... recap ... research ... Rust ... SECIO
-    ... security ... static publishing ... streaming ... Testground ... tutorial ...
-    TypeScript ... Windows ... weekly ... whitepaper"
+  description: <strong>Select all tags that apply.</strong> If you <em>really</em>
+    need to add a new tag, please <a href="https://github.com/ipfs/ipfs-blog/issues"
+    target="_blank">file an issue</a> with the details.
 pages:
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
@@ -89,6 +161,7 @@ pages:
 - src/_blog/meet-the-new-ipfs-blog-news.md
 - src/_blog/own-your-identity-with-ion.md
 - src/_blog/storing-nfts-on-ipfs.md
+- src/_blog/using-ipfs-to-help-with-scaling-ethereum.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
 - src/_blog/welcome-to-ipfs-weekly-120.md
 - src/_blog/welcome-to-ipfs-weekly-121.md
@@ -101,3 +174,4 @@ pages:
 - src/_blog/welcome-to-ipfs-weekly-128.md
 - src/_blog/welcome-to-ipfs-weekly-129.md
 - src/_blog/welcome-to-ipfs-weekly-130.md
+- src/_blog/welcome-to-ipfs-weekly-131.md

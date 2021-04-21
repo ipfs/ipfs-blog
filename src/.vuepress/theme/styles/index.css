@@ -9,16 +9,7 @@ pre {
   padding: 1.25rem 1.5rem;
   background-color: #0e2333;
   border-radius: 6px;
-}
-
-pre > code {
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-  color: #fff;
-  font-size: 0.85em;
-  white-space: pre-wrap;
-  word-break: break-all;
+  overflow-x: auto;
 }
 
 code {
@@ -28,4 +19,16 @@ code {
   border-radius: 3px;
   color: rgba(51, 51, 51, 0.8);
   font-size: 0.85em;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  color: #fff;
+  font-size: 0.85em;
+  white-space: unset;
+  word-break: unset;
 }

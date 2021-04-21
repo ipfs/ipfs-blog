@@ -35,6 +35,23 @@ fields:
       export_format: YYYY-MM-DD
     description: For <strong>events</strong>, use the date of the event itself.<br>For
       all other link types, use the date the original item was published.
+  - name: publish_date
+    type: datetime
+    label: Publish Date
+    description: 'When
+      the link should be published.<br>Use this to schedule publishing the link in
+      the future.<br>If you don''t want to schedule, leave this blank.<br><br><strong><em>WARNING</em></strong><em>:
+      Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
+      target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
+      you hit the Save button. This means anything you save will also be publicly
+      visible on GitHub, but not on the blog.ipfs.io site. Be careful if you are drafting something sensitive!</em>'
+    config:
+      required: false
+      date_format: 
+      time_format: 
+      display_utc: true
+      export_format: YYYY-MM-DDThh:mm:ssZ
+    default: ''
   - type: text
     name: path
     label: URL
@@ -54,21 +71,86 @@ fields:
       revised image to your local machine, then upload here.<br>Video links don''t
       need images: they use the video thumbnail!'
   - name: tags
-    type: tag_list
-    default: []
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: simple
+      options:
+      - AEgir
+      - API
+      - async/await
+      - Bitswap
+      - blockstore
+      - bootstrap nodes
+      - breaking change
+      - browsers
+      - case study
+      - CDN
+      - censorship
+      - CID
+      - CLI tools
+      - collaborative cluster
+      - community
+      - conferences
+      - containerization
+      - content routing
+      - CRDTs
+      - DAG
+      - datastore
+      - demo
+      - DHT
+      - Docker
+      - docs
+      - encryption
+      - Ethereum
+      - Filecoin
+      - gaming
+      - gateways
+      - go-ipfs
+      - Gossipsub
+      - hackathon
+      - identity
+      - infrastructure
+      - interoperability
+      - interview
+      - IPFS Camp
+      - IPFS Cluster
+      - IPFS Companion
+      - IPFS Desktop
+      - IPFS Web UI
+      - IPLD
+      - js-ipfs
+      - Kademlia
+      - libp2p
+      - MFS
+      - mobile
+      - NFTs
+      - official meetup
+      - opera
+      - package managers
+      - pinning
+      - project planning
+      - ProtoSchool
+      - pubsub
+      - QUIC
+      - recap
+      - release notes
+      - research
+      - Rust
+      - SECIO
+      - security
+      - static publishing
+      - streaming
+      - Testground
+      - tutorial
+      - weekly
+      - whitepaper
+      - Windows
     label: Tags
-    description: "<strong>Please copy/paste applicable values from this canonical
-      tags list (capitalization counts!):</strong><br>AEgir ... API ... async/await
-      ... Bitswap ... blockstore ... bootstrap nodes ... breaking change ... browsers
-      ... case study ... CDN ... censorship ... CID ...CLI tools ... collaborative
-      cluster ... community ... conferences ... containerization ... content routing
-      ... CRDTs ... DAG ... datastore ... demo ... DHT ... DNSLink ... Docker ...
-      docs ... Drand ... encryption ... Ethereum ... Filecoin ... gateways ... go-ipfs
-      ... Gossipsub ... identity ... infrastructure ... interoperability ... interview
-      ... IoT ... IPFS Camp ... IPFS Cluster ... IPFS Companion ... IPFS Desktop ...
-      IPFS Web UI ... IPLD ... IPNS ... js-ipfs ... Kademlia ... Kubernetes ... libp2p
-      ... Linux ... MacOS ... MFS ... mobile ... NFTs ... official meetup ... package
-      managers ... pinning ... project planning ... pubsub ... QUIC ... recap ...
-      research ... Rust ... SECIO ... security ... static publishing ... streaming
-      ... Testground ... tutorial ... TypeScript ... Windows ... weekly ... whitepaper"
+    description: <strong>Select all tags that apply.</strong> If you <em>really</em>
+      need to add a new tag, please <a href="https://github.com/ipfs/ipfs-blog/issues"
+      target="_blank">file an issue</a> with the details.
   description: <strong>To add a new link, click the "Add Link" button.</strong>

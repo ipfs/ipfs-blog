@@ -80,6 +80,7 @@ export default {
       numberOfPagesToShow: 24,
       infiniteScroll: false,
       delayValues: [0, 0.15, 0.3],
+      observer: null,
     }
   },
   computed: {
@@ -128,14 +129,8 @@ export default {
           return false
         }
 
-        if (
-          page.frontmatter &&
-          (page.frontmatter.sitemap ? !page.frontmatter.sitemap.exclude : true)
-        ) {
-          result.push({
-            ...page,
-            category: defaultCategory,
-          })
+        if (page.frontmatter && !page.frontmatter.hidden) {
+          result.push({ ...page, category: defaultCategory })
         }
       })
 
@@ -211,14 +206,14 @@ export default {
     this.$store.commit('appState/setAuthorsList', authorsArray)
   },
   mounted() {
-    const observer = new IntersectionObserver(
+    this.observer = new IntersectionObserver(
       this.handleBottomVisibilityChange,
       {
         threshold: 1.0,
       }
     )
 
-    observer.observe(document.querySelector('footer.footer ul'))
+    this.observer.observe(document.querySelector('footer.footer ul'))
 
     const { query } = this.$route
     const newQuery = pick(Object.assign({}, query), [
@@ -318,6 +313,9 @@ export default {
       )[0]
 
     this.$store.commit('appState/setLatestWeeklyPost', latestWeeklyPost)
+  },
+  beforeDestroy() {
+    this.observer.disconnect()
   },
   methods: {
     updateQuery() {
