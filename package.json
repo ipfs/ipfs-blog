@@ -75,7 +75,7 @@
   },
   "dependencies": {
     "dayjs": "^1.10.4",
-    "markdown-it-image-lazy-loading": "^1.0.2",
+    "markdown-it-image-lazy-loading": "^1.1.0",
     "markdown-it-imsize": "^2.0.1",
     "tailwindcss-typography": "^3.1.0",
     "v-lazy-image": "^1.4.0",
