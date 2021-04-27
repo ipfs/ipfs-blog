@@ -60,11 +60,13 @@ import LanguageSelector from '@theme/components/base/LanguageSelector'
 import { getTags } from '@theme/util/tagUtils'
 import { parseProtectedPost, checkItem } from '@theme/util/blogUtils'
 import uniq from 'lodash/uniq'
+import uniqBy from 'lodash/uniqBy'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
+import orderBy from 'lodash/orderBy'
 import countly from '../util/countly'
 
-const defaultCategory = 'Blog post'
+const defaultCategory = { name: 'Blog post', slug: 'blog-post' }
 
 export default {
   name: 'BlogIndex',
@@ -95,12 +97,19 @@ export default {
       'videoModalCard',
     ]),
     tags() {
-      return getTags(this.activeTags, this.publicPages)
+      return getTags(
+        this.tagsList.filter((tag) => this.activeTags.includes(tag.slug)),
+        this.publicPages
+      )
     },
     publicPages: function () {
       let result = []
       this.$pagination.pages.forEach((page) => {
-        if (this.categoriesList.includes(page.frontmatter.type)) {
+        if (
+          this.categoriesList
+            .map((category) => category.slug)
+            .includes(page.frontmatter.type?.slug)
+        ) {
           result = [
             ...result,
             ...parseProtectedPost(
@@ -144,7 +153,9 @@ export default {
         : this.publicPages.slice(0, this.numberOfPagesToShow)
     },
     queryProptertyWatchlist() {
-      return `${this.activeCategory}|${this.activeTags}|${this.searchedText}|${this.activeAuthor}`
+      return `${JSON.stringify(this.activeCategory)}|${this.activeTags}|${
+        this.searchedText
+      }|${this.activeAuthor}`
     },
     urlUpdate() {
       return this.$route.query
@@ -177,25 +188,20 @@ export default {
       }
 
       if (data) {
-        tagsArray.push(
-          uniq(
-            data
-              .filter((subPage) => subPage.tags)
-              .map((subPage) => subPage.tags)
-              .flat(2)
-          )
-        )
+        data.forEach((subPage) => {
+          if (subPage.tags) {
+            tagsArray.push(...subPage.tags)
+          }
+        })
       }
 
       if (author) {
-        authorsArray.push(
-          author.name.split(/,|and|&/).map((author) => author.trim())
-        )
+        authorsArray.push(author)
       }
     })
 
-    categories = uniq(categories, true)
-    tagsArray = uniq(tagsArray.flat(2), true)
+    categories = orderBy(uniq(categories, true), 'name')
+    tagsArray = uniqBy(tagsArray.flat(2), 'name')
     authorsArray = uniq(authorsArray.flat(2), true)
 
     this.$store.commit('appState/setCategoriesList', [
@@ -225,7 +231,11 @@ export default {
 
     let queryCategory = query.category || ''
 
-    if (queryCategory && !this.categoriesList.includes(queryCategory)) {
+    const filteredCategory = this.categoriesList.find(
+      (category) =>
+        category.slug === queryCategory || category.name === queryCategory
+    )
+    if (queryCategory && !filteredCategory) {
       queryCategory = ''
       delete newQuery.category
     }
@@ -233,7 +243,9 @@ export default {
     let queryTags = query.tags ? query.tags.split(',') : []
 
     if (queryTags.length > 0) {
-      queryTags = queryTags.filter((tag) => this.tagsList.includes(tag))
+      queryTags = queryTags.filter((queryTag) =>
+        this.tagsList.find((tag) => tag.slug === queryTag)
+      )
 
       if (queryTags.length === 0) {
         delete newQuery.tags
@@ -242,7 +254,10 @@ export default {
 
     let queryAuthor = query.author
 
-    if (queryAuthor && !this.authorsList.includes(queryAuthor)) {
+    if (
+      queryAuthor &&
+      !this.authorsList.map((author) => author.slug).includes(queryAuthor)
+    ) {
       queryAuthor = ''
       delete newQuery.author
     }
@@ -255,7 +270,7 @@ export default {
 
     if (queryCategory !== '') {
       const categoryTracking = {
-        category: queryCategory,
+        category: filteredCategory.name,
         method: 'urlQuery',
       }
 
@@ -263,9 +278,9 @@ export default {
     }
 
     if (queryTags.length > 0) {
-      queryTags.forEach((tag) => {
+      queryTags.forEach((queryTag) => {
         const tagTracking = {
-          tag: tag,
+          tag: this.tagsList.find((tag) => tag.slug === queryTag).name,
           method: 'urlQuery',
         }
 
@@ -294,19 +309,25 @@ export default {
     }
 
     this.$store.commit('appState/setActiveTags', queryTags)
-    this.$store.commit('appState/setActiveCategory', queryCategory)
+    this.$store.commit(
+      'appState/setActiveCategory',
+      filteredCategory || queryCategory
+    )
     this.$store.commit(
       'appState/setSearchedText',
       queryText ? queryText.split(',') : []
     )
-    this.$store.commit('appState/setActiveAuthor', queryAuthor || '')
+    this.$store.commit(
+      'appState/setActiveAuthor',
+      this.authorsList.find((author) => author.slug === queryAuthor) || ''
+    )
 
     const latestWeeklyPost = this.publicPages
       .filter(
         (item) =>
           item.frontmatter &&
           item.frontmatter.tags &&
-          item.frontmatter.tags.includes('weekly')
+          item.frontmatter.tags.find((tag) => tag.name === 'weekly')
       )
       .sort(
         (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
@@ -323,8 +344,8 @@ export default {
         ...this.$route.query,
         tags: this.activeTags.join(','),
         search: this.searchedText.join(','),
-        category: this.activeCategory,
-        author: this.activeAuthor,
+        category: this.activeCategory.slug || '',
+        author: this.activeAuthor.slug || '',
       }
 
       Object.keys(newQuery).forEach((entry) => {
@@ -333,7 +354,6 @@ export default {
           delete newQuery[entry]
         }
       })
-
       this.$router.replace({ query: newQuery }).catch(() => {})
     },
     blockLazyLoad() {

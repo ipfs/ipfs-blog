@@ -27,7 +27,7 @@
         {{ title }}
       </h1>
     </a>
-    <PostAuthor v-if="author" v-bind="author" />
+    <PostAuthor v-if="author" :author="author" />
     <p
       v-if="description"
       class="type-p1 text-sm text-primary clamp-3 mt-2"
@@ -41,9 +41,9 @@
         class="p-1 mr-1 bg-aquaMuted leading-none bg-opacity-50 text-blueGreen font-semibold hover:bg-blueGreen hover:text-white transition duration-300 ease-in-out rounded cursor-pointer mt-1"
         @click="handleCatClick"
       >
-        {{ category }}
+        {{ category.name }}
       </button>
-      <PostTag v-for="tag in resolvedTags" :key="tag" class="mt-1" :tag="tag" />
+      <PostTag v-for="tag in tags" :key="tag.name" class="mt-1" :tag="tag" />
     </div>
   </div>
 </template>
@@ -69,7 +69,7 @@ export default {
       default: () => [],
     },
     author: {
-      type: Object,
+      type: Array,
       default: null,
     },
     date: {
@@ -77,7 +77,7 @@ export default {
       default: null,
     },
     category: {
-      type: String,
+      type: Object,
       default: null,
     },
     title: {
@@ -104,19 +104,11 @@ export default {
         .utc(this.date)
         .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
     },
-    resolvedTags() {
-      if (!this.tags || Array.isArray(this.tags)) return this.tags
-
-      return this.tags
-        .replace(/, /g, ',')
-        .split(',')
-        .filter((tag) => tag)
-    },
   },
   methods: {
     handleCatClick() {
       const categoryTracking = {
-        category: this.category,
+        category: this.category.name,
         method: 'card-select',
       }
 

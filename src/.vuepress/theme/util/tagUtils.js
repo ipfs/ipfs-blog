@@ -1,4 +1,4 @@
-import isArray from 'lodash/isArray'
+import orderBy from 'lodash/orderBy'
 
 export const getTags = (activeTags, posts) => {
   const tags = [...activeTags]
@@ -8,16 +8,14 @@ export const getTags = (activeTags, posts) => {
       return
     }
 
-    const postTags = isArray(post.frontmatter.tags)
-      ? post.frontmatter.tags
-      : post.frontmatter.tags.replace(/, /g, ',').split(',')
+    const postTags = post.frontmatter.tags
 
     for (let i = 0; i < postTags.length; i++) {
-      if (postTags[i] && !tags.includes(postTags[i])) {
+      if (postTags[i] && !tags.find((tag) => tag.slug === postTags[i].slug)) {
         tags.push(postTags[i])
       }
     }
   })
 
-  return tags.sort()
+  return orderBy(tags, 'name')
 }

@@ -6,7 +6,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 pt-4">
           <div class="flex flex-col md:pr-8">
             <h1 class="type-h1">{{ title }}</h1>
-            <PostAuthor v-bind="author" light parent="blog-post" />
+            <PostAuthor :author="author" light parent="blog-post" />
             <time
               class="text-gray"
               pubdate
@@ -37,7 +37,7 @@
       >
         <PostTag
           v-for="tag in resolvedTags"
-          :key="tag"
+          :key="tag.slug"
           :tag="tag"
           link
           dark
@@ -76,7 +76,7 @@ export default {
       default: () => [],
     },
     author: {
-      type: Object,
+      type: Array,
       default: null,
     },
     date: {
