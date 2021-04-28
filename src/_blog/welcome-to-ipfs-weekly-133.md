@@ -15,11 +15,17 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## April IPFS Community Meetup
 
-@[youtube](13rHbWCYNWA)
+@[youtube](JUaq7YnTj1I)
 
-Last week at Scaling Ethereum, Dietrich Ayala helped kick off the hackathon by presenting a talk on how IPFS is being used to scale Ethereum, the problems IPFS addresses, an introduction to the web3 stack, as well as a quick walkthrough of approaches and resources to use IPFS today. In case you missed the talk, [**catch up here**](https://www.youtube.com/watch?v=13rHbWCYNWA) and be sure to check out our [**recent blog post**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/) that highlights where you can find us at Scaling Ethereum, the prizes that Protocol Labs is offering, as well as some videos that will help you get started.
+The IPFS April Meetup was yesterday, Tuesday, April 27th and it was all about NFTs! In case you missed it, catch up on all things IPFS and non-fungibles, hosted by Molly Mackinlay, IPFS project lead. Featuring presentations from:
 
-## Filecoin Launchpad Accelerator II - Apply now!
+* Ariel Klevecz, creator of Yaytso, covering “NFT Hacking in the Eggverse” – an introduction to algorithmically personalized 3D eggs.
+* The creators of nft.base, a DAO-based metaverse marketplace and community for NFTs, a project initiated during NFTHack.
+
+
+* Yusef Napora, Protocol Labs software engineer covering NFT x IPFS best practices, and introducing Minty and nft.storage.
+* Ariel Klevecz, creator of Yaytso, covering “NFT Hacking in the Eggverse” – an introduction to algorithmically personalized 3D eggs.
+* The creators of nft.base, a DAO-based metaverse marketplace and community for NFTs, a project initiated during NFTHack.
 
 ## Using IPFS to help with Scaling Ethereum, now through May 13
 
