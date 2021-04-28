@@ -19,6 +19,9 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 The IPFS April Meetup was yesterday, Tuesday, April 27th and it was all about NFTs! In case you missed it, catch up on all things IPFS and non-fungibles, hosted by Molly Mackinlay, IPFS project lead. Featuring presentations from:
 
+* Yusef Napora, Protocol Labs software engineer covering NFT x IPFS best practices, and introducing Minty and nft.storage.
+* Ariel Klevecz, creator of Yaytso, covering “NFT Hacking in the Eggverse” – an introduction to algorithmically personalized 3D eggs.
+* The creators of nft.base, a DAO-based metaverse marketplace and community for NFTs, a project initiated during NFTHack.
 
 ## Using IPFS to help with Scaling Ethereum, now through May 13
 
@@ -35,14 +38,14 @@ Hacking for Scaling Ethereum is ongoing through May 13! As the Ethereum communit
 
 ## Around the ecosystem 🌏
 
-RTrade CEO talks IPFS, including potential applications and challenges for crypto/web3 devs. [**Read the interview.**](https://dashbrokerreview.com/rtrade-ceo-talks-interplanetary-file-system-ipfs-potential-applications-challenges-of-good-user-experience-for-crypto-web3-devs-eth-2-0-ens-domains/)  
-  
-"What is an NFT?" [**Check out this article**](https://medium.com/pinata/what-is-an-nft-2241d4c0a060) by Pinata explaining exactly that, with a feature on IPFS.   
-  
-Congratulations to the 11 incredible teams who graduated from the Filecoin Frontier Accelerator with Longhash and are now ushering in a new wave of Web3! [**Watch the livestream recording.**](https://www.youtube.com/watch?v=-lwttk-HsoQ)  
-  
-Satellite.im announced their Insiders Release. Take control of your data by upgrading your new chat’s quality! [**Learn more**](https://satellite.im/).  
-  
+RTrade CEO talks IPFS, including potential applications and challenges for crypto/web3 devs. [**Read the interview.**](https://dashbrokerreview.com/rtrade-ceo-talks-interplanetary-file-system-ipfs-potential-applications-challenges-of-good-user-experience-for-crypto-web3-devs-eth-2-0-ens-domains/)
+
+"What is an NFT?" [**Check out this article**](https://medium.com/pinata/what-is-an-nft-2241d4c0a060) by Pinata explaining exactly that, with a feature on IPFS.
+
+Congratulations to the 11 incredible teams who graduated from the Filecoin Frontier Accelerator with Longhash and are now ushering in a new wave of Web3! [**Watch the livestream recording.**](https://www.youtube.com/watch?v=-lwttk-HsoQ)
+
+Satellite.im announced their Insiders Release. Take control of your data by upgrading your new chat’s quality! [**Learn more**](https://satellite.im/).
+
 [**Here’s how**](https://medium.com/pinata/how-to-easily-share-content-on-patreon-with-pinata-aa8682f2ee0c) to easily share content on Patreon with Pinata.
 
 ## Want to help build the new internet?
