@@ -19,7 +19,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 The IPFS April Meetup was yesterday, Tuesday, April 27th and it was all about NFTs! In case you missed it, catch up on all things IPFS and non-fungibles, hosted by Molly Mackinlay, IPFS project lead. Featuring presentations from:
 
-* Yusef Napora, Protocol Labs software engineer covering NFT x IPFS best practices, and introducing Minty and nft.storage.
+* Yusef Napora, Protocol Labs software engineer, covering NFT x IPFS best practices, and introducing Minty and nft.storage.
 * Ariel Klevecz, creator of Yaytso, covering “NFT Hacking in the Eggverse” – an introduction to algorithmically personalized 3D eggs.
 * The creators of nft.base, a DAO-based metaverse marketplace and community for NFTs, a project initiated during NFTHack.
 
