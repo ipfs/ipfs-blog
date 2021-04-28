@@ -1,10 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 133
-description: 'April IPFS Community meetup, hacking for Scaling Ethereum, '
+description: Catch up on the April IPFS Community meetup, hacking for Scaling Ethereum,
+  & some brand new projects on IPFS!
 author: Emily Vaughan
-date: 2021-04-21
-permalink: "/weekly-132/"
-translationKey: ipfs-weekly-132
+date: 2021-04-28
+permalink: "/weekly-133/"
+translationKey: ipfs-weekly-133
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -12,7 +13,7 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Deploying Web3: IPFS Architecture, Topologies, and Menageries
+## April IPFS Community Meetup
 
 @[youtube](13rHbWCYNWA)
 
@@ -20,49 +21,41 @@ Last week at Scaling Ethereum, Dietrich Ayala helped kick off the hackathon by p
 
 ## Filecoin Launchpad Accelerator II - Apply now!
 
-![](../assets/lauchpad_twitter-png.png)
+## Using IPFS to help with Scaling Ethereum, now through May 13
 
-The Filecoin Launchpad Accelerator is a full-time, fully remote program dedicated to startups building more open, interoperable, and programmable tools, infrastructure, and applications for the distributed and decentralized web. Tachyon supports projects that build on and bridge the [**IPFS**](https://ipfs.io/), [**Filecoin**](https://filecoin.io/), and [**Ethereum**](https://ethereum.org/) communities and the tools, middleware, and applications. The next cohort will run June through August 2021, with 20 teams from around the globe provided funding, mentorship, benefits, and programming around business and blockchain-specific issues, culminating in a Demo Day and post-program fundraising support kicking off in September. [Applications are now open and close at midnight EST on May 9.](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)
+![](../assets/2021-04-14-cardheader-scaling-ethereum-1459531d.png)
+
+Hacking for Scaling Ethereum is ongoing through May 13! As the Ethereum community looks to enter the sixth year of collaborating on the world’s most actively used blockchain, many builders eagerly anticipate the next phase of Eth2. Both the IPFS and Filecoin projects will be showing their support for the Ethereum community during the event. Protocol Labs has four prize options for teams focused on NFT metadata stored on IPFS, Filecoin retrieval, IPFS CIDs, or disputing Window PoST proofs in Filecoin. For more information, [**check out this post.**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/)
 
 ## Brand new on IPFS
 
-* [Fleek released a new video](https://www.youtube.com/watch?v=Kddvfs8u9bQ) introducing Handshake by showing how to pair your HNS decentralized domains with IPFS.
-* Coywolf’s team recently tested IPFS and loved it! [Read their full report](https://www.coywolf.news/webmaster/ipfs/).
-* IPFS Web UI just released v2.12.0 with built-in support for remote pinning services! [Check out the release notes](https://github.com/ipfs/ipfs-webui/releases/tag/v2.12.0) for all updates, the changelog, and more.
-* Buying an NFT? Check out [this guide ](https://blog.indorse.io/buying-an-nft-things-you-need-to-know-e4f73adb8572)by Indorse that highlights all you need to know, with a special IPFS feature.
+* Join Protocol Labs Resnet Lab on Tour’s masterclass on the Interplanetary File System next week! [**Register.**](https://holonglobalinvestments.typeform.com/to/dbbP5FQL)
+* Peergos launched a decentralized, encrypted social media platform powered by IPFS. [**Learn more.**](https://peergos.org/posts/decentralized-social-media)
+* The IPFS-webui V2.12.0 was released last week. [**Check out the release notes**](https://github.com/ipfs/ipfs-webui/releases/tag/v2.12.0) for all updates, the changelog, and more.
+* Wondering how IPFS fits into the Subsocial stack? [**Check out this recent article.**](https://app.subsocial.network/3965/how-ipfs-fits-into-the-subsocial-stack-15671)
 
 ## Around the ecosystem 🌏
 
-Fission is working on adding an IPFS bitswap monitoring into their front end systems. Check out [**their post**](https://talk.fission.codes/t/ipfs-bitswap-monitoring/1830) for more info.
-
-Gamedev.js Jam celebrates HTML5 games and is happening now through April 26th at 5PM CET. Build a Web game on a given theme and [**win prizes**](https://gamedevjs.com/jam/2021/)!
-
-If you’re building something on Uniswap, make sure to [**submit for their current Grants Round**](https://airtable.com/shrEXXxXB1humz7VS) by May 31. 
-
-Digital MOB has launched the first version of their Filecoin Miner Reputation System. [**Learn more**](https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/).
-
-Protocol Labs is staking $7500 in prizes at the Scaling Ethereum Hackathon with ETHGlobal, happening now! [**Learn more and start building**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/). 
-
-It’s Digital Transformation Week and our friends at Cloudflare are hosting a content and networking event to celebrate. [**Register here**](https://digitaltransformation-week.com/home/digital-transformation-week-registration/).
-
-Longhash Ventures is hosting the Filecoin Frontier Demo Day on Friday, April 23rd, at 9am (GMT +8). [**RSVP!**](https://docs.google.com/forms/d/e/1FAIpQLScn_Ix2MkTiZEkRbxcFrewLWXGCYxV2Xy8-FcnxXVkACFQwPQ/viewform)
-
-## Upcoming 📅
-
-The April IPFS meetup will be an opportunity to showcase what the community has been building with NFTs! [Sign up here](https://protocollabs.typeform.com/to/hLGfKhxn) to present, or [register to attend](https://www.meetup.com/San-Francisco-IPFS/events/276123324/) on April 27th and be prepared to learn more about the world of IPFS x NFTs!
+RTrade CEO talks IPFS, including potential applications and challenges for crypto/web3 devs. [**Read the interview.**](https://dashbrokerreview.com/rtrade-ceo-talks-interplanetary-file-system-ipfs-potential-applications-challenges-of-good-user-experience-for-crypto-web3-devs-eth-2-0-ens-domains/)  
+  
+"What is an NFT?" [**Check out this article**](https://medium.com/pinata/what-is-an-nft-2241d4c0a060) by Pinata explaining exactly that, with a feature on IPFS.   
+  
+Congratulations to the 11 incredible teams who graduated from the Filecoin Frontier Accelerator with Longhash and are now ushering in a new wave of Web3! [**Watch the livestream recording.**](https://www.youtube.com/watch?v=-lwttk-HsoQ)  
+  
+Satellite.im announced their Insiders Release. Take control of your data by upgrading your new chat’s quality! [**Learn more**](https://satellite.im/).  
+  
+[**Here’s how**](https://medium.com/pinata/how-to-easily-share-content-on-patreon-with-pinata-aa8682f2ee0c) to easily share content on Patreon with Pinata.
 
 ## Want to help build the new internet?
 
-[**Chief of Staff**](https://jobs.lever.co/protocol/dc3ca53d-b456-4f91-806d-4ec6b5821dc5): As Chief of Staff, you’ll play a key role enabling and supporting our CEO. The Chief of Staff will have an impact on the efficiency and productivity of the company, streamlining business initiatives, driving program management and communicating cross functional objectives. **Protocol Labs,** Remote.  
-  
-[**Research Scientists**](https://jobs.lever.co/protocol): Seeking research scientists in the following areas: cryptography, distributed systems, networking, independent research. **Protocol Labs**, Remote.   
-  
-[**Software Engineers**](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. **Filecoin, IPFS, lib2p2**, Remote.  
-  
-[**Senior Full Stack Engineer**](https://textile.breezy.hr/p/d59ca1308346-senior-full-stack-engineer): This role is for someone with solid coding experience who likes to experiment, design, and learn new things. We are looking to fill this position soon. We are looking for someone who can rapidly scope and build new web applications and work with APIs and backend services. **Textile**, Remote.  
-  
-[**Senior Go Engineer**](https://textile.breezy.hr/p/421d4f71a227-senior-go-engineer): As a Senior Go Engineer, you will be responsible for writing and maintaining code on the Textile Go libraries, including [**Threads**](https://github.com/textileio/go-threads), [**Buckets**](https://github.com/textileio/go-buckets), [**Hub**](https://github.com/textileio/textile), and [**Powergate**](https://github.com/textileio/powergate). This role is for someone with solid coding experience and the ability to lead new features. **Textile**, Remote.  
-  
-[**Consensus Protocol and DLT Engineer:**](https://angel.co/company/humanode-2/jobs/1265884-consensus-protocol-and-dlt-engineer) Consensus is looking for a Lead Engineer with solid experience in building or working with consensus mechanisms such as Snow family, Clique, Aura, pBFT. Knowledge and experience with Ethereum, EVM and Smart Contracts is crucial as EVM-compatibility is key in the market. **Consensus**, **Humanode**, Remote.
+[**Multiple Positions Open**](https://jobs.lever.co/protocol): Protocol Labs has updated their job board with openings across positions in Administration, Business Development, Business Operations, Communications, Community, Engineering, Finance, Legal, Talent, Product, Project Management, Research, & Security. **Protocol Labs, Filecoin, IPFS,** Remote.
+
+[**Software Engineers**](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. **Filecoin, IPFS, lib2p2**, Remote.
+
+[**Senior Full Stack Engineer**](https://textile.breezy.hr/p/d59ca1308346-senior-full-stack-engineer): This role is for someone with solid coding experience who likes to experiment, design, and learn new things. We are looking to fill this position soon. We are looking for someone who can rapidly scope and build new web applications and work with APIs and backend services. **Textile**, Remote.
+
+[**Senior Go Engineer**](https://textile.breezy.hr/p/421d4f71a227-senior-go-engineer): As a Senior Go Engineer, you will be responsible for writing and maintaining code on the Textile Go libraries, including [**Threads**](https://github.com/textileio/go-threads), [**Buckets**](https://github.com/textileio/go-buckets), [**Hub**](https://github.com/textileio/textile), and [**Powergate**](https://github.com/textileio/powergate). This role is for someone with solid coding experience and the ability to lead new features. **Textile**, Remote.
+
+[**Consensus Protocol and DLT Engineer:**](https://angel.co/company/humanode-2/jobs/1265884-consensus-protocol-and-dlt-engineer) Consensus is looking for a Lead Engineer with solid experience in building or working with consensus mechanisms such as Snow family, Clique, Aura, pBFT. Knowledge and experience with Ethereum, EVM and Smart Contracts is crucial as EVM-compatibility is key in the market. **Consensus, Humanode,** Remote.
 
 Get the IPFS Weekly in your inbox, each Tuesday. [**Sign up now.**](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230)
