@@ -23,7 +23,7 @@ The IPFS April Meetup was yesterday, Tuesday, April 27th and it was all about NF
 * Ariel Klevecz, creator of Yaytso, covering “NFT Hacking in the Eggverse” – an introduction to algorithmically personalized 3D eggs.
 * The creators of nft.base, a DAO-based metaverse marketplace and community for NFTs, a project initiated during NFTHack.
 
-## Using IPFS to help with Scaling Ethereum, now through May 13
+## Using IPFS to help with Scaling Ethereum, now through 5/13
 
 ![](../assets/2021-04-14-cardheader-scaling-ethereum-1459531d.png)
 
