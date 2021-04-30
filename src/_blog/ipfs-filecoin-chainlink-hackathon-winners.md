@@ -1,6 +1,7 @@
 ---
 title: IPFS & Filecoin Chainlink Hackathon winners
-description: ''
+description: Read on to learn about our five prize winners from the Chainlink Spring
+  2021 hackathon.
 author: PL Hackathon Team
 date: 2021-05-03
 permalink: "/2021-05-03-chainlink-recap/"
