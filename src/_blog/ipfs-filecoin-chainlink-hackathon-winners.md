@@ -24,9 +24,7 @@ Out of 144 total submissions, 38 chose to build with IPFS, Filecoin, or libp2p, 
 
 🗄 Best use of Chainlink for archiving or republishing data for provenance or archiving to combat dis/misinformation
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/r0bOi8fDAMU](https://www.youtube.com/embed/r0bOi8fDAMU "https://www.youtube.com/embed/r0bOi8fDAMU")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](r0bOi8fDAMU)
 
 Created by Amr Zahran and Tosho Toshev, [Edu4ALL](https://rapid-dust-8956.on.fleek.co/) describes itself as a dapp with “the aim to connect students from all regions of the world with accredited certifications recognized globally in order to provide a quality education for all students.” With a React frontend, they were able to connect to the blockchain via Metamask to create this educational platform. 
 
@@ -36,9 +34,7 @@ View [their showcase](https://devpost.com/software/edu4all-decentralized-educati
 
 ⛓ Best tool for easing storing and retrieval of data with Filecoin for use in Chainlink or oraclizing Filecoin chain events
 
-<iframe title="vimeo-player" src="[https://player.vimeo.com/video/535625281](https://player.vimeo.com/video/535625281 "https://player.vimeo.com/video/535625281")" width="640" height="1137" frameborder="0" allowfullscreen></iframe>
-
-<br>
+@[vimeo](535625281)
 
 Created by Alice M. and Yuchen Zhao, [CryptoLlama](https://testnets.opensea.io/collection/cryptollama) is a location-based NFT AR game built with both Chainlink VRF contracts and cute crypto llamas! By utilizing React and Viro AR package to build the AR app, Solidity smart contracts and Chainlink VRF they were able to create the dynamic cryptollama NFTs with random characteristics that were cute and creative. 
 
