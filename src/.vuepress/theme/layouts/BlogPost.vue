@@ -53,6 +53,17 @@ export default {
     },
   },
   mounted() {
+    // redirect routes that are not blog posts (/events, /videos, etc)
+    // to the homepage with the search parameter category
+    if (!this.isVisible && this.$root.$page.frontmatter.type) {
+      const type = this.$root.$page.frontmatter.type
+
+      // path is relative to support ipfs sub path deployments
+      return this.$router.replace({ path: `../?category=${type.slug}` })
+    }
+
+    // redirect any other blog post route that should not be visible
+    // to the 404 page (hidden or scheduled publish posts)
     if (!this.isVisible) {
       // path to 404 is relative to support ipfs sub path deployments
       return this.$router.replace({ path: '../404' })

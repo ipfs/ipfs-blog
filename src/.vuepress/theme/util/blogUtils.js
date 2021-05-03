@@ -2,29 +2,27 @@ export function checkItem({
   postType,
   tags,
   title,
-  author = {},
+  author = [],
   activeTags = [],
   searchedText = [],
   activeCategory = '',
-  activeAuthor = '',
+  activeAuthor,
 }) {
-  if (activeCategory && decodeURI(activeCategory) !== postType) {
+  if (activeCategory && activeCategory.slug !== postType.slug) {
     return false
   }
 
   if (
     activeAuthor &&
-    ((author.name &&
-      !author.name
-        .toLowerCase()
-        .includes(decodeURI(activeAuthor.toLowerCase()))) ||
-      !author.name)
+    ((author.length > 0 &&
+      !author.map((entry) => entry.slug).includes(activeAuthor.slug)) ||
+      author.length === 0)
   ) {
     return false
   }
 
   for (let i = 0; i < activeTags.length; i++) {
-    if (!tags || !tags.includes(activeTags[i])) {
+    if (!tags || !tags.map((tag) => tag.slug).includes(activeTags[i])) {
       return false
     }
   }
@@ -76,13 +74,11 @@ export function parseProtectedPost(
       type: post.frontmatter.type,
       date: item.date,
       title: item.title,
-      author: { name: item.author },
       path: item.path,
       frontmatter: {
         ...item,
         date: item.date,
         title: item.title,
-        author: { name: item.author },
         path: item.path,
         type: post.frontmatter.type,
       },

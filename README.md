@@ -43,7 +43,7 @@ A few tips:
 
 Changes you _save_ in Forestry are written directly to the `staging` branch and automatically generate a staging preview at https://ipfs-blog-staging.on.fleek.co/.
 
-**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** _Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer._
+**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** Give your PR a title explaining what changes are inside (the default just says "Staging", which isn't helpful.) _Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer._
 
 _Note for PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits._ As our overall workflow continues to solidify, this direction may change.
 

@@ -30,7 +30,7 @@
       <div class="p-4 flex flex-grow flex-col">
         <div class="flex flex-grow">
           <PostMeta
-            category="Blog post"
+            :category="{ name: 'Blog post', slug: 'blog-post' }"
             :author="frontmatter.author"
             :date="frontmatter.date"
             :tags="frontmatter.tags"

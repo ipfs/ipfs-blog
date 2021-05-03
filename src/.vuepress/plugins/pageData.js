@@ -32,18 +32,40 @@ module.exports = (options, context) => ({
   extendPageData($page) {
     const { frontmatter } = $page
 
-    // author config
-    const authorName = frontmatter.author
+    if (frontmatter.type) {
+      frontmatter.type = {
+        name: frontmatter.type,
+        slug: slug(frontmatter.type),
+      }
+    }
 
-    if (typeof authorName === 'string') {
-      const authorKey = slug(authorName, { lower: true })
+    if (typeof frontmatter.author === 'string') {
+      frontmatter.author = frontmatter.author
+        .split(/,|and|&/)
+        .map((author) => ({ name: author.trim(), slug: slug(author) }))
+    }
 
-      // setup author stub to keep templates happy
-      const author = { name: authorName }
+    if (frontmatter.tags) {
+      frontmatter.tags = frontmatter.tags.map((tag) => ({
+        name: tag,
+        slug: slug(tag),
+      }))
+    }
 
-      // setup the page author object
-      frontmatter.author = author
-      frontmatter.authorKey = authorKey
+    if (frontmatter.data) {
+      frontmatter.data.forEach((subPage) => {
+        if (subPage.tags) {
+          subPage.tags = subPage.tags.map((tag) => ({
+            name: tag,
+            slug: slug(tag),
+          }))
+        }
+
+        // set links has hidden (future publishes, etc)
+        if (shouldBeHidden(subPage)) {
+          subPage.hidden = true
+        }
+      })
     }
 
     // exclude hidden pages (sitemap config, future publishes, etc)
@@ -61,15 +83,6 @@ module.exports = (options, context) => ({
 
       frontmatter.hidden = true
       $page.hidden = true
-    }
-
-    // set links has hidden (future publishes, etc)
-    if (frontmatter.data) {
-      frontmatter.data.forEach((item) => {
-        if (shouldBeHidden(item)) {
-          item.hidden = true
-        }
-      })
     }
   },
 })

@@ -8,9 +8,13 @@
     >
       <multiselect
         ref="select0"
-        :value="activeCategory !== '' ? activeCategory : 'All content'"
+        :value="
+          activeCategory !== '' ? activeCategory : { name: 'All content' }
+        "
         class="mb-2 xl:mb-0 xl:mr-2 xl:max-w-xs"
-        :options="['All content', ...categoriesList]"
+        :options="[{ name: 'All content' }, ...categoriesList]"
+        label="name"
+        track-by="name"
         :searchable="false"
         :allow-empty="false"
         select-label="Press 'enter' to select"
@@ -25,7 +29,12 @@
         tag-placeholder="search for this text"
         placeholder="Search for words or #tags"
         track-by="name"
-        label="name"
+        :custom-label="
+          (option) =>
+            tagsList.map((tag) => tag.name).includes(option.name)
+              ? `#${option.name}`
+              : option.name
+        "
         :limit="['xxl'].includes($mq) ? tagsLimit : tagsList.length"
         :options="resolvedTags"
         :multiple="true"
@@ -83,8 +92,8 @@ export default {
     ]),
     resolvedTags() {
       return this.tags.map((tag) => ({
-        name: `#${tag}`,
-        value: tag,
+        name: tag.name,
+        value: tag.slug,
       }))
     },
     queryProptertyWatchlist() {
@@ -115,7 +124,7 @@ export default {
     },
     calculateTagsLimit(newTags) {
       // The max value a char chan occupy in px
-      const multiplier = 8
+      const multiplier = 12
       // Width of the help text - "X or more"
       const helpTextWidth = 75
       // Padding and margin for the each tag
@@ -159,16 +168,17 @@ export default {
 
       const queryTags = query.tags ? query.tags.split(',') : []
       const querySearch = query.search ? query.search.split(',') : []
+      const tagsListSlugs = this.tagsList.map((tag) => tag.slug)
 
       const tagArray = this.selectedTags.map((tag) => tag.value)
       const tagsToAdd = [...queryTags, ...querySearch].filter(
         (tag) => !tagArray.includes(tag)
       )
       const tagsToRemove = tagArray.filter(
-        (tag) => this.tagsList.includes(tag) && !queryTags.includes(tag)
+        (tag) => tagsListSlugs.includes(tag) && !queryTags.includes(tag)
       )
       const textsToRemove = tagArray.filter(
-        (tag) => !this.tagsList.includes(tag) && !querySearch.includes(tag)
+        (tag) => !tagsListSlugs.includes(tag) && !querySearch.includes(tag)
       )
 
       const newTags = this.selectedTags.filter(
@@ -178,11 +188,13 @@ export default {
       )
 
       tagsToAdd.forEach((tag) => {
-        const isTag = this.tagsList.includes(tag)
+        const filteredTag = this.tagsList.find(
+          (listTag) => listTag.slug === tag
+        )
 
         newTags.push({
-          name: (isTag ? '#' : '') + tag,
-          value: tag,
+          name: filteredTag ? filteredTag.name : tag,
+          value: filteredTag ? filteredTag.slug : tag,
         })
       })
 
@@ -190,7 +202,7 @@ export default {
     },
     setActiveCategory(category) {
       const categoryTracking = {
-        category: category,
+        category: category.name,
         method: 'filter-select',
       }
 
@@ -198,7 +210,11 @@ export default {
 
       this.$store.commit(
         'appState/setActiveCategory',
-        this.categoriesList.includes(category) ? category : ''
+        this.categoriesList
+          .map((category) => category.slug)
+          .includes(category.slug)
+          ? category
+          : ''
       )
     },
     removeTag(tagToRemove) {
@@ -211,8 +227,9 @@ export default {
     },
     handleSearch() {
       const tagArray = this.selectedTags.map((tag) => tag.value)
-      const tags = tagArray.filter((tag) => this.tagsList.includes(tag))
-      const texts = tagArray.filter((tag) => !this.tagsList.includes(tag))
+      const tagsListSlugs = this.tagsList.map((tag) => tag.slug)
+      const tags = tagArray.filter((tag) => tagsListSlugs.includes(tag))
+      const texts = tagArray.filter((tag) => !tagsListSlugs.includes(tag))
 
       this.$store.commit('appState/setActiveTags', tags)
       this.$store.commit('appState/setSearchedText', texts)
@@ -236,7 +253,7 @@ export default {
     },
     focusOnSubmit(option) {
       const tagTracking = {
-        tag: option.value,
+        tag: option.name,
         method: 'filter-select',
       }
 

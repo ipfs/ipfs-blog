@@ -1,14 +1,16 @@
 <template>
   <router-link
     v-if="link"
-    :to="{ path: $localePath, query: { tags: tag } }"
+    :to="{ path: $localePath, query: { tags: tag.slug } }"
     :class="computedClass"
     rel="nofollow"
     @click.native="handleTagClick"
   >
-    #{{ tag }}
+    #{{ tag.name }}
   </router-link>
-  <button v-else :class="computedClass" @click="addNewTag">#{{ tag }}</button>
+  <button v-else :class="computedClass" @click="addNewTag">
+    #{{ tag.name }}
+  </button>
 </template>
 
 <script>
@@ -22,7 +24,7 @@ export default {
       default: () => false,
     },
     tag: {
-      type: String,
+      type: Object,
       required: true,
     },
     dark: {
@@ -56,16 +58,16 @@ export default {
   methods: {
     handleTagClick() {
       this.trackTag()
-      this.$store.commit('appState/setActiveTags', [this.tag])
+      this.$store.commit('appState/setActiveTags', [this.tag.slug])
     },
     addNewTag() {
       this.trackTag()
-      this.$store.commit('appState/addNewTag', [this.tag])
+      this.$store.commit('appState/addNewTag', [this.tag.slug])
       this.callback()
     },
     trackTag() {
       const tagTracking = {
-        tag: this.tag,
+        tag: this.tag.name,
         method: `${this.parent}-select`,
       }
 

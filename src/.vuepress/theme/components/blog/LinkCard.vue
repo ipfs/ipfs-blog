@@ -15,7 +15,7 @@
             See here: https://github.com/ipfs/ipfs-blog/pull/94
         -->
         <div
-          v-if="frontmatter.type === 'Video'"
+          v-if="frontmatter.type.slug === 'video'"
           class="cover embed-responsive embed-responsive-og"
           @click="handleVideoClick"
         >
@@ -47,10 +47,7 @@
             :src="
               frontmatter.card_image
                 ? frontmatter.card_image
-                : `/${frontmatter.type
-                    .toLowerCase()
-                    .split(' ')
-                    .join('-')}-placeholder.png`
+                : `/${frontmatter.type.slug}-placeholder.png`
             "
           />
         </div>
@@ -64,7 +61,9 @@
             :title="title"
             :description="frontmatter.description"
             :post-path="path"
-            :onclick="frontmatter.type === 'Video' ? handleVideoClick : null"
+            :onclick="
+              frontmatter.type.slug === 'video' ? handleVideoClick : null
+            "
             class="type-p4 text-primary"
           />
         </div>

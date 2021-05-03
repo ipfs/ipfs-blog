@@ -22,7 +22,7 @@
             (newest first)
           </span>
           of {{ resolvedActiveCategory }}
-          <span v-if="activeAuthor"> by {{ activeAuthor }} </span>
+          <span v-if="activeAuthor"> by {{ activeAuthor.name }} </span>
           <span v-if="searchedText.length">
             for {{ resolvedSearchedText }}
           </span>
@@ -37,7 +37,7 @@
             class="multiselect__tag active-tag text-sm"
             @click="tagClick(tag)"
           >
-            <span>#{{ tag }}</span
+            <span>#{{ tagsList.find((t) => t.slug === tag).name }}</span
             ><i class="multiselect__tag-icon"></i>
           </button>
         </div>
@@ -75,13 +75,16 @@ export default {
   },
   computed: {
     ...mapState('appState', [
+      'tagsList',
       'activeCategory',
       'activeTags',
       'searchedText',
       'activeAuthor',
     ]),
     resolvedActiveCategory() {
-      return this.activeCategory ? `type "${this.activeCategory}"` : 'all types'
+      return this.activeCategory
+        ? `type "${this.activeCategory.name}"`
+        : 'all types'
     },
     resolvedSearchedText() {
       return `"${this.searchedText.join(' ')}"`
