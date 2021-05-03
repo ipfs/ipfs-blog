@@ -44,9 +44,7 @@ View [their showcase](https://devpost.com/software/cryptolamma) and [source code
 
 🖼 Best use of IPFS or Filecoin for NFTs - maybe it’s archiving, maybe it’s provenance connections, maybe it’s aggregation, maybe it’s tooling, maybe it’s up to you.
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/mvtLDpDvJkY](https://www.youtube.com/embed/mvtLDpDvJkY "https://www.youtube.com/embed/mvtLDpDvJkY")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](mvtLDpDvJkY)
 
 The [Korea Heritage and History NFT](http://3.236.231.250/) platform was built by the team of Seongwon Kwak, Melissa Ann Wilkinson, Valijon Khalilov, Bin Yoon, and Park Hyein, with the intention of recording Korea’s invaluable heritage over a period of 5,000 years and safely preserving it by converting it into NFT tokens.
 
@@ -56,9 +54,7 @@ View [their showcase](https://devpost.com/software/korean-heritage-and-history-n
 
 🖥 Best IPFSizing of HTTP data - Chainlink is often used to pull data from the regular web, why not autopublish to IPFS while you’re there?
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/n_62_ZXMYYI](https://www.youtube.com/embed/n_62_ZXMYYI "https://www.youtube.com/embed/n_62_ZXMYYI")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](n_62_ZXMYYI)
 
 Created by Vladimir, Степан Самсонов, and Anton Lebedev, the [Stonent Project](http://stonent.us-east-2.elasticbeanstalk.com/check/275089) helps NFT-artists fight against intellectual property theft by using a neural network to detect plagiarism, ERC-1155 tokens, and Chainlink.
 
@@ -68,9 +64,7 @@ View [their showcase](https://devpost.com/software/stonent-project) and [source 
 
 🛠 Best Hack We’ll Use Every Day that uses IPFS, Filecoin or libp2p
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/nHXhbZFmX6M](https://www.youtube.com/embed/nHXhbZFmX6M "https://www.youtube.com/embed/nHXhbZFmX6M")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](nHXhbZFmX6M)
 
 Created by Lukas Sexton, Mike Robinson, Seth A., and Luis R., [Parametric Digital Asset Risk Management](https://devpost.com/software/parametric-digital-asset-risk-management) is a decentralized protocol offering protection to the risk-adverse to encourage DeFi lending and in the process, promote economic fairness. They created this protocol with Chainlink for data delivery for smart contracts, Scaffold-Eth for a development framework, and IPFS to deploy, host, and load their website.
 
@@ -84,25 +78,19 @@ Catch up on some of the workshops and code-alongs that took place during the eve
 
 ### IPFS x Chainlink Workshop
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/Ds1RJplxxxo](https://www.youtube.com/embed/Ds1RJplxxxo "https://www.youtube.com/embed/Ds1RJplxxxo")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](Ds1RJplxxxo)
 
 Dietrich Ayala, IPFS Developer Onboarding lead, hosted this introduction and demo showing how IPFS and Chainlink go hand-in-hand. 
 
 ### Store your NFTs, assets, and databases on Filecoin
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/NdSdsTsh0QI](https://www.youtube.com/embed/NdSdsTsh0QI "https://www.youtube.com/embed/NdSdsTsh0QI")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](NdSdsTsh0QI)
 
 Andrew W. Hill, co-founder and CEO at [Textile](https://textile.io/), joined the event to show how easy it is to get started with storage on Filecoin. 
 
 ### How to Decentralize the Front-end of your Web Application
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/-A45TteFd3o](https://www.youtube.com/embed/-A45TteFd3o "https://www.youtube.com/embed/-A45TteFd3o")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
+@[youtube](-A45TteFd3o)
 
 Samuele Agostinelli from [Fleek](https://fleek.co/), was also there to share a workshop on decentralized hosting and storage. 
 
