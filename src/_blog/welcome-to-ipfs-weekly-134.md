@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 134
-description: Introducing NFT.Storage, a look back at the March 2021 hackathons, plus
-  all things brand new on IPFS!
+description: Introducing NFT.Storage, a look back at the March 2021 hackathons, &
+  more!
 author: Emily Vaughan
 date: 2021-05-05
 permalink: "/weekly-134/"
