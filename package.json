@@ -43,7 +43,7 @@
     "postcss": "^7.0.35",
     "prettier": "^2.2.1",
     "slug": "^4.0.4",
-    "standard-version": "^9.2.0",
+    "standard-version": "^9.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-prettier": "^1.2.0",
