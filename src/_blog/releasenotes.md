@@ -4,6 +4,14 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: IPFS Desktop v0.15.0
+  date: 2021-05-05
+  publish_date: 
+  path: https://github.com/ipfs/ipfs-desktop/releases/tag/v0.15.0
+  tags:
+  - pinning
+  - Windows
+  - IPFS Desktop
 - title: ipfs-webui v2.12.0
   date: 2021-04-19
   publish_date: 
