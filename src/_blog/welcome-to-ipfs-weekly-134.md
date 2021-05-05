@@ -15,13 +15,17 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## Introducing NFT.Storage: Free Decentralized Storage for NFTs
 
-![](../assets/fil-blog-nft-storage-notext.png)We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.  
+![](../assets/fil-blog-nft-storage-notext.png)
+
+We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.  
   
 NFT.Storage lets developers store NFT data on decentralized networks easily, securely, and for free! With just a few lines of code, anyone can leverage the power of IPFS and Filecoin to ensure the persistence of their NFTs. [**Learn more about how it works, how to participate and what’s next.**](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)
 
 ## All Things Hackathons - a look back at March 2021
 
-![](../assets/381008a6-0586-e15d-3735-efa315b6ea6f.png)In the past two months Protocol Labs participated in five different hackathon events, ranging in audience from university builders, to game designers, to blockchain hackers all building on IPFS and Filecoin. Chainlink’s spring hackathon, which kicked off earlier in March, wrapped up mid-month, followed closely by the start of Gamedev.js JAM 2021 where IPFS sponsored a special decentralized track. Cal Hacks’ hello:world event, a weekend-long endeavor, began the same day at Scaling Ethereum, an event hosted by ETHGlobal focused on developing robust infrastructure for the Ethereum blockchain.
+![](../assets/381008a6-0586-e15d-3735-efa315b6ea6f.png)
+
+In the past two months Protocol Labs participated in five different hackathon events, ranging in audience from university builders, to game designers, to blockchain hackers all building on IPFS and Filecoin. Chainlink’s spring hackathon, which kicked off earlier in March, wrapped up mid-month, followed closely by the start of Gamedev.js JAM 2021 where IPFS sponsored a special decentralized track. Cal Hacks’ hello:world event, a weekend-long endeavor, began the same day at Scaling Ethereum, an event hosted by ETHGlobal focused on developing robust infrastructure for the Ethereum blockchain.
 
 Rounding out the month was ASUC’s CivHacks event, another weekend-long university event with the goal of using technology to accomplish social good and civic outreach. Check out the IPFS blog for details on these events and for updates and announcements of future hackathons.
 
