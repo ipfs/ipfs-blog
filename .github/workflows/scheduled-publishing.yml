@@ -16,10 +16,7 @@ jobs:
         id: should_publish_step
       - name: Trigger Fleek Build
         if: ${{ steps.should_publish_step.outputs.should_publish == 'true' }}
-        id: deploy
-        uses: fleekhq/action-deploy@v1
-        with:
-          apiKey: ${{ secrets.FLEEK_API_KEY }}
+        run: curl -H "Authorization:${{ secrets.FLEEK_API_KEY }}" -H "Content-Type:application/json" -d '{"query":"mutation { triggerDeploy(siteId:\"${{ secrets.FLEEK_SITE_ID }}\") { status } }"}' https://api.fleek.co/graphql
       - name: Scheduled posts published
         if: ${{ steps.should_publish_step.outputs.should_publish == 'true' }}
         run: echo "Check https://blog.ipfs.io"
