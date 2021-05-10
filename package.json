@@ -42,7 +42,7 @@
     "p-map": "^4.0.0",
     "postcss": "^7.0.35",
     "prettier": "^2.3.0",
-    "slug": "^5.0.0",
+    "slug": "^5.0.1",
     "standard-version": "^9.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
