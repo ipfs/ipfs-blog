@@ -3,9 +3,9 @@ title: Congrats, Gitcoin Grants Round 9 winners!
 description: Meet the winners of the IPFS, Filecoin, Textile, and Fleek prizes from
   Gitcoin Grants Round 9.
 author: PL Hackathon Team
-date: 2021-05-11
-permalink: "/2021-05-11-gitcoin-gr9-recap/"
-translationKey: 2021-05-11-gitcoin-gr9-recap
+date: 2021-05-10
+permalink: "/2021-05-10-gitcoin-gr9-recap/"
+translationKey: 2021-05-10-gitcoin-gr9-recap
 header_image: "/gitcoin-gr9-recap.png"
 tags:
 - recap
