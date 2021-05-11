@@ -18,11 +18,11 @@ tags:
 
 It's been a long time in the works, but `js-ipfs@0.55.0` finally lands with a brand new set of TypeScript type definitions entirely re-written from the ground up.
 
-We previously shipped `0.51.0` with bundled TypeScript type definitions which enabled users to explore the IPFS Core API through intellisense and use that to ensure they were calling methods that existed, but the argument and return types were frequently marked `any` which although would not cause TypeScript compilation errors, gave you little in the way of actual type safety.
+We previously shipped `0.51.0` with bundled TypeScript type definitions which enabled users to explore the IPFS Core API through [intellisense](https://code.visualstudio.com/docs/editor/intellisense) and use that to ensure they were calling methods that existed, but the argument and return types were frequently marked `any` which although would not cause TypeScript compilation errors, gave you little in the way of actual type safety.
 
 Part of the problem is that `js-ipfs` exposes the return types of many supporting modules which do not ship with TypeScript definitions.  This means we either had to PR support for TypeScript definitions into these modules or type their input/output at the `js-ipfs` level which is error prone and makes no guarantees about the actual underlying code.
 
-We took a look at our stack and started to add TypeScript types from the lowest level up, which has been an enormous job with some 250 pull requests opened, reviewed, merged and shipped as part of this effort.
+We took a look at our stack and started to add TypeScript types from the lowest level up, which has been an enormous job with some 250 pull requests opened, reviewed, merged and shipped as part of this effort, massive thanks to everyone involved, see the contributors list further down this post for who helped out!
 
 ## 🙅 noImplicitAny
 
@@ -72,8 +72,9 @@ The API changes are as follows:
 
 ## 🔨 Breaking changes
 
-* Minimum supported node version is 14
-* all core api methods now have types, some method signatures have changed, named exports are now used by the http, grpc and ipfs client modules
+* The minimum supported Node.js version is 14
+* All core api methods now have types, some method signatures have changed (see Upgrade guide, above)
+* Named exports are now used by the http, grpc and ipfs client modules (see Future proofing, above)
 
 ## 🕷️ Bug fixes
 
@@ -90,7 +91,6 @@ The API changes are as follows:
 * fix types ([#3662](https://github.com/ipfs/js-ipfs/issues/3662)) ([0fe8892](https://github.com/ipfs/js-ipfs/commit/0fe8892361180dab53ed3c3b006479b32a792d44))
 * update ipfs repo ([#3671](https://github.com/ipfs/js-ipfs/issues/3671)) ([9029ee5](https://github.com/ipfs/js-ipfs/commit/9029ee591fa74ea65c9600f2d249897e933416fa))
 * update types after feedback from ceramic ([#3657](https://github.com/ipfs/js-ipfs/issues/3657)) ([0ddbb1b](https://github.com/ipfs/js-ipfs/commit/0ddbb1b1deb4e40dac3e365d7f98a5f174c2ce8f)), closes [#3640](https://github.com/ipfs/js-ipfs/issues/3640)
-
 
 # 🗺️ What’s next?
 
