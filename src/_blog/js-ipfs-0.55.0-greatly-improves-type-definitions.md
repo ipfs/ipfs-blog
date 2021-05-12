@@ -2,11 +2,12 @@
 title: js-IPFS 0.55.0 greatly improves type definitions
 description: The new release comes with types rewritten from the ground up
 author: Alex Potsides
-date: 2021-05-11
+date: 2021-05-12
 permalink: "/2021-05-11-js-ipfs-0-55/"
 translationKey: ''
 header_image: "/header-image-js-ipfs-placeholder.png"
 tags:
+- breaking change
 - js-ipfs
 
 ---
