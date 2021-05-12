@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 135
-description: Introducing NFT.Storage, a look back at the March 2021 hackathons, &
-  more!
+description: Audius x IPFS collaboration, Gitcoin GR9 winners, IPFS featured on SNL,
+  and more!
 author: Emily Vaughan
-date: 2021-05-05
-permalink: "/weekly-134/"
-translationKey: ipfs-weekly-134
+date: 2021-05-12
+permalink: "/weekly-135/"
+translationKey: ipfs-weekly-135
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,12 +13,12 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Introducing NFT.Storage: Free Decentralized Storage for NFTs
+## Audius Uses IPFS for Content Streaming Storage to Empower Artists & Creators Worldwide
 
-![](../assets/fil-blog-nft-storage-notext.png)
+@[youtube](c50licHTOik)
 
-We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.  
-  
+We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.
+
 NFT.Storage lets developers store NFT data on decentralized networks easily, securely, and for free! With just a few lines of code, anyone can leverage the power of IPFS and Filecoin to ensure the persistence of their NFTs. [**Learn more about how it works, how to participate and what’s next.**](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)
 
 ## All Things Hackathons - a look back at March 2021
