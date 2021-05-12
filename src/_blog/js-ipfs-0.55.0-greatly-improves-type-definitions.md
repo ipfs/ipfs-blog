@@ -12,17 +12,17 @@ tags:
 ---
 # 🔦 Highlights
 
-> TypeScript types have been rewritten from the ground up
+> TypeScript type definitions have been rewritten from the ground up
 
 ## 🍪 Types
 
 It's been a long time in the works, but `js-ipfs@0.55.0` finally lands with a brand new set of TypeScript type definitions entirely re-written from the ground up.
 
-We previously shipped `0.51.0` with bundled TypeScript type definitions which enabled users to explore the IPFS Core API through [intellisense](https://code.visualstudio.com/docs/editor/intellisense) and use that to ensure they were calling methods that existed, but the argument and return types were frequently marked `any` which although would not cause TypeScript compilation errors, gave you little in the way of actual type safety.
+We previously shipped `0.51.0` with bundled TypeScript type definitions which enabled users to explore the IPFS Core API through [intellisense](https://code.visualstudio.com/docs/editor/intellisense) and use that to ensure they were calling methods that existed, but the argument and return types were frequently marked `any`, which, although would not cause TypeScript compilation errors, gave you little in the way of actual type safety.
 
 Part of the problem is that `js-ipfs` exposes the return types of many supporting modules which do not ship with TypeScript definitions.  This means we either had to PR support for TypeScript definitions into these modules or type their input/output at the `js-ipfs` level which is error prone and makes no guarantees about the actual underlying code.
 
-We took a look at our stack and started to add TypeScript types from the lowest level up, which has been an enormous job with some 250 pull requests opened, reviewed, merged and shipped as part of this effort, massive thanks to everyone involved, see the contributors list further down this post for who helped out!
+We took a look at our stack and started to add TypeScript types from the lowest level up, which has been an enormous job with some 250 pull requests opened, reviewed, merged and shipped as part of this effort. A massive thanks to everyone involved, see the contributors list further down this post for who helped out!
 
 ## 🙅 noImplicitAny
 
@@ -32,11 +32,11 @@ It means that everything has to be typed internally which increased the amount o
 
 ## 🤖 Future proofing
 
-In line with our [supported versions](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md#supported-versions), `js-ipfs@0.55.0` has dropped support for node < 14, this is so we can support the latest and greatest features without having to carry legacy baggage forward.
+In line with our [supported versions](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md#supported-versions), `js-ipfs@0.55.0` has dropped support for Node.js < 14. This is so we can support the latest and greatest features without having to carry legacy baggage forward.
 
-We've also switched to using named exports for our top-level modules instead of default exports as it makes them more pleasant to consume from [ES6 module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) environments.  It also means the type defs generated from [JSDoc comments](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) are more compact and have to jump through fewer hoops to reflect the code they are generated from.
+We've also switched to using named exports for our top-level modules instead of default exports as it makes them more pleasant to consume from [ES module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) environments.  It also means the type definitions generated from [JSDoc annotations](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) are more compact and have to jump through fewer hoops to reflect the code they are generated from.
 
-Code wise this only affects ipfs-http-client:
+From perspective of the external API, this only affects ipfs-http-client:
 
 ```js
 // before
@@ -48,11 +48,11 @@ const { create } = require('ipfs-http-client')
 const ipfs = create()
 ```
 
-Finally in some places we return instances of the [bignumber.js](https://www.npmjs.com/package/bignumber.js) module - this has been necessary in the past because JavaScript lacked an arbitrary precision number type.  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) has been present in all of our supported environments for some time so we've been removing `bignumber.js` in favour of `BigInt` in the [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs).
+Finally, in some places we previously returned instances of the [bignumber.js](https://www.npmjs.com/package/bignumber.js) module—this has been necessary in the past because JavaScript lacked an arbitrary precision number type.  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) has been present in all of our supported environments for some time so we've been removing `bignumber.js` in favour of `BigInt` in the [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs).
 
 ## 🛍️ Upgrade Guide
 
-We've taken this opportunity to align the implementation with the published [Core API Docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) - in some cases the accepted input types were broader than what was documented for backwards compatibility, but that compatibility comes at the cost of code complexity and added maintenance, so those old code paths have been removed.
+We've taken this opportunity to align the implementation with the published [Core API Docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api). In some cases the accepted input types were broader than what was documented for backward compatibility, but that compatibility comes at the cost of code complexity and added maintenance, so those old code paths have been removed.
 
 If you have coded against the Core API docs you should have very few surprises in store.
 
@@ -68,12 +68,12 @@ The API changes are as follows:
 
 # ✨New features
 
-* support identity hash in block.get + dag.get ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
+* Support identity hash ([`0x00](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in `ipfs.block.get()` + `ipfs.dag.get()` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
 
 ## 🔨 Breaking changes
 
 * The minimum supported Node.js version is 14
-* All core api methods now have types, some method signatures have changed (see Upgrade guide, above)
+* All Core API methods now have types, some method signatures have changed (see Upgrade Guide above)
 * Named exports are now used by the http, grpc and ipfs client modules (see Future proofing, above)
 
 ## 🕷️ Bug fixes
@@ -244,7 +244,8 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 
 * Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 * Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: [https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands](https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands "https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands")
-* Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
+* Join an IPLD All Hands call if you're interested in the data layer of IPFS: [https://github.com/ipld/team-mgmt#every-two-weeks-call](https://github.com/ipld/team-mgmt#every-two-weeks-call)
+* Hack with IPFS and show us what you made! The All Hands calls are also the perfect venue for demos, join in and show us what you built
 * Join the discussion at [https://discuss.ipfs.io/](https://discuss.ipfs.io/ "https://discuss.ipfs.io/") and help users finding their answers.
 * Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
