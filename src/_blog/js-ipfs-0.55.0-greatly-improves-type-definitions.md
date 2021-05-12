@@ -50,7 +50,7 @@ const ipfs = create()
 
 Finally, in some places we previously returned instances of the [bignumber.js](https://www.npmjs.com/package/bignumber.js) module—this has been necessary in the past because JavaScript lacked an arbitrary precision number type.  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) has been present in all of our supported environments for some time so we've been removing `bignumber.js` in favour of `BigInt` in the [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs).
 
-## 🛍️ Upgrade Guide
+# 🛍️ Upgrade Guide
 
 We've taken this opportunity to align the implementation with the published [Core API Docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api). In some cases the accepted input types were broader than what was documented for backward compatibility, but that compatibility comes at the cost of code complexity and added maintenance, so those old code paths have been removed.
 
@@ -66,7 +66,7 @@ The API changes are as follows:
 * `ipfs.files.cp(source, dest, opts)` - `source` arg is `string | string[]` (was `...string`)
 * `ipfs.files.mv(source, dest, opts)` - `source` arg is `string | string[]` (was `...string`)
 
-# ✨New features
+## ✨New features
 
 * Support identity hash ([`0x00](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in `ipfs.block.get()` + `ipfs.dag.get()` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
 
