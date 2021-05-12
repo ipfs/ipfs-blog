@@ -12,7 +12,7 @@ data:
   tags:
   - js-ipfs
 - title: js-ipfs 0.55.0
-  date: 2021-05-11
+  date: 2021-05-10
   publish_date: 
   path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.55.0
   card_image: "/header-image-js-ipfs-placeholder.png"
