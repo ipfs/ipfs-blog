@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: js-ipfs 0.55.1
+  date: 2021-05-11
+  publish_date: 2021-05-11T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.55.1
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
 - title: js-ipfs 0.55.0
   date: 2021-05-10
   publish_date: 2021-05-10T12:00:00+00:00
