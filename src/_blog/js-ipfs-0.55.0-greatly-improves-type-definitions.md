@@ -7,6 +7,7 @@ permalink: "/2021-05-11-js-ipfs-0-55/"
 translationKey: ''
 header_image: "/header-image-js-ipfs-placeholder.png"
 tags:
+- breaking change
 - js-ipfs
 
 ---
