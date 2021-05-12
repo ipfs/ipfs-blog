@@ -2,8 +2,8 @@
 title: js-IPFS 0.55.0 greatly improves type definitions
 description: The new release comes with types rewritten from the ground up
 author: Alex Potsides
-date: 2021-05-10
-permalink: "/2021-05-10-js-ipfs-0-55/"
+date: 2021-05-11
+permalink: "/2021-05-12-js-ipfs-0-55/"
 translationKey: ''
 header_image: "/header-image-js-ipfs-placeholder.png"
 tags:
@@ -50,7 +50,7 @@ const ipfs = create()
 
 Finally, in some places we previously returned instances of the [bignumber.js](https://www.npmjs.com/package/bignumber.js) module—this has been necessary in the past because JavaScript lacked an arbitrary precision number type.  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) has been present in all of our supported environments for some time so we've been removing `bignumber.js` in favour of `BigInt` in the [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs).
 
-# 🛍️ Upgrade Guide
+# 🛍️ Upgrade guide
 
 We've taken this opportunity to align the implementation with the published [Core API Docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api). In some cases the accepted input types were broader than what was documented for backward compatibility, but that compatibility comes at the cost of code complexity and added maintenance, so those old code paths have been removed.
 
@@ -68,7 +68,7 @@ The API changes are as follows:
 
 ## ✨New features
 
-* Support identity hash ([`0x00](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in `ipfs.block.get()` + `ipfs.dag.get()` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
+* Support identity hash (\[`0x00](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in`ipfs.block.get()`+`ipfs.dag.get()\` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
 
 ## 🔨 Breaking changes
 
