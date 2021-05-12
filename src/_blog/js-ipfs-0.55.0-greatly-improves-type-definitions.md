@@ -69,7 +69,7 @@ The API changes are as follows:
 
 ## ✨New features
 
-* Support identity hash (\[`0x00](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in`ipfs.block.get()`+`ipfs.dag.get()\` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
+* Support identity hash ([`0x00`](https://github.com/multiformats/multicodec/blob/master/table.csv#L2)) in`ipfs.block.get()`+`ipfs.dag.get()` ([#3616](https://github.com/ipfs/js-ipfs/issues/3616)) ([28ad9ad](https://github.com/ipfs/js-ipfs/commit/28ad9ad6e50abb89a366ecd6b5301e848f0e9962))
 
 ## 🔨 Breaking changes
 
