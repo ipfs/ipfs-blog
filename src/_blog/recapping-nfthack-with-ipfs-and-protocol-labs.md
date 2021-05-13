@@ -4,7 +4,7 @@ description: Looking back at NFTHack with ETHGlobal, the numbers behind the week
   IPFS usage, and the bounty winners.
 author: PL Hackathon Team
 date: 2021-05-13
-permalink: recapping-nft-hack
+permalink: 2021-05-13-recapping-nft-hack
 translationKey: ''
 header_image: "/ipfs-blog-nft-hack-1.png"
 tags: []
