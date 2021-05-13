@@ -22,4 +22,4 @@ The $5k bounty for the event prize was split into two $1.5k awards and one $2k a
 * One runner up was [GFT](https://hack.ethglobal.co/showcase/gft-pronounced-gift-recLgL3xQVu1T0l07), which connects creators and consumers through NFTS.
 * The other runner up was [Rodeo](https://hack.ethglobal.co/showcase/rodeo-recCnrDlmB6FWgPss), which lets people quickly spin up NFT galleries for their websites.
 
-You can browse the full event [agenda](https://nfthack.ethglobal.co/) and check out the [NFTHack YouTube playlist here](https://www.youtube.com/playlist?list=PLXzKMXK2aHh50g55xEroWasKorT1YkUKs). Learn more about nft.storage at [https://nft.storage/](https://nft.storage/).
+You can browse the full event [agenda](https://nfthack.ethglobal.co/) and check out the [NFTHack YouTube playlist](https://www.youtube.com/playlist?list=PLXzKMXK2aHh50g55xEroWasKorT1YkUKs). Learn more about nft.storage at [https://nft.storage/](https://nft.storage/).
