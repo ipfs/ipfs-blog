@@ -18,8 +18,8 @@ Between March 15-21 over 2,000 people visited nft.storage and a quarter of all N
 
 The $5k bounty for the event prize was split into two $1.5k awards and one $2k award.
 
-* The winner of “The 🤯 Prize” was [NFT (The 🚫Not Not-a-🔥 Flamethrower Token)](https://hack.ethglobal.co/showcase/nnft-the-%F0%9F%9A%ABnot-not-a-%F0%9F%94%A5-flamethrower-token-recqk5Rp8OqYkCwqD). Yes, it’s a flamethrower; but a flamethrower that creates an NFT out of anything it burns.
+* The winner of “The 🤯 Prize” was NFT (The 🚫Not Not-a-🔥 Flamethrower Token). Yes, it’s a flamethrower; but a flamethrower that creates an NFT out of anything it burns.
 * One runner up was [GFT](https://hack.ethglobal.co/showcase/gft-pronounced-gift-recLgL3xQVu1T0l07), which connects creators and consumers through NFTS.
-* The other runner up was [Rodeo](https://hack.ethglobal.co/showcase/rodeo-recCnrDlmB6FWgPss), which lets people quickly spin up NFT galleries for their websites.
+* The other runner up was Rodeo, which lets people quickly spin up NFT galleries for their websites.
 
 You can browse the full event [agenda](https://nfthack.ethglobal.co/) and check out the [NFTHack YouTube playlist](https://www.youtube.com/playlist?list=PLXzKMXK2aHh50g55xEroWasKorT1YkUKs). Learn more about nft.storage at [https://nft.storage/](https://nft.storage/).
