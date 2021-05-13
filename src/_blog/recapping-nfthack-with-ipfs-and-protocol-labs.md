@@ -10,7 +10,7 @@ header_image: "/ipfs-blog-nft-hack-1.png"
 tags: []
 
 ---
-In March Protocol Labs sponsored [NFTHack](https://nfthack.ethglobal.co/), a weekend long hackathon and summit to gather creatives and engineers focused on NFTs. The event sparked a multitude of conversations and ideas surrounding creative and sustainable solutions to NFT storage.
+In March, Protocol Labs sponsored [NFTHack](https://nfthack.ethglobal.co/), a weekend long hackathon and summit to gather creatives and engineers focused on NFTs. The event sparked a multitude of conversations and ideas surrounding creative and sustainable solutions to NFT storage.
 
 For example, [nft.storage](http://nft.storage/) is a new service built specifically for storing off-chain NFT data on IPFS and Filecoin. Nft.Storage was a tremendous asset during the NFTHack weekend. The service made it possible for participants to focus fully on their hacks knowing that their off-chain data was safely being stored by nft.storage on IPFS and Filecoin. During the event alone, 1204 NFTs were stored on IPFS.
 
