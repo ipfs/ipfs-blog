@@ -7,7 +7,9 @@ date: 2021-05-13
 permalink: 2021-05-13-recapping-nft-hack
 translationKey: ''
 header_image: "/ipfs-blog-nft-hack-1.png"
-tags: []
+tags:
+- NFTs
+- hackathon
 
 ---
 In March, Protocol Labs sponsored [NFTHack](https://nfthack.ethglobal.co/), a weekend long hackathon and summit to gather creatives and engineers focused on NFTs. The event sparked a multitude of conversations and ideas surrounding creative and sustainable solutions to NFT storage.
