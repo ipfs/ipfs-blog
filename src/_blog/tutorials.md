@@ -49,7 +49,7 @@ data:
   - DAG
   - IPLD
   - CID
-  card_image: "/ps-twitter-tute-ipld-merkle-dags.jpg"
+  card_image: "/protoschool-tutorial-merkle-dags.jpg"
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
