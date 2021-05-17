@@ -105,7 +105,7 @@ data:
   tags:
   - ProtoSchool
   - CID
-  card_image: "/2020-09-11-tutorial-protoschool-datalinks.png"
+  card_image: "/protoschool-tutorial-basics.jpg"
 - name: Install IPFS on a Raspberry Pi 2
   title: Install IPFS on a Raspberry Pi 2
   path: https://www.siliconian.com/blog/16-bitcoin-blockchain/23-beginner-s-guide-to-installing-ipfs-on-a-raspberry-pi-2
