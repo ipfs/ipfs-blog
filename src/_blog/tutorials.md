@@ -57,7 +57,7 @@ data:
   tags:
   - ProtoSchool
   - CID
-  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
+  card_image: "/ps-twitter-tute-multiformats-anatomy-of-a-cid.jpg"
 - name: 'ProtoSchool: Regular Files API'
   title: 'ProtoSchool: Regular Files API'
   path: https://proto.school/regular-files-api
@@ -75,7 +75,7 @@ data:
   - ProtoSchool
   - MFS
   - js-ipfs
-  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
+  card_image: "/ps-twitter-tute-ipfs-mfs.jpg"
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
