@@ -57,7 +57,7 @@ data:
   tags:
   - ProtoSchool
   - CID
-  card_image: "/ps-twitter-tute-multiformats-anatomy-of-a-cid.jpg"
+  card_image: "/protoschool-tutorial-anatomy-of-a-cid.jpg"
 - name: 'ProtoSchool: Regular Files API'
   title: 'ProtoSchool: Regular Files API'
   path: https://proto.school/regular-files-api
