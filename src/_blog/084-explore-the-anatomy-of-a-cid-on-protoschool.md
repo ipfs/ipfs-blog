@@ -1,16 +1,16 @@
 ---
 date: 2020-03-04
-permalink: /2020-03-04-protoschool-tutorial-anatomy-of-a-cid/
+permalink: "/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/"
 title: Explore the anatomy of a CID in ProtoSchool’s newest tutorial
-description:
+description: 
 author: José Bateira, Teri Chadbourne
-header_image: /084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png
+header_image: "/protoschool-multiformats-mc.jpg"
 tags:
-  - 'ProtoSchool'
-  - 'tutorial'
-  - 'CID'
----
+- ProtoSchool
+- tutorial
+- CID
 
+---
 The [ProtoSchool](https://proto.school/#/) team is pleased to announce the launch of a shiny new multiple-choice tutorial on the **[Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid)**, built by the fabulous [José Bateira](https://github.com/zebateira)! It’s our first multiple-choice content and the first to explore Multiformats. 🎉
 
 ![Table of Contents](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-table-of-contents.png)
