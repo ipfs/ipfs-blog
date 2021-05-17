@@ -4,7 +4,7 @@ permalink: "/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/"
 title: Explore the anatomy of a CID in ProtoSchool’s newest tutorial
 description: 
 author: José Bateira, Teri Chadbourne
-header_image: "/protoschool-multiformats-mc.jpg"
+header_image: "/protoschool-course-multiformats-mc.jpg"
 tags:
 - ProtoSchool
 - tutorial
