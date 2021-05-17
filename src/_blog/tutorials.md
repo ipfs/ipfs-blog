@@ -75,7 +75,7 @@ data:
   - ProtoSchool
   - MFS
   - js-ipfs
-  card_image: "/ps-twitter-tute-ipfs-mfs.jpg"
+  card_image: "/protoschool-tutorial-mfs.jpg"
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
