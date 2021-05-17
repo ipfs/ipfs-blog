@@ -1,17 +1,17 @@
 ---
 date: 2021-01-14
-permalink: '/2021-01-14-explore-merkle-dags-at-protoschool/'
+permalink: "/2021-01-14-explore-merkle-dags-at-protoschool/"
 translationKey: ''
-header_image: '/115-protoschool-merkle-dags.png'
+header_image: "/protoschool-course-ipld-mc.jpg"
 title: Explore Merkle DAGs at ProtoSchool
 description: ''
 author: Teri Chadbourne
 tags:
-  - ProtoSchool
-  - IPLD
-  - DAG
----
+- ProtoSchool
+- IPLD
+- DAG
 
+---
 The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial on [Merkle DAGs](https://proto.school/merkle-dags), the cornerstone of our freshly launched [IPLD (InterPlanetary Data) course](https;//proto.school/course/ipld). 🎉
 
 This new content is inspired by feedback on our Decentralized Data Structures tutorial, which originally explored both content addressing and data structures. Based on learner feedback, we’ve split the content in two! You’ll now find the majority of our original content in our rebranded tutorial, [Content Addressing on the Decentralized Web](https://proto.school/content-addressing), which highlights the key differences in how data is shared and retrieved on the centralized web and decentralized web. Meanwhile, our brand new tutorial, [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags), is chock full of new content exploring the intricacies of the magical data structure that much of the decentralized web relies on.
