@@ -4,7 +4,7 @@ permalink: "/2019-11-06-explore-the-files-api-on-protoschool/"
 title: Explore the Files API on ProtoSchool
 description: 
 author: Teri Chadbourne
-header_image: "/protoschool-tutorial-regularfilesapi.jpg"
+header_image: "/protoschool-ipfs-code.jpg"
 tags:
 - ProtoSchool
 - tutorial
