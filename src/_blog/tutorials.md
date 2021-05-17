@@ -66,7 +66,7 @@ data:
   - ProtoSchool
   - API
   - js-ipfs
-  card_image: "/protoschool-tutorial-regularfilesapi-1.jpg"
+  card_image: "/protoschool-tutorial-regularfilesapi.jpg"
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
