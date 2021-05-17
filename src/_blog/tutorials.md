@@ -97,7 +97,7 @@ data:
   - js-ipfs
   - IPLD
   - DAG
-  card_image: "/2020-09-11-tutorial-protoschool-blogging.png"
+  card_image: "/protoschool-tutorial-blog.jpg"
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
