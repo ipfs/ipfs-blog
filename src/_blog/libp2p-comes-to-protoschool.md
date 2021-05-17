@@ -1,19 +1,18 @@
 ---
 tags:
-  - ProtoSchool
-  - libp2p
-  - tutorial
+- ProtoSchool
+- libp2p
+- tutorial
 title: libp2p comes to ProtoSchool
-description:
-  The ProtoSchool team is pleased to announce the launch of a shiny new
-  multiple-choice tutorial introducing libp2p
+description: The ProtoSchool team is pleased to announce the launch of a new multiple-choice
+  tutorial introducing libp2p
 date: 2021-02-17
-permalink: '/2021-02-17-libp2p-comes-to-protoschool/'
+permalink: "/2021-02-17-libp2p-comes-to-protoschool/"
 translationKey: ''
-header_image: '/124-libp2p-comes-to-protoschool.png'
+header_image: "/protoschool-course-libp2p-mc.jpg"
 author: Teri Chadbourne
----
 
+---
 The [ProtoSchool](https://proto.school) team is pleased to announce the launch of a shiny new multiple-choice tutorial [introducing libp2p](https://proto.school/introduction-to-libp2p), the modular peer-to-peer networking stack that spun out of IPFS into its own first-class project and a dependency of IPFS itself. Today, IPFS focuses on _content addressing_ (i.e., finding, fetching and authenticating any piece of content in the web) while libp2p focuses on _process addressing_ (i.e., finding, connecting and authenticating any data transfer processes in the network).
 
 ![libp2p animation representing libp2p being extracted out of ipfs](../assets/2021-02-17-libp2p-ipfs-animation.gif)

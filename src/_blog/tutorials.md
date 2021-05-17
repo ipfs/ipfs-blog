@@ -27,7 +27,7 @@ data:
 - name: 'ProtoSchool: Introduction to libp2p'
   title: 'ProtoSchool: Introduction to libp2p'
   path: https://proto.school/introduction-to-libp2p
-  card_image: "/2021-02-17-cardheader-protoschool-intro-to-libp2p.jpg"
+  card_image: "/protoschool-tutorial-libp2p-intro.jpg"
   date: 2021-02-17
   tags:
   - ProtoSchool
@@ -49,7 +49,7 @@ data:
   - DAG
   - IPLD
   - CID
-  card_image: "/2021-01-14-tutorial-protoschool-merkledags.png"
+  card_image: "/protoschool-tutorial-merkle-dags.jpg"
 - name: 'ProtoSchool: Anatomy of a CID'
   title: 'ProtoSchool: Anatomy of a CID'
   path: https://proto.school/anatomy-of-a-cid
@@ -57,7 +57,7 @@ data:
   tags:
   - ProtoSchool
   - CID
-  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
+  card_image: "/protoschool-tutorial-anatomy-of-a-cid.jpg"
 - name: 'ProtoSchool: Regular Files API'
   title: 'ProtoSchool: Regular Files API'
   path: https://proto.school/regular-files-api
@@ -66,7 +66,7 @@ data:
   - ProtoSchool
   - API
   - js-ipfs
-  card_image: "/2020-09-11-tutorial-protoschool-regularfilesapi.png"
+  card_image: "/protoschool-tutorial-regularfilesapi.jpg"
 - name: 'ProtoSchool: Mutable File System'
   title: 'ProtoSchool: Mutable File System'
   path: https://proto.school/mutable-file-system
@@ -75,7 +75,7 @@ data:
   - ProtoSchool
   - MFS
   - js-ipfs
-  card_image: "/084-explore-the-anatomy-of-a-cid-on-protoschool-header-image.png"
+  card_image: "/protoschool-tutorial-mfs.jpg"
 - name: 'ProtoSchool: Content Addressing on the Decentralized Web'
   title: 'ProtoSchool: Content Addressing on the Decentralized Web'
   path: https://proto.school/content-addressing
@@ -86,7 +86,7 @@ data:
   - CID
   - js-ipfs
   - IPLD
-  card_image: "/2021-01-12-tutorial-protoschool-contentaddressing.png"
+  card_image: "/protoschool-tutorial-content-addressing.jpg"
 - name: 'ProtoSchool: Blogging on the Decentralized Web'
   title: 'ProtoSchool: Blogging on the Decentralized Web'
   path: https://proto.school/blog
@@ -97,7 +97,7 @@ data:
   - js-ipfs
   - IPLD
   - DAG
-  card_image: "/2020-09-11-tutorial-protoschool-blogging.png"
+  card_image: "/protoschool-tutorial-blog.jpg"
 - name: 'ProtoSchool: P2P Data Links with Content Addressing'
   title: 'ProtoSchool: P2P Data Links with Content Addressing'
   path: https://proto.school/basics
@@ -105,7 +105,7 @@ data:
   tags:
   - ProtoSchool
   - CID
-  card_image: "/2020-09-11-tutorial-protoschool-datalinks.png"
+  card_image: "/protoschool-tutorial-basics.jpg"
 - name: Install IPFS on a Raspberry Pi 2
   title: Install IPFS on a Raspberry Pi 2
   path: https://www.siliconian.com/blog/16-bitcoin-blockchain/23-beginner-s-guide-to-installing-ipfs-on-a-raspberry-pi-2
