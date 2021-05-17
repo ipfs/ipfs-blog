@@ -86,7 +86,7 @@ data:
   - CID
   - js-ipfs
   - IPLD
-  card_image: "/2021-01-12-tutorial-protoschool-contentaddressing.png"
+  card_image: "/protoschool-tutorial-content-addressing.jpg"
 - name: 'ProtoSchool: Blogging on the Decentralized Web'
   title: 'ProtoSchool: Blogging on the Decentralized Web'
   path: https://proto.school/blog
