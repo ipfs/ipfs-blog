@@ -27,7 +27,7 @@ data:
 - name: 'ProtoSchool: Introduction to libp2p'
   title: 'ProtoSchool: Introduction to libp2p'
   path: https://proto.school/introduction-to-libp2p
-  card_image: "/2021-02-17-cardheader-protoschool-intro-to-libp2p.jpg"
+  card_image: "/protoschool-tutorial-libp2p-intro.jpg"
   date: 2021-02-17
   tags:
   - ProtoSchool
