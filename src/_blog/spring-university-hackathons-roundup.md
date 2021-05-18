@@ -28,9 +28,9 @@ Decentralised rewards system for waste management
 @[youtube](l-vlJeMRMdY)
 
 [Contentish](https://devpost.com/software/contentish)  
-A real-time social networking dapp built on top of IPFS & Node
+A real-time social networking dapp built on top of IPFS & Node!
 
-![](../assets/screen-shot-2021-05-16-at-12-30-55-pm.png)
+![](../assets/2021-05-18-contentish.png)
 
 ### ASUC’s CivHacks
 
@@ -45,7 +45,7 @@ Using IPFS to detect plagiarized student assignments
 [Immutable](https://devpost.com/software/immutable-ipfs-for-storing-authentic-evidences)  
 Using the immutability of IPFS to maintain the authenticity of evidences in lawsuit.
 
-![](../assets/screen-shot-2021-05-16-at-12-33-12-pm.png)
+![](../assets/2021-05-18-immutable.png)
 
 [Sustainablox](https://devpost.com/software/roblox-sustainability-game)  
 A game teaching young children (ages 4-7) correct waste sorting.
@@ -62,6 +62,6 @@ During these events, the IPFS project was happy to participate by introducing st
 
 Dietrich Ayala, developer onboarding and ecosystem development lead, led a quick introduction to IPFS, the content distribution protocol used for NFTs and Web3 dapps, which uses peer-to-peer networking and content-addressing (instead of location!) to securely and resiliently transfer data and files on the internet.
 
-## Want to get involved in a future hackathon? 
+## Want to get involved in a future hackathon?
 
 Follow us on Twitter at [@IPFS](https://twitter.com/ipfs) or [@Filecoin](https://twitter.com/filecoin). You can also subscribe to the [IPFS weekly newsletter](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), or the [Filecoin monthly](https://filecoin.us16.list-manage.com/subscribe?u=a1dfb670c4f1fb042e82a1f1d&id=cf409026a0). Or, join us in chat in the [Filecoin Slack](http://filecoin.io/slack) or the [IPFS Discord](https://discord.com/invite/vZTcrFePpt). We’ll see you there! 👋
