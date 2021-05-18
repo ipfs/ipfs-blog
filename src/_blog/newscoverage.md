@@ -9,7 +9,7 @@ data:
   date: 2021-05-17
   publish_date: 
   path: https://rarible.medium.com/meet-metadata-guardians-trying-to-make-your-nft-collection-available-100-years-from-now-60a18baeed6c
-  card_image: "/1-96ub-dilydrmjsvwz_hooq.png"
+  card_image: "/2021-05-18-cardheader-rarible-protecting-nft-metadata.png"
   tags:
   - NFTs
 - title: Buying an NFT? Things you need to know!
