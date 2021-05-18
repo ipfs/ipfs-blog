@@ -6,7 +6,7 @@ sitemap:
 data:
 - title: Meet Metadata Guardians Trying to Make Your NFT Collection Available 100
     Years from Now
-  date: 2021-05-18
+  date: 2021-05-17
   publish_date: 
   path: https://rarible.medium.com/meet-metadata-guardians-trying-to-make-your-nft-collection-available-100-years-from-now-60a18baeed6c
   card_image: "/1-96ub-dilydrmjsvwz_hooq.png"
