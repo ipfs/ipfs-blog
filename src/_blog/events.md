@@ -4,6 +4,13 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: IPFS Community Meetup, May 2021
+  date: 2021-05-25
+  publish_date: 
+  path: https://www.meetup.com/San-Francisco-IPFS/events/276123403/
+  card_image: "/ipfs-events-ipfsmeetup2021-socialmedia-twitter-2x.png"
+  tags:
+  - official meetup
 - title: CivHacks 2021
   date: 2021-04-23
   path: https://www.civhacks.com/
