@@ -4,6 +4,14 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Fetch IPFS Data in Smart Contracts Using Chainlink
+  date: 2021-05-13
+  publish_date: 
+  path: https://blog.chain.link/fetch-ipfs-api-data-token-distribution/
+  card_image: "/2021-05-13-cardheader-integrate-ipfs-data-with-smart-contracts-using-a-chainlink-external-adapter.png"
+  tags:
+  - NFTs
+  - Ethereum
 - title: Fleek Makes Deploying and Maintaining an ENS+IPFS Website Easier than Ever
   date: 2021-02-06
   path: https://medium.com/the-ethereum-name-service/cloudflare-and-fleek-make-ens-ipfs-site-deployment-as-easy-as-ever-262c990a7514
