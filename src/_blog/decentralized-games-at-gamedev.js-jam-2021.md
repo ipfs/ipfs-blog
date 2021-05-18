@@ -48,9 +48,9 @@ Decentralized technologies are a great fit for independent game developers: no c
 
 ![](../assets/defi-battles.png)
 
-Eighth place (Tie) [Mirror to Home](https://cdansantana.itch.io/mth)
+🪞 Eighth place (Tie) [Mirror to Home](https://cdansantana.itch.io/mth)
 
-Eighth place (Tie) [Rough Waters Decentralised Tarots](https://wetwilly.itch.io/rough-waters-decentralised-tarots)
+🔮 Eighth place (Tie) [Rough Waters Decentralised Tarots](https://wetwilly.itch.io/rough-waters-decentralised-tarots)
 
 Try out these awesome games and let us know what you think!
 
