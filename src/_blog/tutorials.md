@@ -4,6 +4,20 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Content Routing in IPFS
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/
+  card_image: "/module_-content-routing.jpeg"
+  tags:
+  - tutorial
+  - research
+  - libp2p
+  - Kademlia
+  - DHT
+  - content routing
+  - community
+  - Bitswap
 - title: Content Addressing in IPFS
   date: 2021-04-06
   publish_date: 
