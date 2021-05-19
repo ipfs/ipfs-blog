@@ -4,6 +4,18 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Mutable Content in IPFS
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/
+  card_image: "/module_-mutable-content.jpeg"
+  tags:
+  - pubsub
+  - tutorial
+  - research
+  - Gossipsub
+  - CRDTs
+  - content routing
 - title: Content Exchange in IPFS
   date: 2021-04-06
   publish_date: 
