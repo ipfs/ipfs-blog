@@ -50,7 +50,7 @@ data:
   date: 2021-04-06
   publish_date: 
   path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/
-  card_image: "/module_-content-addressing-in-ipfs.jpeg"
+  card_image: "/resnetlab-content-addressing.png"
   tags:
   - tutorial
   - research
