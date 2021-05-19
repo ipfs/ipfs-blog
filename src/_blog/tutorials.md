@@ -32,7 +32,7 @@ data:
   - CID
   - Bitswap
   - blockstore
-- title: Content Routing in IPFS
+- title: 'Content Routing in IPFS '
   date: 2021-04-06
   publish_date: 
   path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/
