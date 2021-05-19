@@ -4,6 +4,18 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Content Addressing in IPFS
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/
+  card_image: "/module_-content-addressing-in-ipfs.jpeg"
+  tags:
+  - tutorial
+  - research
+  - IPLD
+  - DAG
+  - community
+  - CID
 - title: Fetch IPFS Data in Smart Contracts Using Chainlink
   date: 2021-05-13
   publish_date: 
