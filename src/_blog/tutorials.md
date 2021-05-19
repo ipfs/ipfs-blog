@@ -16,7 +16,7 @@ data:
   - Gossipsub
   - CRDTs
   - content routing
-- title: Content Exchange in IPFS
+- title: 'Content Exchange in IPFS '
   date: 2021-04-06
   publish_date: 
   path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-exchange/
