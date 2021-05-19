@@ -1,0 +1,38 @@
+# This action syncs the staging branch to the main branch.
+#
+# Because we have the staging branch connected to the forestry app,
+# we need to update the staging branch with the latest main branch changes
+# regularly so that the staging preview is up to date.
+# This action will not merge staging with main. It only fast-forwards staging
+# to main. This allows for content PRs to staging to remain clean without any
+# changes from main.
+#
+# To use different branches, edit the TARGET_BRANCH bellow or the on trigger branch
+
+name: Sync Staging with Main branch
+
+env:
+  # Branch that needs syncing
+  TARGET_BRANCH: staging
+
+on:
+  # Only trigger the update when main is updated
+  push:
+    # Branch which the target branch will sync to
+    branches: main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Sync target branch
+        run: |
+          if git push origin $GITHUB_REF:$TARGET_BRANCH ;
+          then echo "Done. Branches synced." ;
+          else echo "Can't fast-forward. Skipping sync for now." ;
+          fi
