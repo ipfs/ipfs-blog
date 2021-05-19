@@ -13,7 +13,7 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Spring University Hackathons Roundup
+## Spring University Hackathons Roundup 
 
 ![](../assets/spring-university-hackathons.png)
 
