@@ -8,7 +8,7 @@ data:
   date: 2021-04-06
   publish_date: 
   path: https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/
-  card_image: "/module_-mutable-content.jpeg"
+  card_image: "/resnetlab-mutable-content.png"
   tags:
   - pubsub
   - tutorial
