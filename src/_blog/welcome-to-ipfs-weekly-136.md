@@ -3,9 +3,9 @@ title: Welcome to IPFS Weekly 136
 description: Audius x IPFS collaboration, Gitcoin GR9 winners, IPFS featured on SNL,
   and more!
 author: Emily Vaughan
-date: 2021-05-12
-permalink: "/weekly-135/"
-translationKey: ipfs-weekly-135
+date: 2021-05-19
+permalink: "/weekly-136/"
+translationKey: ipfs-weekly-136
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,15 +13,19 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Audius Uses IPFS for Content Streaming Storage to Empower Artists & Creators Worldwide
+## Spring University Hackathons Roundup
 
-@[youtube](c50licHTOik)
+![](../assets/spring-university-hackathons.png)
 
-The IPFS community is proud to share another video in the [**Building Web3 Video Series**](https://buildingweb3.com/), which is dedicated to technologists, teams, and visionaries who are building valuable tools and services for a Web3 world. The latest video features [**Audius**](https://audius.org/), a music and audio sharing platform that uses IPFS as the core decentralized storage component in their mission to give everyone the freedom to share, monetize and listen to any audio. [**Read our recent blog post to learn more about the IPFS and Audius collaboration.**](https://blog.ipfs.io/2021-05-05-audius-uses-ipfs-web3-video/)
+Last month, the IPFS project partnered with two different universities to sponsor student-led and organized hackathons focused on introducing ground-breaking initiatives at both the global and local level.
 
-## Congrats, Gitcoin Grants Round 9 winners!
+[**Cal Hacks**](https://helloworld.calhacks.io/), a nonprofit organization composed of University of California, Berkeley students, held a global hackathon to unite the innovators, creators, and troublemakers of the world, called hello:world. The goal was to inspire students to build something out of this world in the following categories: sustainability, connectivity, education, or community and civic engagement.
 
-![](../assets/gitcoin-gr9-recap.png)
+Similarly, the Associated Students of the University of California (ASUC) also held [**CivHacks**](https://www.civhacks.com/), an annual hackathon focused on providing a welcoming, engaging and creative environment to support social good in tech culture, open to several categories including health, sustainability, student success, and civics. To learn more about the success of the event and the prize winners, [**check out our recent blog post**](https://blog.ipfs.io/2021-05-18-spring-hackathons/).
+
+## Use Estuary Node to store and retrieve your data from the Filecoin Network
+
+@[youtube](3hbtHcn0Piw)
 
 For the Gitcoin GR9 Hackathon, Protocol Labs matched 100% of [**Textile**](https://blog.textile.io/funding-the-community/) and [**Fleek’s**](https://blog.fleek.co/posts/gitcoin-gr9-hackathon-fleek-winners) bounties in effort to amplify the ability of our ecosystem collaborators to be stewards of the IPFS/Filecoin ecosystem and decentralize growth and development. Moreover, $23k in bounties for Filecoin and IPFS were offered to encourage the best of the best for tools, libraries, APIs, apps, integrations, and more.
 
@@ -32,7 +36,7 @@ Winners were selected from 167 projects total, with 36 submissions to our ecosys
 * Looking to build your next project or business on IPFS? [**Apply for a DoraHacks grant**](https://hackerlink.io/en/Grant/Filecoin/Round/1/buidl).
 * Mark your calendars for the monthly IPFS meetup on 05/25 at 10AM PT! [**Register to speak or join.**](https://www.meetup.com/San-Francisco-IPFS/events/276123403/)
 * Pinata released dedicated IPFS gateways so NFTs and DeFi dapps both have a fast, branded way to serve content! [**Learn more.**](https://medium.com/pinata/announcing-dedicated-ipfs-gateways-60f599949ce)
-* IPFS Desktop v0.15.0 has been released and it features IPFS webui v2.12 and electron 12.x.   
+* IPFS Desktop v0.15.0 has been released and it features IPFS webui v2.12 and electron 12.x.  
   [**Get the details**](https://github.com/ipfs/ipfs-desktop/releases/tag/v0.15.0).
 
 ## Around the ecosystem 🌏
