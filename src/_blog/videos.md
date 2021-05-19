@@ -4,17 +4,6 @@ type: Video
 sitemap:
   exclude: true
 data:
-- title: Content Addressing in IPFS
-  date: 2021-06-04
-  publish_date: 
-  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/
-  tags:
-  - research
-  - tutorial
-  - IPLD
-  - DAG
-  - community
-  - CID
 - title: Free Lotus Deal Data Retrieval via IPFS
   date: 2021-03-01
   path: https://www.youtube.com/watch?v=oeCaKXbhPls
