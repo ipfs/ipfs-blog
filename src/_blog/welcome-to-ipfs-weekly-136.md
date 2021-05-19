@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 136
-description: Audius x IPFS collaboration, Gitcoin GR9 winners, IPFS featured on SNL,
-  and more!
+description: Spring university hackathons roundup, an intro to Estuary, and what's
+  happening around the IPFS ecosystem!
 author: Emily Vaughan
 date: 2021-05-19
 permalink: "/weekly-136/"
