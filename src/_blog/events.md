@@ -4,6 +4,17 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: 'DI2F: Decentralizing the Internet with IPFS and Filecoin'
+  date: 2021-06-21
+  publish_date: 
+  path: https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin
+  card_image: "/di2f-event-06-21-21.png"
+  tags:
+  - DHT
+  - Kademlia
+  - research
+  - community
+  - conferences
 - title: IPFS Community Meetup, May 2021
   date: 2021-05-25
   publish_date: 

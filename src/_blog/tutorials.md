@@ -4,6 +4,68 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Mutable Content in IPFS
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/
+  card_image: "/resnetlab-mutable-content.png"
+  tags:
+  - pubsub
+  - tutorial
+  - research
+  - Gossipsub
+  - CRDTs
+  - content routing
+- title: 'Content Exchange in IPFS '
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-exchange/
+  card_image: "/resnetlab-content-exchange.png"
+  tags:
+  - research
+  - tutorial
+  - pubsub
+  - content routing
+  - DHT
+  - datastore
+  - community
+  - CID
+  - Bitswap
+  - blockstore
+- title: 'Content Routing in IPFS '
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/
+  card_image: "/resnetlab-content-routing.png"
+  tags:
+  - tutorial
+  - research
+  - libp2p
+  - Kademlia
+  - DHT
+  - content routing
+  - community
+  - Bitswap
+- title: Content Addressing in IPFS
+  date: 2021-04-06
+  publish_date: 
+  path: https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/
+  card_image: "/resnetlab-content-addressing.png"
+  tags:
+  - tutorial
+  - research
+  - IPLD
+  - DAG
+  - community
+  - CID
+- title: Fetch IPFS Data in Smart Contracts Using Chainlink
+  date: 2021-05-13
+  publish_date: 
+  path: https://blog.chain.link/fetch-ipfs-api-data-token-distribution/
+  card_image: "/2021-05-13-cardheader-integrate-ipfs-data-with-smart-contracts-using-a-chainlink-external-adapter.png"
+  tags:
+  - NFTs
+  - Ethereum
 - title: Fleek Makes Deploying and Maintaining an ENS+IPFS Website Easier than Ever
   date: 2021-02-06
   path: https://medium.com/the-ethereum-name-service/cloudflare-and-fleek-make-ens-ipfs-site-deployment-as-easy-as-ever-262c990a7514

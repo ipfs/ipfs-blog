@@ -4,6 +4,13 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Wolfram Blockchain Labs Expanding Storage Functionality with IPFS & Filecoin
+  date: 2021-05-12
+  publish_date: 
+  path: https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/
+  card_image: "/2021-05-12-cardheader-fil-blog-wolfram.jpg"
+  tags:
+  - Filecoin
 - title: Meet Metadata Guardians Trying to Make Your NFT Collection Available 100
     Years from Now
   date: 2021-05-17
