@@ -8,7 +8,7 @@ tags:
 - censorship
 
 ---
-**_UPDATE:_** _There are now_ [multiple language versions](https://github.com/ipfs/distributed-wikipedia-mirror#readme) of Wikipedia on IPFS as well as the Turkish verison. You can find the latest hashes for all of our Wikipedia snapshots in_ [_this YAML file_](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/snapshot-hashes.yml)
+_**UPDATE:** There are now [multiple language versions of Wikipedia on IPFS](https://github.com/ipfs/distributed-wikipedia-mirror#readme) in addition to the Turkish verison described below. You can find the latest hashes for all of our Wikipedia snapshots in [this YAML file](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/snapshot-hashes.yml)_
 
 > There is more than one way to burn a book. And the world is full of people running about with lit matches.
 > \-- Ray Bradbury, Fahrenheit 451
