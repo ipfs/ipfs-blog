@@ -3,10 +3,10 @@ title: Distributed Wikipedia Mirror Update
 description: Status update for 2021 Q2, usage instructions, current build process,
   and open problems.
 author: Marcin Rataj
-date: 2021-05-20
+date: 2021-05-19
 permalink: "/2021-05-31-distributed-wikipedia-mirror-update/"
 translationKey: ''
-header_image: "/wikipedia-mirrors-2021-q2.png"
+header_image: "/wikipedia-mirrors-2021-q2-1.png"
 tags:
 - censorship
 
@@ -20,12 +20,12 @@ tags:
 
 ### User-friendly `ipns://{dnslink}` and public gateways
 
-Browsers with built-in support for IPFS addresses ([Brave](https://brave.com/brave-integrates-ipfs/), [Opera](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/), or a regular [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) with [IPFS Companion](https://github.com/ipfs/ipfs-companion#readme)) can load the latest snapshot using [DNSLink](https://docs.ipfs.io/concepts/dnslink/):
+Browsers with built-in support for IPFS addresses ([Brave](https://brave.com/brave-integrates-ipfs/), [Opera](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/), or a regular [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) with [IPFS Companion](https://github.com/ipfs/ipfs-companion#readme)) can now load the latest snapshot using [DNSLink](https://docs.ipfs.io/concepts/dnslink/):
 
 * `ipns://{dnslink}`
 * `ipns://en.wikipedia-on-ipfs.org`
 
-To ensure true P2P transport, offline storage and content integrity, you can run your own IPFS node with [IPFS Desktop](https://github.com/ipfs/ipfs-desktop#readme) combined with the [IPFS Companion](https://github.com/ipfs/ipfs-companion#readme) browser extension. You can also use the [Brave browser, which has built-in support for IPFS](https://brave.com/brave-integrates-ipfs/):
+To ensure true P2P transport, offline storage and content integrity, you can run your own IPFS node ([command-line](https://docs.ipfs.io/install/command-line/) or  [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/) app) combined with the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension. You can also use the [Brave browser, which has built-in support for IPFS](https://brave.com/brave-integrates-ipfs/):
 
 @[youtube](jTDkTQiKzJA)
 
@@ -81,22 +81,25 @@ See _Instructions_ at [collab.ipfscluster.io](collab.ipfscluster.io).
 
 ### Donate remote pins
 
-When co-hosting with your own IPFS node is not possible, one can still help by pinning snapshot CIDs to a remote pinning service. (TODO: insert sentence that summarizes what pinning services are) [Learn how to _work with remote pinning services_](https://docs.ipfs.io/how-to/work-with-pinning-services/).
+When co-hosting with your own IPFS node is not possible, one can still help by pinning snapshot CIDs to a remote pinning service.    
+ [Learn how to _work with remote pinning services_](https://docs.ipfs.io/how-to/work-with-pinning-services/).
 
 ## How is a mirror built?
 
 The current setup relies on [Wikipedia snapshots in the ZIM format](https://download.kiwix.org/zim/wikipedia/) produced by the [Kiwix](https://kiwix.org/) project.
 
-We don't have a web-based reader of ZIM archives (yet – more in the next section), and the way we produce a mirror requires an expensive (TODO: expensive or complex? expensive implies money) build process:
+We don't have a web-based reader of ZIM archives (yet – more in the next section), and the way we produce a mirror is an elaborate, time-consuming process:
 
 1. Unpacking ZIM archive with [openzim/zim-tools](https://github.com/openzim/zim-tools)
-2. Adjusting JS to fixup unpacked form
+2. Adjusting HTML/CSS/JS to fixup unpacked form
 3. Import snapshot to IPFS
 4. Include original ZIM inside of unpacked IPFS snapshot
 
 While this works, the need for unpacking and customizing the snapshot makes it difficult to reliably produce updates. And including the original ZIM for use with [Kiwix offline reader](https://www.kiwix.org/en/kiwix-reader), partially duplicates the data.
 
-We would love to mirror more languages, and increase the update cadence, but for that to happen we need to remove the need for unpacking ZIM archives. We will be looking into putting [all ZIMs from Kiwix](https://download.kiwix.org/zim/wikipedia/) on IPFS and archiving them for long term storage on [Filecoin](https://filecoin.io/) as part of [farm.openzim.org ](https://farm.openzim.org )pipeline.
+We would love to mirror more languages, and increase the update cadence, but for that to happen we need to remove the need for unpacking ZIM archives. 
+
+We will be looking into putting [all ZIMs from Kiwix](https://download.kiwix.org/zim/wikipedia/) on IPFS and archiving them for long term storage on [Filecoin](https://filecoin.io/) as part of [farm.openzim.org ](https://farm.openzim.org )pipeline.
 
 ## Help Wanted and Open Problems
 
@@ -106,8 +109,7 @@ Below are areas that could use a helping hand, and ideas looking for someone to 
 
 * **Search.** There's no search function currently. Leveraging the index present in ZIM, or building a DAG-based search index optimized for use in web browsers would make existing mirrors more useful. See [distributed-wikipedia-mirror/issues/76](https://github.com/ipfs/distributed-wikipedia-mirror/issues/76).
 * **Web-based ZIM reader.** The biggest impact for the project would be to create a web-based reader capable of browsing original ZIM archives without the need for unpacking them, nor installing any dedicated software. Want to help make it a reality? See [kiwix-js/issues/659](https://github.com/kiwix/kiwix-js/issues/659)
-* **Improving the way ZIM is represented on IPFS.** When we store an original ZIM on IPFS, the DAG is produced by `ipfs add --cid-version 1`. This works fine, but with additional research on customizing DAG creation, we may improve  deduplication and speed when doing range requests for specific bytes. There are different stages to explore here:
+* **Improving the way ZIM is represented on IPFS.** When we store an original ZIM on IPFS, the DAG is produced by `ipfs add --cid-version 1`. This works fine, but with additional research on customizing DAG creation, we may improve  deduplication and speed when doing range requests for specific bytes. There are different stages to explore here: if any of them sounds interesting to you, please comment in [distributed-wikipedia-mirror/issues/42](https://github.com/ipfs/distributed-wikipedia-mirror/issues/42).
   * Stage 1: Invest some time to benchmark parameter space to see if low hanging fruits exists.
   * Stage 2: Create a DAG builder that understands ZIM format and maximizes deduplication of image assets by representing them as sub-DAGs with dag-pb files.
-  * Stage 3: Research augmenting or replacing ZIM with [IPLD](https://ipld.io/). How can we maximize block deduplication across all snapshots and languages? How would an IPLD-based search index work?
-    If any of this sound interesting, please comment in [distributed-wikipedia-mirror/issues/42](https://github.com/ipfs/distributed-wikipedia-mirror/issues/42)
+  * Stage 3: Research augmenting or replacing ZIM with [IPLD](https://ipld.io/). How can we maximize block deduplication across all snapshots and languages? How would an IPLD-based search index work? 
