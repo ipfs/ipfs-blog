@@ -1,10 +1,10 @@
 ---
-title: Distributed Wikipedia Mirror Project Update (2021 Q2)
+title: Distributed Wikipedia Mirror Update
 description: Status update for 2021 Q2, usage instructions, current build process,
   and open problems
 author: Marcin Rataj
 date: 2021-05-20
-permalink: "/2021-05-31-distributed-wikipedia-mirror-project-update"
+permalink: "/2021-05-31-distributed-wikipedia-mirror-update/"
 translationKey: ''
 header_image: ''
 tags:
