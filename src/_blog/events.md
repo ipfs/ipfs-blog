@@ -4,6 +4,14 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: Web3 Weekend
+  date: 2021-05-28
+  publish_date: 2021-05-24T12:00:00+00:00
+  path: https://web3.ethglobal.co/
+  card_image: "/2021-05-24-cardheader-web3-weekend.png"
+  tags:
+  - community
+  - hackathon
 - title: 'DI2F: Decentralizing the Internet with IPFS and Filecoin'
   date: 2021-06-21
   publish_date: 
