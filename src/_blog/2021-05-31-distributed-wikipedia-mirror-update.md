@@ -3,7 +3,7 @@ title: Distributed Wikipedia Mirror Update
 description: Status update for 2021 Q2, usage instructions, current build process,
   and open problems.
 author: Marcin Rataj
-date: 2021-05-20
+date: 2021-05-29
 permalink: "/2021-05-31-distributed-wikipedia-mirror-update/"
 translationKey: ''
 header_image: "/wikipedia-mirrors-2021-q2-1.png"
@@ -112,4 +112,4 @@ Below are areas that could use a helping hand, and ideas looking for someone to 
 * **Improving the way ZIM is represented on IPFS.** When we store an original ZIM on IPFS, the DAG is produced by `ipfs add --cid-version 1`. This works fine, but with additional research on customizing DAG creation, we may improve  deduplication and speed when doing range requests for specific bytes. There are different stages to explore here: if any of them sounds interesting to you, please comment in [distributed-wikipedia-mirror/issues/42](https://github.com/ipfs/distributed-wikipedia-mirror/issues/42).
   * Stage 1: Invest some time to benchmark parameter space to see if low hanging fruits exists.
   * Stage 2: Create a DAG builder that understands ZIM format and maximizes deduplication of image assets by representing them as sub-DAGs with dag-pb files.
-  * Stage 3: Research augmenting or replacing ZIM with [IPLD](https://ipld.io/). How can we maximize block deduplication across all snapshots and languages? How would an IPLD-based search index work? 
+  * Stage 3: Research augmenting or replacing ZIM with [IPLD](https://ipld.io/). How can we maximize block deduplication across all snapshots and languages? How would an IPLD-based search index work?
