@@ -1,6 +1,6 @@
 ---
 title: Decentralizing infrastructure during Scaling Ethereum
-description: ''
+description: 'Announcing the winners from ETHGlobal’s Scaling Ethereum hackathon event.'
 author: PL Hackathon Team
 date: 2021-05-25
 permalink: "/2021-05-25-scaling-ethereum-recap/"
