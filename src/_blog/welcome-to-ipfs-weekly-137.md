@@ -42,8 +42,6 @@ The Lighthouse Project provides a way for Ethereum smart contracts to request Fi
   
 Polkadot Decoded recently shared an interesting video on building Smart Cities with Web3. [**Check it out!**](https://www.youtube.com/watch?v=B-5OR-zKmLU)  
   
-To celebrate DFINITY’s Genesis and mainnet launch, Fleek now offers Internet Computer hosting. [**Read more.**](https://blog.fleek.co/posts/internet-computer-genesis-static-site-hosting-beta-mainnet)  
-  
 Ceramic’s latest community call discussed protocol upgrades, community updates, and their path to mainnet. [**Tune in.**](https://blog.ceramic.network/community-call-5-07-21/)   
   
 The Filecoin Network crossed the sustainability target for the first time recently. [**Get the details**](https://filecoin.io/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/).
