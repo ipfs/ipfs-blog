@@ -11,7 +11,16 @@
       </time>
     </div>
     <UnstyledLink v-if="!onclick" :to="postPath" :title="title">
-      <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
+      <h1
+        v-if="isExternal"
+        class="type-h5 text-xl text-primary hover:underline"
+      >
+        <span>{{ formatttedTitle.slice(0, -1).join(' ') }}</span>
+        <span class="whitespace-nowrap"
+          >{{ formatttedTitle.slice(-1)[0] }} <OutboundLink
+        /></span>
+      </h1>
+      <h1 v-else class="type-h5 text-xl text-primary hover:underline">
         {{ title }}
       </h1>
     </UnstyledLink>
@@ -23,8 +32,11 @@
       :title="title"
       @click="onclick"
     >
-      <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-        {{ title }}
+      <h1 class="type-h5 text-xl text-primary hover:underline">
+        <span>{{ formatttedTitle.slice(0, -1).join(' ') }}</span>
+        <span class="whitespace-nowrap"
+          >{{ formatttedTitle.slice(-1)[0] }} <OutboundLink
+        /></span>
       </h1>
     </a>
     <PostAuthor v-if="author" :author="author" />
@@ -49,6 +61,7 @@
 </template>
 
 <script>
+import { isExternal } from '@theme/util'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import PostTag from '@theme/components/blog/PostTag'
@@ -97,6 +110,11 @@ export default {
       default: null,
     },
   },
+  data() {
+    return {
+      formatttedTitle: this.title,
+    }
+  },
   computed: {
     resolvedDate() {
       dayjs.extend(utc)
@@ -104,6 +122,23 @@ export default {
         .utc(this.date)
         .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
     },
+    isExternal() {
+      return isExternal(this.postPath)
+    },
+  },
+  created() {
+    if (isExternal(this.postPath)) {
+      this.getTitle()
+
+      if (typeof window !== 'undefined') {
+        window.addEventListener('resize', this.getTitle)
+      }
+    }
+  },
+  destroyed() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.getTitle)
+    }
   },
   methods: {
     handleCatClick() {
@@ -115,6 +150,34 @@ export default {
       countly.trackEvent(countly.events.FILTER, categoryTracking)
 
       this.$store.commit('appState/setActiveCategory', this.category)
+    },
+    getTitle() {
+      let charsLimit = 105
+      let title = this.title
+
+      if (['xxl'].includes(this.$mq)) {
+        if (window.innerWidth <= 1555) {
+          charsLimit = 70
+        }
+
+        if (window.innerWidth <= 1400) {
+          charsLimit = 50
+        }
+      }
+
+      if (['xl'].includes(this.$mq)) {
+        charsLimit = 50
+      }
+
+      if (['lg'].includes(this.$mq)) {
+        charsLimit = 70 - (1024 - window.innerWidth) * 0.08
+      }
+
+      if (this.title.length > charsLimit) {
+        title = title.slice(0, charsLimit).trim() + '...'
+      }
+
+      this.formatttedTitle = title.trim().split(' ')
     },
   },
 }
