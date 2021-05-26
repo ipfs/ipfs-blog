@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 137
-description: Web3 Weekend reminder, IPFS May Meetup recording now available, District0x's
-  new ed portal on IPFS, & more!
+description: Web3 Weekend reminder, IPFS May Meetup recording, District0x's new education
+  portal on IPFS, & more!
 author: Emily Vaughan
 date: 2021-05-26
 permalink: "/weekly-137/"
