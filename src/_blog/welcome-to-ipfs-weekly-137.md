@@ -15,11 +15,15 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## ETHGlobal’s Web3 Weekend Starts This Friday, May 28
 
-![](../assets/2021-05-24-cardheader-web3-weekend.png)We're excited to be supporting [**Web3 Weekend**](https://web3.ethglobal.co/), a hackathon focused entirely on the decentralized future. From May 28th - May 30th, hackers from across the globe will gather online to experiment with NFTs, Smart Contracts, Games, and other innovative solutions. If you're interested in hacking, it's not too late! [**Applications are open**](https://web3.ethglobal.co/) — but spots are running out fast, so apply now!
+![](../assets/2021-05-24-cardheader-web3-weekend.png)
+
+We're excited to be supporting [**Web3 Weekend**](https://web3.ethglobal.co/), a hackathon focused entirely on the decentralized future. From May 28th - May 30th, hackers from across the globe will gather online to experiment with NFTs, Smart Contracts, Games, and other innovative solutions. If you're interested in hacking, it's not too late! [**Applications are open**](https://web3.ethglobal.co/) — but spots are running out fast, so apply now!
 
 ## Decentralized games at Gamedev.js JAM 2021
 
-![](../assets/2021-05-20-cardheader-gamedevjs-jam-2021.png)Earlier this spring, we were happy to partner with the folks at [**Gamedev.js**](https://gamedevjs.com/jam/2021/) for their 2021 hackathon event focused exclusively on games! Gamedev.js Jam celebrates HTML5 games where participants build a web game within 13 days of the jam on a given theme; this year’s was Mirrors.  
+![](../assets/2021-05-20-cardheader-gamedevjs-jam-2021.png)
+
+Earlier this spring, we were happy to partner with the folks at [**Gamedev.js**](https://gamedevjs.com/jam/2021/) for their 2021 hackathon event focused exclusively on games! Gamedev.js Jam celebrates HTML5 games where participants build a web game within 13 days of the jam on a given theme; this year’s was Mirrors.  
   
 The IPFS and Filecoin projects put up $5000 in Filecoin into the prize pool for the Decentralization category. As it was the first time the event hosted this category, the community of game developers were seeing some of these technologies for the very first time. Popular tools used were [**Fleek.co**](http://fleek.co/) and Pinata for hosting of assets and data. [**Check out this blog post**](https://blog.ipfs.io/2021-05-20-gamedevjs-recap/) to learn more about the event and about the prize winners.
 
