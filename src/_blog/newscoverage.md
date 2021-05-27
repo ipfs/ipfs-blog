@@ -4,6 +4,14 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Understanding the different types of NFTs (Indorse)
+  date: 2021-05-14
+  publish_date: 
+  path: https://blog.indorse.io/what-is-a-non-fungible-token-understanding-the-different-types-of-nfts-3ef29a2b2876
+  card_image: "/what-is-an-nft-indorse.png"
+  tags:
+  - NFTs
+  - community
 - title: Wolfram Blockchain Labs Expanding Storage Functionality with IPFS & Filecoin
   date: 2021-05-12
   publish_date: 
