@@ -12,7 +12,7 @@
     </div>
     <UnstyledLink v-if="!onclick" :to="postPath" :title="title">
       <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-        {{ title }}
+        <PostMetaTitle :title="title" :is-external="isExternal" />
       </h1>
     </UnstyledLink>
     <a
@@ -24,7 +24,7 @@
       @click="onclick"
     >
       <h1 class="type-h5 text-xl text-primary hover:underline clamp-3">
-        {{ title }}
+        <PostMetaTitle :title="title" :is-external="isExternal" />
       </h1>
     </a>
     <PostAuthor v-if="author" :author="author" />
@@ -50,9 +50,11 @@
 
 <script>
 import dayjs from 'dayjs'
+import { isExternal } from '@theme/util'
 import utc from 'dayjs/plugin/utc'
 import PostTag from '@theme/components/blog/PostTag'
 import PostAuthor from '@theme/components/blog/PostAuthor'
+import PostMetaTitle from '@theme/components/blog/PostMetaTitle'
 import UnstyledLink from '@theme/components/UnstyledLink'
 import countly from '../../util/countly'
 
@@ -62,6 +64,7 @@ export default {
     PostTag,
     PostAuthor,
     UnstyledLink,
+    PostMetaTitle,
   },
   props: {
     tags: {
@@ -103,6 +106,9 @@ export default {
       return dayjs
         .utc(this.date)
         .format(this.$themeLocaleConfig.dateFormat || 'YYYY-MM-DD')
+    },
+    isExternal() {
+      return isExternal(this.postPath)
     },
   },
   methods: {
