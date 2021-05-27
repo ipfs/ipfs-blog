@@ -4,6 +4,22 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Top NFT Projects — Rediscovered (Indorse)
+  date: 2021-05-20
+  publish_date: 
+  path: https://blog.indorse.io/top-nft-projects-rediscovered-5ec0e117b53d
+  card_image: "/2021-05-20-cardheader-top-nft-projects-indorse.png"
+  tags:
+  - NFTs
+  - community
+- title: Understanding the different types of NFTs (Indorse)
+  date: 2021-05-14
+  publish_date: 
+  path: https://blog.indorse.io/what-is-a-non-fungible-token-understanding-the-different-types-of-nfts-3ef29a2b2876
+  card_image: "/what-is-an-nft-indorse.png"
+  tags:
+  - NFTs
+  - community
 - title: Wolfram Blockchain Labs Expanding Storage Functionality with IPFS & Filecoin
   date: 2021-05-12
   publish_date: 
