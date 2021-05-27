@@ -4,6 +4,14 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Top NFT Projects — Rediscovered (Indorse)
+  date: 2021-05-20
+  publish_date: 
+  path: https://blog.indorse.io/top-nft-projects-rediscovered-5ec0e117b53d
+  card_image: "/2021-05-20-cardheader-top-nft-projects-indorse.png"
+  tags:
+  - NFTs
+  - community
 - title: Understanding the different types of NFTs (Indorse)
   date: 2021-05-14
   publish_date: 
