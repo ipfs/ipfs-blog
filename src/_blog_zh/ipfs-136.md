@@ -5,7 +5,7 @@ author: Emily Vaughan
 date: 2021-05-18
 permalink: "/weekly-136/"
 translationKey: ipfs-weekly-136
-header_image: ''
+header_image: "/header-image-weekly-newsletter.png"
 tags: []
 
 ---
