@@ -77,7 +77,7 @@ This is an advanced option aimed at server administrators and power users. The `
 
     $ ipfs-cluster-follow wikipedia run --init wikipedia.collab.ipfscluster.io
 
-See _Instructions_ at [collab.ipfscluster.io](collab.ipfscluster.io).
+See _Instructions_ at [collab.ipfscluster.io](https://collab.ipfscluster.io#instructions).
 
 ### Donate remote pins
 
