@@ -150,6 +150,7 @@ fields:
     target="_blank">file an issue</a> with the details.
 pages:
 - src/_blog/2021-05-31-distributed-wikipedia-mirror-update.md
+- src/_blog/a-guide-to-ipfs-connectivity-in-web-browsers.md
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/audius-uses-ipfs-for-content-streaming-storage-to-empower-artists-creators-worldwide.md
 - src/_blog/congrats-gitcoin-grants-round-9-winners.md
