@@ -61,7 +61,7 @@ docker volume create ipfs_bundle
 
 You need a domain, and SSL to use this kit with browser nodes. There are two options below, one will run certbot, and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
-When you execute either commands your IPFS node will also be setup for the first time giving you information such as it's PeerID, and circuit-relay addresses. Take note of these, you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#Usage) and [p2p-circuit#Usage](#Usage1) for usage examples, or edit `index.html`, and change my node's multiaddresses out for your own).
+When you execute either commands your IPFS node will also be setup for the first time giving you information such as it's PeerID, and circuit-relay addresses. Take note of these, you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#usage) and [p2p-circuit#Usage](#usage-2) for usage examples, or edit `index.html`, and change my node's multiaddresses out for your own).
 
 #### Certbot
 
@@ -339,7 +339,7 @@ await ipfs.pubsub.subscribe("announce-circuit", processAnnounce);
 setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 15000);
 ```
 
-🌟 A simplified version of `processAnnounce` is found under [p2p-circuit#Usage](#Usage1).
+🌟 A simplified version of `processAnnounce` is found under [p2p-circuit#Usage](#usage).
 
 The Python script on the circuit relay will report a keepalive every 4 seconds. You may have noticed we're reporting "peer-alive" instead of "keep-alive", this is to separate peer requests from relay requests, to make it easier to tell when we no longer see a relay.
 
