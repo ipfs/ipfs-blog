@@ -32,7 +32,25 @@ Let's take a look at how this works.
 
 # 📖 Table of Contents
 
-[TOC]
+* [🪐 Peer Discovery and Connectivity](#🪐-peer-discovery-and-connectivity)
+  * [🐳 Docker (optional)](#🐳-docker-optional)
+    * [Create Volume](#create-volume)
+    * [Configure Domain](#configure-domain)
+    * [Running the Container](#running-the-container)
+  * [🌟 WebRTC-Star](#🌟-webrtc-star)
+    * [Usage](#usage)
+    * [Setup](#setup)
+  * [⚡ p2p-circuit](#⚡-p2p-circuit)
+    * [Usage](#usage-2)
+    * [Setup](#setup-2)
+    * [Nginx Setup](#nginx-setup)
+    * [Advertising](#advetising)
+* [🌐 Communication](#🌐-communication)
+  * [📰 PubSub](#📰-pubsub)
+  * [⚠️ Possible Browser Pitfalls](#⚠️-possible-browser-pitfalls)
+    * [Staying Connected to Peers](#staying-connected-to-peers)
+    * [Staying Connected to the Circuit Relay](#staying-connected-to-the-circuit-relay)
+* [🎉 Conclusion](#🎉-conclusion)
 
 # 🪐 Peer Discovery and Connectivity
 
@@ -40,7 +58,7 @@ In a browser discovering and connecting to peers can be very hard, as we can't l
 
 The chat example achieves this in 2 ways. Using WebRTC-Star we achieve direct browser-to-browser communication, and with a circuit relay, we have a relay in the middle. The chat application has a status indicator in the top-left to let you know too what kind of connection you have. Green means you're connected to the relay, even if it's via another peer, yellow mean you're only seeing direct peers, and red means you have no peers (at least none using the chat application).
 
-![BrowserIPFSNetworkGraph_Transparent.png](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "BrowserIPFSNetworkGraph_Transparent.png")
+![BrowserIPFSNetworkGraph](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "BrowserIPFSNetworkGraph_Transparent.png")
 🌟 The diagram above demonstrates what a 3 user network can look like. It's worth noting that the browser nodes can communicate with go-ipfs as well, so BrowserC doesn't have to be a browser at all, but instead could be a go-ipfs node!
 
 ## 🐳 Docker (optional)
