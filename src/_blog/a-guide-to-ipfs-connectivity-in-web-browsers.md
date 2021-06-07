@@ -18,9 +18,9 @@ We see a lot of questions about how to get started with using js-ipfs in the bro
 
 ### Getting the Code
 
-You can see the live demo [here](https://ipfs.io/ipfs/bafybeicermx2yhwvxc2yf6wvd3d2ujqugzdldl6dbyjhcpoxt4tjyz7gim/). If you'd like a local copy you can edit yourself, you can download the whole directory using IPFS:
+You can see the live demo [here](https://ipfs.io/ipfs/bafybeia5f2yk6td7ciroeped2uwfivo333b524t3zmoderfhl3xn7wi7aa/). If you'd like a local copy you can edit yourself, you can download the whole directory using IPFS:
 
-    ipfs get bafybeicermx2yhwvxc2yf6wvd3d2ujqugzdldl6dbyjhcpoxt4tjyz7gim
+    ipfs get bafybeia5f2yk6td7ciroeped2uwfivo333b524t3zmoderfhl3xn7wi7aa
 
 Then simply open `index.html` in your web browser and you'll immediately begin automatically connecting to nodes and looking for peers!
 
