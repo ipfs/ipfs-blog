@@ -32,7 +32,7 @@ Let's take a look at how this works.
 
 # 📖 Table of Contents
 
-\[TOC\]
+[TOC]
 
 # 🪐 Peer Discovery and Connectivity
 
