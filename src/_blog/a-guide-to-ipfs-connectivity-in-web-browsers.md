@@ -102,7 +102,7 @@ We can use [WebRTC-Star](https://github.com/libp2p/js-libp2p-webrtc-star) nodes 
 
 Connecting to a star node is quite simple:
 
-```javascript=
+```javascript
 ipfs = await Ipfs.create({
     repo: 'ok' + Math.random(), // random so we get a new peerid every time, useful for testing
     config: {
@@ -129,7 +129,7 @@ p2p-circuit is really useful for peers behind tricky NATs (or a VPN, or anything
 
 Once all the services for p2p-circuit are put together, connecting to the node can be achieved a couple of ways. First, to connect on startup to _only_ our node(s):
 
-```javascript=
+```javascript
 ipfs = await Ipfs.create({
     config: {
         Bootstrap: [
@@ -150,7 +150,7 @@ await ipfs.swarm.connect('/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhh
 
 If you're looking to do your own client, without copying the example, ensure you're also communicating with the announce channel, which is described under "Advertising". The relevant code in the chat demo is this (simplified):
 
-```javascript=
+```javascript
 var ipfs; // store the IPFS node you're using in this variable
 
 // processes a circuit-relay announce over pubsub
@@ -301,7 +301,7 @@ Whew so you made it this far, you might be wondering "what is communication like
 
 Using PubSub we're able to subscribe to topics, and retrieve any messages posted to those topics. In js-ipfs, we can set a callback function, which gets called whenever a message is received:
 
-```javascript=
+```javascript
 function echo(msg) {
 	msg = new TextDecoder().decode(msg.data);
 	console.log(msg);
@@ -312,7 +312,7 @@ await ipfs.pubsub.subscribe("example_topic", echo);
 
 Publishing is just as easy too:
 
-```javascript=
+```javascript
 await ipfs.pubsub.publish("example_topic", "Hello world!");
 ```
 
@@ -326,14 +326,14 @@ So let's say you've done everything correctly. You're able to find peers using W
 
 We stay connected to peers in a couple ways. The first way is more direct, and that's by subscribing to and sending a "keepalive" announcement over `discochat-keepalive` every 4 seconds:
 
-```javascript=
+```javascript
 setInterval(function(){sendmsg("1", prefix+"keepalive");}, 4000);
 setInterval(checkalive, 1000);
 ```
 
 This should help ensure we give peers looking to chat a high priority. Additionally, we  report over `announce-circuit` every 15 seconds to make sure we keep a connection to the circuit relay so we can connect to peers stuck behind a NAT. That's accomplished like so:
 
-```javascript=
+```javascript
 // process announcements over the relay network, and publish our own keep-alives to keep the channel alive
 await ipfs.pubsub.subscribe("announce-circuit", processAnnounce);
 setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 15000);
@@ -347,7 +347,7 @@ The Python script on the circuit relay will report a keepalive every 4 seconds. 
 
 Outside of the simplified version of `processAnnounce`, in the real version there are a couple variables used for tracking keep-alive and peer-alive. These are `lastAlive` and `lastPeer`, respectively. We even track the last time we bootstrapped via `lastBootstrap`. Using all this, we can display the yellow status when we're only connected to peers (tracked via `lastPeer`), and if we don't see a keep-alive for 35 seconds (and we haven't attempted a bootstrap in 60 seconds), we can attempt to re-connect to the bootstrap relay (and display a red status). This is accomplished like so:
 
-```javascript=
+```javascript
 const bootstraps = [
     '/dns6/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt',
     '/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt'
