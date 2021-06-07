@@ -45,7 +45,7 @@ The chat example achieves this in 2 ways. Using WebRTC-Star we achieve direct br
 
 ## 🐳 Docker (optional)
 
-If you don't want to use docker, skip to [**WebRTC-Star**](#🌟-WebRTC-Star).
+If you don't want to use docker, skip to [**WebRTC-Star**](#🌟-webrtc-star).
 
 After this section we'll go over what WebRTC-Star and circuit-relay do, and how to set them up. However if you'd like to quickly roll your own kit using docker, I've prepared an image you can use. It might not be the best long-term solution, but it should be great if you want to quickly get rolling and experiment.
 
