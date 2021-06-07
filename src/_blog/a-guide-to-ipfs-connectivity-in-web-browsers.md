@@ -3,7 +3,7 @@ title: A Guide to IPFS Connectivity in Web Browsers
 description: A minimal chat example using js-ipfs in the browser.
 author: Discordian
 date: 2021-07-05
-permalink: "/2021-07-05-guide-to-ipfs-connectivity-in-browsers"
+permalink: "/2021-07-05-guide-to-ipfs-connectivity-in-browsers/"
 translationKey: ''
 header_image: ''
 tags:
