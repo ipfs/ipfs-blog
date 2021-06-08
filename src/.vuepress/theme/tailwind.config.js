@@ -69,6 +69,7 @@ const theme = {
       deepBlue: '#002256',
       plBlack: '#16161F',
       blueGreen: '#34797D',
+      blueGreenScreen: '#66989a',
       blueGreenLight: '#6bc4ce',
       aquaMuted: '#9ad4db',
       charcoalMuted: '#7f8491',

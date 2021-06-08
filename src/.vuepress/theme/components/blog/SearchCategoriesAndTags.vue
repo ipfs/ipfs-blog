@@ -49,7 +49,7 @@
 
       <button
         ref="select2"
-        class="h-full p-2 text-white font-semibold bg-blueGreen rounded opacity-75 hover:opacity-100 transition transition-opacity duration-300 ease-in-out"
+        class="h-full p-2 text-white font-semibold bg-blueGreen rounded hover:bg-blueGreenScreen transition duration-300 ease-in-out"
         @click="handleSearch"
         @focus="setSelected(2)"
       >
