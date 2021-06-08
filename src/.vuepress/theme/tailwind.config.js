@@ -139,22 +139,22 @@ const theme = {
     h4: {
       fontFamily: theme('fontFamily.sans'),
       fontWeight: theme('fontWeight.normal'),
-      fontSize: theme('fontSize.24'),
+      fontSize: theme('fontSize.18'),
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.24'),
+        fontSize: theme('fontSize.18'),
         lineHeight: theme('lineHeight.140'),
       },
     },
     h5: {
       fontFamily: theme('fontFamily.display'),
       fontWeight: theme('fontWeight.semibold'),
-      fontSize: theme('fontSize.18'),
+      fontSize: theme('fontSize.16'),
       letterSpacing: theme('letterSpacing.tight'),
       lineHeight: theme('lineHeight.130'),
       '@screen sm': {
-        fontSize: theme('fontSize.22'),
+        fontSize: theme('fontSize.16'),
       },
     },
     p1: {
