@@ -5,7 +5,7 @@
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
-      <h1 class="type-h5 text-primary mr-4">
+      <h1 class="type-h5 text-xl text-primary mr-4">
         <UnstyledLink :to="videoModalCard.path" class="clamp-3 hover:underline">
           {{ videoModalCard.title }}
         </UnstyledLink>
