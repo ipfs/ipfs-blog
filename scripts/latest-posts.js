@@ -17,6 +17,8 @@ const dayjs = require('dayjs')
 
 const xmlFilePath = 'dist/index.xml'
 const jsonFilePath = 'dist/index.json'
+const newsJsonPath = 'scripts/data/news.json'
+const videosJsonPath = 'scripts/data/videos.json'
 
 function generateJsonFile(xml) {
   xml2js.parseString(xml, (error, dataObj) => {
@@ -55,4 +57,16 @@ fs.readFile(xmlFilePath, { encoding: 'utf-8' }, (error, data) => {
   }
 
   generateJsonFile(data)
+})
+
+fs.copyFile(newsJsonPath, 'dist/news.json', (err) => {
+  if (err) {
+    console.log('Error: ', err)
+  }
+})
+
+fs.copyFile(videosJsonPath, 'dist/videos.json', (err) => {
+  if (err) {
+    console.log('Error: ', err)
+  }
 })

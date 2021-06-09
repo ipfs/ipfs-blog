@@ -6,13 +6,13 @@
       </div>
       <div class="flex items-center justify-center mt-4">
         <button
-          class="bg-blueGreen bg-opacity-75 transition duration-300 hover:bg-opacity-100 text-white px-4 py-2 mr-4"
+          class="bg-blueGreen transition duration-300 hover:bg-blueGreenScreen text-white px-4 py-2 mr-4"
           @click="download"
         >
           Download
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 transition duration-300 hover:bg-opacity-100 text-white px-4 py-2"
+          class="bg-blueGreen transition duration-300 hover:bg-blueGreenScreen text-white px-4 py-2"
           @click="reset"
         >
           Load a new image
@@ -25,7 +25,7 @@
     >
       <div class="flex justify-center mb-3">
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
+          class="bg-blueGreen hover:bg-blueGreenScreen transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="zoom(1.5)"
         >
           <SVGIcon
@@ -35,7 +35,7 @@
           />
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
+          class="bg-blueGreen hover:bg-blueGreenScreen transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="zoom(0.5)"
         >
           <SVGIcon
@@ -45,7 +45,7 @@
           />
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2 mr-4"
+          class="bg-blueGreen hover:bg-blueGreenScreen transition duration-300 ease-in-out text-white p-2 mr-4"
           @click="crop"
         >
           <SVGIcon
@@ -55,7 +55,7 @@
           />
         </button>
         <button
-          class="bg-blueGreen bg-opacity-75 hover:bg-opacity-100 transition duration-300 ease-in-out text-white p-2"
+          class="bg-blueGreen hover:bg-blueGreenScreen transition duration-300 ease-in-out text-white p-2"
           @click="reset"
         >
           <SVGIcon

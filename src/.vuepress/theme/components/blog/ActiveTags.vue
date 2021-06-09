@@ -54,7 +54,7 @@
       </div>
     </div>
     <button
-      class="p-1 l-4 opacity-50 hover:opacity-100 text-blueGreen transition transition-opacity duration-300 ease-in-out cursor-pointer"
+      class="p-1 l-4 text-blueGreen hover:text-blueGreenScreen transition duration-300 ease-in-out cursor-pointer"
       @click="handleClear()"
     >
       &#10005;

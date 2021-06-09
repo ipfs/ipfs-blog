@@ -41,7 +41,7 @@
               type="submit"
               value="Subscribe"
               name="subscribe"
-              class="p-2 text-white font-semibold bg-blueGreen rounded cursor-pointer w-full"
+              class="p-2 text-white font-semibold bg-blueGreen hover:bg-blueGreenScreen transition duration-300 rounded cursor-pointer w-full"
             />
           </div>
         </div>
@@ -57,9 +57,6 @@
         </label>
       </div>
       <div id="mergeRow-gdpr">
-        <div>
-          <fieldset class="" name="interestgroup_field"></fieldset>
-        </div>
         <div style="position: absolute; left: -5000px" aria-hidden="true">
           <input
             type="text"
