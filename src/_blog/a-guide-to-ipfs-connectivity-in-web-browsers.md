@@ -43,7 +43,7 @@ Let's take a look at how this works.
     * [Usage](#usage-2)
     * [Setup](#setup-2)
     * [Nginx Setup](#nginx-setup)
-    * [Advertising](#advetising)
+    * [Advertising](#advertising)
 * [🌐 Communication](#🌐-communication)
   * [📰 PubSub](#📰-pubsub)
   * [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
