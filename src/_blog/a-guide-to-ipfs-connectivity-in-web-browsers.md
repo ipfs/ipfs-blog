@@ -24,7 +24,7 @@ Then simply open `index.html` in your web browser and you'll immediately begin a
 
 You can also fork [TheDiscordian/browser-ipfs-chat](https://github.com/TheDiscordian/browser-ipfs-chat) on GitHub, and it'll be ready to test right away! If you want to deploy your own version, simply edit `index.html` and follow the setup information below.
 
-The libraries used in this example are [`js-ipfs`](https://github.com/ipfs/js-ipfs/blob/master/docs/BROWSERS.md) and bootstrap (just their minified css). If you want a newer version of `js-ipfs`, feel free to download [this one here](https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js) to use the latest version available 😃.
+The libraries used in this example are [`js-ipfs`](https://github.com/ipfs/js-ipfs/blob/master/docs/BROWSERS.md) and Bootstrap (just their minified CSS). If you want a newer version of `js-ipfs`, feel free to download [this one here](https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js) to use the latest version available 😃.
 
 Let's take a look at how this works.
 
@@ -52,34 +52,33 @@ Let's take a look at how this works.
 
 ## 🪐 Peer discovery and connectivity
 
-In a browser discovering and connecting to peers can be very hard, as we can't listen for new peers, and we don't have access to the DHT. In order to have the best experience working in a browser, it's important to understand how to find peers, and stay connected with them.
+In a browser, discovering and connecting to peers can be very hard, as we can't listen for new peers and we don't have access to the DHT. In order to have the best experience working in a browser, it's important to understand how to both find peers and stay connected with them.
 
-The chat example achieves this in 2 ways. Using WebRTC-Star we achieve direct browser-to-browser communication, and with a circuit relay, we have a relay in the middle. The chat application has a status indicator in the top-left to let you know too what kind of connection you have. Green means you're connected to the relay, even if it's via another peer, yellow mean you're only seeing direct peers, and red means you have no peers (at least none using the chat application).
+The chat example achieves this in two ways. Using WebRTC-Star, we achieve direct browser-to-browser communication, and with a circuit relay, we have a relay in the middle. The chat application also has a status indicator in the top left to let you know  what kind of connection you have. Green means you're connected to the relay, even if it's via another peer; yellow means you're only seeing direct peers; and red means you have no peers (at least none using the chat application).
 
-![BrowserIPFSNetworkGraph](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "BrowserIPFSNetworkGraph_Transparent.png")
-🌟 The diagram above demonstrates what a 3 user network can look like. It's worth noting that the browser nodes can communicate with go-ipfs as well, so BrowserC doesn't have to be a browser at all, but instead could be a go-ipfs node!
+![BrowserIPFSNetworkGraph](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "Browser IPFS network graph") 🌟 The diagram above demonstrates what a three-user network can look like. It's worth noting that the browser nodes can communicate with `go-ipfs` as well, so BrowserC doesn't have to be a browser at all, but instead could be a `go-ipfs` node!
 
 ### 🐳 Docker (optional)
 
-If you don't want to use docker, skip to [**WebRTC-Star**](#🌟-webrtc-star).
+If you don't want to use Docker, skip to the [**WebRTC-Star**](#🌟-webrtc-star) section.
 
-After this section we'll go over what WebRTC-Star and circuit-relay do, and how to set them up. However if you'd like to quickly roll your own kit using docker, I've prepared an image you can use. It might not be the best long-term solution, but it should be great if you want to quickly get rolling and experiment.
+After this section we'll go over what WebRTC-Star and circuit relay do, and how to set them up. However, if you'd like to quickly roll your own kit using Docker, I've prepared an image you can use. It might not be the best long-term solution, but it should be great if you want to quickly get rolling and experiment.
 
-#### Create volume
+#### Create a volume
 
-First create a volume to store long-term data like keys, and node data.
+First, create a volume to store long-term data like keys and node data.
 
 ```bash
 docker volume create ipfs_bundle
 ```
 
-#### Configure domain
+#### Configure a domain
 
 You need a domain, and SSL to use this kit with browser nodes. There are two options below, one will run certbot, and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
 When you execute either commands your IPFS node will also be setup for the first time giving you information such as it's PeerID, and circuit-relay addresses. Take note of these, you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#usage) and [p2p-circuit#Usage](#usage-2) for usage examples, or edit `index.html`, and change my node's multiaddresses out for your own).
 
-##### Certbot
+##### With certbot
 
 Ensure port 80 is open, follow checklist below, then run the following command:
 
