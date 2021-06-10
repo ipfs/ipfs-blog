@@ -166,7 +166,7 @@ await ipfs.bootstrap.add('/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhh
 await ipfs.swarm.connect('/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt');
 ```
 
-If you're looking to do your own client without copying the example, ensure you're also communicating with the announce channel, which is described under "Advertising". The relevant code in the chat demo is this (simplified):
+If you're looking to do your own client without copying the example, ensure you're also communicating with the announce channel, which is described under [Advertising](#advertising). The relevant code in the chat demo is this (simplified):
 
 ```javascript
 var ipfs; // store the IPFS node you're using in this variable
