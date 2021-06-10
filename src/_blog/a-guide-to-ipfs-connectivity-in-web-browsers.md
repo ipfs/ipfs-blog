@@ -134,15 +134,15 @@ ipfs = await Ipfs.create({
 
 Please note that this example uses my own star nodes — however, those won't necessarily always be accessible there. Currently it's important to either find a reliable star node or host your own. You can host your own quite simply by following the instructions [here](https://github.com/libp2p/js-libp2p-webrtc-star#rendezvous-server-aka-signaling-server) for a native setup and [here](https://github.com/libp2p/js-libp2p-webrtc-star/blob/master/DEPLOYMENT.md) for a Docker container which includes Nginx (for SSL). If you opt for the native setup, we cover the Nginx reverse proxy process and SSL cert retrieval later in this post.
 
-🚀 This is a very clean and effective method of P2P communications; however, sometimes NATs get in the way. We use [p2p-circuit](https://docs.libp2p.io/concepts/circuit-relay/) to get around that.
+🚀 This is a very clean and effective method of P2P communications; however, sometimes NATs get in the way. We use [`p2p-circuit`](https://docs.libp2p.io/concepts/circuit-relay/) to get around that.
 
 ### ⚡ `p2p-circuit`
 
-p2p-circuit is really useful for peers behind tricky NATs (or a VPN, or anything really). I find the relaying of p2p-circuit to be similar to [TURN](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT), so it's easy to think of it that way if you're already familiar with it.
+Using `p2p-circuit` is really helpful for peers behind tricky NATs (or a VPN, or anything really). I find the relaying of `p2p-circuit` to be similar to [TURN](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT), so it's easy to think of it that way if you're already familiar with it.
 
 #### Usage
 
-Once all the services for p2p-circuit are put together, connecting to the node can be achieved a couple of ways. First, to connect on startup to _only_ our node(s):
+Once all the services for `p2p-circuit` are put together, connecting to the node can be achieved in a few different ways. First, to connect on startup to _only_ our node(s):
 
 ```javascript
 ipfs = await Ipfs.create({
@@ -163,7 +163,7 @@ await ipfs.bootstrap.add('/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhh
 await ipfs.swarm.connect('/dns4/ipfs.thedisco.zone/tcp/4430/wss/p2p/12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt');
 ```
 
-If you're looking to do your own client, without copying the example, ensure you're also communicating with the announce channel, which is described under "Advertising". The relevant code in the chat demo is this (simplified):
+If you're looking to do your own client without copying the example, ensure you're also communicating with the announce channel, which is described under "Advertising". The relevant code in the chat demo is this (simplified):
 
 ```javascript
 var ipfs; // store the IPFS node you're using in this variable
@@ -222,9 +222,9 @@ setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 
 
 #### Setup
 
-Like the star nodes, it'll be important to host your own things as mine could go offline at any moment.
+Like the star nodes, it'll be important to host your own things as the ones in this post could go offline at any moment.
 
-For the purposes of this example, you'll need to do a few things on a server hosting your own [go-ipfs](https://github.com/ipfs/go-ipfs) node. You'll also need a working Nginx install setup, which will be used for SSL which is a requirement for browsers.
+For the purposes of this example, you'll need to do a few things on a server hosting your own [go-ipfs](https://github.com/ipfs/go-ipfs) node. You'll also need a working Nginx install setup, which will be used for SSL, which is a requirement for browsers.
 
 First configure the Go node, enabling [WebSocket](https://en.wikipedia.org/wiki/WebSocket) support, and designate it as a relay so we can communicate with it from a browser by editing `~/.ipfs/config` to add the following settings:
 
@@ -242,11 +242,11 @@ First configure the Go node, enabling [WebSocket](https://en.wikipedia.org/wiki/
 }
 ```
 
-Restart your go-ipfs node however you normally do (possibly `systemctl --user restart ipfs`), and we're mostly setup! We've enabled regular WebSockets with relaying support, however we need secure WebSockets otherwise browsers won't connect to us.
+Restart your `go-ipfs` node however you normally do (possibly `systemctl --user restart ipfs`), and we're mostly set up! We've enabled regular WebSockets with relaying support, however we need secure WebSockets — otherwise browsers won't connect to us.
 
 #### Nginx setup
 
-This setup is similar for WebRTC-Star, you just need to set it up as a different site, on a different port, with a new upstream name (instead of `ipfs`, try  something like `star`).
+This setup is similar for WebRTC-Star; you just need to set it up as a different site, on a different port, with a new upstream name (instead of `ipfs`, try  something like `star`).
 
 First obtain and install [Certbot](https://certbot.eff.org/docs/install.html). Then edit the following file with your domain name, and port, then copy it to `/etc/nginx/sites-available/ipfs`.
 
@@ -279,7 +279,7 @@ server {
 }
 ```
 
-So in this example you can see we're accepting ssl on port 4430, this is our "wss port" (WebSocket Secure), and then passing it to the unsecured port locally on 4011, this is our "ws port". So if we want to connect to this node from a browser, we'd use port 4430.
+So in this example you can see we're accepting SSL on port 4430 — this is our "wss port" (WebSocket Secure) — and then passing it to the unsecured port locally on 4011 — this is our "ws port". So if we want to connect to this node from a browser, we'd use port 4430.
 
 After, run the following:
 
@@ -294,11 +294,11 @@ sudo systemctl start nginx
 
 #### Advertising
 
-Using p2p-circuit can be a bit tricky. Once we connect to the relay from a browser, we're not advertising that we're able to be reached through it! For this purpose, I've created a Python script that runs alongside go-ipfs which advertises the browser js-ipfs peers it encounters over [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) with a p2p-circuit [multiaddress](https://docs.libp2p.io/concepts/addressing/).
+Using `p2p-circuit` can be a bit tricky. Once we connect to the relay from a browser, we're not advertising that we're able to be reached through it! For this purpose, I've created a Python script that runs alongside `go-ipfs` and advertises the browser `js-ipfs` peers it encounters over [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) with a `p2p-circuit` [multiaddress](https://docs.libp2p.io/concepts/addressing/).
 
 You can find the Python script [here](https://gist.github.com/TheDiscordian/51962fea72f8d5a5c3bba79dd7009e1c). It can be run with a simple `python ipfs_peeradvertiser.py`. However, ensure you first edit `CIRCUIT` with your own node's information, or you won't announce the peers correctly, and they won't know how to use your relay to connect to other peers.
 
-You can retrieve your own circuit info quite easily. Simply run `ipfs id` on your go-ipfs node, to get your PeerID, then form the circuit URL like so:
+You can retrieve your own circuit info quite easily. Simply run `ipfs id` on your `go-ipfs` node to get your PeerID, then form the circuit URL like so:
 
     /dns6/ipfs.YOURDOMAIN.COM/tcp/4430/p2p/YOUR_PEERID/p2p-circuit/p2p/
 
@@ -306,15 +306,15 @@ You should see here where you simply fill out your domain name you got the SSL c
 
 ⚠️ **Notice** ⚠️
 
-Ensure you specify dns6 or dns4, depending on if you're forming an IPv6 or IPv4 address. **It's important to ensure you use dns, otherwise browser nodes likely won't be able to connect.** Also note the port 4430, if you used a different one, you'll need to specify that.
+Ensure you specify DNS6 or DNS4, depending on if you're forming an IPv6 or IPv4 address. **It's important to ensure you use DNS, otherwise browser nodes likely won't be able to connect.** Also note the port 4430; if you used a different one, you'll need to specify that.
 
 ## 🌐 Communication
 
-Whew so you made it this far, you might be wondering "what is communication like?", well luckily the answer is it's _very_ easy in comparison to finding the peers, with only minor pitfalls. We're going to simply cover how we're using [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) in the chat example, and exactly what pitfalls were found while it was developed.
+Whew! Since you made it this far, you might be wondering "what is communication like?"Luckily the answer is that it's _very_ easy in comparison to finding the peers, with only minor pitfalls. We're going to simply cover how we're using [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) in the chat example, and exactly what pitfalls were found while it was developed.
 
 ### 📰 PubSub
 
-Using PubSub we're able to subscribe to topics, and retrieve any messages posted to those topics. In js-ipfs, we can set a callback function, which gets called whenever a message is received:
+Using PubSub, we're able to subscribe to topics and retrieve any messages posted to those topics. In `js-ipfs`, we can set a callback function, which gets called whenever a message is received:
 
 ```javascript
 function echo(msg) {
@@ -325,7 +325,7 @@ function echo(msg) {
 await ipfs.pubsub.subscribe("example_topic", echo);
 ```
 
-Publishing is just as easy too:
+Publishing is just as easy, too:
 
 ```javascript
 await ipfs.pubsub.publish("example_topic", "Hello world!");
@@ -335,11 +335,11 @@ This is effectively what the chat demo is doing. It's subscribing to a global to
 
 ### ⚠️ Possible browser pitfalls
 
-So let's say you've done everything correctly. You're able to find peers using WebRTC-Star and p2p-circuit, awesome! However you might find your connections expire, and you're unable to restore them. I'm not completely sure what causes this behaviour (probably some browser policy), however we can do our best to mitigate these issues!
+So let's say you've done everything correctly. You're able to find peers using WebRTC-Star and `p2p-circuit` — awesome! However, you might find your connections expire, and you're unable to restore them. I'm not completely sure what causes this behaviour (probably some browser policy); however, we can do our best to mitigate these issues!
 
 #### Staying connected to peers
 
-We stay connected to peers in a couple ways. The first way is more direct, and that's by subscribing to and sending a "keepalive" announcement over `discochat-keepalive` every 4 seconds:
+We stay connected to peers in a couple of ways. The first way is more direct: by subscribing to and sending a "keepalive" announcement over `discochat-keepalive` every 4 seconds:
 
 ```javascript
 setInterval(function(){sendmsg("1", prefix+"keepalive");}, 4000);
@@ -356,11 +356,11 @@ setInterval(function(){ipfs.pubsub.publish("announce-circuit", "peer-alive");}, 
 
 🌟 A simplified version of `processAnnounce` is found under [p2p-circuit#Usage](#usage).
 
-The Python script on the circuit relay will report a keepalive every 4 seconds. You may have noticed we're reporting "peer-alive" instead of "keep-alive", this is to separate peer requests from relay requests, to make it easier to tell when we no longer see a relay.
+The Python script on the circuit relay will report a keepalive every 4 seconds. You may have noticed we're reporting "peer-alive" instead of "keep-alive"; this is to separate peer requests from relay requests, making it easier to tell when we no longer see a relay.
 
 #### Staying connected to the circuit relay
 
-Outside of the simplified version of `processAnnounce`, in the real version there are a couple variables used for tracking keep-alive and peer-alive. These are `lastAlive` and `lastPeer`, respectively. We even track the last time we bootstrapped via `lastBootstrap`. Using all this, we can display the yellow status when we're only connected to peers (tracked via `lastPeer`), and if we don't see a keep-alive for 35 seconds (and we haven't attempted a bootstrap in 60 seconds), we can attempt to re-connect to the bootstrap relay (and display a red status). This is accomplished like so:
+Outside of the simplified version of `processAnnounce`, in the real version there are a few variables used for tracking keep-alive and peer-alive. These are `lastAlive` and `lastPeer`, respectively. We even track the last time we bootstrapped via `lastBootstrap`. Using all this, we can display the yellow status when we're only connected to peers (tracked via `lastPeer`), and if we don't see a keep-alive for 35 seconds (and we haven't attempted a bootstrap in 60 seconds), we can attempt to re-connect to the bootstrap relay (and display a red status). This is accomplished like so:
 
 ```javascript
 const bootstraps = [
@@ -410,7 +410,7 @@ function checkalive() {
 setInterval(checkalive, 1000);
 ```
 
-🌟 The above should be used with the full version of `processAnnounce` as it relies on `lastAlive` and `lastPeer`, which aren't updated in the simplified version.
+🌟 The above should be used with the full version of `processAnnounce`, as it relies on `lastAlive` and `lastPeer`, which aren't updated in the simplified version.
 
 ## 🎉 Conclusion
 
