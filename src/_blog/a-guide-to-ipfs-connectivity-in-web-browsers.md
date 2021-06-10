@@ -74,13 +74,13 @@ docker volume create ipfs_bundle
 
 #### Configure a domain
 
-You need a domain, and SSL to use this kit with browser nodes. There are two options below, one will run certbot, and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
+You need a domain and SSL to use this kit with browser nodes. There are two options below: One will run certbot and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
-When you execute either commands your IPFS node will also be setup for the first time giving you information such as it's PeerID, and circuit-relay addresses. Take note of these, you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#usage) and [p2p-circuit#Usage](#usage-2) for usage examples, or edit `index.html`, and change my node's multiaddresses out for your own).
+When you execute either commands, your IPFS node will also be set up for the first time giving you information such as its `PeerID` and circuit relay addresses. Take note of these — you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star Usage](#usage "WebRTC-Star Usage") and [p2p-circuit Usage](#usage-2) for usage examples, or edit `index.html` and change my node's multiaddresses out for your own).
 
 ##### With certbot
 
-Ensure port 80 is open, follow checklist below, then run the following command:
+Ensure port 80 is open, follow the checklist below, and then run the following command:
 
 ```bash
 docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:4011 -p 9090:9090 -p 4430:4430 -p 80:80 -it trdiscordian/ipfsbundle certbot DOMAIN.COM
@@ -101,7 +101,7 @@ docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:401
 
 #### Running the container
 
-Once you're configured, running the container is simple. Ensure at minimum ports 4430 and 9090 are forwarded.
+Once you're configured, running the container is simple. Ensure that, at minimum, ports 4430 and 9090 are forwarded.
 
 ```bash
 docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:4011 -p 9090:9090 -p 4430:4430 -it trdiscordian/ipfsbundle
@@ -111,7 +111,7 @@ docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:401
 
 ### 🌟 WebRTC-Star
 
-We can use [WebRTC-Star](https://github.com/libp2p/js-libp2p-webrtc-star) nodes to help discover other peers we can connect with directly browser-to-browser. I find it easy to think of it as similar to [STUN](https://en.wikipedia.org/wiki/STUN), if you're already familiar with that concept. Effectively each connecting node will be given a WebRTC-Star [multiaddress](https://docs.libp2p.io/concepts/addressing/) that other nodes can use to discover and connect to your browser directly. Meaning if you peer with someone using the star node, and the star node goes offline, you remain connected!
+We can use [WebRTC-Star](https://github.com/libp2p/js-libp2p-webrtc-star) nodes to help discover other peers we can connect with directly browser-to-browser. I find it easy to think of this as similar to [STUN](https://en.wikipedia.org/wiki/STUN), if you're already familiar with that concept. Effectively, each connecting node will be given a WebRTC-Star [multiaddress](https://docs.libp2p.io/concepts/addressing/) that other nodes can use to discover and connect to your browser directly. This means that if you peer with someone using the star node, and the star node goes offline, you remain connected!
 
 #### Usage
 
@@ -132,9 +132,9 @@ ipfs = await Ipfs.create({
 
 #### Setup
 
-Please note that this example uses my own star nodes, however those won't necessarily always be accessible there. Currently it's important to find a reliable star node, or host your own. You can host your own quite simply by following the instructions [here](https://github.com/libp2p/js-libp2p-webrtc-star#rendezvous-server-aka-signaling-server) for a native setup and [here](https://github.com/libp2p/js-libp2p-webrtc-star/blob/master/DEPLOYMENT.md) for a docker container which includes Nginx (for SSL). If you opt for the native setup, we cover the Nginx reverse proxy process and SSL cert retrieval later in this post.
+Please note that this example uses my own star nodes — however, those won't necessarily always be accessible there. Currently it's important to either find a reliable star node or host your own. You can host your own quite simply by following the instructions [here](https://github.com/libp2p/js-libp2p-webrtc-star#rendezvous-server-aka-signaling-server) for a native setup and [here](https://github.com/libp2p/js-libp2p-webrtc-star/blob/master/DEPLOYMENT.md) for a Docker container which includes Nginx (for SSL). If you opt for the native setup, we cover the Nginx reverse proxy process and SSL cert retrieval later in this post.
 
-🚀 This is a very clean and effective method of P2P communications, however sometimes NATs get in the way. For that, we use [p2p-circuit](https://docs.libp2p.io/concepts/circuit-relay/) to get around that.
+🚀 This is a very clean and effective method of P2P communications; however, sometimes NATs get in the way. We use [p2p-circuit](https://docs.libp2p.io/concepts/circuit-relay/) to get around that.
 
 ### ⚡ `p2p-circuit`
 
