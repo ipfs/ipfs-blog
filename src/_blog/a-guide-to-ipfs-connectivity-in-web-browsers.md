@@ -33,8 +33,8 @@ Let's take a look at how this works.
 
 * [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
   * [🐳 Docker (optional)](#🐳-docker-optional)
-    * [Create a volume](#create-volume)
-    * [Configure a domain](#configure-domain)
+    * [Create a volume](#create-a-volume)
+    * [Configure a domain](#configure-a-domain)
     * [Running the container](#running-the-container)
   * [🌟 WebRTC-Star](#🌟-webrtc-star)
     * [Usage](#usage)
