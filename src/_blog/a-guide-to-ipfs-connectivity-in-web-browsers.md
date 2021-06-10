@@ -7,6 +7,7 @@ permalink: "/2021-06-21-guide-to-ipfs-connectivity-in-browsers/"
 translationKey: ''
 header_image: ''
 tags:
+- tutorial
 - libp2p
 - browsers
 - js-ipfs
