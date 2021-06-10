@@ -31,11 +31,11 @@ Let's take a look at how this works.
 
 ## 📖 Table of contents
 
-* [🪐 Peer Discovery and Connectivity](#🪐-peer-discovery-and-connectivity)
+* [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
   * [🐳 Docker (optional)](#🐳-docker-optional)
-    * [Create Volume](#create-volume)
-    * [Configure Domain](#configure-domain)
-    * [Running the Container](#running-the-container)
+    * [Create a volume](#create-volume)
+    * [Configure a domain](#configure-domain)
+    * [Running the container](#running-the-container)
   * [🌟 WebRTC-Star](#🌟-webrtc-star)
     * [Usage](#usage)
     * [Setup](#setup)
@@ -46,9 +46,9 @@ Let's take a look at how this works.
     * [Advertising](#advetising)
 * [🌐 Communication](#🌐-communication)
   * [📰 PubSub](#📰-pubsub)
-  * [⚠️ Possible Browser Pitfalls](#⚠️-possible-browser-pitfalls)
-    * [Staying Connected to Peers](#staying-connected-to-peers)
-    * [Staying Connected to the Circuit Relay](#staying-connected-to-the-circuit-relay)
+  * [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
+    * [Staying connected to peers](#staying-connected-to-peers)
+    * [Staying connected to the circuit relay](#staying-connected-to-the-circuit-relay)
 * [🎉 Conclusion](#🎉-conclusion)
 
 ## 🪐 Peer discovery and connectivity
