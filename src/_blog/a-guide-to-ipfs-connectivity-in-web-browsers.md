@@ -1,5 +1,5 @@
 ---
-title: A Guide to IPFS Connectivity in Web Browsers
+title: A guide to IPFS connectivity in web browsers
 description: A minimal chat example using js-ipfs in the browser.
 author: Discordian
 date: 2021-06-21
@@ -12,9 +12,7 @@ tags:
 - js-ipfs
 
 ---
-# A Guide to IPFS Connectivity in Web Browsers
-
-We see a lot of questions about how to get started with using js-ipfs in the browser. I'm going to demonstrate a minimal chat example in js-ipfs entirely in the browser. It uses WebRTC to achieve browser-to-browser connectivity where possible, and a circuit relay to connect browser nodes where not. Message passing is done with [libp2p](https://docs.libp2p.io)'s [pubsub](https://docs.libp2p.io/concepts/publish-subscribe/).
+We see a lot of questions about how to get started with using `js-ipfs` in the browser. I'm going to demonstrate a minimal chat example in `js-ipfs` entirely in the browser. It uses WebRTC to achieve browser-to-browser connectivity where possible, and a circuit relay to connect browser nodes where not. Message passing is done with libp2p's pubsub.
 
 ### Getting the Code
 
