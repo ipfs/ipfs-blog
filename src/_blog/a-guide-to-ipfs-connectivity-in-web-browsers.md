@@ -89,7 +89,7 @@ Ensure port 80 isn't being used, follow the checklist below, and then run the fo
 docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:4011 -p 9090:9090 -p 4430:4430 -p 80:80 -it trdiscordian/ipfsbundle certbot DOMAIN.COM
 ```
 
-##### No cerbot (SSL disabled)
+##### No certbot (SSL disabled)
 
 If you do this option, the container won't handle SSL at all, and you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
