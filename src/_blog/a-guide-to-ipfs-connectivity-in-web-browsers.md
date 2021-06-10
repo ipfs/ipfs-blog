@@ -31,25 +31,25 @@ Let's take a look at how this works.
 
 ## 📖 Table of contents
 
-- [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
-  - [🐳 Docker (optional)](#🐳-docker-optional)
-    - [Create a volume](#create-a-volume)
-    - [Configure a domain](#configure-a-domain)
-    - [Running the container](#running-the-container)
-  - [🌟 WebRTC-Star](#🌟-webrtc-star)
-    - [Usage](#usage)
-    - [Setup](#setup)
-  - [⚡ p2p-circuit](#⚡-p2p-circuit)
-    - [Usage](#usage-2)
-    - [Setup](#setup-2)
-    - [Advertising](#advertising)
-- [🔒 SSL (Nginx)](#🔒-ssl-nginx)
-- [🌐 Communication](#🌐-communication)
-  - [📰 PubSub](#📰-pubsub)
-  - [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
-    - [Staying connected to peers](#staying-connected-to-peers)
-    - [Staying connected to the circuit relay](#staying-connected-to-the-circuit-relay)
-- [🎉 Conclusion](#🎉-conclusion)
+* [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
+  * [🐳 Docker (optional)](#🐳-docker-optional)
+    * [Create a volume](#create-a-volume)
+    * [Configure a domain](#configure-a-domain)
+    * [Running the container](#running-the-container)
+  * [🌟 WebRTC-Star](#🌟-webrtc-star)
+    * [Usage](#usage)
+    * [Setup](#setup)
+  * [⚡ p2p-circuit](#⚡-p2p-circuit)
+    * [Usage](#usage-2)
+    * [Setup](#setup-2)
+    * [Advertising](#advertising)
+* [🔒 SSL (Nginx)](#🔒-ssl-nginx)
+* [🌐 Communication](#🌐-communication)
+  * [📰 PubSub](#📰-pubsub)
+  * [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
+    * [Staying connected to peers](#staying-connected-to-peers)
+    * [Staying connected to the circuit relay](#staying-connected-to-the-circuit-relay)
+* [🎉 Conclusion](#🎉-conclusion)
 
 ## 🪐 Peer discovery and connectivity
 
@@ -79,7 +79,7 @@ docker volume create ipfs_bundle
 
 You need a domain and SSL to use this kit with browser nodes. There are two options below: One will run certbot and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
-When you execute either commands, your IPFS node will also be set up for the first time giving you information such as its `PeerID` and circuit relay addresses. Take note of these — you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#usage) and [p2p-circuit Usage](#usage-2) for usage examples, or edit `index.html` and change my node's multiaddresses out for your own).
+When you execute either commands, your IPFS node will also be set up for the first time giving you information such as its `PeerID` and circuit relay addresses. Take note of these — you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star Usage](#usage) and [p2p-circuit Usage](#usage-2) for usage examples, or edit `index.html` and change my node's multiaddresses out for your own).
 
 ##### With certbot
 
@@ -99,8 +99,8 @@ docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:401
 
 **📝 Checklist**
 
-- Replace `DOMAIN.COM` with your domain
-- Ensure the domain is correctly pointing to the machine you're running the container on (subdomains work fine too)
+* Replace `DOMAIN.COM` with your domain
+* Ensure the domain is correctly pointing to the machine you're running the container on (subdomains work fine too)
 
 #### Running the container
 
@@ -272,6 +272,7 @@ First ensure Nginx is installed, then obtain and install [Certbot](https://certb
 We're going to create two files from templates below. Ensure you're editing entries like `YOURDOMAIN.COM` with the full domain (including subdomain) you plan to use for your services.
 
 `/etc/nginx/sites-available/ipfs` (p2p-circuit, 4430(SSL) ➡ 4011)
+
 ```nginx
 map $http_upgrade $connection_upgrade {
 	default upgrade;
@@ -299,9 +300,10 @@ server {
 }
 ```
 
----
+***
 
 `/etc/nginx/sites-available/star` (WebRTC-Star, 9091(SSL) ➡ 9090)
+
 ```nginx
 map $http_upgrade $connection_upgrade {
 	default upgrade;
