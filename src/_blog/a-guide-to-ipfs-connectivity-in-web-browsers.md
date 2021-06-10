@@ -343,11 +343,11 @@ sudo ln -s /etc/nginx/sites-available/star /etc/nginx/sites-enabled/star
 sudo systemctl start nginx
 ```
 
-🎉 Nginx is now operating as a reverse-proxy, giving you secured WebSockets!
+🎉 Nginx is now operating as a reverse proxy, giving you secured WebSockets!
 
 ## 🌐 Communication
 
-Whew! Since you made it this far, you might be wondering "what is communication like?"Luckily the answer is that it's _very_ easy in comparison to finding the peers, with only minor pitfalls. We're going to simply cover how we're using [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) in the chat example, and exactly what pitfalls were found while it was developed.
+Whew! Since you made it this far, you might be wondering "what is communication like?" Luckily the answer is that it's _very_ easy in comparison to finding the peers, with only minor pitfalls. We're going to simply cover how we're using [PubSub](https://docs.libp2p.io/concepts/publish-subscribe/) in the chat example, and exactly what pitfalls were found while it was developed.
 
 ### 📰 PubSub
 
