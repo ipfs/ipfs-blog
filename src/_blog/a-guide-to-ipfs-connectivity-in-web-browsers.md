@@ -265,7 +265,7 @@ Ensure you specify DNS6 or DNS4, depending on if you're forming an IPv6 or IPv4 
 
 ## 🔒 SSL (Nginx)
 
-So far we've setup WebRTC-Star and p2p-circuit without SSL (unless you used the WebRTC-Star docker setup). If you want to use your nodes over the Internet, with a browser, they need to support SSL. If you're using the defaults currently WebRTC-Star should be running on port 9090 (no-SSL) and p2p-circuit will be on port 4011 (no-SSL). We're going to put those on port 9091 (SSL) and port 4430 (SSL), respectively.
+So far we've setup WebRTC-Star and `p2p-circuit` without SSL (unless you used the WebRTC-Star docker setup). If you want to use your nodes over the Internet, with a browser, they need to support SSL. If you're using the defaults currently WebRTC-Star should be running on port 9090 (no-SSL) and p2p-circuit will be on port 4011 (no-SSL). We're going to put those on port 9091 (SSL) and port 4430 (SSL), respectively.
 
 First ensure Nginx is installed, then obtain and install [Certbot](https://certbot.eff.org/docs/install.html).
 
