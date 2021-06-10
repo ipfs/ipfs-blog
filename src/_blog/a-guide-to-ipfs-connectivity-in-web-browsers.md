@@ -31,25 +31,25 @@ Let's take a look at how this works.
 
 ## 📖 Table of contents
 
-* [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
-  * [🐳 Docker (optional)](#🐳-docker-optional)
-    * [Create a volume](#create-a-volume)
-    * [Configure a domain](#configure-a-domain)
-    * [Running the container](#running-the-container)
-  * [🌟 WebRTC-Star](#🌟-webrtc-star)
-    * [Usage](#usage)
-    * [Setup](#setup)
-  * [⚡ p2p-circuit](#⚡-p2p-circuit)
-    * [Usage](#usage-2)
-    * [Setup](#setup-2)
-    * [Nginx Setup](#nginx-setup)
-    * [Advertising](#advertising)
-* [🌐 Communication](#🌐-communication)
-  * [📰 PubSub](#📰-pubsub)
-  * [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
-    * [Staying connected to peers](#staying-connected-to-peers)
-    * [Staying connected to the circuit relay](#staying-connected-to-the-circuit-relay)
-* [🎉 Conclusion](#🎉-conclusion)
+- [🪐 Peer discovery and connectivity](#🪐-peer-discovery-and-connectivity)
+  - [🐳 Docker (optional)](#🐳-docker-optional)
+    - [Create a volume](#create-a-volume)
+    - [Configure a domain](#configure-a-domain)
+    - [Running the container](#running-the-container)
+  - [🌟 WebRTC-Star](#🌟-webrtc-star)
+    - [Usage](#usage)
+    - [Setup](#setup)
+  - [⚡ p2p-circuit](#⚡-p2p-circuit)
+    - [Usage](#usage-2)
+    - [Setup](#setup-2)
+    - [Advertising](#advertising)
+- [🔒 SSL (Nginx)](#🔒-ssl-nginx)
+- [🌐 Communication](#🌐-communication)
+  - [📰 PubSub](#📰-pubsub)
+  - [⚠️ Possible browser pitfalls](#⚠️-possible-browser-pitfalls)
+    - [Staying connected to peers](#staying-connected-to-peers)
+    - [Staying connected to the circuit relay](#staying-connected-to-the-circuit-relay)
+- [🎉 Conclusion](#🎉-conclusion)
 
 ## 🪐 Peer discovery and connectivity
 
@@ -57,7 +57,7 @@ In a browser, discovering and connecting to peers can be very hard, as we can't 
 
 The chat example achieves this in two ways. Using WebRTC-Star, we achieve direct browser-to-browser communication, and with a circuit relay, we have a relay in the middle. The chat application also has a status indicator in the top left to let you know  what kind of connection you have. Green means you're connected to the relay, even if it's via another peer; yellow means you're only seeing direct peers; and red means you have no peers (at least none using the chat application).
 
-![BrowserIPFSNetworkGraph](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "Browser IPFS network graph") 🌟 The diagram above demonstrates what a three-user network can look like. It's worth noting that the browser nodes can communicate with `go-ipfs` as well, so BrowserC doesn't have to be a browser at all, but instead could be a `go-ipfs` node!
+![Network graph showing the paths nodes can use to discover and communicate with eachother](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "Browser IPFS network graph") 🌟 The diagram above demonstrates what a three-user network can look like. It's worth noting that the browser nodes can communicate with `go-ipfs` as well, so BrowserC doesn't have to be a browser at all, but instead could be a `go-ipfs` node!
 
 ### 🐳 Docker (optional)
 
@@ -77,11 +77,11 @@ docker volume create ipfs_bundle
 
 You need a domain and SSL to use this kit with browser nodes. There are two options below: One will run certbot and automatically grab a certificate for the provided domain name. The other option won't handle SSL for you, and instead you'll have to reverse proxy port 9091 to 9090 (SSL), and port 4011 to 4430 (SSL).
 
-When you execute either commands, your IPFS node will also be set up for the first time giving you information such as its `PeerID` and circuit relay addresses. Take note of these — you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star Usage](#usage "WebRTC-Star Usage") and [p2p-circuit Usage](#usage-2) for usage examples, or edit `index.html` and change my node's multiaddresses out for your own).
+When you execute either commands, your IPFS node will also be set up for the first time giving you information such as its `PeerID` and circuit relay addresses. Take note of these — you'll want to edit them into the chat client so you can use your own node (see [WebRTC-Star#Usage](#usage) and [p2p-circuit Usage](#usage-2) for usage examples, or edit `index.html` and change my node's multiaddresses out for your own).
 
 ##### With certbot
 
-Ensure port 80 is open, follow the checklist below, and then run the following command:
+Ensure port 80 isn't being used, follow the checklist below, and then run the following command:
 
 ```bash
 docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:4011 -p 9090:9090 -p 4430:4430 -p 80:80 -it trdiscordian/ipfsbundle certbot DOMAIN.COM
@@ -97,8 +97,8 @@ docker run --mount source=ipfs_bundle,destination=/root -p 9091:9091 -p 4011:401
 
 **📝 Checklist**
 
-* Replace `DOMAIN.COM` with your domain
-* Ensure the domain is correctly pointing to the machine you're running the container on (subdomains work fine too)
+- Replace `DOMAIN.COM` with your domain
+- Ensure the domain is correctly pointing to the machine you're running the container on (subdomains work fine too)
 
 #### Running the container
 
@@ -243,55 +243,7 @@ First configure the Go node, enabling [WebSocket](https://en.wikipedia.org/wiki/
 }
 ```
 
-Restart your `go-ipfs` node however you normally do (possibly `systemctl --user restart ipfs`), and we're mostly set up! We've enabled regular WebSockets with relaying support, however we need secure WebSockets — otherwise browsers won't connect to us.
-
-#### Nginx setup
-
-This setup is similar for WebRTC-Star; you just need to set it up as a different site, on a different port, with a new upstream name (instead of `ipfs`, try  something like `star`).
-
-First obtain and install [Certbot](https://certbot.eff.org/docs/install.html). Then edit the following file with your domain name, and port, then copy it to `/etc/nginx/sites-available/ipfs`.
-
-```nginx
-map $http_upgrade $connection_upgrade {
-	default upgrade;
-	'' close;
-}
-
-upstream ipfs {
-	server 127.0.0.1:4011;
-}
-
-server {
-	server_name ipfs.YOURDOMAIN.COM;
-	listen 4430 ssl;
-	ssl_certificate /etc/letsencrypt/live/ipfs.YOURDOMAIN.COM/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/ipfs.YOURDOMAIN.COM/privkey.pem;
-	include /etc/letsencrypt/options-ssl-nginx.conf;
-	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-	location / {
-		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-		proxy_pass http://ipfs;
-		proxy_http_version 1.1;
-		proxy_set_header Upgrade $http_upgrade;
-		proxy_set_header Connection $connection_upgrade;
-		proxy_set_header Host $host;
-	}
-}
-```
-
-So in this example you can see we're accepting SSL on port 4430 — this is our "wss port" (WebSocket Secure) — and then passing it to the unsecured port locally on 4011 — this is our "ws port". So if we want to connect to this node from a browser, we'd use port 4430.
-
-After, run the following:
-
-```bash
-sudo systemctl stop nginx
-sudo certbot -d ipfs.YOURDOMAIN.COM --standalone # Edit ipfs.YOURDOMAIN.COM to the domain you want a cert for
-sudo ln -s /etc/nginx/sites-available/ipfs /etc/nginx/sites-enabled/ipfs
-sudo systemctl start nginx
-```
-
-🎉 Nginx is now operating as a reverse-proxy, giving you secured WebSockets!
+Restart your `go-ipfs` node however you normally do (possibly `systemctl --user restart ipfs`), and we're mostly set up! We've enabled regular WebSockets with relaying support, however we need secure WebSockets (outlined in the SSL section below) — otherwise browsers won't be able to connect to us.
 
 #### Advertising
 
@@ -308,6 +260,86 @@ You should see here where you simply fill out your domain name you got the SSL c
 ⚠️ **Notice** ⚠️
 
 Ensure you specify DNS6 or DNS4, depending on if you're forming an IPv6 or IPv4 address. **It's important to ensure you use DNS, otherwise browser nodes likely won't be able to connect.** Also note the port 4430; if you used a different one, you'll need to specify that.
+
+## 🔒 SSL (Nginx)
+
+So far we've setup WebRTC-Star and p2p-circuit without SSL (unless you used the WebRTC-Star docker setup). If you want to use your nodes over the Internet, with a browser, they need to support SSL. If you're using the defaults currently WebRTC-Star should be running on port 9090 (no-SSL) and p2p-circuit will be on port 4011 (no-SSL). We're going to put those on port 9091 (SSL) and port 4430 (SSL), respectively.
+
+First ensure Nginx is installed, then obtain and install [Certbot](https://certbot.eff.org/docs/install.html).
+
+We're going to create two files from templates below. Ensure you're editing entries like `YOURDOMAIN.COM` with the full domain (including subdomain) you plan to use for your services.
+
+`/etc/nginx/sites-available/ipfs` (p2p-circuit, 4430(SSL) ➡ 4011)
+```nginx
+map $http_upgrade $connection_upgrade {
+	default upgrade;
+	'' close;
+}
+
+upstream ipfs {
+	server 127.0.0.1:4011;
+}
+
+server {
+	server_name YOURDOMAIN.COM;
+	listen 4430 ssl;
+	ssl_certificate /etc/letsencrypt/live/YOURDOMAIN.COM/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/YOURDOMAIN.COM/privkey.pem;
+	location / {
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+		proxy_pass http://ipfs;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection $connection_upgrade;
+		proxy_set_header Host $host;
+	}
+}
+```
+
+---
+
+`/etc/nginx/sites-available/star` (WebRTC-Star, 9091(SSL) ➡ 9090)
+```nginx
+map $http_upgrade $connection_upgrade {
+	default upgrade;
+	'' close;
+}
+
+upstream star {
+	server 127.0.0.1:9090;
+}
+
+server {
+	server_name YOURDOMAIN.COM;
+	listen 9091 ssl;
+	ssl_certificate /etc/letsencrypt/live/YOURDOMAIN.COM/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/YOURDOMAIN.COM/privkey.pem;
+	location / {
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+		proxy_pass http://star;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection $connection_upgrade;
+		proxy_set_header Host $host;
+	}
+}
+```
+
+So in this example you can see we're accepting SSL on port 4430 — this is our "wss port" (WebSocket Secure) — and then passing it to the unsecured port locally on 4011 — this is our "ws port". So if we want to connect to this node from a browser, we'd use port 4430.
+
+After, run the following:
+
+```bash
+sudo systemctl stop nginx
+sudo certbot -d YOURDOMAIN.COM --standalone # Edit YOURDOMAIN.COM to the domain you want a cert for, if you need multiple, fill in multiple or run the command multiple times
+sudo ln -s /etc/nginx/sites-available/ipfs /etc/nginx/sites-enabled/ipfs
+sudo ln -s /etc/nginx/sites-available/star /etc/nginx/sites-enabled/star
+sudo systemctl start nginx
+```
+
+🎉 Nginx is now operating as a reverse-proxy, giving you secured WebSockets!
 
 ## 🌐 Communication
 
