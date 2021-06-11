@@ -17,7 +17,7 @@ _The following is a summary of a talk given by Alan Shaw, Core Developer at IPFS
 
 @[youtube](aNaj9xNF8OU)
 
-If you import data to an IPFS node, you get what is called a content identifier, or CID. CIDs are what make IPFS unique when it comes to storage because CIDs address content instead of the typical `https://` location-based addressing.
+If you import data to an IPFS node, you get what is called a _content identifier_, or CID. CIDs are what make IPFS unique when it comes to storage because CIDs address content instead of the typical `https://` location-based addressing.
 
 It’s important to note that CIDs are a cryptographic hash of the content. This means that:
 
