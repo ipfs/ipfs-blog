@@ -13,7 +13,7 @@ tags:
 - NFTs
 
 ---
-_The following is a summary of a talk given by Alan Shaw, Core Developer at IPFS._ [_Watch the full recording here._](https://www.youtube.com/watch?v=aNaj9xNF8OU)
+_The following is a summary of a talk given by Alan Shaw, Core Developer at IPFS._ _Watch the full recording here:_
 
 @[youtube](aNaj9xNF8OU)
 
