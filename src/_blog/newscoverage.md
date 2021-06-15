@@ -4,6 +4,14 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: 'Snapshot: The decentralized voting system based on IPFS (Decrypt)'
+  date: 2021-06-04
+  publish_date: 
+  path: https://decrypt.co/resources/what-is-snapshot-the-decentralized-voting-system
+  card_image: "/2021-06-15-cardheader-news-coverage-snapshot-voting.png"
+  tags:
+  - community
+  - case study
 - title: Top NFT Projects — Rediscovered (Indorse)
   date: 2021-05-20
   publish_date: 

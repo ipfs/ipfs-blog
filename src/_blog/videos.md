@@ -4,6 +4,10 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'IPFS: The future of data storage'
+  date: 2021-06-07
+  publish_date: 
+  path: https://www.youtube.com/watch?v=94HH5D23WWI
 - title: Free Lotus Deal Data Retrieval via IPFS
   date: 2021-03-01
   path: https://www.youtube.com/watch?v=oeCaKXbhPls
