@@ -4,6 +4,12 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Interplanetary File System Could Pave the Way for a Distributed, Permanent
+    Web (The New Stack)
+  date: 2021-06-16
+  publish_date: 
+  path: https://thenewstack.io/interplanetary-file-system-could-pave-the-way-for-a-distributed-permanent-web/
+  card_image: "/2021-06-16-cardheader-new-web-ipfs.jpg"
 - title: 'Snapshot: The decentralized voting system based on IPFS (Decrypt)'
   date: 2021-06-04
   publish_date: 
