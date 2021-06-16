@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 140
-description: Content Persistence with Filecoin & IPFS, DI2F Workshop on 6/21, Web3Weekend
-  recording now live, and more!
+description: Announcing the launch of Starling Lab, Web3Weekend Recap, XSL Labs' new
+  video on IPFS, and more!
 author: Emily Vaughan
-date: 2021-06-09
-permalink: "/weekly-139/"
-translationKey: ipfs-weekly-139
+date: 2021-06-16
+permalink: "/weekly-140/"
+translationKey: ipfs-weekly-140
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,42 +13,46 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## IPFS, Filecoin, and Content Persistence
+## Starling Lab: Establishing Trust for Humanity’s Data
 
-![](../assets/ipfs-fil-blog-persistence-art.png)
+![](../assets/starling-lab2.png)
 
-There are two fundamental problems facing the sustainability of content on the internet: addressing and persistence. _Addressing_ refers to the way in which internet users can find the content that they’re looking for online. Today, the Web leans into location addressing, or finding content by where it is located, as opposed to content addressing, which allows network participants to confidently and consistently ensure their content does not change over time without a clear record of that change. _Persistence_ refers to the ability of those network participants to continue accessing content in perpetuity, without worries of the content disappearing or becoming unavailable for any reason. [**Learn more in our recent blog post.**](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/)
+Announcing the launch of Starling Lab, a commitment to continue building the frameworks required to endow humanity’s most vital digital information with trust. In collaboration with the USC Shoah Foundation and Stanford University, Starling Lab is deploying technology and methods that make the decentralized internet a viable platform for social impact. With an initial commitment of $2 million in funding from Protocol Labs and the Filecoin Foundation for the Decentralized Web, the Starling Lab is the first center in the world dedicated to using decentralized tools to advance human rights.
 
-## DI2F: Decentralizing the Internet with IPFS and Filecoin
+Core to the Starling Lab solution is the Starling Framework, a set of open-source prototypes, best practices, and case studies built upon IPFS and Filecoin that help to reduce information uncertainty in digital media. The Starling Framework rests on the fundamental need to capture, store, and verify information to protect its integrity. Read more about Starling Lab [**here**](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/).
 
-![](../assets/di2f-cover-slide.png)
+## Web3 Weekend in Review
 
-The first edition of a research-focused workshop on decentralisation, IPFS and Filecoin is here! DI2F is taking place alongside IFIP Networking 2021 on June 21, 2021 and it has a packed program full of exciting paper presentations, demos, abstracts, hands-on tutorials and invited talks! The workshop sessions will focus on protocol and architecture extensions, Decentralized Identity and Web 3.0 services.
+![](../assets/2021-06-08-cardheader-web3weekend.png)
 
-The workshop’s hands-on session will get the audience kickstarted with the IPFS essentials and a hackathon will kick off at the end of the day and run for the following three weeks, netting the finalists prizes of more than $1,000.
+What better way to dive into all things Web3 than a weekend hackathon? The folks at ETHGlobal thought so, and we joined them during the last weekend in May for [**Web3 Weekend**](https://web3.ethglobal.co/).
 
-The workshop will run from 13:00-18:30pm UTC+3 on June 21st. You can find the workshop program [**here**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) and registristration for the conference and workshop [**here**](https://networking.ifip.org/2021/registration). Note that non-author students can attend for free but still need to register.
+This three-day event kicked off with a full-day summit, bringing together experts and luminaries from across the ecosystem to encourage and inspire builders to challenge the idea of what’s possible with decentralized technologies. Over the weekend, we offered a combined $20,000 Filecoin (FIL) prize pool distributed evenly between all submissions built on or with IPFS or Filecoin during Web3 Weekend. Any project built with ecosystem tools like Textile, Pinata, Fleek, Ceramic, Fission, Livepeer, and more received a prize—over 65 finalists in total! [**Check out this post**](https://blog.ipfs.io/2021-06-08-web3-weekend/) for a full recap including challenges and finalists, as well as Protocol Labs’ talks and workshops from the event.
 
 ## Brand new on IPFS
 
-* Distributed Wikipedia Mirror & Kiwix projects announced updated English and Turkish mirrors, along with new languages of Arabic, Chinese, Myanmar, & Russian! [**Check it out.**](https://blog.ipfs.io/2021-05-31-distributed-wikipedia-mirror-update/)
-* Protocol Labs Ecosystem Lead, Colin Evran, was interviewed on Blockworks’ Base Layer Podcast. [**Tune in**](https://podcasts.apple.com/us/podcast/base-layer-episode-211-colin-evran-from-protocol-labs/id1445373535?i=1000524502274) to learn about IPFS & decentralized storage in Web3.
-* [**Check out the highlights from Web3 Weekend**](https://blog.ipfs.io/2021-06-08-web3-weekend/), from workshops to project finalists, and more!
-* The next IPFS meetup is Friday, June 22 at 9am PT/5pm UTC. [**Join us for a series of lightning talks**](https://www.meetup.com/en-AU/San-Francisco-IPFS/events/cbjsgsyccjbdc/)!
+* [**Snapshot Labs**](https://snapshot.org/#/) is revolutionizing the world of decentralized governance with IPFS by enabling their users to shape their company's project decisions for free. [**Read Decrypt’s article.**](https://decrypt.co/resources/what-is-snapshot-the-decentralized-voting-system)
+* [**Berty Alpha**](https://berty.tech/), the privacy-first messaging app built on IPFS and libp2p is now available on iOS! Join their [**Disord **](https://discord.com/invite/mVfsEUmgSf)to get all the info to download the alpha.
+* [**XSL Labs**](https://www.xsl-labs.io/en/) recently published a new educational video introducing IPFS. [**Watch it here**](https://www.youtube.com/watch?v=94HH5D23WWI).
+* Have questions about getting started with using js-ipfs in your web browser? [**Check out this post**](https://blog.ipfs.io/2021-06-10-guide-to-ipfs-connectivity-in-browsers/).
 
 ## Around the ecosystem 🌏
 
-VideoCoin, which uses IPFS and Filecoin, was featured in Forbes’ latest NFT piece on movies and streaming. [**Read it**](https://www.forbes.com/sites/lawrencewintermeyer/2021/06/01/are-movies-and-streaming-the-next-frontier-for-nfts/?sh=23e0495c2b13).   
+Join over 1,000 likeminded engineers, designers, and creators at [**HackMoney**](https://defi.ethglobal.co/), a 3-week long hackathon dedicated to building the future of finance running from June 18th through July 9th.   
   
-Textile CI Buckets are now on Gitlab! [**Learn more.**](https://gitlab.com/txlab/textile-ci-docker-image)  
+Gemini recently published an in-depth article on distributed work protocols built by developers, for developers. [**Read it here.**](https://www.gemini.com/cryptopedia/distributed-work-protocols-web3-lpt-fil-grt)  
   
-Pinata recently published the article “Why You Should Stop Sharing Your Creative Work Through Dropbox.” [**Dive in.**](https://medium.com/pinata/why-you-should-stop-sharing-your-creative-work-through-dropbox-7ec38be7da75)  
+The DI2F workshop with IFIP Networking is coming up next Monday, June 21st and offers a packed programme full of exciting paper presentations, demos, abstracts, hands-on tutorials and invited talks! Get details [**here**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) and register [**at this link**](https://networking.ifip.org/2021/registration).   
   
-Cloudflare is hosting Cloudflare Connect 2021 this week, an event focused on product leaders. [**Register now to secure your spot**](https://www.cloudflare.com/cloudflare-connect-2021/).  
+Request Network recently announced a partnership with Chainlink to enable fiat-denominated invoices paid in crypto. [**Learn more.**](https://twitter.com/RequestNetwork/status/1402639820984360963?s=20)  
   
-The Filecoin Hyperdrive update is coming! Tune into the AMA on Tuesday, June 8 at 9PM ET to ask your questions [**here**](https://app.sli.do/event/ggm7xqpx).   
+Always wanted to create your own fashion house in the metaverse? Decentraland recently introduced their Wearables Editor. [**Check it out!**](https://decentraland.org/blog/announcements/introducing-wearables-editor/)  
   
-Couldn’t make it to the Web3 Weekend hackathon with ETHGlobal live? Check out all of the content from the event [**on YouTube**](https://www.youtube.com/watch?v=5CPUSPUGOZ0&list=PL_0VrY55uV1_MGf3-oQ2jmZt4VFQSjenh)!
+Infura Transactions (ITX) is now in Private Beta and [**you can sign up to try it**](https://twitter.com/infura_io/status/1397229187379965953?s=20)!  
+  
+The next IPFS meetup is Friday, June 29 at 9am PT/5pm UTC. [**Register to join us for a series of lightning talks**](https://www.meetup.com/en-AU/San-Francisco-IPFS/events/cbjsgsyccjbdc/)!   
+  
+[**Check out this episode**](https://soundcloud.com/arthurfalls/the-decentralised-web-on-fleek-mixdown#t=0:00) of The Internet Computer Weekly to hear Fleek discuss decentralised frontend hosting.
 
 ## Want to help build the new internet?
 
@@ -59,10 +63,6 @@ Couldn’t make it to the Web3 Weekend hackathon with ETHGlobal live? Check out 
 [**Senior Backend Engineer**](https://pinata.cloud/careers#2): Pinata is looking for a Backend Engineer knowledgeable in NodeJS to help build the future of our platform. As a dedicated Backend Engineer, you will work directly with our CTO and engineering team to build products and features that accelerate our traction. They need somebody that’s experienced with building NodeJS based APIs and working with relational databases. Experience with file storing technologies is a big plus for this position. Pinata, Remote.  
   
 [**DevOps**](https://pinata.cloud/careers#1): Pinata is looking for somebody with a background in dev-ops to ensure everything runs smoothly as we scale into the future. As the first dedicated DevOps engineer, you will play a key role in helping Pinata design and build a world-class dev ops pipeline. They need somebody who knows how to create systems that monitor their infrastructure and help deploy new updates in an automated fashion. Pinata, Remote.  
-  
-[**Backend/Platform Engineer:**](https://jobs.lever.co/3box) 3Box Labs is looking for a Backend Engineer who will build key infrastructure components and support reliable deployments for us and the community. 3Box Labs, Remote.  
-  
-[**Protocol Engineer:**](https://jobs.lever.co/3box) 3Box Labs is looking for a Protocol Engineer to extend the security, privacy, functionality, and performance of the Ceramic Protocol. 3Box Labs, Remote.  
   
 [**Multiple Positions Open**](https://jobs.lever.co/protocol): Protocol Labs has updated their job board with openings across positions in Administration, Business Development, Business Operations, Communications, Community, Engineering, Finance, Legal, Talent, Product, Project Management, Research, & Security. Protocol Labs, Filecoin, IPFS. Remote.  
   
