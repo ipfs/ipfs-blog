@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict'
 
 /**
@@ -17,8 +15,6 @@ const dayjs = require('dayjs')
 
 const xmlFilePath = 'dist/index.xml'
 const jsonFilePath = 'dist/index.json'
-const newsJsonPath = 'scripts/data/news.json'
-const videosJsonPath = 'scripts/data/videos.json'
 
 function generateJsonFile(xml) {
   xml2js.parseString(xml, (error, dataObj) => {
@@ -43,30 +39,20 @@ function generateJsonFile(xml) {
   })
 }
 
-fs.readFile(xmlFilePath, { encoding: 'utf-8' }, (error, data) => {
-  if (error) {
-    console.error(error)
+exports.generateIndexFile = () => {
+  fs.readFile(xmlFilePath, { encoding: 'utf-8' }, (error, data) => {
+    if (error) {
+      console.error(error)
 
-    if (error.code === 'ENOENT') {
-      console.error(
-        "rss xml file not found – couldn't generate the index.json file."
-      )
+      if (error.code === 'ENOENT') {
+        console.error(
+          "rss xml file not found – couldn't generate the index.json file."
+        )
+      }
+
+      return process.exit(1)
     }
 
-    return process.exit(1)
-  }
-
-  generateJsonFile(data)
-})
-
-fs.copyFile(newsJsonPath, 'dist/news.json', (err) => {
-  if (err) {
-    console.log('Error: ', err)
-  }
-})
-
-fs.copyFile(videosJsonPath, 'dist/videos.json', (err) => {
-  if (err) {
-    console.log('Error: ', err)
-  }
-})
+    generateJsonFile(data)
+  })
+}
