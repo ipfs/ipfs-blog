@@ -1,5 +1,5 @@
 ---
-title: OpenSea decentralizes and persists NFT storage with IPFS and Filecoin
+title: OpenSea stores NFTs with IPFS and Filecoin
 description: Our friends at OpenSea recently launched a feature to “freeze” NFT metadata
   using IPFS and Filecoin.
 author: Pooja Shah
