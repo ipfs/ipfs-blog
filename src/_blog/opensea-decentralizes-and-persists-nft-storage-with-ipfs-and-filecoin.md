@@ -2,7 +2,7 @@
 title: OpenSea stores NFTs with IPFS and Filecoin
 description: Our friends at OpenSea recently launched a feature to “freeze” NFT metadata
   using IPFS and Filecoin.
-author: Pooja Shah
+author: Pooja Shah, Jonathan Victor
 date: 2021-06-17
 permalink: 2021-06-17-opensea-ipfs-filecoin
 translationKey: ''
