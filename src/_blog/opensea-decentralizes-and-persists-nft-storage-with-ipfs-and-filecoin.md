@@ -8,6 +8,7 @@ permalink: 2021-06-17-opensea-ipfs-filecoin
 translationKey: ''
 header_image: "/filecoin-ipfs-x-opensea.png"
 tags:
+- community
 - NFTs
 
 ---
