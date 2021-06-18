@@ -50,7 +50,7 @@
     "svg-sprite-loader": "^6.0.7",
     "svgo": "^2.3.0",
     "svgo-loader": "^3.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2",
     "tailwindcss-line-clamp": "^1.0.5",
     "tailwindcss-touch": "^1.0.1",
     "vue": "^2.6.12",
