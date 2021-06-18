@@ -29,7 +29,3 @@
 .hr-transparent {
   @apply bg-white opacity-60;
 }
-
-.border-gray-30 {
-  border-color: rgba(142, 142, 147, 0.3);
-}

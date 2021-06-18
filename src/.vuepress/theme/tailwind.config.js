@@ -190,13 +190,6 @@ const theme = {
       letterSpacing: theme('letterSpacing.normal'),
       lineHeight: theme('lineHeight.150'),
     },
-    cta: {
-      fontFamily: theme('fontFamily.sans'),
-      fontWeight: theme('fontWeight.semibold'),
-      fontSize: theme('fontSize.16'),
-      lineHeight: theme('lineHeight.130'),
-      letterSpacing: theme('letterSpacing.loose'),
-    },
     link: {
       fontWeight: theme('fontWeight.bold'),
       color: theme('colors.blueGreen'),
@@ -206,6 +199,19 @@ const theme = {
     },
     rich: {
       extends: 'p1',
+      color: theme('textColor.primary'),
+      '> * + *': {
+        marginTop: '1.5em',
+      },
+      'h1:hover .header-anchor, h2:hover .header-anchor, h3:hover .header-anchor, h4:hover .header-anchor, h5:hover .header-anchor, h6:hover .header-anchor': {
+        opacity: 1,
+      },
+      'li + li': {
+        marginTop: '1em',
+      },
+      'li > ul, li > ol': {
+        paddingTop: '1.25rem',
+      },
       h1: {
         extends: 'h2',
       },
@@ -226,9 +232,71 @@ const theme = {
       },
       a: {
         extends: 'link',
+        transition: 'all',
+        transitionDuration: theme('transitionDuration.200'),
+        color: theme('textColor.blueGreen'),
+        '&.header-anchor': {
+          fontSize: '0.85em',
+          marginLeft: '-0.87em',
+          paddingRight: '0.23em',
+          marginTop: '0.125em',
+          opacity: 0,
+          float: 'left',
+        },
+        '&.header-anchor:hover': {
+          textDecoration: 'underline',
+        },
+      },
+      'b, strong': {
+        fontWeight: theme('fontWeight.bold'),
+      },
+      'i, em': {
+        fontStyle: 'italic',
       },
       blockquote: {
         extends: 'h4',
+        color: theme('textColor.black'),
+        paddingLeft: theme('padding.8'),
+        position: 'relative',
+      },
+      ul: {
+        listStyleType: 'disc',
+        paddingLeft: '1.25rem',
+      },
+      ol: {
+        listStyleType: 'decimal',
+        paddingLeft: '1.25rem',
+      },
+      img: {
+        margin: '0 auto',
+      },
+      'img + span > .icon.outbound': {
+        display: 'none',
+      },
+      pre: {
+        padding: '1.25rem 1.5rem',
+        backgroundColor: '#0e2333',
+        borderRadius: '6px',
+        overflowX: 'auto',
+        '> code': {
+          padding: '0',
+          backgroundColor: 'transparent',
+          borderRadius: '0',
+          color: '#fff',
+          fontSize: '0.85em',
+          whiteSpace: 'unset',
+          wordBreak: 'unset',
+        },
+      },
+      code: {
+        margin: '0',
+        padding: '0.15rem 0.3rem',
+        backgroundColor: 'rgba(27, 31, 35, 0.05)',
+        borderRadius: '3px',
+        color: 'rgba(51, 51, 51, 0.8)',
+        fontSize: '0.85em',
+        whiteSpace: 'pre-wrap',
+        wordBreak: 'break-all',
       },
     },
   }),
