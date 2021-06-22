@@ -4,6 +4,13 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: A Technical Guide to IPFS
+  date: 2021-06-21
+  publish_date: 
+  path: https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/
+  card_image: "/2021-06-22-cardheader-technical-guide-ipfs-freecodecamp.png"
+  tags:
+  - community
 - title: Mutable Content in IPFS
   date: 2021-04-06
   publish_date: 
