@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 141
-description: Announcing the launch of Starling Lab, Web3Weekend Recap, XSL Labs' new
-  video on IPFS, and more!
+description: OpenSea stores NFTs with IPFS & Filecoin, NFT Dev User Experience survey,
+  IPFS in 'The New Stack' & more!
 author: Emily Vaughan
-date: 2021-06-16
-permalink: "/weekly-140/"
-translationKey: ipfs-weekly-140
+date: 2021-06-23
+permalink: "/weekly-141/"
+translationKey: ipfs-weekly-141
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,46 +13,38 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Starling Lab: Establishing Trust for Humanity’s Data
+## OpenSea stores NFTs with IPFS and Filecoin
 
-![](../assets/starling-lab2.png)
+![](../assets/filecoin-ipfs-x-opensea.png)
 
-Announcing the launch of Starling Lab, a commitment to continue building the frameworks required to endow humanity’s most vital digital information with trust. In collaboration with the USC Shoah Foundation and Stanford University, Starling Lab is deploying technology and methods that make the decentralized internet a viable platform for social impact. With an initial commitment of $2 million in funding from Protocol Labs and the Filecoin Foundation for the Decentralized Web, the Starling Lab is the first center in the world dedicated to using decentralized tools to advance human rights.
+Our friends at [**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more!**](https://blog.ipfs.io/2021-06-17-opensea-ipfs-filecoin/)
 
-Core to the Starling Lab solution is the Starling Framework, a set of open-source prototypes, best practices, and case studies built upon IPFS and Filecoin that help to reduce information uncertainty in digital media. The Starling Framework rests on the fundamental need to capture, store, and verify information to protect its integrity. Read more about Starling Lab [**here**](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/).
+## NFT Development User Experience
 
-## Web3 Weekend in Review
+![](../assets/ipfs-survey-blog-sized-icon.png)
 
-![](../assets/2021-06-08-cardheader-web3weekend.png)
-
-What better way to dive into all things Web3 than a weekend hackathon? The folks at ETHGlobal thought so, and we joined them during the last weekend in May for [**Web3 Weekend**](https://web3.ethglobal.co/).
-
-This three-day event kicked off with a full-day summit, bringing together experts and luminaries from across the ecosystem to encourage and inspire builders to challenge the idea of what’s possible with decentralized technologies. Over the weekend, we offered a combined $20,000 Filecoin (FIL) prize pool distributed evenly between all submissions built on or with IPFS or Filecoin during Web3 Weekend. Any project built with ecosystem tools like Textile, Pinata, Fleek, Ceramic, Fission, Livepeer, and more received a prize—over 65 finalists in total! [**Check out this post**](https://blog.ipfs.io/2021-06-08-web3-weekend/) for a full recap including challenges and finalists, as well as Protocol Labs’ talks and workshops from the event.
+We're interested in better understanding the user experience of people interested in NFT development. We're identifying candidates to participate in a 30 minute long user testing session between June 21st and June 24th. Participants who are selected and successfully complete these sessions will receive an Amazon gift card valued at $100 USD as compensation for their time. You don't need any previous experience with NFTs to participate in this study. However, you will need a strong internet connection to participate in a video conference over Zoom and share your screen. If you're interested in participating, please take a few minutes to fill out [**this short survey**](https://airtable.com/shrhx9adti08gphmJ). *You must be 18 years old or over to participate.
 
 ## Brand new on IPFS
 
-* [**Snapshot Labs**](https://snapshot.org/#/) is revolutionizing the world of decentralized governance with IPFS by enabling their users to shape their company's project decisions for free. [**Read Decrypt’s article.**](https://decrypt.co/resources/what-is-snapshot-the-decentralized-voting-system)
-* [**Berty Alpha**](https://berty.tech/), the privacy-first messaging app built on IPFS and libp2p, is now available on iOS! Join their [**Discord**](https://discord.com/invite/mVfsEUmgSf)to get all the info to download the alpha.
-* [**XSL Labs**](https://www.xsl-labs.io/en/) recently published a new educational video introducing IPFS. [**Watch it here**](https://www.youtube.com/watch?v=94HH5D23WWI).
-* Have questions about getting started with using `js-ipfs` in your web browser? [**Check out this post**](https://blog.ipfs.io/2021-06-10-guide-to-ipfs-connectivity-in-browsers/).
+* Infura launched their premium IPFS private beta! [**Connect to IPFS now**](https://infura.io/product/ipfs).
+* HackMoney with ETHGlobal runs now through July 9th & has $300k in prizes up for grabs. [**Start building today**](https://hackathon.money/)!
+* There's a [**new feature**](https://thenewstack.io/interplanetary-file-system-could-pave-the-way-for-a-distributed-permanent-web/) on IPFS in 'The New Stack' on paving the way for a distributed permanent web!
+* Missed the latest IPLD sync? You can watch the full video with updates on the [**IPFS YouTube channel**](https://www.youtube.com/watch?v=wyTSLn362vE).
 
 ## Around the ecosystem 🌏
 
-Join over 1,000 likeminded engineers, designers, and creators at [**HackMoney**](https://defi.ethglobal.co/), a 3-week long hackathon dedicated to building the future of finance running from June 18th through July 9th.
+ChainSafe launched their Gaming SDK, the first open-source library of its kind that supports multi-wallets, multi-marketplaces & multi-blockchains. [**Dive in**](https://medium.com/chainsafe-systems/announcing-chainsafe-gaming-an-sdk-to-bridge-your-gaming-engines-to-the-web-3-0-ecosystem-f33aa27c7a98).
 
-Gemini recently published an in-depth article on distributed work protocols built by developers, for developers. [**Read it here.**](https://www.gemini.com/cryptopedia/distributed-work-protocols-web3-lpt-fil-grt)
+Outlier Ventures launched Filecoin Base Camp to accelerate 40 exceptional startups who are leveraging Filecoin, IPFS & libp2p to build & drive adoption of projects in decentralized data protocols & applications. [**Learn how to apply.**](https://outlierventures.io/base-camp/filecoin-base-camp/)
 
-The DI2F workshop with IFIP Networking is coming up next Monday, June 21st and offers a packed programme full of exciting paper presentations, demos, abstracts, hands-on tutorials and invited talks! Get details [**here**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin) and register [**at this link**](https://networking.ifip.org/2021/registration).
+Pinata makes it easy to add your OpenSea NFT collection to Squarespace websites. [**See for yourself.**](https://medium.com/pinata/host-your-opensea-nft-collection-on-squarespace-with-pinata-3cb16413aebf)
 
-Request Network recently announced a partnership with Chainlink to enable fiat-denominated invoices paid in crypto. [**Learn more.**](https://twitter.com/RequestNetwork/status/1402639820984360963?s=20)
+Last week CloudflareTV celebrated its first anniversary with a broadcast spanning everything from the keynotes of Cloudflare Connect, to a day-long virtual career fair, to their flagship game show Silicon Valley Squares. [**Learn where to watch.**](https://blog.cloudflare.com/cloudflare-tv-live-1-000-times-and-counting/)
 
-Always wanted to create your own fashion house in the metaverse? Decentraland recently introduced their Wearables Editor. [**Check it out!**](https://decentraland.org/blog/announcements/introducing-wearables-editor/)
+Berty Alpha is now available for Apple users. [**Try it here**](https://berty.tech/newsletter/news-60/).
 
-Infura Transactions (ITX) is now in Private Beta and [**you can sign up to try it**](https://twitter.com/infura_io/status/1397229187379965953?s=20)!
-
-The next IPFS meetup is Friday, June 29 at 9am PT/5pm UTC. [**Register to join us for a series of lightning talks**](https://www.meetup.com/en-AU/San-Francisco-IPFS/events/cbjsgsyccjbdc/)!
-
-[**Check out this episode**](https://soundcloud.com/arthurfalls/the-decentralised-web-on-fleek-mixdown#t=0:00) of The Internet Computer Weekly to hear Fleek discuss decentralised frontend hosting.
+The next IPFS meetup is Friday, June 29 at 10am PT/5pm UTC. [**Register to join us for a series of lightning talks**](https://www.meetup.com/en-AU/San-Francisco-IPFS/events/cbjsgsyccjbdc/)!
 
 ## Want to help build the new internet?
 
@@ -66,6 +58,6 @@ The next IPFS meetup is Friday, June 29 at 9am PT/5pm UTC. [**Register to join u
 
 [**Multiple Positions Open**](https://jobs.lever.co/protocol): Protocol Labs has updated their job board with openings across positions in Administration, Business Development, Business Operations, Communications, Community, Engineering, Finance, Legal, Talent, Product, Project Management, Research, & Security. Protocol Labs, Filecoin, IPFS. Remote.
 
-[**Software Engineers**](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. Filecoin, IPFS, lib2p2, Remote.
+[**Software Engineers**](https://jobs.lever.co/protocol): Seeking seasoned software engineers with specializations in cryptography and systems, distributed systems, and peer-to-peer networks to help shape the next generation of network protocols. Filecoin, IPFS, libp2p, Remote.
 
 Get the IPFS Weekly in your inbox, each Tuesday. [**Sign up now.**](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230)
