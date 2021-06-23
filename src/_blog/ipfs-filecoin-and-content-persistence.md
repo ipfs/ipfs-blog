@@ -84,8 +84,7 @@ The internet today, though immensely powerful, has long exposed critical weaknes
 
 Learn more at:
 
-[nft.storage](http://nft.storage/)
-
-[IPFS Documentation - content addressing](https://docs.ipfs.io/concepts/content-addressing/)
-
-[IPFS Documentation - minting an NFT with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts)
+- [nft.storage](http://nft.storage/)
+- [NFT School](https://nftschool.dev/)
+- [IPFS Documentation - content addressing](https://docs.ipfs.io/concepts/content-addressing/)
+- [IPFS Documentation - minting an NFT with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts)

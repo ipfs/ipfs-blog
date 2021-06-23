@@ -1,22 +1,21 @@
 ---
 tags:
-  - NFTs
+- NFTs
 title: Storing NFTs on IPFS
-description:
-  Stand the test of time — learn best practices for IPFS addressing and
+description: Stand the test of time — learn best practices for IPFS addressing and
   storage for NFT data.
 author: Yusef Napora, Mitch Wagner
 date: 2021-04-05
-permalink: '/2021-04-05-storing-nfts-on-ipfs/'
+permalink: "/2021-04-05-storing-nfts-on-ipfs/"
 translationKey: ''
-header_image: '/128-nft-header.png'
----
+header_image: "/128-nft-header.png"
 
+---
 Permanence and immutability are part of the core value proposition of a non-fungible token (NFT). Unfortunately, many NFTs being targeted at consumers today offer neither of these properties due to fundamental design flaws. It is common to hear claims that NFTs “live on a blockchain forever”, but frequently, due to the cost and space limitations of storing data on a blockchain, only the ownership _record_ is actually stored, with metadata linking to the actual content of the NFT.
 
 All too often, [these links are fragile](https://www.vice.com/en/article/pkdj79/peoples-expensive-nfts-keep-vanishing-this-is-why), and direct the user to a specific _location_ using the HTTP protocol, rather than a specific asset. This means that the content pointed to by the link could change or go offline at any point in the future, leaving the original asset lost forever (and the record of ownership worthless).
 
-The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity. You can find more details on the IPFS documentation site, in our new article [Best Practices for Storing NFT Data using IPFS](https://docs.ipfs.io/how-to/best-practices-for-nft-data/).
+The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity. You can find more details on the IPFS documentation site, in our new article [Best Practices for Storing NFT Data using IPFS](https://docs.ipfs.io/how-to/best-practices-for-nft-data/). Also, check out [NFT School](https://nftschool.dev/ "NFT School") for a variety of tutorials, how-tos and concept guides on NFT best practices and NFTs in general.
 
 ## Content Addressing
 
@@ -42,8 +41,8 @@ A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_I
 
 Examples:
 
-- `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
-- `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
+* `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
+* `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
 
 IPFS URIs are the canonical representation for an IPFS link pointing at a file or a directory. When linking from a smart contract to IPFS data, use IPFS URIs to clearly indicate that the data should be retrieved using IPFS.
 
@@ -86,7 +85,7 @@ In contrast, IPFS URIs are valid forever, and as such, may safely be considered 
 In user-facing applications, developers should link to IPFS content via both:
 
 1. An IPFS URI
-1. An HTTP gateway URL
+2. An HTTP gateway URL
 
 until such a time as more browsers support native resolution of the IPFS URI scheme. Note that both kinds of link can easily be generated from a raw CID or IPFS URI as needed.
 
@@ -113,16 +112,16 @@ A token’s metadata should be considered integral to the value of an NFT. Thus,
 The preferred method for achieving this is as follows:
 
 1. Create two new directories (one for the asset, and one for the metadata)
-1. Add the asset to its directory
-1. Add the asset’s directory to IPFS, noting its CID
-1. Create the metadata in its own directory, referencing the asset using the CID from (3) to create an IPFS URI. The URI should include the CID of the directory and the filename of the asset.
-1. Add the metadata’s directory to IPFS, noting its CID
-1. Use the CID from (5) to create an IPFS URI for the metadata and store the URI on-chain to form the record of ownership
+2. Add the asset to its directory
+3. Add the asset’s directory to IPFS, noting its CID
+4. Create the metadata in its own directory, referencing the asset using the CID from (3) to create an IPFS URI. The URI should include the CID of the directory and the filename of the asset.
+5. Add the metadata’s directory to IPFS, noting its CID
+6. Use the CID from (5) to create an IPFS URI for the metadata and store the URI on-chain to form the record of ownership
 
 This process both preserves the ability of developers to include filenames in their links (valuable for user interaction), while ensuring that the metadata and asset can be referenced independent of each other.
 
-- The metadata will be accessible at: `ipfs://{metadata-directory-CID}/metadata-filename`
-- The asset will be accessible at: `ipfs://{asset-directory-CID}/asset-filename`
+* The metadata will be accessible at: `ipfs://{metadata-directory-CID}/metadata-filename`
+* The asset will be accessible at: `ipfs://{asset-directory-CID}/asset-filename`
 
 Here’s an example of some JSON metadata that contains an IPFS URI linking to an image file:
 

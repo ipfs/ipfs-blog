@@ -3,7 +3,7 @@ title: Recapping NFTHack with IPFS and Protocol Labs
 description: Looking back at NFTHack with ETHGlobal, the numbers behind the weekend’s
   IPFS usage, and the bounty winners.
 author: PL Hackathon Team
-date: 2021-05-13
+date: 2021-05-12
 permalink: 2021-05-13-recapping-nft-hack
 translationKey: ''
 header_image: "/ipfs-blog-nft-hack-1.png"
@@ -25,3 +25,5 @@ The $5k bounty for the event prize was split into two $1.5k awards and one $2k a
 * The other runner up was Rodeo, which lets people quickly spin up NFT galleries for their websites.
 
 You can browse the full event [agenda](https://nfthack.ethglobal.co/) and check out the [NFTHack YouTube playlist](https://www.youtube.com/playlist?list=PLXzKMXK2aHh50g55xEroWasKorT1YkUKs). Learn more about nft.storage at [https://nft.storage/](https://nft.storage/).
+
+Want to learn more about NFT best practices, or just NFTs in general? Check out [NFT School](https://nftschool.dev/ "NFT School").
