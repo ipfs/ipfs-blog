@@ -3,7 +3,7 @@ title: Minting Fresh NFTs with IPFS
 description: Breaking down the storage issues with NFTs, and the solution through
   IPFS and Minty.
 author: PL Hackathon Team
-date: 2021-05-14
+date: 2021-05-13
 permalink: 2021-05-14-minting-fresh-nfts-with-ipfs
 translationKey: ''
 header_image: "/128-nft-header.png"
@@ -34,3 +34,5 @@ The Minty Demo in this talk walks you through:
 * Pinning with Pinata
 
 There are a lot of benefits to minting your NFTs with IPFS. If you’re curious about more of the tech specs of Minty or want to know more about minting best practices, check out [this guide](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#how-minty-works) from IPFS and Filecoin for more information. [Learn more about Minty.](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#minty)
+
+Want to learn more about NFT best practices, or just NFTs in general? Check out [NFT School](https://nftschool.dev/ "NFT School").
