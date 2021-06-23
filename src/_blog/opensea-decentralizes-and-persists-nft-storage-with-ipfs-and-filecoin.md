@@ -45,6 +45,7 @@ We’re really excited to see this feature ship and for the wave of decentralize
 If you’d like to get started using IPFS and Filecoin for your NFT project, please check out our list of resources:
 
 * [Free Storage with NFT.Storage](https://nft.storage)
+* [NFT School](https://nftschool.dev "NFT School")
 * [Best Practices for Storing NFT Data Using IPFS](https://docs.ipfs.io/how-to/best-practices-for-nft-data/#types-of-ipfs-links-and-when-to-use-them)
 * [Minting an NFT with IPFS](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=bcae62b60f&e=7fccf7a909)
 * [Storing NFTs on IPFS](https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/)
