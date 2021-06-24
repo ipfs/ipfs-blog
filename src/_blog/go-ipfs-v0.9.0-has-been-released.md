@@ -1,126 +1,135 @@
 ---
 tags:
+- DAG
 - go-ipfs
 - release notes
 - pinning
 title: go-ipfs v0.9.0 has been released!
-description: See what's new in go-ipfs 0.8.0 (spoiler - pins are easier)!
-date: 2021-02-20
-permalink: "/2021-02-19-go-ipfs-0-8-0/"
+description: We're happy to announce go-ipfs 0.9.0, making go-ipfs more configurable
+  w/ some fun experiments to boot!
+date: 2021-06-24
+permalink: "/2021-06-24-go-ipfs-0-9-0/"
 translationKey: ''
 header_image: "/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png"
 author: Adin Schmahmann
 
 ---
-## What's new in go-ipfs 0.8.0?
+# **go-ipfs v0.9.0 Release**
 
-This release is focused on making it easier to work with pins! We have some snazzy new features around being able to ask remote services to pin data for you, and modifying large pin sets is much faster than ever before.
+We're happy to announce go-ipfs 0.9.0. This release makes go-ipfs even more configurable with some fun experiments to boot. We're also deprecating or removing some uncommonly used features to make it easier for users to discover the easy ways to use go-ipfs safely and efficiently.
 
-## 🔦 Highlights
+As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will _not_ be called out in the release notes. Please make sure to update ASAP. See our [release process](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details.
 
-### 🧷 Remote pinning services
+## 🔦 **Highlights**
 
-There is now support for asking remote services to pin data for you.
+### 📦 **Exporting of DAGs via Gateways**
 
-This feature is a redesign of how we're thinking about pinning and includes some commonly requested features such as:
+Gateways now support downloading arbitrary IPLD graphs via the `/api/v0/dag/export` endpoint. This endpoint works in the same way as the `ipfs dag export` command.
 
-- Pins can have names (and coming soon metadata)
-- Data can be pinned in either the foreground or background
-- Pins can be searched for by name, CID, or status
+One major thing this enables is ability to verify data downloaded from public gateways. If you go to [https://somegateway.example.net/ipfs/bafyexample](https://somegateway.example.net/ipfs/bafyexample "https://somegateway.example.net/ipfs/bafyexample") you are using the old school HTTP transport, and trusting that the gateway is being well behaved. However, if you download the graph as a [DAG archive](https://github.com/ipld/specs/blob/master/block-layer/content-addressable-archives.md) then it is possible to verify that the data you downloaded does in fact match `bafyexample` .
 
-Command-line users benefit from `ipfs pin remote` commands, simplifying remote pinning operations. The built-in pinning service API client also executes all necessary remote calls under the hood:
+### ☁ **Custom DNS Resolvers**
 
-![go-ipfs 0.8.0 + pinning service flow diagram](../assets/blog-125-go-ipfs-0-8-0-diagram.png)
+Resolution of DNS records for DNSLink and DNSAddrs means that names are sent in cleartext between the operating system and the DNS server provided by an ISP. In the past, the only way to customize DNS resolution in IPFS stack was to set up own DNS proxy server.
 
-As long as a pinning service supports the vendor-agnostic [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/), it can be used directly in go-ipfs. (If you're a Pinata user, you can already [check out their docs](https://pinata.cloud/documentation#PinningServicesAPI) for how to set everything up.)
+There is now the ability to [customize DNS resolution](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#dns) and override the default resolver from the OS with [DNS over HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS) (DoH) one. We made it really flexible: override can be applied globally, or per specific [TLD](https://en.wikipedia.org/wiki/Top-level_domain)/[FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name). Examples can be found in the [documentation](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#dns).
 
-Examples include:
+### 👪 **Support for non-ICANN DNSLink names**
 
-```sh
-ipfs pin remote service add mysrv https://my-service.example.com/api-endpoint myAccessToken
-ipfs pin remote service ls --stat # confirm service mysrv is available
-```
+Building off of the support for custom DNS resolvers it is now possible to create DNSLink names not handled by ICANN and choose how that domain name will be resolved. An example of this is how ENS is supported, despite `.eth` not being an ICANN TLD you can point `.eth` to any ENS resolver you want (including a local one).
 
-```sh
-ipfs pin remote add /ipfs/bafymydata --service=mysrv --name=myfile  # will block until status is pinned
-ipfs pin remote ls --service=mysrv --name=myfile
-ipfs pin remote rm --service=mysrv --name=myfile
-```
+While go-ipfs may have some DoH defaults for a few popular non-ICANN DNSLink names (e.g. ENS), you are free to use any protocol for a naming system and as long as it exposes a DNSLink record via a DNS endpoint you can make it work.
 
-```sh
-ipfs pin remote add /ipfs/bafymydata2 --service=mysrv --name=myfile2 --background  # queue pin request and finish instantly
-ipfs pin remote ls --service=mysrv --cid=bafymydata2 --status=queued,pinning,pinned,failed
-ipfs pin remote rm --service=mysrv --cid=bafymydata2 --status=queued,pinning,pinned,failed
-```
+### 🖥️ **Updated to the latest WebUI**
 
-More examples can be found under `ipfs pin remote --help`.
+Our web interface now includes experimental support for pinning services, and various updates to _Files_and _Peers_ screens.
 
-A few notes:
+Remote pinning services added via the `ipfs pin remote service add` command are already detected, one can also add one from _Settings_ screen, and it will appear in _Set pinning_ interface on the _Files_ screen.
 
-- Remote pinning services work with recursive pins. This means commands like `ipfs pin remote ls` will not list indirectly pinned CIDs.
-- By default, only finished, successful pins are listed. To list or remove pending/failed pins, pass explicit statuses: e.g. `--status=queued,pinning,pinned,failed`
-- While pinning service data is stored in the configuration file it cannot be edited directly via the `ipfs config` commands due to the sensitive nature of pinning service API keys. The `ipfs pin remote service` commands can be used for interacting with remote service settings.
-- An OpenAPI [ipfs-pinning-service.yaml](https://github.com/ipfs/pinning-services-api-spec/blob/main/ipfs-pinning-service.yaml) makes it easy to create or [generate](https://github.com/ipfs/pinning-services-api-spec#code-generation) a compatible client/server. Anyone can implement it and allow for pin management.
-- Additionally, HTTP API users now have access to new commands under `/api/v0/pin/remote`.
+Data presented on the _Peers_ screen can now be copied by simply clicking on a specific cell, and a list of open streams gives better insight into how a local node interacts with a specific peer.
 
-## 🏠 Remote MFS pinning policy
+See release notes for [ipfs-webui v2.12](https://github.com/ipfs/ipfs-webui/releases/tag/v2.12.0) for screenshots and more details.
 
-Every service added via `ipfs pin remote service add` can be tasked to update a pin every time the MFS root changes:
+### 🔑 **IPNS keys can now be exported via the CLI without stopping the daemon**
 
-```sh
-$ ipfs config --json Pinning.RemoteServices.mysrv.Policies.MFS.Enable
-```
+`ipfs key export` no longer requires interrupting `ipfs daemon` ✨
 
-To avoid flooding the remote service with many updates, go-ipfs will send updates at most once every five minutes.
-Details about customizing behavior of this feature can be found in the [configuration docs](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#pinningremoteservices-policiesmfs).
+### 🕸 **Experimental DHT Client and Provider System**
 
-### 📌 Faster local pinning and unpinning
+An area of go-ipfs that has been historically tricky is how go-ipfs finds who has the data they are looking for. While the IPFS Public DHT is only one of the ways go-ipfs can find data it tends to be an important one. While since go-ipfs v0.5.0 the time to find content in the network has dropped significantly the time to put/get IPNS records or for a node to advertise the content it has still has much room for improvement.
 
-The pinning subsystem has been redesigned to be much faster and more flexible in how it tracks pins. For users who are working with many pins this will lead to a big speed increase in listing and modifying the set of pinned items as well as decreased memory usage.
+We have been doing some experimenting and have an alternative DHT client that essentially trades off some resources and in return is much more performant. We have also included with the experimental DHT client a bulk provider system that takes advantage of the new client to more efficiently do many advertisements at a time
 
-Part of the redesign was set up to account for being able to interact with local pins the same way we can now interact with remote pins (e.g. names, being allowed to pin the same CID multiple times, etc.). Keep posted for more improvements to pinning.
+This work is quite new and still under development, however, the results so far have been promising especially for users with lots of data who have otherwise been having difficulty advertising their data into the IPFS Public DHT
 
-### 🔒 DNSLink names on https:// subdomains
+As described in the experimental features [documentation](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) the experimental client can be enabled using the command below (or modifying the config file).
 
-Previously, DNSLink names would have trouble loading over subdomain gateways with HTTPS support since there is no way to get multi-level wildcard certificates (e.g. `en.wikipedia-on-ipfs.org.ipns.dweb.link` cannot be covered by `*.ipns.dweb.link`). Therefore, when trying to load DNSLink names over https:// subdomains in go-ipfs, we now forward to an encoded DNS name. Since DNS names cannot contain `.` in them they are escaped using `-`.
+`ipfs config --json Experimental.AcceleratedDHTClient true`
 
-`/ipns/en.wikipedia-on-ipfs.org` →
+A few things to take note of when `AcceleratedDHTClient` is enabled:
 
-`ipns://en.wikipedia-on-ipfs.org` →
+* go-ipfs will likely use more resources then previously
+* DHT queries will not be usable (i.e. finding which peers have some data, finding where a particular peer is, etc.) for the first 5-10 minutes of operation depending on your network conditions
+* There is an `ipfs stats provide` command that will help you track your provide/reprovide usage, if you are providing lots of data you may want to consider how to reduce the amount you are providing (e.g. [Reprovider Strategies](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) and/or [Strategic Providing](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#strategic-providing))
 
-`https://dweb.link/ipns/en.wikipedia-on-ipfs.org` →
+See the [documentation](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) for more details.
 
-`https://en-wikipedia--on--ipfs-org.ipns.dweb.link` 👈 a single DNS label, no TLS error
+### 🚶‍♀️ **Migrations**
 
-Note: The last redirect is specific to HTTPS, and is triggered only when `X-Forwarded-Proto: https` header is present.  
-Recipes for setting up your own public gateway can be found in [configuration docs](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes).
+#### **Migrations are now individually packaged**
 
-### 💨 QUIC update
+While previously the go-ipfs [repo migration](https://github.com/ipfs/fs-repo-migrations) binary was monolithic and contained all migrations from previous go-ipfs versions the binaries are now packaged individually. However, the fs-repo-migrations binary is still there to help those who manually upgrade their repos to download all the individual migrations.
 
-QUIC support has received a number of upgrades, including the ability to take advantage of larger UDP receive buffers for increased performance.
+This means faster download times for upgrades, a much easier time building migrations for those who make use of custom plugins, and an easier time developing new migrations going forward.
 
-Linux users may notice a logged error on daemon startup if your system needs extra configuration to allow IPFS to increase the buffer size. A helpful link for resolving this is in the log message as well as [here](https://github.com/lucas-clemente/quic-go/wiki/UDP-Receive-Buffer-Size).
+#### **Configurable migration downloads enable downloading over IPFS**
 
-### 👋 No more Darwin 386 builds
+Previously the migration downloader built into go-ipfs downloaded the migrations from [dist.ipfs.io](https://dist.ipfs.io/). While users could use tools like [ipfs-update](https://github.com/ipfs/ipfs-update) to download the migrations over IPFS or manually download the migrations (over IPFS or otherwise) themselves, this is now automated and configurable. Users can choose to download the migrations over IPFS or from any specified IPFS Gateway.
 
-Go 1.15 (the latest version of Go) [no longer supports](https://github.com/golang/go/issues/34749) Darwin 386 and so we are dropping support as well.
+The configurable migration options are described in the config file [documentation](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#migration), although most users should not need to change the default settings.
 
-### Changelog
+The main benefit here is that users behind restrictive firewalls, or in offline/private deployments, won't have to run migrations manually, which is especially important for desktop use cases where go-ipfs is running inside of [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop#readme) and [Brave](https://brave.com/ipfs-support/).
 
-For a full list of updates included in this release, you can review the changelog within this [release post](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0).
+### 🍎 **Published builds for Apple M1 hardware**
 
-### Coming soon ...
+Go now supports building for Darwin ARM64, and we are now publishing those builds
 
-If you're an [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop) or [IPFS Web UI](https://github.com/ipfs-shipyard/ipfs-webui) fan, you're in luck. These pinning improvements will land soon in GUI form, too — upcoming releases of Desktop and Web UI will allow you to use any remote pinning service that supports the IPFS Pinning Service API.
+### 👋 **Deprecations and Feature Removals**
 
-### Thank you contributors!
+#### **The** `ipfs object` **commands are now deprecated**
 
-A huge thank you to [everyone who contributed](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0) patches and improvements in this release, all 58 of you! We couldn’t have made this happen without your help and feedback. ❤
+In the last couple years most of the Object API's commands have become fulfillable using alternative APIs.
 
-### Install, upgrade, and join us!
+The utility of Object API's is limited to data in UnixFS-v1 (`dag-pb`) format. If you are still using it, it is highly recommended that you switch to the DAG `ipfs dag` (supports modern data types like `dag-cbor`) or Files `ipfs files` (more intuitive for working with `dag-pb`) APIs.
 
-You can get started by [installing go-ipfs](https://dist.ipfs.io/#go-ipfs) or upgrading to [go-ipfs 0.8](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0).
+While the Object API and commands are still usable they are now marked as deprecated and hidden from users on the command line to discourage further use. We also updated their `--help` text to point at the modern replacements.
 
-There are many ways to get involved with IPFS based on your skill set, interest, and availability. Please check out our [contribution page](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md) on GitHub for guidance and next steps.
+#### `X-Ipfs-Gateway-Prefix` **is now deprecated**
+
+IPFS community moved towards dedicated Origins (DNSLink and [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)) which are much easier to isolate and reason about.
+
+Setting up `Gateway.PathPrefixes` and `X-Ipfs-Gateway-Prefix` =is no longer necessary and support [will be removed in near future](https://github.com/ipfs/go-ipfs/issues/7702).
+
+#### **Proquints support removed**
+
+A little known feature that was not well used or documented and was more well known for the error message `Error:not a valid pro quint string` users received when trying to download invalid IPNS or DNSLink names (e.g. [https://dweb.link/ipns/badname](https://somegateway.example.net/ipfs/bafyexample "https://somegateway.example.net/ipfs/bafyexample")). We have removed support for proquints as they were out of place and largely unused, however proquints are [valid multibases](https://github.com/multiformats/multibase/pull/78) so if there is renewed interest in them there is a way forward.
+
+#### **SECIO support removed**
+
+SECIO was deprecated and turned off by default given the prevalence of TLS and Noise support, SECIO support is now removed entirely.
+
+#### **Changelog**
+
+For a full list of updates included in this release, you can review the changelog within [this release post](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.0).
+
+### **Thank you contributors!**
+
+A huge thank you to [**everyone who contributed**](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.0) patches and improvements in this release, all 45 of you! We couldn’t have made this happen without your help and feedback. ❤
+
+### **Install, upgrade, and join us!**
+
+You can get started by [**installing go-ipfs**](https://dist.ipfs.io/#go-ipfs) or upgrading to [**go-ipfs 0.9**](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.0).
+
+There are many ways to get involved with IPFS based on your skill set, interest, and availability. Please check out our [**contribution page**](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md) on GitHub for guidance and next steps.
 
 This is an exciting time for IPFS and the web in general. Join us!
