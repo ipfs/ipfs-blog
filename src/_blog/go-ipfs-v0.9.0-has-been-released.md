@@ -108,7 +108,7 @@ While the Object API and commands are still usable they are now marked as deprec
 
 IPFS community moved towards dedicated Origins (DNSLink and [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)) which are much easier to isolate and reason about.
 
-Setting up `Gateway.PathPrefixes` and `X-Ipfs-Gateway-Prefix` =is no longer necessary and support [will be removed in near future](https://github.com/ipfs/go-ipfs/issues/7702).
+Setting up `Gateway.PathPrefixes` and `X-Ipfs-Gateway-Prefix` is no longer necessary and support [will be removed in near future](https://github.com/ipfs/go-ipfs/issues/7702).
 
 #### **Proquints support removed**
 
