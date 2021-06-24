@@ -1,5 +1,6 @@
 ---
 tags:
+- DHT
 - DAG
 - go-ipfs
 - release notes
