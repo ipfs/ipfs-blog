@@ -42,7 +42,7 @@ While go-ipfs may have some DoH defaults for a few popular non-ICANN DNSLink nam
 
 ### 🖥️ **Updated to the latest WebUI**
 
-Our web interface now includes experimental support for pinning services, and various updates to _Files_and _Peers_ screens.
+Our web interface now includes experimental support for pinning services, and various updates to _Files_ and _Peers_ screens.
 
 Remote pinning services added via the `ipfs pin remote service add` command are already detected, one can also add one from _Settings_ screen, and it will appear in _Set pinning_ interface on the _Files_ screen.
 
