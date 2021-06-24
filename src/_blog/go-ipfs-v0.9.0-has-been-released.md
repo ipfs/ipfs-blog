@@ -10,7 +10,7 @@ description: We're happy to announce go-ipfs 0.9.0, making go-ipfs more configur
 date: 2021-06-24
 permalink: "/2021-06-24-go-ipfs-0-9-0/"
 translationKey: ''
-header_image: "/108407727-bac93800-71e9-11eb-93bd-89e25a8b4349.png"
+header_image: "/ipfs-blog-release-0-9-0.jpg"
 author: Adin Schmahmann
 
 ---
