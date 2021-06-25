@@ -4,6 +4,15 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: 'Scala Share: Decentralized file sharing with IPFS'
+  date: 2021-06-08
+  publish_date: 
+  path: https://medium.com/scala-network/scala-share-decentralized-file-sharing-2df781738193
+  card_image: "/2021-06-25-cardheader-scala-share.jpg"
+  tags:
+  - go-ipfs
+  - community
+  - release notes
 - title: Interplanetary File System Could Pave the Way for a Distributed, Permanent
     Web (The New Stack)
   date: 2021-06-16

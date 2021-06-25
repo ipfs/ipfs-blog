@@ -4,9 +4,17 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: Browsers 3000 Hackathon
+  date: 2021-07-08
+  publish_date: 
+  path: https://events.protocol.ai/2021/browsers3000/
+  card_image: "/screen-shot-2021-06-25-at-2-43-07-pm.png"
+  tags:
+  - browsers
+  - hackathon
 - title: Web3 Weekend
   date: 2021-05-28
-  publish_date: 2021-05-24T12:00:00+00:00
+  publish_date: 2021-05-24T12:00:00.000+00:00
   path: https://web3.ethglobal.co/
   card_image: "/2021-05-24-cardheader-web3-weekend.png"
   tags:
