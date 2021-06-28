@@ -8,7 +8,7 @@ data:
   date: 2021-07-08
   publish_date: 
   path: https://events.protocol.ai/2021/browsers3000/
-  card_image: "/screen-shot-2021-06-25-at-2-43-07-pm.png"
+  card_image: "/2021-06-28-browsers-3000.png"
   tags:
   - browsers
   - hackathon
