@@ -153,7 +153,6 @@ pages:
 - src/_blog/a-guide-to-ipfs-connectivity-in-web-browsers.md
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/audius-uses-ipfs-for-content-streaming-storage-to-empower-artists-creators-worldwide.md
-- src/_blog/ceramic-launches-mainnet-using-ipfs-and-filecoin-for-decentralized-storage.md
 - src/_blog/congrats-gitcoin-grants-round-9-winners.md
 - src/_blog/decentralized-games-at-gamedev.js-jam-2021.md
 - src/_blog/decentralizing-infrastructure-during-scaling-ethereum.md
@@ -204,4 +203,5 @@ pages:
 - src/_blog/welcome-to-ipfs-weekly-139.md
 - src/_blog/welcome-to-ipfs-weekly-140.md
 - src/_blog/welcome-to-ipfs-weekly-141.md
+- src/_blog/welcome-to-ipfs-weekly-142.md
 - src/_blog_zh/ipfs-136.md
