@@ -21,32 +21,33 @@ We're happy to announce go-ipfs 0.9.0. This release makes go-ipfs even more conf
 
 As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will not be called out in the release notes. Please make sure to update ASAP. See our [**release process**](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details and the [**blog post**](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for the release highlights, migrations, changelog, and all contributors.
 
-## NFT Development User Experience
+## Introducing the Browsers 3000 Hackathon
 
-![](../assets/ipfs-survey-blog-sized-icon.png)
+![](../assets/browsers-3000-blog-image.png)
 
-We're interested in better understanding the user experience of people interested in NFT development. We're identifying candidates to participate in a 30 minute long user testing session between June 21st and June 24th. Participants who are selected and successfully complete these sessions will receive an Amazon gift card valued at $100 USD as compensation for their time. You don't need any previous experience with NFTs to participate in this study. However, you will need a strong internet connection to participate in a video conference over Zoom and share your screen. If you're interested in participating, please take a few minutes to fill out [**this short survey**](https://airtable.com/shrhx9adti08gphmJ). *You must be 18 years old or over to participate.
+IPFS, Filecoin, and our many ecosystem friends are very excited to announce the Browsers 3000 Hackathon, beginning July 8 and running through September 21, 2021!
+
+This hackathon is a six week virtual event to explore and accelerate the development of web3 in the browser through experimentation and challenge prizes. It kicks off with a one day summit with speakers from your favorite browser makers and other projects building browser infrastructure for web3 and P2P technologies today, and will include workshops and presentations up until the show-and-tell demo and awards ceremony in September.[**Visit the Browsers 3000 website to learn more and sign up to be notified when registration opens!**](https://events.protocol.ai/2021/browsers3000)
 
 ## Brand new on IPFS
 
-* Infura launched their premium IPFS private beta! [**Connect to IPFS now**](https://infura.io/product/ipfs).
-* HackMoney with ETHGlobal runs now through July 9th & has $300k in prizes up for grabs. [**Start building today**](https://hackathon.money/)!
-* There's a [**new feature**](https://thenewstack.io/interplanetary-file-system-could-pave-the-way-for-a-distributed-permanent-web/) on IPFS in 'The New Stack' on paving the way for a distributed permanent web!
-* Missed the latest IPLD sync? You can watch the full video with updates on the [**IPFS YouTube channel**](https://www.youtube.com/watch?v=wyTSLn362vE).
+* Hackerlink Filecoin Funders DAO: 8 Funders bringing $115K to support the Filecoin & IPFS ecosystem.  
+  [**Learn more**](https://hidorahacks.medium.com/hackerlink-filecoin-funders-dao-8-funders-bringing-115k-to-support-filecoin-ecosystem-f9623128a32a).
+* [**Here’s a quick walkthrough and archive**](https://github.com/hicetnunc2000/hicetnunc/wiki/IPFS-Pinning) of IPFS pinning resources to save or share with a friend.
+* Review [**this technical guide**](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/) on building and using IPFS: node setup, addressing, and more!
+* Build at [**IdentiHack**](https://hacklatam.com/identihack-2021), a digital identity hackathon in Latin America running now through late July.
 
 ## Around the ecosystem 🌏
 
-ChainSafe launched their Gaming SDK, the first open-source library of its kind that supports multi-wallets, multi-marketplaces & multi-blockchains. [**Dive in**](https://medium.com/chainsafe-systems/announcing-chainsafe-gaming-an-sdk-to-bridge-your-gaming-engines-to-the-web-3-0-ecosystem-f33aa27c7a98).
-
-Outlier Ventures launched Filecoin Base Camp to accelerate 40 exceptional startups who are leveraging Filecoin, IPFS & libp2p to build & drive adoption of projects in decentralized data protocols & applications. [**Learn how to apply.**](https://outlierventures.io/base-camp/filecoin-base-camp/)
-
-Pinata makes it easy to add your OpenSea NFT collection to Squarespace websites. [**See for yourself.**](https://medium.com/pinata/host-your-opensea-nft-collection-on-squarespace-with-pinata-3cb16413aebf)
-
-Last week CloudflareTV celebrated its first anniversary with a broadcast spanning everything from the keynotes of Cloudflare Connect, to a day-long virtual career fair, to their flagship game show Silicon Valley Squares. [**Learn where to watch.**](https://blog.cloudflare.com/cloudflare-tv-live-1-000-times-and-counting/)
-
-Berty Alpha is now available for Apple users. [**Try it here**](https://berty.tech/newsletter/news-60/).
-
-The next IPFS meetup is Friday, June 29 at 10am PT/5pm UTC. [**Register to join us for a series of lightning talks**](https://www.meetup.com/en-AU/San-Francisco-IPFS/events/cbjsgsyccjbdc/)!
+Infura launched support for Optimism Layer 2 last week. [**Get the details**](https://blog.infura.io/infura-launches-support-for-optimistic-ethereum/).   
+  
+MetaMask shared a post recently on keeping your wallet recovery phrases safe. [**Read it here**](https://consensys.net/blog/metamask/why-keeping-secrets-is-essential-for-web3/?utm_content=169490016&utm_medium=social&utm_source=twitter&hss_channel=tw-3278906401).  
+  
+Applications for ETHOdyssey, an ETHIndia Online Hackathon, close in just two days. [**Learn more and apply**](https://ethodyssey.devfolio.co/#about).  
+  
+Ceramic launched their Mainnet today! Developers can now create and deploy data streams to a p2p network of production-ready nodes. [**Learn more about the launch and how to get started with mainnet.**](https://blog.ceramic.network/ceramic-mainnet-is-live/)  
+  
+Couldn’t make it to Filecoin The Retrieval Summit? [**Check out the recap**](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/) on the Filecoin blog.
 
 ## Want to help build the new internet?
 
