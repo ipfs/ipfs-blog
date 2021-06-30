@@ -27,7 +27,7 @@ As usual, this release includes important fixes, some of which may be critical f
 
 Gateways now support downloading arbitrary IPLD graphs via the `/api/v0/dag/export` endpoint. This endpoint works in the same way as the `ipfs dag export` command.
 
-One major thing this enables is ability to verify data downloaded from public gateways. If you go to [https://somegateway.example.net/ipfs/bafyexample](https://somegateway.example.net/ipfs/bafyexample "https://somegateway.example.net/ipfs/bafyexample") you are using the old school HTTP transport, and trusting that the gateway is being well behaved. However, if you download the graph as a [DAG archive](https://github.com/ipld/specs/blob/master/block-layer/content-addressable-archives.md) then it is possible to verify that the data you downloaded does in fact match `bafyexample` .
+One major thing this enables is ability to verify data downloaded from public gateways. If you go to [https://somegateway.example.net/ipfs/bafyexample](https://somegateway.example.net/ipfs/bafyexample "https://somegateway.example.net/ipfs/bafyexample") you are using the old school HTTP transport, and trusting that the gateway is being well behaved. However, if you download the graph as a [DAG archive](https://ipld.io/specs/transport/car/) then it is possible to verify that the data you downloaded does in fact match `bafyexample` .
 
 ### ☁ **Custom DNS Resolvers**
 
