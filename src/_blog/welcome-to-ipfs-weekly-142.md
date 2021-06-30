@@ -39,15 +39,24 @@ This hackathon is a six week virtual event to explore and accelerate the develop
 
 ## Around the ecosystem 🌏
 
-Infura launched support for Optimism Layer 2 last week. [**Get the details**](https://blog.infura.io/infura-launches-support-for-optimistic-ethereum/).   
-  
-MetaMask shared a post recently on keeping your wallet recovery phrases safe. [**Read it here**](https://consensys.net/blog/metamask/why-keeping-secrets-is-essential-for-web3/?utm_content=169490016&utm_medium=social&utm_source=twitter&hss_channel=tw-3278906401).  
-  
-Applications for ETHOdyssey, an ETHIndia Online Hackathon, close in just two days. [**Learn more and apply**](https://ethodyssey.devfolio.co/#about).  
-  
-Ceramic launched their Mainnet today! Developers can now create and deploy data streams to a p2p network of production-ready nodes. [**Learn more about the launch and how to get started with mainnet.**](https://blog.ceramic.network/ceramic-mainnet-is-live/)  
-  
+Infura launched support for Optimism Layer 2 last week. [**Get the details**](https://blog.infura.io/infura-launches-support-for-optimistic-ethereum/).
+
+MetaMask shared a post recently on keeping your wallet recovery phrases safe. [**Read it here**](https://consensys.net/blog/metamask/why-keeping-secrets-is-essential-for-web3/?utm_content=169490016&utm_medium=social&utm_source=twitter&hss_channel=tw-3278906401).
+
+Applications for ETHOdyssey, an ETHIndia Online Hackathon, close in just two days. [**Learn more and apply**](https://ethodyssey.devfolio.co/#about).
+
+Ceramic launched their Mainnet today! Developers can now create and deploy data streams to a p2p network of production-ready nodes. [**Learn more about the launch and how to get started with mainnet.**](https://blog.ceramic.network/ceramic-mainnet-is-live/)
+
 Couldn’t make it to Filecoin The Retrieval Summit? [**Check out the recap**](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/) on the Filecoin blog.
+
+## Upcoming Hackathons
+
+Looking to build in the IPFS ecosystem? There are several upcoming hackathons to register for including:
+
+* [**IdentiHack by Hack Latin America**](https://hacklatam.com/identihack-2021) (June 28-August 16)
+* [**NFT Vision Hack**](https://www.nftvisionhack.com/) (July - August)
+* [**ETHOdyssey Hackathon**](https://ethodyssey.devfolio.co/) (July 2 - August 1)
+* [**Browsers 3000**](https://events.protocol.ai/2021/browsers3000) (July 8-August 19).
 
 ## Want to help build the new internet?
 
