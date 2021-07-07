@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 143
-description: go-ipfs v.0.9.0 release, introducing Browsers 3000, build at IdentiHack
-  & more!
+description: Ceramic Mainnet launch, Browsers 3000, fixing broken NFTs with IPFS and
+  Filecoin, and more!
 author: Emily Vaughan
-date: 2021-06-30
-permalink: "/weekly-142/"
-translationKey: ipfs-weekly-142
+date: 2021-07-07
+permalink: "/weekly-143/"
+translationKey: ipfs-weekly-143
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,41 +13,38 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## go-ipfs v0.9.0 has been released!
+## Fixing Broken NFTs with IPFS and Filecoin
 
-![](../assets/ipfs-blog-release-0-9-0.jpg)
+![](../assets/e8a23c54-7515-4d77-806b-66843e43f3f7.png)
 
-We're happy to announce go-ipfs 0.9.0. This release makes go-ipfs even more configurable with some fun experiments to boot. We're also deprecating or removing some uncommonly used features to make it easier for users to discover the easy ways to use go-ipfs safely and efficiently.
+NFTs have hit the mainstream but unfortunately, this space is full of misconceptions, and many developers - intentionally or not - are cutting corners as they rush to capitalize on this nascent market. Though customers buy NFTs believing them to be permanent and immutable records of ownership, this is not always the case - fundamental flaws in the construction of many tokens jeopardize the long-term integrity of the asset. This is a major problem for the entire ecosystem, with the potential to rapidly erode customer faith - not just in NFTs, but in blockchain technology at large. To avoid reputational loss, the developer community needs to proactively acknowledge and address these issues. Read [**this Hackernoon post**](https://hackernoon.com/fixing-broken-nfts-with-ipfs-and-filecoin-jk1r35ab) to learn all there is to know about fixing your broken NFTs with IPFS and Filecoin.
 
-As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will not be called out in the release notes. Please make sure to update ASAP. See our [**release process**](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details and the [**blog post**](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for the release highlights, migrations, changelog, and all contributors.
+## Ceramic launched their Mainnet
 
-## Introducing the Browsers 3000 Hackathon
+![](../assets/ipfs-blog-ceramic.png)
 
-![](../assets/browsers-3000-blog-image.png)
-
-IPFS, Filecoin, and our many ecosystem friends are very excited to announce the Browsers 3000 Hackathon, beginning July 8 and running through September 21, 2021!
-
-This hackathon is a six week virtual event to explore and accelerate the development of web3 in the browser through experimentation and challenge prizes. It kicks off with a one day summit with speakers from your favorite browser makers and other projects building browser infrastructure for web3 and P2P technologies today, and will include workshops and presentations up until the show-and-tell demo and awards ceremony in September.[**Visit the Browsers 3000 website to learn more and sign up to be notified when registration opens!**](https://events.protocol.ai/2021/browsers3000)
+Last week, Ceramic launched their Mainnet! Built on IPFS, Ceramic is a decentralized, open source platform for creating, hosting, and sharing data. With Ceramic's permissionless data streaming network, developers can store streams of information and ever-changing files directly on the decentralized web – and share updates with anyone in the world – all without trusted servers or intermediaries. [**Get started**](https://blog.ceramic.network/ceramic-mainnet-is-live/) with Ceramic Mainnet today!
 
 ## Brand new on IPFS
 
-* Hackerlink Filecoin Funders DAO: 8 Funders bringing $115K to support the Filecoin & IPFS ecosystem.  
-  [**Learn more**](https://hidorahacks.medium.com/hackerlink-filecoin-funders-dao-8-funders-bringing-115k-to-support-filecoin-ecosystem-f9623128a32a).
-* [**Here’s a quick walkthrough and archive**](https://github.com/hicetnunc2000/hicetnunc/wiki/IPFS-Pinning) of IPFS pinning resources to save or share with a friend.
-* Review [**this technical guide**](https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/) on building and using IPFS: node setup, addressing, and more!
-* Build at [**IdentiHack**](https://hacklatam.com/identihack-2021), a digital identity hackathon in Latin America running now through late July.
+* Check out this [**quick new tutorial**](https://dev.to/dabit3/uploading-files-to-ipfs-from-a-web-application-50a) on uploading files to IPFS from a web application.
+* Build the future of the internet web browser at Browsers 3000, this Thursday! [**Get the details & register.**](https://events.protocol.ai/2021/browsers3000/)
+* NFTVision Hack begins tomorrow! [**RSVP for the opening ceremony.**](https://www.eventbrite.sg/e/nft-vision-hack-opening-ceremony-tickets-158878677401)
+* Last week the IPFS community hosted the June Meetup, ICYMI - [**watch the recording**](https://www.youtube.com/watch?v=pGJ-Oz3o0rg&t=20s).
 
 ## Around the ecosystem 🌏
 
-Infura launched support for Optimism Layer 2 last week. [**Get the details**](https://blog.infura.io/infura-launches-support-for-optimistic-ethereum/).
-
-MetaMask shared a post recently on keeping your wallet recovery phrases safe. [**Read it here**](https://consensys.net/blog/metamask/why-keeping-secrets-is-essential-for-web3/?utm_content=169490016&utm_medium=social&utm_source=twitter&hss_channel=tw-3278906401).
-
-Applications for ETHOdyssey, an ETHIndia Online Hackathon, close in just two days. [**Learn more and apply**](https://ethodyssey.devfolio.co/#about).
-
-Ceramic launched their Mainnet today! Developers can now create and deploy data streams to a p2p network of production-ready nodes. [**Learn more about the launch and how to get started with mainnet.**](https://blog.ceramic.network/ceramic-mainnet-is-live/)
-
-Couldn’t make it to Filecoin The Retrieval Summit? [**Check out the recap**](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/) on the Filecoin blog.
+Cloudflare Connect has more free learning sessions available! [**Watch today**](https://www.cloudflare.com/cloudflare-connect-2021/).  
+  
+Unstoppable Domains releases new podcast episodes weekly. [**Tune in!**](https://t.co/oiiofBBEi0?amp=1)  
+  
+The Filecoin Quadratic Funding Grant with DoraHacks is taking applications through July 18th. [**Learn how to apply.**](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)  
+  
+Decentraland’s Art Week event starts this Thursday. [**Check it out.**](https://decentraland.org/blog/announcement/art-week-2021/)  
+  
+Encode launched the Encode Filecoin Club, a nine-month program in collaboration with IPFS and Filecoin. [**Learn more.**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)  
+  
+Opera introduced the world's first alternative browser optimized for Chrome OS with a built-in VPN and a powerful ad blocker. [**Learn more**](https://blogs.opera.com/mobile/2021/07/opera-for-chromebooks/?utm_source=tw_GL_chromebook_July_launch&utm_medium=social&utm_campaign=tw_chromebook_July_launch).
 
 ## Upcoming Hackathons
 
@@ -56,7 +53,7 @@ Looking to build in the IPFS ecosystem? There are several upcoming hackathons to
 * [**IdentiHack by Hack Latin America**](https://hacklatam.com/identihack-2021) (June 28-August 16)
 * [**NFT Vision Hack**](https://www.nftvisionhack.com/) (July - August)
 * [**ETHOdyssey Hackathon**](https://ethodyssey.devfolio.co/) (July 2 - August 1)
-* [**Browsers 3000**](https://events.protocol.ai/2021/browsers3000) (July 8-August 19).
+* [**Browsers 3000**](https://events.protocol.ai/2021/browsers3000) (July 8-August 19)
 
 ## Want to help build the new internet?
 
