@@ -4,6 +4,21 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Uploading Files to IPFS from a Web Application
+  date: 2021-06-28
+  publish_date: 
+  path: https://dev.to/dabit3/uploading-files-to-ipfs-from-a-web-application-50a
+  tags:
+  - gateways
+  - community
+- title: Fixing Broken NFTs With IPFS and Filecoin
+  date: 2021-07-01
+  publish_date: 
+  path: https://hackernoon.com/fixing-broken-nfts-with-ipfs-and-filecoin-jk1r35ab
+  card_image: "/2021-07-01-cardheader-fixing-broken-nfts-hackernoon.jpg"
+  tags:
+  - community
+  - NFTs
 - title: A Technical Guide to IPFS
   date: 2021-06-21
   publish_date: 
