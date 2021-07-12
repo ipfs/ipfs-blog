@@ -12,13 +12,13 @@ tags:
 ---
 We're happy to announce the release of IPFS Cluster 0.14.0! Since it's been a little while since the last release, it's worth making a small recap on the project and what it has to offer.
 
-### A quick recap
+## A quick recap
 
 [IPFS Cluster](https://cluster.ipfs.io) provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. It does this in lots of cool ways, utilizing CRDTs, pubsub, IPLD and libp2p services — you can dig into all the details in the official [IPFS Cluster documentation](https://cluster.ipfs.io/documentation/).
 
-IPFS Cluster has been running in production internally at Protocol Labs since 2018. We use clusters to store all the stuff we want to store on IPFS, a few of them as [public collaborative clusters](https://collab.ipfscluster.io/) that can be followed by anyone. Our internal operational team (known as [Bifrost](https://en.wikipedia.org/wiki/Bifr%C3%B6st)) has developed the ability to set up large-storage gateways-coupled-to-cluster setups with little effort. 
+IPFS Cluster has been running in production internally at Protocol Labs since 2018. We use clusters to store all the stuff we want to store on IPFS, a few of them as [public collaborative clusters](https://collab.ipfscluster.io/) that can be followed by anyone. Our internal operational team (known as [Bifrost](https://en.wikipedia.org/wiki/Bifr%C3%B6st)) has developed the ability to set up large-storage gateways coupled to cluster setups with little effort. 
 
-### Release highlights
+## Release highlights
 
 As a result of feedback and scaling requirements for our own use of IPFS Cluster, we have been addressing some issues in the last few months, and you'll see these in this latest 0.14.0 release:
 
@@ -29,10 +29,10 @@ As a result of feedback and scaling requirements for our own use of IPFS Cluster
 * We **laid the groundwork to later provide an IPFS Pinning Services API**, including improvements such as supporting pin origins.
 * Finally, **this release keeps up to date with the rest of the libp2p and IPFS stacks**, and makes assorted bugfixes.
 
-### Changelog
+## Changelog
 
 Want a full list of updates included in the IPFS Cluster 0.14.0 release? Check the details in the [changelog here](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md).
 
-### Install, upgrade, and join us!
+## Install, upgrade, and join us!
 
 You can lean more about IPFS Cluster by visiting [cluster.ipfs.io](https://cluster.ipfs.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://cluster.ipfs.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.io/c/help/help-ipfs-cluster/24).
