@@ -4,6 +4,13 @@ type: Tutorial
 sitemap:
   exclude: true
 data:
+- title: Uploading Files to IPFS from a Web Application
+  date: 2021-06-28
+  publish_date: 
+  path: https://dev.to/dabit3/uploading-files-to-ipfs-from-a-web-application-50a
+  tags:
+  - gateways
+  - community
 - title: Fixing Broken NFTs With IPFS and Filecoin
   date: 2021-07-01
   publish_date: 
