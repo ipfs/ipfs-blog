@@ -4,6 +4,12 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: IPFS Cluster 0.14.0
+  date: 2021-07-09
+  publish_date: 
+  path: https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md
+  tags:
+  - IPFS Cluster
 - title: go-ipfs 0.9.0
   date: 2021-06-22
   publish_date: 
