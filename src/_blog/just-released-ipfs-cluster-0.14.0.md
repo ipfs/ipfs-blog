@@ -22,14 +22,17 @@ IPFS Cluster has been running in production internally at Protocol Labs since 20
 
 As a result of feedback and scaling requirements for our own use of IPFS Cluster, we have been addressing some issues in the last few months, and you'll see these in this latest 0.14.0 release:
 
-* We added **CAR-import support**, unlocking arbitrary IPLD-graph content ingestion, which greatly simplified the storage process for NFT.storage.
-* We added **batched-pin ingestion**, which means a cluster peer can usually absorb and track at least **100 pin requests per second**. This allowed to import some 400k NFTs to the cluster very quickly, which then were queued and progressively pinned on IPFS. Currently that pinset stands at **2.7M items** (>10x our previous largest pinset).
-* We added **auto-GC to the badger datastore** backend that cluster uses, and an alternative option to run with LevelDB. This addressed an issue raised by users rightly complaining that the cluster peers were taking unusually large storage amounts.
-* We have optimized some operations like checking queued pins, so that they are fast with very large pinsets.
-* We have added some groundwork to eventually provide an IPFS-Pinning-Services API, like supporting pin origins.
-* We kept things up to date with the rest of the libp2p, ipfs stacks.
-* Bugfixes here and there.
+* We added **CAR import support**, unlocking arbitrary IPLD graph content ingestion and streamlining production use — for example, supporting CAR import has greatly simplified the storage process for [nft.storage](https://nft.storage).
+* We added **batched-pin ingestion**, which means a cluster peer can usually absorb and track at least **100 pin requests per second**. In the case of nft.storage, this allowed us to import some 400k NFTs to the cluster very quickly, which then were queued and progressively pinned on IPFS. At time of writing, that pinset stands at **2.7M items** (>10x our previous largest pinset in internal use).
+* We added **automatic garbage collection to the Badger datastore** back end that IPFS Cluster uses, and an alternative **option to run with LevelDB**. This addressed an issue raised by users, who were rightly complaining that cluster peers were taking unusually large storage amounts.
+* We also **optimized miscellaneous operations like checking queued pins**, so that they are fast with very large pinsets.
+* We **laid the groundwork to later provide an IPFS Pinning Services API**, including improvements such as supporting pin origins.
+* Finally, **this release keeps up to date with the rest of the libp2p and IPFS stacks**, and makes assorted bugfixes.
 
 ### Changelog
 
 Want a full list of updates included in the IPFS Cluster 0.14.0 release? Check the details in the [changelog here](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md).
+
+### Install, upgrade, and join us!
+
+You can lean more about IPFS Cluster by visiting [cluster.ipfs.io](https://cluster.ipfs.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://cluster.ipfs.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.io/c/help/help-ipfs-cluster/24).
