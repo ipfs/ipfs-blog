@@ -10,7 +10,7 @@ header_image: "/ipfs-blog-ceramic-1.png"
 tags: []
 
 ---
-Earlier this month, [Ceramic](https://ceramic.network/) launched their Mainnet, along with a cohort of Web3 projects utilizing their tech including Boardroom, and Metagame. Ceramic builds on IPFS (IPLD and libp2p specifically) and other open standards to create a general-purpose protocol for computing and processing data, with flexibility as to where data is stored and what stack and data formats developers choose to use. 
+Earlier this month, [Ceramic](https://ceramic.network/) launched their Mainnet, along with a cohort of Web3 projects utilizing their tech including Boardroom and Metagame. Ceramic builds on IPFS (IPLD and libp2p specifically) and other open standards to create a general-purpose protocol for computing and processing data, with flexibility as to where data is stored and what stack and data formats developers choose to use. 
 
 Developers building applications in Web3 have needed advanced database-like functionality to complement their blockchain infrastructure and raw storage provided by decentralized storage solutions like IPFS and Filecoin. Ceramic solves this issue with a NoSQL-like database for developers to store structured content. Ceramic also offers a flexible and robust identity solution called [IDX](http://idx.xyz/), the first fully functional decentralized identity solution. IDX lets users build up a unified digital identity consisting of all of their data while enabling developers to break down silos and freely share user data between applications.
 
