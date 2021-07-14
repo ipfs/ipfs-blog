@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 144
-description: Ceramic Mainnet launch, Browsers 3000, fixing broken NFTs with IPFS and
-  Filecoin, and more!
+description: Browsers 3000 kicked off, IPFS Cluster 0.14.0 was released, plus much
+  more this week in IPFS!
 author: Emily Vaughan
-date: 2021-07-07
-permalink: "/weekly-143/"
-translationKey: ipfs-weekly-143
+date: 2021-07-14
+permalink: "/weekly-144/"
+translationKey: ipfs-weekly-144
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,15 +13,17 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Fixing Broken NFTs with IPFS and Filecoin
+## Just released: IPFS Cluster 0.14.0!
 
-![](../assets/e8a23c54-7515-4d77-806b-66843e43f3f7.png)
+![](../assets/077-collaborative-clusters-header-image.png)
 
-NFTs have hit the mainstream but unfortunately, this space is full of misconceptions, and many developers - intentionally or not - are cutting corners as they rush to capitalize on this nascent market. Though customers buy NFTs believing them to be permanent and immutable records of ownership, this is not always the case - fundamental flaws in the construction of many tokens jeopardize the long-term integrity of the asset. This is a major problem for the entire ecosystem, with the potential to rapidly erode customer faith - not just in NFTs, but in blockchain technology at large. To avoid reputational loss, the developer community needs to proactively acknowledge and address these issues. Read [**this Hackernoon post**](https://hackernoon.com/fixing-broken-nfts-with-ipfs-and-filecoin-jk1r35ab) to learn all there is to know about fixing your broken NFTs with IPFS and Filecoin.
+We're happy to announce [**the release of IPFS Cluster 0.14.0**](https://blog.ipfs.io/2021-07-12-ipfs-cluster-0-14-0/)! IPFS Cluster provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. From feedback received, the [**release of IPFS Cluster 0.14.0**](https://blog.ipfs.io/2021-07-12-ipfs-cluster-0-14-0/) has added CAR import support, batched-pin ingestion, and automatic garbage collection to the Badger datastore, along with other optimizations, updates, and bug fixes.
 
 ## Ceramic launched their Mainnet
 
 ![](../assets/ipfs-blog-ceramic.png)
+
+@[youtube](dARxOaRd6Mc)
 
 Last week, Ceramic launched their Mainnet! Built on IPFS, Ceramic is a decentralized, open source platform for creating, hosting, and sharing data. With Ceramic's permissionless data streaming network, developers can store streams of information and ever-changing files directly on the decentralized web – and share updates with anyone in the world – all without trusted servers or intermediaries. [**Get started**](https://blog.ceramic.network/ceramic-mainnet-is-live/) with Ceramic Mainnet today!
 
@@ -34,16 +36,16 @@ Last week, Ceramic launched their Mainnet! Built on IPFS, Ceramic is a decentral
 
 ## Around the ecosystem 🌏
 
-Cloudflare Connect has more free learning sessions available! [**Watch today**](https://www.cloudflare.com/cloudflare-connect-2021/).  
-  
-Unstoppable Domains releases new podcast episodes weekly. [**Tune in!**](https://t.co/oiiofBBEi0?amp=1)  
-  
-The Filecoin Quadratic Funding Grant with DoraHacks is taking applications through July 18th. [**Learn how to apply.**](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)  
-  
-Decentraland’s Art Week event starts this Thursday. [**Check it out.**](https://decentraland.org/blog/announcement/art-week-2021/)  
-  
-Encode launched the Encode Filecoin Club, a nine-month program in collaboration with IPFS and Filecoin. [**Learn more.**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)  
-  
+Cloudflare Connect has more free learning sessions available! [**Watch today**](https://www.cloudflare.com/cloudflare-connect-2021/).
+
+Unstoppable Domains releases new podcast episodes weekly. [**Tune in!**](https://t.co/oiiofBBEi0?amp=1)
+
+The Filecoin Quadratic Funding Grant with DoraHacks is taking applications through July 18th. [**Learn how to apply.**](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)
+
+Decentraland’s Art Week event starts this Thursday. [**Check it out.**](https://decentraland.org/blog/announcement/art-week-2021/)
+
+Encode launched the Encode Filecoin Club, a nine-month program in collaboration with IPFS and Filecoin. [**Learn more.**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)
+
 Opera introduced the world's first alternative browser optimized for Chrome OS with a built-in VPN and a powerful ad blocker. [**Learn more**](https://blogs.opera.com/mobile/2021/07/opera-for-chromebooks/?utm_source=tw_GL_chromebook_July_launch&utm_medium=social&utm_campaign=tw_chromebook_July_launch).
 
 ## Upcoming Hackathons
