@@ -2,7 +2,7 @@
 title: 'Building Web3: Pinata'
 description: Pinata builds tools and infrastructure that make it easy for Web3 devs
   to create & manage content on IPFS.
-author: ''
+author: PL Video Team, Jessica Schilling
 date: 2021-07-15
 permalink: 2021-07-15-building-web-3-pinata
 translationKey: ''
