@@ -4,7 +4,7 @@ type: Video
 sitemap:
   exclude: true
 data:
-- title: 'Building Web3: Pinata'
+- title: 'Meet the Web3 Builders: Pinata'
   date: 2021-07-26
   publish_date: 2021-07-26T12:00:00+00:00
   path: https://www.youtube.com/watch?v=29k2C1JXyg4
