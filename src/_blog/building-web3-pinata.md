@@ -8,6 +8,7 @@ permalink: 2021-07-15-building-web-3-pinata
 translationKey: ''
 header_image: "/fil-buildingweb3-piata-alt2.png"
 tags:
+- community
 - API
 - pinning
 - NFTs
