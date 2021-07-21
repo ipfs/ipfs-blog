@@ -21,7 +21,7 @@ We’re excited to launch the latest video in the Building Web3 series, highligh
 
 ## A Brave New Wallet
 
-@[youtube](4ujo7q3LWw)
+@[youtube](-4ujo7q3LWw)
 
 Brave is a privacy-focused browser where you are not a product. A search engine that doesn’t track you. An opt-in ad economy that rewards you for browsing. A growing ecosystem of users. In January, Brave announced native support for IPFS directly in the browser. Next up for Brave: the Brave Wallet and the vision of a native crypto wallet for every internet user. During Browsers 3000, Brave engineer Anirudha Bose talked through the future of Brave Wallet and the Brave browser’s use of IPFS. [**Check out the talk here.**](https://www.youtube.com/watch?v=-4ujo7q3LWw)
 
