@@ -19,9 +19,9 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 We’re excited to launch the latest video in the Building Web3 series, highlighting leading projects in the Web3 and decentralized storage ecosystems. [**Building Web3: Pinata**](https://www.youtube.com/watch?v=29k2C1JXyg4) is a look at the [**Pinata**](https://pinata.cloud/) service and team. Today, Pinata builds tools and infrastructure that make it easy for Web3 developers to create and manage content on IPFS while also leading a charge in how the world stores, accesses, and verifies blockchain-linked content. One way in which all this comes together is the world of NFTs, where Pinata provides secure and verifiable file storage to considerably streamline the process of minting, selling, and transferring NFTs. [**Read more.**](https://blog.ipfs.io/2021-07-15-building-web-3-pinata/)
 
-## Browsers 3000 kicks off its 6 week event, including a presentation from ENS
+## A Brave New Wallet
 
-@[youtube](dARxOaRd6Mc)
+@[youtube](4ujo7q3LWw)
 
 July 8th marked the beginning of Browsers 3000, a six-week event focused on integrating decentralized technologies into the browser experience for users around the world. So far, we’ve heard from team members of Unstoppable Domains, ENS, IPFS, Microsoft, Puma, Agregore, and more.
 
