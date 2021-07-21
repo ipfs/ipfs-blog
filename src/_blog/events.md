@@ -4,6 +4,13 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: HackFS 2021
+  date: 2021-07-30
+  publish_date: 
+  path: https://hackfs.com
+  card_image: "/hackfs2021.png"
+  tags:
+  - hackathon
 - title: Browsers 3000 Hackathon
   date: 2021-07-08
   publish_date: 
