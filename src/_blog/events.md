@@ -8,7 +8,7 @@ data:
   date: 2021-07-30
   publish_date: 
   path: https://hackfs.com
-  card_image: "/unnamed.png"
+  card_image: "/hackfs2021.png"
   tags:
   - hackathon
 - title: Browsers 3000 Hackathon
