@@ -44,7 +44,7 @@ Browsers 3000 is in full swing with new learning sessions each week! [**Catch up
   
 Protocol Labs has announced their support of Element and the Matrix ecosystem! [**Read more**](https://element.io/blog/element-raises-30m-as-matrix-explodes/).   
   
-As a part of the LongHashX Accelerator, LongHah Ventures is hosting an event, “Building your Web3 project with LongHashX” on July 29th at 9pm ET. [**Browse the agenda and register to attend**](https://docs.google.com/forms/d/e/1FAIpQLSc7AIMBQHIV_82EiM5DF98tDxtsheHAg0OeUniOed27SPXRBg/viewform).  
+As a part of the LongHashX Accelerator, LongHash Ventures is hosting an event, “Building your Web3 project with LongHashX” on July 29th at 9pm ET. [**Browse the agenda and register to attend**](https://docs.google.com/forms/d/e/1FAIpQLSc7AIMBQHIV_82EiM5DF98tDxtsheHAg0OeUniOed27SPXRBg/viewform).  
   
 ETHGlobal’s HackMoney wrapped up earlier this month, bringing together 1100+ hackers, 231 projects, and 16 finalists from across the ecosystem. [**Read the hackathon recap**](https://ethglobalco.medium.com/hackmoney-2021-3-weeks-for-defi-94edb805d133).
 
