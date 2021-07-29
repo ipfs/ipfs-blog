@@ -5,6 +5,9 @@
       v-bind="card"
       :open-video-modal="openVideoModal"
       class="card-post h-full"
+      :class="{
+        'is-scheduled': isScheduled
+      }"
     />
   </div>
 </template>
@@ -49,3 +52,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+.card-post.is-scheduled::after {
+  content: "SCHEDULED";
+  position: absolute;
+  right: 0;
+}
+</style>

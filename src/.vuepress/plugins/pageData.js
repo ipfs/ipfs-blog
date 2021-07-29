@@ -25,6 +25,14 @@ function shouldBeHidden(frontmatter) {
     shouldHide = shouldHide || isDateInFuture(frontmatter.publish_date)
   }
 
+  // only hide on production environment, show on dev and staging
+  if (
+    !process.env.CANONICAL_BASE ||
+    !process.env.CANONICAL_BASE.includes('blog.ipfs.io')
+  ) {
+    shouldHide = false
+  }
+
   return shouldHide
 }
 

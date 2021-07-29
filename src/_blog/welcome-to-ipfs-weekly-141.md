@@ -3,7 +3,7 @@ title: Welcome to IPFS Weekly 141
 description: OpenSea stores NFTs with IPFS & Filecoin, NFT Dev User Experience survey,
   IPFS in 'The New Stack' & more!
 author: Emily Vaughan
-date: 2021-06-23
+date: 2021-07-23
 permalink: "/weekly-141/"
 translationKey: ipfs-weekly-141
 header_image: "/header-image-weekly-newsletter.png"
