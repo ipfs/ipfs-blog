@@ -24,7 +24,7 @@ Underneath the Interplanetary Filesystem is a multitude of [Merkle Directed Acyc
 
 DAG node formats are not limited to `dag-pb` or `raw`, however, we also have [dag-cbor](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-cbor.md), [dag-json](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-json.md) and the newcomer [dag-jose](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-jose.md).
 
-The interfaces that these formats implement was previously defined by the [ipld/interface-ipld-format](https://github.com/ipld/interface-ipld-format) modue, but there is an all-new implementation in the form of [BlockCodec](https://github.com/multiformats/js-multiformats/blob/076290c2103eadc031f1a8069c5a296522eb9678/src/codecs/interface.ts#L21)s from the [multiformats/js-multiformats](https://github.com/multiformats/js-multiformats) module.
+The interfaces that these formats implement was previously defined by the [ipld/interface-ipld-format](https://github.com/ipld/interface-ipld-format) module, but there is an all-new implementation in the form of [BlockCodec](https://github.com/multiformats/js-multiformats/blob/076290c2103eadc031f1a8069c5a296522eb9678/src/codecs/interface.ts#L21)s from the [multiformats/js-multiformats](https://github.com/multiformats/js-multiformats) module.
 
 `js-IPFS@0.56.0` ships with this new implementation which is much more lightweight and easier to work with and has seen the gzipped size of the [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) bundle drop by amost 26%.
 
