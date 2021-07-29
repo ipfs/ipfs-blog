@@ -13,6 +13,7 @@
       </div>
     </div>
     <div class="pt-8 pb-4 bg-white flex-grow bg-gray-background">
+      <TaskCompletionSurveyBanner project="ipfs" type="sticky" />
       <SortAndFilter
         :number-of-posts="pagesToShow.length"
         :tags="tags"
@@ -64,6 +65,8 @@ import uniqBy from 'lodash/uniqBy'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import orderBy from 'lodash/orderBy'
+import TaskCompletionSurveyBanner from '@carsy/task-completion-survey-banner/src/index.vue'
+
 import countly from '../util/countly'
 
 const defaultCategory = { name: 'Blog post', slug: 'blog-post' }
@@ -76,6 +79,7 @@ export default {
     SortAndFilter,
     LanguageSelector,
     VideoModal,
+    TaskCompletionSurveyBanner,
   },
   data: function () {
     return {
@@ -392,5 +396,16 @@ export default {
 <style scoped>
 .language-selector {
   bottom: -3rem;
+}
+
+#pl--task-completion-survey-banner {
+  --internal-max-width: 13rem;
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  #pl--task-completion-survey-banner {
+    display: inherit;
+  }
 }
 </style>

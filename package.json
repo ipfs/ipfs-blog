@@ -74,6 +74,7 @@
     "*.{css,styl}": "stylelint --fix"
   },
   "dependencies": {
+    "@carsy/task-completion-survey-banner": "^1.3.0",
     "dayjs": "^1.10.5",
     "markdown-it-image-lazy-loading": "^1.1.0",
     "markdown-it-imsize": "^2.0.1",
