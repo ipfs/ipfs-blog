@@ -15,9 +15,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## Introducing Web3.Storage!
 
-![](../assets/frame-4.jpg)
-
-Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. Web3.Storage 一 which will remain free indefinitely 一 gives developers an easy avenue to build applications with redundant, decentralized storage and secure, content addressed data. By handling a ton of the complexity of interacting directly with decentralized storage, it is the one of the best ways to integrate with Filecoin storage for all developers, from Web3 newbies to IPFS veterans! [**Try Web3.Storage now**](https://web3.storage/) plus learn how it works, how to interact with it, and what’s next in [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
+![](../assets/screen-shot-2021-08-04-at-10-28-56-am.png)Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. Web3.Storage 一 which will remain free indefinitely 一 gives developers an easy avenue to build applications with redundant, decentralized storage and secure, content addressed data. By handling a ton of the complexity of interacting directly with decentralized storage, it is the one of the best ways to integrate with Filecoin storage for all developers, from Web3 newbies to IPFS veterans! [**Try Web3.Storage now**](https://web3.storage/) plus learn how it works, how to interact with it, and what’s next in [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
 
 ## js-IPFS 0.56.0 Upgrade
 
