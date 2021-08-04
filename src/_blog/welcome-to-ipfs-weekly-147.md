@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS Weekly 147
-description: Mint NFTs and publish to IPFS, an update from ChainSafe, go-ipfs v0.9.1
-  release, and more this week in IPFS!
+description: When one hackathon ends, another begins, the launch of Web3.Storage,
+  and more this week in the IPFS galaxy.
 author: Emily Vaughan
-date: 2021-07-28
-permalink: "/weekly-146/"
+date: 2021-08-04
+permalink: "/weekly-147/"
 translationKey: ipfs-weekly-146
 header_image: "/header-image-weekly-newsletter.png"
 tags:
@@ -13,51 +13,43 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Mint NFTs and Publish to IPFS From Wolfram
+## Introducing Web3.Storage!
 
-![](../assets/liveminting-nfts-hero.png)
+![](../assets/frame-4.jpg)
 
-Jon Woodard, CEO of [Wolfram Blockchain Labs](https://blog.wolfram.com/2021/05/12/using-ipfs-filecoin-and-the-wolfram-language-to-build-a-unified-decentralized-services-interface/) (WBL), has worked to develop[ innovative smart contract solutions](https://www.wolframblockchainlabs.com/computational-facts/), including the opportunities for _collectible, credential,_ and _programmatic_ NFTs. During the five years Woodard and WBL have worked on NFTs, they have emerged as one of the largest sectors of consumer adoption for smart contracts. WBL has just announced the [Wolfram Language-Cardano](https://www.wolfram.com/language/) blockchain integration. The integration will make its debut with a liveminting event happening on July 27, 2021. During the liveminting event, an NFT will be created in real time on the Cardano blockchain for the audience, providing participants with a live look at innovation in progress. Learn more about the liveminting event: [“Stephen Wolfram’s Picks of Cellular Automata from the Computational Universe.”](https://blog.wolfram.com/2021/07/21/liveminting-nfts-with-the-wolfram-language-on-the-cardano-blockchain/)
+Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. Web3.Storage 一 which will remain free indefinitely 一 gives developers an easy avenue to build applications with redundant, decentralized storage and secure, content addressed data. By handling a ton of the complexity of interacting directly with decentralized storage, it is the one of the best ways to integrate with Filecoin storage for all developers, from Web3 newbies to IPFS veterans! [**Try Web3.Storage now**](https://web3.storage/) plus learn how it works, how to interact with it, and what’s next in [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
 
-## Introducing ChainSafe Storage (A Note from ChainSafe)
+## js-IPFS 0.56.0 Upgrade
 
-![](../assets/chainsafe-storage-sceenshot.png)
+![](../assets/header-image-js-ipfs-placeholder.png)
 
-ChainSafe is proud to launch [**ChainSafe Storage**](https://storage.chainsafe.io/): Store files directly to the IPFS/Filecoin network. Storage is ChainSafe’s newest product which provides an intuitive front-end UI allowing devs to publicly pin and unpin files to IPFS, backed up to Filecoin. The service also exposes our APIs by providing API keys on demand, allowing anyone to build products connected to Filecoin and IPFS. We’re extremely excited to offer this product within the Filecoin and IPFS ecosystems. Our call to action for you: test it, build with it, explore with it. Discover the possibilities of building with Storage unlocks. To excite the imagination, here’s a reminder: our privacy-first, non-custodial file storage solution [**ChainSafe Files**](http://app.files.chainsafe.io/) was built using Storage. If you want to get in touch with our Files/Storage developers, don’t forget to drop into our Files #support channel on [**Discord**](https://discord.gg/CprJHjrWG6) to ask questions. For more updates, make sure to follow ChainSafe’s [**Twitter**](https://twitter.com/ChainSafeth)!
+[**js-IPFS 0.56.0**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.56.0) is on its way to the moon with a new data layer and import/export for [**Content Addressable aRchives**](https://ipld.io/specs/transport/car/) along with many small bug fixes and performance improvements! All part of the js-IPFS roadmap ([**check it out here**](https://github.com/orgs/ipfs/projects/6)). Read [**this blog post**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/) to learn more about the [**0.56.0 upgrade**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/), including new features, breaking changes, and bug fixes.
 
 ## Brand new on IPFS
 
-* Check out this brand new [**“Introduction to libp2p”**](https://www.youtube.com/watch?v=7OZLImVRvro) talk with Software Engineer, Max Inden.
-* go-ipfs v0.9.1 was released! This is a small bug fix release resolving the issues stated in the [**notes**](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.1).
-* The HackFS application deadline was extended! Interested in building the foundation for the decentralized web? [**Apply now!**](https://hack.ethglobal.co/hackfs2021)
-* Yesterday at HackFS, IPFS Software Engineer, Ryan Baumann presented a workshop on “Browser Connectivity Walkthrough”. [**Watch!**](https://www.youtube.com/watch?v=xZiN9dLvMoU)
+* Inviting all hackers and gaming enthusiasts to [**JS13K**](https://js13kgames.com/decentralized) Hackathon brought to you by IPFS, Filecoin, and NEAR Protocol, starting August 13th!
+* [**ChainSafe Files**](https://files.chainsafe.io/) sharing is live! Now share files without compromising security with encrypted sharing hosted on IPFS & backed to Filecoin.
+* Alan Shaw joined NFT Vision Hack for an “IPFS & Filecoin Workshop” to discuss the IPFS/Filecoin track & the technology behind it. [**Watch here.**](https://www.youtube.com/watch?v=QPk2jiPQz8c&list=PLv_5UkIvD8CS3Y9-p7IqEw7dwNo3WpS6g&index=3)
+* If you’re a developer or a web development shop with the know-how to publish a website to IPFS, join this [**referral list**](https://github.com/ipfs/community/discussions/630)!
 
 ## Around the ecosystem 🌏
 
-Libp2p has a roadmap - [**check it out**](https://github.com/libp2p/specs/blob/master/ROADMAP.md).  
+A few weeks ago, Filecoin launched the [**SNARKs for the World**](https://research.protocol.ai/sites/snarks/) minisite. Read this [**deep dive**](https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/) into what zero knowledge brings to the Filecoin network.  
   
-Join Yusef Napora at HackFS 2021 for a workshop titled "#IPFS: Minting NFTs with IPFS and Friends" live at 8:30am ET. [**Tune in**](https://www.youtube.com/watch?v=XxoZGes7NWQ).  
-  
-The NFTVisionHack hackathon is ongoing through August 2nd and has a track for using IPFS and Filecoin + 68k in prizes! [**Start building today**](https://www.nftvisionhack.com/) before it’s too late.  
-  
-Browsers 3000 is in full swing with new learning sessions each week! [**Catch up in this Youtube playlist**](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP).  
-  
-Protocol Labs has announced their support of Element and the Matrix ecosystem! [**Read more**](https://element.io/blog/element-raises-30m-as-matrix-explodes/).   
-  
-As a part of the LongHashX Accelerator, LongHash Ventures is hosting an event, “Building your Web3 project with LongHashX” on July 29th at 9pm ET. [**Browse the agenda and register to attend**](https://docs.google.com/forms/d/e/1FAIpQLSc7AIMBQHIV_82EiM5DF98tDxtsheHAg0OeUniOed27SPXRBg/viewform).  
-  
-ETHGlobal’s HackMoney wrapped up earlier this month, bringing together 1100+ hackers, 231 projects, and 16 finalists from across the ecosystem. [**Read the hackathon recap**](https://ethglobalco.medium.com/hackmoney-2021-3-weeks-for-defi-94edb805d133).
+ETHOdyssey wrapped yesterday, but there's still an opportunity to check out all of the hackathon [**submissions**](https://ethodyssey.devfolio.co/submissions).
 
-## Upcoming Hackathons
+  
+[**HackFS**](https://hackfs.com/) started on Friday! 3 weeks of workshops, talks, and building with $175k+ in prizes, and there’s still room to attend.
 
-There’s always more ways to build the IPFS ecosystem, check out these upcoming hackathons:
+  
+Browsers 3000 is live through August 19th! So far we’ve seen learning sessions from MetaMask, Unlock, Agregore, ENS, Unstoppable Domains, and more. [**Register for the hackathon**](https://events.protocol.ai/2021/browsers3000/) and stay up to date with future sessions.
 
-* [**IdentiHack by Hack Latin America**](https://hacklatam.com/identihack-2021) (June 28 - August 16)
-* [**NFT Vision Hack**](https://www.nftvisionhack.com/) (July - August 30)
-* [**ETHOdyssey Hackathon**](https://ethodyssey.devfolio.co/) (July 2 - August 1)
-* [**Browsers 3000**](https://events.protocol.ai/2021/browsers3000) (July 8 - August 19)
+  
+The 2021 Wanxiang Blockchain Hackathon starts today through September 12th, with a focus on integrating blockchain and other digital tech, such as 5G, AI and IoT. [**Register here to join IPFS and Filecoin at the event**](https://hackerlink.io/en/grant/Wanxiang/1).
 
 ## Want to help build the new internet?
+
+[**Developer Relations**](https://boards.greenhouse.io/textileio/jobs/4075619004): Textile is seeking someone to run large-scale community projects. These include amplifying our grants program to fund community projects, curating governance groups where we bring community stakeholders into our technology planning, engaging with external teams like Gitcoin and EthDenver to support large-scale developer events, and giving technical presentations at events. This position also includes day-to-day engagement with our Slack group, helping to triage GitHub issues, hacking on demos, writing blog posts and technical guides, and more. We are looking for a self-directed leader who wants to build a developer community while staying hands on with technology. **Textile**, Remote.
 
 [**Social Media Manager**](https://jobs.lever.co/protocol/c7b59dee-673b-42ff-85db-69e27a253f60): Protocol Labs is seeking a Social Media Manager to build best-practice growth strategies, own social tactics, and posting across all of our various channels. Your goal is to assist, educate, and excite every member of our community. You will be responsible for communication with our community primarily on Twitter, Reddit, and Slack but also occasionally over email, Telegram, Discord and other channels. This audience includes everyone from industry leaders, Protocol Labs partners, and investors to storage providers, developers, and users. **Protocol Labs**, Remote.
 
