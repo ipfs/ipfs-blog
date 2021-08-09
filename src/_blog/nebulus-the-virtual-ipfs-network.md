@@ -8,6 +8,8 @@ permalink: 2021-08-09-nebulus
 translationKey: ''
 header_image: "/128422071-318a1ec9-25d7-417e-8633-8e31b7611047.png"
 tags:
+- NFTs
+- CID
 - API
 
 ---
