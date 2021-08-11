@@ -13,39 +13,41 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Introducing Web3.Storage!
+## Nebulus: the ‘Virtual IPFS Network
 
-![](../assets/screen-shot-2021-08-04-at-10-28-56-am.png)
+![](../assets/128422071-318a1ec9-25d7-417e-8633-8e31b7611047.png)
 
-Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. Web3.Storage 一 which will remain free indefinitely 一 gives developers an easy avenue to build applications with redundant, decentralized storage and secure, content addressed data. By handling a ton of the complexity of interacting directly with decentralized storage, it is the one of the best ways to integrate with Filecoin storage for all developers, from Web3 newbies to IPFS veterans! [**Try Web3.Storage now**](https://web3.storage/) plus learn how it works, how to interact with it, and what’s next in [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
+In July, [**Nebulus**](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Also dubbed the “IPFS-less IPFS” network, Nebulus allows users to use the logic and content addressability of IPFS without having to use the public network. Nebulus lets users work with IPFS files and storage locally before publishing to the public IPFS network (or, never publishing at all). Users can choose to use Nebulus as an “offline buffer”, allowing them to work privately with IPFS files and publish to IPFS only if/when needed. [**Learn more.**](https://blog.ipfs.io/2021-08-09-nebulus/)
 
-## js-IPFS 0.56.0 Upgrade
+## Wanxiang Blockchain Week & Asia Hackathon Season
 
-![](../assets/header-image-js-ipfs-placeholder.png)
+![](../assets/twitter-2.png)
 
-[**js-IPFS 0.56.0**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.56.0) is on its way to the moon with a new data layer and import/export for [**Content Addressable aRchives**](https://ipld.io/specs/transport/car/) along with many small bug fixes and performance improvements! All part of the js-IPFS roadmap ([**check it out here**](https://github.com/orgs/ipfs/projects/6)). Read [**this blog post**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/) to learn more about the [**0.56.0 upgrade**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/), including new features, breaking changes, and bug fixes.
+The 2021 Wanxiang Blockchain Week has started and there is still time to join and build, focusing on integrating blockchain and other digital technologies, like 5G, AI, and IoT, to accelerate the digital transformation of various industries. [**Register here to join IPFS and Filecoin at the event!**](https://hackerlink.io/en/grant/Wanxiang/1)
+
+  
+Wanxiang Blockchain Week also marks the kick-off of the multi-event Asia Hackathon Season hosted by Filecoin and IPFS. The series will identify, accelerate, and highlight the incredible development work being done in Asia with the Filecoin and IPFS stacks. About $500,000 in prizes and grants will be available to teams, startups, projects, and entrepreneurs taking part. [**Register your email**](https://filecoin-community.typeform.com/to/scRusMWz) to stay in the loop about the upcoming events in the series!
 
 ## Brand new on IPFS
 
-* Inviting all hackers and gaming enthusiasts to [**JS13K**](https://js13kgames.com/decentralized) Hackathon brought to you by IPFS, Filecoin, and NEAR Protocol, starting August 13th!
-* [**ChainSafe Files**](https://files.chainsafe.io/) sharing is live! Now share files without compromising security with encrypted sharing hosted on IPFS & backed to Filecoin.
-* Alan Shaw joined NFT Vision Hack for an “IPFS & Filecoin Workshop” to discuss the IPFS/Filecoin track & the technology behind it. [**Watch here.**](https://www.youtube.com/watch?v=QPk2jiPQz8c&list=PLv_5UkIvD8CS3Y9-p7IqEw7dwNo3WpS6g&index=3)
-* If you’re a developer or a web development shop with the know-how to publish a website to IPFS, join this [**referral list**](https://github.com/ipfs/community/discussions/630)!
+* The IPFS website now features an [**Ecosystem Directory**](https://ecosystem.ipfs.io/) allowing the community to explore the world of projects and products built on IPFS.
+* Decrypt launched a new “Learn” tutorial featuring “How to use IPFS: the Backbone of Web3”! [**Read it**](https://decrypt.co/resources/how-to-use-ipfs-the-backbone-of-web3).
+* [**IPFS & Filecoin Builder's Day Summit**](https://www.youtube.com/watch?v=tdqIvaZ28ns) was held on Friday, Aug 6th as part of the ongoing [**HackFS**](https://hackfs.com/) virtual hackathon with [**ETHGlobal**](https://ethglobal.co/) and Protocol Labs, watch the [**recording**](https://www.youtube.com/watch?v=tdqIvaZ28ns).
+* Learn how to get started with NFT Project development in this [**new tutorial**](https://www.ejm.dev/nft-minting-quickstart-w-minty) “NFT Minting Quickstart with Minty” by community member, Evan James Martin.
 
 ## Around the ecosystem 🌏
 
-A few weeks ago, Filecoin launched the [**SNARKs for the World**](https://research.protocol.ai/sites/snarks/) minisite. Read this [**deep dive**](https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/) into what zero knowledge brings to the Filecoin network.  
+So you’ve heard of the newly released [**ChainSafe Files**](https://files.chainsafe.io/), but you want to dive deeper? Read up with [**this article**](https://medium.com/chainsafe-systems/chainsafe-files-building-a-privacy-preserving-cloud-storage-bfa6d9eef3b2) that highlights Files’ architecture and why its users are top priority for ChainSafe.  
   
-ETHOdyssey wrapped yesterday, but there's still an opportunity to check out all of the hackathon [**submissions**](https://ethodyssey.devfolio.co/submissions).
-
+ICYMI - [**Web3.Storage**](https://web3.storage/) launched last week! Want to know how it works with IPFS? Check out [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).   
   
-[**HackFS**](https://hackfs.com/) started on Friday! 3 weeks of workshops, talks, and building with $175k+ in prizes, and there’s still room to attend.
-
+Didn’t get a chance to apply to hack at [**HackFS**](https://hackfs.com/)? Don’t worry, there are still ten days left to join the fun - attend the summits [**here**](https://hackfs.com/).  
   
-Browsers 3000 is live through August 19th! So far we’ve seen learning sessions from MetaMask, Unlock, Agregore, ENS, Unstoppable Domains, and more. [**Register for the hackathon**](https://events.protocol.ai/2021/browsers3000/) and stay up to date with future sessions.
-
+Last week, [**Chainlink**](http://chain.link/) and Filecoin launched a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. [**Read all about it**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).  
   
-The 2021 Wanxiang Blockchain Hackathon starts today through September 12th, with a focus on integrating blockchain and other digital tech, such as 5G, AI and IoT. [**Register here to join IPFS and Filecoin at the event**](https://hackerlink.io/en/grant/Wanxiang/1).
+The final Browsers3000 Learning Session is happening this Friday at 11am ET. [**Join**](https://protocol.zoom.us/meeting/register/tJwtdOiprjksE92l9qIVfgHKtUhhsgkuKau8) Michelle Lee for a presentation detailing the Protocol Labs Grants Program.  
+  
+Use NFTs in your game or app at [**NFT Vision Hack**](https://www.nftvisionhack.com/filecoin-and-ipfs) with NFT.Storage for a chance to win up to $10k USD in FIL. Submissions are due August 30th!
 
 ## Want to help build the new internet?
 
