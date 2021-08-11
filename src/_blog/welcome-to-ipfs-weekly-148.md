@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 148
-description: When one hackathon ends, another begins, the launch of Web3.Storage,
-  and more this week in the IPFS galaxy.
+description: Learn about Nebulus, Decrypt’s new IPFS tutorial, plus a look at HackFS
+  IPFS & Filecoin Builders Day Summit.
 author: Emily Vaughan
-date: 2021-08-04
-permalink: "/weekly-147/"
-translationKey: ipfs-weekly-146
+date: 2021-08-11
+permalink: "/weekly-148/"
+translationKey: ipfs-weekly-148
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
