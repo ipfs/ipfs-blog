@@ -13,7 +13,7 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Nebulus: the ‘Virtual IPFS Network
+## Nebulus: the "Virtual IPFS Network"
 
 ![](../assets/128422071-318a1ec9-25d7-417e-8633-8e31b7611047.png)
 
