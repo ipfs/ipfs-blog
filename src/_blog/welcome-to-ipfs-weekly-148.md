@@ -1,9 +1,10 @@
 ---
-title: Welcome to IPFS Weekly 148
+title: 'Welcome to IPFS Weekly 148: Nebulus, Wanxiang Blockchain Week, IPFS Ecosystem
+  Directory, and More'
 description: Learn about Nebulus, Decrypt’s new IPFS tutorial, plus a look at HackFS
   IPFS & Filecoin Builders Day Summit.
 author: Emily Vaughan
-date: 2021-08-11
+date: 2021-08-10
 permalink: "/weekly-148/"
 translationKey: ipfs-weekly-148
 header_image: "/header-image-weekly-newsletter.png"
