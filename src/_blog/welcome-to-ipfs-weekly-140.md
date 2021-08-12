@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 140
+title: 'Welcome to IPFS Weekly 140: Starling Lab, Web3 Weekend, Snapshot Labs, and
+  More'
 description: Announcing the launch of Starling Lab, Web3Weekend Recap, XSL Labs' new
   video on IPFS, and more!
 author: Emily Vaughan
