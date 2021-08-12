@@ -1,9 +1,10 @@
 ---
-title: Welcome to IPFS Weekly 138
+title: 'Welcome to IPFS Weekly 138: NFT.Storage, Scaling Ethereum, ifip Workshop,
+  and More'
 description: Find NFT.Storage on Product Hunt, Scaling ETH recap, plus all that's
   new on IPFS!
 author: Emily Vaughan
-date: 2021-06-02
+date: 2021-06-01
 permalink: "/weekly-138/"
 translationKey: ipfs-weekly-138
 header_image: "/header-image-weekly-newsletter.png"
