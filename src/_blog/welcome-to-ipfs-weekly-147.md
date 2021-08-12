@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 147
+title: 'Welcome to IPFS Weekly 147: Web3.Storage, js-IPFS 0.56.0 Upgrade, JS13K Hackathon,
+  and More'
 description: When one hackathon ends, another begins, the launch of Web3.Storage,
   and more this week in the IPFS galaxy.
 author: Emily Vaughan
