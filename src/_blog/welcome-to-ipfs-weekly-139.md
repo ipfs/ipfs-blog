@@ -1,9 +1,10 @@
 ---
-title: Welcome to IPFS Weekly 139
+title: 'Welcome to IPFS Weekly 139: Content Persistence, DI2F, Distributed Wikipedia,
+  and More'
 description: Content Persistence with Filecoin & IPFS, DI2F Workshop on 6/21, Web3Weekend
   recording now live, and more!
 author: Emily Vaughan
-date: 2021-06-09
+date: 2021-06-08
 permalink: "/weekly-139/"
 translationKey: ipfs-weekly-139
 header_image: "/header-image-weekly-newsletter.png"
