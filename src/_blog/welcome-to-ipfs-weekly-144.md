@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 144
+title: 'Welcome to IPFS Weekly 144: IPFS Cluster 0.14.0, Browsers 3000, Infura, and
+  More'
 description: Browsers 3000 kicked off, IPFS Cluster 0.14.0 was released, plus much
   more this week in IPFS!
 author: Emily Vaughan
