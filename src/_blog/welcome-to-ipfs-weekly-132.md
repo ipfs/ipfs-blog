@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 132
+title: 'Welcome to IPFS Weekly 132: Scaling Ethereum, Filecoin Launchpad Accelerator
+  II, Fleek, and More'
 description: 'Last week at Scaling Ethereum, FLAII Applications are now open, plus
   check out what''s brand new on IPFS. '
 author: Emily Vaughan
