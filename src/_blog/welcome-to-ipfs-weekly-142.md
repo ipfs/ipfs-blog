@@ -1,9 +1,10 @@
 ---
-title: Welcome to IPFS Weekly 142
+title: 'Welcome to IPFS Weekly 142: go-ipfs v0.9.0, Browsers 3000 Hackathon, Hackerlink
+  Filecoin Funders DAO, and More'
 description: go-ipfs v.0.9.0 release, introducing Browsers 3000, build at IdentiHack
   & more!
 author: Emily Vaughan
-date: 2021-06-30
+date: 2021-06-29
 permalink: "/weekly-142/"
 translationKey: ipfs-weekly-142
 header_image: "/header-image-weekly-newsletter.png"

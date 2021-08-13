@@ -1,5 +1,5 @@
 ---
-title: Welcome to IPFS Weekly 145
+title: 'Welcome to IPFS Weekly 145: Pinata, Brave, Nebulus, and More'
 description: 'Building Web3: Pinata video released, EthCC is here, Brave at Browsers3000
   and more!'
 author: Emily Vaughan

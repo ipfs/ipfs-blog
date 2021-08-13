@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 143
+title: 'Welcome to IPFS Weekly 143: Broken NFTs, Ceramic Mainnet, Uploading Files
+  to IPFS, and More'
 description: Ceramic Mainnet launch, Browsers 3000, fixing broken NFTs with IPFS and
   Filecoin, and more!
 author: Emily Vaughan
