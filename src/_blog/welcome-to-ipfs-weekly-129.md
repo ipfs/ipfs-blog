@@ -1,15 +1,16 @@
 ---
 tags:
-  - weekly
-title: Welcome to IPFS Weekly 129
+- weekly
+title: 'Welcome to IPFS Weekly 129: ION, Chainlink Spring Hackathon, March Meetup,
+  and More'
 description: ION v2 launches, NFTs are everywhere, plus lots of new videos on IPFS!
 author: Emily Vaughan
 date: 2021-03-31
-permalink: '/weekly-129/'
+permalink: "/weekly-129/"
 translationKey: ipfs-weekly-129
-header_image: '/header-image-weekly-newsletter.png'
----
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## Congratulations ION for launching v1.0!
