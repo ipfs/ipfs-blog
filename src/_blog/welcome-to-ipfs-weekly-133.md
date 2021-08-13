@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 133
+title: 'Welcome to IPFS Weekly 133: April Meetup, Scaling Ethereum, Protocol Labs
+  Resnet Lab, and More'
 description: Catch up on the April IPFS Community meetup, hacking for Scaling Ethereum,
   & some brand new projects on IPFS!
 author: Emily Vaughan
