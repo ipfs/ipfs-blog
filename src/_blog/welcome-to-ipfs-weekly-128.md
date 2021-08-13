@@ -1,16 +1,17 @@
 ---
 tags:
-  - weekly
-  - NFTs
-title: Welcome to IPFS Weekly 128
+- weekly
+- NFTs
+title: 'Welcome to IPFS Weekly 128: NFTHack, Mint an NFT, Free Filecoin Retrieval,
+  and More'
 description: NFTs, NFTs, NFTs, plus a new GitHub action for IPFS!
 author: Jenn Turner
 date: 2021-03-24
-permalink: '/weekly-128/'
+permalink: "/weekly-128/"
 translationKey: ipfs-weekly-128
-header_image: '/header-image-weekly-newsletter.png'
----
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## IPFS x NFTHack, a brief recap
