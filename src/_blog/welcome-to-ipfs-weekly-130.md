@@ -2,7 +2,8 @@
 tags:
 - weekly
 - research
-title: Welcome to IPFS Weekly 130
+title: 'Welcome to IPFS Weekly 130: NFTs, ResNetLab on Tour, Scaling Ethereum Hackathon,
+  and More'
 description: NFTs on IPFS, ResNetLab on tour *everywhere*, and join us at the Scaling
   Ethereum Hackathon and Summit.
 author: Emily Vaughan

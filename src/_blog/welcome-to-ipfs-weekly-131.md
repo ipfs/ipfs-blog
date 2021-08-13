@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 131
+title: 'Welcome to IPFS Weekly 131: Uniswap, Filecoin Storage, Palm NFT Studio, and
+  More'
 description: Uniswap Interface hosting on IPFS, a call for Filecoin user testers,
   and more from around the ecosystem!
 author: Emily Vaughan
