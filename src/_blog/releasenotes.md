@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: IPFS Cluster 0.14.1
+  date: 2021-08-16
+  publish_date: 
+  path: https://github.com/ipfs/ipfs-cluster/releases/tag/v0.14.1
+  card_image: "/077-collaborative-clusters-header-image.png"
+  tags:
+  - IPFS Cluster
 - title: js-ipfs 0.57.0
   date: 2021-08-11
   publish_date: 
