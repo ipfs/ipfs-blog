@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: js-ipfs 0.58.0
+  date: 2021-08-17
+  publish_date: 
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.58.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
 - title: IPFS Cluster 0.14.1
   date: 2021-08-16
   publish_date: 
