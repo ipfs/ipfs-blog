@@ -1,17 +1,16 @@
 ---
 tags:
-  - weekly
-title: Welcome to IPFS Weekly 127
-description:
-  Get started with NFTs and IPFS, introducing True Review, plus the latest
+- weekly
+title: 'Welcome to IPFS Weekly 127: Identity, True Review, NFTHack, and More'
+description: Get started with NFTs and IPFS, introducing True Review, plus the latest
   in Local Offline Collaboration
 author: Jenn Turner
 date: 2021-03-17
-permalink: '/weekly-127/'
+permalink: "/weekly-127/"
 translationKey: ipfs-weekly-127
-header_image: '/header-image-weekly-newsletter.png'
----
+header_image: "/header-image-weekly-newsletter.png"
 
+---
 Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
 
 ## Next Tuesday: Identity & IPFS, a special event

@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 136
+title: 'Welcome to IPFS Weekly 136: Spring University Hackathons, Estuary Node, js-IPFS
+  0.55.0, and More'
 description: Spring university hackathons roundup, an intro to Estuary, and what's
   happening around the IPFS ecosystem!
 author: Emily Vaughan

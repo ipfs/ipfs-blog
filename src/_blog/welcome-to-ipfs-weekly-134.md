@@ -1,5 +1,5 @@
 ---
-title: Welcome to IPFS Weekly 134
+title: 'Welcome to IPFS Weekly 134: NFT.Storage, Hackathons, Opera, and More'
 description: Introducing NFT.Storage, a look back at the March 2021 hackathons, &
   more!
 author: Emily Vaughan

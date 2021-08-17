@@ -1,9 +1,9 @@
 ---
-title: Welcome to IPFS Weekly 137
+title: 'Welcome to IPFS Weekly 137: Gamedev.js JAM 2021, ifip, Rarible, and More'
 description: Web3 Weekend reminder, IPFS May Meetup recording, District0x's new education
   portal on IPFS, & more!
 author: Emily Vaughan
-date: 2021-05-26
+date: 2021-05-25
 permalink: "/weekly-137/"
 translationKey: ipfs-weekly-137
 header_image: "/header-image-weekly-newsletter.png"

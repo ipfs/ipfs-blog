@@ -1,5 +1,5 @@
 ---
-title: Welcome to IPFS Weekly 135
+title: 'Welcome to IPFS Weekly 135: Audius, Gitcoin, DoraHacks, and More'
 description: Audius x IPFS collaboration, Gitcoin GR9 winners, IPFS featured on SNL,
   and more!
 author: Emily Vaughan
