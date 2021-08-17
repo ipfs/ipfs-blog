@@ -1,12 +1,12 @@
 ---
 title: 'Welcome to IPFS Weekly #149: Huge news out of Audius, $249k distributed to
   DoraHacks Winners, a Preview of SXSW 2021, and More'
-description: Learn about Nebulus, Decrypt’s new IPFS tutorial, plus a look at HackFS
-  IPFS & Filecoin Builders Day Summit.
+description: Learn about DoraHacks winners, exciting news about Audius & TikTok, &
+  what’s on deck for the SXSW '22 panels.
 author: Emily Vaughan
-date: 2021-08-10
-permalink: "/weekly-148/"
-translationKey: ipfs-weekly-148
+date: 2021-08-17
+permalink: "/weekly-149/"
+translationKey: ipfs-weekly-149
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -14,20 +14,26 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Nebulus: the "Virtual IPFS Network"
+## DoraHacks
 
-![](../assets/128422071-318a1ec9-25d7-417e-8633-8e31b7611047.png)
+![](../assets/127064267-cb7a8aa4-8b06-4830-886b-7b2eefb2ee66.jpg)
 
-In July, [**Nebulus**](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Also dubbed the “IPFS-less IPFS” network, Nebulus allows users to use the logic and content addressability of IPFS without having to use the public network. Nebulus lets users work with IPFS files and storage locally before publishing to the public IPFS network (or, never publishing at all). Users can choose to use Nebulus as an “offline buffer”, allowing them to work privately with IPFS files and publish to IPFS only if/when needed. [**Learn more.**](https://blog.ipfs.io/2021-08-09-nebulus/)
+In July, the voting period ended for the 2021 DoraHacks Filecoin Grants Hackathon. Lasting over two months, Round 1 Grants distributed $249K to the winning projects building on IPFS and Filecoin among first, second, and third place. Some highlights from the winners:
 
-## Wanxiang Blockchain Week & Asia Hackathon Season
+* Box bridges the gap between the Web3 stack and mainstream JavaScript developers.
+* Opscientia is a framework for hosting large neuroscience datasets on IPFS.
+* Dweb Search is an open-source, decentralized search engine for IPFS and Filecoin.
 
-![](../assets/twitter-2.png)
+And more! Check out profiles of [**all the winning projects**](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/).
 
-The 2021 Wanxiang Blockchain Week has started and there is still time to join and build, focusing on integrating blockchain and other digital technologies, like 5G, AI, and IoT, to accelerate the digital transformation of various industries. [**Register here to join IPFS and Filecoin at the event!**](https://hackerlink.io/en/grant/Wanxiang/1)
+## Browsers3000: IPFS Learning Session
+
+@[youtube](YLK-4wwd6Sk)
+
+Brand new from Browsers3000: an IPFS Learning Session with Dietrich Ayala! The session is an overview of the future of the internet, focusing on identifying the challenges in changing the web and the opportunity to add new capabilities. Web3, content addressing, and IPFS enable many of those capabilities. [**Dive in and learn more**](https://www.youtube.com/watch?v=YLK-4wwd6Sk).
 
   
-Wanxiang Blockchain Week also marks the kick-off of the multi-event Asia Hackathon Season hosted by Filecoin and IPFS. The series will identify, accelerate, and highlight the incredible development work being done in Asia with the Filecoin and IPFS stacks. About $500,000 in prizes and grants will be available to teams, startups, projects, and entrepreneurs taking part. [**Register your email**](https://filecoin-community.typeform.com/to/scRusMWz) to stay in the loop about the upcoming events in the series!
+And while you’re here, there are two more days of the Browsers3000 Hackathon, a six-week event gathering leaders in the future of the web browser. [**Register and tune in**](https://events.protocol.ai/2021/browsers3000/) for the last sessions.
 
 ## Brand new on IPFS
 
@@ -38,16 +44,16 @@ Wanxiang Blockchain Week also marks the kick-off of the multi-event Asia Hackath
 
 ## Around the ecosystem 🌏
 
-So you’ve heard of the newly released [**ChainSafe Files**](https://files.chainsafe.io/), but you want to dive deeper? Read up with [**this article**](https://medium.com/chainsafe-systems/chainsafe-files-building-a-privacy-preserving-cloud-storage-bfa6d9eef3b2) that highlights Files’ architecture and why its users are top priority for ChainSafe.  
-  
-ICYMI - [**Web3.Storage**](https://web3.storage/) launched last week! Want to know how it works with IPFS? Check out [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).   
-  
-Didn’t get a chance to apply to hack at [**HackFS**](https://hackfs.com/)? Don’t worry, there are still ten days left to join the fun - attend the summits [**here**](https://hackfs.com/).  
-  
-Last week, [**Chainlink**](http://chain.link/) and Filecoin launched a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. [**Read all about it**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).  
-  
-The final Browsers3000 Learning Session is happening this Friday at 11am ET. [**Join**](https://protocol.zoom.us/meeting/register/tJwtdOiprjksE92l9qIVfgHKtUhhsgkuKau8) Michelle Lee for a presentation detailing the Protocol Labs Grants Program.  
-  
+So you’ve heard of the newly released [**ChainSafe Files**](https://files.chainsafe.io/), but you want to dive deeper? Read up with [**this article**](https://medium.com/chainsafe-systems/chainsafe-files-building-a-privacy-preserving-cloud-storage-bfa6d9eef3b2) that highlights Files’ architecture and why its users are top priority for ChainSafe.
+
+ICYMI - [**Web3.Storage**](https://web3.storage/) launched last week! Want to know how it works with IPFS? Check out [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
+
+Didn’t get a chance to apply to hack at [**HackFS**](https://hackfs.com/)? Don’t worry, there are still ten days left to join the fun - attend the summits [**here**](https://hackfs.com/).
+
+Last week, [**Chainlink**](http://chain.link/) and Filecoin launched a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. [**Read all about it**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
+
+The final Browsers3000 Learning Session is happening this Friday at 11am ET. [**Join**](https://protocol.zoom.us/meeting/register/tJwtdOiprjksE92l9qIVfgHKtUhhsgkuKau8) Michelle Lee for a presentation detailing the Protocol Labs Grants Program.
+
 Use NFTs in your game or app at [**NFT Vision Hack**](https://www.nftvisionhack.com/filecoin-and-ipfs) with NFT.Storage for a chance to win up to $10k USD in FIL. Submissions are due August 30th!
 
 ## Want to help build the new internet?
