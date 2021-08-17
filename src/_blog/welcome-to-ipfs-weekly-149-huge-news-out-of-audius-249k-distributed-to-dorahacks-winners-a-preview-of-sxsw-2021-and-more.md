@@ -32,31 +32,36 @@ And more! Check out profiles of [**all the winning projects**](https://filecoin.
 
 Brand new from Browsers3000: an IPFS Learning Session with Dietrich Ayala! The session is an overview of the future of the internet, focusing on identifying the challenges in changing the web and the opportunity to add new capabilities. Web3, content addressing, and IPFS enable many of those capabilities. [**Dive in and learn more**](https://www.youtube.com/watch?v=YLK-4wwd6Sk).
 
-  
 And while you’re here, there are two more days of the Browsers3000 Hackathon, a six-week event gathering leaders in the future of the web browser. [**Register and tune in**](https://events.protocol.ai/2021/browsers3000/) for the last sessions.
 
 ## Brand new on IPFS
 
-* The IPFS website now features an [**Ecosystem Directory**](https://ecosystem.ipfs.io/) allowing the community to explore the world of projects and products built on IPFS.
-* Decrypt launched a new “Learn” tutorial featuring “How to use IPFS: the Backbone of Web3”! [**Read it**](https://decrypt.co/resources/how-to-use-ipfs-the-backbone-of-web3).
-* [**IPFS & Filecoin Builder's Day Summit**](https://www.youtube.com/watch?v=tdqIvaZ28ns) was held on Friday, Aug 6th as part of the ongoing [**HackFS**](https://hackfs.com/) virtual hackathon with [**ETHGlobal**](https://ethglobal.co/) and Protocol Labs, watch the [**recording**](https://www.youtube.com/watch?v=tdqIvaZ28ns).
-* Learn how to get started with NFT Project development in this [**new tutorial**](https://www.ejm.dev/nft-minting-quickstart-w-minty) “NFT Minting Quickstart with Minty” by community member, Evan James Martin.
+* JS-IPFS 0.57.0 is live with new [**bug fixes and features**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.57.0)!
+* ICYMI: Watch Yusef Napora's workshop [**"Minting NFTs with IPFS and Friends"**](https://www.youtube.com/watch?v=XxoZGes7NWQ) from HackFS '21.
+* [**Just announced**](https://www.coindesk.com/crypto-powered-audius-wins-tiktok-tie-up-for-streaming-music-direct-to-platform): TikTok chooses streaming service [**Audius**](https://audius.co/) as the solution behind its “Sounds” library. Audius and IPFS have a long history; check out the [**Building Web3 video series with Audius**](https://www.youtube.com/watch?v=c50licHTOik) and IPFS.
+* It’s not quite new, but still worth talking about! Web3.storage is a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. [**Learn more and get started.**](https://filecoin.io/blog/posts/introducing-web3-storage/)
 
 ## Around the ecosystem 🌏
 
-So you’ve heard of the newly released [**ChainSafe Files**](https://files.chainsafe.io/), but you want to dive deeper? Read up with [**this article**](https://medium.com/chainsafe-systems/chainsafe-files-building-a-privacy-preserving-cloud-storage-bfa6d9eef3b2) that highlights Files’ architecture and why its users are top priority for ChainSafe.
+Voting is open for the [**SXSW 2022 PanelPicker**](https://www.sxsw.com/news/2021/sxsw-panelpicker-community-voting/)! Check out and vote for these IPFS, Filecoin, and Protocol Labs talk pitches:
 
-ICYMI - [**Web3.Storage**](https://web3.storage/) launched last week! Want to know how it works with IPFS? Check out [**this blog post**](https://filecoin.io/blog/posts/introducing-web3-storage/).
+* [**Guardians of Our Shared History**](https://panelpicker.sxsw.com/vote/117184)
+* [**IPFS and Filecoin for the Long Haul**](https://panelpicker.sxsw.com/vote/118750)
+* [**Nft School: Create A Freshly Minted NFT Token**](https://panelpicker.sxsw.com/vote/118723)
+* [**Building Tools for Clean Energy in Crypto**](https://panelpicker.sxsw.com/vote/118735)
+* [**How the Future of Music NFTs Will Empower Creators**](https://panelpicker.sxsw.com/vote/118578)
 
-Didn’t get a chance to apply to hack at [**HackFS**](https://hackfs.com/)? Don’t worry, there are still ten days left to join the fun - attend the summits [**here**](https://hackfs.com/).
+[**Outlier Ventures’ Diffusion 2021**](https://diffusion.events/) took place on July 28th and 29th. Protocol Labs co-founder and CEO Juan Benet joined to give a presentation about ‘Building the Metaverse.’ [**Check out the presentation**](https://www.youtube.com/watch?v=n0PSd0MM4EE) and learn more about the Filecoin and IPFS components of the emerging Metaverse.
 
-Last week, [**Chainlink**](http://chain.link/) and Filecoin launched a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. [**Read all about it**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
+Three more days of [**HackFS**](https://hackfs.com/)! The hackathon ends on August 20th — but there’s still plenty of time to get involved and tune in for the presentations, sessions, workshops, and more. Check out the agenda and [**register here.**](https://hackfs.com/)
 
-The final Browsers3000 Learning Session is happening this Friday at 11am ET. [**Join**](https://protocol.zoom.us/meeting/register/tJwtdOiprjksE92l9qIVfgHKtUhhsgkuKau8) Michelle Lee for a presentation detailing the Protocol Labs Grants Program.
+Last week, Alan Shaw joined the [**Filecoin Encode Club**](https://www.encode.club/filecoin-club) for an “Intro to IPFS.” Catch up with the [**recording**](https://www.youtube.com/watch?v=PW43J7KmRCA) if you’ve been wanting to learn IPFS basics.
 
-Use NFTs in your game or app at [**NFT Vision Hack**](https://www.nftvisionhack.com/filecoin-and-ipfs) with NFT.Storage for a chance to win up to $10k USD in FIL. Submissions are due August 30th!
+The IPFS Meetup program is currently on a summer holiday but join us next month for the September meetup on the 28th. [**Register now**](https://www.meetup.com/San-Francisco-IPFS/events/cbjsgsyccmblc/)!
 
 ## Want to help build the new internet?
+
+[**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
 
 [**Developer Relations**](https://boards.greenhouse.io/textileio/jobs/4075619004): Textile is seeking someone to run large-scale community projects. These include amplifying our grants program to fund community projects, curating governance groups where we bring community stakeholders into our technology planning, engaging with external teams like Gitcoin and EthDenver to support large-scale developer events, and giving technical presentations at events. This position also includes day-to-day engagement with our Slack group, helping to triage GitHub issues, hacking on demos, writing blog posts and technical guides, and more. We are looking for a self-directed leader who wants to build a developer community while staying hands on with technology. **Textile**, Remote.
 
