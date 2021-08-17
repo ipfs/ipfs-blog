@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to IPFS Weekly #149: Huge news out of Audius, $249k distributed to
+title: 'Welcome to IPFS Weekly 149: Huge news out of Audius, $249k distributed to
   DoraHacks Winners, a Preview of SXSW 2021, and More'
 description: Learn about DoraHacks winners, exciting news about Audius & TikTok, &
   what’s on deck for the SXSW '22 panels.
