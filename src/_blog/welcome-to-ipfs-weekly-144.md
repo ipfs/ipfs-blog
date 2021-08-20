@@ -18,7 +18,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ![](../assets/077-collaborative-clusters-header-image.png)
 
-We're happy to announce [**the release of IPFS Cluster 0.14.0**](https://blog.ipfs.io/2021-07-12-ipfs-cluster-0-14-0/)! IPFS Cluster provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. From feedback received, the [**release of IPFS Cluster 0.14.0**](https://blog.ipfs.io/2021-07-12-ipfs-cluster-0-14-0/) has added CAR import support, batched-pin ingestion, and automatic garbage collection to the Badger datastore, along with other optimizations, updates, and bug fixes.
+We're happy to announce [**the release of IPFS Cluster 0.14.0**](https://blog.ipfs.eth.link/2021-07-12-ipfs-cluster-0-14-0/)! IPFS Cluster provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. From feedback received, the [**release of IPFS Cluster 0.14.0**](https://blog.ipfs.eth.link/2021-07-12-ipfs-cluster-0-14-0/) has added CAR import support, batched-pin ingestion, and automatic garbage collection to the Badger datastore, along with other optimizations, updates, and bug fixes.
 
 ## Browsers 3000 kicks off its 6 week event, including a presentation from ENS
 
@@ -33,7 +33,7 @@ You can watch the full Browsers 3000 event so far [here](https://www.youtube.com
 * Short & sweet 一 demo from Mike Godsey about [**Infura’s new API beta**](https://www.youtube.com/watch?v=mLEkACKx_sc).
 * [**Tooklkit for video streaming over IPFS**](https://github.com/SionoiS/dit), uses IPLD for linking stream data, all in Rust.
 * Just announced - [**HackFS**](https://fs.ethglobal.co/), a virtual Hackathon by ETHGlobal & Protocol Labs, July 30th - August 20th.
-* Read our [**overview**](https://blog.ipfs.io/2021-07-13-ceramic-mainnet-launch/) of the Ceramic Mainnet launch and its use of IPFS for decentralized storage.
+* Read our [**overview**](https://blog.ipfs.eth.link/2021-07-13-ceramic-mainnet-launch/) of the Ceramic Mainnet launch and its use of IPFS for decentralized storage.
 
 ## Around the ecosystem 🌏
 

@@ -22,7 +22,7 @@ tags:
 
 ### js-ipfs 0.38.0 发布
 
-https://blog.ipfs.io/070-js-ipfs-0-38/
+https://blog.ipfs.eth.link/070-js-ipfs-0-38/
 
 ### 去中心化网络即将到来
 

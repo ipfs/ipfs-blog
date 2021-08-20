@@ -22,7 +22,7 @@ That is why we’re so excited to be part of this year’s ETHDenver, which is 1
 
 ![A wild Bufficorn appears at the IPFS Help Desk in 2020](../assets/2021-02-02-ipfs-at-ethdenver-helpdesk2020.jpg)
 
-In years past, the IPFS community has had a large presence at ETHDenver, partially due to the incredibly welcoming and encouraging decentralization community built locally in Denver. [Last year](https://blog.ipfs.io/2020-02-07-ethdenver-2020/), we were truly blown away by how much we saw the ETHDenver community embrace IPFS. After all was said and done:
+In years past, the IPFS community has had a large presence at ETHDenver, partially due to the incredibly welcoming and encouraging decentralization community built locally in Denver. [Last year](https://blog.ipfs.eth.link/2020-02-07-ethdenver-2020/), we were truly blown away by how much we saw the ETHDenver community embrace IPFS. After all was said and done:
 
 - 24 out of 52 submissions utilized IPFS in their project, with
 - 8 of the 16 finalist projects, and

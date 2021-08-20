@@ -44,7 +44,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [ipld-explorer-cli 0.14](https://blog.ipfs.io/44-ipld-explorer-cli-0-14/) - IPLD (Inter Planetary Linked Data) is the underlying data structure used by IPFS that allows it to store, retrieve and traverse through any type of content-addressed data.
+- [ipld-explorer-cli 0.14](https://blog.ipfs.eth.link/44-ipld-explorer-cli-0-14/) - IPLD (Inter Planetary Linked Data) is the underlying data structure used by IPFS that allows it to store, retrieve and traverse through any type of content-addressed data.
 - [ipfs-cluster 0.6.0](https://github.com/ipfs/ipfs-cluster/blob/0.6.0/changelog/CHANGELOG.md) – Increased the minor release number to signal changes to the Go APIs after upgrading to the new cid package, but, other than that, this release does not include any major changes.
 - [js-ipfs 0.32.3](https://github.com/ipfs/js-ipfs/releases/tag/v0.32.3) – Some bug fixes for the JavaScript implementation of the IPFS protocol.
 - [qri-io 0.5.4](https://github.com/qri-io/qri/releases/tag/v0.5.4) - A very minor release that cleans up a few issues with the API to make the frontend editor work 😄

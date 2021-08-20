@@ -20,7 +20,7 @@ IPFS Project Lead Molly Mackinlay was recently a guest on the [Zero Knowledge Po
 
 ## Experience the IPFS Pinning Summit, again!
 
-True, the IPFS Pinning Summit has come and gone, but if you missed it, we have you covered. [Watch all of the videos](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5) from the event and be sure to [read our recap](https://blog.ipfs.io/2020-05-13-ipfs-pinning-summit-recap/) from the two-day summit.
+True, the IPFS Pinning Summit has come and gone, but if you missed it, we have you covered. [Watch all of the videos](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5) from the event and be sure to [read our recap](https://blog.ipfs.eth.link/2020-05-13-ipfs-pinning-summit-recap/) from the two-day summit.
 
 ## Are you using (or plan to use) js-ipfs in browser?
 

@@ -22,11 +22,11 @@ tags:
 
 ### 正如我们所承诺的，js-ipfs 0.37.0 已经发布
 
-最新发布的 js-ipfs 引入了一个全新的构造器，更好的 DNSLink 支持和委托路由!有关完整的发布细节，[请参阅 IPFS 博客](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/)。
+最新发布的 js-ipfs 引入了一个全新的构造器，更好的 DNSLink 支持和委托路由!有关完整的发布细节，[请参阅 IPFS 博客](https://blog.ipfs.eth.link/2019-08-06-js-ipfs-0-37/)。
 
 ### js-libp2p 增加了 Gossipsub 支持和 Promisify API
 
-Libp2p 的工作人员也很忙! 上周，他们宣布了 [js-libp2p 0.26.0](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/) 版本的发布，该版本增加了对更高效的 pubsub 路由器 (Gossipsub) 的支持，并提供了目前阶段对 Promisify 的支持。点击查看详情！
+Libp2p 的工作人员也很忙! 上周，他们宣布了 [js-libp2p 0.26.0](https://blog.ipfs.eth.link/2019-08-07-js-libp2p-0-26/) 版本的发布，该版本增加了对更高效的 pubsub 路由器 (Gossipsub) 的支持，并提供了目前阶段对 Promisify 的支持。点击查看详情！
 
 ## 你好 ipfs-cohost 👋
 

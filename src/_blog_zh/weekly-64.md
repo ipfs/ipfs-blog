@@ -21,7 +21,7 @@ tags:
 
 ### 参见 IPFS Camp 主题演讲和访谈
 
-我们很高兴分享[在 IPFS Camp 所有汇聚在一起的主题演讲](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/) ，以及社区访谈，重点介绍了 IPFS Camp 参与者在广泛的生态系统中所做的一些令人震惊的工作。
+我们很高兴分享[在 IPFS Camp 所有汇聚在一起的主题演讲](https://blog.ipfs.eth.link/2019-10-14-ipfs-camp-keynotes-interviews/) ，以及社区访谈，重点介绍了 IPFS Camp 参与者在广泛的生态系统中所做的一些令人震惊的工作。
 
 ### 观看：ProtoSchool Denver 的 IPFS 基础知识之夜
 

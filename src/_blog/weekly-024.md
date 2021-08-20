@@ -20,9 +20,9 @@ For this first week back, we’ve put together a very special issue looking back
 
 **February:** The world was introduced to [libp2p](https://blog.keep.network/introduction-to-libp2p-57ce6527babe), a peer-to-peer networking stack built modularly, with IPFS.
 
-**March:** [<code>js-ipfs v0.28.0</code>](https://github.com/ipfs/js-ipfs/issues/1228) was released, Juan Benet presented [Redecentralizing the Web](https://www.youtube.com/watch?v=eeN_d4MpnNI) to MIT’s largest research lab, the Computer Science & Artificial Intelligence Lab, and <code>go-ipfs</code> released [version 0.4.14](https://blog.ipfs.io/34-go-ipfs-0.4.14).
+**March:** [<code>js-ipfs v0.28.0</code>](https://github.com/ipfs/js-ipfs/issues/1228) was released, Juan Benet presented [Redecentralizing the Web](https://www.youtube.com/watch?v=eeN_d4MpnNI) to MIT’s largest research lab, the Computer Science & Artificial Intelligence Lab, and <code>go-ipfs</code> released [version 0.4.14](https://blog.ipfs.eth.link/34-go-ipfs-0.4.14).
 
-**April:** We introduced [IPFS Companion 2.2.0](https://blog.ipfs.io/35-ipfs-companion-2-2-0/) and gave folks a look at [<code>go-ipfs</code> on Windows](https://blog.ipfs.io/36-a-look-at-windows/).
+**April:** We introduced [IPFS Companion 2.2.0](https://blog.ipfs.eth.link/35-ipfs-companion-2-2-0/) and gave folks a look at [<code>go-ipfs</code> on Windows](https://blog.ipfs.eth.link/36-a-look-at-windows/).
 
 **May:** We announced the first ever [IPFSConf](https://twitter.com/IPFSbot/status/998964366077816832), Textile introduced [a personal IPFS](https://medium.com/textileio/your-photos-decentralized-and-encrypted-a-first-look-at-the-tech-inside-textile-photos-9b0155c25f15) that runs on your mobile device for true decentralized storage. [<code>js-ipfs 0.29.0</code> was released](https://github.com/ipfs/js-ipfs/issues/1320) and we closed out the month by getting the [IPFS Cluster 0.4.0 release candidates](https://twitter.com/hecturchi/status/1001074944481120256) out with a newly launched [IPFS Cluster website](https://cluster.ipfs.io/) to boot.
 
@@ -30,13 +30,13 @@ For this first week back, we’ve put together a very special issue looking back
 
 **August:** We celebrated [Lab Day 2018](https://lab-day.com/aug-03-2018/) in San Francisco, California (see the talks from Lab Day [here](https://www.youtube.com/playlist?list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q)) and released both the [InterPlanetary Linked Data (IPLD)](https://explore.ipld.io/) explorer site and the official site for <code>js-ipfs</code>: [js.ipfs.io](https://js.ipfs.io/). We closed out the summer with the release of [IPFS Cluster 0.5.0](https://cluster.ipfs.io/news/20180824_0.5.0_release/).
 
-**September:** Cloudflare announced [their IPFS gateway](https://blog.cloudflare.com/distributed-web-gateway/) and the [IPFS Weekly Newsletter returned](https://blog.ipfs.io/45-ipfs-weekly-11/). [<code>js-ipfs 0.32.0</code>](https://github.com/ipfs/js-ipfs/issues/1497) was released and so was [<code>ipld-explorer-cli 0.14</code>](https://blog.ipfs.io/44-ipld-explorer-cli-0-14/).
+**September:** Cloudflare announced [their IPFS gateway](https://blog.cloudflare.com/distributed-web-gateway/) and the [IPFS Weekly Newsletter returned](https://blog.ipfs.eth.link/45-ipfs-weekly-11/). [<code>js-ipfs 0.32.0</code>](https://github.com/ipfs/js-ipfs/issues/1497) was released and so was [<code>ipld-explorer-cli 0.14</code>](https://blog.ipfs.eth.link/44-ipld-explorer-cli-0-14/).
 
 **October:** [IPFS Pinbot](https://twitter.com/ipfspin/status/1053376847596187648) emerged on Twitter.
 
-**November:** A big month for releases! [<code>js-ipfs 0.33</code>](https://github.com/ipfs/js-ipfs/issues/1635) and [<code>go-ipfs 0.4.18</code>](https://blog.ipfs.io/53-go-ipfs-0-4-18/) and [<code>js-libp2p v0.24.0</code>](https://github.com/libp2p/js-libp2p/issues/249) were all released.
+**November:** A big month for releases! [<code>js-ipfs 0.33</code>](https://github.com/ipfs/js-ipfs/issues/1635) and [<code>go-ipfs 0.4.18</code>](https://blog.ipfs.eth.link/53-go-ipfs-0-4-18/) and [<code>js-libp2p v0.24.0</code>](https://github.com/libp2p/js-libp2p/issues/249) were all released.
 
-**December:** We ended the year with a bit of organization, by [renaming the HTTP client libraries](https://blog.ipfs.io/58-http-client-rename/).
+**December:** We ended the year with a bit of organization, by [renaming the HTTP client libraries](https://blog.ipfs.eth.link/58-http-client-rename/).
 
 ## Some cool news
 

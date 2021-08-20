@@ -18,13 +18,13 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Microsoft’s ION, an implementation of the decentralized identity protocol, now stores transaction data on IPFS. Read about how js-ipfs is being used to publish the data in a decentralized, universally addressable and network-agnostic way.
 
-[Read the full announcement](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/)
+[Read the full announcement](https://blog.ipfs.eth.link/2020-06-11-identity-ipfs-ion/)
 
 ## libp2p in 2020 and beyond!
 
 The past year has seen amazing improvements to libp2p with the protocol quickly becoming the de facto Web3 networking layer for a huge swath of projects. Now, libp2p is looking for new Project Lead to help grow and steward the project and ecosystem in 2020!
 
-[Learn more about libp2p](https://blog.ipfs.io/2020-06-09-libp2p-in-2020/)
+[Learn more about libp2p](https://blog.ipfs.eth.link/2020-06-09-libp2p-in-2020/)
 
 ## IPFS and the Decentralized Web Dev Report 2020
 

@@ -79,6 +79,6 @@ The ProtoSchool curriculum is growing, and we're excited to explore all of the f
 There's even more great content from IPFS Camp content coming your way, including recordings of keynotes and interviews. If you're interested in receiving an update when the next batch of videos are available, try out one of these strategies:
 
 - Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live.
-- Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
+- Subscribe to the [RSS feed of this blog](https://blog.ipfs.eth.link/index.xml).
 - Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you're interested in general IPFS updates.
 - Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you're interested in IPFS events.

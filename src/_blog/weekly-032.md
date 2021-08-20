@@ -27,7 +27,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Join us at the first ever IPFS Camp
 
-**Last week we announced [IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/), taking place June 27th-30th in beautiful Barcelona.** This event is specifically for you, the IPFS community! Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+**Last week we announced [IPFS Camp](https://blog.ipfs.eth.link/72-ann-ipfs-camp/), taking place June 27th-30th in beautiful Barcelona.** This event is specifically for you, the IPFS community! Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## The latest
 

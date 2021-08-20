@@ -13,9 +13,9 @@ tags:
 
 ![](../assets/095-road-to-dht-header-image.png =1000x)
 
-At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5.0](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/). This upgrade brings major performance and reliability improvements to IPFS — especially on the content discovery and routing front. These gains are brought to you largely by our rework of the Distributed Hash Table (DHT) which powers most peer and content discovery in the IPFS Public Network.
+At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5.0](https://blog.ipfs.eth.link/2020-04-28-go-ipfs-0-5-0/). This upgrade brings major performance and reliability improvements to IPFS — especially on the content discovery and routing front. These gains are brought to you largely by our rework of the Distributed Hash Table (DHT) which powers most peer and content discovery in the IPFS Public Network.
 
-We’d like to take you through our journey to _re-write_ the DHT - from identifying the underlying issues, to how we approached designing a solution, to ensuring it would **work** in practice. Our work led to major performance gains, as well as a new development process and [Testground](https://github.com/testground/testground), a whole new tool for large-scale network testing [(read more)](https://blog.ipfs.io/2020-05-06-launching-testground/).
+We’d like to take you through our journey to _re-write_ the DHT - from identifying the underlying issues, to how we approached designing a solution, to ensuring it would **work** in practice. Our work led to major performance gains, as well as a new development process and [Testground](https://github.com/testground/testground), a whole new tool for large-scale network testing [(read more)](https://blog.ipfs.eth.link/2020-05-06-launching-testground/).
 
 **If you want to make use of these new improvements, please [upgrade IPFS now](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update)!**
 <br />
@@ -63,11 +63,11 @@ This meant some hard calls on prioritization: focusing our working groups on a t
 
 We’d learned from our early patches that a network of our size **needs** to be able to test changes in a close to real-world setting to be able to make improvements quickly and reliably. We had the means to do unit tests and small simulations that could prove out basic tweaks, but no way to replicate thousands of nodes or typical network configurations in order to benchmark major changes. This left us without real data on the true impact of changes until they had gone live.
 
-We had to change this quickly to be successful in righting the DHT. We formed a working group to remedy this gap; [Testground](https://blog.ipfs.io/2020-05-06-launching-testground/) was born. Testground is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, allowing us to validate the needed fixes and pressure test the broad DHT changes before IPFS 0.5.0 went live.
+We had to change this quickly to be successful in righting the DHT. We formed a working group to remedy this gap; [Testground](https://blog.ipfs.eth.link/2020-05-06-launching-testground/) was born. Testground is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, allowing us to validate the needed fixes and pressure test the broad DHT changes before IPFS 0.5.0 went live.
 
 Testground gave us the tools to do _data-driven development_ in our DHT rewrite. It also helped us in other parts of the IPFS 0.5.0 release: like prototyping new potential solutions, comparing potential fixes against each other, and stress-testing the edge cases and upgrade process. The repeatability and introspection Testground gave us was _critical_ to accelerating our development velocity to reliably improve IPFS.
 
-With the [launch of Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), we’re excited to share this tool with others as well to benchmark and evaluate their p2p networks. **[Start using Testground today!](https://docs.testground.ai/)**
+With the [launch of Testground v0.5](https://blog.ipfs.eth.link/2020-05-06-launching-testground/), we’re excited to share this tool with others as well to benchmark and evaluate their p2p networks. **[Start using Testground today!](https://docs.testground.ai/)**
 
 ## Now for the “fix”
 
@@ -80,7 +80,7 @@ With Testground, we were able to benchmark and quantify our DHT issues around pe
 
 Testground allowed us to tweak these parameters to measure which changes would have the most impact on network performance. As we gathered for a Research Summit in January to compare potential mitigations to the ongoing network challenges, we were now empowered with a **quantitative** understanding of the network structure and the tools to immediately prototype and test out the resulting hypotheses from our discussions.
 
-What followed was a whirlwind of test-plan writing to measure each change to the DHT logic in a real-world network setting. We tested our new systems for diagnosing undialable peers and removing them from our routing tables, measured success rates for ending our queries earlier, and even re-benchmarked our [improvements to Bitswap](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) to find additional improvements. Throughout these refactors, we were able to continually validate the performance of these changes with our Testground simulations, as well as a few well-placed canary nodes to run benchmarks against the full public network.
+What followed was a whirlwind of test-plan writing to measure each change to the DHT logic in a real-world network setting. We tested our new systems for diagnosing undialable peers and removing them from our routing tables, measured success rates for ending our queries earlier, and even re-benchmarked our [improvements to Bitswap](https://blog.ipfs.eth.link/2020-02-14-improved-bitswap-for-container-distribution/) to find additional improvements. Throughout these refactors, we were able to continually validate the performance of these changes with our Testground simulations, as well as a few well-placed canary nodes to run benchmarks against the full public network.
 
 With these tools in hand, we sprinted 🏃‍♂️💨 from the summit to our release to make it all happen. From identifying the problem with the community, to scoping potential solutions, building testing tools, learning from past research, and executing on the needed technical fixes - this marathon of a release certainly put us through our paces - resulting in an [epic list of new and improved features](https://docs.ipfs.io/recent-releases/go-ipfs-0-5/features/).
 
@@ -88,6 +88,6 @@ Up next, in **Part 2 of this DHT Deep Dive**, we'll walk you through exactly wha
 
 ### Learn more
 
-- IPFS 0.5.0 Announcement: https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/
+- IPFS 0.5.0 Announcement: https://blog.ipfs.eth.link/2020-04-28-go-ipfs-0-5-0/
 - Release Highlights: https://www.youtube.com/watch?v=G8FvB_0HlCE
-- TestGround: https://blog.ipfs.io/2020-05-06-launching-testground/
+- TestGround: https://blog.ipfs.eth.link/2020-05-06-launching-testground/

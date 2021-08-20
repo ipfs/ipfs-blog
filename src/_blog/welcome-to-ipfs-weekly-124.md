@@ -16,13 +16,13 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 The latest release from the IPFS protocol is here, and with it, go-ipfs 0.8.0 brings the ability to ask remote services to pin data for you! Other features include remote MFS pinning, faster pinning, and help for DNSLink names on https:// subdomains.
 
-[Read more](https://blog.ipfs.io/2021-02-19-go-ipfs-0-8-0/)
+[Read more](https://blog.ipfs.eth.link/2021-02-19-go-ipfs-0-8-0/)
 
 ## NEW: libp2p comes to ProtoSchool
 
 The best place to learn about decentralized technology, ProtoSchool, has recently added lip2p to their curriculum. Now learners can participate in code-free tutorials, intros to dweb concepts, hands-on coding challenging and more!
 
-[Read more](https://blog.ipfs.io/2021-02-17-libp2p-comes-to-protoschool/)
+[Read more](https://blog.ipfs.eth.link/2021-02-17-libp2p-comes-to-protoschool/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TM7aW0NFOJM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

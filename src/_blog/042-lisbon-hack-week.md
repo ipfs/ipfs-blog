@@ -15,7 +15,7 @@ In the week of May 21, 2018, we hosted one more Hack Week in the sunny city of L
 
 The week was great for core developers, contributors and researchers to spend quality time together and work in a fast paced synchronous format towards solving concrete problems. It was incredible to see ideas and solutions flourishing for open problems we've been thinking for a while. The hacker spirit was strong throughout the entire week, culminating in a "Show Me What You Got" presentation to report back on decisions and demos.
 
-The majority of discussions and collaborations were around IPFS, libp2p and applications built on top of them, but we also hosted a [CRDT Research meetup](https://blog.ipfs.io/67-crdt-research-meetup) on the second day - check out the video playlist [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTVkko1ZTn-qcGb-n6EqHff).
+The majority of discussions and collaborations were around IPFS, libp2p and applications built on top of them, but we also hosted a [CRDT Research meetup](https://blog.ipfs.eth.link/67-crdt-research-meetup) on the second day - check out the video playlist [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTVkko1ZTn-qcGb-n6EqHff).
 
 Didn't have a chance to attend? No worries, we got your back. Many of the report-back presentations were recorded so that you can learn about what got developed, designed and decided. We have compiled them into a [YouTube playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR1hDEAKYXtUguNBkg2qceQ) for your viewing pleasure. You can see them all here:
 

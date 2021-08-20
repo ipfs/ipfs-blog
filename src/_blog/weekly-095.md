@@ -18,13 +18,13 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Late last week, go-ipfs 0.6.0 arrived, bringing with it the QUIC transport, the Noise Security Transport, the ability to customize 404 pages, Gossipsub upgraded to v1.1, and many bugfixes.
 
-[Read the release notes](https://blog.ipfs.io/2020-06-26-go-ipfs-0-6-0/)
+[Read the release notes](https://blog.ipfs.eth.link/2020-06-26-go-ipfs-0-6-0/)
 
 ## NEW: IPFS Mobile Design guidelines
 
 Researcher Jim Kosem shared his findings and recommendations after extensive work examining mobile user patterns in P2P activities and how browsers influence these.
 
-[Read the full post](https://blog.ipfs.io/2020-06-25-ipfs-mobile-design-guidelines/)
+[Read the full post](https://blog.ipfs.eth.link/2020-06-25-ipfs-mobile-design-guidelines/)
 
 ## Tell us your journey exploring the IPFS ecosystem
 

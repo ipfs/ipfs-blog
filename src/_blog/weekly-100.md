@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Soon, support for the SECIO security transport in IPFS and libp2p will be removed. You can mitigate impact to your node(s) by updating to the latest versions.
 
-[Read the blog](https://blog.ipfs.io/2020-08-07-deprecating-secio/)
+[Read the blog](https://blog.ipfs.eth.link/2020-08-07-deprecating-secio/)
 
 ## Join us at the Randomness Summit Thursday
 

@@ -23,7 +23,7 @@ Read on for the full details!
 
 ## 🤝 Share a node between browser tabs
 
-An IPFS node makes lots of connections to other nodes on the network, and more so since [delegate nodes were turned on by default](https://blog.ipfs.io/2020-07-20-js-ipfs-0-48/). This is to ensure you have the greatest chance of finding content on the network, and so other people have the greatest chance of finding your content on the network.
+An IPFS node makes lots of connections to other nodes on the network, and more so since [delegate nodes were turned on by default](https://blog.ipfs.eth.link/2020-07-20-js-ipfs-0-48/). This is to ensure you have the greatest chance of finding content on the network, and so other people have the greatest chance of finding your content on the network.
 
 This does not come without a price though, maintaining multiple connections can be resource-intensive and in some cases the browser will limit the number of concurrent connections you can have have.
 

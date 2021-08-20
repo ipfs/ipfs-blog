@@ -18,7 +18,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## IPFS in Opera for Android
 
-IPFS support in the Opera web browser has been in development for some time. Today, Opera for Android 57 is live in the Google Play Store with default support for IPFS! [Read all about it on the IPFS blog](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
+IPFS support in the Opera web browser has been in development for some time. Today, Opera for Android 57 is live in the Google Play Store with default support for IPFS! [Read all about it on the IPFS blog](https://blog.ipfs.eth.link/2020-03-30-ipfs-in-opera-for-android/).
 
 ## Using IPFS to fight COVID-19
 

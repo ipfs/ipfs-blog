@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### IPFS Camp course videos released 🍿
 
-If you’ve been following the updates from IPFS Camp you’ve likely already explored the videos from the lightning talks, deep dives, and poster projects, but now the videos from [IPFS Camp’s core and elective courses have been released](https://blog.ipfs.io/2019-09-18-ipfs-camp-course-videos/)!
+If you’ve been following the updates from IPFS Camp you’ve likely already explored the videos from the lightning talks, deep dives, and poster projects, but now the videos from [IPFS Camp’s core and elective courses have been released](https://blog.ipfs.eth.link/2019-09-18-ipfs-camp-course-videos/)!
 
 ### IPFS Cluster v0.11.0 is out!
 

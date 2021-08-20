@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 The IPFS Community was at ETHDenver 2021 in full force: from presentations to bounties, help desks and virtual hangs, and our favorite—new projects! We are very excited to show you the cool things folks built with IPFS, so we’ll be featuring them in upcoming issues. For a full recap, head to the IPFS blog.
 
-[Read more](https://blog.ipfs.io/2021-02-26-ipfs-at-ethdenver/)
+[Read more](https://blog.ipfs.eth.link/2021-02-26-ipfs-at-ethdenver/)
 
 ## Introducing Super Rinkeby
 

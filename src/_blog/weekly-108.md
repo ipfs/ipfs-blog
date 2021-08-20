@@ -21,13 +21,13 @@ What a long, strange trip the past few months have been. We are so grateful for 
 
 ## Jumping right into July
 
-New quarter, new project! We kicked this one off with an introduction to the [IPFS Case Study Series](https://blog.ipfs.io/2020-07-09-case-study-audius/)! Includes features on Fleek, Arbol, Audius, and more.
+New quarter, new project! We kicked this one off with an introduction to the [IPFS Case Study Series](https://blog.ipfs.eth.link/2020-07-09-case-study-audius/)! Includes features on Fleek, Arbol, Audius, and more.
 
-Libp2p and ResNetLab teamed up to ship a comprehensive, 61-page [evaluation report on Gossipsub](https://blog.ipfs.io/gossipsubv1.1-eval-report-and-security-audit/), in which you can learn how they approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions taken from the evaluation.
+Libp2p and ResNetLab teamed up to ship a comprehensive, 61-page [evaluation report on Gossipsub](https://blog.ipfs.eth.link/gossipsubv1.1-eval-report-and-security-audit/), in which you can learn how they approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions taken from the evaluation.
 
-The [js-ipfs 0.48.0 release](https://blog.ipfs.io/2020-07-20-js-ipfs-0-48/) included much better default connectivity, a smaller blockstore, a more intuitive API, and loads of new features and bugfixes.
+The [js-ipfs 0.48.0 release](https://blog.ipfs.eth.link/2020-07-20-js-ipfs-0-48/) included much better default connectivity, a smaller blockstore, a more intuitive API, and loads of new features and bugfixes.
 
-This [content routing deep dive](https://blog.ipfs.io/2020-07-20-dht-deep-dive/) from the 0.5 release covered everything you wanted to know about how DHTs work, and how we made the implementation used by IPFS faster and more resilient.
+This [content routing deep dive](https://blog.ipfs.eth.link/2020-07-20-dht-deep-dive/) from the 0.5 release covered everything you wanted to know about how DHTs work, and how we made the implementation used by IPFS faster and more resilient.
 
 [ProtoSchool created new dweb courses](https://proto.school/#/tutorials?course=ipfs) from the many tutorials they offer. Peruse courses on IPFS, Filecoin, Multiformats, and more with updated content from the latest releases.
 
@@ -35,9 +35,9 @@ Oli Evans created a way to [pin your site to IPFS from a GitHub Action](https://
 
 ## And, another month, August
 
-We announced [deprecation of the SECIO security transport](https://blog.ipfs.io/2020-08-07-deprecating-secio/) in favor of the Noise security transport.
+We announced [deprecation of the SECIO security transport](https://blog.ipfs.eth.link/2020-08-07-deprecating-secio/) in favor of the Noise security transport.
 
-[Our August virtual meetup](https://blog.ipfs.io/2020-08-14-ipfs-meetup-aug2020/) hosted talks from Unstoppable Domains, the builders of Koda the Robot Dog, Ceramic, and more.
+[Our August virtual meetup](https://blog.ipfs.eth.link/2020-08-14-ipfs-meetup-aug2020/) hosted talks from Unstoppable Domains, the builders of Koda the Robot Dog, Ceramic, and more.
 
 The virtual hackathon, [HackFS wrapped up](https://hack.ethglobal.co/hackfs/showcase), showcasing 135+ projects built with IPFS and Filecoin.
 
@@ -51,11 +51,11 @@ The Filecoin team started hosting [a series of Master Classes](https://www.youtu
 
 ## Staying the course in September
 
-Obsidian Systems began their efforts to [add support for IPFS to Nix](https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/), a package manager (but at its heart a general-purpose build tool), so that build products can be persisted to and fetched from IPFS.
+Obsidian Systems began their efforts to [add support for IPFS to Nix](https://blog.ipfs.eth.link/2020-09-08-nix-ipfs-milestone-1/), a package manager (but at its heart a general-purpose build tool), so that build products can be persisted to and fetched from IPFS.
 
-[js-ipfs officially reached version 0.50.0](https://blog.ipfs.io/2020-09-14-js-ipfs-0-50/), adding the ability to share a node between multiple browser tabs and greatly improved pinning performance.
+[js-ipfs officially reached version 0.50.0](https://blog.ipfs.eth.link/2020-09-14-js-ipfs-0-50/), adding the ability to share a node between multiple browser tabs and greatly improved pinning performance.
 
-In September we had the creators of IPFS Recovery, a HackFS project, and an update from the go-ipfs maintainers speak at our [monthly virtual community meetup](https://blog.ipfs.io/2020-09-18-ipfs-meetup-sep2020/).
+In September we had the creators of IPFS Recovery, a HackFS project, and an update from the go-ipfs maintainers speak at our [monthly virtual community meetup](https://blog.ipfs.eth.link/2020-09-18-ipfs-meetup-sep2020/).
 
 Our pals at Peergos were awarded a €200,000 grant by the [Next Generation Internet Program for Open Internet Renovation](https://peergos.org/posts/next-generation-internet) (NGI-POINTER).
 
@@ -67,7 +67,7 @@ The podcast [Proof of Usability](https://anchor.fm/z-herring/episodes/Protocols-
 
 You can now search all of the [podcasts available to stream on IPFS](https://pod.casts.io/ipfs), courtesy of Pod.casts.io and Andrew Nesbitt.
 
-The latest iteration of [go-IPFS, v0.7.0](https://blog.ipfs.io/2020-09-24-go-ipfs-0-7-0/), landed and with it, the deprecation of SECIO, updates to IPNS paths, and some important plugin build changes. 🎉
+The latest iteration of [go-IPFS, v0.7.0](https://blog.ipfs.eth.link/2020-09-24-go-ipfs-0-7-0/), landed and with it, the deprecation of SECIO, updates to IPNS paths, and some important plugin build changes. 🎉
 
 ## Also new this quarter...
 

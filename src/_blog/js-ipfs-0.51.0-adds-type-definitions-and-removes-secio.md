@@ -31,7 +31,7 @@ Going forward all new code will be required to have types so to help contributor
 
 ## SECIO Removal
 
-The [deprecated](https://blog.ipfs.io/2020-08-07-deprecating-secio/) security transport [SECIO](https://github.com/libp2p/specs/blob/master/secio/README.md) has finally been removed in `js-IPFS@0.51.0`. It's successor, [Noise](https://github.com/libp2p/specs/blob/master/noise/README.md) was first released with `js-IPFS@0.47.0` and is now the default security transport used by libp2p.
+The [deprecated](https://blog.ipfs.eth.link/2020-08-07-deprecating-secio/) security transport [SECIO](https://github.com/libp2p/specs/blob/master/secio/README.md) has finally been removed in `js-IPFS@0.51.0`. It's successor, [Noise](https://github.com/libp2p/specs/blob/master/noise/README.md) was first released with `js-IPFS@0.47.0` and is now the default security transport used by libp2p.
 
 `go-IPFS@0.7.0` recently also removed SECIO support after introducing Noise in `go-IPFS@0.6.0`, which means `js-IPFS@0.51.0` and `go-IPFS@0.7.0` can only talk to other nodes running `go-IPFS@0.6.0` or `js-IPFS@0.47.0` or later.
 

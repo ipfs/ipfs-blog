@@ -45,7 +45,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [js-libp2p 0.24.0 was released!](https://blog.ipfs.io/55-js-libp2p-0-24/) The best part? They added support for custom routers, turned relay on by default and threw in some extra goodies and improvements. Check it out!
+- [js-libp2p 0.24.0 was released!](https://blog.ipfs.eth.link/55-js-libp2p-0-24/) The best part? They added support for custom routers, turned relay on by default and threw in some extra goodies and improvements. Check it out!
 
 ## Tools and projects we <3
 

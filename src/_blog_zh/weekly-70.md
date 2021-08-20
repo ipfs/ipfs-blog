@@ -23,7 +23,7 @@ tags:
 ### js-ipfs 0.40.0 发布啦 🎉
 
 朋友们，好消息！现在，新版本的 js-ipfs 附带了一个 repo 迁移工具，该工具将自动在浏览器中迁移 repo。
-[阅读完整的发布文章](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)以了解更多信息！
+[阅读完整的发布文章](https://blog.ipfs.eth.link/2019-12-02-js-ipfs-0-40/)以了解更多信息！
 
 ### “每周日简单技能”期间 IPFS 上的 GeoHot 黑客
 

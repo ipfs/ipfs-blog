@@ -16,7 +16,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## Coming soon to a core API near you, the async/await refactor
 
-Read all about [the ongoing refactor](https://blog.ipfs.io/2020-02-01-async-await-refactor/) in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove Node.js streams and pull streams from the code base entirely. Consider this your early warning that the releases of these next two modules will have BIG breaking changes. 🤯
+Read all about [the ongoing refactor](https://blog.ipfs.eth.link/2020-02-01-async-await-refactor/) in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove Node.js streams and pull streams from the code base entirely. Consider this your early warning that the releases of these next two modules will have BIG breaking changes. 🤯
 
 ## Top 5 recent highlights
 

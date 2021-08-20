@@ -19,7 +19,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Earlier this week, during a panel with Opera, Unstoppable Domains, and IPFS at ETHDenver 2021, Opera announced the addition of IPFS support in their mobile browser, Opera Touch. This release marks another important milestone in both the partnership with Opera and IPFS gaining recognition in mainstream browsers.
 
-[Read more](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/)
+[Read more](https://blog.ipfs.eth.link/2021-02-08-opera-ios-and-ipfs/)
 
 ## Hang out with the IPFS community in 2 weeks
 

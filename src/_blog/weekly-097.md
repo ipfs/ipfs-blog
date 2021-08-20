@@ -24,7 +24,7 @@ ProtoSchool has created new dweb courses from the many tutorials they offer. Per
 
 Get ready for a monster post that truly dives deep into the ins and outs of the go-ipfs DHT implementation. If you want to learn a thing or two about how DHTs work, and how we made the implementation used by IPFS faster and more resilient, read on!
 
-[Take a deep dive](https://blog.ipfs.io/2020-07-20-dht-deep-dive/)
+[Take a deep dive](https://blog.ipfs.eth.link/2020-07-20-dht-deep-dive/)
 
 ## Quote of the week
 
@@ -34,13 +34,13 @@ Get ready for a monster post that truly dives deep into the ins and outs of the 
 
 The latest iteration of the JavaScript implementation of your favorite protocol has now reached v0.48.0! This release includes much better default connectivity, a smaller blockstore, a more intuitive API, and loads of new features and bugfixes.
 
-[Read the release notes now](https://blog.ipfs.io/2020-07-20-js-ipfs-0-48/)
+[Read the release notes now](https://blog.ipfs.eth.link/2020-07-20-js-ipfs-0-48/)
 
 ## Brand new on IPFS
 
 - [TikTok was taken down last week](https://decrypt.co/35343/how-ipfs-can-skirt-chinas-grip-on-hong-kong) in Hong Kong. But there could be a solution with IPFS.
 - [Bitsearch](https://bitsear.ch/) is a new search engine for the decentralized web by the team from ViewBlock.
-- [IPFS x Audius: A story of harmony.](https://blog.ipfs.io/2020-07-09-case-study-audius/) Read the first edition of the IPFS Case Study Series.
+- [IPFS x Audius: A story of harmony.](https://blog.ipfs.eth.link/2020-07-09-case-study-audius/) Read the first edition of the IPFS Case Study Series.
 - The latest version of [IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.14.0) just hit the extension stores, and it’s pretty spiffy!
 
 ## People build the coolest stuff with IPFS

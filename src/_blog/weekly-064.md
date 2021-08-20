@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### See IPFS Camp Keynotes and Interviews
 
-We’re excited to share [the Keynotes that brought us together on our first and last days of IPFS Camp](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/), and the Community Interviews that highlight some of the amazing work being done by IPFS Camp attendees in the wider ecosystem.
+We’re excited to share [the Keynotes that brought us together on our first and last days of IPFS Camp](https://blog.ipfs.eth.link/2019-10-14-ipfs-camp-keynotes-interviews/), and the Community Interviews that highlight some of the amazing work being done by IPFS Camp attendees in the wider ecosystem.
 
 ### WATCH: IPFS Basics Night with ProtoSchool Denver
 

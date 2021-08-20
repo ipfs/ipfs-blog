@@ -42,7 +42,7 @@ We identified core areas that current mobile P2P apps all share:
 - Confirmations of completed actions and transfers
 - User education
 
-A summary of our research findings is available in [this earlier post](https://blog.ipfs.io/2020-04-24-ipfs-mobile-design-research-findings/).
+A summary of our research findings is available in [this earlier post](https://blog.ipfs.eth.link/2020-04-24-ipfs-mobile-design-research-findings/).
 
 ## Design
 

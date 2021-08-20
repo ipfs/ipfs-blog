@@ -22,7 +22,7 @@ tags:
 
 ### IPFS 浏览器进度更新
 
-我们正在取得进展！我们想分享一下 IPFS 项目正在进行的一些合作，这使我们进一步接近无中介的信息访问…… 通过解决“最后一英里”问题并将 [IPFS 直接集成到网络浏览器](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) 。
+我们正在取得进展！我们想分享一下 IPFS 项目正在进行的一些合作，这使我们进一步接近无中介的信息访问…… 通过解决“最后一英里”问题并将 [IPFS 直接集成到网络浏览器](https://blog.ipfs.eth.link/2019-10-08-ipfs-browsers-update/) 。
 
 ### Storj 网络上现已提供 IPFS
 

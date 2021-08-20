@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## The latest
 
 - This weekend the IPFS Community will be at [FOSDEM 2019](https://github.com/ipfs/community/issues/378#issuecomment-458439399), will you? [Follow this issue](https://github.com/ipfs/community/issues/378#issuecomment-458439399) for updates on an IPFS Meetup at the event.
-- David Dias wrote up a fantastic [2018 Q4 London Hack Week Summary](https://blog.ipfs.io/65-london-hack-week-report/) on the IPFS blog last week. Read the full recap for photos, details about the community show and tell, and more.
+- David Dias wrote up a fantastic [2018 Q4 London Hack Week Summary](https://blog.ipfs.eth.link/65-london-hack-week-report/) on the IPFS blog last week. Read the full recap for photos, details about the community show and tell, and more.
 - [ProtoSchool](https://proto.school/#/chapters) is off and running. There are now eight local chapters across three continents! Check it out!
 
 ## Meet Paula de la Hoz

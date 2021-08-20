@@ -25,7 +25,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Explore the Files API in a new tutorial on ProtoSchool
 
-Last week, a brand new ProtoSchool tutorial exploring the Regular Files API was launched, built by the awesome Gil Domingues. 🎉 Read [the full blog announcement](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/) for more details.
+Last week, a brand new ProtoSchool tutorial exploring the Regular Files API was launched, built by the awesome Gil Domingues. 🎉 Read [the full blog announcement](https://blog.ipfs.eth.link/2019-11-06-explore-the-files-api-on-protoschool/) for more details.
 
 ### See the new themes being proposed during our 2020 project planning
 

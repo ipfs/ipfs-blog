@@ -27,7 +27,7 @@ Here are some ways people in the dweb space are responding to the COVID-19 pande
 
 ## Top highlights this week
 
-- **2 NEW LANGUAGES join the IPFS ecosystem!** Learn about [Rust IPFS](https://blog.ipfs.io/2020-03-18-announcing-rust-ipfs/), and check out their call for contributors. [Wolfram Lang also added IPFS support](https://writings.stephenwolfram.com/2020/03/in-less-than-a-year-so-much-new-launching-version-12-1-of-wolfram-language-mathematica/#external-connectivity), which is a huge win for making manipulation over distributed datasets much easier.
+- **2 NEW LANGUAGES join the IPFS ecosystem!** Learn about [Rust IPFS](https://blog.ipfs.eth.link/2020-03-18-announcing-rust-ipfs/), and check out their call for contributors. [Wolfram Lang also added IPFS support](https://writings.stephenwolfram.com/2020/03/in-less-than-a-year-so-much-new-launching-version-12-1-of-wolfram-language-mathematica/#external-connectivity), which is a huge win for making manipulation over distributed datasets much easier.
 - **NEW RELEASE:** Testground, although still experimental, is making headway in [its latest release](https://github.com/ipfs/testground/releases/tag/v0.3.0) focused on observability and robustness.
 - **NEW TUTORIAL:** [Nim-libp2p Tutorial: A Peer-to-Peer Chat Example 1](https://our.status.im/nim-libp2p-tutorial-chat/)
 - Did you want a list of all the ietf RFCs available on IPFS? Well, [here you go](https://gateway.temporal.cloud/ipfs/QmbmXg966neztdEh7G7cDd44R7V7StnTFvjPkKMWe7QCZJ)!

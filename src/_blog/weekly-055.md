@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Improving the IPFS Release Process
 
-go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases! Check out the [IPFS blog for more details](https://blog.ipfs.io/2019-08-14-ipfs-release-process/).
+go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases! Check out the [IPFS blog for more details](https://blog.ipfs.eth.link/2019-08-14-ipfs-release-process/).
 
 ### The IPFS/libP2P Help Desk is coming to ETHBerlin!
 
@@ -32,7 +32,7 @@ To help developers quickly hop over hurdles and get back to building awesome hac
 
 ### go-ipfs 0.4.22 released 📣
 
-You’re going to want to check out the recently [released PATCH version of go-ipfs](https://blog.ipfs.io/054-go-ipfs-0.4.22) based on 0.4.21 containing some critical fixes.
+You’re going to want to check out the recently [released PATCH version of go-ipfs](https://blog.ipfs.eth.link/054-go-ipfs-0.4.22) based on 0.4.21 containing some critical fixes.
 
 ## IPFS in the wild
 

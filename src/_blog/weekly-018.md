@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Read more about [the release of go-ipfs 0.4.18](https://blog.ipfs.io/53-go-ipfs-0-4-18/), including details on the Experimental QUIC support!
+- Read more about [the release of go-ipfs 0.4.18](https://blog.ipfs.eth.link/53-go-ipfs-0-4-18/), including details on the Experimental QUIC support!
 - Have you watched the [Lab Day 2018 videos](https://www.youtube.com/channel/UCJvMzILpV3b4AWXTEeQjcng/videos) yet? If you missed the August event, catch up on all the great talks now.
 - In case you missed it, the IPLD community has a [bi-weekly meeting to sync up on all IPLD related topics](https://www.youtube.com/watch?v=DFo4jtIEz_w&feature=youtu.be). It’s open for everyone and recorded. Check it out!
 - Check out [this recap of the Decentralized Web Summit](https://ws-dl.blogspot.com/2018/11/2018-11-08-decentralized-web-summit.html), titled Shaping the Next Web by Sawood Alam, for a behind the scenes look at the Summit and IPFS Lab Day.

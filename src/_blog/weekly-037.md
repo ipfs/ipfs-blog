@@ -20,11 +20,11 @@ _As far as shipping goes, yeah we did that._
 
 ### Introducing ProtoSchool
 
-In January, we announced [the ProtoSchool project](https://blog.ipfs.io/63-ipfs-weekly-25/), aimed at bringing education teaching decentralized web protocols and tools through online tutorials and local chapter events to folks across the web. So far there are SIXTEEN chapters worldwide!
+In January, we announced [the ProtoSchool project](https://blog.ipfs.eth.link/63-ipfs-weekly-25/), aimed at bringing education teaching decentralized web protocols and tools through online tutorials and local chapter events to folks across the web. So far there are SIXTEEN chapters worldwide!
 
 ### js-ipfs 0.34.0 released
 
-[This release of the JavaScript implementation of IPFS](https://blog.ipfs.io/64-js-ipfs-0-34/) has it all: reading Protobuf DAG nodes became super fast, adding content became “blazingly” fast, HAMT support was added to MFS, added IPNS over pubsub and DHT, plus dep upgrades, API changes and more!
+[This release of the JavaScript implementation of IPFS](https://blog.ipfs.eth.link/64-js-ipfs-0-34/) has it all: reading Protobuf DAG nodes became super fast, adding content became “blazingly” fast, HAMT support was added to MFS, added IPNS over pubsub and DHT, plus dep upgrades, API changes and more!
 
 ### ipfs.io has implementations _and_ integrations now
 
@@ -32,7 +32,7 @@ Speaking of _implementations_ [the official IPFS website](https://ipfs.io/#imple
 
 ### Announcing the 1st ever 🌌 IPFS Camp
 
-We hope you join us for [a three day hacker retreat for the builders of the Distributed Web](https://blog.ipfs.io/72-ann-ipfs-camp/) that will happen between June 27th to 30th, also known as the first ever [IPFS Camp](https://camp.ipfs.io/)! Register now to join us.
+We hope you join us for [a three day hacker retreat for the builders of the Distributed Web](https://blog.ipfs.eth.link/72-ann-ipfs-camp/) that will happen between June 27th to 30th, also known as the first ever [IPFS Camp](https://camp.ipfs.io/)! Register now to join us.
 
 ### 🎉go-ipfs 0.4.19 arrived🎉
 
@@ -58,7 +58,7 @@ _What better way to catch up on Q1 than by the videos that have helped the commu
 - [In Depth Introduction to IPFS](https://www.youtube.com/watch?v=GJ2980DWdyc) - Polycode
 - [Robot-as-a-service experiment: ROS + IPFS + Ethereum](https://www.youtube.com/watch?v=-GgnykaVWeQ) - by Sergei Lonshakov
 - [IPFS Hands-On Tutorial](https://www.youtube.com/watch?v=KIEq2FyMczs) - Polycode
-- [CRDT Video playlist](https://blog.ipfs.io/67-crdt-research-meetup/) - curated by Protocol Labs
+- [CRDT Video playlist](https://blog.ipfs.eth.link/67-crdt-research-meetup/) - curated by Protocol Labs
 - [How Merkle Trees Enable the Decentralized Web!](https://www.youtube.com/watch?v=YIc6MNfv5iQ) - by Tara Vancil
 
 ## Q1 by the names and numbers
@@ -240,7 +240,7 @@ Once again, thanks for all of your hard work and contributions in Q1. Keep up th
 
 ## Coming up in 2019
 
-In case you missed it, we recently presented [The 2019 IPFS Roadmap](https://blog.ipfs.io/78-ipfs-2019-roadmap/), which introduces a brand new mission statement, as well as 16 goals for the project. Discover those goals plus the 2019 Epics (what does _that_ mean?) in [Achievement Unlocked: The 2019 IPFS Roadmap!](https://blog.ipfs.io/78-ipfs-2019-roadmap/)
+In case you missed it, we recently presented [The 2019 IPFS Roadmap](https://blog.ipfs.eth.link/78-ipfs-2019-roadmap/), which introduces a brand new mission statement, as well as 16 goals for the project. Discover those goals plus the 2019 Epics (what does _that_ mean?) in [Achievement Unlocked: The 2019 IPFS Roadmap!](https://blog.ipfs.eth.link/78-ipfs-2019-roadmap/)
 
 We would also be remiss if we didn’t share that ENS + IPFS are coming to [the Brave browser!](https://twitter.com/ensdomains/status/1105565560224563202) Very exciting stuff for the start of 2019.
 

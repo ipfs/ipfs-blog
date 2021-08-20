@@ -20,7 +20,7 @@ tags:
 
 JS IPFS has traditionally primarily targeted the browser, and the browser is a bad place to be if you want to be on the [DHT][]. You typically aren't on a page long enough to make or respond to [DHT][] queries, nor are you diallable, so even if you were able to advertise yourself as a provider for a given block, the chances are no-one can connect to you to retrieve that block which results in a degraded service for everyone. Worse, the way you find more peers and content is via the [DHT][] so you're kind of stuck.
 
-There are several ways to give in-browser IPFS nodes a better experience on the network, one of those is [Delegate Nodes](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/#delegated-peer-and-content-routing). A Delegate Node is a network peer that performs certain actions on behalf of other nodes on the network. In this case it will make [DHT][] queries on our behalf so we can find more peers and more content than ever before.
+There are several ways to give in-browser IPFS nodes a better experience on the network, one of those is [Delegate Nodes](https://blog.ipfs.eth.link/2019-08-06-js-ipfs-0-37/#delegated-peer-and-content-routing). A Delegate Node is a network peer that performs certain actions on behalf of other nodes on the network. In this case it will make [DHT][] queries on our behalf so we can find more peers and more content than ever before.
 
 `js-IPFS@0.48.0` enables delegate nodes in the configuration by default, which means you should see far more peers than you have previously and be able to find content faster and more reliably.
 
@@ -28,7 +28,7 @@ By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/
 
 ## 🏓 DHT configuration
 
-The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPFS 0.5](https://blog.ipfs.io/2020-05-19-road-to-dht/) will not arrive until later this year, but for the time being you can run the experimental [DHT][] implementation. This implementation is incomplete so some features may not work as intended but you should be able to use it to resolve content and find peers though there may be some performance degredation on your node over time.
+The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPFS 0.5](https://blog.ipfs.eth.link/2020-05-19-road-to-dht/) will not arrive until later this year, but for the time being you can run the experimental [DHT][] implementation. This implementation is incomplete so some features may not work as intended but you should be able to use it to resolve content and find peers though there may be some performance degredation on your node over time.
 
 You can enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
 
@@ -147,7 +147,7 @@ for await (const file of ipfs.addAll(files)) {
 
 ### APIs with optional arguments
 
-Recently we [released a change](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/#cancellable-requests) that allowed passing [AbortSignal][]s to all API methods. This necessitated adding an `options` object to every API call that didn't have one already. This left us in the weird situation where some arguments were optional, but were not in the options argument. Worse, the actions of some API calls changed dramatically depending on whether you passed an option or not. For example `ipfs.bootstrap.rm([multiaddr])` would completely empty the bootstrap list if you didn't pass a [Multiaddr][].
+Recently we [released a change](https://blog.ipfs.eth.link/2020-05-21-js-ipfs-0-44/#cancellable-requests) that allowed passing [AbortSignal][]s to all API methods. This necessitated adding an `options` object to every API call that didn't have one already. This left us in the weird situation where some arguments were optional, but were not in the options argument. Worse, the actions of some API calls changed dramatically depending on whether you passed an option or not. For example `ipfs.bootstrap.rm([multiaddr])` would completely empty the bootstrap list if you didn't pass a [Multiaddr][].
 
 All this leads to weird behaviour and subtle bugs when you pass things like `undefined` in for an optional arg position and don't pass an options argument, as well as knotty, error-prone internal code that tries to guess what you passed based on type or properties of the objects where their types are the same.
 

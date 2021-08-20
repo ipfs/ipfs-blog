@@ -23,7 +23,7 @@ tags:
 
 ### 在 ProtoSchool 的新教程中探索 Files API
 
-上周，由著名的 Gil Domingues 建立了全新的 ProtoSchool 教程，探讨了 Regular Files API。 🎉 请阅读[完整的博客公告](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/)以获取更多详细信息。
+上周，由著名的 Gil Domingues 建立了全新的 ProtoSchool 教程，探讨了 Regular Files API。 🎉 请阅读[完整的博客公告](https://blog.ipfs.eth.link/2019-11-06-explore-the-files-api-on-protoschool/)以获取更多详细信息。
 
 ### 查看我们 2020 年项目规划中提出的新主题
 

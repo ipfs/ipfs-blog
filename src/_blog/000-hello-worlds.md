@@ -23,11 +23,11 @@ This post kicks off the official IPFS (InterPlanetary File System) Blog. This is
 
 You can't _yet_ "follow" the blog with ipfs, but we're working on it and expect to have it working soon. For now, you can follow one of these ways:
 
-- HTTP: https://blog.ipfs.io
+- HTTP: https://blog.ipfs.eth.link
 - Git: `git clone https://github.com/ipfs/blog`
 - GitHub: click watch at https://github.com/ipfs/blog
-- RSS: [follow RSS Feed](https://blog.ipfs.io/index.xml)
-- IPFS: https://gateway.ipfs.io/ipns/blog.ipfs.io
+- RSS: [follow RSS Feed](https://blog.ipfs.eth.link/index.xml)
+- IPFS: https://gateway.ipfs.io/ipns/blog.ipfs.eth.link
 
 Don't miss any InterPlanetary updates!
 

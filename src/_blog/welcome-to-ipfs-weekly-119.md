@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Announcing the integration of IPFS in the Brave browser, completing the vision of a native distributed web experience in a modern web browser. This is a first for browsers and a huge step towards true user agency on the web. 🎉
 
-[Read more](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)
+[Read more](https://blog.ipfs.eth.link/2021-01-19-ipfs-in-brave/)
 
 ## Join us Friday for our January meetup!
 
@@ -42,7 +42,7 @@ What was once a single lesson on data structures is now a meaty multiple-choice 
 
 ## Brand new on IPFS
 
-- [js-ipfs 0.53](https://blog.ipfs.io/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
+- [js-ipfs 0.53](https://blog.ipfs.eth.link/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
 - Answering the question “Is [Berty](https://berty.tech/blog/blockchain-berty/) based on blockchain?” because in some cases yes, but others no.
 - It’s that time of year again, except this time [Textile](https://blog.textile.io/textile-going-virtual-at-ethdenver/) going virtual with EthDenver.
 - The [Beyond Bitswap project](https://research.protocol.ai/blog/2021/beyond-swapping-bits-project-review-and-preview/) review has launched and released a new Bitswap paper!

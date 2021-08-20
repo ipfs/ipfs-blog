@@ -16,7 +16,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## Testground is here!
 
-[Introducing Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), a tool dedicated to testing, simulating, benchmarking P2P and distributed systems at scale. This is a huge milestone for the distributed web, and for the wider p2p ecosystem. Discover what Testground is, how to get started, what’s coming next, and the backstory behind it on the IPFS blog.
+[Introducing Testground v0.5](https://blog.ipfs.eth.link/2020-05-06-launching-testground/), a tool dedicated to testing, simulating, benchmarking P2P and distributed systems at scale. This is a huge milestone for the distributed web, and for the wider p2p ecosystem. Discover what Testground is, how to get started, what’s coming next, and the backstory behind it on the IPFS blog.
 
 ## How do you use IPFS GUI Tools?
 

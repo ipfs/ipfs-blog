@@ -55,7 +55,7 @@ QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o
 uAXASIEbUSBS5xa8UHDqqt8BdxehE6tX5HxKFiwIeukV2i0wO
 ```
 
-This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a [read of this for more](https://blog.ipfs.io/53-go-ipfs-0-4-18/#cidv1-base32-migration).
+This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a [read of this for more](https://blog.ipfs.eth.link/53-go-ipfs-0-4-18/#cidv1-base32-migration).
 
 To help you craft your artisanal CIDs we've introduced a `--cid-base` option to a bunch of CLI commands (and `?cid-base` option to a bunch of HTTP API endpoints). Check it out:
 
@@ -66,7 +66,7 @@ added bafybeibns4lrebrxaymvyshgmki5biwh6cd53idxfpen6ysomzrywtsm44 file.txt
 
 ## 💪 Deps got upgrades!
 
-We got you covered with [WebUI 2.3](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.2.0) (quic support, responsive navbar, and a language selector), [libp2p 0.24](https://blog.ipfs.io/55-js-libp2p-0-24/) and many other upgrades giving you a faster and smaller JS IPFS.
+We got you covered with [WebUI 2.3](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.2.0) (quic support, responsive navbar, and a language selector), [libp2p 0.24](https://blog.ipfs.eth.link/55-js-libp2p-0-24/) and many other upgrades giving you a faster and smaller JS IPFS.
 
 # 🏗 API Changes
 

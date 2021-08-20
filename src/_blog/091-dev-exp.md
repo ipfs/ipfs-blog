@@ -9,11 +9,11 @@ tags:
   - 'community'
 ---
 
-Since its founding in 2014, the IPFS project has been stewarded by the [core IPFS working groups](https://github.com/ipfs/team-mgmt/blob/master/TEAMS_ROLES_STRUCTURES.md#active-teams), including developers, designers, researchers and project managers that work very hard towards its [success](https://blog.ipfs.io/weekly-84/).
+Since its founding in 2014, the IPFS project has been stewarded by the [core IPFS working groups](https://github.com/ipfs/team-mgmt/blob/master/TEAMS_ROLES_STRUCTURES.md#active-teams), including developers, designers, researchers and project managers that work very hard towards its [success](https://blog.ipfs.eth.link/weekly-84/).
 
 However, this success would be impossible without the participation of the open source community that has grown around IPFS - with participants from individuals, to nascent community-owned tools, to large organizations. We are lucky to have this thriving and influential community participating in our journey towards decentralization during these years. With their help, we’ve grown IPFS to empower [hundreds of tools, applications and projects](https://awesome.ipfs.io/).
 
-A thriving, growing, and participatory open source community is key to the success of the IPFS project, and continues to be a focus for the core IPFS working groups. We want every user and developer interested in building IPFS applications — or willing to join forces to fix and improve the codebase — to feel welcomed, informed, and empowered by the community. Therefore, as part of our [secondary 2020 focus on contributor velocity and support](https://blog.ipfs.io/2020-02-10-our-focus-for-2020/#increasing-contributor-velocity-supporting-adoption) we will:
+A thriving, growing, and participatory open source community is key to the success of the IPFS project, and continues to be a focus for the core IPFS working groups. We want every user and developer interested in building IPFS applications — or willing to join forces to fix and improve the codebase — to feel welcomed, informed, and empowered by the community. Therefore, as part of our [secondary 2020 focus on contributor velocity and support](https://blog.ipfs.eth.link/2020-02-10-our-focus-for-2020/#increasing-contributor-velocity-supporting-adoption) we will:
 
 - Improve how users and developers get help, reducing response times and improving access to existing information and documentation.
 - Reduce the number of pull requests and issue reports that stay in limbo by giving consistent feedback on status, prioritization and team capacity.

@@ -24,7 +24,7 @@ Next week the IPFS community will be gathering for a virtual meetup on June 17th
 
 The JavaScript implementation of IPFS recently shared their latest progress on the IPFS blog. Goodies include Bitswap 1.2.0, much faster file transfers, and go-ipfs 0.5.x compatibility.
 
-[**Read the release notes**](https://blog.ipfs.io/2020-06-08-js-ipfs-0-46/)
+[**Read the release notes**](https://blog.ipfs.eth.link/2020-06-08-js-ipfs-0-46/)
 
 ## Powering through the API gateway enabling IPFS and Filecoin data management
 

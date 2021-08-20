@@ -21,7 +21,7 @@ tags:
 ## 最新发布
 
 ###改进 IPFS 发布过程
-go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频繁的发布!查看[IPFS 博客了解更多细节](https://blog.ipfs.io/2019-08-14-ipfs-release-process/)。
+go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频繁的发布!查看[IPFS 博客了解更多细节](https://blog.ipfs.eth.link/2019-08-14-ipfs-release-process/)。
 
 ### IPFS/LibP2P 服务台即将来到 ETHBerlin!
 
@@ -29,7 +29,7 @@ go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频
 
 ### go-ipfs 0.4.22 发布 📣
 
-请查看最近发布的基于 0.4.21 的 [go-ipfs PATCH 版本](https://blog.ipfs.io/054-go-ipfs-0.4.22)，其中包含一些关键修补。
+请查看最近发布的基于 0.4.21 的 [go-ipfs PATCH 版本](https://blog.ipfs.eth.link/054-go-ipfs-0.4.22)，其中包含一些关键修补。
 
 ## IPFS 生态圈的动态
 

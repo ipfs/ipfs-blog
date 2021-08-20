@@ -17,19 +17,19 @@ A quick look back at what we accomplished together in the [InterPlanetary File S
 
 ## April, a time for new beginnings 🛳
 
-The [IPFS Mobile Design Research](https://blog.ipfs.io/2020-04-10-ipfs-mobile-design-research/) project kicks off – an initiative to research existing P2P protocol use in mobile apps, and create an informed and research-backed set of design guidelines and best-practices for IPFS.
+The [IPFS Mobile Design Research](https://blog.ipfs.eth.link/2020-04-10-ipfs-mobile-design-research/) project kicks off – an initiative to research existing P2P protocol use in mobile apps, and create an informed and research-backed set of design guidelines and best-practices for IPFS.
 
 ProtoSchool explores the [Async Iterables returned by js-ipfs 0.41](https://school.us4.list-manage.com/track/click?u=41e9e493c56c3865870435d91&id=d160d74ae0&e=28ddac0f86)
 
-[js-ipfs 0.42.0 is released](https://blog.ipfs.io/2020-04-14-js-ipfs-0-42/), bringing automated publish of RCs, updated Docker containers, and more.
+[js-ipfs 0.42.0 is released](https://blog.ipfs.eth.link/2020-04-14-js-ipfs-0-42/), bringing automated publish of RCs, updated Docker containers, and more.
 
-We introduced the [IPFS Grants Platform](https://blog.ipfs.io/2020-04-20-ipfs-grants-platform/) 💻 ➡️ 💰
+We introduced the [IPFS Grants Platform](https://blog.ipfs.eth.link/2020-04-20-ipfs-grants-platform/) 💻 ➡️ 💰
 
 The [IPFS Distributions website](https://dist.ipfs.io/) got a fun IPFS rebrand.
 
 ![New updates to go-ipfs](../assets/090-go-ipfs-0-5-0-header-image.png)
 
-Our largest upgrade to IPFS yet happened with [go-ipfs 0.5](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/)! And, we hosted [a launch meetup](https://www.youtube.com/watch?list=PLuhRWgmPaHtQ26F2MIuogvo0so9QUgH1r&v=RxJSUBeqOKU&feature=emb_log) with community members to share our many updates!
+Our largest upgrade to IPFS yet happened with [go-ipfs 0.5](https://blog.ipfs.eth.link/2020-04-28-go-ipfs-0-5-0/)! And, we hosted [a launch meetup](https://www.youtube.com/watch?list=PLuhRWgmPaHtQ26F2MIuogvo0so9QUgH1r&v=RxJSUBeqOKU&feature=emb_log) with community members to share our many updates!
 
 Textile announced [Powergate](https://blog.textile.io/filecoin-tools-progress-update-8-april/), developing tools to get folks building on IPFS and Filecoin!
 
@@ -45,23 +45,23 @@ FISSION shares how they experimented with [HLS Video Streaming and IPFS](https:/
 
 Textile launches [The Hub](https://blog.textile.io/announcing-the-textile-protocol-hub/), a collection of libraries and services connecting and extending IPFS, libp2p, and Filecoin.
 
-We take some significant steps to improve the [IPFS Developer experience](https://blog.ipfs.io/2020-05-05-developer-experience/).
+We take some significant steps to improve the [IPFS Developer experience](https://blog.ipfs.eth.link/2020-05-05-developer-experience/).
 
 [Almonit](http://blog.almonit.eth.link/2020-05-21/Introduction_to_Dwebsitse.html) releases an introduction to Dwebsites, entirely built on IPFS.
 
-[js-ipfs 0.44.0 is released](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/), adding cancellable requests and a new browser datastore!
+[js-ipfs 0.44.0 is released](https://blog.ipfs.eth.link/2020-05-21-js-ipfs-0-44/), adding cancellable requests and a new browser datastore!
 
 [OrbitDB releases v0.24](https://github.com/orbitdb/orbit-db/issues/772#issuecomment-632357888) with support for both go-ipfs 0.5 and js-ipfs 0.44.
 
 ![Launching Testground](../assets/092-launching-testground-header-image.png)
 
-We launched [Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), a platform for testing, benchmarking, and simulating distributed and p2p systems at scale. Designed to be multilingual and runtime-agnostic, scaling from 2 to 10k instances.
+We launched [Testground v0.5](https://blog.ipfs.eth.link/2020-05-06-launching-testground/), a platform for testing, benchmarking, and simulating distributed and p2p systems at scale. Designed to be multilingual and runtime-agnostic, scaling from 2 to 10k instances.
 
-We hosted the [IPFS Pinning Summit](https://blog.ipfs.io/2020-05-13-ipfs-pinning-summit-recap/), bringing together pinning services, infra providers, and the curious for two days of talks and workshops.
+We hosted the [IPFS Pinning Summit](https://blog.ipfs.eth.link/2020-05-13-ipfs-pinning-summit-recap/), bringing together pinning services, infra providers, and the curious for two days of talks and workshops.
 
-We took a deep dive into the road to the [new DHT](https://blog.ipfs.io/2020-05-19-road-to-dht/).
+We took a deep dive into the road to the [new DHT](https://blog.ipfs.eth.link/2020-05-19-road-to-dht/).
 
-Oh, hello! [Gossipsub v1.1 launches](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/), bringing a scalable, extensible, and hardened P2P pubsub router protocol into the mix.
+Oh, hello! [Gossipsub v1.1 launches](https://blog.ipfs.eth.link/2020-05-20-gossipsub-v1.1/), bringing a scalable, extensible, and hardened P2P pubsub router protocol into the mix.
 
 Project Lead Molly Mackinlay was a guest on the [Zero Knowledge Podcast](https://www.zeroknowledge.fm/129) to talk about go-ipfs 0.5 and more.
 
@@ -73,19 +73,19 @@ The first completely virtual [Distributed Camp 2020](https://distributed.camp/) 
 
 ## June, improving on improvements 🛠
 
-[js-ipfs 0.46.0](https://blog.ipfs.io/2020-06-08-js-ipfs-0-46/) is released with new faster bitswap and go-ipfs 0.5 compatibility.
+[js-ipfs 0.46.0](https://blog.ipfs.eth.link/2020-06-08-js-ipfs-0-46/) is released with new faster bitswap and go-ipfs 0.5 compatibility.
 
-The [libp2p project gives a 2020 update](https://blog.ipfs.io/2020-06-09-libp2p-in-2020/) and begins the search for a new team lead!
+The [libp2p project gives a 2020 update](https://blog.ipfs.eth.link/2020-06-09-libp2p-in-2020/) and begins the search for a new team lead!
 
 Activists create a repository to accumulate and contextualize evidence of police brutality during the 2020 George Floyd protests, [hosted on IPFS](https://github.com/2020PB/police-brutality). Additionally, Police Accountability Now’s [PAN Protocol](https://decrypt.co/32614/blockchain-police-brutality-database-gives-bad-cops-nowhere-to-hide) is an anonymous, censorship-resistant database of police misconduct complaints, also built on Ethereum and IPFS.
 
 Textile released the [Buckets JS library](https://textileio.github.io/js-hub/docs/hub.buckets).
 
-Jim Kosem shares the new [IPFS Mobile Design Guidelines](https://blog.ipfs.io/2020-06-25-ipfs-mobile-design-guidelines/), based on research conducted earlier in the quarter. Go download the pdf!
+Jim Kosem shares the new [IPFS Mobile Design Guidelines](https://blog.ipfs.eth.link/2020-06-25-ipfs-mobile-design-guidelines/), based on research conducted earlier in the quarter. Go download the pdf!
 
 ![IPFS and ION](../assets/099-identity-ipfs-ion-header.png)
 
-[ION](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/), launched by Microsoft, has been under development for over a year, and is an instance implementation of Sidetree that runs on the Bitcoin blockchain. And it stores transaction data on IPFS.
+[ION](https://blog.ipfs.eth.link/2020-06-11-identity-ipfs-ion/), launched by Microsoft, has been under development for over a year, and is an instance implementation of Sidetree that runs on the Bitcoin blockchain. And it stores transaction data on IPFS.
 
 We held a virtual June meetup, but if you missed it, catch up on all the videos on our [YouTube channel](https://www.youtube.com/playlist?list=PLuhRWgmPaHtToVYaDkd6ZTwB2Lo30s1vB). Make sure to subscribe to catch new content.
 
@@ -98,7 +98,7 @@ So many IPFS GUI improvements were made this quarter, but don’t take my word f
 
 [IPFS Africa](https://www.eventbrite.co.uk/e/ipfs-community-meetup-nairobi-tickets-108105257736) hosts a virtual community meetup for the Nairobi IPFS community.
 
-And, keeping with how this quarter began, [go-ipfs 0.6.0 is launched](https://blog.ipfs.io/2020-06-26-go-ipfs-0-6-0/). QUIC, Noise, Peering and more!
+And, keeping with how this quarter began, [go-ipfs 0.6.0 is launched](https://blog.ipfs.eth.link/2020-06-26-go-ipfs-0-6-0/). QUIC, Noise, Peering and more!
 
 ## Also new this quarter...
 

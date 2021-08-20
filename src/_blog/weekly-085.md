@@ -66,7 +66,7 @@ Not only did our friends at Terminal do an entire platform rebrand to become **[
 
 Come hack on [the OpenTelemetry Tracing for OrbitDB](https://github.com/orbitdb/opentelemetry-plugin-orbitdb). This, combined with the HTTP tracing in #IPFS could lead to some awesome metrics + tracing +observability on the distributed web.
 
-Calling all rustaceans, rustafarians, ferrosities, and rustlers! Community participation in [making Rust-IPFS a reality](https://blog.ipfs.io/2020-03-18-announcing-rust-ipfs/) is encouraged and welcomed! If you want to pitch in, [here are a few ways](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
+Calling all rustaceans, rustafarians, ferrosities, and rustlers! Community participation in [making Rust-IPFS a reality](https://blog.ipfs.eth.link/2020-03-18-announcing-rust-ipfs/) is encouraged and welcomed! If you want to pitch in, [here are a few ways](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
 
 ## Attend one of these exciting events from the comfort of your own home
 

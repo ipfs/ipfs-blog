@@ -16,11 +16,11 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## Improvements to IPFS Bitswap, or how Netflix is experimenting with IPFS
 
-After IPFS Camp 2019, [Netflix and IPFS began collaborating](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) on ways to incorporate peer-to-peer services into Netflix’s developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution. Read more on the [IPFS blog](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/).
+After IPFS Camp 2019, [Netflix and IPFS began collaborating](https://blog.ipfs.eth.link/2020-02-14-improved-bitswap-for-container-distribution/) on ways to incorporate peer-to-peer services into Netflix’s developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution. Read more on the [IPFS blog](https://blog.ipfs.eth.link/2020-02-14-improved-bitswap-for-container-distribution/).
 
 ## js-ipfs 0.41.0 released
 
-We’ve completed a HUGE refactor to [js-ipfs internals 🥳](https://blog.ipfs.io/2020-02-13-js-ipfs-0-41/), switching to using Promises and async/await over Callbacks and using async iterables instead of Node.js Streams and Pull Streams. BUT, this release brings big breaking changes to the core API so please consult **the full release notes**!
+We’ve completed a HUGE refactor to [js-ipfs internals 🥳](https://blog.ipfs.eth.link/2020-02-13-js-ipfs-0-41/), switching to using Promises and async/await over Callbacks and using async iterables instead of Node.js Streams and Pull Streams. BUT, this release brings big breaking changes to the core API so please consult **the full release notes**!
 
 ## Top 5 recent highlights
 

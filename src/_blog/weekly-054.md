@@ -24,11 +24,11 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### As promised, js-ipfs 0.37.0 has been released
 
-The latest release of js-ipfs introduces a brand new constructor, better DNSLink support and delegated routing! [See the IPFS blog](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/) for the full release details.
+The latest release of js-ipfs introduces a brand new constructor, better DNSLink support and delegated routing! [See the IPFS blog](https://blog.ipfs.eth.link/2019-08-06-js-ipfs-0-37/) for the full release details.
 
 ### js-libp2p adds Gossipsub support and Promisify API
 
-The folks working on Libp2p have been busy too! Last week, they announced the release of [js-libp2p version 0.26.0](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/) which adds support for a more efficient pubsub router (Gossipsub) and Promisify for the time being. Check it out!
+The folks working on Libp2p have been busy too! Last week, they announced the release of [js-libp2p version 0.26.0](https://blog.ipfs.eth.link/2019-08-07-js-libp2p-0-26/) which adds support for a more efficient pubsub router (Gossipsub) and Promisify for the time being. Check it out!
 
 ### Hello ipfs-cohost 👋
 

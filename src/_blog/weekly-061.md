@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### js-ipfs 0.38.0 is out now!
 
-[The latest version of the JavaScript implementation](https://blog.ipfs.io/070-js-ipfs-0-38/) includes support for garbage collection, gossipsub & IPNS support for ipfs resolve! Also a new release process! Check it out!
+[The latest version of the JavaScript implementation](https://blog.ipfs.eth.link/070-js-ipfs-0-38/) includes support for garbage collection, gossipsub & IPNS support for ipfs resolve! Also a new release process! Check it out!
 
 ### Watch this short documentary: The Decentralized Web Is Coming
 

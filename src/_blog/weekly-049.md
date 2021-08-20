@@ -20,19 +20,19 @@ Thanks for being part of our community, we truly couldn’t make IPFS what it is
 
 ## The first IPFS Camp was a blast
 
-Last month, 160 attendees traveled from 22+ countries to the 3-day hacker retreat, marking the first official IPFS Camp. Attendees enjoyed core and elective courses, poster sessions, lightning talks, a Sci-Fi Fair, an unconf and more! If you couldn’t be there, check out the recap (with video) of the event [on the blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/).
+Last month, 160 attendees traveled from 22+ countries to the 3-day hacker retreat, marking the first official IPFS Camp. Attendees enjoyed core and elective courses, poster sessions, lightning talks, a Sci-Fi Fair, an unconf and more! If you couldn’t be there, check out the recap (with video) of the event [on the blog](https://blog.ipfs.eth.link/2019-07-08-ipfs-camp-recap/).
 
 ## New releases of js-ipfs 0.35.0 and js-ipfs 0.36.0
 
-In April and May, the IPFS community received two new releases of js-ipfs. The first, [js-ipfs 0.35.0](https://blog.ipfs.io/80-js-ipfs-0-35/) cut the bundle size by half and the second, [version 0.36.0](https://blog.ipfs.io/89-js-ipfs-0-36/), added URL safe CIDs, refs commands, DOM File support and more. Great work everyone!
+In April and May, the IPFS community received two new releases of js-ipfs. The first, [js-ipfs 0.35.0](https://blog.ipfs.eth.link/80-js-ipfs-0-35/) cut the bundle size by half and the second, [version 0.36.0](https://blog.ipfs.eth.link/89-js-ipfs-0-36/), added URL safe CIDs, refs commands, DOM File support and more. Great work everyone!
 
 ## More releases: go-ipfs 0.4.20 and go-ipfs 0.4.21
 
-The team working on the Go implementation of the IPFS Protocol also shipped two releases this quarter. [go-ipfs 0.4.20](https://blog.ipfs.io/83-go-ipfs-0-4-20/) included critical performance and stability fixes, as well as a major WebUI release. [Version 0.4.21](https://blog.ipfs.io/93-go-ipfs-0.4.21) brought key bug fixes, experimental TLS1.3 support, reduced memory usage, base32 CIDv1 CIDs and more new features. We can’t wait to see what’s next.
+The team working on the Go implementation of the IPFS Protocol also shipped two releases this quarter. [go-ipfs 0.4.20](https://blog.ipfs.eth.link/83-go-ipfs-0-4-20/) included critical performance and stability fixes, as well as a major WebUI release. [Version 0.4.21](https://blog.ipfs.eth.link/93-go-ipfs-0.4.21) brought key bug fixes, experimental TLS1.3 support, reduced memory usage, base32 CIDv1 CIDs and more new features. We can’t wait to see what’s next.
 
 ## Plus js-libp2p 0.25.0 released
 
-[Version 0.25.0 of js-libp2p](https://blog.ipfs.io/81-js-libp2p-0-25/), released in April, featured auto-dialing to discovered peers by default, better connection management, blacklisting undialable nodes, and more! This version was automagically included in js-ipfs 0.35.0, so you’ve probably been reaping the benefits of our awesome libp2p team for awhile. Enjoy!
+[Version 0.25.0 of js-libp2p](https://blog.ipfs.eth.link/81-js-libp2p-0-25/), released in April, featured auto-dialing to discovered peers by default, better connection management, blacklisting undialable nodes, and more! This version was automagically included in js-ipfs 0.35.0, so you’ve probably been reaping the benefits of our awesome libp2p team for awhile. Enjoy!
 
 ## New ProtoSchool tutorial shipped on the IPFS Mutable File System (MFS)
 

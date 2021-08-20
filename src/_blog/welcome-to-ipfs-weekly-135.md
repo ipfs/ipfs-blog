@@ -17,7 +17,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 @[youtube](c50licHTOik)
 
-The IPFS community is proud to share another video in the [**Building Web3 Video Series**](https://buildingweb3.com/), which is dedicated to technologists, teams, and visionaries who are building valuable tools and services for a Web3 world. The latest video features [**Audius**](https://audius.org/), a music and audio sharing platform that uses IPFS as the core decentralized storage component in their mission to give everyone the freedom to share, monetize and listen to any audio. [**Read our recent blog post to learn more about the IPFS and Audius collaboration.**](https://blog.ipfs.io/2021-05-05-audius-uses-ipfs-web3-video/)
+The IPFS community is proud to share another video in the [**Building Web3 Video Series**](https://buildingweb3.com/), which is dedicated to technologists, teams, and visionaries who are building valuable tools and services for a Web3 world. The latest video features [**Audius**](https://audius.org/), a music and audio sharing platform that uses IPFS as the core decentralized storage component in their mission to give everyone the freedom to share, monetize and listen to any audio. [**Read our recent blog post to learn more about the IPFS and Audius collaboration.**](https://blog.ipfs.eth.link/2021-05-05-audius-uses-ipfs-web3-video/)
 
 ## Congrats, Gitcoin Grants Round 9 winners!
 
@@ -25,7 +25,7 @@ The IPFS community is proud to share another video in the [**Building Web3 Video
 
 For the Gitcoin GR9 Hackathon, Protocol Labs matched 100% of [**Textile**](https://blog.textile.io/funding-the-community/) and [**Fleek’s**](https://blog.fleek.co/posts/gitcoin-gr9-hackathon-fleek-winners) bounties in effort to amplify the ability of our ecosystem collaborators to be stewards of the IPFS/Filecoin ecosystem and decentralize growth and development. Moreover, $23k in bounties for Filecoin and IPFS were offered to encourage the best of the best for tools, libraries, APIs, apps, integrations, and more.
 
-Winners were selected from 167 projects total, with 36 submissions to our ecosystem bounties, [**read this post to learn all about the winning projects - congratulations!**](https://blog.ipfs.io/2021-05-10-gitcoin-gr9-recap/)
+Winners were selected from 167 projects total, with 36 submissions to our ecosystem bounties, [**read this post to learn all about the winning projects - congratulations!**](https://blog.ipfs.eth.link/2021-05-10-gitcoin-gr9-recap/)
 
 ## Brand new on IPFS
 

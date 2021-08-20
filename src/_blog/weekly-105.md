@@ -23,7 +23,7 @@ See what we did there? Jokes aside, our latest edition of the case study series 
 
 Earlier this week, js-ipfs officially reached version 0.50.0, adding the ability to share a node between multiple browser tabs and greatly improved pinning performance. It also includes quite a few new features, some API changes, and one breaking change you’ll want to review.
 
-[Read the release notes](https://blog.ipfs.io/2020-09-14-js-ipfs-0-50/)
+[Read the release notes](https://blog.ipfs.eth.link/2020-09-14-js-ipfs-0-50/)
 
 ## Quote of the week
 
@@ -33,7 +33,7 @@ Earlier this week, js-ipfs officially reached version 0.50.0, adding the ability
 
 Obsidian Systems is adding support for IPFS to Nix, a package manager, but at its heart a general-purpose build tool, so that build products can be persisted to and fetched from IPFS. Learn how they have organized this work into two distinct phases (Milestone 1 was already achieved!) by reading the announcement.
 
-[Read the blog](https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/)
+[Read the blog](https://blog.ipfs.eth.link/2020-09-08-nix-ipfs-milestone-1/)
 
 ## Brand new on IPFS
 

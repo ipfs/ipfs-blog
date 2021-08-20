@@ -18,7 +18,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## go-ipfs 0.5.0 is officially here 🚀
 
-We are very excited to announce the latest release of go-ipfs 0.5.0. This release is a major step forward on our journey toward a more efficient, secure, and resilient web to preserve and grow humanity’s knowledge. [Read the full announcement on the blog for more details](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/).
+We are very excited to announce the latest release of go-ipfs 0.5.0. This release is a major step forward on our journey toward a more efficient, secure, and resilient web to preserve and grow humanity’s knowledge. [Read the full announcement on the blog for more details](https://blog.ipfs.eth.link/2020-04-28-go-ipfs-0-5-0/).
 
 ## Join us Friday for the 0.5 Launch Meetup!
 
@@ -26,11 +26,11 @@ Join the IPFS community for a virtual meetup to dive deeper into what’s in the
 
 ## The latest on IPFS Mobile Design Research
 
-For IPFS to succeed, it needs to be where people will use it, and for the vast majority around the world that is on their smartphones. That’s why we’ve teamed up with Jim Kosem to understand how people are building, using and thinking about P2P and IPFS on mobile today in order to create tools and guidelines. [In his latest post for the IPFS blog](https://blog.ipfs.io/2020-04-24-ipfs-mobile-design-research-findings/), Jim shares a summary of his findings.
+For IPFS to succeed, it needs to be where people will use it, and for the vast majority around the world that is on their smartphones. That’s why we’ve teamed up with Jim Kosem to understand how people are building, using and thinking about P2P and IPFS on mobile today in order to create tools and guidelines. [In his latest post for the IPFS blog](https://blog.ipfs.eth.link/2020-04-24-ipfs-mobile-design-research-findings/), Jim shares a summary of his findings.
 
 ## Highlights from this week
 
-- [js-ipfs 0.42.0](https://blog.ipfs.io/2020-04-14-js-ipfs-0-42/) was also recently released
+- [js-ipfs 0.42.0](https://blog.ipfs.eth.link/2020-04-14-js-ipfs-0-42/) was also recently released
 - Introducing [3ID Connect](https://medium.com/3box/introducing-3id-connect-531af4f84d3f), from 3Box
 - ENS unveils easier way to [build decentralized websites on Ethereum](https://decrypt.co/26246/ens-unveils-easier-way-to-build-decentralized-websites-on-ethereum)
 - Fission tried [experimenting with HLS Video Streaming and IPFS](https://blog.fission.codes/experimenting-with-hls-video-streaming-and-ipfs/)

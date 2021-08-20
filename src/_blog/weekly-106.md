@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 If you missed the latest IPFS Meetup, not to worry. You can catch up on all the presentations, from IPFS Recovery to IoTex to the details behind go-IPFS 0.7 and more, by tuning into the IPFS YouTube channel. Bonus feature: another delightful lightning talk you won’t want to miss!
 
-[Watch the videos](https://blog.ipfs.io/2020-09-18-ipfs-meetup-sep2020/)
+[Watch the videos](https://blog.ipfs.eth.link/2020-09-18-ipfs-meetup-sep2020/)
 
 ## Space Race 2: Slingshot - put your project on Filecoin for FIL token rewards!
 

@@ -18,7 +18,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ![](../assets/128422071-318a1ec9-25d7-417e-8633-8e31b7611047.png)
 
-In July, [**Nebulus**](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Also dubbed the “IPFS-less IPFS” network, Nebulus allows users to use the logic and content addressability of IPFS without having to use the public network. Nebulus lets users work with IPFS files and storage locally before publishing to the public IPFS network (or, never publishing at all). Users can choose to use Nebulus as an “offline buffer”, allowing them to work privately with IPFS files and publish to IPFS only if/when needed. [**Learn more.**](https://blog.ipfs.io/2021-08-09-nebulus/)
+In July, [**Nebulus**](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Also dubbed the “IPFS-less IPFS” network, Nebulus allows users to use the logic and content addressability of IPFS without having to use the public network. Nebulus lets users work with IPFS files and storage locally before publishing to the public IPFS network (or, never publishing at all). Users can choose to use Nebulus as an “offline buffer”, allowing them to work privately with IPFS files and publish to IPFS only if/when needed. [**Learn more.**](https://blog.ipfs.eth.link/2021-08-09-nebulus/)
 
 ## Wanxiang Blockchain Week & Asia Hackathon Season
 

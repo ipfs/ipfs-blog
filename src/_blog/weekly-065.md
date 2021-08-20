@@ -24,11 +24,11 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Learn how to use go-ipfs as a Library 📚
 
-[The title says it all.](https://blog.ipfs.io/073-go-ipfs-as-a-library/) Learn how to use go-ipfs as a library with this new tutorial and take full advantage of the go-ipfs Core API.
+[The title says it all.](https://blog.ipfs.eth.link/073-go-ipfs-as-a-library/) Learn how to use go-ipfs as a library with this new tutorial and take full advantage of the go-ipfs Core API.
 
 ### js-ipfs 0.39.0 released 🎉
 
-Woo hoo! Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command! [All with js-ipfs 0.39.0!](https://blog.ipfs.io/071-js-ipfs-0-39/)
+Woo hoo! Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command! [All with js-ipfs 0.39.0!](https://blog.ipfs.eth.link/071-js-ipfs-0-39/)
 
 ## IPFS in the wild
 

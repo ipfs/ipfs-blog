@@ -19,7 +19,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## Our focus for 2020: 📞 Content Routing
 
-Yesterday we released our roadmap for 2020 and more, in a post [examining our project focus for the coming year](https://blog.ipfs.io/2020-02-10-our-focus-for-2020/). Beginning with an excellent recap of 2019—including some of the year’s top wins—as well as describing the unenviable process of roadmapping and decisions that led to our chosen focus, you can read all this and more [on the IPFS blog](https://blog.ipfs.io/2020-02-10-our-focus-for-2020/).
+Yesterday we released our roadmap for 2020 and more, in a post [examining our project focus for the coming year](https://blog.ipfs.eth.link/2020-02-10-our-focus-for-2020/). Beginning with an excellent recap of 2019—including some of the year’s top wins—as well as describing the unenviable process of roadmapping and decisions that led to our chosen focus, you can read all this and more [on the IPFS blog](https://blog.ipfs.eth.link/2020-02-10-our-focus-for-2020/).
 
 ## Introducing the Interplanetary Testground
 
@@ -27,9 +27,9 @@ Last week, another project entered the Interplanetary realm: [Testground](https:
 
 ## Top 5 recent highlights
 
-- Have we mentioned the biggest of [Big Refactors](https://blog.ipfs.io/2020-02-06-big-refactors/) yet?
-- With [js-libp2p 0.27 released](https://blog.ipfs.io/2020-02-07-js-libp2p-0-27/), not only did the Async Await refactor of js-libp2p land, but we’ve measured memory usage improvements between 30-40% compared to the previous version!
-- Hey IPFS Community, [come hack with us at ETHDenver](https://blog.ipfs.io/2020-02-07-ethdenver-2020/) this week!
+- Have we mentioned the biggest of [Big Refactors](https://blog.ipfs.eth.link/2020-02-06-big-refactors/) yet?
+- With [js-libp2p 0.27 released](https://blog.ipfs.eth.link/2020-02-07-js-libp2p-0-27/), not only did the Async Await refactor of js-libp2p land, but we’ve measured memory usage improvements between 30-40% compared to the previous version!
+- Hey IPFS Community, [come hack with us at ETHDenver](https://blog.ipfs.eth.link/2020-02-07-ethdenver-2020/) this week!
 - “At age 30, this is not the Web we wanted...” [The 3 Revolutions of Web 3](https://medium.com/@tonyob/the-3-revolutions-of-web-3-7165ed6b3036)
 - What are you working on with IPFS? [a thread](https://www.reddit.com/r/ipfs/comments/f10um9/what_are_you_working_on_with_ipfs/) 🧵
 

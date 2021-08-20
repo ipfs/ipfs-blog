@@ -17,7 +17,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 The latest iteration of the Go implementation of IPFS brings a truckload of features and fixes: SECIO disabled by default 👋, rotating keys 🔑, IPNS paths now encode the key name as a base36 CIDv1 by default 🎹, key export/import 📦, and more. Great work everyone!
 
-[Read the release notes](https://blog.ipfs.io/2020-09-24-go-ipfs-0-7-0/)
+[Read the release notes](https://blog.ipfs.eth.link/2020-09-24-go-ipfs-0-7-0/)
 
 ## Case Study: Shipping IPFS with Morpheus.Network
 

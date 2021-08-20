@@ -24,11 +24,11 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### The 2019 IPFS Roadmap
 
-Wondering what comes next for IPFS? Look no further than [the newly released 2019 IPFS Roadmap](https://blog.ipfs.io/78-ipfs-2019-roadmap/), shared earlier this month. Not only did we create a roadmap, but we also revised and clarified a mission statement and expanded some of the IPFS goals. We are very excited for the rest of 2019. 😊
+Wondering what comes next for IPFS? Look no further than [the newly released 2019 IPFS Roadmap](https://blog.ipfs.eth.link/78-ipfs-2019-roadmap/), shared earlier this month. Not only did we create a roadmap, but we also revised and clarified a mission statement and expanded some of the IPFS goals. We are very excited for the rest of 2019. 😊
 
 ### js-ipfs v0.35.0 RELEASED 🚀
 
-Last week, js-ipfs v0.35.0 was released, adding API changes and recursive DNS link loops, and decreasing approximately half of the bundle size of js-ipfs since v0.33! [Read the full blog announcement for all of the details](https://blog.ipfs.io/80-js-ipfs-0-35/).
+Last week, js-ipfs v0.35.0 was released, adding API changes and recursive DNS link loops, and decreasing approximately half of the bundle size of js-ipfs since v0.33! [Read the full blog announcement for all of the details](https://blog.ipfs.eth.link/80-js-ipfs-0-35/).
 
 ### Follow IPFS Events on Twitter
 
@@ -60,7 +60,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [js-libp2p 0.25 is out now!](https://blog.ipfs.io/81-js-libp2p-0-25/) They’ve added auto dialing to discovered peers and have made a ton of improvements to connection management.
+- [js-libp2p 0.25 is out now!](https://blog.ipfs.eth.link/81-js-libp2p-0-25/) They’ve added auto dialing to discovered peers and have made a ton of improvements to connection management.
 - The Graph’s [March Development Update](https://medium.com/graphprotocol/march-development-update-c6342fd7168e) was recently released, including info on the addition of IPFS stream processing. 🙌
 
 ## Tools and projects we <3
@@ -77,7 +77,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.eth.link/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 

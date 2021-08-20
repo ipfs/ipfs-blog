@@ -36,7 +36,7 @@ Pretty self explanatory but the [Initial Implementation of the GraphSync Wire Pr
 
 ## Meet the Community: Carson Farmer, Core Developer @ Textile.io
 
-This week for [`Meet the Community`, we had Carson Farmer, a Core Developer at Textile](https://blog.ipfs.io/meet-the-community-carson-farmer/)
+This week for [`Meet the Community`, we had Carson Farmer, a Core Developer at Textile](https://blog.ipfs.eth.link/meet-the-community-carson-farmer/)
 
 ## IPFS in the wild
 

@@ -22,7 +22,7 @@ Here are some of the highlights for the time period from [April 6th through Apri
 
 [go-ipfs 0.4.0](http://dist.ipfs.io/#go-ipfs) has been released! Among the many changes are a revamped implementation of the IPFS communication protocols, increased performance, improvements to IPNS (the Interplanetary Naming System), many bugfixes, and lots of new features to make IPFS even more powerful.
 
-See the [blog](http://blog.ipfs.io/14-ipfs-0-4-0-released/) for more details.
+See the [blog](http://blog.ipfs.eth.link/14-ipfs-0-4-0-released/) for more details.
 
 ### Orbit
 

@@ -35,9 +35,9 @@ See [ipfs/js-ipfs-bitswap#224](https://github.com/ipfs/js-ipfs-bitswap/pull/224)
 
 ## 🤝 go-IPFS v0.5.x compatibility
 
-The new version of go-IPFS brought a whole slew of changes with it—check out our [blog post](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/) for more details.
+The new version of go-IPFS brought a whole slew of changes with it—check out our [blog post](https://blog.ipfs.eth.link/2020-04-28-go-ipfs-0-5-0/) for more details.
 
-The good news is js-IPFS has taken on a whole heap of these features and the `ipfs-http-client` is now 100% compatible with `go-ipfs@0.5.x`. Your `js-IPFS` nodes will now happily chat away to `go-IPFS` nodes over the network via Bitswap and [gossipsub](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1/) too.
+The good news is js-IPFS has taken on a whole heap of these features and the `ipfs-http-client` is now 100% compatible with `go-ipfs@0.5.x`. Your `js-IPFS` nodes will now happily chat away to `go-IPFS` nodes over the network via Bitswap and [gossipsub](https://blog.ipfs.eth.link/2020-05-20-gossipsub-v1.1/) too.
 
 See [ipfs/js-ipfs#3013](https://github.com/ipfs/js-ipfs/pull/3013) for the full rundown.
 

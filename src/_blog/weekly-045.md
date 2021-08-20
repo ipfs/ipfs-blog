@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### go-ipfs 0.4.21 released 🎉
 
-Last week, the go-ipfs team celebrated the release of [version 0.4.21](https://blog.ipfs.io/93-go-ipfs-0.4.21), which includes some major bug fixes and new features like experimental TLS1.3 support. Read the full release notes on the IPFS blog.
+Last week, the go-ipfs team celebrated the release of [version 0.4.21](https://blog.ipfs.eth.link/93-go-ipfs-0.4.21), which includes some major bug fixes and new features like experimental TLS1.3 support. Read the full release notes on the IPFS blog.
 
 ### 🖥 ipfs-desktop 0.8.0 released
 
@@ -31,7 +31,7 @@ Enjoying the ipfs-desktop experience? Prepare to love it just a little bit more 
 
 ### Recapping the July 2018 IPFS Developer Meetings
 
-Did you miss the IPFS and Libp2p developer meeting we held last July? Now you can catch up on all of the project updates, lightning demos and poster sessions held there. Check out [the recap on the IPFS blog](https://blog.ipfs.io/91-ipfs-2018-dev-meetings/).
+Did you miss the IPFS and Libp2p developer meeting we held last July? Now you can catch up on all of the project updates, lightning demos and poster sessions held there. Check out [the recap on the IPFS blog](https://blog.ipfs.eth.link/91-ipfs-2018-dev-meetings/).
 
 ## Meet the Community, David Dias @ Protocol Labs
 

@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 The IPFS community gathered for a virtual meetup last week to celebrate progress made since the go-ipfs 0.5 launch and take a look at where the ecosystem is headed for the duration of 2020.
 
-[Watch the videos](https://blog.ipfs.io/2020-06-23-june-meetup-recap/)
+[Watch the videos](https://blog.ipfs.eth.link/2020-06-23-june-meetup-recap/)
 
 ## IPFS included in the foundation of blockchain, decentralization and DeFi
 

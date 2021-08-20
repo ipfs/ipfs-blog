@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Last week, [JS IPFS 0.34](https://blog.ipfs.io/64-js-ipfs-0-34/) was released. It’s fast, small, supports big dirs, is flexible with CID versions and more! Read the full release notes [here](https://github.com/ipfs/js-ipfs/issues/1721).
+- Last week, [JS IPFS 0.34](https://blog.ipfs.eth.link/64-js-ipfs-0-34/) was released. It’s fast, small, supports big dirs, is flexible with CID versions and more! Read the full release notes [here](https://github.com/ipfs/js-ipfs/issues/1721).
 - Check out this video, [Making the Web Work Offline](https://www.youtube.com/watch?list=PLuhRWgmPaHtRdiy0HKNy4UZ4dKVUVL_KG&time_continue=7&v=VllPpxVNH5k) from Molly Mackinlay, and if you’re interested in joining the conversation, come to [the working group meetup](https://github.com/ipfs/local-offline-collab/issues/7), tomorrow, Jan 23.
 - We’re excited about [let’s talk about IPFS](https://fosdem.org/2019/schedule/event/the_new_internet/), an upcoming talk at FOSDEM 2019!
 - ICYMI: [Introducing ProtoSchool](https://www.youtube.com/watch?v=G5aiLkHZ7CM), learn about [ProtoSchool](https://proto.school/#/), an educational community that teaches decentralized web protocols and tools through online tutorials and local chapter events, in this introduction video.

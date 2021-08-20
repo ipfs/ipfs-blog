@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- The [HTTP client libraries are being renamed](https://blog.ipfs.io/58-http-client-rename/)! The important news is that the HTTP client libraries are changing from `ipfs-api` to `ipfs-http-client`. True, it’s longer but way better at describing what the module is! Read the blog for more info.
+- The [HTTP client libraries are being renamed](https://blog.ipfs.eth.link/58-http-client-rename/)! The important news is that the HTTP client libraries are changing from `ipfs-api` to `ipfs-http-client`. True, it’s longer but way better at describing what the module is! Read the blog for more info.
 - Look at [these amazing cookies](https://twitter.com/momack28/status/1069510119132516352) from @momack28’s holiday baking adventures. 😋
 - Don’t forget Sander Pick is presenting Textile photos at next week’s [IPFS Weekly Call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call), Monday at 5pm UTC.
 

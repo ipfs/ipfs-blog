@@ -53,7 +53,7 @@ If you are running IPFS older than 0.4.21, you are going to start failing to con
 
 <sup>\*</sup>We are looking at backporting Noise to js-ipfs 0.46.x.
 
-Noise was added to js-ipfs 0.47, however it is compatible with js-ipfs 0.41.0+ ([the async/await refactor](https://blog.ipfs.io/2020-02-01-async-await-refactor/)) but it needs to be manually configured.
+Noise was added to js-ipfs 0.47, however it is compatible with js-ipfs 0.41.0+ ([the async/await refactor](https://blog.ipfs.eth.link/2020-02-01-async-await-refactor/)) but it needs to be manually configured.
 
 If you are running js-ipfs older than 0.41, you won't be able to connect to nodes who don't support SECIO. You will still be able to leverage the websocket-star server for the time being.
 

@@ -22,7 +22,7 @@ author: 默奕
 
 ### 您现在可以在浏览器中使用 JS IPFS HTTP API 客户端进行 PubSub!
 
-现在 fetch API 支持 cancelation 了，并且已经支持了一段时间，PubSub 支持已经到来! Hooray \o/ 在 [IPFS 博客](https://blog.ipfs.io/2019-08-29-pubsub-in-the-browser/)上阅读所有相关内容。
+现在 fetch API 支持 cancelation 了，并且已经支持了一段时间，PubSub 支持已经到来! Hooray \o/ 在 [IPFS 博客](https://blog.ipfs.eth.link/2019-08-29-pubsub-in-the-browser/)上阅读所有相关内容。
 
 ### 回顾最新的 IPFS 每周通话
 

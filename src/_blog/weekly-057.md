@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### You can now PubSub with the JS IPFS HTTP API client in the browser!
 
-Now that the fetch API supports cancelation, and has done so for a while, PubSub Support has arrived! Hooray \o/ Read all about it on [the IPFS blog](https://blog.ipfs.io/2019-08-29-pubsub-in-the-browser/).
+Now that the fetch API supports cancelation, and has done so for a while, PubSub Support has arrived! Hooray \o/ Read all about it on [the IPFS blog](https://blog.ipfs.eth.link/2019-08-29-pubsub-in-the-browser/).
 
 ### Catch up on the latest IPFS Weekly Call
 

@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### js-ipfs 0.40.0 released 🎉
 
-Good news friends! The new version of js-ipfs now ships with a repo migration tool that’ll automatically migrate repo’s in the browser. [Read the full release post](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/) to learn more!
+Good news friends! The new version of js-ipfs now ships with a repo migration tool that’ll automatically migrate repo’s in the browser. [Read the full release post](https://blog.ipfs.eth.link/2019-12-02-js-ipfs-0-40/) to learn more!
 
 ### GeoHot hacks on IPFS during “Simple Skills Sunday”
 

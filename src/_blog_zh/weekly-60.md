@@ -22,7 +22,7 @@ tags:
 
 ### IPFS Camp 课程视频发布
 
-如果你一直关注 IPFS Camp 的更新，你可能已经浏览了闪电演讲、深度教程和项目海报的视频，但是现在 [IPFS Camp 的核心和选修课视频](https://blog.ipfs.io/2019-09-18-ipfs-camp-course-videos/)已经发布了
+如果你一直关注 IPFS Camp 的更新，你可能已经浏览了闪电演讲、深度教程和项目海报的视频，但是现在 [IPFS Camp 的核心和选修课视频](https://blog.ipfs.eth.link/2019-09-18-ipfs-camp-course-videos/)已经发布了
 
 ### IPFS 集群 v0.11.0 已经发布！
 

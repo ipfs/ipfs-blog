@@ -20,7 +20,7 @@ Time for some updates y'all! Check out the latest from:
 - [go-libp2p v0.12](https://github.com/libp2p/go-libp2p/releases/tag/v0.12.0): introduces a new BasicConnectionGater to filter inbound and outbound connections and makes a significant breaking change to the stream interfaces to remove some surprising behavior.
 - [js-libp2p v0.29.3](https://github.com/libp2p/js-libp2p/releases/tag/v0.29.3): resolves the issue of multiaddrs before dial.
 
-Stay tuned to [blog.ipfs.io](https://blog.ipfs.io/) for more information, coming soon.
+Stay tuned to [blog.ipfs.eth.link](https://blog.ipfs.eth.link/) for more information, coming soon.
 
 ## Quote of the week
 

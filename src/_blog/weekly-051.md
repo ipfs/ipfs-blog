@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### The IPFS Camp’s first batch of recordings are out!
 
-You read it right, the recordings from IPFS Camp are starting to be released! For this first batch we have: [Lightning Talks and Poster Projects](https://blog.ipfs.io/2019-07-22-ipfs-camp-content-first-batch/), so go check them out.
+You read it right, the recordings from IPFS Camp are starting to be released! For this first batch we have: [Lightning Talks and Poster Projects](https://blog.ipfs.eth.link/2019-07-22-ipfs-camp-content-first-batch/), so go check them out.
 
 ### Join the IPFS, libp2p and IPLD Communities on IRC \o/
 

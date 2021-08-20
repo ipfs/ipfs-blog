@@ -39,7 +39,7 @@ Like HTTP, IPFS does not have user identity built into the protocol. However, IP
 
 The ION implementation is in JavaScript (specifically, TypeScript) so it made sense for them to use js-ipfs as a Node.js service. ION rolls up batches of identity transactions, publishes it through their IPFS node, and then writes the address (CID) of that batch to the Bitcoin blockchain.
 
-In order to meet Microsoft’s needs for using js-ipfs as a long-running process we added cancelable requests to all APIs, ensuring that as requests were being made and handled, the underlying objects, memory, file handles, and other resources created up and down the stack are cleaned up properly. Huge thanks goes to [Alex Potsides (@achingbrain)](https://github.com/achingbrain) for implementing this long-needed feature, which shipped in [js-ipfs 0.44.0](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/).
+In order to meet Microsoft’s needs for using js-ipfs as a long-running process we added cancelable requests to all APIs, ensuring that as requests were being made and handled, the underlying objects, memory, file handles, and other resources created up and down the stack are cleaned up properly. Huge thanks goes to [Alex Potsides (@achingbrain)](https://github.com/achingbrain) for implementing this long-needed feature, which shipped in [js-ipfs 0.44.0](https://blog.ipfs.eth.link/2020-05-21-js-ipfs-0-44/).
 
 What this looks like for developers is the ability to set timeouts on requests:
 

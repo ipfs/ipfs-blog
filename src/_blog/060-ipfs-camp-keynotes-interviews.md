@@ -38,7 +38,7 @@ To close, Juan set us back out through the airlock back toward Earth with his [I
 
 [![Screen Shot 2019-10-02 at 7 44 37 PM](../assets/ipfs-camp-2019-recap.png)](https://youtu.be/cQJXnJDbXv4)
 
-Curious how everything fit together, or want to understand how the pieces of IPFS Camp became a greater whole? Check out [this overview from Molly](https://youtu.be/cQJXnJDbXv4) on how different components like the Poster Sessions & Deep Dives, SciFi Fair, Lightning Talks, and the Core & Elective Courses, wove together into a great community event. Many connections between different attendees and projects emerged from IPFS Camp too - spurring new collaborations and integrations. These great recaps from [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), [Berty](https://berty.tech/blog/ipfs-camp/), and of course [the IPFS blog](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/) highlight a few!
+Curious how everything fit together, or want to understand how the pieces of IPFS Camp became a greater whole? Check out [this overview from Molly](https://youtu.be/cQJXnJDbXv4) on how different components like the Poster Sessions & Deep Dives, SciFi Fair, Lightning Talks, and the Core & Elective Courses, wove together into a great community event. Many connections between different attendees and projects emerged from IPFS Camp too - spurring new collaborations and integrations. These great recaps from [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), [Berty](https://berty.tech/blog/ipfs-camp/), and of course [the IPFS blog](https://blog.ipfs.eth.link/2019-07-08-ipfs-camp-recap/) highlight a few!
 
 ## Community Interviews
 
@@ -75,6 +75,6 @@ And on top of all that, Steven joined us from Shanghai City to discuss his work 
 This concludes our series of updates from IPFS Camp recap-ing the amazing presentations, demos, courses, and learnings we had together. We're so grateful to everyone for making this event so vibrant and creative - and are already looking forward to the **next** IPFS Camp. If you want more IPFS updates in the meantime, try these channels:
 
 - Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content (and follow-ups) live.
-- Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
+- Subscribe to the [RSS feed of this blog](https://blog.ipfs.eth.link/index.xml).
 - Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you're interested in general IPFS updates.
 - Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you're interested in IPFS events.

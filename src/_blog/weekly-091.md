@@ -16,15 +16,15 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 
 ## The Road to the New DHT
 
-At the end of April, we released our largest update yet: go-ipfs 0.5.0. This upgrade brought major performance and reliability improvements to IPFS — especially on the content discovery and routing front. We’d like to take you through our journey to re-write the DHT. [Read the full story on the blog](https://blog.ipfs.io/2020-05-19-road-to-dht/).
+At the end of April, we released our largest update yet: go-ipfs 0.5.0. This upgrade brought major performance and reliability improvements to IPFS — especially on the content discovery and routing front. We’d like to take you through our journey to re-write the DHT. [Read the full story on the blog](https://blog.ipfs.eth.link/2020-05-19-road-to-dht/).
 
 ## js-ipfs 0.44.0 released 🎉
 
-Last week, we shipped the latest release for js-ipfs, version 0.44.0! Meaning, you can now use AbortControllers to cancel requests in js-ipfs! No more waiting around to see if your request ever completes. Read the changelog post for [full details on the release](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/).
+Last week, we shipped the latest release for js-ipfs, version 0.44.0! Meaning, you can now use AbortControllers to cancel requests in js-ipfs! No more waiting around to see if your request ever completes. Read the changelog post for [full details on the release](https://blog.ipfs.eth.link/2020-05-21-js-ipfs-0-44/).
 
 ## It’s true; Gossipsub v1.1 is here
 
-The Gossipsub Task Force has been hard at work exploring and analyzing various attack vectors on public and permissionless messaging networks. With that knowledge, we’ve crafted and iterated on mitigating strategies to make our beloved libp2p PubSub Router work in adversarial environments. [The result is Gossipsub v1.1](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1).
+The Gossipsub Task Force has been hard at work exploring and analyzing various attack vectors on public and permissionless messaging networks. With that knowledge, we’ve crafted and iterated on mitigating strategies to make our beloved libp2p PubSub Router work in adversarial environments. [The result is Gossipsub v1.1](https://blog.ipfs.eth.link/2020-05-20-gossipsub-v1.1).
 
 ## Top highlights this week
 

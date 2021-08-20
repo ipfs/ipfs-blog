@@ -84,7 +84,7 @@ On April 20th, IPFS will host a joint meetup with ConsenSys at MIT in Cambridge,
 
 ### First IPFS Meeting in NYC
 
-We had our first IPFS meetup in New York! It went fantastically; expect an upcoming post on the [Blog](http://blog.ipfs.io/) soon.
+We had our first IPFS meetup in New York! It went fantastically; expect an upcoming post on the [Blog](http://blog.ipfs.eth.link/) soon.
 
 ### Meeting with NYC Mesh
 

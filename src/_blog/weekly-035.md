@@ -28,11 +28,11 @@ With the 0.7.1 release of the IPFS Desktop, we now have one simple interface! Th
 
 ### Curious about CRDTs?
 
-We <3 Conflict-free Replicated Data Types so much so that last April we hosted the [2018 CRDT Research Meetup](https://blog.ipfs.io/67-crdt-research-meetup/) in Lisbon. Authors of the CRDT research literature and representatives from the Labs it originated were in attendance, and some gave talks that you can watch the videos for by following [this link!](https://blog.ipfs.io/67-crdt-research-meetup/)
+We <3 Conflict-free Replicated Data Types so much so that last April we hosted the [2018 CRDT Research Meetup](https://blog.ipfs.eth.link/67-crdt-research-meetup/) in Lisbon. Authors of the CRDT research literature and representatives from the Labs it originated were in attendance, and some gave talks that you can watch the videos for by following [this link!](https://blog.ipfs.eth.link/67-crdt-research-meetup/)
 
 ### Revisiting IPFS Hack Week in Lisbon
 
-Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.io/74-lisbon-hack-week/) to bring together core developers, contributors, researchers, and IPFS community members to sync, hang, and work on some problem solving together IRL. If you missed it, many of the presentations were recorded so you can watch [those videos here](https://blog.ipfs.io/74-lisbon-hack-week/). If you’re interested in attending the next IPFS Community event, check out IPFS Camp (more details below) and get [registered here](https://camp.ipfs.io/).
+Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.eth.link/74-lisbon-hack-week/) to bring together core developers, contributors, researchers, and IPFS community members to sync, hang, and work on some problem solving together IRL. If you missed it, many of the presentations were recorded so you can watch [those videos here](https://blog.ipfs.eth.link/74-lisbon-hack-week/). If you’re interested in attending the next IPFS Community event, check out IPFS Camp (more details below) and get [registered here](https://camp.ipfs.io/).
 
 ## Meet Jia Le Dai
 
@@ -72,7 +72,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.eth.link/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 

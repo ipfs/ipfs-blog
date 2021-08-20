@@ -13,7 +13,7 @@ tags:
 author: Dietrich Ayala
 
 ---
-In 2020 we announced a big moment for IPFS: The first official support of IPFS protocol addressing in a major browser, when [Opera released IPFS support in their Android browser](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/). This was an important step in IPFS browser support generally, by building interest and momentum. We didn’t stop there, and we’ve got not just one… BUT TWO releases to share with you today!
+In 2020 we announced a big moment for IPFS: The first official support of IPFS protocol addressing in a major browser, when [Opera released IPFS support in their Android browser](https://blog.ipfs.eth.link/2020-03-30-ipfs-in-opera-for-android/). This was an important step in IPFS browser support generally, by building interest and momentum. We didn’t stop there, and we’ve got not just one… BUT TWO releases to share with you today!
 
 First, Opera has now added support for IPFS addressing to Opera Touch, their iOS browser.
 
@@ -31,7 +31,7 @@ First, install Opera Touch on your iOS device. If you’re reading this on an iO
 
 ![](../assets/opera-ios-app-store-short.png)
 
-Then you can open content using IPFS protocol addresses, like the [blog you’re reading now](ipns://blog.ipfs.io), [Wikipedia](ipns://en.wikipedia-on-ipfs.org), or this [Persian room guardian](ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi) by [Anya Boz](https://www.anyabozartist.com/the-persian-cat). You can easily upload files to IPFS using the [IPFS desktop application](https://docs.ipfs.io/install/ipfs-desktop/) or [Share.ipfs.io](https://share.ipfs.io).
+Then you can open content using IPFS protocol addresses, like the [blog you’re reading now](ipns://blog.ipfs.eth.link), [Wikipedia](ipns://en.wikipedia-on-ipfs.org), or this [Persian room guardian](ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi) by [Anya Boz](https://www.anyabozartist.com/the-persian-cat). You can easily upload files to IPFS using the [IPFS desktop application](https://docs.ipfs.io/install/ipfs-desktop/) or [Share.ipfs.io](https://share.ipfs.io).
 
 ## How does it work?
 

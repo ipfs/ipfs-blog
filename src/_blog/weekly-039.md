@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### go-ipfs 0.4.20 released
 
-Highlights from the latest release of the Go implementation, go-ipfs, include support for Docker commands, a major WebUI release, some improved _and_ new commands, plus perf and reliability improvements. Read the full release notes on [the IPFS blog](https://blog.ipfs.io/83-go-ipfs-0-4-20/).
+Highlights from the latest release of the Go implementation, go-ipfs, include support for Docker commands, a major WebUI release, some improved _and_ new commands, plus perf and reliability improvements. Read the full release notes on [the IPFS blog](https://blog.ipfs.eth.link/83-go-ipfs-0-4-20/).
 
 ### Introducing IPFS-lite: embeddable, lightweight IPFS-network peer for IPLD applications
 
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.eth.link/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 

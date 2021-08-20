@@ -22,7 +22,7 @@ Join us on December 11 for a mini-celebration featuring talks from all of the IP
 
 Want to help shape the 2021 IPFS project plan? We’re looking for your input on what’s important for IPFS to focus on next year! The proposal period runs through Monday, December 7. Read the full announcement for more details on how you can give your input.
 
-[Read more](https://blog.ipfs.io/2020-11-19-community-rfp/)
+[Read more](https://blog.ipfs.eth.link/2020-11-19-community-rfp/)
 
 ## Thread of the week 🧵
 

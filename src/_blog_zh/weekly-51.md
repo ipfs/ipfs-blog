@@ -22,7 +22,7 @@ tags:
 
 ### 2019 IPFS 露营的第一批录音出来了!
 
-- 你没看错,IPFS 露营的录音开始发布了！第一批: [闪电演讲和项目海报](https://blog.ipfs.io/2019-07-22-ipfs-camp-content-first-batch/)，去看看吧！
+- 你没看错,IPFS 露营的录音开始发布了！第一批: [闪电演讲和项目海报](https://blog.ipfs.eth.link/2019-07-22-ipfs-camp-content-first-batch/)，去看看吧！
 
 ### 加入 IRC 上的 IPFS、libp2p 和 IPLD 社区 \o/， 它很有趣!
 

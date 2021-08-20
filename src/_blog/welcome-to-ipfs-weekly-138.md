@@ -24,7 +24,7 @@ NFT.Storage has officially launched on Product Hunt, a platform featuring all th
 
 ![](../assets/2021-04-14-cardheader-scaling-ethereum.png)
 
-An endeavour to collaborate on creating a powerful foundation for the future of the Ethereum community, [**Scaling Ethereum**](https://scaling.ethglobal.co/), has come to a close, resulting in some innovative and inspiring solutions. The IPFS and Filecoin projects, alongside the ETHGlobal team, sponsored this 4-week hackathon event. Additionally, we put up $7500 in Filecoin across various scaling areas to award to those brave and intrepid souls willing to rise to the challenge! [**Read this blog post**](https://blog.ipfs.io/2021-05-26-scaling-ethereum-recap/) to learn more about the event and about the prize winners.
+An endeavour to collaborate on creating a powerful foundation for the future of the Ethereum community, [**Scaling Ethereum**](https://scaling.ethglobal.co/), has come to a close, resulting in some innovative and inspiring solutions. The IPFS and Filecoin projects, alongside the ETHGlobal team, sponsored this 4-week hackathon event. Additionally, we put up $7500 in Filecoin across various scaling areas to award to those brave and intrepid souls willing to rise to the challenge! [**Read this blog post**](https://blog.ipfs.eth.link/2021-05-26-scaling-ethereum-recap/) to learn more about the event and about the prize winners.
 
 ## Brand new on IPFS
 

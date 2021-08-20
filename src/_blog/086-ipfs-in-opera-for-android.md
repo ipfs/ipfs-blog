@@ -13,7 +13,7 @@ tags:
 ---
 ![IPFS built-in to Opera for Android](../assets/086-ipfs-in-opera-for-android-banner.png)
 
-As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
+As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.eth.link/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
 
 Today, **Opera for Android 57** is live in the Google Play Store with default support for IPFS with a native handler for `ipfs://` addresses that redirects to the HTTP gateway of your choosing! [Install Opera Android with IPFS now](https://play.google.com/store/apps/details?id=com.opera.browser).
 

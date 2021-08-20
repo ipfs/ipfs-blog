@@ -35,7 +35,7 @@ It's been a long and emotional voyage but this refactor brings a plethora of inc
 
 Using `async`/`await` in JavaScript is gaining a _lot_ of traction in the ecosystem and is rapidly becoming the de facto way of writing idiomatic JS. We want js-ipfs to **move with the times and continue to be attractive to contributors** by using modern JS features, techniques and practices. The big idea with these changes is for the code to be easier to contribute to, easier to understand, easier to maintain, and be faster and smaller than ever.
 
-This change is so big, and so significant, we wrote a whole [blog post](https://blog.ipfs.io/2020-02-01-async-await-refactor/) about it to explain the motivations behind the changes...in ~~excruciating~~ delightful depth 🤣!
+This change is so big, and so significant, we wrote a whole [blog post](https://blog.ipfs.eth.link/2020-02-01-async-await-refactor/) about it to explain the motivations behind the changes...in ~~excruciating~~ delightful depth 🤣!
 
 We've also compiled some stats on this refactor for your viewing pleasure:
 
@@ -199,7 +199,7 @@ There are significant and breaking core API changes in this release. Please see 
 ## Other changes
 
 - libp2p has been upgraded to 0.27, which also includes breaking changes to it's core API. Please see the release announcement post for more info:
-  - https://blog.ipfs.io/2020-02-07-js-libp2p-0-27/
+  - https://blog.ipfs.eth.link/2020-02-07-js-libp2p-0-27/
 - The protocol _name_ for peer IDs in multiaddrs has changed from 'ipfs' to 'p2p'. There's no changes to data on the wire but this change is seen when multiaddrs are converted to strings.
 
 # ❤️ Huge thank you to everyone that made this release possible

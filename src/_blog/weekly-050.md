@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### 2019 IPFS Camp Recap
 
-In case you missed it, David Dias and the IPFS Camp team wrote up a recap of last month’s event with links to talks, resources and more, so [check it out on the IPFS blog.](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/)
+In case you missed it, David Dias and the IPFS Camp team wrote up a recap of last month’s event with links to talks, resources and more, so [check it out on the IPFS blog.](https://blog.ipfs.eth.link/2019-07-08-ipfs-camp-recap/)
 
 ### Announcing the arrival of js-ipfs-http-client-lite
 

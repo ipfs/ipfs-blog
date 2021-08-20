@@ -24,7 +24,7 @@ Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple i
 
 ![](../assets/header-image-js-ipfs-placeholder.png)
 
-[**js-IPFS 0.56.0**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.56.0) is on its way to the moon with a new data layer and import/export for [**Content Addressable aRchives**](https://ipld.io/specs/transport/car/) along with many small bug fixes and performance improvements! All part of the js-IPFS roadmap ([**check it out here**](https://github.com/orgs/ipfs/projects/6)). Read [**this blog post**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/) to learn more about the [**0.56.0 upgrade**](https://blog.ipfs.io/2021-07-29-js-ipfs-0-56/), including new features, breaking changes, and bug fixes.
+[**js-IPFS 0.56.0**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.56.0) is on its way to the moon with a new data layer and import/export for [**Content Addressable aRchives**](https://ipld.io/specs/transport/car/) along with many small bug fixes and performance improvements! All part of the js-IPFS roadmap ([**check it out here**](https://github.com/orgs/ipfs/projects/6)). Read [**this blog post**](https://blog.ipfs.eth.link/2021-07-29-js-ipfs-0-56/) to learn more about the [**0.56.0 upgrade**](https://blog.ipfs.eth.link/2021-07-29-js-ipfs-0-56/), including new features, breaking changes, and bug fixes.
 
 ## Brand new on IPFS
 

@@ -25,7 +25,7 @@ We're excited to be supporting [**Web3 Weekend**](https://web3.ethglobal.co/), a
 
 Earlier this spring, we were happy to partner with the folks at [**Gamedev.js**](https://gamedevjs.com/jam/2021/) for their 2021 hackathon event focused exclusively on games! Gamedev.js Jam celebrates HTML5 games where participants build a web game within 13 days of the jam on a given theme; this year’s was Mirrors.  
   
-The IPFS and Filecoin projects put up $5000 in Filecoin into the prize pool for the Decentralization category. As it was the first time the event hosted this category, the community of game developers were seeing some of these technologies for the very first time. Popular tools used were [**Fleek.co**](http://fleek.co/) and Pinata for hosting of assets and data. [**Check out this blog post**](https://blog.ipfs.io/2021-05-20-gamedevjs-recap/) to learn more about the event and about the prize winners.
+The IPFS and Filecoin projects put up $5000 in Filecoin into the prize pool for the Decentralization category. As it was the first time the event hosted this category, the community of game developers were seeing some of these technologies for the very first time. Popular tools used were [**Fleek.co**](http://fleek.co/) and Pinata for hosting of assets and data. [**Check out this blog post**](https://blog.ipfs.eth.link/2021-05-20-gamedevjs-recap/) to learn more about the event and about the prize winners.
 
 ## Brand new on IPFS
 

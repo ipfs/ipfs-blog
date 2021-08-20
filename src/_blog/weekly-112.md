@@ -16,13 +16,13 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Thanks to a lot of community support, types are now a first-class citizen within the js-IPFS codebase! But the real headline here should be that install times can now be halved by installing ipfs-core. Check out the full announcement for details.
 
-[Read more](https://blog.ipfs.io/2020-10-29-js-ipfs-0-50/)
+[Read more](https://blog.ipfs.eth.link/2020-10-29-js-ipfs-0-50/)
 
 ## Securing the public IPFS with DHT hardening
 
 Thanks to the work of some researchers and a small crew of core devs, we were able to not only make several crucial fixes but with the availability of Testground, we were also able to verify the mitigations. Special thanks to Bernd Prünster and Alexander Marsalek at A-SIT and the Graz University of Technology for their assistance.
 
-[Read more](https://blog.ipfs.io/2020-10-30-dht-hardening/)
+[Read more](https://blog.ipfs.eth.link/2020-10-30-dht-hardening/)
 
 ## Honey, I shrunk the Libp2p streams 😱
 

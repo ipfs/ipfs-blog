@@ -22,11 +22,11 @@ tags:
 
 ### 了解如何将 go-ipfs 用作程序库 📚
 
-[标题说明了一切。](https://blog.ipfs.io/073-go-ipfs-as-a-library/)通过此新教程了解如何将 go-ipfs 用作程序库，并充分利用 go-ipfs 核心 API。
+[标题说明了一切。](https://blog.ipfs.eth.link/073-go-ipfs-as-a-library/)通过此新教程了解如何将 go-ipfs 用作程序库，并充分利用 go-ipfs 核心 API。
 
 ### js-ipfs 0.39.0 发布 🎉
 
-喔！使用预设配置文件配置您的节点！限制从浏览器传出的请求！使用一条命令从头开始创建节点！ [全部使用 js-ipfs 0.39.0！](https://blog.ipfs.io/071-js-ipfs-0-39/)
+喔！使用预设配置文件配置您的节点！限制从浏览器传出的请求！使用一条命令从头开始创建节点！ [全部使用 js-ipfs 0.39.0！](https://blog.ipfs.eth.link/071-js-ipfs-0-39/)
 
 ## IPFS 生态圈的动态
 
