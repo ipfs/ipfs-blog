@@ -85,7 +85,7 @@ $ cat ipscend.json
   "path": "src/public"
 ```
 
-Grab that hash and share it with your friends, by sending them a link to ipfs.io, appending "/ipfs/Hash" (e.g. https:/ipfs.io/ipfs/ QmVNgdUoBQHiBhSeDe2z8LttJaDZq7JZi17sR1SPnJmjMh).
+Grab that hash and share it with your friends, by sending them a link to ipfs.io, appending "/ipfs/Hash" (e.g. https:/dweb.link/ipfs/QmVNgdUoBQHiBhSeDe2z8LttJaDZq7JZi17sR1SPnJmjMh).
 
 If you want to use your awesome.domain.com to load your page from IPFS, you can check how to do it now at https://github.com/diasdavid/ipscend#use-ipfs-to-host-your-webpage-using-a-standard-domain-includes-cool-dns-trick.
 

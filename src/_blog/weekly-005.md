@@ -88,7 +88,7 @@ over IPFS will work in all future releases.
 
 #### [**Logo**](//github.com/ipfs/logo)
 
-[@Kubuxu](//github.com/Kubuxu) worked on a new [IPFS logo](https://ipfs.io/ipfs/QmTgtbb4LckHaXh1YhpNcBu48cFY8zgT1Lh49q7q7ksf3M/). Check it out.
+[@Kubuxu](//github.com/Kubuxu) worked on a new [IPFS logo](https://dweb.link/ipfs/QmTgtbb4LckHaXh1YhpNcBu48cFY8zgT1Lh49q7q7ksf3M/). Check it out.
 
 ## Community
 

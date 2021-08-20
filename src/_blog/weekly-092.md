@@ -48,7 +48,7 @@ Earlier this month, Powergate, Textile’s API driven solution to deploying mult
 - [This repository](https://github.com/2020PB/police-brutality) exists to accumulate and contextualize evidence of police brutality during the 2020 George Floyd protests, and has an open PR to create a public IPFS Follow Cluster.
 - [IPDR](https://github.com/miguelmota/ipdr) is a Docker Registry tool that proxies Docker registry requests to IPFS for pushing and pulling images.
 - [Git Large File Storage](https://git-lfs.github.com/) offers custom transfer and extension implementation that makes using IPFS for storage easy.
-- [Check out IPIDE](https://ipfs.io/ipfs/QmV3SzLWyTHdMStxeRyvLnLteujLNwNVM5821QsxZVerZL), an extensible IDE hosted on IPFS.
+- [Check out IPIDE](https://dweb.link/ipfs/QmV3SzLWyTHdMStxeRyvLnLteujLNwNVM5821QsxZVerZL), an extensible IDE hosted on IPFS.
 
 ## Job hunting? Work on IPFS!
 

@@ -45,7 +45,7 @@ If you click the link above in Opera for Android you’ll see Wikipedia, served 
 
 Here’s what that same address looks like from an HTTP gateway, which will work in all browsers:
 
-> https://ipfs.io/ipfs/bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/
+> https://dweb.link/ipfs/bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/
 
 ## Enabling human-readable addresses
 

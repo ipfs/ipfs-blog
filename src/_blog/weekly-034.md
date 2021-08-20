@@ -55,7 +55,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 - [Meet the decentralized versions of YouTube, Google Docs, and Google Photos!](https://en.softonic.com/articles/decentralized-apps)
 - [dFile.space](https://dfile.space/): Decentralised File Hosting in Space
-- [DoublePlus](https://ipfs.io/ipns/ipfs.doubleplus.io): Completely decentralized social network hosted over IPFS
+- [DoublePlus](https://dweb.link/ipns/ipfs.doubleplus.io): Completely decentralized social network hosted over IPFS
 - [Almonit](almonit.eth): A decentralized website made with ENS + IPFS
 - Deploy DNSLink TXT Records To AWS Route53 Domains with [dnslink-route53](https://github.com/RTradeLtd/dnslink-route53)
 

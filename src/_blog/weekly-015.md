@@ -35,7 +35,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 - [How to Keep Your IPFS Nodes Connected to Ensure Fast Content Discovery](https://medium.com/pinata/how-to-keep-your-ipfs-nodes-connected-and-ensure-fast-content-discovery-7d92fb23da46?_branch_match_id=371334966290849970), An IPFS Tutorial, Matt Ober, 19 Oct 2018
 - [How We Sped Up Unit Test Performance by 10x at Qri](https://qri.io/blog/unit_test_performance/), Dustin Long, 17 Oct 2018
 - [Introduction to Blockchain Governance](https://blog.district0x.io/introduction-to-blockchain-governance-bc6eea42ada3), P.J. Leimgruber, 17 Oct 2018
-- [hastebin.com clone using ipfs-companion for writing](https://ipfs.io/ipfs/QmUtKaW3MQ9b5R623V7VU1Grz4WosKA7KNKsgYVWxBqT5u/#)
+- [hastebin.com clone using ipfs-companion for writing](https://dweb.link/ipfs/QmUtKaW3MQ9b5R623V7VU1Grz4WosKA7KNKsgYVWxBqT5u/#)
 
 ## Updates and new releases
 

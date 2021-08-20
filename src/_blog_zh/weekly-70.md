@@ -34,7 +34,7 @@ Hotz 或 GeoHot，有机会在每周日简单技能中[使用一些 IPFS](https:
 
 _您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
 
-- 幻灯片： [cyber：计算伟大网络中的知识](https://ipfs.io/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ) ，@xhipster 和 @litvintech，2019 年 12 月 1 日
+- 幻灯片： [cyber：计算伟大网络中的知识](https://dweb.link/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ) ，@xhipster 和 @litvintech，2019 年 12 月 1 日
 - 照片： [Henrique Dias 指导 BarcampLX 受众](https://twitter.com/BarcampLx/status/1200837433178427393?s=20)通过 IPFS 快速进入去中心化网络，2019 年 11 月 30 日
 - [Code Talks：零知识证明技术在区块链行业中的应用](https://medium.com/ppio/application-zero-knowledge-c0710a2a1dac) ，PPIO，2019 年 11 月 29 日
 - 教程： [使用 Node.Js 构建 IPFS 应用程序](https://medium.com/swlh/ipfs-nodejs-app-8e35f504d440) ，The Startup，2019 年 11 月 29 日

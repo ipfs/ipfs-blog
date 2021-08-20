@@ -16,7 +16,7 @@ _**UPDATE:** There are now [multiple language versions of Wikipedia on IPFS](htt
 > The Internet treats censorship as a malfunction and routes around it.
 > \-- John Perry Barlow
 
-We are happy to announce that **we have published a** [**snapshot of tr.wikipedia.org, the Turkish version of Wikipedia**](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html) **on IPFS**. There will be Arabic, Kurdish and English versions coming shortly. This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
+We are happy to announce that **we have published a** [**snapshot of tr.wikipedia.org, the Turkish version of Wikipedia**](https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html) **on IPFS**. There will be Arabic, Kurdish and English versions coming shortly. This blog post includes information on how you can access those snapshots, how you can help mirror them, and why it's so powerful to put content like this on IPFS.
 
 The effort to put snapshots of Wikipedia onto IPFS is an independent effort undertaken by the IPFS maintainers. It is not affiliated with the Wikimedia Foundation and is not connected with the volunteers who contribute to Wikipedia articles.
 
@@ -35,7 +35,7 @@ Upon hearing the news, we revived an effort to put snapshots of Wikipedia on IPF
 
 [**IPFS**](https://ipfs.io) **-- the Inter-Planetary File System** -- is a new internet protocol that makes the web faster, safer, and more open. IPFS changes the _addressing_ of information, moving from _location addressing_ to _content addressing_. You can find out more about IPFS at [the IPFS Website](https://ipfs.io) or by [watching this talk](https://www.youtube.com/watch?v=2RCwZDRwk48).
 
-_Content addressing_ is a technique to reference files or data by a unique fingerprint derived from the contents of the file or data itself. Content addressing is implemented with [cryptographic hashing](https://simple.wikipedia.org/wiki/Cryptographic_hash_function), so that content addresses are secure, permanent, and derived directly from the content itself. Information systems like IPFS use content addressing to ensure files, websites, and webapps can move around the network and be distributed by any computer securely and with perfect fidelity. This means that the contents of websites like Wikipedia can be moved around and accessed in a peer-to-peer, decentralized way, much like BitTorrent or even email. This works even if access to the specific https://en.wikipedia.org servers is censored. To find out more about content addressing, you can watch [this part of a talk](https://youtu.be/2RCwZDRwk48?t=847) or [this excellent post](https://ipfs.io/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html).
+_Content addressing_ is a technique to reference files or data by a unique fingerprint derived from the contents of the file or data itself. Content addressing is implemented with [cryptographic hashing](https://simple.wikipedia.org/wiki/Cryptographic_hash_function), so that content addresses are secure, permanent, and derived directly from the content itself. Information systems like IPFS use content addressing to ensure files, websites, and webapps can move around the network and be distributed by any computer securely and with perfect fidelity. This means that the contents of websites like Wikipedia can be moved around and accessed in a peer-to-peer, decentralized way, much like BitTorrent or even email. This works even if access to the specific https://en.wikipedia.org servers is censored. To find out more about content addressing, you can watch [this part of a talk](https://youtu.be/2RCwZDRwk48?t=847) or [this excellent post](https://dweb.link/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html).
 
 ### Why put Wikipedia on IPFS?
 
@@ -93,7 +93,7 @@ Today, we are releasing the first full static snapshot on IPFS of all of https:/
 
 The unique identifier (cryptographic hash) for the snapshot of tr.wikipedia.org from April 30th is:
 
-* Turkish Wikipedia (30 April 2017): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/)
+* Turkish Wikipedia (30 April 2017): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/](https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/)
 
 This link points to a specific snapshot. It will always point to that specific day's snapshot. To find the most up-to-date snapshot of Wikipedia on IPFS you can use human-readable links, as noted below.
 
@@ -103,20 +103,20 @@ For your convenience we have set up a domain name and DNS entry at [tr.wikipedia
 
 If you are not able to access `ipfs.io`, or `wikipedia-on-ipfs.org`, you can use this [dnslink](https://docs.ipfs.io/concepts/dnslink/) URL to access the content -- simply replace `ipfs.io` with the address of any [IPFS gateway](https://ipfs.github.io/public-gateway-checker/):
 
-* Turkish Wikipedia: [https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/wiki/)
+* Turkish Wikipedia: [https://dweb.link/ipns/tr.wikipedia-on-ipfs.org/](https://dweb.link/ipns/tr.wikipedia-on-ipfs.org/wiki/)
 
 Failing that, use the (less readable) IPFS links from above.
 
 ## How to access Wikipedia on IPFS
 
-IPFS makes it possible to access information through many different paths. If one path is closed, you have other options. Some of the options are very simple. Others require a bit more effort. In most cases you can use [this link](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html) to view the Wikipedia snapshot through the ipfs-to-http gateway at ipfs.io. If that path doesn't work, for example if ipfs.io is blocked in your area, you can use the same basic information from that ipfs.io link and access Wikipedia through a different path.
+IPFS makes it possible to access information through many different paths. If one path is closed, you have other options. Some of the options are very simple. Others require a bit more effort. In most cases you can use [this link](https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Anasayfa.html) to view the Wikipedia snapshot through the ipfs-to-http gateway at ipfs.io. If that path doesn't work, for example if ipfs.io is blocked in your area, you can use the same basic information from that ipfs.io link and access Wikipedia through a different path.
 
 We've written a number of tutorials describing the many different ways to access content through IPFS, including ways to access IPFS anonymously through Tor. You can read those tutorials in the current draft of [The Decentralized Web Primer](https://dweb-primer.ipfs.io/avenues-for-access/), which is available [online](https://dweb-primer.ipfs.io/avenues-for-access/) or as a [downloadable PDF](https://dweb-primer.ipfs.io/decentralized-web-primer.pdf), [epub](https://dweb-primer.ipfs.io/decentralized-web-primer.epub), or [mobi](https://dweb-primer.ipfs.io/decentralized-web-primer.mobi)
 
 Your main options for accessing the snapshot of Wikipedia are: _(depending on your network, some of these won't work)_
 
-* **Option**: Use any gateway to access the 30 April 2017 snapshot: https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/
-* **Option**: Use any gateway to access the latest DNSLink version: https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/wiki/
+* **Option**: Use any gateway to access the 30 April 2017 snapshot: https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/
+* **Option**: Use any gateway to access the latest DNSLink version: https://dweb.link/ipns/tr.wikipedia-on-ipfs.org/wiki/
 * **Option**: Connect to gateway over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html).
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
   1. Install IPFS [following these instructions](https://docs.ipfs.io/install/command-line/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
@@ -175,7 +175,7 @@ Whenever we add an updated snapshot of Wikipedia to IPFS, we will announce it in
 
 1. We will tweet the new snapshot hash on the [@ipfsbot](https://twitter.com/ipfsbot) account along with the hashtag [#WikipediaOnIPFS](https://twitter.com/search?f=tweets&q=WikipediaOnIPFS)
 2. We will update this DNSLink entry to point to the latest snapshot:
-   * Turkish Wikipedia: [/ipns/tr.wikipedia-on-ipfs.org/](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/)
+   * Turkish Wikipedia: [/ipns/tr.wikipedia-on-ipfs.org/](https://dweb.link/ipns/tr.wikipedia-on-ipfs.org/)
 
 ## Who controls the information
 
@@ -186,11 +186,11 @@ If people start relying on this information over time, it will be important to e
 ## Review
 
 * You can access a snapshot of Wikipedia through any IPFS gateway
-  * Turkish Wikipedia (30 April 2017 snapshot): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/](https://ipfs.io/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/)
+  * Turkish Wikipedia (30 April 2017 snapshot): [/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/](https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/)
 * These are read-only snapshots. Supporting full read-and-write would take further work.
 * IPFS links use cryptographic hashes, so you don’t have to worry about spoofing
 * The DNSLink records point to the most recent snapshot
-  * Turkish Wikipedia (most recent snapshot): [/ipns/tr.wikipedia-on-ipfs.org/](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/)
+  * Turkish Wikipedia (most recent snapshot): [/ipns/tr.wikipedia-on-ipfs.org/](https://dweb.link/ipns/tr.wikipedia-on-ipfs.org/)
 * If people start relying on this information, we will encourage Wikimedia to take over generating these snapshots
 * We are encouraging Wikimedia to publish DNSLink or even IPNS record that is always up to date AND is cryptographically signed by Wikimedia
 * If you want to mirror the data, run an ipfs node and pin the Wikipedia data onto your node

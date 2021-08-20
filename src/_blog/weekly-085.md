@@ -34,7 +34,7 @@ Here is a followup to our bounty for creating a CORD-19 dataset:
 
 We now have a **CORD-19 collaborative cluster dataset**, but it won’t be useful if the people that should use it don’t know that they can access this content from the IPFS network!
 
-Please share it freely: https://ipfs.io/ipfs/Qme2F949GSfupReGPMKJ4EQTGi9hzzUcsJvRS1Mr8YVNzQ
+Please share it freely: https://dweb.link/ipfs/Qme2F949GSfupReGPMKJ4EQTGi9hzzUcsJvRS1Mr8YVNzQ
 
 ## Meet Fleek
 

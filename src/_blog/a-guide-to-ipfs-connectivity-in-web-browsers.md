@@ -17,7 +17,7 @@ We see a lot of questions about how to get started with using `js-ipfs` in the b
 
 ## Getting the code
 
-You can see the live demo [here](https://ipfs.io/ipfs/bafybeia5f2yk6td7ciroeped2uwfivo333b524t3zmoderfhl3xn7wi7aa/). If you'd like a local copy you can edit yourself, you can download the whole directory using IPFS:
+You can see the live demo [here](https://dweb.link/ipfs/bafybeia5f2yk6td7ciroeped2uwfivo333b524t3zmoderfhl3xn7wi7aa/). If you'd like a local copy you can edit yourself, you can download the whole directory using IPFS:
 
     ipfs get bafybeia5f2yk6td7ciroeped2uwfivo333b524t3zmoderfhl3xn7wi7aa
 
@@ -57,7 +57,7 @@ In a browser, discovering and connecting to peers can be very hard, as we can't 
 
 The chat example achieves this in two ways. Using WebRTC-Star, we achieve direct browser-to-browser communication, and with a circuit relay, we have a relay in the middle. The chat application also has a status indicator in the top left to let you know  what kind of connection you have. Green means you're connected to the relay, even if it's via another peer; yellow means you're only seeing direct peers; and red means you have no peers (at least none using the chat application).
 
-![Network graph showing the paths nodes can use to discover and communicate with each other](https://ipfs.io/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "Browser IPFS network graph")
+![Network graph showing the paths nodes can use to discover and communicate with each other](https://dweb.link/ipfs/QmX2og5BKJCMVaebEm9ZGsACEYExoGqxhJjePKNc2mZ2pE "Browser IPFS network graph")
 
 🌟 The diagram above demonstrates what a three-user network can look like. It's worth noting that the browser nodes can communicate with `go-ipfs` as well, so BrowserC doesn't have to be a browser at all, but instead could be a `go-ipfs` node!
 

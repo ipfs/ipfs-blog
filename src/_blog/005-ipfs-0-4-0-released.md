@@ -45,7 +45,7 @@ QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv
 # of this file system!
 
 # You can see it locally or on the public gateway:
-#  https://ipfs.io/ipfs/QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv
+#  https://dweb.link/ipfs/QmNU8HmaeRa8VtfqAoQRJhSE5Zx54vyYf2nT1bDGcYXaNv
 
 # Subsequent edits will produce a new /ipfs address for the root directory.
 ```

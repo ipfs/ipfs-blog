@@ -108,7 +108,7 @@ Things are awesome and getting awesomer. Specifically, SpaceX [landed a reusable
 
 This week's Content-Type is the non-standard `chemical/x-chemdraw`. ChemDraw is a molecule editor first released in 1985, and still maintained as of today. We don't know which molecules were added to IPFS, but will do our best for IPFS to be around in 30 years just like ChemDraw is still around.
 
-Every week we highlight a Content-Type that we've seen on the public HTTP-to-IPFS gateway at https://ipfs.io. If you're waiting to see one particularly interesting Content-Type in one of the next Weeklies, propose it by `ipfs add -w`'ing a file of that type, and requesting it from the public gateway: `https://ipfs.io/ipfs/<hash>`.
+Every week we highlight a Content-Type that we've seen on the public HTTP-to-IPFS gateway at https://ipfs.io. If you're waiting to see one particularly interesting Content-Type in one of the next Weeklies, propose it by `ipfs add -w`'ing a file of that type, and requesting it from the public gateway: `https://dweb.link/ipfs/<hash>`.
 
 ## Contributors
 

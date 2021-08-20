@@ -19,15 +19,15 @@ We are back with a direct follow up on the [Gossipsub v1.1 release from May](htt
 
 The first cat was out of the bag as soon as you opened this post – the new logo! We now have a dedicated logo for this libp2p PubSub router implementation which represents the double network nature of Gossipsub. We hope you enjoy it!
 
-You can find all the [logo assets here](https://ipfs.io/ipfs/QmVSk8VvxWExnYCjqg7TNW2aBnN8Wr7SzkawLUyocWq96p)
+You can find all the [logo assets here](https://dweb.link/ipfs/QmVSk8VvxWExnYCjqg7TNW2aBnN8Wr7SzkawLUyocWq96p)
 
 ## 📊 Evaluation Report
 
-[![](../assets/report-eval.png =600x)](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4)
+[![](../assets/report-eval.png =600x)](https://gateway.dweb.link/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4)
 
 We are sharing with you a comprehensive, 61-page evaluation report, in which you can learn how we approached the testing of Gossipsub v1.1, the setting in which tests were run, and detailed descriptions of the conclusions we were able to take from such evaluation. With this evaluation, we demonstrate that GossipSub is resilient against all of the attacks studied, capable of recovering the mesh and meeting the message delivery deadline requirements of the Filecoin and the ETH2.0 blockchains.
 
-In addition to this report, which you can [find here](https://gateway.ipfs.io/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4), we are also excited to share with you:
+In addition to this report, which you can [find here](https://gateway.dweb.link/ipfs/QmRAFP5DBnvNjdYSbWhEhVRJJDFCLpPyvew5GwCCB4VxM4), we are also excited to share with you:
 
 - The code that runs the malicious actor, code-named “bad boy”, which is simpler, more lightweight, and faster than the actual GossipSub protocol code. This is because attackers don’t need to follow all protocol logic and benefit from running only the essential functions with the goal of degrading the quality of service of the network. Find the [code here](https://github.com/libp2p/gossipsub-hardening/blob/master/test/badboy.go).
 
@@ -49,7 +49,7 @@ Additionally, we are delighted to release Least Authority’s audit report for G
 
 It was a great experience to work with Least Authority throughout multiple fruitful discussions, LA identified multiple findings which then got mitigated by the Gossipsub team and reviewed again by LA.
 
-Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.ipfs.io/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report%20%28v2%29.pdf). You can also read Least Authority's report announcement post at [their own blog](https://leastauthority.com/blog/audit-of-gossipsub-v1-1-for-protocol-labs).
+Least Authority produced a report detailing all of the tests they have carried out. You can consult the [final report here](https://gateway.dweb.link/ipfs/QmWR376YyuyLewZDzaTHXGZr7quL5LB13HRFnNdSJ3CyXu/Least%20Authority%20-%20Gossipsub%20v1.1%20Final%20Audit%20Report%20%28v2%29.pdf). You can also read Least Authority's report announcement post at [their own blog](https://leastauthority.com/blog/audit-of-gossipsub-v1-1-for-protocol-labs).
 
 ## 📜 Gossipsub Paper
 

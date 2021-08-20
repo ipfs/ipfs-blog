@@ -58,7 +58,7 @@ Throughout the year people were excited to meet and chat about IPFS. Here are so
 
 **February:** The workshop [WebVR/AR III: Mixed Reality Networks](https://www.eventbrite.com/e/webvrar-iii-mixed-reality-networks-cc360-tickets-40763651178#) in Portland, Oregon.
 
-**May:** [Baltimore/DC IPFS](https://gateway.ipfs.io/ipfs/QmccuDo37eDmmWBRjJcpLJXiADnmRy7f59RWkkJQU7Jm97/) held a meet-up.
+**May:** [Baltimore/DC IPFS](https://gateway.dweb.link/ipfs/QmccuDo37eDmmWBRjJcpLJXiADnmRy7f59RWkkJQU7Jm97/) held a meet-up.
 
 **August**: [The IPFS community](https://twitter.com/IPFSbot/status/1024724255043280896) descended upon Decentralized Web Summit 2018 in San Francisco, California.
 
@@ -337,7 +337,7 @@ These are just a few of the new apps and tools that were submitted to the [new A
 
 - [qri](https://qri.io) - Dataset creation, collaboration, and discovery on the distributed web.
 
-- [Peer Bandwidth Demo](https://ipfs.io/ipfs/QmVaVXbLdw4R5NqAiiQoTWtitxo5g7FS31PQmCLbH9p8Fu/) - An demo app that uses window.ipfs, provided by the IPFS Companion web extension to get and graph bandwidth info for your IPFS node
+- [Peer Bandwidth Demo](https://dweb.link/ipfs/QmVaVXbLdw4R5NqAiiQoTWtitxo5g7FS31PQmCLbH9p8Fu/) - An demo app that uses window.ipfs, provided by the IPFS Companion web extension to get and graph bandwidth info for your IPFS node
 
 - [killcord](https://killcord.io/) - A censorship resistant deadman’s switch
 

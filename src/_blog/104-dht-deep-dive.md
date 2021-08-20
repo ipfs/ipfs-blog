@@ -35,7 +35,7 @@ Each of these record types has slightly different semantics, but they are all up
 
 ## Kademlia Overview
 
-The Kademlia algorithm has been around for a while and there are some great resources already available for it online, including the [paper itself](https://ipfs.io/ipfs/QmaVrnwZrnoG4YramcN75mbE5AUfCymiEErrHGXoQR968V) and [Wikipedia](https://en.wikipedia.org/wiki/Kademlia). We’ll go through some of the basics here, though.
+The Kademlia algorithm has been around for a while and there are some great resources already available for it online, including the [paper itself](https://dweb.link/ipfs/QmaVrnwZrnoG4YramcN75mbE5AUfCymiEErrHGXoQR968V) and [Wikipedia](https://en.wikipedia.org/wiki/Kademlia). We’ll go through some of the basics here, though.
 
 The general idea of Kademlia is to build a DHT on top of three system parameters:
 

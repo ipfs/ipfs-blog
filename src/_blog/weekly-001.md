@@ -23,7 +23,7 @@ Here are some of the highlights for the [December 21](//github.com/ipfs/pm/issue
 
 Not too much happened during this sprint, because it was the holidays - however, it was also the 32nd CCC. [@whyrusleeping](//github.com/whyrusleeping), [@diasdavid](//github.com/diasdavid), [@lgierth](//github.com/lgierth), [@Dignifiedquire](//github.com/Dignifiedquire) and more of the team were over there in Hamburg.
 
-![](https://ipfs.io/ipfs/QmWYaX56pTskFL2UMV2x8ZZAB8xyntPce5bFmY8ugHw47j/32c3.ipfs.2.jpg)
+![](https://dweb.link/ipfs/QmWYaX56pTskFL2UMV2x8ZZAB8xyntPce5bFmY8ugHw47j/32c3.ipfs.2.jpg)
 
 - [@whyrusleeping](//github.com/whyrusleeping) gave a lightning talk (see above).
 - [@whyrusleeping](//github.com/whyrusleeping) [@diasdavid](//github.com/diasdavid) and [@Dignifiedquire](//github.com/Dignifiedquire) led an install party and live demo.

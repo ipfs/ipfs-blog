@@ -12,7 +12,7 @@ tags:
 We are pleased to announce to everyone in our community that a new version of our
 browser extension has been released!
 
-![demo of v2.2.0](https://ipfs.io/ipfs/QmdJTmCxwcpoGbEVfT6b9j4RZJWNcF2GQG1Ajf9XB6XtVP)
+![demo of v2.2.0](https://dweb.link/ipfs/QmdJTmCxwcpoGbEVfT6b9j4RZJWNcF2GQG1Ajf9XB6XtVP)
 
 # 🔦 Highlights
 

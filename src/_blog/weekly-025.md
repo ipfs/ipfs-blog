@@ -48,7 +48,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [IPFS Cluster 0.8.0-rc1](https://dist.ipfs.io/ipfs-cluster-service) is here! For more, [check out the changelog](https://github.com/ipfs/ipfs-cluster/blob/0.8.0/changelog/CHANGELOG.md).
+- [IPFS Cluster 0.8.0-rc1](https://dist.dweb.link/ipfs-cluster-service) is here! For more, [check out the changelog](https://github.com/ipfs/ipfs-cluster/blob/0.8.0/changelog/CHANGELOG.md).
 
 ## Tools and projects we <3
 

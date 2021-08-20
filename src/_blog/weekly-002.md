@@ -24,7 +24,7 @@ Here are some of the highlights for the [January 5th](//github.com/ipfs/pm/issue
 
 ## Work in Progress
 
-- [**(distributions)**](//github.com/distributions) [@Dignifiedquire](//github.com/Dignifiedquire) further developed the distributions page. [Click here](http://v04x.ipfs.io/ipfs/QmZyvWokPYGg6DrjE6o2V7qhThzZQZ8QCWqdd2U3S75HXC/index.html) for a preview!
+- [**(distributions)**](//github.com/distributions) [@Dignifiedquire](//github.com/Dignifiedquire) further developed the distributions page. [Click here](http://v04x.dweb.link/ipfs/QmZyvWokPYGg6DrjE6o2V7qhThzZQZ8QCWqdd2U3S75HXC/index.html) for a preview!
 - [**(go-ipfs)**](//github.com/ipfs/go-ipfs) [@lgierth](//github.com/lgierth) continued the work towards the dev040 migration. Notably we have two new gateways to aid in the transition: [http://v04x.ipfs.io](http://v04x.ipfs.io) and [http://v03x.ipfs.io](http://v03x.ipfs.io)
 - [**(archives)**](//github.com/ipfs/archives/) [@Dignifiedquire](//github.com/Dignifiedquire) has added to IPFS a dump of the Stackexchange archives! Details are [in the archives repo](//github.com/ipfs/archives/issues/50). We are always looking for more help with archiving important datasets, so feel free to join us in the [archives repo](//github.com/ipfs/archives/)!
 
