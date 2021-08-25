@@ -1,12 +1,12 @@
 ---
 title: 'Welcome to IPFS Weekly 150: Celebrating the 150th IPFS newsletter with another
   set of NFTs stored on IPFS and more in the IPFS ecosystem!'
-description: Learn about DoraHacks winners, exciting news about Audius & TikTok, &
-  what’s on deck for the SXSW '22 panels.
+description: NFT.Storage is the underlying tech supporting the next phase of NFT solutions
+  from Jigstack’s Gallery, & more.
 author: Emily Vaughan
-date: 2021-08-17
-permalink: "/weekly-149/"
-translationKey: ipfs-weekly-149
+date: 2021-08-25
+permalink: "/weekly-150/"
+translationKey: ipfs-weekly-150
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
