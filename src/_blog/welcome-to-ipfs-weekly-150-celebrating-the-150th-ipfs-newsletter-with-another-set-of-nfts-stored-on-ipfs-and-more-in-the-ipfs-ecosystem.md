@@ -28,30 +28,24 @@ Last week, the [**Browsers3000 Hackathon**](https://events.protocol.ai/2021/brow
 
 ## Brand new on IPFS
 
-* JS-IPFS 0.57.0 is live with new [**bug fixes and features**](https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.57.0)!
-* ICYMI: Watch Yusef Napora's workshop [**"Minting NFTs with IPFS and Friends"**](https://www.youtube.com/watch?v=XxoZGes7NWQ) from HackFS '21.
-* [**Just announced**](https://www.coindesk.com/crypto-powered-audius-wins-tiktok-tie-up-for-streaming-music-direct-to-platform): TikTok chooses streaming service [**Audius**](https://audius.co/) as the solution behind its “Sounds” library. Audius and IPFS have a long history; check out the [**Building Web3 video series with Audius**](https://www.youtube.com/watch?v=c50licHTOik) and IPFS.
-* It’s not quite new, but still worth talking about! Web3.storage is a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network. [**Learn more and get started.**](https://filecoin.io/blog/posts/introducing-web3-storage/)
+* Straight out of HackFS, [**glide through this 4 min demo**](https://www.youtube.com/watch?v=TPREubF3XpY) of “CheckoutFS”. The app uses IPFS, Filecoin, Ceramic, and Ethereum to create a decentralized check out and purchase platform.
+* Every other week, the Retrieval Market Builders get together to share progress in their projects in a demo format. Up this week? Myel + IPFS — [**check out the demos**](https://www.youtube.com/watch?v=uCtdFXA6uf4).
+* Go-ipfs v0.10.0-rc1 is out and available from GitHub, dist.ipfs.io and via ipfs-update. Read the [**release issue**](https://github.com/ipfs/go-ipfs/issues/8176).
+* Are you a team or individual interested in contract work for building IPFS, Filecoin or web3 apps generally? Add yourself [**here**](https://github.com/ipfs/community/discussions/630) so we can point clients your way!
 
 ## Around the ecosystem 🌏
 
-Voting is open for the [**SXSW 2022 PanelPicker**](https://www.sxsw.com/news/2021/sxsw-panelpicker-community-voting/)! Check out and vote for these IPFS, Filecoin, and Protocol Labs talk pitches:
+Thursday, the 26th is the last day to vote in the panel picker process for SXSW 2022. Check out the [**thread of all the IPFS and Filecoin panels**](https://twitter.com/Filecoin/status/1425188726720933896) that have been proposed, and vote for your favorite to watch them next year.
 
-* [**Guardians of Our Shared History**](https://panelpicker.sxsw.com/vote/117184)
-* [**IPFS and Filecoin for the Long Haul**](https://panelpicker.sxsw.com/vote/118750)
-* [**Nft School: Create A Freshly Minted NFT Token**](https://panelpicker.sxsw.com/vote/118723)
-* [**Building Tools for Clean Energy in Crypto**](https://panelpicker.sxsw.com/vote/118735)
-* [**How the Future of Music NFTs Will Empower Creators**](https://panelpicker.sxsw.com/vote/118578)
+Submissions for NFT Vision Hack end on August 30. The global online hackathon has been bringing together creatives, developers, and entrepreneurs to explore the fringes of what NFTs can do. Up to $68,000 in prizes — [**learn more**](https://www.nftvisionhack.com/).
 
-[**Outlier Ventures’ Diffusion 2021**](https://diffusion.events/) took place on July 28th and 29th. Protocol Labs co-founder and CEO Juan Benet joined to give a presentation about ‘Building the Metaverse.’ [**Check out the presentation**](https://www.youtube.com/watch?v=n0PSd0MM4EE) and learn more about the Filecoin and IPFS components of the emerging Metaverse.
+Did you miss it? Last week, Filecoin and Polygon announced their collaboration to accelerate Web3 interoperability between the ecosystems. First on the docket, the recent launch of the Filecoin-Polygon bridge by the Textile team. [**Learn more**](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) and say hello to Filecoin x Polygon.
 
-Three more days of [**HackFS**](https://hackfs.com/)! The hackathon ends on August 20th — but there’s still plenty of time to get involved and tune in for the presentations, sessions, workshops, and more. Check out the agenda and [**register here.**](https://hackfs.com/)
-
-Last week, Alan Shaw joined the [**Filecoin Encode Club**](https://www.encode.club/filecoin-club) for an “Intro to IPFS.” Catch up with the [**recording**](https://www.youtube.com/watch?v=PW43J7KmRCA) if you’ve been wanting to learn IPFS basics.
-
-The IPFS Meetup program is currently on a summer holiday but join us next month for the September meetup on the 28th. [**Register now**](https://www.meetup.com/San-Francisco-IPFS/events/cbjsgsyccmblc/)!
+OceanDAO’s Round 9 applications are ongoing! Ocean has $300,000 allocated for data-oriented projects. Apply until September 7 - [**learn more here**](https://twitter.com/oceanprotocol/status/1429828067401289736). (New to Ocean? Check out [**Decentralized Data Markets: Ocean + Filecoin**](https://www.youtube.com/watch?v=4Qa4dvpC5ow)).
 
 ## Want to help build the new internet?
+
+[**Developer Relations Advocate**](https://unstoppabledomains.com/jobs/apply?job=4083034004): In this role, you will have an opportunity to shape the Unstoppable developer relations function. You’ll be managing the Unstoppable developer community, and engaging with the broader Web3 developer community in order to for us to have a seat at the proverbial table. Through technical content and programs, you will drive the growth of Unstoppable Domains’ brand as an unrivaled developer resource for building the future internet. Incorporating elements of education, development, and engagement, in this role you will wear many different hats in your effort to showcase the unique benefits of Unstoppable Domains in Web3. **Unstoppable Domains**, Remote.
 
 [**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
 
