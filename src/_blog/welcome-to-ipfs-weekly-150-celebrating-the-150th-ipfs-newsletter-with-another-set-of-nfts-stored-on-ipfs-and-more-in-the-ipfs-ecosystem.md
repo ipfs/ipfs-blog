@@ -14,25 +14,17 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## DoraHacks
+## JigStack Gallery Integrates IPFS and Filecoin
 
-![](../assets/127064267-cb7a8aa4-8b06-4830-886b-7b2eefb2ee66.jpg)
+![](../assets/gallery-x-filecoin.png)
 
-In July, the voting period ended for the 2021 DoraHacks Filecoin Grants Hackathon. Lasting over two months, Round 1 Grants distributed $249K to the winning projects building on IPFS and Filecoin among first, second, and third place. Some highlights from the winners:
+[**Gallery**](https://www.defigallery.co/) is the most recent solution from JigstackDAO, a governance platform for multiple DeFi products governed and incentivized by $STAK. Gallery is Jigstack’s entrance to the NFT ecosystem, developing novel and creative opportunities for NFTs and STAK holders. Gallery has just announced they will be using IPFS and Filecoin to store the NFTs that will be announced as part of their plans in the near future. [**Read more**](https://medium.com/jigstack/the-decentralized-storage-of-jigstack-gallerys-nfts-is-cemented-via-a-filecoin-collaboration-136dbd825cd2) and sign up to stay updated about Gallery’s release!
 
-* Box bridges the gap between the Web3 stack and mainstream JavaScript developers.
-* Opscientia is a framework for hosting large neuroscience datasets on IPFS.
-* Dweb Search is an open-source, decentralized search engine for IPFS and Filecoin.
-
-And more! Check out profiles of [**all the winning projects**](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/).
-
-## Browsers3000: IPFS Learning Session
+## Browsers3000 Ends with $38,000 in Rewards
 
 @[youtube](YLK-4wwd6Sk)
 
-Brand new from Browsers3000: an IPFS Learning Session with Dietrich Ayala! The session is an overview of the future of the internet, focusing on identifying the challenges in changing the web and the opportunity to add new capabilities. Web3, content addressing, and IPFS enable many of those capabilities. [**Dive in and learn more**](https://www.youtube.com/watch?v=YLK-4wwd6Sk).
-
-And while you’re here, there are two more days of the Browsers3000 Hackathon, a six-week event gathering leaders in the future of the web browser. [**Register and tune in**](https://events.protocol.ai/2021/browsers3000/) for the last sessions.
+Last week, the [**Browsers3000 Hackathon**](https://events.protocol.ai/2021/browsers3000/) wrapped up, marking the end to the 6-week event celebrating and highlighting the companies around the world building the future of the web browsers. We heard from Brave, ENS, HNS, Agregore, IPFS, Filecoin, MetaMask, and many more. The hackathon ended with a total of 518 participants over the six weeks and $38,000 in prizes distributed among teams. And speaking of funding, don’t miss out on Michelle Lee’s Browsers3000 presentation highlighting all the opportunities to access grants for your IPFS and Filecoin projects. [**Check it out!**](https://www.youtube.com/watch?v=TXX0mlNLKgs&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP)
 
 ## Brand new on IPFS
 
