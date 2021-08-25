@@ -22,7 +22,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## Browsers3000 Ends with $38,000 in Rewards
 
-@[youtube](YLK-4wwd6Sk)
+@[youtube](TXX0mlNLKgs&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP)
 
 Last week, the [**Browsers3000 Hackathon**](https://events.protocol.ai/2021/browsers3000/) wrapped up, marking the end to the 6-week event celebrating and highlighting the companies around the world building the future of the web browsers. We heard from Brave, ENS, HNS, Agregore, IPFS, Filecoin, MetaMask, and many more. The hackathon ended with a total of 518 participants over the six weeks and $38,000 in prizes distributed among teams. And speaking of funding, don’t miss out on Michelle Lee’s Browsers3000 presentation highlighting all the opportunities to access grants for your IPFS and Filecoin projects. [**Check it out!**](https://www.youtube.com/watch?v=TXX0mlNLKgs&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP)
 
