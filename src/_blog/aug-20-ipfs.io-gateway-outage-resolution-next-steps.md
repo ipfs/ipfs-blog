@@ -15,8 +15,8 @@ tags:
 
 On 2021-08-20 at 15:54 UTC, visitors started to get 404s across all HTTPS content served from the[ ipfs.io](http://ipfs.io/) domain. 404s were returned for both:
 
-1. Web properties under the[ ipfs.io](http://ipfs.io/) domain: the[ ](http://ipfs.io/)ipfs website ([https://ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([https://docs.ipfs.io](https://docs.ipfs.io "https://docs.ipfs.io")), ipfs dist ([https://dist.ipfs.io](https://dist.ipfs.io "https://dist.ipfs.io")), ipfs blog ([https://blog.ipfs.io](https://blog.ipfs.io "https://blog.ipfs.io")), etc. AND
-2. Content served over the IPFS over HTTP gateway at[ ](https://ipfs.io/ipfs)[https://ipfs.io/ipfs](https://ipfs.io/ipfs "https://ipfs.io/ipfs")
+1. Web properties under the [ipfs.io](http://ipfs.io/) domain, including: the ipfs website ([ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([docs.ipfs.io](https://docs.ipfs.io "https://docs.ipfs.io")), ipfs dist ([dist.ipfs.io](https://dist.ipfs.io "https://dist.ipfs.io")), ipfs blog ([blog.ipfs.io](https://blog.ipfs.io "https://blog.ipfs.io")), etc. AND
+2. Content served over the IPFS over HTTP gateway at `https://ipfs.io/ipfs/<cid>`
 
 Users across the internet fetch content from the IPFS network using the ipfs.io gateway over 300 **million** times per week, and were thus impacted until our mitigation was applied at 19:35 UTC. You can see the full incident report and history [on the status page](https://ipfsgateway.statuspage.io/).
 
@@ -42,7 +42,7 @@ While our legal team engaged with the domain registrar, we also:
 
 1. Initiated the domain migration to Cloudflare (big thanks to the Cloudflare team on getting our transfer expedited!), where we have existing relationships and a support contract. Not to mention, they’re [already pretty familiar with IPFS](https://developers.cloudflare.com/distributed-web/ipfs-gateway).
 2. Because all of the IPFS web content is static and stored in IPFS, we created/updated [ipfs.eth.link](http://ipfs.eth.link/) records to reference the latest content of our sites and various subdomains like [docs.ipfs.ens.link](http://docs.ipfs.ens.link/), [blog.ipfs.ens.link](http://blog.ipfs.ens.link/), and [dist.ipfs.eth.link](http://dist.ipfs.eth.link/). We publicized the availability of that content on social media and status pages. This brought all the main IPFS site content back online immediately using the distributed web! 🎉
-3. We also reminded gateway users of the [100+ other gateways](https://ipfs.github.io/public-gateway-checker/) that could be used besides ipfs.io, including dweb.link.
+3. We also reminded gateway users of the [100+ other gateways](https://ipfs.github.io/public-gateway-checker/) that could be used besides ipfs.io, including [dweb.link](https://dweb.link).
 
 Once the domain registrar restored our domain at 19:35 UTC, there were propagation delays for the remedied DNS records to populate DNS caches. ipfs.io gateway access was restored within minutes, however the ipfs.io websites (e.g., docs, blog, dist) weren’t all fully back online until 23:58 UTC. These sites are all served by the ipfs.io gateway, which behind the scenes is performing its own DNS resolution of [DNSLinks](https://dnslink.io/). Custom DNS resolvers on the ipfs.io gateway were getting in the way of DNSLink resolution until we flushed our caches and manually overrode the DNSLink resolution for ipfs.io domains.
 
