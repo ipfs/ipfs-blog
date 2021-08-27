@@ -1,21 +1,22 @@
 ---
-title: Aug 20 IPFS.io Gateway Outage Resolution & Next Steps
-description: ''
-author: ''
+title: August 20 IPFS.io Gateway Outage Resolution & Next Steps
+description: The ipfs.io gateway & website experienced an outage on 2021-08-20; here
+  are more details & corrective actions.
+author: IPFS Team
 date: 2021-08-27
 permalink: 2021-08-27-IPFS.io-gateway-outage-resolution
 translationKey: ''
-header_image: "/ipfs-blog-gateway.jpg"
+header_image: "/ipfs-blog-gateway-2.jpg"
 tags:
 - gateways
 
 ---
 # Customer Impact
 
-At 15:54 UTC on 2021-08-20, customers started to get 404s across all HTTPS content served from the[ ipfs.io](http://ipfs.io/) domain. 404s were returned for both:
+On 2021-08-20 at 15:54 UTC, visitors started to get 404s across all HTTPS content served from the[ ipfs.io](http://ipfs.io/) domain. 404s were returned for both:
 
-1. PL web properties under the[ ipfs.io](http://ipfs.io/) domain: the[ ](http://ipfs.io/)ipfs website ([https://ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([https://docs.ipfs.io](https://docs.ipfs.io "https://docs.ipfs.io")), ipfs dist ([https://dist.ipfs.io](https://dist.ipfs.io "https://dist.ipfs.io")), etc. AND
-2. Content served over the IPFS over HTTPS gateway at[ ](https://ipfs.io/ipfs)[https://ipfs.io/ipfs](https://ipfs.io/ipfs "https://ipfs.io/ipfs")
+1. Web properties under the[ ipfs.io](http://ipfs.io/) domain: the[ ](http://ipfs.io/)ipfs website ([https://ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([https://docs.ipfs.io](https://docs.ipfs.io "https://docs.ipfs.io")), ipfs dist ([https://dist.ipfs.io](https://dist.ipfs.io "https://dist.ipfs.io")), ipfs blog ([https://blog.ipfs.io](https://blog.ipfs.io "https://blog.ipfs.io")), etc. AND
+2. Content served over the IPFS over HTTP gateway at[ ](https://ipfs.io/ipfs)[https://ipfs.io/ipfs](https://ipfs.io/ipfs "https://ipfs.io/ipfs")
 
 Users across the internet fetch content from the IPFS network using the ipfs.io gateway over 300 **million** times per week, and were thus impacted until our mitigation was applied at 19:35 UTC.
 
@@ -23,11 +24,11 @@ However, you can instead fetch content directly from the IPFS network without hi
 
 # Background
 
-As a reminder, IPFS and Filecoin are peer-to-peer applications to store and provide content in a distributed fashion. In such architecture, every peer (person or company) controls what it contributes to the network, how it does it, and how it interacts with other peers and their content. The architecture of Filecoin and IPFS is designed to embody the principle of user agency.
+As a reminder, IPFS and Filecoin are peer-to-peer applications to store and provide content in a distributed fashion. In such architecture, every peer (person or company) controls what it contributes to the network, how it does it, and how it interacts with other peers and their content. The architecture of Filecoin and IPFS is designed to embody the principle of **user agency**.
 
 IPFS HTTP gateways (like the one at [https://ipfs.io/ipfs](https://ipfs.io/ipfs "https://ipfs.io/ipfs")) allow browsers and tools that speak HTTP to access content from the IPFS network. They don’t represent all of IPFS, but rather the HTTP resolution; they provide the canonical way to address IPFS content via http scheme URLs. The ipfs.io gateway is a community resource run by Protocol Labs to help developers build on IPFS, but it is just one of many gateways hosted by many groups (see [a list of 100+ gateways and their statuses](https://ipfs.github.io/public-gateway-checker/)).
 
-Gateway operators do not store or host the data that is viewable through the gateway. Rather, the gateway allows users to view content hosted by the thousands of independent node operators across the IPFS Network. While the best practice for reporting apparently illegal or otherwise objectionable content is to directly contact the node operator hosting the data, the gateway operator can also block the ability of users to view a particular piece of content via that gateway in appropriate circumstances. Protocol Labs operates the ipfs.io gateway and regularly receives and complies with reports of this nature through the abuse@protocol.ai and abuse@ipfs.io addresses.
+Gateway operators do not store or host the data that is viewable through the gateway. Rather, the gateway allows users to view content hosted by the thousands of independent node operators across the IPFS Network. While the best practice for reporting apparently illegal or otherwise objectionable content is to directly contact the node operator hosting the data, gateway operators can also block the ability of users to view a particular piece of content via their gateway in appropriate circumstances. Protocol Labs operates the ipfs.io gateway and regularly receives and complies with reports of this nature through the [abuse@protocol.ai](abuse@protocol.ai) and [abuse@ipfs.io](abuse@ipfs.io) addresses.
 
 # What Happened
 
