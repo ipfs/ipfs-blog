@@ -1,5 +1,5 @@
 ---
-title: About $500,000 in Prizes and Grants for Asia Hackathon Season 2021
+title: Announcing Asia Hackathon Season 2021
 description: Asia Hackathon Season 2021 is a hackathon series helping startups and
   entrepreneurs grow fwith Web3 stacks.
 author: PL Hackathon Team
