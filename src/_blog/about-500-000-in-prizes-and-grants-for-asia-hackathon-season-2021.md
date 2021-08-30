@@ -1,5 +1,5 @@
 ---
-title: About $500,000 in Prizes and Grants for Asia Hackathon Season 2021
+title: Announcing Asia Hackathon Season 2021
 description: Asia Hackathon Season 2021 is a hackathon series helping startups and
   entrepreneurs grow fwith Web3 stacks.
 author: PL Hackathon Team
@@ -12,7 +12,7 @@ tags:
 - community
 
 ---
-Filecoin is a global community of developers, entrepreneurs, storage providers, storage clients, business leaders, and more. IPFS is a peer-to-peer network and protocol designed to make the web faster, safer, and more open. Filecoin and IPFS are deeply committed to nurturing hacker communities in Asia as an open-source protocol and storage network on which anyone can build new startups, ship innovative applications, solve significant problems, and shape the future of the web to be more decentralized, robust, and secure.
+Filecoin is a global community of developers, entrepreneurs, storage providers, storage clients, business leaders, and more. IPFS is a peer-to-peer network and protocol designed to make the web faster, safer, and more open. The Filecoin and IPFS ecosystems are deeply committed to nurturing hacker communities in Asia as an open-source protocol and storage network on which anyone can build new startups, ship innovative applications, solve significant problems, and shape the future of the web to be more decentralized, robust, and secure.
 
 [**Asia Hackathon Season 2021**](https://events.filecoin.io/asia-hackathon-season) is a multi-month hackathon series that will identify, accelerate, and highlight the incredible development work being done in Asia with the Filecoin and IPFS stacks. **About $500,000 in prizes and grants will be rewarded** to the teams, startups, projects, and entrepreneurs taking part!
 

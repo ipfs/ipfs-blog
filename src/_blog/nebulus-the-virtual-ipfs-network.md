@@ -15,7 +15,7 @@ tags:
 ---
 The strength and addressability of the public IPFS network — without the network
 
-In July, [Nebulus](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Also dubbed the “IPFS-less IPFS” network, Nebulus allows users to use the logic and content addressability of IPFS _without_ having to use the public network.
+In July, [Nebulus](https://nebulus.dev/), a “Virtual IPFS Network”, was released. Nebulus allows users to use the logic and content addressability of IPFS _without_ having to use the public network.
 
 ## **The Virtual IPFS Network**
 
@@ -27,8 +27,8 @@ To use IPFS today, a user’s only option is to use this “bundle” — meanin
 
 Nebulus lets users work with IPFS files and storage locally _before_ publishing to the public IPFS network (or, never publishing at all). When using the “bundled” IPFS solution, there is no distinction between _local_ and _remote,_ meaning **ipfs.add()** always adds to both local and public IPFS networks. With Nebulus, users can choose to use Nebulus as an “offline buffer”, allowing them to work privately with IPFS files and publish to IPFS only if/when needed.
 
-In summary, Nebulus unbundles the IPFS file format (“Content Addressable Storage”) from the IPFS network (“Peer-to-Peer Network”).  
-  
+In summary, Nebulus unbundles the IPFS file format (“Content Addressable Storage”) from the IPFS network (“Peer-to-Peer Network”).
+
 ![](../assets/localremote2.png)
 
 ## **Why Use a Virtual IPFS Network?**
