@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 151
-description: NFT.Storage is the underlying tech supporting the next phase of NFT solutions
-  from Jigstack’s Gallery, & more.
+description: Kicking off Asia Hackathon Season with the Jupiter Hackathon, with tech
+  support from Alibaba Cloud. Plus more!
 author: Emily Vaughan
-date: 2021-08-25
-permalink: "/weekly-150/"
-translationKey: ipfs-weekly-150
+date: 2021-09-01
+permalink: "/weekly-151/"
+translationKey: ipfs-weekly-151
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,34 +13,39 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## JigStack Gallery Integrates IPFS and Filecoin
+## **Announcing the Jupiter Hackathon**
 
-![](../assets/gallery-x-filecoin.png)
+![](../assets/jupiter-hackathon-ipfs-alibaba-cloud-hdr.jpeg)
 
-[**Gallery**](https://www.defigallery.co/) is the most recent solution from JigstackDAO, a governance platform for multiple DeFi products governed and incentivized by $STAK. Gallery is Jigstack’s entrance to the NFT ecosystem, developing novel and creative opportunities for NFTs and STAK holders. Gallery has just announced they will be using IPFS and Filecoin to store the NFTs that will be announced as part of their plans in the near future. [**Read more**](https://medium.com/jigstack/the-decentralized-storage-of-jigstack-gallerys-nfts-is-cemented-via-a-filecoin-collaboration-136dbd825cd2) and sign up to stay updated about Gallery’s release!
+Jupiter is a virtual hackathon lasting from late August to October focused on solutions building on IPFS or decentralized storage services that use IPFS. Technical support for Jupiter Hackathon is being provided by [Alibaba Cloud](https://us.alibabacloud.com/en), the digital technology and intelligence backbone of Alibaba Group.
 
-## Browsers3000 Ends with $38,000 in Rewards
+[Applications will be accepted](https://tianchi.aliyun.com/competition/entrance/531928/introduction) now through September 30th. Judging will take place on October 14th and will be based on equally-weighted categories: Design, Novelty/Originality, Technical Complexity, Daily/Mass Usability, and Creativity/Fun.
 
-@[youtube](TXX0mlNLKgs)
-
-Last week, the [**Browsers3000 Hackathon**](https://events.protocol.ai/2021/browsers3000/) wrapped up, marking the end to the 6-week event celebrating and highlighting the companies around the world building the future of the web browsers. We heard from Brave, ENS, HNS, Agregore, IPFS, Filecoin, MetaMask, and many more. The hackathon ended with a total of 518 participants over the six weeks and $38,000 in prizes distributed among teams. And speaking of funding, don’t miss out on Michelle Lee’s Browsers3000 presentation highlighting all the opportunities to access grants for your IPFS and Filecoin projects. [**Check it out!**](https://www.youtube.com/watch?v=TXX0mlNLKgs&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP)
+  
+On October 23rd, the Jupiter Hackathon will culminate in an offline demo day and reward ceremony in Shanghai, where $19,000 in prizes will be split among five winners for the best projects! Stay tuned for updates and details on future workshops. projects! Stay tuned for updates and details on future workshops. For more details, read this [post](https://blog.ipfs.io/announcing-jupiter-hackathon-alibaba-cloud/).
 
 ## Brand new on IPFS
 
-* Straight out of HackFS, [**glide through this 4 min demo**](https://www.youtube.com/watch?v=TPREubF3XpY) of “CheckoutFS”. The app uses IPFS, Filecoin, Ceramic, and Ethereum to create a decentralized check out and purchase platform.
-* Every other week, the Retrieval Market Builders get together to share progress in their projects in a demo format. Up this week? Myel + IPFS — [**check out the demos**](https://www.youtube.com/watch?v=uCtdFXA6uf4).
-* Go-ipfs v0.10.0-rc1 is out and available from GitHub, dist.ipfs.io and via ipfs-update. Read the [**release issue**](https://github.com/ipfs/go-ipfs/issues/8176).
-* Are you a team or individual interested in contract work for building IPFS, Filecoin or web3 apps generally? Add yourself [**here**](https://github.com/ipfs/community/discussions/630) so we can point clients your way!
+* “How to Use IPFS” from Decrypt! [**Dive in.**](https://decrypt.co/resources/how-to-use-ipfs-the-backbone-of-web3)
+* Scaffold-eth provides a new way to upload files to IPFS — [**check it out.**](https://twitter.com/austingriffith/status/1432431175675498496)
+* "No Bigger Ship: IPFS and Strategies for Leverage in World-Scale Technology Adoption" with Berty Technologies and Dietrich Ayala. [**Listen here.**](https://www.youtube.com/watch?v=CTiTiNqe7x0)
+* Recently, Textile launched the first Filecoin storage bridge on Polygon. It leverages the IPFS and Filecoin stacks to bring storage capabilities to the Polygon ecosystem. [**Learn more.**](https://blog.textile.io/filecoin-polygon-bridge-release/)
 
 ## Around the ecosystem 🌏
 
-Thursday, the 26th is the last day to vote in the panel picker process for SXSW 2022. Check out the [**thread of all the IPFS and Filecoin panels**](https://twitter.com/Filecoin/status/1425188726720933896) that have been proposed, and vote for your favorite to watch them next year.
+The one-year anniversary of Filecoin Mainnet is only a couple of months away. Already planning a celebration? Check out the new Filecoin grants program that will help cover costs for celebrations from Oct. 18-22. [**Apply**](https://github.com/filecoin-project/devgrants/blob/master/rfps/rfp-filecoin-orbit.md)!
 
-Submissions for NFT Vision Hack end on August 30. The global online hackathon has been bringing together creatives, developers, and entrepreneurs to explore the fringes of what NFTs can do. Up to $68,000 in prizes — [**learn more**](https://www.nftvisionhack.com/).
+On August 24th, Sameule from Fleek guest spoke at the eighth Encode Filecoin Club event, where he delivered an [**introduction to hosting on IPFS**](https://www.youtube.com/watch?v=B7hKnQigtKA) to students and hackers.
 
-Did you miss it? Last week, Filecoin and Polygon announced their collaboration to accelerate Web3 interoperability between the ecosystems. First on the docket, the recent launch of the Filecoin-Polygon bridge by the Textile team. [**Learn more**](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) and say hello to Filecoin x Polygon.
+Check out [**MoNa Gallery**](https://www.mona.gallery/), a social gallery space for NFT artists, backed by the Tachyon Accelerator Launchpad II.
 
-OceanDAO’s Round 9 applications are ongoing! Ocean has $300,000 allocated for data-oriented projects. Apply until September 7 - [**learn more here**](https://twitter.com/oceanprotocol/status/1429828067401289736). (New to Ocean? Check out [**Decentralized Data Markets: Ocean + Filecoin**](https://www.youtube.com/watch?v=4Qa4dvpC5ow)).
+To celebrate the launch of Protocol Labs’ [**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/) and establish a collaboration network, they are hosting [**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/), a one-day virtual workshop on consensus research and related topics. [**Learn more and submit your contribution by September 8**](https://research.protocol.ai/sites/consensusday21/).
+
+[**Browsers 3000 Hackathon**](https://browsers3000.devpost.com/) is wrapping up, with judging now underway of over 500 registrants and over 50 submissions for more than $40K in prizes. The final demo day is scheduled for September 16th. Stay tuned to learn about the winners and their projects.
+
+Filecoin x Dapper Labs = the future of gaming and the metaverse. By leveraging Filecoin, Dapper Labs will establish and enact best practices for NFT.Storage, endowing the applications coming out of Labs with even more asset integrity.[**Learn more.**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)
+
+Crust network is a decentralized storage protocol that provides an incentive layer for IPFS storage network nodes. Through this [**overview video**](https://youtu.be/67fE9me0ZRU), learn the functional responsibilities of Crust and how users are stored in the network after placing an order.
 
 ## Want to help build the new internet?
 
@@ -61,7 +66,5 @@ OceanDAO’s Round 9 applications are ongoing! Ocean has $300,000 allocated for 
 [**Product Manager, Developer Experience**](https://jobs.lever.co/3box/68e3cf44-5ee8-4b2a-b872-bca815bf5caf): As a Product Manager on the Developer Experience team at 3Box Labs, you'll be in charge of delivering a best-in-class experience for developers building on the Ceramic platform. 3Box Labs created the leading identity and data solution for Web3, and alongside the open source developer community. They’re looking for impact-driven, intentional, and fast-learning teammates. **3Box Labs**, Remote.
 
 [**Community Lead**](https://jobs.lever.co/3box/cac4d9b2-4822-4c91-99b8-16c5d3dd75b6): As a Community Lead at 3Box Labs, you’ll have the opportunity to create an incredibly engaged, welcoming, synergistic community around the technology and values that can help catalyze a global movement for a better web. 3Box Labs created the leading identity and data solution for Web3, and alongside the open source developer community. They’re looking for impact-driven, intentional, and fast-learning teammates. **3Box Labs**, Remote.
-
-[**Protocol Engineer**](https://jobs.lever.co/3box/c766b0f1-d0e2-4c54-928d-c09152a94074): As a Protocol Engineer at 3Box Labs, you will contribute to the Ceramic protocol alongside the rest of the core engineers. Projects may include challenges with distributed consensus, sharding, access control systems, blockchain system design, and more. As an early team member, you'll have the opportunity to build deeper expertise in areas you're already familiar as well as explore those that are new. **3Box Labs**, Remote.
 
 Get the IPFS Weekly in your inbox, each Tuesday. [**Sign up now.**](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230)
