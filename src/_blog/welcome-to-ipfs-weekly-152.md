@@ -13,7 +13,7 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## **Announcing the Jupiter Hackathon**
+## Pinata Introduces “Submarining”
 
 ![](../assets/pinatasubmarining.jpeg)
 
@@ -30,14 +30,14 @@ This concept has not yet existed in the NFT space but has been in high demand. T
 
 ## Around the ecosystem 🌏
 
-The [**Mars**](https://www.marshackathon2021.com/) track of the Asia Hackathon Season is now open for registrations - reinvent decentralized storage with Filecoin and IPFS and win up to $35,000 in prizes. [**Apply today**](https://xathon.mettl.com/event/MarsAsiaHackathon2021)!  
-  
-[**Estuary Tech**](https://estuary.tech/) is open-source software allowing simple sending of public data to the Filecoin network to be retrieved from anywhere. Want to dive deeper? Check out [**this new explainer blog post**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) on Estuary Tech.  
-  
-Last call for contributions for Protocol Labs’ [**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/)’s [**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/), a one-day virtual workshop on consensus research and related topics. [**Learn more and submit your contribution by September 8th**](https://research.protocol.ai/sites/consensusday21/).   
-  
-Registrations are now open for Filecoin Launchpad Accelerator Demo Day, powered by Tachyon. Tune in to hear from the next generation of web3 founders on Tuesday, September 21st at 11am ET - [**reserve your spot**](http://tachyon.xyz/).  
-  
+The [**Mars**](https://www.marshackathon2021.com/) track of the Asia Hackathon Season is now open for registrations - reinvent decentralized storage with Filecoin and IPFS and win up to $35,000 in prizes. [**Apply today**](https://xathon.mettl.com/event/MarsAsiaHackathon2021)!
+
+[**Estuary Tech**](https://estuary.tech/) is open-source software allowing simple sending of public data to the Filecoin network to be retrieved from anywhere. Want to dive deeper? Check out [**this new explainer blog post**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) on Estuary Tech.
+
+Last call for contributions for Protocol Labs’ [**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/)’s [**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/), a one-day virtual workshop on consensus research and related topics. [**Learn more and submit your contribution by September 8th**](https://research.protocol.ai/sites/consensusday21/).
+
+Registrations are now open for Filecoin Launchpad Accelerator Demo Day, powered by Tachyon. Tune in to hear from the next generation of web3 founders on Tuesday, September 21st at 11am ET - [**reserve your spot**](http://tachyon.xyz/).
+
 The Filecoin network recently surpassed 10 EiB of storage capacity - what an exciting milestone for the entire ecosystem! 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 27,300,000 years worth of video calls - woah.
 
 ## Want to help build the new internet?
