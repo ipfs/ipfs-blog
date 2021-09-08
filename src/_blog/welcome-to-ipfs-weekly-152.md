@@ -38,7 +38,7 @@ Last call for contributions for Protocol Labs’ [**ConsensusLab**](https://rese
 
 Registrations are now open for Filecoin Launchpad Accelerator Demo Day, powered by Tachyon. Tune in to hear from the next generation of web3 founders on Tuesday, September 21st at 11am ET - [**reserve your spot**](http://tachyon.xyz/).
 
-The Filecoin network recently surpassed 10 EiB of storage capacity - what an exciting milestone for the entire ecosystem! 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 27,300,000 years worth of video calls - woah.
+The Filecoin network recently surpassed 10 EiB of storage capacity - what an exciting milestone for the entire ecosystem! 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 6,850,000 years worth of video calls - woah.
 
 ## Want to help build the new internet?
 
