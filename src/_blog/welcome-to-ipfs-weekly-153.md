@@ -13,36 +13,32 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Pinata Introduces “Submarining”
+## ION is paving the way for a future with decentralized identities
 
-![](../assets/pinatasubmarining.jpeg)
+![](../assets/ion-decentralized-identity.jpg)
 
-Last week ​​[Pinata](http://pinata.cloud/) launched a new feature called [“Submarining”](https://medium.com/pinata/how-to-manage-nft-visibility-18e9b7a76b8c), a tool that enables users to make an IPFS file they upload private from the public IPFS network. This capability allows people to attach data to an NFT and control who can view it based on ownership of the NFT.
-
-This concept has not yet existed in the NFT space but has been in high demand. The team at Pinata believes that Submarining is the next step in giving users more control over their content with the ability to choose how you want to share content, and with whomever they please. Learn more and have your questions answered [here](https://www.pinata.cloud/blog/introducing-submarining-what-it-is-why-you-need-it).
+How many people really know how their online identities work? In reality, online identity contains two types of data: identity data and identifiers. The way these two types of data have interacted over the course of the internet has defined our digital identities and how much control we have over them. ION is a solution being built as a framework for global, online, decentralized identities — leveraging fundamentals like DID and IFPS’ CID. Find out what the future of decentralized identities look like in [**this post**](https://blog.ipfs.io/ion-a-path-to-decentralized-identity/).
 
 ## Brand new on IPFS
 
-* [**ETHOnline**](https://online.ethglobal.com/) kicks off on Sept 17th! Build alongside 1,000+ like-minded engineers, designers, and creators in building the decentralized future! [**Register here**](https://online.ethglobal.com/).
-* Last week, Matt Ober, co-founder of Pinata joined the [**Filecoin Encode Club**](https://www.encode.club/filecoin-club) for “Pinning Services with Pinata.” Catch up with the [**recording**](https://www.youtube.com/watch?v=AOYtSlhUWE4).
-* The [**Browsers3000 Closing Ceremony**](https://www.meetup.com/San-Francisco-IPFS/events/cbjsgsyccmblc/) is right around the corner on September 16th. [**RSVP**](https://www.meetup.com/San-Francisco-IPFS/events/cbjsgsyccmblc/) for the event that will commemorate the hackathon and celebrate the winners.
-* Apps are officially open for the Filecoin Launchpad Accelerator T6 - if you’re looking to build with the IPFS, Filecoin, and Ethereum ecosystems, [**apply today**](https://prdpjz4zqoq.typeform.com/to/RxQSZ9dq)!
+* The Mars track of the Asia Hackathon Season is open for applications! Reinvent decentralized storage with Filecoin and IPFS and win up to $35,000 in prizes. [**Apply today**](https://xathon.mettl.com/event/MarsAsiaHackathon2021).
+* Estuary? Web3.Storage? NFT.Storage? Maybe you’ve heard of them, but aren’t quite sure what they are and how they’re different. Check out this [**overview of the three decentralized storage solutions**](https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/)and their different uses.
+* Join Michelle Lee of Protocol Labs as she gives a comprehensive “[**Introduction to IPFS and Filecoin**](https://www.youtube.com/watch?v=1xloqhD5C_8&list=PLXzKMXK2aHh63KtTQ0wUWbFOR7hL9RpKM&index=21)” from [**EthOnline**](https://online.ethglobal.com/) with [**EthGlobal**](https://ethglobal.com/).
+* Having performance issues using the .eth.link gateway to resolve IPFS and ENS Domains sites? Try Eth.Limo! [**Learn more.**](https://blog.fleek.co/posts/eth-limo-alternative-eth-link)
 
 ## Around the ecosystem 🌏
 
-The [**Mars**](https://www.marshackathon2021.com/) track of the Asia Hackathon Season is now open for registrations - reinvent decentralized storage with Filecoin and IPFS and win up to $35,000 in prizes. [**Apply today**](https://xathon.mettl.com/event/MarsAsiaHackathon2021)!
-
-[**Estuary Tech**](https://estuary.tech/) is open-source software allowing simple sending of public data to the Filecoin network to be retrieved from anywhere. Want to dive deeper? Check out [**this new explainer blog post**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) on Estuary Tech.
-
-Last call for contributions for Protocol Labs’ [**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/)’s [**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/), a one-day virtual workshop on consensus research and related topics. [**Learn more and submit your contribution by September 8th**](https://research.protocol.ai/sites/consensusday21/).
-
-Registrations are now open for Filecoin Launchpad Accelerator Demo Day, powered by Tachyon. Tune in to hear from the next generation of web3 founders on Tuesday, September 21st at 11am ET - [**reserve your spot**](http://tachyon.xyz/).
-
-The Filecoin network recently surpassed 10 EiB of storage capacity - what an exciting milestone for the entire ecosystem! 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 6,850,000 years worth of video calls - woah.
+Tatum collaborates with NFT.Storage to offer free IPFS storage for NFTs to developers. [**Read all about it**](https://blog.tatum.io/tatum-partners-with-nft-storage-to-offer-free-ipfs-storage-for-nfts-to-developers-183dad64e79d).   
+  
+A workshop focused on “Storing Data on the Filecoin Network with Textile” happened today, September 14th. [**Stay tuned**](https://medium.com/encode-club) for the recap and recording.  
+  
+[**EthOnline**](https://ethglobal.online/) is only just getting started. Tune in to the hackathon and join 1,000+ developers, builders, and engineers from across the ecosystem. Just in the first week, Protocol Labs, Polygon, Chainlink, Aave, 0x, and more have presented. Check out the full [**EthOnline 2021 schedule**](https://www.youtube.com/playlist?list=PLXzKMXK2aHh63KtTQ0wUWbFOR7hL9RpKM)!  
+  
+Event update! In order to accommodate community members who will be in attendance at Messari's MainNet conference, the Filecoin Launchpad Accelerator Demo Day has been rescheduled to September 28th from 11:00 am - 3:30 pm EDT. [**Register now**](https://mesh.xyz/tachyon/).  
+  
+“A Guide for How to build and host a .ETH website using IPFS on ENS.” Tune in with Mark Krynsky for an overview of how to point a .eth ENS name to a website using IPFS. [**Check it out.**](https://krynsky.com/a-guide-for-how-to-build-and-host-a-eth-website-using-ipfs-on-ens/)
 
 ## Want to help build the new internet?
-
-[**Developer Relations Advocate**](https://unstoppabledomains.com/jobs/apply?job=4083034004): In this role, you will have an opportunity to shape the Unstoppable developer relations function. You’ll be managing the Unstoppable developer community, and engaging with the broader Web3 developer community in order to for us to have a seat at the proverbial table. Through technical content and programs, you will drive the growth of Unstoppable Domains’ brand as an unrivaled developer resource for building the future internet. Incorporating elements of education, development, and engagement, in this role you will wear many different hats in your effort to showcase the unique benefits of Unstoppable Domains in Web3. **Unstoppable Domains**, Remote.
 
 [**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
 
