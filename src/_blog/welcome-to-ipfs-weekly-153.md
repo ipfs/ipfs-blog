@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 153!
-description: A novel way to attach secret data to NFTs, closing out Browsers3000,
-  and saying hello to ETHOnline.
+description: The future of decentralized identities w/ ION; differences between Estuary,
+  Web3.Storage & NFT.Storage & more.
 author: Emily Vaughan
-date: 2021-09-08
-permalink: "/weekly-152/"
-translationKey: ipfs-weekly-152
+date: 2021-09-15
+permalink: "/weekly-153/"
+translationKey: ipfs-weekly-153
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
