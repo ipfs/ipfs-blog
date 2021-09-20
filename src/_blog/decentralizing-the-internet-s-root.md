@@ -1,7 +1,7 @@
 ---
 title: Decentralizing the Internet's Root
 description: Namebase and Handshake offer users new solutions to resolving hostnames
-  in the web3 future. From Browsers3000.
+  in the web3 future.
 author: ''
 date: 2021-09-20
 permalink: "/namebase-handshake-decentralizing-internets-root/"
