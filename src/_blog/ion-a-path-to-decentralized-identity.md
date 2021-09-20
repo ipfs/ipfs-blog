@@ -48,7 +48,7 @@ ION creates a scalable system where thousands of users can utilize the infrastru
 
 Users may have concerns with typical BTC transactions costing around $100. Since these are batch processes, they can combine multiple processes into a single batch. This batching solution can reduce cost to cents per transaction, making it an affordable solution. The immutability in the Bitcoin blockchain makes it resilient and traceable, making it ideal for keeping ID data easily accessible from anywhere in the world.
 
-{{< youtube id="3UbUzA0lW9w" title="Estuary: Getting Started" >}}
+{{< youtube id="3UbUzA0lW9w" title="Browsers 3000: ION, Decentralized Identifiers Using Bitcoin & IPFS - Daniel Buchner" >}}
 
 ## How Can ION be Used?
 
