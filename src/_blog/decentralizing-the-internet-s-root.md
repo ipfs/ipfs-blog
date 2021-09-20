@@ -6,7 +6,7 @@ author: ''
 date: 2021-09-20
 permalink: "/namebase-handshake-decentralizing-internets-root/"
 translationKey: ''
-header_image: ''
+header_image: "/hns.jpg"
 tags:
 - infrastructure
 - identity
