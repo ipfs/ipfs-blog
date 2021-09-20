@@ -48,6 +48,8 @@ ION creates a scalable system where thousands of users can utilize the infrastru
 
 Users may have concerns with typical BTC transactions costing around $100. Since these are batch processes, they can combine multiple processes into a single batch. This batching solution can reduce cost to cents per transaction, making it an affordable solution. The immutability in the Bitcoin blockchain makes it resilient and traceable, making it ideal for keeping ID data easily accessible from anywhere in the world.
 
+{{< youtube id="3UbUzA0lW9w" title="Estuary: Getting Started" >}}
+
 ## How Can ION be Used?
 
 ION can see a lot of use in many cases. The most obvious use case is for verifiable credentials. A business can credential employees, who can then be verified via blockchain on arrival at their destination. This functionality also raises its use as a means of supplying and verifying international travel documents.
