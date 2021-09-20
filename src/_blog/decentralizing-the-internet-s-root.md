@@ -64,7 +64,7 @@ Handshake is a powerful tool in the IPFS ecosystem. [Fleek](https://fleek.co/) i
 
 With Fleek, users can link their decentralized Handshake TLDs to their IPFS-hosted sites. The integration allows web developers to leverage both IPFS’ CID solution for content retrieval and Handshake’s solution for decentralized domain names.
 
-{{< youtube id="OQiUK1Si_ck" title="Estuary: Getting Started" >}}
+{{< youtube id="OQiUK1Si_ck" title="Browsers 3000: Decentralizing the Internet's root with (HNS) Handshake - Tieshun Roquerre" >}}
 
 ## A New Age on the Internet Frontier
 
