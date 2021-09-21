@@ -12,7 +12,7 @@ tags:
 - browsers
 
 ---
-[_Browsers 3000_](https://events.protocol.ai/2021/browsers3000/) _is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a talk from Daniel Buchner, a member of the team developing ION._ [_View the full talk here_](https://www.youtube.com/watch?v=3UbUzA0lW9w&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=14)_._
+_[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a talk from Daniel Buchner, a member of the team developing ION. [View the full talk here](https://www.youtube.com/watch?v=3UbUzA0lW9w&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=14)._
 
 Most individuals don't think about identity in the digital world until they've had theirs stolen. However, digital IDs don’t work the way you might think they do. Identity on the internet is split into two distinct types of data.
 
