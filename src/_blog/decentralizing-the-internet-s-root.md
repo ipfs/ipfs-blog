@@ -13,8 +13,8 @@ tags:
 - encryption
 - content routing
 - browsers
-
 ---
+
 Domain names are things most end users take for granted. The average user doesn't spend time looking at DNS resolution or even knowing what a domain name server is. However, without domain name resolution, typing "google.com" into a browser will return an error with the confounding explanation that "the hostname you're looking for doesn't exist."
 
 When you use your browser to visit a domain name like google.com, your DNS resolver will first ask the root for directions to the top-level domain "com".
@@ -64,7 +64,9 @@ Handshake is a powerful tool in the IPFS ecosystem. [Fleek](https://fleek.co/) i
 
 With Fleek, users can link their decentralized Handshake TLDs to their IPFS-hosted sites. The integration allows web developers to leverage both IPFS’ CID solution for content retrieval and Handshake’s solution for decentralized domain names.
 
-{{< youtube id="OQiUK1Si_ck" title="Browsers 3000: Decentralizing the Internet's root with (HNS) Handshake - Tieshun Roquerre" >}}
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OQiUK1Si_ck" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Browsers 3000: Decentralizing the Internet's root with (HNS) Handshake - Tieshun Roquerre"></iframe>
+</div>
 
 ## A New Age on the Internet Frontier
 
