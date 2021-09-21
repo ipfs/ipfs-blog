@@ -4,7 +4,7 @@ description: Namebase and Handshake offer users new solutions to resolving hostn
   in the web3 future.
 author: ''
 date: 2021-09-20
-permalink: "/namebase-handshake-decentralizing-internets-root/"
+permalink: "/decentralizing-the-internet-s-root/"
 translationKey: ''
 header_image: "/hns.jpg"
 tags:
@@ -15,12 +15,12 @@ tags:
 - browsers
 
 ---
-Domain names are things most end users take for granted. The average user doesn't spend time looking at DNS resolution or even knowing what a domain name server is. However, without domain name resolution, typing "google.com" into a browser will return an error with the confounding explanation that “the hostname you're looking for doesn't exist.”
+Domain names are things most end users take for granted. The average user doesn't spend time looking at DNS resolution or even knowing what a domain name server is. However, without domain name resolution, typing "google.com" into a browser will return an error with the confounding explanation that "the hostname you're looking for doesn't exist."
 
-When you use your browser to visit a domain name like google.com, your DNS resolver will first ask the root for directions to the top-level domain “com”.
+When you use your browser to visit a domain name like google.com, your DNS resolver will first ask the root for directions to the top-level domain "com".
 
 ![ICAAN controls the DNS root](../assets/icann-controls-the-dns-root.png)  
-Once “com” is found, your browser will then be directed to the owner of “com” — who keeps a list of directions to all the domains registered underneath “com” — for directions to the subdomain “google”, which will then direct to google.com’s IP address and finally its website.
+Once "com" is found, your browser will then be directed to the owner of “com” — who keeps a list of directions to all the domains registered underneath “com” — for directions to the subdomain "google", which will then direct to google.com’s IP address and finally its website.
 
 In a centralized environment, this may be an ideal setup. But what happens when the internet becomes decentralized?
 
