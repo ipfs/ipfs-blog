@@ -4,15 +4,15 @@ description: ION is building a solution on top of Bitcoin and IPFS to fix our fr
   online identities.
 author: ''
 date: 2021-09-13
-permalink: ion-a-path-to-decentralized-identity
+permalink: "/ion-a-path-to-decentralized-identity/"
 translationKey: ''
 header_image: "/ion-decentralized-identity.jpg"
 tags:
 - identity
 - browsers
-
 ---
-[_Browsers 3000_](https://events.protocol.ai/2021/browsers3000/) _is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a talk from Daniel Buchner, a member of the team developing ION._ [_View the full talk here_](https://www.youtube.com/watch?v=3UbUzA0lW9w&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=14)_._
+
+_[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a talk from Daniel Buchner, a member of the team developing ION. [View the full talk here](https://www.youtube.com/watch?v=3UbUzA0lW9w&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=14)._
 
 Most individuals don't think about identity in the digital world until they've had theirs stolen. However, digital IDs don’t work the way you might think they do. Identity on the internet is split into two distinct types of data.
 
@@ -47,6 +47,10 @@ The IPFS system provides redundant storage so that user information is never los
 ION creates a scalable system where thousands of users can utilize the infrastructure for fast verification of data. Built off the Bitcoin network and leveraging CIDs from the IPFS network, ION’s identity system is fully decentralized.
 
 Users may have concerns with typical BTC transactions costing around $100. Since these are batch processes, they can combine multiple processes into a single batch. This batching solution can reduce cost to cents per transaction, making it an affordable solution. The immutability in the Bitcoin blockchain makes it resilient and traceable, making it ideal for keeping ID data easily accessible from anywhere in the world.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3UbUzA0lW9w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="BBrowsers 3000: ION, Decentralized Identifiers Using Bitcoin & IPFS - Daniel Buchner"></iframe>
+</div>
 
 ## How Can ION be Used?
 
