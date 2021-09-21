@@ -4,7 +4,7 @@ description: ION is building a solution on top of Bitcoin and IPFS to fix our fr
   online identities.
 author: ''
 date: 2021-09-13
-permalink: ion-a-path-to-decentralized-identity
+permalink: "/ion-a-path-to-decentralized-identity/"
 translationKey: ''
 header_image: "/ion-decentralized-identity.jpg"
 tags:
