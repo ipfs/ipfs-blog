@@ -4,7 +4,7 @@ description: Decentralizing the internet’s root with HNS, Mercury Hackathon ki
   & more in the IPFS community this week.
 author: Emily Vaughan
 date: 2021-09-22
-permalink: "/weekly-153/"
+permalink: "/weekly-154/"
 translationKey: ipfs-weekly-154
 header_image: "/header-image-weekly-newsletter.png"
 tags:
