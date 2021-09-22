@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 154!
-description: The future of decentralized identities w/ ION; differences between Estuary,
-  Web3.Storage & NFT.Storage & more.
+description: Decentralizing the internet’s root with HNS, Mercury Hackathon kickoff
+  & more in the IPFS community this week.
 author: Emily Vaughan
-date: 2021-09-15
+date: 2021-09-22
 permalink: "/weekly-153/"
-translationKey: ipfs-weekly-153
+translationKey: ipfs-weekly-154
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,32 +13,34 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## ION is paving the way for a future with decentralized identities
+## Decentralizing the Internet's Root
 
-![](../assets/ion-decentralized-identity.jpg)
+![](../assets/hns.jpg)
 
-How many people really know how their online identities work? In reality, online identity contains two types of data: identity data and identifiers. The way these two types of data have interacted over the course of the internet has defined our digital identities and how much control we have over them. ION is a solution being built as a framework for global, online, decentralized identities — leveraging fundamentals like DID and IFPS’ CID. Find out what the future of decentralized identities look like in [**this post**](https://blog.ipfs.io/ion-a-path-to-decentralized-identity/).
+Domain names are things most users don’t think about much, but they are part of the directions to finding any content on the web, and they’re controlled by a centralized resolution system. In a decentralized internet, however, controlling the top of the domain hierarchy would no longer be in the hands of a centralized entity. Top-level domain names would be peer-based and would no longer exist under a single point-of-failure. Find out how [**Namebase offers new solutions to resolving hostnames in the web3 future with its Handshake project**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).
 
 ## Brand new on IPFS
 
-* The Mars track of the Asia Hackathon Season is open for applications! Reinvent decentralized storage with Filecoin and IPFS and win up to $35,000 in prizes. [**Apply today**](https://xathon.mettl.com/event/MarsAsiaHackathon2021).
-* Estuary? Web3.Storage? NFT.Storage? Maybe you’ve heard of them, but aren’t quite sure what they are and how they’re different. Check out this [**overview of the three decentralized storage solutions**](https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/)and their different uses.
-* Join Michelle Lee of Protocol Labs as she gives a comprehensive “[**Introduction to IPFS and Filecoin**](https://www.youtube.com/watch?v=1xloqhD5C_8&list=PLXzKMXK2aHh63KtTQ0wUWbFOR7hL9RpKM&index=21)” from [**EthOnline**](https://online.ethglobal.com/) with [**EthGlobal**](https://ethglobal.com/).
-* Having performance issues using the .eth.link gateway to resolve IPFS and ENS Domains sites? Try Eth.Limo! [**Learn more.**](https://blog.fleek.co/posts/eth-limo-alternative-eth-link)
+* IPFS and Filecoin are a match made in blockchain heaven. [**Learn more **](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/)about the relationship between the two.
+* The Mercury Hackathon kicked off yesterday but there is still time to [**register to build**](https://mercuryhackathon2021.com/?utm_source=AHTW&utm_medium=social&utm_campaign=launch-poster) with IPFS, Filecoin, and Flow.
+* There is now a [**fully searchable decentralized library**](https://libgen.fun/dweb.html) hosted on IPFS, which is truly a “breakthrough in the field”!
+* Applications for the [**Filecoin Techstars Accelerator**](https://www.techstars.com/accelerators/filecoin) are officially open! [**Apply now**](https://www.f6s.com/filecoin-accelerator-2022/apply) for this new accelerator that focuses on startups building in the IPFS and Filecoin ecosystems.
 
 ## Around the ecosystem 🌏
 
-Tatum collaborates with NFT.Storage to offer free IPFS storage for NFTs to developers. [**Read all about it**](https://blog.tatum.io/tatum-partners-with-nft-storage-to-offer-free-ipfs-storage-for-nfts-to-developers-183dad64e79d).   
+Attending [**Messari Mainnet 2021**](https://mainnet.events/agenda-2021/) in NYC? Make sure to tune in to Juan Benet’s keynote speech at 9:30am ET on Wednesday, September 22nd.   
   
-A workshop focused on “Storing Data on the Filecoin Network with Textile” happened today, September 14th. [**Stay tuned**](https://medium.com/encode-club) for the recap and recording.  
+In support of the [**Crypto Climate Accord**](https://cryptoclimate.org/) (CCA), Protocol Labs and [**Energy Web**](https://www.energyweb.org/)completed the first showcase of an [**open-source solution to decarbonize Filecoin**](https://medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5)!  
   
-[**EthOnline**](https://ethglobal.online/) is only just getting started. Tune in to the hackathon and join 1,000+ developers, builders, and engineers from across the ecosystem. Just in the first week, Protocol Labs, Polygon, Chainlink, Aave, 0x, and more have presented. Check out the full [**EthOnline 2021 schedule**](https://www.youtube.com/playlist?list=PLXzKMXK2aHh63KtTQ0wUWbFOR7hL9RpKM)!  
+The [**Browsers3000**](https://events.protocol.ai/2021/browsers3000/) hackathon is complete! Thanks to all who joined and built your visions — stay tuned for a full event recap and a feature on the winning projects.   
   
-Event update! In order to accommodate community members who will be in attendance at Messari's MainNet conference, the Filecoin Launchpad Accelerator Demo Day has been rescheduled to September 28th from 11:00 am - 3:30 pm EDT. [**Register now**](https://mesh.xyz/tachyon/).  
+Remember that the Filecoin Launchpad Accelerator Demo Day is right around the corner! Eleven teams from 20 countries are presenting their projects after weeks of work with [**Tachyon**](https://mesh.xyz/tachyon/) and other leaders in the Filecoin and web3 communities. [**Register to attend**](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu).  
   
-“A Guide for How to build and host a .ETH website using IPFS on ENS.” Tune in with Mark Krynsky for an overview of how to point a .eth ENS name to a website using IPFS. [**Check it out.**](https://krynsky.com/a-guide-for-how-to-build-and-host-a-eth-website-using-ipfs-on-ens/)
+Protocol Labs, Filecoin Foundation, Ethereum Foundation and Electric Coin Co. are collaborating to unlock recursion in Halo 2 and explore the future of proofs. [**Read more about the collaboration**](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/).
 
 ## Want to help build the new internet?
+
+[**Fullstack Developer**](https://weworkremotely.com/remote-jobs/akasha-foundation-fullstack-developer): By combining blockchain technologies such as Ethereum and the Interplanetary File System (IPFS), AKASHA has the potential to change the way ideas, thoughts, and experiences are shared and stored on the Internet. As part of the remote team distributed across the globe, you will work with some of the brightest minds in the blockchain tech space on unique and challenging ideas. You will also be in direct contact with the development and user community at large, actively participating in open discussions and brainstorming sessions. **AKASHA Foundation**, Remote.
 
 [**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
 
