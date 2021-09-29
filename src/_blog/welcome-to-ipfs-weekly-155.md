@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 155!
-description: Decentralizing the internet’s root with HNS, Mercury Hackathon kickoff
-  & more in the IPFS community this week.
+description: Understanding the relationship between IPFS & Filecoin, a new room in
+  the MoNa Gallery, & more!
 author: Emily Vaughan
-date: 2021-09-22
-permalink: "/weekly-154/"
-translationKey: ipfs-weekly-154
+date: 2021-09-29
+permalink: "/weekly-155/"
+translationKey: ipfs-weekly-155
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,30 +13,30 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Decentralizing the Internet's Root
+## **A New Paradigm for Web Storage**
 
 ![](../assets/hns.jpg)
 
-Domain names are things most users don’t think about much, but they are part of the directions to finding any content on the web, and they’re controlled by a centralized resolution system. In a decentralized internet, however, controlling the top of the domain hierarchy would no longer be in the hands of a centralized entity. Top-level domain names would be peer-based and would no longer exist under a single point-of-failure. Find out how [**Namebase offers new solutions to resolving hostnames in the web3 future with its Handshake project**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).
+IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like [Textile](http://textile.io/) and [Estuary](http://estuary.tech/) to help them work together. With the increasing limitations for plugins, these tools are some of the best solutions for developing for web3 with current browsers. As time goes on and IPFS becomes more accessible, browsers will continue supporting native integration (see [Opera](https://blogs.opera.com/tips-and-tricks/2021/02/opera-crypto-files-for-keeps-ipfs-unstoppable-domains/) and [Brave](https://brave.com/ipfs-support/)). As these integrations continue, Textile and Estuary give a simple workaround for using the systems alongside one another. Check out the blog to [learn more about using Filecoin with IPFS](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/).
 
 ## Brand new on IPFS
 
-* IPFS and Filecoin are a match made in blockchain heaven. [**Learn more **](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/)about the relationship between the two.
-* The Mercury Hackathon kicked off yesterday but there is still time to [**register to build**](https://mercuryhackathon2021.com/?utm_source=AHTW&utm_medium=social&utm_campaign=launch-poster) with IPFS, Filecoin, and Flow.
-* There is now a [**fully searchable decentralized library**](https://libgen.fun/dweb.html) hosted on IPFS, which is truly a “breakthrough in the field”!
-* Applications for the [**Filecoin Techstars Accelerator**](https://www.techstars.com/accelerators/filecoin) are officially open! [**Apply now**](https://www.f6s.com/filecoin-accelerator-2022/apply) for this new accelerator that focuses on startups building in the IPFS and Filecoin ecosystems.
+* Pan Chasinga, developer advocate for Filecoin and IPFS, presented at Mercury Hackathon last week on [“Building an NFT Pet Store with NFT.Storage & Flow”](https://www.youtube.com/watch?v=pr9RMKnj3pc) - watch now!
+* Tune in to [Infura](https://infura.io/)’s monthly developer community meetup on Oct 5th at 11am ET to learn about transactions and connections to web3, featuring a presentation on “How to pave the way for a distributed, permanent web with IPFS”. [Save your spot!](https://www.crowdcast.io/e/infura-developer-community-call-Oct21)
+* Looking to get started with Filecoin and IPFS? [Start here](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7) in this new ‘storefront’ for builders beginning their journey in the ecosystem.
+* There are already over 700 registrations for the Mars Hackathon with IPFS, Filecoin, and [Polygon](https://polygon.technology/). Be sure to [submit your ideas](https://www.marshackathon2021.com/) before Oct. 3rd!
 
 ## Around the ecosystem 🌏
 
-Attending [**Messari Mainnet 2021**](https://mainnet.events/agenda-2021/) in NYC? Make sure to tune in to Juan Benet’s keynote speech at 9:30am ET on Wednesday, September 22nd.   
-  
-In support of the [**Crypto Climate Accord**](https://cryptoclimate.org/) (CCA), Protocol Labs and [**Energy Web**](https://www.energyweb.org/)completed the first showcase of an [**open-source solution to decarbonize Filecoin**](https://medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5)!  
-  
-The [**Browsers3000**](https://events.protocol.ai/2021/browsers3000/) hackathon is complete! Thanks to all who joined and built your visions — stay tuned for a full event recap and a feature on the winning projects.   
-  
-Remember that the Filecoin Launchpad Accelerator Demo Day is right around the corner! Eleven teams from 20 countries are presenting their projects after weeks of work with [**Tachyon**](https://mesh.xyz/tachyon/) and other leaders in the Filecoin and web3 communities. [**Register to attend**](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu).  
-  
-Protocol Labs, Filecoin Foundation, Ethereum Foundation and Electric Coin Co. are collaborating to unlock recursion in Halo 2 and explore the future of proofs. [**Read more about the collaboration**](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/).
+Believe it or not, it’s been a year since Filecoin mainnet launch, and there’s a lot planned to celebrate one year in orbit. Stay tuned for more details coming soon!
+
+Check out this new [deep dive blog post](https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/) on ChainSafe Files that outlines the most important parts of Files’ architecture and highlights ChainSafe’s commitment to giving users sovereignty over their data.
+
+Inviting NFT and blockchain developers of all experience levels to [apply to collaborate with fellow hackers](https://chain.link/hackathon), learn from top developers, and compete for $300K+ in prizes at this fall’s [Chainlink Hackathon](https://chain.link/hackathon)!
+
+[MoNA Gallery](https://www.mona.gallery/) has a brand new room by Marc-O-Matic that showcases four incredible creatures from their universe. [Check it out](https://www.mona.gallery/r/marc0matic)!
+
+NFT Hack with the [Filecoin Encode Club](https://www.encode.club/filecoin-club) kicks off on October 5th! [Register for the hackathon](https://www.encode.club/filecoin-club/#form) and be sure to [join us](https://www.eventbrite.co.uk/e/nft-hack-launch-tickets-169331201181?aff=ebdsoporgprofile) at the NFT Hack Launch Event.
 
 ## Want to help build the new internet?
 
