@@ -15,7 +15,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## **A New Paradigm for Web Storage**
 
-![](../assets/hns.jpg)
+![](../assets/using-filecoin-ipfs-1_huead5e06741560944f57049d5aa67a724_366938_1500x0_resize_q90_linear-2.jpg)
 
 IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like [Textile](http://textile.io/) and [Estuary](http://estuary.tech/) to help them work together. With the increasing limitations for plugins, these tools are some of the best solutions for developing for web3 with current browsers. As time goes on and IPFS becomes more accessible, browsers will continue supporting native integration (see [Opera](https://blogs.opera.com/tips-and-tricks/2021/02/opera-crypto-files-for-keeps-ipfs-unstoppable-domains/) and [Brave](https://brave.com/ipfs-support/)). As these integrations continue, Textile and Estuary give a simple workaround for using the systems alongside one another. Check out the blog to [learn more about using Filecoin with IPFS](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/).
 
