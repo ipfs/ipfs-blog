@@ -4,7 +4,7 @@ description: The ipfs.io gateway & website experienced an outage on 2021-08-20; 
   are more details & corrective actions.
 author: IPFS Team
 date: 2021-08-27
-permalink: 2021-08-27-IPFS.io-gateway-outage-resolution
+permalink: /2021-08-27-IPFS-io-gateway-outage-resolution/
 translationKey: ''
 header_image: "/ipfs-blog-gateway-5.jpg"
 tags:
