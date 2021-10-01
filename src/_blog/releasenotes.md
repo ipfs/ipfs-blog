@@ -4,6 +4,14 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: go-ipfs v0.10.0 has been released!
+  date: 2021-10-01
+  publish_date: 
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0
+  tags:
+  - Bitswap
+  - go-ipfs
+  - IPLD
 - title: js-ipfs 0.58.0
   date: 2021-08-17
   publish_date: 
