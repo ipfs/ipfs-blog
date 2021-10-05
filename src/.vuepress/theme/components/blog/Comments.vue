@@ -6,18 +6,24 @@
 </template>
 
 <script>
+const safePermalink = (permalink) => {
+  // https://meta.discourse.org/t/referer-with-domain-name-in-the-slug-breaks-comments-embed/204807/4?u=lidel
+  const url = new URL('https://blog.ipfs.io/')
+  url.pathname = permalink
+  return url.toString()
+}
 export default {
   name: 'Comments',
   components: {},
   computed: {
     embedSrc() {
-      return `https://discuss.ipfs.io/embed/comments?embed_url=https://blog.ipfs.io${this.$frontmatter.permalink}`
+      return `https://discuss.ipfs.io/embed/comments?embed_url=${safePermalink(this.$frontmatter.permalink)}`
     },
   },
   mounted() {
     window.DiscourseEmbed = {
       discourseUrl: 'https://discuss.ipfs.io/',
-      discourseEmbedUrl: `https://blog.ipfs.io${this.$frontmatter.permalink}`,
+      discourseEmbedUrl: safePermalink(this.$frontmatter.permalink),
     }
     const d = document.createElement('script')
     d.type = 'text/javascript'
