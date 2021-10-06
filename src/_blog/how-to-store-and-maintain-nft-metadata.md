@@ -52,6 +52,6 @@ To help users of NFTs out, IPFS launched [NFT.Storage](http://nft.storage) earli
 
 ## A Free, Safe Way To Maintain an NFT
 
-Most crypto enthusiasts have hopped aboard the NFT train. Not all of them are worth several million dollars, after all. Even so, NFT content owners wouldn't want to see their investment go up in smoke. Free NFT storage exists to help those NFT holders that want to ensure they always have access to their digital assets.
+Most crypto enthusiasts have hopped aboard the NFT train. Not all of them are worth several million dollars, after all. Even so, NFT content owners wouldn't want to see their investment go up in smoke. Free  storage exists to help those NFT holders that want to ensure they always have access to their digital assets.
 
 If you develop or buy NFTs and haven't looked into persistent storage for them yet, the best time is now. Don't wait until your NFTs disappear.
