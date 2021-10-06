@@ -1,6 +1,6 @@
 ---
 title: How to Store and Maintain NFT Metadata
-description: What are the risks with NFT metadata, and how does IPFS help NFT holders
+description: What are the risks with NFT metadata and how does IPFS help NFT holders
   secure their digital assets?
 author: ''
 date: 2021-10-06
