@@ -15,13 +15,17 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## **go-ipfs v0.10.0 Release**
 
-![](../assets/release-notes-placeholder-2b442ee5.png)Exciting news — [go-ipfs 0.10.0](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) is live! This release brings some big changes to the IPLD internals of go-ipfs that make working with non-UnixFS DAGs easier than ever. There are also a variety of new commands and configuration options available.
+![](../assets/release-notes-placeholder-2b442ee5.png)
+
+Exciting news — [go-ipfs 0.10.0](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) is live! This release brings some big changes to the IPLD internals of go-ipfs that make working with non-UnixFS DAGs easier than ever. There are also a variety of new commands and configuration options available.
 
 As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will _not_ be called out in the release notes. Please make sure to update ASAP. See the [release process](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details and read the [release notes](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) for the TLDR, highlights, changelog, and more.
 
 ## **Browsers 3000 Winners**
 
-![](../assets/browsers-3000-winners.jpg)[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) was a six-week hackathon that lasted from July to August. Over 30 projects building on Filecoin and IPFS joined the hackathon to iterate, test, and pitch their solutions to modernize “the browser” for the decentralized web3 world that is coming soon.
+![](../assets/browsers-3000-winners.jpg)
+
+[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) was a six-week hackathon that lasted from July to August. Over 30 projects building on Filecoin and IPFS joined the hackathon to iterate, test, and pitch their solutions to modernize “the browser” for the decentralized web3 world that is coming soon.
 
 At the culmination of the event in September, three startups ([NetSepio](https://devpost.com/software/netsepio), [Blockforge](https://devpost.com/software/blockforge), and [IPFS WebGL Gaming](https://devpost.com/software/ipfs-webgl-gaming-platform)) were recipients of a total of $18,000 in prizes. You can [watch the full closing ceremony](https://www.youtube.com/watch?v=KL58k7dXj54&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP), including presentations of the winners and other amazing projects that participated in the hackathon. [Learn more about the winning projects](https://blog.ipfs.io/browsers-3000-hackathon-winners/) and their unique feature sets.
 
