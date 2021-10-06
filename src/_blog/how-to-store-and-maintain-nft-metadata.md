@@ -6,8 +6,12 @@ author: ''
 date: 2021-10-06
 permalink: "/how-to-store-and-maintain-nft-metadata/"
 translationKey: ''
-header_image: ''
-tags: []
+header_image: "/breaking-down-nft-metadata.jpg"
+tags:
+- security
+- NFTs
+- Filecoin
+- CID
 
 ---
 Why is everyone so preoccupied with NFT metadata? What does it mean, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term?
@@ -30,11 +34,11 @@ So, how does a person who owns an NFT ensure its safety and accessibility throug
 
 ## IPFS and Metadata Storage
 
-What if there was a way to store data in perpetuity? When developers first came up with the idea of the cloud, they aimed to create data persistence. While it did succeed in this endeavor partially, it created a situation where the owner of the cloud servers had complete control over the data. To rectify this potential problem (and many others), the idea for a decentralized internet was born.
+What if there was a way to store data in perpetuity? When developers first came up with the idea of the cloud, they [aimed to create data persistence](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/). While it did succeed in this endeavor partially, it created a situation where the owner of the cloud servers had complete control over the data. To rectify this potential problem (and many others), the idea for a decentralized internet was born.
 
 When it came to storing accessible data in perpetuity, the approach had to be markedly different. How would a decentralized system provide servers owned by individuals that could offer storage to millions of users worldwide? This approach would create a new paradigm where instead of companies owning user data, individuals would maintain ownership of their data. The solution came with developing the Interplanetary File System (IPFS) and the decentralized network that interacts with it, Filecoin.
 
-IPFS is a unique file system because it doesn't operate in the same way we usually think about file storage. A file stored on the IPFS network generates a content ID (CID) which is distributed among several independent storage providers. Even with robust content addressing, how do you know which file storage providers are most trustworthy? Filecoin provides the framework for a reputation system and a way to interact with these storage providers.
+IPFS is a unique file system because it doesn't operate in the same way we usually think about file storage. A file stored on the IPFS network generates a content ID (CID) which is distributed among several independent storage providers. Even with robust content addressing, how do you know which file storage providers are most trustworthy? Filecoin provides the framework for a [reputation system](https://filecoin.io/blog/posts/reputation-systems-in-filecoin/) and a [way to interact](https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/) with these storage providers.
 
 The Filecoin network allows users to store their data as CIDs with redundant storage providers, ensuring persistence across the entire network. The user then gets a CID that directs them to their file, complete and intact, drawn from one of the redundant storage providers that hold their information. Even if one of the providers goes down or is inaccessible, the user still gets their data.
 
@@ -44,7 +48,7 @@ What's more, IPFS even offers a free method for users to store their NFTs.
 
 ## Free NFT Storage Through IPFS
 
-To help users of NFTs out, IPFS launched NFT.Storage earlier this year. NFT.Storage is dedicated to the storage of NFTs, entirely for free. If you've spent any money on an NFT, you can easily upload the data associated with it to IPFS and Filecoin via NFT.Storage and ensure that it's preserved across time.
+To help users of NFTs out, IPFS launched [NFT.Storage](http://nft.storage) earlier this year. NFT.Storage is dedicated to the [storage of NFTs](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/), entirely for free. If you've spent any money on an NFT, you can easily upload the data associated with it to IPFS and Filecoin via NFT.Storage and ensure that it's preserved across time.
 
 ## A Free, Safe Way To Maintain an NFT
 
