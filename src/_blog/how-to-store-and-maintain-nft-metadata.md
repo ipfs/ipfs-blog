@@ -48,7 +48,7 @@ What's more, IPFS even offers a free method for users to store their NFTs.
 
 ## Free NFT Storage Through IPFS
 
-To help users of NFTs out, IPFS launched [NFT.Storage](http://nft.storage) earlier this year. NFT.Storage is dedicated to the [storage of NFTs](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/ "Introducing NFT.Storage: Free Decentralized Storage for NFTs"), entirely for free. If you've spent any money on an NFT, you can easily upload the data associated with it to IPFS and Filecoin via NFT.Storage and ensure that it's preserved across time.
+To help users of NFTs out, IPFS launched [NFT.Storage](http://nft.storage "NFT.Storage") earlier this year. NFT.Storage is dedicated to the [storage of NFTs](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/ "Introducing NFT.Storage: Free Decentralized Storage for NFTs"), entirely for free. If you've spent any money on an NFT, you can easily upload the data associated with it to IPFS and Filecoin via NFT.Storage and ensure that it's preserved across time.
 
 ## A Free, Safe Way To Maintain an NFT
 
