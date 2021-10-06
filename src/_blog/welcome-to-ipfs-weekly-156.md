@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 156!
-description: Understanding the relationship between IPFS & Filecoin, a new room in
-  the MoNa Gallery, & more!
+description: go-ipfs 0.10.0 is live, Browsers 3000 winners announced, plus a NFT treasure
+  hunt!
 author: Emily Vaughan
-date: 2021-09-29
-permalink: "/weekly-155/"
-translationKey: ipfs-weekly-155
+date: 2021-10-06
+permalink: "/weekly-156/"
+translationKey: ipfs-weekly-156
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,30 +13,34 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## **A New Paradigm for Web Storage**
+## **go-ipfs v0.10.0 Release**
 
-![](../assets/using-filecoin-ipfs-1_huead5e06741560944f57049d5aa67a724_366938_1500x0_resize_q90_linear-2.jpg)
+![](../assets/release-notes-placeholder-2b442ee5.png)Exciting news — [go-ipfs 0.10.0](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) is live! This release brings some big changes to the IPLD internals of go-ipfs that make working with non-UnixFS DAGs easier than ever. There are also a variety of new commands and configuration options available.
 
-IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like [Textile](http://textile.io/) and [Estuary](http://estuary.tech/) to help them work together. With the increasing limitations for plugins, these tools are some of the best solutions for developing for web3 with current browsers. As time goes on and IPFS becomes more accessible, browsers will continue supporting native integration (see [Opera](https://blogs.opera.com/tips-and-tricks/2021/02/opera-crypto-files-for-keeps-ipfs-unstoppable-domains/) and [Brave](https://brave.com/ipfs-support/)). As these integrations continue, Textile and Estuary give a simple workaround for using the systems alongside one another. Check out the blog to [learn more about using Filecoin with IPFS](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/).
+As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will _not_ be called out in the release notes. Please make sure to update ASAP. See the [release process](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details and read the [release notes](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) for the TLDR, highlights, changelog, and more.
 
-## Brand new on IPFS
+## **Browsers 3000 Winners**
 
-* Pan Chasinga, developer advocate for Filecoin and IPFS, presented at Mercury Hackathon last week on [“Building an NFT Pet Store with NFT.Storage & Flow”](https://www.youtube.com/watch?v=pr9RMKnj3pc) - watch now!
-* Tune in to [Infura](https://infura.io/)’s monthly developer community meetup on Oct 5th at 11am ET to learn about transactions and connections to web3, featuring a presentation on “How to pave the way for a distributed, permanent web with IPFS”. [Save your spot!](https://www.crowdcast.io/e/infura-developer-community-call-Oct21)
-* Looking to get started with Filecoin and IPFS? [Start here](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7) in this new ‘storefront’ for builders beginning their journey in the ecosystem.
-* There are already over 700 registrations for the Mars Hackathon with IPFS, Filecoin, and [Polygon](https://polygon.technology/). Be sure to [submit your ideas](https://www.marshackathon2021.com/) before Oct. 3rd!
+![](../assets/browsers-3000-winners.jpg)[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) was a six-week hackathon that lasted from July to August. Over 30 projects building on Filecoin and IPFS joined the hackathon to iterate, test, and pitch their solutions to modernize “the browser” for the decentralized web3 world that is coming soon.
+
+At the culmination of the event in September, three startups ([NetSepio](https://devpost.com/software/netsepio), [Blockforge](https://devpost.com/software/blockforge), and [IPFS WebGL Gaming](https://devpost.com/software/ipfs-webgl-gaming-platform)) were recipients of a total of $18,000 in prizes. You can [watch the full closing ceremony](https://www.youtube.com/watch?v=KL58k7dXj54&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP), including presentations of the winners and other amazing projects that participated in the hackathon. [Learn more about the winning projects](https://blog.ipfs.io/browsers-3000-hackathon-winners/) and their unique feature sets.
+
+## **Brand new on IPFS**
+
+* The winners of the IPFS and Filecoin tracks at [NFT Vision Hack](https://www.nftvisionhack.com/) were [announced at the closing award ceremony](https://www.youtube.com/watch?v=X0EaM1KWryM). Congratulations to Eclectica, CareCards, and J.O.S.H!
+* The [ChainSafe Files](https://files.chainsafe.io/) team believe internet users should maintain full control over their data, which is why they [built a CLI tool for data retrieval from IPFS](https://medium.com/chainsafe-systems/true-data-ownership-your-keys-your-files-your-cids-dcfb0b2d50c) in case of front & back end failure.
+* POAP is hosting an [NFT Treasure Hunt](http://poap.nyc/) in NYC on Oct. 31st to Nov. 4th, brought to you by Protocol Labs, [NFT.Storage](https://nft.storage/), and more! Stay tuned for more details.
+* Last week [Michelle Lee](https://twitter.com/mishmosh) and [Dietrich Ayala](https://twitter.com/dietrich) of Protocol Labs joined Deploy Friday for an [episode dedicated to all things IPFS](https://www.youtube.com/watch?v=p5zNbs6HwrI) — watch now!
 
 ## Around the ecosystem 🌏
 
-Believe it or not, it’s been a year since Filecoin mainnet launch, and there’s a lot planned to celebrate one year in orbit. Stay tuned for more details coming soon!
+Just announced: [Filecoin Forum](https://www.filecoin.gallery/), hosted by [MoNa Gallery](https://www.mona.gallery/)! This event is an open call to all 3D artists, architects, and game developers to start building in web3 and be a part of a global community dedicated to building the metaverse with $200,000+ in prizes to be won. [Start building!](https://www.filecoin.gallery/)
 
-Check out this new [deep dive blog post](https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/) on ChainSafe Files that outlines the most important parts of Files’ architecture and highlights ChainSafe’s commitment to giving users sovereignty over their data.
+Recently Protocol Labs announced a [limited-time referral fee program](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/) called Filecoin Project Gravity for community members who can bring large datasets onto the Filecoin network. Invite your customers, help create the data gravity pull, and earn a potential referral award!
 
-Inviting NFT and blockchain developers of all experience levels to [apply to collaborate with fellow hackers](https://chain.link/hackathon), learn from top developers, and compete for $300K+ in prizes at this fall’s [Chainlink Hackathon](https://chain.link/hackathon)!
+Did you know that the largest ETHGlobal event of the year is happening right now? There are just ten days left of ETHOnline 2021 — [sign up for the summits now](https://online.ethglobal.com/)!
 
-[MoNA Gallery](https://www.mona.gallery/) has a brand new room by Marc-O-Matic that showcases four incredible creatures from their universe. [Check it out](https://www.mona.gallery/r/marc0matic)!
-
-NFT Hack with the [Filecoin Encode Club](https://www.encode.club/filecoin-club) kicks off on October 5th! [Register for the hackathon](https://www.encode.club/filecoin-club/#form) and be sure to [join us](https://www.eventbrite.co.uk/e/nft-hack-launch-tickets-169331201181?aff=ebdsoporgprofile) at the NFT Hack Launch Event.
+The program for [ConsensusDays 21](https://research.protocol.ai/sites/consensusday21/) is live! Check out what the [Protocol Labs Research](https://research.protocol.ai/) team has in store at the two days of consensus research, panels, and workshops. [Register and tune in this week](https://research.protocol.ai/sites/consensusday21/programme/) on October 6th and 7th.
 
 ## Want to help build the new internet?
 
