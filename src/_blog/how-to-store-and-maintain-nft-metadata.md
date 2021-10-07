@@ -2,7 +2,7 @@
 title: How to Store and Maintain NFT Metadata
 description: What are the risks with NFT metadata and how does IPFS help NFT holders
   secure their digital assets?
-author: Stan Yee
+author: IPFS Blog
 date: 2021-10-06
 permalink: "/how-to-store-and-maintain-nft-metadata/"
 translationKey: ''
