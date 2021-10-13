@@ -2,7 +2,7 @@
 title: Developing Consumer Decentralized Applications with Slate
 description: Together, Slate and Textile provide the foundation for consumer applications
   built on IPFS.
-author: Martina Long
+author: ''
 date: 2021-10-13
 permalink: "/developing-consumer-decentralized-applications-with-textile-slate/"
 translationKey: ''
