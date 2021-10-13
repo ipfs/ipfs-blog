@@ -6,7 +6,7 @@ author: Martina Long
 date: 2021-10-13
 permalink: "/developing-consumer-decentralized-applications-with-textile-slate/"
 translationKey: ''
-header_image: "/slate.jpg"
+header_image: "/slate-textile.jpg"
 tags:
 - hackathon
 - gateways
