@@ -6,7 +6,7 @@ author: ''
 date: 2021-10-13
 permalink: "/developing-consumer-decentralized-applications-with-textile-slate/"
 translationKey: ''
-header_image: ''
+header_image: "/slate.jpg"
 tags:
 - hackathon
 - gateways
