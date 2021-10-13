@@ -2,7 +2,7 @@
 title: Developing Consumer Decentralized Applications with Slate
 description: Together, Slate and Textile provide the foundation for consumer applications
   built on IPFS.
-author: ''
+author: Martina Long
 date: 2021-10-13
 permalink: "/developing-consumer-decentralized-applications-with-textile-slate/"
 translationKey: ''
@@ -14,9 +14,9 @@ tags:
 - API
 
 ---
-[_Browsers 3000_](https://events.protocol.ai/2021/browsers3000/) _was a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the web3 browser. Below is a dive into the decentralized storage solution known as Slate, from lead developer_ [_Martina Long_](https://twitter.com/martunalong?lang=en)_._
+[_Browsers 3000_](https://events.protocol.ai/2021/browsers3000/ "Browsers 3000") _was a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the web3 browser. Below is a dive into the decentralized storage solution known as Slate, from lead developer_ [_Martina Long_](https://twitter.com/martunalong?lang=en "Martina Long")_._
 
-[Slate](https://slate.host/) is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications?
+[Slate](https://slate.host/ "Slate") is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications?
 
 Developers have always had a problem when it comes to online file management. It could be something as simple as having resources we want to use in a sequestered location that's inaccessible to their code. It could be more complicated, like having cloud-stored files that they can't really see in their native formats.
 
@@ -26,7 +26,7 @@ Slate seeks to solve several problems at once as a collaborative platform, start
 
 ## **Slate and IPFS**
 
-Slate offers users up to 30GB of free space on the IPFS peer-to-peer network that they can use for any of their development projects. While it's exciting to see "free" and IPFS in the same sentence, it's important to remember that [Textile](https://www.textile.io/) is the reason this happens. Through Textile's bucket system, users can upload data directly from their data stores into the IPFS network and get content IDs (CIDs) referring to those files online.
+Slate offers users up to 30GB of free space on the IPFS peer-to-peer network that they can use for any of their development projects. While it's exciting to see "free" and IPFS in the same sentence, it's important to remember that [Textile](https://www.textile.io/ "Textile") is the reason this happens. Through Textile's bucket system, users can upload data directly from their data stores into the IPFS network and get content IDs (CIDs) referring to those files online.
 
 What Slate offers that's unique from other IPFS gateway systems is a way to manipulate the files through code directly. Slate's high performance API gives developers flexibility in managing files and retrieving data directly from Filecoin in an easily understandable format. Through the API, users can access metadata such as file names and content in JSON format.
 
