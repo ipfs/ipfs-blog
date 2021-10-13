@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 157!
-description: go-ipfs 0.10.0 is live, Browsers 3000 winners announced, plus a NFT treasure
-  hunt!
+description: Store NFT Metadata Safely with IPFS, the History Behind Estuary, and
+  more this week in IPFS Weekly 157.
 author: Emily Vaughan
-date: 2021-10-06
-permalink: "/weekly-156/"
-translationKey: ipfs-weekly-156
+date: 2021-10-13
+permalink: "/weekly-157/"
+translationKey: ipfs-weekly-157
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,38 +13,30 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## **go-ipfs v0.10.0 Release**
+## **How to Store and Maintain NFT Metadata**
 
 ![](../assets/release-notes-placeholder-2b442ee5.png)
 
-Exciting news — [go-ipfs 0.10.0](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) is live! This release brings some big changes to the IPLD internals of go-ipfs that make working with non-UnixFS DAGs easier than ever. There are also a variety of new commands and configuration options available.
-
-As usual, this release includes important fixes, some of which may be critical for security. Unless the fix addresses a bug being exploited in the wild, the fix will _not_ be called out in the release notes. Please make sure to update ASAP. See the [release process](https://github.com/ipfs/go-ipfs/tree/master/docs/releases.md#security-fix-policy) for details and read the [release notes](https://github.com/ipfs/go-ipfs/releases/tag/v0.10.0) for the TLDR, highlights, changelog, and more.
-
-## **Browsers 3000 Winners**
-
-![](../assets/browsers-3000-winners.jpg)
-
-[Browsers 3000](https://events.protocol.ai/2021/browsers3000/) was a six-week hackathon that lasted from July to August. Over 30 projects building on Filecoin and IPFS joined the hackathon to iterate, test, and pitch their solutions to modernize “the browser” for the decentralized web3 world that is coming soon.
-
-At the culmination of the event in September, three startups ([NetSepio](https://devpost.com/software/netsepio), [Blockforge](https://devpost.com/software/blockforge), and [IPFS WebGL Gaming](https://devpost.com/software/ipfs-webgl-gaming-platform)) were recipients of a total of $18,000 in prizes. You can [watch the full closing ceremony](https://www.youtube.com/watch?v=KL58k7dXj54&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP), including presentations of the winners and other amazing projects that participated in the hackathon. [Learn more about the winning projects](https://blog.ipfs.io/browsers-3000-hackathon-winners/) and their unique feature sets.
+What is NFT metadata, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term? Non-fungible tokens are among the most exciting recent developments in the cryptoverse. NFTs are like digital collectibles, each unique in its own way and linked to a particular user. Ownership aside, what also makes an NFT valuable is its metadata. [**Learn about NFT metadata**](https://blog.ipfs.io/how-to-store-and-maintain-nft-metadata/), metadata storage, and where to store your NFT metadata for free!
 
 ## **Brand new on IPFS**
 
-* The winners of the IPFS and Filecoin tracks at [NFT Vision Hack](https://www.nftvisionhack.com/) were [announced at the closing award ceremony](https://www.youtube.com/watch?v=X0EaM1KWryM). Congratulations to Eclectica, CareCards, and J.O.S.H!
-* The [ChainSafe Files](https://files.chainsafe.io/) team believe internet users should maintain full control over their data, which is why they [built a CLI tool for data retrieval from IPFS](https://medium.com/chainsafe-systems/true-data-ownership-your-keys-your-files-your-cids-dcfb0b2d50c) in case of front & back end failure.
-* POAP is hosting an [NFT Treasure Hunt](http://poap.nyc/) in NYC on Oct. 31st to Nov. 4th, brought to you by Protocol Labs, [NFT.Storage](https://nft.storage/), and more! Stay tuned for more details.
-* Last week [Michelle Lee](https://twitter.com/mishmosh) and [Dietrich Ayala](https://twitter.com/dietrich) of Protocol Labs joined Deploy Friday for an [episode dedicated to all things IPFS](https://www.youtube.com/watch?v=p5zNbs6HwrI) — watch now!
+* Jimmy Lee of Protocol Lab’s [Application Research Group](https://arg.protocol.ai/) made an appearance at the Mercury Hackathon track of [Asia Hackathon Season](https://hackathons.filecoin.io/asia-hackathon-season/) to give an [informative 30-minute deep dive](https://www.youtube.com/watch?v=Me2KfIObx5I) into the history behind creating [Estuary](https://estuary.tech/).
+* Listen to the [100th episode](https://podcasts.apple.com/us/podcast/juan-benet-ipfs-decentralizing-the-web-with/id792338939?i=1000437366979) of the [Epicenter](https://epicenter.tv/) podcast, featuring guest Juan Benet speaking about the possibilities for IPFS, ranging from distributed cloud hosting to websites without central servers to possibly being a replacement for HTTP.
+* The winners of the js13kGames 2021 Hackathon were announced last week. One highlight was [Go Away](https://js13kgames.com/entries/go-away), a planet-defending card game built with IPFS and NEAR. [Check out the full winners lineup](https://medium.com/js13kgames/js13kgames-2021-winners-top-in-criteria-and-expert-picks-cf4a0544fd45).
+* Also from the Mercury Hackathon: “Introduction to Dapp Starter | Building an NFT App Demo using IPFS” with Jacob Tucker of Decentology. [Watch here.](https://www.youtube.com/watch?v=iylqoU04-VM)
 
 ## Around the ecosystem 🌏
 
-Just announced: [Filecoin Forum](https://www.filecoin.gallery/), hosted by [MoNa Gallery](https://www.mona.gallery/)! This event is an open call to all 3D artists, architects, and game developers to start building in web3 and be a part of a global community dedicated to building the metaverse with $200,000+ in prizes to be won. [Start building!](https://www.filecoin.gallery/)
+Nearly one year ago, the Filecoin mainnet launched! From October 18 - 22, the Filecoin, IPFS, and Protocol Labs ecosystems are coming together to celebrate with **Filecoin Orbit**. Check out the event and [register to join in](http://orbit.filecoin.io/) for a week of talks, demos, workshops, and more.
 
-Recently Protocol Labs announced a [limited-time referral fee program](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/) called Filecoin Project Gravity for community members who can bring large datasets onto the Filecoin network. Invite your customers, help create the data gravity pull, and earn a potential referral award!
+Decentralized cloud drive [IPFS Drive](https://www.ipfsdrive.com/) is now live: a storage application used for file management, data encryption, and cloud drive mounting on the IPFS network. It has the characteristics of high-speed transmission and high security, and can obtain long-term free storage space from storage providers with support for [Filswan](https://filswan.com/#/dashboard) and [Web3.Storage](https://web3.storage/).
 
-Did you know that the largest ETHGlobal event of the year is happening right now? There are just ten days left of ETHOnline 2021 — [sign up for the summits now](https://online.ethglobal.com/)!
+Couldn’t make it to Prague for the Nonfungible Castle event? Well you can watch all of the action in the [livestream](https://www.nfcastle.com/streaming) starting on October 16th.
 
-The program for [ConsensusDays 21](https://research.protocol.ai/sites/consensusday21/) is live! Check out what the [Protocol Labs Research](https://research.protocol.ai/) team has in store at the two days of consensus research, panels, and workshops. [Register and tune in this week](https://research.protocol.ai/sites/consensusday21/programme/) on October 6th and 7th.
+The new release of [CID Gravity](https://filecoinproject.slack.com/archives/CEHTVSEG6/p1633430657466700), version 1.0.9, is now live and features an integration with [Bidbot from Textile](https://github.com/textileio/bidbot), a Filecoin network sidecar for storage providers to bid in storage deal auctions. CID Gravity enables storage providers to enter the storage-market and aims to allow any size of deals on the network.
+
+Welcome to Twitter, Protocol Labs Research! [Follow along](https://twitter.com/ProtoResearch) for all of the latest and greatest in Protocol Labs research and development.
 
 ## Want to help build the new internet?
 
