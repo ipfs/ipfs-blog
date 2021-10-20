@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 158!
-description: Store NFT Metadata Safely with IPFS, the History Behind Estuary, and
-  more this week in IPFS Weekly 157.
+description: Decentralized Apps with Slate, Filecoin Orbit, and more this week in
+  IPFS Weekly 158.
 author: Emily Vaughan
-date: 2021-10-13
-permalink: "/weekly-157/"
-translationKey: ipfs-weekly-157
+date: 2021-10-20
+permalink: "/weekly-158/"
+translationKey: ipfs-weekly-158
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,30 +13,30 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## **How to Store and Maintain NFT Metadata**
+## Developing Consumer Decentralized Applications with Slate
 
-![](../assets/release-notes-placeholder-2b442ee5.png)
+![](../assets/slate-textile.jpg)
 
-What is NFT metadata, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term? Non-fungible tokens are among the most exciting recent developments in the cryptoverse. NFTs are like digital collectibles, each unique in its own way and linked to a particular user. Ownership aside, what also makes an NFT valuable is its metadata. [**Learn about NFT metadata**](https://blog.ipfs.io/how-to-store-and-maintain-nft-metadata/), metadata storage, and where to store your NFT metadata for free!
+Slate is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications? [**Find out now!**](https://blog.ipfs.io/developing-consumer-decentralized-applications-with-textile-slate/)
 
 ## **Brand new on IPFS**
 
-* Jimmy Lee of Protocol Lab’s [Application Research Group](https://arg.protocol.ai/) made an appearance at the Mercury Hackathon track of [Asia Hackathon Season](https://hackathons.filecoin.io/asia-hackathon-season/) to give an [informative 30-minute deep dive](https://www.youtube.com/watch?v=Me2KfIObx5I) into the history behind creating [Estuary](https://estuary.tech/).
-* Listen to the [100th episode](https://podcasts.apple.com/us/podcast/juan-benet-ipfs-decentralizing-the-web-with/id792338939?i=1000437366979) of the [Epicenter](https://epicenter.tv/) podcast, featuring guest Juan Benet speaking about the possibilities for IPFS, ranging from distributed cloud hosting to websites without central servers to possibly being a replacement for HTTP.
-* The winners of the js13kGames 2021 Hackathon were announced last week. One highlight was [Go Away](https://js13kgames.com/entries/go-away), a planet-defending card game built with IPFS and NEAR. [Check out the full winners lineup](https://medium.com/js13kgames/js13kgames-2021-winners-top-in-criteria-and-expert-picks-cf4a0544fd45).
-* Also from the Mercury Hackathon: “Introduction to Dapp Starter | Building an NFT App Demo using IPFS” with Jacob Tucker of Decentology. [Watch here.](https://www.youtube.com/watch?v=iylqoU04-VM)
+* One year ago, the Filecoin mainnet launched! From October 18 - 22, the Filecoin, IPFS, and Protocol Labs ecosystems are coming together to celebrate at Filecoin Orbit. [**Check out all of the events happening this week and register**](https://orbit.filecion.io/) to join in for talks, demos, workshops, and more.
+* Molly Mackinlay of Protocol Labs was featured in Protocol.com’s [**Source Code Podcast**](https://www.protocol.com/tag/source-code-podcast) last week speaking about web3, web apps, content moderation, & building an internet that lasts. [**Read excerpts from the interview and hear the full podcast**](https://www.protocol.com/ipfs-new-internet).
+* Last week, Encode Club hosted an [**Expert panel on IPFS and Filecoin**](https://www.youtube.com/watch?v=lm65mZAa984)for NFT Hack featuring David Choi, Mikeal Rogers, & Yusef Napora of Protocol Labs.
+* Yusef Napora joined the Governance & DAOs Summit, part of ETHOnline '21 to present on "Simple Off Chain Data Storage Using Web3 Storage & NFT.Storage”, [**watch the full session.**](https://www.youtube.com/watch?v=EDtMXrx7UmE)
 
 ## Around the ecosystem 🌏
 
-Nearly one year ago, the Filecoin mainnet launched! From October 18 - 22, the Filecoin, IPFS, and Protocol Labs ecosystems are coming together to celebrate with **Filecoin Orbit**. Check out the event and [register to join in](http://orbit.filecoin.io/) for a week of talks, demos, workshops, and more.
-
-Decentralized cloud drive [IPFS Drive](https://www.ipfsdrive.com/) is now live: a storage application used for file management, data encryption, and cloud drive mounting on the IPFS network. It has the characteristics of high-speed transmission and high security, and can obtain long-term free storage space from storage providers with support for [Filswan](https://filswan.com/#/dashboard) and [Web3.Storage](https://web3.storage/).
-
-Couldn’t make it to Prague for the Nonfungible Castle event? Well you can watch all of the action in the [livestream](https://www.nfcastle.com/streaming) starting on October 16th.
-
-The new release of [CID Gravity](https://filecoinproject.slack.com/archives/CEHTVSEG6/p1633430657466700), version 1.0.9, is now live and features an integration with [Bidbot from Textile](https://github.com/textileio/bidbot), a Filecoin network sidecar for storage providers to bid in storage deal auctions. CID Gravity enables storage providers to enter the storage-market and aims to allow any size of deals on the network.
-
-Welcome to Twitter, Protocol Labs Research! [Follow along](https://twitter.com/ProtoResearch) for all of the latest and greatest in Protocol Labs research and development.
+You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).  
+  
+You often hear about the 10,000 NFT collection, but how does someone make thousands of unique images? Learn how to build an algorithmically generated image dataset in Python and host them on IPFS as a unique NFT with [**this tutorial**](https://dev.to/sydneylai/create-and-host-nfts-with-25-lines-of-code-4l4e) on dev.to written by Sydney Lai.  
+  
+Ipfs-coord has been released. This is a JavaScript npm library built on top of js-ipfs that provides high-level features such as subnets, peer discovery, E2EE, censorship resistance, and payments. It will help IPFS peers discover one another, coordinate around a common interest, and then stay connected around that interest. [**Find out more**](https://www.npmjs.com/package/ipfs-coord) and collaborate.  
+  
+Couldn’t make it to Prague for the Nonfungible Castle event sponsored by NFT.Storage? You can watch a recording of William R. Lobkowic’s [**tour of the NFC exhibition**](https://twitter.com/i/broadcasts/1MYxNnrdkabxw) on display at the Lobkowicz Palace in Prague Castle.  
+  
+[**Crust Network**](https://crust.network/), a decentralized IPFS-compatible storage network, has[**announced its deployment to Moonriver**](https://medium.com/crustnetwork/crust-network-integrates-with-moonriver-to-bring-web3-ipfs-storage-to-the-kusama-ecosystem-b73d934293bf), an Ethereum-compatible smart contract platform on Kusama. Crust underpins web3 data and file architecture, and brings IPFS-based decentralized storage solutions to the Moonriver and Kusama ecosystems.
 
 ## Want to help build the new internet?
 
