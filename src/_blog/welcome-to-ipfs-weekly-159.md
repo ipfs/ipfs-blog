@@ -21,26 +21,28 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## **Brand new on IPFS**
 
-* One year ago, the Filecoin mainnet launched! From October 18 - 22, the Filecoin, IPFS, and Protocol Labs ecosystems are coming together to celebrate at Filecoin Orbit. [**Check out all of the events happening this week and register**](https://orbit.filecion.io/) to join in for talks, demos, workshops, and more.
-* Molly Mackinlay of Protocol Labs was featured in Protocol.com’s [**Source Code Podcast**](https://www.protocol.com/tag/source-code-podcast) last week speaking about web3, web apps, content moderation, & building an internet that lasts. [**Read excerpts from the interview and hear the full podcast**](https://www.protocol.com/ipfs-new-internet).
-* Last week, Encode Club hosted an [**Expert panel on IPFS and Filecoin**](https://www.youtube.com/watch?v=lm65mZAa984)for NFT Hack featuring David Choi, Mikeal Rogers, & Yusef Napora of Protocol Labs.
-* Yusef Napora joined the Governance & DAOs Summit, part of ETHOnline '21 to present on "Simple Off Chain Data Storage Using Web3 Storage & NFT.Storage”, [**watch the full session.**](https://www.youtube.com/watch?v=EDtMXrx7UmE)
+* From the Mercury Hackathon, part of Asia Hackathon 2021, Join Yusef Napora for a 45-min workshop about NFT.storage and IPFS for NFTs. [**Watch here**](https://www.youtube.com/watch?v=WhZkBxsGDnA).
+* “Measuring the Web3.0 Stack.” Yiannis Psaras talks through the methodologies of retrieving insights from node performance in decentralized networks like IPFS. From Filecoin Orbit 2021. [**Watch here**](https://www.youtube.com/watch?v=yylsaXz00_g&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=21).
+* ¿Qué es IPFS (Interplanetary File System)? [**Una explicación, en español**](https://twitter.com/gelopfalcon/status/1452769872232996865).
+* IPFS builders welcome! Visit [**hackathons.filecoin.io**](https://hackathons.filecoin.io/) to learn about and register for current and upcoming hackathons - find the one that’s right for you.
 
 ## Around the ecosystem 🌏
 
-You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).
-
-You often hear about the 10,000 NFT collection, but how does someone make thousands of unique images? Learn how to build an algorithmically generated image dataset in Python and host them on IPFS as a unique NFT with [**this tutorial**](https://dev.to/sydneylai/create-and-host-nfts-with-25-lines-of-code-4l4e) on dev.to written by Sydney Lai.
-
-Ipfs-coord has been released. This is a JavaScript npm library built on top of js-ipfs that provides high-level features such as subnets, peer discovery, E2EE, censorship resistance, and payments. It will help IPFS peers discover one another, coordinate around a common interest, and then stay connected around that interest. [**Find out more**](https://www.npmjs.com/package/ipfs-coord) and collaborate.
-
-Couldn’t make it to Prague for the Nonfungible Castle event sponsored by NFT.Storage? You can watch a recording of William R. Lobkowic’s [**tour of the NFC exhibition**](https://twitter.com/i/broadcasts/1MYxNnrdkabxw) on display at the Lobkowicz Palace in Prague Castle.
-
-[**Crust Network**](https://crust.network/), a decentralized IPFS-compatible storage network, has[**announced its deployment to Moonriver**](https://medium.com/crustnetwork/crust-network-integrates-with-moonriver-to-bring-web3-ipfs-storage-to-the-kusama-ecosystem-b73d934293bf), an Ethereum-compatible smart contract platform on Kusama. Crust underpins web3 data and file architecture, and brings IPFS-based decentralized storage solutions to the Moonriver and Kusama ecosystems.
+In case you weren’t able to tune in for Filecoin Orbit 2021 — on Friday, Protocol Labs announced the Filecoin Virtual Machine (FMV)! The FVM is an EVM-compatible execution environment for the Filecoin network, bringing computation and data storage together in a way that will revolutionize the dapp ecosystem on top of Filecoin. [**Learn more about the FVM**](https://www.youtube.com/watch?v=Vw9syGiG31c&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=2).  
+  
+While the first IPFS version of the Aave Protocol UI went live with the open sourcing, now [**http://app.aave.com**](http://app.aave.com "http://app.aave.com") will always point to a pinned version of the latest IPFS hash, to allow for a decentralized front end controlled by the community. [**Learn more**](https://twitter.com/AaveAave/status/1450208507249053700?s=20).  
+  
+It has been just over one year since the Filecoin mainnet went live. The past year, the community of developers, builders, entrepreneurs, investors, storage providers, and clients have been growing at breakneck speeds. Check out the complete overview of what’s been happening on Filecoin for the past year — from research and engineering to use cases, collaborations, and more. [**Dive in**](https://filecoin.io/blog/posts/filecoin-orbit-filecoin-year-one-in-review/).  
+  
+The first Techstars Filecoin Accelerator starts in 2022 — and applications are open now! Tonight, Protocol Labs CEO Juan Benet and Techstars Filecoin Managing Director Isaac Kato sit down for a Fireside Chat and AMA about the upcoming accelerator. Join the conversation at 8:00pm ET tonight — [**register here**](https://www.crowdcast.io/e/juanbenet-ama/register).  
+  
+Tomorrow! Join the [**Chainlink Fall 2021 Hackathon**](https://chain.link/hackathon) for an “Introduction to IPFS and Filecoin” session starting October 27th at 11:00am ET. Join the livestream [**here**](https://www.youtube.com/watch?v=O5BU6zW8-sM).
 
 ## Want to help build the new internet?
 
-[**Fullstack Developer**](https://weworkremotely.com/remote-jobs/akasha-foundation-fullstack-developer): By combining blockchain technologies such as Ethereum and the Interplanetary File System (IPFS), AKASHA has the potential to change the way ideas, thoughts, and experiences are shared and stored on the Internet. As part of the remote team distributed across the globe, you will work with some of the brightest minds in the blockchain tech space on unique and challenging ideas. You will also be in direct contact with the development and user community at large, actively participating in open discussions and brainstorming sessions. **AKASHA Foundation**, Remote.
+[**Head of Content**](https://jobs.lever.co/protocol/330b0744-ebea-4bc3-90de-e817b470b8cb): Protocol Labs is seeking a Head of Content to develop and execute effective content deliverables for our portfolio and ecosystem projects including Filecoin and IPFS. The ideal candidate is an exceptional writer with a proven experience in communicating blockchain and Web3 concepts to developers, non-developers, enterprises, and newcomers. **Protocol Labs**, Remote.  
+  
+[**Fullstack Performance Engineer**](https://angel.co/company/powerloom/jobs/1687602-fullstack-platform-engineer-1-fse-1-remote): At PowerLoom, they are building a decentralized protocol that creates a trusted audit trail of information that is independently verifiable, replayable and ready to extract higher order insights and analytics from. If you are passionate about coding on Python, solving complex data storage and fingerprinting puzzles, and have already worked on open source projects and/or production scale code, please apply. **PowerLoom**, Remote.
 
 [**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
 
