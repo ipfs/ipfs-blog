@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS Weekly 159!
-description: Decentralized Apps with Slate, Filecoin Orbit, and more this week in
-  IPFS Weekly 158.
+description: Content routing on IPFS, the Filecoin Virtual Machine, and more — this
+  week in IPFS.
 author: Emily Vaughan
 date: 2021-10-27
 permalink: "/weekly-159/"
