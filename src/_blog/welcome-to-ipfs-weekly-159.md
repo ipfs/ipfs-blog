@@ -15,7 +15,7 @@ Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs
 
 ## Indexing and Interoperability on IPFS and Filecoin
 
-@[youtube](y175X7mK6E8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=46)
+@[youtube](y175X7mK6E8)
 
 ‘Content routing’ is the set of rules and mechanisms that dictate how information and traffic flow between users and applications on a network. At Protocol Labs, the Data Systems team works on the data layer of the transfer protocols in the interplanetary stack that Protocol Labs helps maintain. At Filecoin Orbit, Will Scott from the Data Systems team walked through how content routing currently works in IPFS, and the improvements being made to ensure more efficient and complete data transfer. [**Catch up here**](https://www.youtube.com/watch?v=y175X7mK6E8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=44).
 
