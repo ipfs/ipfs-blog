@@ -13,11 +13,11 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Developing Consumer Decentralized Applications with Slate
+## Indexing and Interoperability on IPFS and Filecoin
 
-![](../assets/slate-textile.jpg)
+@[youtube](y175X7mK6E8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=46)
 
-Slate is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications? [**Find out now!**](https://blog.ipfs.io/developing-consumer-decentralized-applications-with-textile-slate/)
+‘Content routing’ is the set of rules and mechanisms that dictate how information and traffic flow between users and applications on a network. At Protocol Labs, the Data Systems team works on the data layer of the transfer protocols in the interplanetary stack that Protocol Labs helps maintain. At Filecoin Orbit, Will Scott from the Data Systems team walked through how content routing currently works in IPFS, and the improvements being made to ensure more efficient and complete data transfer. [**Catch up here**](https://www.youtube.com/watch?v=y175X7mK6E8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=44).
 
 ## **Brand new on IPFS**
 
@@ -28,14 +28,14 @@ Slate is an open-source version of file storage that allows users to upload thei
 
 ## Around the ecosystem 🌏
 
-You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).  
-  
-You often hear about the 10,000 NFT collection, but how does someone make thousands of unique images? Learn how to build an algorithmically generated image dataset in Python and host them on IPFS as a unique NFT with [**this tutorial**](https://dev.to/sydneylai/create-and-host-nfts-with-25-lines-of-code-4l4e) on dev.to written by Sydney Lai.  
-  
-Ipfs-coord has been released. This is a JavaScript npm library built on top of js-ipfs that provides high-level features such as subnets, peer discovery, E2EE, censorship resistance, and payments. It will help IPFS peers discover one another, coordinate around a common interest, and then stay connected around that interest. [**Find out more**](https://www.npmjs.com/package/ipfs-coord) and collaborate.  
-  
-Couldn’t make it to Prague for the Nonfungible Castle event sponsored by NFT.Storage? You can watch a recording of William R. Lobkowic’s [**tour of the NFC exhibition**](https://twitter.com/i/broadcasts/1MYxNnrdkabxw) on display at the Lobkowicz Palace in Prague Castle.  
-  
+You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).
+
+You often hear about the 10,000 NFT collection, but how does someone make thousands of unique images? Learn how to build an algorithmically generated image dataset in Python and host them on IPFS as a unique NFT with [**this tutorial**](https://dev.to/sydneylai/create-and-host-nfts-with-25-lines-of-code-4l4e) on dev.to written by Sydney Lai.
+
+Ipfs-coord has been released. This is a JavaScript npm library built on top of js-ipfs that provides high-level features such as subnets, peer discovery, E2EE, censorship resistance, and payments. It will help IPFS peers discover one another, coordinate around a common interest, and then stay connected around that interest. [**Find out more**](https://www.npmjs.com/package/ipfs-coord) and collaborate.
+
+Couldn’t make it to Prague for the Nonfungible Castle event sponsored by NFT.Storage? You can watch a recording of William R. Lobkowic’s [**tour of the NFC exhibition**](https://twitter.com/i/broadcasts/1MYxNnrdkabxw) on display at the Lobkowicz Palace in Prague Castle.
+
 [**Crust Network**](https://crust.network/), a decentralized IPFS-compatible storage network, has[**announced its deployment to Moonriver**](https://medium.com/crustnetwork/crust-network-integrates-with-moonriver-to-bring-web3-ipfs-storage-to-the-kusama-ecosystem-b73d934293bf), an Ethereum-compatible smart contract platform on Kusama. Crust underpins web3 data and file architecture, and brings IPFS-based decentralized storage solutions to the Moonriver and Kusama ecosystems.
 
 ## Want to help build the new internet?
