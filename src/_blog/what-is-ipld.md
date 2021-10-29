@@ -1,57 +1,45 @@
 ---
 title: What is IPLD?
-description: What are the risks with NFT metadata and how does IPFS help NFT holders
-  secure their digital assets?
-author: IPFS Blog
-date: 2021-10-06
-permalink: "/how-to-store-and-maintain-nft-metadata/"
+description: Breaking down Interplanetary Linked Data and its relationship to IPFS.
+author: ''
+date: 2021-10-29
+permalink: "/what-is-ipld/"
 translationKey: ''
-header_image: "/breaking-down-nft-metadata.jpg"
+header_image: "/139291100-68c5680f-573f-4adc-9352-60e2999c8aee.jpg"
 tags:
-- security
-- NFTs
-- Filecoin
+- DAG
 - CID
+- IPLD
 
 ---
-Why is everyone so preoccupied with NFT metadata? What does it mean, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term?
+# **What is IPLD?**
 
-Non-fungible tokens (NFTs) are among the most exciting recent developments in the cryptoverse. For those unaware of these gems, NFTs are like digital collectibles, each unique in its own way and linked to a particular user.
+Most people would already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS.
 
-Ownership aside, what also makes an NFT valuable is its metadata. If you're someone who spends a lot of time on the internet, you would probably recognize the term as data that exists about a particular digital signature or website. NFT metadata is similar but with some significant differences.
+## **Interplanetary Linked Data (IPLD) and IPFS**
 
-## What is NFT Metadata?
+At its most basic form, IPLD is the data layer that IPFS is built on top of. It creates a series of links to data but also allows users to create those links themselves through simple data structures that can be stored on IPFS. You could think of IPFS as the block store of IPLD - data sent to IPFS through IPLD is kept on-chain, and the user receives a CID to access that data.
 
-NFT metadata defines the NFT as an object, i.e., details about the digital asset. An NFT’s metadata may include details like the name of the file. Deeper in the metadata are details such as what comprises the file's content.
+When someone stores a file on IPFS, that file is separated into several chunks, stored into different blocks. To reconstruct the whole file, a graph connects each bit of content together, with directories pointing to individual data pieces, not unlike pointers in older coding languages like C++. Content IDs are hashes generated to allow the user to interact with IPFS and recover their data. IPLD deals with decoding these hashes so that users can access their data. In many ways, IPLD functions a lot like the developer's old friend, Git, since it uses a similar method for constructing those linked hashes known as a Merkle DAG.
 
-For example, metadata for a video NFT would be the length of the video and the images that make up its individual frames. Metadata for a profile picture (PFP) or digital art NFTs would be the specific generative properties that would define just how rare your NFT is.
+## **Git and the Merkle DAG**
 
-However, for most NFTs, the metadata and the NFT are not one. Rather, your NFT — the digital asset itself — includes a link that points to the metadata, which lives elsewhere online. If you're a regular internet user, you know that sometimes, links die (cue the infamous “404 Page Not Found” web page). Hosting platforms don’t exist forever, and if your NFT exists on a regular website, you could potentially lose it along with all the associated value if that site shuts down for any reason.
+Typically, when one creates a hash, it only refers to one direction of data movement. One cannot move forward in time to where the hash doesn't exist, for example. Git uses Merkle DAGs to create a "snapshot" of a particular point in time, allowing users to roll their data back if they need to. The Merkle DAG is an essential component of Git, but it's also a valuable tool in a linked system like IPLD. Git is an entirely self-contained system - a hash generated in it can only be decoded within it. IPLD is more ambitious, aiming to decode any hash it comes in contact with. However, for this to be a viable system, there must be a way to tell IPLD how to interpret that hash to get to the underlying data. That's where multihashes and multicodecs come in. What's the best way for the system to figure out what each hash means? Let the hash inform the system of what it needs to decode it, of course.
 
-If you do lose the connection to your NFT, you don’t necessarily lose the NFT itself, but you lose all the information that makes it look, sound, and describe the way it does. With some of these weighing in at several million dollars in some cases, this is a serious concern.
+## **A Complex Data Representation System**
 
-So, how does a person who owns an NFT ensure its safety and accessibility throughout their lifetime? Is it possible to secure NFT data so that it exists forever? Over the regular internet, you could probably store the digital asset details on a cloud drive which allows for access to anyone anywhere. On the decentralized web, the solution is somewhat different and involves a unique file system with perpetual accessibility.
+Most developers are familiar with simple data representation systems like JSON or CBOR. In both cases, several data structures can be represented and retrieved using these systems. However, none of these simple data representation systems have support for links. Immediately, it's obvious that IPLD can't possibly use these simple systems since links are the core of the IPLD system.
 
-## IPFS and Metadata Storage
+So, how does IPLD deal with this lack of complexity? Users can actually store data using extended versions of these simple systems. JSON-DAG allows for storing typical JSON serialized data but also supports links that can be used alongside IPLD. JSON-CBOR allows for even more flexibility. CBOR is a binary storage system making it fast and efficient. Filecoin uses CBOR-DAG for its chain because of its efficiency and because CBOR can handle more data types than JSON.
 
-What if there was a way to store data in perpetuity? When developers first came up with the idea of the cloud, they [aimed to create data persistence](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/ "IPFS, Filecoin, and Content Persistence"). While it did succeed in this endeavor partially, it created a situation where the owner of the cloud servers had complete control over the data. To rectify this potential problem (and many others), the idea for a decentralized internet was born.
+## **Coding and Decoding with IPLD**
 
-When it came to storing accessible data in perpetuity, the approach had to be markedly different. How would a decentralized system provide servers owned by individuals that could offer storage to millions of users worldwide? This approach would create a new paradigm where instead of companies owning user data, individuals would maintain ownership of their data. The solution came with developing the Interplanetary File System (IPFS) and the decentralized network that interacts with it, Filecoin.
+Storing data on the chain seems like a breeze, but how does the system decode the hashes that it gets into the component data structures? IPLD uses an underlying data model that contains forms that most developers will recognize immediately, such as strings, booleans, ints, floats, etc.
 
-IPFS is a unique file system because it doesn't operate in the same way we usually think about file storage. A file stored on the IPFS network generates a content ID (CID) which is distributed among several independent storage providers. Even with robust content addressing, how do you know which file storage providers are most trustworthy? Filecoin provides the framework for a [reputation system](https://filecoin.io/blog/posts/reputation-systems-in-filecoin/ "Reputation Systems in Filecoin") and a [way to interact](https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/ "How storage and retrieval deals work on Filecoin") with these storage providers.
+IPLD's system uses a two-tier methodology for encoding these data structures. The primary Protobuf format (DAG-PB) is a dedicated format for presenting named links and binary blobs. The secondary Protobuf format (known as UnixFS) derives metadata about the files. The CID can contain multiple hashes and multiple codecs relating to different systems. This multitasking, multicodec build is necessary for IPLD to consider itself a multiformat system.
 
-The Filecoin network allows users to store their data as CIDs with redundant storage providers, ensuring persistence across the entire network. The user then gets a CID that directs them to their file, complete and intact, drawn from one of the redundant storage providers that hold their information. Even if one of the providers goes down or is inaccessible, the user still gets their data.
+## **Extending Technology Into New Frontiers**
 
-As mentioned before, if your NFT link dies (and it’s not stored on IPFS), you lose access to the data contained within the digital file. This loss is the same as if a piece of art disintegrated in front of your very eyes. The IPFS system allows a user to ensure the persistence of their NFT metadata. The timelessness of IPFS combined with providers' redundant storage and accessibility options make for a resilient system that ensures a user's NFT remains safe.
+IPLD is simply the latest iteration of data structures. Data structures have existed and have been in use for quite some time. Looking at systems such as Haskell, and Scala, the similarities between how they handle data structures and how IPLD does is immediately apparent. IPLD takes what those systems pioneered and translates them for use in a distributed format.
 
-What's more, IPFS even offers a free method for users to store their NFTs.
-
-## Free NFT Storage Through IPFS
-
-To help users of NFTs out, IPFS launched [NFT.Storage](http://nft.storage "NFT.Storage") earlier this year. NFT.Storage is dedicated to the [storage of NFTs](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/ "Introducing NFT.Storage: Free Decentralized Storage for NFTs"), entirely for free. If you've spent any money on an NFT, you can easily upload the data associated with it to IPFS and Filecoin via NFT.Storage and ensure that it's preserved across time.
-
-## A Free, Safe Way To Maintain an NFT
-
-Most crypto enthusiasts have hopped aboard the NFT train. Not all of them are worth several million dollars, after all. Even so, NFT content owners wouldn't want to see their investment go up in smoke. Free  storage exists to help those NFT holders that want to ensure they always have access to their digital assets.
-
-If you develop or buy NFTs and haven't looked into persistent storage for them yet, the best time is now. Don't wait until your NFTs disappear.
+The difference between those isolated systems and IPLD is that IPLD allows for distributed storage with its underlying link to IPFS. These data structure management paradigms have persisted and evolved to become scalable - a trait that is core to IPLD's value proposition. With IPLD backing up IPFS, developers can access a powerful distributed data storage system that can handle multiple self-describing formats. The flexibility and extensibility make for a potent combination, giving developers a tool that they can use to spur the development of cutting wedge Web3.0 systems.
