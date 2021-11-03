@@ -31,7 +31,7 @@ The web today as we know it is highly centralized.
 
 To a very large extent, centralized web is driven by a data economy - the utilization of the content created by users and using it against these users.
 
-Centralized web thus leads to the absolute control of information, how we see information and exploitation via the taking of advantage of how we now perceive things.
+A centralized web thus leads to the absolute control of information, how we see information and exploitation via the taking of advantage of how we now perceive things.
 
 ## How does IPFS works? A look at the underlying concepts
 
@@ -58,8 +58,6 @@ In getting to understand how IPFS works, we will take a deep dive into the under
    * Directed Graphs: A graph is said to be directed if each edge has some sense of direction. The connections between nodes only correctly associate in one direction, and a single-head arrow indicates this direction. We use genealogical terms like ancestor, descendent, parent, and child to refer to nodes in a directed graph.
    * Acyclic Graphs: An acyclic graph has no loops in the graph. This means there is no way to navigate from that node back to itself along the graph’s edges.
    * Directed Acyclic Graphs - DAGs: A graph that is both directed and acyclic is called, you guessed it right? A directed acyclic graph - DAG.
-
-
 3. Content discovery via directed hash tables (DHTs)
 
    A distributed hash table - DHT is a distributed system for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system and acts like a cross between a catalog and a navigation system.
