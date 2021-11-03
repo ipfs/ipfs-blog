@@ -28,7 +28,7 @@ Most people already know what IPFS is and what it offers to the average develope
 
 ## Around the ecosystem 🌏
 
-Applications are now open for [Web3 Jam](https://jam.ethglobal.com/)! Join the ETHGlobal and Filecoin communities on November 12th as they bring together a virtual collective of passionate creatives, engineers, builders and more for a two-week long hackathon focused on decentralized media, Web3, and NFTs.
+Applications are now open for [Web3 Jam](https://jam.ethglobal.com/)! Join the ETHGlobal and Filecoin communities on November 12th as they bring together a virtual collective of passionate creatives, engineers, builders and more for a two-week long hackathon focused on decentralized media, Web3, and NFTs. 
 
 Next week, Textile's Filecoin deal auctions will award the top three Storage Providers based on the quality of service with 250FIL in prizes. [Learn more](https://blog.textile.io/win-fil-250-with-filecoin-auctions).
 
