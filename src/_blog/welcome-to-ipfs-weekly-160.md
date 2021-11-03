@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 160!
-description: Content routing on IPFS, the Filecoin Virtual Machine, and more — this
-  week in IPFS.
+description: Breaking down IPLD, highlighting announcements from Photoshop, announcing
+  hackathons & more.
 author: Emily Vaughan
-date: 2021-10-27
-permalink: "/weekly-159/"
-translationKey: ipfs-weekly-159
+date: 2021-11-03
+permalink: "/weekly-160/"
+translationKey: ipfs-weekly-160
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
@@ -13,35 +13,39 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## Indexing and Interoperability on IPFS and Filecoin
+## What is IPLD?
 
-@[youtube](y175X7mK6E8)
+![](../assets/139291100-68c5680f-573f-4adc-9352-60e2999c8aee.jpg)
 
-‘Content routing’ is the set of rules and mechanisms that dictate how information and traffic flow between users and applications on a network. At Protocol Labs, the Data Systems team works on the data layer of the transfer protocols in the interplanetary stack that Protocol Labs helps maintain. At Filecoin Orbit, Will Scott from the Data Systems team walked through how content routing currently works in IPFS, and the improvements being made to ensure more efficient and complete data transfer. [**Catch up here**](https://www.youtube.com/watch?v=y175X7mK6E8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=44).
+Most people already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS. Read [this recent blog post](https://blog.ipfs.io/what-is-ipld/) to learn all there is to know about IPLD.
 
 ## **Brand new on IPFS**
 
-* From the Mercury Hackathon, part of Asia Hackathon 2021, Join Yusef Napora for a 45-min workshop about NFT.storage and IPFS for NFTs. [**Watch here**](https://www.youtube.com/watch?v=WhZkBxsGDnA).
-* “Measuring the Web3.0 Stack.” Yiannis Psaras talks through the methodologies of retrieving insights from node performance in decentralized networks like IPFS. From Filecoin Orbit 2021. [**Watch here**](https://www.youtube.com/watch?v=yylsaXz00_g&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=21).
-* ¿Qué es IPFS (Interplanetary File System)? [**Una explicación, en español**](https://twitter.com/gelopfalcon/status/1452769872232996865).
-* IPFS builders welcome! Visit [**hackathons.filecoin.io**](https://hackathons.filecoin.io/) to learn about and register for current and upcoming hackathons - find the one that’s right for you.
+* [Rust-libp2p v0.40.0](https://github.com/libp2p/rust-libp2p/releases/tag/v0.40.0) was released yesterday with rendezvous protocol implementation, improved state management, Open Metrics & Prometheus support, & more!
+* Photoshop is launching a feature to ‘prepare NFTs’ that will all live on IPFS! [Read more about the announcement](https://www.theverge.com/2021/10/26/22745506/adobe-nft-art-theft-content-credentials-opensea-rarible-photoshop).
+* The IPFS Jupiter Hackathon in Shanghai was a major success, with the support of Alibaba Cloud, the community celebrated 15 finalists and rewarded 5 winners. [Watch the recap video](https://twitter.com/IPFS/status/1453122837078847493?s=20).
+* The Babylon Project 2.0 Hackathon kicked off on October 29th.[ Join the IPFS and Filecoin tracks now](https://worldblockchainhackathon.com/)!
 
 ## Around the ecosystem 🌏
 
-In case you weren’t able to tune in for Filecoin Orbit 2021 — on Friday, Protocol Labs announced the Filecoin Virtual Machine (FMV)! The FVM is an EVM-compatible execution environment for the Filecoin network, bringing computation and data storage together in a way that will revolutionize the dapp ecosystem on top of Filecoin. [**Learn more about the FVM**](https://www.youtube.com/watch?v=Vw9syGiG31c&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=2).  
-  
-While the first IPFS version of the Aave Protocol UI went live with the open sourcing, now [**http://app.aave.com**](http://app.aave.com "http://app.aave.com") will always point to a pinned version of the latest IPFS hash, to allow for a decentralized front end controlled by the community. [**Learn more**](https://twitter.com/AaveAave/status/1450208507249053700?s=20).  
-  
-It has been just over one year since the Filecoin mainnet went live. The past year, the community of developers, builders, entrepreneurs, investors, storage providers, and clients have been growing at breakneck speeds. Check out the complete overview of what’s been happening on Filecoin for the past year — from research and engineering to use cases, collaborations, and more. [**Dive in**](https://filecoin.io/blog/posts/filecoin-orbit-filecoin-year-one-in-review/).  
-  
-The first Techstars Filecoin Accelerator starts in 2022 — and applications are open now! Tonight, Protocol Labs CEO Juan Benet and Techstars Filecoin Managing Director Isaac Kato sit down for a Fireside Chat and AMA about the upcoming accelerator. Join the conversation at 8:00pm ET tonight — [**register here**](https://www.crowdcast.io/e/juanbenet-ama/register).  
-  
-Tomorrow! Join the [**Chainlink Fall 2021 Hackathon**](https://chain.link/hackathon) for an “Introduction to IPFS and Filecoin” session starting October 27th at 11:00am ET. Join the livestream [**here**](https://www.youtube.com/watch?v=O5BU6zW8-sM).
+Applications are now open for [Web3 Jam](https://jam.ethglobal.com/)! Join the ETHGlobal and Filecoin communities on November 12th as they bring together a virtual collective of passionate creatives, engineers, builders and more for a two-week long hackathon focused on decentralized media, Web3, and NFTs.
+
+Next week, Textile's Filecoin deal auctions will award the top three Storage Providers based on the quality of service with 250FIL in prizes. [Learn more](https://blog.textile.io/win-fil-250-with-filecoin-auctions).
+
+Currently live in Oceania and want to get involved in the Web3 ecosystem? Holon Innovate 2021 is the hackathon for you! [Apply now](https://taikai.network/en/holon/challenges/holon-innovate) by November 9th.
+
+Have anything you'd like to chat with IPFS about? Come join the [weekly IPFS Gather 'Office Hours'](https://gather.town/invite?token=gRcV3RuETEHyqZGUb-st-CWwNMW60vLA) on Thursdays at 9am and 1pm EST.
+
+The CryptoComputeLab at Protocol Labs Research just announced proofs release version 10.0.0.0! [Read this blog post](https://research.protocol.ai/blog/2021/cryptocomputelab-announces-proofs-release-version-10.0.0.0/) to learn about the highlights.
+
+NFT.NYC is here! In collaboration with POAP, NFT.Storage, and more have scattered POAPs throughout the city - [check out the website](https://poap.nyc/) to learn how to participate.
+
+Did you hear? Filecoin has officially become the storage collaborator for the Flow Blockchain! [Read the announcement](https://cointelegraph.com/news/flow-integrates-filecoin-storage-services-to-make-nfts-more-decentralized).
 
 ## Want to help build the new internet?
 
-[**Head of Content**](https://jobs.lever.co/protocol/330b0744-ebea-4bc3-90de-e817b470b8cb): Protocol Labs is seeking a Head of Content to develop and execute effective content deliverables for our portfolio and ecosystem projects including Filecoin and IPFS. The ideal candidate is an exceptional writer with a proven experience in communicating blockchain and Web3 concepts to developers, non-developers, enterprises, and newcomers. **Protocol Labs**, Remote.  
-  
+[**Head of Content**](https://jobs.lever.co/protocol/330b0744-ebea-4bc3-90de-e817b470b8cb): Protocol Labs is seeking a Head of Content to develop and execute effective content deliverables for our portfolio and ecosystem projects including Filecoin and IPFS. The ideal candidate is an exceptional writer with a proven experience in communicating blockchain and Web3 concepts to developers, non-developers, enterprises, and newcomers. **Protocol Labs**, Remote.
+
 [**Fullstack Performance Engineer**](https://angel.co/company/powerloom/jobs/1687602-fullstack-platform-engineer-1-fse-1-remote): At PowerLoom, they are building a decentralized protocol that creates a trusted audit trail of information that is independently verifiable, replayable and ready to extract higher order insights and analytics from. If you are passionate about coding on Python, solving complex data storage and fingerprinting puzzles, and have already worked on open source projects and/or production scale code, please apply. **PowerLoom**, Remote.
 
 [**ARG Software Engineer**](https://arg.protocol.ai/job-software-engineer): The Protocol Labs [**Application Research Group (ARG)**](https://arg.protocol.ai/)is seeking a proactive and autonomous builder that can draft a roadmap forward and execute with code. You will need to have both a passion for hands-on development of distributed systems as well as problem solving within a complex system. **Protocol Labs**, Remote.
