@@ -29,15 +29,15 @@ The web today as we know it is highly centralized.
 
 “Power” is held in the hands of a few powerful corporations. This implies that most of the things we do on the web, for example making a post or even sharing something online is owned by someone else - the powerful corporation.
 
-To a very large extent, centralized web is driven by a data economy - the utilization of the content created by users and using it against these users.
+To a very large extent, a centralized web is driven by a data economy - the utilization of the content created by users and using it against these users.
 
-A centralized web thus leads to the absolute control of information, how we see information and exploitation via the taking of advantage of how we now perceive things.
+A centralized web leads to the absolute control of information, how we see information and exploitation via the taking of advantage of how we now perceive things.
 
 ## How does IPFS works? A look at the underlying concepts
 
 From a high level perspective, IPFS works by finding the information you are looking for by its content. This is known as content addressing and is achievable, through the Content Identifier - CID. We will discuss CID in the next section.
 
-In getting to understand how IPFS works, we will take a deep dive into the underlying principles behind IPFS.
+In better understanding how IPFS works, we will take a deep dive into the underlying principles behind IPFS.
 
 ## The three fundamental principles of understanding how IPFS works
 
