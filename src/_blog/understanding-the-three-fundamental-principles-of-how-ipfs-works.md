@@ -58,7 +58,7 @@ In better understanding how IPFS works, we will take a deep dive into the underl
    * Directed Graphs: A graph is said to be directed if each edge has some sense of direction. The connections between nodes only correctly associate in one direction, and a single-head arrow indicates this direction. We use genealogical terms like ancestor, descendent, parent, and child to refer to nodes in a directed graph.
    * Acyclic Graphs: An acyclic graph has no loops in the graph. This means there is no way to navigate from that node back to itself along the graph’s edges.
    * Directed Acyclic Graphs - DAGs: A graph that is both directed and acyclic is called, you guessed it right? A directed acyclic graph - DAG.
-3. Content discovery via directed hash tables (DHTs)
+3. Content discovery via distributed hash tables (DHTs)
 
    A distributed hash table - DHT is a distributed system for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system and acts like a cross between a catalog and a navigation system.
 
