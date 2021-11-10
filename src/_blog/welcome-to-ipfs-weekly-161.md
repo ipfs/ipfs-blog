@@ -1,11 +1,11 @@
 ---
 title: Welcome to IPFS Weekly 161!
-description: Breaking down IPLD, highlighting announcements from Photoshop, announcing
-  hackathons & more.
+description: What concepts power IPFS underneath the hood? Plus, updates from MetaMask,
+  hackathons, Filecoin Orbit & more.
 author: Emily Vaughan
-date: 2021-11-03
-permalink: "/weekly-160/"
-translationKey: ipfs-weekly-160
+date: 2021-11-10
+permalink: "/weekly-161/"
+translationKey: ipfs-weekly-161
 header_image: "/header-image-weekly-newsletter.png"
 tags:
 - weekly
