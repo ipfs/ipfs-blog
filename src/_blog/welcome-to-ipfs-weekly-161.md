@@ -13,34 +13,46 @@ tags:
 ---
 Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
 
-## What is IPLD?
+## Funding the Commons - November 12
 
-![](../assets/139291100-68c5680f-573f-4adc-9352-60e2999c8aee.jpg)
+![](../assets/141023647-30dfdcab-9cd0-414a-8ad7-f4692a8e3765.png)
 
-Most people already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS. Read [this recent blog post](https://blog.ipfs.io/what-is-ipld/) to learn all there is to know about IPLD.
+[**Funding the Commons**](https://fundingthecommons.io/) is a virtual summit on November 12, 2021 for individuals and organizations building new models of sustainable public goods funding and value alignment in open source networks. Join Juan Benet of Protocol Labs, Vitalik Buterin of Ethereum, Karl Floersch of Optimism, and other thought leaders to discuss novel experiments and future directions for funding our collective commons. Full agenda coming soon.
+
+## **The Three Fundamental Principles of IPFS**
+
+![](../assets/139685527-a385f6d4-908a-4420-993a-73e3dafba7c3-1.jpg)
+
+Take a step back and reconnect with the fundamentals of IPFS — what powers the Interplanetary File System, and what it means for the future of decentralized storage and content addressing.
+
+1. Unique identification via content addressing.
+2. Content linking via Directed Acyclic Graphs (DAGs).
+3. Content discovery via distributed hash tables (DHTs).
+
+[**Check out the full post**](https://blog.ipfs.io/2021-11-03-understanding-fundamentals-of-ipfs/) from Charles Freeborn, including additional learning resources for IPFS.
 
 ## **Brand new on IPFS**
 
-* [Rust-libp2p v0.40.0](https://github.com/libp2p/rust-libp2p/releases/tag/v0.40.0) was released yesterday with rendezvous protocol implementation, improved state management, Open Metrics & Prometheus support, & more!
-* Photoshop is launching a feature to ‘prepare NFTs’ that will all live on IPFS! [Read more about the announcement](https://www.theverge.com/2021/10/26/22745506/adobe-nft-art-theft-content-credentials-opensea-rarible-photoshop).
-* The IPFS Jupiter Hackathon in Shanghai was a major success, with the support of Alibaba Cloud, the community celebrated 15 finalists and rewarded 5 winners. [Watch the recap video](https://twitter.com/IPFS/status/1453122837078847493?s=20).
-* The Babylon Project 2.0 Hackathon kicked off on October 29th.[ Join the IPFS and Filecoin tracks now](https://worldblockchainhackathon.com/)!
+* As of last week, there are over 7 million NFTs stored via NFT.Storage and about 1 NFT being uploaded every second - and that’s just the beginning! Check out [**this twitter thread**](https://twitter.com/pooja_eth/status/1455969108428791809?s=21) for more.
+* MetaMask now supports NFTs with IPFS-linked images! What does this mean? Your NFT images will persist 💪 [**Devs, get started.**](https://twitter.com/MetaMask/status/1455621048100171781)
+* The Internet Archive was one of the first organizations to recognize the potential of IPFS to achieve the mission of storing humanity’s most valuable information. [**Listen to Internet Archive founder, Brewster Kahle**](https://www.youtube.com/watch?v=Ne_NyqYkQgo), on why he started the Archive.
+* Just launched! [**Bittensor**](http://www.bittensor.com/) is building the largest decentralized text dataset on IPFS (codenamed: "the mountain") to enable decentralized artificial intelligence - [**learn more**](https://opentensor.gitbook.io/bittensor/understanding-bittensor/bittensor-dataset)!
 
 ## Around the ecosystem 🌏
 
-Applications are now open for [Web3 Jam](https://jam.ethglobal.com/)! Join the ETHGlobal and Filecoin communities on November 12th as they bring together a virtual collective of passionate creatives, engineers, builders and more for a two-week long hackathon focused on decentralized media, Web3, and NFTs. 
-
-Next week, Textile's Filecoin deal auctions will award the top three Storage Providers based on the quality of service with 250FIL in prizes. [Learn more](https://blog.textile.io/win-fil-250-with-filecoin-auctions).
-
-Currently live in Oceania and want to get involved in the Web3 ecosystem? Holon Innovate 2021 is the hackathon for you! [Apply now](https://taikai.network/en/holon/challenges/holon-innovate) by November 9th.
-
-Have anything you'd like to chat with IPFS about? Come join the [weekly IPFS Gather 'Office Hours'](https://gather.town/invite?token=gRcV3RuETEHyqZGUb-st-CWwNMW60vLA) on Thursdays at 9am and 1pm EST.
-
-The CryptoComputeLab at Protocol Labs Research just announced proofs release version 10.0.0.0! [Read this blog post](https://research.protocol.ai/blog/2021/cryptocomputelab-announces-proofs-release-version-10.0.0.0/) to learn about the highlights.
-
-NFT.NYC is here! In collaboration with POAP, NFT.Storage, and more have scattered POAPs throughout the city - [check out the website](https://poap.nyc/) to learn how to participate.
-
-Did you hear? Filecoin has officially become the storage collaborator for the Flow Blockchain! [Read the announcement](https://cointelegraph.com/news/flow-integrates-filecoin-storage-services-to-make-nfts-more-decentralized).
+Last month, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Check out [**this overview**](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/) of the DeFi projects that emerged from the accelerator and presented during Demo Day.   
+  
+Currently reside in Oceania and want to get involved in the Web3 ecosystem? Holon Innovate 2021 is the hackathon for you and today is the final day to apply - [**apply now**](https://taikai.network/en/holon/challenges/holon-innovate)!  
+  
+Eager to connect with the IPFS community? Every Thursday at 9am EST and 6pm EST, join the IPFS Gather ‘Office Hours’. Next one is November 11th! [**Gathertown link here.**](https://gather.town/invite?token=gRcV3RuETEHyqZGUb-st-CWwNMW60vLA)  
+  
+The Fall 2021 Chainlink Hackathon is live and running through November 28! Join NFT and blockchain developers of all experience levels to [**collaborate with fellow hackers**](https://chain.link/hackathon), learn from top developers, and compete for $550K+ in prizes.  
+  
+Still basking in the glow of Filecoin Orbit 2021? You can browse the entire playlist of talks [**here**](https://www.youtube.com/watch?v=Uya0C_lMSuY&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz). Some highlights for IPFS: [**What’s Under the Textile Bridge?**](https://www.youtube.com/watch?v=i7YrrMBavDQ&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=7), [**The Future of NFTs: Opensea x Filecoin**](https://www.youtube.com/watch?v=4f_vzL2pPP8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=9), [**IPLD and Wasm for Techies**](https://www.youtube.com/watch?v=GMlSGtHb-hU&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=36), [**Web3 Browsers are Ready for Decentralized Storage**](https://www.youtube.com/watch?v=1rMMEeZ6jI4&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=44), and more!  
+  
+The Babylon Project 2.0 Hackathon kicked off on October 29th. [**Join the IPFS and Filecoin tracks now**](https://worldblockchainhackathon.com/)!  
+  
+[**Textile bidbot**](https://github.com/textileio/bidbot) is storing 213TB+ of data on Filecoin and is used in Textile’s bridges between Filecoin and NEAR, Polygon, Ethereum, and others. Show some love and [**retweet the milestone**](https://twitter.com/pooja_eth/status/1455969125487058948).
 
 ## Want to help build the new internet?
 
