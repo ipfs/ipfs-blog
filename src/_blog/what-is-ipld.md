@@ -34,9 +34,17 @@ So, how does IPLD deal with this lack of complexity? Users can actually store da
 
 ## **Coding and Decoding with IPLD**
 
-Storing a CID on the chain seems like a breeze, but how does the system decode the hashes that it gets into the component data structures? IPLD uses an underlying [data model](https://ipld.io/glossary/#data-model) that contains forms that most developers will recognize immediately, such as strings, booleans, ints, floats, etc.
+Storing a CID on the chain seems like a breeze, but how does the system decode the hashes that it gets into the component data structures?
+IPLD uses an underlying data model that contains forms that most developers will recognize immediately, such as strings, booleans, ints, floats, etc.
+To get there from CIDs, we use [codecs](https://ipld.io/docs/codecs/).
+And the CID includes an indicator called a [multicodec](https://docs.ipfs.io/concepts/glossary/#multicodec) to tell us which codec to use!
 
-IPLD's system uses a two-tier methodology for encoding these data structures. The UnixFS ([DAG-PB](https://ipld.io/docs/codecs/known/dag-pb/)) is a dedicated format for presenting named links and binary blobs, derives metadata about files and directories. The CID can contain multiple hashes and multiple codecs relating to different systems. This multitasking, multicodec build is necessary for IPLD to consider itself a multiformat system.
+Sometimes systems build additional tiers of structure above this.
+For example, IPFS uses a two-tier methodology for encoding filesystem data.
+First, the UnixFS convention describes files and directories and their metadata.
+Then, UnixFS is in turn usually encoded in ([DAG-PB](https://ipld.io/docs/codecs/known/dag-pb/)), which is an IPLD codec (comparable to DAG-CBOR and DAG-JSON) that is specialized to UnixFS.
+
+Because the CID can describe different codecs relating to different systems, all sorts of systems can interoperate using CIDs, and IPLD and process and cross-link data from any of them.
 
 ## **Extending Technology Into New Frontiers**
 
