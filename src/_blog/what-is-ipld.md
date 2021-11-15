@@ -37,7 +37,7 @@ So, how does IPLD deal with this lack of complexity? Users can actually store da
 Storing a CID on the chain seems like a breeze, but how does the system decode the hashes that it gets into the component data structures?
 IPLD uses an underlying data model that contains forms that most developers will recognize immediately, such as strings, booleans, ints, floats, etc.
 To get there from CIDs, we use [codecs](https://ipld.io/docs/codecs/).
-And the CID includes an indicator called a [multicodec](https://github.com/multiformats/multicodec/) to tell us which codec to use!
+And the CID includes an indicator called a [multicodec](https://docs.ipfs.io/concepts/glossary/#multicodec) to tell us which codec to use!
 
 Sometimes systems build additional tiers of structure above this.
 For example, IPFS uses a two-tier methodology for encoding filesystem data.
