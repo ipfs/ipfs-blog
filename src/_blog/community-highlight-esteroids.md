@@ -3,8 +3,8 @@ title: 'Community Highlight: Esteroids'
 description: A Protocol Labs community highlight of Esteroids, a search engine for
   the decentralized web.
 author: ''
-date: 2021-11-16
-permalink: "/2021-11-16-Community-Highlight-Esteroids"
+date: 2021-11-17
+permalink: "/2021-11-17-Community-Highlight-Esteroids"
 translationKey: ''
 header_image: "/esteroids.jpg"
 tags: []
