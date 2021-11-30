@@ -32,3 +32,5 @@ Most web developers will already have a text editor of choice installed. The cor
 This guide will focus on the chat.js file as what will be edited. To this end, the user should have the index.html opened in a browser to check on their progress during the tutorial.
 
 If you want more detailed info about the connection, you can open the browser console and drop in the command await ipfs.id() to get it.
+
+    await ipfs.id()
