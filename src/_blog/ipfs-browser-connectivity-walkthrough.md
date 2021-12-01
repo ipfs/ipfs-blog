@@ -11,7 +11,7 @@ tags:
 - browsers
 
 ---
-_From HackFS: Ryan Baumann from IPFS walks through the basics of browser integration using IPFS. This talk was delivered at HackFS, a three-week virtual hackathon dedicated to building a censorship-free decentralized internet. The complete discussion is_ [_available here_](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3)_._
+_![](../assets/ipfs-chat-tute-01.jpg)![](../assets/ipfs-chat-tute-02.jpg)![](../assets/ipfs-chat-tute-03.jpg)![](../assets/ipfs-chat-tute-04.jpg)![](../assets/ipfs-chat-tute-05.jpg)![](../assets/ipfs-chat-tute-06.jpg)![](../assets/ipfs-chat-tute-07.jpg)![](../assets/ipfs-chat-tute-08.jpg)From HackFS: Ryan Baumann from IPFS walks through the basics of browser integration using IPFS. This talk was delivered at HackFS, a three-week virtual hackathon dedicated to building a censorship-free decentralized internet. The complete discussion is_ [_available here_](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3)_._
 
 The future of the internet is the decentralized web, but getting there requires infrastructure. At the heart of this infrastructure is IPFS, the InterPlanetary File System. Together with its name resolution system INFS (Interplanetary Name System), it presents a new way to hold and distribute content to browsers known as [content addressing](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/).
 
