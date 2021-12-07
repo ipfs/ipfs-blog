@@ -12,6 +12,7 @@ tags: []
 ---
 We're proud to share another video in the[ Building Web3 Video Series](https://www.youtube.com/playlist?list=PL_0VrY55uV1-THfh1GVoE6v0SxKO9M0gs), an ongoing showcase of technologists, teams, and visionaries who are building valuable tools and services for an ever-growing, ever-changing Web3 world. Today, we're looking into [Valist](https://valist.io/)'s solutions for software distribution and how they leverage IPFS to make these services safer and more decentralized.
 
+@[youtube](7ak6PQPDBkk)
 [https://youtu.be/7ak6PQPDBkk](https://youtu.be/7ak6PQPDBkk "https://youtu.be/7ak6PQPDBkk")
 
 Currently, the only option to download software is from a website or an app store. This introduces serious security concerns. While Microsoft, Apple, Google, or Github may seem pretty secure, in reality, anything that’s centralized and depends on Web 2.0 has inherent risks. As the 2020 SolarWinds attack demonstrated, even the most secure authentication systems can be breached. A simple rule of thumb is that **wherever there’s a server, there’s a hack.**
