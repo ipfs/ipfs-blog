@@ -176,6 +176,7 @@ pages:
 - src/_blog/introducing-the-browsers-3000-hackathon.md
 - src/_blog/ion-a-path-to-decentralized-identity.md
 - src/_blog/ipfs-at-ethdenver-2021.md
+- src/_blog/ipfs-browser-connectivity-walkthrough.md
 - src/_blog/ipfs-filecoin-and-content-persistence.md
 - src/_blog/ipfs-filecoin-chainlink-hackathon-winners.md
 - src/_blog/ipfs-in-brave-native-access-to-the-distributed-web.md
@@ -243,5 +244,6 @@ pages:
 - src/_blog/welcome-to-ipfs-weekly-161.md
 - src/_blog/welcome-to-ipfs-weekly-162.md
 - src/_blog/welcome-to-ipfs-weekly-163.md
+- src/_blog/welcome-to-ipfs-weekly-164.md
 - src/_blog/what-is-ipld.md
 - src/_blog_zh/ipfs-136.md
