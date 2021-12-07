@@ -7,7 +7,8 @@ date: 2021-12-07
 permalink: "/2021-12-07-building-web3-valist/"
 translationKey: ''
 header_image: "/fil-buildingweb3-valist-1920x1080.png"
-tags: []
+tags:
+- security
 
 ---
 We're proud to share another video in the[ Building Web3 Video Series](https://www.youtube.com/playlist?list=PL_0VrY55uV1-THfh1GVoE6v0SxKO9M0gs), an ongoing showcase of technologists, teams, and visionaries who are building valuable tools and services for an ever-growing, ever-changing Web3 world. Today, we're looking into [Valist](https://valist.io/)'s solutions for software distribution and how they leverage IPFS to make these services safer and more decentralized.
