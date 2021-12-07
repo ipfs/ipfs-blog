@@ -7,7 +7,8 @@ date: 2021-12-07
 permalink: "/2021-12-07-IPFS-Browser-Connectivity-Walkthrough"
 translationKey: ''
 header_image: "/144127481-634bdab9-2033-418b-8ed2-6ba3dc4e554b.png"
-tags: []
+tags:
+- tutorial
 
 ---
 _From HackFS: Ryan Baumann from IPFS walks through the basics of browser integration using IPFS. This talk was delivered at HackFS, a three-week virtual hackathon dedicated to building a censorship-free decentralized internet. The complete discussion is_ [_available here_](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3)_._
@@ -18,9 +19,10 @@ Under this paradigm, data can be retrieved from wherever it is stored across the
 
 What this means for the average app developer is that instead of hosting an app and its requisite data on a centralized server, they can now upload their app to IPFS and run it directly from a decentralized storage network. This post takes a look at developing web browser interconnectivity through IPFS by putting together a very basic chat interface.
 
+<img src="/uploads/yt_logo_rgb_light.png" width="100">
+
 [IPFS: Browser Connectivity Walkthrough](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3)
 
-  
 The best way to stay up to date with this browser connectivity guide for a simple chat interface is in the IPFS [documentation](https://docs.ipfs.io/how-to/create-simple-chat-app/).
 
 ## Getting Started
