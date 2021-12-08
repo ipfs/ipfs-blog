@@ -4,7 +4,7 @@ description: 'Decentralized storage could offer users a better way to download s
   Welcome to IPFS Weekly #165!'
 author: Emily Vaughan
 date: 2021-12-08
-permalink: "/weekly-164/"
+permalink: "/weekly-165/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
