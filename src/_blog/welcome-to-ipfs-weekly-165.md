@@ -1,9 +1,9 @@
 ---
 title: Welcome to IPFS Weekly 165!
-description: Using IPFS within everyday browsers, plus clever demos and tools from
-  the community and more.
+description: 'Decentralized storage could offer users a better way to download software.
+  Welcome to IPFS Weekly #165!'
 author: Emily Vaughan
-date: 2021-11-30
+date: 2021-12-08
 permalink: "/weekly-164/"
 translationKey: ''
 header_image: "/ipfsnews.png"
@@ -11,11 +11,11 @@ tags:
 - weekly
 
 ---
-![](../assets/144127481-634bdab9-2033-418b-8ed2-6ba3dc4e554b-2.png)
+## **Valist Relies on IPFS and Filecoin to Move Software from Web2 to Web3**
 
-## **Browser Connectivity Walkthrough**
+@[youtube](7ak6PQPDBkk)
 
-If you’re a developer looking to take advantage of IPFS’s decentralized storage solutions be sure to learn how to run your apps directly from our network. From HackFS, check out a walkthrough on how to develop web browser interconnectivity through IPFS. In this post, get familiar with the steps of building a simple chat interface that leverages the network on the back end to connect to other clients and chat with them. [Video walkthrough is here](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=4) — stay tuned for a written guide soon 👀
+App stores and websites are an outdated and insecure way to distribute software. The maxim “where there’s a server, there’s a hack” has proven to be true despite the best efforts of corporations like Microsoft, Apple, and Google. The Web3 stack is able to change that and more. Valist is using IPFS and Filecoin to create a safer, faster, and more efficient way to distribute software through decentralized and persistent storage. To find out more, [watch the most recent video](https://www.youtube.com/watch?v=7ak6PQPDBkk&t=1s) in the Building Web3 video series featuring Valist and check out[this blog post](https://blog.ipfs.io/2021-12-07-building-web3-valist/).
 
 ## **Brand New on IPFS**
 
@@ -26,16 +26,16 @@ If you’re a developer looking to take advantage of IPFS’s decentralized stor
 
 ## **Around the Ecosystem**
 
-Today, Vivid Labs (formerly VideoCoin) announced the availability of VIVID Open, an open source NFT marketplace. Each NFT will be resiliently stored on nft.storage powered by IPFS and Filecoin. [**Learn more!**](https://medium.com/vivid-labs/introducing-vivid-open-open-source-nft-marketplace-14aca6f0f4a8)  
-  
-India’s biggest Web3 hackathon is underway! BUIDL IT, presented by Polygon, is designed to promote Web3 development and talent in India. $100k in prizes will be distributed. The event lasts November 19 - December 12. [**Learn more, register,**](https://buidlit.polygon.technology/) and see how you can build.  
-  
-Eager to stay on top of all the hackathon opportunities across the Protocol Labs ecosystem? [**The Filecoin and IPFS Hackathon**](https://hackathons.filecoin.io/) portal is the best way to stay on top of past, current, and upcoming events.  
-  
-The Mona Gallery team just announced multiplayer and voice chat for all Mona spaces! [**Dive in and try it**](https://t.co/U82gjHVZBz?amp=1) for yourself.   
-  
-The Retrieval Markets Demo Day wrapped up recently. Check out the presentation from [**Magmo and KEN Labs**](https://www.youtube.com/watch?v=rFvwi6v8R0I).  
-  
+Today, Vivid Labs (formerly VideoCoin) announced the availability of VIVID Open, an open source NFT marketplace. Each NFT will be resiliently stored on nft.storage powered by IPFS and Filecoin. [**Learn more!**](https://medium.com/vivid-labs/introducing-vivid-open-open-source-nft-marketplace-14aca6f0f4a8)
+
+India’s biggest Web3 hackathon is underway! BUIDL IT, presented by Polygon, is designed to promote Web3 development and talent in India. $100k in prizes will be distributed. The event lasts November 19 - December 12. [**Learn more, register,**](https://buidlit.polygon.technology/) and see how you can build.
+
+Eager to stay on top of all the hackathon opportunities across the Protocol Labs ecosystem? [**The Filecoin and IPFS Hackathon**](https://hackathons.filecoin.io/) portal is the best way to stay on top of past, current, and upcoming events.
+
+The Mona Gallery team just announced multiplayer and voice chat for all Mona spaces! [**Dive in and try it**](https://t.co/U82gjHVZBz?amp=1) for yourself.
+
+The Retrieval Markets Demo Day wrapped up recently. Check out the presentation from [**Magmo and KEN Labs**](https://www.youtube.com/watch?v=rFvwi6v8R0I).
+
 Are you in Helsinki for Slush? Join [**Fluence Labs**](https://doc.fluence.dev/docs/) and Protocol Labs tomorrow for an event that will deep dive into the latest research & tech insights from open source projects. Attend to hear talks on IPFS & Fluence, a Q&A, networking & more. [**Register now.**](https://www.eventbrite.com/e/web3-infrastructure-at-slush-fluence-ipfs-tickets-208074836437)
 
 ## Want to help build the new internet?
