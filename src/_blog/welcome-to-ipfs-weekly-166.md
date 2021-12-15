@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS Weekly 166!
-description: 'Decentralized storage could offer users a better way to download software.
-  Welcome to IPFS Weekly #165!'
+description: Technical updates for the IPFS network including a new Go client & improved
+  pinning.
 author: Emily Vaughan
-date: 2021-12-08
-permalink: "/weekly-165/"
+date: 2021-12-15
+permalink: "/weekly-166/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
