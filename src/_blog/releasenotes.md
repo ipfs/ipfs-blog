@@ -4,6 +4,12 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: go-ipfs 0.11.0 Release
+  date: 2021-12-09
+  publish_date: 
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.11.0
+  tags:
+  - go-ipfs
 - title: js-ipfs 0.60.0
   date: 2021-11-12
   publish_date: 
