@@ -2,7 +2,7 @@
 title: 'IPFS Community Highlight: Omnilingo'
 description: hdbhjDB
 author: Francis Tyers
-date: 2021-12-16
+date: 2021-12-15
 permalink: "/2021-12-15-omnilingo/"
 translationKey: ''
 header_image: "/omnilingo-x-ipfs.jpg"
