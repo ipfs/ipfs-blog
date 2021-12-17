@@ -1,7 +1,7 @@
 ---
 title: 'Project Showcase: OmniLingo'
-description: Introducing OmniLingo, an open project to build language learning protocols,
-  software, and infrastructure.
+description: Introducing OmniLingo, an open project that builds language learning
+  protocols, software, and infrastructure.
 author: Francis Tyers
 date: 2021-12-17
 permalink: "/2021-12-17-omnilingo/"
