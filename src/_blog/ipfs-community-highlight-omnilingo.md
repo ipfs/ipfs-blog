@@ -68,7 +68,7 @@ OmniLingo is a protocol and sample implementation for language-learning applicat
 
     language community  ----------
        authors                    \ collection    OmniLingo      publish on IPFS             fetched by any     language
-                                    --------->;  node operators  ----------------->;   IPFS   ---------------->;    learner
+                                    --------->  node operators  ----------------->   IPFS   ---------------->    learner
     language community            /               (anyone!)       with toolkit                 conformant       
        speakers         ----------                                                               client
 
