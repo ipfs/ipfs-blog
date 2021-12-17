@@ -1,9 +1,10 @@
 ---
-title: 'IPFS Community Highlight: Omnilingo'
-description: hdbhjDB
+title: 'Project Showcase: OmniLingo'
+description: Introducing OmniLingo, an open project to build language learning protocols,
+  software, and infrastructure.
 author: Francis Tyers
-date: 2021-12-16
-permalink: "/2021-12-16-omnilingo/"
+date: 2021-12-17
+permalink: "/2021-12-17-omnilingo/"
 translationKey: ''
 header_image: "/omnilingo-x-ipfs.jpg"
 tags:
@@ -11,7 +12,6 @@ tags:
 - CID
 
 ---
-
 ![Animated gif showing Omnilingo in use](https://i.imgur.com/rdwCnDd.gif)
 
 Language learning apps can give a fun, convenient way to learn a new language. Like many uses of the internet, though, there is an opportunity for dark patterns to sneak in: user data hoarding, targeted presentation, and majority-cultural filter bubbles can have negative social impacts, and properietary or closed-source software and always-connected centralised backends can create unstable infrastructure and restrict user freedom.
@@ -63,18 +63,14 @@ OmniLingo is a protocol and sample implementation for language-learning applicat
       language  -------       ------------ experimental language
       community                            task designers
       supporters
-    
 
 ## Architecture
 
-    
     language community  ----------
        authors                    \ collection    OmniLingo      publish on IPFS             fetched by any     language
                                     ---------&gt;  node operators  -----------------&gt;   IPFS   ----------------&gt;    learner
     language community            /               (anyone!)       with toolkit                 conformant       
        speakers         ----------                                                               client
-    
-    
 
 OmniLingo language data is stored on IPFS in a hierarchy of JSON and MP3 files. The _root index_of a language data store is a JSON dictionary mapping [ISO-639](https://en.wikipedia.org/wiki/ISO_639) language codes to _language index_ and _language metadata_.
 
@@ -100,7 +96,6 @@ OmniLingo language data is stored on IPFS in a hierarchy of JSON and MP3 files. 
       },
       ⋮
     }
-    
 
 Language metadata consists of a “display name” for the language and a set of character rewrite rules to make typing easier; an example from Turkish:
 
@@ -112,7 +107,6 @@ Language metadata consists of a “display name” for the language and a set of
       },
       "display": "Türkçe"
     }
-    
 
 Language indices are JSON lists of audio sample and difficulty metadata, used to generate an appropriate exercise for the learner’s level.
 
@@ -134,7 +128,6 @@ Language indices are JSON lists of audio sample and difficulty metadata, used to
       },
       ⋮
     ]
-    
 
 The `sentence_cid` field refers to a JSON dictionary of the original transcript, license, and language:
 
@@ -143,7 +136,6 @@ The `sentence_cid` field refers to a JSON dictionary of the original transcript,
       "copyright": "CC0-1.0",
       "language": "et"
     }
-    
 
 The `clip_cid` field is the CID of the MP3 file; `meta_cid` is a link to more detailed sentence metadata, including a tokenised transcript and punctation tags for each token:
 
@@ -152,7 +144,6 @@ The `clip_cid` field is the CID of the MP3 file; `meta_cid` is a link to more de
       "tags": [ "X", "X", "X", "PUNCT", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "X", "PUNCT" ],
       "tokens": [ "Tavaliselt", "ongi", "nii", ", ", "et", "mesinik", "jääb", "oma", "surnud", "mesilastega", "ja", "mitte", "mingit", "lahendust", "ei", "tule", "." ]
     }
-    
 
 In summary, the OmniLingo language store looks like this:
 
@@ -167,7 +158,6 @@ In summary, the OmniLingo language store looks like this:
         │&nbsp;&nbsp; └── lang1-metadata
         ├── lang2
         └── …
-    
 
 Root indexes are encouraged to be published to IPNS, so that clients can receive updates.
 
@@ -190,12 +180,10 @@ the final step is publishing the data.
 Import data into your local IPFS node and generate an index:
 
     $ importer.py dataset_dir index_path
-    
 
 e.g.
 
     $ importer.py ./cv-corpus-7.0-2021-07-21/tr/ tr.json
-    
 
 where the `dataset_dir` is in [Common Voice format]().
 
@@ -204,12 +192,10 @@ where the `dataset_dir` is in [Common Voice format]().
 Index the data, extracting a balanced subset of clips by a complexity metric:
 
     $ indexer.py locale index_path
-    
 
 e.g.
 
     $ indexer.py tr tr.json
-    
 
 This will return a CID that looks like `QmXpgcavH2shpBbfnFoymPxEw2zpr4MdAgi1aaoZT4Yeho`
 
@@ -218,23 +204,19 @@ This will return a CID that looks like `QmXpgcavH2shpBbfnFoymPxEw2zpr4MdAgi1aaoZ
 Publish data to the global index in OmniLingo on IPFS:
 
     $ publisher.py locale cid
-    
 
 e.g.
 
     $ publisher.py tr QmXpgcavH2shpBbfnFoymPxEw2zpr4MdAgi1aaoZT4Yeho
-    
 
 This will return a CID which looks something like `QmWAmrGNGkL8N6LfsfAKueYGYLqJ2gqn9EZR2a11fxRos6`, which you can  
 then publish to an IPFS name using the local node ID:
 
     ipfs name publish cid 
-    
 
 e.g.
 
     ipfs name publish QmWAmrGNGkL8N6LfsfAKueYGYLqJ2gqn9EZR2a11fxRos6
-    
 
 ### Command-line client demo
 
@@ -263,5 +245,4 @@ Omnilingo’s design encourages experimentation; we hope to see expansion along 
   * bring pronunciation assistence to OmniLingo
   * bring distributed identities to OmniLingo, multi-device or multi-client usage
 
-We have specific plans for pronunciation assistence and distributed identities in the next phase of our OmniLingo development work. Want to help out? Share your ideas and collaborate with us in  
-[`#OmniLingo:matrix.org`](https://matrix.to/#/#OmniLingo:matrix.org).
+We have specific plans for pronunciation assistence and distributed identities in the next phase of our OmniLingo development work. Want to help out? Share your ideas and collaborate with us in [`#OmniLingo:matrix.org`](https://matrix.to/#/#OmniLingo:matrix.org).
