@@ -68,7 +68,7 @@ OmniLingo is a protocol and sample implementation for language-learning applicat
 
     language community  ----------
        authors                    \ collection    OmniLingo      publish on IPFS             fetched by any     language
-                                    ---------&gt;  node operators  -----------------&gt;   IPFS   ----------------&gt;    learner
+                                    --------->;  node operators  ----------------->;   IPFS   ---------------->;    learner
     language community            /               (anyone!)       with toolkit                 conformant       
        speakers         ----------                                                               client
 
@@ -149,13 +149,13 @@ In summary, the OmniLingo language store looks like this:
 
     root-index
         ├── lang1
-        │&nbsp;&nbsp; ├── lang1-index
-        │&nbsp;&nbsp; │&nbsp;&nbsp; ├── sent1
-        │&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── audioclip
-        │&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── metadata
-        │&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── transcript
-        │&nbsp;&nbsp; │&nbsp;&nbsp; └── …
-        │&nbsp;&nbsp; └── lang1-metadata
+        │             ├── lang1-index
+        │             │             ├── sent1
+        │             │             │             ├── audioclip
+        │             │             │             ├── metadata
+        │             │             │             └── transcript
+        │             │             └── …
+        │             └── lang1-metadata
         ├── lang2
         └── …
 
