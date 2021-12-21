@@ -1,46 +1,42 @@
 ---
 title: Welcome to IPFS Weekly 167!
-description: Technical updates for the IPFS network including a new Go client & improved
-  pinning.
+description: OmniLingo uses IPFS to help underrepresented language-learning communities
+  thrive plus more in IPFS Weekly 167
 author: Emily Vaughan
-date: 2021-12-15
-permalink: "/weekly-166/"
+date: 2021-12-21
+permalink: "/weekly-167/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
 - weekly
 
 ---
-## **Announcing go-ipfs 0.11.0** 🎉
+## **Project Showcase: OmniLingo**
 
-![](../assets/release-notes-placeholder-2b442ee5.png)This release comes with improvements to the UnixFS Sharding and PubSub experiments as well as support for Circuit-Relay v2 which sets the network up for decentralized hole punching support. Read the full release notes on [**Github**](https://github.com/ipfs/go-ipfs/releases/tag/v0.11.0).
+![](../assets/omnilingo-x-ipfs.jpg)
 
-## **Announcing IPFS Cluster Release v0.14.2**
-
-![](../assets/077-collaborative-clusters-header-image.png)
-
-A new IPFS Cluster release is out! [**Version 0.14.2**](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md) brings improvements to handling large numbers of pins. A pin prioritization feature ensures new pins are replicated faster in the face of long pinning queues. The improvement allows flexible and balanced distribution of pins among different peers based on user-defined groups.
+There are many educational applications for learning a new language. There are none, however, that take advantage of Web3’s capability for open-source collaboration. [OmniLingo](https://omnilingo.xyz/) is using IPFS to enable language activists, language learners, and language instructors to form their own decentralized communities for under-represented languages. Find out more about how you can try the application and maybe learn a new language [here](https://blog.ipfs.io/2021-12-17-omnilingo/).
 
 ## **Brand New on IPFS**
 
-1. [**NoTex**](https://www.notex.ch/home) is using IPFS to empower bloggers all over the world with a censorship resistant platform for free expression that offers IP protection.
-2. Tune into a [**NFT.Storage Twitter Spaces AMA**](https://twitter.com/Filecoin/status/1470478506777792516?s=20) tomorrow, December 15 at 1pm ET. Hear from NFT experts Sherif A. Louis, Jonathan Victor, Mikeal Rogers, and more.
-3. Vivid Labs [**introduced**](https://twitter.com/IPFS/status/1469091997139017746?s=20) VIVID Open, an open-source NFT marketplace using IPFS-based [**NFT.Storage**](https://nft.storage/) to store assets.
-4. A list of applications leveraging decentralized hosting by using IPFS and Crust, including apps like Uniswap, Aave, and Polkadot. [**Check out the article from Crust.**](https://medium.com/crustnetwork/decentralized-websites-with-ipfs-and-crust-9435b5810ae1)
+1. [Take a look](https://medium.com/nttlabs/nerdctl-ipfs-975569520e3d) at how containerd is using IPFS to enable nerdctl’s experimental support for P2P container image distribution.
+2. [Dive into](https://twitter.com/ProtoResearch/status/1471520384692404227?s=20) the discovery process of Content Identifiers on IPFS with a new visualization tool developed by Mobile Multimedia Lab.
+3. Do you want to take your Filecoin and IPFS project to the next level? Last call for applications to the [Filecoin Techstars Accelerator](https://www.techstars.com/accelerators/filecoin)! Apply by tomorrow, Dec 22nd.
+4. Find out how MODA DAO will [upload](https://www.globenewswire.com/news-release/2021/12/16/2353879/0/en/MODA-DAO-Partners-With-Filecoin-to-Bring-2000-Years-Worth-of-Music-Streaming-to-the-Blockchain.html) 2,000 years worth of music streaming to IPFS and Filecoin.
 
 ## **Around the Ecosystem**
 
-The first libp2p community call happened earlier today, didn’t make it? Be sure to tune into the next one on January 11, 2022. Subscribe and join via [**this calendar event**](https://calendar.google.com/calendar/event?eid=NXJtYnQwZGx2bDRvYmQ4NWNxYmxiMWhjM2pfMjAyMTEyMTRUMTcwMDAwWiBsaWJwMnAuaW9fMHE5NjgyaTN0ZTdlYW5oZTlxN2FlMWM1OGdAZw&ctz=Europe/Berlin) on the [**libp2p Public Events**](https://calendar.google.com/calendar/embed?src=libp2p.io_0q9682i3te7eanhe9q7ae1c58g%40group.calendar.google.com) calendar.
+Enjoy Jonathan Mann’s daily song release which featured a [catchy tune](https://twitter.com/songadaymann/status/1471221661760466959?s=20) explaining his appreciation for NFT.Storage!
 
-According to CoinDesk, Filecoin may have just launched a tool to end the never-ending debate over Bitcoin’s carbon footprint. [**Read all about it!**](https://www.coindesk.com/tech/2021/12/02/filecoin-might-have-a-way-for-bitcoin-to-fight-its-energy-critics-if-miners-use-it/)
+The Filecoin Foundation and Protocol Labs have embarked on an experimental project to put New York City open data on the Filecoin Network! [Learn about the initiative](https://filecoinfoundation.medium.com/filecoin-foundation-and-protocol-labs-embark-on-experimental-project-to-put-new-york-city-open-data-99f6585c8630).
 
-ETHGlobal just announced their 2022 Hackathon season which is jam packed with 6 IRL hackathons, 10 online hackathons and 15 summits! [**Check it out for yourself**](https://ethglobal.medium.com/announcing-the-ethglobal-2022-season-51a7906bb3a4).
+Don’t miss the Moralis Web3 development platform’s workshop on IPFS [streaming live](https://www.youtube.com/watch?v=ieV146r8FL0) on December 22nd at 10 am EST.
 
-Last week, go-libp2p v0.16.0 was released, which adds support for the circuit v2 protocol, paving the way to fully decentralized, peer-to-peer NAT hole punching! Check out the full [**release notes**](https://github.com/libp2p/go-libp2p/releases/tag/v0.16.0).
+Be sure to check out Eat the Blocks’ [quick intro](https://www.youtube.com/watch?v=k1EQC7tdh70) to IPFS for Solidity developers.
 
-Interested in taking your Filecoin/IPFS project to the next level? The inaugural cohort of the Filecoin Techstars Accelerator runs from March - June 2022, but applications close on December 22nd - [**apply now**](https://www.techstars.com/accelerators/filecoin).
+Announcing the [Filecoin Accelerator by Encode Club](https://medium.com/encode-club/announcing-the-encode-filecoin-accelerator-c55f09264e8c), a 10-week online accelerator to receive support and mentorship plus a $5k stipend for participating. Apply by 01/04/22!
 
-From Wax, what it means to truly own your digital assets, and the importance of storing your NFTs on a resilient, decentralized network. [**Check it out.**](https://wax-io.medium.com/not-ipfs-not-your-nft-29bcf692702f)
+Check out Fredrik Rubensson’s [lecture](https://www.youtube.com/watch?v=l7I7XE0T9J8) on how to distribute the web with IPFS at Devoxx Poland. He goes into detail about file fingerprinting, version control, and identification as well as how nodes find relevant data and human-friendly addressing with IPNS.
 
 ## Want to help build the new internet?
 
