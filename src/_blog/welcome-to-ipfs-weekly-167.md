@@ -38,9 +38,11 @@ Announcing the [Filecoin Accelerator by Encode Club](https://medium.com/encode-c
 
 Check out Fredrik Rubensson’s [lecture](https://www.youtube.com/watch?v=l7I7XE0T9J8) on how to distribute the web with IPFS at Devoxx Poland. He goes into detail about file fingerprinting, version control, and identification as well as how nodes find relevant data and human-friendly addressing with IPNS.
 
+![](../assets/ipfs-holiday-card.jpg)
+
 ## Want to help build the new internet?
 
-[**Filecoin Green Program Ambassador**](https://jobs.lever.co/protocol/33a795a3-a69e-4f89-82d7-3da0bd5626ce): We are searching for a Program Administrator who will help to track, manage and direct a team developing tomorrow’s environmental accounting tools. [**Filecoin Green**](https://medium.com/@filecoingreen) is a fast-growing initiative dedicated to measuring, reducing and mitigating environmental impacts within the Filecoin ecosystem and beyond. The team aims to catalyze this by enabling teams across the Filecoin ecosystem to verifiably report their emissions, and to use these data as the basis for impact reductions. **Protocol Labs**, Remote.
+[**Filecoin Green Program Administrator**](https://jobs.lever.co/protocol/33a795a3-a69e-4f89-82d7-3da0bd5626ce): We are searching for a Program Administrator who will help to track, manage and direct a team developing tomorrow’s environmental accounting tools. [**Filecoin Green**](https://medium.com/@filecoingreen) is a fast-growing initiative dedicated to measuring, reducing and mitigating environmental impacts within the Filecoin ecosystem and beyond. The team aims to catalyze this by enabling teams across the Filecoin ecosystem to verifiably report their emissions, and to use these data as the basis for impact reductions. **Protocol Labs**, Remote.
 
 [**Community Manager**](https://valist.io/roles/community-manager.pdf): Valist is hiring a community manager to help expand outreach, community, and brand awareness. In this role, you will have a strong influence on our growth strategies, forge and develop great relationships with our community members and key partners, and create high quality content. You will be working closely with technical co-founders and engineers. **Valist**, Remote.
 
