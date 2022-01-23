@@ -25,7 +25,7 @@ Let's look at an example. Two computers, *A* and *B*, each in their own network,
 
 Note that we are focusing on overcoming firewalls today and ignore NATs for now. The process described below (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post.
 
-![img](..assets/libp2p-hole-punching-network.svg)
+![img](../assets/libp2p-hole-punching-network.svg)
 
 The sequence diagram below depicts the scenario where computer *A* emitts a packet destined for *B*. Said packet is first send to A's router, which in turn forwards it to *B*'s router.
 
@@ -97,7 +97,7 @@ Back to our sequence diagram below. A's router forwards the packet to *B*'s rout
 
 Same applies to packets send from *B* to *A*, see second half of the sequence diagram.
 
-![img](..assets/libp2p-hole-punching-firewall.svg)
+![img](../assets/libp2p-hole-punching-firewall.svg)
 
 Now this should not suggest to go ahead and disable all firewalls across the world. Please no. They do serve their purpose. Afterall *A* and *B* most likely don't want random strangers connecting to them. Though they do still want to connect to each other.
 
@@ -118,7 +118,7 @@ Anyways, back to assuming the existence of a mysterious synchronization mechanis
 
 In case you haven't noticed, we just fixed our problem. *A* and *B* can now happily exchange packets. Take a look at the sequence diagram below, depicting the same process.
 
-![img](..assets/libp2p-hole-punching-hole-punch.svg)
+![img](../assets/libp2p-hole-punching-hole-punch.svg)
 
 
 
@@ -138,7 +138,7 @@ One can partition libp2p's way of hole punching in roughly 2 phases, a preparati
 
 Here is a sequence diagram of the whole process. Don't worry, we will go into each step separately. Maybe the sole purpose of this huge diagram is to prove the point above that holepunching "is a lot more complex than one would think".
 
-![img](..assets/libp2p-hole-punching-overview.svg)
+![img](../assets/libp2p-hole-punching-overview.svg)
 
 
 
@@ -154,7 +154,7 @@ In step 1 of phase 1 a computer determines whether it is dialable, in other word
 
 In our case computer B from above determines whether it is dialable. It does so with the help of random public nodes, e.g. bootnodes of its peer-to-peer network.
 
-![img](..assets/libp2p-hole-punching-autonat.svg)
+![img](../assets/libp2p-hole-punching-autonat.svg)
 
 *B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to try to dial it (*B*). *B* sends along a set of addresses that it assumes to be reachable under. Each of the contacted node goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e. whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addressses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase of Project Flare.
 
@@ -167,7 +167,7 @@ In our case computer B from above determines whether it is dialable. It does so 
 
 For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by Project Flare nor libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a relay node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own peer ID, or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
 
-![img](..assets/libp2p-hole-punching-autorelay.svg)
+![img](../assets/libp2p-hole-punching-autorelay.svg)
 
 
 
@@ -178,7 +178,7 @@ Back to the previous question. How can a node be **indirectly** dialable through
 
 For each of the public relay nodes discovered in the previous step, *B* would do the following: First *B* connects to the remote node. Next is requests a so called "Reservation", basically saying: "Hey, I am not dialable. Given that you are dialable, would you mind listening for incoming connections on my behalf, forwarding each of them to me over this connection?".
 
-![img](..assets/libp2p-hole-punching-relay-v2-register.svg)
+![img](../assets/libp2p-hole-punching-relay-v2-register.svg)
 
 Once the remote accepted the reservation request, *B* can advertise itself as being reachable through the remote Relay node. In other words, instead of advertising its own IP address, which is useless given that *B* is not publicly dialable, *B* advertises a "relayed" address which contains the IP address of the remote relay node plus its own peer ID.
 
@@ -204,7 +204,7 @@ For that, let's imagine computer *A* got a hold of *B*'s relayed address through
 
 Before establishing a direct connection using hole punching, *A* first has to establish a relayed connection to *B* via the public relay node. *A* extracts the address of the relay node from *B*'s advertised relayed address and establishes a direct connection to the relay node. Once established *A* can request a relayed connection to *B* from the relay. The relay forwards said request to *B* which accepts the request. The relay once more forwards the acceptance to *A*. From now on, *A* and *B* can use the bi-directional channel over the relay to communicate.
 
-![img](..assets/libp2p-hole-punching-relay-v2-connect.svg)
+![img](../assets/libp2p-hole-punching-relay-v2-connect.svg)
 
 
 
@@ -219,7 +219,7 @@ First off, *A* sends a *Connect* message to *B*. That *Connect* message contains
 
 Next *A* sends a *Sync* message to *B*. Once sent out, *A* does a countdown of half the round trip time between *A* and *B* via the relay. Once the countdown fires, *A* dials *B* via the addresses received in *B*'s *Connect*. On the other end, *B* eventually receives A's *Sync* and directly on receival dials *A* with the addresses provided in A's *Connect* message.
 
-![img](..assets/libp2p-hole-punching-dcutr.svg)
+![img](../assets/libp2p-hole-punching-dcutr.svg)
 
 Now if you do the math, *A* starts after half the round trip time between *A* and *B* via the relay and *B* starts once it receives the *Sync*, this should roughly account to the same point in time.
 
