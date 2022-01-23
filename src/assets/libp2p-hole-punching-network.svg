@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="220px" preserveAspectRatio="none" style="width:429px;height:220px;" version="1.1" viewBox="0 0 429 220" width="429px" zoomAndPan="magnify"><defs><filter height="300%" id="f1gzmrget5vrpw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><path d="M138.5781,148.1923 C141.8566,143.0233 146.0121,143.212 149.694,147.7293 C152.6047,141.9772 157.0738,142.9779 160.3994,147.2879 C163.0455,142.1174 166.8185,141.5502 170.9478,145.5891 C174.8585,139.4556 178.9844,139.1664 184.0604,144.2236 C187.3838,139.8383 191.5727,140.832 193.6578,145.5317 C197.8498,140.4789 202.1478,140.3255 205.0869,146.7765 C208.9296,141.287 215.1949,141.7792 217.8079,148.101 C220.968,142.7866 224.7186,143.973 227.9525,148.0211 C234.1859,151.0945 235.844,155.7133 230.28,160.9161 C237.0646,164.4614 237.3237,169.4296 231.8691,174.4156 C237.8747,178.3404 236.7895,182.9427 231.0951,186.0919 C237.527,193.1555 235.7992,197.5244 227.5386,201.1083 C224.7559,205.4035 219.5459,206.5735 217.0638,200.7956 C214.3133,206.0395 211.0179,206.5929 206.6858,202.5662 C202.5101,208.3905 198.6296,207.2247 194.9536,202.034 C192.5143,207.3509 188.406,208.4016 184.0695,204.2044 C179.7873,208.7473 173.7937,208.8109 171.6378,201.8971 C168.6224,205.8574 163.834,206.6158 161.472,201.1896 C158.5655,207.6575 152.9854,207.7188 149.6706,201.5716 C146.0283,205.7877 141.1794,205.7741 138.5911,200.3591 C131.7839,197.1327 131.5939,192.6886 136.2158,187.3718 C128.5307,184.5488 127.9317,179.384 133.6009,173.9577 C129.2767,167.9752 130.5851,163.4536 137.2148,160.3884 C131.0775,156.4362 132.3252,150.7595 138.5781,148.1923 " fill="#FFFFFF" style="stroke: #000000; stroke-width: 1.5;"/><!--MD5=[f39890141988338390353905b1d30eb2]
+cluster Network_A--><polygon fill="#FFFFFF" filter="url(#f1gzmrget5vrpw)" points="22,24,113,24,120,46.2969,202,46.2969,202,111,22,111,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="120" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="26" y="38.9951">Network_A</text><!--MD5=[51f900c6e81d26066ce8c99d2c87b965]
+cluster Network_B--><polygon fill="#FFFFFF" filter="url(#f1gzmrget5vrpw)" points="226,24,316,24,323,46.2969,407,46.2969,407,111,226,111,226,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="226" x2="323" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="84" x="230" y="38.9951">Network_B</text><!--MD5=[9eb86c2b3d925a16ba1bdada40016c70]
+entity Internet--><rect fill="#FEFECE" filter="url(#f1gzmrget5vrpw)" height="36.2969" style="stroke: #A80036; stroke-width: 1.5;" width="74" x="145" y="155"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="140" y="160"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="140" y="181.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="155" y="177.9951">Internet</text><!--MD5=[770389ab9df153645bc6ef28055eb2b5]
+entity A--><rect fill="#FEFECE" filter="url(#f1gzmrget5vrpw)" height="36.2969" style="stroke: #A80036; stroke-width: 1.5;" width="29" x="156.5" y="59"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="151.5" y="64"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="151.5" y="85.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="9" x="166.5" y="81.9951">A</text><!--MD5=[35b1b9b7af72344c6024657ab180ce0d]
+entity Router_A--><rect fill="#FEFECE" filter="url(#f1gzmrget5vrpw)" height="36.2969" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="38.5" y="59"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33.5" y="64"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33.5" y="85.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="48.5" y="81.9951">Router_A</text><!--MD5=[b2d39259b6aeabc16b394deeb0238426]
+entity B--><rect fill="#FEFECE" filter="url(#f1gzmrget5vrpw)" height="36.2969" style="stroke: #A80036; stroke-width: 1.5;" width="30" x="361" y="59"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="356" y="64"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="356" y="85.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="10" x="371" y="81.9951">B</text><!--MD5=[d88bea1cab14fb4e3eb83a7382245343]
+entity Router_B--><rect fill="#FEFECE" filter="url(#f1gzmrget5vrpw)" height="36.2969" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="242" y="59"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="237" y="64"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="237" y="85.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="64" x="252" y="81.9951">Router_B</text><!--MD5=[af04aa8adcb1872528373b0335e1557a]
+link Router_A to Internet--><path d="M98.71,95.24 C115.82,111.01 141.17,134.37 159.4,151.17 " fill="none" id="Router_A-&gt;Internet" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="163.41,154.87,159.488,145.8357,159.7278,151.4875,154.076,151.7273,163.41,154.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[abc34ab2357c2431246eabc75bb2dbe3]
+link Router_B to Internet--><path d="M265.29,95.24 C248.18,111.01 222.83,134.37 204.6,151.17 " fill="none" id="Router_B-&gt;Internet" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="200.59,154.87,209.924,151.7273,204.2722,151.4875,204.512,145.8357,200.59,154.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d8eda0f89cfd63e93dcb8cde6a0bb97e]
+@startuml
+skinparam componentStyle rectangle
+
+cloud {
+        [Internet]
+}
+
+package "Network_A" {
+        [A]
+        [Router_A]
+}
+
+package "Network_B" {
+        [B]
+        [Router_B]
+}
+
+[Router_A] - -> [Internet]
+[Router_B] - -> [Internet]
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.13+8-post-Debian-1deb11u1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
