@@ -234,7 +234,7 @@ So you can already guess what happens once both *A* and *B* dial each other simu
 > 2.  Both packets, each then forwarded to the opposite router, would cross paths somewhere in this crazy thing called Internet. (Whether they really cross paths is something for another blog post, but still an amusing image to have in mind.)
 > 3.  Onces A's packet arrives at router *B*, router *B* checks its state table, finds a 5-tuple previously added through the packet sent by *B*, and forwards the packet to computer *B*. Same with *B*'s packet, arriving at router *A*, matching a 5-tuple in router A's state table and thus forwarded to computer *A*.
 
-![img](hole-punch.svg)
+![img](../assets/libp2p-hole-punching-hole-punch.svg)
 
 Quite a process, huh?!
 
