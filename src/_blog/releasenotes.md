@@ -4,7 +4,7 @@ type: Release notes
 sitemap:
   exclude: true
 data:
-- title: libp2p v0.36.0
+- title: js-libp2p v0.36.0
   date: 2022-01-25
   publish_date: 
   path: https://github.com/libp2p/js-libp2p/releases/tag/v0.36.0
