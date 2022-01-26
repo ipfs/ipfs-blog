@@ -11,30 +11,34 @@ tags:
 - weekly
 
 ---
-## **IPFS 2021 in Review**
+## **Web3 Browsers for Decentralized Storage**
 
-![](../assets/148262638-63588f04-cdfd-4476-ba67-912fd6bd3555.jpg)
+![](../assets/ipfs-blog-2021-12-17-web3browsers.png)
 
-Web3 applications had a great run in 2021 as mainstream users were introduced to concepts like NFTs. This was all possible thanks to the infrastructure developments that were already there to support them with decentralized storage. Throughout the year, IPFS collaborated with projects such as OpenSea, Brave, Pinata, and Audius to make this happen. It also added important features to its Go and JavaScript implementations as well as the IPFS Cluster codebase. [Get a refresh](https://blog.ipfs.io/2022-01-11-IPFS-in-2021/) on everything that happened in 2021.
+Browsers are still most users’ primary interface when they interact with the internet. In most cases, however, they’re still stuck with Web 2.0 infrastructure. This has started to change thanks to recent integrations by browsers like [**Brave**](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)and [**Opera**](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/) who’ve added native support for IPFS as the default protocol for decentralized storage. These developments eliminate the need for centralized gateways and pave the way for the slow but steady ongoing migration from HTTP to Web3.
+
+[**Read more**](https://blog.ipfs.io/2022-01-07-web3-browsers-for-decentralized-storage/) and be sure to [**watch**](https://www.youtube.com/watch?v=1rMMEeZ6jI4&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=45) IPFS Growth Engineer Dietrich Ayala and Brave Wallet Engineer Anirudha Bose’s conversation on the topic.
 
 ## **Brand New on IPFS**
 
-1. Last week, the Bitflix movie NFT platform [chose](https://twitter.com/BitflixNFTs/status/1479478241459011584?s=20) IPFS for its decentralized storage needs to ensure the NFTs are safe and secure.
-2. Ecosys, an open source ecology platform, is [using](https://twitter.com/octopuce_node/status/1480555606385860612?s=20) IPFS for web hosting.
-3. The DINPS 2022 workshop is looking for papers related to IPFS, distributed storage, p2p networks, and edge computing. Submissions are open until March 5 with more information available on the [official website](https://research.protocol.ai/sites/dinps/calls/).
-4. The Moralis + Avalanche Hackathon is hosting an IPFS and Filecoin track where participants will compete for the Best Use of IPFS or NFT.Storage for Content-Addressed Data. Register now on the [event website](https://moralis.io/avalanche-hackathon/).
+1. 4EVERLAND [**became**](https://filecoinfoundation.medium.com/dev-grant-spotlight-4everland-6b07da0aade6) the latest recipient of the Filecoin Foundation’s [**Dev Grant**](https://grants.filecoin.io/). The cloud computing company helps developers build Web3 applications by leveraging IPFS for stable and efficient content storage and distribution.
+2. Introducing the Faber Web3 Hackathon! The event and accelerator will run from mid-February to mid-March and is welcoming IPFS builders. [**Learn more**](http://faberweb3.devpost.com/)about the event and [**apply**](http://faberweb3.devpost.com/) today.
+3. Fleek’s [**Eth.Limo**](https://blog.fleek.co/posts/eth-limo-alternative-eth-link) gateway is a new decentralized alternative for resolving IPFS and ENS domain sites.
+4. Read Chris Anderson’s take on NFTs and their value in this [**article**](https://thenewstack.io/nfts-in-the-uncanny-valley/) for The New Stack.
 
 ## **Around the Ecosystem**
 
-Be sure to check out developerAlly’s upcoming [workshop](https://www.youtube.com/watch?v=bIZNW_c6Hx4) on how to create NFTs using IPFS and Filecoin. It will take place on January 13 at the NFTHack 2022 weekend-long hackathon and summit.
-
-The second libp2p community call happened earlier today - couldn’t make it? Be sure to stay tuned for details on the next one [here](https://discuss.libp2p.io/t/libp2p-community-calls/1157).
-
-Watch a [tutorial](https://www.youtube.com/watch?v=1YnInXG682U) on how to upload a website to an IPFS node run by Cybercon, a dedicated server provider working with decentralized websites and apps.
-
-Find out how you can use Fleek to deploy and host a website using IPFS and connect it to a .eth ENS domain by watching Sarah Amann’s [video](https://www.youtube.com/watch?v=H-0Drm0-ZeM).
-
-Enjoy MawaMaverick’s [in-depth look](https://www.youtube.com/watch?v=ieHXypfhsWk) at the future of Web3 and IPFS.
+Check out Libre Space Foundation’s interesting [**video**](https://www.youtube.com/watch?v=tRo1BCj_4n8) explaining IPFS-tiny and how it enables new concepts at OSCW 2021.  
+  
+The DINPS 22 workshop at ICDS 2022 is interested in your research! Submit your proposals [**here**](https://research.protocol.ai/sites/dinps/calls/) by March 5th.   
+  
+HashLips NFT shared a guide on how to upload larger and multiple files to IPFS. Be sure to watch their [**video**](https://www.youtube.com/watch?v=xOUz3ifDpR4) to learn how to do this and then pin the files using Pinata.  
+  
+Protocol Labs [**announced**](https://twitter.com/ProtoResearch/status/1485624717532934145?s=20) Dennis Trautwein as a new Ph.D. fellow. Along with his advisor Bela Gipp, they will investigate if and how a super-peer architecture can complement the IPFS network from a content discovery and content retrieval perspective.  
+  
+For a great rundown on the basics, watch gp_sec’s [**video**](https://www.youtube.com/watch?v=FpU3R22lgOI) on how to host files on IPFS. They cover the process from installation to pinning.  
+  
+Blok Scout has also shared a great [**explainer**](https://www.youtube.com/watch?v=jwd-dQHDvB0) on distributed file storage for anybody who’s new to IPFS.
 
 ## Want to help build the new internet?
 
