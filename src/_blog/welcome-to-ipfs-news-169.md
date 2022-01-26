@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS News 169!
-description: Last year’s NFT mania counted on IPFS for decentralized storage, plus
-  more in IPFS News 168.
+description: In the move from HTTP to Web3, IPFS is the go-to solution for storage,
+  read more in IPFS News 169.
 author: Emily Vaughan
-date: 2022-01-12
-permalink: "/weekly-168/"
+date: 2022-01-26
+permalink: "/weekly-169/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
