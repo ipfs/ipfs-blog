@@ -33,58 +33,11 @@ The sequence diagram below depicts the scenario where computer *A* emitts a pack
 
 Small detour on the matter of firewalls. Firewalls control the bytes flowing in and out of a network, e.g. in this case in and out of A's and *B*'s home network. They usually do so using a state table of 5-tuples. A 5-tuple is used to identify a connection between two endpoints. It consists of the IP source address, the IP destination address, the transport protocol e.g. TCP or UDP, the source port number and the destination port number of a connection.
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">Source IP</th>
-<th scope="col" class="org-right">Destination IP</th>
-<th scope="col" class="org-left">Transport Protocol</th>
-<th scope="col" class="org-right">Source Port</th>
-<th scope="col" class="org-right">Destination Port</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-right">192.168.0.2</td>
-<td class="org-right">198.51.100.0</td>
-<td class="org-left">TCP</td>
-<td class="org-right">12345</td>
-<td class="org-right">443</td>
-</tr>
-
-
-<tr>
-<td class="org-right">192.168.0.2</td>
-<td class="org-right">198.51.100.1</td>
-<td class="org-left">UDP</td>
-<td class="org-right">12345</td>
-<td class="org-right">53</td>
-</tr>
-
-
-<tr>
-<td class="org-right">&#x2026;</td>
-<td class="org-right">&#x2026;</td>
-<td class="org-left">&#x2026;</td>
-<td class="org-right">&#x2026;</td>
-<td class="org-right">&#x2026;</td>
-</tr>
-</tbody>
-</table>
+| Source IP   | Destination IP | Transport Protocol | Source Port | Destination Port |
+|-------------|----------------|--------------------|-------------|------------------|
+| 192.168.0.2 | 198.51.100.0   | TCP                | 12345       | 443              |
+| 192.168.0.2 | 198.51.100.1   | UDP                | 12345       | 53               |
+| ...         | ...            | ...                | ...         | ...              |
 
 The simplest security measure all major consumer firewalls enforce to protect their network is the following:
 
