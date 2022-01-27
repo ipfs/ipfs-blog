@@ -89,7 +89,7 @@ One can partition libp2p's way of hole punching in roughly 2 phases, a preparati
 
 ## Overview
 
-Here is a sequence diagram of the whole process. Don't worry, we will go into each step separately. Maybe the sole purpose of this huge diagram is to prove the point above that holepunching "is a lot more complex than one would think".
+Here is a sequence diagram of the whole process. Don't worry, we will go into each step separately. Maybe the sole purpose of this huge diagram is to prove the point above that hole punching "is a lot more complex than one would think".
 
 ![img](../assets/libp2p-hole-punching-overview.svg)
 
