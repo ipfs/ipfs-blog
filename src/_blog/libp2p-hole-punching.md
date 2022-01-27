@@ -10,7 +10,7 @@ header_image:
 author: Max Inden
 ---
 
-In case you haven't yet heard the great news, libp2p can now punch holes.
+In case you haven't yet heard the great news, [libp2p](https://docs.ipfs.io/concepts/glossary/#libp2p) can now punch holes.
 
 The below explains why we want to punch holes, into what we are punching those holes and most interestingly how we punch those holes.
 
