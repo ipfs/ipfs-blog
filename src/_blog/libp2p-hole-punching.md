@@ -23,7 +23,7 @@ Computers in today's Internet can be divided into two groups, public and non-pub
 
 Let's look at an example. Two computers, *A* and *B*, each in their own network, connected to the internet via a separate home router each, with those home routers acting as firewalls.
 
-Note that we are focusing on overcoming firewalls today and ignore NATs for now. The process described below (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post.
+Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described below (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post.
 
 ![img](../assets/libp2p-hole-punching-network.svg)
 
