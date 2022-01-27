@@ -61,7 +61,7 @@ Now this should not suggest to go ahead and disable all firewalls across the wor
 
 Hole punching is one mechanism to overcome the problem described above. Let's see how it works.
 
-Imagine that we have some mysterious mechanism to synchronize *A* and *B*. Mysterious as synchronizing clocks is hard, &#x2026; really hard. For those that don't believe me, I recommend reading Lamport's "Time, Clocks, and the Ordering of Events in a Distributed System" and Mills' "A Brief History of NTP Time: Memoirs of an Internet Timekeeper".
+Imagine that we have some mysterious mechanism to synchronize *A* and *B*. Mysterious as synchronizing clocks is hard, &#x2026; really hard. For those that don't believe me, I recommend reading Lamport's [_Time, Clocks, and the Ordering of Events in a Distributed System_](https://web.archive.org/web/20211101121036/https://amturing.acm.org/p558-lamport.pdf) and Mills' [_A Brief History of NTP Time: Memoirs of an Internet Timekeeper_](https://web.archive.org/web/20220120075303/https://www.eecis.udel.edu/~mills/database/papers/history.pdf).
 
 Anyways, back to assuming the existence of a mysterious synchronization mechanism. Such mechanism would allow *A* and *B* to dial each other "at the same time".
 
