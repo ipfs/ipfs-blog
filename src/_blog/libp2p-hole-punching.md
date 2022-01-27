@@ -73,12 +73,12 @@ In case you haven't noticed, we just fixed our problem. *A* and *B* can now happ
 
 ![img](../assets/libp2p-hole-punching-hole-punch.svg)
 
-
+Small note on alternative mechanisms. Hole punching will not always work, e.g. when behind a symetric NAT. In such cases nodes can instead explicitly add port mappings, either manually or via [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). In addition as a last resort, nodes can leverage external [relay](https://docs.ipfs.io/concepts/glossary/#relay) nodes.
 
 
 # Project Flare
 
-So the above sounds easy from a birds-eye view, but is a lot more complex than one would think. In addition, we didn't even cover the "mysterious mechanism to synchronize *A* and *B*". 
+Based on the above the concept of hole punching looks easy from a birds-eye view, but is a lot more complex than one would think. In addition, we didn't even cover the "mysterious mechanism to synchronize *A* and *B*". 
 
 Introducing **Project Flare**, libp2p's way of decentralized hole punching. Those familiar with [IETF's ICE](https://datatracker.ietf.org/doc/html/rfc8445) will spot many similarities. Project Flare is heavily inspired by ICE.
 
