@@ -118,12 +118,9 @@ In our case computer *B* from above determines whether it is dialable. It does s
 
 *B* knows that nodes outside its own home network can not dial it. Well, they "can not dial it **directly**". Though they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
 
-For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by Project Flare nor libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a relay node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own peer ID, or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
+For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by Project Flare nor libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a [relay](https://docs.ipfs.io/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.io/concepts/glossary/#peer-id), or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
 
 ![img](../assets/libp2p-hole-punching-autorelay.svg)
-
-
-
 
 ### 1.3 Listen for connections via Relay (Circuit Relay v2)
 
