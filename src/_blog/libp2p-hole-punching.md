@@ -18,7 +18,8 @@ The below explains why we want to punch holes, into what we are punching those h
 
 Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you can not. Public computers can dial public computers. Non-public computers can dial public computers. But public computers can not dial non-public computers, nor can non-public computers dial other non-public computers.
 
-Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post.
+Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post, and assume worst case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
+
 
 (We will be using the term "computer" and "node" as synonyms from now on.)
 
