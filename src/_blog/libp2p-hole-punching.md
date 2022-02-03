@@ -172,4 +172,4 @@ If you want to:
 
 -   **Learn** more, check out the libp2p [documentation](https://docs.libp2p.io/) and [specification](https://github.com/libp2p/specs/).
 -   **Get involved**, check out the repository of your favorite libp2p implementation. Look out for "help wanted" labeled issues.
--   **Work** on things like the above fullt-time, [we are hiring](https://jobs.lever.co/protocol/8c03a123-4890-4265-96e1-0427bd7ec193).
+-   **Work** on things like the above fullt-time, [we are hiring](https://protocol.ai/join/).
