@@ -25,7 +25,7 @@ Note that we are focusing on overcoming firewalls today and ignore [NATs](https:
 
 ## Firewalls in a nutshell
 
-Firewalls control the bytes flowing in and out of a network. They usually do so using a state table of 5-tuples. A 5-tuple is used to identify a connection between two endpoints. It consists of the IP source address, the IP destination address, the transport protocol e.g. TCP or UDP, the source port number and the destination port number of a connection.
+Firewalls control the bytes flowing in and out of a network. They usually do so using a state table of 5-tuples. A 5-tuple is used to identify a connection between two endpoints. It consists of the IP source address, the IP destination address, the transport protocol e.g. TCP or UDP, the source port number and the destination port number of a connection. On TCP a firewall can determine the lifetime of these 5-tuples based on the TCP connection state (e.g. through `SYN` and `FIN`). On UDP, given that the protocol itself is connectionless, firewalls usually use timeouts to garbage collect the 5-tuple entries in the state table.
 
 | Source IP   | Destination IP | Transport Protocol | Source Port | Destination Port |
 |-------------|----------------|--------------------|-------------|------------------|
