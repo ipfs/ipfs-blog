@@ -122,17 +122,19 @@ If the remote accepts the reservation request, *B* can advertise itself as being
 
 (The above is a so-called [multiaddr](https://github.com/multiformats/multiaddr). It is a composable network addressing schema. The address above reads as: "You can reach peer *B* with the peer ID /B/<sub>PEER</sub><sub>ID</sub> via the relay at the address RELAY<sub>ADDR</sub>".)
 
-Note: It is very important that *B* keeps the outgoing connection to the relay node alive. *B* is not publicly dialable, thus the relay can never establish a connection to *B*. In case a connection request for *B* comes in through the relay, the relay depends on the initial connection from *B* to the relay in order to notify *B*.
+Note: It is very important that *B* keeps the outgoing connection to the relay node alive. *B* is not publicly dialable, thus the relay would not be able to establish a connection to *B*. When the relay receives a connection request for *B*, it relays it using the initial connection from *B*.
 
 ## Phase 2 - Hole punching
 
 Entering the next phase. Now that everything is prepared (phase 1), we can punch some holes (into firewalls).
 
-For that, let's imagine computer *A* got a hold of *B*'s relayed address through some mechanism. *A* possible scenario could in the IPFS world could e.g. be that *B* is providing some data and *A* discovered the data provider *B* on the Kademlia DHT. Given the relayed address *A* would now like to establish a direct connection to *B*. *B* is advertising a relayed address and not a direct address, *A* can thus assume that *B* is not directly dialable, but only dialable through a relay node.
+For that, let's imagine node *A* got a hold of *B*'s relayed address through some mechanism. One possible scenario in the IPFS world could be that *B* is advertising the availability of a specific chunk of data and *A* discovered the data provider *B* on the Kademlia DHT. Given the relayed address, *A* would now like to establish a direct connection to *B*. As *B* is advertising a relayed address and not a direct address, *A* knows that *B* is not directly dialable, but only dialable through a relay node.
 
 ### 2.1 Establish relayed connection (Circuit Relay v2)
 
-Before establishing a direct connection using hole punching, *A* first has to establish a relayed connection to *B* via the public relay node. *A* extracts the address of the relay node from *B*'s advertised relayed address and establishes a direct connection to the relay node. Once established *A* can request a relayed connection to *B* from the relay. The relay forwards said request to *B* which accepts the request. The relay once more forwards the acceptance to *A*. From now on, *A* and *B* can use the bi-directional channel over the relay to communicate.
+Before establishing a direct connection using hole punching, *A* first has to establish a relayed connection to *B* via the public relay node. Using the information contained in *B*'s advertised address, *A* first establishes a direct connection to the relay node, and then requests a relayed connection to *B* from the relay. The relay forwards said request to *B* which accepts the request. The relay once more forwards the acceptance to *A*. From now on, *A* and *B* can use the bi-directional channel over the relay to communicate.
+
+*A* and *B* upgrade the relayed connection with a security protocol like TLS. Thus the relay can not eavesdrop on the connection between the two.
 
 ![img](../assets/libp2p-hole-punching-relay-v2-connect.svg)
 
