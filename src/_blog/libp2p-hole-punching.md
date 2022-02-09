@@ -112,6 +112,8 @@ For now let's find a couple of public nodes in our peer-to-peer network that can
 
 Back to the previous question. How can a node be **indirectly** dialable through a relay node? This is enabled through the [libp2p Circuit Relay v2 protocol](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md). Drawing the connection to IETF's ICE once more, this would be the equivalent to the [TURN protocol](https://datatracker.ietf.org/doc/html/rfc5766).
 
+The [libp2p Circuit Relay v2 protocol](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md) protocol allows relay nodes to limit the resources used to relay connections (e.g. by number of connections, time and amount of bytes). In the case of IPFS this allows every public node in the network to serve as a relay without the fear of high resource consumption.
+
 For each of the public relay nodes discovered in the previous step, *B* would do the following: First *B* connects to the remote node and requests a so called "reservation", basically saying: "Hey, I am not dialable. Given that you are dialable, would you mind listening for incoming connections on my behalf, forwarding each of them to me over this connection?".
 
 ![img](../assets/libp2p-hole-punching-relay-v2-register.svg)
