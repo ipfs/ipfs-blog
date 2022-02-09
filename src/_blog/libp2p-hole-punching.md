@@ -65,7 +65,7 @@ Imagine that we have some mysterious mechanism to synchronize *A* and *B*. Myste
 Anyways, back to assuming the existence of a mysterious synchronization mechanism. Such mechanism would allow *A* and *B* to dial each other "at the same time".
 
 1.  *A*'s first packet (e.g. in the case of TCP a `SYN`) passes through router *A* and thus add a 5-tuple to router *A*'s state table. The same happens on the other side, where the packet sent by *B* triggers a 5-tuple being added to *B*'s router's state table. Packet *A* and packet *B* "punched holes" into their respective routers' firewalls.
-2.  Both packets, each then forwarded to the opposite router, would cross paths somewhere in this crazy thing called Internet. (Whether they really cross paths is something for another blog post, but still an amusing image to have in mind.)
+2.  Both packets arrive at the opposite router, after having crossed paths somewhere in this crazy thing called Internet. (Whether they really cross paths is something for another blog post, but still an amusing image to have in mind.)
 3.  Onces *A*'s packet arrives at router *B*, router *B* checks its state table, finds a 5-tuple previously added through the packet sent by *B*, and forwards the packet to computer *B*. Same with *B*'s packet, arriving at router *A*, matching a 5-tuple in router *A*'s state table and thus forwarded to computer *A*.
 
 In case you haven't noticed, we just fixed our problem. *A* and *B* can now happily exchange packets. Take a look at the sequence diagram below, depicting the same process.
@@ -144,9 +144,9 @@ Over the relayed connection established in the previous step, *A* and *B* can no
 
 There are two stages to do a *direct connection upgrade through a relay*, exchanging *Connect* messages and sending a single *Sync* message.
 
-First off, *A* sends a *Connect* message to *B*. That *Connect* message contains the external listening addresses of *A*. libp2p offers multiple mechanism to discover ones external listening addresses, e.g. via the [libp2p identify protocol.](https://github.com/libp2p/specs/blob/master/identify/README.md) Once sent out, *A* starts a timer. *B* receives the *Connect* message through the relayed connection via the relay and replies with a *Connect* message containing its external listening addresses. *B*'s *Connect* message eventually arrives at *A* which stops the timer and thus knows the round trip time between *A* and *B* via the relay. 
+First off, *A* sends a *Connect* message to *B*. That *Connect* message contains the addresses of *A*. libp2p offers multiple mechanism to discover ones addresses, e.g. via the [libp2p identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md). *B* receives the *Connect* message on the relayed connection and replies with a *Connect* message containing its (non-relayed) addresses. *A* measures the time between sending its and receiving *B*'s *Connect* message, and thereby determines the round trip time between *A* and *B* (on the relayed connection).
 
-Next *A* sends a *Sync* message to *B*. Once sent out, *A* does a countdown of half the round trip time between *A* and *B* via the relay. Once the countdown fires, *A* dials *B* via the addresses received in *B*'s *Connect*. On the other end, *B* eventually receives *A*'s *Sync* and directly on receival dials *A* with the addresses provided in *A*'s *Connect* message.
+Next *A* sends a *Sync* message to *B*. Once sent out, *A* waits for half the round trip time then it dials *B* via the addresses received in *B*'s *Connect*. On the other end, as soon as *B* receives *A*'s *Sync* message, it immediately dials *A* with the addresses provided in *A*'s *Connect* message.
 
 ![img](../assets/libp2p-hole-punching-dcutr.svg)
 
@@ -168,7 +168,7 @@ Quite a process, huh?!
 
 Hole punching in libp2p is fully specified in the [libp2p specification](https://github.com/libp2p/specs/). It is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p) and [rust-libp2p](https://github.com/libp2p/rust-libp2p/), though in the latter it is not yet released (see [tracking issue](https://github.com/libp2p/rust-libp2p/issues/2052)).
 
-Compatible hole punching client shipped in [go-ipfs 0.11](https://github.com/ipfs/go-ipfs/releases/tag/v0.11.0). For now, it is hidden behind the [`Swarm.EnableHolePunching`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmenableholepunching) configuration flag, but it is scheduled to be enabled by default later this year to improve the connectivity of peers behind firewalls.
+Compatible hole punching client shipped in [go-ipfs 0.11](https://github.com/ipfs/go-ipfs/releases/tag/v0.11.0). For now, it is hidden behind the [`Swarm.EnableHolePunching`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmenableholepunching) configuration flag, but we will enable it by default later this year to improve the connectivity of peers behind firewalls.
 
 If you want to:
 
