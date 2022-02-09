@@ -116,7 +116,7 @@ For each of the public relay nodes discovered in the previous step, *B* would do
 
 ![img](../assets/libp2p-hole-punching-relay-v2-register.svg)
 
-Once the remote accepted the reservation request, *B* can advertise itself as being reachable through the remote Relay node. In other words, instead of advertising its own IP address, which is useless given that *B* is not publicly dialable, *B* advertises a "relayed" address which contains the IP address of the remote relay node plus its own peer ID.
+If the remote accepts the reservation request, *B* can advertise itself as being reachable through the remote Relay node. In other words, instead of advertising its own IP address (which is useless given that *B* is not publicly dialable) *B* advertises a "relayed" address, which contains the IP address of the remote relay node plus its own peer ID.
 
     /<RELAY_ADDR>/p2p-circuit/<PEER_ID_B>
 
