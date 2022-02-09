@@ -74,11 +74,11 @@ In case you haven't noticed, we just fixed our problem. *A* and *B* can now happ
 
 Small note on alternative mechanisms. There are situations in which hole punching will not work, most notably when one of the nodes is behind a symmetric NAT. In such cases nodes can instead explicitly add port mappings, either manually or via [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). In addition as a last resort, nodes can leverage external [relay](https://docs.ipfs.io/concepts/glossary/#relay) nodes.
 
-# Project Flare
+# Hole Punching in libp2p
 
 Based on the above the concept of hole punching looks easy from a birds-eye view, but is a lot more complex than one would think. In addition, we didn't even cover the "mysterious mechanism to synchronize *A* and *B*". 
 
-Introducing **Project Flare**, libp2p's way of decentralized hole punching. Those familiar with [IETF's ICE](https://datatracker.ietf.org/doc/html/rfc8445) will spot many similarities. Project Flare is heavily inspired by ICE.
+Introducing libp2p's way of decentralized hole punching. Those familiar with [IETF's ICE](https://datatracker.ietf.org/doc/html/rfc8445) will spot many similarities. libp2p's hole punching mechanisms are heavily inspired by ICE.
 
 One can partition libp2p's way of hole punching in roughly 2 phases, a preparation phase and a hole punching phase. We will go into each of them in more detail further below.
 
@@ -98,13 +98,13 @@ In our case computer *B* from above determines whether it is dialable. It does s
 
 ![img](../assets/libp2p-hole-punching-autonat.svg)
 
-*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to try to dial it (*B*). *B* sends along a set of addresses that it assumes to be reachable under. Each of the contacted node goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e. whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addressses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase of Project Flare.
+*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to try to dial it (*B*). *B* sends along a set of addresses that it assumes to be reachable under. Each of the contacted node goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e. whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addressses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase.
 
 ### 1.2 Find closest public Relay nodes (e.g. through Kademlia)
 
 *B* knows that nodes outside its own home network can not dial it. Well, they "can not dial it **directly**". Though they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
 
-For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by Project Flare nor libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a [relay](https://docs.ipfs.io/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.io/concepts/glossary/#peer-id), or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
+For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a [relay](https://docs.ipfs.io/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.io/concepts/glossary/#peer-id), or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
 
 ![img](../assets/libp2p-hole-punching-autorelay.svg)
 
@@ -164,7 +164,7 @@ Quite a process, huh?!
 
 # Closing
 
-Project Flare, libp2p's way of doing hole punching, is fully specified in the [libp2p specification](https://github.com/libp2p/specs/). It is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p) and [rust-libp2p](https://github.com/libp2p/rust-libp2p/), though in the latter it is not yet released (see [tracking issue](https://github.com/libp2p/rust-libp2p/issues/2052)).
+Hole punching in libp2p is fully specified in the [libp2p specification](https://github.com/libp2p/specs/). It is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p) and [rust-libp2p](https://github.com/libp2p/rust-libp2p/), though in the latter it is not yet released (see [tracking issue](https://github.com/libp2p/rust-libp2p/issues/2052)).
 
 Compatible hole punching client shipped in [go-ipfs 0.11](https://github.com/ipfs/go-ipfs/releases/tag/v0.11.0). For now, it is hidden behind the [`Swarm.EnableHolePunching`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmenableholepunching) configuration flag, but it is scheduled to be enabled by default later this year to improve the connectivity of peers behind firewalls.
 
