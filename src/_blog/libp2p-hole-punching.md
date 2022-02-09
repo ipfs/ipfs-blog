@@ -16,7 +16,7 @@ The below explains why we want to punch holes, into what we are punching those h
 
 # The Problem with Firewalls
 
-Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you can not. Public computers can dial public computers. Non-public computers can dial public computers. But public computers can not dial non-public computers, nor can non-public computers dial other non-public computers.
+Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you can not. Public computers can dial public computers. Non-public computers can dial public computers. But public computers cannot dial non-public computers, nor can non-public computers dial other non-public computers.
 
 Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity this post focuses on firewalls and won't talk about NAT. In addition it assumes worst case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
 
@@ -72,7 +72,7 @@ In case you haven't noticed, we just fixed our problem. *A* and *B* can now happ
 
 ![img](../assets/libp2p-hole-punching-hole-punch.svg)
 
-Small note on alternative mechanisms. Hole punching will not always work, e.g. when behind a symetric NAT. In such cases nodes can instead explicitly add port mappings, either manually or via [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). In addition as a last resort, nodes can leverage external [relay](https://docs.ipfs.io/concepts/glossary/#relay) nodes.
+Small note on alternative mechanisms. There are situations in which hole punching will not work, most notably when one of the nodes is behind a symmetric NAT. In such cases nodes can instead explicitly add port mappings, either manually or via [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). In addition as a last resort, nodes can leverage external [relay](https://docs.ipfs.io/concepts/glossary/#relay) nodes.
 
 # Project Flare
 
