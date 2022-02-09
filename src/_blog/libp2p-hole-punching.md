@@ -64,7 +64,7 @@ Imagine that we have some mysterious mechanism to synchronize *A* and *B*. Myste
 
 Anyways, back to assuming the existence of a mysterious synchronization mechanism. Such mechanism would allow *A* and *B* to dial each other "at the same time".
 
-1.  *A*'s packet would pass through router *A* and thus add a 5-tuple to router *A*'s state table. Same on the other side, where the packet send by *B* would trigger a 5-tuple being added to *B*'s router's state table. Packet *A* and packet *B* "punch holes" into their router's firewalls.
+1.  *A*'s first packet (e.g. in the case of TCP a `SYN`) passes through router *A* and thus add a 5-tuple to router *A*'s state table. The same happens on the other side, where the packet sent by *B* triggers a 5-tuple being added to *B*'s router's state table. Packet *A* and packet *B* "punched holes" into their respective routers' firewalls.
 2.  Both packets, each then forwarded to the opposite router, would cross paths somewhere in this crazy thing called Internet. (Whether they really cross paths is something for another blog post, but still an amusing image to have in mind.)
 3.  Onces *A*'s packet arrives at router *B*, router *B* checks its state table, finds a 5-tuple previously added through the packet sent by *B*, and forwards the packet to computer *B*. Same with *B*'s packet, arriving at router *A*, matching a 5-tuple in router *A*'s state table and thus forwarded to computer *A*.
 
