@@ -18,7 +18,7 @@ The below explains why we want to punch holes, into what we are punching those h
 
 Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you can not. Public computers can dial public computers. Non-public computers can dial public computers. But public computers can not dial non-public computers, nor can non-public computers dial other non-public computers.
 
-Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity we will concentrate on firewalls in this blog post, and assume worst case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
+Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity this post focuses on firewalls and won't talk about NAT. In addition it assumes worst case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
 
 
 (We will be using the term "computer" and "node" as synonyms from now on.)
@@ -118,7 +118,7 @@ For each of the public relay nodes discovered in the previous step, *B* would do
 
 Once the remote accepted the reservation request, *B* can advertise itself as being reachable through the remote Relay node. In other words, instead of advertising its own IP address, which is useless given that *B* is not publicly dialable, *B* advertises a "relayed" address which contains the IP address of the remote relay node plus its own peer ID.
 
-    /<RELAY_ADDR>/p2p-circuit/<B_PEER_ID>
+    /<RELAY_ADDR>/p2p-circuit/<PEER_ID_B>
 
 (The above is a so-called [multiaddr](https://github.com/multiformats/multiaddr). It is a composable network addressing schema. The address above reads as: "You can reach peer *B* with the peer ID /B/<sub>PEER</sub><sub>ID</sub> via the relay at the address RELAY<sub>ADDR</sub>".)
 
