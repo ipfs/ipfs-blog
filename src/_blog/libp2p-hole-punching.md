@@ -16,7 +16,7 @@ The below explains why we want to punch holes, into what we are punching those h
 
 # The Problem with Firewalls
 
-Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you can not. Public computers can dial public computers. Non-public computers can dial public computers. But public computers cannot dial non-public computers, nor can non-public computers dial other non-public computers.
+Computers in today's Internet can be divided into two groups, public and non-public computers, i.e. those that you can dial and those that you cannot. Public computers can dial public computers. Non-public computers can dial public computers. But public computers cannot dial non-public computers, nor can non-public computers dial other non-public computers.
 
 Note that we are focusing on overcoming firewalls today and ignore [NATs](https://docs.ipfs.io/concepts/glossary#nat) for now. The process described in this blog post (hole punching in libp2p) enables overcoming both. For the sake of simplicity this post focuses on firewalls and won't talk about NAT. In addition it assumes worst case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
 
@@ -48,7 +48,7 @@ Let's look at an example. Two computers, *A* and *B*, each in their own network,
 
 The sequence diagram below depicts the scenario where computer *A* emitts a packet destined for *B*. Said packet is first send to *A*'s router, which in turn forwards it to *B*'s router.
 
-*A*'s router forwards the packet to *B*'s router. *B*'s router checks its state table, can not find a matching 5-tuple (IP<sub>A</sub>, IP<sub>B</sub>, TCP, Port<sub>A</sub>, Port<sub>B</sub>) and thus drops the packet. In a nutshell, this is why the Internet is divided into two, public and non-public computers.
+*A*'s router forwards the packet to *B*'s router. *B*'s router checks its state table, cannot find a matching 5-tuple (IP<sub>A</sub>, IP<sub>B</sub>, TCP, Port<sub>A</sub>, Port<sub>B</sub>) and thus drops the packet. In a nutshell, this is why the Internet is divided into two, public and non-public computers.
 
 Same applies to packets send from *B* to *A*, see second half of the sequence diagram.
 
@@ -102,7 +102,7 @@ In our case computer *B* from above determines whether it is dialable. It does s
 
 ### 1.2 Find closest public Relay nodes (e.g. through Kademlia)
 
-*B* now knows that nodes outside its local network cannot dial it. Well, they "can not dial it **directly**". Though they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
+*B* now knows that nodes outside its local network cannot dial it. Well, they "cannot dial it **directly**". Though they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
 
 For now let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/) each public nodes in the IPFS network serves as a [relay](https://docs.ipfs.io/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.io/concepts/glossary/#peer-id), or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
 
@@ -136,7 +136,7 @@ For that, let's imagine node *A* got a hold of *B*'s relayed address through som
 
 Before establishing a direct connection using hole punching, *A* first has to establish a relayed connection to *B* via the public relay node. Using the information contained in *B*'s advertised address, *A* first establishes a direct connection to the relay node, and then requests a relayed connection to *B* from the relay. The relay forwards said request to *B* which accepts the request. The relay once more forwards the acceptance to *A*. From now on, *A* and *B* can use the bi-directional channel over the relay to communicate.
 
-*A* and *B* upgrade the relayed connection with a security protocol like TLS. Thus the relay can not eavesdrop on the connection between the two.
+*A* and *B* upgrade the relayed connection with a security protocol like TLS. Thus the relay cannot eavesdrop on the connection between the two.
 
 ![img](../assets/libp2p-hole-punching-relay-v2-connect.svg)
 
