@@ -98,7 +98,7 @@ In our case computer *B* from above determines whether it is dialable. It does s
 
 ![img](../assets/libp2p-hole-punching-autonat.svg)
 
-*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to try to dial it (*B*). *B* sends along a set of addresses that it assumes to be reachable under. Each of the contacted node goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e. whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addressses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase.
+*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to it (*B*) on a set of addresses that it suspects it could be reachable under. Each of the contacted node goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e. whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addressses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase.
 
 ### 1.2 Find closest public Relay nodes (e.g. through Kademlia)
 
