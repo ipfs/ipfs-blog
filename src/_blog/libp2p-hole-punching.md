@@ -140,7 +140,7 @@ Before establishing a direct connection using hole punching, *A* first has to es
 
 ### 2.2. Coordinate simultaneous dial (DCUtR)
 
-Over the relayed connection established in the previous step, *A* and *B* can now coordinate the hole punch ultimately leading to a direct connection between *A* and *B*. This coordination is happening via the [libp2p DCUtR protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md) which stands for "Direct Connection Upgrade through Relay" protocol. In case you still remember the introduction to this blog post, this is the magical synchronization mechanism, or rather a pretty good synchronization mechanism, referred to earlier.
+Over the relayed connection established in the previous step, *A* and *B* can now coordinate the hole punch ultimately leading to a direct connection between *A* and *B*. This coordination is happening via the [libp2p DCUtR protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md) which stands for "Direct Connection Upgrade through Relay" protocol. In case you still remember the introduction to this blog post, this is the magical synchronization mechanism, or rather a pretty good time synchronization mechanism.
 
 There are two stages to do a *direct connection upgrade through a relay*, exchanging *Connect* messages and sending a single *Sync* message.
 
