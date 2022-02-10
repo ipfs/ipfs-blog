@@ -4,7 +4,7 @@ description: Learn how Lit Protocol and Audius are  leveraging IPFS and Filecoin
   the benefit of individual expression.
 author: ''
 date: 2022-02-10
-permalink: "/2022-02-10-ipfs-filecoin-impact-music-media-culture/"
+permalink: "/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/"
 translationKey: ''
 header_image: ''
 tags: []
