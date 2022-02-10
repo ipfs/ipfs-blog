@@ -6,7 +6,7 @@ author: ''
 date: 2022-02-10
 permalink: "/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/"
 translationKey: ''
-header_image: ''
+header_image: "/ipfs-blog-impact-on-music-media-and-culture.jpg"
 tags: []
 
 ---
