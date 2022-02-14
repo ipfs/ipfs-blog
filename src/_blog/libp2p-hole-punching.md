@@ -6,7 +6,7 @@ description:
 date: 2022-01-20
 permalink: "/2022-01-20-libp2p-hole-punching/"
 translationKey: ''
-header_image:
+header_image: /libp2p-hole-punching-banner.svg
 author: Max Inden
 ---
 
