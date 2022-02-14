@@ -92,7 +92,7 @@ Here is a sequence diagram of the whole process. Don't worry, we will go into ea
 
 ### 1.1 Determine whether one is dialable (AutoNAT)
 
-In step 1 of phase 1 a node determines whether it is dialable, in other words it determines whether computers outside of its own network can connect to it. The main protocol involved here is the [libp2p *AutoNAT* protocol](https://github.com/libp2p/specs/blob/master/autonat/README.md). (Worth drawing the connection to the corresponding ICE protocol [STUN](https://datatracker.ietf.org/doc/html/rfc5389) here.)
+In step 1 of phase 1 a node determines whether it is dialable, in other words it determines whether computers outside of its own network can connect to it. The main protocol involved here is the [libp2p *AutoNAT* protocol](https://github.com/libp2p/specs/blob/master/autonat/README.md). (The corresponding ICE protocol to libp2p's AutoNAT protocol (and libp2p's [identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md)) is [STUN](https://datatracker.ietf.org/doc/html/rfc8489).)
 
 In our case computer *B* from above determines whether it is dialable. It does so with the help of random public nodes, e.g. bootnodes of its peer-to-peer network.
 
