@@ -1,6 +1,7 @@
 ---
 title: 'Functionland: Using IPFS to Enable Free-to-Use Cloud Applications'
-description: ''
+description: The Fula Network provides an alternative to photo storage, file syncing,
+  password management & collab tools.
 author: ''
 date: 2022-02-22
 permalink: "/2022-02-22-functionland/"
