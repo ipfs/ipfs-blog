@@ -17,14 +17,14 @@ tags:
 
 Game development is at a completely different place than where it was a decade or two ago. Today’s games are rich multimedia and art experiences, but that depth comes at a cost. All the amazing design, code, and infrastructure in these releases are requiring similar advancements in storage solutions. As immersive games cross over the Web3 frontier, developers in the space will need tools at their disposal to organize, analyze, archive, and deploy massive amounts of data. [Gala Games](https://app.gala.games/about/) is a solution that meets these needs and helps different teams and projects develop games on chain. Learn more about Gala Games and how they’re using IPFS and Filecoin for their large amount of backup data in this [recent blog post](https://blog.ipfs.io/2022-02-27-gala-games-decentralized-gaming/).
 
-## **Brand New on IPFS**
+## **Brand New on IPFS ✨**
 
 1. [DAS has now integrated IPFS](https://dasystems.medium.com/bit-now-supports-ipfs-content-12c39489cfae)! You can now decentralize your websites with IPFS, and show your IPFS content on your bit.cc page - with no fee and no gas.
 2. Read how [Lit Protocol](https://litprotocol.com/) and [Audius](https://audius.co/) are leveraging IPFS and Filecoin to give artists individual expression in this [new blog post](https://blog.ipfs.io/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/).
 3. Check out [Studio 721](https://www.721.so/), an open source website for creating and uploading metadata and artwork to IPFS and deploying NFT smart contracts with the Ethereum and Polygon blockchains.
 4. Web3 builder Pancy is building an NFT store with AVAX and NFT.Storage, read [this Twitter thread](https://twitter.com/pancychain/status/1493650754346700803) to find out about his learnings throughout the process.
 
-## **Around the Ecosystem**
+## **Around the Ecosystem 🌎**
 
 Around a quarter of all ETHDenver Hackathon submissions were submitted for the IPFS and Filecoin bounties! Amazing work, builders. Stay tuned for a full ETHDenver recap.  
   
@@ -56,7 +56,7 @@ Earlier this month Max Inden and Dietrich Ayala spoke at FOSDEM ‘22! If you mi
 
 To stay up to date with all upcoming events and hackathons happening in the IPFS and Filecoin ecosystems, [check out the Hackathons website](https://hackathons.filecoin.io/).
 
-## Want to help build the new internet?
+## **Want to help build the new internet? 💼**
 
 [**Senior Social Media Manager**](https://boards.greenhouse.io/protocollabs/jobs/4282182004): Protocol Labs is seeking a Senior Social Media Manager to both build best-practice growth strategies, own social tactics, and posting across all of our various channels. Your goal is to assist, educate, and excite every member of our community. You will be responsible for communication with our community primarily on Twitter, Reddit, and Slack but also occasionally over email, Telegram, Discord and other channels. This audience includes everyone from industry leaders, Protocol Labs partners, and investors to miners, developers, and users. **Protocol Labs**, Remote.
 
