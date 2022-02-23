@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS News 171!
-description: Learn how decentralized storage can leverage DAOs and Web3 governance,
-  & more in IPFS News 170!
+description: Take a look at how IPFS & Filecoin serve as the storage for Gala Games’
+  large amounts of backup data & more!
 author: Emily Vaughan
-date: 2022-02-09
-permalink: "/weekly-170/"
+date: 2022-02-23
+permalink: "/weekly-171/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
