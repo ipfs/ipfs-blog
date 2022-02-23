@@ -11,40 +11,54 @@ tags:
 - weekly
 
 ---
-## **Not Your Data Storage Infrastructure, Not Your NFTs**
+## **Gala Games: Decentralized Gaming Supported by IPFS and Filecoin**
 
-![](../assets/ipfs-feb-8.png)
+![](../assets/ipfs-feb-16.png)
 
-In IPFS, resilience is the way that people individually and collectively participate in the network to store and govern data. It is context specific, and requires active participation of stakeholders to govern the storage of their data. Data storage resilience could be improved by leveraging existing Web3.0 data governance frameworks, such as Decentralized Autonomous Organizations (DAOs), to coordinate data storage infrastructure and utilization in a way that owners of data are able to govern how it is stored and used. To learn more about these concepts, read [**this piece**](https://kelsienabben.substack.com/p/not-your-storage-architecture-not) by Protocol Labs PhD Fellow, Kelsie Nabben, as she dives into how distributed storage and content addressing make end-user applications more resilient.
+Game development is at a completely different place than where it was a decade or two ago. Today’s games are rich multimedia and art experiences, but that depth comes at a cost. All the amazing design, code, and infrastructure in these releases are requiring similar advancements in storage solutions. As immersive games cross over the Web3 frontier, developers in the space will need tools at their disposal to organize, analyze, archive, and deploy massive amounts of data. [Gala Games](https://app.gala.games/about/) is a solution that meets these needs and helps different teams and projects develop games on chain. Learn more about Gala Games and how they’re using IPFS and Filecoin for their large amount of backup data in this [recent blog post](https://blog.ipfs.io/2022-02-27-gala-games-decentralized-gaming/).
 
 ## **Brand New on IPFS**
 
-1. Check out this recently released short (and fun!) tutorial from [**Pancy**](https://pancy.medium.com/) on how to ‘[**Build a Decentralized App on IPFS using WebAssembly**](https://pancy.medium.com/build-a-decentralized-app-on-ipfs-using-webassembly-d89238a3c9c6)’.
-2. [**js-libp2p v0.36.0**](https://github.com/libp2p/js-libp2p/releases/tag/v0.36.0) is now live! Read the [**release notes**](https://github.com/libp2p/js-libp2p/releases/tag/v0.36.0) for the breaking changes, features, bug fixes, and assets.
-3. Looking to get started with IPFS? Watch this brand new [**tutorial video**](https://www.youtube.com/watch?v=A7yZaYhrwyM)to see how you can download a go-ipfs distribution onto your Linux machine.
-4. KEN Labs and Protocol Labs have launched a 3 month [**Education Program**](https://kencloud.com/educate.html) with the intent to teach students about the Metaverse through the lens of IPFS, Filecoin, & Libp2p. [**Learn more**](https://kencloud.com/educate.html).
+1. [DAS has now integrated IPFS](https://dasystems.medium.com/bit-now-supports-ipfs-content-12c39489cfae)! You can now decentralize your websites with IPFS, and show your IPFS content on your bit.cc page - with no fee and no gas.
+2. Read how [Lit Protocol](https://litprotocol.com/) and [Audius](https://audius.co/) are leveraging IPFS and Filecoin to give artists individual expression in this [new blog post](https://blog.ipfs.io/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/).
+3. Check out [Studio 721](https://www.721.so/), an open source website for creating and uploading metadata and artwork to IPFS and deploying NFT smart contracts with the Ethereum and Polygon blockchains.
+4. Web3 builder Pancy is building an NFT store with AVAX and NFT.Storage, read [this Twitter thread](https://twitter.com/pancychain/status/1493650754346700803) to find out about his learnings throughout the process.
 
 ## **Around the Ecosystem**
 
-Attending ETHDenver? Join the Filecoin community for an evening of food, drinks and great company at the [**Filecoin & Friends Happy Hour**](https://www.eventbrite.com/e/filecoin-friends-happy-hour-at-ethdenver-tickets-259853878947) on Wednesday, February 16th in Denver! [**Details here**](https://www.eventbrite.com/e/filecoin-friends-happy-hour-at-ethdenver-tickets-259853878947).  
+Around a quarter of all ETHDenver Hackathon submissions were submitted for the IPFS and Filecoin bounties! Amazing work, builders. Stay tuned for a full ETHDenver recap.  
   
-OpenSea just released a [**new tutorial**](https://docs.opensea.io/docs/creating-an-nft-contract) for creating your own NFT smart contract that you can trade on OpenSea using IPFS, MetaMask, Ethers.js, and more!  
+NextDNS now supports and acts as an unfiltered gateway for ENS Domains, Unstoppable Domains, HNS, and IPFS. Read the [announcement](https://twitter.com/NextDNS/status/1491034351391305731).  
   
-The DINPS 2022 workshop is looking for papers related to IPFS, distributed storage, p2p networks, and edge computing. Submissions are open until March 5 with more information available on the [**official website**](https://research.protocol.ai/sites/dinps/calls/).  
+Interested in learning about the past, present, and future of Web3? Look no further! Check out this [video](https://www.youtube.com/watch?v=Yc1L566oEeU&t=1s) about exactly that from the Faber Web3 Webinar featuring David Dias.
+
   
-Community member markg85 is adding IPFS support to VideoLAN for Android. Check out the docs, source, and APK [**here**](https://bafybeiei4hefy7infgbcszbst5dgiz2buh3kkt77flrybe7bs5zxlac2ki.ipfs.dweb.link/).  
+The [Filecoin Virtual Machine Early Builders Program](https://fvm.filecoin.io/foundry) is seeking individuals with expertise and interest in smart contract programming, large-scale data, compute-over-data, data governance (data DAOs), and more. [Apply now](https://fvm.filecoin.io/foundry)! Applications close on February 24th.  
   
-[**Capyloon**](https://capyloon.org/) is an experimental user agent that aims to give you what you privacy and control through freedom from the constraints imposed by OS vendors and service providers who decide what you can or can't do online, and how. [**Check out**](https://capyloon.org/) the current prototype that explores support for IPFS.  
+Vivid Labs and Shopify are now enabling traditional e-commerce businesses to launch NFT collections and marketplaces, powered by Fileocin, NFT.Storage, Textile, and Estuary! [Learn more](https://cointelegraph.com/news/the-industry-will-need-to-have-dynamic-nfts-says-vivid-labs-ceo-halsey-minor).   
   
-Introducing [**Lens**](https://lens.dev/), a new social NFT platform that uses IPFS by default for addressing media assets and metadata!  
+As of last week, the Filecoin ecosystem and [Polygon Studios](https://polygonstudios.com/) announced that they are deepening their collaboration in NFTs, games, and the metaverse. [Learn more](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/).   
   
-The NFT.Storage team just released a [**2022 Roadmap**](https://nft.storage/blog/post/2022-01-31-q1-roadmap-and-beyond/), take a look to find out what’s coming this year.  
+Learn how to download an NFT image from IPFS and display it on a game object in this [tutorial](https://www.youtube.com/watch?v=-yc_n1uRb9M) by Blockchain Dapp Community. It uses the ChainSafe gaming SDK and Unity3D.  
   
-Considering joining a Filecoin and/or IPFS hackathon but still not convinced? [**Read this thread**](https://twitter.com/KenLabs_Web3/status/1490167630774542338?s=20&t=H6HeJPrCXbKomL5iRIWs8Q) by our friends at KEN Labs highlighting 10 reasons you should build with Protocol Labs today!  
+Earlier this month Max Inden and Dietrich Ayala spoke at FOSDEM ‘22! If you missed it, watch the recordings:
+
+* [Edges are Infrastructure: IPFS Everywhere for a More Resilient Future](https://fosdem.org/2022/schedule/event/ipfs/)
+* [Peer-to-Peer Hole Punching Without Centralized Infrastructure](https://fosdem.org/2022/schedule/event/peer_to_peer_hole_punching_without_centralized_infrastructure/)
+
+## Build with IPFS 🏗
+
+[BuildQuest](https://buildquest.ethglobal.com/), the 12-day game jam and metaverse hackathon begins on March 4th! Join to receive mentorship and support from the best companies and mentors in the space, plus you'll have a shot at winning one of over $100k in prizes available. [Sign up!](https://buildquest.ethglobal.com/)  
   
-The Ecosystem Working Group is a collection of 50+ people across 3+ organizations that are passionate about the long-term adoption of Web3 and dedicated to growing the Filecoin, IPFS and libp2p ecosystems. All hands meetings are hosted regularly to check in on progress and showcase the growth of various developers, applications, storage providers, clients and communities around the world. In case you missed it, [**check out the recording**](https://www.youtube.com/watch?v=-9rKtrwMkG0) from last week’s meeting.
+[ETHernals](https://ethernals.devfolio.co/) hosted by EthIndia kicks off on February 25th through March 27th. Apply within two days for an opportunity to explore the world of decentralization by building around DAOs, NFTs, DeFi, and more! [Learn more](https://ethernals.devfolio.co/).
+
+[Register now](https://emamo.com/event/web3con/tickets) for [Web3Con](https://www.web3con.dev/), hosted by DeveloperDAO. Join experts from the metaverse for Gather.town meetups, workshops and a hackathon starting from February 28 - March 6, 2022.
+
+To stay up to date with all upcoming events and hackathons happening in the IPFS and Filecoin ecosystems, [check out the Hackathons website](https://hackathons.filecoin.io/).
 
 ## Want to help build the new internet?
+
+[**Senior Social Media Manager**](https://boards.greenhouse.io/protocollabs/jobs/4282182004): Protocol Labs is seeking a Senior Social Media Manager to both build best-practice growth strategies, own social tactics, and posting across all of our various channels. Your goal is to assist, educate, and excite every member of our community. You will be responsible for communication with our community primarily on Twitter, Reddit, and Slack but also occasionally over email, Telegram, Discord and other channels. This audience includes everyone from industry leaders, Protocol Labs partners, and investors to miners, developers, and users. **Protocol Labs**, Remote.
 
 [**Community Manager**](https://valist.io/roles/community-manager.pdf): Valist is hiring a community manager to help expand outreach, community, and brand awareness. In this role, you will have a strong influence on our growth strategies, forge and develop great relationships with our community members and key partners, and create high quality content. You will be working closely with technical co-founders and engineers. **Valist**, Remote.
 
