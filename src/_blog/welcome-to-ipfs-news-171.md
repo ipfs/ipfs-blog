@@ -46,7 +46,7 @@ Earlier this month Max Inden and Dietrich Ayala spoke at FOSDEM ‘22! If you mi
 * [Edges are Infrastructure: IPFS Everywhere for a More Resilient Future](https://fosdem.org/2022/schedule/event/ipfs/)
 * [Peer-to-Peer Hole Punching Without Centralized Infrastructure](https://fosdem.org/2022/schedule/event/peer_to_peer_hole_punching_without_centralized_infrastructure/)
 
-## Build with IPFS 🏗
+## **Build with IPFS 🏗**
 
 [BuildQuest](https://buildquest.ethglobal.com/), the 12-day game jam and metaverse hackathon begins on March 4th! Join to receive mentorship and support from the best companies and mentors in the space, plus you'll have a shot at winning one of over $100k in prizes available. [Sign up!](https://buildquest.ethglobal.com/)  
   
