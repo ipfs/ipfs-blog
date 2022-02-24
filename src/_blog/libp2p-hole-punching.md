@@ -73,9 +73,7 @@ There are situations in which hole punching will not work, most notably when one
 
 # Hole Punching in libp2p
 
-Based on the above concept, hole punching looks fairly easy to do! But it is a lot more complex than one would think. In addition, we didn't even cover the _mysterious mechanism to synchronize *A* and *B*_. 
-
-Introducing libp2p's way of decentralized hole punching. Those familiar with [IETF's ICE](https://datatracker.ietf.org/doc/html/rfc8445) will spot many similarities. Libp2p's hole punching mechanisms are heavily inspired by ICE.
+Based on the above concept, hole punching looks fairly easy to do! But it is a lot more complex than one would think and we need to cover the _mysterious mechanism to synchronize *A* and *B*_.   This leads us to libp2p's way of decentralized hole punching, which was inspired by and is similar to the [IETF's ICE](https://datatracker.ietf.org/doc/html/rfc8445).
 
 One can partition libp2p's way of hole punching in roughly 2 phases, a preparation phase, and a hole punching phase. We will go into each of them in more detail further below.
 
@@ -95,9 +93,9 @@ In our case, computer *B* from above determines whether it is dialable. It does 
 
 ![img](../assets/libp2p-hole-punching-autonat.svg)
 
-*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to it (*B*) on a set of addresses that it suspects it could be reachable under. Each of the contacted nodes goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e., whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addresses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable, no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase.
+*B* reaches out to a subset of public nodes of its peer-to-peer network, asking each node to dial it (*B*) on a set of addresses that it suspects it could be reachable under. Each of the contacted nodes goes ahead and attempts to dial each of *B*'s addresses. They report the outcome back to *B*, i.e., whether they succeeded to dial *B*, including the address that succeeded, or whether they didn't succeed with any of the provided addresses. Based on a set of reports, *B* can gauge whether it is publicly dialable or not. In the case where *B* is publicly dialable, no hole punching is needed. In the case where *B* is not dialable, *B* proceeds to the next step of the first phase.
 
-### 1.2 Find closest public Relay nodes (e.g. through Kademlia)
+### 1.2 Find closest public Relay nodes (e.g., through Kademlia)
 
 *B* now knows that nodes outside its local network cannot dial it. Well, they "cannot dial it **directly**". However, they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
 
@@ -119,17 +117,17 @@ If the remote accepts the reservation request, *B* can advertise itself as being
 
     /<RELAY_ADDR>/p2p-circuit/<PEER_ID_B>
 
-(The above is a so-called [multiaddr](https://github.com/multiformats/multiaddr). It is a composable network addressing schema. The address above reads as: "You can reach peer *B* with the peer ID /B/<sub>PEER</sub><sub>ID</sub> via the relay at the address RELAY<sub>ADDR</sub>".)
+(The above is a so-called [multiaddr](https://github.com/multiformats/multiaddr). It is a composable network addressing schema. The address above reads as: "You can reach peer *B* with the peer ID ``PEER_ID_B`` via the relay at the address ``RELAY_ADDR``".)
 
 Note: It is very important that *B* keeps the outgoing connection to the relay node alive. *B* is not publicly dialable; thus, the relay would not be able to establish a connection to *B*. When the relay receives a connection request for *B*, it relays it using the initial connection from *B*.
 
 ## Phase 2 - Hole punching
 
-Entering the next phase. Now that everything is prepared (phase 1), we can punch some holes (into firewalls).
+Now that everything is prepared (phase 1), we can punch some holes (into firewalls).
 
 For that, let's imagine node *A* got a hold of *B*'s relayed address through some mechanism. One possible scenario in the IPFS world could be that *B* is advertising the availability of a specific chunk of data, and *A* discovered the data provider *B* on the Kademlia DHT. Given the relayed address, *A* would now like to establish a direct connection to *B*. As *B* is advertising a relayed address and not a direct address, *A* knows that *B* is not directly dialable but only dialable through a relay node.
 
-### 2.1 Establish relayed connection (Circuit Relay v2)
+### 2.1 Establish secured relayed connection (Circuit Relay v2)
 
 Before establishing a direct connection using hole punching, *A* first has to establish a relayed connection to *B* via the public relay node. Using the information contained in *B*'s advertised address, *A* first establishes a direct connection to the relay node and then requests a relayed connection to *B* from the relay. The relay forwards said request to *B*, which accepts the request. The relay once more forwards the acceptance to *A*. From now on, *A* and *B* can use the bi-directional channel over the relay to communicate.
 
@@ -139,13 +137,13 @@ Before establishing a direct connection using hole punching, *A* first has to es
 
 ### 2.2. Coordinate simultaneous dial (DCUtR)
 
-Over the relayed connection established in the previous step, *A* and *B* can now coordinate the hole punch, ultimately leading to a direct connection between *A* and *B*. This coordination is happening via the [libp2p DCUtR protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md) which stands for "Direct Connection Upgrade through Relay" protocol. In case you still remember the introduction to this blog post, this is the magical synchronization mechanism, or rather a pretty good time synchronization mechanism.
+Over the relayed connection established in the previous step, *A* and *B* can now coordinate the hole punch, ultimately leading to a direct connection between *A* and *B*. This coordination is happening via the [libp2p DCUtR protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md) which stands for "Direct Connection Upgrade through Relay" protocol. This is the magical synchronization mechanism, or rather a pretty good time synchronization mechanism.
 
 There are two stages to do a *direct connection upgrade through a relay*, exchanging *Connect* messages and sending a single *Sync* message.
 
-First off, *A* sends a *Connect* message to *B*. That *Connect* message contains the addresses of *A*. libp2p offers multiple mechanisms to discover one's addresses, e.g., via the [libp2p identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md). *B* receives the *Connect* message on the relayed connection and replies with a *Connect* message containing its (non-relayed) addresses. *A* measures the time between sending its and receiving *B*'s *Connect* message and thereby determines the round trip time between *A* and *B* (on the relayed connection).
+First off, *A* sends a *Connect* message to *B* through the relay. That *Connect* message contains the addresses of *A*. libp2p offers multiple mechanisms to discover one's addresses, e.g., via the [libp2p identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md). *B* receives the *Connect* message on the relayed connection and replies with a *Connect* message containing its (non-relayed) addresses. *A* measures the time between sending its and receiving *B*'s *Connect* message and thereby determines the round trip time between *A* and *B* (on the relayed connection).
 
-Next, *A* sends a *Sync* message to *B*. Once sent out, *A* waits for half the round trip time, then it dials *B* via the addresses received in *B*'s *Connect*. On the other end, as soon as *B* receives *A*'s *Sync* message, it immediately dials *A* with the addresses provided in *A*'s *Connect* message.
+Next, *A* sends a *Sync* message to *B* on the relayed connection. Once sent out, *A* waits for half the round trip time, then it dials *B* via the addresses received in *B*'s *Connect*. This is a direct dial not using the relayed connection.  On the other end, as soon as *B* receives *A*'s *Sync* message, it immediately directly dials *A* with the addresses provided in *A*'s *Connect* message.
 
 ![img](../assets/libp2p-hole-punching-dcutr.svg)
 
