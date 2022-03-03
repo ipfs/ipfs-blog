@@ -18,7 +18,7 @@ The below explains why we want to punch holes, what we are punching those holes 
 
 Computers in today's internet can be divided into two groups: public and non-public computers. In other words, those that you can dial and those that you cannot. Public computers can dial public computers. Non-public computers can dial public computers. But public computers cannot dial non-public computers, nor can non-public computers dial other non-public computers.
 
-For the sake of simplicity, this post focuses on firewalls and won't talk about Network Address Translation (NA). In addition, this post assumes a worst-case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
+For the sake of simplicity, this post focuses on firewalls and won't talk about Network Address Translation (NAT). In addition, this post assumes a worst-case scenario where neither of two peers is able to leverage [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or set up manual port forwarding.
 
 Also, we will be using the terms _computer_ and _node_ interchangeably. 
 
