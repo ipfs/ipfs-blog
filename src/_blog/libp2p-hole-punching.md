@@ -3,7 +3,7 @@ tags:
 - libp2p
 title: Hole punching in libp2p - Overcoming Firewalls
 description: 
-date: 2022-01-20
+date: 2022-03-03
 permalink: "/2022-01-20-libp2p-hole-punching/"
 translationKey: ''
 header_image: /libp2p-hole-punching-banner.svg
