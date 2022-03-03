@@ -191,6 +191,7 @@ pages:
 - src/_blog/js-ipfs-0.56.0-upgrades-to-new-multiformats-stack-and-adds.car-import-export.md
 - src/_blog/just-released-ipfs-cluster-0.14.0.md
 - src/_blog/libp2p-comes-to-protoschool.md
+- src/_blog/libp2p-hole-punching.md
 - src/_blog/meet-the-new-ipfs-blog-news.md
 - src/_blog/minting-fresh-nfts-with-ipfs.md
 - src/_blog/nebulus-the-virtual-ipfs-network.md
