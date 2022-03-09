@@ -1,60 +1,46 @@
 ---
 title: Welcome to IPFS News 172!
-description: Take a look at how IPFS & Filecoin serve as the storage for Gala Games’
-  large amounts of backup data & more!
+description: A peek into Functionland’s free alternative to Web 2.0 cloud applications
+  & more this in this edition of News!
 author: Emily Vaughan
-date: 2022-02-23
-permalink: "/weekly-171/"
+date: 2022-03-09
+permalink: "/weekly-172/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
 - weekly
 
 ---
-## **Gala Games: Decentralized Gaming Supported by IPFS and Filecoin**
+## **Functionland: Using IPFS to Enable Free-to-Use Cloud Applications**
 
 ![](../assets/ipfs-feb-16.png)
 
-Game development is at a completely different place than where it was a decade or two ago. Today’s games are rich multimedia and art experiences, but that depth comes at a cost. All the amazing design, code, and infrastructure in these releases are requiring similar advancements in storage solutions. As immersive games cross over the Web3 frontier, developers in the space will need tools at their disposal to organize, analyze, archive, and deploy massive amounts of data. [Gala Games](https://app.gala.games/about/) is a solution that meets these needs and helps different teams and projects develop games on chain. Learn more about Gala Games and how they’re using IPFS and Filecoin for their large amount of backup data in this [recent blog post](https://blog.ipfs.io/2022-02-27-gala-games-decentralized-gaming/).
+Truly free-to-use applications are a rarity in the Web 2.0 world because users are always paying with money, data, or attention. [**Functionland**](https://fx.land/)’s Fula Network is a Web3 alternative to this model. It’s a privacy-focused, user-powered platform that enables free-to-use applications and services by rewarding users for sharing storage and computer resources. At the same time, it compensates open-source developers for providing applications and services. Functionland chose IPFS to implement a decentralized take on the client-server model. [**Learn more**](https://blog.ipfs.io/2022-02-22-functionland/) about how it uses dedicated hardware to achieve this.
 
 ## **Brand New on IPFS ✨**
 
-1. [DAS has now integrated IPFS](https://dasystems.medium.com/bit-now-supports-ipfs-content-12c39489cfae)! You can now decentralize your websites with IPFS, and show your IPFS content on your bit.cc page - with no fee and no gas.
-2. Read how [Lit Protocol](https://litprotocol.com/) and [Audius](https://audius.co/) are leveraging IPFS and Filecoin to give artists individual expression in this [new blog post](https://blog.ipfs.io/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/).
-3. Check out [Studio 721](https://www.721.so/), an open source website for creating and uploading metadata and artwork to IPFS and deploying NFT smart contracts with the Ethereum and Polygon blockchains.
-4. Web3 builder Pancy is building an NFT store with AVAX and NFT.Storage, read [this Twitter thread](https://twitter.com/pancychain/status/1493650754346700803) to find out about his learnings throughout the process.
+1. [Libp2p](https://docs.ipfs.io/concepts/glossary/#libp2p) can punch holes now! Learn more about this new capability to overcome firewalls in a recent [blog post](https://blog.ipfs.io/2022-01-20-libp2p-hole-punching/) detailing how and why we can do this.
+2. [Filebase](https://filebase.com/), the first S3-compatible object storage platform for Web3, [has added support for the IPFS network](https://filebase.com/blog/introducing-support-for-ipfs-backed-by-decentralized-storage/?utm_source=newsletter&utm_medium=email&utm_campaign=IPFS_Newsletter).
+3. This year the IPFS and Filecoin communities are going big at SXSW. Join the community in Austin as we host three major events: NFT House on [March 11](https://www.eventbrite.com/e/nft-house-sxsw-day-1-nft-x-art-tickets-275786012387) and [March 12](https://www.eventbrite.com/e/nft-house-sxsw-day-2-nft-x-technology-tickets-276168095207), Blockchain Summit on [March 13](https://www.eventbrite.com/e/sustainable-blockchain-summit-sxsw-tickets-272887262147), and Web3 Hacker House on [March 14](https://www.eventbrite.com/e/web3-hacker-house-sxsw-day-1-tickets-276203972517)and [15](https://www.eventbrite.com/e/web3-hacker-house-sxsw-day-2-tickets-276204514137). Register now!
+4. Hedera’s [Hashaxis](https://hedera.com/users/hashaxis) NFT marketplace is relying on IPFS and Filecoin for the decentralized storage of its NFT content and metadata. The service is able to offer users highly efficient NFT minting, issuance, and transfers.
 
 ## **Around the Ecosystem 🌎**
 
-Around a quarter of all ETHDenver Hackathon submissions were submitted for the IPFS and Filecoin bounties! Amazing work, builders. Stay tuned for a full ETHDenver recap.  
+Watch the February All Hands [recap](https://www.youtube.com/watch?v=euVyc33ePFA) for the IPFS, Filecoin, and Libp2p ecosystems. Stay tuned for the next one happening March 24 by joining [Slack](https://filecoin.io/slack) or [Discord](https://discord.gg/5qCT7BzT).  
   
-NextDNS now supports and acts as an unfiltered gateway for ENS Domains, Unstoppable Domains, HNS, and IPFS. Read the [announcement](https://twitter.com/NextDNS/status/1491034351391305731).  
+Join the IPFS ecosystem at ETHGlobal’s [BuildQuest](https://buildquest.ethglobal.com/) Summit on March 11. The event is part of a 12-day hackathon for builders working on play-to-earn and metaverse projects. Some topics to be discussed include Building the Metaverse with IPFS and Good Randomness in Web3 and Gaming. You can already watch Discordian’s [Intro to IPFS and Blockchain](https://www.youtube.com/watch?v=wJO-1PIOmYw) and Pan Chasinga’s [IPFS Build 3D Voxel Characters in MagicaVoxel](https://www.youtube.com/watch?v=xFakIp8l-AA) workshop recorded at the BuildQuest Workshop Day from March 5th.  
   
-Interested in learning about the past, present, and future of Web3? Look no further! Check out this [video](https://www.youtube.com/watch?v=Yc1L566oEeU&t=1s) about exactly that from the Faber Web3 Webinar featuring David Dias.
-
+[Learn more](https://twitter.com/IPFS/status/1499754941098840067?s=20&t=7AL8tX0Eb77SyPI_ttdEPw) about [Geo Web](https://www.geoweb.network/), a project using IPFS and Filecoin to anchor content to geographic locations and create shared augmented reality experiences. Stay tuned for its mainnet launch this year!  
   
-The [Filecoin Virtual Machine Early Builders Program](https://fvm.filecoin.io/foundry) is seeking individuals with expertise and interest in smart contract programming, large-scale data, compute-over-data, data governance (data DAOs), and more. [Apply now](https://fvm.filecoin.io/foundry)! Applications close on February 24th.  
+Protocol Labs recently introduced the Decentralized Grants Marketplace - a new platform for large-scale grants within the Protocol Labs Network and beyond. If you are interested in getting started with meaningful work in web3, this is a great way to get involved. [Learn more and apply](https://www.dgm.xyz/).  
   
-Vivid Labs and Shopify are now enabling traditional e-commerce businesses to launch NFT collections and marketplaces, powered by Fileocin, NFT.Storage, Textile, and Estuary! [Learn more](https://cointelegraph.com/news/the-industry-will-need-to-have-dynamic-nfts-says-vivid-labs-ceo-halsey-minor).   
+[Watch](https://www.youtube.com/watch?v=tY-W1hzra3Q) Ally Haire share a brief history of IPFS and Filecoin at Developer DAO’s Web2Con 2022. She also talked about all the technology and devtools that are available as well as the interesting projects building on the protocols.  
   
-As of last week, the Filecoin ecosystem and [Polygon Studios](https://polygonstudios.com/) announced that they are deepening their collaboration in NFTs, games, and the metaverse. [Learn more](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/).   
+[Concept Art House](https://www.conceptarthouse.com/) is the latest addition to the long list of platforms and gaming studios that are relying on [NFT.Storage](https://nft.storage/) for the preservation of its designs. Read Blockchain Gamer’s [recent coverage](https://www.blockchaingamer.biz/news/17391/concept-art-house-partners-with-nft-storage-to-preserve-game-art-on-ipfs-and-filecoin/) of the integration.  
   
-Learn how to download an NFT image from IPFS and display it on a game object in this [tutorial](https://www.youtube.com/watch?v=-yc_n1uRb9M) by Blockchain Dapp Community. It uses the ChainSafe gaming SDK and Unity3D.  
+[START Hack](https://www.starthack.eu/) fosters deep entrepreneurial understanding and supercharges careers. This year, the hackathon features an exciting prize pool of CHF 30,000, engaging workshops by Konstantin Tkachuk on IPFS and Filecoin and how they shape the future of Web3, and much more! Up for the challenge? [Apply now](https://www.starthack.eu/individual-application) to join 300 like-minded students on March 23-25 in St. Gallen, Switzerland.  
   
-Earlier this month Max Inden and Dietrich Ayala spoke at FOSDEM ‘22! If you missed it, watch the recordings:
-
-* [Edges are Infrastructure: IPFS Everywhere for a More Resilient Future](https://fosdem.org/2022/schedule/event/ipfs/)
-* [Peer-to-Peer Hole Punching Without Centralized Infrastructure](https://fosdem.org/2022/schedule/event/peer_to_peer_hole_punching_without_centralized_infrastructure/)
-
-## **Build with IPFS 🏗**
-
-[BuildQuest](https://buildquest.ethglobal.com/), the 12-day game jam and metaverse hackathon begins on March 4th! Join to receive mentorship and support from the best companies and mentors in the space, plus you'll have a shot at winning one of over $100k in prizes available. [Sign up!](https://buildquest.ethglobal.com/)  
-  
-[ETHernals](https://ethernals.devfolio.co/) hosted by EthIndia kicks off on February 25th through March 27th. Apply within two days for an opportunity to explore the world of decentralization by building around DAOs, NFTs, DeFi, and more! [Learn more](https://ethernals.devfolio.co/).
-
-[Register now](https://emamo.com/event/web3con/tickets) for [Web3Con](https://www.web3con.dev/), hosted by DeveloperDAO. Join experts from the metaverse for Gather.town meetups, workshops and a hackathon starting from February 28 - March 6, 2022.
-
-To stay up to date with all upcoming events and hackathons happening in the IPFS and Filecoin ecosystems, [check out the Hackathons website](https://hackathons.filecoin.io/).
+Protocol Labs is launching a public goods challenge for teams building on the IPFS or Filecoin stack to upgrade their documentation (developer docs, blogposts, tutorials, etc.) and gather strong user feedback. Over $80k in potential rewards are available for teams in the 3-month challenge - [view the full details](https://github.com/protocol/Network-Funding/blob/main/Documentation_challenge.md) and [apply](https://docs.google.com/forms/d/e/1FAIpQLSdmJki5UoaRMlrWDfxeVZYSw3CpfDT2pkGM8fS6cWl404bCnw/viewform?usp=sf_link) for your team to participate.
 
 ## **Want to help build the new internet? 💼**
 
