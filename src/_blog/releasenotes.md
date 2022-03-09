@@ -4,6 +4,14 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: go-ipfs 0.12.0 Release
+  date: 2022-02-18
+  publish_date: 
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.12.0
+  tags:
+  - blockstore
+  - go-ipfs
+  - IPFS Desktop
 - title: js-libp2p v0.36.0
   date: 2022-01-25
   publish_date: 
