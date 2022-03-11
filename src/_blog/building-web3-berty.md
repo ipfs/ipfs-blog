@@ -14,7 +14,7 @@ We're excited to share another video in the[ Building Web3 Video Series](https:/
 
 Imagine having the ability to communicate freely and securely in any nation, in any situation, at any time—with or without internet access.
 
-@\[youtube\](cC-tXnMyiBc)
+@[youtube](cC-tXnMyiBc)
 
 We’re lucky to live in a time where connecting with people anywhere in the world is not a question of if, but how fast and how often. Yet this power is not without risks. All centralized networks face threats to their stability and security. Web3 came about because Web2 is not able to offer the security and stability we need. Securing fragile apps on a fragile base is a nonstarter: That’s why engineers and developers are focused on building and strengthening Web3, and why Protocol Labs supports their efforts.
 
