@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS News 173!
-description: A peek into Functionland’s free alternative to Web 2.0 cloud applications
-  & more this in this edition of News!
+description: Communicate freely and securely everywhere with or without internet access,
+  plus more in IPFS News 173.
 author: Emily Vaughan
-date: 2022-03-09
-permalink: "/weekly-172/"
+date: 2022-03-23
+permalink: "/weekly-173/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
