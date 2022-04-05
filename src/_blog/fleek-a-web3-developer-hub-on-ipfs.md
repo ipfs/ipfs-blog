@@ -15,9 +15,9 @@ Fleek is a development platform that allows developers to host dapps, websites, 
 
 Through Fleek’s low-code application, any user can host frontends and store data on IPFS and Filecoin’s decentralized storage protocols. In this way, the platform is rebuilding the web’s stack from the ground up to make it permissionless, trustless, and community-owned.
 
-In only two years, Fleek has accumulated over 11,000 sites, 30,000 monthly deployments, and over 1 million files. These are all being stored on IPFS and backed up to Filecoin monthly by the dApps and websites that choose the platform to host their frontends, metadata, and files.
+In only two years, Fleek has accumulated over 30,000 sites, 1 million monthly file uploads, and over 40,000 users. These are all being stored on IPFS and backed up to Filecoin monthly by the dApps and websites that choose the platform to host their frontends, metadata, and files.
 
-### **IPFS Integration** 
+### **IPFS Integration**
 
 There are two ways in which Fleek’s implementation makes use of IPFS:
 
