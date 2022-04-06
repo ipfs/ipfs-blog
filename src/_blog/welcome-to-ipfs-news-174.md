@@ -11,22 +11,38 @@ tags:
 - weekly
 
 ---
-## **Building Web3: Berty**
+## **Fleek: A Web3 Developer Hub on IPFS**
 
-![](../assets/143057346-d60efc95-680d-4ade-a4ab-3320de5c42bd.png)
+![](../assets/ipfs-2022-03-24.png)
 
-There are known security issues in current Web 2.0 messaging services built on centralized networks. [Berty](https://berty.tech/) addresses these issues with a distributed communication protocol that takes advantage of the decentralized infrastructure provided by IPFS to build an untraceable messaging system. It’s completely peer-to-peer, open-source, and it can operate over bluetooth, without an internet connection. [Read more](https://blog.ipfs.io/2022-03-11-berty/) on the IPFS blog and join the [Berty community](https://berty.tech/community).
+Developers looking to build on the Web3 stack have a low-code solution that allows them to host their dapps, websites, and frontends using decentralized infrastructure. Fleek orchestrates services like IPFS, Filecoin, and ENS to provide a viable alternative to Web 2.0 counterparts like AWS, and DNS. [**Find out more**](https://blog.ipfs.io/2022-04-24-fleek/) about how the tool is helping to make the web permissionless, trustless, and community-owned.
 
 ## **Brand New on IPFS ✨**
 
-1. Recently Michelle Lee joined Patrick Wheeler and Jason Gauci on [The Programming Throwdown](https://www.programmingthrowdown.com/2022/03/129-web-30-breaking-free-from-client.html) to talk about how Web3 disrupts the client-server model and introduces trust back into the web. More importantly, they discussed IPFS’ role in powering these developments. [Listen to the episode](https://www.programmingthrowdown.com/2022/03/129-web-30-breaking-free-from-client.html).
-2. Applications for the [Faber Filecoin Accelerator](https://filecoin.faber.vc/) are open until March 31st. Join the fully-remote, 12-week program to work with entrepreneurs and engineers solving the hardest problems in getting new Web3 infrastructure and applications off the ground. [Apply now](https://docs.google.com/forms/d/e/1FAIpQLScNVB9IFo58k3fY3pEDnF4eHybye-9MywIAFmTcsJZjvC4HwA/viewform?usp=pp_url)!
-3. Cryptography is going to space! Stanford PhDs at [Cryptostat](https://www.cryptosat.io/) are in collaboration with the community to launch Bernardo David and Carsten Baum’s work on a new time-based cryptographic primitive known as the Verifiable Delay Function (VFD) powered by unique satellite properties. Read the official [announcement](https://medium.com/cryptosatellite/cryptosat-and-protocol-labs-collaborate-to-take-cryptography-to-space-e5d78e89cdfe).
-4. ETHGlobal’s [BuildQuest](https://buildquest.ethglobal.com/) Summit is coming to an end. [Watch](https://ethglobal.tv/buildquest-finale-e6eda9b3) the demos of the top 10 teams and see all the winners of this The 12-day hackathon focused on gaming and the metaverse. You can also watch Discordian’s [Intro to IPFS and Blockchain](https://www.youtube.com/watch?v=wJO-1PIOmYw) and Pan Chasinga’s [IPFS Build 3D Voxel Characters in MagicaVoxel](https://www.youtube.com/watch?v=xFakIp8l-AA) workshop recorded at the BuildQuest Workshop Day from March 5th.
-5. Mark your calendar for Konstantin Tkachuk’s Intro to IPFS and Filecoin and How They Shape the Future of Web3 on March 24. Besides a high-level look at what the systems do, Konstantin will go into their potential, applications, and user-friendly tools for developers in this 45-minute workshop. [Set a reminder](https://www.youtube.com/watch?v=WPfPIjN8nHo) on Youtube.
-6. [Take a look](https://www.youtube.com/watch?v=0dB085fAJMQ) at this quick tutorial on how to upload your NFTs to IPFS via Pinata and Rampp.xyz by Tim Carambat. Everything is handled from your browser and requires no coding at all.
-7. Watch Yusuf Abdulrahman’s [video](https://www.youtube.com/watch?v=nOpUJgOrALg) on how to upload files to IPFS directly from your browser as well with a [dedicated tool](https://anarkrypto.github.io/upload-files-to-ipfs-from-browser-panel/public/#).
-8. Read through Rounak Banik’s two-part guide on creating generative art NFTs and storing their metadata on IPFS. He’ll take you through the [generation process](https://dev.to/rounakbanik/create-generative-nft-art-with-rarities-1n6f) in Python to [pinning](https://dev.to/rounakbanik/working-with-nft-metadata-ipfs-and-pinata-3ieh) the data on IPFS with Pinata.
+1. [**NFT.Storage**](https://nft.storage/) is [**celebrating**](https://nft.storage/blog/post/2022-03-29-50M-uploads/) 50 million uploads as it continues to provide developers and applications with a streamlined way to store virtual assets and their metadata on IPFS and Filecoin.
+2. Meet [**mscape.io**](https://mscape.io/), a new community-driven landscape framework for metaverse projects using IPFS and Filecoin.
+3. [**Skiff**](https://www.skiff.org/), a privacy-focused workspace, has [**added**](https://twitter.com/skiffprivacy/status/1508494894775488514?s=20&t=NKUo--ndbWPpqmbDVtJAiQ) the option to embed and share files to its platform that are automatically stored on IPFS.
+4. NFTPort and NFT.Storage have been investigating data quality in the NFT industry - they found that over 12.8% of NFTs are not retrievable! [**Read on**](https://nft.storage/blog/post/2022-04-04-missing-nfts/).
+
+## **Around the ecosystem 🌎**
+
+Stay in loop with the IPFS, Filecoin, and lib2p2 communities by watching the [**full recording**](https://www.youtube.com/watch?v=i2t_rOkiTcw) of the March Ecosystem WG All Hands meeting. Reach out to **ateam@protocol.ai** to present in the next one.  
+  
+Protocol Labs Research is accepting applications for Ph.D. and Postdoc Fellowships as well as Investigator and Nucleation Grants until April 14th. Get more information on how to apply on the [**dedicated website**](https://grants.protocol.ai/).  
+  
+Get into the nitty-gritty of IPFS with this thorough [**technical explanation**](https://www.youtube.com/watch?v=_Bgw86IszDU) by Argos Open Tech on how the system uses Merkle DAGs, distributed hash tables, and a variation of the BitSwap protocol.  
+  
+The Tachyon 6 Filecoin Launchpad Accelerator III has kicked off and is transitioning toward a Global Networked Startup Ecosystem DAO. Read this [**thread**](https://twitter.com/TachyonAccel/status/1511033209441726468?s=20&t=f1ydg-2VXozxIMy5USIuSA) to learn more about it.  
+  
+Protocol Labs’ [**DocsDocs challenge**](https://github.com/protocol/Network-Funding/blob/main/Documentation_challenge.md) is ongoing! Teams building on the IPFS or Filecoin stack looking to upgrade their documentation (developer docs, blogposts, tutorials, etc.) and gather strong user feedback are eligible. Over $80k in rewards are available - view the full details [**here**](https://github.com/protocol/Network-Funding/blob/main/Documentation_challenge.md) and apply for your team to participate [**here**](https://docs.google.com/forms/d/e/1FAIpQLSdmJki5UoaRMlrWDfxeVZYSw3CpfDT2pkGM8fS6cWl404bCnw/viewform?usp=sf_link).  
+  
+[**Check out**](https://twitter.com/Filebase/status/1508490413467914248?s=20&t=MmA1zpk5JelikuUupgGwiw) Filebase’s guide on how to build an image gallery application with IPFSand Tailwind CSS and deploy it to Web3 in seconds. More information in the [**docs**](https://docs.filebase.com/knowledge-base/web3-resources/web3-tutorials/tailwind-css-build-an-image-gallery-app-with-ipfs-and-tailwind-css).  
+  
+The Hedera H22 Hackathon is underway until May 16th with prizes for the best use cases of IPFS and Filecoin. [**Join now**](https://hedera22.devpost.com/)!  
+  
+Learn how to upload a website to the IPFS node run by [**Cybercon**](https://www.cybercon.com/)’s Web3 hosting services in this quick [**tutorial**](https://youtu.be/1YnInXG682U).  
+  
+[**Splice**](https://getsplice.io/#/)’s generative NFT platform is in the #IPFSWinningBuilders Hall of Fame spotlight. Find out more about the project on [**Twitter**](https://twitter.com/IPFS/status/1508952788583165957?s=20&t=MmA1zpk5JelikuUupgGwiw).
 
 ## **Want to help build the new internet? 💼**
 
