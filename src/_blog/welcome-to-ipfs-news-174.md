@@ -1,13 +1,15 @@
 ---
 title: Welcome to IPFS News 174!
-description: Communicate freely and securely everywhere with or without internet access,
-  plus more in IPFS News 173.
+description: Orchestrating the Decentralized Web’s Stack with Fleek, plus more in
+  IPFS News 174.
 author: Emily Vaughan
-date: 2022-03-23
-permalink: "/weekly-173/"
+date: 2022-04-06
+permalink: "/weekly-174/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
+- NFTs
+- DAG
 - weekly
 
 ---
