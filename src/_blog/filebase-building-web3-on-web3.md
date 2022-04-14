@@ -2,7 +2,7 @@
 title: 'Filebase: Building Web3 on Web3'
 description: Filebase provides a unique IPFS pinning service to make decentralized
   storage as easy as Web 2.0 cloud storage
-author: ''
+author: Zac Cohen
 date: 2022-04-14
 permalink: "/2022-04-14-filebase/"
 translationKey: ''
