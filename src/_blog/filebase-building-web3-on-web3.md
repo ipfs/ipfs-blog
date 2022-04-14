@@ -42,8 +42,8 @@ Filebase spent a lot of time researching and analyzing these other pinning servi
 
 Filebase is excited to share that it now supports IPFS with a proprietary feature that makes its IPFS pinning service unique. Files that are pinned onto IPFS using Filebase are actually being stored on Sia, one of the leading decentralized storage networks. This creates an environment where the data storage layer for Filebase IPFS nodes is highly available, and most importantly, geo-redundant by default. A Filebase edge location could suffer a complete outage, and other locations will simply pick up the slack. This is made possible because the underlying data storage layer is decentralized.
 
-  
-  
+![](../assets/image-5.png)
+
 There's a massive cost benefit too; this is available to all Filebase users for $5.99 per TB while the integration remains in the beta stage. This is a significantly reduced cost compared to other pinning services today, charging \~$100-$150 per TB.
 
 ## **What’s Next for Filebase**
