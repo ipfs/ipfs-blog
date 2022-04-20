@@ -1,50 +1,44 @@
 ---
 title: Welcome to IPFS News 175!
-description: Orchestrating the Decentralized Web’s Stack with Fleek, plus more in
-  IPFS News 174.
+description: Find out how Filebase uses IPFS to create a highly available, secure,
+  & geo-redundant storage layer & more!
 author: Emily Vaughan
-date: 2022-04-06
-permalink: "/weekly-174/"
+date: 2022-04-20
+permalink: "/weekly-175/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
+- libp2p
 - NFTs
-- DAG
 - weekly
 
 ---
-## **Fleek: A Web3 Developer Hub on IPFS**
+## **Filebase: Building Web3 with Web3**
 
 ![](../assets/ipfs-2022-03-24.png)
 
-Developers looking to build on the Web3 stack have a low-code solution that allows them to host their dapps, websites, and frontends using decentralized infrastructure. Fleek orchestrates services like IPFS, Filecoin, and ENS to provide a viable alternative to Web 2.0 counterparts like AWS, and DNS. [**Find out more**](https://blog.ipfs.io/2022-04-24-fleek/) about how the tool is helping to make the web permissionless, trustless, and community-owned.
+Filebase is the world’s first object storage platform powered by decentralized storage networks, unifying multiple networks under a single S3-compatible API to make decentralized storage accessible and easy to use. Its proprietary edge-caching technology achieves industry-leading performance when writing and fetching data to and from Web3, making it a highly-secure, geo-redundant alternative to traditional cloud storage at a fraction of the costs. [Keep reading](https://blog.ipfs.io/2022-04-14-filebase/) to learn more about its unique implementation of IPFS pinning services.
 
 ## **Brand New on IPFS ✨**
 
-1. [**NFT.Storage**](https://nft.storage/) is [**celebrating**](https://nft.storage/blog/post/2022-03-29-50M-uploads/) 50 million uploads as it continues to provide developers and applications with a streamlined way to store virtual assets and their metadata on IPFS and Filecoin.
-2. Meet [**mscape.io**](https://mscape.io/), a new community-driven landscape framework for metaverse projects using IPFS and Filecoin.
-3. [**Skiff**](https://www.skiff.org/), a privacy-focused workspace, has [**added**](https://twitter.com/skiffprivacy/status/1508494894775488514?s=20&t=NKUo--ndbWPpqmbDVtJAiQ) the option to embed and share files to its platform that are automatically stored on IPFS.
-4. NFTPort and NFT.Storage have been investigating data quality in the NFT industry - they found that over 12.8% of NFTs are not retrievable! [**Read on**](https://nft.storage/blog/post/2022-04-04-missing-nfts/).
+1. Check out [NFT.Storage](https://nft.storage/)’s new [NFTUp](https://nft.storage/blog/post/2022-04-05-announcing-nftup/) tool, an application that lets you easily drag and drop files and directories to the service.
+2. [Plebbit](https://plebbit.eth.link/#/) [received](https://medium.com/@plebbit/plebbit-receives-grant-from-protocol-labs-ipfs-eth2-filecoin-to-build-decentralized-reddit-3173413f274) a [Next Step Microgrant](https://github.com/ipfs/devgrants/issues/143) to build a decentralized alternative to Reddit using IPFS for storage.
+3. The [IPFS Meetup](https://lu.ma/IPFS.Devconnect) at [Devconnect](https://devconnect.org/) took place today, April 19th. Watch a [recording](https://www.youtube.com/watch?v=mOJOHed_X_M) of the event featuring talks and workshops from IPFS, Protocol Labs, and Fluence Labs.
+4. [DeveloperDAO](https://developerdao.notion.site/Getting-Started-with-Developer-DAO-2bddd332c51a4957b0b83f60f9fa4ebe) has announced the winners of the [Web3Con 2022](https://www.web3con.dev/hackathon) hackathon. [Check out](https://twitter.com/developer_dao/status/1515016114601795585?s=20&t=Tu7ARGECc7E47pjWlH0r2g) who won the IPFS and Filecoin bounties.
 
 ## **Around the ecosystem 🌎**
 
-Stay in loop with the IPFS, Filecoin, and lib2p2 communities by watching the [**full recording**](https://www.youtube.com/watch?v=i2t_rOkiTcw) of the March Ecosystem WG All Hands meeting. Reach out to **ateam@protocol.ai** to present in the next one.  
-  
-Protocol Labs Research is accepting applications for Ph.D. and Postdoc Fellowships as well as Investigator and Nucleation Grants until April 14th. Get more information on how to apply on the [**dedicated website**](https://grants.protocol.ai/).  
-  
-Get into the nitty-gritty of IPFS with this thorough [**technical explanation**](https://www.youtube.com/watch?v=_Bgw86IszDU) by Argos Open Tech on how the system uses Merkle DAGs, distributed hash tables, and a variation of the BitSwap protocol.  
-  
-The Tachyon 6 Filecoin Launchpad Accelerator III has kicked off and is transitioning toward a Global Networked Startup Ecosystem DAO. Read this [**thread**](https://twitter.com/TachyonAccel/status/1511033209441726468?s=20&t=f1ydg-2VXozxIMy5USIuSA) to learn more about it.  
-  
-Protocol Labs’ [**DocsDocs challenge**](https://github.com/protocol/Network-Funding/blob/main/Documentation_challenge.md) is ongoing! Teams building on the IPFS or Filecoin stack looking to upgrade their documentation (developer docs, blogposts, tutorials, etc.) and gather strong user feedback are eligible. Over $80k in rewards are available - view the full details [**here**](https://github.com/protocol/Network-Funding/blob/main/Documentation_challenge.md) and apply for your team to participate [**here**](https://docs.google.com/forms/d/e/1FAIpQLSdmJki5UoaRMlrWDfxeVZYSw3CpfDT2pkGM8fS6cWl404bCnw/viewform?usp=sf_link).  
-  
-[**Check out**](https://twitter.com/Filebase/status/1508490413467914248?s=20&t=MmA1zpk5JelikuUupgGwiw) Filebase’s guide on how to build an image gallery application with IPFSand Tailwind CSS and deploy it to Web3 in seconds. More information in the [**docs**](https://docs.filebase.com/knowledge-base/web3-resources/web3-tutorials/tailwind-css-build-an-image-gallery-app-with-ipfs-and-tailwind-css).  
-  
-The Hedera H22 Hackathon is underway until May 16th with prizes for the best use cases of IPFS and Filecoin. [**Join now**](https://hedera22.devpost.com/)!  
-  
-Learn how to upload a website to the IPFS node run by [**Cybercon**](https://www.cybercon.com/)’s Web3 hosting services in this quick [**tutorial**](https://youtu.be/1YnInXG682U).  
-  
-[**Splice**](https://getsplice.io/#/)’s generative NFT platform is in the #IPFSWinningBuilders Hall of Fame spotlight. Find out more about the project on [**Twitter**](https://twitter.com/IPFS/status/1508952788583165957?s=20&t=MmA1zpk5JelikuUupgGwiw).
+The [Paris P2P Festival](https://p2p.paris/en/#page-top) is happening from April 27th to May 1st. Join IPFS and lib2p2 core developers, maintainers, and a vibrant research community in the City of Light. [Get your ticket now](https://p2p.paris/en/event/festival-1/)!
+
+[Register](https://gssoc.girlscript.tech/#card-1) for the GirlScript Summer of Code! The three-month long open-source program will continue until May 31st. Learn more on the [official website](https://gssoc.girlscript.tech/#about-gssoc).
+
+Watch this [tutorial](https://www.youtube.com/watch?v=9pUqOhORsYI) from the IPFS community to learn how to set up a publish/subscribe (pubsub) system using IPFS and libp2p for decentralized storage.
+
+Review the basics of IPFS with [Alex Gomez’](https://twitter.com/AlexWGomezz)s easy to understand [overview](https://www.one37pm.com/nft/what-is-ipfs) of the protocol on One37PM.
+
+Watch this [video](https://www.youtube.com/watch?v=oAczLvgDnTg) on how to keep your Rarible NFTs safe by pinning them on IPFS. You’ll learn how to use [Pinata](https://www.pinata.cloud/) to easily interact with the protocol.
+
+Learn how to create a Web3 blog with this [tutorial](https://www.youtube.com/watch?v=Pg54ouq3CjE) hosted by ETHGlobal. The video takes you through the steps for setting up the necessary smart contracts and integrating IPFS as a decentralized storage solution.
 
 ## **Want to help build the new internet? 💼**
 
@@ -52,7 +46,7 @@ Learn how to upload a website to the IPFS node run by [**Cybercon**](https://www
 
 [**Startup Operator, Asia Ecosystem Growth**](https://boards.greenhouse.io/protocollabs/jobs/4382529004)**:** As a member of the Ecosystem Growth team at Protocol Labs, you’ll scope, lead and manage initiatives that help grow Filecoin storage providers in Asia, with an initial focus in China. Your work will span multiple areas, including business development, process improvement, project management, analytics, and more. In this role, you will work closely with the Ecosystem team’s leadership to structure and solve complex problems, then drive solutions forward across the organization. **Protocol Labs**, Remote.
 
-[**Community Manager**](https://valist.io/roles/community-manager.pdf): Valist is hiring a community manager to help expand outreach, community, and brand awareness. In this role, you will have a strong influence on our growth strategies, forge and develop great relationships with our community members and key partners, and create high quality content. You will be working closely with technical co-founders and engineers. **Valist**, Remote.
+[**Rust Engineer**](https://angel.co/company/fleekhq/jobs/1505997-rust-engineer-remote): Fleek is looking for an experienced and dedicated Rust Engineer to help build new canister-based products and services on Dfinity's Internet Computer. [**Fleek**](https://fleek.co/) is an Open Web developer platform with everything you need to build sites and apps on the new web and the underlying protocols that power it (Dfinity, Ethereum, IPFS, Filecoin, and more). From hosting, storage, gateways, domains, databases, and more, Fleek has everything you need to seamlessly build and manage Open Web sites. **Fleek**, Remote.
 
 [**Blockchain Engineering Lead**](https://jobs.lever.co/3box/bdbda170-a119-4842-84e8-e208b94f4c52): As 3Box Labs’ first Blockchain Engineer you will lead engineering, implementation and optimization of the Ceramic Blockchain and contribute to the overall cryptoeconomic design of the network. You'll tackle some of the most novel challenges in decentralized tech, work closely with our rapidly growing open source community and many of the best technologists in the world, and help reinvent how data is managed online. **3Box Labs**, Remote.
 
