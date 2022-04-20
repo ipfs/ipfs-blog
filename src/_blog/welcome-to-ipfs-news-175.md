@@ -15,7 +15,7 @@ tags:
 ---
 ## **Filebase: Building Web3 with Web3**
 
-![](../assets/ipfs-2022-03-24.png)
+![](../assets/ipfs-2022-04-14-2.png)
 
 Filebase is the world’s first object storage platform powered by decentralized storage networks, unifying multiple networks under a single S3-compatible API to make decentralized storage accessible and easy to use. Its proprietary edge-caching technology achieves industry-leading performance when writing and fetching data to and from Web3, making it a highly-secure, geo-redundant alternative to traditional cloud storage at a fraction of the costs. [Keep reading](https://blog.ipfs.io/2022-04-14-filebase/) to learn more about its unique implementation of IPFS pinning services.
 
