@@ -13,11 +13,11 @@ tags:
 - weekly
 
 ---
-## **Filebase: Building Web3 with Web3**
+## **IPFS Project Roadmap v.0.6.0**
 
-![](../assets/ipfs-2022-04-14-2.png)
+@[youtube](9rlPkY0HntE)
 
-Filebase is the world’s first object storage platform powered by decentralized storage networks, unifying multiple networks under a single S3-compatible API to make decentralized storage accessible and easy to use. Its proprietary edge-caching technology achieves industry-leading performance when writing and fetching data to and from Web3, making it a highly-secure, geo-redundant alternative to traditional cloud storage at a fraction of the costs. [Keep reading](https://blog.ipfs.io/2022-04-14-filebase/) to learn more about its unique implementation of IPFS pinning services.
+[**Tune in**](https://www.youtube.com/watch?v=9rlPkY0HntE) to Juan Benet’s in-depth look at what’s ahead for IPFS as it continues to make strides in providing the internet with a robust infrastructure for decentralized storage. In v0.6.0, the protocol will move closer toward the goal to be the default tool for distributing large files, promoting end-to-end encryption, and supporting the evolution of a self-archiving and decentralized web. Watch the full [**presentation**](https://www.youtube.com/watch?v=9rlPkY0HntE)to learn more about what’s next for IPFS.
 
 ## **Brand New on IPFS ✨**
 
