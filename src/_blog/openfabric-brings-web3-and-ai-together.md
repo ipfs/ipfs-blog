@@ -35,7 +35,7 @@ To this end, the project focused on developing a decentralized operating system 
 
 IPFS is a core component of the DOS developed by Openfabric, specifically on the resource layer. As a decentralized storage solution, it is the tool of choice for replicating AI binaries, ontologies, and data models that need to be stored for users looking to benefit from AI applications.
 
-# A synergy like no other
+# A Synergy Like No Other
 
 Openfabric is pioneering the use of open-source AI solutions that aim to build an economy of innovation. The platform makes use of distributed ledger technology that ensures undeniable contracts and unforgettable history between the platform's stakeholders. It also serves as the underlying layer for access control and identification mechanisms.
 
