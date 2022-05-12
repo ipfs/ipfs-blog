@@ -1,6 +1,6 @@
 ---
 title: Openfabric Brings Web3 and AI Together
-description: The platform explores how Web3 infrastructure can facilitate the development
+description: Openfabric explores how Web3 infrastructure can facilitate the development
   of accessible AI tools & apps.
 author: ''
 date: 2022-05-12
