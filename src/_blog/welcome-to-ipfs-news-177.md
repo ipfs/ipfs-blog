@@ -1,52 +1,51 @@
 ---
 title: Welcome to IPFS News 177!
-description: Find out what’s coming next for IPFS and decentralized storage on v0.6.0
-  & more in IPFS News 176.
+description: Learn more about the AI app platform leveraging decentralized storage
+  via IPFS & more in IPFS News 177.
 author: Emily Vaughan
-date: 2022-05-04
-permalink: "/weekly-176/"
+date: 2022-05-18
+permalink: "/weekly-177/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
-- IPLD
+- NFTs
+- weekly
 
 ---
-## **IPFS Project Roadmap v.0.6.0**
+## Openfabric Brings Web3 and AI Together
 
-@[youtube](9rlPkY0HntE)
+![](../assets/167729788-5e24642b-c94f-41ca-853e-c8395c9fdae6.png)
 
-[Tune in](https://www.youtube.com/watch?v=9rlPkY0HntE) to Juan Benet’s in-depth look at what’s ahead for IPFS as it continues to make strides in providing the internet with a robust infrastructure for decentralized storage. In v0.6.0, the protocol will move closer toward the goal to be the default tool for distributing large files, promoting end-to-end encryption, and supporting the evolution of a self-archiving and decentralized web. Watch the full [presentation](https://www.youtube.com/watch?v=9rlPkY0HntE) to learn more about what’s next for IPFS.
+[**Openfabric**](https://openfabric.ai/) is a platform for building and connecting apps in an ecosystem where everyone has quick, easy, low-cost, and hassle-free access to powerful AIs. It leverages Web3 infrastructure to address the most challenging problems faced by AI platforms. Find out more about how IPFS is a core component of the decentralized operating system (DOS) developed by Openfabric on the IPFS [**blog**](https://blog.ipfs.io/2022-05-12-openfabric/).
 
 ## **Brand New on IPFS ✨**
 
-1. Discover [Lurk](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/), a new programming language for zk-Snarks that will enable data integrations with IPFS and IPLD.
-2. [Phoenix Guild](https://t.co/foOfR4jFqm) is working with IPFS and Filecoin for its ongoing Solidity bootcamp. Find out more on [Twitter](https://twitter.com/PhoenixGuildHQ/status/1520085628884783104).
-3. Agregore is a new web browser that integrates IPFS. [Read more](https://agregore.mauve.moe/blog/2022/04/ipfs-with-chromium) on how it’s able to run an IPFS gateway from within a Chromium application.
-4. You can now deploy and maintain your SNS+IPFS website with the 4EVERLAND hosting service. [Learn more](https://medium.com/4everland/deploy-your-sns-ipfs-website-on-4everland-in-3-minutes-cb828cf8ca4) in this tutorial.
+1. [**Watch**](https://www.youtube.com/watch?v=Ecx8VOQBKpw) Jonathan Victor discuss [**NFT.Storage**](https://nft.storage/) and the future of the metaverse at the recent Harvard in Tech Webinar.
+2. Cloudflare announced that it will make it possible for its customers to serve their sites on the IPFS network! Learn more on the Cloudflare [**blog**](https://blog.cloudflare.com/cloudflare-pages-on-ipfs/).
+3. [**PooZone**](https://poo.zone/) has [**integrated**](https://twitter.com/Poo_Zone/status/1526510329639092224?s=20&t=sCK5F5yXr4WVbYO-uPMNxw) with the [**4EVERLAND**](https://www.4everland.org/) cloud computing platform to better store and manage data on IPFS.
+4. The 4EVERLAND community has also announced a new campaign around its [**Bucket**](https://dashboard.4everland.org/) feature. [**Find out**](https://medium.com/4everland/keep-your-storage-decentralized-with-4everland-bucket-and-win-great-prizes-d2d9d14bdbcc) how you can win prizes by using it to upload your backups to IPFS.
 
 ## **Around the ecosystem 🌎**
 
-From May 2 - 22, [Gitcoin](https://gitcoin.co/) is [celebrating](https://twitter.com/gitcoin/status/1521040036694736896) the L2 Rollathon focused on scaling solutions. IPFS and Filecoin are among the virtual hackathon’s lead sponsors. [Register now](https://gitcoin.co/hackathon/rollathon/onboard)!  
+[**Check out this recording**](https://www.youtube.com/watch?v=75ewjnT6B9Y&ab_channel=Samoura%C3%AFTV) from the Paris P2P Festival featuring Yiannis Psaras as he talks about IPFS measurements and improvements opportunities at the Paris P2P Festival.  
   
-Protocol Labs is sponsoring ETHGlobal’s [Hack Money](https://defi.ethglobal.com/) virtual DeFi hackathon - [apply now](https://hack.ethglobal.com/hackmoney2022) and take your chances at building the future of finance from May 6 - 27.  
+Take a look at this [**guide**](https://www.youtube.com/watch?v=IeR1oQpaAYM&ab_channel=AlphaTime) on how to deploy decentralized websites and dapps for your ENS domains with IPFS and Fleek by Alpha Guide.  
   
-[Register](https://gssoc.girlscript.tech/#card-1) for the GirlScript Summer of Code! The three-month long open-source program will continue until May 31st. Learn more on the [official website](https://gssoc.girlscript.tech/#about-gssoc).  
+The ETHGlobal [**Hack Money 2022**](https://defi.ethglobal.com/) virtual hackathon is still happening. [**Catch **](https://www.youtube.com/watch?v=Ubl0iZJkJC4&ab_channel=ETHGlobal)Konstantin Tkachuk’s workshop on IPFS and Filecoin and how they share the future of Web3.  
   
-The [Hedera](https://hedera.com/) community is celebrating its first Solidity smart contract hackathon, H22, with prizes for the best use cases of IPFS. The event is underway until May 16th. [Join now](https://hedera22.devpost.com/)!  
+Don’t miss this [**Q&A**](https://www.youtube.com/watch?v=fzk_od87-Ds&ab_channel=LisaLoud) at Global NFT Summit about minting NFTs with IPFS and friends.  
   
-If you missed the IPFS Meetup at [EFDevconnect](https://devconnect.org/) in Amsterdam, don’t worry! You can catch up on all the presentations in this YouTube [playlist](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTGmSx15xid6B_UMf5f2M-S).  
+From May 2 - 22, [**Gitcoin**](https://gitcoin.co/) is [**celebrating**](https://twitter.com/gitcoin/status/1521040036694736896) the L2 Rollathon focused on scaling solutions. IPFS and Filecoin are among the virtual hackathon’s lead sponsors. [**Register now**](https://gitcoin.co/hackathon/rollathon/onboard)!  
   
-The [Functionland](https://fx.land/) Dev Team Update for April included important updates to its IPFS-based features like Fotos, Box, and Fula. Be sure to check out the [video report](https://www.youtube.com/watch?v=sAKym-u07e0).  
+ETHGlobal’s [**Hack Money**](https://defi.ethglobal.com/) virtual DeFi hackathon is happening now through May 27th, [**apply now**](https://hack.ethglobal.com/hackmoney2022) and take your chances at building the future of finance.  
   
-Don’t miss this [overview](https://www.youtube.com/watch?v=WcPqf4mWh4E) of the history of IPFS and Filecoin at the Chainlink Spring 2022 Hackathon. You’ll learn how decentralized storage has become an essential component of Web3 infrastructure.  
+If you happen to be in Berlin on May 24, check out the [**NFT and DeFi with IPFS and Filecoin Meetup**](https://lu.ma/ipfs-nft-meetup). It’s a great opportunity to meet digital artists, NFT developers, and hackathon winners in the ecosystem.  
   
-Learn how to build your own NFT app on IPFS with this [coding walkthrough](https://www.youtube.com/watch?v=xTnDTWHsbIs) featured at the Chainlink Spring 2022 Hackathon.  
-  
-Stay in the loop by watching this [recap](https://www.youtube.com/watch?v=F6XaEMOpVRA) of the All Hands meeting for the IPFS, Filecoin, Libp2p Ecosystem Work Group. Reach out to a**team@protocol.ai** to present in the next one.
+[**Register**](https://gssoc.girlscript.tech/#card-1) for the GirlScript Summer of Code! The three-month long open-source program will continue until May 31st. Learn more on the [**official website**](https://gssoc.girlscript.tech/#about-gssoc).
 
 ## **Want to help build the new internet? 💼**
 
-[**Senior Social Media Manager**](https://boards.greenhouse.io/protocollabs/jobs/4282182004): Protocol Labs is seeking a Senior Social Media Manager to both build best-practice growth strategies, own social tactics, and posting across all of our various channels. Your goal is to assist, educate, and excite every member of our community. You will be responsible for communication with our community primarily on Twitter, Reddit, and Slack but also occasionally over email, Telegram, Discord and other channels. This audience includes everyone from industry leaders, Protocol Labs partners, and investors to miners, developers, and users. **Protocol Labs**, Remote.
+[**Developer Growth Advocate**](https://jobs.filebase.com/20702): Filebase is looking for a highly motivated technologist to join as a Developer Growth Advocate and help grow the Filebase brand across the ecosystem. You will help to lay the groundwork for the world to have an easy (and cost-effective) alternative to the traditional cloud of today. Our Developer Advocate will continue to foster Filebase relationships within multiple developer ecosystems - Blockchain/Crypto/Web3 and the traditional Object Storage landscape. **Filebase**, Remote.
 
 [**Startup Operator, Asia Ecosystem Growth**](https://boards.greenhouse.io/protocollabs/jobs/4382529004)**:** As a member of the Ecosystem Growth team at Protocol Labs, you’ll scope, lead and manage initiatives that help grow Filecoin storage providers in Asia, with an initial focus in China. Your work will span multiple areas, including business development, process improvement, project management, analytics, and more. In this role, you will work closely with the Ecosystem team’s leadership to structure and solve complex problems, then drive solutions forward across the organization. **Protocol Labs**, Remote.
 
@@ -55,5 +54,3 @@ Stay in the loop by watching this [recap](https://www.youtube.com/watch?v=F6XaEM
 [**Growth Marketing Lead**](https://jobs.lever.co/MoNA/2f653ef6-c3da-4e0f-ba3c-1f294d24ece3): The Growth Marketing Lead will be responsible for Mona’s digital marketing strategy across multiple media channels. In this role, you will develop, implement, measure, and optimize our approach over time with the related goals of driving people into our metaverse spaces, 3D architects to build metaverse spaces, and expanding the overall footprint of the Mona brand. The digital marketing strategy will integrate closely with our existing organic content strategy. **Mona**, Remote.
 
 [**Developer Relations**](https://boards.greenhouse.io/textileio/jobs/4075619004): Textile is seeking someone to run large-scale community projects. These include amplifying our grants program to fund community projects, curating governance groups where we bring community stakeholders into our technology planning, engaging with external teams like Gitcoin and EthDenver to support large-scale developer events, and giving technical presentations at events. This position also includes day-to-day engagement with our Slack group, helping to triage GitHub issues, hacking on demos, writing blog posts and technical guides, and more. We are looking for a self-directed leader who wants to build a developer community while staying hands on with technology. **Textile**, Remote.
-
-[**Fullstack Engineer**](https://boards.greenhouse.io/textileio/jobs/4017984004): Textile's web products and services are written primarily in Golang and TypeScript, and communicate with Textile's core gRPC services. You will own the end user experience and have full ownership over the product stack, from research and development to implementation and production monitoring. **Textile**, Remote.
