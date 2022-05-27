@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: libp2p v0.37.0
+  date: 2022-05-16
+  publish_date: 2022-05-16T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.37.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
 - title: go-ipfs 0.12.0 Release
   date: 2022-02-18
   publish_date: 
