@@ -6,7 +6,7 @@ sitemap:
 data:
 - title: libp2p v0.37.0
   date: 2022-05-16
-  publish_date: 2022-05-16T12:00:00+00:00
+  publish_date: 
   path: https://github.com/libp2p/js-libp2p/releases/tag/v0.37.0
   card_image: "/header-image-libp2p.png"
   tags:
