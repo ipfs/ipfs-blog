@@ -1,5 +1,5 @@
 ---
-title: js-IPFS 0.63.0 ESM, libp2p@0.37.x and lightweight PeerIds
+title: js-IPFS: 0.63.0 ESM, libp2p@0.37.x, and lightweight PeerIds
 description: js-IPFS 0.63.0 brings ESM and lightweight PeerIds
 author: Alex Potsides
 date: 2022-06-01
@@ -12,9 +12,9 @@ tags:
 ---
 # 🔦 Highlights
 
-> switches to ESM only, upgrades to libp2p@0.37.x and brings lightweight PeerIds
+> switches to ESM only, upgrades to libp2p 0.37.x and brings lightweight PeerIds
 
-`js-IPFS@0.63.0` is powering through the stratosphere along with many small bug fixes and performance improvements!
+`js-IPFS@0.63.0` is rocketing forward with major improvements to its foundations along with many small bug fixes and performance improvements!
 
 ## 🧱 ESM
 
@@ -22,23 +22,23 @@ A module system lets us organise our code in way that makes sense for our applic
 
 [ECMAScript Modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) are the module system for JavaScript.
 
-Other modules systems have been implemented in the past - [CommonJS](https://en.wikipedia.org/wiki/CommonJS), [RequireJS](https://requirejs.org/), etc, but these have all been userland solutions to the problem of how to organise your JavaScript, none of them have ever been part of the language.
+Other modules systems have been implemented in the past (e.g., [CommonJS](https://en.wikipedia.org/wiki/CommonJS), [RequireJS](https://requirejs.org/)), but these have all been userland solutions to the problem of how to organize your JavaScript; none of them have ever been part of the language.
 
-This means in order to take advantage of a module system, you need to run your code through a bundler such as [webpack](https://webpack.js.org) or [esbuild](https://esbuild.github.io/), which introduces a build step and means you can't just run a js file - we've got so used to needing the platform (e.g. node) to support a userland module system (e.g. CommonJS) or needing all this additional tooling that adds complexity and makes things slow that we just accept it as normal.
+This means in order to take advantage of a module system, you need to run your code through a bundler such as [webpack](https://webpack.js.org) or [esbuild](https://esbuild.github.io/), which introduces a build step and means you can't just run a js file.  We've got so used to needing the platform (e.g., node) to support a userland module system (e.g., CommonJS) or needing all this additional tooling that adds complexity and makes things slow.
 
-That all changed in 2015 with [ES6](https://262.ecma-international.org/6.0/#sec-ecmascript-language-scripts-and-modules) which among other things introduced the module specification.
+The beginning of change started in 2015 with [ES6](https://262.ecma-international.org/6.0/#sec-ecmascript-language-scripts-and-modules), which among other things introduced the module specification.
 
-By now the `import`/`export` syntax for modules should be familiar, it's used in [TypeScript](https://www.typescriptlang.org), [React](https://reactjs.org) and other environments, mostly via transpilation by such tools as [babel](https://babeljs.io).
+By now the `import`/`export` syntax for modules should be familiar. It's used in [TypeScript](https://www.typescriptlang.org), [React](https://reactjs.org) and other environments, mostly via transpilation by such tools as [babel](https://babeljs.io).
 
-Back in 2018, FireFox shipped `v60` which meant all major browsers supported ES modules, the final platform that needed was Node.js.  Node.js actually release support behind a flag in `v8.5.0` in 2017 but it was only with `v13.2.0` in 2019 that it came out from behind that flag and with `v14.8.0` last year that top-level await was also enabled by default.
+Back in 2018, FireFox shipped `v60`, which meant all major browsers supported ES modules.  Node.js was the final platform that needed support.  Node.js actually released support behind a flag in `v8.5.0` in 2017 but it was only with `v13.2.0` in 2019 that it came out from behind that flag and with `v14.8.0` in 2021 that top-level ``await`` was also enabled by default.
 
 With `v16` becoming Active LTS in October last year it meant we were [finally able](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md#supported-versions) to upgrade to ESM an embrace the bright new bundlerless future.
 
 With `libp2p@0.37.x` and `ipfs@0.63.x` both modules are published exclusively as ESM.
 
-There are migration guides available for [libp2p](https://github.com/libp2p/js-libp2p/blob/master/doc/migrations/v0.36-v.037.md) and [ipfs](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md)
+There are migration guides available for [libp2p](https://github.com/libp2p/js-libp2p/blob/master/doc/migrations/v0.36-v.037.md) and [ipfs](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md).
 
-If you are running in a CJS environment (e.g. node before `v14.8`), you'll need to either convert your codebase to ESM, or use the [dynamic `import` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to load `ipfs` and/or `libp2p`.  Note that `ipfs` and `libp2p` are only tested fully on Active and Current LTS versions, which is `v16`+ at the time of writing.
+If you are running in a CJS environment (e.g., node before `v14.8`), you'll need to either convert your codebase to ESM, or use the [dynamic `import` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to load `ipfs` and/or `libp2p`.  Note that `ipfs` and `libp2p` are only tested fully on Active and Current LTS versions, which is `v16`+ at the time of writing.
 
 ## libp2p in TypeScript
 
@@ -46,15 +46,13 @@ With the `libp2p@0.37.x` release, `libp2p` has been entirely rewritten from the 
 
 This has given us a more stable and predictable base on which to build next generation distributed projects, as well as better support for automated tooling, code completion, docs and a generally greatly improved developer experience.
 
-A large scale re-evaluation of the exposed interfaces has taken place which is a breaking change - please see the [libp2p@0.37.x migration guide](https://github.com/libp2p/js-libp2p/blob/master/doc/migrations/v0.36-v.037.md#typescript) for any changes you will need to make to your application.
+A large scale re-evaluation of the exposed interfaces has taken place which is a breaking change.  Please see the [libp2p@0.37.x migration guide](https://github.com/libp2p/js-libp2p/blob/master/doc/migrations/v0.36-v.037.md#typescript) for any changes you will need to make to your application.
 
 ## lightweight `PeerId`s
 
-The [PeerId](https://docs.libp2p.io/concepts/peer-id/) is a core concept of `libp2p`.  
+The [PeerId](https://docs.libp2p.io/concepts/peer-id/) is a core concept of `libp2p`.  PeerIds let us identify remote peers and verify data those peers send to us, since they are either a hash of a public key in the case of an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) derived `PeerId`, or the public key itself in the case of an [Ed25519](https://en.wikipedia.org/wiki/EdDSA) `PeerId`.
 
-They let us identify remote peers and verify data those peers send to us, since a `PeerId` is either a hash of a public key in the case of an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) derived `PeerId`, or the public key itself in the case of [Ed25519](https://en.wikipedia.org/wiki/EdDSA) `PeerId`s.
-
-Prior to `libp2p@0.37.x` the `PeerId` concept was implemented by the [peer-id](https://www.npmjs.com/package/peer-id) module.  The class exported by this module was capable of all sorts of encryption-related operations, some of which required heavyweight JavaScript modules such as [node-forge](https://www.npmjs.com/package/node-forge) as the [web-crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) lacks certain algorithms and operations that are used by the libp2p/IPFS ecosystems.
+Prior to `libp2p@0.37.x`, the `PeerId` concept was implemented by the [peer-id](https://www.npmjs.com/package/peer-id) module.  The class exported by this module was capable of all sorts of encryption-related operations, some of which required heavyweight JavaScript modules such as [node-forge](https://www.npmjs.com/package/node-forge) since the [web-crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) lacks certain algorithms and operations that are used by the libp2p/IPFS ecosystems.
 
 Depending on these modules carries a significant cost for browser bundles, and the operations they are supposed to support are not used in places like `ipfs-http-client` rendering the `peer-id` module unsuitable for use in lightweight front-end applications that may only orchestrate a remote IPFS node.
 
@@ -64,11 +62,11 @@ With the new [@libp2p/peer-id](https://www.npmjs.com/package/@libp2p/peer-id) mo
 
 The cryptographic operations and the heavy deps they require are now encapsulated within the [@libp2p/crypto](https://www.npmjs.com/package/@libp2p/crypto) module which in general is not used by front end code.
 
-This is also a breaking change, please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md#peerids) for any changes you will need to make to your application.
+This is also a breaking change.  Please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md#peerids) for any changes you will need to make to your application.
 
 ### ⚠ BREAKING CHANGES
 
-* This module is now ESM only and there return types of some methods have changed
+* This module is now ESM only and the return types of some methods have changed.
 
 Please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blob/master/docs/upgrading/v0.62-v0.63.md) for any changes you will need to make to your application.
 
@@ -92,7 +90,7 @@ Please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blo
 
 Check out the js-IPFS [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
 
-Only large features are called out in the roadmap, expect lots of small bugfix releases between the roadmapped items!
+Only large features are called out in the roadmap.  Expect lots of small bugfix releases between the roadmapped items!
 
 # 😍 Huge thank you to everyone that made this release possible
 
