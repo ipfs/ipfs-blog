@@ -1,5 +1,5 @@
 ---
-title: js-IPFS: 0.63.0 ESM, libp2p@0.37.x, and lightweight PeerIds
+title: js-IPFS 0.63.0 with ESM, libp2p@0.37.x, and lightweight PeerIds
 description: js-IPFS 0.63.0 brings ESM and lightweight PeerIds
 author: Alex Potsides
 date: 2022-06-01
