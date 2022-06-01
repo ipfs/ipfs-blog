@@ -1,47 +1,46 @@
 ---
-title: Welcome to IPFS News 178!
-description: Learn more about the AI app platform leveraging decentralized storage
-  via IPFS & more in IPFS News 177.
+title: IPFS’s Role in Supporting Free Press
+description: The US Press Freedom Tracker’s data now lives on IPFS, plus more stories
+  in IPFS News 178.
 author: Emily Vaughan
-date: 2022-05-18
-permalink: "/weekly-177/"
+date: 2022-06-01
+permalink: "/weekly-178/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
-- NFTs
 - weekly
 
 ---
-## Openfabric Brings Web3 and AI Together
+## **The US Press Freedom Tracker’s Data Now Lives on IPFS**
 
-![](../assets/167729788-5e24642b-c94f-41ca-853e-c8395c9fdae6.png)
+![](../assets/171309710-5d63b147-353f-48fb-a272-177ca8f0d799.png)
 
-[**Openfabric**](https://openfabric.ai/) is a platform for building and connecting apps in an ecosystem where everyone has quick, easy, low-cost, and hassle-free access to powerful AIs. It leverages Web3 infrastructure to address the most challenging problems faced by AI platforms. Find out more about how IPFS is a core component of the decentralized operating system (DOS) developed by Openfabric on the IPFS [**blog**](https://blog.ipfs.io/2022-05-12-openfabric/).
+[The Freedom of the Press Foundation](https://freedom.press/) has started to use IPFS as its censorship-resistant storage solution for the data on its US Press Freedom Tracker. The database contains reports of press freedom violations over the past five years and makes them available through its API. IPFS will help to permanently store this valuable information in the interest of journalists, advocates, and policy makers. Find out more about how to peruse the data for yourself by reading the [announcement](https://freedom.press/news/us-pft-on-ipfs/).
 
 ## **Brand New on IPFS ✨**
 
-1. [**Watch**](https://www.youtube.com/watch?v=Ecx8VOQBKpw) Jonathan Victor discuss [**NFT.Storage**](https://nft.storage/) and the future of the metaverse at the recent Harvard in Tech Webinar.
-2. Cloudflare announced that it will make it possible for its customers to serve their sites on the IPFS network! Learn more on the Cloudflare [**blog**](https://blog.cloudflare.com/cloudflare-pages-on-ipfs/).
-3. [**PooZone**](https://poo.zone/) has [**integrated**](https://twitter.com/Poo_Zone/status/1526510329639092224?s=20&t=sCK5F5yXr4WVbYO-uPMNxw) with the [**4EVERLAND**](https://www.4everland.org/) cloud computing platform to better store and manage data on IPFS.
-4. The 4EVERLAND community has also announced a new campaign around its [**Bucket**](https://dashboard.4everland.org/) feature. [**Find out**](https://medium.com/4everland/keep-your-storage-decentralized-with-4everland-bucket-and-win-great-prizes-d2d9d14bdbcc) how you can win prizes by using it to upload your backups to IPFS.
+1. Check out NFT.Storage’s soft launch of SuperHot Gateway, a perma-cache feature that ensures quick access to NFTs. Find out more on the NFT. Storage [blog](https://nft.storage/blog/post/2022-05-24-superhot-gateway-announcement/).
+2. Funding the Commons is back! Join individuals and organizations building new models for public goods funding in New York on June 24-25. [Register here](https://www.eventbrite.com/e/funding-the-commons-registration-321958224717).
+3. The Filecoin Foundation (FF) and aerospace company Lockheed Martin are working together to bring IPFS to space. [Learn more about the collaboration](https://filecoinfoundation.medium.com/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space-db9a15e66264).
+4. 4EVERLAND released IPFS Public Gateway and Gateway Explorer to let users quickly access object files through its globally accelerated gateway. [Find out more](https://medium.com/4everland/4everland-releases-ipfs-public-gateway-and-gateway-explorer-to-work-for-you-c6d0913211c8).
 
 ## **Around the ecosystem 🌎**
 
-[**Check out this recording**](https://www.youtube.com/watch?v=75ewjnT6B9Y&ab_channel=Samoura%C3%AFTV) from the Paris P2P Festival featuring Yiannis Psaras as he talks about IPFS measurements and improvements opportunities at the Paris P2P Festival.  
-  
-Take a look at this [**guide**](https://www.youtube.com/watch?v=IeR1oQpaAYM&ab_channel=AlphaTime) on how to deploy decentralized websites and dapps for your ENS domains with IPFS and Fleek by Alpha Guide.  
-  
-The ETHGlobal [**Hack Money 2022**](https://defi.ethglobal.com/) virtual hackathon is still happening. [**Catch **](https://www.youtube.com/watch?v=Ubl0iZJkJC4&ab_channel=ETHGlobal)Konstantin Tkachuk’s workshop on IPFS and Filecoin and how they share the future of Web3.  
-  
-Don’t miss this [**Q&A**](https://www.youtube.com/watch?v=fzk_od87-Ds&ab_channel=LisaLoud) at Global NFT Summit about minting NFTs with IPFS and friends.  
-  
-From May 2 - 22, [**Gitcoin**](https://gitcoin.co/) is [**celebrating**](https://twitter.com/gitcoin/status/1521040036694736896) the L2 Rollathon focused on scaling solutions. IPFS and Filecoin are among the virtual hackathon’s lead sponsors. [**Register now**](https://gitcoin.co/hackathon/rollathon/onboard)!  
-  
-ETHGlobal’s [**Hack Money**](https://defi.ethglobal.com/) virtual DeFi hackathon is happening now through May 27th, [**apply now**](https://hack.ethglobal.com/hackmoney2022) and take your chances at building the future of finance.  
-  
-If you happen to be in Berlin on May 24, check out the [**NFT and DeFi with IPFS and Filecoin Meetup**](https://lu.ma/ipfs-nft-meetup). It’s a great opportunity to meet digital artists, NFT developers, and hackathon winners in the ecosystem.  
-  
-[**Register**](https://gssoc.girlscript.tech/#card-1) for the GirlScript Summer of Code! The three-month long open-source program will continue until May 31st. Learn more on the [**official website**](https://gssoc.girlscript.tech/#about-gssoc).
+Do you have ideas about where the IPFS ecosystem could go next? [Watch](https://www.youtube.com/watch?v=HEFcBvIFw5E) Dietrich Ayala’s talk on the subject at the May 2022 [IPFS Implementations Workshop](https://www.youtube.com/watch?v=o7BPlDcEH2w).
+
+Watch this [recap](https://www.youtube.com/watch?v=8fH2ZDdjLXY&list=PL_0VrY55uV1_Xr561UmATrj0Yxfu2IWwl&index=1&t=1s) of the Filecoin, IPFS, and libp2p Ecosystem WorkGroup All Hands meeting for May 2022, or catch up with the [full recording](https://www.youtube.com/watch?v=XVHTx2O-ibE&t=2s)!
+
+The Protocol Labs ecosystem joined Gitcoin Grants Round 14 to support infrastructure related to Web3 data, storage, and connectivity on IPFS and Fiecoin. Read the [brief](https://docs.google.com/document/d/1anipY2WO1mUUWHzscpVO9zayHvBWpewPf5r4HIXzQwA/edit) to find out more.
+
+The IPFS and Filecoin communities are proud to sponsor Graph Hack this year and support the incredible community The Graph is bringing to SF. Graph Hack is free to participate — [learn more and sign up](https://thegraph.com/graph-hack/2022/).
+
+The IPFS ecosystem is excited to collaborate with Radius to post high impact projects on the Radius app. [Come explore](https://twitter.com/joinradius/status/1529110014409027585)!
+
+NFT.NYC is shaping up to be a packed event this summer. Keep your eyes peeled for side-events from around the community such as [Mona x NFT.NYC](https://www.eventbrite.com/e/mona-x-nftnyc-tickets-344345776487), [Wake Up and Dance](https://www.eventbrite.com/e/wake-up-dance-with-nftstorage-x-daybreaker-tickets-347343101567), and [NFT.Storage Social](https://www.eventbrite.com/e/nftstorage-social-tickets-344885711447).
+
+Check out Dennis Trautwein’s Optimistic Provide improvement proposal to the IPFS Provide process. [Watch](https://www.youtube.com/watch?v=wbY-MueAfXg) his presentation at the Paris P2P Festival to learn more.
+
+Learn how to deploy your own decentralized website on IPFS with this [tutorial](https://www.youtube.com/watch?v=4fgrngfHeRs) by Blockchain Academy Bangladesh.
 
 ## **Want to help build the new internet? 💼**
 
