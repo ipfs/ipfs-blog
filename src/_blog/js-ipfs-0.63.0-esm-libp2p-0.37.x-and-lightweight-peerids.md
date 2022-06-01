@@ -714,20 +714,6 @@ Only large features are called out in the roadmap.  Expect lots of small bugfix 
 * [@zouantchaw](https://github.com/zouantchaw) (1 issue)
 * [@zyb1101](https://github.com/zyb1101) (1 issue)
 
-# 🙌🏽 Want to contribute?
-
-Would you like to contribute to the IPFS project and don’t know how? Well, there are a few places you can get started:
-
-- Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-- Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
-- Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
-- Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
-
-# ⁉️ Do you have questions?
-
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
-
 [unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
 [cid]: https://docs.ipfs.io/guides/concepts/cid/
 [mfs]: https://docs.ipfs.io/guides/concepts/mfs/
