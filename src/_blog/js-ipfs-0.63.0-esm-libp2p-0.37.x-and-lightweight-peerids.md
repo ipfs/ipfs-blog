@@ -86,12 +86,6 @@ Please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blo
     * ipfs-core-types bumped from ^0.10.3 to ^0.11.0
     * ipfs-http-client bumped from ^56.0.3 to ^57.0.0
 
-# 🗺️ What’s next?
-
-Check out the js-IPFS [Project Roadmap](https://github.com/orgs/ipfs/projects/6) which contains headline features organised in the order we hope them to land.
-
-Only large features are called out in the roadmap.  Expect lots of small bugfix releases between the roadmapped items!
-
 # 😍 Huge thank you to everyone that made this release possible
 
 * [@0xjjpa](https://github.com/0xjjpa) (1 comment)
