@@ -1,5 +1,5 @@
 ---
-title: IPFS’s Role in Supporting Free Press
+title: Welcome to IPFS News 178!
 description: The US Press Freedom Tracker’s data now lives on IPFS, plus more stories
   in IPFS News 178.
 author: Emily Vaughan
