@@ -64,3 +64,5 @@ And last but certainly not least:
 [**libp2p project - long term view**](https://www.youtube.com/watch?v=jH9BkLTxhp8&list=PLX9e-uG608s9IC5avTGGkF-c7XJ7IUO_X&index=3)**, Juan Benet, the inventor of IPFS, libp2p and Filecoin and the founder of Protocol Labs**
 
 The IPFS Project has grown into a large open source movement to re-decentralize the web, safeguard our data, and improve our applications. And libp2p is a very central component of IPFS, which, at the same time can be used (and is being used) independently and already powers several Web3.0 platforms. In this talk Juan walked us through the history of libp2p, its current use cases and its future potential. He also highlighted where extra effort is needed, the current challenges and pointed to ways to achieve its full potential.
+
+We hope to see you next year at Paris P2P 2023!
