@@ -37,19 +37,19 @@ Max took a closer look at the recently added decentralized hole punching feature
 
 Pedro addressed questions such as which tools should we build and develop to research and improve distributed networking protocols?
 
-\[**libp2p DHT: performance, workloads, and possible directions to evolve**\](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14\](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14)**, Joao Leitao, Assistant Professor at NOVA University of Lisbon.**
+[**libp2p DHT: performance, workloads, and possible directions to evolve**](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Joao Leitao, Assistant Professor at NOVA University of Lisbon**
 
 Joao explained briefly the Distributed Hash Table structure of libp2p, and addressed issues such as what performance can we observe? Which improvement tracks are being studied currently? In which direction are we going and is it the right one?
 
-\[**Challenges in Browser Connectivity. An Outlook onto libp2p’s Future: WebRTC, WebTransport, WebSockets**\](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18\](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18)**, Marten Seeman, one of the core maintainers of libp2p**
+[**Challenges in Browser Connectivity. An Outlook onto libp2p’s Future: WebRTC, WebTransport, WebSockets**](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Marten Seeman, one of the core maintainers of libp2p**
 
 Marten discussed what is the future of libp2p within the Browser? What about WebRTC, WebTransport, WebSockets in the future and what do we need to do to get there?
 
-\[**Storetheindex: A distributed and eventually consistent database**\](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17\](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17)**, Marco Munizaga, member of libp2p maintainers team**
+[**Storetheindex: A distributed and eventually consistent database**](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Marco Munizaga, member of libp2p maintainers team**
 
 Marco presented the “storetheindex” project and latest updates. `storetheindex` is a distributed and eventually consistent database. Marco explained what that means, what properties it holds, and how it enables IPFS < - > Filecoin interoperability.
 
-\[**Architectural Collisions - Short Stories of Hard Problems Putting IPFS in Strange Places**\](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13\](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13)**, Dietrich Ayala, ecosystem lead at the Browsers & Platforms team at Protocol Labs**
+[**Architectural Collisions - Short Stories of Hard Problems Putting IPFS in Strange Places**](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Dietrich Ayala, ecosystem lead for Browsers & Platforms, Protocol Labs**
 
 The Browsers & Platforms team at Protocol Labs works on IPFS integration across many deployment environments, with many different collaborators, on various architectures, including even the final frontier… SPACE! Dietrich shared a series of scenarios with examples of what worked, what didn’t, and what’s still in progress to give you a peek into the P2P future.
 
