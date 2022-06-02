@@ -62,7 +62,7 @@ This is where peer-to-peer networking comes in.
 
 One of the core characteristics of the IPFS is that it is a _peer-to-peer_ network. In contrast to the client-server model where you typically have many clients consuming from a single server, with the peer-to-peer model, every computer (typically referred to as a _peer_) in the IPFS network wears both the hat of a server and a client. This means that every IPFS peer can become a productive member of the network.
 
-![client-server compared with peer-to-peer](./http-vs-ipfs.png)
+![client-server compared with peer-to-peer](../assets/http-vs-ipfs.png)
 
 > Note: The article uses the terms **peer** and **node** interchangeably to refer to computers running the IPFS software.
 
@@ -80,7 +80,9 @@ In the example with the image loaded from NASA, we used location addressing to f
 - _hostname_: DNS name `www.nasa.gov` mapped to an IP address of the server.
 - _path_ to the location on the server: `/sites/default/files/thumbnails/image/04_iss067e033423.jpg`
 
-![location addressing](./location-addressing.png)
+![location addressing](../assets/location-addressing.png)
+
+
 
 The challenges with location addressing are numerous. We've all had the experience of going down an internet rabbit hole only to be abrupted by dead links because the link changed or the server is no longer hosting the files.
 
@@ -94,7 +96,7 @@ There are three crucial things to remember with regards to CIDs:
 - The same content added to two different IPFS nodes will produce the same CID (given the same parameters).
 - A single CID can represent a single file or a folder of files, e.g. a static website. This property is known as "[turtles all the way down](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)".
 
-![Content addressing](./content-addressing.png)
+![Content addressing](../assets/content-addressing.png)
 
 The diagram illustrates what two different files look like on the network. The red jpeg represents one CID hosted on two nodes, while the purple jpeg represents a different CID hosted on two other nodes.
 
@@ -129,7 +131,7 @@ You request content from an IPFS gateway by passing a CID in the HTTP request. S
 
 In its simplest form, a gateway is an IPFS node that also accepts HTTP requests for CIDs in addition to speaking the IPFS protocol to participate in the peer-to-peer network. Most IPFS implementations can also work as a gateway.
 
-![Any supported IPFS nodes can also be a gateway](./browser-gateway.png)
+![Any supported IPFS node can also be a gateway](../assets/browser-gateway.png)
 
 ### Example
 
