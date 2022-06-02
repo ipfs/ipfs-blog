@@ -25,7 +25,7 @@ Max discussed the current state of the project, went briefly through the state o
 
 Yiannis introduced a set of measurement methodologies that allow the team to uncover the characteristics and interactions that take place in the public IPFS network between peers. After a big measurement campaign, we revealed presence of IPFS peers in more than 2700 Autonomous Systems and 152 countries, the majority of which operate outside large central cloud providers like Amazon or Azure. The team evaluated the performance of IPFS, showing that both publication and retrieval delays are acceptable for a wide range of use cases.
 
-\[**Optimistic Provide: Making the IPFS DHT Provide process an order of magnitude faster**\](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12\](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12)**, Dennis Trautwein, PhD student at the University of Wuppertal**
+[**Optimistic Provide: Making the IPFS DHT Provide process an order of magnitude faster**](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Dennis Trautwein, PhD student at the University of Wuppertal**
 
 The Provide process in the IPFS network, or in other words, publishing content in the network is very slow (in Internet terms). Through measurements we’ve found that it can be improved by an order of magnitude. In this talk, Dennis presented the team’s improvement proposals together with initial results as well as next steps.
 
@@ -33,7 +33,7 @@ The Provide process in the IPFS network, or in other words, publishing content i
 
 Max took a closer look at the recently added decentralized hole punching feature, allowing NAT and firewall traversal without the need for any central coordination servers (STUN and TURN). This is clearly a giant step for a P2P networking protocol and one that has not seen a decentralized solution.
 
-\[**Tools for developing distributed protocols and applications**\](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20\](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20)**, Pedro Akos Costa, PhD student at NOVA University of Lisbon**
+[**Tools for developing distributed protocols and applications**](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Pedro Akos Costa, PhD student at NOVA University of Lisbon**
 
 Pedro addressed questions such as which tools should we build and develop to research and improve distributed networking protocols?
 
