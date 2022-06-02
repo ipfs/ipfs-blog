@@ -25,7 +25,7 @@ Max discussed the current state of the project, went briefly through the state o
 
 Yiannis introduced a set of measurement methodologies that allow the team to uncover the characteristics and interactions that take place in the public IPFS network between peers. After a big measurement campaign, we revealed presence of IPFS peers in more than 2700 Autonomous Systems and 152 countries, the majority of which operate outside large central cloud providers like Amazon or Azure. The team evaluated the performance of IPFS, showing that both publication and retrieval delays are acceptable for a wide range of use cases.
 
-[**Optimistic Provide: Making the IPFS DHT Provide process an order of magnitude faster**](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12\](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12)**, Dennis Trautwein, PhD student at the University of Wuppertal**
+\[**Optimistic Provide: Making the IPFS DHT Provide process an order of magnitude faster**\](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12\](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=12)**, Dennis Trautwein, PhD student at the University of Wuppertal**
 
 The Provide process in the IPFS network, or in other words, publishing content in the network is very slow (in Internet terms). Through measurements we’ve found that it can be improved by an order of magnitude. In this talk, Dennis presented the team’s improvement proposals together with initial results as well as next steps.
 
@@ -33,29 +33,29 @@ The Provide process in the IPFS network, or in other words, publishing content i
 
 Max took a closer look at the recently added decentralized hole punching feature, allowing NAT and firewall traversal without the need for any central coordination servers (STUN and TURN). This is clearly a giant step for a P2P networking protocol and one that has not seen a decentralized solution.
 
-[**Tools for developing distributed protocols and applications**](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20\](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20)**, Pedro Akos Costa, PhD student at NOVA University of Lisbon**
+\[**Tools for developing distributed protocols and applications**\](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20\](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=20)**, Pedro Akos Costa, PhD student at NOVA University of Lisbon**
 
 Pedro addressed questions such as which tools should we build and develop to research and improve distributed networking protocols?
 
-[**libp2p DHT: performance, workloads, and possible directions to evolve**](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14\](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14)**, Joao Leitao, Assistant Professor at NOVA University of Lisbon.**
+\[**libp2p DHT: performance, workloads, and possible directions to evolve**\](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14\](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=14)**, Joao Leitao, Assistant Professor at NOVA University of Lisbon.**
 
 Joao explained briefly the Distributed Hash Table structure of libp2p, and addressed issues such as what performance can we observe? Which improvement tracks are being studied currently? In which direction are we going and is it the right one?
 
-[**Challenges in Browser Connectivity. An Outlook onto libp2p’s Future: WebRTC, WebTransport, WebSockets**](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18\](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18)**, Marten Seeman, one of the core maintainers of libp2p**
+\[**Challenges in Browser Connectivity. An Outlook onto libp2p’s Future: WebRTC, WebTransport, WebSockets**\](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18\](https://www.youtube.com/watch?v=aXYUw9tikaQ&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=18)**, Marten Seeman, one of the core maintainers of libp2p**
 
 Marten discussed what is the future of libp2p within the Browser? What about WebRTC, WebTransport, WebSockets in the future and what do we need to do to get there?
 
-[**Storetheindex: A distributed and eventually consistent database**](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17\](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17)**, Marco Munizaga, member of libp2p maintainers team**
+\[**Storetheindex: A distributed and eventually consistent database**\](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17\](https://www.youtube.com/watch?v=rsmP7888ruk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=17)**, Marco Munizaga, member of libp2p maintainers team**
 
 Marco presented the “storetheindex” project and latest updates. `storetheindex` is a distributed and eventually consistent database. Marco explained what that means, what properties it holds, and how it enables IPFS < - > Filecoin interoperability.
 
-[**Architectural Collisions - Short Stories of Hard Problems Putting IPFS in Strange Places**](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13\](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13)**, Dietrich Ayala, ecosystem lead at the Browsers & Platforms team at Protocol Labs**
+\[**Architectural Collisions - Short Stories of Hard Problems Putting IPFS in Strange Places**\](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13\](https://www.youtube.com/watch?v=pfX8S7yKSCE&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=13)**, Dietrich Ayala, ecosystem lead at the Browsers & Platforms team at Protocol Labs**
 
 The Browsers & Platforms team at Protocol Labs works on IPFS integration across many deployment environments, with many different collaborators, on various architectures, including even the final frontier… SPACE! Dietrich shared a series of scenarios with examples of what worked, what didn’t, and what’s still in progress to give you a peek into the P2P future.
 
 Gossipsub is the primary pubsub protocol of libp2p and is being the protocol of choice for the Filecoin blockchain, as well as other prominent blockchains, such as ETH2.0. But what is Gossipsub? What can it be used for? And what are its security properties given the highly-critical environments it operates in?
 
-[**QUIC Deep Dive + Developments at the IETF**](https://www.youtube.com/watch?v=6SyDP7xKqZk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=21\](https://www.youtube.com/watch?v=6SyDP7xKqZk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO&index=21)**, Marten Seeman, core maintainer of quic-go**
+[**QUIC Deep Dive**](https://www.youtube.com/watch?v=6SyDP7xKqZk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)**, Marten Seeman, core maintainer of quic-go**
 
 After quickly covering the history and basics of QUIC, Marten speaks to some of the interesting corners of the protocol as someone who has watched it evolve from the IETF and implemented it in Go. He also provided an outlook on how its properties are leveraged in future protocols (MASQUE, WebTransport).
 
