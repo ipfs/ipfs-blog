@@ -2,10 +2,10 @@
 title: Break on Through with IPFS HTTP Gateways - Part 1
 description: 'Learn more about the core concepts behind IPFS and how you can use IPFS using HTTP with IPFS gateways'
 author: Daniel Norman
-date: 2022-06-07
+date: 2022-06-03
 permalink: '/2022-06-07-break-on-through-ipfs-gateways-1/'
 translationKey: ''
-header_image: '/171434584-f53b2b7b-16f8-4a4f-99aa-867a50b9b48a.png'
+header_image: '/144127481-634bdab9-2033-418b-8ed2-6ba3dc4e554b.png'
 tags:
   - gateways
 ---
@@ -82,8 +82,6 @@ In the example with the image loaded from NASA, we used location addressing to f
 
 ![location addressing](../assets/location-addressing.png)
 
-
-
 The challenges with location addressing are numerous. We've all had the experience of going down an internet rabbit hole only to be abrupted by dead links because the link changed or the server is no longer hosting the files.
 
 In a peer-to-peer network like IPFS, a given file might be hosted on a number of the IPFS nodes.
@@ -136,8 +134,9 @@ In its simplest form, a gateway is an IPFS node that also accepts HTTP requests 
 ### Example
 
 To get a sense of using an IPFS gateway, try opening the following gateway links with the CID of the image of Astronaut Jessica Watkins:
-https://ipfs.io/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm
-https://cloudflare-ipfs.com/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm
+
+- [https://ipfs.io/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm](https://ipfs.io/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm)
+- [https://cloudflare-ipfs.com/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm](https://cloudflare-ipfs.com/ipfs/bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm)
 
 As you might notice, these are two different gateways that are capable of fetching the same image using IPFS' core pillars: content addressing and peer-to-peer networking.
 
@@ -153,5 +152,5 @@ If you're interested in:
 
 - Diving deeper, check out the [IPFS docs](https://docs.ipfs.io/)
 - Running an IPFS node, [install IPFS](https://docs.ipfs.io/install/)
-- Ask questions, join us in [the IPFS forum](https://discuss.ipfs.io/)
-- Chat with us, join us on [Discord](https://discord.com/invite/KKucsCpZmY)
+- Asking questions, join us in [the IPFS forum](https://discuss.ipfs.io/)
+- Chatting with us, join us on [Discord](https://discord.com/invite/KKucsCpZmY) or [Matrix](https://matrix.to/#/#ipfs:matrix.org)
