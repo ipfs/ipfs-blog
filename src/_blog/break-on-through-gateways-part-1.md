@@ -112,7 +112,7 @@ It's worth noting that IPFS is a set of open-source protocols, specifications, a
 
 So how do you use IPFS to access files in real-world applications?
 
-There are two prominent ways to fetch files stored in the IPFS network:
+There are two primary ways to fetch files stored in the IPFS network:
 
 - Running an IPFS node by installing one of the IPFS implementations as a daemon (long-running process) on your computer or a server in the cloud. The node becomes a member of the IPFS peer-to-peer network and announces what data it’s holding and responds to requests for data.
 - Using an **IPFS Gateway** which allows fetching CIDs using the HTTP protocol.
