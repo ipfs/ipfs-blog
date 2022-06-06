@@ -123,7 +123,7 @@ The first option allows you to _speak the native IPFS protocol_ while the latter
 
 IPFS gateways are public services that translate between _Web2_ and _Web3_ thereby providing a bridge between HTTP and IPFS.
 
-They allow you to use the HTTP protocol –which almost every programming language is capable of– to request a CID from the IPFS network.
+They allow you to use the HTTP protocol – which almost every programming language is capable of – to request data by its CID from the IPFS network.
 
 You request content from an IPFS gateway by passing a CID in the HTTP request. Since CIDs are a hash of specific data, if the data is provided by a node on the network and accessible by the gateway, the gateway can get that specific data from the network no matter where it sits.
 
