@@ -129,7 +129,6 @@ You request content from an IPFS gateway by passing a CID in the HTTP request. S
 
 In its simplest form, a gateway is an IPFS node that also accepts HTTP requests for CIDs in addition to speaking the IPFS protocol to participate in the peer-to-peer network. Most IPFS implementations can also work as a gateway.
 
-![Any supported IPFS node can also be a gateway](../assets/browser-gateway.png)
 
 ### Example
 
