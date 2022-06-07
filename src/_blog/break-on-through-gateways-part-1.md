@@ -1,9 +1,9 @@
 ---
-title: Break on Through with IPFS HTTP Gateways - Part 1
+title: A Practical Explainer for IPFS Gateways - Part 1
 description: 'Learn more about the core concepts behind IPFS and how you can use IPFS using HTTP with IPFS gateways'
 author: Daniel Norman
 date: 2022-06-03
-permalink: '/2022-06-07-break-on-through-ipfs-gateways-1/'
+permalink: '/2022-06-09-practical-explainer-ipfs-gateways-1/'
 translationKey: ''
 header_image: '/144127481-634bdab9-2033-418b-8ed2-6ba3dc4e554b.png'
 tags:
@@ -108,16 +108,16 @@ For example, if you ask an IPFS node for a CID that it doesn't have, the node ca
 
 ## Speaking IPFS
 
-It's worth noting that IPFS is a set of open-source protocols, specifications, and software implementations.
-
-So how do you use IPFS to access files in real-world applications?
-
 There are two primary ways to fetch files stored in the IPFS network:
 
 - Running an IPFS node by installing one of the IPFS implementations as a daemon (long-running process) on your computer or a server in the cloud. The node becomes a member of the IPFS peer-to-peer network and announces what data it’s holding and responds to requests for data.
 - Using an **IPFS Gateway** which allows fetching CIDs using the HTTP protocol.
 
-The first option allows you to _speak the native IPFS protocol_ while the latter serves as a bridge in situations where you might be constrained to using HTTP. Choosing the right approach depends on your use case.
+The first option allows you to _speak the native IPFS protocol_. The latter serves as a bridge in situations where you might be constrained to using HTTP, such as in web apps where your app users may not be running an IPFS node.
+
+Choosing the right approach depends on your use case and requirements. In reality, combining the two approaches is also perfectly valid.
+
+> **Note:** In addition to the two ways above, the browser [Brave](https://brave.com/ipfs-support/) has a built in IPFS node, allowing you to directly interact with the IPFS network from the browser. Moreover, [js-ipfs](https://js.ipfs.io/) paves the way for an implementaion of the IPFS protocol that can be embedded as part of a web application running in the browser.
 
 ## What are IPFS gateways?
 
@@ -127,8 +127,11 @@ They allow you to use the HTTP protocol – which almost every programming langu
 
 You request data from an IPFS gateway by passing a CID in the HTTP request. Since CIDs are a hash of specific data, if the data is provided by a node on the network and accessible by the gateway, the gateway can get that specific data from the network no matter where it sits.
 
-In its simplest form, a gateway is an IPFS node that also accepts HTTP requests for CIDs in addition to speaking the IPFS protocol to participate in the peer-to-peer network. Most IPFS implementations can also work as a gateway.
+In its simplest form, a gateway is a computer running an IPFS node that also accepts HTTP requests for CIDs.
 
+Typically, an HTTP request to an IPFS gateway follows the following stucture: `https://<gateway-url>/ipfs/<cid>`.
+
+You can find public gateways via the [Public Gateway Checker](https://ipfs.github.io/public-gateway-checker/).
 
 ### Example
 
@@ -139,7 +142,14 @@ To get a sense of using an IPFS gateway, try opening the following gateway links
 
 As you might notice, these are two different gateways that are capable of fetching the same image using IPFS' core pillars: content addressing and peer-to-peer networking.
 
-This example only scratches the surface, leaving out many important details. The reality of using IPFS gateways is a nuanced topic that involves a space of trade-offs and details worth considering when developing applications.
+In the example, you just request a single image; but remember how a CID can be a whole directory of files, i.e., a website. When loading a whole website from an IPFS gateway, it's better to use the subdomain gateway resolution style to avoid [violation of the same-origin policy](https://docs.ipfs.io/concepts/ipfs-gateway/#violation-of-same-origin-policy).
+
+For example, instead of loading the IPFS documentation website (which is also deployed to IPFS 🤯): `https://ipfs.io/ipfs/bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme` as we did with the image, you would load it as follows:
+
+- [https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.dweb.link/](https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.dweb.link/)
+- [https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.cf-ipfs.com/](https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.cf-ipfs.com/)
+
+The subdomain gateway resolution style follows the following structure: `https://<cid>.<gateway-url>`.
 
 ## Summary
 
