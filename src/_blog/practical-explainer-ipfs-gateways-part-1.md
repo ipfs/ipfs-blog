@@ -2,7 +2,7 @@
 title: A Practical Explainer for IPFS Gateways - Part 1
 description: 'Learn more about the core concepts behind IPFS and how you can use IPFS using HTTP with IPFS gateways'
 author: Daniel Norman
-date: 2022-06-03
+date: 2022-06-09
 permalink: '/2022-06-09-practical-explainer-ipfs-gateways-1/'
 translationKey: ''
 header_image: '/2022-ipfs-gateways-1.png'
