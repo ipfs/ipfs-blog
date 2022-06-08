@@ -5,7 +5,7 @@ author: Daniel Norman
 date: 2022-06-03
 permalink: '/2022-06-09-practical-explainer-ipfs-gateways-1/'
 translationKey: ''
-header_image: '/144127481-634bdab9-2033-418b-8ed2-6ba3dc4e554b.png'
+header_image: '/2022-ipfs-gateways-1.png'
 tags:
   - gateways
 ---
