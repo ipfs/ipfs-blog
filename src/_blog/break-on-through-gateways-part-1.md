@@ -142,14 +142,14 @@ To get a sense of using an IPFS gateway, try opening the following gateway links
 
 As you might notice, these are two different gateways that are capable of fetching the same image using IPFS' core pillars: content addressing and peer-to-peer networking.
 
-In the example, you just request a single image; but remember how a CID can be a whole directory of files, i.e., a website. When loading a whole website from an IPFS gateway, it's better to use the subdomain gateway resolution style to avoid [violation of the same-origin policy](https://docs.ipfs.io/concepts/ipfs-gateway/#violation-of-same-origin-policy).
+In the example, you just request a single image; but remember how a CID can be a whole directory of files, i.e., a website. When loading a whole website from an IPFS gateway, it's better to use the [subdomain gateway resolution style](https://docs.ipfs.io/concepts/ipfs-gateway/#resolution-style) to avoid [violation of the same-origin policy](https://docs.ipfs.io/concepts/ipfs-gateway/#violation-of-same-origin-policy).
 
-For example, instead of loading the IPFS documentation website (which is also deployed to IPFS 🤯): `https://ipfs.io/ipfs/bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme` as we did with the image, you would load it as follows:
+For example, instead of loading the IPFS documentation website (which is also deployed to IPFS 🤯) using the path resolution style: `https://ipfs.io/ipfs/bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme` as we did with the image, you would load it with the subdomain resolution style, which follows the following structure: `https://<cid>.<gateway-url>`:
 
 - [https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.dweb.link/](https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.dweb.link/)
 - [https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.cf-ipfs.com/](https://bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme.ipfs.cf-ipfs.com/)
 
-The subdomain gateway resolution style follows the following structure: `https://<cid>.<gateway-url>`.
+
 
 ## Summary
 
