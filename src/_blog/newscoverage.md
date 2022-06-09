@@ -4,6 +4,23 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: 'Quiet: Free and Open P2P Team Chat built with Tor, libp2p and IPFS'
+  date: 2022-05-25
+  publish_date: 
+  path: https://twit.tv/shows/floss-weekly/episodes/682
+  tags:
+  - encryption
+  - pubsub
+  - libp2p
+  - Gossipsub
+  - CRDTs
+  - censorship
+  - case study
+- title: Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space
+  date: 2022-05-23
+  publish_date: 
+  path: https://www.theblockcrypto.com/linked/148279/filecoin-foundation-and-lockheed-martin-partner-to-bring-decentralized-storage-to-space
+  card_image: "/1-r0chmfcopebcnhpocykdpw-2.png"
 - title: 'Scala Share: Decentralized file sharing with IPFS'
   date: 2021-06-08
   publish_date: 
