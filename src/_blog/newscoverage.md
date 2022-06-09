@@ -4,6 +4,10 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space
+  date: 2022-05-23
+  publish_date: 
+  path: https://www.theblockcrypto.com/linked/148279/filecoin-foundation-and-lockheed-martin-partner-to-bring-decentralized-storage-to-space
 - title: 'Scala Share: Decentralized file sharing with IPFS'
   date: 2021-06-08
   publish_date: 
