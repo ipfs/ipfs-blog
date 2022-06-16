@@ -36,17 +36,17 @@ The paper will be presented in August 2022 at the conference. A pre-print will b
 
 **An exciting list of things to work on:** The IPFS Network Observatory is composed of a lot of items. We split our work in “Requests for Measurements” (RFMs) and we have collected more than 15 distinct items we considered important parts of the observatory.
 
-Check out the list at: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements "https://github.com/protocol/network-measurements") - you are more than welcome to propose more topics that are important for your project by starting an Issue or submitting a PR.
+Check out the list at: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements "https://github.com/protocol/network-measurements") - you are welcome to propose more topics that are important for your project by starting an Issue or submitting a PR.
 
 **Funding for RFMs:** The RFMs are open to the community to get involved and contribute their previous knowledge and priceless experience to our mission. For this, there is funding available through the \[Radius platform\]([https://app.radius.space/](https://app.radius.space/ "https://app.radius.space/")) and most RFMs will be published there and rewarded. We currently have the following seven grants published, two of which have already received applications.
 
-* \[Effectiveness of Bitswap Discovery Process\]([https://app.radius.space/grants/MQS2icjXKGJ8jy2bqS8W](https://app.radius.space/grants/MQS2icjXKGJ8jy2bqS8W "https://app.radius.space/grants/MQS2icjXKGJ8jy2bqS8W"))
-* \[IPFS Provider Record Liveness\]([https://](https://www.dgm.xyz/grants/KUBoJvi8Byos9nt3s2Lt)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/KUBoJvi8Byos9nt3s2Lt](https://www.dgm.xyz/grants/KUBoJvi8Byos9nt3s2Lt))
-* \[Location of IPFS end users and requested content\]([https://](https://www.dgm.xyz/grants/t7p9MzZNxCkWV171uBzm)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/t7p9MzZNxCkWV171uBzm](https://www.dgm.xyz/grants/t7p9MzZNxCkWV171uBzm))
-* \[​​IP address Churn (Roaming) & PeerID distribution for nodes in the IPFS Network\]([https://](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/bs6rbWLGJRnICtgjU0LS](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS))
-* \[TTFB through different architecture components\]([https://](https://www.dgm.xyz/grants/g5riWRq4BkhDvl9vsjda)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/g5riWRq4BkhDvl9vsjda](https://www.dgm.xyz/grants/g5riWRq4BkhDvl9vsjda))
-* \[Distribution of DHT lookup times and Breakdown of Content Routing Latency\]([https://](https://www.dgm.xyz/grants/cieOsJkIqWSQkk9obsrO)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/cieOsJkIqWSQkk9obsrO](https://www.dgm.xyz/grants/cieOsJkIqWSQkk9obsrO))
-* \[Uptime and churn of IPFS network nodes\]([https://](https://www.dgm.xyz/grants/9ZiplsZZEJvOm1yFgWJ0)[app.radius.space](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)[/grants/9ZiplsZZEJvOm1yFgWJ0](https://www.dgm.xyz/grants/9ZiplsZZEJvOm1yFgWJ0))
+* [Effectiveness of Bitswap Discovery Process](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
+* [IPFS Provider Record Liveness](https://www.dgm.xyz/grants/KUBoJvi8Byos9nt3s2Lt)
+* [Location of IPFS end users and requested content](https://www.dgm.xyz/grants/t7p9MzZNxCkWV171uBzm)
+* [​​IP address Churn (Roaming) & PeerID distribution for nodes in the IPFS Network](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS)
+* [TTFB through different architecture components](https://www.dgm.xyz/grants/g5riWRq4BkhDvl9vsjda)
+* [Distribution of DHT lookup times and Breakdown of Content Routing Latency](https://www.dgm.xyz/grants/cieOsJkIqWSQkk9obsrO)
+* [Uptime and churn of IPFS network nodes](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
 
 **A thriving community!** We are collaborating with more than 40 of the brightest academic and industry researchers in more than 10 institutions, including Barcelona Supercomputing Center (ES), HKUST (CH), NOVA ULisbon (PT), QMUL (UK), Stanford (US), Telefonica (ES), Tokyo University of Technology (JP), TUBerlin (DE), TUDarmstadt (DE), TUMunich (DE), UWuppertal (DE), and more! We are meeting virtually on a weekly basis and physically on a quarterly basis.
 
@@ -56,7 +56,7 @@ You are more than welcome to get involved and come work with us!
 
 There’s also lots of passion and a great spirit around here :)
 
-**Call Outs**
+### Call Outs
 
 * Watch this \[intro video\]([https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO](https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO "https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO")) to ProbeLab’s activities at the Paris P2P Festival.
 * Watch some of our collaborators talking about their ongoing work at the Paris P2P Festival:
