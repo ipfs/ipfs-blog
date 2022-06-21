@@ -38,12 +38,12 @@ The paper will be presented in August 2022 at the conference. A pre-print will b
 
 Check out the list at: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements "https://github.com/protocol/network-measurements") - you are welcome to propose more topics that are important for your project by starting an Issue or submitting a PR.
 
-**Funding for RFMs:** The RFMs are open to the community to get involved and contribute their previous knowledge and priceless experience to our mission. For this, there is funding available through the \[Radius platform\]([https://app.radius.space/](https://app.radius.space/ "https://app.radius.space/")) and most RFMs will be published there and rewarded. We currently have the following seven grants published, two of which have already received applications.
+**Funding for RFMs:** The RFMs are open to the community to get involved and contribute their previous knowledge and priceless experience to our mission. For this, there is funding available through the [Radius platform](https://app.radius.space/) and most RFMs will be published there and rewarded. We currently have the following seven grants published, two of which have already received applications.
 
 * [Effectiveness of Bitswap Discovery Process](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
 * [IPFS Provider Record Liveness](https://www.dgm.xyz/grants/KUBoJvi8Byos9nt3s2Lt)
 * [Location of IPFS end users and requested content](https://www.dgm.xyz/grants/t7p9MzZNxCkWV171uBzm)
-* [​​IP address Churn (Roaming) & PeerID distribution for nodes in the IPFS Network](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS)
+* [IP address Churn (Roaming) & PeerID distribution for nodes in the IPFS Network](https://www.dgm.xyz/grants/bs6rbWLGJRnICtgjU0LS)
 * [TTFB through different architecture components](https://www.dgm.xyz/grants/g5riWRq4BkhDvl9vsjda)
 * [Distribution of DHT lookup times and Breakdown of Content Routing Latency](https://www.dgm.xyz/grants/cieOsJkIqWSQkk9obsrO)
 * [Uptime and churn of IPFS network nodes](https://www.dgm.xyz/grants/MQS2icjXKGJ8jy2bqS8W)
@@ -52,22 +52,22 @@ Check out the list at: [https://github.com/protocol/network-measurements](https:
 
 You are more than welcome to get involved and come work with us!
 
-**Open Positions:** The team is currently small but growing quickly. We are looking for exceptional \[Research Engineers\]([https://boards.greenhouse.io/protocollabs/jobs/4283928004](https://boards.greenhouse.io/protocollabs/jobs/4283928004 "https://boards.greenhouse.io/protocollabs/jobs/4283928004")) and \[Research Scientists\]([https://boards.greenhouse.io/protocollabs/jobs/4283974004](https://boards.greenhouse.io/protocollabs/jobs/4283974004 "https://boards.greenhouse.io/protocollabs/jobs/4283974004")) with a passion for decentralized networks and extensive hands-on experience. We are seeking people who are able to hit the right balance between scientific exploration, and prototype development.
+**Open Positions:** The team is currently small but growing quickly. We are looking for exceptional [Research Engineers](https://boards.greenhouse.io/protocollabs/jobs/4283928004) and [Research Scientists](https://boards.greenhouse.io/protocollabs/jobs/4283974004) with a passion for decentralized networks and extensive hands-on experience. We are seeking people who are able to hit the right balance between scientific exploration, and prototype development.
 
 There’s also lots of passion and a great spirit around here :)
 
 ### Call Outs
 
-* Watch this \[intro video\]([https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO](https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO "https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO")) to ProbeLab’s activities at the Paris P2P Festival.
+* Watch this [intro video](https://www.youtube.com/watch?v=75ewjnT6B9Y&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO) to ProbeLab’s activities at the Paris P2P Festival.
 * Watch some of our collaborators talking about their ongoing work at the Paris P2P Festival:
-  * \[Optimizing the IPFS Provide Process\]([https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO "https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO"))
-  * \[Tools for developing distributed applications and protocols\]([https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO "https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO"))
-  * \[Libp2p DHT: performance, workloads and future directions\]([https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO "https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO"))
-* Check out all of our ongoing projects and follow announcements at our \[Notion page\]([https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208](https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208 "https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208"))
-* Apply for our grants at: [https://dgm.xyz](https://dgm.xyz "https://dgm.xyz") and come work with us!
-* Join the discussion at the \[IPFS Discord server\]([https://discord.gg](https://discord.gg "https://discord.gg")/ipfs) at the #probe-lab channel.
+  * [Optimizing the IPFS Provide Process](https://www.youtube.com/watch?v=wbY-MueAfXg&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)
+  * [Tools for developing distributed applications and protocols](https://www.youtube.com/watch?v=MvyyuMxsKqk&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)
+  * [Libp2p DHT: performance, workloads and future directions](https://www.youtube.com/watch?v=RPO1zCqsxY0&list=PLNeNFYqVeWnNy8KdZOdOTlzSkKoBWyfqO)
+* Check out all of our ongoing projects and follow announcements at our [Notion page](https://www.notion.so/pl-strflt/ProbeLab-Protocol-Benchmarking-Optimization-a63238fd1b184d6f8fea4bb38d975208)
+* Apply for our grants at: [https://dgm.xyz](https://dgm.xyz) and come work with us!
+* Join the discussion at the [IPFS Discord server](https://discord.gg) at the #probe-lab channel.
 * We’re meeting virtually every week and physically once a quarter (at least) - you’re welcome to join! Join the Discord server to find out more.
-* Contribute your ideas for network measurements on our Github repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements "https://github.com/protocol/network-measurements").
+* Contribute your ideas for network measurements on our Github repository: [https://github.com/protocol/network-measurements](https://github.com/protocol/network-measurements).
 * Tell your friends! :)
 
 See you soon! We’ll be announcing the findings of our work here, so stay tuned!
