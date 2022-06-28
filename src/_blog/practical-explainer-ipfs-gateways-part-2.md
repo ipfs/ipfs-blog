@@ -21,17 +21,20 @@ In this second part, you will learn practical tips and tricks for using IPFS gat
 - Common challenges with IPFS gateways
 - Differences between IPFS gateways
 - IPFS gateway request lifecycle
-- Best practices
+- Content publishing lifecycle
+- Best practices for self-hosting IPFS nodes
 - Debugging CID retrievability
 - Caching and garbage collection
 - Pinning, pinning services
 - Improving CID access performance and reliability from the IPFS network
 
-By the end of this article, you should be equipped with the knowledge and tools to use IPFS gateways confidently and systematically debug when you face problems.
+By the end of this blog post, you should be equipped with the knowledge and tools to use IPFS gateways confidently and systematically debug when you face problems.
+
+> **Note:** The blog refers assumes you are using [kubo](https://github.com/ipfs/go-ipfs) (until recently known as go-ipfs) since it's the most popular IPFS implementation. This is not to take away any thunder from the other implementations, e.g, js-ipfs
 
 ## Common challenges with IPFS HTTP Gateways
 
-One of the questions most frequently asked by developers using IPFS in our various community channels is **why CIDs aren't retrievable via public IPFS gateways** or in other cases, why are they slow to load.
+One of the questions most frequently asked by developers using IPFS in our various community channels is **why CIDs aren't retrievable via public IPFS gateways** or in other cases, why are CIDs so slow to load.
 
 For example, when you first upload content to your local IPFS node, it's not uncommon to get [504 Gateway Time-out](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504) when requesting the CID from a public gateway.
 
@@ -39,9 +42,9 @@ IPFS gateways abstract the distributed aspect of IPFS while giving you a familia
 
 From a high level, when faced with challenges (either slowness or timeouts) fetching a CID from an IPFS gateway, it's typically related to one of the following:
 
-- The IPFS gateway.
-- The provider of the CID, i.e. the IPFS node pinning the CID.
-- Content providing: the mechanism by which providers for a given CID advertise it to the distributed hash table (DHT).
+- The IPFS gateway
+- The provider of the CID, i.e. the IPFS node pinning the CID might be unreachable or down.
+- You (or the pinning service) are not providing your CIDs to the IPFS network. Providing is the process by which providers of a given CID advertise it to the distributed hash table (DHT) to make it discoverable.
 - Network latency between the client and the IPFS gateway or the gateway and the provider.
 
 Given all of these factors, it's difficult giving blanket advice. This is where understanding the lifecycle of a CID request to an IPFS gateway is useful as it will allow debugging problems quickly.
@@ -56,20 +59,89 @@ If the CID is in the gateway's cache, the gateway will respond to the HTTP reque
 
 If the CID is not in the cache, the CID has to be retrieved from the IPFS network. This is a two-step process:
 
-1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) to find the [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
+1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) to find the peer IDs and [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
 2. **Content retrieval**: connecting to one of the providers, fetching the CID's content, and streaming the response to the client.
 
 > **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway
 
-In summary, the lifecycle of an IPFS gateway request can be split into three parts:
+## Debugging IPFS content discovery and retrieval
 
-- Cache
-- Content discovery
-- Content retrieval
+When trying to debug why a CID isn't retrievable from a gateway, the most useful thing to do is to narrow down the root cause.
+
+It can be either a problem with **content routing**: finding provider records for the CID in the DHT, or a problem with **content retrieval**: connecting to the peer from the provider records in the DHT.
+
+If you are running an IPFS node, run the following command to determine if there are any peers advertising the CID (making it discovervable):
+
+```
+ipfs dht findprovs [CID]
+```
+
+If providers for the CID are found by searching the DHT, their **peerIDs** are returned:
+
+```
+12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt
+12D3KooWJkNYFckQGPdBF57kVCLdkqZb1ZmZXAphe9MZkSh16UfP
+QmQzqxhK82kAmKvARFZSkUVS6fo9sySaiogAnx5EnZ6ZmC
+12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT
+```
+
+If no providers were returned, the cause of your problem might be content publishing. The next section of the blog post covers this.
+
+If provider records have been found (the list of **peerIds**), the next step is to get the addresses corresponding to
+
+https://ipfs-check.on.fleek.co/
+
+Using [kubo (formerly known as go-ipfs)](https://github.com/ipfs/go-ipfs)
+
+## Content publishing lifecycle
+
+The flip side of fetching content from IPFS via gateways is content publishing – the process by which content becomes discoverable in the IPFS network by advertising provider records.
+
+> **Note:** The term **publishing** is a bit misleading, because it refers to the publishing of provider records to the DHT; not the actual content. For this reason, you might see the term **advertising** also used.
+
+This is a continuous process that starts when you first add content to IPFS and repeats every 12 hours (by default) as long as the node is running.
+
+When you add a file to an IPFS node using the `ipfs add` command, the process can be broken down from a high level into the following steps:
+
+1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/#further-resources) is constructed. You get back the root CID of the DAG.
+2. The blocks of the file are made available over Bitswap so any peers can request
+3. Mappings of CIDs to network addresses (including CIDs of the block and the root CID) are advertised to the DHT. These **provider records** have an expiry time of 24 hours (accounting for provider churn) and need to be **reprovided** by the node every 12 hours (accounting for peer churn).
+
+## Debugging content publishing
+
+IPFS network measurements conducted by the ProbeLab, show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS.
+
+As you add more files to your IPFS node, reprovide runs take longer. When a **reprovide run takes longer than 24 hours (the expiry time for provider records), your content becomes undiscoverable**. In fact, it's often the root cause for many content discovery problems.
+
+To find out how long a reprovide run take, run the following command:
+
+```sh
+ipfs stats provide
+```
+
+The result should look like this:
+
+```
+TotalProvides:          7k (7,401)
+AvgProvideDuration:     271.271ms
+LastReprovideDuration:  13m16.104781s
+LastReprovideBatchSize: 1k (1,858)
+```
+
+If you notice that the `LastReprovideDuration` value is reaching close to 24 hours, you should consider one of the following options as a resolution:
+
+- Enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) in Kubo. This configuration improves content publishing times significantly by maintaining more connections to peers and a larger routing table, and batching advertising of provider records. It should be noted that this comes at the cost of increased resource consumption.
+- Change the [reprovider strategy](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) from `all` to `roots`. This will only publish provider records for the roots CID instead of for each block reducing the total number of provides in each run. This change should be done with caution, as it will limit discoverability to only root CIDs. If you are adding folders of files to IPFS, only the CID for the folder will be advertised (all the blocks will still be retrievable with Bitswap once a connection to the node is established).
+
+To trigger a reprovide run, run the following command:
+
+```
+ipfs bitswap reprovide
+```
 
 ## Pinning, caching, and garbage collection
 
-Existing IPFS [implementations](https://ipfs.io/#install) have caching mechanism that will keep CIDs local for a short time after the node has fetched it from the network, but these objects may get garbage-collected periodically.
+Existing IPFS [implementations](https://ipfs.io/#install) have a caching mechanism that will keep CIDs local for a short time after the node has fetched it from the network, but these objects may get garbage-collected periodically.
 
 Pinning is the mechanism that allows you to tell IPFS to **always** store a given CID — by default on your local node. In addition to local pinning, you can also pin your CIDs to [remote pinning services](https://docs.ipfs.io/how-to/work-with-pinning-services/).
 
@@ -103,32 +175,21 @@ Another rather unique example of a public gateway is [nftstorage.link](https://n
 
 Finally, a **self-hosted gateway** refers to an IPFS node(s) configured as a gateway that is hosted by you, either on your local machine or in the cloud.
 
-Choosing from the three approaches depends on your requirements, if performance is critical, self-hosting an IPFS node and gateway or using a dedicated gateway is the way to go.
+Choosing from the three approaches depends on your requirements, if performance is critical, self-hosting an IPFS node and gateway or using a dedicated gateway is a reasonable choice that can complement the usage of public gateways.
 
-### Best practices for self-hosted IPFS gateways
+### Best practices if you're self-hosting an IPFS node/gateway
 
-If you are running an IPFS node that is also configured as an IPFS gateway, consider applying the following best practices:
+If you are running an IPFS node that is also configured as an IPFS gateway, there are steps you can take to improve the discovery and retrievability of your CIDs.
 
 - Set up [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
 - Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse-proxy
 - Put a CDN like Cloudflare in front of the IPFS gateway
 
-## Debugging CID retrievability
-
-When trying to debug why a CID isn't retrievable from a gateway, the most useful thing to do is to narrow down the root cause.
-
-It can be either a problem with **content routing**: finding provider records for the CID in the DHT, or a problem with **content retrieval**: connecting to the peer from the provider records in the DHT.
-
-
-To determin follow the following steps to find out whether the problem is
-
-https://ipfs-check.on.fleek.co/
-
-Using [kubo (formerly known as go-ipfs)](https://github.com/ipfs/go-ipfs)
-
 <!-- ### Tip: avoid hardcoding public gateway domains in your application -->
 
-## Advertising provider records - accelerated DHT
+## Tip: improve providing records - accelerated DHT
+
+TODO:
 
 ## Tip: Pin your CIDs to multiple IPFS nodes
 
@@ -158,5 +219,3 @@ Practically speaking, this can be implemented using several approaches depending
 - Use [Cloudflare workers](https://workers.cloudflare.com/) to implement a light weight proxy to IPFS gateways.
 
 ## Summary
-
-TODO
