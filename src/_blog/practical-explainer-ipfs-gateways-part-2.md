@@ -21,7 +21,21 @@ This blog post is the second of a two-part series about IPFS gateways:
 
 In this second part, you will learn practical tips and tricks for using IPFS gateways in real-world applications:
 
-- Common challenges with IPFS gateways
+- [Common challenges with IPFS HTTP Gateways](#common-challenges-with-ipfs-http-gateways)
+- [IPFS gateway request lifecycle](#ipfs-gateway-request-lifecycle)
+- [Debugging IPFS content discovery and retrieval](#debugging-ipfs-content-discovery-and-retrieval)
+  - [Debugging with kubo and IPFS Check](#debugging-with-kubo-and-ipfs-check)
+  - [Debugging with pl-diagnose](#debugging-with-pl-diagnose)
+- [Content publishing lifecycle](#content-publishing-lifecycle)
+- [Debugging content publishing](#debugging-content-publishing)
+- [Pinning, caching, and garbage collection](#pinning-caching-and-garbage-collection)
+- [Public vs. dedicated vs. self-hosted gateways](#public-vs-dedicated-vs-self-hosted-gateways)
+- [Best practices for self-hosting an IPFS node/gateway](#best-practices-for-self-hosting-an-ipfs-nodegateway)
+- [Tip: Pin your CIDs to multiple IPFS nodes](#tip-pin-your-cids-to-multiple-ipfs-nodes)
+- [Tip: Use a custom domain that you control as your IPFS gateway](#tip-use-a-custom-domain-that-you-control-as-your-ipfs-gateway)
+- [Summary](#summary)
+
+<!-- - Common challenges with IPFS gateways
 - IPFS gateway request lifecycle
 - Debugging IPFS content discovery and retrieval
 - Content publishing lifecycle
@@ -30,7 +44,7 @@ In this second part, you will learn practical tips and tricks for using IPFS gat
 - Differences between IPFS gateways
 - Best practices for self-hosting IPFS nodes
 - Caching and garbage collection
-- Improving CID access performance and reliability from the IPFS network
+- Improving CID access performance and reliability from the IPFS network -->
 
 By the end of this blog post, you should be equipped with the knowledge and tools to use IPFS gateways confidently and systematically debug when you face problems.
 
@@ -73,6 +87,8 @@ If the CID is not in the cache, the CID has to be retrieved from the IPFS networ
 When trying to debug why a CID isn't retrievable from a gateway, the most useful thing to do is to narrow down the root cause.
 
 It can be either a problem with **content routing**: finding provider records for the CID in the DHT – or a problem with **content retrieval**: connecting to the peer from the provider records in the DHT.
+
+### Debugging with kubo and IPFS Check
 
 If you are running a running [kubo (formerly known as go-ipfs)](https://github.com/ipfs/go-ipfs) IPFS node, run the following command to determine if any peers are advertising the CID (making it discoverable):
 
