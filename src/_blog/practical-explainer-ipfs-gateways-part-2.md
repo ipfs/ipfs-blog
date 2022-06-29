@@ -60,7 +60,7 @@ IPFS gateways abstract the distributed aspect of IPFS while giving you a familia
 
 From a high level, when faced with challenges (either slowness or timeouts) fetching a CID from an IPFS gateway, it's typically related to one of the following:
 
-- The IPFS gateway
+- The IPFS gateway.
 - The provider of the CID, i.e. the IPFS node pinning the CID might be unreachable or down.
 - You (or the pinning service) are not providing your CIDs to the IPFS network. Providing is the process by which providers of a given CID advertise it to the distributed hash table (DHT) to make it discoverable.
 - Network latency between the client and the IPFS gateway or the gateway and the provider.
@@ -80,7 +80,7 @@ If the CID is not in the cache, the CID has to be retrieved from the IPFS networ
 1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) to find the peer IDs and [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
 2. **Content retrieval**: connecting to one of the providers, fetching the CID's content, and streaming the response to the client.
 
-> **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway, in which case the content retrieval is instant.
+> **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway, in which case content retrieval is instant.
 
 ## Debugging IPFS content discovery and retrieval
 
@@ -145,7 +145,7 @@ This is a continuous process that starts when you first add content to an IPFS n
 When you add a file to an IPFS node using the `ipfs add` command, the process can be broken down from a high level into the following steps:
 
 1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
-2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so any peers can request
+2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so any peers can request.
 3. Mappings of CIDs to network addresses (including CIDs of the block and the root CID) are advertised to the DHT. These **provider records** have an expiry time of 24 hours (accounting for provider churn) and need to be **reprovided** by the node every 12 hours (accounting for peer churn).
 
 ## Debugging content publishing
@@ -174,7 +174,9 @@ LastReprovideBatchSize: 1k (1,858)
 If you notice that the `LastReprovideDuration` value is reaching close to 24 hours, you should consider one of the following options as a resolution:
 
 - Enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) in Kubo. This configuration improves content publishing times significantly by maintaining more connections to peers and a larger routing table, and batching advertising of provider records. It should be noted that this comes at the cost of increased resource consumption.
-- Change the [reprovider strategy](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) from `all` to `roots`. This will only publish provider records for the roots CID instead of for each block reducing the total number of provides in each run. This change should be done with caution, as it will limit discoverability to only root CIDs. If you are adding folders of files to IPFS, only the CID for the folder will be advertised (all the blocks will still be retrievable with Bitswap once a connection to the node is established).
+- Change the [reprovider strategy](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) from `all` to either `pinned` or `roots` which both only advertise provider records for explicitly pinned content:
+  - `pinned` will advertise both the root CIDs and child block CIDs (entire DAG) of explicitly pinned content.
+  - `roots` will only advertise the root CIDs of pinned content reducing the total number of provides in each run. This strategy is the most efficient but should be done with caution, as it will limit discoverability to only root CIDs. If you are adding folders of files to IPFS, only the CID for the pinned folder will be advertised (all the blocks will still be retrievable with Bitswap once a connection to the node is established).
 
 To manually trigger a reprovide run, run the following command:
 
@@ -198,7 +200,7 @@ Caching is the reason why requesting a CID for the first time from a gateway can
 - [Pinata](https://www.pinata.cloud/)
 - [nft.storage](https://nft.storage/)
 - [Filebase](https://filebase.com/blog/introducing-support-for-ipfs-backed-by-decentralized-storage/)
-- [Infura](https://infura.io/product/ipfs).
+- [Infura](https://infura.io/product/ipfs)
 
 > Note: Some pinning services, like Pinata, don't publish provider records to the DHT. In such situations, consider direct [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/).
 
@@ -235,8 +237,11 @@ Choosing from the three approaches depends on your requirements, if performance 
 If you are running an IPFS node that is also configured as an IPFS gateway, there are steps you can take to improve the discovery and retrievability of your CIDs.
 
 - Set up [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
-- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse-proxy. Pay extra attention to `Etag`, `Cache-Control` and `Last-Modified` headers.  Consider leveraging list of CIDs in  `X-Ipfs-Roots` for smarter HTTP caching strategies.
-- Put a CDN like Cloudflare in front of the IPFS gateway
+- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse proxy. Pay extra attention to `Etag`, `Cache-Control` and `Last-Modified` headers. Consider leveraging the list of CIDs in `X-Ipfs-Roots` for smarter HTTP caching strategies.
+- Put a CDN like Cloudflare in front of the IPFS gateway.
+- Consider enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) (see the content publishing [section](#debugging-content-publishing) for trade-offs).
+- Test and monitor your internet connection speed, with a tool like [Speedtest CLI](https://www.speedtest.net/apps/cli).
+- Monitor disk I/O and make sure that no other processes are causing disk I/O bottlenecks with a tool like [iotop](https://linux.die.net/man/1/iotop) or [iostat](https://linux.die.net/man/1/iostat).
 
 ## Tip: Pin your CIDs to multiple IPFS nodes
 
@@ -263,7 +268,7 @@ For these reasons, it's sensible to use a domain within your control to route HT
 Practically speaking, this can be implemented using several approaches depending on your willingness to run infrastructure:
 
 - Point a domain you control, e.g., `*.ipfs.yourdomain.io` point to a reverse proxy like nginx which will proxy requests to a public gateway, allowing you to switch public gateways if there's downtime.
-- Use a service like [Cloudflare workers](https://workers.cloudflare.com/) to implement a lightweight proxy to IPFS gateways.
+- Use a service like [Cloudflare workers](https://workers.cloudflare.com/) or [Fastly Compute@Edge](https://www.fastly.com/products/edge-compute) to implement a lightweight reverse proxy to IPFS gateways.
 
 ## Summary
 
