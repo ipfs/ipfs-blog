@@ -73,14 +73,14 @@ When a request for a CID reaches an IPFS gateway, the gateway checks whether the
 
 If the CID is in the gateway's cache, the gateway will respond to the HTTP request with the CID's content.
 
-> **Note:** Cache here can be either an HTTP cache or the local caching by the IPFS node.
+> **Note:** Cache here can be either an HTTP cache or the local data store of the IPFS node.
 
 If the CID is not in the cache, the CID has to be retrieved from the IPFS network. This is a two-step process:
 
 1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) to find the peer IDs and [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
 2. **Content retrieval**: connecting to one of the providers, fetching the CID's content, and streaming the response to the client.
 
-> **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway
+> **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway, in which case the content retrieval is instant.
 
 ## Debugging IPFS content discovery and retrieval
 
@@ -144,13 +144,13 @@ This is a continuous process that starts when you first add content to an IPFS n
 
 When you add a file to an IPFS node using the `ipfs add` command, the process can be broken down from a high level into the following steps:
 
-1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/#further-resources) is constructed. You get back the root CID of the DAG.
-2. The blocks of the file are made available over Bitswap so any peers can request
+1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
+2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so any peers can request
 3. Mappings of CIDs to network addresses (including CIDs of the block and the root CID) are advertised to the DHT. These **provider records** have an expiry time of 24 hours (accounting for provider churn) and need to be **reprovided** by the node every 12 hours (accounting for peer churn).
 
 ## Debugging content publishing
 
-IPFS network measurements conducted by the ProbeLab, show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS. While there are efforts explored in that talk to improve this, it's useful to understand how to troubleshoot problems related to content publishing.
+IPFS network measurements conducted by the [ProbeLab](https://blog.ipfs.io/2022-06-15-probelab/), show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS. While there are efforts explored in that talk to improve this, it's useful to understand how to troubleshoot problems related to content publishing.
 
 Generally speaking, as you add more files to your IPFS node, the longer reprovide runs take.
 
@@ -186,7 +186,7 @@ ipfs bitswap reprovide
 
 Existing IPFS [implementations](https://ipfs.io/#install) have a caching mechanism that will keep CIDs local for a short time after the node has fetched it from the network, but these objects may get garbage-collected periodically.
 
-Pinning is the mechanism that allows you to tell IPFS to **always** store a given CID — by default on your local node. In addition to local pinning, you can also pin your CIDs to [remote pinning services](https://docs.ipfs.io/how-to/work-with-pinning-services/).
+[Pinning](https://docs.ipfs.io/concepts/glossary/#pinning) is the mechanism that allows you to tell IPFS to **always** store a given CID — by default on your local node. In addition to [local pinning](https://docs.ipfs.io/how-to/pin-files/), you can also pin your CIDs to [remote pinning services](https://docs.ipfs.io/how-to/work-with-pinning-services/).
 
 In other words, caching is the mechanism by which CID is kept around on the node for a short period until garbage-collected while pinning is a deliberate choice you make to keep the CID stored on the node.
 
@@ -235,7 +235,7 @@ Choosing from the three approaches depends on your requirements, if performance 
 If you are running an IPFS node that is also configured as an IPFS gateway, there are steps you can take to improve the discovery and retrievability of your CIDs.
 
 - Set up [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
-- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse-proxy
+- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse-proxy. Pay extra attention to `Etag`, `Cache-Control` and `Last-Modified` headers.  Consider leveraging list of CIDs in  `X-Ipfs-Roots` for smarter HTTP caching strategies.
 - Put a CDN like Cloudflare in front of the IPFS gateway
 
 ## Tip: Pin your CIDs to multiple IPFS nodes
@@ -254,7 +254,7 @@ If you're not running an IPFS node, you can start by uploading a file to one ser
 
 ## Tip: Use a custom domain that you control as your IPFS gateway
 
-Imagine the following scenario: you deploy your web app to IPFS which contains media with absolute URLs to a public gateway experiencing an outage. For example, your web app displays the image with an absolute path to the CID: https://bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm.ipfs.infura-ipfs.io.
+Imagine the following scenario: you deploy your web app to IPFS which contains media with absolute URLs to a public gateway experiencing an outage. For example, your web app displays the image with an absolute path to the CID: `https://bafybeibml5uieyxa5tufngvg7fgwbkwvlsuntwbxgtskoqynbt7wlchmfm.ipfs.dweb.link`.
 
 You may be able to reach your media using a different gateway, but since the web app's content is immutable, the links to the IPFS gateway which is down will not load.
 
@@ -263,7 +263,7 @@ For these reasons, it's sensible to use a domain within your control to route HT
 Practically speaking, this can be implemented using several approaches depending on your willingness to run infrastructure:
 
 - Point a domain you control, e.g., `*.ipfs.yourdomain.io` point to a reverse proxy like nginx which will proxy requests to a public gateway, allowing you to switch public gateways if there's downtime.
-- Use [Cloudflare workers](https://workers.cloudflare.com/) to implement a lightweight proxy to IPFS gateways.
+- Use a service like [Cloudflare workers](https://workers.cloudflare.com/) to implement a lightweight proxy to IPFS gateways.
 
 ## Summary
 
