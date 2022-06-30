@@ -17,7 +17,14 @@ The Interplanetary File System (IPFS) is a peer-to-peer protocol for storing and
 
 This blog post is the second of a two-part series about IPFS gateways:
 
-[The first part](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/) was mostly theoretical, covering the principles behind IPFS, the challenges with the client-server model, how IPFS approaches these challenges with peer-to-peer networking and content addressing, the relationship between IPFS and HTTP(S), and finally an introduction to IPFS HTTP gateways and resolution styles.
+[The first part](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/) was mostly theoretical and covered:
+
+- The principles behind IPFS.
+- The challenges with the client-server model.
+- How IPFS approaches these challenges with peer-to-peer networking and content addressing.
+- The relationship between IPFS and HTTP(S).
+- An introduction to IPFS HTTP gateways.
+- IPFS gateway resolution styles.
 
 In this second part, you will learn practical tips and tricks for using IPFS gateways in real-world applications:
 
