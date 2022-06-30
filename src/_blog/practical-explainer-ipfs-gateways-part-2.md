@@ -17,14 +17,7 @@ The Interplanetary File System (IPFS) is a peer-to-peer protocol for storing and
 
 This blog post is the second of a two-part series about IPFS gateways:
 
-[The first part](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/) was mostly theoretical and covered:
-
-- The principles behind IPFS.
-- The challenges with the client-server model.
-- How IPFS approaches these challenges with peer-to-peer networking and content addressing.
-- The relationship between IPFS and HTTP(S).
-- An introduction to IPFS HTTP gateways.
-- IPFS gateway resolution styles.
+In [the first part](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/), which was mostly theoretical, you learned about the challenges with the client-server model and how IPFS approaches these challenges with _peer-to-peer networking_ and _content addressing_. You then learned about the relationship between IPFS and HTTP(S) and IPFS gateways. Finally, you fetched an image from an IPFS gateway and learned about IPFS gateway resolution styles.
 
 In this second part, you will learn practical tips and tricks for using IPFS gateways in real-world applications:
 
@@ -41,17 +34,6 @@ In this second part, you will learn practical tips and tricks for using IPFS gat
 - [Tip: Pin your CIDs to multiple IPFS nodes](#tip-pin-your-cids-to-multiple-ipfs-nodes)
 - [Tip: Use a custom domain that you control as your IPFS gateway](#tip-use-a-custom-domain-that-you-control-as-your-ipfs-gateway)
 - [Summary](#summary)
-
-<!-- - Common challenges with IPFS gateways
-- IPFS gateway request lifecycle
-- Debugging IPFS content discovery and retrieval
-- Content publishing lifecycle
-- Debugging content publishing
-- Pinning, caching, and garbage collection
-- Differences between IPFS gateways
-- Best practices for self-hosting IPFS nodes
-- Caching and garbage collection
-- Improving CID access performance and reliability from the IPFS network -->
 
 By the end of this blog post, you should be equipped with the knowledge and tools to use IPFS gateways confidently and systematically debug when you face problems.
 
@@ -99,13 +81,13 @@ It can be either a problem with **content routing**: finding provider records fo
 
 If you are running a running [kubo (formerly known as go-ipfs)](https://github.com/ipfs/go-ipfs) IPFS node, run the following command to determine if any peers are advertising the CID (making it discoverable):
 
-```
+```sh
 ipfs dht findprovs [CID]
 ```
 
 If providers for the CID are found by searching the DHT, their **Peer IDs** are returned:
 
-```
+```sh
 12D3KooWChhhfGdB9GJy1GbhghAAKCUR99oCymMEVS4eUcEy67nt
 12D3KooWJkNYFckQGPdBF57kVCLdkqZb1ZmZXAphe9MZkSh16UfP
 QmQzqxhK82kAmKvARFZSkUVS6fo9sySaiogAnx5EnZ6ZmC
@@ -116,7 +98,7 @@ QmQzqxhK82kAmKvARFZSkUVS6fo9sySaiogAnx5EnZ6ZmC
 
 If provider records have been found (the list of **Peer IDs**), the next step is to get the network addresses of one of those peers with the following command:
 
-```
+```sh
 ipfs id -f '<addrs>' [PEER_ID]
 ```
 
@@ -179,14 +161,14 @@ LastReprovideBatchSize: 1k (1,858)
 
 If you notice that the `LastReprovideDuration` value is reaching close to 24 hours, you should consider one of the following options:
 
-- Enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) in Kubo. This configuration improves content publishing times significantly by maintaining more connections to peers and a larger routing table, and batching advertising of provider records. It should be noted that this comes at the cost of increased resource consumption.
+- Enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) in Kubo. This configuration improves content publishing times significantly by maintaining more connections to peers and a larger routing table and batching advertising of provider records. It should be noted that this comes at the cost of increased resource consumption.
 - Change the [reprovider strategy](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) from `all` to either `pinned` or `roots` which both only advertise provider records for explicitly pinned content:
   - `pinned` will advertise both the root CIDs and child block CIDs (entire DAG) of explicitly pinned content.
   - `roots` will only advertise the root CIDs of pinned content reducing the total number of provides in each run. This strategy is the most efficient but should be done with caution, as it will limit discoverability to only root CIDs. If you are adding folders of files to IPFS, only the CID for the pinned folder will be advertised (all the blocks will still be retrievable with Bitswap once a connection to the node is established).
 
 To manually trigger a reprovide run, run the following command:
 
-```
+```sh
 ipfs bitswap reprovide
 ```
 
@@ -246,7 +228,7 @@ If you are running an IPFS node that is also configured as an IPFS gateway, ther
 - Make sure that your node is publicly reachable.
   - You can check this by running `ipfs id` and checking for the `"/ipfs/kad/1.0.0"` value in the list of protocols, or in short by running `ipfs id | grep ipfs\/kad`.
   - If your node is not reachable because you are behind NAT, [check out the docs on NAT configuration](https://docs.ipfs.io/how-to/nat-configuration/#ipv6).
-- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse proxy. Pay extra attention to `Etag`, `Cache-Control` and `Last-Modified` headers. Consider leveraging the list of CIDs in `X-Ipfs-Roots` for smarter HTTP caching strategies.
+- Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse proxy. Pay extra attention to `Etag`, `Cache-Control`, and `Last-Modified` headers. Consider leveraging the list of CIDs in `X-Ipfs-Roots` for smarter HTTP caching strategies.
 - Put a CDN like Cloudflare in front of the IPFS gateway.
 - Consider enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) (see the content publishing [section](#debugging-content-publishing) for trade-offs).
 - Test and monitor your internet connection speed, with a tool like [Speedtest CLI](https://www.speedtest.net/apps/cli).
