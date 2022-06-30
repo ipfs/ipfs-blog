@@ -147,13 +147,11 @@ Now that you're familiar with content retrieval, we'll take a look at the other 
 
 > **Note:** The term **publishing** is a bit misleading, because it refers to the publishing of provider records to the DHT; not the actual content. For this reason, you might see the term **advertising** also used.
 
-This is a continuous process that starts when you first add content to an IPFS node and repeats every 12 hours (by default) as long as the node is running.
-
 When you add a file to an IPFS node using the `ipfs add` command, here's how it becomes published and discoverable across the network:
 
 1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
-2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so any peers can request.
-3. Mappings of CIDs to network addresses (including CIDs of the block and the root CID) are advertised to the DHT. These **provider records** have an expiry time of 24 hours (accounting for provider churn) and need to be **reprovided** by the node every 12 hours (accounting for peer churn).
+2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so that any peer can request them.
+3. The node advertises mappings of CIDs to network addresses known as **provider records** (including CIDs of the blocks and the root CID) to the DHT. This is a continuous process that repeats every 12 hours as long as the node is running (accounting for peer churn). The **provider records** have an expiry time of 24 hours (accounting for provider churn).
 
 ## Debugging content publishing
 
@@ -243,6 +241,9 @@ Choosing from the three approaches depends on your requirements, if performance 
 If you are running an IPFS node that is also configured as an IPFS gateway, there are steps you can take to improve the discovery and retrievability of your CIDs.
 
 - Set up [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
+- Make sure that your node is publicly reachable.
+  - You can check this by running `ipfs id` and checking for the `"/ipfs/kad/1.0.0"` value in the list of protocols, or in short by running `ipfs id | grep ipfs\/kad`.
+  - If your node is not reachable because you are behind NAT, [check out the docs on NAT configuration](https://docs.ipfs.io/how-to/nat-configuration/#ipv6).
 - Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse proxy. Pay extra attention to `Etag`, `Cache-Control` and `Last-Modified` headers. Consider leveraging the list of CIDs in `X-Ipfs-Roots` for smarter HTTP caching strategies.
 - Put a CDN like Cloudflare in front of the IPFS gateway.
 - Consider enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) (see the content publishing [section](#debugging-content-publishing) for trade-offs).
@@ -278,13 +279,13 @@ Practically speaking, this can be implemented using several approaches depending
 
 ## Summary
 
-In this blog post, you learned many tips, tricks, knowledge, and tools to use IPFS gateways effectively and systematically debug when you face problems.
+In this blog post, you learned many tips, tricks, and tools to use IPFS gateways effectively, and systematically debug when you face problems.
 
 We started with common challenges with IPFS gateways and went into the details of content discovery, publishing, the gateway request lifecycle, the different kinds of IPFS gateways, caching, garbage collection, pinning, and best practices when self-hosting IPFS nodes/gateways.
 
-If you're interested in:
+As a next step:
 
-- Diving deeper, check out the [IPFS docs](https://docs.ipfs.io/)
-- Running an IPFS node, [install IPFS](https://docs.ipfs.io/install/)
-- Asking questions, join us in [the IPFS forum](https://discuss.ipfs.io/)
-- Chatting with us, join us on [Slack](https://filecoin.io/slack), [Discord](https://discord.com/invite/KKucsCpZmY), or [Matrix](https://matrix.to/#/#ipfs:matrix.org)
+- [Dive deeper into the IPFS docs](https://docs.ipfs.io/).
+- [Install and run an IPFS node](https://docs.ipfs.io/install/).
+- [Ask questions in the IPFS forum](https://discuss.ipfs.io/).
+- Chat with us on [Slack](https://filecoin.io/slack), [Discord](https://discord.com/invite/KKucsCpZmY), or [Matrix](https://matrix.to/#/#ipfs:matrix.org).
