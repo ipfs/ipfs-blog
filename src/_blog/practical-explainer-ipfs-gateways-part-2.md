@@ -2,8 +2,8 @@
 title: A Practical Explainer for IPFS Gateways - Part 2
 description: 'Learn tips and tricks for using IPFS gateways in real-world applications - debugging, performance and more'
 author: Daniel Norman
-date: 2022-06-09
-permalink: '/2022-06-09-practical-explainer-ipfs-gateways-2/'
+date: 2022-06-30
+permalink: '/2022-06-30-practical-explainer-ipfs-gateways-2/'
 translationKey: ''
 header_image: '/2022-ipfs-gateways-2.png'
 tags:
