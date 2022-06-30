@@ -141,6 +141,8 @@ IPFS Check will test whether the peer/node is dialable and whether the CID is re
 
 You case use it to look up providers for a CID, checking if a [multiaddr](https://multiformats.io/multiaddr/) is reachable by other peers, and whether a node is serving the CID.
 
+![pl-diagnose demo](../assets/ipfs-diagnose-demo.gif)
+
 ## Content publishing lifecycle
 
 Now that you're familiar with content retrieval, we'll take a look at the other end of retrieval, namely **content publishing**. Content publishing is how your content becomes discoverable to peers in the IPFS network.
