@@ -48,7 +48,7 @@ In this second part, you will learn practical tips and tricks for using IPFS gat
 
 By the end of this blog post, you should be equipped with the knowledge and tools to use IPFS gateways confidently and systematically debug when you face problems.
 
-> **Note:** The blog refers assumes you are using [kubo](https://github.com/ipfs/go-ipfs) (until recently known as go-ipfs) since it's the most popular IPFS implementation. This is not to take away any thunder from the other implementations, e.g, js-ipfs
+> **Note:** The blog refers assumes you are using [kubo](https://github.com/ipfs/go-ipfs) (until recently known as go-ipfs) since it's the most popular IPFS implementation. This is not to take away any thunder from the other implementations, e.g, js-ipfs.
 
 ## Common challenges with IPFS HTTP Gateways
 
@@ -136,13 +136,13 @@ You case use it to look up providers for a CID, checking if a [multiaddr](https:
 
 ## Content publishing lifecycle
 
-Now that you're familiar with content retrieval, we'll take a look at the other end of retrieval, namely **content publishing** – the process by which content becomes discoverable in the IPFS network by advertising provider records.
+Now that you're familiar with content retrieval, we'll take a look at the other end of retrieval, namely **content publishing**. Content publishing is how your content becomes discoverable to peers in the IPFS network.
 
 > **Note:** The term **publishing** is a bit misleading, because it refers to the publishing of provider records to the DHT; not the actual content. For this reason, you might see the term **advertising** also used.
 
 This is a continuous process that starts when you first add content to an IPFS node and repeats every 12 hours (by default) as long as the node is running.
 
-When you add a file to an IPFS node using the `ipfs add` command, the process can be broken down from a high level into the following steps:
+When you add a file to an IPFS node using the `ipfs add` command, here's how it becomes published and discoverable across the network:
 
 1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
 2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so any peers can request.
@@ -153,7 +153,6 @@ When you add a file to an IPFS node using the `ipfs add` command, the process ca
 IPFS network measurements conducted by the [ProbeLab](https://blog.ipfs.io/2022-06-15-probelab/), show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS. While there are efforts explored in that talk to improve this, it's useful to understand how to troubleshoot problems related to content publishing.
 
 Generally speaking, as you add more files to your IPFS node, the longer reprovide runs take.
-
 **When a reprovide run takes longer than 24 hours (the expiry time for provider records), your CIDs will become undiscoverable**.
 
 To find out how long a reprovide run takes, run the following command:
@@ -171,7 +170,7 @@ LastReprovideDuration:  13m16.104781s
 LastReprovideBatchSize: 1k (1,858)
 ```
 
-If you notice that the `LastReprovideDuration` value is reaching close to 24 hours, you should consider one of the following options as a resolution:
+If you notice that the `LastReprovideDuration` value is reaching close to 24 hours, you should consider one of the following options:
 
 - Enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) in Kubo. This configuration improves content publishing times significantly by maintaining more connections to peers and a larger routing table, and batching advertising of provider records. It should be noted that this comes at the cost of increased resource consumption.
 - Change the [reprovider strategy](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#reproviderstrategy) from `all` to either `pinned` or `roots` which both only advertise provider records for explicitly pinned content:
@@ -272,7 +271,7 @@ Practically speaking, this can be implemented using several approaches depending
 
 ## Summary
 
-In this blog post, you learned about all the tips, tricks, knowledge, and tools to use IPFS gateways effectively and systematically debug when you face problems.
+In this blog post, you learned many tips, tricks, knowledge, and tools to use IPFS gateways effectively and systematically debug when you face problems.
 
 We started with common challenges with IPFS gateways and went into the details of content discovery, publishing, the gateway request lifecycle, the different kinds of IPFS gateways, caching, garbage collection, pinning, and best practices when self-hosting IPFS nodes/gateways.
 
