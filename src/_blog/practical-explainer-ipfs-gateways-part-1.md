@@ -155,7 +155,7 @@ For example, instead of loading the IPFS documentation website (which is also de
 
 In this blog post, you learned about the challenges of the client-server model, the principles behind IPFS, namely peer-to-peer networking and content addressing, and how IPFS gateways provide a bridge between Web2 and Web3, allowing you to tap into the IPFS network using HTTP.
 
-In the follow-up blog post, you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
+In the [follow-up blog post](https://blog.ipfs.io/2022-06-30-practical-explainer-ipfs-gateways-2/), you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
 
 If you're interested in:
 
