@@ -12,7 +12,7 @@ tags: []
 ---
 Welcome to [Kitsumon](https://kitsumon.com/), an NFT game about collecting, breeding, and caring for adorable Kitsu pets. From play to earn professions like farming, fishing, cooking, and an in-depth NFT breeding system, all the way to MOBA PvP modes and land acquisition, Kitsumon has everything and more!
 
-Kitsumon aims to unite the best areas of gaming to give users a truly polished and exciting metaverse experience. The project plans to help bridge the gap between traditional and blockchain gaming with its ever-increasing collaborations with gaming guilds, scholarship programs and education. It’s entering markets such as eSports and utilizing mechanisms such as play-to-earn and view-to-earn to bring blockchain gaming to another level.
+Kitsumon aims to unite the best areas of gaming to give users a truly polished and exciting metaverse experience. The project plans to help bridge the gap between traditional and blockchain gaming with its ever-increasing collaborations with gaming guilds, scholarship programs and education. It’s entering markets such as eSports and utilizing mechanisms such as play-to-earn and view-to-earn to bring blockchain gaming to another level. 
 
 # The Story Behind Kitsumon
 
