@@ -17,7 +17,7 @@ IPFS is a relatively new protocol compared to the time-honored HTTP protocol and
 This blog post is the first of a two-part series:
 
 - Part one: You will learn about the challenges with the popular client-server model, how IPFS approaches these challenges with peer-to-peer networking and content addressing, the relationship between IPFS and HTTP(S), and finally a brief introduction to IPFS HTTP gateways.
-- Part two: You will learn practical tips for using IPFS gateways in real-world applications, for example, improving CID access performance and reliability from the IPFS network, IPFS gateway resolution styles, caching, pinning, pinning services, integration with DNS, and running your own IPFS nodes and gateways.
+- [Part two](https://blog.ipfs.io/2022-06-30-practical-explainer-ipfs-gateways-2/): You will learn practical tips for using IPFS gateways in real-world applications, for example, improving CID access performance and reliability from the IPFS network, IPFS gateway resolution styles, caching, pinning, pinning services, integration with DNS, and running your own IPFS nodes and gateways.
 
 If you're already familiar with the core concepts of IPFS and are interested in the practical guide for using IPFS gateways, stay tuned for part two of the blog series.
 
@@ -155,7 +155,7 @@ For example, instead of loading the IPFS documentation website (which is also de
 
 In this blog post, you learned about the challenges of the client-server model, the principles behind IPFS, namely peer-to-peer networking and content addressing, and how IPFS gateways provide a bridge between Web2 and Web3, allowing you to tap into the IPFS network using HTTP.
 
-In the follow-up blog post, you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
+In the [follow-up blog post](https://blog.ipfs.io/2022-06-30-practical-explainer-ipfs-gateways-2/), you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
 
 If you're interested in:
 
