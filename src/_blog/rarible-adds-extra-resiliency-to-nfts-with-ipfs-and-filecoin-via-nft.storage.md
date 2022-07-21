@@ -3,7 +3,7 @@ title: Rarible adds extra resiliency to NFTs with IPFS and Filecoin via NFT.Stor
 description: Rarible & NFT.Storage have a partnership enabling Rarible.com NFT content
   to be preserved on IPFS & Filecoin
 author: ''
-date: 2022-07-19
+date: 2022-07-20
 permalink: "/2022-07-21-rarible-and-nftstorage/"
 translationKey: ''
 header_image: "/179247191-919bb92e-4306-4ed2-abcb-0ac12a2d95d9.jpg"
