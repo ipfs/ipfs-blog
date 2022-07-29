@@ -74,7 +74,7 @@ Starting in [FFmpeg 5.1](https://github.com/FFmpeg/FFmpeg/blob/master/Changelog)
 
 to:
 
-<span style="color:red">http://<gateway></span>/<span style="color:darkorange>ipfs</span>/<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
+<span style="color:red">http://<gateway></span>/<span style="color:darkorange">ipfs</span>/<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
 
 * The <span style="color:red">red</span> color is the auto-detected gateway to use.
 * The <span style="color:darkorange">orange</span> color is the protocol to use (can be either _ipfs_ or _ipns_).
