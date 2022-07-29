@@ -70,15 +70,15 @@ I wanted to do much more in the IPFS ecosystem, specifically to enable broad eco
 
 Starting in [FFmpeg 5.1](https://github.com/FFmpeg/FFmpeg/blob/master/Changelog) you’ll enjoy “native feeling” IPFS support. The support is implemented through rewriting your `ipfs url` to a url that your gateway will handle.
 
-ipfs://QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T
+<span style="color:darkorange">ipfs</span>://<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
 
 to:
 
-http://<gateway>/ipfs/QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T
+<span style="color:red">http://<gateway></span>/<span style="color:darkorange>ipfs</span>/<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
 
-* The red color is the auto-detected gateway to use.
-* The orange color is the protocol to use (can be either _ipfs_ or _ipns_).
-* The green color is the [CID](https://docs.ipfs.io/concepts/content-addressing/) to use.
+* The <span style="color:red">red</span> color is the auto-detected gateway to use.
+* The <span style="color:darkorange">orange</span> color is the protocol to use (can be either _ipfs_ or _ipns_).
+* The <span style="color:green">green</span> color is the [CID](https://docs.ipfs.io/concepts/content-addressing/) to use.
 
 FFmpeg tries to detect the gateway according to this [IPFS Integration](https://github.com/markg85/specs/blob/master/INTEGRATION.md) document document. If you don’t have a gateway running, the current logic will fall back to calling ‘dweb.link’ behind the scenes. It will therefore give the end user an experience of IPFS just working.
 
