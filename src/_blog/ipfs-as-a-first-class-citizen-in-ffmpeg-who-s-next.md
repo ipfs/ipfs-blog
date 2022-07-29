@@ -1,6 +1,6 @@
 ---
 title: IPFS as a first-class citizen in FFmpeg, who’s next?
-description: ''
+description: The first steps in enabling IPFS support in the wider open source ecosystem.
 author: ''
 date: 2022-07-29
 permalink: https://blog.ipfs.io/2022-07-29-ipfs-and-ffmpeg/
