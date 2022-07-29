@@ -70,11 +70,11 @@ I wanted to do much more in the IPFS ecosystem, specifically to enable broad eco
 
 Starting in [FFmpeg 5.1](https://github.com/FFmpeg/FFmpeg/blob/master/Changelog) you’ll enjoy “native feeling” IPFS support. The support is implemented through rewriting your `ipfs url` to a url that your gateway will handle.
 
-<span style="color:darkorange">ipfs</span>://<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
+<span style="color:darkorange">ipfs</span>&#58;//<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
 
 to:
 
-<span style="color:red">http://<gateway></span>/<span style="color:darkorange">ipfs</span>/<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
+<span style="color:red">http&#58;//&lt;gateway&gt;</span>/<span style="color:darkorange">ipfs</span>/<span style="color:green">QmbGtJg23skhvFmu9mJiePVByhfzu5rwo74MEkVDYAmF5T</span>
 
 * The <span style="color:red">red</span> color is the auto-detected gateway to use.
 * The <span style="color:darkorange">orange</span> color is the protocol to use (can be either _ipfs_ or _ipns_).
