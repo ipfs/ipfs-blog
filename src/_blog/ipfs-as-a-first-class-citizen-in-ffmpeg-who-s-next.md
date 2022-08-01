@@ -3,7 +3,7 @@ title: IPFS as a first-class citizen in FFmpeg, who’s next?
 description: The first steps in enabling IPFS support in the wider open source ecosystem.
 author: Mark Gaiser
 date: 2022-08-01
-# permalink: /2022-08-01-ipfs-and-ffmpeg/
+permalink: /2022-08-01-ipfs-and-ffmpeg/
 translationKey: ''
 header_image: "/ffmpeg-ipfs.png"
 tags: []
@@ -105,3 +105,5 @@ KODI and media aside, you can expect more broad ecosystem support for IPFS to be
 We are specifically keen on implementing IPFS in the lowest layers of the architecture to enable broad, transparent ecosystem support. Now that we have IPFS in FFmpeg, it is relatively easy to integrate it into anything that relies on FFmpeg.
 
 There are more tools that we are considering integrating with IPFS, but we are also reliant on your input! We have set up an IPFS integration repository [here](https://github.com/ipfs/integrations). If you have a tool or application where you think IPFS support would be of value, please drop us a note!
+
+<style>article code { word-break: normal !important;}</style>
