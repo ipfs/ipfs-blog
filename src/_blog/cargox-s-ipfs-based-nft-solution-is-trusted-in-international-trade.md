@@ -26,20 +26,12 @@ _“The ideal feature of IPFS for us is that it provides a decentralized storage
 
 # Using BDT
 
-The CargoX platform simplifies ETD processes and reduces them to a simple user experience
-
-:
+The CargoX platform simplifies ETD processes and reduces them to a simple user experience:
 
 * Corporate accounts can register on the platform (free of charge) in minutes, and they can validate their profiles with global banks (wire transfer), and the Dun & Bradstreet registry.
-
-
 * Team member accounts are created for each company to provide a distributed working environment for electronic trade documents. This is virtually impossible to do efficiently with traditional paper documents of title.
 * A contact book of corresponding companies can be created ahead of time or during use. The recipients only need to register on the platform.
-
-
 * Users upload their digital documents or structured data _(feature coming soon)_ to the CargoX Platform through a web UI or via API.
-
-
 * Documents are hashed, encrypted, enveloped, and stored on IPFS and accessible from any IPFS node.
 * An NFT containing crucial information is created and the user can transfer it onto the recipient, providing a simple way to present the document and possession thereof.
 * All transfer activity is visible in audit logs while confidentiality is maintained by the blockchain’s basic properties.
