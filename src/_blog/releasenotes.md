@@ -4,6 +4,19 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: go-ipfs 0.13.0 Release
+  date: 2022-06-09
+  publish_date: 
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.13.0
+  tags:
+  - browsers
+  - libp2p
+  - security
+  - gateways
+  - CID
+  - Docker
+  - IPLD
+  - go-ipfs
 - title: js-libp2p v0.37.0
   date: 2022-05-16
   publish_date: 
