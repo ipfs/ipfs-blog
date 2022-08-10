@@ -3,7 +3,7 @@ title: Welcome to IPFS News 182!
 description: CargoX’s IPFS-based NFT solution, go-ipfs' rebrand - Kubo & more in IPFS
   News 182!
 author: Emily Vaughan
-date: 2022-06-29
+date: 2022-08-10
 permalink: "/weekly-182/"
 translationKey: ''
 header_image: "/ipfsnews.png"
