@@ -2,7 +2,7 @@
 title: IPFS þing 2022 Recap
 description: Check out the recap from the first ever IPFS þing 2022 event  for the
   IPFS implementers community.
-author: Michelle Lee & Steve Loeppky
+author: Michelle Lee, Steve Loeppky
 date: 2022-08-11
 permalink: "/ipfs-ping-2022-recap/"
 translationKey: ''
