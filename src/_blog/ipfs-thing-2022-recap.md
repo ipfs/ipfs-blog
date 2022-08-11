@@ -10,6 +10,8 @@ header_image: "/181806539-3c71476c-b247-4400-9778-5ccfce635f17.png"
 tags: []
 
 ---
+@[youtube](6dojCBJQmqg)
+
 In mid-July, over 80 IPFS implementers and builders gathered in Iceland for the[ first-ever IPFS þing](https://2022.ipfs-thing.io/), a weeklong gathering for the IPFS implementers community. Pronounced “thing”, þing is an old Norse word and modern Icelandic word for “council” or “assembly”.
 
 ![](../assets/20220716-174634-mummilu.jpg)
