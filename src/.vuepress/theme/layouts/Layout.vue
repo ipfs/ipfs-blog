@@ -9,10 +9,7 @@
 <script>
 export default {
   name: 'Layout',
-  beforeCreate() {
-    if (!process.browser) {
-      return;
-    }
+  mounted() {
     // redirect blog.ipfs.io → blog.ipfs.tech (incl. gateways)
     // https://github.com/ipfs/ipfs-blog/issues/417
     const { href } = window.location
