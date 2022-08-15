@@ -16,7 +16,7 @@
       <div class="flex justify-between items-center h-20">
         <a
           class="hover:opacity-75 transition transition-opacity duration-300 ease-in-out mobile-list-item"
-          href="https://ipfs.io/"
+          href="https://ipfs.tech/"
         >
           <SVGIcon
             name="ipfs-logo"

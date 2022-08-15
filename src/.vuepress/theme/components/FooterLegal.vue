@@ -55,7 +55,7 @@
       |
       <a
         class="text-blueGreenLight hover:underline"
-        href="https://ipfs.io/legal/"
+        href="https://ipfs.tech/legal/"
         target="_blank"
         @click="onLinkClick"
         >DMCA</a
