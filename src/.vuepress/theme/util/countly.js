@@ -20,7 +20,7 @@ export function loadScript() {
       var Countly = Countly || {};
       Countly.q = Countly.q || [];
       //provide countly initialization parameters
-      Countly.app_key = location.hostname === 'blog.ipfs.io' ? '9e8a52b6b06d84f50321c4c3b96ba03d4bab7717' : 'c68a0191d53e5d079372653d7d6158f0374c2172';
+      Countly.app_key = location.hostname === 'blog.ipfs.tech' ? '9e8a52b6b06d84f50321c4c3b96ba03d4bab7717' : 'c68a0191d53e5d079372653d7d6158f0374c2172';
       Countly.url = 'https://countly.ipfs.io';
       Countly.q.push(['track_sessions']);
       Countly.q.push(['track_pageview']);
