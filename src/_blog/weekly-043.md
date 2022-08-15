@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Meet the Community: Alan Shaw, Core Developer of the IPFS Protocol @ IPFS / Protocol Labs
 
-This week for [`Meet the Community`, we had Alan Shaw, a Core Developer of the IPFS Protocol @ IPFS / Protocol Labs](https://blog.ipfs.io/meet-the-community-alan-shaw)
+This week for [`Meet the Community`, we had Alan Shaw, a Core Developer of the IPFS Protocol @ IPFS / Protocol Labs](https://blog.ipfs.tech/meet-the-community-alan-shaw)
 
 ## IPFS in the wild
 
@@ -29,7 +29,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 - [Starlog: Aiming for the Stars](https://blog.florence.chat/starlog-aiming-for-the-stars-f4d1775f8528), 21 May 2019
 - [How to Start Contributing to Textile Photos](https://medium.com/textileio/how-to-start-contributing-to-textile-photos-b626c3f63493), Textile, 20 May 2019
-- [An Inter-Plantary Journey with LineageOS](https://discuss.ipfs.io/t/an-inter-plantary-journey-with-lineageos/5442), 19 May 2019
+- [An Inter-Plantary Journey with LineageOS](https://discuss.ipfs.tech/t/an-inter-plantary-journey-with-lineageos/5442), 19 May 2019
 - VIDEO: [IPFS Tutorial - Upload Files With IPFS & JavaScript](https://www.youtube.com/watch?v=I0UolzV3ico&feature=share), CodingSrc, 17 May 2019
 - [OrbitDB: Serverless, Distributed, Peer-to-Peer Database](https://kauri.io/article/6ae5ffa612044a09be856ff390ce6990), Kauri, 16 May 2019
 - [Introducing a Tour of Textile](https://medium.com/textileio/introducing-a-tour-of-textile-92f02969a4d8), The fastest way to build your next decentralized app using IPFS, Textile, 15 May 2019
@@ -46,7 +46,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **23 May 2019:** [May p2p // dweb meetup](https://www.meetup.com/p2p-and-dweb-toronto/events/258520223/), hosted by Peer-to-peer and Decentralized Web Toronto and held at Mozilla.
 - **27 May 2019:** [Papers We Love – Berlin](https://www.meetup.com/Papers-We-Love-Berlin/events/261542382/), We’ll be learning about the paper “Merkle-CRDTs” presented by one of its authors, Héctor Sanjuán!

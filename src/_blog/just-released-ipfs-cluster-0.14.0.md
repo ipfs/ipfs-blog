@@ -35,4 +35,4 @@ Want a full list of updates included in the IPFS Cluster 0.14.0 release? Check t
 
 ## Install, upgrade, and join us!
 
-You can lean more about IPFS Cluster by visiting [cluster.ipfs.io](https://cluster.ipfs.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://cluster.ipfs.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.io/c/help/help-ipfs-cluster/24).
+You can lean more about IPFS Cluster by visiting [cluster.ipfs.io](https://cluster.ipfs.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://cluster.ipfs.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.tech/c/help/help-ipfs-cluster/24).

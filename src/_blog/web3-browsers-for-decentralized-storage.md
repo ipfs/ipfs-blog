@@ -21,9 +21,9 @@ For most daily internet users, browsers are the primary portals to the web. Inte
 
 Recently, there have been major developments in this direction:
 
-Brave [announced](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/) native IPFS support in late January of this year. The implementation also offered an option for a full IPFS node to participate in the network, making the user a part of the file storage network itself.
+Brave [announced](https://blog.ipfs.tech/2021-01-19-ipfs-in-brave/) native IPFS support in late January of this year. The implementation also offered an option for a full IPFS node to participate in the network, making the user a part of the file storage network itself.
 
-Opera also [supports](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/) IPFS on iOS, Android, and Windows, adding to the number of browsers implementing the protocol. Browser integration on desktops is sufficiently underway, and the work that is happening there will trailblaze the next phase of development: mobile support. Currently, the amount of resources needed to spin up an IPFS node is more than what most mobile browsers can access, so the protocol is being updated to support lighter environments.
+Opera also [supports](https://blog.ipfs.tech/2021-02-08-opera-ios-and-ipfs/) IPFS on iOS, Android, and Windows, adding to the number of browsers implementing the protocol. Browser integration on desktops is sufficiently underway, and the work that is happening there will trailblaze the next phase of development: mobile support. Currently, the amount of resources needed to spin up an IPFS node is more than what most mobile browsers can access, so the protocol is being updated to support lighter environments.
 
 ## The Migration from Centralized HTTP to Web3
 
@@ -35,9 +35,9 @@ Currently, decentralized storage solutions such as IPFS require centralized HTTP
 
 Traditional file systems are notoriously bad with interoperability. Companies have a vested interest in keeping their ecosystems siloed and eschewing UX efforts to allow consumers to easily transfer files in between systems.
 
-As an open standards ecosystem, however, the decentralized web offers a way to increase interoperability since all browsers would need to get their data from decentralized gateways. At the moment, much of the interaction between browsers and decentralized gateways happens through extensions such as [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/). Browser extensions allow for user choice.
+As an open standards ecosystem, however, the decentralized web offers a way to increase interoperability since all browsers would need to get their data from decentralized gateways. At the moment, much of the interaction between browsers and decentralized gateways happens through extensions such as [IPFS Companion](https://docs.ipfs.tech/install/ipfs-companion/). Browser extensions allow for user choice.
 
-Today’s extensions, however, are just a step on the roadmap to full browser integration. Browsers have a tendency to limit the functionality of extensions, demonstrating the need for native support for IPFS and [content addressing](https://docs.ipfs.io/concepts/content-addressing/).
+Today’s extensions, however, are just a step on the roadmap to full browser integration. Browsers have a tendency to limit the functionality of extensions, demonstrating the need for native support for IPFS and [content addressing](https://docs.ipfs.tech/concepts/content-addressing/).
 
 ## Opportunities and Challenges for Decentralized Storage in Browsers
 

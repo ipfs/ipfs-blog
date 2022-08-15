@@ -15,7 +15,7 @@ tags:
 
 **Skiff Integrates IPFS to Bring Decentralization and Encryption to Consumers**
 
-[Skiff](https://www.skiff.org/) has announced its integration of the Interplanetary File System (IPFS) to add a secure, persistent, and decentralized storage layer to its collaboration product. Skiff is a private, decentralized, and end-to-end encrypted workspace for the modern web. The result of the IPFS integration will be a collaboration management application in which users can store files, images, content, PDFs, and more all through IPFS. [Learn more about IPFS and Skiff](https://blog.ipfs.io/2021-11-15-Skiff-Integrates-IPFS/) (oh, and Skiff is live! Get started [here](http://app.skiff.org/signup)).
+[Skiff](https://www.skiff.org/) has announced its integration of the Interplanetary File System (IPFS) to add a secure, persistent, and decentralized storage layer to its collaboration product. Skiff is a private, decentralized, and end-to-end encrypted workspace for the modern web. The result of the IPFS integration will be a collaboration management application in which users can store files, images, content, PDFs, and more all through IPFS. [Learn more about IPFS and Skiff](https://blog.ipfs.tech/2021-11-15-Skiff-Integrates-IPFS/) (oh, and Skiff is live! Get started [here](http://app.skiff.org/signup)).
 
 **Brand New on IPFS**
 

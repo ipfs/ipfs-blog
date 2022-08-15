@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -45,7 +45,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [js-libp2p 0.24.0 was released!](https://blog.ipfs.io/55-js-libp2p-0-24/) The best part? They added support for custom routers, turned relay on by default and threw in some extra goodies and improvements. Check it out!
+- [js-libp2p 0.24.0 was released!](https://blog.ipfs.tech/55-js-libp2p-0-24/) The best part? They added support for custom routers, turned relay on by default and threw in some extra goodies and improvements. Check it out!
 
 ## Tools and projects we <3
 
@@ -58,7 +58,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - An [IPFS+Filecoin meetup is happening in Hong Kong](https://www.meetup.com/en-AU/Hong-Kong-IPFS-Meetup/events/256402950/), 24 Nov 2018
 - Get started with IPFS at the [Contribute to Open Source Project IPFS](https://www.meetup.com/en-AU/IPFS-Berlin/events/255970865/) in Berlin on Dec 9!

@@ -15,11 +15,11 @@ tags:
 
 ![](../assets/2022-ipfs-gateways-1.png)
 
-[Learn about IPFS gateways](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/) with this two-part series explaining how they work and how to use them. The first post in the series takes a look at the challenges with the popular client-server model, how IPFS approaches these challenges with peer-to-peer networking and content addressing, the relationship between IPFS and HTTP(S), and finally a brief introduction to IPFS HTTP gateways. Read it on the [IPFS blog](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/).
+[Learn about IPFS gateways](https://blog.ipfs.tech/2022-06-09-practical-explainer-ipfs-gateways-1/) with this two-part series explaining how they work and how to use them. The first post in the series takes a look at the challenges with the popular client-server model, how IPFS approaches these challenges with peer-to-peer networking and content addressing, the relationship between IPFS and HTTP(S), and finally a brief introduction to IPFS HTTP gateways. Read it on the [IPFS blog](https://blog.ipfs.tech/2022-06-09-practical-explainer-ipfs-gateways-1/).
 
 ## **Brand New on IPFS ✨**
 
-1. js-IPFS@0.63.0 is rocketing forward with major improvements to its foundation along with many small bug fixes. [Read more](https://blog.ipfs.io/2022-06-01-js-ipfs-0-63/) on that and updates to libp2p and PeerIDs.
+1. js-IPFS@0.63.0 is rocketing forward with major improvements to its foundation along with many small bug fixes. [Read more](https://blog.ipfs.tech/2022-06-01-js-ipfs-0-63/) on that and updates to libp2p and PeerIDs.
 2. [ChainSafe Storage](https://app.storage.chainsafe.io/) is offering 20 GB of free storage on Filecoin and IPFS to help users migrate seamlessly from Web 2.0 to Web3. [Try it for yourself](https://app.storage.chainsafe.io/)!
 3. Go-ipfs v0.13.0 is live and packed with improvements. Jump into it now on [Github](https://github.com/ipfs/go-ipfs/releases/tag/v0.13.0) and see a breakdown of everything that’s changed.
 4. The latest ipfs-desktop release is also live, implemented with go-ipfs v0.13.0. [Check out](https://github.com/ipfs/ipfs-desktop/releases/tag/v0.21.0) the useful improvements of IPFS users on desktop.
@@ -30,7 +30,7 @@ Catch up with the [highlights](https://www.youtube.com/watch?v=j_u-LO2W6K8) of t
 
 Read through The Block Research’s [primer](https://www.theblockcrypto.com/post/149172/decentralized-storage-a-primer-commissioned-by-w3bcloud) on decentralized storage commissioned by W3BCLOUD. It covers IPFS and Filecoin’s role in establishing these services as a new standard.
 
-The P2P community in Paris is growing strong and just celebrated its first festival in two years. Catch up with this [recap](https://blog.ipfs.io/2022-06-02-libp2p-at-paris-p2p/) of libp2p’s participation in the Paris P2P Festival 2022.
+The P2P community in Paris is growing strong and just celebrated its first festival in two years. Catch up with this [recap](https://blog.ipfs.tech/2022-06-02-libp2p-at-paris-p2p/) of libp2p’s participation in the Paris P2P Festival 2022.
 
 Collaborate with Web3 game developers around the world at [BlockJam](https://globalblockjam.com/) starting June 17th. Check out the [speaker list](https://globalblockjam.com/talks.html) and [sign up now](https://www.crowdcast.io/e/nervos-presents-blockjam/register).
 

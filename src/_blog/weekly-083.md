@@ -12,13 +12,13 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ![IPFS built-in to Opera for Android](../assets/opera-android-banner.png)
 
 ## IPFS in Opera for Android
 
-IPFS support in the Opera web browser has been in development for some time. Today, Opera for Android 57 is live in the Google Play Store with default support for IPFS! [Read all about it on the IPFS blog](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
+IPFS support in the Opera web browser has been in development for some time. Today, Opera for Android 57 is live in the Google Play Store with default support for IPFS! [Read all about it on the IPFS blog](https://blog.ipfs.tech/2020-03-30-ipfs-in-opera-for-android/).
 
 ## Using IPFS to fight COVID-19
 
@@ -50,7 +50,7 @@ Late breaking news: The [Ethereum.org website](https://ethereum.org) is now host
 - Textile shares their [Filecoin tools progress update](https://blog.textile.io/filecoin-tools-progress-update-26-march/)
 - [Filplorer](https://filplorer.com/) - Powered by IPFS 💪
 - [Berty is opening its code!](https://berty.tech/blog/open-source/)
-- [Galacteek (browser) v0.4.20](https://discuss.ipfs.io/t/galacteek-browser-v0-4-20-release/7582) was recently released
+- [Galacteek (browser) v0.4.20](https://discuss.ipfs.tech/t/galacteek-browser-v0-4-20-release/7582) was recently released
 - Learn about the [Ravenland IPFS Network](https://medium.com/@ravenlandpush/getting-to-know-the-ravenland-ipfs-network-37c9b9f4349f)
 
 ## Catch up on yesterday’s IPFS Weekly Call
@@ -79,6 +79,6 @@ Late breaking news: The [Ethereum.org website](https://ethereum.org) is now host
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

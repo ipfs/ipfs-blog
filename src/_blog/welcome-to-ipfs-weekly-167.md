@@ -15,7 +15,7 @@ tags:
 
 ![](../assets/omnilingo-x-ipfs.jpg)
 
-There are many educational applications for learning a new language. There are none, however, that take advantage of Web3’s capability for open-source collaboration. [OmniLingo](https://omnilingo.xyz/) is using IPFS to enable language activists, language learners, and language instructors to form their own decentralized communities for under-represented languages. Find out more about how you can try the application and maybe learn a new language [here](https://blog.ipfs.io/2021-12-17-omnilingo/).
+There are many educational applications for learning a new language. There are none, however, that take advantage of Web3’s capability for open-source collaboration. [OmniLingo](https://omnilingo.xyz/) is using IPFS to enable language activists, language learners, and language instructors to form their own decentralized communities for under-represented languages. Find out more about how you can try the application and maybe learn a new language [here](https://blog.ipfs.tech/2021-12-17-omnilingo/).
 
 ## **Brand New on IPFS**
 

@@ -35,7 +35,7 @@ The nft.storage demo in this talk walks you through:
 * Data retrieval via IPFS gateways
 * Querying for information about stored data: file size, IPFS pinning status and Filecoin deal status
 
-Along with nft.storage and Minty, IPFS and Filecoin have comprehensive [documentation on CIDs](https://docs.ipfs.io/concepts/content-addressing/#identifier-formats), an article detailing the differences between [content addressing and content integrity](https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/), a best practices guide to [long term NFT storage](https://docs.ipfs.io/how-to/best-practices-for-nft-data/), and how to mint NFTs on IPFS [with Minty](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#how-minty-works). Also, check out [NFT School](https://nftschool.dev/ "NFT School") for a collection of tutorials, how-tos, and concept guides on NFT best practices and NFTs in general.
+Along with nft.storage and Minty, IPFS and Filecoin have comprehensive [documentation on CIDs](https://docs.ipfs.tech/concepts/content-addressing/#identifier-formats), an article detailing the differences between [content addressing and content integrity](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/), a best practices guide to [long term NFT storage](https://docs.ipfs.tech/how-to/best-practices-for-nft-data/), and how to mint NFTs on IPFS [with Minty](https://docs.ipfs.tech/how-to/mint-nfts-with-ipfs/#how-minty-works). Also, check out [NFT School](https://nftschool.dev/ "NFT School") for a collection of tutorials, how-tos, and concept guides on NFT best practices and NFTs in general.
 
 Keep up with the latest by giving [Filecoin](https://twitter.com/filecoin?lang=en) and [IPFS](https://twitter.com/IPFS) a follow on Twitter.
 

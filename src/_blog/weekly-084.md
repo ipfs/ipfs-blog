@@ -13,43 +13,43 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Celebrate Q1 in the IPFS Community
 
-A quick look back at what we accomplished together in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+A quick look back at what we accomplished together in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## January! A new year 🎉
 
 **The new IPFS Docs beta went live**
-IPFS now has documentation that is redesigned, with a simple, clean interface, has better navigation, and most importantly, reintroduced a key feature: the search functionality. [Read about it on the blog](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/).
+IPFS now has documentation that is redesigned, with a simple, clean interface, has better navigation, and most importantly, reintroduced a key feature: the search functionality. [Read about it on the blog](https://blog.ipfs.tech/2020-01-07-ipfs-docs-beta/).
 
 **Collaborative clusters are here**
-The first set of [public collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/) and the first iteration of the clusters site went live this month. For full documentation on how to set up and operate clusters, see cluster.ipfs.io/documentation.
+The first set of [public collaborative clusters](https://blog.ipfs.tech/2020-01-09-collaborative-clusters/) and the first iteration of the clusters site went live this month. For full documentation on how to set up and operate clusters, see cluster.ipfs.io/documentation.
 
 **go-ipfs 0.4.23 was released 🚢**
-Just a small, [tidy patch release](https://blog.ipfs.io/2020-01-30-go-ipfs-0-4-23/) with some critical fixes before 0.5.0 ships.
+Just a small, [tidy patch release](https://blog.ipfs.tech/2020-01-30-go-ipfs-0-4-23/) with some critical fixes before 0.5.0 ships.
 
 **ipfs-update got an update!**
-Your favourite tool for updating go-ipfs got a [shiny new update](https://dist.ipfs.io/#ipfs-update) of its own. Windows users should like it a lot.
+Your favourite tool for updating go-ipfs got a [shiny new update](https://dist.ipfs.tech/#ipfs-update) of its own. Windows users should like it a lot.
 
 ## February! The plot thickens 🤔
 
 **The Async Await Refactor and Other Big Refactors appear on the horizon**
-Fortunately, we pulled together a migration guide, as well as several explainers as to [the changes coming](https://blog.ipfs.io/2020-02-01-async-await-refactor/) and the [method for pulling them off](https://blog.ipfs.io/2020-02-06-big-refactors/).
+Fortunately, we pulled together a migration guide, as well as several explainers as to [the changes coming](https://blog.ipfs.tech/2020-02-01-async-await-refactor/) and the [method for pulling them off](https://blog.ipfs.tech/2020-02-06-big-refactors/).
 
 **js-libp2p 0.27 released 🚢**
-The Async Await refactor [lands first in js-libp2p](https://blog.ipfs.io/2020-02-07-js-libp2p-0-27/).
+The Async Await refactor [lands first in js-libp2p](https://blog.ipfs.tech/2020-02-07-js-libp2p-0-27/).
 
 **IPFS goes to Denver!**
 First, the IPFS community gathered, courtesy of Cryptorado, for the first [Decentralized Networks Summit](http://dnsummit.cryptorado.org/) to share our learnings and use cases. If you missed it, you can check out the [captured live stream here](https://www.youtube.com/watch?v=WG0dBSoDB1A&feature=youtu.be).
 
-Second, several of our favorite collaborators and a few of the IPFS team made it to [ETHDenver](https://blog.ipfs.io/2020-02-07-ethdenver-2020/), where approximately [half of the hackathon participants used IPFS](https://twitter.com/momack28/status/1230717064425328640), including 3 of the winners.
+Second, several of our favorite collaborators and a few of the IPFS team made it to [ETHDenver](https://blog.ipfs.tech/2020-02-07-ethdenver-2020/), where approximately [half of the hackathon participants used IPFS](https://twitter.com/momack28/status/1230717064425328640), including 3 of the winners.
 
 **The IPFS Roadmap for 2020**
-[Content Routing becomes our North star](https://blog.ipfs.io/2020-02-10-our-focus-for-2020/), but that’s not all! Plus, check out the awesome diagram of our ecosystem.
+[Content Routing becomes our North star](https://blog.ipfs.tech/2020-02-10-our-focus-for-2020/), but that’s not all! Plus, check out the awesome diagram of our ecosystem.
 
 **js-ipfs 0.41.0 released 🚢**
-The Async Await refactor finally [lands in js-ipfs internals](https://blog.ipfs.io/2020-02-13-js-ipfs-0-41/), the result of a huge refactor, and cause for much celebration!
+The Async Await refactor finally [lands in js-ipfs internals](https://blog.ipfs.tech/2020-02-13-js-ipfs-0-41/), the result of a huge refactor, and cause for much celebration!
 
 **Our collaboration with Netflix leads to new improvements to IPFS Bitswap**
-Our mission—[a container distribution challenge Netflix wanted to address](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/)—how to efficiently pull container images in a large scale, multi-region environment. But how?
+Our mission—[a container distribution challenge Netflix wanted to address](https://blog.ipfs.tech/2020-02-14-improved-bitswap-for-container-distribution/)—how to efficiently pull container images in a large scale, multi-region environment. But how?
 
 **Fleek debuts as the easiest way to build, deploy, and host websites & apps on IPFS**
 Formerly Terminal, [Fleek](https://fleek.co/) arrives on the scene to provide everything you need to build fast modern websites hosted on IPFS. [See their many tutorials](https://blog.fleek.co/) ranging from using Jekyll to Wordpress, Next.js and more!
@@ -69,7 +69,7 @@ This new functionality allows you to do things like stream video on IPFS, host a
 ## March! Rising to the challenge 💪
 
 **Explore the anatomy of a CID in ProtoSchool’s latest tutorial**
-Also new, the snazzy icons and toggle which make it easy to find non-coding content on ProtoSchool, including the new multiple-choice [Anatomy of a CID tutorial](https://blog.ipfs.io/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/).
+Also new, the snazzy icons and toggle which make it easy to find non-coding content on ProtoSchool, including the new multiple-choice [Anatomy of a CID tutorial](https://blog.ipfs.tech/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/).
 
 **Testground v.02 ships 🚢**
 Learn all about Testground's goal of providing a set of tools for testing next generation P2P applications (i.e. Filecoin, IPFS, libp2p & others), as well as [their mission and roadmap](https://twitter.com/raulvk/status/1234934825448091664).
@@ -87,7 +87,7 @@ The js-ipfs team began trialing [a Lerna-style monorepo](https://github.com/ipfs
 For users looking for more speed and extra redundancy, Pinata now allows you to [replicate your content on multiple nodes and in multiple regions](https://medium.com/pinata/ipfs-regions-and-replications-a1e52d60dfdb). Making decentralization easier every day!
 
 **Rust IPFS arrives on the scene**
-Active full-time work on a Rust-IPFS implementation has commenced, building on the great work from rust-libp2p. [Check out how you can contribute right here](https://blog.ipfs.io/2020-03-18-announcing-rust-ipfs/)!
+Active full-time work on a Rust-IPFS implementation has commenced, building on the great work from rust-libp2p. [Check out how you can contribute right here](https://blog.ipfs.tech/2020-03-18-announcing-rust-ipfs/)!
 
 **And the very next day, Wolfram Lang support!**
 Stephen Wolfram announces in [Version 12.1 of Wolfram Language & Mathematica](https://writings.stephenwolfram.com/2020/03/in-less-than-a-year-so-much-new-launching-version-12-1-of-wolfram-language-mathematica/) that support for external filesystems, specifically IPFS, was added.
@@ -96,7 +96,7 @@ Stephen Wolfram announces in [Version 12.1 of Wolfram Language & Mathematica](ht
 Due to its [hybrid design relying on IPFS/IPLD](https://medium.com/ceramic/introduction-to-the-ceramic-protocol-8d56951ae3f) and various blockchains, Ceramic’s document graph is interoperable, scalable, permissionless, and low cost and we’re very excited about it.
 
 **IPFS lands in Opera for Android**
-As we recently mentioned, [IPFS landing, enabled by default, right out of the box](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/), in a production release of a major web browser was **a big deal** for us.
+As we recently mentioned, [IPFS landing, enabled by default, right out of the box](https://blog.ipfs.tech/2020-03-30-ipfs-in-opera-for-android/), in a production release of a major web browser was **a big deal** for us.
 
 **You can now host your Gatsby and Vue apps with IPFS**
 Thanks to the hard work on some crucial plugins, you can now [host your Gatsby and Vue apps on IPFS](https://twitter.com/daviddias/status/1245199748849598470) easily with the path converter plugins.
@@ -140,7 +140,7 @@ Face it, you’ve got the time. Enjoy! 🍿
 
 ## Coming up next in 2020
 
-So what’s next for IPFS? Content Routing is still our major focus for 2020, if you recall [from the roadmap](https://blog.ipfs.io/2020-02-10-our-focus-for-2020/), and we’re very motivated by the progress our team, as well as our contributor community, has made over the past few months.
+So what’s next for IPFS? Content Routing is still our major focus for 2020, if you recall [from the roadmap](https://blog.ipfs.tech/2020-02-10-our-focus-for-2020/), and we’re very motivated by the progress our team, as well as our contributor community, has made over the past few months.
 
 Much bigger things are right around the corner, but more about that later. We’ve also invested quite heavily in the IPFS ecosystem, having created these working groups:
 
@@ -154,6 +154,6 @@ If you’d like to get involved, check out our [contribution guidelines](https:/
 
 **Please take care of yourselves and each other.** ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

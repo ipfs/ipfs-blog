@@ -12,13 +12,13 @@ translationKey: ipfs-weekly-125
 header_image: '/header-image-weekly-newsletter.png'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## IPFS at ETHDenver
 
 The IPFS Community was at ETHDenver 2021 in full force: from presentations to bounties, help desks and virtual hangs, and our favorite—new projects! We are very excited to show you the cool things folks built with IPFS, so we’ll be featuring them in upcoming issues. For a full recap, head to the IPFS blog.
 
-[Read more](https://blog.ipfs.io/2021-02-26-ipfs-at-ethdenver/)
+[Read more](https://blog.ipfs.tech/2021-02-26-ipfs-at-ethdenver/)
 
 ## Introducing Super Rinkeby
 
@@ -53,7 +53,7 @@ Introducing [dSearch](https://peepsology.medium.com/introducing-dsearch-dtree-ou
 
 [Unstoppable Domains](https://medium.com/unstoppabledomains/what-is-the-difference-between-tokens-and-coins-8ab0b605b8d0) asks, what is the difference between tokens and coins?
 
-NEW: [Galacteek 0.4.42](https://discuss.ipfs.io/t/galacteek-0-4-42-released/10259) released
+NEW: [Galacteek 0.4.42](https://discuss.ipfs.tech/t/galacteek-0-4-42-released/10259) released
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YsfEdRx05V8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -67,7 +67,7 @@ Catch up on presentations from dweb games specialist Leon Do, Viki Valastin from
 
 **InterPlanetary Funky Schemas 🎶**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

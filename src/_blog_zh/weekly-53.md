@@ -11,7 +11,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -23,7 +23,7 @@ tags:
 
 ### 宣布 IPFS 项目第三季度的优先事项和工作组
 
-今年初夏，IPFS 团队聚集在一起，制定了一个计划，使 IPFS 具有高性能、高稳定、高质量和定期更新，并为进一步发展做好准备。[看看这个计划](https://ipfs.io/blog/2019-07-31-operation-task-force/)，重组的工作组和更多!
+今年初夏，IPFS 团队聚集在一起，制定了一个计划，使 IPFS 具有高性能、高稳定、高质量和定期更新，并为进一步发展做好准备。[看看这个计划](https://blog.ipfs.tech/2019-07-31-operation-task-force/)，重组的工作组和更多!
 
 ### 介绍 ProtoSchool 的多项选择题课程
 
@@ -37,7 +37,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [Gnosis 每月开发更新](https://blog.gnosis.pm/august-2019-the-gnosis-monthly-development-update-6c9be6fb7610)，2019 年 8 月 1 日
 - [Ethereum Grid 1.5.0 发布公告](https://medium.com/ethereum-grid/ethereum-grid-1-5-0-release-announcement-993c7047560a)，2019 年 8 月 1 日
@@ -76,14 +76,14 @@ _这些 IPFS 项目可能会非常棒，但是它们需要你的帮助!_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [anytype.io](https://anytype.io/): 像 Notion，但自我托管，隐私的，免费的!
 - [去中心化浏览器 MIX Acuity 1.0 发布](https://medium.com/mix-blockchain/decentralized-browser-mix-acuity-1-0-released-827e17353b54)
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 8 月 7 日：** [巴黎 P2P](https://p2p.paris/en/) 将举办第一个活动，[巴黎 P2P #0](https://www.meetup.com/Paris-P2P/events/263089573/)，讨论点对点(P2P)、去中心化、网络和自治社区、分布式和去中心化系统等主题。[请在此提交你对未来活动的演讲思路。](https://p2p.paris/en/)
 - **2019 年 8 月 8 日：** [IPFS Meet & Hack](https://www.meetup.com/San-Francisco-IPFS/events/261811887/)是每月一次的聚会，讨论 IPFS 的有关事项。由 San Francisco IPFS 主办，[演讲请在这里注册](https://docs.google.com/forms/d/e/1FAIpQLSdgolK13Bq7w9MkPMn4uJ7cuf_Q3YDu27_PgCStQ6glki_g_Q/viewform?usp=sf_link)。美国旧金山。

@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,7 +22,7 @@ tags:
 
 ### IPFS Camp 课程视频发布
 
-如果你一直关注 IPFS Camp 的更新，你可能已经浏览了闪电演讲、深度教程和项目海报的视频，但是现在 [IPFS Camp 的核心和选修课视频](https://blog.ipfs.io/2019-09-18-ipfs-camp-course-videos/)已经发布了
+如果你一直关注 IPFS Camp 的更新，你可能已经浏览了闪电演讲、深度教程和项目海报的视频，但是现在 [IPFS Camp 的核心和选修课视频](https://blog.ipfs.tech/2019-09-18-ipfs-camp-course-videos/)已经发布了
 
 ### IPFS 集群 v0.11.0 已经发布！
 
@@ -30,7 +30,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [使用 IPFS、IPNS 和 DNSLink 网站](https://simpleaswater.com/ipfs/tutorials/hosting_website_on_ipfs_ipns_dnslink) ，SimpleAsWater，2019 年 9 月 22 日
 - [IPFS DeFi 金融技术银行现实检查](https://medium.com/temporal-cloud/ipfs-defi-fintech-banking-reality-check-b87811d27cec)，Temporal，2019 年 9 月 20 日
@@ -51,14 +51,14 @@ _你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS �
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [IpJot](https://ipjot.herokuapp.com/) 在 web 上创建短文、故事、书籍、诗歌等，并将它们添加到 IPFS 中。
 - [带有 TiddlyWiki 的 IPFS](https://github.com/xmaysonnave/tiddlywiki-ipfs)，一个旨在帮助开发人员、编辑人员或用户通过 IPFS 保存 wiki 和附件的插件。
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **新 IPFS 聚会：** [苏黎世 IPFS Meetup Gruppe](https://www.meetup.com/Zurich-IPFS-Meetup-Gruppe/) 将于近期召开会议，讨论 IPFS 的潜力和现状，也许还会讨论类似的 P2P 网络，使经济无国界。瑞士 苏黎世。
 - **2019 年 9 月 27 日至 30 日：** [Offline Camp Oregon](http://offlinefirst.org/camp/) 现已延期，但它仍在计划中！[这里是过去的露营者对我们独特的](https://youtu.be/FNtpPW_7H1k), 专注于[离线优先](http://offlinefirst.org/)的网络开发和设计方法的非会议形式的活动的评论。

@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### The IPFS Camp’s first batch of recordings are out!
 
-You read it right, the recordings from IPFS Camp are starting to be released! For this first batch we have: [Lightning Talks and Poster Projects](https://blog.ipfs.io/2019-07-22-ipfs-camp-content-first-batch/), so go check them out.
+You read it right, the recordings from IPFS Camp are starting to be released! For this first batch we have: [Lightning Talks and Poster Projects](https://blog.ipfs.tech/2019-07-22-ipfs-camp-content-first-batch/), so go check them out.
 
 ### Join the IPFS, libp2p and IPLD Communities on IRC \o/
 
@@ -66,7 +66,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **28 July 2019:** [ProtoSchool - Shanghai Chapter: Technical Salon Session 4](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/262866233/) will focus on technical deep dives and evangelize decentralized storage network and its developing ecosystem. Hosted by Shanghai Decentralized Systems Meetup Group.
 - **2-5 August 2019:** [Offline Camp](http://offlinefirst.org/camp/) is a 4-day retreat to explore Offline First development and design in Grants Pass, Oregon. [Learn more about the event here.](https://medium.com/offline-camp/announcing-offline-camp-v5-eb9111fdcc94)

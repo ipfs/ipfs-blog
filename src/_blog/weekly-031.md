@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- We’re excited to announce the inaugural **IPFS Camp**, a three-day hacker retreat for the creators and builders of the distributed web. Join us on June 27-20th at the amazing Campus La Mola in Barcelona for an action-packed program of workshops, talks and deep dives on everything IPFS. More information, including registration, will be available on the [IPFS blog soon](https://blog.ipfs.io/)!
+- We’re excited to announce the inaugural **IPFS Camp**, a three-day hacker retreat for the creators and builders of the distributed web. Join us on June 27-20th at the amazing Campus La Mola in Barcelona for an action-packed program of workshops, talks and deep dives on everything IPFS. More information, including registration, will be available on the [IPFS blog soon](https://blog.ipfs.tech/)!
 - [IPFS Cluster version 0.9.0](https://cluster.ipfs.io/news/0.9.0_release/) comes with one big new feature, OpenCensus support! Happy Measured Pinning!
 - Last week, the IPFS research team released a paper on [Merkle-CRDTs](https://github.com/ipfs/research-CRDT/issues/45), that is, CRDTs backed by Merkle-DAGs. The paper formalizes what the team calls a Merkle-Clock (a logical clock) and goes on to describe Merkle-CRDTs as CRDTs on Merkle-Clocks.
 - Introducing [IPFS Stash](https://medium.com/twos-complement/ipfs-stash-local-ipfs-for-everyone-ethdenver2019-b5b45ae0d5c9) — Local IPFS for everyone created during #ETHDenver2019.
@@ -50,15 +50,15 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [go-ipfs 0.4.19-rc1 has been released](https://dist.ipfs.io/go-ipfs/v0.4.19-rc1), read more about the details on features [in the changelog](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0419-2018-02-14-unreleased).
+- [go-ipfs 0.4.19-rc1 has been released](https://dist.ipfs.tech/go-ipfs/v0.4.19-rc1), read more about the details on features [in the changelog](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0419-2018-02-14-unreleased).
 
 ## Questions from the community 🤔
 
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
 - [Is the concept of anonymous editing of text files, HTML, or markdown possible with IPFS?](https://www.reddit.com/r/ipfs/comments/au2lpx/is_an_editable_wiki_hosted_on_ipfs_possible/)
-- [I was trying out IPFS the other day and the file retrieval is very slow...](https://discuss.ipfs.io/t/ipfs-gateway-very-slow/4928)
-- I don’t even know what this error means, my / directory is definitely not a file, /ipfs and /ipns are both certainly directories and not files, I have no idea what this is even in reference to. [Any guesses?](https://discuss.ipfs.io/t/error-root-cant-be-a-file-when-trying-to-mount/3912)
+- [I was trying out IPFS the other day and the file retrieval is very slow...](https://discuss.ipfs.tech/t/ipfs-gateway-very-slow/4928)
+- I don’t even know what this error means, my / directory is definitely not a file, /ipfs and /ipns are both certainly directories and not files, I have no idea what this is even in reference to. [Any guesses?](https://discuss.ipfs.tech/t/error-root-cant-be-a-file-when-trying-to-mount/3912)
 
 ## Tools and projects we <3
 
@@ -70,7 +70,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **2 Mar 2019:** On [Global Diversity CFP Day 2019](https://www.globaldiversitycfpday.com/) there will be numerous workshops hosted around the globe encouraging and advising newbie speakers to put together your very first talk proposal and share your own individual perspective on any subject of interest to people in tech.
 - **2 Mar 2019:** [NYC School of Data](https://schoolofdata.nyc/) is a community driven conference with a focus on open data, civic technology and design conference.

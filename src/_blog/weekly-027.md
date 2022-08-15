@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## The latest
 
 - This weekend the IPFS Community will be at [FOSDEM 2019](https://github.com/ipfs/community/issues/378#issuecomment-458439399), will you? [Follow this issue](https://github.com/ipfs/community/issues/378#issuecomment-458439399) for updates on an IPFS Meetup at the event.
-- David Dias wrote up a fantastic [2018 Q4 London Hack Week Summary](https://blog.ipfs.io/65-london-hack-week-report/) on the IPFS blog last week. Read the full recap for photos, details about the community show and tell, and more.
+- David Dias wrote up a fantastic [2018 Q4 London Hack Week Summary](https://blog.ipfs.tech/65-london-hack-week-report/) on the IPFS blog last week. Read the full recap for photos, details about the community show and tell, and more.
 - [ProtoSchool](https://proto.school/#/chapters) is off and running. There are now eight local chapters across three continents! Check it out!
 
 ## Meet Paula de la Hoz
@@ -54,8 +54,8 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 - [Is there a peer to peer backup system build on IPFS yet?](https://www.reddit.com/r/ipfs/comments/aifgtc/is_there_a_peer_to_peer_backup_system_build_on/)
 - [Are there any non-technical obstacles (e.g., administrative barriers) to using IPFS?](https://www.reddit.com/r/ipfs/comments/ahgexw/are_there_any_nontechnical_obstacles_eg/)
-- [How secret are CIDs and what should I think about hosting user uploaded media on IPFS?](https://discuss.ipfs.io/t/how-secret-are-cids-and-what-should-i-think-about-hosting-user-uploaded-media-on-ipfs/4740)
-- [Social Media Architecture with IPFS](https://discuss.ipfs.io/t/social-media-architecture-with-ipfs/4625/2)
+- [How secret are CIDs and what should I think about hosting user uploaded media on IPFS?](https://discuss.ipfs.tech/t/how-secret-are-cids-and-what-should-i-think-about-hosting-user-uploaded-media-on-ipfs/4740)
+- [Social Media Architecture with IPFS](https://discuss.ipfs.tech/t/social-media-architecture-with-ipfs/4625/2)
 - [Is there any IPFS based application for private folder sharing, with GUI, available for Linux and Windows?](https://www.reddit.com/r/ipfs/comments/acw116/ipfs_based_file_sharing_application_with_gui/)
 
 ## Tools and projects we <3
@@ -67,7 +67,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - 2 Feb 2019: [IPFS Bootstrapping - 2019 edition](https://www.meetup.com/it-IT/copenhagen-ipfs/events/258321153/) is coming to the Copehagen IPFS community.
 - 2-3 Feb 2019: IPFS will be a topic of discussion at FOSDEM in Brussels. [Join us there!](https://fosdem.org/2019/)

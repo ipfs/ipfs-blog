@@ -15,12 +15,12 @@ tags:
 
 On 2021-08-20 at 15:54 UTC, visitors started to get 404s across all HTTPS content served from the[ ipfs.io](http://ipfs.io/) domain. 404s were returned for both:
 
-1. Web properties under the [ipfs.io](http://ipfs.io/) domain, including: the ipfs website ([ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([docs.ipfs.io](https://docs.ipfs.io "https://docs.ipfs.io")), ipfs dist ([dist.ipfs.io](https://dist.ipfs.io "https://dist.ipfs.io")), ipfs blog ([blog.ipfs.io](https://blog.ipfs.io "https://blog.ipfs.io")), etc. AND
+1. Web properties under the [ipfs.io](http://ipfs.io/) domain, including: the ipfs website ([ipfs.io](https://ipfs.io "https://ipfs.io")), ipfs docs ([docs.ipfs.tech](https://docs.ipfs.tech "https://docs.ipfs.tech")), ipfs dist ([dist.ipfs.tech](https://dist.ipfs.tech "https://dist.ipfs.tech")), ipfs blog ([blog.ipfs.tech](https://blog.ipfs.tech "https://blog.ipfs.tech")), etc. AND
 2. Content served over the IPFS over HTTP gateway at `https://ipfs.io/ipfs/<cid>`
 
 Users across the internet fetch content from the IPFS network using the ipfs.io gateway over 300 **million** times per week, and were thus impacted until our mitigation was applied at 19:35 UTC. You can see the full incident report and history [on the status page](https://ipfsgateway.statuspage.io/).
 
-However, you can instead fetch content directly from the IPFS network without hitting any of these gateways by using your own IPFS node with [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/), [IPFS CLI](https://docs.ipfs.io/how-to/command-line-quick-start), [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) in your browser, and/or an [IPFS-enabled browser like Brave](https://brave.com/ipfs-support/). **If you were using IPFS directly, you probably never even noticed this outage! 💪**
+However, you can instead fetch content directly from the IPFS network without hitting any of these gateways by using your own IPFS node with [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/), [IPFS CLI](https://docs.ipfs.tech/how-to/command-line-quick-start), [IPFS Companion](https://docs.ipfs.tech/install/ipfs-companion/) in your browser, and/or an [IPFS-enabled browser like Brave](https://brave.com/ipfs-support/). **If you were using IPFS directly, you probably never even noticed this outage! 💪**
 
 # Background
 
@@ -53,7 +53,7 @@ Protocol Labs is taking many steps in response to this event to prevent it from 
 1. Reduce the blast radius by separating the IPFS website from the ipfs.io gateway onto different domains.
 2. Reduce the time to respond by paging engineers on sustained gateway inaccessibility.
 3. Reduce time to mitigation by establishing and documenting direct human lines of communication for the registrars of domains of gateways operated by Protocol Labs.
-4. Reduce the likelihood of a complete domain takedown by making it even easier for a concerned party to contact us directly about objectionable content (beyond our pre-existing abuse takedown email and resources on the [Gateway FAQ](https://docs.ipfs.io/concepts/ipfs-gateway/#frequently-asked-questions-faqs) and [ipfs.io/legal](https://ipfs.io/legal)).
+4. Reduce the likelihood of a complete domain takedown by making it even easier for a concerned party to contact us directly about objectionable content (beyond our pre-existing abuse takedown email and resources on the [Gateway FAQ](https://docs.ipfs.tech/concepts/ipfs-gateway/#frequently-asked-questions-faqs) and [ipfs.io/legal](https://ipfs.io/legal)).
 5. Reduce recovery time by simplifying and better documenting the custom DNS resolution on our gateways.
 
 You can follow along with the status of these corrective actions [here](https://github.com/ipfs/ipfs/issues/469).

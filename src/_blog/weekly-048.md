@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -53,13 +53,13 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Join in the community discussions happening right now!
 
-- [IPFS as a storage option on Kubernetes?](https://discuss.ipfs.io/t/ipfs-as-a-storage-option-on-kubernetes/4506/3) 1 July 2019
-- [Proposal Implementing History Aware IPNS Via Certificate Transparency Log Data Structure Trillian](https://discuss.ipfs.io/t/implementing-history-aware-ipns-via-certificate-transparency-log-data-structure-trillian/5756), 28 June 2019
-- [How to Solve Scalability in IPFS?](https://discuss.ipfs.io/t/how-to-solve-scalability-in-ipfs/5712) 22 June 2019
+- [IPFS as a storage option on Kubernetes?](https://discuss.ipfs.tech/t/ipfs-as-a-storage-option-on-kubernetes/4506/3) 1 July 2019
+- [Proposal Implementing History Aware IPNS Via Certificate Transparency Log Data Structure Trillian](https://discuss.ipfs.tech/t/implementing-history-aware-ipns-via-certificate-transparency-log-data-structure-trillian/5756), 28 June 2019
+- [How to Solve Scalability in IPFS?](https://discuss.ipfs.tech/t/how-to-solve-scalability-in-ipfs/5712) 22 June 2019
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **18-21 July 2019:** [DWeb Camp](https://dwebcamp.org/) is a chance for dreamers and builders to come together in one of the most beautiful spots on earth for a 4-day retreat to reimagine and build the web we want and deserve, location south of San Francisco, California.
 - **2-5 August 2019:** [Offline Camp](http://offlinefirst.org/camp/) is a 4-day retreat to explore Offline First development and design in Grants Pass, Oregon. [Learn more about the event here.](https://medium.com/offline-camp/announcing-offline-camp-v5-eb9111fdcc94)

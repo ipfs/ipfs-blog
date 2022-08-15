@@ -12,7 +12,7 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## The path to decentralization and go-ipfs 0.5 on the Zero Knowledge Podcast
 
@@ -20,11 +20,11 @@ IPFS Project Lead Molly Mackinlay was recently a guest on the [Zero Knowledge Po
 
 ## Experience the IPFS Pinning Summit, again!
 
-True, the IPFS Pinning Summit has come and gone, but if you missed it, we have you covered. [Watch all of the videos](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5) from the event and be sure to [read our recap](https://blog.ipfs.io/2020-05-13-ipfs-pinning-summit-recap/) from the two-day summit.
+True, the IPFS Pinning Summit has come and gone, but if you missed it, we have you covered. [Watch all of the videos](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTvsxuZ9T-tMlu_v0lja6v5) from the event and be sure to [read our recap](https://blog.ipfs.tech/2020-05-13-ipfs-pinning-summit-recap/) from the two-day summit.
 
 ## Are you using (or plan to use) js-ipfs in browser?
 
-Then we want to hear from you! Your input would really help to shape the plan for changes that we hope will improve your and your users' experience. Check out the discussion on [reducing js-ipfs overhead by sharing node across browser tabs](https://discuss.ipfs.io/t/reducing-js-ipfs-overhead-by-sharing-node-across-browser-tabs/8024) now!
+Then we want to hear from you! Your input would really help to shape the plan for changes that we hope will improve your and your users' experience. Check out the discussion on [reducing js-ipfs overhead by sharing node across browser tabs](https://discuss.ipfs.tech/t/reducing-js-ipfs-overhead-by-sharing-node-across-browser-tabs/8024) now!
 
 ## Top highlights this week
 
@@ -59,6 +59,6 @@ In order to help prioritize future improvements to IPFS tooling and interfaces, 
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

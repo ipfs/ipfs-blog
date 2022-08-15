@@ -17,7 +17,7 @@ tags:
 
 ![](../assets/172855109-3abff5c1-0b13-43d9-b2bb-8560a6b3b616.jpg)
 
-ProbeLab is an effort to apply solid scientific measurement methodologies to benchmark and optimize network protocols that operate in decentralized P2P environments. It was born out of the need for developing a deeper understanding of how permissionless, decentralized networks can be made more performant and comparable to their centralized counterparts. [Keep reading](https://blog.ipfs.io/2022-06-15-probelab/) to learn more about the project.
+ProbeLab is an effort to apply solid scientific measurement methodologies to benchmark and optimize network protocols that operate in decentralized P2P environments. It was born out of the need for developing a deeper understanding of how permissionless, decentralized networks can be made more performant and comparable to their centralized counterparts. [Keep reading](https://blog.ipfs.tech/2022-06-15-probelab/) to learn more about the project.
 
 ## **Brand New on IPFS ✨**
 

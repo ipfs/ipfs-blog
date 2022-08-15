@@ -15,9 +15,9 @@ tags:
 
 ![](../assets/ipfs-blog-2021-12-17-web3browsers.png)
 
-Browsers are still most users’ primary interface when they interact with the internet. In most cases, however, they’re still stuck with Web 2.0 infrastructure. This has started to change thanks to recent integrations by browsers like [**Brave**](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)and [**Opera**](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/) who’ve added native support for IPFS as the default protocol for decentralized storage. These developments eliminate the need for centralized gateways and pave the way for the slow but steady ongoing migration from HTTP to Web3.
+Browsers are still most users’ primary interface when they interact with the internet. In most cases, however, they’re still stuck with Web 2.0 infrastructure. This has started to change thanks to recent integrations by browsers like [**Brave**](https://blog.ipfs.tech/2021-01-19-ipfs-in-brave/)and [**Opera**](https://blog.ipfs.tech/2021-02-08-opera-ios-and-ipfs/) who’ve added native support for IPFS as the default protocol for decentralized storage. These developments eliminate the need for centralized gateways and pave the way for the slow but steady ongoing migration from HTTP to Web3.
 
-[**Read more**](https://blog.ipfs.io/2022-01-07-web3-browsers-for-decentralized-storage/) and be sure to [**watch**](https://www.youtube.com/watch?v=1rMMEeZ6jI4&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=45) IPFS Growth Engineer Dietrich Ayala and Brave Wallet Engineer Anirudha Bose’s conversation on the topic.
+[**Read more**](https://blog.ipfs.tech/2022-01-07-web3-browsers-for-decentralized-storage/) and be sure to [**watch**](https://www.youtube.com/watch?v=1rMMEeZ6jI4&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=45) IPFS Growth Engineer Dietrich Ayala and Brave Wallet Engineer Anirudha Bose’s conversation on the topic.
 
 ## **Brand New on IPFS**
 

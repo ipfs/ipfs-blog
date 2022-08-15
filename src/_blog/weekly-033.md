@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -57,9 +57,9 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
-- [Is it possible to run IPFS directly from a USB key or from html file?](https://discuss.ipfs.io/t/run-ipfs-from-a-usb-key-or-a-html-file/5011)
-- [I’ve played around a bit with IPFS using Go, and I’m asking for advice...](https://discuss.ipfs.io/t/learn-to-use-ipfs-with-go/5010)
-- [What does “pin” really mean?](https://discuss.ipfs.io/t/i-am-new-to-this-and-i-have-several-questions/4982)
+- [Is it possible to run IPFS directly from a USB key or from html file?](https://discuss.ipfs.tech/t/run-ipfs-from-a-usb-key-or-a-html-file/5011)
+- [I’ve played around a bit with IPFS using Go, and I’m asking for advice...](https://discuss.ipfs.tech/t/learn-to-use-ipfs-with-go/5010)
+- [What does “pin” really mean?](https://discuss.ipfs.tech/t/i-am-new-to-this-and-i-have-several-questions/4982)
 
 ## Tools and projects we <3
 
@@ -74,7 +74,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **12 Mar 2019:** [Decentralized Web SF Meet Up—March](https://www.eventbrite.com/e/decentralized-web-sf-meet-upmarch-tickets-56515197477), hosted by the Internet Archive, 6-9pm.
 - **12 Mar 2019:** [IPFS and Digital Content Distribution in Blockchain](https://www.meetup.com/DECENT/events/259500556/): During this Meetup, DECENT’s Technical Consultant, Michal Stančík, will elaborate on how data on blockchain is secured, how keys are transferred through the network and more. 6pm, hosted by DECENT and Romana Figerova.

@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### 2019 IPFS Camp Recap
 
-In case you missed it, David Dias and the IPFS Camp team wrote up a recap of last month’s event with links to talks, resources and more, so [check it out on the IPFS blog.](https://blog.ipfs.io/2019-07-08-ipfs-camp-recap/)
+In case you missed it, David Dias and the IPFS Camp team wrote up a recap of last month’s event with links to talks, resources and more, so [check it out on the IPFS blog.](https://blog.ipfs.tech/2019-07-08-ipfs-camp-recap/)
 
 ### Announcing the arrival of js-ipfs-http-client-lite
 
@@ -47,7 +47,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 - [The need for Decentralized Identity](https://medium.com/moxystudio/the-need-for-decentralized-identity-4d369408e10e), MOXY, 5 July 2019
 - [IPFS Camp 2019: The Highlights and Takeaways](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513), Textile, 1 July 2019
 - SLIDES: [go-ds-crdt](https://hector.link/presentations/go-ds-crdt-ligthning/), Héctor Sanjuán, 28 June 2019
-- [Implementing History Aware IPNS Via Certificate Transparency Log Data Structure Trillian](https://discuss.ipfs.io/t/implementing-history-aware-ipns-via-certificate-transparency-log-data-structure-trillian/5756), Sawood Alam, 28 June 2019
+- [Implementing History Aware IPNS Via Certificate Transparency Log Data Structure Trillian](https://discuss.ipfs.tech/t/implementing-history-aware-ipns-via-certificate-transparency-log-data-structure-trillian/5756), Sawood Alam, 28 June 2019
 - [VR Hackfest: Behind Palo Alto City Library’s Exhibit](https://library.cityofpaloalto.org/news/vr-hackfest/), 27 June 2019
 - [Temporal’s IPFS HTTP API endpoint is in production now!](https://gateway.temporal.cloud/ipns/docs.api.temporal.cloud/ipfs.html#ipfs-http-api-proxy) 26 June 2019
 - [Peergos Security Audit, June 2019](https://peergos.org/blog#security_audit_june_2019_), 14 June 2019
@@ -76,7 +76,7 @@ IPFS, Ethereum and others will have a a peer2peer focused node in the Web3 confe
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **18-21 July 2019:** [DWeb Camp](https://dwebcamp.org/) is a chance for dreamers and builders to come together in one of the most beautiful spots on earth for a 4-day retreat to reimagine and build the web we want and deserve, location south of San Francisco, California.
 - **28 July 2019:** [ProtoSchool - Shanghai Chapter: Technical Salon Session 4](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/262866233/) will focus on technical deep dives and evangelize decentralized storage network and its developing ecosystem. Hosted by Shanghai Decentralized Systems Meetup Group.

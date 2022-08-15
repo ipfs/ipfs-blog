@@ -20,26 +20,26 @@ _就发布而言，是的，我们做到了。_
 
 ### IPFS 浏览器更新
 
-了解[与 Firefox，Brave，Opera 和其他浏览器与我们正在进行的持续合作](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) ，并了解目前的进展。
+了解[与 Firefox，Brave，Opera 和其他浏览器与我们正在进行的持续合作](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/) ，并了解目前的进展。
 
 ### 大量 IPFS Camp 内容发布出来！
 
-从[主题演讲到开发人员访谈](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/)
-，再到[科幻博览会视频](https://blog.ipfs.io/2019-10-03-ipfs-camp-sci-fi-fair-videos/)
+从[主题演讲到开发人员访谈](https://blog.ipfs.tech/2019-10-14-ipfs-camp-keynotes-interviews/)
+，再到[科幻博览会视频](https://blog.ipfs.tech/2019-10-03-ipfs-camp-sci-fi-fair-videos/)
 ，都有大量精彩的 IPFS Camp 视频可供观看！
 
 ### js-ipfs 0.39.0 和 0.40.0 发布
 
-js-ipfs 团队一直在努力工作，以找出将来转换为哈希格式的基础，以及更多。查看 [0.39.0](https://blog.ipfs.io/071-js-ipfs-0-39/) 和 [0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/) 版本的更新。
+js-ipfs 团队一直在努力工作，以找出将来转换为哈希格式的基础，以及更多。查看 [0.39.0](https://blog.ipfs.tech/071-js-ipfs-0-39/) 和 [0.40.0](https://blog.ipfs.tech/2019-12-02-js-ipfs-0-40/) 版本的更新。
 
 ### 了解如何将 go-ipfs 用作代码库
 
-标题说明了一切！通过新教程了解如何将 [go-ipfs 用作代码库](https://blog.ipfs.io/073-go-ipfs-as-a-library/)
+标题说明了一切！通过新教程了解如何将 [go-ipfs 用作代码库](https://blog.ipfs.tech/073-go-ipfs-as-a-library/)
 ，并充分利用 go-ipfs 核心 API。
 
 ### 在 ProtoSchool 上浏览 Files API
 
-本新教程探讨了为处理文件而定制[的 js-ipfs 顶级方法](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/) （添加，获取，分类等）。一探究竟！
+本新教程探讨了为处理文件而定制[的 js-ipfs 顶级方法](https://blog.ipfs.tech/2019-11-06-explore-the-files-api-on-protoschool/) （添加，获取，分类等）。一探究竟！
 
 ### 在 IPFS 上演示？我们给您帮助
 

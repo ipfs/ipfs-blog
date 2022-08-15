@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Top 5 highlights
 
@@ -34,7 +34,7 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 - Help with experimental chat feature of [js-ipfs/ipfs-pubsub](https://www.reddit.com/r/ipfs/comments/eukjwz/help_in_approaching_this_project_idea/)...
 - Thinking of doing [live streaming project with IPFS](https://www.reddit.com/r/ipfs/comments/ety5oi/live_streaming_ipfs/)...
 - Has anyone attempted to use [js-ipfs/web3js/js-libp2p to create a private network](https://www.reddit.com/r/ipfs/comments/eshkje/seeking_advice_on_jsipfs_for_private_offline/) that's browse based?
-- How to initiate IPFS node once and [keep using the same PeerID](https://discuss.ipfs.io/t/how-to-initiate-ipfs-node-once-and-keep-using-the-same-peerid-in-app/7086) in App?
+- How to initiate IPFS node once and [keep using the same PeerID](https://discuss.ipfs.tech/t/how-to-initiate-ipfs-node-once-and-keep-using-the-same-peerid-in-app/7086) in App?
 
 ## Recommended viewing
 
@@ -81,6 +81,6 @@ Here’s what’s happening lately in the [InterPlanetary File System](https://i
 - [#BUIDL Week Colorado - ETHDenver 2020](https://www.ethdenver.com/buidlweek/), 13-17 Feb 2020, Denver (CO), US
 - [Open Data Day 2020](https://opendataday.org/), 7 Mar 2020, 35 events registered so far!
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.

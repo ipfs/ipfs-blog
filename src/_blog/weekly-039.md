@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,15 +23,15 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### go-ipfs 0.4.20 released
 
-Highlights from the latest release of the Go implementation, go-ipfs, include support for Docker commands, a major WebUI release, some improved _and_ new commands, plus perf and reliability improvements. Read the full release notes on [the IPFS blog](https://blog.ipfs.io/83-go-ipfs-0-4-20/).
+Highlights from the latest release of the Go implementation, go-ipfs, include support for Docker commands, a major WebUI release, some improved _and_ new commands, plus perf and reliability improvements. Read the full release notes on [the IPFS blog](https://blog.ipfs.tech/83-go-ipfs-0-4-20/).
 
 ### Introducing IPFS-lite: embeddable, lightweight IPFS-network peer for IPLD applications
 
-Last week, Hector Sanjuan shared [IPFS-lite](https://github.com/hsanjuan/ipfs-lite), an embeddable, lightweight IPFS-network peer for IPLD applications. It allows to ipfs-ify any libp2p application but also to run lightweight embedded peers that can read and write files to IPFS but not do all the other things. [Read more about IPFS-lite](https://discuss.ipfs.io/t/ipfs-lite-embeddable-lightweight-ipfs-network-peer-for-ipld-applications/5237).
+Last week, Hector Sanjuan shared [IPFS-lite](https://github.com/hsanjuan/ipfs-lite), an embeddable, lightweight IPFS-network peer for IPLD applications. It allows to ipfs-ify any libp2p application but also to run lightweight embedded peers that can read and write files to IPFS but not do all the other things. [Read more about IPFS-lite](https://discuss.ipfs.tech/t/ipfs-lite-embeddable-lightweight-ipfs-network-peer-for-ipld-applications/5237).
 
 ### go-ds-crdt: A distributed key-value store implementation for IPFS
 
-[go-ds-crdt](https://discuss.ipfs.io/t/go-ds-crdt-a-distributed-key-value-store-implementation-for-ipfs/5239) is the new datastore backend for the IPFS Cluster shared state. go-ds-crdt provides a distributed key-value store using CRDTs and implements the Datastore interface. The idea is that any datastore can now be replaced by a replicated datastore. [Read more about go-ds-crdt](https://github.com/ipfs/go-ds-crdt).
+[go-ds-crdt](https://discuss.ipfs.tech/t/go-ds-crdt-a-distributed-key-value-store-implementation-for-ipfs/5239) is the new datastore backend for the IPFS Cluster shared state. go-ds-crdt provides a distributed key-value store using CRDTs and implements the Datastore interface. The idea is that any datastore can now be replaced by a replicated datastore. [Read more about go-ds-crdt](https://github.com/ipfs/go-ds-crdt).
 
 ### Storage Driver: Add an IPFS driver
 
@@ -62,11 +62,11 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.tech/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **24 Apr 2019:** Introducing [Hackboat](https://hackboat.org/), an afternoon cruise along the beautiful Willamette river while enjoying awesome infosec presentations, Portland, Oregon.
 - **25 Apr 2019:** [Diving into the Decentralized Web: ProtoSchool Learns IPFS!](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/259938521) What is the decentralized web? What is it good for, and how does it work? Let’s find out together! Seattle, Washington.

@@ -16,7 +16,7 @@ tags:
 
 ![](../assets/093-ipfs-pinning-summit-recap-header-image.png)
 
-The first-ever [IPFS Pinning Summit](https://ipfspinningsummit.com/) brought together [IPFS pinning services](https://docs.ipfs.io/guides/concepts/pinning/), infra providers, and users for 2 days of presentations & meetings to discuss the current state of IPFS infrastructure, services, and tools - and the future opportunities in this space.
+The first-ever [IPFS Pinning Summit](https://ipfspinningsummit.com/) brought together [IPFS pinning services](https://docs.ipfs.tech/guides/concepts/pinning/), infra providers, and users for 2 days of presentations & meetings to discuss the current state of IPFS infrastructure, services, and tools - and the future opportunities in this space.
 
 Day 1 focused on the accelerating growth of the IPFS ecosystem - especially the adoption and improvement of IPFS tooling and support for verticals like Web3 applications, DevOps pipelines, and Large Data on IPFS. The day also included presentations from major IPFS pinning services like [Infura](https://infura.io/) and [Pinata](https://pinata.cloud/), tools smoothing the IPFS upgrade UX like [Fleek](https://fleek.co/) and [UnstoppableDomains](https://unstoppabledomains.com/), and applications building on top of IPFS with strong use cases for IPFS infrastructure and tooling like [Ceramic](https://www.ceramic.network/), [Ucam](https://ucam.iotex.io/), and [Filecoin](https://filecoin.io/).
 

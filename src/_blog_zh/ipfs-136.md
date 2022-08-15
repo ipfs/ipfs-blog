@@ -9,7 +9,7 @@ header_image: "/header-image-weekly-newsletter.png"
 tags: []
 
 ---
-[**星际文件系统**](https://ipfs.io/)宇宙中，有这些新鲜事!
+[**星际文件系统**](https://ipfs.tech/)宇宙中，有这些新鲜事!
 
 ## Spring University黑客松活动概览
 
@@ -19,7 +19,7 @@ tags: []
 
 [**Cal Hacks**](https://helloworld.calhacks.io/)，一个由加州大学伯克利分校学生组成的非盈利组织，举行了一次旨在团结世界上创新者、创造者和艺术灵感者的“hello:world”全球黑客松活动。其目的是激励学生在“永续性、连接性、教育或社区和公民参与”中创建一个与众不同的世界。
 
-同样，加州大学联合学生会（ASUC）也举办了[**CivHacks**](https://www.civhacks.com/)，这是一个年度黑客松活动，专注于为支持科技文化的社会公益提供舒适、参与性强而又富含创造性的环境，开放的类别包括健康、永续性、学生发展和公民教育。欲知更多本次活动成果和获奖者情况，[**请点击此处查看近期博文**](https://blog.ipfs.io/2021-05-18-spring-hackathons/)。
+同样，加州大学联合学生会（ASUC）也举办了[**CivHacks**](https://www.civhacks.com/)，这是一个年度黑客松活动，专注于为支持科技文化的社会公益提供舒适、参与性强而又富含创造性的环境，开放的类别包括健康、永续性、学生发展和公民教育。欲知更多本次活动成果和获奖者情况，[**请点击此处查看近期博文**](https://blog.ipfs.tech/2021-05-18-spring-hackathons/)。
 
 ## 使用Estuary Node从Filecoin Network中存储和检索数据
 
@@ -29,7 +29,7 @@ Estuary是一个连接IPFS ⇆ Filecoin的网络节点。与其他节点不同�
 
 ## IPFS新内容
 
-* js-IPFS 0.55.0极大地改进了类型定义，[**点击此处阅读全部内容**](https://blog.ipfs.io/2021-05-11-js-ipfs-0-55/)。
+* js-IPFS 0.55.0极大地改进了类型定义，[**点击此处阅读全部内容**](https://blog.ipfs.tech/2021-05-11-js-ipfs-0-55/)。
 * 现在Opera桌面浏览器可以支持IPFS了！ [**点击此处试试看吧！**](https://www.opera.com/computer)
 * 开发人员现在可以使用Chainlink来引用IPFS上的JSON文件，以减少发放代币的gas成本[**点击此处查看教程**](https://blog.chain.link/fetch-ipfs-api-data-token-distribution/)！
 * 如今，利用Pinata新的专用网关功能，创建带有自定义域名的IPFS网关变得易如反掌。[*_点击此处阅读全文_](https://www.coywolf.news/webmaster/dedicated-ipfs-gateway-custom-domain/)。

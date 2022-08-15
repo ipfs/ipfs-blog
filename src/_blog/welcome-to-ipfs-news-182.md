@@ -17,11 +17,11 @@ tags:
 
 ![](../assets/180673629-deccc8fc-35d9-49ba-964c-b16d281d05fa.jpg)
 
-Only a handful of public blockchain solutions are heavily used by governments for conducting regular day-to-day business. [CargoX](https://cargox.io/) is a leading [supply chain solution](https://cargox.io/press-releases/full/blockchain-blockbuster-egyptian-government-cargox/) that relies on IPFS and Web3 infrastructure as its main architectural component. [Find out](https://blog.ipfs.io/2022-08/03-ecosystem-highlight-cargox/) how it simplifies the processing of Electronic Trade Documents for Egyptian authorities with the CargoX Platform for Blockchain Document Transfer (BDT).
+Only a handful of public blockchain solutions are heavily used by governments for conducting regular day-to-day business. [CargoX](https://cargox.io/) is a leading [supply chain solution](https://cargox.io/press-releases/full/blockchain-blockbuster-egyptian-government-cargox/) that relies on IPFS and Web3 infrastructure as its main architectural component. [Find out](https://blog.ipfs.tech/2022-08/03-ecosystem-highlight-cargox/) how it simplifies the processing of Electronic Trade Documents for Egyptian authorities with the CargoX Platform for Blockchain Document Transfer (BDT).
 
 ## **Brand New on IPFS ✨**
 
-1. [FFmpeg](https://ffmpeg.org/) allows you to watch videos in almost any format. [Find out](https://blog.ipfs.io/2022-08-01-ipfs-and-ffmpeg/) how its support for IFPS will enable IPFS usage in many more applications than previously possible.
+1. [FFmpeg](https://ffmpeg.org/) allows you to watch videos in almost any format. [Find out](https://blog.ipfs.tech/2022-08-01-ipfs-and-ffmpeg/) how its support for IFPS will enable IPFS usage in many more applications than previously possible.
 2. [Lighthouse](https://www.lighthouse.storage/) has built an encryption and access control layer for users to store private information on IPFS. Find out more on the [Lighthouse blog](https://www.lighthouse.storage/view-blog/6/Encryption-and-Access-Control-for-Web3-using-Lighthouse).
 3. Welcome Kubo! The go-ipfs implementation has been renamed for the v0.14.0 release. Get up to speed with all the details on [Github](https://github.com/ipfs/kubo/releases/tag/v0.14.0).
 4. Let’s make IPFS even better. The community is looking for feedback on your experience using IPFS WebUI or IPFS Desktop and all it takes is a quick 7-minute [survey](https://cryl27xbs16.typeform.com/to/VFVQeYqe?typeform-source=discuss.ipfs.tech).

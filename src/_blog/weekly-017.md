@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Releases abound! [js-ipfs 0.33.0](https://blog.ipfs.io/51-js-ipfs-0-33/) was released and features a lot of massive changes, including a total UI revamp, API updates and a new command line tool. Check it out!
+- Releases abound! [js-ipfs 0.33.0](https://blog.ipfs.tech/51-js-ipfs-0-33/) was released and features a lot of massive changes, including a total UI revamp, API updates and a new command line tool. Check it out!
 - [ipfs-cluster 0.7.0](https://cluster.ipfs.io/news/0.7.0_release/) was also released to issue some bugfixes and some improvements you’ll enjoy.
 - Microsoft launched an [IPFS template on Azure](https://azure.microsoft.com/en-us/blog/devcon4/) during devcon4.
 - See [go-ipfs](https://go-city.github.io/#/github.com/ipfs/go-ipfs) as a codebase visualisation at GoCity. Like the Sims, but better!
@@ -60,7 +60,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - [Internet of Trust](https://www.meetup.com/Meetup-Blockstack-Paris/events/255913213/), Blockstack Paris, 13 Nov 2018
 - Introducing [Decentralized Camp’s second yearly hackathon](https://medium.com/buildyourthing/introducing-decentralized-camps-second-yearly-hackathon-9de20516a321), 9-11 Nov 2018

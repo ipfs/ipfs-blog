@@ -53,7 +53,7 @@ We want to thank track leaders and event organizers Adin Schmahmann, Brendan O�
 
 ### Recap videos and ongoing discussions
 
-Watch the [IPFS þing 2022 videos (full playlist)](https://www.youtube.com/playlist?list=PLuhRWgmPaHtQhyXIhu2P6e-8WlYOf8wyH) to experience the event for yourself, or jump to any of the track-specific playlists below. You can also find ongoing discussions in the [IPFS Forum](https://discuss.ipfs.io/).
+Watch the [IPFS þing 2022 videos (full playlist)](https://www.youtube.com/playlist?list=PLuhRWgmPaHtQhyXIhu2P6e-8WlYOf8wyH) to experience the event for yourself, or jump to any of the track-specific playlists below. You can also find ongoing discussions in the [IPFS Forum](https://discuss.ipfs.tech/).
 
 * [Opening](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTKhTit_RFZMzYBLYuX2qy-)
 * [IPFS Implementations](https://www.youtube.com/playlist?list=PLuhRWgmPaHtQ9ZFUDcm6f0tXJ6s27wyxd)

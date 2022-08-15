@@ -19,14 +19,14 @@ tags:
 - IPFS and [Igalia](https://www.igalia.com/) started a collaboration that will continue during 2021.
 - [Distributed web schemes have been safelisted in Chrome 86](https://www.chromestatus.com/feature/4776602869170176)’s implementation of [custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers) and [registered at IANA](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml).
 - Chrome 89 will allow browser extensions to register cross-origin handlers or handlers for schemes with prefix `ext+`. Refinement is pending for the [permission UI](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333).
-- Firefox 84 marks `http://*.localhost/` URLs as [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), which means websites loaded from local [subdomain gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) will have access to the same Web APIs as HTTPS version.
+- Firefox 84 marks `http://*.localhost/` URLs as [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), which means websites loaded from local [subdomain gateway](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#subdomain-gateway) will have access to the same Web APIs as HTTPS version.
 - Firefox 84 has improved support for [loading locally delivered mixed-resources](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content#Loading_locally_delivered_mixed-resources). Patches have also been submitted to WebKit but are pending on reviews and discussions.
 - Work is in progress to improve Chromium’s consistency and specification compliance regarding the notion of [secure contexts](https://w3c.github.io/webappsec-secure-contexts/), including removing non-standard [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008).
 - Miscellaneous other fixes have landed for the Firefox and Chromium’s implementations of custom handlers.
 
 ## Background
 
-Nowadays, the majority of pages on the Web are coming from central servers controlled by their owners. The [IPFS protocol](https://ipfs.io/) envisions a future Web in which content can be delivered peer-to-peer, meaning directly between individuals or within groups. There have been web platform and browser efforts to reach the [goal of a distributed Web](https://arewedistributedyet.com/).
+Nowadays, the majority of pages on the Web are coming from central servers controlled by their owners. The [IPFS protocol](https://ipfs.tech/) envisions a future Web in which content can be delivered peer-to-peer, meaning directly between individuals or within groups. There have been web platform and browser efforts to reach the [goal of a distributed Web](https://arewedistributedyet.com/).
 
 Nevertheless, having corresponding protocols natively supported in browsers and taken into account in web standards will require coordination with various actors of the Web, including standardization groups (W3C, WHATWG, ...) and browser implementers.
 
@@ -87,7 +87,7 @@ With that goal in mind, Protocol Labs started a collaboration with [Igalia](http
 </svg>
 </div>
 
-An existing approach to use IPFS in browsers that don’t natively support this protocol is to rely on an [HTTP gateway](https://docs.ipfs.io/concepts/ipfs-gateway/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
+An existing approach to use IPFS in browsers that don’t natively support this protocol is to rely on an [HTTP gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/). Additionally, the redirection of IPFS links can be automatically performed using [HTML custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers). However, this approach has several limitations:
 
 1. Custom handlers are only implemented in Mozilla and Chromium browsers, not the ones based on WebKit.
 2. Custom handlers only accept schemes with prefix `web+` or belonging to a predetermined [safe list](https://html.spec.whatwg.org/multipage/system-state.html#safelisted-scheme).

@@ -16,7 +16,7 @@ tags:
 
 ![](../assets/167729788-5e24642b-c94f-41ca-853e-c8395c9fdae6.png)
 
-[**Openfabric**](https://openfabric.ai/) is a platform for building and connecting apps in an ecosystem where everyone has quick, easy, low-cost, and hassle-free access to powerful AIs. It leverages Web3 infrastructure to address the most challenging problems faced by AI platforms. Find out more about how IPFS is a core component of the decentralized operating system (DOS) developed by Openfabric on the IPFS [**blog**](https://blog.ipfs.io/2022-05-12-openfabric/).
+[**Openfabric**](https://openfabric.ai/) is a platform for building and connecting apps in an ecosystem where everyone has quick, easy, low-cost, and hassle-free access to powerful AIs. It leverages Web3 infrastructure to address the most challenging problems faced by AI platforms. Find out more about how IPFS is a core component of the decentralized operating system (DOS) developed by Openfabric on the IPFS [**blog**](https://blog.ipfs.tech/2022-05-12-openfabric/).
 
 ## **Brand New on IPFS ✨**
 

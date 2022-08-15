@@ -15,7 +15,7 @@ tags:
 
 ![](../assets/148262638-63588f04-cdfd-4476-ba67-912fd6bd3555.jpg)
 
-Web3 applications had a great run in 2021 as mainstream users were introduced to concepts like NFTs. This was all possible thanks to the infrastructure developments that were already there to support them with decentralized storage. Throughout the year, IPFS collaborated with projects such as OpenSea, Brave, Pinata, and Audius to make this happen. It also added important features to its Go and JavaScript implementations as well as the IPFS Cluster codebase. [Get a refresh](https://blog.ipfs.io/2022-01-11-IPFS-in-2021/) on everything that happened in 2021.
+Web3 applications had a great run in 2021 as mainstream users were introduced to concepts like NFTs. This was all possible thanks to the infrastructure developments that were already there to support them with decentralized storage. Throughout the year, IPFS collaborated with projects such as OpenSea, Brave, Pinata, and Audius to make this happen. It also added important features to its Go and JavaScript implementations as well as the IPFS Cluster codebase. [Get a refresh](https://blog.ipfs.tech/2022-01-11-IPFS-in-2021/) on everything that happened in 2021.
 
 ## **Brand New on IPFS**
 

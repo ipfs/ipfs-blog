@@ -17,7 +17,7 @@ IPFS is a relatively new protocol compared to the time-honored HTTP protocol and
 This blog post is the first of a two-part series:
 
 - Part one: You will learn about the challenges with the popular client-server model, how IPFS approaches these challenges with peer-to-peer networking and content addressing, the relationship between IPFS and HTTP(S), and finally a brief introduction to IPFS HTTP gateways.
-- [Part two](https://blog.ipfs.io/2022-06-30-practical-explainer-ipfs-gateways-2/): You will learn practical tips for using IPFS gateways in real-world applications, for example, improving CID access performance and reliability from the IPFS network, IPFS gateway resolution styles, caching, pinning, pinning services, integration with DNS, and running your own IPFS nodes and gateways.
+- [Part two](https://blog.ipfs.tech/2022-06-30-practical-explainer-ipfs-gateways-2/): You will learn practical tips for using IPFS gateways in real-world applications, for example, improving CID access performance and reliability from the IPFS network, IPFS gateway resolution styles, caching, pinning, pinning services, integration with DNS, and running your own IPFS nodes and gateways.
 
 If you're already familiar with the core concepts of IPFS and are interested in the practical guide for using IPFS gateways, stay tuned for part two of the blog series.
 
@@ -86,7 +86,7 @@ The challenges with location addressing are numerous. We've all had the experien
 
 In a peer-to-peer network like IPFS, a given file might be hosted on a number of the IPFS nodes.
 
-This is where _content addressing_ comes in handy. With IPFS, every single file stored in the system is addressed by a [cryptographic hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function) of its contents known as a [**Content Identifier** or **CID**](https://docs.ipfs.io/concepts/glossary/#cid). The CID is a long string of letters and numbers that is unique to that file.
+This is where _content addressing_ comes in handy. With IPFS, every single file stored in the system is addressed by a [cryptographic hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function) of its contents known as a [**Content Identifier** or **CID**](https://docs.ipfs.tech/concepts/glossary/#cid). The CID is a long string of letters and numbers that is unique to that file.
 
 There are three crucial things to remember with regards to CIDs:
 
@@ -142,7 +142,7 @@ To get a sense of using an IPFS gateway, try opening the following gateway links
 
 As you might notice, these are two different gateways that are capable of fetching the same image using IPFS' core pillars: content addressing and peer-to-peer networking.
 
-In the example, you just request a single image; but remember how a CID can be a whole directory of files, i.e., a website. When loading a whole website from an IPFS gateway, it's better to use the [subdomain gateway resolution style](https://docs.ipfs.io/concepts/ipfs-gateway/#resolution-style) to avoid [violation of the same-origin policy](https://docs.ipfs.io/concepts/ipfs-gateway/#violation-of-same-origin-policy).
+In the example, you just request a single image; but remember how a CID can be a whole directory of files, i.e., a website. When loading a whole website from an IPFS gateway, it's better to use the [subdomain gateway resolution style](https://docs.ipfs.tech/concepts/ipfs-gateway/#resolution-style) to avoid [violation of the same-origin policy](https://docs.ipfs.tech/concepts/ipfs-gateway/#violation-of-same-origin-policy).
 
 For example, instead of loading the IPFS documentation website (which is also deployed to IPFS 🤯) using the path resolution style: `https://ipfs.io/ipfs/bafybeiakks4s3ixictcn3alt45kfalkrotmfqishpgfl72pbnclhmk3rme` as we did with the image, you would load it with the subdomain resolution style, which follows the following structure: `https://<cid>.<gateway-url>`:
 
@@ -155,11 +155,11 @@ For example, instead of loading the IPFS documentation website (which is also de
 
 In this blog post, you learned about the challenges of the client-server model, the principles behind IPFS, namely peer-to-peer networking and content addressing, and how IPFS gateways provide a bridge between Web2 and Web3, allowing you to tap into the IPFS network using HTTP.
 
-In the [follow-up blog post](https://blog.ipfs.io/2022-06-30-practical-explainer-ipfs-gateways-2/), you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
+In the [follow-up blog post](https://blog.ipfs.tech/2022-06-30-practical-explainer-ipfs-gateways-2/), you will learn more about all the tips and tricks for using IPFS gateways in real-world applications, going into resolution styles, integration with DNS, caching, pinning, debugging, and more.
 
 If you're interested in:
 
-- Diving deeper, check out the [IPFS docs](https://docs.ipfs.io/)
-- Running an IPFS node, [install IPFS](https://docs.ipfs.io/install/)
-- Asking questions, join us in [the IPFS forum](https://discuss.ipfs.io/)
+- Diving deeper, check out the [IPFS docs](https://docs.ipfs.tech/)
+- Running an IPFS node, [install IPFS](https://docs.ipfs.tech/install/)
+- Asking questions, join us in [the IPFS forum](https://discuss.ipfs.tech/)
 - Chatting with us, join us on [Discord](https://discord.com/invite/KKucsCpZmY) or [Matrix](https://matrix.to/#/#ipfs:matrix.org)

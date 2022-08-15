@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -50,9 +50,9 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
-- [Would I be able to build a completely decentralized Wiki using IPFS?](https://discuss.ipfs.io/t/decentralized-wiki/4786/2)
+- [Would I be able to build a completely decentralized Wiki using IPFS?](https://discuss.ipfs.tech/t/decentralized-wiki/4786/2)
 - [I want to create a record in this public database and link to their also public solutions... there is a way to do it on IPFS?](https://www.reddit.com/r/ipfs/comments/al8429/help_neededdapps_solvo_spread_knowledge_p2p/)
-- [If a node requests data from another cluster in which it is a member, is this data also distributed in the new cluster?](https://discuss.ipfs.io/t/data-replication-among-multiple-ipfs-clusters/4781)
+- [If a node requests data from another cluster in which it is a member, is this data also distributed in the new cluster?](https://discuss.ipfs.tech/t/data-replication-among-multiple-ipfs-clusters/4781)
 - [What motivates people to use IPFS for large volumes of data?](https://www.reddit.com/r/ipfs/comments/am42wf/what_motivates_people_to_use_ipfs_for_large/)
 
 ## Tools and projects we <3
@@ -68,7 +68,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - 6 Feb 2019: Qri: A bleeding-edge open source data science tool on the distributed web, hosted by [New York Artificial Intelligence in Healthcare](https://www.meetup.com/NYHAIS/events/257935451/).
 - 11-14 Feb 2019: [#BUIDLWeek Colorado](https://www.ethdenver.com/buidlweek/), a series of blockchain events (Blockchain Meetups, Workshops & Connections) open to the public, leading up to the ETHDenver 2019 main stage event.

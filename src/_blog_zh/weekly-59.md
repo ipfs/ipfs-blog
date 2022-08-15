@@ -11,7 +11,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -23,7 +23,7 @@ tags:
 
 ### IPFS 解释程序 (IPFS Explainer) 的 v0.1 现已公开发布！
 
-经过 [IPFS 文档团队](https://twitter.com/meiqimichelle/status/1172352640480530432) 的艰苦工作，解释程序 v0.1 关于 IPFS 内容如何处理, peer-to-peer 网络怎样工作终于在这里了。[你自己去看看吧！](https://docs.ipfs.io/introduction/how-ipfs-works/)
+经过 [IPFS 文档团队](https://twitter.com/meiqimichelle/status/1172352640480530432) 的艰苦工作，解释程序 v0.1 关于 IPFS 内容如何处理, peer-to-peer 网络怎样工作终于在这里了。[你自己去看看吧！](https://docs.ipfs.tech/introduction/how-ipfs-works/)
 
 ### 加入 js-ipfs 早期测试人员计划
 
@@ -31,7 +31,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [通过专用网络启用 IPFS 应用程序](https://medium.com/temporal-cloud/enable-ipfs-applications-through-private-networks-28f98ea7358f)，Temporal，2019 年 9 月 16 日
 - [使用 IPFS 和 Blockstack 构建版本控制系统](https://hackernoon.com/tutorial-build-a-versioning-system-on-ipfs-77lvx2geh)，Hackernoon，2019 年 9 月 16 日
@@ -58,7 +58,7 @@ _你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS �
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [ETH Pictures](https://eth.pictures/): 将图像上传到 IPFS，并在以太坊区块链中生成一个 NFT 不可替换的令牌来表示每个图像。
 - [开放索引协议 DDX](https://www.youtube.com/watch?v=AR8O0vnYQxs&feature=youtu.be): 即分布式数据库 X，是建立在开放索引协议基础上的一款软件。
@@ -67,7 +67,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **新 IPFS 聚会：** [苏黎世 IPFS Meetup Gruppe](https://www.meetup.com/Zurich-IPFS-Meetup-Gruppe/) 将于近期召开会议，讨论 IPFS 的潜力和现状，也许还会讨论类似的 P2P 网络，使经济无国界。瑞士 苏黎世。
 - **2019 年 9 月 19 日：** 旧金山 IPFS 将在 Starfish Mission 主办 [IPFS 如何工作](https://www.meetup.com/San-Francisco-IPFS/events/264171146/)，请报名参加并了解更多关于 IPFS 以及它如何实际工作的信息。

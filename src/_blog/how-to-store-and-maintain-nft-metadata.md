@@ -34,7 +34,7 @@ So, how does a person who owns an NFT ensure its safety and accessibility throug
 
 ## IPFS and Metadata Storage
 
-What if there was a way to store data in perpetuity? When developers first came up with the idea of the cloud, they [aimed to create data persistence](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/ "IPFS, Filecoin, and Content Persistence"). While it did succeed in this endeavor partially, it created a situation where the owner of the cloud servers had complete control over the data. To rectify this potential problem (and many others), the idea for a decentralized internet was born.
+What if there was a way to store data in perpetuity? When developers first came up with the idea of the cloud, they [aimed to create data persistence](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/ "IPFS, Filecoin, and Content Persistence"). While it did succeed in this endeavor partially, it created a situation where the owner of the cloud servers had complete control over the data. To rectify this potential problem (and many others), the idea for a decentralized internet was born.
 
 When it came to storing accessible data in perpetuity, the approach had to be markedly different. How would a decentralized system provide servers owned by individuals that could offer storage to millions of users worldwide? This approach would create a new paradigm where instead of companies owning user data, individuals would maintain ownership of their data. The solution came with developing the Interplanetary File System (IPFS) and the decentralized network that interacts with it, Filecoin.
 

@@ -13,7 +13,7 @@ tags:
 ---
 ![IPFS built-in to Opera for Android](../assets/086-ipfs-in-opera-for-android-banner.png)
 
-As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
+As we hinted in our previous post about [IPFS in web browsers](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/), IPFS support in the Opera web browser has been in development for some time.
 
 Today, **Opera for Android 57** is live in the Google Play Store with default support for IPFS with a native handler for `ipfs://` addresses that redirects to the HTTP gateway of your choosing! [Install Opera Android with IPFS now](https://play.google.com/store/apps/details?id=com.opera.browser).
 
@@ -55,7 +55,7 @@ There’s a lot more work to do in maturing [naming in IPFS and distributed web 
 
 You can register _decentralized domain names_ that map to IPFS addresses using services like [Unstoppable Domains](https://unstoppabledomains.com/) or the [Ethereum Name System (ENS)](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a?source=rss----63df5ce4636f---4).
 
-You can also register and use any _DNS_ domain name, and map it to IPFS addresses using services like [Terminal.co](https://terminal.co) or tools like [DNSLink](https://docs.ipfs.io/guides/concepts/dnslink/).
+You can also register and use any _DNS_ domain name, and map it to IPFS addresses using services like [Terminal.co](https://terminal.co) or tools like [DNSLink](https://docs.ipfs.tech/guides/concepts/dnslink/).
 
 ## Implementation
 
@@ -65,7 +65,7 @@ IPFS features in this implementation:
 
 * Implements the [IPFS Web Browser Addressing specification](https://github.com/ipfs/in-web-browsers/blob/master/ADDRESSING.md), both `ipfs://` and `ipns://`
 * Configurable HTTP gateway, with options to use gateways like `dweb.link`, Infura, or a local node
-* Supports [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
+* Supports [subdomain gateways](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#subdomain-gateway) for secure web apps
 * Supports mixed protocol use, such as loading images over IPFS in an HTTP web page
 
 Read on to learn more about these features.

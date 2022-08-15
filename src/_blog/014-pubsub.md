@@ -76,4 +76,4 @@ Please note that this is a simple first-blush implementation of the technology. 
 
 ## Enjoy!
 
-All that said, we hope you give `ipfs pubsub` a try. You can head over to the [Discussion Forum](https://discuss.ipfs.io/categories) to ask questions, get help, or simply let us know how it goes.
+All that said, we hope you give `ipfs pubsub` a try. You can head over to the [Discussion Forum](https://discuss.ipfs.tech/categories) to ask questions, get help, or simply let us know how it goes.

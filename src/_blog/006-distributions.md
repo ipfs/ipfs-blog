@@ -6,17 +6,17 @@ description:
 author: Richard Littauer
 ---
 
-[![](../assets/006-distributions-screenshot.png)](https://dist.ipfs.io/)
+[![](../assets/006-distributions-screenshot.png)](https://dist.ipfs.tech/)
 
-[dist.ipfs.io](https://dist.ipfs.io/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downloading all official binaries that the IPFS Team produces.
+[dist.ipfs.tech](https://dist.ipfs.tech/) is the new distributions page for IPFS. This is the new one-stop-shop for finding and downloading all official binaries that the IPFS Team produces.
 
 ## The IPFS Distributions Website
 
-The distributions website itself is served by, hosted, and distributed through IPFS. The website assets and all of the binaries form one large IPFS content graph. This means that you can view and use this website through any IPFS node, even your own local ipfs node. All you need to do is to run an IPFS daemon and direct your browser to http://localhost:8080/ipns/dist.ipfs.io. Of course, you'll need to be online and connected to the internet, so you can find other ipfs nodes that have this website.
+The distributions website itself is served by, hosted, and distributed through IPFS. The website assets and all of the binaries form one large IPFS content graph. This means that you can view and use this website through any IPFS node, even your own local ipfs node. All you need to do is to run an IPFS daemon and direct your browser to http://localhost:8080/ipns/dist.ipfs.tech. Of course, you'll need to be online and connected to the internet, so you can find other ipfs nodes that have this website.
 
 ### Download Deduplication
 
-If you download files from dist.ipfs.io using your local IPFS node, future downloads **may be** much faster. When you click to download a file, your browser will ask to download it from your local IPFS node. In turn, your IPFS node will fetch the relevant content from other nodes in the network, and return it to your browser. Your browser will place the file in your Downloads folder, or wherever you directed it to.
+If you download files from dist.ipfs.tech using your local IPFS node, future downloads **may be** much faster. When you click to download a file, your browser will ask to download it from your local IPFS node. In turn, your IPFS node will fetch the relevant content from other nodes in the network, and return it to your browser. Your browser will place the file in your Downloads folder, or wherever you directed it to.
 
 However, once your local IPFS node has fetched the content, it will cache it locally for some time. This makes subsequent downloads of the exact same content instantaneous! Your browser asks the IPFS node for the content; the node already has it and simply returns it, without ever having to connect to other nodes. This also means that if other IPFS nodes in your local area network try to download the file, they may be able to fetch it from your node. Once you have the content locally, this can even work while disconnected from the internet!
 
@@ -34,9 +34,9 @@ Every distribution has a section, which includes:
 - A `Changelog`, a link to a summary of all version changes;
 - An `All Versions`, a link to view and download previous versions.
 
-The `All Versions` link on each distribution shows directory listings for all the available versions, and a `versions` file ([example](https://dist.ipfs.io/go-ipfs/versions)). This file can be used by tools, such as [ipfs-update](https://dist.ipfs.io/#ipfs-update), to find all the available versions and download the latest.
+The `All Versions` link on each distribution shows directory listings for all the available versions, and a `versions` file ([example](https://dist.ipfs.tech/go-ipfs/versions)). This file can be used by tools, such as [ipfs-update](https://dist.ipfs.tech/#ipfs-update), to find all the available versions and download the latest.
 
-The directory listing of each version ([example](https://dist.ipfs.io/go-ipfs/v0.3.11)) has all the platform archives (`.zip` or `.tar.gz`), a `README.md` and a `dist.json` which describe the release for humans and machines. It is meant to be easily consumed and used by tools.
+The directory listing of each version ([example](https://dist.ipfs.tech/go-ipfs/v0.3.11)) has all the platform archives (`.zip` or `.tar.gz`), a `README.md` and a `dist.json` which describe the release for humans and machines. It is meant to be easily consumed and used by tools.
 
 The site is also used directly by [`ipfs-update`](https://github.com/ipfs/ipfs-update) to update IPFS.
 

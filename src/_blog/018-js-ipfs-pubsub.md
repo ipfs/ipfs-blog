@@ -9,7 +9,7 @@ tags:
   - 'tutorial'
 ---
 
-IPFS pubsub was first introduced in September 2016 behind an experimental flag. This initial implementation allowed [orbit](https://orbit.chat/), a chat application built on top of IPFS, to become fully distributed. [@haadcode](https://github.com/haadcode) presented that work at [DEVCON2](https://www.youtube.com/watch?v=vQrbxyDPSXg). Later, [the IPFS team announced that pubsub ](https://ipfs.io/blog/25-pubsub) was ready for the whole community to use.
+IPFS pubsub was first introduced in September 2016 behind an experimental flag. This initial implementation allowed [orbit](https://orbit.chat/), a chat application built on top of IPFS, to become fully distributed. [@haadcode](https://github.com/haadcode) presented that work at [DEVCON2](https://www.youtube.com/watch?v=vQrbxyDPSXg). Later, [the IPFS team announced that pubsub ](https://blog.ipfs.tech/25-pubsub) was ready for the whole community to use.
 
 In this post I'll show you how to use pubsub with the [JavaScript implementation of IPFS](https://github.com/ipfs/js-ipfs). I start by using the pubsub primitives available in `js-ipfs` and end with a new module [plus video tutorial](https://youtu.be/Nv_Teb--1zg) of how to use it. Make sure to read to the end!
 

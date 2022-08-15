@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### You can now PubSub with the JS IPFS HTTP API client in the browser!
 
-Now that the fetch API supports cancelation, and has done so for a while, PubSub Support has arrived! Hooray \o/ Read all about it on [the IPFS blog](https://blog.ipfs.io/2019-08-29-pubsub-in-the-browser/).
+Now that the fetch API supports cancelation, and has done so for a while, PubSub Support has arrived! Hooray \o/ Read all about it on [the IPFS blog](https://blog.ipfs.tech/2019-08-29-pubsub-in-the-browser/).
 
 ### Catch up on the latest IPFS Weekly Call
 
@@ -65,10 +65,10 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **4 September 2019:** [Paris P2P](https://www.meetup.com/Paris-P2P/events/263171540/) is a monthly meeting organized by and for the community of P2P and cryptography enthusiasts. Paris, France.
-- **6 September 2019:** Would you like to help create a next-generation navigation for [docs.ipfs.io](https://docs.ipfs.io/)? Join in a discussion on the existing navigation structure of the IPFS documentation site, plus a collaborative "card sort" exercise to explore alternative possibilities for getting around the IPFS docs. [Join the video chat from 1700-1830 UTC](http://protocol.zoom.us/my/docsforce).
+- **6 September 2019:** Would you like to help create a next-generation navigation for [docs.ipfs.tech](https://docs.ipfs.tech/)? Join in a discussion on the existing navigation structure of the IPFS documentation site, plus a collaborative "card sort" exercise to explore alternative possibilities for getting around the IPFS docs. [Join the video chat from 1700-1830 UTC](http://protocol.zoom.us/my/docsforce).
 - **16 September 2019:** [Victoria Tech Meetup September 2019](https://ti.to/fission/victoria-sept-2019): sign up to attend once they’ve confirmed date and venue! Victoria, British Columbia, Canada
 - **20-22 September 2019:** [Our Networks 2019 RE: Infrastructures](https://ournetworks.ca/) explores the collective care and maintenance of alternative networking practices—new protocols, peer-to-peer connections, offline-first computing, and community-based governance. Toronto, Ontario, Canada.
 - **27-30 September 2019:** [Offline Camp Oregon](http://offlinefirst.org/camp) had to be postponed, but it’s still happening! [Hear how past campers describe this unique unconference retreat](https://youtu.be/FNtpPW_7H1k) focused on the [Offline First](http://offlinefirst.org/) approach to web development and design.

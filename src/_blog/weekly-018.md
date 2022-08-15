@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Read more about [the release of go-ipfs 0.4.18](https://blog.ipfs.io/53-go-ipfs-0-4-18/), including details on the Experimental QUIC support!
+- Read more about [the release of go-ipfs 0.4.18](https://blog.ipfs.tech/53-go-ipfs-0-4-18/), including details on the Experimental QUIC support!
 - Have you watched the [Lab Day 2018 videos](https://www.youtube.com/channel/UCJvMzILpV3b4AWXTEeQjcng/videos) yet? If you missed the August event, catch up on all the great talks now.
 - In case you missed it, the IPLD community has a [bi-weekly meeting to sync up on all IPLD related topics](https://www.youtube.com/watch?v=DFo4jtIEz_w&feature=youtu.be). It’s open for everyone and recorded. Check it out!
 - Check out [this recap of the Decentralized Web Summit](https://ws-dl.blogspot.com/2018/11/2018-11-08-decentralized-web-summit.html), titled Shaping the Next Web by Sawood Alam, for a behind the scenes look at the Summit and IPFS Lab Day.
@@ -60,7 +60,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - The Internet Archive is hosting a [Decentralized Web Meetup](https://www.eventbrite.com/e/decentralized-web-meet-up-tickets-52509395014) on 11 December 2018, in San Francisco, California.
 - [Sign up to be notified for IPFS Conf 2019](https://docs.google.com/forms/d/e/1FAIpQLSfJVVPwvp6RY3MUg1zAVl1g_5y2nGb7WJIMI1Hs6glzm7FLHQ/viewform), in Lisbon.

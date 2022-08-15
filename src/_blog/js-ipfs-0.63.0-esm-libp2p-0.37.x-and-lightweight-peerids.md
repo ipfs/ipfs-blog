@@ -56,7 +56,7 @@ Prior to `libp2p@0.37.x`, the `PeerId` concept was implemented by the [peer-id](
 
 Depending on these modules carries a significant cost for browser bundles, and the operations they are supposed to support are not used in places like `ipfs-http-client` rendering the `peer-id` module unsuitable for use in lightweight front-end applications that may only orchestrate a remote IPFS node.
 
-This has meant that `PeerId`s are represented as strings throughout the IPFS [core-api][] which makes them very hard to reason about in parts of the API where a string could be a `PeerId`, a [multiaddr][], an [IPNS Name](https://docs.ipfs.io/concepts/ipns/) or something else.
+This has meant that `PeerId`s are represented as strings throughout the IPFS [core-api][] which makes them very hard to reason about in parts of the API where a string could be a `PeerId`, a [multiaddr][], an [IPNS Name](https://docs.ipfs.tech/concepts/ipns/) or something else.
 
 With the new [@libp2p/peer-id](https://www.npmjs.com/package/@libp2p/peer-id) module, this is no longer the case and implementations of the [`PeerId` interface](https://github.com/libp2p/js-libp2p-interfaces/tree/master/packages/libp2p-interfaces/src/peer-id) are essentially thin wrappers around `Uint8Array`s that contain the serialized forms of the public and/or private keys, so we can now pass them back to front-end code and have all the benefits of type safety.
 
@@ -708,14 +708,14 @@ Please see the [`ipfs@0.63.x` upgrade guide](https://github.com/ipfs/js-ipfs/blo
 * [@zouantchaw](https://github.com/zouantchaw) (1 issue)
 * [@zyb1101](https://github.com/zyb1101) (1 issue)
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/
-[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[dag]: https://docs.ipfs.tech/concepts/merkle-dag/
 [core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api

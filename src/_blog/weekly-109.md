@@ -12,13 +12,13 @@ tags:
   - 'Filecoin'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## LikeCoin closes out the IPFS Case Study series
 
 The first series of IPFS Case Studies is now complete, ending with a look into how LikeCoin decentralizes the standard of truth for online media content with IPFS. Based on the Cosmos SDK, LikeCoin uses IPFS and custom IPLD to achieve its vision.
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-likecoin/)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-likecoin/)
 
 ## Preparing for Filecoin Mainnet launch
 
@@ -83,7 +83,7 @@ Watch this demo of the [Qri Desktop 0.5.0 release candidate](https://twitter.com
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

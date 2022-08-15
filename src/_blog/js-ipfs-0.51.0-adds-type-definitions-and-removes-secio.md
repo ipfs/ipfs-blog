@@ -31,7 +31,7 @@ Going forward all new code will be required to have types so to help contributor
 
 ## SECIO Removal
 
-The [deprecated](https://blog.ipfs.io/2020-08-07-deprecating-secio/) security transport [SECIO](https://github.com/libp2p/specs/blob/master/secio/README.md) has finally been removed in `js-IPFS@0.51.0`. It's successor, [Noise](https://github.com/libp2p/specs/blob/master/noise/README.md) was first released with `js-IPFS@0.47.0` and is now the default security transport used by libp2p.
+The [deprecated](https://blog.ipfs.tech/2020-08-07-deprecating-secio/) security transport [SECIO](https://github.com/libp2p/specs/blob/master/secio/README.md) has finally been removed in `js-IPFS@0.51.0`. It's successor, [Noise](https://github.com/libp2p/specs/blob/master/noise/README.md) was first released with `js-IPFS@0.47.0` and is now the default security transport used by libp2p.
 
 `go-IPFS@0.7.0` recently also removed SECIO support after introducing Noise in `go-IPFS@0.6.0`, which means `js-IPFS@0.51.0` and `go-IPFS@0.7.0` can only talk to other nodes running `go-IPFS@0.6.0` or `js-IPFS@0.47.0` or later.
 
@@ -207,21 +207,21 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/
-[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[dag]: https://docs.ipfs.tech/concepts/merkle-dag/
 [core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api

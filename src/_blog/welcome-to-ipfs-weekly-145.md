@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Building Web3: Pinata
 
 @[youtube](29k2C1JXyg4)
 
-We’re excited to launch the latest video in the Building Web3 series, highlighting leading projects in the Web3 and decentralized storage ecosystems. [**Building Web3: Pinata**](https://www.youtube.com/watch?v=29k2C1JXyg4) is a look at the [**Pinata**](https://pinata.cloud/) service and team. Today, Pinata builds tools and infrastructure that make it easy for Web3 developers to create and manage content on IPFS while also leading a charge in how the world stores, accesses, and verifies blockchain-linked content. One way in which all this comes together is the world of NFTs, where Pinata provides secure and verifiable file storage to considerably streamline the process of minting, selling, and transferring NFTs. [**Read more.**](https://blog.ipfs.io/2021-07-15-building-web-3-pinata/)
+We’re excited to launch the latest video in the Building Web3 series, highlighting leading projects in the Web3 and decentralized storage ecosystems. [**Building Web3: Pinata**](https://www.youtube.com/watch?v=29k2C1JXyg4) is a look at the [**Pinata**](https://pinata.cloud/) service and team. Today, Pinata builds tools and infrastructure that make it easy for Web3 developers to create and manage content on IPFS while also leading a charge in how the world stores, accesses, and verifies blockchain-linked content. One way in which all this comes together is the world of NFTs, where Pinata provides secure and verifiable file storage to considerably streamline the process of minting, selling, and transferring NFTs. [**Read more.**](https://blog.ipfs.tech/2021-07-15-building-web-3-pinata/)
 
 ## A Brave New Wallet
 

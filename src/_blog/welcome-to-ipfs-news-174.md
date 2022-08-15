@@ -17,7 +17,7 @@ tags:
 
 ![](../assets/ipfs-2022-03-24.png)
 
-Developers looking to build on the Web3 stack have a low-code solution that allows them to host their dapps, websites, and frontends using decentralized infrastructure. Fleek orchestrates services like IPFS, Filecoin, and ENS to provide a viable alternative to Web 2.0 counterparts like AWS, and DNS. [**Find out more**](https://blog.ipfs.io/2022-04-24-fleek/) about how the tool is helping to make the web permissionless, trustless, and community-owned.
+Developers looking to build on the Web3 stack have a low-code solution that allows them to host their dapps, websites, and frontends using decentralized infrastructure. Fleek orchestrates services like IPFS, Filecoin, and ENS to provide a viable alternative to Web 2.0 counterparts like AWS, and DNS. [**Find out more**](https://blog.ipfs.tech/2022-04-24-fleek/) about how the tool is helping to make the web permissionless, trustless, and community-owned.
 
 ## **Brand New on IPFS ✨**
 

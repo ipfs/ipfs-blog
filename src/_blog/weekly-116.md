@@ -10,7 +10,7 @@ description: ''
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Wrap up 2020 with IPFS and friends!
 
@@ -22,7 +22,7 @@ Join us on December 11 for a mini-celebration featuring talks from all of the IP
 
 Want to help shape the 2021 IPFS project plan? We’re looking for your input on what’s important for IPFS to focus on next year! The proposal period runs through Monday, December 7. Read the full announcement for more details on how you can give your input.
 
-[Read more](https://blog.ipfs.io/2020-11-19-community-rfp/)
+[Read more](https://blog.ipfs.tech/2020-11-19-community-rfp/)
 
 ## Thread of the week 🧵
 
@@ -73,7 +73,7 @@ Join the builders of the Decentralized Web as they discuss hitting new milestone
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

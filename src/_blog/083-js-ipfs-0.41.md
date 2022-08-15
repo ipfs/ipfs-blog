@@ -35,7 +35,7 @@ It's been a long and emotional voyage but this refactor brings a plethora of inc
 
 Using `async`/`await` in JavaScript is gaining a _lot_ of traction in the ecosystem and is rapidly becoming the de facto way of writing idiomatic JS. We want js-ipfs to **move with the times and continue to be attractive to contributors** by using modern JS features, techniques and practices. The big idea with these changes is for the code to be easier to contribute to, easier to understand, easier to maintain, and be faster and smaller than ever.
 
-This change is so big, and so significant, we wrote a whole [blog post](https://blog.ipfs.io/2020-02-01-async-await-refactor/) about it to explain the motivations behind the changes...in ~~excruciating~~ delightful depth 🤣!
+This change is so big, and so significant, we wrote a whole [blog post](https://blog.ipfs.tech/2020-02-01-async-await-refactor/) about it to explain the motivations behind the changes...in ~~excruciating~~ delightful depth 🤣!
 
 We've also compiled some stats on this refactor for your viewing pleasure:
 
@@ -199,7 +199,7 @@ There are significant and breaking core API changes in this release. Please see 
 ## Other changes
 
 - libp2p has been upgraded to 0.27, which also includes breaking changes to it's core API. Please see the release announcement post for more info:
-  - https://blog.ipfs.io/2020-02-07-js-libp2p-0-27/
+  - https://blog.ipfs.tech/2020-02-07-js-libp2p-0-27/
 - The protocol _name_ for peer IDs in multiaddrs has changed from 'ipfs' to 'p2p'. There's no changes to data on the wire but this change is seen when multiaddrs are converted to strings.
 
 # ❤️ Huge thank you to everyone that made this release possible
@@ -317,9 +317,9 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 - Check the issues with the `help wanted` label in the [js-ipfs repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.

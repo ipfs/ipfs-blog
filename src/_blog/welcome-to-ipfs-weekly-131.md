@@ -12,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Decentralized Uniswap Interface Hosting on IPFS
 
@@ -29,7 +29,7 @@ The user research team at Protocol Labs is seeking members of the IPFS ecosystem
 ## Brand new on IPFS
 
 * Palm NFT Studio announces the launch of their first project with Damien Hirst with permanent decentralized storage of NFT metadata on IPFS. [Read more.](https://consensys.net/blog/press-release/palm-a-new-nft-ecosystem-and-studio-for-creators-announces-launch-of-first-project-with-damien-hirst/)
-* IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! [Check out our new blog.](https://blog.ipfs.io/)
+* IPFS now offers announcements, release notes, video tutorials, news coverage and events all in one place! [Check out our new blog.](https://blog.ipfs.tech/)
 * [Apps are open for the Filecoin Launchpad Accelerator II.](https://t.co/mg4k3PNQ8y?amp=1) For startups building apps for the dweb through IPFS, Filecoin, and Ethereum networks.
 * Want to build a no-code NFT file but not sure where to start? Look no further! [Learn how to do it with Zapier and IPFS.](https://medium.com/pinata/build-a-no-code-nft-file-tool-with-zapier-and-ipfs-9bd44a3b23b7)
 
@@ -65,6 +65,6 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 
 **IPFS strives to make the web faster, safer, and more open.**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday. [**Sign up now.**](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230)

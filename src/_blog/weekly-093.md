@@ -12,19 +12,19 @@ tags:
 
 # Welcome to IPFS Weekly #93
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## Microsoft announces decentralized identity protocol built on IPFS
 
 Microsoft’s ION, an implementation of the decentralized identity protocol, now stores transaction data on IPFS. Read about how js-ipfs is being used to publish the data in a decentralized, universally addressable and network-agnostic way.
 
-[Read the full announcement](https://blog.ipfs.io/2020-06-11-identity-ipfs-ion/)
+[Read the full announcement](https://blog.ipfs.tech/2020-06-11-identity-ipfs-ion/)
 
 ## libp2p in 2020 and beyond!
 
 The past year has seen amazing improvements to libp2p with the protocol quickly becoming the de facto Web3 networking layer for a huge swath of projects. Now, libp2p is looking for new Project Lead to help grow and steward the project and ecosystem in 2020!
 
-[Learn more about libp2p](https://blog.ipfs.io/2020-06-09-libp2p-in-2020/)
+[Learn more about libp2p](https://blog.ipfs.tech/2020-06-09-libp2p-in-2020/)
 
 ## IPFS and the Decentralized Web Dev Report 2020
 
@@ -71,6 +71,6 @@ Another take on [B.Y.O.D.](https://medium.com/@jacobcohenrosenthal/b-y-o-d-the-p
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the [IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

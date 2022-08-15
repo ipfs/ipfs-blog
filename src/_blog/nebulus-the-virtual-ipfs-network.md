@@ -21,7 +21,7 @@ In July, [Nebulus](https://nebulus.dev/), a “Virtual IPFS Network”, was rele
 
 The IPFS network as the ecosystem is familiar with it today is in reality a bundle of two things: 1) Content Addressable Storage, and 2) Peer-to-Peer Network. “Content Addressable Storage” refers to the logic that the IPFS network leverages to organize, store, and reference data. This largely hinges on the use of Content Identifiers, or CIDs, that allow files to be located by the content within them, rather than by their location on the network.
 
-[Content addressability](https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/) is fundamental to creating networks of information that remain live and available over time, even if their individual locations (like a webpage) disappear. “Peer-to-Peer Network” refers to the public, permissionless, global IPFS network. On IPFS, any user can upload and retrieve information from the network.
+[Content addressability](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) is fundamental to creating networks of information that remain live and available over time, even if their individual locations (like a webpage) disappear. “Peer-to-Peer Network” refers to the public, permissionless, global IPFS network. On IPFS, any user can upload and retrieve information from the network.
 
 To use IPFS today, a user’s only option is to use this “bundle” — meaning to use the content-addressable benefits of IPFS, you must publish everything to the public network. Information, however, does not _need_ a peer-to-peer network to leverage content-addressable storage. Information can be stored locally — say, on a personal computer — using the logic of IPFS such as CIDs.
 

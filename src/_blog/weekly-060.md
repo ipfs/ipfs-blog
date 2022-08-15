@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### IPFS Camp course videos released 🍿
 
-If you’ve been following the updates from IPFS Camp you’ve likely already explored the videos from the lightning talks, deep dives, and poster projects, but now the videos from [IPFS Camp’s core and elective courses have been released](https://blog.ipfs.io/2019-09-18-ipfs-camp-course-videos/)!
+If you’ve been following the updates from IPFS Camp you’ve likely already explored the videos from the lightning talks, deep dives, and poster projects, but now the videos from [IPFS Camp’s core and elective courses have been released](https://blog.ipfs.tech/2019-09-18-ipfs-camp-course-videos/)!
 
 ### IPFS Cluster v0.11.0 is out!
 
@@ -60,7 +60,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **New IPFS Meetup:** [Zürich IPFS Meetup Gruppe](https://www.meetup.com/Zurich-IPFS-Meetup-Gruppe/) will be gathering soon to discuss the potential and current situation of IPFS and (maybe also) similar P2P networks making economy borderless. Zürich, Switzerland.
 - **27-30 September 2019:** [Offline Camp Oregon](http://offlinefirst.org/camp) had to be postponed, but it’s still happening! [Hear how past campers describe this unique unconference retreat](https://youtu.be/FNtpPW_7H1k) focused on the [Offline First](http://offlinefirst.org/) approach to web development and design.

@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Top 10 recent highlights
 
@@ -41,7 +41,7 @@ Nesta is launching an [open call for essays](https://www.nesta.org.uk/blog/decen
 ## Work in progress
 
 - Coming soon: the js-ipfs async-await refactor. It’s currently closer than it’s ever been to being done.
-- Can you write great docs? There’s never been a better time to help the global IPFS community by [contributing to our new docs beta site](https://docs.ipfs.io/project/contribute/#documentation)!
+- Can you write great docs? There’s never been a better time to help the global IPFS community by [contributing to our new docs beta site](https://docs.ipfs.tech/project/contribute/#documentation)!
 - [gomobile-ipfs](https://github.com/ipfs/go-ipfs-api/pull/202) is almost ready!
 
 ## Recommended viewing
@@ -94,6 +94,6 @@ Watch this recent video of Alessandro Segala, from Microsoft, “JavaScript Apps
 - [#BUIDL Week Colorado – ETHDenver 2020](https://www.ethdenver.com/buidlweek/), 13-17 Feb 2020, Denver (CO), US
 - [Open Data Day 2020](https://opendataday.org/), 7 Mar 2020, 35 events registered so far!
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.

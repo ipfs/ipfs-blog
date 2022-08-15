@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Developing Consumer Decentralized Applications with Slate
 
 ![](../assets/slate-textile.jpg)
 
-Slate is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications? [**Find out now!**](https://blog.ipfs.io/developing-consumer-decentralized-applications-with-textile-slate/)
+Slate is an open-source version of file storage that allows users to upload their files to the Filecoin network, download other users' files, and ensure accessibility from anywhere on the web. It runs on Textile buckets to interact with IPFS so it can leverage content addressing and other features of that network. Thanks to Textile, Slate can offer 30GB of free storage to each user. But what can Slate be used for in consumer-based applications? [**Find out now!**](https://blog.ipfs.tech/developing-consumer-decentralized-applications-with-textile-slate/)
 
 ## **Brand new on IPFS**
 
@@ -28,7 +28,7 @@ Slate is an open-source version of file storage that allows users to upload thei
 
 ## Around the ecosystem 🌏
 
-You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).  
+You can now [**connect decentralized Handshake domains to IPFS websites**](https://docs.ipfs.tech/how-to/websites-on-ipfs/link-a-domain/#handshake)! Handshake shifts control of the root zone file away from ICANN to a decentralized blockchain. Handshake provides fully decentralized and uncensorable top-level domains that you can own and use for your websites. Namebase and Handshake offer users [**solutions to resolving web3 hostnames**](https://blog.ipfs.tech/decentralizing-the-internet-s-root/).  
   
 You often hear about the 10,000 NFT collection, but how does someone make thousands of unique images? Learn how to build an algorithmically generated image dataset in Python and host them on IPFS as a unique NFT with [**this tutorial**](https://dev.to/sydneylai/create-and-host-nfts-with-25-lines-of-code-4l4e) on dev.to written by Sydney Lai.  
   

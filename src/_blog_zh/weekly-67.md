@@ -11,7 +11,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -23,7 +23,7 @@ tags:
 
 ### 在 ProtoSchool 的新教程中探索 Files API
 
-上周，由著名的 Gil Domingues 建立了全新的 ProtoSchool 教程，探讨了 Regular Files API。 🎉 请阅读[完整的博客公告](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/)以获取更多详细信息。
+上周，由著名的 Gil Domingues 建立了全新的 ProtoSchool 教程，探讨了 Regular Files API。 🎉 请阅读[完整的博客公告](https://blog.ipfs.tech/2019-11-06-explore-the-files-api-on-protoschool/)以获取更多详细信息。
 
 ### 查看我们 2020 年项目规划中提出的新主题
 
@@ -31,7 +31,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [Dappkit 选择 MóiBit 作为去中心化存储合作伙伴](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb)，MóiBit，2019 年 11 月 11 日
 - [比较 IPFS Pinning 服务定价/功能。Temporal，Eternum 和 Pinata。](https://medium.com/temporal-cloud/comparing-ipfs-pinning-services-pricing-functionality-temporal-eternum-pinata-d38b87a279d8) Temporal，2019 年 11 月 11 日
@@ -64,7 +64,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - Henrique Dias 的[一个很棒的复制公共数据集的例子](https://twitter.com/daviddias/status/1187666725245992960)
 - [ethoFS](https://ethofs.com/) 是一个完全去中心化的托管平台，结合了区块链索引技术和 IPFS 协议，可按需提供去中心化内容。
@@ -73,7 +73,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 11 月 14 日：** [DWeb 会谈：Textile.io 的 Carson Farmer](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/263590720/)，西雅图 ProtoSchool 主办。快来访问 Textile.io 上的去中心化网络开发人员 Carson Farmer！美国，华盛顿州，西雅图。
 - **2019 年 12 月 6 日：** [柏林 React Day](https://reactday.berlin/) ：构建代码，而不是围墙。参与 React 世界的探索！ React Day Berlin 会议专注于深入的演讲，动手研讨会和寻找新的机会，为每个人提供了结识新朋友和共同开发一流应用程序的空间。德国，柏林。

@@ -14,7 +14,7 @@ The title says it all. Learn how to use [go-ipfs as a library with the new tutor
 
 ![](../assets/go-ipfs-as-a-library.gif)
 
-Let us know what you think by opening a topic with your questions and feedback at https://discuss.ipfs.io.
+Let us know what you think by opening a topic with your questions and feedback at https://discuss.ipfs.tech.
 
 Invite your friends to share it and help us broadcast it to reach a wider audience of DWeb developers
 

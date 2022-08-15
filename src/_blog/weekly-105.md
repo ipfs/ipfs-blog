@@ -11,19 +11,19 @@ tags:
   - 'case study'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## Our IPFS Case Study series is on Fleek 😎
 
 See what we did there? Jokes aside, our latest edition of the case study series focuses on our friends at Fleek. Learn the history of Fleek, the benefits they see using IPFS, as well as a quick peek under the hood. Enjoy!
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-fleek/#overview)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-fleek/#overview)
 
 ## js-IPFS 0.50.0 shipped! 🎉🎉🎉
 
 Earlier this week, js-ipfs officially reached version 0.50.0, adding the ability to share a node between multiple browser tabs and greatly improved pinning performance. It also includes quite a few new features, some API changes, and one breaking change you’ll want to review.
 
-[Read the release notes](https://blog.ipfs.io/2020-09-14-js-ipfs-0-50/)
+[Read the release notes](https://blog.ipfs.tech/2020-09-14-js-ipfs-0-50/)
 
 ## Quote of the week
 
@@ -33,7 +33,7 @@ Earlier this week, js-ipfs officially reached version 0.50.0, adding the ability
 
 Obsidian Systems is adding support for IPFS to Nix, a package manager, but at its heart a general-purpose build tool, so that build products can be persisted to and fetched from IPFS. Learn how they have organized this work into two distinct phases (Milestone 1 was already achieved!) by reading the announcement.
 
-[Read the blog](https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/)
+[Read the blog](https://blog.ipfs.tech/2020-09-08-nix-ipfs-milestone-1/)
 
 ## Brand new on IPFS
 
@@ -78,7 +78,7 @@ Later this week, we’ll be attending Decentralizing the Cloud: The Promise and 
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

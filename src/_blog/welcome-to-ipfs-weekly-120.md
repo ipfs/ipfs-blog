@@ -10,7 +10,7 @@ tags:
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Join us at ETHDenver 2021
 
@@ -33,7 +33,7 @@ Amid all the excitement of the Brave browser native IPFS integration last week, 
 ## Brand new on IPFS
 
 - [ResNetLab reviews 2020](https://research.protocol.ai/blog/2021/resnetlab-2020-in-review-we-love-it-when-a-plan-comes-together/); Hydra Booster, Gossipsub, Drand, and Filecoin all shipped this year!
-- [From the IPFS blog](https://blog.ipfs.io/2021-01-21-how-we-put-ipfs-in-brave/): How we put IPFS in Brave, a technical overview taking you behind the scenes.
+- [From the IPFS blog](https://blog.ipfs.tech/2021-01-21-how-we-put-ipfs-in-brave/): How we put IPFS in Brave, a technical overview taking you behind the scenes.
 - [Getting started with Pinata](https://medium.com/pinata/how-to-use-ipfs-with-brave-2fcf501babc8): How to use IPFS with Brave utilizing a pinning service.
 - [Lifehacker asks](https://www.lifehacker.com.au/2021/01/what-is-ipfs-and-why-does-it-matter-in-braves-web-browser/), “What is IPFS and why does it matter in Brave’s web browser?”
 
@@ -73,7 +73,7 @@ Sr. Backend Engineer: Have built systems at scale in the past and can discuss th
 
 **Leave the web better than you found it. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

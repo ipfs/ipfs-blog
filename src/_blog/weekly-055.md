@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Improving the IPFS Release Process
 
-go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases! Check out the [IPFS blog for more details](https://blog.ipfs.io/2019-08-14-ipfs-release-process/).
+go-ipfs is introducing a new release cycle and process to ensure more reliable and frequent releases! Check out the [IPFS blog for more details](https://blog.ipfs.tech/2019-08-14-ipfs-release-process/).
 
 ### The IPFS/libP2P Help Desk is coming to ETHBerlin!
 
@@ -32,7 +32,7 @@ To help developers quickly hop over hurdles and get back to building awesome hac
 
 ### go-ipfs 0.4.22 released 📣
 
-You’re going to want to check out the recently [released PATCH version of go-ipfs](https://blog.ipfs.io/054-go-ipfs-0.4.22) based on 0.4.21 containing some critical fixes.
+You’re going to want to check out the recently [released PATCH version of go-ipfs](https://blog.ipfs.tech/054-go-ipfs-0.4.22) based on 0.4.21 containing some critical fixes.
 
 ## IPFS in the wild
 
@@ -78,7 +78,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **21-23 August 2019:** [DappCon Berlin](https://www.dappcon.io/): A global developer conference for Ethereum Dapps, Infrastructure, and token engineering, Berlin Germany.
 - **22 August 2019:** ProtoSchool Seattle is hosting an

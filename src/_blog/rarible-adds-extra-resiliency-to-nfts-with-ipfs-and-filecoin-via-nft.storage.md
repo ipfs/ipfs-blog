@@ -28,7 +28,7 @@ On top of this, because IPFS doesn’t specify a storage layer, the content can 
 
 ## Why Filecoin?
 
-IPFS neatly solves the problem of resilient linking - allowing us to request and receive data based solely on the content, rather than a specific location. But in order to truly secure our NFTs, we need to also ensure that someone is offering that content into the IPFS network. This is where [Filecoin can help](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/).
+IPFS neatly solves the problem of resilient linking - allowing us to request and receive data based solely on the content, rather than a specific location. But in order to truly secure our NFTs, we need to also ensure that someone is offering that content into the IPFS network. This is where [Filecoin can help](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/).
 
 Filecoin offers verifiable storage on the largest decentralized storage network. Unlike other networks, Filecoin uses both carrots and sticks to make sure that content stays on the network as long as its users require. Filecoin storage providers are required to prove to the network that they’ve kept user data safe. In the event they can, they become eligible for block rewards. In the event they can’t, the storage provider is slashed. In this way, not only is there an incentive to keep data around - but a penalty for letting data drop.
 

@@ -13,7 +13,7 @@ tags:
 ---
 _From HackFS: Ryan Baumann from IPFS walks through the basics of browser integration using IPFS. This talk was delivered at HackFS, a three-week virtual hackathon dedicated to building a censorship-free decentralized internet. The complete discussion is_ [_available here_](https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3)_._
 
-The future of the internet is the decentralized web, but getting there requires infrastructure. At the heart of this infrastructure is IPFS, the InterPlanetary File System. Together with its name resolution system INFS (Interplanetary Name System), it presents a new way to hold and distribute content to browsers known as [content addressing](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/).
+The future of the internet is the decentralized web, but getting there requires infrastructure. At the heart of this infrastructure is IPFS, the InterPlanetary File System. Together with its name resolution system INFS (Interplanetary Name System), it presents a new way to hold and distribute content to browsers known as [content addressing](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/).
 
 Under this paradigm, data can be retrieved from wherever it is stored across the IPFS network based on its unique content ID (CID). This improves over the current location-based infrastructure where data is retrieved from specific servers and can be vulnerable to all kinds of security risks.
 
@@ -21,7 +21,7 @@ What this means for the average app developer is that instead of hosting an app 
 
 <center><b>Watch on YouTube</b> <a href="https://www.youtube.com/watch?v=xZiN9dLvMoU&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=3">IPFS: Browser Connectivity Walkthrough</a></center>
 
-The best way to stay up to date with this browser connectivity guide for a simple chat interface is in the IPFS [documentation](https://docs.ipfs.io/how-to/create-simple-chat-app/).
+The best way to stay up to date with this browser connectivity guide for a simple chat interface is in the IPFS [documentation](https://docs.ipfs.tech/how-to/create-simple-chat-app/).
 
 ## Getting Started
 

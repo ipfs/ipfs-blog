@@ -17,7 +17,7 @@ The Interplanetary File System (IPFS) is a peer-to-peer protocol for storing and
 
 This blog post is the second of a two-part series about IPFS gateways:
 
-In [the first part](https://blog.ipfs.io/2022-06-09-practical-explainer-ipfs-gateways-1/), which was mostly theoretical, you learned about the challenges with the client-server model and how IPFS approaches these challenges with _peer-to-peer networking_ and _content addressing_. You then learned about the relationship between IPFS and HTTP(S) and IPFS gateways. Finally, you fetched an image from an IPFS gateway and learned about IPFS gateway resolution styles.
+In [the first part](https://blog.ipfs.tech/2022-06-09-practical-explainer-ipfs-gateways-1/), which was mostly theoretical, you learned about the challenges with the client-server model and how IPFS approaches these challenges with _peer-to-peer networking_ and _content addressing_. You then learned about the relationship between IPFS and HTTP(S) and IPFS gateways. Finally, you fetched an image from an IPFS gateway and learned about IPFS gateway resolution styles.
 
 In this second part, you will learn practical tips and tricks for using IPFS gateways in real-world applications:
 
@@ -66,7 +66,7 @@ If the CID is in the gateway's cache, the gateway will respond to the HTTP reque
 
 If the CID is not in the cache, the CID has to be retrieved from the IPFS network. This is a two-step process:
 
-1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) to find the peer IDs and [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
+1. **Content discovery/routing**: asking direct peers and querying the [DHT](https://docs.ipfs.tech/concepts/dht/#distributed-hash-tables-dhts) to find the peer IDs and [network addresses](https://multiformats.io/multiaddr/) of peers providing the CID (referred to as _providers_).
 2. **Content retrieval**: connecting to one of the providers, fetching the CID's content, and streaming the response to the client.
 
 > **Note:** This assumes that the gateway is separate from the IPFS node providing the CID. However, in many cases they are the same, e.g., when you are running a self-hosted IPFS node to which you pin CIDs that is also a gateway, in which case content retrieval is instant.
@@ -133,13 +133,13 @@ Now that you're familiar with content retrieval, we'll take a look at the other 
 
 When you add a file to an IPFS node using the `ipfs add` command, here's how it becomes published and discoverable across the network:
 
-1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.io/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
-2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.io/concepts/bitswap/) so that any peer can request them.
+1. The file is chunked into blocks and a [Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) is constructed. You get back the root CID of the DAG.
+2. The blocks of the file are made available over [Bitswap](https://docs.ipfs.tech/concepts/bitswap/) so that any peer can request them.
 3. The node advertises mappings of CIDs to network addresses known as **provider records** (including CIDs of the blocks and the root CID) to the DHT. This is a continuous process that repeats every 12 hours as long as the node is running (accounting for peer churn). The **provider records** have an expiry time of 24 hours (accounting for provider churn).
 
 ## Debugging content publishing
 
-IPFS network measurements conducted by the [ProbeLab](https://blog.ipfs.io/2022-06-15-probelab/), show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS. While there are efforts explored in that talk to improve this, it's useful to understand how to troubleshoot problems related to content publishing.
+IPFS network measurements conducted by the [ProbeLab](https://blog.ipfs.tech/2022-06-15-probelab/), show that [_content publishing is a bottleneck_](https://youtu.be/75ewjnT6B9Y?t=115) in IPFS. While there are efforts explored in that talk to improve this, it's useful to understand how to troubleshoot problems related to content publishing.
 
 Generally speaking, as you add more files to your IPFS node, the longer reprovide runs take.
 **When a reprovide run takes longer than 24 hours (the expiry time for provider records), your CIDs will become undiscoverable**.
@@ -176,7 +176,7 @@ ipfs bitswap reprovide
 
 Existing IPFS [implementations](https://ipfs.io/#install) have a caching mechanism that will keep CIDs local for a short time after the node has fetched it from the network, but these objects may get garbage-collected periodically.
 
-[Pinning](https://docs.ipfs.io/concepts/glossary/#pinning) is the mechanism that allows you to tell IPFS to **always** store a given CID — by default on your local node. In addition to [local pinning](https://docs.ipfs.io/how-to/pin-files/), you can also pin your CIDs to [remote pinning services](https://docs.ipfs.io/how-to/work-with-pinning-services/).
+[Pinning](https://docs.ipfs.tech/concepts/glossary/#pinning) is the mechanism that allows you to tell IPFS to **always** store a given CID — by default on your local node. In addition to [local pinning](https://docs.ipfs.tech/how-to/pin-files/), you can also pin your CIDs to [remote pinning services](https://docs.ipfs.tech/how-to/work-with-pinning-services/).
 
 In other words, caching is the mechanism by which CID is kept around on the node for a short period until garbage-collected while pinning is a deliberate choice you make to keep the CID stored on the node.
 
@@ -190,7 +190,7 @@ Caching is the reason why requesting a CID for the first time from a gateway can
 - [Filebase](https://filebase.com/blog/introducing-support-for-ipfs-backed-by-decentralized-storage/)
 - [Infura](https://infura.io/product/ipfs)
 
-> Note: Some pinning services, like Pinata, don't publish provider records to the DHT. In such situations, consider direct [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/).
+> Note: Some pinning services, like Pinata, don't publish provider records to the DHT. In such situations, consider direct [peering](https://docs.ipfs.tech/how-to/peering-with-content-providers/).
 
 One thing to note about caching is that it is often multi-layered. In addition to caching done by the IPFS node, it's common to add another layer of HTTP caching based on HTTP cache-control headers. Since CIDs are immutable, there's a wide range of caching opportunities, e.g. putting a CDN or an edge cache in front of an IPFS gateway node.
 
@@ -224,10 +224,10 @@ Choosing from the three approaches depends on your requirements, if performance 
 
 If you are running an IPFS node that is also configured as an IPFS gateway, there are steps you can take to improve the discovery and retrievability of your CIDs.
 
-- Set up [peering](https://docs.ipfs.io/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
+- Set up [peering](https://docs.ipfs.tech/how-to/peering-with-content-providers/) with the pinning services that pin your CIDs.
 - Make sure that your node is publicly reachable.
   - You can check this by running `ipfs id` and checking for the `"/ipfs/kad/1.0.0"` value in the list of protocols, or in short by running `ipfs id | grep ipfs\/kad`.
-  - If your node is not reachable because you are behind NAT, [check out the docs on NAT configuration](https://docs.ipfs.io/how-to/nat-configuration/#ipv6).
+  - If your node is not reachable because you are behind NAT, [check out the docs on NAT configuration](https://docs.ipfs.tech/how-to/nat-configuration/#ipv6).
 - Ensure that you are correctly returning HTTP cache headers to the client if the IPFS gateway node is behind a reverse proxy. Pay extra attention to `Etag`, `Cache-Control`, and `Last-Modified` headers. Consider leveraging the list of CIDs in `X-Ipfs-Roots` for smarter HTTP caching strategies.
 - Put a CDN like Cloudflare in front of the IPFS gateway.
 - Consider enabling the [Accelerated DHT Client](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#accelerated-dht-client) (see the content publishing [section](#debugging-content-publishing) for trade-offs).
@@ -238,13 +238,13 @@ If you are running an IPFS node that is also configured as an IPFS gateway, ther
 
 Drawing on the principles laid out above, it's sensible to pin your CIDs to multiple IPFS nodes to ensure reliable availability and resilience to failures of nodes and network partitions.
 
-With IPFS, increasing redundancy is typically done by [pinning](https://docs.ipfs.io/concepts/persistence/#persistence-versus-permanence) your CIDs on multiple IPFS nodes or pinning services.
+With IPFS, increasing redundancy is typically done by [pinning](https://docs.ipfs.tech/concepts/persistence/#persistence-versus-permanence) your CIDs on multiple IPFS nodes or pinning services.
 
 As a general rule of thumb, the more nodes pinning a CID in the IPFS network, the better the chances of it being retrievable.
 
 To make pinning easier, there's a vendor-agnostic [Pinning Service OpenAPI Specification](https://ipfs.github.io/pinning-services-api-spec/) that is [already supported by many IPFS node implementations, client libraries, and existing pinning services](https://github.com/ipfs/pinning-services-api-spec#adoption).
 
-Using this remote pinning API, you can [implement pinning to multiple services](https://docs.ipfs.io/how-to/work-with-pinning-services/#use-an-existing-pinning-service) as part of your workflow for uploading immutable data to IPFS.
+Using this remote pinning API, you can [implement pinning to multiple services](https://docs.ipfs.tech/how-to/work-with-pinning-services/#use-an-existing-pinning-service) as part of your workflow for uploading immutable data to IPFS.
 
 If you're not running an IPFS node, you can start by uploading a file to one service and then using the returned CID to pin it to other services.
 
@@ -269,7 +269,7 @@ We started with common challenges with IPFS gateways and went into the details o
 
 As a next step:
 
-- [Dive deeper into the IPFS docs](https://docs.ipfs.io/).
-- [Install and run an IPFS node](https://docs.ipfs.io/install/).
-- [Ask questions in the IPFS forum](https://discuss.ipfs.io/).
+- [Dive deeper into the IPFS docs](https://docs.ipfs.tech/).
+- [Install and run an IPFS node](https://docs.ipfs.tech/install/).
+- [Ask questions in the IPFS forum](https://discuss.ipfs.tech/).
 - Chat with us on [Slack](https://filecoin.io/slack), [Discord](https://discord.com/invite/KKucsCpZmY), or [Matrix](https://matrix.to/#/#ipfs:matrix.org).

@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 - VIDEOS: See [Juan Benet’s talk](https://web3summit.com/speaker/juan-benet/) from the recent Web3 Summit, [“What exactly is Web3?”](https://www.youtube.com/watch?v=l44z35vabvA) and [Mike Goelzer’s talk](https://web3summit.com/speaker/mike-goelzer/), [“Libp2p: A Modular, P2P Networking Stack.”](https://www.youtube.com/watch?v=xqVmEzsin3Y&list=PLxVihxZC42nHlc7J-UqeS-asagbehBeh3&index=30)
 - This week folks from [Protocol Labs](https://protocol.ai/) will be hanging out at [devcon](https://devcon4.ethereum.org/) in Prague. If you’re around town be sure to reach out and chat IPFS with them.
-- [Sweet IPFS](https://discuss.ipfs.io/t/sweet-ipfs-full-ipfs-node-for-android/3779?u=lidel) is finally here. Download the full (beta) IPFS node for Android at [Google Play](https://play.google.com/store/apps/details?id=fr.rhaz.ipfs.sweet).
+- [Sweet IPFS](https://discuss.ipfs.tech/t/sweet-ipfs-full-ipfs-node-for-android/3779?u=lidel) is finally here. Download the full (beta) IPFS node for Android at [Google Play](https://play.google.com/store/apps/details?id=fr.rhaz.ipfs.sweet).
 - Check out the [new media section](https://libp2p.io/media/) of the libp2p site for the latest videos and articles on all things libp2p.
 - Learn how to [implement a payment channel with Libp2p](https://www.youtube.com/watch?v=t2qCmwUlY2Q) in this video from Lucas Vogelsang, also from the Web3 Summit.
 
@@ -57,7 +57,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - [devcon iv](https://devcon4.ethereum.org/) is sold out, but lots of IPFS fans will be there, so keep an eye out! Oct 30 - Nov 2, Prague, Czech Republic
 - [Dapp Dev & Crypto Games Hack Berlin](https://www.eventbrite.com/e/dorahacks-dapp-devcrypto-games-hackberlinfree-with-10000-prize-pool-tickets-49168232507) 3-4, Nov 2018

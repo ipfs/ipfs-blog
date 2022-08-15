@@ -9,7 +9,7 @@ tags:
   - 'go-ipfs'
 ---
 
-[go-ipfs 0.4.4](https://dist.ipfs.io/#go-ipfs) has been released today, including an important hotfix for a bug we discovered in how _pinning_ works. If you had a large number of pins, new pins would overwrite existing pins. Apart from the hotfix, this release is equal to the previous release 0.4.3.
+[go-ipfs 0.4.4](https://dist.ipfs.tech/#go-ipfs) has been released today, including an important hotfix for a bug we discovered in how _pinning_ works. If you had a large number of pins, new pins would overwrite existing pins. Apart from the hotfix, this release is equal to the previous release 0.4.3.
 
 - [How pinning works](#how-pinning-works)
 - [The bug](#the-bug)
@@ -44,8 +44,8 @@ For now, don't run `ipfs repo gc` on sensitive data that is not otherwise backed
 
 ## Find out if you're affected
 
-If you think you have experienced this issue and have _not_ run a garbage collection, you can still find the 'lost' pins. We have written a new tool called 'ipfs-see-all' that allows you to try and recover any old pins that are still in your local repo. The tool is available on [our distributions page](https://dist.ipfs.io), or, if you prefer building from source, head over to [the GitHub repo](https://github.com/whyrusleeping/ipfs-see-all). Once you have the tool, invoke it as `ipfs-see-all lost-pins` and it will scan for and print out every pin object that is not actually pinned in your pinset. Note that this may contain anything you have manually unpinned.
+If you think you have experienced this issue and have _not_ run a garbage collection, you can still find the 'lost' pins. We have written a new tool called 'ipfs-see-all' that allows you to try and recover any old pins that are still in your local repo. The tool is available on [our distributions page](https://dist.ipfs.tech), or, if you prefer building from source, head over to [the GitHub repo](https://github.com/whyrusleeping/ipfs-see-all). Once you have the tool, invoke it as `ipfs-see-all lost-pins` and it will scan for and print out every pin object that is not actually pinned in your pinset. Note that this may contain anything you have manually unpinned.
 
 ## How to upgrade
 
-Depending on how you initially installed IPFS, there are several ways to upgrade. If you installed IPFS with a pre-built binary, you can head over to [dist.ipfs.io](https://dist.ipfs.io/#go-ipfs) and grab the latest version from there. Or alternatively, from the same page you can grab the `ipfs-update` binary, and use it to perform the upgrade for you. If you installed from source, you can simply run `git checkout v0.4.4`, then run `make install`.
+Depending on how you initially installed IPFS, there are several ways to upgrade. If you installed IPFS with a pre-built binary, you can head over to [dist.ipfs.tech](https://dist.ipfs.tech/#go-ipfs) and grab the latest version from there. Or alternatively, from the same page you can grab the `ipfs-update` binary, and use it to perform the upgrade for you. If you installed from source, you can simply run `git checkout v0.4.4`, then run `make install`.

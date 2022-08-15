@@ -84,8 +84,8 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 - Check the issues with the `help wanted` label at the Ready column in our waffle board - <https://waffle.io/ipfs/go-ipfs?label=help%20wanted>
 - Join an IPFS All Hands call, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/pm/#all-hands-call
 - The All Hands call is also the perfect venue for demos, join in and show us what you built!
-- Join the discussion at <http://discuss.ipfs.io/>
+- Join the discussion at <http://discuss.ipfs.tech/>
 
 # Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the [#ipfs](irc://freenode.net/ipfs) channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](http://discuss.ipfs.tech). We are also available at the [#ipfs](irc://freenode.net/ipfs) channel on Freenode.

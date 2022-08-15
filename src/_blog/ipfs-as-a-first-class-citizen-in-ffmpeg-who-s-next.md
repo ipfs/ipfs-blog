@@ -76,7 +76,7 @@ to:
 
 * The <span style="color:red">red</span> color is the auto-detected gateway to use.
 * The <span style="color:darkorange">orange</span> color is the protocol to use (can be either _ipfs_ or _ipns_).
-* The <span style="color:green">green</span> color is the [CID](https://docs.ipfs.io/concepts/content-addressing/) to use.
+* The <span style="color:green">green</span> color is the [CID](https://docs.ipfs.tech/concepts/content-addressing/) to use.
 
 FFmpeg tries to detect the gateway according to this [IPFS Integration](https://github.com/ipfs/specs/pull/280) specification proposal. If you don’t have a gateway running, the current logic will fall back to calling `dweb.link` behind the scenes. It will therefore give the end user an experience of IPFS just working.
 

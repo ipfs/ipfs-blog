@@ -11,7 +11,7 @@ tags:
   - go-ipfs
 ---
 
-[go-ipfs 0.4.0](http://dist.ipfs.io/#go-ipfs) has been released! Among the many changes are a revamped implementation of the IPFS communication protocols, increased performance, improvements to IPNS (the Interplanetary Naming System), many bugfixes, and lots of new features to make IPFS even more powerful.
+[go-ipfs 0.4.0](http://dist.ipfs.tech/#go-ipfs) has been released! Among the many changes are a revamped implementation of the IPFS communication protocols, increased performance, improvements to IPNS (the Interplanetary Naming System), many bugfixes, and lots of new features to make IPFS even more powerful.
 
 ![0.4.0](../assets/005-ipfs-0-4-0-released-fireworks.jpg)
 
@@ -92,7 +92,7 @@ This release also includes performance and usability improvements to IPNS, which
 
 ## How to upgrade
 
-Depending on how you initially installed IPFS, there are several ways to upgrade. If you installed IPFS with a pre-built binary, you can either head over to [dist.ipfs.io](http://dist.ipfs.io/#go-ipfs) and grab the latest version from there. Or alternatively, from the same page you can grab the `ipfs-update` binary, and use it to perform the upgrade for you. If you installed from source, you can simply update your git repo to the `v0.4.0` tag, run `make toolkit_upgrade && make install`.
+Depending on how you initially installed IPFS, there are several ways to upgrade. If you installed IPFS with a pre-built binary, you can either head over to [dist.ipfs.tech](http://dist.ipfs.tech/#go-ipfs) and grab the latest version from there. Or alternatively, from the same page you can grab the `ipfs-update` binary, and use it to perform the upgrade for you. If you installed from source, you can simply update your git repo to the `v0.4.0` tag, run `make toolkit_upgrade && make install`.
 
 Please upgrade your IPFS nodes as soon as you can, so you can take advantage of the improvements!
 

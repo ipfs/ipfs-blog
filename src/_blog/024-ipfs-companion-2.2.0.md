@@ -75,7 +75,7 @@ Would you like to contribute to the IPFS browser extension and don't know how? W
 # Do you have questions?
 
 The best place to ask your questions about IPFS, how it works and what you can
-do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also
+do with it is at [discuss.ipfs.tech](http://discuss.ipfs.tech). We are also
 available at the `#ipfs` channel on Freenode.
 
 That is all for this post. Thank you for being part of the community. Have a great day!

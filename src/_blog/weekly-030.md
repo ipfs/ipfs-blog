@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -50,10 +50,10 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
-- [I need to migrate an IPFS server now. What do I need to copy? Is the copy ~/.ipfs directory?](https://discuss.ipfs.io/t/questions-about-using-ipfs/4603)
-- [What the purpose of self-certifying path names?](https://discuss.ipfs.io/t/what-the-purpose-of-self-certifying-path-names/4866)
-- [Do IPFS public gateways retrieve data automatically from ipfs nodes?](https://discuss.ipfs.io/t/content-management-in-ipfs-public-gateways/4858)
-- [When following the 101 tutorial for starting a node and deploying a file I’m getting an error on my browser (using Angular with webpack)...](https://discuss.ipfs.io/t/referenceerror-when-using-js-ipfs/4868)
+- [I need to migrate an IPFS server now. What do I need to copy? Is the copy ~/.ipfs directory?](https://discuss.ipfs.tech/t/questions-about-using-ipfs/4603)
+- [What the purpose of self-certifying path names?](https://discuss.ipfs.tech/t/what-the-purpose-of-self-certifying-path-names/4866)
+- [Do IPFS public gateways retrieve data automatically from ipfs nodes?](https://discuss.ipfs.tech/t/content-management-in-ipfs-public-gateways/4858)
+- [When following the 101 tutorial for starting a node and deploying a file I’m getting an error on my browser (using Angular with webpack)...](https://discuss.ipfs.tech/t/referenceerror-when-using-js-ipfs/4868)
 
 ## Tools and projects we <3
 
@@ -66,7 +66,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **2 Mar 2019:** On [Global Diversity CFP Day 2019](https://www.globaldiversitycfpday.com/) there will be numerous workshops hosted around the globe encouraging and advising newbie speakers to put together your very first talk proposal and share your own individual perspective on any subject of interest to people in tech.
 - **5-7 Mar 2019:** [Ethereum Community Conference](https://ethcc.io/), or EthCC, is the second edition of a series of conferences and workshops that bring together and strengthen the international Ethereum community. EthCC 2019 will take place in Paris

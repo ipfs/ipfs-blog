@@ -26,7 +26,7 @@ This core course covers the basics of how IPFS deals with files, including key c
 This workshop introduced a few awesome visualization and learning tools that you can try out at home:
 
 - Explore the [**ProtoSchool tutorial on the Mutable File System (MFS)**](https://proto.school/#/mutable-file-system) for coding challenges designed to familiarize you with its API
-- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.io/) to break down its anatomy
+- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.tech/) to break down its anatomy
 - Drag a file into the [**DAG Builder**](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG
 
 Watch the recording below or check out the [slides](https://github.com/ipfs/camp/blob/master/CORE_AND_ELECTIVE_COURSES/CORE_COURSE_A/IPFS_Camp_Core_Course_A_Slides.pdf)!
@@ -79,6 +79,6 @@ The ProtoSchool curriculum is growing, and we're excited to explore all of the f
 There's even more great content from IPFS Camp content coming your way, including recordings of keynotes and interviews. If you're interested in receiving an update when the next batch of videos are available, try out one of these strategies:
 
 - Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live.
-- Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
+- Subscribe to the [RSS feed of this blog](https://blog.ipfs.tech/index.xml).
 - Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you're interested in general IPFS updates.
 - Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you're interested in IPFS events.

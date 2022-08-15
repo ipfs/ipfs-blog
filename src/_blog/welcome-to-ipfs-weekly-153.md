@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## ION is paving the way for a future with decentralized identities
 
 ![](../assets/ion-decentralized-identity.jpg)
 
-How many people really know how their online identities work? In reality, online identity contains two types of data: identity data and identifiers. The way these two types of data have interacted over the course of the internet has defined our digital identities and how much control we have over them. ION is a solution being built as a framework for global, online, decentralized identities — leveraging fundamentals like DID and IFPS’ CID. Find out what the future of decentralized identities look like in [**this post**](https://blog.ipfs.io/ion-a-path-to-decentralized-identity/).
+How many people really know how their online identities work? In reality, online identity contains two types of data: identity data and identifiers. The way these two types of data have interacted over the course of the internet has defined our digital identities and how much control we have over them. ION is a solution being built as a framework for global, online, decentralized identities — leveraging fundamentals like DID and IFPS’ CID. Find out what the future of decentralized identities look like in [**this post**](https://blog.ipfs.tech/ion-a-path-to-decentralized-identity/).
 
 ## Brand new on IPFS
 

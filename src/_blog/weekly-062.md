@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### An update on IPFS Browser progress
 
-We’re making headway! We’d like to share some collaborations the IPFS project has had in the works for a while, which brings us a few steps closer to making unmediated access to information just work… by solving that “last mile” problem and [integrating IPFS directly into web browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/).
+We’re making headway! We’d like to share some collaborations the IPFS project has had in the works for a while, which brings us a few steps closer to making unmediated access to information just work… by solving that “last mile” problem and [integrating IPFS directly into web browsers](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/).
 
 ### IPFS now available on Storj Network
 
@@ -32,7 +32,7 @@ Recently, the Storj team announced the availability reference architecture that 
 
 ### IPFS Camp Sci-Fi videos 🧬
 
-Hot on the heels of IPFS Camp videos covering lightning talks, deep dives, poster projects and core + elective courses come [the interviews from our sci-fi fair](https://ipfs.io/blog/2019-10-03-ipfs-camp-sci-fi-fair-videos/).
+Hot on the heels of IPFS Camp videos covering lightning talks, deep dives, poster projects and core + elective courses come [the interviews from our sci-fi fair](https://blog.ipfs.tech/2019-10-03-ipfs-camp-sci-fi-fair-videos/).
 
 ## IPFS in the wild
 
@@ -62,7 +62,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **16 October 2019:** [IPFS Colorado User Testing Day](https://www.meetup.com/IPFS-Colorado/events/264964856): Help make an impact on the UX of the peer-to-peer internet and get a day of free coworking and coffee in return! Boulder/Denver, Colorado USA.
 - **16 October 2019:** [IPFS Colorado Basics Night](https://www.meetup.com/IPFS-Colorado/events/265003484): Collab between IPFS Colorado and Ethereum Boulder! Join us for an awesome IPFS overview plus an interactive tutorial on IPFS basics. Boulder/Denver, Colorado USA.
