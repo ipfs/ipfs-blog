@@ -35,7 +35,7 @@ Have questions for the folks at ENS? This Friday, they’ll be hosting [a reddit
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Using IPFS Messaging For Referral Networks](https://medium.com/2key/using-ipfs-messaging-for-referral-networks-aa1f11220a77), 2 Apr 2019
 - [Enterprise IPFS, Why Organizations Will Adopt IPFS](https://medium.com/pinata/enterprise-ipfs-6afcf76b28a0), Textile, 1 Apr 2019
@@ -60,7 +60,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [The Ultimate Guide To Understanding The Differences Between PPIO, Filecoin, and Storj](https://medium.com/@ppio/differences-between-ppio-filecoin-storj-20cdf7b3b02e), 27 Mar 2019
 - [LineageOS on IPFS](https://lineageos-on-ipfs.com/) – A permanent solution to LineageOS' storage problem.

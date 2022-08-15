@@ -30,7 +30,7 @@ Next week, [Cale Teeter](https://github.com/caleteeter), Senior Software Blockch
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Understanding IPFS in Depth (1/6): A Beginner to Advanced Guide](https://hackernoon.com/understanding-ipfs-in-depth-1-5-a-beginner-to-advanced-guide-e937675a8c8a), Hackernoon, 16 Feb 2019
 - VIDEO: [A quick tour of Peergos](https://vimeo.com/316903779), 13 Feb 2019
@@ -57,7 +57,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [🎉Opening the Filecoin Project Repos 🎉](https://filecoin.io/blog/opening-filecoin-project-repos/)
 - [IPFS / IPNS peer ID generator](https://github.com/meehow/peer-id-generator/): This tool generates IPFS public and private keypair until it finds public key which contains required substring.

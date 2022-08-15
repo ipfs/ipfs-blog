@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Efficient, Usable, And Cheap Storage of IPFS Hashes In Solidity Smart Contracts](https://medium.com/@rtradetech/efficient-usable-and-cheap-storage-of-ipfs-hashes-in-solidity-smart-contracts-795d1b52ace0), Alexandre Trottier, 29 Apr 2019
 - [Flowchain Foundation Releases Video about its Distributed Leger Technology](https://medium.com/flowchain/flowchain-foundation-releases-video-about-its-distributed-leger-technology-44f0a600ed20), Flowchain Global, 29 Apr 2019
@@ -40,7 +40,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Open-Registry](https://open-registry.dev/), a JavaScript Package Registry funded, developed and maintained by the community, for the community.
 - [Matters.news](https://matters.news/faq) is a news publishing site hosted on IPFS with approximately 10K+ active users!

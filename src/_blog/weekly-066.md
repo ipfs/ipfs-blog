@@ -28,7 +28,7 @@ In case you missed it, learn how to spawn a go-ipfs node using the go-ipfs core 
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [TemporalX Development Environment Is Live](https://www.reddit.com/r/ipfs/comments/dqu45y/temporalx_development_environment_is_live/), 3 Nov 2019
 - [Video Of The Week: Filecoin and Web3](https://avc.com/2019/11/video-of-the-week-filecoin-and-web3/), AVC, 2 Nov 2019

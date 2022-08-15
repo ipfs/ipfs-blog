@@ -36,7 +36,7 @@ Created by @olizilla, [ipfs-cohost](https://github.com/olizilla/ipfs-cohost#ipfs
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [The Great Calamity Circumvention Assembly at IPFS Camp 2019](https://blog.ipfs.tech/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/), Alan Shaw, 11 August 2019
 - VIDEO: [David from TAU Coin talks Mobile Mining, IPFS, Proof of Transaction, KYC, Aging Escape Velocity](https://www.youtube.com/watch?time_continue=4&v=8atG0zW50Uo), Crypto Grownups, 11 August 2019
@@ -70,7 +70,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [SourceCred 0.4.0](https://github.com/sourcecred/sourcecred/releases/tag/v0.4.0) is shipped! SourceCred aims to empower open-source developers and communities by creating a project-specific reputation metric called cred.
 - [Ambients](https://ambients.org/) is a protocol for distributed computation. It allows developers to build decentralized applications, databases and services and to deploy and run them in a peer-to-peer network.

@@ -26,7 +26,7 @@ Here are some of the highlights since the last IPFS Weekly, and remember, we’l
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [The four factors to consider for optimal IPFS node distribution](https://medium.com/@kyletut/the-ipfs-network-c815a735bd0d), Textile, 18 Dec 2018
 - [BCH Devs Publish Bi-Directional Payment Concept Based on IPFS](https://news.bitcoin.com/bch-devs-publish-bi-directional-payment-concept-based-on-ipfs/), Bitcoin News, 18 Dec 2018
@@ -49,7 +49,7 @@ _What’s coming up next for the IPFS community and ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [The public release of the Aegeus 1.0.0 Beta has arrived!](https://twitter.com/Aegeus_Coin/status/1074920193019781122)
 - Check out [qtum-ipfs](https://github.com/qtumproject/qtum-ipfs), a demo for sharing files via Qtum and IPFS.

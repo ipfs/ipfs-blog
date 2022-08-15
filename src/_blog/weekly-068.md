@@ -32,7 +32,7 @@ From [last week’s Berty Weekly](https://berty.tech/newsletter/weekly-21/), a q
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Temporal IPFS Updates: Kubernetes, ENS Domains, Amazon S3, Playground, Organization management](https://medium.com/temporal-cloud/temporal-ipfs-updates-kubernetes-ens-domains-amazon-s3-playground-organization-management-16353e89b255), Temporal, 18 Nov 2019
 - [Atomic access control](https://peergos.org/blog#atomic_access_control_), Peergos, 15 Nov 2019
@@ -57,7 +57,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Eternum](https://www.eternum.io/) is a simple and easy-to-use IPFS pinning service. It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your applications.
 

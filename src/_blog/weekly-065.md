@@ -32,7 +32,7 @@ Woo hoo! Configure your node with preset profiles! Limit outgoing browser reques
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - PHOTO: [Tim Berners-Lee seems to be a fan of IPFS and libp2p](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1), Twitter, 29 Oct 2019
 - [RTrade Technologies Partners with Dappkit Utilizing Enterprise IPFS Infrastructure & APIs](https://medium.com/temporal-cloud/rtrade-technologies-partners-with-dappkit-utilizing-enterprise-ipfs-infrastructure-apis-7c9b67fdb589), Temporal, 28 Oct 2019
@@ -65,7 +65,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [os](https://github.com/tomaka/os/) – Experiment to build some kind of operating-system-like environment where executables are all in WASM and are loaded from some IPFS-like decentralized network.
 - [The Graph Network In Depth](https://thegraph.com/blog/the-graph-network-in-depth-part-1)

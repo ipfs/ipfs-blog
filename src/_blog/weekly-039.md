@@ -43,7 +43,7 @@ Next week, [the IPFS Weekly call](https://github.com/ipfs/team-mgmt#-ipfs-weekly
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [IPSE: A Safe Search Engine Based On IPFS and Blockchain](https://medium.com/@ipse_io/ipse-a-safe-search-engine-based-on-ipfs-and-blockchain-91b7b4644a3c), 19 Apr 2019
 - [Make A Discord Bot That Can Upload, Pin, and Search IPFS](https://medium.com/@rtradetech/make-a-discord-bot-that-can-upload-pin-and-search-ipfs-7ec59c070cda), 17 Apr 2019

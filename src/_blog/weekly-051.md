@@ -32,7 +32,7 @@ Friendly reminder to our awesome community that IRC and Matrix are still one of 
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - VIDEO: [Privacy in Peer To Peer Networks](https://www.youtube.com/watch?time_continue=26&v=nCCkwU4JPcY), Gonçalo Pestana at Data Terra Nemo, 22 July 2019
 - [Understanding IPFS in Depth(5/6): What is Libp2p?](https://medium.com/coinmonks/understanding-ipfs-in-depth-5-6-what-is-libp2p-f8bf7724d452) Coinmonks, 21 July 2019
@@ -60,7 +60,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [go-stellar-ipfs](https://github.com/aanupam23/go-stellar-ipfs) is a library that acts as a bridge between Stellar and IPFS.
 

@@ -31,7 +31,7 @@ It might not be the last chance to attend IPFS Camp this June, in fact, this cou
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - SLIDES: [libp2p](https://speakerdeck.com/wshino/libp2p), Shinohara Wataru, 23 May 2019
 - [IPFS: Technology that’s out of this world](https://business.sprint.com/blog/ipfs-technology/?ECID=MA:SM:05222019:TW:BLG:ENT:NAT:Organic), Sprint Business Blog, 22 May 2019
@@ -49,7 +49,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [LineageOS on IPFS](https://lineageos-on-ipfs.com/): A permanent solution to LineageOS’ storage problem.
 - [Peergos’ Alpha Release, June 2019](https://peergos.org/blog#alpha_release_june_2019_). Learn more about the end-to-end encrypted, peer-to-peer file storage, sharing and communication network.

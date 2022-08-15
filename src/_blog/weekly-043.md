@@ -25,7 +25,7 @@ This week for [`Meet the Community`, we had Alan Shaw, a Core Developer of the I
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Starlog: Aiming for the Stars](https://blog.florence.chat/starlog-aiming-for-the-stars-f4d1775f8528), 21 May 2019
 - [How to Start Contributing to Textile Photos](https://medium.com/textileio/how-to-start-contributing-to-textile-photos-b626c3f63493), Textile, 20 May 2019
@@ -38,7 +38,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [SourceCred](https://medium.com/sourcecred/introduction-to-sourcecred-7665297af715) is an open-source technology for organizing communities.
 - [Peermaps](https://peermaps.org/) is a distributed, offline-friendly alternative to commercial map providers such as google maps. Instead of fetching data from a centralized tile service, your computer fetches map data from other peers across the network.

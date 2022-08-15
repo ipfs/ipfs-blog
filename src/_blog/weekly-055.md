@@ -36,7 +36,7 @@ You’re going to want to check out the recently [released PATCH version of go-i
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Tupelo as it relates to IPLD and IPFS](https://medium.com/@tobowers/under-the-hood-tupelo-uses-ipld-libp2p-and-it-also-makes-use-of-bitswap-2d8007ba664c), Topper Bowers, 19 August 2019
 - [Berty team at IPFS Camp](https://berty.tech/blog/ipfs-camp/), Berty, 15 August 2019
@@ -68,7 +68,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Introducing [Pyramids!](https://gateway.pinata.cloud/ipfs/QmdeNiNrLeWZ6o6qFVLK9HQKgH75x8sk4hkTRQ1L2rQCiB/#landing) Load the page dynamically creating crypto key pairs! Their public parts can be uploaded to IPFS. The IPFS hashes can then be registered in a stellar transaction.
 - [go-ipfs-log](https://github.com/berty/go-ipfs-log) – Go version of append-only log CRDT on IPFS

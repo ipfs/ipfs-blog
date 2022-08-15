@@ -321,7 +321,7 @@ Huge thanks to all of you for your time, your expertise, and your contributions.
 
 ## Building the web with Awesome IPFS
 
-These are just a few of the new apps and tools that were submitted to the [new Awesome IPFS](https://awesome.ipfs.io/) site, showing that people are excited about building things with IPFS.
+These are just a few of the new apps and tools that were submitted to the [new Awesome IPFS](https://awesome.ipfs.tech/) site, showing that people are excited about building things with IPFS.
 
 - [brig](https://brig.readthedocs.io/en/latest) - File synchronization with git like interface and FUSE filesystem.
 

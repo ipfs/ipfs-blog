@@ -36,7 +36,7 @@ Yesterday, @parkan was on hand to [walk us through a demo of EthDNS](https://www
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - VIDEO: [How to Host Your Website Using ENS+IPFS](https://www.youtube.com/watch?v=oA4oOY5zgU0&feature=emb_logo), Yahsin Huang, 5 Dec 2019
 - [On Video Content Monetization and Blockchain](https://medium.com/altcoin-magazine/on-video-content-monetization-and-blockchain-eff693c72269), Dmitriy Kim, 5 Dec 2019
@@ -68,7 +68,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [data,together.org](https://datatogether.org/). Exploring Community-Driven Data Stewardship!
 - [radicle](https://radicle.community/) launched their community forum, where several interesting discussions about IPFS are going on. 👀

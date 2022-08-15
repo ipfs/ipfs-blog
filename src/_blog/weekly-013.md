@@ -28,7 +28,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [A big tech company is working to free the internet from big tech companies](https://www.technologyreview.com/s/612240/a-big-tech-company-is-working-to-free-the-internet-from-big-tech-companies/) MIT Technology Review, 05 Oct 2018
 - [Someone used my IPFS gateway for phishing](https://incoherency.co.uk/blog/stories/hardbin-phishing.html), James Stanley, 04 Oct 2018
@@ -52,7 +52,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [IPLD Mindmap](https://github.com/arxiu/ipld-mindmap) – Mindmap application using IPLD as underlying datastructure
 - [Sourcegraph](https://about.sourcegraph.com/blog/discuss-code-and-docs-in-repositories/), Discuss code and docs in repositories

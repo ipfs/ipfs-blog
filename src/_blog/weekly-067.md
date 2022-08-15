@@ -33,7 +33,7 @@ See all of [the 2020 Theme Proposals](https://github.com/ipfs/roadmap/issues?q=i
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Dappkit adopts MóiBit as the decentralized storage partner](https://medium.com/@moibit/dappkit-adopts-moibit-as-the-decentralized-storage-partner-8bb69d0658bb), MóiBit, 11 Nov 2019
 - [Comparing IPFS Pinning Services Pricing/Functionality. Temporal, Eternum & Pinata.](https://medium.com/temporal-cloud/comparing-ipfs-pinning-services-pricing-functionality-temporal-eternum-pinata-d38b87a279d8) Temporal, 11 Nov 2019
@@ -66,7 +66,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [An awesome example of replicating public datasets](https://twitter.com/daviddias/status/1187666725245992960) by Henrique Dias
 - [ethoFS](https://ethofs.com/), a fully decentralized hosting platform that combines blockchain indexing technology and the IPFS protocol to deliver decentralized content on-demand.

@@ -29,7 +29,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Manyverse and Scuttlebutt: A human-centric technology stack for social applications](https://www.zdnet.com/article/manyverse-and-scuttlebutt-a-human-centric-technology-stack-for-social-applications/), 25 Oct 2018
 - Check out this [IPLD demo](https://twitter.com/jimpick/status/1055249910914633729), 24 Oct 2018
@@ -44,7 +44,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Introducing Agora v2: Get ready to cast your vote](https://decentraland.org/blog/announcements/agora-v2-announcement), 24 Oct 2018
 - [Go Demo Rock-Paper-Scissors with libp2p](https://github.com/mikiquantum/rock-paper-scissors-demo), 24 Oct 2018

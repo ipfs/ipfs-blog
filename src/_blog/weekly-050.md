@@ -35,7 +35,7 @@ Check out ProtoSchool’s new interactive tutorial on the IPFS Mutable File Syst
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - THREAD: [What’s the coolest thing you’ve seen done with IPFS?](https://www.reddit.com/r/ipfs/comments/cchr8b/whats_the_coolest_thing_youve_seen_done_with_ipfs/) 13 July 2019
 - [Multicoin, Coinbase Ventures Invest \$1.5 Million in ‘Decentralized Flickr’](https://www.coindesk.com/multicoin-coinbase-ventures-invest-1-5-million-in-decentralized-flickr), CoinDesk, 11 July 2019
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Interplanetary Tag](https://medium.com/textileio/building-peer-to-peer-games-on-ipfs-a-look-at-interplanetary-tag-52d081ee1d32) – Building peer-to-peer games on IPFS
 - [go-ds-bbolt](https://github.com/RTradeLtd/go-ds-bbolt) – Datastore implementation using bbolt as a backend

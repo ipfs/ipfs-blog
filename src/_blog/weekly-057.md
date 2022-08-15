@@ -32,7 +32,7 @@ Long holiday weekend keep you from joining this week’s IPFS Call? Catch up on 
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Tutorial: Build a Zero Dependency Notes App on IPFS — Part I](https://medium.com/simpleid-dev-tools/tutorial-build-an-encrypted-notes-app-on-ipfs-part-i-39fb06fa95ce), SimpleID, 3 Sept 2019
 - [Fake News: A Universal Solution](https://towardsdatascience.com/fake-news-a-universal-solution-22895048f5e7), Towards Data Science, 2 Sept 2019
@@ -57,7 +57,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Koos](https://dev.to/lcoenen/koos-a-decentralised-social-network-4mfd), a decentralised social network
 - [Diffuse](https://www.producthunt.com/posts/diffuse-2) – A music player that connects to cloud/distrib

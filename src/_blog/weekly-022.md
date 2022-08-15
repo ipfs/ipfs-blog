@@ -27,7 +27,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Federated Meets P2P](https://medium.com/@RangerMauve/federated-meets-p2p-3a357145e7c0), Medium, 07 Dec 2018
 - [Radium 2.0 Development & Expansion Roadmap](https://blog.radiumcore.org/radium-2-0-development-expansion-roadmap-updated-dec-2018-46e89b5419b4), Radium Core, 07 Dec 2018
@@ -41,7 +41,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Announcing PhysX SDK 4.0, an Open-Source Physics Engine](https://news.developer.nvidia.com/announcing-physx-sdk-4-0-an-open-source-physics-engine/)
 - [Ether-1 Node Network](https://nodes.ether1.org/), gateway node beta testing is live!

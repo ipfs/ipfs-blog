@@ -30,7 +30,7 @@ Mikeal Rogers, or @mikeal everywhere online, is a creator of NodeConf and the po
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [This single-page web app can edit itself](https://medium.com/textileio/this-single-page-web-app-can-edit-itself-62734dac2700), Textile, 26 Nov 2018
 - [Tutorial: Host your own IPFS node and help the next generation of web](https://blog.florence.chat/tutorial-host-your-own-ipfs-node-and-help-the-next-generation-of-web-2860eb59e45e), Pact, 25 Nov 2018
@@ -48,7 +48,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Check out the demo for [ipfs-live-streaming](https://github.com/tomeshnet/ipfs-live-streaming), created by [@ASoTNetworks](https://github.com/ASoTNetworks) and [@darkdrgn2k](https://github.com/darkdrgn2k) to stream videos over IPFS!
 - [Introducing Subby](https://medium.com/@subby/introducing-subby-e8b2baf4124d), an uncensorable publishing platform for content creators.

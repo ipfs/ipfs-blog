@@ -39,7 +39,7 @@ Last week during the IPFS Weekly Call, Sawood Alam was on hand to give a fantast
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Peergos - fast seeking and encrypted history](https://peergos.org/blog#fast_seeking_and_encrypted_history_), 1 August 2019
 - [The Gnosis Monthly Development Update](https://blog.gnosis.pm/august-2019-the-gnosis-monthly-development-update-6c9be6fb7610), 1 August 2019
@@ -79,7 +79,7 @@ _These IPFS projects have the potential to be amazing, but they need a little he
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [anytype.io](https://anytype.io/): Like Notion but self hosted, private, and free!
 - [Decentralized Browser MIX Acuity 1.0 Released](https://medium.com/mix-blockchain/decentralized-browser-mix-acuity-1-0-released-827e17353b54)

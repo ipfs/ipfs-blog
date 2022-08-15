@@ -28,7 +28,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - VIDEO: [Decentralized Dapp Scaling with IPFS!](https://www.youtube.com/watch?time_continue=2&v=-XdVnK22mZc) Everything EOS, 11 Mar 2019
 - VIDEO: [Web3 stack, what’s next for developers?](https://www.youtube.com/watch?v=N76-HcQDuhQ&feature=youtu.be) Fluence, IPFS, NuCypher Meetup Paris Blockchain Week, 8 Mar 2019
@@ -63,7 +63,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Multilogue](https://github.com/assemblaj/Multilogue): libp2p non-simultaneous p2p chat protocol
 - [Radicle](http://www.radicle.xyz/): A decentralized alternative to GitHub built on IPFS

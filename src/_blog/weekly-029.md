@@ -32,7 +32,7 @@ The next guest presenter at the IPFS Weekly Call is [Brian Hoffman](https://twit
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - PODCAST: [Web3 Summit Decentralize NOW! #13 - IPFS and Decentralized File Storage](http://dattpodcastnetwork.libsyn.com/web3-summit-decentralize-now-13-ipfs-and-decentralized-file-storage), 11 Feb 2019
 - [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170), Pinata, 7 Feb 2019
@@ -53,7 +53,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Prattle Network](https://prattle.tk/) is a social network which stores the content entirely on the users devices and cannot be censored.
 - If you still want to use [oasis.direct](http://oasis.direct) you can do it through DAppNode! They deployed it to http://oasis.dappnode.eth (using Ethereum + IPFS) and it’s gonna be there forever! Welcome to a decentralized world in with no one can shut down a great service anymore. 😀

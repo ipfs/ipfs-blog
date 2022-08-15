@@ -37,7 +37,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Speeding Up IPFS Through Swarm Connections](https://medium.com/pinata/speeding-up-ipfs-pinning-through-swarm-connections-b509b1471986), Matt Ober, 4 Mar 2019
 - Check out the [DTube IPFS public community node contest!](https://steemit.com/dtube/@vaultec/dtube-ipfs-full-community-node-contest), 1 Mar 2019
@@ -65,7 +65,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Check out [Discussify](https://chrome.google.com/webstore/detail/discussify/bfmnjjkobeboejeocbompgljbiafbgcc), from our friends at Moxy Studios. Built on IPFS, Discussify provides a real-time, peer to peer, and permanent discussion platform for anyone to join and participate.
 - [Elea](https://www.elea.io/) is live, a platform for property data, where property documents get hashed with IPFS.

@@ -36,7 +36,7 @@ Catch up on [Juan Benet’s talk](https://www.youtube.com/watch?v=pJOG5Ql7ZD0) f
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Peergos update: 2X faster and transaction aware GC](https://peergos.gitlab.io/blog#peergos_release_v013_), Peergos, 21 Oct 2019
 - [Exploding IPFS data — enabling single use links, expiring links and more through a simple link shortening service.](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-that-you-can-delete/) Textile, 18 Oct 2019
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Announcing lotus](https://filecoin.io/blog/announcing-lotus/), the first alternate Filecoin implementation!
 - [3Box Ghost Threads API](https://docs.3box.io/build/web-apps/messaging/ghost-threads): Ghost threads are a different type of thread that doesn't persist any messages to database storage. Instead, messages are sent from one peer to the rest of the network using IPFS pubsub, and upon receipt by other online peers are kept in-memory.

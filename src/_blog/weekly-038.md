@@ -40,7 +40,7 @@ Next Monday, [Bogdan Habić](https://twitter.com/bogdanhabic) will be joining [t
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Pyramids!](https://medium.com/coinmonks/pyramids-f73b20c3aa2d) Coinmonks, 15 Apr 2019
 - [INTERPLANETARY FILE SYSTEM (IPFS), or a file system for the blockchain](http://hu.envienta.net/envienta/interplanetary-file-system-ipfs/), Envienta, 15 Apr 2019
@@ -65,7 +65,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Introducing Hako](https://hackernoon.com/hako-3825c3a033d7) – A super secure decentralized file sharing application powered by Web 3.0
 - [libp2p discussion boards are open!](https://discuss.libp2p.io/)

@@ -40,7 +40,7 @@ Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.tech/74-lisbon-h
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [How to Deploy an Unstoppable Angular App to IPFS](https://medium.com/gochain/how-to-deploy-an-unstoppable-angular-app-to-ipfs-c2dabb52e517), GoChain, 26 Mar 2019
 - [Sunsetting Mist: What’s ahead for our team](https://medium.com/@avsa/sunsetting-mist-da21c8e943d2), 22 Mar 2019
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Our friends at Qri, the global dataset version control system, were on the front page of Hacker News!](https://news.ycombinator.com/item?id=19470064)
 - [IPFS-Lite is an embeddable, lightweight IPFS-network peer for IPLD applications](https://github.com/hsanjuan/ipfs-lite)

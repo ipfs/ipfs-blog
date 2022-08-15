@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Overview of the package chain project](https://gist.github.com/dvc94ch/2ce60a00550e83d95ed051fc81e3683e), David Craven, 24 August 2019
 - SLIDES: [go-libp2p-noise](https://github.com/ChainSafe/go-libp2p-noise/blob/master/go-libp2p-noise-ethberlin-1a.pdf), Ed Mazurek, ETHBerlinZwei, 24 August 2019
@@ -54,7 +54,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [SimpleID](https://www.simpleid.xyz/) – Privacy, security, and convenience all rolled into one simple developer experience. Add decentralized authentication and storage to your application in under 10 minutes.
 - [InterPlanetary Wayback](https://github.com/oduwsdl/ipwb): A distributed and persistent archive replay system using IPFS

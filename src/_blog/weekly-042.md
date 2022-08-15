@@ -40,7 +40,7 @@ This week for [`Meet the Community`, we had Carson Farmer, a Core Developer at T
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [We Made A Dashboard for IPFS Clusters and Now We Want You to Check it Out](https://hackernoon.com/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908), Hackernoon, 14 May 2019
 - [XR Web: A Decentralized Protocol for Spatial XR apps](https://medium.com/@melodygrey/xr-web-a-decentralized-protocol-for-spatial-xr-apps-d1538bfd80a7), Melody Grey, 14 May 2019
@@ -64,7 +64,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [[Contest] libp2p+noise](https://github.com/libp2p/go-libp2p/issues/631): Win a Data Terra Nemo’19 conference ticket!
 - [Indrive](https://lndrive.space/), host files on IPFS using Bitcoin Lightning

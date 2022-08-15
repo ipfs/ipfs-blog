@@ -28,7 +28,7 @@ Ever wanted to hack on IPFS and IoT? Aadhi Manivannan recently wrote a great tut
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Decentralized Cloud Storage is changing the face of the internet](https://hackernoon.com/decentralized-cloud-storage-how-it-will-change-the-face-of-the-internet-22-np1f2349h), Hackernoon, 26 July 2019
 - [Now publishing pre-cached Prelude on IPFS](https://discourse.dhall-lang.org/t/now-publishing-pre-cached-prelude-on-ipfs/52), Dhall Discourse, 26 July 2019
@@ -58,7 +58,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [MetaMask Mobile Beta](https://medium.com/metamask/metamask-mobile-public-beta-a-feature-guide-and-walkthrough-9d01de7190ae) — a bridge to the decentralized web, with a dapp-centric browsing experience, intuitive on-boarding, and features that sync with your desktop MetaMask accounts.
 - Recently released: [THC (Temporal HTTP Client)](https://github.com/RTradeLtd/thc#examples) is a Golang library and CLI for common Temporal API calls

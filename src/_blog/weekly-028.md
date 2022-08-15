@@ -30,7 +30,7 @@ Michelle Hertzfeld works on the IPFS [Decentralized Data Stewardship working gro
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Future implementations of Callisto Network IPFS](https://medium.com/@thespigfish/future-implementations-of-callisto-network-ipfs-8acc34f2e715), 3 Feb 2019
 - [Decentralization is Not Enough](https://medium.com/offline-camp/decentralization-is-not-enough-75b15b8bc230), Interview with Nolan Lawson, 1 Feb 2019
@@ -57,7 +57,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Dogenealogy](https://dogenealogy.netlify.com/) is a decentralized breed registry made by Lorenzo Zaccagnini, uses Etherum blockchain and IPFS in order to track the animal pedigree.
 - [Temporal.cloud](https://medium.com/@rtradetech/temporal-cloud-walk-through-c477568be551) Walk-Through: IPFS at the click of a button with the best free usage tier of any IPFS service: Free 3GB/Monthly, 5 Free IPNS record creation a month, 100 Free pubSub messages a month and 5 Free IPFS keys.

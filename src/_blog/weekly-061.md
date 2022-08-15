@@ -36,7 +36,7 @@ Stop by the Protocol Labs booth at Grace Hopper this week to chat with the team,
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Understanding IPFS in Depth(1/6): A Beginner to Advanced Guide](https://hackernoon.com/understanding-ipfs-in-depth-1-5-a-beginner-to-advanced-guide-e937675a8c8a), Hackernoon, 30 Sep 2019
 - [DFile: A fancy IPFS-based file sharing mode](https://medium.com/@bruce.meerkat/dfile-a-fancy-ipfs-based-file-sharing-mode-e640e081f2c5), Bruce Meerkat, 30 Sep 2019
@@ -69,7 +69,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [The PageSaver](https://pagesaver.dweb.tools/) saves pages of the web onto ipfs, and gives you links to the public gateways.
 - [DFile](https://medium.com/@bruce.meerkat/dfile-how-to-use-ipfs-as-a-file-storage-by-python-flask-7906334e832a): How to use IPFS as a file storage by python+flask

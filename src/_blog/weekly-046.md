@@ -27,7 +27,7 @@ If you’ve ever wanted to know what a developer’s poster project session is l
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [June 2019 MIX Update](https://medium.com/mix-blockchain/june-2019-mix-update-7872391ae655), MIX Blockchain, 16 June 2019
 - [An In-Depth Look at Iris, a New Decentralized Social Network](https://news.bitcoin.com/an-in-depth-look-at-iris-a-new-decentralized-social-network/), Bitcoin.com, 13 June 2019
@@ -47,7 +47,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [galacteek](https://github.com/eversum/galacteek) is an experimental multi-platform Qt5-based browser/toolbox for the IPFS peer-to-peer network.
 - [Pinion](https://github.com/joincolony/pinion) is a lightweight pinning service that supports both IPFS content and orbit-db stores. It relies solely on ipfs-pubsub-peer-monitor, orbit-db, and js-ipfs-http-client to communicate with an IPFS node.

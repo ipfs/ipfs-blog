@@ -30,7 +30,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [libp2p: the modular P2P network stack by IPFS for better decentralized computing](https://hub.packtpub.com/libp2p-the-modular-p2p-network-stack-by-ipfs-for-better-decentralized-computing/), 09 Oct 2018
 - Slidedeck: [Peer-to-Peer Protocols for Our Cyber Commons](https://live.deprecated.systems/presentation.html#1), Benedict Lau, 09 Oct 2018, or see the presentation [here](https://www.youtube.com/watch?v=Ivd5LwlR1is)
@@ -47,7 +47,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Discover your next favorite decentralized application on [app.co](https://app.co/).
 - Video: [CURIOSITY](https://www.youtube.com/watch?v=UjEngEpiJKo), see Richard Feynman doing what he does best - sharing his contagious fascination with the world.

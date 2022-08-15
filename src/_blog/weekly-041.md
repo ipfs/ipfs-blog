@@ -25,7 +25,7 @@ This week for [`Meet the Community`, we had Edgar Lee, a Software Developer at N
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Building the Firebase for CRDTs](https://medium.com/textileio/building-the-firebase-for-crdts-7dd8dea8953a), Textile, 3 May 2019
 - [Filling in the GraphQL pipeline: Ready-to-use code generation](https://www.onegraph.com/blog/2019/05/03_Filling_in_the_GraphQL_Pipeline_Ready_to_use_code_generation.html), OneGraph, 3 May 2019
@@ -44,7 +44,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Stars Network](https://github.com/PACTCare/Stars-Network), a first draft of research on how to deal with metadata on the web3/dweb on GitHub.
 - [ipfs-deploy npm package](https://discuss.ipfs.tech/t/ann-ipfs-deploy-npm-package-helps-deploy-static-websites-to-free-ipfs-pinning-services/5318) helps deploy static websites to free IPFS pinning services.

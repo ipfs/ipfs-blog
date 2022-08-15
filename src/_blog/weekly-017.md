@@ -32,7 +32,7 @@ Last week, during the [IPFS All Hands](https://www.youtube.com/watch?v=o1tUzgThZ
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Textile Threads whitepaper… just kidding… a deeper look at the tech behind Textile’s Threads protocol](https://medium.com/textileio/wip-textile-threads-whitepaper-just-kidding-6ce3a6624338), 31 Oct 2018
 - [The Decentralized Web powered by Ravencoin & IPFS](https://blog.goodaudience.com/the-decentralized-web-powered-by-ravencoin-ipfs-79c0086b6340), 31 Oct 2018
@@ -52,7 +52,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Redecentralize.org](https://www.patreon.com/redecentralize) is creating a community and platform to support a fair, empowering internet.
 - [MetaMask mobile](https://metamask.io/) was launched last week. Both the mobile and the browser extension now integrate IPFS natively, resolving websites with ENS domains (.eth) from IPFS.

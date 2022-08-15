@@ -36,7 +36,7 @@ Hot on the heels of IPFS Camp videos covering lightning talks, deep dives, poste
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Previewing RTrade’s Decentralized, Privacy-Focused (dVPN)](https://medium.com/rtrade-technologies/previewing-rtrades-decentralized-privacy-focused-dvpn-35073b683f0c), RTrade Technologies, 9 Oct 2019
 - [IPFS + ENS Everywhere: Introducing EthDNS](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a), The Ethereum Name Service, 8 Oct 2019
@@ -56,7 +56,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [GoFS](https://gofs.io/) is a modern file storage solution. Unlike traditional file storage solutions (Dropbox, Google Files, etc), GoFS serves files from multiple locations at once allowing for faster downloads and more redundancies to keep your files available.
 

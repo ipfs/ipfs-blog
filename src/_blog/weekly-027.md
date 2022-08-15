@@ -31,7 +31,7 @@ Next week, [Paula de la Hoz](https://terceranexus6.github.io/) will be joining t
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [IPFS: A Distributed File Store](https://medium.com/block360-labs/ipfs-a-distributed-file-store-533cda4c6047), Block360 Labs, 29 Jan 2019
 - [How to build a completely free Dapp](https://blog.florence.chat/tutorial-how-to-build-a-completely-free-dapp-11a4ddf5959c), Pact.Care, 29 Jan 2019
@@ -60,7 +60,7 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Temporal-JS SDK (Full Public IPFS+IPNS Usage)](https://rtradetechnologies.atlassian.net/wiki/spaces/TEM/blog/2019/01/29/57671683/Temporal-JS+SDK+Full+Public+IPFS+IPNS+Usage): Not only can you pin content with the SDK, you have complete usage of all our public IPFS, and IPNS API calls. This means you can create and export keys, publish IPNS records, upload files, download files, use pubsub, retrieve IPLD objects, and object statistics.
 - [exoHash](https://galactictalk.org/d/1815-exohash-a-token-driven-data-science-product) – A token driven data science product.

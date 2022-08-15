@@ -32,7 +32,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [How Blockchain Technology Can Help Cannabis Recovery Efforts In Natural Disasters](https://www.forbes.com/sites/andrebourque/2019/01/21/how-blockchain-technology-can-help-recovery-efforts-in-natural-disasters/#74c6b2ec1b54), Forbes, 21 Jan 2019
 - [Torrent Paradise Creates Decentralized ‘Pirate Bay’ with IPFS](https://torrentfreak.com/torrent-paradise-creates-decentralized-pirate-bay-with-ipfs-190120/), TorrentFreak, 20 Jan 2019
@@ -55,7 +55,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Someone created a Udemy course on IPFS!](https://www.udemy.com/ipfs-nextgen-web-develop-deploy-integrate/)
 - [2read](https://addons.mozilla.org/en-US/firefox/addon/2read/) – Convert article in current tab to readable form and upload it to P2P network (IPFS).
