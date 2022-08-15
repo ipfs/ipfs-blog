@@ -48,7 +48,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [IPFS Cluster 0.8.0 is out!](https://cluster.ipfs.io/news/0.8.0_release/)
+- [IPFS Cluster 0.8.0 is out!](https://ipfscluster.io/news/0.8.0_release/)
 - [Textile Photos Release Version 0.5.0](https://medium.com/textileio/textile-photos-release-version-0-5-0-5baed6a9d993)
 - [IPFS Desktop Client: Orion v1.0](https://blog.siderus.io/ipfs-desktop-client-orion-v1-0-b9c63411b732)
 - [OneLoveDTube IPFS uploader 0.8.3](https://steemit.com/onelovedtube/@techcoderx/onelovedtube-ipfs-uploader-0-8-3-mobile-optimizations-multi-resolution-upload-support-and-more): Mobile optimizations, multi-resolution upload support, and more!

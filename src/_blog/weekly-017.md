@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## The latest
 
 - Releases abound! [js-ipfs 0.33.0](https://blog.ipfs.tech/51-js-ipfs-0-33/) was released and features a lot of massive changes, including a total UI revamp, API updates and a new command line tool. Check it out!
-- [ipfs-cluster 0.7.0](https://cluster.ipfs.io/news/0.7.0_release/) was also released to issue some bugfixes and some improvements you’ll enjoy.
+- [ipfs-cluster 0.7.0](https://ipfscluster.io/news/0.7.0_release/) was also released to issue some bugfixes and some improvements you’ll enjoy.
 - Microsoft launched an [IPFS template on Azure](https://azure.microsoft.com/en-us/blog/devcon4/) during devcon4.
 - See [go-ipfs](https://go-city.github.io/#/github.com/ipfs/go-ipfs) as a codebase visualisation at GoCity. Like the Sims, but better!
 

@@ -26,7 +26,7 @@ tags:
 
 ### IPFS 集群 v0.11.0 已经发布！
 
-[IPFS 集群 v0.11.0 是本项目历史上最大的发布](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md)。它的主要特点是引入了新的 CRDT “共识”组件。利用 Pubsub、Bitswap 和 DHT，并使用 CRDTs，集群对等点可以跟踪全局 pinset，而不需要在线，也不需要像原来的 Raft 方法那样担心其他对等点。一定要查看[更新的文档](https://cluster.ipfs.io/documentation/)。
+[IPFS 集群 v0.11.0 是本项目历史上最大的发布](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md)。它的主要特点是引入了新的 CRDT “共识”组件。利用 Pubsub、Bitswap 和 DHT，并使用 CRDTs，集群对等点可以跟踪全局 pinset，而不需要在线，也不需要像原来的 Raft 方法那样担心其他对等点。一定要查看[更新的文档](https://ipfscluster.io/documentation/)。
 
 ## IPFS 生态圈的动态
 

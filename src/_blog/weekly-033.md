@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Announcing [IPFS Cluster v0.10.0](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md), a release with major changes under the hood that will make the IPFS Cluster perform significantly faster with larger pinsets and less memory demanding. Get all the details in the [release notes](https://cluster.ipfs.io/news/0.10.0_release/), and congrats on the hard work!
+- Announcing [IPFS Cluster v0.10.0](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md), a release with major changes under the hood that will make the IPFS Cluster perform significantly faster with larger pinsets and less memory demanding. Get all the details in the [release notes](https://ipfscluster.io/news/0.10.0_release/), and congrats on the hard work!
 - Continuing with the announcement of cool, new things, introducing [go-libp2p workspace](https://github.com/libp2p/workspace-go-libp2p)! If you contribute to go-libp2p you want to check this out.
 - Have you seen [The Decentralized Web Primer](https://dweb-primer.ipfs.io/)? If you’ve been searching for a series of tutorials explaining IPFS, Merkle Trees and the Decentralized Web, look no further.
 - The [first IPFS meetup in Hangzhou](https://twitter.com/DataHome2/status/1104706359541391364) was a success! Here’s to many more to come. 🎉

@@ -21,7 +21,7 @@ A quick look back at what we accomplished together in the [InterPlanetary File S
 IPFS now has documentation that is redesigned, with a simple, clean interface, has better navigation, and most importantly, reintroduced a key feature: the search functionality. [Read about it on the blog](https://blog.ipfs.tech/2020-01-07-ipfs-docs-beta/).
 
 **Collaborative clusters are here**
-The first set of [public collaborative clusters](https://blog.ipfs.tech/2020-01-09-collaborative-clusters/) and the first iteration of the clusters site went live this month. For full documentation on how to set up and operate clusters, see cluster.ipfs.io/documentation.
+The first set of [public collaborative clusters](https://blog.ipfs.tech/2020-01-09-collaborative-clusters/) and the first iteration of the clusters site went live this month. For full documentation on how to set up and operate clusters, see ipfscluster.io/documentation.
 
 **go-ipfs 0.4.23 was released 🚢**
 Just a small, [tidy patch release](https://blog.ipfs.tech/2020-01-30-go-ipfs-0-4-23/) with some critical fixes before 0.5.0 ships.

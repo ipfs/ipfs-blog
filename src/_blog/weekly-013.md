@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 - Join us on Thursday for [Protocol Labs’ Tech Social](https://www.eventbrite.com/e/protocol-labs-tech-social-tickets-50860367729) in Glasglow at 6:30pm. We hope to see you there!
 - The first Berlin IPFS Meetup is also this Thursday, October 11th! [Sign up to attend on Meetup.](https://www.meetup.com/IPFS-Berlin/events/254816369/) Come chat all things decentralised with the IPFS community. 😎
-- [IPFS Cluster 0.6.0 was released last week](https://cluster.ipfs.io/news/20181003_0.6.0_release/). Big thanks to the contributors who helped make it happen: [@lanzafame](https://github.com/lanzafame), [@meiqimichelle](https://github.com/meiqimichelle), [@kishansagathiya](https://github.com/kishansagathiya), [@cannium](https://github.com/cannium), [@jglukasik](https://github.com/jglukasik) and [@mike-ngu](https://github.com/mike-ngu) and others.
+- [IPFS Cluster 0.6.0 was released last week](https://ipfscluster.io/news/20181003_0.6.0_release/). Big thanks to the contributors who helped make it happen: [@lanzafame](https://github.com/lanzafame), [@meiqimichelle](https://github.com/meiqimichelle), [@kishansagathiya](https://github.com/kishansagathiya), [@cannium](https://github.com/cannium), [@jglukasik](https://github.com/jglukasik) and [@mike-ngu](https://github.com/mike-ngu) and others.
 - [IPFS The Interplanetary File System Explained & Illustrated](https://achainofblocks.com/2018/10/05/ipfs-interplanetary-file-system-simply-explained/) A great explainer showing how centralized and distributed systems work and how IPFS is changing the game.
 
 ## IPFS in the wild

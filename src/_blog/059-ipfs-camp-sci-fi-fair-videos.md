@@ -39,7 +39,7 @@ Long-time IPFS community members [Textile](https://textile.io) brought their cro
 </div>
 _Hector explains the topology of the RPi cluster (feat. many blinkenlights)_
 
-Hector and the rest of the [IPFS Cluster](https://cluster.ipfs.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
+Hector and the rest of the [IPFS Cluster](https://ipfscluster.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
 
 ![@achingbrain's npm-in-a-box](../assets/059-ipfs-camp-sci-fi-fair-videos-npm-in-box.jpg)
 _[Alex Potsides’s](https://github.com/achingbrain) npm-in-a-box project_

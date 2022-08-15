@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 ## The latest
 
 - We’re excited to announce the inaugural **IPFS Camp**, a three-day hacker retreat for the creators and builders of the distributed web. Join us on June 27-20th at the amazing Campus La Mola in Barcelona for an action-packed program of workshops, talks and deep dives on everything IPFS. More information, including registration, will be available on the [IPFS blog soon](https://blog.ipfs.tech/)!
-- [IPFS Cluster version 0.9.0](https://cluster.ipfs.io/news/0.9.0_release/) comes with one big new feature, OpenCensus support! Happy Measured Pinning!
+- [IPFS Cluster version 0.9.0](https://ipfscluster.io/news/0.9.0_release/) comes with one big new feature, OpenCensus support! Happy Measured Pinning!
 - Last week, the IPFS research team released a paper on [Merkle-CRDTs](https://github.com/ipfs/research-CRDT/issues/45), that is, CRDTs backed by Merkle-DAGs. The paper formalizes what the team calls a Merkle-Clock (a logical clock) and goes on to describe Merkle-CRDTs as CRDTs on Merkle-Clocks.
 - Introducing [IPFS Stash](https://medium.com/twos-complement/ipfs-stash-local-ipfs-for-everyone-ethdenver2019-b5b45ae0d5c9) — Local IPFS for everyone created during #ETHDenver2019.
 - Update dnslink TXT records in Cloudflare with [dnslink-cloudflare](https://github.com/ipfs-shipyard/dnslink-cloudflare).

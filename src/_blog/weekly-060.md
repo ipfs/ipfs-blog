@@ -28,7 +28,7 @@ If you’ve been following the updates from IPFS Camp you’ve likely already ex
 
 ### IPFS Cluster v0.11.0 is out!
 
-[IPFS Cluster v0.11.0 is the biggest release in the project’s history](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md). Its main feature is the introduction of the new CRDT “consensus” component. Leveraging Pubsub, Bitswap and the DHT and using CRDTs, cluster peers can track the global pinset without needing to be online or worrying about the rest of the peers as it happens with the original Raft approach. Be sure to check out [the updated documentation too](https://cluster.ipfs.io/documentation/).
+[IPFS Cluster v0.11.0 is the biggest release in the project’s history](https://github.com/ipfs/ipfs-cluster/blob/master/CHANGELOG.md). Its main feature is the introduction of the new CRDT “consensus” component. Leveraging Pubsub, Bitswap and the DHT and using CRDTs, cluster peers can track the global pinset without needing to be online or worrying about the rest of the peers as it happens with the original Raft approach. Be sure to check out [the updated documentation too](https://ipfscluster.io/documentation/).
 
 ## IPFS in the wild
 
