@@ -14,7 +14,7 @@
       an item or view the
       <a
         class="text-blueGreen hover:underline"
-        href="https://ipfs.io/media/"
+        href="https://ipfs.tech/media/"
         rel="noopener noreferrer"
         @click="trackPressKit"
         >IPFS press kit.</a
