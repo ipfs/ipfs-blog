@@ -53,16 +53,6 @@ export default {
     },
   },
   mounted() {
-    // redirect blog.ipfs.io → blog.ipfs.tech (incl. gateways)
-    // https://github.com/ipfs/ipfs-blog/issues/417
-    const { href } = window.location
-    if (href.includes('blog.ipfs.io')) {
-      window.location.replace(href.replace('blog.ipfs.io', 'blog.ipfs.tech'));
-    }
-    if (href.includes('blog-ipfs-io')) { // subdomain gws
-      window.location.replace(href.replace('blog-ipfs-io', 'blog-ipfs-tech'));
-    }
-
     // redirect routes that are not blog posts (/events, /videos, etc)
     // to the homepage with the search parameter category
     if (!this.isVisible && this.$root.$page.frontmatter.type) {
