@@ -32,7 +32,7 @@ fields:
     Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
     target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
     you hit the save button. So any sensitive information will also be publicly available
-    on GitHub, but hidden from the website blog.ipfs.io.</em>'
+    on GitHub, but hidden from the website blog.ipfs.tech.</em>'
   config:
     required: true
     date_format: YYYY/MM/DD
@@ -59,7 +59,7 @@ fields:
     page. <br><strong>Must be twice as wide as it is tall (2:1 aspect ratio) and at
     least 400px tall.</strong> <strong>Name the image file something that can be easily
     searched for in the media directory later (consider adding a date).</strong><br>Need
-    help? <a href="https://blog.ipfs.io/image-crop/" title="Use this crop/scale tool"
+    help? <a href="https://blog.ipfs.tech/image-crop/" title="Use this crop/scale tool"
     target="_blank">Use this crop/scale tool</a> to save a revised image to your local
     machine, then upload here.
 - name: tags
