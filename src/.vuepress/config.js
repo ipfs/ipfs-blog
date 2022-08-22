@@ -145,15 +145,6 @@ module.exports = {
         notFoundPath: '/ipfs-404.html',
       },
     ],
-    [
-      'vuepress-plugin-canonical',
-      CANONICAL_BASE
-        ? {
-            baseURL: CANONICAL_BASE,
-            stringExtension: true,
-          }
-        : false,
-    ],
     [require('./plugins/pageData')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
     [
