@@ -146,6 +146,7 @@ module.exports = {
       },
     ],
     [require('./plugins/pageData')],
+    [require('./plugins/canonical')],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
     [
       '@vuepress/blog',
