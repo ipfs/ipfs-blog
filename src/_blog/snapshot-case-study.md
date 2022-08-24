@@ -15,7 +15,7 @@ tags:
 ---
 
 ::: callout
-**"IPFS is the standard for storing data in a verifiable way that is fully transparent, thereby allowing us to build openly auditable governance systems"**
+**"IPFS is the standard for storing data in a verifiable and fully transparent way, thereby allowing us to build openly auditable governance systems"**
 
 — [Fabien](https://twitter.com/bonustrack87), Founder and CEO, Snapshot Labs
 :::
