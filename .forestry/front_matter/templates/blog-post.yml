@@ -59,9 +59,9 @@ fields:
     page. <br><strong>Must be twice as wide as it is tall (2:1 aspect ratio) and at
     least 400px tall.</strong> <strong>Name the image file something that can be easily
     searched for in the media directory later (consider adding a date).</strong><br>Need
-    help? <a href="https://blog.ipfs.tech/image-crop/" title="Use this crop/scale tool"
-    target="_blank">Use this crop/scale tool</a> to save a revised image to your local
-    machine, then upload here.
+    help? <a href="https://blog.ipfs.tech/image-crop/" title="Use this crop/scale
+    tool" target="_blank">Use this crop/scale tool</a> to save a revised image to
+    your local machine, then upload here.
 - name: tags
   type: list
   config:
@@ -233,6 +233,7 @@ pages:
 - src/_blog/welcome-to-ipfs-news-179.md
 - src/_blog/welcome-to-ipfs-news-180.md
 - src/_blog/welcome-to-ipfs-news-182.md
+- src/_blog/welcome-to-ipfs-news-183.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
 - src/_blog/welcome-to-ipfs-weekly-120.md
 - src/_blog/welcome-to-ipfs-weekly-121.md
