@@ -1,10 +1,10 @@
 ---
 title: Welcome to IPFS News 183!
-description: CargoX’s IPFS-based NFT solution, go-ipfs' rebrand - Kubo & more in IPFS
-  News 182!
+description: A look at the highlights from the first-ever IPFS implementers event
+  in Iceland & more in IPFS News 183!
 author: Emily Vaughan
-date: 2022-08-10
-permalink: "/weekly-182/"
+date: 2022-08-24
+permalink: "/weekly-183/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
@@ -13,44 +13,44 @@ tags:
 - weekly
 
 ---
-## **CargoX’s IPFS-based NFT Solution is Trusted in International Trade** 
+## **IPFS þing 2022 Recap**
 
-![](../assets/180673629-deccc8fc-35d9-49ba-964c-b16d281d05fa.jpg)
+![](../assets/181806539-3c71476c-b247-4400-9778-5ccfce635f17.png)
 
-Only a handful of public blockchain solutions are heavily used by governments for conducting regular day-to-day business. [CargoX](https://cargox.io/) is a leading [supply chain solution](https://cargox.io/press-releases/full/blockchain-blockbuster-egyptian-government-cargox/) that relies on IPFS and Web3 infrastructure as its main architectural component. [Find out](https://blog.ipfs.tech/2022-08/03-ecosystem-highlight-cargox/) how it simplifies the processing of Electronic Trade Documents for Egyptian authorities with the CargoX Platform for Blockchain Document Transfer (BDT).
+In mid-July, over 80 IPFS implementers and builders gathered in Reykjavík, Iceland for the [first-ever IPFS þing](https://2022.ipfs-thing.io/), a weeklong gathering for the IPFS implementers community. The “choose your own adventure” format spanned 12 tracks, with over 60 presenters or facilitators and 120 sessions. Check out some highlights of what the community shared and learned on the [IPFS blog](https://blog.ipfs.tech/ipfs-ping-2022-recap/), go through a quick Twitter [thread](https://twitter.com/IPFS/status/1558104917021188097?s=20&t=Sr9jB8CSNnw1DHUUU0XFRw), or watch the [video recap](https://youtu.be/6dojCBJQmqg).
 
 ## **Brand New on IPFS ✨**
 
-1. [FFmpeg](https://ffmpeg.org/) allows you to watch videos in almost any format. [Find out](https://blog.ipfs.tech/2022-08-01-ipfs-and-ffmpeg/) how its support for IFPS will enable IPFS usage in many more applications than previously possible.
-2. [Lighthouse](https://www.lighthouse.storage/) has built an encryption and access control layer for users to store private information on IPFS. Find out more on the [Lighthouse blog](https://www.lighthouse.storage/view-blog/6/Encryption-and-Access-Control-for-Web3-using-Lighthouse).
-3. Welcome Kubo! The go-ipfs implementation has been renamed for the v0.14.0 release. Get up to speed with all the details on [Github](https://github.com/ipfs/kubo/releases/tag/v0.14.0).
-4. Let’s make IPFS even better. The community is looking for feedback on your experience using IPFS WebUI or IPFS Desktop and all it takes is a quick 7-minute [survey](https://cryl27xbs16.typeform.com/to/VFVQeYqe?typeform-source=discuss.ipfs.tech).
+1. [EverRise](https://www.everrise.com/)’s multi-chain DeFi security infrastructure has [increased](https://twitter.com/EverRise/status/1561029462011121665?s=20&t=5uug9SCZdtPonwROW6W2SQ) its global IPFS pinning capacity to strengthen its Mementos NFTs.
+2. The Taiwanese Ministry of Digital Affairs is publishing its [website](https://ipfs.io/ipns/moda.gov.tw/) using IPFS to thwart cyberattacks, [check it out](https://twitter.com/daniel2color/status/1561731957347782656?s=20&t=jGAAzNT689QqvcsfS0yhtg)!
+3. The Kiwik metaverse assets marketplace is [using](https://twitter.com/Kiwiklabs/status/1561086411797037057?s=20&t=JTUEbP13yDgrVBcRcpqUMg) [NFT.Storage](https://nft.storage/) and NFTUp to store and pin creators’ NFTs on IPFS.
+4. Banned Books DAO is using IPFS pinning to preserve all banned books by any entity or organization. Join the waitlist and find out more on the project’s [website](https://www.bannedbooksdao.org/).
 
 ## **Around the ecosystem 🌎**
 
-The virtual half of the [2022 ETH Seoul Hackathon](https://2022.ethseoul.org/) is still happening. [Register now](https://eth-seoul.devpost.com/)! There’s three more days until the deadline.
+Catch up on the August All Hands meeting for the IPFS, Filecoin, and libp2p Ecosystem WG with this quick [recap](https://www.youtube.com/watch?v=0sOz1ZS7vnc&list=PL_0VrY55uV18pIio5zsQZPhpACZssqGtA). A [playlist](https://youtube.com/playlist?list=PL_0VrY55uV18pIio5zsQZPhpACZssqGtA) with full recordings is also available.
 
-The [Web3 Infinity Hackathon](https://hackathon.fil-singapore.io/) is happening until August 16th. Rewards include $100,000 in prizes, additional grants from sponsors, and [FIL-Singapore Summit](https://fil-singapore.io/) perks for you and your team. [Register now](https://web3infinityhackathon.devpost.com/)!
+[BlockScience](https://block.science/) is [helping](https://twitter.com/block_science/status/1561792434052505600?s=20&t=IPnc-msBBblVKOH-AqibvA) complex systems modeling with IPFS’ [content-addressing](https://docs.ipfs.tech/concepts/content-addressing/) capabilities. Read the project’s [explanation](https://medium.com/block-science/the-cats-out-of-the-bag-introducing-content-addressable-transformers-7483e61e3844) of Content-Addressable Transformers (CATs) to learn more.
 
-You still have time to register for [Web3athon](https://web3athon.xyz/) to work with coders, creators, economists and like minded individuals to address daily challenges for communities and create hyperlocal solutions. Register until September 15th.
+[Web3athon](https://web3athon.xyz/), a hyperlocal people-first hackathon focused on community oriented use cases, is happening until September 15th. [Register now](https://www.hackerearth.com/challenges/hackathon/consensus-2022-2/add-information/)!
 
-Catch up on all things [IPLD](https://ipld.io/) with this [recording](https://www.youtube.com/watch?v=4D6cXFk1T8Q) of the bi-weekly sync. Don’t miss it next time, it’s [open](https://github.com/ipld/team-mgmt) for everyone.
+Make sure you get your [tickets](https://www.dappcon.io/#Tickets) for DappCon Berlin 2022 and catch Dietrich Ayala’s [talk](https://twitter.com/dappcon_berlin/status/1559918306588610561?s=20&t=jGAAzNT689QqvcsfS0yhtg) on IPFS browser integrations.
 
-[IPFS Search](https://ipfs-search.com/#/)’s open source services [now include](https://twitter.com/SearchIpfs/status/1556636574904885249?s=20&t=j22QmUs_q1Zac4tinFdg0A) filter features for more efficient browsing. You can even specify file extensions and different languages.
+UPDATE: FIL-Singapore is back on track and happening September 26th and 27th. Check out the [updated website](https://www.fil-singapore.io/) with all the details and join the IPFS and Filecoin communities at the event.
 
-[Gummys TV](https://www.gummys.io/) is relying on IPFS over AWS data hosting for its video sharing and streaming platform. [Find out](https://gummys.medium.com/how-gummys-avoids-the-dangers-of-centralized-clouds-with-ifps-20de8fd9b9f9) why it’s choosing a decentralized storage solution over the cloud.
+Join the IPFS and Filecoin communities for DevCon 2022 in Bogota. [Get your tickets](https://devcon.org/en/) and stay tuned for more details!
 
-The SwapChat NFT social trading dapp is now [collaborating](https://twitter.com/SwapChatNFT/status/1554408080242515968?s=20&t=j22QmUs_q1Zac4tinFdg0A) with 4EVERLAND to implement decentralized cloud storage based on IPFS.
+The Filecoin Green community will also be at DevCon with a LATAM-focused sustainability summit. You can also get your [tickets](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227) early, become a partner of the SBS on the [website](https://sbs.tech/) or [apply ](https://airtable.com/shr4CeIwfweFUHEkr)to be a speaker.
 
-Read through Polkastarter’s excellent [guide](https://blog.polkastarter.com/wheres-your-nft/?utm_campaign=learn-with-polkastarter&utm_source=twitter&utm_medium=twitter&utm_content=nft-metadata) on how IPFS works and why it’s important for storing your NFT metadata off-chain.
+Check out Jonathan Victor’s [explanation](https://cointelegraph.com/news/nonfungible-tokens-don-t-live-on-the-blockchain-experts-say) on how [NFT.Storage](https://nft.storage/) can rely on Filecoin and IPFS to store objects such as NFT metadata as a public good for CoinTelegraph.
 
-IPFS’ utility stretches beyond the crypto space and into building the infrastructure for a decentralized internet. Read CoinMarketCap’s [explanation](https://coinmarketcap.com/alexandria/article/what-is-ipfs) of the system to get the full picture.
-
-NFTs are often thought of as blockchain-based technology but there are misconceptions as to how they are stored. [Read up](https://cointelegraph.com/news/nonfungible-tokens-don-t-live-on-the-blockchain-experts-say) to learn more about how and where NFTs are actually stored.
+Check out [Dawn Kelly](https://twitter.com/run4pancakes)’s [workshop](https://www.youtube.com/watch?v=RSq3UUpDGgg) at presented at Women Build Web3’s [30 Days of Web3](https://www.30daysofweb3.xyz/) on decentralizing your stack by building on Filecoin with [Web3.Storage](https://web3.storage/).
 
 ## **Want to help build the new internet? 💼**
 
-[**Web3/Metaverse Engineer**](https://www.indeed.com/viewjob?t=Metaverse+Engineer&c=Razorfish&l=Atlanta,+GA&jk=95d0ad06b9beaadc&rtk=1g6putm30iquu800&from=rss): Razorfish uses digital technologies to create immersive digital, physical, and metaverse experiences for our clients that deliver marketing messaging and help our clients to grow their brands. As a self-driven, fast-learning, and highly versatile Web3/Metaverse Engineer you will apply your talents to creating high quality metaverse experiences that will span technologies and platforms. You will leverage your knowledge of 3D programming, animation, and web2 technologies to deliver immersive front-end experiences and you will leverage your knowledge in back-end databases and systems to airdrop NFTs and redeem utility NFTs. **Razorfish**, Atlanta, GA.
+[**Content Manager, Copywriter:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=e753a033c6&e=c8385b3b0b) Protocol Labs drives breakthroughs in computing to push humanity forward. Protocol Labs is a product-development lab, but behind the protocols and tools we build, behind the research and implementations, are passionate people, teammates, and community members. Protocol Labs is looking for a content manager that is passionate about writing, content creation, brand building, and web3. **Protocol Labs**, Remote.  
+  
+[**Distributed Computation Engineer:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=4f2511a4c1&e=c8385b3b0b) Define, implement and extend virtual machine concepts to the next generation of p2p, decentralized computation over content-addressed data. We seek talented engineers that are excited to work on a new model of trustless and verifiable computation - where code is distributed over blockchains and executed next to specific copies of data. If successful, we will transform data processing for large-scale datasets, improve cost and efficiency, and open up data processing to larger audiences. You will be part of this project from the very beginning. **Protocol Labs**, Remote.
 
 [**Orbit Program Community Operations Manager**](https://boards.greenhouse.io/protocollabs/jobs/4373379004): Protocol Labs is a product-development lab, but behind the protocols and tools we build, behind the research and implementations, are passionate people, teammates, and community members. [The Orbit Community Program](https://orbitcommunity.filecoin.io/) is a community engagement program aiming to help amplify the voice of Filecoin, IPFS, and libp2p in the web3 community (both online and offline!) and create content and educational resources. Your mission will be to manage the program, from participant recruiting and support to reporting and growth. **Protocol Labs**, Remote.
 
