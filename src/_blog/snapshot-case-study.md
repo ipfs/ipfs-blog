@@ -2,7 +2,7 @@
 title: Snapshot IPFS Case Study
 description: 'Explore how the leading decentralized gasless voting platform Snapshot uses IPFS as its main storage layer.'
 author: Daniel Norman
-date: 2022-08-23
+date: 2022-08-25
 canonicalUrl: https://docs.ipfs.tech/concepts/case-study-snapshot
 permalink: '/2022-08-25-snapshot-ipfs-case-study/'
 translationKey: ''
