@@ -3,7 +3,7 @@ title: Snapshot IPFS Case Study
 description: 'Explore how the leading decentralized gasless voting platform Snapshot uses IPFS as its main storage layer.'
 author: Daniel Norman
 date: 2022-08-25
-canonicalUrl: https://docs.ipfs.tech/concepts/case-study-snapshot
+canonicalUrl: https://docs.ipfs.tech/concepts/case-study-snapshot/
 permalink: '/2022-08-25-snapshot-ipfs-case-study/'
 translationKey: ''
 header_image: '/snapshot-case-study/cover.png'
@@ -27,6 +27,7 @@ In this case study, you'll learn how [Snapshot](https://snapshot.org/) works and
 [[toc]]
 
 ## What is Snapshot
+
 ::: right
 <img src="../assets/snapshot-case-study/logo-snapshot.png" alt="Snapshot logo" width="200">
 :::
@@ -145,9 +146,9 @@ Moreover, IPFS has several properties that enable that mission:
 
 — [Fabien](https://twitter.com/bonustrack87), Founder and CEO, Snapshot Labs
 :::
+
 ## Snapshot & IPFS: the future
 
 As Snapshot continues to evolve, the team looks forward to decentralizing its tech stack so that anyone can run a node, reducing the dependency on the Snapshot Node.js servers. Thanks to IPFS's integral role in Snapshot, a significant part of their data layer is already decentralized.
 
-
-_Note: Metrics and other details in this case study are current as of August 2022. Details may change in the interim._
+> **Note:** This case study was originally published in the [IPFS docs](https://docs.ipfs.tech/concepts/case-study-snapshot/). Metrics and other details in this case study are current as of August 2022. Details may change in the interim.\_
