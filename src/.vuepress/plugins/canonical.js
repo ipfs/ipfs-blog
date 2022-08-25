@@ -1,16 +1,12 @@
-module.exports = (options, context) => ({
-  name: 'vuepress-default-canonical',
-  extendPageData($page) {
-    const { frontmatter } = $page
-    // If no canonicalUrl is explictly defined in the Frontmatter, add it based on the permaLink
-    if (!frontmatter.canonicalUrl && frontmatter.permalink) {
-      frontmatter.canonicalUrl = `${$page?._context?.themeConfig?.domain}${frontmatter.permalink}`
-      return
-    }
+const normalizePath = (path) => path.replace('/_blog', '')
 
-    if (!frontmatter.permalink && $page._permalink) {
-      // Set the canonical URL to theme pages (which don't have a frontmatter permalink)
-      frontmatter.canonicalUrl = `${$page?._context?.themeConfig?.domain}`
+module.exports = ({ CANONICAL_BASE } = {}) => ({
+  name: 'vuepress-default-canonical',
+  extendPageData({ frontmatter, path }) {
+    // If no canonicalUrl is explicitly defined in the frontmatter, construct it from the permaLink or $page.path
+    if (!frontmatter.canonicalUrl && CANONICAL_BASE) {
+      frontmatter.canonicalUrl =
+        CANONICAL_BASE + normalizePath(frontmatter.permalink || path || '')
     }
   },
 })
