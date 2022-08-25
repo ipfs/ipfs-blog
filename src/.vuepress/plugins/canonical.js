@@ -1,4 +1,5 @@
-const normalizePath = (path) => path.replace('/_blog', '')
+//                                                         👇 add trailing slash if not present
+const normalizePath = (path) => path.replace('/_blog', '').replace(/\/?$/, '/')
 
 module.exports = ({ CANONICAL_BASE } = {}) => ({
   name: 'vuepress-default-canonical',
