@@ -38,8 +38,7 @@ const themeConfigDefaults = {
     },
     {
       text: 'Security',
-      link:
-        'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+      link: 'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
     },
   ],
   footerLegal: '',
@@ -106,13 +105,11 @@ module.exports = {
           { text: 'Press', link: 'https://ipfs.tech/media/' },
           {
             text: 'Code of conduct',
-            link:
-              'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
+            link: 'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
           },
           {
             text: 'Security',
-            link:
-              'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+            link: 'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
           },
         ],
         headerLinks: [
@@ -145,16 +142,8 @@ module.exports = {
         notFoundPath: '/ipfs-404.html',
       },
     ],
-    [
-      'vuepress-plugin-canonical',
-      CANONICAL_BASE
-        ? {
-            baseURL: CANONICAL_BASE,
-            stringExtension: true,
-          }
-        : false,
-    ],
     [require('./plugins/pageData')],
+    [require('./plugins/canonical'), { CANONICAL_BASE }],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
     [
       '@vuepress/blog',
