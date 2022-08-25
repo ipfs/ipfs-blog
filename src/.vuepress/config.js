@@ -249,6 +249,27 @@ module.exports = {
         countdown: 0,
       },
     ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'callout',
+        defaultTitle: ''
+      }
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: ''
+      }
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'left',
+        defaultTitle: ''
+      }
+    ],
     'vuepress-plugin-chunkload-redirect',
     ['vuepress-plugin-ipfs', IPFS_DEPLOY],
   ],
