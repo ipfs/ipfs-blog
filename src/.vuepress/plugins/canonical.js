@@ -1,4 +1,4 @@
-//                                                         👇 add trailing slash if not present
+//                                                         👇 ensure one trailing slash is present
 const normalizePath = (path) => path.replace('/_blog', '').replace(/\/*$/, '/')
 
 module.exports = ({ CANONICAL_BASE } = {}) => ({
