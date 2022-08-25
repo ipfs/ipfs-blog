@@ -151,4 +151,4 @@ Moreover, IPFS has several properties that enable that mission:
 
 As Snapshot continues to evolve, the team looks forward to decentralizing its tech stack so that anyone can run a node, reducing the dependency on the Snapshot Node.js servers. Thanks to IPFS's integral role in Snapshot, a significant part of their data layer is already decentralized.
 
-> **Note:** This case study was originally published in the [IPFS docs](https://docs.ipfs.tech/concepts/case-study-snapshot/). Metrics and other details in this case study are current as of August 2022. Details may change in the interim.\_
+> **Note:** This case study was originally published in the [IPFS docs](https://docs.ipfs.tech/concepts/case-study-snapshot/). Metrics and other details in this case study are current as of August 2022. Details may change in the interim.
