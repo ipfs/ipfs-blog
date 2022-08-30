@@ -10,12 +10,14 @@ data:
   path: https://github.com/ipfs/kubo/releases/tag/v0.15.0
   tags:
   - go-ipfs
+  - kubo
 - title: Kubo (formerly go-ipfs) v0.14.0 Release is out!
   date: 2022-07-21
   publish_date: 
   path: https://github.com/ipfs/kubo/releases/tag/v0.14.0
   tags:
   - go-ipfs
+  - kubo
 - title: go-ipfs 0.13.0 Release
   date: 2022-06-09
   publish_date: 
