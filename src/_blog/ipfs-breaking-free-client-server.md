@@ -80,11 +80,11 @@ We can do better; **breaking free from the client-server model means re-thinking
 
 ## The Distributed Web
 
-![The distributed web](https://ipfs.io/ipfs/QmNNYqHLovcK8K12RvU9WXwSmSLydHz1658d1CZJX9ujxr)
+![The distributed web](/ipfs-breaking-free/8.png)
 
 This new model is referring to **the distributed web**, so let’s talk about that, and how IPFS fits in. But first, for the uninitiated, let’s briefly discuss what the distributed web is, and what it means to you. Whether you’re a user or a developer, you can benefit from the distributed web, what I think of as web3.
 
-![A picture of 3 networking models, centralized, decentralized, and distributed. Centralized has a central point, with other spokes connected to it. Decentralized has multiple central points linked out with spokes. Distributed has multiple points all linked together.](https://ipfs.io/ipfs/QmYEHHn2mf4zzf9sLqDeJiRL8pEYw3jo3KbxBGmkKAZ5oe)
+![A picture of 3 networking models, centralized, decentralized, and distributed. Centralized has a central point, with other spokes connected to it. Decentralized has multiple central points linked out with spokes. Distributed has multiple points all linked together.](/ipfs-breaking-free/9.png)
 ### Centralized vs Decentralized vs Distributed
 
 Pictured above are 3 networking models. The client-server model is a **centralized model**. This is why we’re always talking about central servers and single points of failure. You can see the central point in orange, this is the server. Then the spokes are the clients, who are often the users. This graphic should make it easy to see how if that central point is ever removed, then the users can no longer communicate with one-another.
@@ -93,12 +93,12 @@ The **decentralized model** is a huge improvement to the centralized model. It s
 
 In the **distributed model** each user is also providing a piece of the network itself. If a user goes offline, the network functions as normal. If a major node goes down, the network can still function as well by leveraging the local peers. It is the champion of resilience, and the model that will take us forward. Some nodes might be bigger than others, but no single outage can take the entire network down. Let’s take a look at how IPFS fits into all this, and also dive deeper into the distributed model itself.
 
-![IPFS creates mathematically generated fingerprints for your data, called content IDs (CIDs)](https://ipfs.io/ipfs/QmXomapDVJYaxXVJZnh8xkuBSfrkJfktKN9E6ZhWLMYmpg)
+![IPFS creates mathematically generated fingerprints for your data, called content IDs (CIDs)](/ipfs-breaking-free/10.png)
 ### Content Addressing
 
 We went over location-based addressing, now let’s talk about one of the fundamental building blocks of an alternative called **content addressing**. IPFS creates mathematically generated fingerprints for data called content identifiers, or CIDs for short. This step relates to something called IPLD or Inter-Planetary Linked Data which is fundamental to how IPFS works to give us content addressing, **breaking us free from location-based addressing**.
 
-![](https://ipfs.io/ipfs/QmU6pvB1mgPS87ct52zeQDo5cJQ57dqUMz5xL6jfe5J699)
+![](/ipfs-breaking-free/11.png)
 #### The Composition of a CID
 
 Pictured above is the anatomy of a v1 CID, represented in binary.  On the far left of the image, not pictured here would be the multibase prefix. This is actually omitted because when working with binary, there actually isn’t a multibase prefix, you can save that byte. What the multibase prefix does is allows us to know what base encoding was used to create the CID, as IPLD supports many. 
@@ -109,7 +109,7 @@ Now we’re to the multicodec, **dag-pb**, which is indicating this DAG (directe
 
 Next up is the multihash, which includes 3 things, a multihash algorithm, a multihash length, and then finally the hash digest itself. You can see here we’re working with a **sha2 hash of 32 bytes in length**, then the hash itself trails off the screen. The [multihash specification](https://github.com/multiformats/multihash) is also available in the multiformats github repository.
 
-![You know the data is correct if the CID is valid. CIDs allow you to get data from anywhere and anyone.](https://ipfs.io/ipfs/QmXZos35dTotMMdE4VEbPy9LDaWCsY9UFL1akjrfUdnxhm)
+![You know the data is correct if the CID is valid. CIDs allow you to get data from anywhere and anyone.](/ipfs-breaking-free/12.png)
 ### Trustless Verification and Persistence
 
 As we went over, **you don’t have to trust who’s sending data to you, as you can run the hash function of the CID** and verify it yourself. IPFS uses CIDs by either looking up the CID in the distributed hash table (the DHT), or by using bitswap and asking their local peers “do you have this CID?”. With this, it no longer matters where the data lives, as we know exactly what we want, so it doesn’t matter who has it, just that *someone* has it. We’ve now broken free from location-based addressing.
