@@ -4,7 +4,7 @@ type: Release notes
 sitemap:
   exclude: true
 data:
-- title: 'Just released: IPFS Cluster 0.15.0!'
+- title: Kubo v0.15.0 Release is out!
   date: 2022-08-30
   publish_date: 
   path: https://github.com/ipfs/kubo/releases/tag/v0.15.0
