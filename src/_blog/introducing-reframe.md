@@ -152,7 +152,7 @@ These indicate a couple of libp2p nodes have advertised that they provide the co
 
 ## Reframe support in Kubo
 
-Kubo (formerly go-ipfs) v0.14.0 supports delegating routing requests to Reframe endpoints. This means that if you’d like your instance of kubo to support an additional system being queried for the types of requests that the IPFS Public DHT is used for you can just modify it via the config file. If you’ve ever thought about what kubo might look like if it used alternative mechanisms from the IPFS Public DHT, you can now get to it!
+Kubo (formerly go-ipfs) [v0.14.0+ supports delegating routing requests to Reframe endpoints](https://github.com/ipfs/kubo/releases/tag/v0.14.0#delegated-routing). This means that if you’d like your instance of kubo to support an additional system being queried for the types of requests that the IPFS Public DHT is used for you can just modify it via the config file. If you’ve ever thought about what kubo might look like if it used alternative mechanisms from the IPFS Public DHT, you can now get to it!
 
 For example, support for querying the endpoint at [cid.contact](http://cid.contact/) can be specified via:
 
