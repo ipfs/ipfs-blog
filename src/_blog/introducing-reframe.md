@@ -44,7 +44,7 @@ Reframe's flexibility in being defined abstractly over methods and transports is
 
 For example, while using HTTP is desirable in many environments, others prefer gRPC, making some custom protocol over QUIC, or a more general libp2p stream. While only HTTP has been specified, if you find yourself needing something else then start hacking and raise a [spec](https://github.com/ipfs/specs/tree/main/reframe) PR.
 
-Similarly, while the initial HTTP transport used the DAG-JSON format to encode requests, since HTTP + JSON is familiar to people and works easily with existing tooling, some of the earliest Reframe users also wanted a binary format in an HTTP GET request for better interoperability with caches. Since the method parameters are described abstractly, it was trivial to use the DAG-CBOR format with GETs for when HTTP cacheability is more important than JSON’s ease of use.
+Similarly, while the initial HTTP transport used the DAG-JSON format to encode requests because HTTP + JSON is familiar to people and works easily with existing tooling, some of the earliest Reframe users also wanted a binary format in an HTTP GET request for better interoperability with caches. Since the method parameters are described abstractly, it was trivial to use the DAG-CBOR format with GETs for when HTTP cacheability is more important than JSON’s ease of use.
 
 ### Methods
 
