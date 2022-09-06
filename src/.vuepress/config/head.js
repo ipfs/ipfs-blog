@@ -30,9 +30,13 @@ module.exports = [
   ['meta', { name: 'msapplication-TileColor', content: '#156ff7' }],
   ['meta', { name: 'apple-mobile-web-app-title', content: 'IPFS Blog & News' }],
   ['meta', { name: 'application-name', content: 'IPFS Blog & News' }],
-  ['script', {
-    defer: true,
-    'data-domain': "blog.ipfs.tech", 
-    src: "https://plausible.io/js/plausible.js"
-  }]
+  [
+    'script',
+    {
+      defer: true,
+      'data-domain': 'blog.ipfs.tech',
+      'data-api': 'https://pl-proxy.daas.workers.dev/api/event',
+      src: 'https://pl-proxy.daas.workers.dev/js/script.js',
+    },
+  ],
 ].concat(favicons)
