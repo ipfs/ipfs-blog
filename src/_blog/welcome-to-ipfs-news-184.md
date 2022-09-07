@@ -13,43 +13,43 @@ tags:
 - weekly
 
 ---
-## **IPFS þing 2022 Recap**
+## **Snapshot IPFS Case Study**
 
-![](../assets/181806539-3c71476c-b247-4400-9778-5ccfce635f17.png)
+![](../assets/cover-afade294.png)
 
-In mid-July, over 80 IPFS implementers and builders gathered in Reykjavík, Iceland for the [first-ever IPFS þing](https://2022.ipfs-thing.io/), a weeklong gathering for the IPFS implementers community. The “choose your own adventure” format spanned 12 tracks, with over 60 presenters or facilitators and 120 sessions. Check out some highlights of what the community shared and learned on the [IPFS blog](https://blog.ipfs.tech/ipfs-ping-2022-recap/), go through a quick Twitter [thread](https://twitter.com/IPFS/status/1558104917021188097?s=20&t=Sr9jB8CSNnw1DHUUU0XFRw), or watch the [video recap](https://youtu.be/6dojCBJQmqg).
+Snapshot is an open-source voting platform for Web3 projects, DAOs, and communities that uses IPFS as its main storage layer. It is unique in its use of IPFS to store proposals and user votes using a technique known as ‘off-chain’ voting, where the cryptographic signatures proving user votes are persisted to IPFS instead of being stored on the blockchain. Read this [case study](https://blog.ipfs.tech/2022-08-25-snapshot-ipfs-case-study/) to learn more about how this lowers the barriers to entry for community governance.
 
 ## **Brand New on IPFS ✨**
 
-1. [EverRise](https://www.everrise.com/)’s multi-chain DeFi security infrastructure has [increased](https://twitter.com/EverRise/status/1561029462011121665?s=20&t=5uug9SCZdtPonwROW6W2SQ) its global IPFS pinning capacity to strengthen its Mementos NFTs.
-2. The Taiwanese Ministry of Digital Affairs is publishing its [website](https://ipfs.io/ipns/moda.gov.tw/) using IPFS to thwart cyberattacks, [check it out](https://twitter.com/daniel2color/status/1561731957347782656?s=20&t=jGAAzNT689QqvcsfS0yhtg)!
-3. The Kiwik metaverse assets marketplace is [using](https://twitter.com/Kiwiklabs/status/1561086411797037057?s=20&t=JTUEbP13yDgrVBcRcpqUMg) [NFT.Storage](https://nft.storage/) and NFTUp to store and pin creators’ NFTs on IPFS.
-4. Banned Books DAO is using IPFS pinning to preserve all banned books by any entity or organization. Join the waitlist and find out more on the project’s [website](https://www.bannedbooksdao.org/).
+1. [IPFS Camp 2022](https://2022.ipfs.camp/) is back! Join the community in Lisbon on October 28th-30th for an event focused on celebrating and advancing IPFS, more details coming soon.
+2. Kubo (formerly go-ipfs) v0.15.0 is live. Review all the library updates and bug fixes, Blake3 support, Fx Options plugin, and more on [Github](https://github.com/ipfs/kubo/releases/tag/v0.15.0).
+3. Kubo v0.14.0 now [supports](https://github.com/ipfs/kubo/releases/tag/v0.14.0#delegated-routing) [Reframe](https://github.com/ipfs/specs/tree/main/reframe#readme), a tool for delegated routing. Learn more about it on the IPFS [blog](https://blog.ipfs.tech/2022-09-02-introducing-reframe/).
+4. Check out [Opensquare Art](https://t.co/TrdDYttxkq)’s new Shop Builder for launching no-code minting websites that store NFTs on IPFS and Filecoin via [NFT.Storage](https://nft.storage/).
 
 ## **Around the ecosystem 🌎**
 
-Catch up on the August All Hands meeting for the IPFS, Filecoin, and libp2p Ecosystem WG with this quick [recap](https://www.youtube.com/watch?v=0sOz1ZS7vnc&list=PL_0VrY55uV18pIio5zsQZPhpACZssqGtA). A [playlist](https://youtube.com/playlist?list=PL_0VrY55uV18pIio5zsQZPhpACZssqGtA) with full recordings is also available.
+Are you building on or enjoying IPFS? The Protocol Labs research team wants to know what activities, projects or contributions to IPFS you have found to be most valuable from the past year. Submit a response using this brief form: [IPFS | Crowdsourcing Valuable Contributions](https://forms.gle/5kUzDSna1yoWScpm7).
 
-[BlockScience](https://block.science/) is [helping](https://twitter.com/block_science/status/1561792434052505600?s=20&t=IPnc-msBBblVKOH-AqibvA) complex systems modeling with IPFS’ [content-addressing](https://docs.ipfs.tech/concepts/content-addressing/) capabilities. Read the project’s [explanation](https://medium.com/block-science/the-cats-out-of-the-bag-introducing-content-addressable-transformers-7483e61e3844) of Content-Addressable Transformers (CATs) to learn more.
+Catch up on the August PL EngRes WG All Hands in this full [recording](https://youtu.be/-WEHplQxFrY) of the meeting. It covered exciting projects and deep dives on Thunderdome and Drand’s new timelock encryption launch.
 
-[Web3athon](https://web3athon.xyz/), a hyperlocal people-first hackathon focused on community oriented use cases, is happening until September 15th. [Register now](https://www.hackerearth.com/challenges/hackathon/consensus-2022-2/add-information/)!
+Learn everything about IPFS’s content addressing and content routing subsystems, its content exchange strategies, and how IPFS deals with dynamic, mutable content with [ResNetLab on Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/).
 
-Make sure you get your [tickets](https://www.dappcon.io/#Tickets) for DappCon Berlin 2022 and catch Dietrich Ayala’s [talk](https://twitter.com/dappcon_berlin/status/1559918306588610561?s=20&t=jGAAzNT689QqvcsfS0yhtg) on IPFS browser integrations.
+Listen to a recent discussion with Protocol Labs and Outlier Ventures on building with IPFS in the metaverse, recorded in [Twitter Spaces](https://twitter.com/IPFS/status/1562820869721690112?s=20&t=UY-nwvksa3D4WNnll-zc5w).
 
-UPDATE: FIL-Singapore is back on track and happening September 26th and 27th. Check out the [updated website](https://www.fil-singapore.io/) with all the details and join the IPFS and Filecoin communities at the event.
+Read Dietrich Ayala’s take on the challenges of hiring in web3 in a recent Forbes [article](https://www.forbes.com/sites/ninabambysheva/2022/08/29/web3-growth-stymied-by-scarcity-of-programmers/?sh=2f7fb5907fa4). PL is [looking for](https://boards.greenhouse.io/protocollabs) “developers who are able to think about what the next generation of the internet will look like.”
 
-Join the IPFS and Filecoin communities for DevCon 2022 in Bogota. [Get your tickets](https://devcon.org/en/) and stay tuned for more details!
+[Tune in](https://anchor.fm/futureofnft/episodes/Bridging-Web-2-into-Web-3--IPFS--Filecoin--and-NFT-Storage-with-Jonathan-Victor-from-Protocol-Labs-e1mvjdh) to this recent episode of the Future of NFT podcast and listen to Jonathan Victor discuss bridging the gap between web2 and web3 and NFT.Storage’s use of IPFS and Filecoin.
 
-The Filecoin Green community will also be at DevCon with a LATAM-focused sustainability summit. You can also get your [tickets](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227) early, become a partner of the SBS on the [website](https://sbs.tech/) or [apply ](https://airtable.com/shr4CeIwfweFUHEkr)to be a speaker.
+Find out who are the first research funding recipients of 2022 on the Protocol Labs Research [blog](https://research.protocol.ai/blog/2022/protocol-labs-research-funding-recipients-2022/). The 11 awards include [RFPs](https://github.com/protocol/research-grants/tree/master#requests-for-proposals-rfps), [Summer Research Grants](https://github.com/protocol/research-grants/tree/master#protocol-labs-summer-research-grant), [doctoral fellowships](https://github.com/protocol/research-grants/tree/master#protocol-labs-doctoral-fellowship), and a [postdoctoral fellowship](https://github.com/protocol/research-grants/tree/master#protocol-labs-postdoctoral-fellowship).
 
-Check out Jonathan Victor’s [explanation](https://cointelegraph.com/news/nonfungible-tokens-don-t-live-on-the-blockchain-experts-say) on how [NFT.Storage](https://nft.storage/) can rely on Filecoin and IPFS to store objects such as NFT metadata as a public good for CoinTelegraph.
+Join the IPFS and Filecoin communities for DevCon 2022 in Bogota on October 11th-14th. [Tickets](https://devcon.org/en/) are available now.
 
-Check out [Dawn Kelly](https://twitter.com/run4pancakes)’s [workshop](https://www.youtube.com/watch?v=RSq3UUpDGgg) at presented at Women Build Web3’s [30 Days of Web3](https://www.30daysofweb3.xyz/) on decentralizing your stack by building on Filecoin with [Web3.Storage](https://web3.storage/).
+The [Filecoin Green](https://green.filecoin.io/) community will be at DevCon with a LATAM-focused sustainability summit on October 12. Get your [tickets](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227) early, become a [partner](https://sbs.tech/), or [apply ](https://airtable.com/shr4CeIwfweFUHEkr)to be a speaker.
+
+Funding the Commons is back at [Schelling Point](https://schellingpoint.gitcoin.co/), Oct. 10th in Bogota! Interested in speaking at the FTC track? Fill out the [speaker form](https://airtable.com/shruR7QCn4Bx8tqgg).
 
 ## **Want to help build the new internet? 💼**
 
-[**Content Manager, Copywriter:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=e753a033c6&e=c8385b3b0b) Protocol Labs drives breakthroughs in computing to push humanity forward. Protocol Labs is a product-development lab, but behind the protocols and tools we build, behind the research and implementations, are passionate people, teammates, and community members. Protocol Labs is looking for a content manager that is passionate about writing, content creation, brand building, and web3. **Protocol Labs**, Remote.  
-  
 [**Distributed Computation Engineer:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=4f2511a4c1&e=c8385b3b0b) Define, implement and extend virtual machine concepts to the next generation of p2p, decentralized computation over content-addressed data. We seek talented engineers that are excited to work on a new model of trustless and verifiable computation - where code is distributed over blockchains and executed next to specific copies of data. If successful, we will transform data processing for large-scale datasets, improve cost and efficiency, and open up data processing to larger audiences. You will be part of this project from the very beginning. **Protocol Labs**, Remote.
 
 [**Rust Cryptography Engineer**](https://boards.greenhouse.io/protocollabs/jobs/4616824004): Protocol Labs is an open-source R&D lab where we build protocols, tools, and services to radically improve the internet, and one of those is Lurk Lab. The team is growing and looking for a Lurk Lab Engineer who can build core functionalities of the Lurk language, with specific focus on the development and implementation of applications. The ideal candidate will be fluent in Rust, familiar with zero-knowledge proofs and related cryptographic primitives, and experienced developing user-centric applications. **Protocol Labs**, Remote.
