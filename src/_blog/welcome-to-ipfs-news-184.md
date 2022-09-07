@@ -1,15 +1,15 @@
 ---
 title: Welcome to IPFS News 184!
-description: A look at the highlights from the first-ever IPFS implementers event
-  in Iceland & more in IPFS News 183!
+description: Check out IPFS’ Role in community governance via the Snapshot case study
+  & more in IPFS News 184!
 author: Emily Vaughan
-date: 2022-08-24
-permalink: "/weekly-183/"
+date: 2022-09-07
+permalink: "/weekly-184/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
+- go-ipfs
 - NFTs
-- Rust
 - weekly
 
 ---
