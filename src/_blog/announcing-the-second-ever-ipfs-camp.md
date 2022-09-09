@@ -1,6 +1,6 @@
 ---
 title: Announcing the Second Ever IPFS Camp!
-description: Join the community to discuss and learn more about the present and future
+description: Join us to discuss and learn more about the present and future
   of IPFS.
 author: ''
 date: 2022-09-09
