@@ -2,11 +2,12 @@
 date: 2022-08-23
 permalink: /ipfs-breaking-free-client-server/
 title: Breaking Free from the Client-Server Model with IPFS
-description:
+description: A 201 post about distributed networking and how IPFS plays a role in getting us there.
 author: Discordian
 header_image: /ipfs-breaking-free/header.png
 tags:
-  - 'ipfs'
+  - ipfs
+  - tutorial
 ---
 
 @[youtube](EQuQcpeh2QE)
