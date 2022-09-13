@@ -1,5 +1,5 @@
 ---
-date: 2022-08-23
+date: 2022-09-15
 permalink: /ipfs-breaking-free-client-server/
 title: Breaking Free from the Client-Server Model with IPFS
 description: A 201 post about distributed networking and how IPFS plays a role in getting us there.
@@ -10,7 +10,7 @@ tags:
   - tutorial
 ---
 
-@[youtube](EQuQcpeh2QE)
+@[youtube](aZnFmlXHHzg)
 *The video above is a condensed version of this post, if you're looking for a video containing the entirety of this post, head down to [the bottom of this page](#Videos) to find it.*
 
 **Table of Contents**
@@ -156,7 +156,7 @@ Web3 technologies like IPFS help us exit a world of centralization. This gives m
 #### Videos
 
 - [Breaking Free from the Client-Server Model (Full Version, Live)](https://www.youtube.com/watch?v=hEcLeEXiLXY)
-- [Breaking Free from the Client-Server Model (Condensed Version)](https://www.youtube.com/watch?v=EQuQcpeh2QE)
+- [Breaking Free from the Client-Server Model (Condensed Version)](https://www.youtube.com/watch?v=aZnFmlXHHzg)
 - [Introduction to IPFS & Filecoin](https://www.youtube.com/watch?v=5-0_DqXGY-M)
 
 #### Case Studies
