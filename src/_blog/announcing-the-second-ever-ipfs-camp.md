@@ -14,7 +14,7 @@ Get ready for [IPFS Camp 2022](https://2022.ipfs.camp/)! After a long hiatus, th
 
 IPFS Camp is a gathering for devs, operators, implementers, researchers – and you. Join the event for talks, workshops, discussion circles, hacking time, and more, all focused on celebrating and advancing IPFS. Check out the 2019 recap [video](https://www.youtube.com/watch?v=kc_dxO-V8YM) and [blog post](https://blog.ipfs.tech/2019-07-08-ipfs-camp-recap/) for a taste of what to expect.
 
-### **Help make IPFS Camp awesome!**
+### **Featured tracks**
 
 This will be a decentralized event with multiple tracks and track leads. Most tracks will be half-day or full-day; a few others may extend longer. A few of the tracks that may be in store include:
 
