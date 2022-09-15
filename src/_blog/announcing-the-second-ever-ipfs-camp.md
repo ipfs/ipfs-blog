@@ -3,7 +3,7 @@ title: Announcing the Second Ever IPFS Camp!
 description: Join us to discuss and learn more about the present and future
   of IPFS.
 author: ''
-date: 2022-09-09
+date: 2022-09-14
 permalink: "/2022-09-09-announcing-ipfs-camp-2022/"
 translationKey: ''
 header_image: "/ipfs-blog-header_-ipfs-camp.png"
@@ -21,8 +21,8 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * IPFS Tools for Fun & Awesome: A highlights reel of the most exciting and useful user and developer tools for IPFS.
 * Learning IPFS 101: What is IPFS? What can it do for me, my projects, and the internet as a whole? How do I get started using or building with it?
 * Learning IPFS 201: How do I design production-grade applications with IPFS? How do things like CAR files and gateways work? 
-* Operating IPFS at Scale: Talks from large-scale IPFS about their deployments, best practices, problems encountered, and solutions built
-* Decentralized Science and IPFS
+* Operating IPFS at Scale: Talks from large-scale IPFS about their deployments, best practices, problems encountered, and solutions built.
+* Decentralized Science and IPFS.
 * Measurement and Performance: Talks about work measuring various aspects of IPFS, libp2p, or similar systems. Profiling, measurement, and takeaways and recommendations for builders.
 * Libp2p Day: A gathering of libp2p builders and users. 
 * Growing with IPFS: Contributing, building, funding, grants, accelerators, decentralized job fair, and more ways to get involved.
