@@ -23,7 +23,6 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * Learning IPFS 201: How do I design production-grade applications with IPFS? How do things like CAR files and gateways work? 
 * Operating IPFS at Scale: Talks from large-scale IPFS about their deployments, best practices, problems encountered, and solutions built
 * Decentralized Science and IPFS
-* Introduction to IPFS
 * Lightning Talks from Builders, showcasing IPFS projects from around the world
 * New Problems in Decentralized Network Design, an invitation to the research community
 * Growing with IPFS: funding, grants, decentralized job fair, and more
