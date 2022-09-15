@@ -39,38 +39,38 @@ tags:
 
 ## What is the Client-Server Model?
 
-![Only a few companies are responsible for serving up most of the web](/ipfs-breaking-free/1.png)
+![Only a few companies are responsible for serving up most of the web](../assets/ipfs-breaking-free/1.png)
 ### Limitations of the Client-Server Model
 
 Today, only a few companies are responsible for serving up most of the web. We have Google, Amazon, Facebook, and Fastly to name a few. These companies combined serve us our ads, web pages, social media, videos, images, and allow us to host servers and services on their infrastructures. To interact with these services, we also have to use their APIs. We send some data to their servers, and wait for a response. We then process that response and do whatever magic we need to do to create our apps and websites.
 
 There are several problems with this design, from costs to privacy. Free services for example are often funded by ads. Ads can destroy privacy as all our data is routed through a few central points and sold to third parties. Effectively, Free services are paid for by our attention and private information.
 
-![The source of truth comes from a central entity, the server](/ipfs-breaking-free/2.png)
+![The source of truth comes from a central entity, the server](../assets/ipfs-breaking-free/2.png)
 ### Single Source of Truth
 
 If you want to view a video, send a message, collaborate with remote teammates, or do anything on the web at all, you’re going through someone’s central server. This principle is fundamental to the client-server model. We use a client, such as a web-browser or chat app, and **communicate with a single entity**, that’s the server in the client-server model. Relying on just one point for our source of truth also opens up a whole host of problems like trust. Today, we have SSL certificates to verify an entity is who they say they are, however that doesn’t do us much good if that service is compromised. Even if we are sure of who the entity is, it still doesn’t help us know how advertisers or others are using our data, or even what data is being collected.
 
 Developers building applications often rely on APIs operated by large centralized entities (e.g. Stripe, Google, Cloudinary, Auth0). The more APIs your application relies on, the more fragile it is. If any of the APIs are unavailable, your app stops functioning. Today, a popular way to build is to lean on the APIs of another remote service, which makes the web as a whole very fragile.
 
-![Data is addressed by an arbitrary location](/ipfs-breaking-free/3.png)
+![Data is addressed by an arbitrary location](../assets/ipfs-breaking-free/3.png)
 ### Location Based Addressing
 
 In the client-server model, generally if you want some data, you must know ***where*** it is. If you want some image, you generally need the full URL to that image to retrieve and share it. If that image is no longer available, you either need to search for it, or upload a copy on another server to make it available again (*that's assuming you even have a copy yourself*). After uploading, you must also share the new location of that image. This principle is called **location-based addressing**, and it's how most of the world wide web functions today. You go to a website, it has a URL, and all data from that website is addressed by the location of the data. If the image analogy is too hard to follow, think of how you’d share a video on your favourite video platform; you’d likely just share the URL to the video, also known as the location of the video.
 
-![An outage of just one server can bring several services down](/ipfs-breaking-free/4.png)
+![An outage of just one server can bring several services down](../assets/ipfs-breaking-free/4.png)
 ### Single Point of Failure
 
 Think of when [AWS, Fastly, Facebook, or YouTube go offline](https://totaluptime.com/notable-network-and-cloud-outages-of-2021/). These events are treated as news, and often slow or even halt productivity. **When one of these services goes offline, it’s much more impactful than just a single image or video being lost**, you’ve now lost access to your ability to make new data available at all! All the data you have hosted in these central hubs is temporarily completely inaccessible, or worse, permanently. The location of the data cannot be accessed, because it’s offline. You cannot ask for the data from the wider web, and expect to receive it, even if another related entity has the very data you’re looking for.
 
 You could of course, host your own service. Maybe distribute out the locations of your servers in a way that prevents a single outage from taking down your service. Let’s say you even come up with the next big idea for a website or platform, where you’re in control of all your infrastructure, not relying on some *other* central entity for your needs…
 
-![Scaling can be very expensive - an explosion of traffic can translate into an explosion of cost](/ipfs-breaking-free/5.png)
+![Scaling can be very expensive - an explosion of traffic can translate into an explosion of cost](../assets/ipfs-breaking-free/5.png)
 ### Costly to Scale
 
 This leads in to my next point: **Scaling can be very expensive**. These expenses don’t always, or maybe not even usually happen linearly. Meaning, an explosion of traffic can translate into an explosion of costs. Whether you host your own infrastructure, or you pay someone else to, you’ll be paying for it if you want it to scale and run effectively. The more users you have, the more traffic that generates, your CPU, RAM, and bandwidth expenses ramp up. On top of this, if users end up depending on your service, you’re obligated to keep this service running and available if you want to retain users and keep them happy. Not everyone can afford these costs, and they can be quite daunting, especially if you just want to create a fun project, technology, or even a blog. A lot of companies mentioned previously turn to advertising  to supplement these costs. This results in so much of humanity selling their private information in exchange for free services online.
 
-![Companies need to decide what types of content they want to allow/retain on their services](/ipfs-breaking-free/6.png)
+![Companies need to decide what types of content they want to allow/retain on their services](../assets/ipfs-breaking-free/6.png)
 ### Restricted and <span style="background-color:#333;">Censored</span> Content
 
 Content creators are often completely locked to a few platforms like YouTube, Instagram, and others. Those can be subject to a whole host of rules and regulations as well, far more restrictive than what your local government might allow, and you have no say in when or how those rules change.
@@ -81,11 +81,11 @@ We can do better; **breaking free from the client-server model means re-thinking
 
 ## The Distributed Web
 
-![The distributed web](/ipfs-breaking-free/8.png)
+![The distributed web](../assets/ipfs-breaking-free/8.png)
 
 This new model is referring to **the distributed web**, so let’s talk about that, and how IPFS fits in. But first, for the uninitiated, let’s briefly discuss what the distributed web is, and what it means to you. Whether you’re a user or a developer, you can benefit from the distributed web, what I think of as web3.
 
-![A picture of 3 networking models, centralized, decentralized, and distributed. Centralized has a central point, with other spokes connected to it. Decentralized has multiple central points linked out with spokes. Distributed has multiple points all linked together.](/ipfs-breaking-free/9.png)
+![A picture of 3 networking models, centralized, decentralized, and distributed. Centralized has a central point, with other spokes connected to it. Decentralized has multiple central points linked out with spokes. Distributed has multiple points all linked together.](../assets/ipfs-breaking-free/9.png)
 ### Centralized vs Decentralized vs Distributed
 
 Pictured above are 3 networking models. The client-server model is a **centralized model**. This is why we’re always talking about central servers and single points of failure. You can see the central point in orange, this is the server. Then the spokes are the clients, who are often the users. This graphic should make it easy to see how if that central point is ever removed, then the users can no longer communicate with one-another.
@@ -94,12 +94,12 @@ The **decentralized model** is a huge improvement to the centralized model. It s
 
 In the **distributed model** each user is also providing a piece of the network itself. If a user goes offline, the network functions as normal. If a major node goes down, the network can still function as well by leveraging the local peers. It is the champion of resilience, and the model that will take us forward. Some nodes might be bigger than others, but no single outage can take the entire network down. Let’s take a look at how IPFS fits into all this, and also dive deeper into the distributed model itself.
 
-![IPFS creates mathematically generated fingerprints for your data, called content IDs (CIDs)](/ipfs-breaking-free/10.png)
+![IPFS creates mathematically generated fingerprints for your data, called content IDs (CIDs)](../assets/ipfs-breaking-free/10.png)
 ### Content Addressing
 
 We went over location-based addressing, now let’s talk about one of the fundamental building blocks of an alternative called **content addressing**. IPFS creates mathematically generated fingerprints for data called content identifiers, or CIDs for short. This step relates to something called IPLD or Inter-Planetary Linked Data which is fundamental to how IPFS works to give us content addressing, **breaking us free from location-based addressing**.
 
-![](/ipfs-breaking-free/11.png)
+![](../assets/ipfs-breaking-free/11.png)
 #### The Composition of a CID
 
 Pictured above is the anatomy of a v1 CID, represented in binary.  On the far left of the image, not pictured here would be the multibase prefix. This is actually omitted because when working with binary, there actually isn’t a multibase prefix, you can save that byte. What the multibase prefix does is allows us to know what base encoding was used to create the CID, as IPLD supports many. 
@@ -110,7 +110,7 @@ Now we’re to the multicodec, **dag-pb**, which is indicating this DAG (directe
 
 Next up is the multihash, which includes 3 things, a multihash algorithm, a multihash length, and then finally the hash digest itself. You can see here we’re working with a **sha2 hash of 32 bytes in length**, then the hash itself trails off the screen. The [multihash specification](https://github.com/multiformats/multihash) is also available in the multiformats github repository.
 
-![You know the data is correct if the CID is valid. CIDs allow you to get data from anywhere and anyone.](/ipfs-breaking-free/12.png)
+![You know the data is correct if the CID is valid. CIDs allow you to get data from anywhere and anyone.](../assets/ipfs-breaking-free/12.png)
 ### Trustless Verification and Persistence
 
 As we went over, **you don’t have to trust who’s sending data to you, as you can run the hash function of the CID** and verify it yourself. IPFS uses CIDs by either looking up the CID in the distributed hash table (the DHT), or by using bitswap and asking their local peers “do you have this CID?”. With this, it no longer matters where the data lives, as we know exactly what we want, so it doesn’t matter who has it, just that *someone* has it. We’ve now broken free from location-based addressing.
