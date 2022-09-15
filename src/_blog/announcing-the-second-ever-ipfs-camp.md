@@ -24,7 +24,7 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * Operating IPFS at Scale: Talks from large-scale IPFS about their deployments, best practices, problems encountered, and solutions built
 * Decentralized Science and IPFS
 * Measurement and Performance: Talks about work measuring various aspects of IPFS, libp2p, or similar systems. Profiling, measurement, and takeaways and recommendations for builders.
-* New Problems in Decentralized Network Design, an invitation to the research community
+* Libp2p Day: A gathering of libp2p builders and users. 
 * Growing with IPFS: funding, grants, decentralized job fair, and more
 * Project and Community
 
