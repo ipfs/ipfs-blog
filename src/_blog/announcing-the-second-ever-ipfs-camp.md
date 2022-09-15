@@ -26,7 +26,11 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * Measurement and Performance: Talks about work measuring various aspects of IPFS, libp2p, or similar systems. Profiling, measurement, and takeaways and recommendations for builders.
 * Libp2p Day: A gathering of libp2p builders and users. 
 * Growing with IPFS: Contributing, building, funding, grants, accelerators, decentralized job fair, and more ways to get involved.
-* Project and Community
+* Content Routing: Approaches and protocols to content routing in IPFS, what we've learned so far, and talks about possible directions for the future.
+* IPFS Implementations: A wave of new IPFS implementations has grown in the past year, and go-ipfs has evolved into kubo. Meet the teams behind each one, learn what each is best at, and see roadmaps for the future.
+* Artists, Creators, & IPFS: Learn how various artists and creators use IPFS. Learn what's important about decentralization, how to mint NFTs, and how different platforms stack up.
+* Gaming, Metaverse, and Video: Demos of how IPFS can save bandwidth and increase flexibility. Talks about directions for the future.
+
 
 CFPs will open soon, but in the meantime please share any ideas for new tracks, or submissions to these tracks, on [Github](https://discuss.ipfs.tech/t/announcing-the-second-ever-ipfs-camp-oct-28-30-2022/15078).
 
