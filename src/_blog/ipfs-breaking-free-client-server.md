@@ -137,7 +137,9 @@ This property is very important to the inter-planetary aspect of IPFS. If someon
 
 ## Conclusion
 
-Web3 technologies like IPFS help us exit a world of centralization. This gives more power to the consumer, and less to companies looking to harvest your private information. IPFS also helps us achieve more resilience for our data with a solid distributed design. Below are some choice links for how to begin using IPFS for users just getting started, to developers looking to break into the technology.
+Web3 technologies like IPFS help us exit a world of centralization. This gives more power to the consumer, and less to companies looking to harvest your private information. IPFS also helps us achieve more resilience and interoperability for our data with a solid distributed design. 
+
+If you wanna learn more, below are some links for how to begin using IPFS for new users and for developers looking to delve deeper into the technology.
 
 
 ## Links
