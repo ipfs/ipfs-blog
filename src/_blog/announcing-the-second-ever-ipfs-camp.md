@@ -34,4 +34,4 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 
 CFPs will open soon, but in the meantime please share any ideas for new tracks, or submissions to these tracks, on [Github](https://discuss.ipfs.tech/t/announcing-the-second-ever-ipfs-camp-oct-28-30-2022/15078).
 
-Tickets are [available now](https://2022.ipfs.camp/)! Stay tuned to the [ipfs.camp](https://ipfs.camp/) website for the very latest info and resources.
+Tickets are [available now](https://2022.ipfs.camp/)! Stay tuned to the [2022.ipfs.camp](https://2022.ipfs.camp/) website for the very latest info and resources.
