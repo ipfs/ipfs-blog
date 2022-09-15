@@ -19,7 +19,8 @@ IPFS Camp is a gathering for devs, operators, implementers, researchers – and 
 This will be a decentralized event with multiple tracks and track leads. Most tracks will be half-day or full-day; a few others may extend longer. Here are a few of the tracks in store:
 
 * IPFS Tools for Fun & Awesome: A highlights reel of the most exciting and useful user and developer tools for IPFS.
-* Designing the next internet with IPFS: 201-level talks
+* Learning IPFS 101: What is IPFS? What can it do for me, my projects, and the internet as a whole? How do I get started using or building with it?
+* Learning IPFS 201: How do I design production-grade applications with IPFS? How do things like CAR files and gateways work? 
 * Operating IPFS at Scale: Talks from IPFS Operators about their deployments, best practices, tools they have built, problems encountered and solutions built (evolution of Pinning Summit)
 * Decentralized Science and IPFS
 * Introduction to IPFS
