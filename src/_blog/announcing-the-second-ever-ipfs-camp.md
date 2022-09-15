@@ -16,7 +16,7 @@ IPFS Camp is a gathering for devs, operators, implementers, researchers – and 
 
 ### **Featured tracks**
 
-This will be a decentralized event with multiple tracks and track leads. Most tracks will be half-day or full-day; a few others may extend longer. A few of the tracks that may be in store include:
+This will be a decentralized event with multiple tracks and track leads. Most tracks will be half-day or full-day; a few others may extend longer. Here are a few of the tracks in store:
 
 * Implementations Showcase: Learn about exciting new implementations
 * Designing the next internet with IPFS: 201-level talks
