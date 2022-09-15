@@ -106,7 +106,7 @@ Pictured above is the anatomy of a v1 CID, represented in binary.  On the far le
 
 Next we have the version identifier, which is whatever version number we’re working with, in this case, we’re working with a **version 1** CID.
 
-Now we’re to the multicodec, **dag-pb**, which is indicating this DAG (directed-acyclic graph) is protocol buffer encoded. The multicodec field itself is an unsigned-varint. The list of supported codecs are available in the [github multiformats repository](https://github.com/multiformats/multicodec/blob/master/table.csv).
+Next, we have the multicodec, **dag-pb**, which indicates this DAG (directed-acyclic graph) is protocol buffer encoded. The multicodec field itself is an unsigned-varint. The list of supported codecs is available in the [github multiformats repository](https://github.com/multiformats/multicodec/blob/master/table.csv).
 
 Next up is the multihash, which includes 3 things, a multihash algorithm, a multihash length, and then finally the hash digest itself. You can see here we’re working with a **sha2 hash of 32 bytes in length**, then the hash itself trails off the screen. The [multihash specification](https://github.com/multiformats/multihash) is also available in the multiformats github repository.
 
