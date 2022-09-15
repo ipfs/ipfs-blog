@@ -21,7 +21,7 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * IPFS Tools for Fun & Awesome: A highlights reel of the most exciting and useful user and developer tools for IPFS.
 * Learning IPFS 101: What is IPFS? What can it do for me, my projects, and the internet as a whole? How do I get started using or building with it?
 * Learning IPFS 201: How do I design production-grade applications with IPFS? How do things like CAR files and gateways work? 
-* Operating IPFS at Scale: Talks from IPFS Operators about their deployments, best practices, tools they have built, problems encountered and solutions built (evolution of Pinning Summit)
+* Operating IPFS at Scale: Talks from large-scale IPFS about their deployments, best practices, problems encountered, and solutions built
 * Decentralized Science and IPFS
 * Introduction to IPFS
 * Lightning Talks from Builders, showcasing IPFS projects from around the world
