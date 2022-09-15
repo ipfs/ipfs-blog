@@ -133,7 +133,7 @@ We touched on how IPFS users help re-serve data they’re interested in to nearb
 
 If a bunch of nodes are attempting to download your CID, they’ll be automatically re-sharing the data as well. While your traffic explodes from people requesting your CID, those very same people are also helping send the data itself to their friends or colleagues automatically. **The more popular your CID is, the easier it is for people to retrieve the data from someone who might be more local to them**.
 
-This property is very important to the inter-planetary aspect of IPFS. If someone on Mars had some data they originally retrieved from Earth, another Mars user shouldn’t have to wait to retrieve the  same data from Earth. **The network should automatically figure out there’s another node on Mars willing to serve that data**. Content addressing and **the distributed web help us unlock such a future** on the network level, transparently.
+This property is very important to the inter-planetary aspect of IPFS. If someone on Mars had some data they originally retrieved from Earth, another Mars user shouldn’t have to wait to retrieve the same data from Earth. **The network should automatically figure out there’s another node on Mars willing to serve that data**. Content addressing and **the distributed web help us unlock such a future** on the network level, transparently.
 
 ## Conclusion
 
