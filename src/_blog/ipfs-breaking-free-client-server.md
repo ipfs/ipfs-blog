@@ -44,7 +44,7 @@ tags:
 
 Today, only a few companies are responsible for serving up most of the web. We have Google, Amazon, Facebook, and Fastly to name a few. These companies combined serve us our ads, web pages, social media, videos, images, and allow us to host servers and services on their infrastructures. To interact with these services, we also have to use their APIs. We send some data to their servers, and wait for a response. We then process that response and do whatever magic we need to do to create our apps and websites.
 
-There are several problems with this design, from costs to privacy. Free services for example are often funded by ads. Ads can destroy privacy as all our data is routed through a few central points and sold to third parties. Effectively, Free services are paid for by our attention and private information.
+There are several problems with this design, from costs to privacy. Free services for example are often funded by ads. Ads can destroy privacy as all our data is routed through a few central points and sold to third parties. Effectively, free services are paid for by our attention and private information.
 
 ![The source of truth comes from a central entity, the server](../assets/ipfs-breaking-free/2.png)
 ### Single Source of Truth
