@@ -25,7 +25,7 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * Decentralized Science and IPFS
 * Measurement and Performance: Talks about work measuring various aspects of IPFS, libp2p, or similar systems. Profiling, measurement, and takeaways and recommendations for builders.
 * Libp2p Day: A gathering of libp2p builders and users. 
-* Growing with IPFS: funding, grants, decentralized job fair, and more
+* Growing with IPFS: Contributing, building, funding, grants, accelerators, decentralized job fair, and more ways to get involved.
 * Project and Community
 
 CFPs will open soon, but in the meantime please share any ideas for new tracks, or submissions to these tracks, on [Github](https://discuss.ipfs.tech/t/announcing-the-second-ever-ipfs-camp-oct-28-30-2022/15078).
