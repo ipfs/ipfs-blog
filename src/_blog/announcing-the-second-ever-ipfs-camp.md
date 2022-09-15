@@ -32,6 +32,8 @@ This will be a decentralized event with multiple tracks and track leads. Most tr
 * Gaming, Metaverse, and Video: Demos of how IPFS can save bandwidth and increase flexibility. Talks about directions for the future.
 
 
-CFPs will open soon, but in the meantime please share any ideas for new tracks, or submissions to these tracks, on [Github](https://discuss.ipfs.tech/t/announcing-the-second-ever-ipfs-camp-oct-28-30-2022/15078).
+### Help make IPFS Camp awesome!
+
+We want to showcase and celebrate users, builders, and contributors from across the globe. Please consider sharing your knowledge and experiences with the community by [Applying to Speak](https://airtable.com/shrOxmXUqwojf0Bjj) or [Suggesting a New Track](https://airtable.com/shrBQqf7YJRPdrgUo).
 
 Tickets are [available now](https://2022.ipfs.camp/)! Stay tuned to the [2022.ipfs.camp](https://2022.ipfs.camp/) website for the very latest info and resources.
