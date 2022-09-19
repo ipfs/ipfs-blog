@@ -1,5 +1,5 @@
 ---
-date: 2022-09-15
+date: 2022-09-19
 permalink: /ipfs-breaking-free-client-server/
 title: Breaking Free from the Client-Server Model with IPFS
 description: A 201 post about distributed networking and how IPFS plays a role in getting us there.
