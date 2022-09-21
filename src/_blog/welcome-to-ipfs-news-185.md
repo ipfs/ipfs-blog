@@ -1,14 +1,14 @@
 ---
 title: Welcome to IPFS News 185!
-description: Check out IPFS’ Role in community governance via the Snapshot case study
-  & more in IPFS News 184!
+description: IPFS Camp is back, join us in Lisbon, plus more in this edition of IPFS
+  News!
 author: Emily Vaughan
-date: 2022-09-07
-permalink: "/weekly-184/"
+date: 2022-09-21
+permalink: "/weekly-185/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
-- go-ipfs
+- IPFS Camp
 - NFTs
 - weekly
 
