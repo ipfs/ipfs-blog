@@ -4,6 +4,12 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: 'Just released: Kubo 0.16.0!'
+  date: 2022-10-04
+  publish_date: 
+  path: https://github.com/ipfs/kubo/releases/tag/v0.16.0
+  tags:
+  - go-ipfs
 - title: 'Just released: Kubo (formerly go-ipfs) 0.15.0!'
   date: 2022-08-30
   publish_date: 
