@@ -16,7 +16,7 @@ tags:
 ---
 ## **Breaking Free from the Client-Server Model with IPFS**
 
-![](../assets/ipfs-blog-header_-ipfs-camp.png)
+![](../assets/ipfs-breaking-free/header.png)
 
 Today, only a few companies are responsible for serving up most of the web. These companies combined serve us all our ads, web pages, social media, videos, images, and allow us to host servers and services on their proprietary infrastructures. This is because the web has been built under a client-server model that is quickly losing favor among users and developers alike. IPFS is part of a new wave of protocols and infrastructure solutions that are building the distributed web. Find out more about how content addressing and decentralized storage are essential to this future on the [**IPFS blog**](https://blog.ipfs.tech/ipfs-breaking-free-client-server/).
 
