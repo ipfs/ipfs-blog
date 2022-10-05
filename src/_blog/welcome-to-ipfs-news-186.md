@@ -8,6 +8,7 @@ permalink: "/weekly-186/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
+- API
 - go-ipfs
 - IPFS Camp
 - weekly
@@ -17,40 +18,38 @@ tags:
 
 ![](../assets/ipfs-blog-header_-ipfs-camp.png)
 
-Today, only a few companies are responsible for serving up most of the web. These companies combined serve us all our ads, web pages, social media, videos, images, and allow us to host servers and services on their proprietary infrastructures. This is because the web has been built under a client-server model that is quickly losing favor among users and developers alike. IPFS is part of a new wave of protocols and infrastructure solutions that are building the distributed web. Find out more about how content addressing and decentralized storage are essential to this future on the [IPFS blog](https://blog.ipfs.tech/ipfs-breaking-free-client-server/).
+Today, only a few companies are responsible for serving up most of the web. These companies combined serve us all our ads, web pages, social media, videos, images, and allow us to host servers and services on their proprietary infrastructures. This is because the web has been built under a client-server model that is quickly losing favor among users and developers alike. IPFS is part of a new wave of protocols and infrastructure solutions that are building the distributed web. Find out more about how content addressing and decentralized storage are essential to this future on the [**IPFS blog**](https://blog.ipfs.tech/ipfs-breaking-free-client-server/).
 
 ## **Brand New on IPFS ✨**
 
-1. The new [Kubo v0.16.0](https://github.com/ipfs/kubo/releases/tag/v0.16.0) is now live. The release supports a more configurable delegated routing system with [Reframe protocol](https://github.com/ipfs/specs/tree/main/reframe#readme). [See for yourself](https://github.com/ipfs/kubo/releases/tag/v0.16.0).
-2. The IPFS GUI working group is looking to improve the experience on the [Public Gateway Checker](https://ipfs.github.io/public-gateway-checker/). [Book some time](http://calendly/) to let us know your thoughts and get a swag redemption code.
-3. [Fission](https://fission.codes/) added a new feature to its SDK called WalletAuth that enables IPFS encrypted storage for any blockchain account. Learn more in this [thread](https://twitter.com/FISSIONcodes/status/1573092516873781248).
-4. Check out [Capyloon](https://capyloon.org/), a web-based smartphone OS with a built-in IPFS Rust implementation.
+1. The IPFS GUI working group is looking to improve the experience on the [**Public Gateway Checker**](https://ipfs.github.io/public-gateway-checker/). [**Book some time**](http://calendly/) to let us know your thoughts and get a swag redemption code.
+2. The new [**Kubo v0.16.0**](https://github.com/ipfs/kubo/releases/tag/v0.16.0) is now live. The release supports a more configurable delegated routing system with [**Reframe protocol**](https://github.com/ipfs/specs/tree/main/reframe#readme). [**See for yourself**](https://github.com/ipfs/kubo/releases/tag/v0.16.0).
+3. Check out [**Capyloon**](https://capyloon.org/), a web-based smartphone OS with a built-in IPFS Rust implementation.
+4. [**Fission**](https://fission.codes/) added a new feature to its SDK called WalletAuth that enables IPFS encrypted storage for any blockchain account. Learn more in this [**thread**](https://twitter.com/FISSIONcodes/status/1573092516873781248).
 
 ## **Around the ecosystem 🌎**
 
-The Data DAO Hackathon ended with 71 projects building in categories including Best Use of Filecoin and IPFS, Multi-chain Storage, and Computing over Data. Find out who won on the [Filswan blog](https://filswan.medium.com/data-dao-hackathon-prize-winners-33df617ea6d9).
-
-[Sign up](https://airtable.com/shrsicDt1IpeIKVIg) for LabWeek22 updates. From Oct. 24th to Nov. 4th, the Protocol Labs Network will be in Lisbon for the first-ever decentralized conference discussing public goods funding, cryptoeconomics, and DeSci.
-
-Get ready for next week! Join communities across the ecosystem, including IPFS and Filecoin, for DevCon 2022 in Bogotá on October 11th-14th. [Tickets](https://devcon.org/en/) are available now.
-
-The [Filecoin Green](https://green.filecoin.io/) community will be at DevCon with a LATAM-focused sustainability summit on October 12. Get your [tickets](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227) early, become a [partner](https://sbs.tech/), or [apply](https://airtable.com/shr4CeIwfweFUHEkr) to be a speaker.
-
-Funding the Commons is back at [Schelling Point](https://schellingpoint.gitcoin.co/), happening Oct 10th in Bogotá. If you’re interested in speaking at the FTC track, fill out the [speaker form](https://airtable.com/shruR7QCn4Bx8tqgg).
-
-If you’re a scholar looking to connect at IPFS Camp, [apply](https://airtable.com/shrd4kSljHYHxmU1b) to the IPFS Scholar program before September 20th to be one of 50 participants who will recieve flights, accommodation, and event entry.
-
-Learn how to deploy a Kubo IPFS node to Fly.io by watching this thorough [walkthrough](https://www.youtube.com/watch?v=k1Hcg3B43Q4) video with Daniel Norman.
-
-Check out this [tutorial](https://www.youtube.com/watch?v=Ga9gfoZSm0Y) on how to work with the IPFS API in a Go application. You’ll learn how to add a file to IPFS, read it, download it to your computer, add it to IPNS, and read it from IPNS.
+The Data DAO Hackathon ended with 71 projects building in categories including Best Use of Filecoin and IPFS, Multi-chain Storage, and Computing over Data. Find out who won on the [**Filswan blog**](https://filswan.medium.com/data-dao-hackathon-prize-winners-33df617ea6d9).  
+  
+[**Sign up**](https://airtable.com/shrsicDt1IpeIKVIg) for LabWeek22 updates. From October 24th to November 4th, the Protocol Labs Network will be in Lisbon for the first-ever decentralized conference discussing public goods funding, cryptoeconomics, and DeSci.  
+  
+Get ready for next week! Join communities across the ecosystem, including IPFS and Filecoin, for DevCon 2022 in Bogotá on October 11th - 14th. Check out the full agenda, keynote speakers, and more on the [**official site**](https://devcon.org/en/).  
+  
+The [**Filecoin Green**](https://green.filecoin.io/) community will be at DevCon with a LATAM-focused sustainability summit on October 12th. Get your [**tickets**](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227)!  
+  
+Funding the Commons is back at [**Schelling Point**](https://schellingpoint.gitcoin.co/) for a pop up, happening Oct 10th in Bogotá. RSVP for the event on the [**Schelling Point website**](https://schellingpoint.gitcoin.co/).   
+  
+Learn how to deploy a Kubo IPFS node to Fly.io by watching this thorough [**walkthrough**](https://www.youtube.com/watch?v=k1Hcg3B43Q4) video with Daniel Norman.   
+  
+Check out this [**tutorial**](https://www.youtube.com/watch?v=Ga9gfoZSm0Y) on how to work with the IPFS API in a Go application. You’ll learn how to add a file to IPFS, read it, download it to your computer, add it to IPNS, and read it from IPNS.
 
 ![](../assets/banner-2.png)
 
 ## [**IPFS Camp**](https://2022.ipfs.camp/) Reminder 🏕
 
-Join the IPFS community in Lisbon, Portugal on October 28 - 30th! Hosted at the stunning Convento do Beato, IPFS Camp is a gathering for devs, operators, implementers, users, researchers – and you. Join us for talks, workshops, discussion circles, hacking time, and more. Check out the [schedule](https://2022.ipfs.camp/#schedule) and [grab your ticket](https://lu.ma/ipfscamp22) now. We hope to see you there and look forward to building the next generation of the web together!  
+Join the IPFS community in Lisbon, Portugal on October 28 - 30th! Hosted at the stunning Convento do Beato, IPFS Camp is a gathering for devs, operators, implementers, users, researchers – and you. Join us for talks, workshops, discussion circles, hacking time, and more. Check out the [**schedule**](https://2022.ipfs.camp/#schedule) and [**grab your ticket**](https://lu.ma/ipfscamp22) now. We hope to see you there and look forward to building the next generation of the web together!  
   
-🎟 Use the exclusive discount code "IPFSNEWSVIP" for 25% off your [ticket](https://lu.ma/ipfscamp22)!
+🎟 Use the exclusive discount code "IPFSNEWSVIP" for 25% off your [**ticket**](https://lu.ma/ipfscamp22)!
 
 ## **Want to help build the new internet? 💼**
 
