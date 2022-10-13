@@ -1,7 +1,7 @@
 ---
 title: IPFS over WebDAV
-description: ''
-author: ''
+description: IPFS over WebDAV, a deep dive to figure out the possibilities!
+author: Mark Gaiser
 date: 2022-10-13
 permalink: "/2022-10-13-ipfs-over-webdav/"
 translationKey: ''
