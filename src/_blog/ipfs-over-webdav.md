@@ -5,7 +5,7 @@ author: Mark Gaiser
 date: 2022-10-13
 permalink: "/2022-10-13-ipfs-over-webdav/"
 translationKey: ''
-header_image: ''
+header_image: "/0003_v2.jpg"
 tags: []
 
 ---
