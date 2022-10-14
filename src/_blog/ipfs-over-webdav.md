@@ -9,6 +9,7 @@ header_image: "/0003_v2.jpg"
 tags: []
 
 ---
+<style>.type-rich td,.type-rich th{padding-right:1.5em;text-align:left;}</style>
 # IPFS over WebDAV
 [WebDAV](https://en.wikipedia.org/wiki/WebDAV) is a protocol that extends the HTTP protocol. The intent is for webserver to also act as fileservers. A user could access WebDAV enabled webservers in their native filebrowser and other locally running applications. It effectively allows managing your files on your webserver straight from your file explorer as if they were local files. This technology, over time, found it's way into every major operating system. What WebDAV has achieved here is where IPFS needs to be to. Easily accessible in your file browser. Let's take a look at why such an ancient protocol could be a good fit for IPFS purposes.
 
