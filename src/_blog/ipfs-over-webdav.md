@@ -174,7 +174,7 @@ Legend:
 :angry: = Not working at all. No clear path to fix it either.
 :cry: = Works in specific condition or needs manual steps. See note for specific app.
 :smile: = All good.
-:unicorn_face: = Anyone's guess. Not able to properly test but looks to be working great.
+:unicorn: = Anyone's guess. Not able to properly test but looks to be working great.
 
 **File opens**
 The happy face would be that a file - any file - would open just like any file normally opens in a file browser. 
