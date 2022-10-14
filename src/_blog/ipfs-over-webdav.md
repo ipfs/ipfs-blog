@@ -163,7 +163,7 @@ To answer this, Mark ran a range of tests on different platforms and two WebDAV 
 | *testcase* | Windows | Linux (KDE) | Android (Solid Explorer) |
 | ---------- | ------- | ----- | --------------- |
 | File opens |:cry::cry:|:cry::cry:|:smile::smile:|
-| Streaming  |:angry::angry:|:angry::angry:|:unicorn_face::smile:|
+| Streaming  |:angry::angry:|:angry::angry:|:unicorn::smile:|
 | Browsing |:cry::cry:|:smile::smile:|:cry::cry:|
 | Metadata works |:smile::smile:|:smile::smile:|:smile::smile:|
 | Write prevents |:angry::angry:|:angry::angry:|:angry::angry:|
