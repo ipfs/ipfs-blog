@@ -56,16 +56,16 @@ A table  can tell the story a lot better. Below are the top 10 cloud storage pro
 
 | Product | Out of the box WebDAV? | Third party WebDAV? |
 | -------- | -------- | -------- |
-| [Dropbox](https://www.dropbox.com/)     | No     | Yes     |
-| [Filen](https://filen.io/)     | No     | No     |
-| [Google Drive](https://www.google.com/drive/)     | No     | Yes     |
-| [icedrive](https://icedrive.net/)     | Yes     | Yes     |
-| [Jumpshare](https://jumpshare.com/)     | No     | No     |
-| [KOOFR](https://koofr.eu/)     | Yes     | No     |
-| [MEGA](https://mega.io/)     | Yes     | Yes     |
-| [oneDrive](https://onedrive.live.com/)     | No     | Yes     |
-| [pCloud](https://www.pcloud.com/)     | Yes     | Yes     |
-| [sync.com](https://www.sync.com/)     | No     | No     |
+| [Dropbox](https://www.dropbox.com/)     | :x: | :heavy_check_mark: |
+| [Filen](https://filen.io/)     | :x: | :x: |
+| [Google Drive](https://www.google.com/drive/)     | :x: | :heavy_check_mark: |
+| [icedrive](https://icedrive.net/)     | :heavy_check_mark: | :heavy_check_mark: |
+| [Jumpshare](https://jumpshare.com/)     | :x: | :x: |
+| [KOOFR](https://koofr.eu/)     | :x: | :x: |
+| [MEGA](https://mega.io/)     | :heavy_check_mark: | :heavy_check_mark: |
+| [oneDrive](https://onedrive.live.com/)     | :x: | :heavy_check_mark: |
+| [pCloud](https://www.pcloud.com/)     | :heavy_check_mark: | :heavy_check_mark: |
+| [sync.com](https://www.sync.com/)     | :x: | :x: |
 
 
 The table shows a couple things clearly.
