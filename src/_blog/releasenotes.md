@@ -4,7 +4,14 @@ type: Release notes
 sitemap:
   exclude: true
 data:
-- title: libp2p v0.39.0
+- title: js-libp2p v0.40.0
+  date: 2022-10-17
+  publish_date: 2022-10-17T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.40.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
+- title: js-libp2p v0.39.0
   date: 2022-09-07
   publish_date: 2022-09-07T12:00:00+00:00
   path: https://github.com/libp2p/js-libp2p/releases/tag/v0.39.0
