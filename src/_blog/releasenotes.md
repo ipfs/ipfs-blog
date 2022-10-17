@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: js-libp2p v0.38.0
+  date: 2022-08-17
+  publish_date: 2022-08-17T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.38.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
 - title: 'Just released: Kubo 0.16.0!'
   date: 2022-10-04
   publish_date: 
