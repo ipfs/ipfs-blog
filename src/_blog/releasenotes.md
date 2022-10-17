@@ -4,6 +4,13 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: js-ipfs 0.63.0
+  date: 2022-05-22
+  publish_date: 2022-05-22T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs-v0.63.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
 - title: js-ipfs 0.62.0
   date: 2022-01-27
   publish_date: 2022-01-27T12:00:00+00:00
