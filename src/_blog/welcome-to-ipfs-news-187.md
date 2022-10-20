@@ -1,15 +1,13 @@
 ---
 title: Welcome to IPFS News 187!
-description: Breaking Free from the Client-Server Model with IPFS, plus more in this
-  edition of IPFS News!
+description: 'The potential benefits of IPFS over WebDAV, plus more in IPFS News 187. '
 author: Emily Vaughan
-date: 2022-10-05
-permalink: "/weekly-186/"
+date: 2022-10-19
+permalink: "/weekly-187/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
-- API
-- go-ipfs
+- Rust
 - IPFS Camp
 - weekly
 
