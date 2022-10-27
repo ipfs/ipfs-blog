@@ -4,6 +4,12 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Why the Internet Needs the Interplanetary File System
+  date: 2022-10-09
+  publish_date: 
+  path: https://spectrum.ieee.org/peer-to-peer-network
+  tags:
+  - CID
 - title: 'Quiet: Free and Open P2P Team Chat built with Tor, libp2p and IPFS'
   date: 2022-05-25
   publish_date: 
