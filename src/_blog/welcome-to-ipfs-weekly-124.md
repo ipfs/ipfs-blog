@@ -10,19 +10,19 @@ header_image: '/header-image-weekly-newsletter.png'
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## What’s new in go-ipfs 0.8.0?
 
 The latest release from the IPFS protocol is here, and with it, go-ipfs 0.8.0 brings the ability to ask remote services to pin data for you! Other features include remote MFS pinning, faster pinning, and help for DNSLink names on https:// subdomains.
 
-[Read more](https://blog.ipfs.io/2021-02-19-go-ipfs-0-8-0/)
+[Read more](https://blog.ipfs.tech/2021-02-19-go-ipfs-0-8-0/)
 
 ## NEW: libp2p comes to ProtoSchool
 
 The best place to learn about decentralized technology, ProtoSchool, has recently added lip2p to their curriculum. Now learners can participate in code-free tutorials, intros to dweb concepts, hands-on coding challenging and more!
 
-[Read more](https://blog.ipfs.io/2021-02-17-libp2p-comes-to-protoschool/)
+[Read more](https://blog.ipfs.tech/2021-02-17-libp2p-comes-to-protoschool/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TM7aW0NFOJM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -71,7 +71,7 @@ Mark your calendars for March 23 now, and stay tuned for upcoming details on our
 
 **Next stop, Mars!**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### js-ipfs 0.36.0 released 🎉
 
-Last week, a new update for the [JS implementation of IPFS was released](https://ipfs.io/blog/89-js-ipfs-0-36/)! Version 0.36.0 has added refs and refs local commands, Base32 encoding for v1 CIDs, updated MDNS discovery compatibility, and more. Read the full details on [the IPFS blog](https://ipfs.io/blog/89-js-ipfs-0-36/).
+Last week, a new update for the [JS implementation of IPFS was released](https://blog.ipfs.tech/89-js-ipfs-0-36/)! Version 0.36.0 has added refs and refs local commands, Base32 encoding for v1 CIDs, updated MDNS discovery compatibility, and more. Read the full details on [the IPFS blog](https://blog.ipfs.tech/89-js-ipfs-0-36/).
 
 ### Missed registration for IPFS Camp? Join the waitlist
 
@@ -31,7 +31,7 @@ It might not be the last chance to attend IPFS Camp this June, in fact, this cou
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - SLIDES: [libp2p](https://speakerdeck.com/wshino/libp2p), Shinohara Wataru, 23 May 2019
 - [IPFS: Technology that’s out of this world](https://business.sprint.com/blog/ipfs-technology/?ECID=MA:SM:05222019:TW:BLG:ENT:NAT:Organic), Sprint Business Blog, 22 May 2019
@@ -49,14 +49,14 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [LineageOS on IPFS](https://lineageos-on-ipfs.com/): A permanent solution to LineageOS’ storage problem.
 - [Peergos’ Alpha Release, June 2019](https://peergos.org/blog#alpha_release_june_2019_). Learn more about the end-to-end encrypted, peer-to-peer file storage, sharing and communication network.
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **29 May 2019:** [ProtoSchool Taipei](https://www.meetup.com/IPFS-Taiwan/events/261636809/) is launching, so join their first event at the AppWorks Taipei office!
 - **22 June 2019:** [Commit Porto '19](https://commitporto.com/) is a tech conference that brings together professionals who tackle challenges in software development with the latest technologies, Porto, Portugal.

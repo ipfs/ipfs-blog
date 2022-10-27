@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -38,7 +38,7 @@ Peergos 是一种点对点加密文件系统，具有安全共享性，旨在抵
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - 视频： [如何使用 ENS + IPFS 托管网站](https://www.youtube.com/watch?v=oA4oOY5zgU0&feature=emb_logo) ，Huang Yahsin，2019 年 12 月 5 日
 - [关于视频内容的货币化和区块链](https://medium.com/altcoin-magazine/on-video-content-monetization-and-blockchain-eff693c72269) ，Dmitriy Kim，2019 年 12 月 5 日
@@ -70,7 +70,7 @@ _您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [data，together.org](https://datatogether.org/) 。探索社区驱动的数据管理！
 - [radicle](https://radicle.community/) 发起了他们的社区论坛，有关 IPFS 的一些有趣的讨论正在进行中。 👀
@@ -79,7 +79,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 12 月 11 日：** [里昂 P2P](https://www.meetup.com/France-P2P/events/266104402/) 是一个聚会，讨论 P2P，去中心化，离线优先应用程序，网络，机密性，反监视，反审查，安全等主题！法国，里昂。
 - **2020 年 1 月 8 日：** [巴黎 P2P 庆典](https://p2p.paris/en/event/festival-0/)是结成联盟的机会，邀请各种形式的 Peer-2-Peer 参与者见面，围绕与 Peer-to-Peer 相关的所有主题展开讨论。有关免费的四日庆典的更多信息，请访问 [p2p.paris](https://p2p.paris/en/event/festival-0/)。

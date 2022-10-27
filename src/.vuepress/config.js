@@ -1,9 +1,8 @@
 const { reverse, sortBy } = require('lodash')
 
 // configure this to an absolute url to enable a generated sitemap & blog RSS feeds
-const CANONICAL_BASE = process.env.CANONICAL_BASE || ''
+const CANONICAL_BASE = process.env.CANONICAL_BASE || 'https://blog.ipfs.tech'
 const IPFS_DEPLOY = process.env.IPFS_DEPLOY === 'true' || false
-const SPEEDCURVE_ID = process.env.SPEEDCURVE_ID || ''
 
 const themeConfigDefaults = {
   dateFormat: 'DD MMMM YYYY',
@@ -31,33 +30,32 @@ const themeConfigDefaults = {
   ],
   footerLinks: [
     { text: 'Blog & news', link: '/' },
-    { text: 'Press', link: 'https://ipfs.io/media/' },
+    { text: 'Press', link: 'https://ipfs.tech/media/' },
     {
       text: 'Code of conduct',
       link: 'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
     },
     {
       text: 'Security',
-      link:
-        'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+      link: 'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
     },
   ],
   footerLegal: '',
   headerLinks: [
-    { text: 'About', link: 'https://ipfs.io/#why' },
-    { text: 'Install', link: 'https://ipfs.io/#install' },
-    { text: 'Docs', link: 'https://docs.ipfs.io/' },
-    { text: 'Team', link: 'https://ipfs.io/team' },
+    { text: 'About', link: 'https://ipfs.tech/#why' },
+    { text: 'Install', link: 'https://ipfs.tech/#install' },
+    { text: 'Docs', link: 'https://docs.ipfs.tech/' },
+    { text: 'Team', link: 'https://ipfs.tech/team' },
     { text: 'Blog', link: '/' },
-    { text: 'Help', link: 'https://ipfs.io/help' },
+    { text: 'Help', link: 'https://ipfs.tech/help' },
   ],
   mobileNavLinks: [
-    { text: 'About', link: 'https://ipfs.io/#why' },
-    { text: 'Install', link: 'https://ipfs.io/#install' },
-    { text: 'Docs', link: 'https://docs.ipfs.io/' },
-    { text: 'Team', link: 'https://ipfs.io/team' },
+    { text: 'About', link: 'https://ipfs.tech/#why' },
+    { text: 'Install', link: 'https://ipfs.tech/#install' },
+    { text: 'Docs', link: 'https://docs.ipfs.tech/' },
+    { text: 'Team', link: 'https://ipfs.tech/team' },
     { text: 'Blog', link: '/' },
-    { text: 'Help', link: 'https://ipfs.io/help' },
+    { text: 'Help', link: 'https://ipfs.tech/help' },
   ],
 }
 
@@ -103,39 +101,36 @@ module.exports = {
         ...themeConfigDefaults,
         footerLinks: [
           { text: 'Blog & news', link: '/zh-cn/' },
-          { text: 'Press', link: 'https://ipfs.io/media/' },
+          { text: 'Press', link: 'https://ipfs.tech/media/' },
           {
             text: 'Code of conduct',
-            link:
-              'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
+            link: 'https://github.com/ipfs/community/blob/master/code-of-conduct.md',
           },
           {
             text: 'Security',
-            link:
-              'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
+            link: 'https://github.com/ipfs/community/blob/master/CONTRIBUTING.md#security-issues',
           },
         ],
         headerLinks: [
-          { text: 'About', link: 'https://ipfs.io/#why' },
-          { text: 'Install', link: 'https://ipfs.io/#install' },
-          { text: 'Docs', link: 'https://docs.ipfs.io/' },
-          { text: 'Team', link: 'https://ipfs.io/team' },
+          { text: 'About', link: 'https://ipfs.tech/#why' },
+          { text: 'Install', link: 'https://ipfs.tech/#install' },
+          { text: 'Docs', link: 'https://docs.ipfs.tech/' },
+          { text: 'Team', link: 'https://ipfs.tech/team' },
           { text: 'Blog', link: '/zh-cn' },
-          { text: 'Help', link: 'https://ipfs.io/help' },
+          { text: 'Help', link: 'https://ipfs.tech/help' },
         ],
         mobileNavLinks: [
-          { text: 'About', link: 'https://ipfs.io/#why' },
-          { text: 'Install', link: 'https://ipfs.io/#install' },
-          { text: 'Docs', link: 'https://docs.ipfs.io/' },
-          { text: 'Team', link: 'https://ipfs.io/team' },
+          { text: 'About', link: 'https://ipfs.tech/#why' },
+          { text: 'Install', link: 'https://ipfs.tech/#install' },
+          { text: 'Docs', link: 'https://docs.ipfs.tech/' },
+          { text: 'Team', link: 'https://ipfs.tech/team' },
           { text: 'Blog', link: '/zh-cn/' },
-          { text: 'Help', link: 'https://ipfs.io/help' },
+          { text: 'Help', link: 'https://ipfs.tech/help' },
         ],
       },
     },
   },
   plugins: [
-    [require('./plugins/vuepress-plugin-speedcurve'), { id: SPEEDCURVE_ID }],
     ['@vuepress/last-updated'],
     [
       'vuepress-plugin-clean-urls',
@@ -145,16 +140,8 @@ module.exports = {
         notFoundPath: '/ipfs-404.html',
       },
     ],
-    [
-      'vuepress-plugin-canonical',
-      CANONICAL_BASE
-        ? {
-            baseURL: CANONICAL_BASE,
-            stringExtension: true,
-          }
-        : false,
-    ],
     [require('./plugins/pageData')],
+    [require('./plugins/canonical'), { CANONICAL_BASE }],
     [require('./plugins/vuepress-plugin-trigger-scroll')],
     [
       '@vuepress/blog',
@@ -247,6 +234,27 @@ module.exports = {
       '@vuepress/html-redirect',
       {
         countdown: 0,
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'callout',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'left',
+        defaultTitle: '',
       },
     ],
     'vuepress-plugin-chunkload-redirect',

@@ -23,7 +23,7 @@ Read on for the full details!
 
 ## 🤝 Share a node between browser tabs
 
-An IPFS node makes lots of connections to other nodes on the network, and more so since [delegate nodes were turned on by default](https://blog.ipfs.io/2020-07-20-js-ipfs-0-48/). This is to ensure you have the greatest chance of finding content on the network, and so other people have the greatest chance of finding your content on the network.
+An IPFS node makes lots of connections to other nodes on the network, and more so since [delegate nodes were turned on by default](https://blog.ipfs.tech/2020-07-20-js-ipfs-0-48/). This is to ensure you have the greatest chance of finding content on the network, and so other people have the greatest chance of finding your content on the network.
 
 This does not come without a price though, maintaining multiple connections can be resource-intensive and in some cases the browser will limit the number of concurrent connections you can have have.
 
@@ -186,21 +186,21 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/
-[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[dag]: https://docs.ipfs.tech/concepts/merkle-dag/
 [core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api

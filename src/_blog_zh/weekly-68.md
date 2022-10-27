@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -30,7 +30,7 @@ IPFS 文档团队需要您的帮助！想贡献吗？[查看按大小和难度�
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [Temporal IPFS 更新：Kubernetes，ENS 域，Amazon S3，Playground（游乐场），组织管理](https://medium.com/temporal-cloud/temporal-ipfs-updates-kubernetes-ens-domains-amazon-s3-playground-organization-management-16353e89b255)，Temporal，2019 年 11 月 18 日
 - [原子访问控制](https://peergos.org/blog#atomic_access_control_) ，Peergos，2019 年 11 月 15 日
@@ -55,13 +55,13 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [Eternum](https://www.eternum.io/) 是一种简单易用的 IPFS pinning 服务。它将托管您的 IPFS 文件，因此您可以确保它们始终可用，并且附带了可在您的应用程序中使用的 API。
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 11 月 20 日：** [布拉格去中心化网络](https://www.meetup.com/dweb-prague/events/263923023)将于晚上 6 点在 ParalelníPolis 举办一个 IPFS 开发应用程序之夜。捷克共和国，布拉格。
 - **2019 年 11 月 21 日：** [维多利亚去中心化网络聚会](https://ti.to/fission/victoria-tech-meetup-2019/) Watershed Coworking 主办了一项新活动，关于开源和去中心化网络的广泛交流。加拿大，不列颠哥伦比亚省，维多利亚

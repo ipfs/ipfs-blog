@@ -1,18 +1,17 @@
 ---
 tags:
-  - weekly
-title: Welcome to IPFS Weekly 127
-description:
-  Get started with NFTs and IPFS, introducing True Review, plus the latest
+- weekly
+title: 'Welcome to IPFS Weekly 127: Identity, True Review, NFTHack, and More'
+description: Get started with NFTs and IPFS, introducing True Review, plus the latest
   in Local Offline Collaboration
 author: Jenn Turner
 date: 2021-03-17
-permalink: '/weekly-127/'
+permalink: "/weekly-127/"
 translationKey: ipfs-weekly-127
-header_image: '/header-image-weekly-newsletter.png'
----
+header_image: "/header-image-weekly-newsletter.png"
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+---
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Next Tuesday: Identity & IPFS, a special event
 
@@ -67,7 +66,7 @@ Why should you buy an [NFTBox](https://nftboxes.medium.com/so-what-is-nftboxes-7
 
 **We’ll need to see your CIDs to get into this club, err network.**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

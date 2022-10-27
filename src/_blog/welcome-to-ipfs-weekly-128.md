@@ -1,17 +1,18 @@
 ---
 tags:
-  - weekly
-  - NFTs
-title: Welcome to IPFS Weekly 128
+- weekly
+- NFTs
+title: 'Welcome to IPFS Weekly 128: NFTHack, Mint an NFT, Free Filecoin Retrieval,
+  and More'
 description: NFTs, NFTs, NFTs, plus a new GitHub action for IPFS!
 author: Jenn Turner
 date: 2021-03-24
-permalink: '/weekly-128/'
+permalink: "/weekly-128/"
 translationKey: ipfs-weekly-128
-header_image: '/header-image-weekly-newsletter.png'
----
+header_image: "/header-image-weekly-newsletter.png"
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+---
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## IPFS x NFTHack, a brief recap
 
@@ -32,7 +33,7 @@ Looking for more on NFTs? [Join our April meetup](https://www.meetup.com/San-Fra
 
 ## Mint an NFT with IPFS!
 
-Dive into the details of NFT minting with IPFS and Ethereum with the brand new guide [Mint an NFT with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs) on the docs site. In this tutorial, you’ll get to know Minty, a simple tool that creates IPFS-backed non-fungible tokens on Ethereum. [In this workshop](https://www.youtube.com/watch?v=WNukgBtlWeU&feature=youtu.be), Yusef from Protocol Labs shows how (and why!) to store NFT assets and metadata on IPFS and how to link that data to an on-chain token. If the code overview in the video has you wanting more, the [Minty repo](https://github.com/yusefnapora/minty) is waiting for you to clone it and play around!
+Dive into the details of NFT minting with IPFS and Ethereum with the brand new guide [Mint an NFT with IPFS](https://docs.ipfs.tech/how-to/mint-nfts-with-ipfs) on the docs site. In this tutorial, you’ll get to know Minty, a simple tool that creates IPFS-backed non-fungible tokens on Ethereum. [In this workshop](https://www.youtube.com/watch?v=WNukgBtlWeU&feature=youtu.be), Yusef from Protocol Labs shows how (and why!) to store NFT assets and metadata on IPFS and how to link that data to an on-chain token. If the code overview in the video has you wanting more, the [Minty repo](https://github.com/yusefnapora/minty) is waiting for you to clone it and play around!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oeCaKXbhPls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -77,7 +78,7 @@ The April IPFS meetup will be an opportunity to showcase what the community has 
 
 **If it’s not on IPFS, it’s not your NFT!**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 140
+title: 'Welcome to IPFS Weekly 140: Starling Lab, Web3 Weekend, Snapshot Labs, and
+  More'
 description: Announcing the launch of Starling Lab, Web3Weekend Recap, XSL Labs' new
   video on IPFS, and more!
 author: Emily Vaughan
@@ -11,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Starling Lab: Establishing Trust for Humanity’s Data
 
@@ -27,14 +28,14 @@ Core to the Starling Lab solution is the Starling Framework, a set of open-sourc
 
 What better way to dive into all things Web3 than a weekend hackathon? The folks at ETHGlobal thought so, and we joined them during the last weekend in May for [**Web3 Weekend**](https://web3.ethglobal.co/).
 
-This three-day event kicked off with a full-day summit, bringing together experts and luminaries from across the ecosystem to encourage and inspire builders to challenge the idea of what’s possible with decentralized technologies. Over the weekend, we offered a combined $20,000 Filecoin (FIL) prize pool distributed evenly between all submissions built on or with IPFS or Filecoin during Web3 Weekend. Any project built with ecosystem tools like Textile, Pinata, Fleek, Ceramic, Fission, Livepeer, and more received a prize—over 65 finalists in total! [**Check out this post**](https://blog.ipfs.io/2021-06-08-web3-weekend/) for a full recap including challenges and finalists, as well as Protocol Labs’ talks and workshops from the event.
+This three-day event kicked off with a full-day summit, bringing together experts and luminaries from across the ecosystem to encourage and inspire builders to challenge the idea of what’s possible with decentralized technologies. Over the weekend, we offered a combined $20,000 Filecoin (FIL) prize pool distributed evenly between all submissions built on or with IPFS or Filecoin during Web3 Weekend. Any project built with ecosystem tools like Textile, Pinata, Fleek, Ceramic, Fission, Livepeer, and more received a prize—over 65 finalists in total! [**Check out this post**](https://blog.ipfs.tech/2021-06-08-web3-weekend/) for a full recap including challenges and finalists, as well as Protocol Labs’ talks and workshops from the event.
 
 ## Brand new on IPFS
 
 * [**Snapshot Labs**](https://snapshot.org/#/) is revolutionizing the world of decentralized governance with IPFS by enabling their users to shape their company's project decisions for free. [**Read Decrypt’s article.**](https://decrypt.co/resources/what-is-snapshot-the-decentralized-voting-system)
 * [**Berty Alpha**](https://berty.tech/), the privacy-first messaging app built on IPFS and libp2p, is now available on iOS! Join their [**Discord**](https://discord.com/invite/mVfsEUmgSf)to get all the info to download the alpha.
 * [**XSL Labs**](https://www.xsl-labs.io/en/) recently published a new educational video introducing IPFS. [**Watch it here**](https://www.youtube.com/watch?v=94HH5D23WWI).
-* Have questions about getting started with using `js-ipfs` in your web browser? [**Check out this post**](https://blog.ipfs.io/2021-06-10-guide-to-ipfs-connectivity-in-browsers/).
+* Have questions about getting started with using `js-ipfs` in your web browser? [**Check out this post**](https://blog.ipfs.tech/2021-06-10-guide-to-ipfs-connectivity-in-browsers/).
 
 ## Around the ecosystem 🌏
 

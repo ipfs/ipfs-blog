@@ -12,12 +12,12 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Top highlights this week
 
 - **Late-breaking news:** js-ipfs to begin trialing a [Lerna-style monorepo](https://github.com/ipfs/js-ipfs/issues/2877)
-- NEW! Explore the anatomy of a CID in [ProtoSchool’s newest tutorial](https://blog.ipfs.io/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/)
+- NEW! Explore the anatomy of a CID in [ProtoSchool’s newest tutorial](https://blog.ipfs.tech/2020-03-04-protoschool-tutorial-anatomy-of-a-cid/)
 - Discover how [Terminal.co + IPFS](https://blog.terminal.co/posts/Terminal+IPFS) = Web3 Deployment Simplified
 - What’s the latest with **Textile Threads**? You know, the databases that run on IPFS with built-in support for decentralized applications, meaning multi-user, standardized encryption, and multi-protocol data exchange. [See what’s new right here!](https://blog.textile.io/textile-threads-progress-report-march-2020/)
 - We love to see folks hacking on IPFS around the globe–truly decentralized! Check out [these members of the IPFS community](https://twitter.com/aeternity/status/1237030560444420098) from the [ækiti community](https://aekiti.com/) hacking on IPFS as a part of their workshop from Ekiti State, Nigeria. Kaabo!
@@ -81,6 +81,6 @@ Join us for [next Monday’s community call](https://github.com/ipfs/team-mgmt#-
 - [Consensus 2020](https://www.coindesk.com/events/consensus-2020), 11-13 May 2020, New York (NY), US
 - [csv,conf,v5](https://csvconf.com/), 13-14 May 2020, Washington, D.C., US
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

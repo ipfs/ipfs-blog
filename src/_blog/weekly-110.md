@@ -11,7 +11,7 @@ tags:
   - 'Filecoin'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## Filecoin Mainnet takes off 🚀🚀🚀
 
@@ -70,7 +70,7 @@ VIDEO: Setting Up An Uncensorable, [Unstoppable Domains IPFS Website](https://lb
 
 **Take care of yourselves and each other. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

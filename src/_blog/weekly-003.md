@@ -17,7 +17,7 @@ This is a double weekly: here are some of the highlights for the [January 12th](
 
 ## Updates
 
-- [**dist.ipfs.io**](http://dist.ipfs.io) A distributions page has been shipped! This was largely spearheaded by [@dignifiedquire](//github.com/dignifiedquire). This is the new one-stop-shop for finding and downloading all official binaries that IPFS produces. Each project has:
+- [**dist.ipfs.tech**](http://dist.ipfs.tech) A distributions page has been shipped! This was largely spearheaded by [@dignifiedquire](//github.com/dignifiedquire). This is the new one-stop-shop for finding and downloading all official binaries that IPFS produces. Each project has:
 
   - The distribution name and a short description;
   - The current version number and release date;
@@ -26,7 +26,7 @@ This is a double weekly: here are some of the highlights for the [January 12th](
   - A `Changelog`, a link to a summary of all version changes;
   - An `All Versions`, a link to view and download previous versions.
 
-  The site is also hosted on IPFS, and is used by [`ipfs-update`](https://github.com/ipfs/ipfs-update) to update IPFS. Check it out at http://dist.ipfs.io.
+  The site is also hosted on IPFS, and is used by [`ipfs-update`](https://github.com/ipfs/ipfs-update) to update IPFS. Check it out at http://dist.ipfs.tech.
 
 - [**go-ipfs**](//github.com/ipfs/go-ipfs) 0.3.11 is shipped! Also, we merged 0.4.0 into master. [@jbenet](//github.com/jbenet), [@Dignifiedquire](//github.com/Dignifiedquire) and others [fixed appveyor](//github.com/ipfs/go-ipfs/pull/2137). And finally the latest webui by [@Dignifiedquire](//github.com/Dignifiedquire) was pushed in 0.3.11. Check out the [changelog](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md).
 - [**js-ipfs-merkle-dag**](//github.com/vijayee/js-ipfs-merkle-dag/) [@diasdavid](//github.com/diasdavid) worked on merkle-dag implementation interoperabolity, by enabling you to successfully read (and write) MerkleDAG nodes that were stored into an IPFS Repo through go-ipfs, [in JavaScript](https://github.com/vijayee/js-ipfs-merkle-dag/pull/6).

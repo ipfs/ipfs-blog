@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,15 +24,15 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Learn how to use go-ipfs as a Library 📚
 
-[The title says it all.](https://blog.ipfs.io/073-go-ipfs-as-a-library/) Learn how to use go-ipfs as a library with this new tutorial and take full advantage of the go-ipfs Core API.
+[The title says it all.](https://blog.ipfs.tech/073-go-ipfs-as-a-library/) Learn how to use go-ipfs as a library with this new tutorial and take full advantage of the go-ipfs Core API.
 
 ### js-ipfs 0.39.0 released 🎉
 
-Woo hoo! Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command! [All with js-ipfs 0.39.0!](https://blog.ipfs.io/071-js-ipfs-0-39/)
+Woo hoo! Configure your node with preset profiles! Limit outgoing browser requests! Start your node from fresh with one command! [All with js-ipfs 0.39.0!](https://blog.ipfs.tech/071-js-ipfs-0-39/)
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - PHOTO: [Tim Berners-Lee seems to be a fan of IPFS and libp2p](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1), Twitter, 29 Oct 2019
 - [RTrade Technologies Partners with Dappkit Utilizing Enterprise IPFS Infrastructure & APIs](https://medium.com/temporal-cloud/rtrade-technologies-partners-with-dappkit-utilizing-enterprise-ipfs-infrastructure-apis-7c9b67fdb589), Temporal, 28 Oct 2019
@@ -65,7 +65,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [os](https://github.com/tomaka/os/) – Experiment to build some kind of operating-system-like environment where executables are all in WASM and are loaded from some IPFS-like decentralized network.
 - [The Graph Network In Depth](https://thegraph.com/blog/the-graph-network-in-depth-part-1)
@@ -73,7 +73,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **28-30 October 2019:** [Open Source Summit + ELC Europe 2019](https://osseu19.sched.com/event/TLD8) will feature Trevor Conn of Dell Technologies presenting “Securely Store IOT Edge Data with IPFS and Distributed Ledger.” Lyon, France.
 - **30 October 2019:** [OPO.js Meetup #10](https://www.meetup.com/opo-js/events/265502030/) is hosting the next free Porto JavaScript Community meetup, supported by the ScaleUp Porto initiative. Porto, Portugal.

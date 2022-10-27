@@ -14,7 +14,7 @@ tags:
 
 ![](../assets/104-dht-deep-dive-header-image.png =1000x)
 
-At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5](https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/). While there have been many improvements, the changes to IPFS’s Distributed Hash Table (DHT) were especially critical to improving the performance and stability of finding data in IPFS. For some background on how we arrived at the most recent set of DHT changes, take a look at [The Road to the New DHT](https://blog.ipfs.io/2020-05-19-road-to-dht/), or try them out yourself in the [latest version of go-ipfs](https://dist.ipfs.io/#go-ipfs).
+At the end of April, we released our largest update to go-ipfs to date: [IPFS 0.5](https://blog.ipfs.tech/2020-04-28-go-ipfs-0-5-0/). While there have been many improvements, the changes to IPFS’s Distributed Hash Table (DHT) were especially critical to improving the performance and stability of finding data in IPFS. For some background on how we arrived at the most recent set of DHT changes, take a look at [The Road to the New DHT](https://blog.ipfs.tech/2020-05-19-road-to-dht/), or try them out yourself in the [latest version of go-ipfs](https://dist.ipfs.tech/#go-ipfs).
 
 In this post we’d like to take you through the details of what the DHT looks like in v0.5.0, so get ready for a _monster post_ that truly **dives deep** into the ins and outs of the IPFS DHT implementation. If you want to learn a thing or two about how DHTs work, and how we made the implementation used by IPFS faster and more resilient, read on!
 
@@ -131,7 +131,7 @@ While the lookup algorithm is what allows us to put and get records into the DHT
 
 ## Testing and Results
 
-There have been a lot of changes to the DHT as part of the go-ipfs v0.5.0 release. While many of the changes were intuitively going to be quite useful, we needed harder evidence that the full set of changes would result in a stable and performant network. To that end, we utilized Testground, which is a new distributed testing infrastructure (check out their launch notes at [Testground blog post](https://blog.ipfs.io/2020-05-06-launching-testground/)).
+There have been a lot of changes to the DHT as part of the go-ipfs v0.5.0 release. While many of the changes were intuitively going to be quite useful, we needed harder evidence that the full set of changes would result in a stable and performant network. To that end, we utilized Testground, which is a new distributed testing infrastructure (check out their launch notes at [Testground blog post](https://blog.ipfs.tech/2020-05-06-launching-testground/)).
 
 Throughout the development process we ran many Testground tests to get an understanding of how our changes have improved the network. Below is a comparison of the performance of a 1000 peer network where all peers have around 100-120ms latencies from each other, that is running the DHT from go-ipfs v0.4.23 and the DHT from go-ipfs v0.5.0. Note: The v0.4.23 DHT had small modifications to make testing easier like removing hard coded lookup timeouts, so we can see just how long the queries should really be running for.
 
@@ -150,6 +150,6 @@ There are many more exciting improvements to come - so if you are interested in 
 
 ### Learn more
 
-- IPFS 0.5.0 Announcement: https://blog.ipfs.io/2020-04-28-go-ipfs-0-5-0/
+- IPFS 0.5.0 Announcement: https://blog.ipfs.tech/2020-04-28-go-ipfs-0-5-0/
 - Release Highlights: https://www.youtube.com/watch?v=G8FvB_0HlCE
-- Testground: https://blog.ipfs.io/2020-05-06-launching-testground/
+- Testground: https://blog.ipfs.tech/2020-05-06-launching-testground/

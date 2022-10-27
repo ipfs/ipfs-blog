@@ -13,7 +13,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -25,7 +25,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### Announcing the IPFS Project Q3 Priorities & Working Groups
 
-Earlier this summer, the IPFS team got together to create a plan to make IPFS performant, stable, high quality and updated regularly - and ready to grow even more. [Check out the plan](https://ipfs.io/blog/2019-07-31-operation-task-force/), along with remixed working groups and more!
+Earlier this summer, the IPFS team got together to create a plan to make IPFS performant, stable, high quality and updated regularly - and ready to grow even more. [Check out the plan](https://blog.ipfs.tech/2019-07-31-operation-task-force/), along with remixed working groups and more!
 
 ### Introducing Multiple-Choice Lessons in ProtoSchool
 
@@ -39,7 +39,7 @@ Last week during the IPFS Weekly Call, Sawood Alam was on hand to give a fantast
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Peergos - fast seeking and encrypted history](https://peergos.org/blog#fast_seeking_and_encrypted_history_), 1 August 2019
 - [The Gnosis Monthly Development Update](https://blog.gnosis.pm/august-2019-the-gnosis-monthly-development-update-6c9be6fb7610), 1 August 2019
@@ -79,14 +79,14 @@ _These IPFS projects have the potential to be amazing, but they need a little he
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [anytype.io](https://anytype.io/): Like Notion but self hosted, private, and free!
 - [Decentralized Browser MIX Acuity 1.0 Released](https://medium.com/mix-blockchain/decentralized-browser-mix-acuity-1-0-released-827e17353b54)
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **7 August 2019:** [Paris P2P](https://p2p.paris/en/) is holding its first event, [Paris P2P #0](https://www.meetup.com/Paris-P2P/events/263089573/) to discuss the topics of peer-to-peer (P2P), decentralization, networks and autonomous communities, distributed and decentralized systems, and more. [Submit your talk ideas here](https://p2p.paris/en/) for future events. Paris, France.
 - **8 August 2019:** [IPFS Meet & Hack](https://www.meetup.com/San-Francisco-IPFS/events/261811887/) is a monthly get-together to discuss all things IPFS. Hosted by San Francisco IPFS, [sign up to present](https://docs.google.com/forms/d/e/1FAIpQLSdgolK13Bq7w9MkPMn4uJ7cuf_Q3YDu27_PgCStQ6glki_g_Q/viewform?usp=sf_link). San Francisco (CA), United States.

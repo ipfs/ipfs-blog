@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,7 +22,7 @@ tags:
 
 ### IPFS 浏览器进度更新
 
-我们正在取得进展！我们想分享一下 IPFS 项目正在进行的一些合作，这使我们进一步接近无中介的信息访问…… 通过解决“最后一英里”问题并将 [IPFS 直接集成到网络浏览器](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) 。
+我们正在取得进展！我们想分享一下 IPFS 项目正在进行的一些合作，这使我们进一步接近无中介的信息访问…… 通过解决“最后一英里”问题并将 [IPFS 直接集成到网络浏览器](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/) 。
 
 ### Storj 网络上现已提供 IPFS
 
@@ -34,7 +34,7 @@ IPFS Camp 视频紧随其后，包括闪电演讲，深入讨论，海报项目�
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [预览 RTrade 的去中心化，注重隐私的（dVPN）](https://medium.com/rtrade-technologies/previewing-rtrades-decentralized-privacy-focused-dvpn-35073b683f0c) ，RTrade Technologies，2019 年 10 月 9 日
 - [IPFS + ENS 无处不在：EthDNS 简介](https://medium.com/the-ethereum-name-service/ethdns-9d56298fa38a) ，The Ethereum Name Service，2019 年 10 月 8 日
@@ -54,13 +54,13 @@ _你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS �
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [GoFS](https://gofs.io/) 是一种现代的文件存储解决方案。与传统的文件存储解决方案（Dropbox，Google 文件等）不同，GoFS 一次可从多个位置提供文件，从而加快了下载速度，并提供了更多冗余以保持文件可用。
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 10 月 16 日：** [IPFS 科罗拉多州用户测试日](https://www.meetup.com/IPFS-Colorado/events/264964856) ：帮助影响点对点互联网的用户体验，并获得免费合作和咖啡的一天！美国科罗拉多州，博尔德/丹佛。
 - **2019 年 10 月 16 日：** [IPFS 科罗拉多基础知识之夜](https://www.meetup.com/IPFS-Colorado/events/265003484) ：科罗拉多 IPFS 与以太坊博尔德之间的合作！加入我们，获得出色的 IPFS 概述以及有关 IPFS 基础知识的交互式教程。美国，科罗拉多州，博尔德/丹佛。

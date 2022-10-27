@@ -12,13 +12,13 @@ tags:
   - 'case study'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## An IPFS September to Remember Meetup
 
 If you missed the latest IPFS Meetup, not to worry. You can catch up on all the presentations, from IPFS Recovery to IoTex to the details behind go-IPFS 0.7 and more, by tuning into the IPFS YouTube channel. Bonus feature: another delightful lightning talk you won’t want to miss!
 
-[Watch the videos](https://blog.ipfs.io/2020-09-18-ipfs-meetup-sep2020/)
+[Watch the videos](https://blog.ipfs.tech/2020-09-18-ipfs-meetup-sep2020/)
 
 ## Space Race 2: Slingshot - put your project on Filecoin for FIL token rewards!
 
@@ -28,7 +28,7 @@ Following [Space Race 1](https://spacerace.filecoin.io/), a competition for stor
 
 Continuing the IPFS Case Study Series, Arbol is the latest organization to be featured, discussing how IPFS has benefitted their agriculturally-focused platform. From creating contracts for parametric weather protection agreements to the role of content addressability, Arbol has a very interesting case.
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-arbol/)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-arbol/)
 
 ## Brand new on IPFS
 
@@ -61,7 +61,7 @@ HackFS kickstarts project development in Web 3.0 | [Forkast](https://forkast.new
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

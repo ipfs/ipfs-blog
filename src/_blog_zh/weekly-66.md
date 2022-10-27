@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -26,7 +26,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [TemporalX 开发环境正式发布](https://www.reddit.com/r/ipfs/comments/dqu45y/temporalx_development_environment_is_live/) ，2019 年 11 月 3 日
 - [本周视频：Filecoin 和 Web3](https://avc.com/2019/11/video-of-the-week-filecoin-and-web3/) ，AVC，2019 年 11 月 2 日
@@ -44,7 +44,7 @@ _您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 11 月 6 日：** [巴黎每月 P2P Peer 对 Beer](https://p2p.paris/en/event/monthly-2/) 活动是由 P2P 和密码学爱好者社区组织并为其举办的会议。法国，巴黎。
 - **2019 年 11 月 14 日：** [DWeb 会谈：Textile.io 的 Carson Farmer](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/263590720/)，西雅图 ProtoSchool 主办。快来访问 Textile.io 上的去中心化网络开发人员 Carson Farmer！美国，华盛顿州，西雅图。

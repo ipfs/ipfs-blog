@@ -10,9 +10,9 @@ tags:
   - 'community'
 ---
 
-**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.io/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
+**We’re excited to announce [the new IPFS documentation site is live in beta](https://docs.ipfs.tech/)!** The doors are open, and just like any housewarming, you’re cordially invited to stop by, have a look around, and let us know what you think.
 
-<a href="https://docs.ipfs.io/" target="_blank"><img src="../assets/076-ipfs-docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
+<a href="https://docs.ipfs.tech/" target="_blank"><img src="../assets/076-ipfs-docs-beta-screenshot.png" alt="Screenshot of docs beta"></a>
 <br/>
 _New year, new look._
 

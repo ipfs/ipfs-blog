@@ -247,9 +247,9 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 * Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: [https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands](https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands "https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands")
 * Join an IPLD All Hands call if you're interested in the data layer of IPFS: [https://github.com/ipld/team-mgmt#every-two-weeks-call](https://github.com/ipld/team-mgmt#every-two-weeks-call)
 * Hack with IPFS and show us what you made! The All Hands calls are also the perfect venue for demos, join in and show us what you built
-* Join the discussion at [https://discuss.ipfs.io/](https://discuss.ipfs.io/ "https://discuss.ipfs.io/") and help users finding their answers.
+* Join the discussion at [https://discuss.ipfs.tech/](https://discuss.ipfs.tech/ "https://discuss.ipfs.tech/") and help users finding their answers.
 * Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.

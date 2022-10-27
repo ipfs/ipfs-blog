@@ -1,9 +1,9 @@
 ---
-title: Welcome to IPFS Weekly 141
+title: 'Welcome to IPFS Weekly 141: OpenSea, NFT Development, Infura, and More'
 description: OpenSea stores NFTs with IPFS & Filecoin, NFT Dev User Experience survey,
   IPFS in 'The New Stack' & more!
 author: Emily Vaughan
-date: 2021-06-23
+date: 2021-06-22
 permalink: "/weekly-141/"
 translationKey: ipfs-weekly-141
 header_image: "/header-image-weekly-newsletter.png"
@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## OpenSea stores NFTs with IPFS and Filecoin
 
 ![](../assets/filecoin-ipfs-x-opensea.png)
 
-Our friends at [**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.io/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more!**](https://blog.ipfs.io/2021-06-17-opensea-ipfs-filecoin/)
+Our friends at [**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more!**](https://blog.ipfs.tech/2021-06-17-opensea-ipfs-filecoin/)
 
 ## NFT Development User Experience
 

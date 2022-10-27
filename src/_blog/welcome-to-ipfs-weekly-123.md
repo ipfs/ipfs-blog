@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Your files 💖 for keeps forever 💖 with IPFS
 
@@ -28,9 +28,9 @@ The Pegabufficorn and Spork Marmots have gone back into hibernation since ETHDen
 
 ## Human readable URLs and other things
 
-...folks are discussing at our favorite community forum for discussion: discuss.ipfs.io. Check out threads on use cases across the ecosystem, get help with your IPFS questions from some of the core team devs, or discover showcases, community meetups, or everyone’s favorite—protocol-specific discussions!
+...folks are discussing at our favorite community forum for discussion: discuss.ipfs.tech. Check out threads on use cases across the ecosystem, get help with your IPFS questions from some of the core team devs, or discover showcases, community meetups, or everyone’s favorite—protocol-specific discussions!
 
-[Start discussions](https://discuss.ipfs.io/)
+[Start discussions](https://discuss.ipfs.tech/)
 
 ## Hang out with IPFS and friends next Tuesday!
 
@@ -77,7 +77,7 @@ Join the first forum for researchers and academics working in the IPFS space to 
 
 **Hey, libp2p deserves love too. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

@@ -12,13 +12,13 @@ tags:
 
 # Welcome to IPFS Weekly #94
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## Watch videos from our June meetup now
 
 The IPFS community gathered for a virtual meetup last week to celebrate progress made since the go-ipfs 0.5 launch and take a look at where the ecosystem is headed for the duration of 2020.
 
-[Watch the videos](https://blog.ipfs.io/2020-06-23-june-meetup-recap/)
+[Watch the videos](https://blog.ipfs.tech/2020-06-23-june-meetup-recap/)
 
 ## IPFS included in the foundation of blockchain, decentralization and DeFi
 
@@ -79,6 +79,6 @@ Share your thoughts on how we can make the IPFS weekly community calls and/or mo
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the [IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

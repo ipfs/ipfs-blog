@@ -20,7 +20,7 @@ tags:
 
 JS IPFS has traditionally primarily targeted the browser, and the browser is a bad place to be if you want to be on the [DHT][]. You typically aren't on a page long enough to make or respond to [DHT][] queries, nor are you diallable, so even if you were able to advertise yourself as a provider for a given block, the chances are no-one can connect to you to retrieve that block which results in a degraded service for everyone. Worse, the way you find more peers and content is via the [DHT][] so you're kind of stuck.
 
-There are several ways to give in-browser IPFS nodes a better experience on the network, one of those is [Delegate Nodes](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/#delegated-peer-and-content-routing). A Delegate Node is a network peer that performs certain actions on behalf of other nodes on the network. In this case it will make [DHT][] queries on our behalf so we can find more peers and more content than ever before.
+There are several ways to give in-browser IPFS nodes a better experience on the network, one of those is [Delegate Nodes](https://blog.ipfs.tech/2019-08-06-js-ipfs-0-37/#delegated-peer-and-content-routing). A Delegate Node is a network peer that performs certain actions on behalf of other nodes on the network. In this case it will make [DHT][] queries on our behalf so we can find more peers and more content than ever before.
 
 `js-IPFS@0.48.0` enables delegate nodes in the configuration by default, which means you should see far more peers than you have previously and be able to find content faster and more reliably.
 
@@ -28,7 +28,7 @@ By default it uses [public delegate nodes](https://github.com/ipfs/js-ipfs/blob/
 
 ## 🏓 DHT configuration
 
-The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPFS 0.5](https://blog.ipfs.io/2020-05-19-road-to-dht/) will not arrive until later this year, but for the time being you can run the experimental [DHT][] implementation. This implementation is incomplete so some features may not work as intended but you should be able to use it to resolve content and find peers though there may be some performance degredation on your node over time.
+The full [DHT][] implementation for JS IPFS with all the [changes made in Go IPFS 0.5](https://blog.ipfs.tech/2020-05-19-road-to-dht/) will not arrive until later this year, but for the time being you can run the experimental [DHT][] implementation. This implementation is incomplete so some features may not work as intended but you should be able to use it to resolve content and find peers though there may be some performance degredation on your node over time.
 
 You can enable the [DHT][] for JS IPFS daemons via the command line. To put your node into client mode run:
 
@@ -61,7 +61,7 @@ Go IPFS nodes use the [libp2p-autonat](https://github.com/libp2p/go-libp2p-auton
 
 ## 🧱 Smaller, faster blockstore
 
-In the early days of IPFS, all [CID][]s were v0. That meant they were a bare [multihash][] - a byte array prefixed with some prefixed bytes that told you what sort of hash the rest of the bytes represented (`sha2-256`, `blake2s-128` etc) and how many of those bytes were present. The [multihash][] was created by hashing the data in a [block](https://docs.ipfs.io/how-to/work-with-blocks/) which was then stored in the block store contained within the [IPFS repo](https://github.com/ipfs/js-ipfs-repo).
+In the early days of IPFS, all [CID][]s were v0. That meant they were a bare [multihash][] - a byte array prefixed with some prefixed bytes that told you what sort of hash the rest of the bytes represented (`sha2-256`, `blake2s-128` etc) and how many of those bytes were present. The [multihash][] was created by hashing the data in a [block](https://docs.ipfs.tech/how-to/work-with-blocks/) which was then stored in the block store contained within the [IPFS repo](https://github.com/ipfs/js-ipfs-repo).
 
 Later v1 [CID][]s arrived and they added a version number and a codec to the byte array, but the [CID][] still contained the [multihash][] - a block can correspond to multiple [CID][]s, as long as they contain the same [multihash][].
 
@@ -103,7 +103,7 @@ When used as a [module](https://github.com/ipfs/js-ipfs/blob/1760b8928dac14b3abc
 
 As the IPFS ecosystem grows more and more developers become interested in the project and start using our APIs. A lot of them have grown organically over time and not all of them have had equal amounts of time invested in them.
 
-The following changes only affect the [core](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs) API and [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client). The actual [HTTP API](https://docs.ipfs.io/reference/http/api/) and [CLI](https://docs.ipfs.io/reference/cli/) remain unchanged.
+The following changes only affect the [core](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs) API and [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client). The actual [HTTP API](https://docs.ipfs.tech/reference/http/api/) and [CLI](https://docs.ipfs.tech/reference/cli/) remain unchanged.
 
 ### ipfs.add()
 
@@ -147,7 +147,7 @@ for await (const file of ipfs.addAll(files)) {
 
 ### APIs with optional arguments
 
-Recently we [released a change](https://blog.ipfs.io/2020-05-21-js-ipfs-0-44/#cancellable-requests) that allowed passing [AbortSignal][]s to all API methods. This necessitated adding an `options` object to every API call that didn't have one already. This left us in the weird situation where some arguments were optional, but were not in the options argument. Worse, the actions of some API calls changed dramatically depending on whether you passed an option or not. For example `ipfs.bootstrap.rm([multiaddr])` would completely empty the bootstrap list if you didn't pass a [Multiaddr][].
+Recently we [released a change](https://blog.ipfs.tech/2020-05-21-js-ipfs-0-44/#cancellable-requests) that allowed passing [AbortSignal][]s to all API methods. This necessitated adding an `options` object to every API call that didn't have one already. This left us in the weird situation where some arguments were optional, but were not in the options argument. Worse, the actions of some API calls changed dramatically depending on whether you passed an option or not. For example `ipfs.bootstrap.rm([multiaddr])` would completely empty the bootstrap list if you didn't pass a [Multiaddr][].
 
 All this leads to weird behaviour and subtle bugs when you pass things like `undefined` in for an optional arg position and don't pass an options argument, as well as knotty, error-prone internal code that tries to guess what you passed based on type or properties of the objects where their types are the same.
 
@@ -338,19 +338,19 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/

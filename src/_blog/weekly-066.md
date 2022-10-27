@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -28,7 +28,7 @@ In case you missed it, learn how to spawn a go-ipfs node using the go-ipfs core 
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [TemporalX Development Environment Is Live](https://www.reddit.com/r/ipfs/comments/dqu45y/temporalx_development_environment_is_live/), 3 Nov 2019
 - [Video Of The Week: Filecoin and Web3](https://avc.com/2019/11/video-of-the-week-filecoin-and-web3/), AVC, 2 Nov 2019
@@ -46,7 +46,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **6 November 2019:** [Paris P2P Monthly Peer to Beer](https://p2p.paris/en/event/monthly-3/) is a monthly meetup organized by and for the community of P2P and cryptography enthusiasts. Paris, France.
 - **14 November 2019:** [DWeb Talks: Carson Farmer of Textile.io](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/263590720/) hosted by ProtoSchool Seattle. Come and hear from decentralized web developer Carson Farmer on Textile.io! Seattle, WA (US)

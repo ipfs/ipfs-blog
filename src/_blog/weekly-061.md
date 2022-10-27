@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### js-ipfs 0.38.0 is out now!
 
-[The latest version of the JavaScript implementation](https://blog.ipfs.io/070-js-ipfs-0-38/) includes support for garbage collection, gossipsub & IPNS support for ipfs resolve! Also a new release process! Check it out!
+[The latest version of the JavaScript implementation](https://blog.ipfs.tech/070-js-ipfs-0-38/) includes support for garbage collection, gossipsub & IPNS support for ipfs resolve! Also a new release process! Check it out!
 
 ### Watch this short documentary: The Decentralized Web Is Coming
 
@@ -36,7 +36,7 @@ Stop by the Protocol Labs booth at Grace Hopper this week to chat with the team,
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Understanding IPFS in Depth(1/6): A Beginner to Advanced Guide](https://hackernoon.com/understanding-ipfs-in-depth-1-5-a-beginner-to-advanced-guide-e937675a8c8a), Hackernoon, 30 Sep 2019
 - [DFile: A fancy IPFS-based file sharing mode](https://medium.com/@bruce.meerkat/dfile-a-fancy-ipfs-based-file-sharing-mode-e640e081f2c5), Bruce Meerkat, 30 Sep 2019
@@ -69,14 +69,14 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [The PageSaver](https://pagesaver.dweb.tools/) saves pages of the web onto ipfs, and gives you links to the public gateways.
 - [DFile](https://medium.com/@bruce.meerkat/dfile-how-to-use-ipfs-as-a-file-storage-by-python-flask-7906334e832a): How to use IPFS as a file storage by python+flask
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **TONIGHT! 1 October 2019:** [DWeb SF Meet Up-- October](https://www.eventbrite.com/e/dweb-sf-meet-up-october-tickets-73850257107), we loved the community and sharing at DWeb Camp 2019 so much, so let's keep the momentum going! Come meet others interested in building a decentralized web, the web we need and deserve. San Francisco, CA, US.
 - **2 October 2019:** [Paris P2P Monthly Peer to Beer](https://p2p.paris/en/event/monthly-2/) is a meeting organized by and for the community of P2P and cryptography enthusiasts. Paris, France.

@@ -12,16 +12,16 @@ header_image: '/header-image-weekly-newsletter.png'
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Coming soon to a core API near you, the async/await refactor
 
-Read all about [the ongoing refactor](https://blog.ipfs.io/2020-02-01-async-await-refactor/) in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove Node.js streams and pull streams from the code base entirely. Consider this your early warning that the releases of these next two modules will have BIG breaking changes. 🤯
+Read all about [the ongoing refactor](https://blog.ipfs.tech/2020-02-01-async-await-refactor/) in the js-ipfs, js-libp2p and js-ipld codebases to use Promises and remove Node.js streams and pull streams from the code base entirely. Consider this your early warning that the releases of these next two modules will have BIG breaking changes. 🤯
 
 ## Top 5 recent highlights
 
-- [go-ipfs 0.4.23](https://ipfs.io/blog/2020-01-30-go-ipfs-0-4-23/) was released 🚀
-- There was also new release of [ipfs-update](https://dist.ipfs.io/#ipfs-update), version 1.5.3 which fixed a ton of bugs when running on Windows
+- [go-ipfs 0.4.23](https://blog.ipfs.tech/2020-01-30-go-ipfs-0-4-23/) was released 🚀
+- There was also new release of [ipfs-update](https://dist.ipfs.tech/#ipfs-update), version 1.5.3 which fixed a ton of bugs when running on Windows
 - The path to [landing Bitswap in go-ipfs](https://github.com/ipfs/go-ipfs/issues/6782#issuecomment-579973116) has been discovered!
 - You’re going to want to see this [absolutely amazing IPFS deck]9https://docs.google.com/presentation/d/1yJEKH2BQRp5SnuGYNf7R9n7pobfMHF78tsfHJK6LFxI/edit) by Kelsey Breseman
 - New tutorial: [Using a Node.js Script to Upload a Folder to a Remote IPFS Node](https://medium.com/cladular/using-a-node-js-script-to-upload-a-folder-to-a-remote-ipfs-node-255fa9e3b766)
@@ -81,6 +81,6 @@ Check out “A Technical Introduction to IPFS,” by Hector Sanjuan.
 - [Open Data Day 2020](https://opendataday.org/), 07 Mar 2020, 35 events registered so far!
 - [Cryptoeconomic Systems Conference '20](https://cryptoeconomicsystems.pubpub.org/ces20), 07-08 Mar 2020, Cambridge (MA), US
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.

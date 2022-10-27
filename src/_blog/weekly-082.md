@@ -12,7 +12,7 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Using IPFS to fight COVID-19
 
@@ -27,7 +27,7 @@ Here are some ways people in the dweb space are responding to the COVID-19 pande
 
 ## Top highlights this week
 
-- **2 NEW LANGUAGES join the IPFS ecosystem!** Learn about [Rust IPFS](https://blog.ipfs.io/2020-03-18-announcing-rust-ipfs/), and check out their call for contributors. [Wolfram Lang also added IPFS support](https://writings.stephenwolfram.com/2020/03/in-less-than-a-year-so-much-new-launching-version-12-1-of-wolfram-language-mathematica/#external-connectivity), which is a huge win for making manipulation over distributed datasets much easier.
+- **2 NEW LANGUAGES join the IPFS ecosystem!** Learn about [Rust IPFS](https://blog.ipfs.tech/2020-03-18-announcing-rust-ipfs/), and check out their call for contributors. [Wolfram Lang also added IPFS support](https://writings.stephenwolfram.com/2020/03/in-less-than-a-year-so-much-new-launching-version-12-1-of-wolfram-language-mathematica/#external-connectivity), which is a huge win for making manipulation over distributed datasets much easier.
 - **NEW RELEASE:** Testground, although still experimental, is making headway in [its latest release](https://github.com/ipfs/testground/releases/tag/v0.3.0) focused on observability and robustness.
 - **NEW TUTORIAL:** [Nim-libp2p Tutorial: A Peer-to-Peer Chat Example 1](https://our.status.im/nim-libp2p-tutorial-chat/)
 - Did you want a list of all the ietf RFCs available on IPFS? Well, [here you go](https://gateway.temporal.cloud/ipfs/QmbmXg966neztdEh7G7cDd44R7V7StnTFvjPkKMWe7QCZJ)!
@@ -97,6 +97,6 @@ Looking for tips or tutorials on IPFS in Spanish? Check out these community reso
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

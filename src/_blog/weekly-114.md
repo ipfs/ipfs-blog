@@ -10,7 +10,7 @@ description: ''
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## New releases from js-ipfs, go-libp2p and js-libp2p
 
@@ -20,7 +20,7 @@ Time for some updates y'all! Check out the latest from:
 - [go-libp2p v0.12](https://github.com/libp2p/go-libp2p/releases/tag/v0.12.0): introduces a new BasicConnectionGater to filter inbound and outbound connections and makes a significant breaking change to the stream interfaces to remove some surprising behavior.
 - [js-libp2p v0.29.3](https://github.com/libp2p/js-libp2p/releases/tag/v0.29.3): resolves the issue of multiaddrs before dial.
 
-Stay tuned to [blog.ipfs.io](https://blog.ipfs.io/) for more information, coming soon.
+Stay tuned to [blog.ipfs.tech](https://blog.ipfs.tech/) for more information, coming soon.
 
 ## Quote of the week
 
@@ -79,7 +79,7 @@ Join the Filecoin team, ecosystem partners, and community members for the Novemb
 
 **Take care of yourselves and each other. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

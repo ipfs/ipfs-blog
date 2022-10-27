@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 146
+title: 'Welcome to IPFS Weekly 146: Wolfram, ChainSafe, Introduction to libp2p, and
+  More'
 description: Mint NFTs and publish to IPFS, an update from ChainSafe, go-ipfs v0.9.1
   release, and more this week in IPFS!
 author: Emily Vaughan
@@ -11,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Mint NFTs and Publish to IPFS From Wolfram
 

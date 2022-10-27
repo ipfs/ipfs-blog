@@ -12,7 +12,7 @@ tags:
 
 # Welcome to IPFS Weekly #92
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## Join us next Wednesday for our June meetup
 
@@ -24,7 +24,7 @@ Next week the IPFS community will be gathering for a virtual meetup on June 17th
 
 The JavaScript implementation of IPFS recently shared their latest progress on the IPFS blog. Goodies include Bitswap 1.2.0, much faster file transfers, and go-ipfs 0.5.x compatibility.
 
-[**Read the release notes**](https://blog.ipfs.io/2020-06-08-js-ipfs-0-46/)
+[**Read the release notes**](https://blog.ipfs.tech/2020-06-08-js-ipfs-0-46/)
 
 ## Powering through the API gateway enabling IPFS and Filecoin data management
 
@@ -66,6 +66,6 @@ Earlier this month, Powergate, Textile’s API driven solution to deploying mult
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the [IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

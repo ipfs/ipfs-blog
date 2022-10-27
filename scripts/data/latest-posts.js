@@ -1,7 +1,7 @@
 'use strict'
 
 /**
-    The ipfs.io website requests for a blog.ipfs.io/index.json file
+    The ipfs.io website requests for a blog.ipfs.tech/index.json file
     with the latest 4 posts.
     This script parses the rss feed file index.xml and generates the
     required index.json file.

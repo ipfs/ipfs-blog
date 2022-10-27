@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 # Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -28,7 +28,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Build a Decentralized Chat App with Knockout and IPFS](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b), Textile.io, 28 Sep 2018
 - [IPFS: A Complete Analysis of The Distributed Web](https://medium.com/zkcapital/ipfs-the-distributed-web-e21a5496d32d), zK Capital, 28 Sep 2018 _(Clicking this link means you are already using IPFS!)_
@@ -44,7 +44,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [ipld-explorer-cli 0.14](https://blog.ipfs.io/44-ipld-explorer-cli-0-14/) - IPLD (Inter Planetary Linked Data) is the underlying data structure used by IPFS that allows it to store, retrieve and traverse through any type of content-addressed data.
+- [ipld-explorer-cli 0.14](https://blog.ipfs.tech/44-ipld-explorer-cli-0-14/) - IPLD (Inter Planetary Linked Data) is the underlying data structure used by IPFS that allows it to store, retrieve and traverse through any type of content-addressed data.
 - [ipfs-cluster 0.6.0](https://github.com/ipfs/ipfs-cluster/blob/0.6.0/changelog/CHANGELOG.md) – Increased the minor release number to signal changes to the Go APIs after upgrading to the new cid package, but, other than that, this release does not include any major changes.
 - [js-ipfs 0.32.3](https://github.com/ipfs/js-ipfs/releases/tag/v0.32.3) – Some bug fixes for the JavaScript implementation of the IPFS protocol.
 - [qri-io 0.5.4](https://github.com/qri-io/qri/releases/tag/v0.5.4) - A very minor release that cleans up a few issues with the API to make the frontend editor work 😄
@@ -52,7 +52,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Download the Brave Beta](https://brave.com/download-beta/) and get an early preview for new versions of Brave.
 - [Announcing Hyperswarm](https://pfrazee.hashbase.io/blog/hyperswarm), Paul Frazee, 26 Sep 2018
@@ -65,7 +65,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - [Eth San Francisco](https://ethsanfrancisco.com/), 5-7 Oct 2018, San Francisco
 - The first Berlin IPFS Meetup is happening on October 11th! [Sign up to attend on Meetup.](https://www.meetup.com/IPFS-Berlin/events/254816369/)

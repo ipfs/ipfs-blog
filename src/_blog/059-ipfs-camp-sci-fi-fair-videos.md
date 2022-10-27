@@ -39,7 +39,7 @@ Long-time IPFS community members [Textile](https://textile.io) brought their cro
 </div>
 _Hector explains the topology of the RPi cluster (feat. many blinkenlights)_
 
-Hector and the rest of the [IPFS Cluster](https://cluster.ipfs.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
+Hector and the rest of the [IPFS Cluster](https://ipfscluster.io) team came through with a project high in fun, fabric, and blinking lights: the Raspberry Pi IPFS Cluster. Six tiny but mighty (and lovingly upholstered) nodes tirelessly worked together to pin whatever CIDs were thrown at them and reported their pinset load through an ingenious hardware display. Not pictured: [@cluster-labs'](https://github.com/cluster-labs) [Horizon UI for IPFS Cluster](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) giving fair attendees even more fine-grained insights into the pinset.
 
 ![@achingbrain's npm-in-a-box](../assets/059-ipfs-camp-sci-fi-fair-videos-npm-in-box.jpg)
 _[Alex Potsides’s](https://github.com/achingbrain) npm-in-a-box project_
@@ -85,6 +85,6 @@ Huge thanks to our SciFi Fair participants for making IPFS Camp so out-of-this-w
 There's still more great content from IPFS Camp content coming your way, including recordings of keynotes and interviews. If you're interested in receiving an update when the next batch of videos are available, try out one of these routes:
 
 - Watch and star the [ipfs/camp repo](https://github.com/ipfs/camp/blob/master/README.md), where all the content will live.
-- Subscribe to the [RSS feed of this blog](https://blog.ipfs.io/index.xml).
+- Subscribe to the [RSS feed of this blog](https://blog.ipfs.tech/index.xml).
 - Subscribe to the [IPFS Weekly Newsletter](https://tinyletter.com/ipfsnewsletter) if you're interested in general IPFS updates.
 - Subscribe to the [IPFS Events Newsletter](https://protocol.us20.list-manage.com/subscribe?u=62e1eb7f68461b5a2ab5c52e6&id=f3fed9af1d) if you're interested in IPFS events.

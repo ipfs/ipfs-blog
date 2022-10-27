@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,7 +22,7 @@ tags:
 
 ### 2019 IPFS 露营的第一批录音出来了!
 
-- 你没看错,IPFS 露营的录音开始发布了！第一批: [闪电演讲和项目海报](https://blog.ipfs.io/2019-07-22-ipfs-camp-content-first-batch/)，去看看吧！
+- 你没看错,IPFS 露营的录音开始发布了！第一批: [闪电演讲和项目海报](https://blog.ipfs.tech/2019-07-22-ipfs-camp-content-first-batch/)，去看看吧！
 
 ### 加入 IRC 上的 IPFS、libp2p 和 IPLD 社区 \o/， 它很有趣!
 
@@ -30,7 +30,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - 视频: [点对点网络中的隐私](https://www.youtube.com/watch?time_continue=26&v=nCCkwU4JPcY)， Gonçalo Pestana，在 Data Terra Nemo，2019 年 7 月 22 日
 - [深入了解 IPFS (5/6): 什么是 Libp2p?](https://medium.com/coinmonks/understanding-ipfs-in-depth-5-6-what-is-libp2p-f8bf7724d452) Coinmonks, 2019 年 7 月 21 日
@@ -58,13 +58,13 @@ _你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻�
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [go-stellar-ipfs](https://github.com/aanupam23/go-stellar-ipfs) 是一个库，搭建 Stellar 和 IPFS 之间的桥梁。
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 7 月 28 日:** [ProtoSchool - 上海分校：第四届技术沙龙](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/262866233/)将聚焦于技术深度挖掘，并宣传去中心化存储网络及其发展中的生态系统。由上海去中心化系统会议集团主办。
 - **2019 年 8 月 2 日至 5 日:** [Offline 夏令营](http://offlinefirst.org/camp/)是 Oregon 州 Grants Pass 市的一个为期 4 天的活动，旨在探索 Offline First 的开发和设计。[在这里了解更多关于这次活动的信息。](https://medium.com/offline-camp/announcing-offline-camp-v5-eb9111fdcc94)

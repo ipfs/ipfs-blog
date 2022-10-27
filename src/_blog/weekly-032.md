@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -27,7 +27,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## Join us at the first ever IPFS Camp
 
-**Last week we announced [IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/), taking place June 27th-30th in beautiful Barcelona.** This event is specifically for you, the IPFS community! Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+**Last week we announced [IPFS Camp](https://blog.ipfs.tech/72-ann-ipfs-camp/), taking place June 27th-30th in beautiful Barcelona.** This event is specifically for you, the IPFS community! Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## The latest
 
@@ -37,7 +37,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Speeding Up IPFS Through Swarm Connections](https://medium.com/pinata/speeding-up-ipfs-pinning-through-swarm-connections-b509b1471986), Matt Ober, 4 Mar 2019
 - Check out the [DTube IPFS public community node contest!](https://steemit.com/dtube/@vaultec/dtube-ipfs-full-community-node-contest), 1 Mar 2019
@@ -60,12 +60,12 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
 - [If there are too many pubsub topics in IPFS system, will it make the system too slow ,eventually unusable?](https://www.reddit.com/r/ipfs/comments/awre05/does_pubsub_have_an_upper_limit/)
-- [I’m using the Python client to communicate with my Go IPFS daemon...](https://discuss.ipfs.io/t/python-public-subscribe-server-client/4965)
-- [I am developing an application in Go that uses IPFS to add files and to send messages through pubsub feature...](https://discuss.ipfs.io/t/ipfs-start-ipfs-daemon-direct-from-the-go-application/4952)
+- [I’m using the Python client to communicate with my Go IPFS daemon...](https://discuss.ipfs.tech/t/python-public-subscribe-server-client/4965)
+- [I am developing an application in Go that uses IPFS to add files and to send messages through pubsub feature...](https://discuss.ipfs.tech/t/ipfs-start-ipfs-daemon-direct-from-the-go-application/4952)
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Check out [Discussify](https://chrome.google.com/webstore/detail/discussify/bfmnjjkobeboejeocbompgljbiafbgcc), from our friends at Moxy Studios. Built on IPFS, Discussify provides a real-time, peer to peer, and permanent discussion platform for anyone to join and participate.
 - [Elea](https://www.elea.io/) is live, a platform for property data, where property documents get hashed with IPFS.
@@ -73,7 +73,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **5-7 Mar 2019:** [Ethereum Community Conference](https://ethcc.io/), or EthCC, is the second edition of a series of conferences and workshops that bring together and strengthen the international Ethereum community. EthCC 2019 will take place in Paris
 - **8 Mar 2019:** [‘Web3 stack, what’s next for developers?’](https://www.eventbrite.com/e/web3-stack-whats-next-for-developers-consensys-tickets-57699644189) ConsenSys invites you to get together to challenge the current limits of a decentralized world with a diversity of BUIDLing approaches. Join them for tech breakdowns on the latest developments across the decentralized stack solutions.

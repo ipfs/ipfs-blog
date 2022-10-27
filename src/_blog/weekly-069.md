@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -32,7 +32,7 @@ In the latest release of client library for the IPFS HTTP API, a bug preventing 
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [IPFS & Blockchain: Two Peas in a Pod](https://medium.com/zubi-io/ipfs-blockchain-two-peas-in-a-pod-7377d396a223), Viraz Malhotra, 26 Nov 2019
 - [50 Wallets Signed-Up, Growing dWeb, TruffleSuite, & More: ENS Ecosystem Update](https://medium.com/the-ethereum-name-service/50-wallets-signed-up-growing-dweb-trufflesuite-more-ens-ecosystem-update-23be948e23ca), Brantly Millegan, 22 Nov 2019
@@ -58,7 +58,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Zil.Link](https://www.zil.link/): A service bridging IPFS and traditional DNS.
 - [RecipeRadar](https://www.reciperadar.com): Peer-to-peer sharing of a session via CRDTs over IPFS.
@@ -66,7 +66,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **3-4 December, 2019:** [Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform), hosted by SmartFactoryOWL, is coming next month. As part of the hackathon, the application of the Actyx platform, (which uses IPFS and libp2p) will be tested and applied to the “living object.” Lemgo, Germany.
 - **6 December 2019:** [React Day Berlin](https://reactday.berlin/): Build code, not walls. Take part in the exploration of the React universe! Focusing on in-depth talks, hands-on workshops, and finding new opportunities, React Day Berlin conference provides space for everyone to make friends and develop stellar apps together. Berlin, Germany.

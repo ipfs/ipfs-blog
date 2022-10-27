@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -22,7 +22,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- The [HTTP client libraries are being renamed](https://blog.ipfs.io/58-http-client-rename/)! The important news is that the HTTP client libraries are changing from `ipfs-api` to `ipfs-http-client`. True, it’s longer but way better at describing what the module is! Read the blog for more info.
+- The [HTTP client libraries are being renamed](https://blog.ipfs.tech/58-http-client-rename/)! The important news is that the HTTP client libraries are changing from `ipfs-api` to `ipfs-http-client`. True, it’s longer but way better at describing what the module is! Read the blog for more info.
 - Look at [these amazing cookies](https://twitter.com/momack28/status/1069510119132516352) from @momack28’s holiday baking adventures. 😋
 - Don’t forget Sander Pick is presenting Textile photos at next week’s [IPFS Weekly Call](https://github.com/ipfs/team-mgmt#-ipfs-weekly-call--formerly-known-as-ipfs-all-hands-call), Monday at 5pm UTC.
 
@@ -32,7 +32,7 @@ Last week, we mentioned [live-streaming over IPFS](https://github.com/tomeshnet/
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Introduction to IPFS: Run Nodes on Your Network, with HTTP Gateways](https://medium.com/@rossbulat/introduction-to-ipfs-set-up-nodes-on-your-network-with-http-gateways-10e21ea689a4), Medium, 03 Dec 2018
 - [Curatorial Enclaves](https://medium.com/@odomojuli/curatorial-enclaves-cf595e5d099d), Medium, 03 Dec 2018
@@ -43,7 +43,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Check out [`textile-go`](https://github.com/textileio/textile-go) and the [Files API](https://www.youtube.com/watch?v=5HnpMrvkWoo) for interacting with IPFS.
 - [Neilos](https://medium.com/@marco.castignoli/neilos-bfda3f0137c6) offers a safer way to browse the web in which there is no risk of running malicious code on devices. Inspired by the concepts of the first World Wide Web, there is no need to run arbitrary code if we have powerful components!
@@ -55,7 +55,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - [OPO.js on December 7](https://www.meetup.com/opo-js/events/256434646/) features Alex Potsides of Protocol Labs and some other awesome speaker so if you’re in Porto, check it out.
 - Get started with IPFS at the [Contribute to Open Source Project IPFS](https://www.meetup.com/en-AU/IPFS-Berlin/events/255970865/) in Berlin on December 9!

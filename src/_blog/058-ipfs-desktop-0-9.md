@@ -24,7 +24,7 @@ The newest version of IPFS Desktop, 0.9.2 - yes, we already released two patch v
 
 ### Browse the wild...
 
-With the [recent update to the Web UI](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.5.0), we are now capable of navigating through the whole IPFS system. Previously, you could only access your 'Files' (the contents of the [Mutable File System](https://proto.school/#/mutable-file-system)). Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also any content [pinned](https://docs.ipfs.io/guides/concepts/pinning/) to your IPFS node!
+With the [recent update to the Web UI](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.5.0), we are now capable of navigating through the whole IPFS system. Previously, you could only access your 'Files' (the contents of the [Mutable File System](https://proto.school/#/mutable-file-system)). Now, you can navigate not only to any `/ipfs/` or `/ipns/` path, but also any content [pinned](https://docs.ipfs.tech/guides/concepts/pinning/) to your IPFS node!
 
 ![Browsing /ipns/ipns.io](../assets/058-ipfs-desktop-0-9-browse-wild.jpg)
 

@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,7 +22,7 @@ tags:
 
 ### js-ipfs 0.38.0 发布
 
-https://blog.ipfs.io/070-js-ipfs-0-38/
+https://blog.ipfs.tech/070-js-ipfs-0-38/
 
 ### 去中心化网络即将到来
 
@@ -34,7 +34,7 @@ https://twitter.com/IPFSevents/status/1178711529656422406?s=20
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [深入了解 IPFS（1/6）：从初级到高级的指南](https://hackernoon.com/understanding-ipfs-in-depth-1-5-a-beginner-to-advanced-guide-e937675a8c8a) ，Hackernoon，2019 年 9 月 30 日
 - [DFile：一种基于 IPFS 的奇特文件共享模式](https://medium.com/@bruce.meerkat/dfile-a-fancy-ipfs-based-file-sharing-mode-e640e081f2c5) ，Bruce Meerkat，2019 年 9 月 30 日
@@ -67,14 +67,14 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [PageSaver](https://pagesaver.dweb.tools/) 将 Web 页面保存到 IPFS，并为您提供到公共网关的链接。
 - [DFile](https://medium.com/@bruce.meerkat/dfile-how-to-use-ipfs-as-a-file-storage-by-python-flask-7906334e832a) ：如何使用 python + flask 用 IPFS 作文件存储
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **今晚！ 2019 年 10 月 1 日：** [DWeb SF 聚会-十月](https://www.eventbrite.com/e/dweb-sf-meet-up-october-tickets-73850257107) ，我们非常热爱社区，并在 2019 DWeb Camp 上分享，所以让我们保持势头！快来认识有兴趣建立去中心化网络的其他人，这是我们需要和应得的。美国，加利福尼亚州，旧金山。
 - **2019 年 10 月 2 日：** [巴黎每月 P2P Peer 对 Beer](https://p2p.paris/en/event/monthly-2/)活动是由 P2P 和密码学爱好者社区组织并为其举办的会议。法国，巴黎。

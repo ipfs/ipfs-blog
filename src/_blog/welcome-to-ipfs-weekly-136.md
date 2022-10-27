@@ -1,5 +1,6 @@
 ---
-title: Welcome to IPFS Weekly 136
+title: 'Welcome to IPFS Weekly 136: Spring University Hackathons, Estuary Node, js-IPFS
+  0.55.0, and More'
 description: Spring university hackathons roundup, an intro to Estuary, and what's
   happening around the IPFS ecosystem!
 author: Emily Vaughan
@@ -11,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Spring University Hackathons Roundup 
 
@@ -21,7 +22,7 @@ Last month, the IPFS project partnered with two different universities to sponso
 
 [**Cal Hacks**](https://helloworld.calhacks.io/), a nonprofit organization composed of University of California, Berkeley students, held a global hackathon to unite the innovators, creators, and troublemakers of the world, called hello:world. The goal was to inspire students to build something out of this world in the following categories: sustainability, connectivity, education, or community and civic engagement.
 
-Similarly, the Associated Students of the University of California (ASUC) also held [**CivHacks**](https://www.civhacks.com/), an annual hackathon focused on providing a welcoming, engaging and creative environment to support social good in tech culture, open to several categories including health, sustainability, student success, and civics. To learn more about the success of the event and the prize winners, [**check out our recent blog post**](https://blog.ipfs.io/2021-05-18-spring-hackathons/).
+Similarly, the Associated Students of the University of California (ASUC) also held [**CivHacks**](https://www.civhacks.com/), an annual hackathon focused on providing a welcoming, engaging and creative environment to support social good in tech culture, open to several categories including health, sustainability, student success, and civics. To learn more about the success of the event and the prize winners, [**check out our recent blog post**](https://blog.ipfs.tech/2021-05-18-spring-hackathons/).
 
 ## Use Estuary Node to store and retrieve your data from the Filecoin Network
 
@@ -31,7 +32,7 @@ Estuary is a network node that bridges IPFS ⇆ Filecoin. Unlike other nodes, Es
 
 ## Brand new on IPFS
 
-* js-IPFS 0.55.0 greatly improves type definitions, [**read all about it**](https://blog.ipfs.io/2021-05-11-js-ipfs-0-55/).
+* js-IPFS 0.55.0 greatly improves type definitions, [**read all about it**](https://blog.ipfs.tech/2021-05-11-js-ipfs-0-55/).
 * IPFS support is now available in Opera desktop browser! [**Try it!**](https://www.opera.com/computer)
 * Devs can now use Chainlink to reference JSON files on IPFS to reduce gas costs for token distributions. [**Check out the tutorial**](https://blog.chain.link/fetch-ipfs-api-data-token-distribution/)!
 * Creating an IPFS gateway with a custom domain just became incredibly easy to do with Pinata's new dedicated gateway feature. [**Read more**](https://www.coywolf.news/webmaster/dedicated-ipfs-gateway-custom-domain/).
