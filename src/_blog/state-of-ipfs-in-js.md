@@ -48,7 +48,7 @@ To help with this update, the following names and terms will be used to aid with
 - Delegate nodes - These are nodes that expose the [`/api/v0/dht/*` endpoints of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-dht-findpeer) for delegated routing. Because **js-ipfs** nodes don’t have the DHT enabled by default and wouldn’t make good DHT servers in browsers anyways, they need the help of **delegate** nodes to resolve DHT queries.
 - Preload nodes - These are nodes that expose the `/api/v1/refs` [endpoint of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-refs) which can be called so that the remote node will fetch CIDs (but not pin). This is necessary to ensure that blocks that are added in the browser are *preloaded* onto a long-running IPFS node so that it’s made available to the rest of the network. Preload nodes garbage collect those blocks after a period.
 
-## ⏳ IPFS JS Development History
+## ⏳ IPFS-in-JS Development History
 
 The js-ipfs project started in 2014 and sought to mirror the functionality and API of Kubo (then called go-ipfs). This manifested in the concept of the JS [_Core API_](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api), which was effectively a conversion of the [Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/) into JavaScript. There were multiple implementations of this interface including:
 
