@@ -3,11 +3,13 @@ date: 2022-10-27
 permalink: /state-of-ipfs-in-js/
 title: State of IPFS in JS
 description: An update on the state of IPFS development in JavaScript, the history of how we got here, and how we plan to improve the IPFS in JS story in the coming year.
-author: Alex Potsides, Steve Loeppky, Marcin Rataj, Daniel Norman, Elliot Lee
+author: Alex Potsides, Marcin Rataj, Steve Loeppky, Daniel Norman, Elliot Lee
 header_image: /state-of-ipfs-in-js.png
 tags:
   - ipfs
   - js-ipfs
+  - libp2p
+  - js-libp2p
 ---
 
 - [🧘‍♀️ Purpose](#️purpose)
@@ -48,9 +50,9 @@ To help with this update, the following names and terms will be used to aid with
 
 - [Kubo](https://github.com/ipfs/kubo/) – This project was formerly known as _go-ipfs_. See [here](https://github.com/ipfs/kubo/issues/8959) for more info.
 - js-ipfs - This is the long-standing IPFS implementation written in JS. As described below, we will be deprecating it after Pomegranate is released. We’re currently not planning to rename this implementation [like we did with Kubo](https://github.com/ipfs/ipfs/issues/470) given its limited lifespan.
-- [Pomegranate](https://github.com/ipfs/pomegranate) - This is a [to-be-created IPFS implementation in JS](https://github.com/ipfs/pomegranate/issues/2) that is discussed below. The final name is TBD (to be determined), and you can track the naming effort [here](https://github.com/ipfs/pomegranate/issues/3). While it will use many of the underlying libraries of js-ipfs, e.g., [js-libp2p](https://github.com/libp2p/js-libp2p) and [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap)) it is a separate project with a different API.
+- [Pomegranate](https://github.com/ipfs/pomegranate) - This is a [to-be-created IPFS implementation in JS](https://github.com/ipfs/pomegranate/issues/2) that is discussed below. The final name is TBD (to be determined), and you can track the naming effort [here](https://github.com/ipfs/pomegranate/issues/3). While it will use many of the underlying libraries of js-ipfs (e.g., [js-libp2p](https://github.com/libp2p/js-libp2p), [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap)), it is a separate project with a different API.
 - IPFS-in-JS - This refers broadly to the development of IPFS using the JavaScript and TypeScript languages. It doesn’t mean the “js-ipfs” project or “Pomegranate”.
-- Delegates nodes - These are nodes that expose the `[/api/v0/dht/*` endpoints of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-dht-findpeer) for delegated routing. Because **js-ipfs** nodes don’t have the DHT enabled by default –and wouldn’t make good DHT servers in browsers anyways–, they need the help of **delegates** nodes to resolve DHT queries.
+- Delegate nodes - These are nodes that expose the [`/api/v0/dht/*` endpoints of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-dht-findpeer) for delegated routing. Because **js-ipfs** nodes don’t have the DHT enabled by default and wouldn’t make good DHT servers in browsers anyways, they need the help of **delegate** nodes to resolve DHT queries.
 - Preload nodes - These are nodes that expose the `/api/v1/refs` [endpoint of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-refs) which can be called so that the remote node will fetch CIDs (but not pin). This is necessary to ensure that blocks that are added in the browser are *preloaded* onto a long-running IPFS node so that it’s made available to the rest of the network. Preload nodes garbage collect those blocks after a period.
 
 ## ⏳ IPFS JS Development History
@@ -113,9 +115,9 @@ With this approach, you either embed [ipfs-core](https://github.com/ipfs/js-ipfs
 
 Because browsers impose constraints on the number of network connections opened and storage space used by each browser tab, they don’t make for reliable IPFS nodes. For this reason, many of the responsibilities of an IPFS node which include: routing, retrieval, and providing have all been handled in a delegated fashion in the browser.
 
-Unfortunately, the default delegation setup in js-ipfs today is overly complicated and not well-engineered. Specifically, this happens via **preload and delegate nodes** hosted by Protocol Labs that support secure WebSockets (WSS) that browsers can safely and reliably connect to.
+Unfortunately, the default delegation setup in js-ipfs today is overly complicated and not well-engineered. Specifically, this happens via preload and delegate nodes hosted by Protocol Labs that support secure WebSockets (WSS) that browsers can safely and reliably connect to.
 
-For delegated routing/retrieval, js-ipfs asks the **delegate nodes** to perform DHT operations on its behalf using the Kubo RPC API(`/v0/dht/*`). The delegate nodes query the DHT for peers and content providers, and then they fetch the content, which they provide for the browser nodes that are connected to them.
+For delegated routing/retrieval, js-ipfs asks the delegate nodes to perform DHT operations on its behalf using the Kubo RPC API (`/v0/dht/*`). The delegate nodes query the DHT for peers and content providers, and then they fetch the content, which they provide for the browser nodes that are connected to them.
 
 For delegated providing from the browser, js-ipfs contacts the preload node using Kubo RPC API (`/v0/refs`) to preload the entire dag from the browser. The preload node fetches the data from the browser over Bitswap and then advertises it on the DHT.
 
@@ -137,6 +139,7 @@ js-ipfs nodes running in the browser can connect to other js-ipfs nodes via the 
 - Inefficient design:
   - It doesn’t scale well because certain preload nodes get disproportionate traffic due to hardcoding in old js-ipfs versions.
   - Preload via `/v0/refs` is [very wasteful](https://github.com/ipfs/js-ipfs/issues/3510).
+- Not specified or adopted by other implementations: the WebRTC Star transport is only implemented in js-libp2p and neither WebRTC Star nor the delegate/preload APIs are specified.
 
 ## 🧑‍💻 IPFS-in-JS development the last 18 months
 
@@ -146,7 +149,7 @@ The last 18 months on the JS front have been spent on:
 2. Modernizing js-ipfs and js-libp2p to TypeScript and ESM only. 😅
 3. Improving security and performance of js-libp2p given its criticality for other projects outside of IPFS such as Ethereum Lodestar. For example, a set of [DoS and eclipse attack mitigations](https://docs.libp2p.io/reference/dos-mitigation/) were added.
 4. Adding a working DHT client/server implementation to js-libp2p. (Yes, in a NodeJS context you can read from and write to the public IPFS DHT.)
-5. Expanding connectivity options of IPFS-in-JS implementations. Notably, we [introduced a WebTransport transport](https://github.com/libp2p/specs/tree/master/webtransport) and a [new WebRTC transport](https://github.com/libp2p/specs/pull/412) that does not require a centralized signaling server to enable both browser-based IPFS nodes to dial Kubo nodes directly and browser-to-browser connectivity. (This is discussed more below.)
+5. Expanding connectivity options of IPFS-in-JS implementations. Notably, we [introduced a WebTransport transport](https://github.com/libp2p/specs/tree/master/webtransport) and are adding a [new WebRTC transport](https://github.com/libp2p/specs/pull/412) that does not require a centralized signaling server to enable both browser-based IPFS nodes to dial Kubo nodes directly and browser-to-browser connectivity. (This is discussed more below.)
 
 At this point, we have a solid peer-to-peer library in js-libp2p that can be built upon, and many lessons learned for how to better progress with Javascript/Typescript in a world of [multiple IPFS implementations](https://docs.ipfs.tech/basics/ipfs-implementations/).
 
@@ -156,7 +159,7 @@ With all the background of IPFS-in-JS over the past covered, this section will t
 
 ### Go and JS development are decoupling
 
-We never had full compatibility between Kubo and js-ipfs, we don’t think we can, and we don’t think it’s worth investing more down this path. At least for the implementations maintained by Protocol Labs’ EngRes (Engineering & Research) group, the Go and JS implementations will diverge and develop the APIs that are best for their respective user bases.
+We never had full compatibility between Kubo and js-ipfs, we don’t think we can, and we don’t think it’s worth investing more down this path. At least for the implementations maintained by [Protocol Labs’ EngRes (Engineering & Research) group](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e), the Go and JS implementations will diverge and develop the APIs that are best for their respective user bases.
 
 In practical terms, this translates to:
 
@@ -173,7 +176,7 @@ This means browser nodes have more optionality to which long-running IPFS nodes 
 
 (Note: browser nodes will still want to delegate providing content to a node with more longevity since the new transports won’t stop browser nodes from disappearing from the network when the user closes a tab or puts their laptop to sleep.)
 
-We’ll lean into realizing these breakthroughs and remove the more convoluted mechanisms from the past that relied on the Kubo RPC API and preload nodes discussed in [js-ipfs in a Browser context](https://www.notion.so/js-ipfs-in-a-Browser-context-458d768a915841a9b8fff0d91e162e13).
+We’ll lean into realizing these breakthroughs and remove the more convoluted mechanisms from the past that relied on the Kubo RPC API and preload nodes discussed in [js-ipfs in a Browser context](#js-ipfs-in-a-Browser-context).
 
 ### Support fully speced delegated routing protocols and endpoints
 
@@ -181,7 +184,7 @@ While it will be possible from a connectivity perspective to make DHT queries fr
 
 ### PL Delegate and Preload nodes will be shutting down
 
-Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy Delegate/Preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](https://www.notion.so/js-ipfs-in-a-Browser-context-458d768a915841a9b8fff0d91e162e13). This yields a simpler setup for one’s application and removes centralized infrastructure.
+Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy delegate/preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](#js-ipfs-in-a-Browser-context). This yields a simpler setup for one’s application and removes centralized infrastructure.
 
 For delegated routing, one can configure [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
 
@@ -213,17 +216,17 @@ Some defining attributes include:
 
 ### Pause js-ipfs maintenance once Pomegrate is released
 
-Shortly after you can add and cat files across the network with Pomegranate, [PL EngRes](https://www.notion.so/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) will cease maintenance on js-ipfs. In the absence of an established group with a credible track record to take js-ipfs over, the community is welcome to fork js-ipfs and maintain the fork. (We want to avoid issues that can occur with casually giving away publishing rights.)
+Shortly after you can add and cat files across the network with Pomegranate, [PL EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) will cease maintenance on js-ipfs. In the absence of an established group with a credible track record to take js-ipfs over, the community is welcome to fork js-ipfs and maintain the fork. (We want to avoid issues that can occur with casually giving away publishing rights.)
 
 As discussed before, **we are not** ceasing support and development of many of the libraries that js-ipfs depends on like js-libp2p and js-bitswap. These projects will be actively maintained as core dependencies to Pomegranate and other projects.
 
 ### A new name is coming
 
-As outlined [here](https://github.com/ipfs/ipfs/issues/470), Protocol Labs wants to make space for additional IPFS implementations to be made, including in JS. We want to make it clear that js-ipfs is not IPFS and that js-ipfs is not **_the_** IPFS implementation in JS. go-ipfs successfully made this transition earlier in 2022 with its [minimal rename to Kubo](https://github.com/ipfs/kubo/issues/8959). We will certainly not make the same name-squatting mistake with a new implementation like Pomegranate. Details and plans will be shared [here](https://github.com/ipfs/ipfs/issues/470) and in the [IPFS forums](discuss.ipfs.tech).
+As outlined [here](https://github.com/ipfs/ipfs/issues/470), Protocol Labs wants to make space for additional IPFS implementations to be made, including in JS. We want to make it clear that js-ipfs is not IPFS and that js-ipfs is not **_the_** IPFS implementation in JS. go-ipfs successfully made this transition earlier in 2022 with its [minimal rename to Kubo](https://github.com/ipfs/kubo/issues/8959). We will certainly not make the same name-squatting mistake with a new implementation like Pomegranate. Details and plans will be shared [here](https://github.com/ipfs/ipfs/issues/470) and in the [IPFS forums](https://discuss.ipfs.tech).
 
 ### Doc updates galore
 
-From [dedicated websites](https://js.ipfs.tech/), [examples](https://github.com/ipfs-examples/js-ipfs-examples), to [official docs](https://docs.ipfs.tech/reference/js/api/), and [courses](https://proto.school/course/ipfs) – many places will need updating in light of new names and implementations. This is going to be a sizable undertaking that hasn’t been scoped out yet. This will be tracked [here](https://github.com/ipfs/pomegranate/issues/4).
+From [dedicated websites](https://js.ipfs.tech/), [examples](https://github.com/ipfs-examples/js-ipfs-examples), to [official docs](https://docs.ipfs.tech/reference/js/api/), and [courses](https://proto.school/course/ipfs), many places will need updating in light of new names and implementations. This is going to be a sizable undertaking that hasn’t been scoped out yet. This will be tracked [here](https://github.com/ipfs/pomegranate/issues/4).
 
 ## 🗺 Timeline
 
@@ -231,9 +234,9 @@ The timeline for enacting all of the above is still actively being figured out. 
 
 ## 🤝 Ways you can help
 
-1. 🗳 Propose a [name for the new “Pomegranate” JS library](https://github.com/ipfs/pomegranate/issues/3).
+1. 🗳 Propose a [name for the new “Pomegranate” JS library](https://github.com/ipfs/pomegranate/issues/3) and cast your votes.
 2. 🗣 Give feedback on the [Pomegranate roadmap](https://github.com/ipfs/pomegranate/issues/5). Let us know how you’re using js-ipfs now so we can see if/how your use case would be supported with Pomegranate in the future.
-3. 🫂 Join the team - we’re hiring and need more JavaScript and TypeScript developers who are eager to make the vision above a reality. It’s ideal if you have experience working at the protocol/bytes/streams level. Please apply [here](https://boards.greenhouse.io/protocollabs/jobs/4416822004).
+3. 🫂 Join the team - we’re hiring and need more JavaScript and TypeScript developers who are eager to make the vision above a reality. It’s ideal if you have experience working at the protocol/bytes/streams level. Please learn more [here](https://github.com/ipfs/pomegranate/issues/6).
 4. ✋ Contribute - Open source contributors welcome. Have a great idea and need some funding? Consider a [grant request](https://github.com/ipfs/devgrants).
 
-Thank you for reading and being on this journey to make JS a runtime for IPFS!
+Thank you for reading and being on this journey to make IPFS exceptional in JS runtimes!
