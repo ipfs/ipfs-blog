@@ -12,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## JigStack Gallery Integrates IPFS and Filecoin
 
@@ -30,7 +30,7 @@ Last week, the [**Browsers3000 Hackathon**](https://events.protocol.ai/2021/brow
 
 * Straight out of HackFS, [**glide through this 4 min demo**](https://www.youtube.com/watch?v=TPREubF3XpY) of “CheckoutFS”. The app uses IPFS, Filecoin, Ceramic, and Ethereum to create a decentralized check out and purchase platform.
 * Every other week, the Retrieval Market Builders get together to share progress in their projects in a demo format. Up this week? Myel + IPFS — [**check out the demos**](https://www.youtube.com/watch?v=uCtdFXA6uf4).
-* Go-ipfs v0.10.0-rc1 is out and available from GitHub, dist.ipfs.io and via ipfs-update. Read the [**release issue**](https://github.com/ipfs/go-ipfs/issues/8176).
+* Go-ipfs v0.10.0-rc1 is out and available from GitHub, dist.ipfs.tech and via ipfs-update. Read the [**release issue**](https://github.com/ipfs/go-ipfs/issues/8176).
 * Are you a team or individual interested in contract work for building IPFS, Filecoin or web3 apps generally? Add yourself [**here**](https://github.com/ipfs/community/discussions/630) so we can point clients your way!
 
 ## Around the ecosystem 🌏

@@ -25,7 +25,7 @@ Having IPFS and tools like [NFT.Storage](https://nft.storage/), [Web3.Storage](h
 
 ### **Opensea integrated NFT.Storage for secure, platform-wide NFT persistence**
 
-OpenSea is one of the largest marketplaces for NFTs on the decentralized web. It [partnered](https://blog.ipfs.io/2021-06-17-opensea-ipfs-filecoin/) with IPFS and FIlecoin to integrate NFT.Storage and allow users to "freeze" their NFT metadata. This process permitted creators to truly decentralize their NFTs, giving power back to the creators and not the hosters.
+OpenSea is one of the largest marketplaces for NFTs on the decentralized web. It [partnered](https://blog.ipfs.tech/2021-06-17-opensea-ipfs-filecoin/) with IPFS and FIlecoin to integrate NFT.Storage and allow users to "freeze" their NFT metadata. This process permitted creators to truly decentralize their NFTs, giving power back to the creators and not the hosters.
 
 Today, OpenSea users can create immutable NFT data to be stored persistently on Filecoin's blockchain, with addressing for retrieving that data done through IPFS Content IDs. IPFS content-addressing provides the perfect solution for NFT hosting by eliminating the chance of a “rug pull” or a misplacement of the NFT's metadata.
 
@@ -33,15 +33,15 @@ Today, OpenSea users can create immutable NFT data to be stored persistently on 
 
 After the inclusion of its own cryptocurrency wallet, [Brave](https://www.zdnet.com/article/brave-becomes-first-browser-to-add-native-support-for-the-ipfs-protocol/) continued to add Web3 capabilities to its desktop web browser with its integration of IPFS. Users are now allowed to access content stored on the protocol by resolving IPFS addresses natively.
 
-The integration was the result of a multi-year [collaboration](https://blog.ipfs.io/2021-01-21-how-we-put-ipfs-in-brave/) between both teams with the goal of making IPFS as accessible as possible to end users. It is a massive step towards turning IPFS into an accepted internet standard that all browsers may eventually support.
+The integration was the result of a multi-year [collaboration](https://blog.ipfs.tech/2021-01-21-how-we-put-ipfs-in-brave/) between both teams with the goal of making IPFS as accessible as possible to end users. It is a massive step towards turning IPFS into an accepted internet standard that all browsers may eventually support.
 
 ### **Opera extends its support of IPFS protocol addressing**
 
-Opera first added support for IPFS to its Android browser in 2020. This year, it extended the same capabilities to its [Opera Touch ](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/)browser for iOS users, allowing them to navigate to ipfs:// and ipns:// addresses.
+Opera first added support for IPFS to its Android browser in 2020. This year, it extended the same capabilities to its [Opera Touch ](https://blog.ipfs.tech/2021-02-08-opera-ios-and-ipfs/)browser for iOS users, allowing them to navigate to ipfs:// and ipns:// addresses.
 
 ### **Pinata made it easy for anybody to leverage IPFS**
 
-This pinning and file management service allows users to store content that is often referenced by blockchains in an easy and seamless manner. [Pinata](https://blog.ipfs.io/2021-07-15-building-web-3-pinata/) makes the most of the [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/) to publish content to the IPFS network, allowing for decentralized storage and efficient retrieval based on CIDs.
+This pinning and file management service allows users to store content that is often referenced by blockchains in an easy and seamless manner. [Pinata](https://blog.ipfs.tech/2021-07-15-building-web-3-pinata/) makes the most of the [IPFS Pinning Service API](https://ipfs.github.io/pinning-services-api-spec/) to publish content to the IPFS network, allowing for decentralized storage and efficient retrieval based on CIDs.
 
 ### **ScalaShare brought secure file sharing to Web3 with IPFS**
 
@@ -49,7 +49,7 @@ File sharing between users on the internet began with P2P sharing but[ ScalaShar
 
 ### **Audius relied on CIDs to stream music on demand**
 
-Audius takes music streaming services on Web3 in a new direction. Using IPFS integrations to store and retrieve data,[ Audius](https://blog.ipfs.io/2021-05-05-audius-uses-ipfs-web3-video/) can ensure that there are no broken links to tracks and that all music is delivered to the user without reliance on centralized servers. IPFS's CIDs are the key to ensuring that this music streaming service works properly and continues to [use](https://www.youtube.com/watch?v=E3A0UJRVKnk&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=49) Web3 infrastructure on popular Web 2.0 applications like TikTok.
+Audius takes music streaming services on Web3 in a new direction. Using IPFS integrations to store and retrieve data,[ Audius](https://blog.ipfs.tech/2021-05-05-audius-uses-ipfs-web3-video/) can ensure that there are no broken links to tracks and that all music is delivered to the user without reliance on centralized servers. IPFS's CIDs are the key to ensuring that this music streaming service works properly and continues to [use](https://www.youtube.com/watch?v=E3A0UJRVKnk&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=49) Web3 infrastructure on popular Web 2.0 applications like TikTok.
 
 ### **Palm uses IPFS for storage on its sustainable NFT platform**
 
@@ -57,7 +57,7 @@ This relatively new NFT studio recently partnered with IPFS.[ Palm](https://cons
 
 ### **Valist trusts IPFS for secure Web3 software distribution**
 
-Releasing software through a website or app store can sometimes introduce security concerns as those made evident by the 2020 SolarWinds attack. [Valist](https://blog.ipfs.io/2021-12-07-building-web3-valist/) tackles the issue by allowing development teams to distribute software in a Web3-native way. IPFS acts as a primary storage layer for Valist by providing a lot of security guarantees out of the box.
+Releasing software through a website or app store can sometimes introduce security concerns as those made evident by the 2020 SolarWinds attack. [Valist](https://blog.ipfs.tech/2021-12-07-building-web3-valist/) tackles the issue by allowing development teams to distribute software in a Web3-native way. IPFS acts as a primary storage layer for Valist by providing a lot of security guarantees out of the box.
 
 ### **Snapshot ensured that DAO voting processes are decentralized with IPFS**
 

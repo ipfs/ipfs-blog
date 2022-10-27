@@ -15,12 +15,12 @@ tags:
 
 ![](../assets/ipfs-feb-16.png)
 
-Game development is at a completely different place than where it was a decade or two ago. Today’s games are rich multimedia and art experiences, but that depth comes at a cost. All the amazing design, code, and infrastructure in these releases are requiring similar advancements in storage solutions. As immersive games cross over the Web3 frontier, developers in the space will need tools at their disposal to organize, analyze, archive, and deploy massive amounts of data. [Gala Games](https://app.gala.games/about/) is a solution that meets these needs and helps different teams and projects develop games on chain. Learn more about Gala Games and how they’re using IPFS and Filecoin for their large amount of backup data in this [recent blog post](https://blog.ipfs.io/2022-02-27-gala-games-decentralized-gaming/).
+Game development is at a completely different place than where it was a decade or two ago. Today’s games are rich multimedia and art experiences, but that depth comes at a cost. All the amazing design, code, and infrastructure in these releases are requiring similar advancements in storage solutions. As immersive games cross over the Web3 frontier, developers in the space will need tools at their disposal to organize, analyze, archive, and deploy massive amounts of data. [Gala Games](https://app.gala.games/about/) is a solution that meets these needs and helps different teams and projects develop games on chain. Learn more about Gala Games and how they’re using IPFS and Filecoin for their large amount of backup data in this [recent blog post](https://blog.ipfs.tech/2022-02-27-gala-games-decentralized-gaming/).
 
 ## **Brand New on IPFS ✨**
 
 1. [DAS has now integrated IPFS](https://dasystems.medium.com/bit-now-supports-ipfs-content-12c39489cfae)! You can now decentralize your websites with IPFS, and show your IPFS content on your bit.cc page - with no fee and no gas.
-2. Read how [Lit Protocol](https://litprotocol.com/) and [Audius](https://audius.co/) are leveraging IPFS and Filecoin to give artists individual expression in this [new blog post](https://blog.ipfs.io/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/).
+2. Read how [Lit Protocol](https://litprotocol.com/) and [Audius](https://audius.co/) are leveraging IPFS and Filecoin to give artists individual expression in this [new blog post](https://blog.ipfs.tech/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/).
 3. Check out [Studio 721](https://www.721.so/), an open source website for creating and uploading metadata and artwork to IPFS and deploying NFT smart contracts with the Ethereum and Polygon blockchains.
 4. Web3 builder Pancy is building an NFT store with AVAX and NFT.Storage, read [this Twitter thread](https://twitter.com/pancychain/status/1493650754346700803) to find out about his learnings throughout the process.
 

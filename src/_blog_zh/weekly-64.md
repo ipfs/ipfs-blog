@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 想要更新你的收件箱吗? [订阅我们的每周通讯!](http://eepurl.com/gL2Pi5)
@@ -21,7 +21,7 @@ tags:
 
 ### 参见 IPFS Camp 主题演讲和访谈
 
-我们很高兴分享[在 IPFS Camp 所有汇聚在一起的主题演讲](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/) ，以及社区访谈，重点介绍了 IPFS Camp 参与者在广泛的生态系统中所做的一些令人震惊的工作。
+我们很高兴分享[在 IPFS Camp 所有汇聚在一起的主题演讲](https://blog.ipfs.tech/2019-10-14-ipfs-camp-keynotes-interviews/) ，以及社区访谈，重点介绍了 IPFS Camp 参与者在广泛的生态系统中所做的一些令人震惊的工作。
 
 ### 观看：ProtoSchool Denver 的 IPFS 基础知识之夜
 
@@ -33,7 +33,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [Peergos 更新：快 2 倍且具有交易意识的 GC](https://peergos.gitlab.io/blog#peergos_release_v013_) ，Peergos，2019 年 10 月 21 日
 - [爆炸式 IPFS 数据 - 通过简单的链接缩短服务启用一次性链接，过期链接等。](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-that-you-can-delete/) Textile，2019 年 10 月 18 日
@@ -59,7 +59,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [宣布 Lotus](https://filecoin.io/blog/announcing-lotus/) ，第一个交替的 Filecoin 实现！
 - [3Box Ghost 线程 API](https://docs.3box.io/build/web-apps/messaging/ghost-threads) ：Ghost 线程是另一种类型的线程，不会将任何消息持久保存到数据库存储中。而是使用 IPFS pubsub 将消息从一个对等方发送到网络的其余部分，并在其他联机对等方收到消息后将其保留在内存中。
@@ -69,7 +69,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 10 月 23 日：** [去中心化网络布拉格举办 IPFS 聚会＃2：IPFS 中的文件和实践研讨会](https://www.meetup.com/dweb-prague/events/263909416/)：在聚会的前半部分，我们将更深入地研究 IPFS 如何处理文件。在下半部分，我们将一起探索解释概念。捷克，布拉格
 - **2019 年 10 月 25 日：** [重新去中心化会议 2019](https://redecentralize.org/events/2019-conference/) – 对更公平，更自由的网络感兴趣？致力于权力下放？关心隐私，自主权和我们未来的数字基础设施吗？请加入我们去学习，交流经验，分享想法，加入挑战，进行协作，计划活动并开始项目。英国，伦敦

@@ -13,7 +13,7 @@ tags:
 
 ![Gossipsub logo](../assets/Gossipsub_fullcolor.png =400x)
 
-We are back with a direct follow up on the [Gossipsub v1.1 release from May](https://blog.ipfs.io/2020-05-20-gossipsub-v1.1) with the much awaited Evaluation Report and three other presents we have for you.
+We are back with a direct follow up on the [Gossipsub v1.1 release from May](https://blog.ipfs.tech/2020-05-20-gossipsub-v1.1) with the much awaited Evaluation Report and three other presents we have for you.
 
 ## ✨ The Logo
 

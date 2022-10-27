@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### go-ipfs 0.4.21 released 🎉
 
-Last week, the go-ipfs team celebrated the release of [version 0.4.21](https://blog.ipfs.io/93-go-ipfs-0.4.21), which includes some major bug fixes and new features like experimental TLS1.3 support. Read the full release notes on the IPFS blog.
+Last week, the go-ipfs team celebrated the release of [version 0.4.21](https://blog.ipfs.tech/93-go-ipfs-0.4.21), which includes some major bug fixes and new features like experimental TLS1.3 support. Read the full release notes on the IPFS blog.
 
 ### 🖥 ipfs-desktop 0.8.0 released
 
@@ -31,7 +31,7 @@ Enjoying the ipfs-desktop experience? Prepare to love it just a little bit more 
 
 ### Recapping the July 2018 IPFS Developer Meetings
 
-Did you miss the IPFS and Libp2p developer meeting we held last July? Now you can catch up on all of the project updates, lightning demos and poster sessions held there. Check out [the recap on the IPFS blog](https://blog.ipfs.io/91-ipfs-2018-dev-meetings/).
+Did you miss the IPFS and Libp2p developer meeting we held last July? Now you can catch up on all of the project updates, lightning demos and poster sessions held there. Check out [the recap on the IPFS blog](https://blog.ipfs.tech/91-ipfs-2018-dev-meetings/).
 
 ## Meet the Community, David Dias @ Protocol Labs
 
@@ -53,7 +53,7 @@ Before IPFS, developing a P2P application implied having years of experience bui
 
 ### What projects are really exciting you in the IPFS Ecosystem at the moment and why?
 
-All of them? Ahaha but seriously, it’s pretty much impossible to do a fair selection when there are so many exciting projects appearing every week. We actually created a community driven repo so that folks can share when they discover or create something awesome using IPFS - you can find the current list at [awesome.ipfs.io](https://awesome.ipfs.io). Also, there is [www.app.co/ipfs](https://www.app.co/ipfs) that is maintained by Blockstack. Both are worth checking out.
+All of them? Ahaha but seriously, it’s pretty much impossible to do a fair selection when there are so many exciting projects appearing every week. We actually created a community driven repo so that folks can share when they discover or create something awesome using IPFS - you can find the current list at [awesome.ipfs.tech](https://awesome.ipfs.tech). Also, there is [www.app.co/ipfs](https://www.app.co/ipfs) that is maintained by Blockstack. Both are worth checking out.
 
 Just a few that come top of my mind are:
 
@@ -74,7 +74,7 @@ You can expect Workshops, small group Protocol design sessions and of course, my
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [What is IPFS Blockchain gateway development?](https://www.sparkouttech.com/ipfs-blockchain-gateway-development/) Sparkout, 10 June 2019
 - VIDEO: [Andrew Hall of Textile.io Explains IPFS](https://www.youtube.com/watch?v=a1qVSs-poLY), MacVoices #19152: WWDC/AltConf, 8 June 2019
@@ -97,14 +97,14 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Unwalled.Garden: souped-up RSS for P2P social apps](https://pfrazee.hashbase.io/blog/unwalled-garden)
 - [Entropic: a federated package registry for anything](https://github.com/entropic-dev/entropic)
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **15 June 2019:** [ProtoSchool - Shanghai Chapter: Technical Salon Session 3](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/261891470/), Protoshool Shanghai Chapter is a group of people passionate about the Decentralized Web and excited to learn, teach, and share ideas. Everyone is welcome!
 - **19 June 2019:** [OPO.js Meetup #9](https://www.meetup.com/opo-js/events/261996897/) welcomes Vasco Santos, Software Engineer at MOXY and Victor Bjelkholm, Creator of Open-Services, who’ll be gracing us with two tech talks, and a lot of unexpected errors. Porto, Portugal.

@@ -15,7 +15,7 @@ tags:
 
 ![](../assets/143057346-d60efc95-680d-4ade-a4ab-3320de5c42bd.png)
 
-There are known security issues in current Web 2.0 messaging services built on centralized networks. [Berty](https://berty.tech/) addresses these issues with a distributed communication protocol that takes advantage of the decentralized infrastructure provided by IPFS to build an untraceable messaging system. It’s completely peer-to-peer, open-source, and it can operate over bluetooth, without an internet connection. [Read more](https://blog.ipfs.io/2022-03-11-berty/) on the IPFS blog and join the [Berty community](https://berty.tech/community).
+There are known security issues in current Web 2.0 messaging services built on centralized networks. [Berty](https://berty.tech/) addresses these issues with a distributed communication protocol that takes advantage of the decentralized infrastructure provided by IPFS to build an untraceable messaging system. It’s completely peer-to-peer, open-source, and it can operate over bluetooth, without an internet connection. [Read more](https://blog.ipfs.tech/2022-03-11-berty/) on the IPFS blog and join the [Berty community](https://berty.tech/community).
 
 ## **Brand New on IPFS ✨**
 

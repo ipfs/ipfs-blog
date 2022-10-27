@@ -11,7 +11,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Funding the Commons - November 12
 
@@ -29,7 +29,7 @@ Take a step back and reconnect with the fundamentals of IPFS — what powers the
 2. Content linking via Directed Acyclic Graphs (DAGs).
 3. Content discovery via distributed hash tables (DHTs).
 
-[**Check out the full post**](https://blog.ipfs.io/2021-11-03-understanding-fundamentals-of-ipfs/) from Charles Freeborn, including additional learning resources for IPFS.
+[**Check out the full post**](https://blog.ipfs.tech/2021-11-03-understanding-fundamentals-of-ipfs/) from Charles Freeborn, including additional learning resources for IPFS.
 
 ## **Brand new on IPFS**
 

@@ -12,15 +12,15 @@ header_image: '/header-image-weekly-newsletter.png'
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Improvements to IPFS Bitswap, or how Netflix is experimenting with IPFS
 
-After IPFS Camp 2019, [Netflix and IPFS began collaborating](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/) on ways to incorporate peer-to-peer services into Netflix’s developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution. Read more on the [IPFS blog](https://blog.ipfs.io/2020-02-14-improved-bitswap-for-container-distribution/).
+After IPFS Camp 2019, [Netflix and IPFS began collaborating](https://blog.ipfs.tech/2020-02-14-improved-bitswap-for-container-distribution/) on ways to incorporate peer-to-peer services into Netflix’s developer tooling. Together, we figured out a way to leverage IPFS to speed up cloud builds, designing and testing solutions for faster Continuous Integration (CI) pipelines powered by efficient p2p container image distribution. Read more on the [IPFS blog](https://blog.ipfs.tech/2020-02-14-improved-bitswap-for-container-distribution/).
 
 ## js-ipfs 0.41.0 released
 
-We’ve completed a HUGE refactor to [js-ipfs internals 🥳](https://blog.ipfs.io/2020-02-13-js-ipfs-0-41/), switching to using Promises and async/await over Callbacks and using async iterables instead of Node.js Streams and Pull Streams. BUT, this release brings big breaking changes to the core API so please consult **the full release notes**!
+We’ve completed a HUGE refactor to [js-ipfs internals 🥳](https://blog.ipfs.tech/2020-02-13-js-ipfs-0-41/), switching to using Promises and async/await over Callbacks and using async iterables instead of Node.js Streams and Pull Streams. BUT, this release brings big breaking changes to the core API so please consult **the full release notes**!
 
 ## Top 5 recent highlights
 
@@ -89,6 +89,6 @@ Thank you, everyone who joined us there, IPFS will be back for ETHDenver 2021! �
 - [Consensus 2020](https://www.coindesk.com/events/consensus-2020), 11-13 May 2020, New York (NY), US
 - [csv,conf,v5](https://csvconf.com/), 13-14 May 2020, Washington, D.C., US
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.

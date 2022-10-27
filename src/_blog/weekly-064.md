@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,7 +24,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### See IPFS Camp Keynotes and Interviews
 
-We’re excited to share [the Keynotes that brought us together on our first and last days of IPFS Camp](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/), and the Community Interviews that highlight some of the amazing work being done by IPFS Camp attendees in the wider ecosystem.
+We’re excited to share [the Keynotes that brought us together on our first and last days of IPFS Camp](https://blog.ipfs.tech/2019-10-14-ipfs-camp-keynotes-interviews/), and the Community Interviews that highlight some of the amazing work being done by IPFS Camp attendees in the wider ecosystem.
 
 ### WATCH: IPFS Basics Night with ProtoSchool Denver
 
@@ -36,7 +36,7 @@ Catch up on [Juan Benet’s talk](https://www.youtube.com/watch?v=pJOG5Ql7ZD0) f
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Peergos update: 2X faster and transaction aware GC](https://peergos.gitlab.io/blog#peergos_release_v013_), Peergos, 21 Oct 2019
 - [Exploding IPFS data — enabling single use links, expiring links and more through a simple link shortening service.](https://blog.textile.io/ipfs-experiments-creating-ipfs-links-that-you-can-delete/) Textile, 18 Oct 2019
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Announcing lotus](https://filecoin.io/blog/announcing-lotus/), the first alternate Filecoin implementation!
 - [3Box Ghost Threads API](https://docs.3box.io/build/web-apps/messaging/ghost-threads): Ghost threads are a different type of thread that doesn't persist any messages to database storage. Instead, messages are sent from one peer to the rest of the network using IPFS pubsub, and upon receipt by other online peers are kept in-memory.
@@ -72,7 +72,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **23 October 2019:** [Decentralized Web Prague hosts IPFS Meetup #2: Files in IPFS and hands-on workshop](https://www.meetup.com/dweb-prague/events/263909416/): In the first half of the meetup, we will dive deeper into how IPFS handles files. In the second half, we will explore together the explained concepts hands-on. Prague, Czechia.
 - **25 October 2019:** [Re­decentra­lize Conference 2019](https://redecentralize.org/events/2019-conference/) – Interested in a fairer, freer web and net? Working on decentralisation? Care about privacy, autonomy and our future digital infrastructure? Then join us to learn, compare experiences, bounce ideas, share challenges and lessons learnt, hatch collaborations, plan campaigns and start projects. London, UK.

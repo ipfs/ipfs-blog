@@ -12,13 +12,13 @@ tags:
 
 # Welcome to IPFS Weekly #100
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## 🚨 We are deprecating SECIO very soon 🚨
 
 Soon, support for the SECIO security transport in IPFS and libp2p will be removed. You can mitigate impact to your node(s) by updating to the latest versions.
 
-[Read the blog](https://blog.ipfs.io/2020-08-07-deprecating-secio/)
+[Read the blog](https://blog.ipfs.tech/2020-08-07-deprecating-secio/)
 
 ## Join us at the Randomness Summit Thursday
 
@@ -53,7 +53,7 @@ Research plays a crucial role in IPFS development and iteration and that’s why
 
 The second in the IPFS Case Study Series focuses on OpenBazaar, a p2p e-commerce platform where buyers and sellers can participate anonymously and privately. By using IPFS to create this collaborative network, OpenBazaar enables users to trade without the risks of centralized data collection or the threat of having their personal information hacked!
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-openbazaar/#overview)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-openbazaar/#overview)
 
 ## HackFS + IPFS = 🤯
 
@@ -77,7 +77,7 @@ From COVID-19 tracing to crowdfunding on the dweb to a social distancing lyrics 
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

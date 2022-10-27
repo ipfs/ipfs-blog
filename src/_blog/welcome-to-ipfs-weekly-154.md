@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Decentralizing the Internet's Root
 
 ![](../assets/hns.jpg)
 
-Domain names are things most users don’t think about much, but they are part of the directions to finding any content on the web, and they’re controlled by a centralized resolution system. In a decentralized internet, however, controlling the top of the domain hierarchy would no longer be in the hands of a centralized entity. Top-level domain names would be peer-based and would no longer exist under a single point-of-failure. Find out how [**Namebase offers new solutions to resolving hostnames in the web3 future with its Handshake project**](https://blog.ipfs.io/decentralizing-the-internet-s-root/).
+Domain names are things most users don’t think about much, but they are part of the directions to finding any content on the web, and they’re controlled by a centralized resolution system. In a decentralized internet, however, controlling the top of the domain hierarchy would no longer be in the hands of a centralized entity. Top-level domain names would be peer-based and would no longer exist under a single point-of-failure. Find out how [**Namebase offers new solutions to resolving hostnames in the web3 future with its Handshake project**](https://blog.ipfs.tech/decentralizing-the-internet-s-root/).
 
 ## Brand new on IPFS
 

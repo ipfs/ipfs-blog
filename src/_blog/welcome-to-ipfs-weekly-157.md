@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## **How to Store and Maintain NFT Metadata**
 
 ![](../assets/release-notes-placeholder-2b442ee5.png)
 
-What is NFT metadata, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term? Non-fungible tokens are among the most exciting recent developments in the cryptoverse. NFTs are like digital collectibles, each unique in its own way and linked to a particular user. Ownership aside, what also makes an NFT valuable is its metadata. [**Learn about NFT metadata**](https://blog.ipfs.io/how-to-store-and-maintain-nft-metadata/), metadata storage, and where to store your NFT metadata for free!
+What is NFT metadata, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term? Non-fungible tokens are among the most exciting recent developments in the cryptoverse. NFTs are like digital collectibles, each unique in its own way and linked to a particular user. Ownership aside, what also makes an NFT valuable is its metadata. [**Learn about NFT metadata**](https://blog.ipfs.tech/how-to-store-and-maintain-nft-metadata/), metadata storage, and where to store your NFT metadata for free!
 
 ## **Brand new on IPFS**
 

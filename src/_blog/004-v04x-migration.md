@@ -62,8 +62,8 @@ After the release, you can:
 Please note that installation with `go get` does not work at this time.
 We are experimenting with [gx, the new IPFS-based package manager][gx].
 
-[ipfs-update]: http://dist.ipfs.io/#ipfs-update
-[ipfs-binary]: http://dist.ipfs.io/#go-ipfs
+[ipfs-update]: http://dist.ipfs.tech/#ipfs-update
+[ipfs-binary]: http://dist.ipfs.tech/#go-ipfs
 [ipfs-github]: https://github.com/ipfs/go-ipfs
 [ipfs-source]: https://github.com/ipfs/go-ipfs#build-from-source
 [gx]: https://github.com/whyrusleeping/gx

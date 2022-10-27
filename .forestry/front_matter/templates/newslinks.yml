@@ -43,8 +43,8 @@ fields:
       leave this blank.<br><br><strong><em>WARNING</em></strong><em>: Data is saved
       in the </em><a href="https://github.com/ipfs/ipfs-blog" title="" target="_blank"><em>ipfs/ipfs-blog</em></a><em>
       public GitHub repo as soon as you hit the Save button. This means anything you
-      save will also be publicly visible on GitHub, but not on the blog.ipfs.io site.
-      Be careful if you are drafting something sensitive!</em>'
+      save will also be publicly visible on GitHub, but not on the blog.ipfs.tech
+      site. Be careful if you are drafting something sensitive!</em>'
     config:
       required: false
       date_format: 
@@ -66,7 +66,7 @@ fields:
     description: '<strong>Must be twice as wide as it is tall (2:1 aspect ratio) and
       at least 400px tall.</strong> <strong>Name the image file something that can
       be easily searched for in the media directory later (consider adding a date).
-      </strong><br>Need help? <a href="https://blog.ipfs.io/image-crop/" title="Use
+      </strong><br>Need help? <a href="https://blog.ipfs.tech/image-crop/" title="Use
       this crop/scale tool" target="_blank">Use this crop/scale tool</a> to save a
       revised image to your local machine, then upload here.<br>Video links don''t
       need images: they use the video thumbnail!'

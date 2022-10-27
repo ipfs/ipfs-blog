@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,15 +22,15 @@ tags:
 
 ### 了解如何将 go-ipfs 用作程序库 📚
 
-[标题说明了一切。](https://blog.ipfs.io/073-go-ipfs-as-a-library/)通过此新教程了解如何将 go-ipfs 用作程序库，并充分利用 go-ipfs 核心 API。
+[标题说明了一切。](https://blog.ipfs.tech/073-go-ipfs-as-a-library/)通过此新教程了解如何将 go-ipfs 用作程序库，并充分利用 go-ipfs 核心 API。
 
 ### js-ipfs 0.39.0 发布 🎉
 
-喔！使用预设配置文件配置您的节点！限制从浏览器传出的请求！使用一条命令从头开始创建节点！ [全部使用 js-ipfs 0.39.0！](https://blog.ipfs.io/071-js-ipfs-0-39/)
+喔！使用预设配置文件配置您的节点！限制从浏览器传出的请求！使用一条命令从头开始创建节点！ [全部使用 js-ipfs 0.39.0！](https://blog.ipfs.tech/071-js-ipfs-0-39/)
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - 照片：[蒂姆·伯纳斯·李（ Tim Berners-Lee ）看起来是 IPFS 和 libp2p 的粉丝](https://twitter.com/sgrasmann/status/1189194596544200708/photo/1) ，Twitter，2019 年 10 月 29 日
 - [RTrade Technologies 与 Dappkit 合作利用企业 IPFS 基础架构和 API](https://medium.com/temporal-cloud/rtrade-technologies-partners-with-dappkit-utilizing-enterprise-ipfs-infrastructure-apis-7c9b67fdb589) ，Temporal，2019 年 10 月 28 日
@@ -63,7 +63,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [os](https://github.com/tomaka/os/) – 尝试构建某种类似于操作系统的环境，其中可执行文件全部位于 WASM 中，并从类似于 IPFS 的去中心化网络中加载。
 - [深度了解 Graph 网络](https://thegraph.com/blog/the-graph-network-in-depth-part-1)
@@ -71,7 +71,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 10 月 28 日至 30 日：** [开源峰会 + ELC Europe 2019](https://osseu19.sched.com/event/TLD8)将由戴尔技术公司的 Trevor Conn 主持，主题为 “使用 IPFS 和分布式分类帐安全地存储 IOT Edge 数据”。法国，里昂。
 - **2019 年 10 月 30 日：** 由 ScaleUp Porto 计划支持的 [OPO.js Meetup＃10](https://www.meetup.com/opo-js/events/265502030/)将主办下一次免费的 Porto JavaScript 社区聚会。葡萄牙，波尔图。

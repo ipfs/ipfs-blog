@@ -36,7 +36,7 @@ Your feedback is a large part of identifying these challenges, evaluating how we
 
 These new working groups meet regularly, and you can join them to help us achieve these goals! Check the [IPFS community calendar](https://github.com/ipfs/community/blob/master/README.md#calendar) for times and connection information, or watch the meetings at your leisure on the [IPFS Youtube channel](https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew).
 
-The work these teams are doing will require a number of different skillsets, and could use your help! If you're interested and have bandwidth to help out - jump on a community call or Github issue and share your time and expertise! Looking for fulltime roles to help out on these and other IPFS challenges? Check the IPFS Weekly Newsletter for [IPFS-focused job opportunities](https://blog.ipfs.io/weekly-51/#open-positions-working-on-ipfs)!
+The work these teams are doing will require a number of different skillsets, and could use your help! If you're interested and have bandwidth to help out - jump on a community call or Github issue and share your time and expertise! Looking for fulltime roles to help out on these and other IPFS challenges? Check the IPFS Weekly Newsletter for [IPFS-focused job opportunities](https://blog.ipfs.tech/weekly-51/#open-positions-working-on-ipfs)!
 
 ## How does this work affect you?
 

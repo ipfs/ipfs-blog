@@ -12,7 +12,7 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Top 5 recent highlights
 
@@ -76,6 +76,6 @@ The [Ambient Stack](https://ambientstack.org/) brings together CRDTs, IPFS, and 
 - [Consensus 2020](https://www.coindesk.com/events/consensus-2020), 11-13 May 2020, New York (NY), US
 - [csv,conf,v5](https://csvconf.com/), 13-14 May 2020, Washington, D.C., US
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230) each Tuesday.

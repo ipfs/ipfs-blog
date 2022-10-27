@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -23,7 +23,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### IPFS distributions
 
-Wondering where you can find all of the official software distributions for IPFS? Check out [IPFS distributions](https://dist.ipfs.io/), where the current versions of the software projects across IPFS are all available for download now.
+Wondering where you can find all of the official software distributions for IPFS? Check out [IPFS distributions](https://dist.ipfs.tech/), where the current versions of the software projects across IPFS are all available for download now.
 
 ### Initial draft of an introspection data model for libp2p
 
@@ -35,7 +35,7 @@ Have questions for the folks at ENS? This Friday, they’ll be hosting [a reddit
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [Using IPFS Messaging For Referral Networks](https://medium.com/2key/using-ipfs-messaging-for-referral-networks-aa1f11220a77), 2 Apr 2019
 - [Enterprise IPFS, Why Organizations Will Adopt IPFS](https://medium.com/pinata/enterprise-ipfs-6afcf76b28a0), Textile, 1 Apr 2019
@@ -54,13 +54,13 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 _Here are some questions folks are discussing in the IPFS ecosystem._
 
-- [I’m interested in a list of examples for dynamic websites hosted entirely over IPFS...](https://discuss.ipfs.io/t/looking-for-examples-of-functional-sites-hosted-on-ipfs/4841)
-- [I’m trying to standardize blob storage in IPFS for the data I create.](https://discuss.ipfs.io/t/adding-ipfs-support-to-known-publishing-system/4862)
-- [I am wondering how I can use the new feature AutoRelay.](https://discuss.ipfs.io/t/feature-autorelay/5094)
+- [I’m interested in a list of examples for dynamic websites hosted entirely over IPFS...](https://discuss.ipfs.tech/t/looking-for-examples-of-functional-sites-hosted-on-ipfs/4841)
+- [I’m trying to standardize blob storage in IPFS for the data I create.](https://discuss.ipfs.tech/t/adding-ipfs-support-to-known-publishing-system/4862)
+- [I am wondering how I can use the new feature AutoRelay.](https://discuss.ipfs.tech/t/feature-autorelay/5094)
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [The Ultimate Guide To Understanding The Differences Between PPIO, Filecoin, and Storj](https://medium.com/@ppio/differences-between-ppio-filecoin-storj-20cdf7b3b02e), 27 Mar 2019
 - [LineageOS on IPFS](https://lineageos-on-ipfs.com/) – A permanent solution to LineageOS' storage problem.
@@ -71,11 +71,11 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.tech/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **4 Apr 2019:** [Where is the data bazaar?](https://www.meetup.com/Deep-Learning-NYC/events/zztcfqyzgbgb/) Join Brendan O’Brien of QRI as he presents his thoughts on this and dataset versioning with QRI. AWS Pop-up Loft, NYC.
 - **9 Apr 2019:** [ProtoSchool Munich: 101 IPFS Workshop](https://www.meetup.com/de-DE/Munich-IPFS-User-Group/events/260198694/) is open for any topic of the so-called Decentralized Revolution. It is, not least, a playground to investigate decentralized technologies in the practice of a network of peers. Munich, Germany.

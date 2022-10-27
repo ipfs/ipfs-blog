@@ -10,7 +10,7 @@ header_image: /libp2p-hole-punching-banner.svg
 author: Max Inden
 ---
 
-In case you haven't yet heard the great news, [libp2p](https://docs.ipfs.io/concepts/glossary/#libp2p) can now punch holes.
+In case you haven't yet heard the great news, [libp2p](https://docs.ipfs.tech/concepts/glossary/#libp2p) can now punch holes.
 
 The below explains why we want to punch holes, what we are punching those holes into, and most interestingly, how we punch those holes.
 
@@ -69,7 +69,7 @@ In case you haven't noticed, we just fixed our problem. *A* and *B* can now happ
 
 ![img](../assets/libp2p-hole-punching-hole-punch.svg)
 
-There are situations in which hole punching will not work, most notably when one of the nodes is behind a symmetric NAT. In such cases, nodes can instead explicitly add port mappings, either manually or by using [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). As a last resort, nodes can leverage external [relay](https://docs.ipfs.io/concepts/glossary/#relay) nodes.
+There are situations in which hole punching will not work, most notably when one of the nodes is behind a symmetric NAT. In such cases, nodes can instead explicitly add port mappings, either manually or by using [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play). As a last resort, nodes can leverage external [relay](https://docs.ipfs.tech/concepts/glossary/#relay) nodes.
 
 # Hole Punching in libp2p
 
@@ -99,7 +99,7 @@ In our case, computer *B* from above determines whether it is dialable. It does 
 
 *B* now knows that nodes outside its local network cannot dial it. Well, they "cannot dial it **directly**". However, they could do so **indirectly** through some public relay node. We will go into what *indirect* dialing looks like in the next step.
 
-For now, let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.io/), each public node in the IPFS network would serve as a [relay](https://docs.ipfs.io/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.io/concepts/glossary/#peer-id) or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
+For now, let's find a couple of public nodes in our peer-to-peer network that can serve as relay nodes. This step is not defined by libp2p, as it heavily depends on the peer-to-peer network. In the case of [IPFS](https://ipfs.tech/), each public node in the IPFS network would serve as a [relay](https://docs.ipfs.tech/concepts/glossary/#relay) node. *B* would either do a lookup on the [Kademlia DHT](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) for the closest peers to its own [Peer ID](https://docs.ipfs.tech/concepts/glossary/#peer-id) or just choose a subset of the public nodes it is already connected to. (Just a note: Latency matters in the choice of one's public relay node, though that is for another blog post.)
 
 ![img](../assets/libp2p-hole-punching-autorelay.svg)
 

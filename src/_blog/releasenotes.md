@@ -4,6 +4,95 @@ type: Release notes
 sitemap:
   exclude: true
 data:
+- title: js-ipfs 0.64.0
+  date: 2022-09-07
+  publish_date: 2022-09-07T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs-v0.64.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
+- title: js-ipfs 0.63.0
+  date: 2022-05-22
+  publish_date: 2022-05-22T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs-v0.63.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
+- title: js-ipfs 0.62.0
+  date: 2022-01-27
+  publish_date: 2022-01-27T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs-v0.62.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
+- title: js-ipfs 0.61.0
+  date: 2021-12-15
+  publish_date: 2021-12-21T12:00:00+00:00
+  path: https://github.com/ipfs/js-ipfs/releases/tag/ipfs%400.61.0
+  card_image: "/header-image-js-ipfs-placeholder.png"
+  tags:
+  - js-ipfs
+- title: js-libp2p v0.40.0
+  date: 2022-10-17
+  publish_date: 2022-10-17T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.40.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
+- title: js-libp2p v0.39.0
+  date: 2022-09-07
+  publish_date: 2022-09-07T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.39.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
+- title: js-libp2p v0.38.0
+  date: 2022-08-17
+  publish_date: 2022-08-17T12:00:00+00:00
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.38.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
+- title: 'Just released: Kubo 0.16.0!'
+  date: 2022-10-04
+  publish_date: 
+  path: https://github.com/ipfs/kubo/releases/tag/v0.16.0
+  tags:
+  - go-ipfs
+- title: 'Just released: Kubo (formerly go-ipfs) 0.15.0!'
+  date: 2022-08-30
+  publish_date: 
+  path: https://github.com/ipfs/kubo/releases/tag/v0.15.0
+  tags:
+  - go-ipfs
+  - kubo
+- title: Kubo (formerly go-ipfs) v0.14.0 Release is out!
+  date: 2022-07-21
+  publish_date: 
+  path: https://github.com/ipfs/kubo/releases/tag/v0.14.0
+  tags:
+  - go-ipfs
+  - kubo
+- title: go-ipfs 0.13.0 Release
+  date: 2022-06-09
+  publish_date: 
+  path: https://github.com/ipfs/go-ipfs/releases/tag/v0.13.0
+  tags:
+  - browsers
+  - libp2p
+  - security
+  - gateways
+  - CID
+  - Docker
+  - IPLD
+  - go-ipfs
+- title: js-libp2p v0.37.0
+  date: 2022-05-16
+  publish_date: 
+  path: https://github.com/libp2p/js-libp2p/releases/tag/v0.37.0
+  card_image: "/header-image-libp2p.png"
+  tags:
+  - libp2p
 - title: go-ipfs 0.12.0 Release
   date: 2022-02-18
   publish_date: 

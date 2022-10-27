@@ -14,11 +14,11 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## The IPFS Mobile Design Research project
 
-The IPFS Mobile Design Research project started earlier this year, and recently Jim Kosem presented the goals, methodology and findings of his in-progress research into IPFS and p2p on mobile. Check out [the blog post](https://blog.ipfs.io/2020-04-10-ipfs-mobile-design-research/) and [the Local Offline Collaboration recording](https://youtu.be/Cg92MJY8swc?t=435) for more information.
+The IPFS Mobile Design Research project started earlier this year, and recently Jim Kosem presented the goals, methodology and findings of his in-progress research into IPFS and p2p on mobile. Check out [the blog post](https://blog.ipfs.tech/2020-04-10-ipfs-mobile-design-research/) and [the Local Offline Collaboration recording](https://youtu.be/Cg92MJY8swc?t=435) for more information.
 
 ## Announcing the IPFS Pinning Summit
 
@@ -26,7 +26,7 @@ On May 7-8, 2020, we are hosting the first-ever [IPFS Pinning Summit](https://ip
 
 ## Introducing the IPFS Grants Platform
 
-Earlier this week, the [IPFS Grants Platform was officially launched](https://blog.ipfs.io/2020-04-20-ipfs-grants-platform/). After a very successful pilot run in Q1, we are very excited to offer a platform for grants that help support and accelerate the ecosystem of developers building on IPFS, and contribute to our mission to create a resilient, upgradeable, open network to preserve and grow humanity’s knowledge.
+Earlier this week, the [IPFS Grants Platform was officially launched](https://blog.ipfs.tech/2020-04-20-ipfs-grants-platform/). After a very successful pilot run in Q1, we are very excited to offer a platform for grants that help support and accelerate the ecosystem of developers building on IPFS, and contribute to our mission to create a resilient, upgradeable, open network to preserve and grow humanity’s knowledge.
 
 ## Create NFTs with IPFS and Digital Art
 
@@ -79,6 +79,6 @@ The Ceramic Protocol is looking for collaborators to work on [a Ceramic Explorer
 
 **Take care of yourselves and each other.** ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

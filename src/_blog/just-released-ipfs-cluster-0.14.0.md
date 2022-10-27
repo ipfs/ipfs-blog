@@ -14,7 +14,7 @@ We're happy to announce the release of IPFS Cluster 0.14.0! Here's a small recap
 
 ## A quick recap
 
-[IPFS Cluster](https://cluster.ipfs.io) provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. It does this in lots of cool ways, utilizing CRDTs, pubsub, IPLD and libp2p services — you can dig into all the details in the official [IPFS Cluster documentation](https://cluster.ipfs.io/documentation/).
+[IPFS Cluster](https://ipfscluster.io) provides an overlay layer to control and orchestrate pinsets in multiple IPFS daemons. It adds content, distributes pins, tracks them, and ensures content is replicated while providing streamlined API(s) for IPFS storage management. It does this in lots of cool ways, utilizing CRDTs, pubsub, IPLD and libp2p services — you can dig into all the details in the official [IPFS Cluster documentation](https://ipfscluster.io/documentation/).
 
 IPFS Cluster has been running in production internally at Protocol Labs since 2018. We use clusters to store all the stuff we want to store on IPFS, a few of them as [public collaborative clusters](https://collab.ipfscluster.io/) that can be followed by anyone. Our internal operational team (known as [Bifrost](https://en.wikipedia.org/wiki/Bifr%C3%B6st)) has developed the ability to set up large-storage gateways coupled to cluster setups with little effort.
 
@@ -35,4 +35,4 @@ Want a full list of updates included in the IPFS Cluster 0.14.0 release? Check t
 
 ## Install, upgrade, and join us!
 
-You can lean more about IPFS Cluster by visiting [cluster.ipfs.io](https://cluster.ipfs.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://cluster.ipfs.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.io/c/help/help-ipfs-cluster/24).
+You can lean more about IPFS Cluster by visiting [ipfscluster.io](https://ipfscluster.io/) and get started — or upgrade your existing installation — by visiting the [IPFS Cluster download page](https://ipfscluster.io/download/). Got questions about IPFS Cluster? Check out its section on the official [IPFS forums](https://discuss.ipfs.tech/c/help/help-ipfs-cluster/24).

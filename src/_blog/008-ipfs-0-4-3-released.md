@@ -8,7 +8,7 @@ tags:
   - go-ipfs
 ---
 
-[go-ipfs 0.4.3](https://dist.ipfs.io/#go-ipfs) has been released today,
+[go-ipfs 0.4.3](https://dist.ipfs.tech/#go-ipfs) has been released today,
 and we're incredibly proud as it's the fastest and most stable IPFS ever.
 Give it a try as soon as you can, we're sure you'll like it as much as we do.
 
@@ -36,7 +36,7 @@ And plenty of bug fixes as well as improvements to documentation and test covera
 
 Depending on how you initially installed IPFS, there are several ways to
 upgrade. If you installed IPFS with a pre-built binary, you can either head over
-to [dist.ipfs.io](https://dist.ipfs.io/#go-ipfs) and grab the latest version
+to [dist.ipfs.tech](https://dist.ipfs.tech/#go-ipfs) and grab the latest version
 from there. Or alternatively, from the same page you can grab the `ipfs-update`
 binary, and use it to perform the upgrade for you. If you installed from
 source, you can simply run `git checkout v0.4.3`, then run `make install`.

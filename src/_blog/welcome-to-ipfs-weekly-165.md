@@ -15,7 +15,7 @@ tags:
 
 @[youtube](7ak6PQPDBkk)
 
-App stores and websites are an outdated and insecure way to distribute software. The maxim “where there’s a server, there’s a hack” has proven to be true despite the best efforts of corporations like Microsoft, Apple, and Google. The Web3 stack is able to change that and more. Valist is using IPFS and Filecoin to create a safer, faster, and more efficient way to distribute software through decentralized and persistent storage. To find out more, [watch the most recent video](https://www.youtube.com/watch?v=7ak6PQPDBkk&t=1s) in the Building Web3 video series featuring Valist and check out[this blog post](https://blog.ipfs.io/2021-12-07-building-web3-valist/).
+App stores and websites are an outdated and insecure way to distribute software. The maxim “where there’s a server, there’s a hack” has proven to be true despite the best efforts of corporations like Microsoft, Apple, and Google. The Web3 stack is able to change that and more. Valist is using IPFS and Filecoin to create a safer, faster, and more efficient way to distribute software through decentralized and persistent storage. To find out more, [watch the most recent video](https://www.youtube.com/watch?v=7ak6PQPDBkk&t=1s) in the Building Web3 video series featuring Valist and check out[this blog post](https://blog.ipfs.tech/2021-12-07-building-web3-valist/).
 
 ## **Brand New on IPFS**
 

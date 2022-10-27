@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -35,7 +35,7 @@ Stay tuned for all of the awesome content (and announcements!) that will be comi
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [What is the InterPlanetary File System (IPFS)?](https://hackernoon.com/what-is-the-interplanetary-file-system-ipfs-2da976e35d05) Hackernoon, 22 June 2019
 - [eosDAC Makes Every Effort Possible to Decentralise - How The DAC Host Its Website](https://steemit.com/eosio/@eosdac/eosdac-makes-every-effort-possible-to-decentralise-how-the-dac-host-its-website), 22 June 2019
@@ -54,13 +54,13 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Tank Wars](http://mymobiservices.com:9001/ipfs/QmRWCov9MFoGXWYaJoUei1m7geeHVLvGNgwfrgbx49hqqZ/), a full fledged HTML5 game that sits entirely on IPFS
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **25 June 2019:** [IPFS Core Developers & Community Meetup
   IPFS Community](https://www.meetup.com/barcelona-ipfs/events/262101190/) – Connect with the larger IPFS Community on Tuesday, June 25 for an event starting at 17:30 at MOB Bailen, Barcelona, Spain.

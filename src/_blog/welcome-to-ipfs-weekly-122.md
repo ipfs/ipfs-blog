@@ -13,13 +13,13 @@ header_image: '/header-image-weekly-newsletter.png'
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Opera adds support for IPFS addressing to Opera Touch, their iOS browser
 
 Earlier this week, during a panel with Opera, Unstoppable Domains, and IPFS at ETHDenver 2021, Opera announced the addition of IPFS support in their mobile browser, Opera Touch. This release marks another important milestone in both the partnership with Opera and IPFS gaining recognition in mainstream browsers.
 
-[Read more](https://blog.ipfs.io/2021-02-08-opera-ios-and-ipfs/)
+[Read more](https://blog.ipfs.tech/2021-02-08-opera-ios-and-ipfs/)
 
 ## Hang out with the IPFS community in 2 weeks
 
@@ -70,7 +70,7 @@ Join the first forum for researchers and academics working in the IPFS space to 
 
 **No, IPFS does not have a blockchain. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

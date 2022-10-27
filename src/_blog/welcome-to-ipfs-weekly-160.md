@@ -11,13 +11,13 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## What is IPLD?
 
 ![](../assets/139291100-68c5680f-573f-4adc-9352-60e2999c8aee.jpg)
 
-Most people already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS. Read [this recent blog post](https://blog.ipfs.io/what-is-ipld/) to learn all there is to know about IPLD.
+Most people already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS. Read [this recent blog post](https://blog.ipfs.tech/what-is-ipld/) to learn all there is to know about IPLD.
 
 ## **Brand new on IPFS**
 

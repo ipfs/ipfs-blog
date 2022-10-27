@@ -12,19 +12,19 @@ tags:
 
 # Welcome to IPFS Weekly #95
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## go-ipfs 0.6.0 adds QUIC transport and more!
 
 Late last week, go-ipfs 0.6.0 arrived, bringing with it the QUIC transport, the Noise Security Transport, the ability to customize 404 pages, Gossipsub upgraded to v1.1, and many bugfixes.
 
-[Read the release notes](https://blog.ipfs.io/2020-06-26-go-ipfs-0-6-0/)
+[Read the release notes](https://blog.ipfs.tech/2020-06-26-go-ipfs-0-6-0/)
 
 ## NEW: IPFS Mobile Design guidelines
 
 Researcher Jim Kosem shared his findings and recommendations after extensive work examining mobile user patterns in P2P activities and how browsers influence these.
 
-[Read the full post](https://blog.ipfs.io/2020-06-25-ipfs-mobile-design-guidelines/)
+[Read the full post](https://blog.ipfs.tech/2020-06-25-ipfs-mobile-design-guidelines/)
 
 ## Tell us your journey exploring the IPFS ecosystem
 
@@ -79,6 +79,6 @@ Learn how to build decentralized applications with Ethereum and IPFS. ChainShot 
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the [IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

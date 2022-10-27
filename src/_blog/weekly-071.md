@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -36,7 +36,7 @@ Yesterday, @parkan was on hand to [walk us through a demo of EthDNS](https://www
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - VIDEO: [How to Host Your Website Using ENS+IPFS](https://www.youtube.com/watch?v=oA4oOY5zgU0&feature=emb_logo), Yahsin Huang, 5 Dec 2019
 - [On Video Content Monetization and Blockchain](https://medium.com/altcoin-magazine/on-video-content-monetization-and-blockchain-eff693c72269), Dmitriy Kim, 5 Dec 2019
@@ -68,7 +68,7 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [data,together.org](https://datatogether.org/). Exploring Community-Driven Data Stewardship!
 - [radicle](https://radicle.community/) launched their community forum, where several interesting discussions about IPFS are going on. 👀
@@ -77,7 +77,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **11 December 2019:** [Lyon P2P](https://www.meetup.com/France-P2P/events/266104402/) is a meetup to discuss the topics of peer-to-peer (P2P), decentralization, offline-first applications, networks, confidentiality, anti-surveillance, anti-censorship, security, and more! Lyon, France.
 - **8 January 2020:** [Paris P2P Festival](https://p2p.paris/en/event/festival-0/) is an opportunity to federate and allow the meeting of Peer-2-Peer actors in all its forms to meet around all themes related to Peer-to-Peer. For more information on the free four day festival, visit [p2p.paris](https://p2p.paris/en/event/festival-0/).

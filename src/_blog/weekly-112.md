@@ -10,19 +10,19 @@ description: ''
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## js-IPFS 0.51.0 shipped with TypeScript support
 
 Thanks to a lot of community support, types are now a first-class citizen within the js-IPFS codebase! But the real headline here should be that install times can now be halved by installing ipfs-core. Check out the full announcement for details.
 
-[Read more](https://blog.ipfs.io/2020-10-29-js-ipfs-0-50/)
+[Read more](https://blog.ipfs.tech/2020-10-29-js-ipfs-0-50/)
 
 ## Securing the public IPFS with DHT hardening
 
 Thanks to the work of some researchers and a small crew of core devs, we were able to not only make several crucial fixes but with the availability of Testground, we were also able to verify the mitigations. Special thanks to Bernd Prünster and Alexander Marsalek at A-SIT and the Graz University of Technology for their assistance.
 
-[Read more](https://blog.ipfs.io/2020-10-30-dht-hardening/)
+[Read more](https://blog.ipfs.tech/2020-10-30-dht-hardening/)
 
 ## Honey, I shrunk the Libp2p streams 😱
 
@@ -75,7 +75,7 @@ Speakers include David Craven from the Sunshine Foundation talking about ipfs-em
 
 **Take care of yourselves and each other. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

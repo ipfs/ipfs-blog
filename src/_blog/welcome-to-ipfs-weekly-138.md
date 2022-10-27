@@ -12,19 +12,19 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## You can now find NFT.Storage on Product Hunt 🎉
 
 ![](../assets/fil-blog-nft-storage-notext.png)
 
-NFT.Storage has officially launched on Product Hunt, a platform featuring all the best new products in tech. In case you missed it, nft.storage is a brand new service in BETA, built specifically for storing off-chain NFT data, decentralized on [**IPFS**](https://ipfs.io/) and [**Filecoin**](https://filecoin.io/). [**Check it out on Product Hunt**](https://www.producthunt.com/posts/nft-storage)!
+NFT.Storage has officially launched on Product Hunt, a platform featuring all the best new products in tech. In case you missed it, nft.storage is a brand new service in BETA, built specifically for storing off-chain NFT data, decentralized on [**IPFS**](https://ipfs.tech/) and [**Filecoin**](https://filecoin.io/). [**Check it out on Product Hunt**](https://www.producthunt.com/posts/nft-storage)!
 
 ## Decentralizing infrastructure during Scaling Ethereum
 
 ![](../assets/2021-04-14-cardheader-scaling-ethereum.png)
 
-An endeavour to collaborate on creating a powerful foundation for the future of the Ethereum community, [**Scaling Ethereum**](https://scaling.ethglobal.co/), has come to a close, resulting in some innovative and inspiring solutions. The IPFS and Filecoin projects, alongside the ETHGlobal team, sponsored this 4-week hackathon event. Additionally, we put up $7500 in Filecoin across various scaling areas to award to those brave and intrepid souls willing to rise to the challenge! [**Read this blog post**](https://blog.ipfs.io/2021-05-26-scaling-ethereum-recap/) to learn more about the event and about the prize winners.
+An endeavour to collaborate on creating a powerful foundation for the future of the Ethereum community, [**Scaling Ethereum**](https://scaling.ethglobal.co/), has come to a close, resulting in some innovative and inspiring solutions. The IPFS and Filecoin projects, alongside the ETHGlobal team, sponsored this 4-week hackathon event. Additionally, we put up $7500 in Filecoin across various scaling areas to award to those brave and intrepid souls willing to rise to the challenge! [**Read this blog post**](https://blog.ipfs.tech/2021-05-26-scaling-ethereum-recap/) to learn more about the event and about the prize winners.
 
 ## Brand new on IPFS
 

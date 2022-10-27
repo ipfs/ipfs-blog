@@ -14,11 +14,11 @@ tags:
 ---
 # **What is IPLD?**
 
-Most people would already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as [IPLD](https://docs.ipfs.io/concepts/glossary/#ipld) that deals with all the heavy lifting that IPFS does to represent data as [Merkle-DAGs](https://docs.ipfs.io/concepts/glossary/#merkle-dag) with roots identified by content IDs ([CIDs](https://docs.ipfs.io/concepts/glossary/#cid)). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS.
+Most people would already know what IPFS is and what it offers to the average developer in terms of distributed data. However, IPFS isn't the only thing that one should understand about this revolutionary system. Underneath IPFS is a system known as [IPLD](https://docs.ipfs.tech/concepts/glossary/#ipld) that deals with all the heavy lifting that IPFS does to represent data as [Merkle-DAGs](https://docs.ipfs.tech/concepts/glossary/#merkle-dag) with roots identified by content IDs ([CIDs](https://docs.ipfs.tech/concepts/glossary/#cid)). But what is IPLD, and why is it important in the grander scheme of things? Learning about IPLD will allow a unique insight into how IPFS works and the methods necessary to extend the data structures currently available to users through IPFS.
 
 ## **Interplanetary Linked Data (IPLD) and IPFS**
 
-At its most basic form, IPLD is the data layer that IPFS is built on top of. It creates a series of links to data but also allows users to create those links themselves through simple data structures that can be stored on IPFS. You could think of IPFS as the block store of IPLD - data sent to IPFS through IPLD is kept as linked [blocks](https://docs.ipfs.io/concepts/glossary/#block) and DAGs, and the user receives a CID to access that data.
+At its most basic form, IPLD is the data layer that IPFS is built on top of. It creates a series of links to data but also allows users to create those links themselves through simple data structures that can be stored on IPFS. You could think of IPFS as the block store of IPLD - data sent to IPFS through IPLD is kept as linked [blocks](https://docs.ipfs.tech/concepts/glossary/#block) and DAGs, and the user receives a CID to access that data.
 
 When someone stores a file on IPFS, that file is separated into several chunks, stored into different blocks. To reconstruct the whole file, a graph (DAG) connects each bit of content together, with directories pointing to individual data pieces, not unlike pointers in older coding languages like C++. Content IDs are hashes generated to allow the user to interact with IPFS in a trustless manner and recover their data. IPLD deals with decoding these hashes so that users can access their data. In many ways, IPLD functions a lot like the developer's old friend, Git, since it uses a similar method for constructing those linked hashes known as a Merkle DAG.
 
@@ -37,7 +37,7 @@ So, how does IPLD deal with this lack of complexity? Users can actually store da
 Storing a CID on the chain seems like a breeze, but how does the system decode the hashes that it gets into the component data structures?
 IPLD uses an underlying data model that contains forms that most developers will recognize immediately, such as strings, booleans, ints, floats, etc.
 To get there from CIDs, we use [codecs](https://ipld.io/docs/codecs/).
-And the CID includes an indicator called a [multicodec](https://docs.ipfs.io/concepts/glossary/#multicodec) to tell us which codec to use!
+And the CID includes an indicator called a [multicodec](https://docs.ipfs.tech/concepts/glossary/#multicodec) to tell us which codec to use!
 
 Sometimes systems build additional tiers of structure above this.
 For example, IPFS uses a two-tier methodology for encoding filesystem data.

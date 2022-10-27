@@ -15,7 +15,7 @@ tags:
 
 ## **Community Highlight: Esteroids**
 
-The decentralized web is gaining popularity. Across Web3, teams are building more tools and user interfaces to continuously improve the experiences of retail and enterprise users alike. One major opportunity for Web3 is exploration and discovery. How do you manage to browse the new websites and find one that suits your interest? Say hello to [**Esteroids**](https://esteroids.eth.link/#/) in this recent [**community highlight blog post**](https://blog.ipfs.io/2021-11-17-Community-Highlight-Esteroids/).
+The decentralized web is gaining popularity. Across Web3, teams are building more tools and user interfaces to continuously improve the experiences of retail and enterprise users alike. One major opportunity for Web3 is exploration and discovery. How do you manage to browse the new websites and find one that suits your interest? Say hello to [**Esteroids**](https://esteroids.eth.link/#/) in this recent [**community highlight blog post**](https://blog.ipfs.tech/2021-11-17-Community-Highlight-Esteroids/).
 
 ## **Brand New on IPFS**
 

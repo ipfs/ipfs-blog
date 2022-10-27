@@ -12,13 +12,13 @@ tags:
 
 # Welcome to IPFS Weekly #101
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## IoTeX, the latest in the IPFS Case Study series
 
 Are you curious about how a privacy-protecting surveillance camera could benefit from decentralized storage? Or how a privacy-centric blockchain platform might address one of the major risks of today’s IoT devices? Learn how IPFS has provided robust solutions for both these situations with Iotex and Ucam.
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-iotex/#overview)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-iotex/#overview)
 
 ## HackFS finale starts soon 🎉
 
@@ -81,7 +81,7 @@ Missed the first-ever distributed randomness focused event, which folks were cal
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

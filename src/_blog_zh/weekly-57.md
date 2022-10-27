@@ -10,7 +10,7 @@ author: 默奕
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,7 +22,7 @@ author: 默奕
 
 ### 您现在可以在浏览器中使用 JS IPFS HTTP API 客户端进行 PubSub!
 
-现在 fetch API 支持 cancelation 了，并且已经支持了一段时间，PubSub 支持已经到来! Hooray \o/ 在 [IPFS 博客](https://blog.ipfs.io/2019-08-29-pubsub-in-the-browser/)上阅读所有相关内容。
+现在 fetch API 支持 cancelation 了，并且已经支持了一段时间，PubSub 支持已经到来! Hooray \o/ 在 [IPFS 博客](https://blog.ipfs.tech/2019-08-29-pubsub-in-the-browser/)上阅读所有相关内容。
 
 ### 回顾最新的 IPFS 每周通话
 
@@ -30,7 +30,7 @@ author: 默奕
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [教程:在 IPFS 上构建零依赖 Notes 应用程序 - 第一部分](https://medium.com/simpleid-dev-tools/tutorial-build-an-encrypted-notes-app-on-ipfs-part-i-39fb06fa95ce)， SimpleID, 2019 年 9 月 3 日
 - [假新闻:一个通用的解决方案](https://towardsdatascience.com/fake-news-a-universal-solution-22895048f5e7)，Towards Data Science，2019 年 9 月 2 日
@@ -54,7 +54,7 @@ _你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS �
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [Koos](https://dev.to/lcoenen/koos-a-decentralised-social-network-4mfd)，一个去中心化的社交网络
 - [Diffuse](https://www.producthunt.com/posts/diffuse-2) - 连接到 cloud/distrib 的音乐播放器
@@ -62,10 +62,10 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 9 月 4 日：** [巴黎 P2P](https://p2p.paris/en/) 是一个由 P2P 和密码学爱好者组织的每月一次的会议。法国，巴黎。
-- **2019 年 9 月 6 日:** 您是否愿意帮助为[docs.ipfs.io](https://docs.ipfs.io/)创建下一代导航? 请加入对 IPFS 文档站点现有导航结构的讨论，并参与一个协作的“卡片排序”练习，以探索绕过 IPFS 文档的其他可能性。[加入 1700-1830 UTC 的视频聊天](http://protocol.zoom.us/my/docsforce)。
+- **2019 年 9 月 6 日:** 您是否愿意帮助为[docs.ipfs.tech](https://docs.ipfs.tech/)创建下一代导航? 请加入对 IPFS 文档站点现有导航结构的讨论，并参与一个协作的“卡片排序”练习，以探索绕过 IPFS 文档的其他可能性。[加入 1700-1830 UTC 的视频聊天](http://protocol.zoom.us/my/docsforce)。
 - **2019 年 9 月 16 日:** [维多利亚科技大会 2019 年 9 月](https://ti.to/fission/victoria-sept-2019):一旦他们确定了日期和地点，就报名参加!加拿大，不列颠哥伦比亚省，维多利亚
 - **2019 年 9 月 20-22 日:** [我们的网络 2019 RE: 基础设施](https://ournetworks.ca/) 探讨对替代网络实践(新协议、对等连接、离线优先计算和基于社区的治理)的集体关心和维护。多伦多,加拿大安大略省。
 - **2019 年 9 月 27 日至 30 日：** [Offline Camp Oregon](http://offlinefirst.org/camp/reschedule) 现已延期，但它仍在计划中！[这里是过去的露营者对我们独特的](https://youtu.be/FNtpPW_7H1k), 专注于[离线优先](http://offlinefirst.org/)的网络开发和设计方法的非会议形式的活动的评论。

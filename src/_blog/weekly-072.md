@@ -21,23 +21,23 @@ _As far as shipping goes, yeah we did that._
 
 ### IPFS Browser Update
 
-Read about [the ongoing collaborations with Firefox, Brave, Opera, and other browsers](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) we have going on, and learn about our progress so far.
+Read about [the ongoing collaborations with Firefox, Brave, Opera, and other browsers](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/) we have going on, and learn about our progress so far.
 
 ### Loads of IPFS Camp content to catch up on!
 
-From [the keynotes to the developer interviews](https://blog.ipfs.io/2019-10-14-ipfs-camp-keynotes-interviews/), to [the Sci-Fi Fair videos](https://blog.ipfs.io/2019-10-03-ipfs-camp-sci-fi-fair-videos/), there’s a ton of great IPFS Camp videos to watch!
+From [the keynotes to the developer interviews](https://blog.ipfs.tech/2019-10-14-ipfs-camp-keynotes-interviews/), to [the Sci-Fi Fair videos](https://blog.ipfs.tech/2019-10-03-ipfs-camp-sci-fi-fair-videos/), there’s a ton of great IPFS Camp videos to watch!
 
 ### js-ipfs 0.39.0 and 0.40.0 released
 
-The js-ipfs team has been hard at work figuring out the foundations to switch to a hash format in the future, and much, much more. Check out the updates from both [version 0.39.0](https://blog.ipfs.io/071-js-ipfs-0-39/) and [0.40.0](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/).
+The js-ipfs team has been hard at work figuring out the foundations to switch to a hash format in the future, and much, much more. Check out the updates from both [version 0.39.0](https://blog.ipfs.tech/071-js-ipfs-0-39/) and [0.40.0](https://blog.ipfs.tech/2019-12-02-js-ipfs-0-40/).
 
 ### Learn how to use go-ipfs as a library
 
-The title says it all! Learn how to use [go-ipfs as a library](https://blog.ipfs.io/073-go-ipfs-as-a-library/) with the new tutorial and take full advantage of the go-ipfs core API.
+The title says it all! Learn how to use [go-ipfs as a library](https://blog.ipfs.tech/073-go-ipfs-as-a-library/) with the new tutorial and take full advantage of the go-ipfs core API.
 
 ### Explore the Files API on ProtoSchool
 
-This new tutorial [explores the methods at the top-level of js-ipfs](https://blog.ipfs.io/2019-11-06-explore-the-files-api-on-protoschool/) (add, get, cat, etc.) that are custom-built for working with files. Check it out!
+This new tutorial [explores the methods at the top-level of js-ipfs](https://blog.ipfs.tech/2019-11-06-explore-the-files-api-on-protoschool/) (add, get, cat, etc.) that are custom-built for working with files. Check it out!
 
 ### Presenting on IPFS? We got you
 

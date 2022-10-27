@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -23,7 +23,7 @@ tags:
 ### js-ipfs 0.40.0 发布啦 🎉
 
 朋友们，好消息！现在，新版本的 js-ipfs 附带了一个 repo 迁移工具，该工具将自动在浏览器中迁移 repo。
-[阅读完整的发布文章](https://blog.ipfs.io/2019-12-02-js-ipfs-0-40/)以了解更多信息！
+[阅读完整的发布文章](https://blog.ipfs.tech/2019-12-02-js-ipfs-0-40/)以了解更多信息！
 
 ### “每周日简单技能”期间 IPFS 上的 GeoHot 黑客
 
@@ -32,7 +32,7 @@ Hotz 或 GeoHot，有机会在每周日简单技能中[使用一些 IPFS](https:
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - 幻灯片： [cyber：计算伟大网络中的知识](https://ipfs.io/ipfs/QmceNpj6HfS81PcCaQXrFMQf7LR5FTLkdG9sbSRNy3UXoZ) ，@xhipster 和 @litvintech，2019 年 12 月 1 日
 - 照片： [Henrique Dias 指导 BarcampLX 受众](https://twitter.com/BarcampLx/status/1200837433178427393?s=20)通过 IPFS 快速进入去中心化网络，2019 年 11 月 30 日
@@ -53,7 +53,7 @@ _您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [机密行星际文件系统](https://github.com/mitchellpkt/CIPFS) ：IPFS 的开源加密层，使任何具有 Internet 连接的人都可以访问免费的机密分散式存储。
 - [在 IPFS 上打开街景图块服务器](https://forum.openstreetmap.org/viewtopic.php?id=68102) ：光栅图块系统，其中图像数据的存储和传输是通过 IPFS 进行分配的！
@@ -61,7 +61,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 12 月 3-4 日：** 由 SmartFactoryOWL 主持的 [Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform) 将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。
 - **2019 年 12 月 4 日：** [巴黎 P2P＃4](https://p2p.paris/en/event/monthly-4/)是由对法国巴黎的 P2P 和密码学充满热情的社区组织的聚会。

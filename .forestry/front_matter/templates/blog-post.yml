@@ -32,7 +32,7 @@ fields:
     Data is saved in the </em><a href="https://github.com/ipfs/ipfs-blog" title=""
     target="_blank"><em>ipfs/ipfs-blog</em></a><em> public GitHub repo as soon as
     you hit the save button. So any sensitive information will also be publicly available
-    on GitHub, but hidden from the website blog.ipfs.io.</em>'
+    on GitHub, but hidden from the website blog.ipfs.tech.</em>'
   config:
     required: true
     date_format: YYYY/MM/DD
@@ -59,9 +59,9 @@ fields:
     page. <br><strong>Must be twice as wide as it is tall (2:1 aspect ratio) and at
     least 400px tall.</strong> <strong>Name the image file something that can be easily
     searched for in the media directory later (consider adding a date).</strong><br>Need
-    help? <a href="https://blog.ipfs.io/image-crop/" title="Use this crop/scale tool"
-    target="_blank">Use this crop/scale tool</a> to save a revised image to your local
-    machine, then upload here.
+    help? <a href="https://blog.ipfs.tech/image-crop/" title="Use this crop/scale
+    tool" target="_blank">Use this crop/scale tool</a> to save a revised image to
+    your local machine, then upload here.
 - name: tags
   type: list
   config:
@@ -155,11 +155,13 @@ pages:
 - src/_blog/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021.md
 - src/_blog/announcing-js-ipfs-0.53.0.md
 - src/_blog/announcing-the-jupiter-hackathon.md
+- src/_blog/announcing-the-second-ever-ipfs-camp.md
 - src/_blog/audius-uses-ipfs-for-content-streaming-storage-to-empower-artists-creators-worldwide.md
 - src/_blog/aug-20-ipfs.io-gateway-outage-resolution-next-steps.md
 - src/_blog/browsers-3000-winners-18k-in-prizes-goes-to-security-cryptography-and-gaming-applications.md
 - src/_blog/building-web3-berty.md
 - src/_blog/building-web3-pinata.md
+- src/_blog/cargox-s-ipfs-based-nft-solution-is-trusted-in-international-trade.md
 - src/_blog/ceramic-launches-mainnet-using-ipfs-and-filecoin-for-decentralized-storage.md
 - src/_blog/community-highlight-esteroids.md
 - src/_blog/congrats-gitcoin-grants-round-9-winners.md
@@ -169,6 +171,7 @@ pages:
 - src/_blog/developing-consumer-decentralized-applications-with-slate.md
 - src/_blog/filebase-building-web3-on-web3.md
 - src/_blog/fleek-a-web3-developer-hub-on-ipfs.md
+- src/_blog/free-to-use-blockchain-koinos-introduces-plugin-architecture-for-developers-that-relies-on-libp2p.md
 - src/_blog/functionland-using-ipfs-to-enable-free-to-use-cloud-applications.md
 - src/_blog/gala-games-decentralized-gaming-supported-by-ipfs-and-filecoin.md
 - src/_blog/go-ipfs-0.8.0-and-remote-pinning-is-here.md
@@ -178,29 +181,39 @@ pages:
 - src/_blog/how-we-put-ipfs-in-brave.md
 - src/_blog/interplanetary-timelessness-ipfs-filecoin-for-the-nft-long-haul.md
 - src/_blog/introducing-js-ipfs-0.54.0.md
+- src/_blog/introducing-probelab.md
+- src/_blog/introducing-reframe.md
 - src/_blog/introducing-the-browsers-3000-hackathon.md
 - src/_blog/ion-a-path-to-decentralized-identity.md
 - src/_blog/ipfs-and-filecoin-s-impact-on-music-media-and-culture.md
+- src/_blog/ipfs-as-a-first-class-citizen-in-ffmpeg-who-s-next.md
 - src/_blog/ipfs-at-ethdenver-2021.md
 - src/_blog/ipfs-browser-connectivity-walkthrough.md
+- src/_blog/ipfs-cluster-scaling-ipfs-data-storage.md
 - src/_blog/ipfs-community-highlight-omnilingo.md
 - src/_blog/ipfs-filecoin-and-content-persistence.md
 - src/_blog/ipfs-filecoin-chainlink-hackathon-winners.md
 - src/_blog/ipfs-in-2021-the-backbone-of-web3-s-mainstream-momentum.md
 - src/_blog/ipfs-in-brave-native-access-to-the-distributed-web.md
 - src/_blog/ipfs-in-opera-touch-on-ios.md
+- src/_blog/ipfs-over-webdav.md
+- src/_blog/ipfs-thing-2022-recap.md
 - src/_blog/join-us-at-ethdenver-2021-year-of-the-spork-marmot.md
 - src/_blog/js-ipfs-0.55.0-greatly-improves-type-definitions.md
 - src/_blog/js-ipfs-0.56.0-upgrades-to-new-multiformats-stack-and-adds.car-import-export.md
+- src/_blog/js-ipfs-0.63.0-esm-libp2p-0.37.x-and-lightweight-peerids.md
 - src/_blog/just-released-ipfs-cluster-0.14.0.md
+- src/_blog/kitsumon-blends-the-best-of-metaverse-gaming-with-content-addressability.md
 - src/_blog/libp2p-comes-to-protoschool.md
 - src/_blog/libp2p-hole-punching.md
+- src/_blog/libp2p-paris-p2p-festival-2022-recap.md
 - src/_blog/meet-the-new-ipfs-blog-news.md
 - src/_blog/minting-fresh-nfts-with-ipfs.md
 - src/_blog/nebulus-the-virtual-ipfs-network.md
 - src/_blog/openfabric-brings-web3-and-ai-together.md
 - src/_blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin.md
 - src/_blog/own-your-identity-with-ion.md
+- src/_blog/rarible-adds-extra-resiliency-to-nfts-with-ipfs-and-filecoin-via-nft.storage.md
 - src/_blog/recapping-nfthack-with-ipfs-and-protocol-labs.md
 - src/_blog/skiff-integrates-ipfs-to-bring-decentralization-and-encryption-to-consumers.md
 - src/_blog/spring-university-hackathons-roundup.md
@@ -219,6 +232,16 @@ pages:
 - src/_blog/welcome-to-ipfs-news-174.md
 - src/_blog/welcome-to-ipfs-news-175.md
 - src/_blog/welcome-to-ipfs-news-176.md
+- src/_blog/welcome-to-ipfs-news-177.md
+- src/_blog/welcome-to-ipfs-news-178.md
+- src/_blog/welcome-to-ipfs-news-179.md
+- src/_blog/welcome-to-ipfs-news-180.md
+- src/_blog/welcome-to-ipfs-news-182.md
+- src/_blog/welcome-to-ipfs-news-183.md
+- src/_blog/welcome-to-ipfs-news-184.md
+- src/_blog/welcome-to-ipfs-news-185.md
+- src/_blog/welcome-to-ipfs-news-186.md
+- src/_blog/welcome-to-ipfs-news-187.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
 - src/_blog/welcome-to-ipfs-weekly-120.md
 - src/_blog/welcome-to-ipfs-weekly-121.md

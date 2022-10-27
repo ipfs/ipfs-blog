@@ -8,7 +8,7 @@ tags:
   - 'go-ipfs'
 ---
 
-[go-ipfs 0.4.14](https://dist.ipfs.io/#go-ipfs) has been released today. Not only have we improved memory and CPU usage but we also managed to fix a lot of bugs, ship a major improvement to IPNS performance and lots of refactoring! \o/
+[go-ipfs 0.4.14](https://dist.ipfs.tech/#go-ipfs) has been released today. Not only have we improved memory and CPU usage but we also managed to fix a lot of bugs, ship a major improvement to IPNS performance and lots of refactoring! \o/
 
 - [Refactoring](#refactoring)
 - [IPNS Improvements](#ipns-improvements)

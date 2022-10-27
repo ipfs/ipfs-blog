@@ -18,7 +18,7 @@ tags:
 
 ## 🏎 Reading Protobuf DAG nodes is super fast
 
-Reading Protobuf DAG nodes just got a serious speed boost as well as a memory reduction. Previously Protobuf DAG nodes (dag-pb nodes for short) carried a multihash property (a [CIDv0](https://docs.ipfs.io/guides/concepts/cid/#version-0)) with them. This used up loads of CPU time calculating the hash for a given node as it was retrieved from storage and with the advent of [CIDv1](https://docs.ipfs.io/guides/concepts/cid/#version-1) there was no guarantee the hashing algorithm and length were correct.
+Reading Protobuf DAG nodes just got a serious speed boost as well as a memory reduction. Previously Protobuf DAG nodes (dag-pb nodes for short) carried a multihash property (a [CIDv0](https://docs.ipfs.tech/guides/concepts/cid/#version-0)) with them. This used up loads of CPU time calculating the hash for a given node as it was retrieved from storage and with the advent of [CIDv1](https://docs.ipfs.tech/guides/concepts/cid/#version-1) there was no guarantee the hashing algorithm and length were correct.
 
 So, we removed it! 🦖 ...but that had the unfortunate consequence of making the object API a whole lot less useful when writing data - the DAG nodes you got back were basically the data you put in. Hence the object API was refactored to return CIDs instead of DAG nodes for write operations...and we all lived happily ever after.
 
@@ -30,13 +30,13 @@ Read all about it in [the pull request notes](https://github.com/ipfs/js-ipfs-un
 
 ## 🎄 HAMT support added to MFS
 
-We're putting the whole of npm on IPFS! These days npm is like 5.3 terabytes of data and it's all going in [MFS](https://docs.ipfs.io/guides/concepts/mfs/). This is super rad, but we needed a good sharding strategy because 5TB is a lorra lorra files.
+We're putting the whole of npm on IPFS! These days npm is like 5.3 terabytes of data and it's all going in [MFS](https://docs.ipfs.tech/guides/concepts/mfs/). This is super rad, but we needed a good sharding strategy because 5TB is a lorra lorra files.
 
 If you're curious about npm on IPFS, check out the [project here](https://github.com/ipfs-shipyard/npm-on-ipfs).
 
 ## 📣 IPNS over pubsub and DHT
 
-Get informed of [IPNS](https://docs.ipfs.io/guides/concepts/ipns/) record updates and read and publish your IPNS records to the DHT. It's all there and it's all awesome. For those of you new to IPNS, let me give you the lowdown - IPNS puts the mutable in immutable 🤣 It's an age old problem, content addressing is rad and all that, but if I change something the hash changes - 👎 boo...but wait, IPNS solves this, you get a permenant address for changeable content - hooray \o/.
+Get informed of [IPNS](https://docs.ipfs.tech/guides/concepts/ipns/) record updates and read and publish your IPNS records to the DHT. It's all there and it's all awesome. For those of you new to IPNS, let me give you the lowdown - IPNS puts the mutable in immutable 🤣 It's an age old problem, content addressing is rad and all that, but if I change something the hash changes - 👎 boo...but wait, IPNS solves this, you get a permenant address for changeable content - hooray \o/.
 
 IPNS over pubsub gets the word out quicker to peers that are interested when an IPNS record changes. IPNS over DHT allows peers to find and resolve your IPNS address to some content in the first place! In the next JS IPFS release (0.35) the DHT will be enabled by default and it's going to be epic.
 
@@ -55,7 +55,7 @@ QmT78zSuBmuS4z925WZfrqQ1qHaJ56DQaTfyMUF7F8ff5o
 uAXASIEbUSBS5xa8UHDqqt8BdxehE6tX5HxKFiwIeukV2i0wO
 ```
 
-This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a [read of this for more](https://blog.ipfs.io/53-go-ipfs-0-4-18/#cidv1-base32-migration).
+This is all work to smooth out the eventual transition to base32 CIDv1 by default - a move to allow CIDs to be used as valid URL origins. Have a [read of this for more](https://blog.ipfs.tech/53-go-ipfs-0-4-18/#cidv1-base32-migration).
 
 To help you craft your artisanal CIDs we've introduced a `--cid-base` option to a bunch of CLI commands (and `?cid-base` option to a bunch of HTTP API endpoints). Check it out:
 
@@ -66,7 +66,7 @@ added bafybeibns4lrebrxaymvyshgmki5biwh6cd53idxfpen6ysomzrywtsm44 file.txt
 
 ## 💪 Deps got upgrades!
 
-We got you covered with [WebUI 2.3](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.2.0) (quic support, responsive navbar, and a language selector), [libp2p 0.24](https://blog.ipfs.io/55-js-libp2p-0-24/) and many other upgrades giving you a faster and smaller JS IPFS.
+We got you covered with [WebUI 2.3](https://github.com/ipfs-shipyard/ipfs-webui/releases/tag/v2.2.0) (quic support, responsive navbar, and a language selector), [libp2p 0.24](https://blog.ipfs.tech/55-js-libp2p-0-24/) and many other upgrades giving you a faster and smaller JS IPFS.
 
 # 🏗 API Changes
 
@@ -306,9 +306,9 @@ Would you like to contribute to the IPFS project and don't know how? Well, there
 - Check the issues with the `help wanted` label at the Ready column in our waffle board - https://waffle.io/ipfs/js-ipfs?label=help%20wanted
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at http://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at http://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [⚡️ⒿⓈ Core Dev Team Weekly Sync 🙌🏽](https://github.com/ipfs/team-mgmt/issues/650) and be part of the Sprint action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works and what you can do with it is at [discuss.ipfs.tech](http://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.

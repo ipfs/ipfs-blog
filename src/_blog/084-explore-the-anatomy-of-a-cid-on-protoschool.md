@@ -24,7 +24,7 @@ We also take a look at the evolution of the [CID specification](https://github.c
 
 ### CID Inspector
 
-Did you know you can paste any IPFS CID into the [**CID Inspector**](https://cid.ipfs.io/) for a human-friendly breakdown of its multihash format and length, multicodec, multibase, and version? It can even convert CIDv0 to CIDv1! The awesome [Oli Evans](https://github.com/olizilla) built this super-useful visualization tool that we explore in this new tutorial and which you can now access from our coding challenges.
+Did you know you can paste any IPFS CID into the [**CID Inspector**](https://cid.ipfs.tech/) for a human-friendly breakdown of its multihash format and length, multicodec, multibase, and version? It can even convert CIDv0 to CIDv1! The awesome [Oli Evans](https://github.com/olizilla) built this super-useful visualization tool that we explore in this new tutorial and which you can now access from our coding challenges.
 
 ![CID Inspector](../assets/084-explore-the-anatomy-of-a-cid-on-protoschool-cid-inspector.png)
 

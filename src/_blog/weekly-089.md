@@ -12,11 +12,11 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Testground is here!
 
-[Introducing Testground v0.5](https://blog.ipfs.io/2020-05-06-launching-testground/), a tool dedicated to testing, simulating, benchmarking P2P and distributed systems at scale. This is a huge milestone for the distributed web, and for the wider p2p ecosystem. Discover what Testground is, how to get started, what’s coming next, and the backstory behind it on the IPFS blog.
+[Introducing Testground v0.5](https://blog.ipfs.tech/2020-05-06-launching-testground/), a tool dedicated to testing, simulating, benchmarking P2P and distributed systems at scale. This is a huge milestone for the distributed web, and for the wider p2p ecosystem. Discover what Testground is, how to get started, what’s coming next, and the backstory behind it on the IPFS blog.
 
 ## How do you use IPFS GUI Tools?
 
@@ -69,6 +69,6 @@ The exploration to [host Wikipedia on IPFS](https://github.com/santhoshtr/wikipe
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

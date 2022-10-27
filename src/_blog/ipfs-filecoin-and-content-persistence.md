@@ -28,7 +28,7 @@ The solution is a decentralized storage stack that addresses the issues of addre
 
 Broadly speaking, today’s web browsing operates through what is known as _location addressing._ Location addressing retrieves online information from specific locations on the web ─ i.e. from behind URLs. However, this has its obvious downsides. Location addressing is centralized; whoever controls that location controls the content. And anything behind a location-addressed URL can be changed. The language of an article, the colors of a digital artwork, or the properties of a recorded identity. Location-addressed URLs are exploitable.
 
-The solution is _content addressing._ Content-based addressing allows you to access data based on a unique fingerprint of that piece of data; no matter _where_ it is stored, if you have that unique fingerprint of the data, you should be able to retrieve the content. In content-based addressing (within the context of IPFS), content is no longer retrieved from single locations on the web. Rather, content is retrieved from any participating nodes on the IPFS network that have the content you’re requesting. Pieces of content are shared by many parties, and content can always be retrieved either entirely from one node (such as a [pinning service node](https://docs.ipfs.io/concepts/persistence/#persistence-versus-permanence)) or collected in bits and pieces from multiple nodes.
+The solution is _content addressing._ Content-based addressing allows you to access data based on a unique fingerprint of that piece of data; no matter _where_ it is stored, if you have that unique fingerprint of the data, you should be able to retrieve the content. In content-based addressing (within the context of IPFS), content is no longer retrieved from single locations on the web. Rather, content is retrieved from any participating nodes on the IPFS network that have the content you’re requesting. Pieces of content are shared by many parties, and content can always be retrieved either entirely from one node (such as a [pinning service node](https://docs.ipfs.tech/concepts/persistence/#persistence-versus-permanence)) or collected in bits and pieces from multiple nodes.
 
 For an overall look at the value of content addressing and how you can use IPFS content identifiers/fingerprints (CIDs) to properly address NFTs, [see here.](/2021-04-05-storing-nfts-on-ipfs/)
 
@@ -86,5 +86,5 @@ Learn more at:
 
 - [nft.storage](http://nft.storage/)
 - [NFT School](https://nftschool.dev/)
-- [IPFS Documentation - content addressing](https://docs.ipfs.io/concepts/content-addressing/)
-- [IPFS Documentation - minting an NFT with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts)
+- [IPFS Documentation - content addressing](https://docs.ipfs.tech/concepts/content-addressing/)
+- [IPFS Documentation - minting an NFT with IPFS](https://docs.ipfs.tech/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts)

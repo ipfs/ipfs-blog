@@ -8,7 +8,7 @@
 
 ![Image of IPFS blog displayed on a laptop](https://user-images.githubusercontent.com/1507828/110040308-d2331580-7cff-11eb-8a05-8f5bad5ca819.png)
 
-This repository contains code and content for the [IPFS Blog & News](https://blog.ipfs.io) website. To contribute to the site, please follow the instructions below for _post authors/editors_ and _site developers_.
+This repository contains code and content for the [IPFS Blog & News](https://blog.ipfs.tech) website. To contribute to the site, please follow the instructions below for _post authors/editors_ and _site developers_.
 
 **If you just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
 
@@ -16,12 +16,12 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 While it's possible to manually PR a new blog post from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact Jessica Schilling.
 
-Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.io. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
+Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.tech. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
 
 ### Forestry authoring/editing tips
 
 - Use the "Content Types" section of Forestry's left-hand menu to drill down to the type of item (blog post, video, news coverage, event) you want to create/edit.
-- For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.io/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry, there are generic fallback images.)
+- For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.tech/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry, there are generic fallback images.)
 - Want to embed a YouTube video in a blog post? Switch to raw markdown view and use `@[youtube](videoID)`, substituting the video's unique ID from the URL (e.g. `https://www.youtube.com/watch?v=eFbKKsEoQNg`) for `videoID`.
 - To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
 

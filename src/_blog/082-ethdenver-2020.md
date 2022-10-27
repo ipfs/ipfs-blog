@@ -18,7 +18,7 @@ On Thursday, February 13, the IPFS Community is hosting the [Distributed Network
 
 ## Did we mention we have bounties?
 
-We’ll have bounties for using and improving IPFS, and building IPFS or our community’s libraries and services into your dapps—all managed through the ETHDenver DAO. ETHDenver will announce the bounties on February 10th, so until then take a look at [awesome.ipfs.io](https://awesome.ipfs.io/) to get your mental propellers spinning!
+We’ll have bounties for using and improving IPFS, and building IPFS or our community’s libraries and services into your dapps—all managed through the ETHDenver DAO. ETHDenver will announce the bounties on February 10th, so until then take a look at [awesome.ipfs.tech](https://awesome.ipfs.tech/) to get your mental propellers spinning!
 
 ## Join us at the following events
 

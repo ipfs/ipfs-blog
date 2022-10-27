@@ -47,7 +47,7 @@ In better understanding how IPFS works, we will take a deep dive into the underl
 
    On the flip side, the decentralized web uses content addressing through a unique content identifier - CID - to retrieve data from various sources (peers and/or nodes).
 
-   A content identifier - CID is a particular form of content addressing developed for IPFS. It is a single identifier that contains both a [cryptographic hash](https://docs.ipfs.io/concepts/hashing/) and a codec, holding information about how to interpret data. And with cryptographic hash, anyone using the same algorithm on the same data will get the same hash. For context, most content in IPFS is hashed using the sha2-256 algorithm.
+   A content identifier - CID is a particular form of content addressing developed for IPFS. It is a single identifier that contains both a [cryptographic hash](https://docs.ipfs.tech/concepts/hashing/) and a codec, holding information about how to interpret data. And with cryptographic hash, anyone using the same algorithm on the same data will get the same hash. For context, most content in IPFS is hashed using the sha2-256 algorithm.
 
    The content identifier doesn’t indicate where the data is stored. It however, forms a kind of address based on the underlying content of the data.
 2. Content linking via Directed Acyclic Graphs (DAGs):
@@ -75,4 +75,4 @@ Thanks for reading. Here’s are some learning resources to help you get into so
 
 * [ProtoSchool](https://proto.school/)
 * [IPFS YouTube Channel](https://www.youtube.com/c/IPFSbot)
-* [IPFS docs](https://docs.ipfs.io/)
+* [IPFS docs](https://docs.ipfs.tech/)

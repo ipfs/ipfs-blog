@@ -11,7 +11,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## **Announcing the Jupiter Hackathon**
 
@@ -22,7 +22,7 @@ Jupiter is a virtual hackathon lasting from late August to October focused on so
 [Applications will be accepted](https://tianchi.aliyun.com/competition/entrance/531928/introduction) now through September 30th. Judging will take place on October 14th and will be based on equally-weighted categories: Design, Novelty/Originality, Technical Complexity, Daily/Mass Usability, and Creativity/Fun.
 
   
-On October 23rd, the Jupiter Hackathon will culminate in an offline demo day and reward ceremony in Shanghai, where $19,000 in prizes will be split among five winners for the best projects! Stay tuned for updates and details on future workshops. projects! Stay tuned for updates and details on future workshops. For more details, read this [post](https://blog.ipfs.io/announcing-jupiter-hackathon-alibaba-cloud/).
+On October 23rd, the Jupiter Hackathon will culminate in an offline demo day and reward ceremony in Shanghai, where $19,000 in prizes will be split among five winners for the best projects! Stay tuned for updates and details on future workshops. projects! Stay tuned for updates and details on future workshops. For more details, read this [post](https://blog.ipfs.tech/announcing-jupiter-hackathon-alibaba-cloud/).
 
 ## Brand new on IPFS
 

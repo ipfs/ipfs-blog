@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -22,11 +22,11 @@ tags:
 
 ### 正如我们所承诺的，js-ipfs 0.37.0 已经发布
 
-最新发布的 js-ipfs 引入了一个全新的构造器，更好的 DNSLink 支持和委托路由!有关完整的发布细节，[请参阅 IPFS 博客](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/)。
+最新发布的 js-ipfs 引入了一个全新的构造器，更好的 DNSLink 支持和委托路由!有关完整的发布细节，[请参阅 IPFS 博客](https://blog.ipfs.tech/2019-08-06-js-ipfs-0-37/)。
 
 ### js-libp2p 增加了 Gossipsub 支持和 Promisify API
 
-Libp2p 的工作人员也很忙! 上周，他们宣布了 [js-libp2p 0.26.0](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/) 版本的发布，该版本增加了对更高效的 pubsub 路由器 (Gossipsub) 的支持，并提供了目前阶段对 Promisify 的支持。点击查看详情！
+Libp2p 的工作人员也很忙! 上周，他们宣布了 [js-libp2p 0.26.0](https://blog.ipfs.tech/2019-08-07-js-libp2p-0-26/) 版本的发布，该版本增加了对更高效的 pubsub 路由器 (Gossipsub) 的支持，并提供了目前阶段对 Promisify 的支持。点击查看详情！
 
 ## 你好 ipfs-cohost 👋
 
@@ -34,9 +34,9 @@ ipfs-cohost(https://github.com/olizilla/ipfs-cohost#ipfs-cohost-) 由 @olizilla 
 
 ## IPFS 生态圈的动态
 
-_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
-- [2019 IPFS Camp 举行的 “大灾难规避大会”](https://ipfs.io/blog/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/), Alan Shaw, 2019 年 8 月 11 日
+- [2019 IPFS Camp 举行的 “大灾难规避大会”](https://blog.ipfs.tech/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/), Alan Shaw, 2019 年 8 月 11 日
 - 视频: [TAU Coin 的 David 谈论移动端采矿、IPFS、交易证明、了解你的客户(KYC)、老化逃逸速度](https://www.youtube.com/watch?time_continue=4&v=8atG0zW50Uo)，Crypto Grownups, 2019 年 8 月 11 日
 - [IPFS 生产配置](https://medium.com/coinmonks/ipfs-production-configuration-57121f0daab2), Coinmonks, 2019 年 8 月 9 日
 - [Peergos 上的应用程序](https://peergos.org/blog#applications_on_peergos_august_2019_), Peergos, 2019 年 8 月 9 日
@@ -68,7 +68,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [SourceCred 0.4.0](https://github.com/sourcecred/sourcecred/releases/tag/v0.4.0) 已经发布了! SourceCred 的目标是通过创建每个项目的名誉测度，名为 cred，来增强开源开发人员和社区的能力。
 - [Ambients](https://ambients.org/) 是一种分布式计算协议。它允许开发人员构建去中心化的应用程序、数据库和服务，并在对等网络中部署和运行它们。
@@ -80,7 +80,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 8 月 14 日：** 参与[编程的女性在云中](https://www.womenwhocode.com/cloud/events)，[了解 IPFS](https://zoom.us/webinar/register/WN_jnKnkxjJR3OOxf3kPa7Xfg)，激励女性在技术职业中脱颖而出。远程活动。
 - **2019 年 8 月 16 日：** [区块链，加密货币 & IPFS](https://www.meetup.com/Blockchain-Cryptocurrencies-Interplanetary-File-System/events/vldkqqyzlbfc/): 和往常一样，我们将讨论正在改变和塑造密码世界和 WEB 3.0 的最新事件。美国，圣地亚哥。

@@ -10,7 +10,7 @@ author: 默奕
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -30,7 +30,7 @@ author: 默奕
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [使用 docker-compose 和 certbot 设置 IPFS 节点](https://willschenk.com/articles/2019/setting_up_an_ipfs_node/), Will Schenk, 2019 年 9 月 7 日
 - [企业 IPFS 提供真正的供应链起源 - 第一部](https://medium.com/rtrade-technologies/enterprise-ipfs-for-true-supply-chain-provenance-part-1-89524337f27), RTrade Technologies, 2019 年 9 月 6 日
@@ -63,7 +63,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [Dicoogle IPFS 存储插件](https://github.com/BMDSoftware/dicoogle-ipfs-storage) – 一个 Dicoogle 插件，支持通过 IPFS 存储文件。
 - [Elastos Hive](https://elastos.academy/hive/) 是为应用程序提供去中心化存储功能的基本服务基础设施
@@ -71,7 +71,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 9 月 16 日:** [维多利亚科技大会 2019 年 9 月](https://ti.to/fission/victoria-sept-2019):一旦他们确定了日期和地点，就报名参加!加拿大，不列颠哥伦比亚省，维多利亚
 - **19 September 2019:** 旧金山 IPFS 将在 Starfish Mission 主持 [IPFS 是如何工作的](https://www.meetup.com/San-Francisco-IPFS/events/264171146/) ，请报名参加，并学习更多有关 IPFS 及其实际工作原理的知识! 美国旧金山
