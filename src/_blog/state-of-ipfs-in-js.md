@@ -121,7 +121,9 @@ js-ipfs nodes running in the browser can connect to other js-ipfs nodes via the 
 #### 👍 Pros
 
 - It’s useful and works for multi-user apps with small amounts of ephemeral data transmitted in real-time.
-- Even though js-ipfs with WebRTC requires a centralized signaling server and is not the [ideal long-term solution](https://github.com/libp2p/js-libp2p/issues/385), it enables direct browser-to-browser communication.
+- Even though js-ipfs with WebRTC requires a centralized signaling server and is not the [ideal long-term solution](https://github.com/libp2p/js-libp2p/issues/385), it enables direct browser-to-browser communication (after the initial [SDP manifest](https://webrtchacks.com/sdp-anatomy/) is exchanged over signaling server).
+
+
 
 #### 👎 Cons
 
