@@ -12,21 +12,20 @@ tags:
   - js-libp2p
 ---
 
-- [🧘‍♀️ Purpose](#️purpose)
-- [📇 Names and Terms](#names-and-terms)
-- [⏳ IPFS JS Development History](#ipfs-js-development-history)
-- [🔀 Historical IPFS JS Usage Patterns](#historical-ipfs-js-usage-patterns)
+## 🧘‍♀️ Purpose <!-- omit from toc -->
+
+JavaScript (and its typed variant TypeScript) is the most ubiquitous programming language with the largest community of developers. Our goal is to enable all those developers to reap the benefits of IPFS and do so productively.
+
+This blog entry intends to give an update on what is happening with IPFS development in JS. It’s been a while since we’ve done this, so there’s a lot to cover. This is the first update of more to come. It isn’t a full roadmap, but we aim to give clarity to some of the history of IPFS development in JS, decisions by some maintainers on what to do going forward, and ways you can help.
+
+- [📇 Names and Terms](#%F0%9F%93%87-names-and-terms)
+- [⏳ IPFS JS Development History](#%E2%8F%B3-ipfs-js-development-history)
+- [🔀 Historical IPFS JS Usage Patterns](#%F0%9F%94%80-historical-ipfs-js-usage-patterns)
   - [Remote control of Kubo](#remote-control-of-kubo)
-    - [👍 Pros](#-pros)
-    - [👎 Cons](#-cons)
   - [js-ipfs in a Node.js context](#js-ipfs-in-a-nodejs-context)
-    - [👍 Pros](#-pros-1)
-    - [👎 Cons](#-cons-1)
   - [js-ipfs in a Browser context](#js-ipfs-in-a-browser-context)
-    - [👍 Pros](#-pros-2)
-    - [👎 Cons](#-cons-2)
-- [🧑‍💻 IPFS-in-JS development the last 18 months](#ipfs-in-js-development-the-last-18-months)
-- [💡 The future of IPFS-in-JS in 2022 and 2023](#-the-future-of-ipfs-in-jsin-2022-and-2023)
+- [🧑‍💻 IPFS-in-JS development the last 18 months](#%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB-ipfs-in-js-development-the-last-18-months)
+- [💡 The future of IPFS-in-JS in 2022 and 2023](#%F0%9F%92%A1-the-future-of-ipfs-in-js-in-2022-and-2023)
   - [Go and JS development are decoupling](#go-and-js-development-are-decoupling)
   - [Seize and leverage new browser-friendly P2P transports](#seize-and-leverage-new-browser-friendly-p2p-transports)
   - [Support fully speced delegated routing protocols and endpoints](#support-fully-speced-delegated-routing-protocols-and-endpoints)
@@ -35,21 +34,15 @@ tags:
   - [Pause js-ipfs maintenance once Pomegrate is released](#pause-js-ipfs-maintenance-once-pomegrate-is-released)
   - [A new name is coming](#a-new-name-is-coming)
   - [Doc updates galore](#doc-updates-galore)
-- [🗺 Timeline](#timeline)
-- [🤝 Ways you can help](#ways-you-can-help)
-
-## 🧘‍♀️ Purpose
-
-JavaScript (and its typed variant TypeScript) is the most ubiquitous programming language with the largest community of developers. Our goal is to enable all those developers to reap the benefits of IPFS and do so productively.
-
-This blog entry intends to give an update on what is happening with IPFS development in JS. It’s been a while since we’ve done this, so there’s a lot to cover. This is the first update of more to come. It isn’t a full roadmap, but we aim to give clarity to some of the history of IPFS development in JS, decisions by some maintainers on what to do going forward, and ways you can help.
+- [🗺 Timeline](#%F0%9F%97%BA-timeline)
+- [🤝 Ways you can help](#%F0%9F%A4%9D-ways-you-can-help)
 
 ## 📇 Names and Terms
 
 To help with this update, the following names and terms will be used to aid with clarity:
 
-- [Kubo](https://github.com/ipfs/kubo/) – This project was formerly known as _go-ipfs_. See [here](https://github.com/ipfs/kubo/issues/8959) for more info.
-- js-ipfs - This is the long-standing IPFS implementation written in JS. As described below, we will be deprecating it after Pomegranate is released. We’re currently not planning to rename this implementation [like we did with Kubo](https://github.com/ipfs/ipfs/issues/470) given its limited lifespan.
+- [Kubo](https://github.com/ipfs/kubo) – This project was formerly known as _go-ipfs_. See [here](https://github.com/ipfs/kubo/issues/8959) for more info.
+- [js-ipfs](https://github.com/ipfs/js-ipfs) - This is the long-standing IPFS implementation written in JS. As described below, we will be deprecating it after Pomegranate is released. We’re currently not planning to rename this implementation [like we did with Kubo](https://github.com/ipfs/ipfs/issues/470) given its limited lifespan.
 - [Pomegranate](https://github.com/ipfs/pomegranate) - This is a [to-be-created IPFS implementation in JS](https://github.com/ipfs/pomegranate/issues/2) that is discussed below. The final name is TBD (to be determined), and you can track the naming effort [here](https://github.com/ipfs/pomegranate/issues/3). While it will use many of the underlying libraries of js-ipfs (e.g., [js-libp2p](https://github.com/libp2p/js-libp2p), [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap)), it is a separate project with a different API.
 - IPFS-in-JS - This refers broadly to the development of IPFS using the JavaScript and TypeScript languages. It doesn’t mean the “js-ipfs” project or “Pomegranate”.
 - Delegate nodes - These are nodes that expose the [`/api/v0/dht/*` endpoints of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-dht-findpeer) for delegated routing. Because **js-ipfs** nodes don’t have the DHT enabled by default and wouldn’t make good DHT servers in browsers anyways, they need the help of **delegate** nodes to resolve DHT queries.
@@ -125,11 +118,10 @@ For delegated providing from the browser, js-ipfs contacts the preload node usin
 
 js-ipfs nodes running in the browser can connect to other js-ipfs nodes via the WebRTC Star transport, but this requires a [centralized signaling server](https://github.com/libp2p/js-libp2p-webrtc-star) to do the initial handshake and cannot be used to connect to Kubo nodes as support for this transport has never materialized.
 
-**TODO: in this section we should say something about browser-to-browser connections with WebRTC**
-
 #### 👍 Pros
 
-- It’s useful and works for multi-user apps with small amounts of ephemeral data transmitted in real time.
+- It’s useful and works for multi-user apps with small amounts of ephemeral data transmitted in real-time.
+- Even though js-ipfs with WebRTC requires a centralized signaling server, it enables direct browser-to-browser communication.
 
 #### 👎 Cons
 
@@ -170,7 +162,7 @@ In practical terms, this translates to:
 
 ### Seize and leverage new browser-friendly P2P transports
 
-We are transitioning to a world where browsers can connect to other libp2p nodes (including other browsers) without Central Authority TLS certs thanks to new transports like WebTransport and WebRTC. See [connectivity.libp2p.io](http://connectivity.libp2p.io) for more details.
+We are transitioning to a world where browsers can connect to other libp2p nodes (including other browsers) without Central Authority TLS certs thanks to new transports like **WebTransport** and **WebRTC**. See [connectivity.libp2p.io](http://connectivity.libp2p.io) for more details.
 
 This means browser nodes have more optionality to which long-running IPFS nodes they delegate routing, retrieval, and providing. For example, making DHT or Bitswap requests to other nodes on the network is now viable.
 
