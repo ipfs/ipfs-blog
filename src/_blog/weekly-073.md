@@ -12,14 +12,14 @@ header_image: '/header-image-weekly-newsletter.png'
 
 # Welcome back to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## Top 10 recent highlights
 
-- [Announcing collaborative clusters](https://blog.ipfs.io/2020-01-09-collaborative-clusters/), the first set of public collaborative clusters, creating an easy way to join the IPFS Network.
+- [Announcing collaborative clusters](https://blog.ipfs.tech/2020-01-09-collaborative-clusters/), the first set of public collaborative clusters, creating an easy way to join the IPFS Network.
 - [An IPFS Use Case](https://medium.com/pinata/an-ipfs-use-case-6c46349cb1), or why IPFS is well-suited to handle the buying and selling of data.
-- The [IPFS Docs Beta is live!](https://docs.ipfs.io/) [Learn more about helping beta test](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/) to make it even better.
-- New release: [IPFS Cluster 0.12.0 is here!](https://cluster.ipfs.io/news/0.12.0_release/)
+- The [IPFS Docs Beta is live!](https://docs.ipfs.tech/) [Learn more about helping beta test](https://blog.ipfs.tech/2020-01-07-ipfs-docs-beta/) to make it even better.
+- New release: [IPFS Cluster 0.12.0 is here!](https://ipfscluster.io/news/0.12.0_release/)
 - [Hands-on IPLD Tutorial in Golang: Getting Started with IPLD](https://simpleaswater.com/hands-on-ipld-tutorial-in-golang/)
 - [ProtoSchool](https://proto.school/) has enabled social sharing. When a user completes all lessons in a tutorial, they’re now presented with a congratulatory message and an opportunity to share their success on Twitter!
 - [Comparing IPFS and Dat](https://medium.com/@jaygraber/comparing-ipfs-and-dat-8f3891d3a603): Everything you wanted to know about the two.
@@ -41,7 +41,7 @@ An update from the [IPFS Core Implementations](https://github.com/ipfs/team-mgmt
 
 Looking to dip your toes into some [fresh libp2p and Nim development?](https://github.com/status-im/nim-libp2p/issues)
 
-Don’t forget to [get involved with the new IPFS docs beta](https://blog.ipfs.io/2020-01-07-ipfs-docs-beta/) by testing, contributing content, or voting on new features!
+Don’t forget to [get involved with the new IPFS docs beta](https://blog.ipfs.tech/2020-01-07-ipfs-docs-beta/) by testing, contributing content, or voting on new features!
 
 ## Recommended viewing
 
@@ -82,4 +82,4 @@ Don’t forget to [get involved with the new IPFS docs beta](https://blog.ipfs.i
 - **13-17 Feb 2020** | [#BUIDL Week Colorado - ETHDenver 2020](https://www.ethdenver.com/buidlweek/), Denver (CO), US
 - **13 Feb 2020** | [Distributed Networks Summit – IPFS & Friends](https://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487?aff=textileio), Denver (CO), US
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up in [chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up in [chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)

@@ -30,7 +30,7 @@ Our friends and users at ConsenSys wrote an excellent "[Introduction to IPFS](ht
 - [@noffle](//github.com/noffle) also made progress toward getting `go-ipfs` compatible with vanilla `go get` installation. Hope to have more tangible results to show by end of the month.
 - [@RichardLitt](//github.com/RichardLitt) made a lot of documentation fixes to the CLI while working on the IPFS HTTP API.
 - [@chriscool](//github.com/chriscool) rewrote [the build documentation for Windows](//github.com/ipfs/go-ipfs/blob/master/docs/windows.md), which enabled [@slothbag](//github.com/slothbag) to get Windows builds working again with minimal fuss.
-- [@lgierth](//github.com/lgierth) posted a writeup on the [migration from 0.3.x to 0.4.0](https://ipfs.io/blog/9-v04x-migration/).
+- [@lgierth](//github.com/lgierth) posted a writeup on the [migration from 0.3.x to 0.4.0](https://blog.ipfs.tech/9-v04x-migration/).
 - [@noffle](//github.com/noffle) improved FUSE connection termination.
 
 #### [**GX**](//github.com/whyrusleeping)
@@ -55,7 +55,7 @@ The IPLD spec was merged, after months of thoughtful design. The bulk of the wor
 
 #### [**distributions**](//github.com/ipfs/distributions)
 
-[dist.ipfs.io](http://dist.ipfs.io/) _almost_ has [signed releases](https://github.com/ipfs/distributions/pull/51) thanks to [@dignifiedquire](//github.com/dignifiedquire). This will be coming soon.
+[dist.ipfs.tech](http://dist.ipfs.tech/) _almost_ has [signed releases](https://github.com/ipfs/distributions/pull/51) thanks to [@dignifiedquire](//github.com/dignifiedquire). This will be coming soon.
 
 #### [**js-ipfs**](//github.com/ipfs/js-ipfs)
 

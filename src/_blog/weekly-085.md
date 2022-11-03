@@ -12,7 +12,7 @@ tags:
 
 # Welcome to the IPFS Weekly
 
-Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.io/) galaxy and beyond! 🚀
+Here’s what’s happening lately in the [InterPlanetary File System](https://ipfs.tech/) galaxy and beyond! 🚀
 
 ## ProtoSchool explores the Async Iterables returned by js-ipfs 0.41
 
@@ -26,7 +26,7 @@ Check out the updated content in our [Mutable File System (MFS)](https://school.
 - Shipped [ipfsd-ctl](https://github.com/ipfs/js-ipfsd-ctl/compare/v3.0.0...v3.1.0) with better docs, less node globals and other minors improvements
 - The [pubsub discovery module](https://github.com/libp2p/js-libp2p-pubsub-peer-discovery) was released
 - NodeFactory released [libp2p-noise](https://github.com/NodeFactoryIo/js-libp2p-noise) last week. Yay, handshakes all around! 🤝
-- Lastly, the [IPFS Distributions website](https://dist.ipfs.io/) got a fun IPFS rebrand! Enjoy!
+- Lastly, the [IPFS Distributions website](https://dist.ipfs.tech/) got a fun IPFS rebrand! Enjoy!
 
 ## Using IPFS to fight COVID-19
 
@@ -66,7 +66,7 @@ Not only did our friends at Terminal do an entire platform rebrand to become **[
 
 Come hack on [the OpenTelemetry Tracing for OrbitDB](https://github.com/orbitdb/opentelemetry-plugin-orbitdb). This, combined with the HTTP tracing in #IPFS could lead to some awesome metrics + tracing +observability on the distributed web.
 
-Calling all rustaceans, rustafarians, ferrosities, and rustlers! Community participation in [making Rust-IPFS a reality](https://blog.ipfs.io/2020-03-18-announcing-rust-ipfs/) is encouraged and welcomed! If you want to pitch in, [here are a few ways](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
+Calling all rustaceans, rustafarians, ferrosities, and rustlers! Community participation in [making Rust-IPFS a reality](https://blog.ipfs.tech/2020-03-18-announcing-rust-ipfs/) is encouraged and welcomed! If you want to pitch in, [here are a few ways](https://github.com/ipfs-rust/ipfs-rust-conformance/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
 
 ## Attend one of these exciting events from the comfort of your own home
 
@@ -85,6 +85,6 @@ Calling all rustaceans, rustafarians, ferrosities, and rustlers! Community parti
 
 **Take care of yourselves and each other.** ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 [Get the IPFS Weekly in your inbox](https://ipfs.us4.list-manage.com/subscribe?u=25473244c7d18b897f5a1ff6b&id=cad54b2230), each Tuesday.

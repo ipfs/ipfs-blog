@@ -11,7 +11,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Introducing NFT.Storage: Free Decentralized Storage for NFTs
 
@@ -34,7 +34,7 @@ Rounding out the month was ASUC’s CivHacks event, another weekend-long univers
 * We have four new videos on IPFS and NFTs up on our YouTube channel! [Watch the content.](https://www.youtube.com/c/IPFSbot/videos)
 * Opera browser or desktop users can now directly access decentralized websites that are hosted on IPFS! [Read the full announcement.](https://decrypt.co/69276/opera-browser-integrates-unstoppable-domains?utm_source=telegram&utm_medium=social&utm_campaign=smt)
 * Audius is a music and audio sharing platform that uses IPFS and is designed to provide artists a direct link with their listeners. [Learn more.](https://youtu.be/c50licHTOik)
-* The IPFS & Filecoin Chainlink Hackathon winners have been announced! [Check out this post](https://blog.ipfs.io/2021-05-03-chainlink-recap/) to learn about them.
+* The IPFS & Filecoin Chainlink Hackathon winners have been announced! [Check out this post](https://blog.ipfs.tech/2021-05-03-chainlink-recap/) to learn about them.
 
 ## Around the ecosystem 🌏
 
@@ -44,7 +44,7 @@ New to ZKPs? [This livestream presentation](https://t.co/u1E3ngZ4gM?amp=1) will 
 
 Congratulations to MetaMask on their milestone of 5 million active users! [Learn more.](https://twitter.com/MetaMask/status/1387167179951464455?s=20)
 
-The Scaling Ethereum hackathon is happening now through May 13th with ETHGlobal, so there's still time to build with IPFS and Filecoin for prizes! [Get the details.](https://blog.ipfs.io/2021-04-14-scaling-ethereum/)
+The Scaling Ethereum hackathon is happening now through May 13th with ETHGlobal, so there's still time to build with IPFS and Filecoin for prizes! [Get the details.](https://blog.ipfs.tech/2021-04-14-scaling-ethereum/)
 
 Applications for Filecoin Launchpad Accelerator II are now open and close at midnight EST on May 9. [Apply now!](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)
 

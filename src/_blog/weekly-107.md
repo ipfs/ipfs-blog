@@ -11,19 +11,19 @@ tags:
   - 'case study'
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## go-ipfs 0.7 is here 🚀🚀🚀
 
 The latest iteration of the Go implementation of IPFS brings a truckload of features and fixes: SECIO disabled by default 👋, rotating keys 🔑, IPNS paths now encode the key name as a base36 CIDv1 by default 🎹, key export/import 📦, and more. Great work everyone!
 
-[Read the release notes](https://blog.ipfs.io/2020-09-24-go-ipfs-0-7-0/)
+[Read the release notes](https://blog.ipfs.tech/2020-09-24-go-ipfs-0-7-0/)
 
 ## Case Study: Shipping IPFS with Morpheus.Network
 
 And we mean that quite literally. For Morpheus.Network, shipping of goods across the globe, it’s critical—both functionally and legally—to have verifiable, consistently accessible documentation for every shipment. That’s where IPFS comes into the picture, in the latest entry in the IPFS Case Study series.
 
-[Read the case study](https://docs.ipfs.io/concepts/case-study-morpheus/)
+[Read the case study](https://docs.ipfs.tech/concepts/case-study-morpheus/)
 
 ## Quote of the week
 
@@ -78,7 +78,7 @@ Eco-Track supply chain and recycling services using [IOTA and IPFS](https://medi
 
 Take care of yourselves and each other. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

@@ -12,7 +12,7 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## April IPFS Community Meetup
 
@@ -28,7 +28,7 @@ The IPFS April Meetup was yesterday, Tuesday, April 27th and it was all about NF
 
 ![](../assets/2021-04-14-cardheader-scaling-ethereum-1459531d.png)
 
-Hacking for Scaling Ethereum is ongoing through May 13! As the Ethereum community looks to enter the sixth year of collaborating on the world’s most actively used blockchain, many builders eagerly anticipate the next phase of Eth2. Both the IPFS and Filecoin projects will be showing their support for the Ethereum community during the event. Protocol Labs has four prize options for teams focused on NFT metadata stored on IPFS, Filecoin retrieval, IPFS CIDs, or disputing Window PoST proofs in Filecoin. For more information, [**check out this post.**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/)
+Hacking for Scaling Ethereum is ongoing through May 13! As the Ethereum community looks to enter the sixth year of collaborating on the world’s most actively used blockchain, many builders eagerly anticipate the next phase of Eth2. Both the IPFS and Filecoin projects will be showing their support for the Ethereum community during the event. Protocol Labs has four prize options for teams focused on NFT metadata stored on IPFS, Filecoin retrieval, IPFS CIDs, or disputing Window PoST proofs in Filecoin. For more information, [**check out this post.**](https://blog.ipfs.tech/2021-04-14-scaling-ethereum/)
 
 ## Brand new on IPFS
 

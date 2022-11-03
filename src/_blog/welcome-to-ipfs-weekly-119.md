@@ -10,7 +10,7 @@ description: ''
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ![IPFS in Brave - Native Access to the Distributed Web](../assets/2021-01-19-ipfs-in-brave.png)
 
@@ -18,7 +18,7 @@ Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/
 
 Announcing the integration of IPFS in the Brave browser, completing the vision of a native distributed web experience in a modern web browser. This is a first for browsers and a huge step towards true user agency on the web. 🎉
 
-[Read more](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)
+[Read more](https://blog.ipfs.tech/2021-01-19-ipfs-in-brave/)
 
 ## Join us Friday for our January meetup!
 
@@ -42,7 +42,7 @@ What was once a single lesson on data structures is now a meaty multiple-choice 
 
 ## Brand new on IPFS
 
-- [js-ipfs 0.53](https://blog.ipfs.io/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
+- [js-ipfs 0.53](https://blog.ipfs.tech/2021-01-19-js-ipfs-0-50/) has launched with an experimental gRPC-over-websockets server and the latest libp2p.
 - Answering the question “Is [Berty](https://berty.tech/blog/blockchain-berty/) based on blockchain?” because in some cases yes, but others no.
 - It’s that time of year again, except this time [Textile](https://blog.textile.io/textile-going-virtual-at-ethdenver/) going virtual with EthDenver.
 - The [Beyond Bitswap project](https://research.protocol.ai/blog/2021/beyond-swapping-bits-project-review-and-preview/) review has launched and released a new Bitswap paper!
@@ -73,7 +73,7 @@ Discover how to build a Substack on IPFS [using Pinata](https://medium.com/pinat
 
 **Take care of yourselves and each other**. ❤️
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

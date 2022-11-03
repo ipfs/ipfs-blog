@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -32,7 +32,7 @@ The next guest presenter at the IPFS Weekly Call is [Brian Hoffman](https://twit
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - PODCAST: [Web3 Summit Decentralize NOW! #13 - IPFS and Decentralized File Storage](http://dattpodcastnetwork.libsyn.com/web3-summit-decentralize-now-13-ipfs-and-decentralized-file-storage), 11 Feb 2019
 - [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170), Pinata, 7 Feb 2019
@@ -48,19 +48,19 @@ _Here are some questions folks are discussing in the IPFS ecosystem._
 
 - [How do I go about saving user’s data in a completely decentralized manner using IPFS?](https://www.reddit.com/r/ipfs/comments/ao4qwj/possible_to_use_ipfs_for_user_authentication/)
 - [Do more nodes always help?](https://www.reddit.com/r/ipfs/comments/ansg57/do_more_nodes_always_help/)
-- [I need WebRTC signaling and after looking around and trying many things](https://discuss.ipfs.io/t/using-pubsub-in-js-ipfs-for-webrtc-signaling/4848)
+- [I need WebRTC signaling and after looking around and trying many things](https://discuss.ipfs.tech/t/using-pubsub-in-js-ipfs-for-webrtc-signaling/4848)
 - [I’m trying to figure out if OrbitDB would be a good match for some DApp ideas I’ve been formulating](https://www.reddit.com/r/ipfs/comments/apu2t7/technical_orbitdb_overviewguidelines/)
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Prattle Network](https://prattle.tk/) is a social network which stores the content entirely on the users devices and cannot be censored.
 - If you still want to use [oasis.direct](http://oasis.direct) you can do it through DAppNode! They deployed it to http://oasis.dappnode.eth (using Ethereum + IPFS) and it’s gonna be there forever! Welcome to a decentralized world in with no one can shut down a great service anymore. 😀
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - 11-14 Feb 2019: [#BUIDLWeek Colorado](https://www.ethdenver.com/buidlweek/), a series of blockchain events (Blockchain Meetups, Workshops & Connections) open to the public, leading up to the ETHDenver 2019 main stage event.
 - 15-17 Feb 2019: [ETHDenver 2019](https://www.ethdenver.com/#venue), The ETHDenver #BUIDLATHON is about bringing together like minds around a common purpose.

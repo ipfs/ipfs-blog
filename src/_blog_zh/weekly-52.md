@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -26,7 +26,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你在 [Twitter 上关注 IPFS](https://twitter.com/IPFSbot) 吗? 关于新闻中 IPFS 的最新汇总，请查看我们的 Twitter 提要或查看有关 [Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [去中心化云存储正在改变互联网的面貌](https://hackernoon.com/decentralized-cloud-storage-how-it-will-change-the-face-of-the-internet-22-np1f2349h), Hackernoon, 2019 年 7 月 26 日
 - [现在在 IPFS 上发布预先缓存的 Prelude](https://discourse.dhall-lang.org/t/now-publishing-pre-cached-prelude-on-ipfs/52), Dhall Discourse, 2019 年 7 月 26 日
@@ -56,16 +56,16 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [MetaMask 移动端 Beta](https://medium.com/metamask/metamask-mobile-public-beta-a-feature-guide-and-walkthrough-9d01de7190ae) — 连接去中心化网络的桥梁，具有以 dapp 为中心的浏览体验、直观的登录和与桌面 MetaMask 帐户同步的功能。
 - 最新发布的: [THC（时态 HTTP 客户）](https://github.com/RTradeLtd/thc#examples)是一个 Golang 库和 CLI 用于通用时态 API 调用
-- [Minerva](https://discuss.ipfs.io/t/minerva-build-the-hadoop-hive-on-ipfs/5832): 在 IPFS 上构建 Hadoop-Hive，使用 Minerva，你可以使用标准 SQL 查询 IPFS 上的文件内容 (json, csv 格式)。
+- [Minerva](https://discuss.ipfs.tech/t/minerva-build-the-hadoop-hive-on-ipfs/5832): 在 IPFS 上构建 Hadoop-Hive，使用 Minerva，你可以使用标准 SQL 查询 IPFS 上的文件内容 (json, csv 格式)。
 - [Pinata Pinner](https://github.com/ItalyPaleAle/pinatapinner): 使用 Pinata pinning 服务递归地将整个目录添加到 IPFS 的小实用程序。
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 8 月 7 日:** [巴黎 P2P](https://p2p.paris/en/) 将举办第一个活动，[巴黎 P2P #0](https://www.meetup.com/Paris-P2P/events/263089573/)，讨论点对点(P2P)、去中心化、网络和自治社区、分布式和去中心化系统等主题。[请在此提交你对未来活动的演讲思路。](https://p2p.paris/en/)
 - **2019 年 8 月 14 日:** 参与[编程的女性在云中](https://www.womenwhocode.com/cloud/events)，[了解 IPFS](https://zoom.us/webinar/register/WN_jnKnkxjJR3OOxf3kPa7Xfg)，激励女性在技术职业中脱颖而出。

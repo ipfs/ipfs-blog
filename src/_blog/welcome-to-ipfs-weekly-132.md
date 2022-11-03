@@ -12,19 +12,19 @@ tags:
 - weekly
 
 ---
-Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [**InterPlanetary File System**](https://ipfs.tech/) galaxy!
 
 ## Deploying Web3: IPFS Architecture, Topologies, and Menageries
 
 @[youtube](13rHbWCYNWA)
 
-Last week at Scaling Ethereum, Dietrich Ayala helped kick off the hackathon by presenting a talk on how IPFS is being used to scale Ethereum, the problems IPFS addresses, an introduction to the web3 stack, as well as a quick walkthrough of approaches and resources to use IPFS today. In case you missed the talk, [**catch up here**](https://www.youtube.com/watch?v=13rHbWCYNWA) and be sure to check out our [**recent blog post**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/) that highlights where you can find us at Scaling Ethereum, the prizes that Protocol Labs is offering, as well as some videos that will help you get started.
+Last week at Scaling Ethereum, Dietrich Ayala helped kick off the hackathon by presenting a talk on how IPFS is being used to scale Ethereum, the problems IPFS addresses, an introduction to the web3 stack, as well as a quick walkthrough of approaches and resources to use IPFS today. In case you missed the talk, [**catch up here**](https://www.youtube.com/watch?v=13rHbWCYNWA) and be sure to check out our [**recent blog post**](https://blog.ipfs.tech/2021-04-14-scaling-ethereum/) that highlights where you can find us at Scaling Ethereum, the prizes that Protocol Labs is offering, as well as some videos that will help you get started.
 
 ## Filecoin Launchpad Accelerator II - Apply now!
 
 ![](../assets/lauchpad_twitter-png.png)
 
-The Filecoin Launchpad Accelerator is a full-time, fully remote program dedicated to startups building more open, interoperable, and programmable tools, infrastructure, and applications for the distributed and decentralized web. Tachyon supports projects that build on and bridge the [**IPFS**](https://ipfs.io/), [**Filecoin**](https://filecoin.io/), and [**Ethereum**](https://ethereum.org/) communities and the tools, middleware, and applications. The next cohort will run June through August 2021, with 20 teams from around the globe provided funding, mentorship, benefits, and programming around business and blockchain-specific issues, culminating in a Demo Day and post-program fundraising support kicking off in September. [Applications are now open and close at midnight EST on May 9.](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)
+The Filecoin Launchpad Accelerator is a full-time, fully remote program dedicated to startups building more open, interoperable, and programmable tools, infrastructure, and applications for the distributed and decentralized web. Tachyon supports projects that build on and bridge the [**IPFS**](https://ipfs.tech/), [**Filecoin**](https://filecoin.io/), and [**Ethereum**](https://ethereum.org/) communities and the tools, middleware, and applications. The next cohort will run June through August 2021, with 20 teams from around the globe provided funding, mentorship, benefits, and programming around business and blockchain-specific issues, culminating in a Demo Day and post-program fundraising support kicking off in September. [Applications are now open and close at midnight EST on May 9.](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)
 
 ## Brand new on IPFS
 
@@ -43,7 +43,7 @@ If you’re building something on Uniswap, make sure to [**submit for their curr
 
 Digital MOB has launched the first version of their Filecoin Miner Reputation System. [**Learn more**](https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/).
 
-Protocol Labs is staking $7500 in prizes at the Scaling Ethereum Hackathon with ETHGlobal, happening now! [**Learn more and start building**](https://blog.ipfs.io/2021-04-14-scaling-ethereum/). 
+Protocol Labs is staking $7500 in prizes at the Scaling Ethereum Hackathon with ETHGlobal, happening now! [**Learn more and start building**](https://blog.ipfs.tech/2021-04-14-scaling-ethereum/). 
 
 It’s Digital Transformation Week and our friends at Cloudflare are hosting a content and networking event to celebrate. [**Register here**](https://digitaltransformation-week.com/home/digital-transformation-week-registration/).
 

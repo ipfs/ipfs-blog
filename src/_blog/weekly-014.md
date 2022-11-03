@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -30,7 +30,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [libp2p: the modular P2P network stack by IPFS for better decentralized computing](https://hub.packtpub.com/libp2p-the-modular-p2p-network-stack-by-ipfs-for-better-decentralized-computing/), 09 Oct 2018
 - Slidedeck: [Peer-to-Peer Protocols for Our Cyber Commons](https://live.deprecated.systems/presentation.html#1), Benedict Lau, 09 Oct 2018, or see the presentation [here](https://www.youtube.com/watch?v=Ivd5LwlR1is)
@@ -47,14 +47,14 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - Discover your next favorite decentralized application on [app.co](https://app.co/).
 - Video: [CURIOSITY](https://www.youtube.com/watch?v=UjEngEpiJKo), see Richard Feynman doing what he does best - sharing his contagious fascination with the world.
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - The Web3 Foundation has offered to fund ticket reductions for attendees at the [inaugural Web3 Summit](https://medium.com/web3foundation/endowing-an-open-inclusive-community-at-web3-summit-3013456f4f84)
 - Cambrial x Blockstack Present: [The Case Against Individual Data Ownership](https://www.eventbrite.com/e/cambrial-x-blockstack-present-the-case-against-individual-data-ownership-tickets-51151166516), 24 Oct 2018, Berlin, Germany.

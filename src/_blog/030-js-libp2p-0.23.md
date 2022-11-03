@@ -64,12 +64,12 @@ Would you like to contribute to the libp2p project and don't know how? Well, the
 - Check the issues with the `help wanted` label at the Ready column in our waffle board - https://waffle.io/libp2p/js-libp2p?label=help%20wanted
 - Join an IPFS/libp2p All Hands, introduce yourself and let us know where you would like to contribute - https://github.com/ipfs/pm/#all-hands-call
 - Hack with libp2p and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at http://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at http://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [⚡️ⒿⓈ Core Dev Team Weekly Sync 🙌🏽 ](https://github.com/ipfs/pm/issues/650) and be part of the Sprint action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about libp2p, how it works and what you can do with it is at [discuss.ipfs.io](http://discuss.ipfs.io). We are also available at the #libp2p channel on Freenode.
+The best place to ask your questions about libp2p, how it works and what you can do with it is at [discuss.ipfs.tech](http://discuss.ipfs.tech). We are also available at the #libp2p channel on Freenode.
 
 That is all for this post. Thank you for being part of the community.
 

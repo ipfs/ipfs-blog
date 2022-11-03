@@ -11,7 +11,7 @@ tags:
 header_image: '/header-image-weekly-newsletter.png'
 ---
 
-Every day brings us closer to the end of 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.io/) community has accomplished so far in 2019. From milestones like remixing our working group and shipping new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
+Every day brings us closer to the end of 2019! To celebrate, we put together a very special issue looking back on all that the [InterPlanetary File System (IPFS)](https://ipfs.tech/) community has accomplished so far in 2019. From milestones like remixing our working group and shipping new releases, to the many awesome (and new!) contributors who have joined us, and what’s to come for the rest of this year, we hope you enjoy this quarterly recap.
 
 Thanks for being part of our community, we truly couldn’t make IPFS what it is without you. ❤️
 
@@ -19,37 +19,37 @@ Thanks for being part of our community, we truly couldn’t make IPFS what it is
 
 ## Shipped IPFS Project Q3 Priorities & Working Groups
 
-Back in July, [we remixed the project working groups](https://blog.ipfs.io/2019-07-31-operation-task-force/) to include Team Bifrost, Package Managers, and more!
+Back in July, [we remixed the project working groups](https://blog.ipfs.tech/2019-07-31-operation-task-force/) to include Team Bifrost, Package Managers, and more!
 
 ## Project releases galore!
 
 ### js-ipfs 0.37.0 and 0.38.0 released 💛
 
-[Version 0.37.0 featured](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/) a new constructor, better DNSLink support and delegated routing, with [version 0.38.0 adding support](https://blog.ipfs.io/070-js-ipfs-0-38/) for garbage collection, Gossipsub, and IPNS support for `ipfs resolve`!
+[Version 0.37.0 featured](https://blog.ipfs.tech/2019-08-06-js-ipfs-0-37/) a new constructor, better DNSLink support and delegated routing, with [version 0.38.0 adding support](https://blog.ipfs.tech/070-js-ipfs-0-38/) for garbage collection, Gossipsub, and IPNS support for `ipfs resolve`!
 
 ### js-libp2p 0.26.0 released 🧩
 
-In early August, [js-libp2p also got Gossipsub support](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/), and Promisify-ied the libp2p API.
+In early August, [js-libp2p also got Gossipsub support](https://blog.ipfs.tech/2019-08-07-js-libp2p-0-26/), and Promisify-ied the libp2p API.
 
 ### go-ipfs 0.4.22 released 💠
 
-go-ipfs versions 0.4.19, 0.4.20, and go-ipfs 0.4.21 shipped an unusual number of critical regressions which were fixed with [this most recent patch release](https://blog.ipfs.io/054-go-ipfs-0.4.22).
+go-ipfs versions 0.4.19, 0.4.20, and go-ipfs 0.4.21 shipped an unusual number of critical regressions which were fixed with [this most recent patch release](https://blog.ipfs.tech/054-go-ipfs-0.4.22).
 
 ## go-ipfs improves the IPFS Release Process
 
-The aforementioned regressions necessitated a new approach to the release process, [as detailed this past August](https://blog.ipfs.io/2019-08-14-ipfs-release-process/). The new approach added three specific changes to the 5-stage process.
+The aforementioned regressions necessitated a new approach to the release process, [as detailed this past August](https://blog.ipfs.tech/2019-08-14-ipfs-release-process/). The new approach added three specific changes to the 5-stage process.
 
 ## You can now pubsub with the JS IPFS HTTP API client in the browser!
 
-Due to boring technical reasons, pubsub over the HTTP API in the browser was not supported. But once the fetch API supported cancelation, [pubsub support with js-ipfs had arrived](https://blog.ipfs.io/2019-08-29-pubsub-in-the-browser/)!
+Due to boring technical reasons, pubsub over the HTTP API in the browser was not supported. But once the fetch API supported cancelation, [pubsub support with js-ipfs had arrived](https://blog.ipfs.tech/2019-08-29-pubsub-in-the-browser/)!
 
 ## IPFS Desktop 0.9 released 🖥
 
-In early September, [the newest version of IPFS Desktop, 0.9.2 shipped](https://blog.ipfs.io/2019-09-19-ipfs-desktop-0-9/)! You can now browse, use npm on IPFS, add IPFS command line tools to your system, and more!
+In early September, [the newest version of IPFS Desktop, 0.9.2 shipped](https://blog.ipfs.tech/2019-09-19-ipfs-desktop-0-9/)! You can now browse, use npm on IPFS, add IPFS command line tools to your system, and more!
 
 ## IPFS Browser Update
 
-We aim to have multiple browsers implement fully native (and interoperable!) IPFS support. As part of this progression, we’ve had ongoing collaborations with Firefox, Brave, Opera, and other browsers. [Read on to hear the latest status](https://blog.ipfs.io/2019-10-08-ipfs-browsers-update/) and learn about our progress so far.
+We aim to have multiple browsers implement fully native (and interoperable!) IPFS support. As part of this progression, we’ve had ongoing collaborations with Firefox, Brave, Opera, and other browsers. [Read on to hear the latest status](https://blog.ipfs.tech/2019-10-08-ipfs-browsers-update/) and learn about our progress so far.
 
 ## IPFS + ENS Everywhere: Introducing EthDNS (technically in Q4 but we had to share)
 
@@ -59,10 +59,10 @@ Earlier this month, [EthDNS was announced](https://medium.com/the-ethereum-name-
 
 True, IPFS Camp took place in Q2, but so much of the amazing content that came out of the event wasn’t ready for consumption until Q3. Check out these batches of awesome IPFS Camp video and blog content!
 
-- [⚡️ Lightning Talks and 📃Poster Projects](https://blog.ipfs.io/2019-07-22-ipfs-camp-content-first-batch/)
-- [The story of the Deep Dive sessions at IPFS Camp 2019 as told from the perspective of a DWeb historical researcher in the far future](https://blog.ipfs.io/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/)
-- [IPFS Camp Core Course Videos 🍿](https://blog.ipfs.io/2019-09-18-ipfs-camp-course-videos/)
-- [IPFS Camp Sci-Fi Fair Videos 🧬](https://blog.ipfs.io/2019-10-03-ipfs-camp-sci-fi-fair-videos/)
+- [⚡️ Lightning Talks and 📃Poster Projects](https://blog.ipfs.tech/2019-07-22-ipfs-camp-content-first-batch/)
+- [The story of the Deep Dive sessions at IPFS Camp 2019 as told from the perspective of a DWeb historical researcher in the far future](https://blog.ipfs.tech/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/)
+- [IPFS Camp Core Course Videos 🍿](https://blog.ipfs.tech/2019-09-18-ipfs-camp-course-videos/)
+- [IPFS Camp Sci-Fi Fair Videos 🧬](https://blog.ipfs.tech/2019-10-03-ipfs-camp-sci-fi-fair-videos/)
 
 # Have you seen these IPFS Tutorials?
 

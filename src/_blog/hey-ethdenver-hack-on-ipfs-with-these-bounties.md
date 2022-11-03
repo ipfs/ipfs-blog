@@ -14,16 +14,16 @@ tags:
 author: Jenn Turner
 ---
 
-[ETHDenver 2021](https://www.ethdenver.com/) is in full swing, and as we mentioned in our [last post](https://blog.ipfs.io/2020-02-07-ethdenver-2020/) the IPFS community is very stoked to get to be a part of this unique and awesome event! To encourage folks to try IPFS for the first time, or the second time, or the forty-second time, we’ve put together the following bounties to inspire your creativity and challenge your #BUILDathon skills.
+[ETHDenver 2021](https://www.ethdenver.com/) is in full swing, and as we mentioned in our [last post](https://blog.ipfs.tech/2020-02-07-ethdenver-2020/) the IPFS community is very stoked to get to be a part of this unique and awesome event! To encourage folks to try IPFS for the first time, or the second time, or the forty-second time, we’ve put together the following bounties to inspire your creativity and challenge your #BUILDathon skills.
 
 ## IPFS Bounties for ETHDenver 2021
 
 - 🦁 **Get Brave with IPFS**, \$50: Using and demo’ing IPFS in your project with Brave desktop browser, Resources: https://brave.com/ipfs-support/.
-- ⭕️ **Go browsing with Opera + IPFS**, \$50: Using and demo’ing IPFS in your project with Opera Android or Opera Touch on iOS, Resources: https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/
+- ⭕️ **Go browsing with Opera + IPFS**, \$50: Using and demo’ing IPFS in your project with Opera Android or Opera Touch on iOS, Resources: https://blog.ipfs.tech/2020-03-30-ipfs-in-opera-for-android/
 - 📌 **IPFS Pinning Services API**, \$500: Show us your best use of the new IPFS Pinning Services API, Resources: https://ipfs.github.io/pinning-services-api-spec/
 - 👻 **Hack Phantom Drift**, \$500: Build libp2p node visualizers on the DHT, Resources: https://github.com/libp2p/go-libp2p/issues/947
 
-### Best use of IPFS for X, \$500 each, [resources here](https://docs.ipfs.io/concepts/usage-ideas-examples/)
+### Best use of IPFS for X, \$500 each, [resources here](https://docs.ipfs.tech/concepts/usage-ideas-examples/)
 
 - 🤝 **Collaboration**: Let IPFS coordinate the flow of data between you and your colleagues, even when working offline or on a local network.
 - 📦 **Asset storage**: By storing small scripts or big databases of your project on IPFS, and depending on your architecture, you can yield several benefits.

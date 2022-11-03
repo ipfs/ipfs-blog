@@ -10,7 +10,7 @@ description: ''
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy! 🚀
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy! 🚀
 
 ## IPFS featured on the Whiteboard Series with NEAR
 
@@ -20,9 +20,9 @@ The Whiteboard Series with NEAR is a set of video interviews with creators who a
 
 ## IPFS and the summers of P2P, a history
 
-Thanks to contributor and friend to the project, Graven Prest, the history section of the IPFS docs site has a few new chapters. We don’t want to spoil them here, so head over to (or bookmark it, while you’re at it) docs.ipfs.io to check out our history for yourself!
+Thanks to contributor and friend to the project, Graven Prest, the history section of the IPFS docs site has a few new chapters. We don’t want to spoil them here, so head over to (or bookmark it, while you’re at it) docs.ipfs.tech to check out our history for yourself!
 
-[Read more](https://docs.ipfs.io/project/history/#a-p2p-summer-1999-2003)
+[Read more](https://docs.ipfs.tech/project/history/#a-p2p-summer-1999-2003)
 
 ## 📆 Next week in the community
 
@@ -85,7 +85,7 @@ Check out this [list of known IPFS web gateways](https://luke.lol/ipfs.php) and 
 
 **Take care of yourselves and each other. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us.](mailto:newsletter@ipfs.io)
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

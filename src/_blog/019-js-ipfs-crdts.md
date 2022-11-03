@@ -9,7 +9,7 @@ tags:
   - 'CRDTs'
 ---
 
-With the introduction of [IPFS PubSub](https://ipfs.io/blog/25-pubsub/), it became possible for IPFS nodes to declare shared _pubsub_ topics, broadcasting updates in real-time to other nodes in the network that have subscribed to the topic. The pubsub pattern is a powerful construct but it does not guarantee delivery of messages and does not guarantee message order. Enter [CRDTs, Conflict-Free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type), a higher level data structure that allows us to overcome these shortcomings.
+With the introduction of [IPFS PubSub](https://blog.ipfs.tech/25-pubsub/), it became possible for IPFS nodes to declare shared _pubsub_ topics, broadcasting updates in real-time to other nodes in the network that have subscribed to the topic. The pubsub pattern is a powerful construct but it does not guarantee delivery of messages and does not guarantee message order. Enter [CRDTs, Conflict-Free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type), a higher level data structure that allows us to overcome these shortcomings.
 
 ## Enter CRDTs, Conflict-Free Replicated Data Types
 

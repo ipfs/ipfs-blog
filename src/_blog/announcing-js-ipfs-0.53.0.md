@@ -19,7 +19,7 @@ tags:
 
 ### ↔️ gRPC over websockets
 
-In the beginning, `go-IPFS` shipped with an [HTTP API](https://docs.ipfs.io/reference/http/api/), which `js-IPFS` [also implemented](https://www.npmjs.com/package/ipfs-http-server) with the aim of being cross-compatible.
+In the beginning, `go-IPFS` shipped with an [HTTP API](https://docs.ipfs.tech/reference/http/api/), which `js-IPFS` [also implemented](https://www.npmjs.com/package/ipfs-http-server) with the aim of being cross-compatible.
 
 This HTTP API allows you to orchestrate a locally running node from a language or environment that may not be able to run a fully-fledged IPFS node, or it may be preferable to have a single system-wide node shared between multiple applications.
 
@@ -195,23 +195,23 @@ Only large features are called out in the roadmap, expect lots of small bugfix r
 Would you like to contribute to the IPFS project and don’t know how? Well, there are a few places you can get started:
 
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-- Join the discussion at https://discuss.ipfs.io/ and help users find their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users find their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 ## ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/
-[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[dag]: https://docs.ipfs.tech/concepts/merkle-dag/
 [core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api
 [grpc]: https://en.wikipedia.org/wiki/GRPC
 [grpc-web]: https://github.com/grpc/grpc-web

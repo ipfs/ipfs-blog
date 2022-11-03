@@ -13,19 +13,19 @@ tags:
 ---
 * [Distributed Wikipedia Mirror](https://github.com/ipfs/distributed-wikipedia-mirror#readme) and [Kiwix](https://kiwix.org/) projects are happy to the announce **general availability** of **updated** [English](https://en.wikipedia-on-ipfs.org/) and [Turkish](https://tr.wikipedia-on-ipfs.org) mirrors, along with **new languages**: [Myanmar](https://my.wikipedia-on-ipfs.org/), [Arabic](https://ar.wikipedia-on-ipfs.org), [Chinese](https://zh.wikipedia-on-ipfs.org) and [Russian](https://ru.wikipedia-on-ipfs.org).
 * A handy, up-to-date list can be found at [ipfs.kiwix.org](https://ipfs.kiwix.org), and in the [`snapshot-hashes.yml`](https://github.com/ipfs/distributed-wikipedia-mirror/blob/main/snapshot-hashes.yml  "snapshot-hashes.yml") manifest.
-* The idea of a distributed Wikipedia mirror goes back to 2017, when the IPFS Project created a snapshot of English and Turkish languages and put it on IPFS.  To learn why we did it, please read the original [Uncensorable Wikipedia on IPFS](https://blog.ipfs.io/24-uncensorable-wikipedia/) post.
+* The idea of a distributed Wikipedia mirror goes back to 2017, when the IPFS Project created a snapshot of English and Turkish languages and put it on IPFS.  To learn why we did it, please read the original [Uncensorable Wikipedia on IPFS](https://blog.ipfs.tech/24-uncensorable-wikipedia/) post.
 * Below is a short status update with improved usage instructions, current build process, open problems, and future work that could be contributed to the project.
 
 ## Improved access to Wikipedia mirrors
 
 ### User-friendly `ipns://{dnslink}` and public gateways
 
-Browsers with built-in support for IPFS addresses ([Brave](https://brave.com/brave-integrates-ipfs/), [Opera](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/), or a regular [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) with [IPFS Companion](https://github.com/ipfs/ipfs-companion#readme)) can now load the latest snapshot using [DNSLink](https://docs.ipfs.io/concepts/dnslink/):
+Browsers with built-in support for IPFS addresses ([Brave](https://brave.com/brave-integrates-ipfs/), [Opera](https://blog.ipfs.tech/2020-03-30-ipfs-in-opera-for-android/), or a regular [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) with [IPFS Companion](https://github.com/ipfs/ipfs-companion#readme)) can now load the latest snapshot using [DNSLink](https://docs.ipfs.tech/concepts/dnslink/):
 
 * `ipns://{dnslink}`
 * `ipns://en.wikipedia-on-ipfs.org`
 
-To ensure true P2P transport, offline storage and content integrity, you can run your own IPFS node ([command-line](https://docs.ipfs.io/install/command-line/) or  [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/) app) combined with the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension. You can also use the [Brave browser, which has built-in support for IPFS](https://brave.com/brave-integrates-ipfs/):
+To ensure true P2P transport, offline storage and content integrity, you can run your own IPFS node ([command-line](https://docs.ipfs.tech/install/command-line/) or  [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) app) combined with the [IPFS Companion](https://docs.ipfs.tech/install/ipfs-companion/) browser extension. You can also use the [Brave browser, which has built-in support for IPFS](https://brave.com/brave-integrates-ipfs/):
 
 @[youtube](jTDkTQiKzJA)
 
@@ -36,7 +36,7 @@ When it is not possible to run your own IPFS node, one of the [many public gatew
 
 ### Robust and immutable `ipfs://{cid}`
 
-If DNS resolution is blocked, or a public gateway can't be trusted, accessing the immutable snapshot using underlying cryptographic content identifier ([CID](https://docs.ipfs.io/concepts/content-addressing/)) is advised:
+If DNS resolution is blocked, or a public gateway can't be trusted, accessing the immutable snapshot using underlying cryptographic content identifier ([CID](https://docs.ipfs.tech/concepts/content-addressing/)) is advised:
 
 * `ipfs://{cid}`
 
@@ -62,7 +62,7 @@ It is possible to keep a lazy-loaded copy.  which does not fetch the entire Wiki
 
     $ ipfs files cp /ipfs/{cid} /my-wikipedia-snapshot
 
-One can convert a lazy copy to full one by recursively pinning the [DAG](https://docs.ipfs.io/concepts/glossary/#dag) behind a CID:
+One can convert a lazy copy to full one by recursively pinning the [DAG](https://docs.ipfs.tech/concepts/glossary/#dag) behind a CID:
 
     $ ipfs pin add --progress {cid}
 
@@ -82,7 +82,7 @@ See _Instructions_ at [collab.ipfscluster.io](https://collab.ipfscluster.io#inst
 ### Donate remote pins
 
 When co-hosting with your own IPFS node is not possible, one can still help by pinning snapshot CIDs to a remote pinning service.    
- [Learn how to _work with remote pinning services_](https://docs.ipfs.io/how-to/work-with-pinning-services/).
+ [Learn how to _work with remote pinning services_](https://docs.ipfs.tech/how-to/work-with-pinning-services/).
 
 ## How is a mirror built?
 

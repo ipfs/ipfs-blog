@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎回到 IPFS 周报！👋
 
-[InterPlanetary File System (IPFS, 星际文件系统)](https://ipfs.io/) 是一种新型的，基于内容和身份的，超媒体分发协议。IPFS 使得开发完全分布式的应用程序成为可能。它旨在使网络更快、更安全、更开放。因为这是一个相当大范围的任务，在这篇周报中，我们跟踪、汇总了（IPFS）整个生态系统的发展。
+[InterPlanetary File System (IPFS, 星际文件系统)](https://ipfs.tech/) 是一种新型的，基于内容和身份的，超媒体分发协议。IPFS 使得开发完全分布式的应用程序成为可能。它旨在使网络更快、更安全、更开放。因为这是一个相当大范围的任务，在这篇周报中，我们跟踪、汇总了（IPFS）整个生态系统的发展。
 
 想参与进来吗？点击下面的一些链接，看看我们在 GitHub 上做了什么，或者在 IRC 上加入我们（Freenode 网络上的#ipfs）。
 希望收到邮件更新吗？订阅我们的每周通讯！
@@ -23,10 +23,10 @@ tags:
 - [CloudFlare 加入了我们的星际任务](https://blog.cloudflare.com/distributed-web-gateway/)。尝试下 CloudFlare 的 IPFS 网关，该网关是在其第一次的 Crypto Week 活动中宣布的。
 - 观看 9 月 18 号发布的最新的“[动态数据及能力工作小组”会议视频](https://www.youtube.com/watch?v=EiJE59uYNAk)，迅速了解关于身份管理的演示和讨论。
 - 第一次柏林 IPFS 会议将于 10 月 11 日举行！[在此处注册参加 Meetup](https://www.meetup.com/IPFS-Berlin/events/254816369/)。
-- IPFS 的 JavaScript 实现版本刚刚有了新的主页：[js.ipfs.io](https://js.ipfs.io)。
+- IPFS 的 JavaScript 实现版本刚刚有了新的主页：[js.ipfs.tech](https://js.ipfs.tech)。
 
 野生态 IPFS：
-你有在推特上[关注 IPFS](https://twitter.com/IPFSbot)吗？对于最新的新闻中提到的 ipfs，请查看我们的 twitter feed 或阅读：[关于最棒的 ipfs 的最新文章](https://awesome.ipfs.io/categories/articles/)。
+你有在推特上[关注 IPFS](https://twitter.com/IPFSbot)吗？对于最新的新闻中提到的 ipfs，请查看我们的 twitter feed 或阅读：[关于最棒的 ipfs 的最新文章](https://awesome.ipfs.tech/categories/articles/)。
 
 - [Dweb: Creating Decentralized Organizations with Aragon](https://hacks.mozilla.org/2018/09/aragon-ethereum-dweb/), （DWeb：使用 Aragon 来创建去中心化组织）作者：Mozilla Hacks, 2018 年 9 月 19 日
 - [End-to-End Integrity with IPFS](https://blog.cloudflare.com/e2e-integrity/), （IPFS 的点到点完整性）作者：Cloudflare, 2018 年 9 月 17 日
@@ -48,14 +48,14 @@ tags:
 - [js-ipfs v0.32.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.32.0) – IPFS 在 JavaScript 语言上的实现
 - [npm-on-ipfs v0.6.4](https://github.com/ipfs-shipyard/npm-on-ipfs/releases/tag/v0.6.4) – 📦 通过 IPFS 安装 npm 模块！
 - [Replicated Object Notation 2.1](https://github.com/gritzko/ron/blob/master/docs/Objectives%20for%20RON%2021.md) – 一个分布式的实时数据格式
-- DNSLink Detection in IPFS Companion: 我们的浏览器插件现在可以在默认模式下检测 DNSLink，访问[docs.ipfs.io](http://docs.ipfs.io/) 或者[tr.wikipedia-on-ipfs.org](https://tr.wikipedia-on-ipfs.org/)，你就可以从 IPFS，而不是 HTTP 上加载它，通过以下链接获取更加详细信息:[DNSLink Support in IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/blob/master/docs/dnslink.md)
+- DNSLink Detection in IPFS Companion: 我们的浏览器插件现在可以在默认模式下检测 DNSLink，访问[docs.ipfs.tech](http://docs.ipfs.tech/) 或者[tr.wikipedia-on-ipfs.org](https://tr.wikipedia-on-ipfs.org/)，你就可以从 IPFS，而不是 HTTP 上加载它，通过以下链接获取更加详细信息:[DNSLink Support in IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion/blob/master/docs/dnslink.md)
 - [Qri 0.5.2](https://github.com/qri-io/qri/releases/tag/v0.5.2), 即 Prune Norwegian Buhund, 在此！
 - [The Graph Development Update](https://medium.com/graphprotocol/the-graph-development-update-d90321e22748), 2018 年 9 月 13 日
 - [Polkadot PoC-2 在此](https://medium.com/polkadot-network/polkadot-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25): Parachains, 运行更新，libp2p 更新
 
 我们喜爱的工具和项目：
 
-[Awesome IPFS （完美 IPFS）](https://awesome.ipfs.io/)是由社区维护和更新的，包括了一系列的工具、项目，以及基本上与 IPFS 相关的很棒的一切。查看更多，或将你的项目添加到其中，请访问以下 Github 地址：[Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)
+[Awesome IPFS （完美 IPFS）](https://awesome.ipfs.tech/)是由社区维护和更新的，包括了一系列的工具、项目，以及基本上与 IPFS 相关的很棒的一切。查看更多，或将你的项目添加到其中，请访问以下 Github 地址：[Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)
 
 - [Neocities hit 200K sites this month!](https://twitter.com/neocities/status/1039204355763666945) （Neocites 这个月达到了 20 万个网站！）
 - [are we distributed yet?](https://arewedistributedyet.com/) （我们已经实现分布式了吗？）
@@ -63,7 +63,7 @@ tags:
 
 社区活动：
 
-你知道 ipfs 有一个社区论坛 discuss.ipfs.io 吗？报名参加关于编码的讨论，教程，请参阅通知并了解即将到来的社区活动。
+你知道 ipfs 有一个社区论坛 discuss.ipfs.tech 吗？报名参加关于编码的讨论，教程，请参阅通知并了解即将到来的社区活动。
 
 - [35th Chaos Communication Congress](https://events.ccc.de/2018/09/11/35c3-call-for-participation-and-submission-guidelines/) （第 35 届混沌通讯议会）CFP 现已开放
 - 新的见面会提醒:[peer to peer ÖRESUND](http://p2p-oresund.org/), 地点：瑞典马尔默 时间：10 月 27 日

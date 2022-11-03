@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -33,7 +33,7 @@ IPFS 被列入 [Sawood Alam](https://twitter.com/ibnesayeed/status/1197613980992
 
 ## IPFS 生态圈的动态
 
-_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [IPFS 和区块链：豆荚里的两个豌豆](https://medium.com/zubi-io/ipfs-blockchain-two-peas-in-a-pod-7377d396a223) ，Viraz Malhotra，2019 年 11 月 26 日
 - [50 个已签约的钱包，不断发展的 dWeb，TruffleSuite 等：ENS 生态系统更新](https://medium.com/the-ethereum-name-service/50-wallets-signed-up-growing-dweb-trufflesuite-more-ens-ecosystem-update-23be948e23ca) ，Brantly Millegan，2019 年 11 月 22 日
@@ -59,7 +59,7 @@ _您是否关注 [Twitter 上的 IPFS](https://twitter.com/IPFSbot) ?有关 IPFS
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将您的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [Zil.Link](https://www.zil.link/) ：搭桥 IPFS 和传统 DNS 的服务。
 - [RecipeRadar](https://www.reciperadar.com) ：通过 IPFS 上的 CRDT 对等共享会话。
@@ -67,7 +67,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_您知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_您知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 12 月 3-4 日：** 由 SmartFactoryOWL 主持的 [Actyx Hackathon](https://www.smartfactory-owl.de/index.php/de/veranstaltungen/smartfactoryowl/kompetenzzentrum/demonstrieren/livinglab/95-kollaboration-in-einer-produktionsanlage-mittels-dezentraler-edge-plattform) 将于下个月发布。作为黑客马拉松的一部分，将测试 Actyx 平台（使用 IPFS 和 libp2p）的应用程序并将其应用于“生活对象”。德国，莱姆戈。
 - **2019 年 12 月 6 日：** [柏林 React Day](https://reactday.berlin/) ：构建代码，而不是围墙。参与 React 世界的探索！ React Day Berlin 会议专注于深入的演讲，动手研讨会和寻找新的机会，为每个人提供了结识新朋友和共同开发一流应用程序的空间。德国，柏林。

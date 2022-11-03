@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us in [chat](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -32,7 +32,7 @@ From [last week’s Berty Weekly](https://berty.tech/newsletter/weekly-21/), a q
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [Temporal IPFS Updates: Kubernetes, ENS Domains, Amazon S3, Playground, Organization management](https://medium.com/temporal-cloud/temporal-ipfs-updates-kubernetes-ens-domains-amazon-s3-playground-organization-management-16353e89b255), Temporal, 18 Nov 2019
 - [Atomic access control](https://peergos.org/blog#atomic_access_control_), Peergos, 15 Nov 2019
@@ -57,13 +57,13 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Eternum](https://www.eternum.io/) is a simple and easy-to-use IPFS pinning service. It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your applications.
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **20 November 2019:** [Decentralized Web Prague](https://www.meetup.com/dweb-prague/events/263923023) is hosting a night of Developing apps with IPFS at 6pm at Paralelní Polis. Prague, Czech Republic.
 - **21 November 2019:** [Decentralized Web Meetup Victoria](https://ti.to/fission/victoria-tech-meetup-2019/) is a new event exploring general discussion about open source and the decentralized web, hosted by Watershed Coworking. Victoria, B.C.

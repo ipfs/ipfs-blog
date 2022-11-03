@@ -12,7 +12,7 @@ tags:
 author: Jenn Turner
 ---
 
-Here’s what’s happening in the [InterPlanetary File System](https://ipfs.io/) galaxy!
+Here’s what’s happening in the [InterPlanetary File System](https://ipfs.tech/) galaxy!
 
 ## Does IPFS have a blockchain?
 
@@ -38,8 +38,8 @@ If you missed our January virtual meetup, or want to revisit something you heard
 
 - [Now you can build with Clay](https://blog.ceramic.network/ceramic-network-clay-testnet/), the official testnet for the Ceramic Network!
 - [Discover the Multiverse](https://www.multiverse-vcs.com/), a decentralized version control system for p2p development.
-- [Humanode](https://discuss.ipfs.io/t/first-humanode-tests-a-public-permissionless-network-of-biometrically-encrytped-human-nodes-running-merkle-crdt-cluster-on-ipfs/10004), a public permissionless network of biometrically encrytped human nodes built on IPFS.
-- [This design combines RSS and IPFS](https://discuss.ipfs.io/t/a-design-for-ipfs-version-rss/10059), titled IPIS, the InterPlanetary Information Syndication.
+- [Humanode](https://discuss.ipfs.tech/t/first-humanode-tests-a-public-permissionless-network-of-biometrically-encrytped-human-nodes-running-merkle-crdt-cluster-on-ipfs/10004), a public permissionless network of biometrically encrytped human nodes built on IPFS.
+- [This design combines RSS and IPFS](https://discuss.ipfs.tech/t/a-design-for-ipfs-version-rss/10059), titled IPIS, the InterPlanetary Information Syndication.
 
 ## People are building the coolest stuff with IPFS
 
@@ -49,7 +49,7 @@ Five of the most secure ways [the Bitcoin whitepaper](https://decrypt.co/55832/5
 
 [Introducing Phala](https://medium.com/phala-network/phala-transparent-and-private-global-computation-cloud-2d80c70ad1e9): the transparent and private global computation cloud.
 
-Check out the [Thor Android browser](https://discuss.ipfs.io/t/thor-browser-android-application/9910), a web browser that supports Tor and IPFS, IPNS, and magnet urls.
+Check out the [Thor Android browser](https://discuss.ipfs.tech/t/thor-browser-android-application/9910), a web browser that supports Tor and IPFS, IPNS, and magnet urls.
 
 Read up on [Bitcoin scales](https://read.cash/@LeoBeltran/bitcoin-escala-como-almacenar-la-cadena-de-bloques-usando-ipfs-fee00410): how to store the blockchain using IPFS.
 
@@ -71,7 +71,7 @@ What do you look forward to most from the IPFS Weekly? 🤔
 
 **More like InterPlanetary FUN System. ❤️**
 
-Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.io/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
+Get involved with IPFS by checking us out on [GitHub](https://github.com/ipfs), joining discussions on [our community forum](https://discuss.ipfs.tech/), or hitting us up [in chat](https://riot.im/app/#/room/#ipfs:matrix.org). Have a suggestion? [Email us](mailto:newsletter@ipfs.io).
 
 Get the IPFS Weekly in your inbox, each Tuesday.
 

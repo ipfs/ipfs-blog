@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -34,7 +34,7 @@ At next week’s IPFS Weekly Call, creators of [TallyLab](https://tallylab.com/)
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [2018 in Decentralization](https://inthemesh.com/archive/2018-in-decentralization/), In the Mesh, 09 Jan 2019
 - [Introduction to InterPlanetary File System](https://medium.com/@kishansagathiya/interplanetary-file-system-c30ba165e499), Kishan Sagathiya, 09 Jan 2019
@@ -48,11 +48,11 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [IPFS Cluster 0.8.0-rc1](https://dist.ipfs.io/ipfs-cluster-service) is here! For more, [check out the changelog](https://github.com/ipfs/ipfs-cluster/blob/0.8.0/changelog/CHANGELOG.md).
+- [IPFS Cluster 0.8.0-rc1](https://dist.ipfs.tech/ipfs-cluster-service) is here! For more, [check out the changelog](https://github.com/ipfs/ipfs-cluster/blob/0.8.0/changelog/CHANGELOG.md).
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Sweet IPFS](https://f-droid.org/app/fr.rhaz.ipfs.sweet) – Run and manage an IPFS node from your device
 - [Dweb.page (previously Pact.online)](https://github.com/PACTCare/Dweb.page) is an open source webpage that lets you share and search content on the distributed web based on IPFS.
@@ -60,7 +60,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - [Graph Day](https://thegraph.com/graphday) was recently announced and will take place at the historic Grand Theater in San Francisco, California on January 25th, 2019.
 - [AraCon](https://blog.aragon.org/announcing-aracon-the-aragon-conference/), the first Aragon Conference, will take place in Berlin, Germany on January 29-30, 2019.

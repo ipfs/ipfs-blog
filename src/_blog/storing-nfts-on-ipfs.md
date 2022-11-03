@@ -15,15 +15,15 @@ Permanence and immutability are part of the core value proposition of a non-fung
 
 All too often, [these links are fragile](https://www.vice.com/en/article/pkdj79/peoples-expensive-nfts-keep-vanishing-this-is-why), and direct the user to a specific _location_ using the HTTP protocol, rather than a specific asset. This means that the content pointed to by the link could change or go offline at any point in the future, leaving the original asset lost forever (and the record of ownership worthless).
 
-The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity. You can find more details on the IPFS documentation site, in our new article [Best Practices for Storing NFT Data using IPFS](https://docs.ipfs.io/how-to/best-practices-for-nft-data/). Also, check out [NFT School](https://nftschool.dev/ "NFT School") for a variety of tutorials, how-tos and concept guides on NFT best practices and NFTs in general.
+The InterPlanetary Filesystem (IPFS) can help address these concerns, and NFTs that leverage IPFS gain several advantages. However, adhering to established conventions is critical to ensure the permanence and accessibility of data stored on the network. With non-fungible tokens (NFTs) surging in popularity, it’s a good time to revisit best practices for linking and storing NFT data on IPFS. In this post, we’ll address two areas of recent concern in particular: content addressing and content integrity. You can find more details on the IPFS documentation site, in our new article [Best Practices for Storing NFT Data using IPFS](https://docs.ipfs.tech/how-to/best-practices-for-nft-data/). Also, check out [NFT School](https://nftschool.dev/ "NFT School") for a variety of tutorials, how-tos and concept guides on NFT best practices and NFTs in general.
 
 ## Content Addressing
 
-IPFS [content identifiers](https://docs.ipfs.io/guides/concepts/cid/) (CIDs) are an extremely robust and flexible way to uniquely identify any content, no matter where or how it is stored. To take maximum advantage of these strengths, developers should adhere to the following recommendations and conventions for linking to IPFS data.
+IPFS [content identifiers](https://docs.ipfs.tech/guides/concepts/cid/) (CIDs) are an extremely robust and flexible way to uniquely identify any content, no matter where or how it is stored. To take maximum advantage of these strengths, developers should adhere to the following recommendations and conventions for linking to IPFS data.
 
 ### Linking Overview
 
-This blog post is not intended to be a comprehensive explanation of CIDs (for that, see other [fantastic resources](https://docs.ipfs.io/how-to/address-ipfs-on-web/#dweb-addressing-in-brief)). However, readers should be aware of the following distinctions:
+This blog post is not intended to be a comprehensive explanation of CIDs (for that, see other [fantastic resources](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#dweb-addressing-in-brief)). However, readers should be aware of the following distinctions:
 
 #### CID
 
@@ -50,11 +50,11 @@ IPFS URIs should also be used inside the structured metadata for NFTs when linki
 
 #### HTTP Gateway URL
 
-[HTTP gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) provide interoperability for legacy browsers that cannot resolve IPFS URIs natively. Such links should only be used in an application’s presentation layer, and should not be stored on a blockchain or inside NFT metadata.
+[HTTP gateways](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#http-gateways) provide interoperability for legacy browsers that cannot resolve IPFS URIs natively. Such links should only be used in an application’s presentation layer, and should not be stored on a blockchain or inside NFT metadata.
 
 Example: `https://dweb.link/ipfs/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 
-Note that HTTP gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.io/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can _automatically_ extract the CID from such links, and load the data from IPFS according to user preferences.
+Note that HTTP gateways _recentralize the distribution of content_, presenting both a man-in-the-middle vector and single point of failure — if the gateway operator goes offline or is unreachable, the link will break. However, browsers with built-in support for IPFS (either via the [IPFS Companion](https://docs.ipfs.tech/install/ipfs-companion/) browser extension, or via native support, such as [provided by Brave](https://brave.com/ipfs-support/)) are immune to these problems, as they can _automatically_ extract the CID from such links, and load the data from IPFS according to user preferences.
 
 ### Addressing in Various Contexts
 
@@ -74,7 +74,7 @@ In token metadata, IPFS URIs should be used as the most unambiguous and future-p
 
 Here’s an example of an IPFS URI that references an NFT media asset: `ipfs://bafybeigvafaks2bvivtv46n2z7uxszpvl25jhvzc6dbhnjjgjkbeia5jta/nft.mp4`
 
-Developers may optionally wish to include links to public [HTTP gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) for legacy interoperability.
+Developers may optionally wish to include links to public [HTTP gateways](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#http-gateways) for legacy interoperability.
 
 Other alternatives for linking to the content (e.g., non-gateway HTTP URLs) should ideally be avoided. As the content served over HTTP from a particular location is subject to change, such a link cannot be relied upon as anything other than a temporary content mirror. On a blockchain, where data is permanently and immutably stored, referencing content via HTTP is thus fragile and risky.
 
@@ -137,8 +137,8 @@ The image can be fetched using the IPFS URI `ipfs://bafybeidfjqmasnpu6z7gvn7l6wt
 
 Once the metadata has been created, it is stored as a JSON file on IPFS, and the resulting CID is used to create a URI like `ipfs://bafybeibnsoufr2renqzsh347nrx54wcubt5lgkeivez63xvivplfwhtpym/metadata.json`, which can be stored in a smart contract.
 
-To see a working example of this process in action, check out [How to Mint NFTs with IPFS](https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts) on the IPFS documentation site, which shows the whole process in detail using javascript.
+To see a working example of this process in action, check out [How to Mint NFTs with IPFS](https://docs.ipfs.tech/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts) on the IPFS documentation site, which shows the whole process in detail using javascript.
 
 ### High Availability
 
-One of the primary reasons for using a decentralized network like IPFS to serve content is to forestall [link rot](https://en.wikipedia.org/wiki/Link_rot). This is achieved by allowing other nodes in the network to mirror data via cohosting. However, developers wishing to ensure the availability of content should not rely on the altruism of other nodes. To ensure that linked content remains available, developers should host it themselves by [pinning](https://docs.ipfs.io/concepts/persistence/) the CIDs of the content on IPFS nodes they manage, preserving and distributing the content alongside any others who wish to help. Should they prefer, developers can also delegate this responsibility via [pinning services](https://docs.ipfs.io/how-to/work-with-pinning-services/).
+One of the primary reasons for using a decentralized network like IPFS to serve content is to forestall [link rot](https://en.wikipedia.org/wiki/Link_rot). This is achieved by allowing other nodes in the network to mirror data via cohosting. However, developers wishing to ensure the availability of content should not rely on the altruism of other nodes. To ensure that linked content remains available, developers should host it themselves by [pinning](https://docs.ipfs.tech/concepts/persistence/) the CIDs of the content on IPFS nodes they manage, preserving and distributing the content alongside any others who wish to help. Should they prefer, developers can also delegate this responsibility via [pinning services](https://docs.ipfs.tech/how-to/work-with-pinning-services/).

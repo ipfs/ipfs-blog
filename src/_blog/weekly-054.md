@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -24,11 +24,11 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ### As promised, js-ipfs 0.37.0 has been released
 
-The latest release of js-ipfs introduces a brand new constructor, better DNSLink support and delegated routing! [See the IPFS blog](https://blog.ipfs.io/2019-08-06-js-ipfs-0-37/) for the full release details.
+The latest release of js-ipfs introduces a brand new constructor, better DNSLink support and delegated routing! [See the IPFS blog](https://blog.ipfs.tech/2019-08-06-js-ipfs-0-37/) for the full release details.
 
 ### js-libp2p adds Gossipsub support and Promisify API
 
-The folks working on Libp2p have been busy too! Last week, they announced the release of [js-libp2p version 0.26.0](https://blog.ipfs.io/2019-08-07-js-libp2p-0-26/) which adds support for a more efficient pubsub router (Gossipsub) and Promisify for the time being. Check it out!
+The folks working on Libp2p have been busy too! Last week, they announced the release of [js-libp2p version 0.26.0](https://blog.ipfs.tech/2019-08-07-js-libp2p-0-26/) which adds support for a more efficient pubsub router (Gossipsub) and Promisify for the time being. Check it out!
 
 ### Hello ipfs-cohost 👋
 
@@ -36,9 +36,9 @@ Created by @olizilla, [ipfs-cohost](https://github.com/olizilla/ipfs-cohost#ipfs
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
-- [The Great Calamity Circumvention Assembly at IPFS Camp 2019](https://ipfs.io/blog/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/), Alan Shaw, 11 August 2019
+- [The Great Calamity Circumvention Assembly at IPFS Camp 2019](https://blog.ipfs.tech/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/), Alan Shaw, 11 August 2019
 - VIDEO: [David from TAU Coin talks Mobile Mining, IPFS, Proof of Transaction, KYC, Aging Escape Velocity](https://www.youtube.com/watch?time_continue=4&v=8atG0zW50Uo), Crypto Grownups, 11 August 2019
 - [IPFS Production Configuration](https://medium.com/coinmonks/ipfs-production-configuration-57121f0daab2), Coinmonks, 9 August 2019
 - [Applications on Peergos](https://peergos.org/blog#applications_on_peergos_august_2019_), Peergos, 9 August 2019
@@ -70,7 +70,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [SourceCred 0.4.0](https://github.com/sourcecred/sourcecred/releases/tag/v0.4.0) is shipped! SourceCred aims to empower open-source developers and communities by creating a project-specific reputation metric called cred.
 - [Ambients](https://ambients.org/) is a protocol for distributed computation. It allows developers to build decentralized applications, databases and services and to deploy and run them in a peer-to-peer network.
@@ -82,7 +82,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **14 August 2019:** Join [Women Who Code Cloud](https://www.womenwhocode.com/cloud/events) for an [Introduction to IPFS](https://zoom.us/webinar/register/WN_jnKnkxjJR3OOxf3kPa7Xfg) inspiring women to excel in technology careers. Remote event.
 - **16 August 2019:** [Blockchain, Cryptocurrencies & IPFS](https://www.meetup.com/Blockchain-Cryptocurrencies-Interplanetary-File-System/events/vldkqqyzlbfc/): As usual we will discuss the latest events that are changing and shaping the world Crypto and WEB 3.0, a decentralized everything. San Diego, CA (US).

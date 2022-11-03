@@ -85,7 +85,7 @@ This means faster download times for upgrades, a much easier time building migra
 
 #### **Configurable migration downloads enable downloading over IPFS**
 
-Previously the migration downloader built into go-ipfs downloaded the migrations from [dist.ipfs.io](https://dist.ipfs.io/). While users could use tools like [ipfs-update](https://github.com/ipfs/ipfs-update) to download the migrations over IPFS or manually download the migrations (over IPFS or otherwise) themselves, this is now automated and configurable. Users can choose to download the migrations over IPFS or from any specified IPFS Gateway.
+Previously the migration downloader built into go-ipfs downloaded the migrations from [dist.ipfs.tech](https://dist.ipfs.tech/). While users could use tools like [ipfs-update](https://github.com/ipfs/ipfs-update) to download the migrations over IPFS or manually download the migrations (over IPFS or otherwise) themselves, this is now automated and configurable. Users can choose to download the migrations over IPFS or from any specified IPFS Gateway.
 
 The configurable migration options are described in the config file [documentation](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#migration), although most users should not need to change the default settings.
 
@@ -107,7 +107,7 @@ While the Object API and commands are still usable they are now marked as deprec
 
 #### `X-Ipfs-Gateway-Prefix` **is now deprecated**
 
-IPFS community moved towards dedicated Origins (DNSLink and [subdomain gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)) which are much easier to isolate and reason about.
+IPFS community moved towards dedicated Origins (DNSLink and [subdomain gateways](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#subdomain-gateway)) which are much easier to isolate and reason about.
 
 Setting up `Gateway.PathPrefixes` and `X-Ipfs-Gateway-Prefix` is no longer necessary and support [will be removed in near future](https://github.com/ipfs/go-ipfs/issues/7702).
 
@@ -129,7 +129,7 @@ A huge thank you to [**everyone who contributed**](https://github.com/ipfs/go-ip
 
 ### **Install, upgrade, and join us!**
 
-You can get started by [**installing go-ipfs**](https://dist.ipfs.io/#go-ipfs) or upgrading to [**go-ipfs 0.9**](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.0).
+You can get started by [**installing go-ipfs**](https://dist.ipfs.tech/#go-ipfs) or upgrading to [**go-ipfs 0.9**](https://github.com/ipfs/go-ipfs/releases/tag/v0.9.0).
 
 There are many ways to get involved with IPFS based on your skill set, interest, and availability. Please check out our [**contribution page**](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md) on GitHub for guidance and next steps.
 

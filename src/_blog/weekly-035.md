@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -28,11 +28,11 @@ With the 0.7.1 release of the IPFS Desktop, we now have one simple interface! Th
 
 ### Curious about CRDTs?
 
-We <3 Conflict-free Replicated Data Types so much so that last April we hosted the [2018 CRDT Research Meetup](https://blog.ipfs.io/67-crdt-research-meetup/) in Lisbon. Authors of the CRDT research literature and representatives from the Labs it originated were in attendance, and some gave talks that you can watch the videos for by following [this link!](https://blog.ipfs.io/67-crdt-research-meetup/)
+We <3 Conflict-free Replicated Data Types so much so that last April we hosted the [2018 CRDT Research Meetup](https://blog.ipfs.tech/67-crdt-research-meetup/) in Lisbon. Authors of the CRDT research literature and representatives from the Labs it originated were in attendance, and some gave talks that you can watch the videos for by following [this link!](https://blog.ipfs.tech/67-crdt-research-meetup/)
 
 ### Revisiting IPFS Hack Week in Lisbon
 
-Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.io/74-lisbon-hack-week/) to bring together core developers, contributors, researchers, and IPFS community members to sync, hang, and work on some problem solving together IRL. If you missed it, many of the presentations were recorded so you can watch [those videos here](https://blog.ipfs.io/74-lisbon-hack-week/). If you’re interested in attending the next IPFS Community event, check out IPFS Camp (more details below) and get [registered here](https://camp.ipfs.io/).
+Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.tech/74-lisbon-hack-week/) to bring together core developers, contributors, researchers, and IPFS community members to sync, hang, and work on some problem solving together IRL. If you missed it, many of the presentations were recorded so you can watch [those videos here](https://blog.ipfs.tech/74-lisbon-hack-week/). If you’re interested in attending the next IPFS Community event, check out IPFS Camp (more details below) and get [registered here](https://camp.ipfs.io/).
 
 ## Meet Jia Le Dai
 
@@ -40,7 +40,7 @@ Last spring IPFS held a [Hack Week in Lisbon](https://blog.ipfs.io/74-lisbon-hac
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [How to Deploy an Unstoppable Angular App to IPFS](https://medium.com/gochain/how-to-deploy-an-unstoppable-angular-app-to-ipfs-c2dabb52e517), GoChain, 26 Mar 2019
 - [Sunsetting Mist: What’s ahead for our team](https://medium.com/@avsa/sunsetting-mist-da21c8e943d2), 22 Mar 2019
@@ -62,7 +62,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Our friends at Qri, the global dataset version control system, were on the front page of Hacker News!](https://news.ycombinator.com/item?id=19470064)
 - [IPFS-Lite is an embeddable, lightweight IPFS-network peer for IPLD applications](https://github.com/hsanjuan/ipfs-lite)
@@ -72,11 +72,11 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Join us at the first ever IPFS Camp
 
-[IPFS Camp](https://blog.ipfs.io/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
+[IPFS Camp](https://blog.ipfs.tech/72-ann-ipfs-camp/) is taking place June 27th-30th in beautiful Barcelona. Meet the core developers and contributors to the IPFS project, community leaders, and builders on of the Distributed Web, but only if you register to attend. [Registration is open now!](https://camp.ipfs.io/)
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **27-28 Mar 2019:** [C3 Crypto Conference](https://crypto-conference.com/) is not only focused on blockchain companies and projects but also extends to topics on new technology. C3 Crypto Conference 2019 is also Berlin’s first large-scale crypto conference.
 - **28 Mar 2019:** [Creating a Decentralized App!](https://www.meetup.com/Blockstack-Newark-the-New-Internet-for-Decentralized-Apps/events/257563100/?_xtd=gqFyqTE4NzU3MjE5NKFwo3dlYg&from=ref) Jude Nelson from Blockstack will come and explain in a light and friendly way how to build a decentralized app on Blockstack, 6pm, Newark (NJ), US.

@@ -11,7 +11,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -21,7 +21,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## The latest
 
-- Last week, [JS IPFS 0.34](https://blog.ipfs.io/64-js-ipfs-0-34/) was released. It’s fast, small, supports big dirs, is flexible with CID versions and more! Read the full release notes [here](https://github.com/ipfs/js-ipfs/issues/1721).
+- Last week, [JS IPFS 0.34](https://blog.ipfs.tech/64-js-ipfs-0-34/) was released. It’s fast, small, supports big dirs, is flexible with CID versions and more! Read the full release notes [here](https://github.com/ipfs/js-ipfs/issues/1721).
 - Check out this video, [Making the Web Work Offline](https://www.youtube.com/watch?list=PLuhRWgmPaHtRdiy0HKNy4UZ4dKVUVL_KG&time_continue=7&v=VllPpxVNH5k) from Molly Mackinlay, and if you’re interested in joining the conversation, come to [the working group meetup](https://github.com/ipfs/local-offline-collab/issues/7), tomorrow, Jan 23.
 - We’re excited about [let’s talk about IPFS](https://fosdem.org/2019/schedule/event/the_new_internet/), an upcoming talk at FOSDEM 2019!
 - ICYMI: [Introducing ProtoSchool](https://www.youtube.com/watch?v=G5aiLkHZ7CM), learn about [ProtoSchool](https://proto.school/#/), an educational community that teaches decentralized web protocols and tools through online tutorials and local chapter events, in this introduction video.
@@ -32,7 +32,7 @@ Here are some of the highlights since the last IPFS Weekly.
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/categories/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/categories/articles/)._
 
 - [How Blockchain Technology Can Help Cannabis Recovery Efforts In Natural Disasters](https://www.forbes.com/sites/andrebourque/2019/01/21/how-blockchain-technology-can-help-recovery-efforts-in-natural-disasters/#74c6b2ec1b54), Forbes, 21 Jan 2019
 - [Torrent Paradise Creates Decentralized ‘Pirate Bay’ with IPFS](https://torrentfreak.com/torrent-paradise-creates-decentralized-pirate-bay-with-ipfs-190120/), TorrentFreak, 20 Jan 2019
@@ -48,14 +48,14 @@ _Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest me
 
 _See the latest releases of IPFS tools and projects across the ecosystem._
 
-- [IPFS Cluster 0.8.0 is out!](https://cluster.ipfs.io/news/0.8.0_release/)
+- [IPFS Cluster 0.8.0 is out!](https://ipfscluster.io/news/0.8.0_release/)
 - [Textile Photos Release Version 0.5.0](https://medium.com/textileio/textile-photos-release-version-0-5-0-5baed6a9d993)
 - [IPFS Desktop Client: Orion v1.0](https://blog.siderus.io/ipfs-desktop-client-orion-v1-0-b9c63411b732)
 - [OneLoveDTube IPFS uploader 0.8.3](https://steemit.com/onelovedtube/@techcoderx/onelovedtube-ipfs-uploader-0-8-3-mobile-optimizations-multi-resolution-upload-support-and-more): Mobile optimizations, multi-resolution upload support, and more!
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [Someone created a Udemy course on IPFS!](https://www.udemy.com/ipfs-nextgen-web-develop-deploy-integrate/)
 - [2read](https://addons.mozilla.org/en-US/firefox/addon/2read/) – Convert article in current tab to readable form and upload it to P2P network (IPFS).
@@ -65,7 +65,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - 24 Jan 2019: [Decentralization: What Have You Done For Me Lately? (part 1 of 2)](https://www.meetup.com/Blockstack-Newark-the-New-Internet-for-Decentralized-Apps/events/257129587/?_xtd=gqFyqTE4NzU3MjE5NKFwo3dlYg&from=ref), the meetup that’s not only for developers 👨‍💻/ designers 👨‍🎨/ marketers 👨‍💼 / engineers 👩🏽‍🔧 / entrepreneurs 👩‍💼 but also for the “curious” 🦄mind out there, in Newark, New Jersey.
 - 25 Jan 2019: [Graph Day](https://thegraph.com/graphday) was recently announced and will take place at the historic Grand Theater in San Francisco, California.

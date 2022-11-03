@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -21,7 +21,7 @@ tags:
 ## 最新发布
 
 ###改进 IPFS 发布过程
-go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频繁的发布!查看[IPFS 博客了解更多细节](https://blog.ipfs.io/2019-08-14-ipfs-release-process/)。
+go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频繁的发布!查看[IPFS 博客了解更多细节](https://blog.ipfs.tech/2019-08-14-ipfs-release-process/)。
 
 ### IPFS/LibP2P 服务台即将来到 ETHBerlin!
 
@@ -29,11 +29,11 @@ go-ipfs 引入了一个新的发布周期和过程，以确保更可靠和更频
 
 ### go-ipfs 0.4.22 发布 📣
 
-请查看最近发布的基于 0.4.21 的 [go-ipfs PATCH 版本](https://blog.ipfs.io/054-go-ipfs-0.4.22)，其中包含一些关键修补。
+请查看最近发布的基于 0.4.21 的 [go-ipfs PATCH 版本](https://blog.ipfs.tech/054-go-ipfs-0.4.22)，其中包含一些关键修补。
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)._
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)._
 
 - [Tupelo 与 IPLD 和 IPFS](https://medium.com/@tobowers/under-the-hood-tupelo-uses-ipld-libp2p-and-it-also-makes-use-of-bitswap-2d8007ba664c)， Topper Bowers, 2019 年 8 月 19 日
 - [Berty 团队在 IPFS Camp](https://berty.tech/blog/ipfs-camp/)， Berty, 2019 年 8 月 15 日
@@ -65,7 +65,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - 介绍[金字塔!](https://gateway.pinata.cloud/ipfs/qmdeninrlewz6o6qfvlk9hqkgh75x8sk4hktrq1l2rqcib/#landing)加载页面并动态创建加密密钥对!它们的公共部分可以上传到 IPFS。IPFS 哈希可以在一个 stellar 交易中注册。
 - [go-ipfs-log](https://github.com/berty/go-ipfs-log) - Go 版本 的只能添加日志，CRDT 在 IPFS 上
@@ -75,7 +75,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 8 月 21 日至 23 日：** [柏林 DappCon](https://www.dappcon.io/)：以太坊 Dapps、基础设施和令牌工程全球开发者大会，德国，柏林。
 - **2019 年 8 月 22 日：** 西雅图 ProtoSchool 将举办 [8 月去中心化网络会议](https://www.meetup.com/ProtoSchool-Seattle-Learn-to-Make-the-Decentralized-Web/events/262328555/)，详情待宣布! 美国，华盛顿州，西雅图。

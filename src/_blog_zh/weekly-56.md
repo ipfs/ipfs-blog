@@ -10,7 +10,7 @@ tags:
 
 ## 欢迎来到 IPFS 周刊。👋
 
-[星际文件系统 (IPFS)](https://ipfs.io/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
+[星际文件系统 (IPFS)](https://ipfs.tech/) 是一种新的超媒体分布协议，通过内容和标识来寻址。IPFS 支持创建完全分布式的应用程序。它的目标是使网络更快、更安全、更开放。由于范围广大，本周刊旨在跟踪整个生态系统的开发。
 
 想参与其中？点击下面的一些链接，查看我们在 [GitHub](https://github.com/ipfs) 上的内容，或加入我们的 [IRC](https://riot.im/app/#/room/#ipfs:matrix.org)。
 
@@ -20,7 +20,7 @@ tags:
 
 ## IPFS 生态圈的动态
 
-_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.io/articles/)。_
+_你是否关注[Twitter 上的 IPFS](https://twitter.com/IPFSbot)?有关 IPFS 的最新新闻，请查看我们的 Twitter 提要或查看[关于 Awesome IPFS 的最新文章](https://awesome.ipfs.tech/articles/)。_
 
 - [Package chain 项目概述](https://gist.github.com/dvc94ch/2ce60a00550e83d95ed051fc81e3683e), David Craven, 2019 年 8 月 24 日
 - 幻灯片: [go-libp2p-noise](https://github.com/ChainSafe/go-libp2p-noise/blob/master/go-libp2p-noise-ethberlin-1a.pdf), Ed Mazurek, ETHBerlinZwei, 2019 年 8 月 24 日
@@ -51,7 +51,7 @@ _查看生态系统中 IPFS 工具和项目的最新版本。_
 
 ## 我们<3 的工具和项目
 
-_[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
+_[Awesome IPFS](https://awesome.ipfs.tech/) 是一个由社区维护和更新的列表，它包括项目、工具或几乎所有与 IPFS 相关的东西，非常棒。想要了解更多，或将你的信息添加到列表中，请访问 [GitHub 上的 Awesome IPFS](https://github.com/ipfs/awesome-ipfs)。_
 
 - [SimpleID](https://www.simpleid.xyz/) – 隐私性、安全性和便利性都集成到一个简单的开发人员体验中。在 10 分钟内将去中心化的身份验证和存储添加到应用程序。
 - [InterPlanetary Wayback](https://github.com/oduwsdl/ipwb): 使用 IPFS 的分布式的和持久性的存档重播系统
@@ -59,7 +59,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) 是一个由社区维护和更新的�
 
 ## 即将到来的社区活动
 
-_你知道 IPFS 在 [discuss.ipfs.io](https://discuss.ipfs.io/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
+_你知道 IPFS 在 [discuss.ipfs.tech](https://discuss.ipfs.tech/) 上有一个社区论坛吗? 注册参与关于编码的讨论、教程、查看公告和了解即将到来的社区活动。_
 
 - **2019 年 8 月 29 日:** Graphs with Friends 将主持 [dweb 上的隐私](https://www.meetup.com/Graphs-With-Friends/events/263942243/). 讨论分布式系统中的隐私保护、元数据的阻力、跟踪和匿名问题。英国伦敦
 - **2019 年 8 月 31 日：** [ProtoSchool -上海分会: 技术沙龙会第 5 期](https://www.meetup.com/Shanghai-Decentralized-Systems-Meetup-Group/events/263835810/): ProtoSchool - 上海分会是一群热爱去中心化网络，乐于学习、教学和分享想法的人。欢迎加入! 中国，上海。

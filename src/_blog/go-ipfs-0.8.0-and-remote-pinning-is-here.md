@@ -119,7 +119,7 @@ A huge thank you to [everyone who contributed](https://github.com/ipfs/go-ipfs/r
 
 ### Install, upgrade, and join us!
 
-You can get started by [installing go-ipfs](https://dist.ipfs.io/#go-ipfs) or upgrading to [go-ipfs 0.8](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0).
+You can get started by [installing go-ipfs](https://dist.ipfs.tech/#go-ipfs) or upgrading to [go-ipfs 0.8](https://github.com/ipfs/go-ipfs/releases/tag/v0.8.0).
 
 There are many ways to get involved with IPFS based on your skill set, interest, and availability. Please check out our [contribution page](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md) on GitHub for guidance and next steps.
 

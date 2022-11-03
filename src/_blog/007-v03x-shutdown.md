@@ -21,9 +21,9 @@ We'll be **shutting down** the v03x bootstrappers and gateways on **Thursday, Ju
 - The bootstrap nodes configured by default will no longer allow you to connect.
 - The public HTTP-to-IPFS gateway at [ipfs.io][gw] will no longer be able to access data from v03x networks.
 
-We ask you to update to the latest 0.4.x version, available through [dist.ipfs.io][dist]. If you can't update just yet, you can still connect your v03x nodes to each other by using the `ipfs bootstrap` or `ipfs swarm connect` commands.
+We ask you to update to the latest 0.4.x version, available through [dist.ipfs.tech][dist]. If you can't update just yet, you can still connect your v03x nodes to each other by using the `ipfs bootstrap` or `ipfs swarm connect` commands.
 
-[migration]: https://ipfs.io/blog/9-v04x-migration/
-[v04x]: https://ipfs.io/blog/14-ipfs-0-4-0-released/
-[dist]: https://dist.ipfs.io
+[migration]: https://blog.ipfs.tech/9-v04x-migration/
+[v04x]: https://blog.ipfs.tech/14-ipfs-0-4-0-released/
+[dist]: https://dist.ipfs.tech
 [gw]: https://ipfs.io

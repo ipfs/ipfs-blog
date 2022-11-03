@@ -43,4 +43,4 @@ Learn how to use IPFS to deploy infrastructure in this video from IPFS Camp 2019
 
 Discover how Filecoin integrations create powerful opportunities for Web3 infrastructure.
 
-Find code examples, tutorials, and other resources on the [IPFS documentation site](https://docs.ipfs.io/) and the [Filecoin documentation site](https://docs.filecoin.io/). For more information, visit the [Scaling Ethereum site](https://scaling.ethglobal.co/) to register, or ping us on Twitter with your questions at @IPFS or @Filecoin. See you there!
+Find code examples, tutorials, and other resources on the [IPFS documentation site](https://docs.ipfs.tech/) and the [Filecoin documentation site](https://docs.filecoin.io/). For more information, visit the [Scaling Ethereum site](https://scaling.ethglobal.co/) to register, or ping us on Twitter with your questions at @IPFS or @Filecoin. See you there!

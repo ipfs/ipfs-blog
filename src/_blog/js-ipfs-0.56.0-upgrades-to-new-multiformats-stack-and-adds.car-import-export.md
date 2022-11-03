@@ -20,7 +20,7 @@ tags:
 
 ## 📚 Multiformats
 
-Underneath the Interplanetary Filesystem is a multitude of [Merkle Directed Acyclic Graphs](https://docs.ipfs.io/concepts/merkle-dag/).  When you add a file to your IPFS node, you are converting it into a DAG representation of that file.  This DAG may be made up of one or more nodes of the [dag-pb](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-pb.md) or [raw](https://github.com/ipld/specs/issues/223) format in various [UnixFS layouts](https://github.com/ipfs/specs/blob/master/UNIXFS.md#layout).
+Underneath the Interplanetary Filesystem is a multitude of [Merkle Directed Acyclic Graphs](https://docs.ipfs.tech/concepts/merkle-dag/).  When you add a file to your IPFS node, you are converting it into a DAG representation of that file.  This DAG may be made up of one or more nodes of the [dag-pb](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-pb.md) or [raw](https://github.com/ipld/specs/issues/223) format in various [UnixFS layouts](https://github.com/ipfs/specs/blob/master/UNIXFS.md#layout).
 
 DAG node formats are not limited to `dag-pb` or `raw`, however, we also have [dag-cbor](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-cbor.md), [dag-json](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-json.md) and the newcomer [dag-jose](https://github.com/ipld/specs/blob/master/block-layer/codecs/dag-jose.md).
 
@@ -36,9 +36,9 @@ If you want to learn more about Merkle DAGs, there's a whole [tutorial](https://
 
 ## `.car` import/export
 
-The low-level `ipfs.block.put` and `ipfs.block.get` commands allow you to get and put invidiual blocks into your blockstore, but this can be tedious when dealing with large [DAG](https://docs.ipfs.io/concepts/merkle-dag/)s since you will invoke these operations multiple times and without interpreting the blocks as you read them, there's no way to follow [links](https://docs.ipfs.io/concepts/content-addressing/) to other blocks.
+The low-level `ipfs.block.put` and `ipfs.block.get` commands allow you to get and put invidiual blocks into your blockstore, but this can be tedious when dealing with large [DAG](https://docs.ipfs.tech/concepts/merkle-dag/)s since you will invoke these operations multiple times and without interpreting the blocks as you read them, there's no way to follow [links](https://docs.ipfs.tech/concepts/content-addressing/) to other blocks.
 
-Enter the [Content Addressable aRchive](https://ipld.io/specs/transport/car/) or `.car` file.  This file functions as storage for the blocks that make up one or more DAGs, consisting of a root [CID](https://docs.ipfs.io/concepts/content-addressing/) then some or all of the blocks that are children of that `CID`.
+Enter the [Content Addressable aRchive](https://ipld.io/specs/transport/car/) or `.car` file.  This file functions as storage for the blocks that make up one or more DAGs, consisting of a root [CID](https://docs.ipfs.tech/concepts/content-addressing/) then some or all of the blocks that are children of that `CID`.
 
 `.car` files can be exported from `js-IPFS@0.56.0` and later with:
 
@@ -202,21 +202,21 @@ Would you like to contribute to the IPFS project and don’t know how? Well, the
 - Check the issues with the `help wanted` label in the [js-IPFS repo](https://github.com/ipfs/js-ipfs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - Join an IPFS All Hands, introduce yourself and let us know where you would like to contribute: https://github.com/ipfs/team-mgmt/#weekly-ipfs-all-hands
 - Hack with IPFS and show us what you made! The All Hands call is also the perfect venue for demos, join in and show us what you built
-- Join the discussion at https://discuss.ipfs.io/ and help users finding their answers.
+- Join the discussion at https://discuss.ipfs.tech/ and help users finding their answers.
 - Join the [🚀 IPFS Core Implementations Weekly Sync 🛰](https://github.com/ipfs/team-mgmt/issues/992) and be part of the action!
 
 # ⁉️ Do you have questions?
 
-The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.io](https://discuss.ipfs.io). We are also available at the `#ipfs` channel on Freenode.
+The best place to ask your questions about IPFS, how it works, and what you can do with it is at [discuss.ipfs.tech](https://discuss.ipfs.tech). We are also available at the `#ipfs` channel on Freenode.
 
-[unixfs]: https://docs.ipfs.io/guides/concepts/unixfs/
-[cid]: https://docs.ipfs.io/guides/concepts/cid/
-[mfs]: https://docs.ipfs.io/guides/concepts/mfs/
+[unixfs]: https://docs.ipfs.tech/guides/concepts/unixfs/
+[cid]: https://docs.ipfs.tech/guides/concepts/cid/
+[mfs]: https://docs.ipfs.tech/guides/concepts/mfs/
 [libp2p]: https://github.com/libp2p/js-libp2p
 [ipld]: https://github.com/ipld/js-ipld
 [abortsignal]: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
 [multihash]: https://multiformats.io/multihash
-[dht]: https://docs.ipfs.io/concepts/dht/
+[dht]: https://docs.ipfs.tech/concepts/dht/
 [multiaddr]: https://multiformats.io/multiaddr/
-[dag]: https://docs.ipfs.io/concepts/merkle-dag/
+[dag]: https://docs.ipfs.tech/concepts/merkle-dag/
 [core-api]: https://github.com/ipfs/js-ipfs/tree/master/docs/core-api

@@ -101,7 +101,7 @@ This link points to a specific snapshot. It will always point to that specific d
 
 For your convenience we have set up a domain name and DNS entry at [tr.wikipedia-on-ipfs.org](http://tr.wikipedia-on-ipfs.org) that will resolve to the current IPFS snapshot.
 
-If you are not able to access `ipfs.io`, or `wikipedia-on-ipfs.org`, you can use this [dnslink](https://docs.ipfs.io/concepts/dnslink/) URL to access the content -- simply replace `ipfs.io` with the address of any [IPFS gateway](https://ipfs.github.io/public-gateway-checker/):
+If you are not able to access `ipfs.io`, or `wikipedia-on-ipfs.org`, you can use this [dnslink](https://docs.ipfs.tech/concepts/dnslink/) URL to access the content -- simply replace `ipfs.io` with the address of any [IPFS gateway](https://ipfs.github.io/public-gateway-checker/):
 
 * Turkish Wikipedia: [https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/](https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/wiki/)
 
@@ -119,7 +119,7 @@ Your main options for accessing the snapshot of Wikipedia are: _(depending on yo
 * **Option**: Use any gateway to access the latest DNSLink version: https://ipfs.io/ipns/tr.wikipedia-on-ipfs.org/wiki/
 * **Option**: Connect to gateway over Tor (this is experimental). Read [this tutorial on Tor gateways](https://dweb-primer.ipfs.io/avenues-for-access/lessons/tor-gateways.html).
 * **Option**: Install an IPFS node on your computer and access Wikipedia through that node (requires [using the command line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). _This is the most reliable method because it retrieves the content directly from the IPFS peer-to-peer network)_
-  1. Install IPFS [following these instructions](https://docs.ipfs.io/install/command-line/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
+  1. Install IPFS [following these instructions](https://docs.ipfs.tech/install/command-line/). Use the most recent verison of IPFS: 0.4.9-rc2 or higher if possible.
   2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
   3. Read the content through your IPFS node's local HTTP gateway by visiting:
      * 30 April 2017 snapshot: http://localhost:8080/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/
@@ -144,7 +144,7 @@ If you don't have enough storage space to hold full copies of the snapshot(s), y
 
 **Steps**:
 
-1. Install IPFS [following these instructions](https://docs.ipfs.io/install/command-line/). Use the most recent verison of IPFS -- 0.4.9-rc2 or higher if possible.
+1. Install IPFS [following these instructions](https://docs.ipfs.tech/install/command-line/). Use the most recent verison of IPFS -- 0.4.9-rc2 or higher if possible.
 2. Start your IPFS node by running `ipfs daemon` so it can connect to the network.
 3. Pin the snapshot(s) onto your machine
    * Pin Turkish Wikipedia: `ipfs pin add QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX`

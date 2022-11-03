@@ -54,5 +54,5 @@ _Video: [Understanding How IPFS Deals with Files](https://youtu.be/Z5zNPwMDYGg)_
 
 This course also introduces new visualization tools that you can use to see how IPFS addresses and manipulates files:
 
-- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.io/) to break down its anatomy
+- Paste a Content Identifier (CID) into the [**CID Inspector**](https://cid.ipfs.tech/) to break down its anatomy
 - Drag a file into the [**DAG Builder**](https://dag.ipfs.io/) and adjust chunk size, DAG layouts, etc. to see how it affects the Merkle DAG

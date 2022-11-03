@@ -12,7 +12,7 @@ header_image: '/header-image-weekly-newsletter.png'
 
 ## Welcome to the IPFS Weekly. 👋
 
-The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
+The [InterPlanetary File System (IPFS)](https://ipfs.tech/) is a new hypermedia distribution protocol, addressed by content and identity. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. Since that’s a pretty large scope, we track development across the ecosystem in this weekly dispatch.
 
 Looking to get involved? Click on some of the links below, see what we’re up to on [GitHub](https://github.com/ipfs), or join us on [IRC](https://riot.im/app/#/room/#ipfs:matrix.org).
 
@@ -36,11 +36,11 @@ Pretty self explanatory but the [Initial Implementation of the GraphSync Wire Pr
 
 ## Meet the Community: Carson Farmer, Core Developer @ Textile.io
 
-This week for [`Meet the Community`, we had Carson Farmer, a Core Developer at Textile](https://blog.ipfs.io/meet-the-community-carson-farmer/)
+This week for [`Meet the Community`, we had Carson Farmer, a Core Developer at Textile](https://blog.ipfs.tech/meet-the-community-carson-farmer/)
 
 ## IPFS in the wild
 
-_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.io/articles/)._
+_Do you follow [IPFS on Twitter](https://twitter.com/IPFSbot)? For the latest mentions of IPFS in the news, check our Twitter feed or see the [latest articles on Awesome IPFS](https://awesome.ipfs.tech/articles/)._
 
 - [We Made A Dashboard for IPFS Clusters and Now We Want You to Check it Out](https://hackernoon.com/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908), Hackernoon, 14 May 2019
 - [XR Web: A Decentralized Protocol for Spatial XR apps](https://medium.com/@melodygrey/xr-web-a-decentralized-protocol-for-spatial-xr-apps-d1538bfd80a7), Melody Grey, 14 May 2019
@@ -64,7 +64,7 @@ _See the latest releases of IPFS tools and projects across the ecosystem._
 
 ## Tools and projects we <3
 
-_[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
+_[Awesome IPFS](https://awesome.ipfs.tech/) is a community maintained and updated list of projects, tools, or pretty much any things related to IPFS that are totally awesome. To see more, or add yours to the list, visit [Awesome IPFS on GitHub](https://github.com/ipfs/awesome-ipfs)._
 
 - [[Contest] libp2p+noise](https://github.com/libp2p/go-libp2p/issues/631): Win a Data Terra Nemo’19 conference ticket!
 - [Indrive](https://lndrive.space/), host files on IPFS using Bitcoin Lightning
@@ -72,7 +72,7 @@ _[Awesome IPFS](https://awesome.ipfs.io/) is a community maintained and updated 
 
 ## Coming up in the Community
 
-_Did you know IPFS has a community forum at [discuss.ipfs.io](https://discuss.ipfs.io/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
+_Did you know IPFS has a community forum at [discuss.ipfs.tech](https://discuss.ipfs.tech/)? Sign up to participate in discussions about coding, tutorials, see announcements and learn about upcoming community events._
 
 - **16 May 2019:** Calling all dweb enthusiasts to come meet and mingle at the first [Berlin Lab Social](https://www.meetup.com/IPFS-Berlin/events/261347119/). It’s going to be a good time to check-in with the community and update everyone on the latest efforts underway in the IPFS, IPLD, Libp2p, IPFS Cluster, and Filecoin communities.
 - **17-18 May 2019:** [Data Terra Nemo](https://dtn.is/) is a technical conference about decentralized protocols and the software built on top of them, Berlin, Germany.
