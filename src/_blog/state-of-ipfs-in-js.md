@@ -170,7 +170,7 @@ This means browser nodes have more optionality to which long-running IPFS nodes 
 
 > **Note:** browser nodes will still want to delegate providing content to a node with more longevity since the new transports won’t stop browser nodes from disappearing from the network when the user closes a tab or puts their laptop to sleep.
 
-We’ll lean into realizing these breakthroughs and remove the more convoluted mechanisms from the past that relied on the Kubo RPC API and preload nodes discussed in [js-ipfs in a Browser context](#js-ipfs-in-a-Browser-context).
+We’ll lean into realizing these breakthroughs and remove the more convoluted mechanisms from the past that relied on the Kubo RPC API and preload nodes discussed in [js-ipfs in a Browser context](#js-ipfs-in-a-browser-context).
 
 ### Support Fully Speced Delegated Routing Protocols and Endpoints
 
@@ -178,7 +178,7 @@ While it will be possible from a connectivity perspective to make DHT queries fr
 
 ### PL Delegate and Preload Nodes Will Be Shutting Down
 
-Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy delegate/preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](#js-ipfs-in-a-Browser-context). This yields a simpler setup for one’s application and removes centralized infrastructure.
+Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy delegate/preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](#js-ipfs-in-a-browser-context). This yields a simpler setup for one’s application and removes centralized infrastructure.
 
 For delegated routing, one can configure [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
 
