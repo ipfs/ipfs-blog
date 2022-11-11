@@ -76,4 +76,4 @@ Custom Handlers](https://blogs.igalia.com/jfernandez/?p=1756&shareadraft=baba175
 
 And recently at IPFS Camp in Lisbon Portugal, Javi gave a talk about this work - which you can watch here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WLCJ9ol8Fgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+@[youtube](WLCJ9ol8Fgk)
