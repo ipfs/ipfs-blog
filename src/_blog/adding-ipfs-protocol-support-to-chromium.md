@@ -39,7 +39,7 @@ IPFS has achieved a signficant amount of support in various ways across a number
 * The IPFS Companion browser extension is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) and for [Chromium-based browsers](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch), which pairs with a local IPFS node like [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/)
 * [Opera browser](https://www.opera.com/) has support for the `ipfs` and `ipns` schemes in their [Android](https://blog.ipfs.tech/2020-03-30-ipfs-in-opera-for-android/), [iOS](https://blog.ipfs.tech/2021-02-08-opera-ios-and-ipfs/) and desktop browsers, redirecting to the https://dweb.link gateway
 * [Brave browser](https://brave.com/) bundles IPFS Companion, has `ipfs` and `ipns` scheme support, can redirect to a gateway and also can install and manage a [Kubo IPFS node](https://github.com/ipfs/kubo) to make the browser a full participant in the IPFS public network
-* [Capyloon](https://capyloon.org/), a web-based mobile operating system based on KaiOS and Firefox OS, and built with Firefox's Gecko rendering engine, has `ipfs` and `ipns` scheme support with redirect to https://dweb.link (and a bunch of other ineresting features!)
+* [Capyloon](https://capyloon.org/), a web-based mobile operating system based on KaiOS and Firefox OS, and built with Firefox's Gecko rendering engine, has `ipfs` and `ipns` scheme support backed by [Iroh](https://github.com/n0-computer/iroh), a Rust implementation of IPFS from number0.
 
 There's interest and opportunities and challenges in various browsers - lots of accomplishments, but lots still to figure out.
 
