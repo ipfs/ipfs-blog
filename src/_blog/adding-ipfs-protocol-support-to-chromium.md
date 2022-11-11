@@ -43,7 +43,7 @@ IPFS has achieved a signficant amount of support in various ways across a number
 
 There's interest and opportunities and challenges in various browsers - lots of accomplishments, but lots still to figure out.
 
-![Table of browsers and levels of IPFS support](https://i.imgur.com/Xwy6VYp.png)
+![Table of browsers and levels of IPFS support](../assets/browsers-2022-table.png)
 
 Some notes on the table above:
 * The native Firefox part is via the work Capyloon is doing to integrate IPFS via a protocol handler and bundling IPFS components in Rust from [Iroh](https://github.com/n0-computer/iroh) into Gecko, in the Capyloon fork, not in Mozilla's core repos. There's a tracking bug open for [IPFS support in Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=1354807), but no plans from Mozilla to implement at this time.
@@ -55,7 +55,7 @@ Redirecting `ipfs` and `ipns` to an HTTP gateway is just a step along the road t
 
 If the underlying engine - Chromium - supported non-HTTP protocols better as a built-in feature, then *embedders* (Chromium lingo for products building on top of it) could more easily integrate and experiment, and we could spend more time working on what truly native IPFS support might look like in the web platform, instead of just redirecting to an HTTP gateway. Igalia agreed it was a worthy goal, and the feedback from the Chromium commmunity around the work was positive, so off we went.
 
-![A flow diagram of the refactored flow for addresses across process boundaries.](https://i.imgur.com/xTtSQQn.png)
+![A flow diagram of the refactored flow for addresses across process boundaries.](../assets/chromium-handler-diagram.png)
 
 ## Major Chromium Refactor
 
