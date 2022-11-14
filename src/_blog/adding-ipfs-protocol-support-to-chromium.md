@@ -2,7 +2,7 @@
 title: Adding IPFS Protocol Support to Chromium
 description: Build Chromium with support for “ipfs://” addresses in two lines of code.
 author: Dietrich Ayala
-date: 2022-11-12
+date: 2022-11-14
 permalink: "/14-11-2022-igalia-chromium"
 translationKey: 14-11-2022-igalia-chromium
 header_image: "/ipfs-blog-header_-chromium-protocol-handlers-post.png"
