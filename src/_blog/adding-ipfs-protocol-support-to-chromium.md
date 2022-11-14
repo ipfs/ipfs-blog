@@ -72,8 +72,10 @@ He has detailed the new architecture in a couple of posts:
 
 - [New Custom Handlers component for Chrome](https://blogs.igalia.com/jfernandez/2022/08/10/new-custom-handlers-component-for-chrome/)
 - [Discovering Chrome’s pre-defined
-Custom Handlers](https://blogs.igalia.com/jfernandez/?p=1756&shareadraft=baba1756_636909bbe8689)
+Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/)
 
 And recently at IPFS Camp in Lisbon Portugal, Javi gave a talk about this work - which you can watch here:
 
 @[youtube](WLCJ9ol8Fgk)
+
+If you're interested in learning more, join the `#browsers-and-platforms` channel on the [Filecoin Slack](https://filecoin.io/slack/), which is bridged also to `#browsers-and-standards` on [Matrix](https://matrix.to/#/%23browsers-and-standards:ipfs.io) and the [IPFS Discord](https://discord.gg/vZTcrFePpt).
