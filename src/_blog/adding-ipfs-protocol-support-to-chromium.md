@@ -30,7 +30,7 @@ This colloboration covered a *lot* of ground - from IANA to WHAT-WG to W3C to IE
 
 Very few changes were specific to IPFS. A lot of the work was making browsers and the web platform more amenable to localhost-oriented application topologies and non-HTTP protocol work - fixing compat papercuts, aligning security models across engines, cleaning up dusty corners... making the web itself just a little bit better.
 
-But our larger goal is to bring the web to places where it doesn't work well for people today, and enable experimentation in what a web with alternate protocols can look like. These are paradigmatic changes, so we needed to do more than just surface-level fixes.
+But our larger goal is to bring the web to places where it doesn't work well for people today, and enable experimentation in what a web with alternative protocols can look like. These are paradigmatic changes, so we needed to do more than just surface-level fixes.
 
 ## IPFS Browser Integrations So Far
 
