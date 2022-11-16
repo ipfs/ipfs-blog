@@ -2,63 +2,57 @@
 title: Welcome to IPFS News 188!
 description: 'The potential benefits of IPFS over WebDAV, plus more in IPFS News 187. '
 author: Emily Vaughan
-date: 2022-10-19
-permalink: "/weekly-187/"
+date: 2022-11-16
+permalink: "/weekly-188/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
-- Rust
-- IPFS Camp
 - weekly
 
 ---
-## **What are the Potential Benefits of IPFS over WebDAV?**
+## Protocol Labs and Igalia add IPFS Protocol Support to Chromium
 
-![](../assets/0003_v2.jpg)
+![](../assets/ipfs-blog-header_-chromium-protocol-handlers-post.png)
 
-WebDAV extends the HTTP protocol and enables web servers to also act as file servers. WebDAV extends the HTTP methods to their needs, and could potentially make IPFS easier to use. It even opens up new use cases, such as a writable gateway, IPFS integrations in apps currently supporting WebDAV, plus Android and iOS support.  
+In a major milestone, we’re excited to announce [**support for pre-defined custom protocol handlers in Chromium**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=93fad387d0&e=c8385b3b0b)! You can now build Chromium, the open source browser code used for Chrome, Brave, Edge, Opera, and more, with support for “ipfs://” addresses by changing only a couple of lines of code.   
   
-Learn more about [**IPFS over WebDAV**](https://blog.ipfs.tech/2022-10-13-ipfs-over-webdav/) and how you can help improve it!
+IPFS has gained support in several ways across various browsers. From extensions to different levels of built-in support in Brave and Opera, to experiments with mobile operating systems, the network looks much different than it did in 2019.
+
+Learn more about why this is a key step toward browsers that can meet a far more diverse set of user needs while maintaining an interoperable core.
+
+![](../assets/browsers-2022-table.png)
 
 ## **Brand New on IPFS ✨**
 
-1. Dolpin is [**now available**](https://www.producthunt.com/posts/dolpin) on Product Hunt. Built with IPFS and Filecoin, Dolpin allows users to encrypt files, add beneficiaries, and govern who can access their IPFS storage at affordable prices.
-2. Web3.Storage announced the [**w3up beta**](https://blog.web3.storage/posts/w3up-beta-launch), a preview of their web scale IPFS cloud. The team is releasing a new upload API that is currently in early access.
-3. The [**first ever libp2p Day**](https://discuss.libp2p.io/t/libp2p-day-presentations-and-speaking-opportunities/1621) is now a part of IPFS Camp 2022! Join for talks aimed at turning devs into libp2p builders, builders into contributors, and contributors into spec authors.
-4. Check out [**this feature**](https://spectrum.ieee.org/peer-to-peer-network) on IPFS to learn about how peer-to-peer file sharing would make the Internet far more efficient.
+1. The InterPlanetary Name System (IPNS) spec has been [overhauled and expanded](https://github.com/ipfs/specs/blob/main/ipns/IPNS.md)!
+2. Jonathan Victor kicked off the [Gaming, Metaverse, and Video](https://www.youtube.com/watch?v=1x2kWcl9V6M) track at IPFS Camp and talked about how developers can create long term value through gaming in the future.
+3. Guardian is a policy engine that also uses Hedera & IPFS to create provenance chains for ESG assets. [Learn more on the IPFS Blog](https://blog.ipfs.tech/2022-11-10-guardian-ipfs-and-hedera/)!
+4. [Learn more](https://blog.ipfs.tech/state-of-ipfs-in-js/) about the history of IPFS development in JS, decisions by some maintainers on what to do going forward, and ways you can help.
 
 ## **Around the ecosystem 🌎**
 
-The Data DAO Hackathon ended with 71 projects building in categories including Best Use of Filecoin and IPFS, Multi-chain Storage, and Computing over Data. Find out who won on the [**Filswan blog**](https://filswan.medium.com/data-dao-hackathon-prize-winners-33df617ea6d9).
+A new blog on TL;DR dives into the [tokenomics behind Filecoin](https://medium.com/tldrfilecoin/filecoin-tokenomics-understanding-an-advancing-economy-ef319632ffa8) and explains how they help drive long-term demand for network resources. Unlike other storage networks, the Filecoin token is primarily concerned with incentivizing reliable services and facilitating the on-chain economy. 
 
-[**Sign up**](https://airtable.com/shrsicDt1IpeIKVIg) for LabWeek22 updates. From October 24th to November 4th, the Protocol Labs Network will be in Lisbon for the first-ever decentralized conference discussing public goods funding, cryptoeconomics, and DeSci.
+Filecoin Saturn is an [open-source, community-run Content Delivery Network](https://strn.network/) (CDN) built on Filecoin. Because it is trustless, permissionless, and inclusive, anyone can run Saturn software, contribute to the network, and earn Filecoin.
 
-Get ready for next week! Join communities across the ecosystem, including IPFS and Filecoin, for DevCon 2022 in Bogotá on October 11th - 14th. Check out the full agenda, keynote speakers, and more on the [**official site**](https://devcon.org/en/).
+Protocol Labs and Filecoin Foundation announced the launch of the [Decentralized Storage Alliance](https://filecoin.io/blog/posts/introducing-the-decentralized-storage-alliance/), a first-of-its-kind, member-led industry organization to drive awareness and adoption of decentralized technologies, such as Filecoin, IPFS, and libp2p, and help enterprises in Web2 make the transition to Web3.
 
-The [**Filecoin Green**](https://green.filecoin.io/) community will be at DevCon with a LATAM-focused sustainability summit on October 12th. Get your [**tickets**](https://www.eventbrite.com/e/sustainable-blockchain-summit-latam-tickets-397452199227)!
+Protocol Labs is bringing web users across the globe more control and independence by advancing technology for the benefit of humanity. We are now a [member of the Internet Society](https://www.internetsociety.org/about-internet-society/organization-members/stories/protocol-labs/), a global non-profit organization “empowering people to keep the Internet a force for good.”
 
-Funding the Commons is back at [**Schelling Point**](https://schellingpoint.gitcoin.co/) for a pop up, happening Oct 10th in Bogotá. RSVP for the event on the [**Schelling Point website**](https://schellingpoint.gitcoin.co/).
+Technological advances have enabled mass surveillance at a scale unimagined even by "1984," George Orwell's dystopian novel published in 1949, but how do we fight against Orwellian Systems? Juan Benet and Max Tegmark discussed these issues in [Breakthroughs in Computing](https://www.youtube.com/watch?v=_5ZxcxS3o3k).
 
-Learn how to deploy a Kubo IPFS node to Fly.io by watching this thorough [**walkthrough**](https://www.youtube.com/watch?v=k1Hcg3B43Q4) video with Daniel Norman.
+Filecoin Green launched [CO2.Storage](https://co2.storage/), a Web3 data storage solution that intends to enable transparency for carbon offsets and address traditional storage solutions for all types of digital environmental assets, including renewable energy credits.
 
-Check out this [**tutorial**](https://www.youtube.com/watch?v=Ga9gfoZSm0Y) on how to work with the IPFS API in a Go application. You’ll learn how to add a file to IPFS, read it, download it to your computer, add it to IPNS, and read it from IPNS.
-
-![](../assets/banner-2.png)
-
-## [IPFS Camp](https://2022.ipfs.camp/) is 10 days away! 🏕
-
-Join the IPFS community in Lisbon, Portugal on October 28 - 30th! Hosted at the stunning Convento do Beato, IPFS Camp is a gathering for devs, operators, implementers, users, researchers – and you. Join us for talks, workshops, discussion circles, hacking time, and more. Check out the [**schedule**](https://2022.ipfs.camp/#schedule) and [**grab your ticket**](https://lu.ma/ipfscamp22) now. We hope to see you there and look forward to building the next generation of the web together!
-
-🎟 Use the exclusive discount code "IPFSNEWSVIP" for 25% off your [**ticket**](https://lu.ma/ipfscamp22)!
+If you care about P2P, libp2p and IPFS, then you care about the most important unsolved piece of protocol design in P2P Networks: NAT Hole Punching. [Learn more](https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690) about the NAT Hole Punching Measurement Campaign and [sign up to participate](https://docs.google.com/forms/d/1eXLNaJZIUOJtcRS-S0JmXiQuhfmBuAnWm6uueDJgn0w/viewform?edit_requested=true). 
 
 ## **Want to help build the new internet? 💼**
 
-[**Senior Software Engineer, Distributed Systems**](https://boards.greenhouse.io/protocollabs/jobs/4283628004): Protocol Labs is hiring a Senior Distributed Systems Engineers to work on the JavaScript and Go implementations of protocols like IPFS, Filecoin and libp2p. Enthusiasm about the decentralized web and blockchains has brought an influx of people who want to use distributed systems but who don't know how to build the necessary infrastructure. Protocol Labs is building that infrastructure. To continue that work, they’re looking for people who thoroughly understand the principles of distributed systems and who will lean into the challenges of applying those principles in open-source code that will be deployed worldwide. **Protocol Labs**, Remote.
-
-[**Brand Designer**](https://angel.co/company/pinatacloud/jobs/1796010-brand-designer): Pinata Technologies, Inc. is building the tools and infrastructure for a more free and empowering Web3 generation through IPFS. Their vision is to foster a sense of place for every creator on the internet that is uniquely theirs. Pinata is looking for a brand designer to join their team! This role will be responsible for creating designs for our website and digital marketing efforts, as well as creatives for traditional mediums. This person will report to the Marketing team and receive guidance from the Creative Director. This person should feel comfortable presenting new creative concepts and ideas to both the Marketing team as well as across the business team. **Pinata**, Remote.
-
-[**Senior Software Engineer - Design Technologist**](https://www.linkedin.com/jobs/view/senior-software-engineer-design-technologist-at-mozilla-3146852845?refId=EiOw5v08Xa0PL2eWaKMxow%3D%3D&trackingId=khK8KrTR4xZ3ib9JTscmeQ%3D%3D&trk=public_jobs_topcard-title): Mozilla’s Future Products team researches emerging technology stacks and ecosystems to evaluate their fit for new products. We’re a diverse group of designers, strategists, engineers, and innovators. They're looking for a hardworking and capable Creative Technologist to build prototypes that can be used to demonstrate, test, and gather feedback on our concepts and design solutions for a wide array of audiences including internal partners, end-users, developers, and collaborators. **Mozilla**, Austin, TX.
-
-[**Senior Design Engineer**](https://jobs.ashbyhq.com/sound.xyz/407fcf8c-40f2-4c5e-be27-e96745cff082/application?utm_source=5brbomGvp3): Sound is hiring a Senior Design Engineer to help shape the future of a new music economy that values artists and their music while connecting fans more closely to the music they love. As a Design Engineer, you will be a core contributor to the overall strategy and decision-making about product direction. You will explore, design, prototype, and build new experiences and features across all surfaces of our platform. You will help tighten the feedback loop between product, design, and engineering by pushing our design system forward visually and interactively. Most importantly, you have a passion for designing and implementing extraordinary and delightful user experiences. **sound.xyz**, Remote.
-
-[**Quality Assurance, Test and Benchmarking Engineer**](https://join.com/companies/capsule/5840067-quality-assurance-test-and-benchmarking-engineer?pid=24a1b46991e3de1fbcf0): At Capsule Social, they've been building the future of decentralized discourse on top of performant, well-designed decentralization tech, cryptographic tech and blockchain tech. Capsule's Quality Assurance, Test and Benchmarking Engineer will be responsible for writing tests and creating a benchmarking infrastructure so that we can be sure that our technology scales to thousands and even millions of users prior to launch. **Capsule Social**, Remote.
+[**Content Writer:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=0bc80c63eb&e=c8385b3b0b) Edge & Node is a core development team behind The Graph, working to build a vibrant decentralized future. The team is dedicated to the proliferation of web3 applications that share value, utilize dynamic incentives, and build for human coordination. The Digital Content and Social Media Writer will be responsible for the conceptualization and production of at least 3-5 long form pieces each month about The Graph, Edge & Node and House of Web3. Topics may vary but will focus on The Graph and Edge & Node updates, announcements, education, events, innovations, and more. The Content Writer will create and publish content on social media platforms multiple times per day. In addition, they'll partner with the Marketing team to create messaging around company OKRs, and more. **Edge and Node**, Remote.  
+  
+[**Director of Engineering:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=7029564a70&e=c8385b3b0b) The Transmute team is looking to add a Director of Engineering with specific expertise in enterprise security software development, engineering management and technical product strategy. This is a senior role that reports directly to the CTO. Your primary responsibility will be to build and lead a high-performing team of engineers who can build enterprise-scale B2B products. Writing code regularly is not a requirement, but weighing in on architecture decisions, technical product direction, and software development lifecycle issues is. **Transmute**, Austin, TX.  
+  
+[**NodeJS developer | FinTech:**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=ab32876ca6&e=c8385b3b0b) Super Mojo is an embedded finance checkout experience for NFT marketplaces. You will build a distributed financial platform which executes transactions in milliseconds and enables a magical checkout experience for Super Mojo users. You will help with designing and heavily contributing to the product architecture and foundation and work with teams across the organization, including product, legal, and business development to think beyond the technical implications of your design decisions. **Super Mojo**, San Francisco, CA.  
+  
+[**Sr. Software Engineer, Distributed Systems**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=ffe8baaadd&e=c8385b3b0b): Protocol Labs is hiring a Sr. Distributed Systems Engineers to work on the JavaScript and Go implementations of protocols like IPFS, Filecoin and libp2p. Enthusiasm about the decentralized web and blockchains has brought an influx of people who want to use distributed systems but who don't know how to build the necessary infrastructure. Protocol Labs is building that infrastructure. To continue that work, they’re looking for people who thoroughly understand the principles of distributed systems and who will lean into the challenges of applying those principles in open-source code that will be deployed worldwide. **Protocol Labs**, Remote.  
+  
+[**Brand Designer**](https://ipfs.us4.list-manage.com/track/click?u=25473244c7d18b897f5a1ff6b&id=345459346a&e=c8385b3b0b): Pinata Technologies, Inc. is building the tools and infrastructure for a more free and empowering Web3 generation through IPFS. Their vision is to foster a sense of place for every creator on the internet that is uniquely theirs. Pinata is looking for a brand designer to join their team! This role will be responsible for creating designs for our website and digital marketing efforts, as well as creatives for traditional mediums. This person will report to the Marketing team and receive guidance from the Creative Director. This person should feel comfortable presenting new creative concepts and ideas to both the Marketing team as well as across the business team. **Pinata**, Remote.
