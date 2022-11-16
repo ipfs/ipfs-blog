@@ -79,5 +79,3 @@ And recently at IPFS Camp in Lisbon Portugal, Javi gave a talk about this work -
 @[youtube](WLCJ9ol8Fgk)
 
 If you're interested in learning more, join the `#browsers-and-platforms` channel on the [Filecoin Slack](https://filecoin.io/slack/), which is bridged also to `#browsers-and-standards` on [Matrix](https://matrix.to/#/%23browsers-and-standards:ipfs.io) and the [IPFS Discord](https://discord.gg/vZTcrFePpt).
-
-If you're interested in learning more, join the `#browsers-and-platforms` channel on the [Filecoin Slack](https://filecoin.io/slack/), which is bridged also to `#browsers-and-standards` on [Matrix](https://matrix.to/#/%23browsers-and-standards:ipfs.io) and the [IPFS Discord](https://discord.gg/vZTcrFePpt).
