@@ -150,6 +150,7 @@ fields:
     target="_blank">file an issue</a> with the details.
 pages:
 - src/_blog/2021-05-31-distributed-wikipedia-mirror-update.md
+- src/_blog/3s-studio-bringing-unreal-engine-to-ipfs.md
 - src/_blog/a-brave-new-wallet-the-future-of-the-browser-wallet.md
 - src/_blog/a-guide-to-ipfs-connectivity-in-web-browsers.md
 - src/_blog/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021.md
