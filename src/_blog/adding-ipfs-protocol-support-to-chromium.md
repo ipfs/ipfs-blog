@@ -30,7 +30,7 @@ This colloboration covered a *lot* of ground - from IANA to WHAT-WG to W3C to IE
 
 Very few changes were specific to IPFS. A lot of the work was making browsers and the web platform more amenable to localhost-oriented application topologies and non-HTTP protocol work - fixing compat papercuts, aligning security models across engines, cleaning up dusty corners... making the web itself just a little bit better.
 
-But our larger goal is to bring the web to places where it doesn't work well for people today, and enable experimentation in what a web with alternate protocols can look like. These are paradigmatic changes, so we needed to do more than just surface-level fixes.
+But our larger goal is to bring the web to places where it doesn't work well for people today, and enable experimentation in what a web with alternative protocols can look like. These are paradigmatic changes, so we needed to do more than just surface-level fixes.
 
 ## IPFS Browser Integrations So Far
 
@@ -77,5 +77,7 @@ Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chro
 And recently at IPFS Camp in Lisbon Portugal, Javi gave a talk about this work - which you can watch here:
 
 @[youtube](WLCJ9ol8Fgk)
+
+If you're interested in learning more, join the `#browsers-and-platforms` channel on the [Filecoin Slack](https://filecoin.io/slack/), which is bridged also to `#browsers-and-standards` on [Matrix](https://matrix.to/#/%23browsers-and-standards:ipfs.io) and the [IPFS Discord](https://discord.gg/vZTcrFePpt).
 
 If you're interested in learning more, join the `#browsers-and-platforms` channel on the [Filecoin Slack](https://filecoin.io/slack/), which is bridged also to `#browsers-and-standards` on [Matrix](https://matrix.to/#/%23browsers-and-standards:ipfs.io) and the [IPFS Discord](https://discord.gg/vZTcrFePpt).
