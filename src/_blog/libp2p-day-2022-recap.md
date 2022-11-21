@@ -11,16 +11,42 @@ author: Prithvi Shahi
 ---
 
 **Table of Contents**
+- [Introduction](#introduction)
+  - [Goals](#goals)
+  - [Takeaways](#takeaways)
+    - [Browser Connectivity Unlocked](#browser-connectivity-unlocked)
+    - [libp2p Interoperability](#libp2p-interoperability)
+    - [Demand for libp2p + HTTP](#demand-for-libp2p--http)
+- [Recap of talks](#recap-of-talks)
+  - [Main Track](#main-track)
+    - [Intro to libp2p: helping with real world application problems](#intro-to-libp2p-helping-with-real-world-application-problems)
+    - [A month in PL EngRes libp2p Development and how you can be involved](#a-month-in-pl-engres-libp2p-development-and-how-you-can-be-involved)
+    - [Browser connectivity state of the union and demo](#browser-connectivity-state-of-the-union-and-demo)
+    - [WebTransport Transport](#webtransport-transport)
+    - [Why WebRTC](#why-webrtc)
+    - [Decentralized NAT Hole Punching](#decentralized-nat-hole-punching)
+    - [libp2p in Nim](#libp2p-in-nim)
+    - [libp2p Interoperability Testing with Testground](#libp2p-interoperability-testing-with-testground)
+  - [Unconf Sessions](#unconf-sessions)
+    - [WebRTC signaling data over QR Codes](#webrtc-signaling-data-over-qr-codes)
+    - [Formal Analysis of GossipSub](#formal-analysis-of-gossipsub)
+    - [Introducing Quiet - Encrypted P2P team chat without servers, just Tor](#introducing-quiet---encrypted-p2p-team-chat-without-servers-just-tor)
+    - [How Pyrsia is Using libp2p To Take Over the World](#how-pyrsia-is-using-libp2p-to-take-over-the-world)
+    - [Decentralized Chat with IPFS \& libp2p](#decentralized-chat-with-ipfs--libp2p)
+    - [DOS Defense - Do’s and Dont’s](#dos-defense---dos-and-donts)
+    - [Intro to Lodestar](#intro-to-lodestar)
+    - [The power of two choices: Why the Kademlia binary tree isn’t balanced and what we can do about it](#the-power-of-two-choices-why-the-kademlia-binary-tree-isnt-balanced-and-what-we-can-do-about-it)
+- [Get Involved/Stay Tuned](#get-involvedstay-tuned)
 
 # Introduction
 
 ![Untitled](../assets/libp2p-day-2022-1.png)
 
-![Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-2.png)
+![Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-2.png) ![Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-3.png)
 
 Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
 
-![Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-3.png)
+
 
 Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
 
