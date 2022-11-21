@@ -3,52 +3,28 @@ tags:
 - libp2p
 title: libp2p Day 2022 Recap
 description: 
-date: 2022-11-22
+date: 2022-11-21
 permalink: "/2022-11-22-libp2p-day-2022-recap/"
 translationKey: ''
-header_image:
+header_image: /state-of-ipfs-in-js.png
 author: Prithvi Shahi
 ---
 
 **Table of Contents**
-- [Introduction](#introduction)
-  - [Goals](#goals)
-  - [Takeaways](#takeaways)
-    - [Browser Connectivity Unlocked](#browser-connectivity-unlocked)
-    - [libp2p Interoperability](#libp2p-interoperability)
-    - [Demand for libp2p + HTTP](#demand-for-libp2p--http)
-- [Recap of talks](#recap-of-talks)
-  - [Main Track](#main-track)
-    - [Intro to libp2p: helping with real world application problems](#intro-to-libp2p-helping-with-real-world-application-problems)
-    - [A month in PL EngRes libp2p Development and how you can be involved](#a-month-in-pl-engres-libp2p-development-and-how-you-can-be-involved)
-    - [Browser connectivity state of the union and demo](#browser-connectivity-state-of-the-union-and-demo)
-    - [WebTransport Transport](#webtransport-transport)
-    - [Why WebRTC](#why-webrtc)
-    - [Decentralized NAT Hole Punching](#decentralized-nat-hole-punching)
-    - [libp2p in Nim](#libp2p-in-nim)
-    - [libp2p Interoperability Testing with Testground](#libp2p-interoperability-testing-with-testground)
-  - [Unconf Sessions](#unconf-sessions)
-    - [WebRTC signaling data over QR Codes](#webrtc-signaling-data-over-qr-codes)
-    - [Formal Analysis of GossipSub](#formal-analysis-of-gossipsub)
-    - [Introducing Quiet - Encrypted P2P team chat without servers, just Tor](#introducing-quiet---encrypted-p2p-team-chat-without-servers-just-tor)
-    - [How Pyrsia is Using libp2p To Take Over the World](#how-pyrsia-is-using-libp2p-to-take-over-the-world)
-    - [Decentralized Chat with IPFS \& libp2p](#decentralized-chat-with-ipfs--libp2p)
-    - [DOS Defense - Do’s and Dont’s](#dos-defense---dos-and-donts)
-    - [Intro to Lodestar](#intro-to-lodestar)
-    - [The power of two choices: Why the Kademlia binary tree isn’t balanced and what we can do about it](#the-power-of-two-choices-why-the-kademlia-binary-tree-isnt-balanced-and-what-we-can-do-about-it)
-- [Get Involved/Stay Tuned](#get-involvedstay-tuned)
+
+[[toc]]
 
 # Introduction
 
-![Untitled](../assets/libp2p-day-2022-1.png)
+<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<img src="../assets/libp2p-day-2022-1.png" alt="Logo" width="400">
 
-![Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-2.png) ![Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-3.png)
+<img src="../assets/libp2p-day-2022-2.png" width="500"> <img src="../assets/libp2p-day-2022-3.png" width="500">
+</p>
 
-Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
+<!-- Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
 
-
-
-Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
+<!-- Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
 
 Last month, on October 30th 2022, over <insert ~# attendees> libp2p users and contributors gathered together for the first ever libp2p Day! 
 
@@ -58,7 +34,7 @@ Speakers represented organizations like [Little Bear Labs](https://littlebearlab
 
 In the larger context, libp2p Day was hosted at [IPFS Camp 2022](https://2022.ipfs.camp/) as a part of a diverse lineup where speakers covered topics across domains such as libp2p, IPFS, content routing, decentralized computation, and more!
 
-[https://twitter.com/IPFS/status/1587053346829094915](https://twitter.com/IPFS/status/1587053346829094915)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎥 3 days of <a href="https://twitter.com/hashtag/IPFSCamp?src=hash&amp;ref_src=twsrc%5Etfw">#IPFSCamp</a> in one short video. 23 tracks, 100+ speakers, and the IPFS community.<br>Watch the recap and relive the fun.⛺️️<br>🎉 Who is ready for next year? <a href="https://t.co/IolaZZduIB">pic.twitter.com/IolaZZduIB</a></p>&mdash; IPFS (@IPFS) <a href="https://twitter.com/IPFS/status/1587053346829094915?ref_src=twsrc%5Etfw">October 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Goals
 
@@ -78,7 +54,7 @@ First class support for WebTransport has enabled libp2p nodes running in the bro
 
 WebRTC Browser to Server has also been making significant progress. Since libp2p Day, the specification [been merged](https://github.com/libp2p/specs/tree/master/webrtc) AND so has the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p/commit/a7148648858fe10e9ba4c2793c7e12392b49c0ab). The Go and JS implementations are also tracking closely.
 
-Check out the [WebTransport](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) and [WebRTC](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) demos below.
+Check out the [WebTransport](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) and [WebRTC](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) demos below, as well as the [new libp2p connectivity site](https://connectivity.libp2p.io/).
 
 ### libp2p Interoperability
 
@@ -92,26 +68,18 @@ There is a growing demand for libp2p + HTTP from libp2p users (especially [Proto
 
 # Recap of talks
 
-The talks at libp2p Day were divided into two sections:
-
-- the **Main Track**
-- the **Unconference (Unconf) Sessions**
-
-The distinction was that the Main Track had its time fully allocated for preplanned presentations whereas the latter Unconf Sessions had open time slots; thus providing an opportunity for libp2p Day participants to have off the cuff discussions and either: present a topic of their choice or request talks on topics they want to learn more about.
-
 Below is list of all talks alongside a brief outline:
 
-## Main Track
+<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
 
-![Marten Seemann presented on browser connectivity. [Pic credit.](https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-4.png)
+<img src="../assets/libp2p-day-2022-4.png" width="500"> <img src="../assets/libp2p-day-2022-5.png" width="500">
+</p>
 
-Marten Seemann presented on browser connectivity. [Pic credit.](https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
+<!-- Marten Seemann presented on browser connectivity. [Pic credit.](https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
 
-![Dennis Trautwein described solutions to problems encountered during NAT traversal. [Pic credit](https://twitter.com/physikerwelt/status/1586683911584813058).](../assets/libp2p-day-2022-5.png)
+<!-- Dennis Trautwein described solutions to problems encountered during NAT traversal. [Pic credit](https://twitter.com/physikerwelt/status/1586683911584813058). -->
 
-Dennis Trautwein described solutions to problems encountered during NAT traversal. [Pic credit](https://twitter.com/physikerwelt/status/1586683911584813058).
-
-### Intro to libp2p: helping with real world application problems
+## Intro to libp2p: helping with real world application problems
 
 Max Inden (rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
@@ -119,7 +87,7 @@ Max Inden (rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
 Max gave an introduction to libp2p, supported transport protocols, secure channels, multiplexing mechanisms, how libp2p [traverses NATs](https://research.protocol.ai/publications/decentralized-hole-punching/), how libp2p discovers peers, how libp2p uses [Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) for peer-to-peer routing, [GossipSub](https://arxiv.org/abs/2007.02754) for publishing and subscribing messages, and how libp2p exchanges data using [BitSwap](https://research.protocol.ai/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/delarocha2021.pdf). He also briefly went over the different implementations, projects using libp2p, and previewed libp2p’s future focus.
 
-### A month in PL EngRes libp2p Development and how you can be involved
+## A month in PL EngRes libp2p Development and how you can be involved
 
 Steve Loeppky (Engineering Manager of libp2p team at Protocol Labs)
 
@@ -127,7 +95,7 @@ Steve Loeppky (Engineering Manager of libp2p team at Protocol Labs)
 
 Steve explained what happens in a given month of libp2p development for projects like Go, JS, and Rust libp2p and the work done to support the wider community. He showcased recent work done to improve [libp2p documentation](http://docs.libp2p.io), [implementation roadmaps](https://github.com/libp2p/specs/blob/master/ROADMAP.md#implementation-roadmaps) and their planned features, and the team structure, project [values](https://www.notion.so/libp2p-a27f9e5cb69648538e444163ce3f7309) and [core tenets](https://github.com/libp2p/specs/blob/master/ROADMAP.md#core-tenets).
 
-### Browser connectivity state of the union and demo
+## Browser connectivity state of the union and demo
 
 Marten Seemann (go-libp2p maintainer, Software Engineer at Protocol Labs)
 
@@ -136,7 +104,7 @@ Marten Seemann (go-libp2p maintainer, Software Engineer at Protocol Labs)
 Marten gave an updated version of a [P2P Paris talk](https://www.youtube.com/watch?v=aXYUw9tikaQ) covering the intricacies of browser communication with other nodes and discussed recent break throughs. He outlined what’s possible with libp2p in the browser today, gave an overview of WebSockets, [WebTransport](https://github.com/libp2p/specs/tree/master/webtransport), and [WebRTC](https://github.com/libp2p/specs/tree/master/webrtc), and future next steps.
 To top it off, Marten linked to [the brand new libp2p connectivity website](https://connectivity.libp2p.io/); a site he put together to make the libp2p connectivity story easier to understand!
 
-### WebTransport Transport
+## WebTransport Transport
 
 Alex Potsides (js-libp2p maintainer, Software Engineer at Protocol Labs)
 
@@ -146,7 +114,7 @@ Alex gave a demo of WebTransport [using the browser to directly fetch a file fro
 
 In his talk, Alex underscored the incredible accomplishment: that browsers can leverage WebTransport to directly talk to a network of distributed peers. He described WebTransport availability in browsers today and how it compares to WebRTC with regard to application performance.
 
-### Why WebRTC
+## Why WebRTC
 
 Ryan Plauche (Software Engineer at [Little Bear Labs](https://littlebearlabs.io/))
 
@@ -158,7 +126,7 @@ Max dove deeper into WebRTC, gave an overview of its history, and described its 
 
 Ryan, from [Little Bear Labs](https://littlebearlabs.io/), presented the work he and his colleagues [John](https://github.com/John-LittleBearLabs) & [Chinmay](https://github.com/ckousik) accomplished to support WebRTC in libp2p. He gave an amazing demo of WebRTC browser to server using one browser client (a react app that has a js-libp2p dialer) and two servers (go-libp2p listeners.) He also verified the demo in real time using Chrome’s chrome://webrtc-internals page to observe data channels and prove messages were actually passed using WebRTC!
 
-### Decentralized NAT Hole Punching
+## Decentralized NAT Hole Punching
 
 Dennis Trautwein (Research Engineer at [ProbeLab](https://research.protocol.ai/groups/probelab/))
 
@@ -168,7 +136,7 @@ Dennis presented on his project to measure the success rates of the novel decent
 
 Dennis ended the presentation with a call to action: participate in the [NAT Hole Punching Measurement Campaign](https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690)!
 
-### libp2p in Nim
+## libp2p in Nim
 
 Tanguy (nim-libp2p maintainer, Software Engineer at [Status.im](https://status.im/))
 
@@ -176,7 +144,9 @@ Tanguy (nim-libp2p maintainer, Software Engineer at [Status.im](https://status.i
 
 Tanguy spoke about the [Nim programming language](https://nim-lang.org/) and drew contrasts between the features and goals of Nim, Go, and Rust. He focused on [nim-libp2p](https://github.com/status-im/nim-libp2p) which underpins applications like [Codex](https://github.com/status-im/nim-codex), [Waku](https://our.status.im/peer-to-peer-messaging-where-whisper-falls-short-and-waku-picks-up/), and [Nimbus](https://nimbus.team/). Tanguy detailed currently supported features in nim-libp2p, what it’s missing, and outlined plans for incoming features (GossipSub improvements, Tor transport, C bindings, running in the browser, and Bluetooth transport.)
 
-### libp2p Interoperability Testing with Testground
+Fun fact: nim-libp2p recently became the first libp2p implementation to cut a 1.0 release 🥳
+
+## libp2p Interoperability Testing with Testground
 
 Laurent Senta (Productivity Engineer at Protocol Labs)
 
@@ -186,19 +156,16 @@ Laurent gave a talk introducing [Testground](https://docs.testground.ai/) and ho
 
 Laurent also previewed upcoming features (support for complex test suites, Node JS and Browser JS tests, etc.) and plans for quality of life improvements (simplify debugging, documentation, and stability improvements.)
 
-## Unconf Sessions
+<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
 
-![Untitled](../assets/libp2p-day-2022-6.png)
+<a><img src="../assets/libp2p-day-2022-6.png" width="500"> <img src="../assets/libp2p-day-2022-7.png" width="500"></a>
+</p>
 
-![Drew Ewing presented the Iridium and the Satellite.im project. [Pic credit.](https://twitter.com/Satellite_im/status/1586734161066278912)](../assets/libp2p-day-2022-7.png)
+<!-- Drew Ewing presented the Iridium and the Satellite.im project. [Pic credit.](https://twitter.com/Satellite_im/status/1586734161066278912) -->
 
-Drew Ewing presented the Iridium and the Satellite.im project. [Pic credit.](https://twitter.com/Satellite_im/status/1586734161066278912)
+<!-- A glimpse into the audience. [Pic credit.](https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
 
-![A glimpse into the Unconf session. [Pic credit.](https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)](../assets/libp2p-day-2022-8.png)
-
-A glimpse into the Unconf session. [Pic credit.](https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g)
-
-### WebRTC signaling data over QR Codes
+## WebRTC signaling data over QR Codes
 
 Gorka (Tech lead at [Gather](https://www.gather.town/))
 
@@ -206,7 +173,7 @@ Gorka (Tech lead at [Gather](https://www.gather.town/))
 
 Gorka demonstrated a novel experiment: WebRTC data exchange over QR codes. He described how it’s possible to share any data using QR codes and explained how this method can be used to exchange signaling data to establish a WebRTC connection between two devices on the same network.
 
-### Formal Analysis of GossipSub
+## Formal Analysis of GossipSub
 
 Ankit Kumar (PhD student at Northeastern University)
 
@@ -214,7 +181,7 @@ Ankit Kumar (PhD student at Northeastern University)
 
 Ankit presented on work he and his colleagues at Northeastern University did to formally specify the GossipSub protocol. This critical work cross validated the [prose specification](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) against GossipSub implementations in the Filecoin and Ethereum networks. Ankit detailed how the team at Northeastern used the [ACL2S theorem prover](http://acl2s.ccs.neu.edu/acl2s/doc/) as a part of the formalization effort and arrived at a scoring function (used to determine good peers vs. bad peers) with four essentials properties needed to prevent Sybil attacks. He shared findings and discussed which properties were satisfied on Filecoin and Ethereum, and outlined future directions to develop a verified network stack.
 
-### Introducing Quiet - Encrypted P2P team chat without servers, just Tor
+## Introducing Quiet - Encrypted P2P team chat without servers, just Tor
 
 Holmes Wilson (Founder of [Fight for the Future](https://www.fightforthefuture.org/))
 
@@ -222,7 +189,7 @@ Holmes Wilson (Founder of [Fight for the Future](https://www.fightforthefuture.o
 
 Holmes presented [Quiet](https://github.com/TryQuiet/quiet), a slack alternative focused on privacy, built on IPFS, OrbitDB, and Tor .onion services. Quiet teams operate in private libp2p and IPFS networks (over Tor) which use a modified libp2p WebSockets transport combined with Tor, as well as BitSwap and PubSub for messaging. Holmes also provided contrasts between Quiet and other privacy focused (Signal) and non-privacy focused team messaging apps (Matrix, Mattermost, etc.)
 
-### How Pyrsia is Using libp2p To Take Over the World
+## How Pyrsia is Using libp2p To Take Over the World
 
 Elliot Frisch (Blockchain Developer at [JFrog](https://jfrog.com/))
 
@@ -230,7 +197,7 @@ Elliot Frisch (Blockchain Developer at [JFrog](https://jfrog.com/))
 
 Elliot introduced and gave a demo of [Pyrsia](https://pyrsia.io/), a binary build & distribution system written in Rust and built on top of libp2p for messaging (instead of http or ssh.) He detailed how Pyrsia seeks to provide provenance when distributing binaries with the aim to prevent known exploits like the [SolarWinds hack](https://www.wired.com/story/solarwinds-hack-supply-chain-threats-improvements/), [Log4Shell exploit](https://news.sophos.com/en-us/2021/12/17/inside-the-code-how-the-log4shell-exploit-works/), [malicious crates in rust](https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal.html), and [domain takeovers](https://jfrog.com/blog/npm-package-hijacking-through-domain-takeover-how-bad-is-this-new-attack/).
 
-### Decentralized Chat with IPFS & libp2p
+## Decentralized Chat with IPFS & libp2p
 
 Drew Ewing (CTO at [Satellite.im](http://satellite.im))
 
@@ -238,7 +205,7 @@ Drew Ewing (CTO at [Satellite.im](http://satellite.im))
 
 Drew gave an introduction to Satellite, a decentralized video, voice, and chat application which utilizes libp2p and IPFS. He described [Iridium](https://github.com/Satellite-im/iridium), an abstraction layer that bootstraps both IPFS and libp2p and uses [DIDs](https://www.w3.org/TR/did-core/) for user identity. He ended the presentation with a demo where he generated a DID, created a new user account, and sent messages. You can play with a demo here: [https://core.satellite.im/](https://core.satellite.im/)
 
-### DOS Defense - Do’s and Dont’s
+## DOS Defense - Do’s and Dont’s
 
 Max Inden ( rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
@@ -246,7 +213,7 @@ Max Inden ( rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
 Max’s third talk of the day outlined how to prevent DoS attacks by explaining what an application should do (bound resources, enforce backpressure, etc.) and what an app should avoid. This was a fun, interactive session where Max presented code snippets and had participants point out how an attacker could take advantage of flaws in the code.
 
-### Intro to Lodestar
+## Intro to Lodestar
 
 Cayman Nava (js-libp2p & [Lodestar](https://github.com/chainsafe/lodestar) maintainer, Blockchain Engineer at [ChainSafe Systems](https://chainsafe.io/))
 
@@ -254,7 +221,7 @@ Cayman Nava (js-libp2p & [Lodestar](https://github.com/chainsafe/lodestar) maint
 
 Cayman gave an overview of [Lodestar](https://github.com/chainsafe/lodestar), an Ethereum consensus client implemented in TypeScript and its use of js-libp2p. He described the unique challenges of writing high performance TypeScript/JavaScript, and explained how the ChainSafe team uses metrics and CPU profiling to test js-libp2p and Lodestar in production.
 
-### The power of two choices: Why the Kademlia binary tree isn’t balanced and what we can do about it
+## The power of two choices: Why the Kademlia binary tree isn’t balanced and what we can do about it
 
 Petar Maymounkov (co-author of [Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf), Senior Research Engineer at Protocol Labs)
 
