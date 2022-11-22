@@ -15,6 +15,8 @@ After a three-year hiatus, the IPFS community came together again for [IPFS Camp
 
 Over 550 attendees joined for a collection of talks, workshops, discussion circles, hacking time, and dinners. Here are just a few highlights of the over 100 sessions from the 3-day Camp. You can also watch all of the talks on the [IPFS YouTube channel](https://www.youtube.com/c/IPFSbot).
 
+@[youtube](fGwhPLik3_4)
+
 ## The State of the IPFS Ecosystem
 
 ![](../assets/mollyipfscamp2.jpg)
