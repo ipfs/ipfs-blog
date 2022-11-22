@@ -6,7 +6,7 @@ description: Recap of libp2p Day during IPFS Camp 2022 in Lisbon!
 date: 2022-11-21
 permalink: "/2022-11-22-libp2p-day-2022-recap/"
 translationKey: ''
-header_image: /libp2p-day-blog-header.png
+header_image: /libp2p-day-blog-header.jpg
 author: Prithvi Shahi
 ---
 
@@ -18,13 +18,13 @@ author: Prithvi Shahi
 
 <div class="container" style="display:flex; column-gap:10px;">
     <figure>
-        <img src="../assets/libp2p-day-2022-2.png"  width="500">
+        <img src="../assets/libp2p-day-2022-2.jpg"  width="500">
         <figcaption style="font-size:x-small;">Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky.
             <a href="https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
         </figcaption>
     </figure>
     <figure>
-        <img src="../assets/libp2p-day-2022-3.png" width="500">
+        <img src="../assets/libp2p-day-2022-3.jpg" width="500">
         <figcaption style="font-size:x-small;">Max Inden gave a high level introduction to libp2p.
             <a href="https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
         </figcaption>
@@ -77,13 +77,13 @@ Below is list of all talks alongside a brief outline:
 
 <div class="container" style="display:flex; column-gap:10px;">
     <figure>
-        <img src="../assets/libp2p-day-2022-4.png"  width="500">
+        <img src="../assets/libp2p-day-2022-4.jpg"  width="500">
         <figcaption style="font-size:x-small;">Marten Seemann presented on browser connectivity.
             <a href="https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
         </figcaption>
     </figure>
     <figure>
-        <img src="../assets/libp2p-day-2022-5.png" width="500">
+        <img src="../assets/libp2p-day-2022-5.jpg" width="500">
         <figcaption style="font-size:x-small;">Dennis Trautwein described solutions to problems encountered during NAT traversal.
             <a href="https://twitter.com/physikerwelt/status/1586683911584813058">[Pic credit.]</a>
         </figcaption>
@@ -169,13 +169,13 @@ Laurent also previewed upcoming features (support for complex test suites, Node 
 
 <div class="container" style="display:flex; column-gap:10px;">
     <figure>
-        <img src="../assets/libp2p-day-2022-6.png"  width="500">
+        <img src="../assets/libp2p-day-2022-6.jpg"  width="500">
         <figcaption style="font-size:small;">Drew Ewing presented the Iridium and the Satellite.im project.
             <a href="https://twitter.com/Satellite_im/status/1586734161066278912">[Pic credit.]</a>
         </figcaption>
     </figure>
     <figure>
-        <img src="../assets/libp2p-day-2022-7.png" width="500">
+        <img src="../assets/libp2p-day-2022-7.jpg" width="500">
         <figcaption style="font-size:x-small;">A glimpse into the audience.
             <a href="https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
         </figcaption>
