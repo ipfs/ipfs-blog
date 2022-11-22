@@ -33,7 +33,7 @@ author: Prithvi Shahi
 
 Last month, on October 30th 2022, over <insert ~# attendees> libp2p users and contributors gathered together for the first ever libp2p Day! 
 
-The day was organized by the [Protocol Labs EngRes](https://www.notion.so/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) libp2p team (maintainers of the [Go](https://github.com/libp2p/go-libp2p), [Rust](https://github.com/libp2p/rust-libp2p), and [JavaScript](https://github.com/libp2p/js-libp2p) implementations) and included talks from maintainers, contributors, community members, and users. Topics included latest libp2p updates, preview of future roadmap items, bleeding-edge demos on browser connectivity using new transport protocols, and much more.
+The day was organized by the [Protocol Labs EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) libp2p team (maintainers of the [Go](https://github.com/libp2p/go-libp2p), [Rust](https://github.com/libp2p/rust-libp2p), and [JavaScript](https://github.com/libp2p/js-libp2p) implementations) and included talks from maintainers, contributors, community members, and users. Topics included latest libp2p updates, preview of future roadmap items, bleeding-edge demos on browser connectivity using new transport protocols, and much more.
 
 Speakers represented organizations like [Little Bear Labs](https://littlebearlabs.io/), [ChainSafe Systems](https://chainsafe.io/), [Status.im](https://status.im/), [Gather](https://www.gather.town/), [Quiet](https://www.tryquiet.org/), [Pyrsia](https://pyrsia.io/), and [Satellite.im](http://satellite.im/) and shared new, exciting developments built on libp2p.
 
@@ -69,7 +69,7 @@ Checkout [libp2p Interoperability Testing with Testground](#libp2p-interoperabil
 
 #### Demand for libp2p + HTTP
 
-There is a growing demand for libp2p + HTTP from libp2p users (especially [Protocol Labs ProductDev](https://www.notion.so/Teams-c1757afbec9946d68daadf5bc0212b97) teams like Bedrock and [dag.house](http://dag.house)) in order to unlock use cases like integrating directly with CDN infrastructure or enabling the use of a static HTTP cache to respond to requests from a libp2p node. We’ve started [specifying the protocol](https://github.com/libp2p/specs/pull/477) and plan on including this in our immediate 2023 roadmap. 
+There is a growing demand for libp2p + HTTP from libp2p users (especially [Protocol Labs ProductDev](https://pl-strflt.notion.site/Teams-c1757afbec9946d68daadf5bc0212b97) teams like Bedrock and [dag.house](http://dag.house)) in order to unlock use cases like integrating directly with CDN infrastructure or enabling the use of a static HTTP cache to respond to requests from a libp2p node. We’ve started [specifying the protocol](https://github.com/libp2p/specs/pull/477) and plan on including this in our immediate 2023 roadmap. 
 
 ## Recap of talks
 
@@ -104,7 +104,7 @@ Steve Loeppky (Engineering Manager of libp2p team at Protocol Labs)
 
 @[youtube](sG2j1EqVB0Q)
 
-Steve explained what happens in a given month of libp2p development for projects like Go, JS, and Rust libp2p and the work done to support the wider community. He showcased recent work done to improve [libp2p documentation](http://docs.libp2p.io), [implementation roadmaps](https://github.com/libp2p/specs/blob/master/ROADMAP.md#implementation-roadmaps) and their planned features, and the team structure, project [values](https://www.notion.so/libp2p-a27f9e5cb69648538e444163ce3f7309) and [core tenets](https://github.com/libp2p/specs/blob/master/ROADMAP.md#core-tenets).
+Steve explained what happens in a given month of libp2p development for projects like Go, JS, and Rust libp2p and the work done to support the wider community. He showcased recent work done to improve [libp2p documentation](http://docs.libp2p.io), [implementation roadmaps](https://github.com/libp2p/specs/blob/master/ROADMAP.md#implementation-roadmaps) and their planned features, and the team structure, project [values](https://pl-strflt.notion.site/libp2p-a27f9e5cb69648538e444163ce3f7309) and [core tenets](https://github.com/libp2p/specs/blob/master/ROADMAP.md#core-tenets).
 
 ### Browser connectivity state of the union and demo
 
