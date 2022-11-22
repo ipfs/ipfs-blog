@@ -39,7 +39,7 @@ It’s time to accelerate the IPFS ecosystem, and we’re excited to invest in m
 
 Additional information and how to apply will be released later in 2022.
 
-**_Video embed:_** _<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/dBnmUiKc3P0_](https://www.youtube.com/embed/dBnmUiKc3P0 "https://www.youtube.com/embed/dBnmUiKc3P0")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
+_<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/dBnmUiKc3P0_](https://www.youtube.com/embed/dBnmUiKc3P0 "https://www.youtube.com/embed/dBnmUiKc3P0")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
 
 ## Decentralization and Human Rights
 
@@ -51,7 +51,7 @@ Jonathan Dotan, Founding Director of The Starling Lab, spoke about how the acade
 
 “The Starling Lab was an early entrant into the \[Protocol Labs\] ecosystem because we got really excited about IPFS,” Dotan said. The Starling Lab creates research opportunities for journalists, historians, and lawyers by welcoming them into Web3. By utilizing IPFS, The Starling Lab can help implement tools to combat misinformation, whether accidental or intentional, by tracking “the provenance of digital content through the use of open source tools, best practices, and case studies designed to help reduce information uncertainty.”
 
-**_Video Embed:_** _<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/0gbMYNEIVZ8_](https://www.youtube.com/embed/0gbMYNEIVZ8 "https://www.youtube.com/embed/0gbMYNEIVZ8")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
+_<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/0gbMYNEIVZ8_](https://www.youtube.com/embed/0gbMYNEIVZ8 "https://www.youtube.com/embed/0gbMYNEIVZ8")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
 
 **Not your key, not your content**
 
@@ -71,7 +71,7 @@ Vives added, “The enemy of decentralization is very powerful… violence, fear
 
 ## Improving the IPFS Protocol Specification
 
-**_Video Embed:_** _<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/1Lm-uh_8sNc_](https://www.youtube.com/embed/1Lm-uh_8sNc "https://www.youtube.com/embed/1Lm-uh_8sNc")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
+_<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/1Lm-uh_8sNc_](https://www.youtube.com/embed/1Lm-uh_8sNc "https://www.youtube.com/embed/1Lm-uh_8sNc")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
 
 In July 2022, the new Interplanetary Protocol Improvement Process (IPIP) was introduced to establish a clear process for proposing and evaluating IPFS protocol improvements.
 
@@ -83,7 +83,7 @@ Since July, 17 IPIP improvements have been proposed, indicating broader particip
 
 ## Voice Gems: A 1000 Year Archive
 
-**_Video Embed:_** _<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/SumKPB7VUDA_](https://www.youtube.com/embed/SumKPB7VUDA "https://www.youtube.com/embed/SumKPB7VUDA")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
+_<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/SumKPB7VUDA_](https://www.youtube.com/embed/SumKPB7VUDA "https://www.youtube.com/embed/SumKPB7VUDA")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
 
 The [Voice Gems](https://reeps100.com/project/voicegems) project is a “vibrant, unprecedented meditation highlighting the most remarkable, influential, and critically endangered voices on earth to generate digital gemstones and physical sculptures.” The various works can be manifested as NFTs, print, 3-D print, digital video, large scale projection, and cast sculpture. In his talk, Voice Gems creative director Harry Yeff showcased his portfolio of speed-of-light radio transmission, AI synthetic voices, and how emerging technologies provide an artistically explosive and vital discussion on new methods of preservation.
 
