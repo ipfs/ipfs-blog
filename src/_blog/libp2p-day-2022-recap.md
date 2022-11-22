@@ -33,9 +33,9 @@ author: Prithvi Shahi
 
 Last month, on October 30th 2022, libp2p users and contributors gathered together for the first ever libp2p Day! 
 
-The day was organized by the [Protocol Labs EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) libp2p team (maintainers of the [Go](https://github.com/libp2p/go-libp2p), [Rust](https://github.com/libp2p/rust-libp2p), and [JavaScript](https://github.com/libp2p/js-libp2p) implementations) and included talks from maintainers, contributors, community members, and users. Topics included latest libp2p updates, preview of future roadmap items, bleeding-edge demos on browser connectivity using new transport protocols, and much more.
+The day included talks from maintainers, contributors, community members, and users. Topics included latest libp2p updates, preview of future roadmap items, bleeding-edge demos on browser connectivity using new transport protocols, and much more.
 
-Speakers represented organizations like [Little Bear Labs](https://littlebearlabs.io/), [ChainSafe Systems](https://chainsafe.io/), [Status.im](https://status.im/), [Gather](https://www.gather.town/), [Quiet](https://www.tryquiet.org/), [Pyrsia](https://pyrsia.io/), and [Satellite.im](http://satellite.im/) and shared new, exciting developments built on libp2p.
+Speakers shared new, exciting developments built on libp2p and represented organizations like [Little Bear Labs](https://littlebearlabs.io/), [ChainSafe Systems](https://chainsafe.io/), [Status.im](https://status.im/), [Gather](https://www.gather.town/), [Quiet](https://www.tryquiet.org/), [Pyrsia](https://pyrsia.io/), [Satellite.im](http://satellite.im/), and [Protocol Labs](https://protocol.ai/).
 
 In the larger context, libp2p Day was hosted at [IPFS Camp 2022](https://2022.ipfs.camp/) as a part of a diverse lineup where speakers covered topics across domains such as libp2p, IPFS, content routing, decentralized computation, and more!
 
@@ -168,7 +168,7 @@ Laurent also previewed upcoming features (support for complex test suites, Node 
 <div class="container" style="display:flex; column-gap:10px;">
     <figure>
         <img src="../assets/libp2p-day-2022-6.jpg"  width="500">
-        <figcaption style="font-size:small;">Drew Ewing presented the Iridium and the Satellite.im project.
+        <figcaption style="font-size:x-small;">Drew Ewing presented the Iridium and the Satellite.im project.
             <a href="https://twitter.com/Satellite_im/status/1586734161066278912">[Pic credit.]</a>
         </figcaption>
     </figure>
