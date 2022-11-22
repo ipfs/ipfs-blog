@@ -6,7 +6,7 @@ description: Recap of libp2p Day during IPFS Camp 2022 in Lisbon!
 date: 2022-11-21
 permalink: "/2022-11-22-libp2p-day-2022-recap/"
 translationKey: ''
-header_image: /state-of-ipfs-in-js.png
+header_image: /libp2p-day-blog-header.png
 author: Prithvi Shahi
 ---
 
