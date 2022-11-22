@@ -15,8 +15,6 @@ After a three-year hiatus, the IPFS community came together again for [IPFS Camp
 
 Over 550 attendees joined for a collection of talks, workshops, discussion circles, hacking time, and dinners. Here are just a few highlights of the over 100 sessions from the 3-day Camp. You can also watch all of the talks on the [IPFS YouTube channel](https://www.youtube.com/c/IPFSbot).
 
-@[youtube](fGwhPLik3_4)
-
 ## The State of the IPFS Ecosystem
 
 ![](../assets/mollyipfscamp2.jpg)
@@ -28,6 +26,8 @@ Active monthly users of [IPFS-based dapps and tools](https://ecosystem.ipfs.tech
 “We are now seeing 400 millisecond find times in IPFS at the 95th percentile,” Mackinlay said. “This is really thanks to all of the groups that went and rewrote the IPFS and libp2p DHT implementation… We improved the set of nodes that route data in IPFS. There was a massive amount of work that went into making that the case.”
 
 IPFS as a protocol is maturing as well: it’s now supported in 5 browsers, natively or via extension: Brave, Opera, Chromium, Edge, and Firefox. And the recently revamped InterPlanetary Improvement Proposal (IPIP) process offers an open, lightweight process for IPFS protocol improvements with 17 IPIPs submitted since its introduction in July 2022.
+
+@[youtube](fGwhPLik3_4)
 
 ## IPFS Implementations and Funding
 
@@ -41,7 +41,7 @@ It’s time to accelerate the IPFS ecosystem, and we’re excited to invest in m
 
 Additional information and how to apply will be released later in 2022.
 
-@[youtube](dBnmUiKc3P0&list=PLuhRWgmPaHtSEv2DM9J7nSvN7dnVFMM6q&index=8)
+@[youtube](dBnmUiKc3P0)
 
 ## Decentralization and Human Rights
 
