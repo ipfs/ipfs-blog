@@ -53,7 +53,7 @@ Jonathan Dotan, Founding Director of The Starling Lab, spoke about how the acade
 
 “The Starling Lab was an early entrant into the \[Protocol Labs\] ecosystem because we got really excited about IPFS,” Dotan said. The Starling Lab creates research opportunities for journalists, historians, and lawyers by welcoming them into Web3. By utilizing IPFS, The Starling Lab can help implement tools to combat misinformation, whether accidental or intentional, by tracking “the provenance of digital content through the use of open source tools, best practices, and case studies designed to help reduce information uncertainty.”
 
-@[youtube](0gbMYNEIVZ8&list=PLuhRWgmPaHtSEv2DM9J7nSvN7dnVFMM6q&index=6)
+@[youtube](0gbMYNEIVZ8)
 
 **Not your key, not your content**
 
@@ -73,7 +73,7 @@ Vives added, “The enemy of decentralization is very powerful… violence, fear
 
 ## Improving the IPFS Protocol Specification
 
-@[youtube](1Lm-uh_8sNc&list=PLuhRWgmPaHtSEv2DM9J7nSvN7dnVFMM6q&index=41)
+@[youtube](1Lm-uh_8sNc)
 
 In July 2022, the new Interplanetary Protocol Improvement Process (IPIP) was introduced to establish a clear process for proposing and evaluating IPFS protocol improvements.
 
