@@ -25,7 +25,7 @@ Active monthly users of [IPFS-based dapps and tools](https://ecosystem.ipfs.tech
 
 “We are now seeing 400 millisecond find times in IPFS at the 95th percentile,” Mackinlay said. “This is really thanks to all of the groups that went and rewrote the IPFS and libp2p DHT implementation… We improved the set of nodes that route data in IPFS. There was a massive amount of work that went into making that the case.”
 
-IPFS as a protocol is maturing as well: it’s now supported in 5 browsers, natively or via extension: Brave, Opera, Chromium, Edge, and Firefox. And the recently revamped InterPlanetary Improvement Proposal (IPIP) process offers an open, lightweight process for IPFS protocol improvements with 17 IPIPs submitted since its introduction in July 2022. 
+IPFS as a protocol is maturing as well: it’s now supported in 5 browsers, natively or via extension: Brave, Opera, Chromium, Edge, and Firefox. And the recently revamped InterPlanetary Improvement Proposal (IPIP) process offers an open, lightweight process for IPFS protocol improvements with 17 IPIPs submitted since its introduction in July 2022.
 
 ## IPFS Implementations and Funding
 
@@ -75,6 +75,8 @@ Vives added, “The enemy of decentralization is very powerful… violence, fear
 
 In July 2022, the new Interplanetary Protocol Improvement Process (IPIP) was introduced to establish a clear process for proposing and evaluating IPFS protocol improvements.
 
+![](../assets/screenshot-2022-11-22-at-2-25-22-pm.png)
+
 As part of the IPFS Implementations track, IPFS specs steward Marcin Rataj (@lidel) presented an update on IPFS specifications and the IPIP process “Every implementation is a special snowflake. It’s built from different parts of our stack,” said Rataj. “\[Most\] implementations do not implement all the parts. They focus on things that are relevant to use cases \[and that is\] why we are investing in specs to make it easy for people to implement specific blocks of the IPFS stack without having to reference legacy code.”
 
 Since July, 17 IPIP improvements have been proposed, indicating broader participation in IPFS protocol design. Learn more about the process and how to participate in the \`[ipfs/specs](https://github.com/ipfs/specs/blob/main/IPIP_PROCESS.md)\` repository.
@@ -83,7 +85,7 @@ Since July, 17 IPIP improvements have been proposed, indicating broader particip
 
 **_Video Embed:_** _<iframe width="560" height="315" src="_[_https://www.youtube.com/embed/SumKPB7VUDA_](https://www.youtube.com/embed/SumKPB7VUDA "https://www.youtube.com/embed/SumKPB7VUDA")_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>_
 
-The [Voice Gems](https://reeps100.com/project/voicegems) project is a “vibrant, unprecedented meditation highlighting the most remarkable, influential, and critically endangered voices on earth to generate digital gemstones and physical sculptures.” The various works can be manifested as NFTs, print, 3-D print, digital video, large scale projection, and cast sculpture. In his talk, Voice Gems creative director Harry Yeff showcased his portfolio of speed-of-light radio transmission, AI synthetic voices, and how emerging technologies provide an artistically explosive and vital discussion on new methods of preservation. 
+The [Voice Gems](https://reeps100.com/project/voicegems) project is a “vibrant, unprecedented meditation highlighting the most remarkable, influential, and critically endangered voices on earth to generate digital gemstones and physical sculptures.” The various works can be manifested as NFTs, print, 3-D print, digital video, large scale projection, and cast sculpture. In his talk, Voice Gems creative director Harry Yeff showcased his portfolio of speed-of-light radio transmission, AI synthetic voices, and how emerging technologies provide an artistically explosive and vital discussion on new methods of preservation.
 
 \*insert image
 
@@ -96,8 +98,6 @@ The [Voice Gems](https://reeps100.com/project/voicegems) project is a “vibrant
 IPFS Camp 2022 was the first decentralized event of its kind. With over 17 different tracks, attendees had the chance to pick and choose what to join. All of these tracks are also now available on the [IPFS YouTube channel](https://www.youtube.com/c/IPFSbot):
 
 * [IPFS Implementations](https://youtube.com/playlist?list=PLuhRWgmPaHtQchZjO3xBBFDiiqERmjA-a): Meet the teams taking IPFS to the next level and learn how you can find an IPFS implementation to work on.
-
-
 * [IPFS 101: Introduction & User Apps](https://youtube.com/playlist?list=PLuhRWgmPaHtSLRL9zSyKzjuHSpilhp1kL): A hands on session on getting started with IPFS.
 * [IPFS 201: Design Patterns & Developer Tools](https://youtube.com/playlist?list=PLuhRWgmPaHtRP0kfWyDuod_kVHE-5dGGL): covering IPFS app architectures, developer tools, design patterns and everything you need to know to build apps using IPFS.
 * [Content Routing](https://youtube.com/playlist?list=PLuhRWgmPaHtRqhFZ-CAstJ0RIq7Vs-4eO): Approaches and protocols to content routing in IPFS, what we've learned so far, and directions for the future.
