@@ -26,7 +26,7 @@ Read on to learn why this is a key step towards browsers that can meet a far mor
 
 In 2019, we set up a contract with Igalia to work on web platform features and compatibility fixes to make life easier for decentralized web projects and deployment topologies where the browser interacted with services residing on the same computer.
 
-This colloboration covered a *lot* of ground - from IANA to WHAT-WG to W3C to IETF to negotation and coordination with Apple, Google and Mozilla... resulting in a slew of changes catalogued in [this blog post](https://blog.ipfs.tech/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/) in 2021.
+This colloboration covered a *lot* of ground - from IANA to WHAT-WG to W3C to IETF to negotiation and coordination with Apple, Google and Mozilla... resulting in a slew of changes catalogued in [this blog post](https://blog.ipfs.tech/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/) in 2021.
 
 Very few changes were specific to IPFS. A lot of the work was making browsers and the web platform more amenable to localhost-oriented application topologies and non-HTTP protocol work - fixing compat papercuts, aligning security models across engines, cleaning up dusty corners... making the web itself just a little bit better.
 
