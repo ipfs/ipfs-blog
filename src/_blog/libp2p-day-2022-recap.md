@@ -16,7 +16,7 @@ author: Prithvi Shahi
 
 # Introduction
 
-<div class="container" style="display:flex">
+<div class="container" style="display:flex; column-gap:10px;">
     <figure>
         <img src="../assets/libp2p-day-2022-2.png"  width="500">
         <figcaption style="font-size:x-small;">Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky.
@@ -75,7 +75,7 @@ There is a growing demand for libp2p + HTTP from libp2p users (especially [Proto
 
 Below is list of all talks alongside a brief outline:
 
-<div class="container" style="display:flex">
+<div class="container" style="display:flex; column-gap:10px;">
     <figure>
         <img src="../assets/libp2p-day-2022-4.png"  width="500">
         <figcaption style="font-size:x-small;">Marten Seemann presented on browser connectivity.
@@ -167,7 +167,7 @@ Laurent gave a talk introducing [Testground](https://docs.testground.ai/) and ho
 
 Laurent also previewed upcoming features (support for complex test suites, Node JS and Browser JS tests, etc.) and plans for quality of life improvements (simplify debugging, documentation, and stability improvements.)
 
-<div class="container" style="display:flex">
+<div class="container" style="display:flex; column-gap:10px;">
     <figure>
         <img src="../assets/libp2p-day-2022-6.png"  width="500">
         <figcaption style="font-size:small;">Drew Ewing presented the Iridium and the Satellite.im project.
@@ -263,6 +263,6 @@ To learn more about libp2p generally, checkout:
 - The [libp2p connectivity website](https://connectivity.libp2p.io/)
 - The [libp2p curriculum put together by the Protocol Labs Launchpad program](https://curriculum.pl-launchpad.io/curriculum/libp2p/introduction/)
 
-You can reach out to us and stay tuned for our next event announcement by joining the our [various communication channels](https://libp2p.io/#community), joining the [discussion forum](https://discuss.libp2p.io/), following us on [Twitter](https://twitter.com/libp2p), or saying hi in the #libp2p-implementers channel in the [Filecoin public Slack](http://filecoin.io/slack).
+You can reach out to us and stay tuned for our next event announcement by joining our [various communication channels](https://libp2p.io/#community), joining the [discussion forum](https://discuss.libp2p.io/), following us on [Twitter](https://twitter.com/libp2p), or saying hi in the #libp2p-implementers channel in the [Filecoin public Slack](http://filecoin.io/slack).
 
 Cheers!
