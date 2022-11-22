@@ -55,7 +55,7 @@ Some highlights and learnings from libp2p Day and IPFS Camp were:
 
 #### Browser Connectivity Unlocked
 
-First class support for WebTransport has enabled libp2p nodes running in the browser ([limited to Chromium](https://caniuse.com/webtransport)) to connect directly with peers running on a host machine. WebTransport support was first added as an experimental feature in [go-libp2p v0.23.0](https://github.com/libp2p/go-libp2p/releases/tag/v0.23.0) and [Kubo v0.16.0](https://github.com/ipfs/kubo/releases/tag/v0.16.0#-webtransport-new-experimental-transport). Remaining WebTransport work is [tracked here](https://github.com/libp2p/go-libp2p/issues/1827).
+First class support for WebTransport has enabled libp2p nodes running in the browser ([currently limited to Chromium](https://caniuse.com/webtransport)) to connect directly with peers running on a host machine. WebTransport support was first added as an experimental feature in [go-libp2p v0.23.0](https://github.com/libp2p/go-libp2p/releases/tag/v0.23.0) and [Kubo v0.16.0](https://github.com/ipfs/kubo/releases/tag/v0.16.0#-webtransport-new-experimental-transport). Remaining WebTransport work is [tracked here](https://github.com/libp2p/go-libp2p/issues/1827).
 
 WebRTC Browser to Server has also been making significant progress. Since libp2p Day, the specification [been merged](https://github.com/libp2p/specs/tree/master/webrtc) AND so has the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p/commit/a7148648858fe10e9ba4c2793c7e12392b49c0ab). The Go and JS implementations are also tracking closely.
 
