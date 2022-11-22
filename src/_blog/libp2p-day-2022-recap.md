@@ -16,15 +16,20 @@ author: Prithvi Shahi
 
 # Introduction
 
-<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-<img src="../assets/libp2p-day-2022-1.png" alt="Logo" width="400">
-
-<img src="../assets/libp2p-day-2022-2.png" width="500"> <img src="../assets/libp2p-day-2022-3.png" width="500">
-</p>
-
-<!-- Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky. [Pic credit.](https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
-
-<!-- Max Inden gave a high level introduction to libp2p. [Pic credit.](https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
+<div class="container" style="display:flex">
+    <figure>
+        <img src="../assets/libp2p-day-2022-2.png"  width="500">
+        <figcaption>Go, JS, and Rust libp2p core maintainers introduced by Steve Loeppky.
+            <a href="https://twitter.com/IPFS/status/1586670754766143490?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/libp2p-day-2022-3.png" width="500">
+        <figcaption>Max Inden gave a high level introduction to libp2p.
+            <a href="https://twitter.com/IPFS/status/1586665721559392256?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+</div>
 
 Last month, on October 30th 2022, over <insert ~# attendees> libp2p users and contributors gathered together for the first ever libp2p Day! 
 
@@ -70,14 +75,20 @@ There is a growing demand for libp2p + HTTP from libp2p users (especially [Proto
 
 Below is list of all talks alongside a brief outline:
 
-<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-
-<img src="../assets/libp2p-day-2022-4.png" width="500"> <img src="../assets/libp2p-day-2022-5.png" width="500">
-</p>
-
-<!-- Marten Seemann presented on browser connectivity. [Pic credit.](https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
-
-<!-- Dennis Trautwein described solutions to problems encountered during NAT traversal. [Pic credit](https://twitter.com/physikerwelt/status/1586683911584813058). -->
+<div class="container" style="display:flex">
+    <figure>
+        <img src="../assets/libp2p-day-2022-4.png"  width="500">
+        <figcaption>Marten Seemann presented on browser connectivity.
+            <a href="https://twitter.com/IPFS/status/1586676794383638535?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/libp2p-day-2022-5.png" width="500">
+        <figcaption>Dennis Trautwein described solutions to problems encountered during NAT traversal.
+            <a href="https://twitter.com/physikerwelt/status/1586683911584813058">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+</div>
 
 ## Intro to libp2p: helping with real world application problems
 
@@ -156,14 +167,20 @@ Laurent gave a talk introducing [Testground](https://docs.testground.ai/) and ho
 
 Laurent also previewed upcoming features (support for complex test suites, Node JS and Browser JS tests, etc.) and plans for quality of life improvements (simplify debugging, documentation, and stability improvements.)
 
-<p style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-
-<a><img src="../assets/libp2p-day-2022-6.png" width="500"> <img src="../assets/libp2p-day-2022-7.png" width="500"></a>
-</p>
-
-<!-- Drew Ewing presented the Iridium and the Satellite.im project. [Pic credit.](https://twitter.com/Satellite_im/status/1586734161066278912) -->
-
-<!-- A glimpse into the audience. [Pic credit.](https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g) -->
+<div class="container" style="display:flex">
+    <figure>
+        <img src="../assets/libp2p-day-2022-6.png"  width="500">
+        <figcaption>Drew Ewing presented the Iridium and the Satellite.im project.
+            <a href="https://twitter.com/Satellite_im/status/1586734161066278912">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../assets/libp2p-day-2022-7.png" width="500">
+        <figcaption>A glimpse into the audience.
+            <a href="https://twitter.com/IPFS/status/1586744753839919107?s=20&t=I8wcyY6Ie0tPKvQf40Mv0g">[Pic credit.]</a>
+        </figcaption>
+    </figure>
+</div>
 
 ## WebRTC signaling data over QR Codes
 
