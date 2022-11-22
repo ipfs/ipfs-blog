@@ -59,13 +59,13 @@ First class support for WebTransport has enabled libp2p nodes running in the bro
 
 WebRTC Browser to Server has also been making significant progress. Since libp2p Day, the specification [been merged](https://github.com/libp2p/specs/tree/master/webrtc) AND so has the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p/commit/a7148648858fe10e9ba4c2793c7e12392b49c0ab). The Go and JS implementations are also tracking closely.
 
-Check out the [WebTransport](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) and [WebRTC](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) demos below, as well as the [new libp2p connectivity site](https://connectivity.libp2p.io/).
+Check out the [WebTransport](#webtransport-transport) and [WebRTC](#why-webrtc) demos below, as well as the [new libp2p connectivity site](https://connectivity.libp2p.io/).
 
 #### libp2p Interoperability
 
 libp2p teams are spending the tail end of 2022 and much of 2023 focusing on testing libp2p interoperability. The libp2p ecosystem has flourished with a number of different implementations, each with their own set of supported features (including but not limited to transport protocols, multiplexers, secure channels, etc.) Therefore it’s paramount to ensure these features and implementations are compatible with each other and that new releases don’t introduce regressions.
 
-Checkout [libp2p Interoperability Testing with Testground](https://www.notion.so/libp2p-Day-2022-Recap-01c43f6d5d084e5fbb31bd85d2c938c3) to learn more.
+Checkout [libp2p Interoperability Testing with Testground](#libp2p-interoperability-testing-with-testground) to learn more.
 
 #### Demand for libp2p + HTTP
 
