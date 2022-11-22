@@ -31,7 +31,7 @@ author: Prithvi Shahi
     </figure>
 </div>
 
-Last month, on October 30th 2022, over <insert ~# attendees> libp2p users and contributors gathered together for the first ever libp2p Day! 
+Last month, on October 30th 2022, libp2p users and contributors gathered together for the first ever libp2p Day! 
 
 The day was organized by the [Protocol Labs EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) libp2p team (maintainers of the [Go](https://github.com/libp2p/go-libp2p), [Rust](https://github.com/libp2p/rust-libp2p), and [JavaScript](https://github.com/libp2p/js-libp2p) implementations) and included talks from maintainers, contributors, community members, and users. Topics included latest libp2p updates, preview of future roadmap items, bleeding-edge demos on browser connectivity using new transport protocols, and much more.
 
@@ -55,21 +55,21 @@ Some highlights and learnings from libp2p Day and IPFS Camp were:
 
 #### Browser Connectivity Unlocked
 
-First class support for WebTransport has enabled libp2p nodes running in the browser ([currently limited to Chromium](https://caniuse.com/webtransport)) to connect directly with peers running on a host machine. WebTransport support was first added as an experimental feature in [go-libp2p v0.23.0](https://github.com/libp2p/go-libp2p/releases/tag/v0.23.0) and [Kubo v0.16.0](https://github.com/ipfs/kubo/releases/tag/v0.16.0#-webtransport-new-experimental-transport). Remaining WebTransport work is [tracked here](https://github.com/libp2p/go-libp2p/issues/1827).
+First-class support for WebTransport enables libp2p nodes running in the browser ([currently limited to Chromium](https://caniuse.com/webtransport)) to connect directly with peers on a host machine. WebTransport support was first added as an experimental feature in [go-libp2p v0.23.0](https://github.com/libp2p/go-libp2p/releases/tag/v0.23.0) and [Kubo v0.16.0](https://github.com/ipfs/kubo/releases/tag/v0.16.0#-webtransport-new-experimental-transport). The remaining WebTransport work is [tracked here](https://github.com/libp2p/go-libp2p/issues/1827).
 
-WebRTC Browser to Server has also been making significant progress. Since libp2p Day, the specification [been merged](https://github.com/libp2p/specs/tree/master/webrtc) AND so has the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p/commit/a7148648858fe10e9ba4c2793c7e12392b49c0ab). The Go and JS implementations are also tracking closely.
+WebRTC browser-to-server has also made significant progress. Since libp2p Day, the specification [been merged](https://github.com/libp2p/specs/tree/master/webrtc), and the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p/commit/a7148648858fe10e9ba4c2793c7e12392b49c0ab) has shipped! The Go and JS implementations are also tracking closely.
 
 Check out the [WebTransport](#webtransport-transport) and [WebRTC](#why-webrtc) demos below, as well as the [new libp2p connectivity site](https://connectivity.libp2p.io/).
 
 #### libp2p Interoperability
 
-libp2p teams are spending the tail end of 2022 and much of 2023 focusing on testing libp2p interoperability. The libp2p ecosystem has flourished with a number of different implementations, each with their own set of supported features (including but not limited to transport protocols, multiplexers, secure channels, etc.) Therefore it’s paramount to ensure these features and implementations are compatible with each other and that new releases don’t introduce regressions.
+The libp2p ecosystem continues to flourish with several implementations, each with its own set of supported features. It’s paramount to ensure these features and implementations are compatible and that new releases don’t introduce regressions. libp2p teams are spending the tail end of 2022 and much of 2023 focusing on testing libp2p interoperability.
 
 Checkout [libp2p Interoperability Testing with Testground](#libp2p-interoperability-testing-with-testground) to learn more.
 
 #### Demand for libp2p + HTTP
 
-There is a growing demand for libp2p + HTTP from libp2p users (especially [Protocol Labs ProductDev](https://pl-strflt.notion.site/Teams-c1757afbec9946d68daadf5bc0212b97) teams like Bedrock and [dag.house](http://dag.house)) in order to unlock use cases like integrating directly with CDN infrastructure or enabling the use of a static HTTP cache to respond to requests from a libp2p node. We’ve started [specifying the protocol](https://github.com/libp2p/specs/pull/477) and plan on including this in our immediate 2023 roadmap. 
+With the growing demand for libp2p + HTTP, especially by [Protocol Labs ProductDev](https://pl-strflt.notion.site/Teams-c1757afbec9946d68daadf5bc0212b97) teams like Bedrock and [dag.house](http://dag.house)), the team has started drafting an [HTTP specification](https://github.com/libp2p/specs/pull/477), with plans to make this a top priority going into 2023. libp2p + HTTP will enable use cases like integrating directly with CDN infrastructure or allowing a static HTTP cache to respond to requests from a libp2p node.
 
 ## Recap of talks
 
@@ -96,7 +96,7 @@ Max Inden (rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
 @[youtube](J7ZWbpo2AZk)
 
-Max gave an introduction to libp2p, supported transport protocols, secure channels, multiplexing mechanisms, how libp2p [traverses NATs](https://research.protocol.ai/publications/decentralized-hole-punching/), how libp2p discovers peers, how libp2p uses [Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) for peer-to-peer routing, [GossipSub](https://arxiv.org/abs/2007.02754) for publishing and subscribing messages, and how libp2p exchanges data using [BitSwap](https://research.protocol.ai/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/delarocha2021.pdf). He also briefly went over the different implementations, projects using libp2p, and previewed libp2p’s future focus.
+Max introduced libp2p by giving an overview of the supported transport protocols, secure channels, multiplexing mechanisms, how libp2p [traverses NATs](https://research.protocol.ai/publications/decentralized-hole-punching/), how libp2p discovers peers, how libp2p uses [Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) for peer-to-peer routing, [GossipSub](https://arxiv.org/abs/2007.02754) for publishing and subscribing messages, and how libp2p exchanges data using [BitSwap](https://research.protocol.ai/publications/accelerating-content-routing-with-bitswap-a-multi-path-file-transfer-protocol-in-ipfs-and-filecoin/delarocha2021.pdf). He briefly reviewed the different implementations and projects using libp2p and previewed libp2p’s future focus.
 
 ### A month in PL EngRes libp2p Development and how you can be involved
 
@@ -104,7 +104,7 @@ Steve Loeppky (Engineering Manager of libp2p team at Protocol Labs)
 
 @[youtube](sG2j1EqVB0Q)
 
-Steve explained what happens in a given month of libp2p development for projects like Go, JS, and Rust libp2p and the work done to support the wider community. He showcased recent work done to improve [libp2p documentation](http://docs.libp2p.io), [implementation roadmaps](https://github.com/libp2p/specs/blob/master/ROADMAP.md#implementation-roadmaps) and their planned features, and the team structure, project [values](https://pl-strflt.notion.site/libp2p-a27f9e5cb69648538e444163ce3f7309) and [core tenets](https://github.com/libp2p/specs/blob/master/ROADMAP.md#core-tenets).
+Steve outlined a typical month of libp2p development for implementations like Go, JS, and Rust and the work done to support the wider community. He showcased recent work to improve the [libp2p documentation](http://docs.libp2p.io), the [implementation roadmaps](https://github.com/libp2p/specs/blob/master/ROADMAP.md#implementation-roadmaps) and their planned features, and highlighted the team structure, project [values](https://pl-strflt.notion.site/libp2p-a27f9e5cb69648538e444163ce3f7309) and [core tenets](https://github.com/libp2p/specs/blob/master/ROADMAP.md#core-tenets).
 
 ### Browser connectivity state of the union and demo
 
@@ -112,8 +112,8 @@ Marten Seemann (go-libp2p maintainer, Software Engineer at Protocol Labs)
 
 @[youtube](qG_1bYVtGO4)
 
-Marten gave an updated version of a [P2P Paris talk](https://www.youtube.com/watch?v=aXYUw9tikaQ) covering the intricacies of browser communication with other nodes and discussed recent break throughs. He outlined what’s possible with libp2p in the browser today, gave an overview of WebSockets, [WebTransport](https://github.com/libp2p/specs/tree/master/webtransport), and [WebRTC](https://github.com/libp2p/specs/tree/master/webrtc), and future next steps.
-To top it off, Marten linked to [the brand new libp2p connectivity website](https://connectivity.libp2p.io/); a site he put together to make the libp2p connectivity story easier to understand!
+Marten gave an updated version of a [P2P Paris talk](https://www.youtube.com/watch?v=aXYUw9tikaQ) covering the intricacies of browser communication with other nodes and discussed recent breakthroughs. He outlined the current capabilities with libp2p in the browser and gave an overview of WebSockets, [WebTransport](https://github.com/libp2p/specs/tree/master/webtransport), and [WebRTC](https://github.com/libp2p/specs/tree/master/webrtc), and future next steps.
+To top it off, Marten linked to [the brand new libp2p connectivity website](https://connectivity.libp2p.io/), a site he put together to make the libp2p connectivity story easier to understand!
 
 ### WebTransport Transport
 
@@ -121,9 +121,9 @@ Alex Potsides (js-libp2p maintainer, Software Engineer at Protocol Labs)
 
 @[youtube](Dt42Ss6X_Vk)
 
-Alex gave a demo of WebTransport [using the browser to directly fetch a file from Kubo](https://github.com/libp2p/js-libp2p-webtransport/tree/main/examples/fetch-file-from-kubo).
+Alex demoed WebTransport [using the browser to fetch a file from Kubo directly](https://github.com/libp2p/js-libp2p-webtransport/tree/main/examples/fetch-file-from-kubo).
 
-In his talk, Alex underscored the incredible accomplishment: that browsers can leverage WebTransport to directly talk to a network of distributed peers. He described WebTransport availability in browsers today and how it compares to WebRTC with regard to application performance.
+Alex underscored the incredible accomplishment in his talk: browsers can leverage WebTransport to talk directly to a distributed network. He described WebTransport availability in browsers today and how it compares to WebRTC concerning application performance.
 
 ### Why WebRTC
 
@@ -133,9 +133,9 @@ Max Inden ( rust-libp2p maintainer, Software Engineer at Protocol Labs)
 
 @[youtube](ZBIFFuakFHQ)
 
-Max dove deeper into WebRTC, gave an overview of its history, and described its advantages, chiefly how it enables connections between peers using [self-signed certificates](https://en.wikipedia.org/wiki/Self-signed_certificate) and allows for hole punching in the browser. He described the [Browser to Server specification](https://github.com/libp2p/specs/tree/master/webrtc#browser-to-public-server) in greater detail and gave a preview of Browser to Browser connectivity.
+Later, Max dove deeper into WebRTC by offering an overview of its history and describing its advantages, namely, how WebRTC enables connections between peers using [self-signed certificates](https://en.wikipedia.org/wiki/Self-signed_certificate) and allows for hole punching in the browser. He then described the [Browser to Server specification](https://github.com/libp2p/specs/tree/master/webrtc#browser-to-public-server) in greater detail and previewed Browser-to-Browser connectivity.
 
-Ryan, from [Little Bear Labs](https://littlebearlabs.io/), presented the work he and his colleagues [John](https://github.com/John-LittleBearLabs) & [Chinmay](https://github.com/ckousik) accomplished to support WebRTC in libp2p. He gave an amazing demo of WebRTC browser to server using one browser client (a react app that has a js-libp2p dialer) and two servers (go-libp2p listeners.) He also verified the demo in real time using Chrome’s chrome://webrtc-internals page to observe data channels and prove messages were actually passed using WebRTC!
+From [Little Bear Labs](https://littlebearlabs.io/), Ryan presented the work he and his colleagues [John](https://github.com/John-LittleBearLabs) & [Chinmay](https://github.com/ckousik) accomplished to support WebRTC in libp2p. He gave a fantastic demo of WebRTC browser-to-server using one browser client (a react app with a js-libp2p dialer) and two servers (two go-libp2p listeners). He also verified the demo in real-time using Chrome’s chrome://webrtc-internals page to observe the data channels and prove that the intended messages were passed using WebRTC!
 
 ### Decentralized NAT Hole Punching
 
@@ -143,9 +143,7 @@ Dennis Trautwein (Research Engineer at [ProbeLab](https://research.protocol.ai/g
 
 @[youtube](bzL7Y1wYth8)
 
-Dennis presented on his project to measure the success rates of the novel decentralized hole punching mechanism. He discussed how hole punching works, gave an overview of the [Direct Connection Upgrade through Relay (DCUtR) protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md), how measurements are made, and the findings on success rates.
-
-Dennis ended the presentation with a call to action: participate in the [NAT Hole Punching Measurement Campaign](https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690)!
+Dennis presented his project on measuring the success rates of the novel decentralized hole-punching mechanism. He described the hole-punching mechanism and gave an overview of the [Direct Connection Upgrade through Relay (DCUtR) protocol](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md). He then discussed how measurements are made and the findings on success rates. Dennis ended the presentation with a call to action: participate in the [NAT Hole Punching Measurement Campaign](https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690)!
 
 ### libp2p in Nim
 
@@ -163,7 +161,7 @@ Laurent Senta (Productivity Engineer at Protocol Labs)
 
 @[youtube](b2SkC4dYV-A)
 
-Laurent gave a talk introducing [Testground](https://docs.testground.ai/) and how it helps achieve libp2p’s interoperability goal ([as mentioned in Steve’s presentation](https://youtu.be/sG2j1EqVB0Q?t=1064).) He explained the importance of interop testing between libp2p implementations in different and how Testground’s language & runtime agnostic framework is a perfect fit for this use case. In the overview, Laurent described a ping test, how to make a test runnable in Testground, and how build and runtime parameters are specified in test configurations. Notably, he shared how Testground and interop testing has already caught bugs (within a month of tests being enabled)!
+Laurent gave a talk introducing [Testground](https://docs.testground.ai/) and how it helps achieve libp2p’s interoperability goal ([as mentioned in Steve’s presentation](https://youtu.be/sG2j1EqVB0Q?t=1064).) He explained the importance of interop testing between libp2p implementations and how Testground’s language & runtime agnostic framework is a perfect fit for this use case. In the overview, Laurent described a ping test, how to make a test runnable in Testground, and how build and runtime parameters are specified in test configurations. Notably, he shared how Testground and interop testing has already caught bugs (within a month of tests being enabled)!
 
 Laurent also previewed upcoming features (support for complex test suites, Node JS and Browser JS tests, etc.) and plans for quality of life improvements (simplify debugging, documentation, and stability improvements.)
 
@@ -188,7 +186,7 @@ Gorka (Tech lead at [Gather](https://www.gather.town/))
 
 @[youtube](EQFUPZK9CwI)
 
-Gorka demonstrated a novel experiment: WebRTC data exchange over QR codes. He described how it’s possible to share any data using QR codes and explained how this method can be used to exchange signaling data to establish a WebRTC connection between two devices on the same network.
+Gorka demonstrated a novel experiment: WebRTC data exchange over QR codes. He described how it’s possible to share any data using QR codes and explained how this method could be used to exchange signaling data to establish a WebRTC connection between two devices on the same network.
 
 ### Formal Analysis of GossipSub
 
@@ -204,7 +202,7 @@ Holmes Wilson (Founder of [Fight for the Future](https://www.fightforthefuture.o
 
 @[youtube](owSd7uuGwmw)
 
-Holmes presented [Quiet](https://github.com/TryQuiet/quiet), a slack alternative focused on privacy, built on IPFS, OrbitDB, and Tor .onion services. Quiet teams operate in private libp2p and IPFS networks (over Tor) which use a modified libp2p WebSockets transport combined with Tor, as well as BitSwap and PubSub for messaging. Holmes also provided contrasts between Quiet and other privacy focused (Signal) and non-privacy focused team messaging apps (Matrix, Mattermost, etc.)
+Holmes presented [Quiet](https://github.com/TryQuiet/quiet), a slack alternative focused on privacy, built on IPFS, OrbitDB, and Tor .onion services. *Quiet teams* operate in private libp2p and IPFS networks (over Tor) which use a modified libp2p WebSockets transport combined with Tor, as well as BitSwap and PubSub for messaging. Holmes also provided contrasts between Quiet and other privacy focused (Signal) and non-privacy focused team messaging apps (e.g. Matrix and Mattermost.)
 
 ### How Pyrsia is Using libp2p To Take Over the World
 
@@ -212,7 +210,7 @@ Elliot Frisch (Blockchain Developer at [JFrog](https://jfrog.com/))
 
 @[youtube](aIxmQKWUjNY)
 
-Elliot introduced and gave a demo of [Pyrsia](https://pyrsia.io/), a binary build & distribution system written in Rust and built on top of libp2p for messaging (instead of http or ssh.) He detailed how Pyrsia seeks to provide provenance when distributing binaries with the aim to prevent known exploits like the [SolarWinds hack](https://www.wired.com/story/solarwinds-hack-supply-chain-threats-improvements/), [Log4Shell exploit](https://news.sophos.com/en-us/2021/12/17/inside-the-code-how-the-log4shell-exploit-works/), [malicious crates in rust](https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal.html), and [domain takeovers](https://jfrog.com/blog/npm-package-hijacking-through-domain-takeover-how-bad-is-this-new-attack/).
+Elliot introduced and gave a demo of [Pyrsia](https://pyrsia.io/), a binary build & distribution system written in Rust and built on top of libp2p for messaging (instead of HTTP or SSH.) He detailed how Pyrsia seeks to provide provenance when distributing binaries with the aim to prevent known exploits like the [SolarWinds hack](https://www.wired.com/story/solarwinds-hack-supply-chain-threats-improvements/), [Log4Shell exploit](https://news.sophos.com/en-us/2021/12/17/inside-the-code-how-the-log4shell-exploit-works/), [malicious crates in rust](https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal.html), and [domain takeovers](https://jfrog.com/blog/npm-package-hijacking-through-domain-takeover-how-bad-is-this-new-attack/).
 
 ### Decentralized Chat with IPFS & libp2p
 
@@ -220,7 +218,7 @@ Drew Ewing (CTO at [Satellite.im](http://satellite.im))
 
 @[youtube](baqWhUACUAg)
 
-Drew gave an introduction to Satellite, a decentralized video, voice, and chat application which utilizes libp2p and IPFS. He described [Iridium](https://github.com/Satellite-im/iridium), an abstraction layer that bootstraps both IPFS and libp2p and uses [DIDs](https://www.w3.org/TR/did-core/) for user identity. He ended the presentation with a demo where he generated a DID, created a new user account, and sent messages. You can play with a demo here: [https://core.satellite.im/](https://core.satellite.im/)
+Drew introduced Satellite, a decentralized video, voice, and chat application that utilizes libp2p and IPFS. He described [Iridium](https://github.com/Satellite-im/iridium), an abstraction layer that bootstraps both IPFS and libp2p and uses [DIDs](https://www.w3.org/TR/did-core/) for user identity. He ended the presentation with a demo where he generated a DID, created a new user account, and sent messages. You can play with a demo here: [https://core.satellite.im/](https://core.satellite.im/)
 
 ### DOS Defense - Do’s and Dont’s
 
@@ -244,16 +242,16 @@ Petar Maymounkov (co-author of [Kademlia](https://pdos.csail.mit.edu/~petar/pape
 
 @[youtube](0dKz_K-7eoI)
 
-Last but not least, the final talk was presented by Petar and was a very exciting way to cap off libp2p Day. Petar discussed peer ID distribution in the Kademlia DHT, problems that exist, and solutions to those problems. He showed that in an experiment (run many times over) of picking a thousand random numbers and inserting them into a binary tree, the distribution of leaf depths is always going to be the same, even though the tree is different each experiment. Furthermore, Petar described how a theorem that looks at distribution of depths in the tree can be used to summarize the imbalance/non-uniformity of the Kademlia binary tree.
+The final talk by Petar was a great way to cap off libp2p Day. Petar discussed peer ID distribution in the Kademlia DHT - existing problems and solutions to those problems. In the first half of the talk, he showed that in an experiment (run many times over) of picking a thousand random numbers and inserting them into a binary tree, the distribution of leaf depths is always going to be the same, even though the tree is different in each experiment. Furthermore, Petar described how a theorem that looks at distribution of depths in the tree can be used to summarize the imbalance/non-uniformity of the Kademlia binary tree.
 
-The second half of the talk provided a solution and described the power of two choices, an algorithm for picking peer IDs which results in an overall more balanced binary tree with a shallower depth distribution. Petar explains that a well balanced tree can gives us a better inference of network size.
+The second half of the talk provided a solution and described the power of two choices, an algorithm for picking peer IDs results in an overall more balanced binary tree with a shallower depth distribution. Petar explains that a well-balanced tree can give us a better inference of network size.
 
 ## Get Involved/Stay Tuned
 
-A big thank you to the attendees, speakers, and the organizers of libp2p Day! 🤩 It was a joy to have everyone together for the first libp2p Day and we hope to see you at the next one. To those who couldn’t make it this time, we also hope you can make it next time. Until then, these recordings will help you get up to speed.
+A big thank you to the attendees, speakers, and organizers of libp2p Day! 🤩 It was a pleasure to have everyone together for the first libp2p Day and we hope to see you at the next one. To those who couldn’t make it this time around, we hope you can make it next time. Until then, these recordings will help you get up to speed.
 
 - If you’d like to get involved and contribute to libp2p, you can reach out to us using these means: [https://libp2p.io/#community](https://libp2p.io/#community)
-- If you’re a self starter and want to start pushing code immediately, feel free to ping the maintainers in any of these help wanted/good first issues: [go-libp2p](https://github.com/libp2p/go-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [js-libp2p](https://github.com/libp2p/js-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), and [rust-libp2p](https://github.com/libp2p/rust-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3Agetting-started).
+- If you’re a self-starter and want to start pushing code immediately, feel free to ping the maintainers in any of these help wanted/good first issues: [go-libp2p](https://github.com/libp2p/go-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [js-libp2p](https://github.com/libp2p/js-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), and [rust-libp2p](https://github.com/libp2p/rust-libp2p/issues?q=is%3Aopen+is%3Aissue+label%3Agetting-started).
 - If you want to work in and around libp2p full-time, there are various teams hiring including the implementation teams.  See [https://jobs.protocol.ai/jobs?q=libp2p](https://jobs.protocol.ai/jobs?q=libp2p) for opportunities across the [Protocol Labs Network](https://plnetwork.io/).
 - There is a call for participants in the [NAT Hole Punching Measurement Campaign](https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690). Please check it out, any help is appreciated!
 
