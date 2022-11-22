@@ -87,7 +87,7 @@ Since July, 17 IPIP improvements have been proposed, indicating broader particip
 
 The [Voice Gems](https://reeps100.com/project/voicegems) project is a “vibrant, unprecedented meditation highlighting the most remarkable, influential, and critically endangered voices on earth to generate digital gemstones and physical sculptures.” The various works can be manifested as NFTs, print, 3-D print, digital video, large scale projection, and cast sculpture. In his talk, Voice Gems creative director Harry Yeff showcased his portfolio of speed-of-light radio transmission, AI synthetic voices, and how emerging technologies provide an artistically explosive and vital discussion on new methods of preservation.
 
-\*insert image
+![](../assets/voice-gems.jpeg)
 
 “If you remove all musical connotations, there’s a huge responsibility for us to think about what is the scope, what is the limit, but also there are still innovations happening in voice,” said Yeff.
 
