@@ -119,6 +119,7 @@ fields:
     - IPLD
     - js-ipfs
     - Kademlia
+    - kubo
     - libp2p
     - MFS
     - mobile
