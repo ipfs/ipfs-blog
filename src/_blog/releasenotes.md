@@ -10,6 +10,7 @@ data:
   path: https://github.com/ipfs/kubo/releases/tag/v0.17.0
   tags:
   - go-ipfs
+  - kubo
 - title: js-ipfs 0.64.0
   date: 2022-09-07
   publish_date: 2022-09-07T12:00:00.000+00:00
