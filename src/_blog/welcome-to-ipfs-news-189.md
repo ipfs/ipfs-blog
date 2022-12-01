@@ -1,12 +1,15 @@
 ---
 title: Welcome to IPFS News 189!
-description: 'The potential benefits of IPFS over WebDAV, plus more in IPFS News 187. '
-author: Emily Vaughan
-date: 2022-11-16
-permalink: "/weekly-188/"
+description: 'Learn all about the current state of the IPFS Ecosystem, plus more in
+  IPFS News 189. '
+author: Crystal Mills
+date: 2022-11-30
+permalink: "/weekly-189/"
 translationKey: ''
 header_image: "/ipfsnews.png"
 tags:
+- IPFS Camp
+- kubo
 - weekly
 
 ---
@@ -16,9 +19,8 @@ tags:
 
 Since the last IPFS Camp in 2019, we have seen tremendous growth throughout [the entire IPFS ecosystem](https://youtu.be/fGwhPLik3_4)! This year’s three-day event had over 550 attendees, but the growth of the community goes beyond that.
 
-  
-Active monthly users of IPFS-based dapps and tools has grown from 5 million to 50 million. The number of unique nodes continues to grow, making the network more resilient and distributed, and content more available. Meanwhile, performance is improving even as the network grows: it’s now 50x faster to find content across the network.  
-  
+Active monthly users of IPFS-based dapps and tools has grown from 5 million to 50 million. The number of unique nodes continues to grow, making the network more resilient and distributed, and content more available. Meanwhile, performance is improving even as the network grows: it’s now 50x faster to find content across the network.
+
 Thank you to everyone who has become a part of the growing IPFS community! Learn more about the state of the IPFS ecosystem, the new IPFS Implementations Fund, and check out the full list of panels and presentations in the [IPFS Camp 2022 Recap](https://blog.ipfs.tech/2022-11-22-ipfs-camp-22-recap/)!
 
 ## **Brand New on IPFS ✨**
