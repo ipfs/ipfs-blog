@@ -14,25 +14,20 @@ In the Compute-Over-Data track at the 2022 IPFS Camp, we heard from several proj
 
 Many different approaches to "computing" exist, and we heard from all corners of the space!  In the videos of the event, you'll find presentations from projects that are ranging in focus from linux containers and how to use them, all the way to new bytecode VMs which have direct integrations to content-addressed storage and content-addressed code execution primitives; and approaches to scaling which range from developer-centric build tools for creating new software and data pipelines in "the merkle universe", all the way to decentralization strategies for massively scaled parallelized compute job scheduling.
 
-All of the talks were recorded, and you can find the whole playlist here: https://www.youtube.com/playlist?list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa
+All of the talks were recorded, and you can find the whole playlist [here](https://www.youtube.com/playlist?list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa).
 
 Here's a quick summary of all the talks and their topics, to help you find which content you might be interested in:
 
 * In the keynote: David Aronchik and Wes Floyd introduce us to the potential for revolution in the big data age, and what do we mean by "compute over data":
-@[youtube](7XczBBxYTB4)
- 
+  @[youtube](7XczBBxYTB4)
 * In "Warpforge — Hashes go in, hashes come out, exec in the middle!", Eric Evenchick and Eric Myhre introduce Warpforge, a tool for declarative computation and software build pipelines, as well as demonstrate new data structures (in IPLD!) to describe decentralized package management -- emphasizing how to collaborate, without enforced central coordination.
- @[youtube](wcOjT580iaI)
- 
+  @[youtube](wcOjT580iaI)
 * In "Bacalhau — Bringing the Compute to the Data!", David Aronchick tells the story of the Bacalhau project, its origin, motivations, and progress so far, as well as demos of using it to run distributed compute jobs.
- @[youtube](Xj3n0uvQSCM)
-
+  @[youtube](Xj3n0uvQSCM)
 * In "FVM -- The (EVM-Compatible!) Filecoin Virtual Machine", Matt Hamilton shows a new computing environment called the FEVM, which hosts Ethereum-compatible smart-contracts on-chain in Filecoin.  This allows smart contracts that integrate with the state storage mechanisms of Filecoin. Applications of this could include automatic storage deal renegociation, among other ideas.  Live demos are included!
-@[youtube](tLJ-ys2G8tU)
- 
+  @[youtube](tLJ-ys2G8tU)
 * In "Zapps — A new standard for go-anywhere linux executables", Eric Myhre dives into how to ship software on linux, and demonstrates a new way to do it in a drag-and-drop way, with truly minimal system dependencies, and _without_ resorting to containers.
-@[youtube](Q33LgKAwpZU)
-
+  @[youtube](Q33LgKAwpZU)
 
 Tons of questions were asked and answered throughout these talks:
 
