@@ -19,20 +19,20 @@ All of the talks were recorded, and you can find the whole playlist here: https:
 Here's a quick summary of all the talks and their topics, to help you find which content you might be interested in:
 
 * In the keynote: David Aronchik and Wes Floyd introduce us to the potential for revolution in the big data age, and what do we mean by "compute over data":
-  * [youtu.be/7XczBBxYTB4](https://youtu.be/7XczBBxYTB4&list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa)
-  * ((screenshot: TODO select one))
+@[youtube](7XczBBxYTB4)
+ 
 * In "Warpforge — Hashes go in, hashes come out, exec in the middle!", Eric Evenchick and Eric Myhre introduce Warpforge, a tool for declarative computation and software build pipelines, as well as demonstrate new data structures (in IPLD!) to describe decentralized package management -- emphasizing how to collaborate, without enforced central coordination.
-  * [youtu.be/wcOjT580iaI](https://youtu.be/wcOjT580iaI&list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa)
-  * ((screenshot: https://youtu.be/wcOjT580iaI?t=187 ))
+ @[youtube](wcOjT580iaI)
+ 
 * In "Bacalhau — Bringing the Compute to the Data!", David Aronchick tells the story of the Bacalhau project, its origin, motivations, and progress so far, as well as demos of using it to run distributed compute jobs.
-  * [youtu.be/Xj3n0uvQSCM](https://youtu.be/Xj3n0uvQSCM?list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa)
-  * ((screenshot: https://youtu.be/Xj3n0uvQSCM?t=329 ))
+ @[youtube](Xj3n0uvQSCM)
+
 * In "FVM -- The (EVM-Compatible!) Filecoin Virtual Machine", Matt Hamilton shows a new computing environment called the FEVM, which hosts Ethereum-compatible smart-contracts on-chain in Filecoin.  This allows smart contracts that integrate with the state storage mechanisms of Filecoin. Applications of this could include automatic storage deal renegociation, among other ideas.  Live demos are included!
-  * [youtu.be/tLJ-ys2G8tU](https://youtu.be/tLJ-ys2G8tU?list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa)
-  * ((screenshot: https://youtu.be/tLJ-ys2G8tU?t=650 ))
+@[youtube](tLJ-ys2G8tU)
+ 
 * In "Zapps — A new standard for go-anywhere linux executables", Eric Myhre dives into how to ship software on linux, and demonstrates a new way to do it in a drag-and-drop way, with truly minimal system dependencies, and _without_ resorting to containers.
-  * [youtu.be/Q33LgKAwpZU](https://youtu.be/Q33LgKAwpZU?list=PLuhRWgmPaHtTU1u9TGOVviM234URBdEGa)
-  * ((screenshot: https://youtu.be/Q33LgKAwpZU?t=337 ))
+@[youtube](Q33LgKAwpZU)
+
 
 Tons of questions were asked and answered throughout these talks:
 
