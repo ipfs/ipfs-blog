@@ -1,12 +1,13 @@
 ---
 title: Bacalhau Beta v1 - WASM support, Simplified UX and Better Reliability
 description: Bacalhau v1 Beta release and supported features
-date: 2022-12-01
-permalink: '/2022-12-01-bacalhau-beta-v1/'
+date: 2022-11-28
+permalink: '/2022-11-28-bacalhau-beta-v1/'
 translationKey: ''
 header_image: "/bacalhau-high-level-view.png"
 author:  David Aronchick
-tags: []
+tags: 
+- Bacalhau
 
 ---
 
