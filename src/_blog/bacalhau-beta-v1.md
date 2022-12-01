@@ -76,7 +76,7 @@ Our goal is to maintain a quarterly release cadence. By the end of the year, we 
 
 ## Would you like to learn more? Come help!
 
-If you would like to learn more about Balcalhau or let us know how you'd like the project to change and help you, visit any of the following:
+If you would like to learn more about Bacalhau or let us know how you'd like the project to change and help you, visit any of the following:
 
 - Website: [https://bacalhau.org/](https://bacalhau.org/)
 - Docs: [https://docs.bacalhau.org/](https://docs.bacalhau.org/)
