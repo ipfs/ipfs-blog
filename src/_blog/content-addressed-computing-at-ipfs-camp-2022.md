@@ -43,7 +43,7 @@ Tons of questions were asked and answered throughout these talks:
 * How do we get software in the hands of end-users with less fuss? How do we make software packages easier to compose, so more people can join us more easily in building data pipelines?
 * How can we label, annotate, and share references to data, without central coordination? Hash-based identifiers are a given – where do we go from there?
 
-… and okay, some of these questions are just asked; not all of these questions are _answered_. ;) Some of them are hard questions; some have multiple answers! And for the hard problems remaining, if you want to contribute in some way, you can find more information on [getting in touch](https://hackmd.io/1p-4mnePRamrW4u6hwSrWg?both#getting-in-touch) below. All of these projects are looking for both users and contributors.
+… and okay, some of these questions are just asked; not all of these questions are _answered_. ;) Some of them are hard questions; some have multiple answers! And for the hard problems remaining, if you want to contribute in some way, you can find more information on getting in touch below. All of these projects are looking for both users and contributors.
 
 The summaries above hopefully pique your interest – if so, _watch the videos_! Almost every one of these presentations included _live demos_, which are very cool, and hard to summarize in text ;)
 
@@ -51,10 +51,10 @@ The summaries above hopefully pique your interest – if so, _watch the videos_!
 
 If you’re looking for followup contacts for these groups:
 
-* There’s a CoD working group representing **lots** of different projects – not just these that spoke at IPFSCamp, but many more too (and it can be a place to represent yours, as well!) – check out [cod.cloud](https://www.cod.cloud/)and the [`#compute-over-data-wg` channel on Filecoin Slack](https://filecoinproject.slack.com/archives/C03MCV5U77C).
+* There’s a CoD working group representing **lots** of different projects – not just these that spoke at IPFSCamp, but many more too (and it can be a place to represent yours, as well!) – check out [cod.cloud](https://www.cod.cloud/) and the [`#compute-over-data-wg` channel on Filecoin Slack](https://filecoinproject.slack.com/archives/C03MCV5U77C).
 * More info about Bacalhau can be found [bacalhau.org](https://www.bacalhau.org/), and you can get in touch with them in the [`#bacalhau` channel on Filecoin Slack](https://filecoinproject.slack.com/archives/C02RLM3JHUY)!
 * More info about Warpforge can be found at [warpforge.io](http://warpforge.io/), and you can get in touch with them in the [`#warpforge` channel in Matrix](https://matrix.to/#/#warpforge:matrix.org) or see the project’s [Community](https://warpforge.notion.site/Community-676332742afa4276be571f7d035d55db) page for more links.
 * More info about the FVM Project can be found starting at [docs.filecoin.io/fvm](https://docs.filecoin.io/fvm/basics/introduction/), and you can get in touch with them in the [`#FVM` channel on Filecoin Slack](https://filecoinproject.slack.com/archives/C029MT4PQB1)!
 * More info about the Zapp packaging format can be found at [https://zapps.app/](https://zapps.app/ "https://zapps.app/") .
 
-For more information about the IPFS Camp 2022 overall, the event info can be found at [https://2022.ipfs.camp/](https://2022.ipfs.camp/ "https://2022.ipfs.camp/") . More information about the other tracks can be found grouped by this tag: [https://blog.ipfs.tech/?tags=ipfs-camp](https://blog.ipfs.tech/?tags=ipfs-camp "https://blog.ipfs.tech/?tags=ipfs-camp")
+For more information about the IPFS Camp 2022 overall, the event info can be found on the [IPFS Camp site](https://2022.ipfs.camp/). More information about the other tracks can be found grouped by [this tag](https://blog.ipfs.tech/?tags=ipfs-camp).
