@@ -1,5 +1,5 @@
 ---
-title: Bacalhau Beta v1 - WASM support, Simplified UX and Better Reliability
+title: Bacalhau Beta v1: WASM Support, Simplified UX and Better Reliability
 description: Bacalhau v1 Beta release and supported features
 date: 2022-11-28
 permalink: '/2022-11-28-bacalhau-beta-v1/'
@@ -21,7 +21,7 @@ Since our initial public launch in July, we have heard tons of exciting use case
 
 - [Caltech High Energy Physics](http://hep.caltech.edu/): Caltech is partnering with the Bacalhau Project to support Caltech High Energy Physics (HEP) program's continued growth in massive-scale data processing. Together we plan to expand compute over **tens of petabytes of high energy physics experimental data** produced at unprecedented energies at the **Large Hadron Collider at CERN** in Geneva on the network.
 - [City of Las Vegas & Blocz.io](https://medium.com/blocz/open-grid-alliance-unleashes-monetization-platform-in-las-vegas-5061eae8f946): Blocz IO is excited to partner with Bacalhau to process real-time CCTV data for the City of Las Vegas. Our combined services will significantly reduce costs and scale up the existing safety capabilities for its visitors.
-- [Bacalhau Partners with LabDAO to Accelerate Scientific Progress](https://bacalhau.substack.com/p/bacalhau-partners-with-labdao-to): Our goal is to accelerate progress by making scientific tools more accessible - building distributed compute infrastructure is an essential component on the way there. We are excited to be partnering with the Bacalhau team to integrate this piece of the puzzle together”.
+- [Bacalhau Partners with LabDAO to Accelerate Scientific Progress](https://bacalhau.substack.com/p/bacalhau-partners-with-labdao-to): Our goal is to accelerate progress by making scientific tools more accessible - building distributed compute infrastructure is an essential component on the way there. We are excited to be partnering with the Bacalhau team to integrate this piece of the puzzle together.
 - [Bacalhau Case Studies](https://www.bacalhau.org/casestudies/): 
     - Surface Ocean CO₂ Atlas (SOCAT): [Youtube Demo](https://www.notion.so/bc395ced30e949139528e1bb62ff4fe7), [Github](https://www.notion.so/bc395ced30e949139528e1bb62ff4fe7)
     - EUREC4A Cloud Masking: [Github](https://www.notion.so/bc395ced30e949139528e1bb62ff4fe7)
@@ -37,10 +37,10 @@ We are proud to move the Bacalhau API from `alpha` to `beta`. With this change, 
 
 Along with this change, we have several additional features that address some big requests:
 
-- Improvements to network reliability: In particular, by switching the way we are using  libp2p gossipsub, you should see significantly reduced network latency.
-- Native Filecoin Support: via native Lotus integration as well as Estuary integration via an Estuary API key (Estuary publishes results from the network both into IPFS as well as backing them up in Filecoin)
-- Support for WebAssembly: Bacalhau can now deterministically run WASM code either uploaded via the client or stored on IPFS.
-- Job Pipelines From Apache Airflow: Jobs can now be chained together via Airflow, Cron scheduling, and more.
+- **Improvements to network reliability**: In particular, by switching the way we are using  libp2p gossipsub, you should see significantly reduced network latency.
+- **Native Filecoin support**: via native Lotus integration as well as Estuary integration via an Estuary API key (Estuary publishes results from the network both into IPFS as well as backing them up in Filecoin)
+- **Support for WebAssembly**: Bacalhau can now deterministically run WASM code either uploaded via the client or stored on IPFS.
+- **Job pipelines from Apache Airflow**: Jobs can now be chained together via Airflow, Cron scheduling, and more.
 
 ## New Examples
 
@@ -81,7 +81,7 @@ If you would like to learn more about Bacalhau or let us know how you'd like the
 - Website: [https://bacalhau.org/](https://bacalhau.org/)
 - Docs: [https://docs.bacalhau.org/](https://docs.bacalhau.org/)
 - Mail: [https://groups.google.com/g/bacalhau-discuss](https://groups.google.com/g/bacalhau-discuss)
-- Slack: [https://filecoin.io/slack](https://filecoin.io/slack) we are on [#bacalhau](https://filecoinproject.slack.com/archives/C02RLM3JHUY) channel
+- Slack: Slack: [https://filecoin.io/slack](https://filecoin.io/slack) ([#bacalhau](https://filecoin.io/slack) channel)
 - Github: [https://github.com/filecoin-project/bacalhau](https://github.com/filecoin-project/bacalhau)
     
 Thank you so much!
