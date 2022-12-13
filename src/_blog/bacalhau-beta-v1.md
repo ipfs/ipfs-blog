@@ -1,8 +1,8 @@
 ---
 title: 'Bacalhau Beta v1: WASM Support, Simplified UX and Better Reliability'
 description: Bacalhau v1 Beta release and supported features.
-date: 2022-11-28
-permalink: '/2022-11-28-bacalhau-beta-v1/'
+date: 2022-12-13
+permalink: '/2022-12-13-bacalhau-beta-v1/'
 translationKey: ''
 header_image: "/Compute_Over_Data_Blog_Graphic_for_Bacalhau_beta_version_OPT_3.png"
 author:  David Aronchick
@@ -13,11 +13,11 @@ tags:
 
 Hi all!
 
-Today, we are EXCEEDINGLY pleased to announce the Beta of **[Project Bacalhau](https://www.bacalhau.org/)**. Bacalhau enables users to run arbitrary docker containers and wasm images against data stored in IPFS. It is a peer-to-peer network of nodes where each node participates in executing jobs submitted to the cluster. With Bacalhau, we plan to take a meaningful step towards unlocking distributed compute over data for everyone and improving how people interact with the ever-growing amount of information available.
+Today, we are EXCEEDINGLY pleased to announce the Beta of **[Project Bacalhau](https://www.bacalhau.org/)**. Bacalhau is a distributed compute network for IPFS data, where users can run arbitrary docker containers and Wasm images against data stored in IPFS. With Bacalhau, we plan to take a meaningful step towards unlocking distributed, content-addressed compute for everyone and improving how people interact with the ever-growing amount of information available.
 
 ## Background
 
-Since our initial public launch in July, we have heard tons of exciting use cases and people using Bacalhau already for interesting work. These include:
+Since our initial public launch in July, we have heard tons of exciting ways that researchers and entrepreneurs are using Bacalhau. These include:
 
 - [Caltech High Energy Physics](http://hep.caltech.edu/): Caltech is partnering with the Bacalhau Project to support Caltech High Energy Physics (HEP) program's continued growth in massive-scale data processing. Together we plan to expand compute over **tens of petabytes of high energy physics experimental data** produced at unprecedented energies at the **Large Hadron Collider at CERN** in Geneva on the network.
 - [City of Las Vegas & Blocz.io](https://medium.com/blocz/open-grid-alliance-unleashes-monetization-platform-in-las-vegas-5061eae8f946): Blocz IO is excited to partner with Bacalhau to process real-time CCTV data for the City of Las Vegas. Our combined services will significantly reduce costs and scale up the existing safety capabilities for its visitors.
@@ -44,7 +44,7 @@ Along with this change, we have several additional features that address some bi
 
 ## New Examples
 
-We also have been running Bacalhau through its paces - below are just a *few* of the many examples you can *already run* on Bacalhau against IPFS and/or Filecoin data:
+We also have been running Bacalhau through its paces. Below are just a few of the many examples you can *already run* on Bacalhau against IPFS and/or Filecoin data:
 
 - [Python - Hello World](https://docs.bacalhau.org/examples/workload-onboarding/trivial-python/)
 - [R - Hello World](https://docs.bacalhau.org/examples/workload-onboarding/r-hello-world/)
