@@ -1,5 +1,5 @@
 ---
-title: Bacalhau Beta v1: WASM Support, Simplified UX and Better Reliability
+title: 'Bacalhau Beta v1: WASM Support, Simplified UX and Better Reliability'
 description: Bacalhau v1 Beta release and supported features
 date: 2022-11-28
 permalink: '/2022-11-28-bacalhau-beta-v1/'
@@ -81,7 +81,7 @@ If you would like to learn more about Bacalhau or let us know how you'd like the
 - Website: [https://bacalhau.org/](https://bacalhau.org/)
 - Docs: [https://docs.bacalhau.org/](https://docs.bacalhau.org/)
 - Mail: [https://groups.google.com/g/bacalhau-discuss](https://groups.google.com/g/bacalhau-discuss)
-- Slack: [#bacalhau channel](https://filecoin.io/slack)
+- Slack: [https://filecoin.io/slack](https://filecoin.io/slack) ([#bacalhau](https://filecoin.io/slack) channel)
 - Github: [https://github.com/filecoin-project/bacalhau](https://github.com/filecoin-project/bacalhau)
     
 Thank you so much!
