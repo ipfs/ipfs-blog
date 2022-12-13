@@ -170,6 +170,7 @@ pages:
 - src/_blog/ceramic-launches-mainnet-using-ipfs-and-filecoin-for-decentralized-storage.md
 - src/_blog/community-highlight-esteroids.md
 - src/_blog/congrats-gitcoin-grants-round-9-winners.md
+- src/_blog/content-addressed-computing-at-ipfs-camp-2022.md
 - src/_blog/decentralized-games-at-gamedev.js-jam-2021.md
 - src/_blog/decentralizing-infrastructure-during-scaling-ethereum.md
 - src/_blog/decentralizing-the-internet-s-root.md
@@ -212,8 +213,8 @@ pages:
 - src/_blog/just-released-ipfs-cluster-0.14.0.md
 - src/_blog/kitsumon-blends-the-best-of-metaverse-gaming-with-content-addressability.md
 - src/_blog/libp2p-comes-to-protoschool.md
-- src/_blog/libp2p-hole-punching.md
 - src/_blog/libp2p-day-2022-recap.md
+- src/_blog/libp2p-hole-punching.md
 - src/_blog/libp2p-paris-p2p-festival-2022-recap.md
 - src/_blog/meet-the-new-ipfs-blog-news.md
 - src/_blog/minting-fresh-nfts-with-ipfs.md
@@ -251,6 +252,7 @@ pages:
 - src/_blog/welcome-to-ipfs-news-186.md
 - src/_blog/welcome-to-ipfs-news-187.md
 - src/_blog/welcome-to-ipfs-news-188.md
+- src/_blog/welcome-to-ipfs-news-189.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
 - src/_blog/welcome-to-ipfs-weekly-120.md
 - src/_blog/welcome-to-ipfs-weekly-121.md
