@@ -13,7 +13,7 @@ tags:
 
 Hi all!
 
-Today, we are EXCEEDINGLY pleased to announce the Beta of **Project Bacalhau**. With Bacalhau, we plan to take a meaningful step towards unlocking distributed compute over data for everyone and improving how people interact with the ever-growing amount of information available.
+Today, we are EXCEEDINGLY pleased to announce the Beta of **[Project Bacalhau](https://www.bacalhau.org/)**. Bacalhau enables users to run arbitrary docker containers and wasm images against data stored in IPFS. It is a peer-to-peer network of nodes where each node participates in executing jobs submitted to the cluster. With Bacalhau, we plan to take a meaningful step towards unlocking distributed compute over data for everyone and improving how people interact with the ever-growing amount of information available.
 
 ## Background
 
