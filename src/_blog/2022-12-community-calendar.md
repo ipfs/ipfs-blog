@@ -4,7 +4,7 @@ description: 'Check out the new IPFS community calendar where you can participat
 author: Daniel Norman
 date: 2022-12-15
 permalink: '/2022-12-ipfs-community-calendar/'
-header_image: '/ipfs-calendar/ipfs-calendar-cover.png
+header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
 tags:
   - 'community'
   - 'calendar'
