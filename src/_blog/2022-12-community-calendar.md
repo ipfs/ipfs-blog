@@ -1,0 +1,55 @@
+---
+title: Announcing the New IPFS Community Calendar
+description: 'Check out the new IPFS community calendar where you can participate and contribute to one of the many working groups advancing IPFS.'
+author: Daniel Norman
+date: 2022-12-15
+permalink: '/2022-12-ipfs-community-calendar/'
+header_image: '/ipfs-calendar/ipfs-calendar-cover.png
+tags:
+  - 'community'
+  - 'calendar'
+  - 'working groups'
+---
+
+## The IPFS community is growing
+
+Over the last several years, the number of contributors, companies, and working groups advancing IPFS through specs, developer tooling, and implementations has grown significantly.
+
+This reflects an important shift for the IPFS project — **IPFS is now driven by a thriving community** from all corners of the world.
+
+This shift is evident on several fronts: the sheer number number of working groups regularly meeting, the scope and breadth of new projects (expanding IPFS into compute with [[Bacalhau](https://www.bacalhau.org/)), and activity in the [IPFS specifications repo](https://github.com/ipfs/specs/) which has spiked in the last year.
+
+![Contributions to the IPFS Specs](../assets/ipfs-calendar/ipfs-specs-github-contributors.png)
+
+## The New IPFS Community Calendar
+
+Today, we're excited to share the new [IPFS Community Calendar](https://lu.ma/ipfs) as a hub for all IPFS community events — both offline and online.
+
+The new calendar should better serve both newcomers navigating their journey into the IPFS community, and longstanding members becoming aware of other working groups.
+
+We created this for you and are keen to have you join us.
+
+🗓 Subscribe to the calendar to be informed about any new events added to the calendar
+🗳 Register for specific events (and event series for recurring events) in the calendar
+🎫 If you're organising a meetup or event related to IPFS, submit it for inclusion using the "Submit Event" button on [the calendar](https://lu.ma/ipfs). Once submitted we'll review it and publish it (assuming it's relevant.)
+
+
+## Events for everyone
+
+IPFS has many facets as a modular suite of distributed protocols for representing, routing, and transferring content-addressed data. The versatility of IPFS attracts many group such as application developers, low-level protocol developers, service providers, and artists and creatives.
+
+The community calendar should serve as the event hub for all these different groups. We already have events covering a wide spectrum of levels and areas of interest:
+
+- [InterPlantary Office Hours](https://lu.ma/IP-Office-Hours)
+- [ProbeLab Office Hours](TODO)
+- [IPFS Implementers Sync](https://lu.ma/ipfs-implementers)
+- [Move the Bytes Working Group](https://lu.ma/8kk9i628)
+- [IPFS Content Routing Working Group](https://lu.ma/ipfs-routing-wg)
+- [Compute over Data (COD) Working Group](TODO)
+- [IPVM Community Call](https://lu.ma/ipvm)
+- [IPFS Thing 2023](https://lu.ma/ipfsthing-preregistration)
+
+
+We couldn't be more excited to welcome you to join the IPFS events of your interest! 
+
+If you're interested in hosting an event — feel free to submit it for inclusion or [reach out to us](mailto:devrel@ipfs.tech) with any questions.
