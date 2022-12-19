@@ -91,15 +91,15 @@ Now edit the metadata at the top of the file.
 
 #### Custom header image
 
-Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.io/). To set an image:
+Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.tech/). To set an image:
 
 1. Create the image you want to use and crop it to `500px` by `250px`.
 1. Move the image into `static\header_images`.
-1. Rename the image to match the file name of your post. For example, the `085-announcing-rust-ipfs.md` post uses `085-announcing-rust-ipfs.png` as the header.
+1. Rename the image to match the file name of your post. For example, the `2022-12-community-calendar.md` post uses `2022-12-community-calendar.png` as the header.
 1. In the post markdown, edit the front-matter to include the `header_image` variable:
 
 	```markdown
-	header_image: 085-announcing-rust-ipfs.png
+	header_image: 2022-12-community-calendar.png
 	```
 	
 1. Push your changes.
