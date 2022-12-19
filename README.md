@@ -14,7 +14,12 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 ## For post authors/editors
 
-While it's possible to [manually PR a new blog post](#creating-a-new-blog-post-using-the-repo) from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact the developer marketing team.
+There are 2 ways to create a new blog post:
+- Via the [Forestry](https://forestry.io) editor
+- Via a [manual pull request](#creating-a-new-blog-post-using-the-repo)
+
+### Creating a new blog post using Forestry
+Forestry is a content management system (CMS) that automatically creates and manages Github PRs for each new post. Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're a regular contributor to the IPFS blog and would like to request Forestry access, contact Emily Vaughan.
 
 Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.tech. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
 
@@ -47,7 +52,7 @@ Changes you _save_ in Forestry are written directly to the `staging` branch and 
 
 _Note for PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits._ As our overall workflow continues to solidify, this direction may change.
 
-### Creating a new blog post using the repo
+### Creating a new blog post via Github pull request
 
 Each blog post is a markdown file in the [`src/_blog`](./src/_blog) folder, with a little metadata at the top (known as YAML frontmatter) to help us create the post index page.
 
