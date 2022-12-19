@@ -14,7 +14,7 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 ## For post authors/editors
 
-While it's possible to [manually PR a new blog post](#man from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact the developer marketing team.
+While it's possible to [manually PR a new blog post](#creating-a-new-blog-post-using-the-repo) from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact the developer marketing team.
 
 Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.tech. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
 
