@@ -14,7 +14,12 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 ## For post authors/editors
 
-While it's possible to manually PR a new blog post from a local build, **you are strongly encouraged to [use this site's Forestry integration](https://forestry.io) for drafting and editing new content.** Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're an IPFS core team member and don't have Forestry access, contact Jessica Schilling.
+There are 2 ways to create a new blog post:
+- Via the [Forestry](https://forestry.io) editor
+- Via a [manual pull request](#creating-a-new-blog-post-using-the-repo)
+
+### Creating a new blog post using Forestry
+Forestry is a content management system (CMS) that automatically creates and manages Github PRs for each new post. Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're a regular contributor to the IPFS blog and would like to request Forestry access, contact Emily Vaughan.
 
 Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.tech. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
 
@@ -46,6 +51,66 @@ Changes you _save_ in Forestry are written directly to the `staging` branch and 
 **Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** Give your PR a title explaining what changes are inside (the default just says "Staging", which isn't helpful.) _Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer._
 
 _Note for PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits._ As our overall workflow continues to solidify, this direction may change.
+
+### Creating a new blog post via Github pull request
+
+Each blog post is a markdown file in the [`src/_blog`](./src/_blog) folder, with a little metadata at the top (known as YAML frontmatter) to help us create the post index page.
+
+A blog post looks like this:
+
+```markdown
+---
+title: Announcing the New IPFS Community Calendar
+description: 'Check out the new IPFS community calendar where you can participate and contribute to one of the many working groups advancing IPFS.'
+author: Daniel Norman
+date: 2022-12-15
+permalink: '/2022-12-ipfs-community-calendar/'
+header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
+tags:
+  - 'community'
+  - 'calendar'
+  - 'working groups'
+---
+
+## The IPFS community is growing
+
+...
+```
+
+**To create your new post** create a new markdown `md` file in `src/_blog` prefixed with the year and month (as a convention) and change the name to be relevant for your post. e.g.
+
+```console
+$ cd src/_blog
+$ touch 2022-12-community-calendar.md
+```
+
+Now edit the metadata at the top of the file.
+
+- `title` - used as the `h1` and `title` tag on the post-page, and the name of the post on the index page. **required**
+- `description` - used as the meta description tag on the post-page. **required**
+- `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io), please update at posting time to reflect current date - **required** (posts will not be displayed until this date on the live blog, but you will see them locally when using `make dev`)
+- `author` - used to give you credit for your words - **required**
+- `tags` - used to categorize the blog post
+- `permalink` - can be used to override the post URL if needed. Please start and end URLs with a `/` (`/my/url/`).
+- `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.tech/). See [Custom header image](#custom-header-image) for more details.
+
+#### Custom header image
+
+Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.tech/). To set an image:
+
+1. Add the image into `static\header_images`. Typically the image is `2048×1152px` in jpg/png.
+1. Rename the image to match the file name of your post. For example, the `2022-12-community-calendar.md` post uses `2022-12-community-calendar.png` as the header.
+1. In the post markdown, edit the front-matter to include the `header_image` variable:
+
+	```markdown
+	header_image: 2022-12-community-calendar.png
+	```
+
+#### Creating a pull request
+
+To create a pull request, you will need to fork this repository. See the GitHub docs on [how to create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). If you have the [GitHub CLI](https://cli.github.com/) installed, you can use the [`gh pr create` command](https://cli.github.com/manual/gh_pr_create) from the terminal to conveniently create a pull request.
+
+Once you create the pull request, await review.
 
 ### To add a URL redirect for a blog post
 
