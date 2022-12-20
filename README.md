@@ -98,16 +98,19 @@ Now edit the metadata at the top of the file.
 
 Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.tech/). To set an image:
 
-1. Create the image you want to use and crop it to `500px` by `250px`.
-1. Move the image into `static\header_images`.
+1. Add the image into `static\header_images`. Typically the image is `2048×1152px` in jpg/png.
 1. Rename the image to match the file name of your post. For example, the `2022-12-community-calendar.md` post uses `2022-12-community-calendar.png` as the header.
 1. In the post markdown, edit the front-matter to include the `header_image` variable:
 
 	```markdown
 	header_image: 2022-12-community-calendar.png
 	```
-	
-1. Push your changes.
+
+#### Creating a pull request
+
+To create a pull request, you will need to fork this repository. See the GitHub docs on [how to create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). If you have the [GitHub CLI](https://cli.github.com/) installed, you can use the [`gh pr create` command](https://cli.github.com/manual/gh_pr_create) from the terminal to conveniently create a pull request.
+
+Once you create the pull request, await review.
 
 ### To add a URL redirect for a blog post
 
