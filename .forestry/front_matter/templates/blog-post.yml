@@ -77,6 +77,7 @@ fields:
     - AEgir
     - API
     - async/await
+    - Bacalhau
     - Bitswap
     - blockstore
     - bootstrap nodes
@@ -151,6 +152,7 @@ fields:
     target="_blank">file an issue</a> with the details.
 pages:
 - src/_blog/2021-05-31-distributed-wikipedia-mirror-update.md
+- src/_blog/2022-12-07-testground-in-2022.md
 - src/_blog/3s-studio-bringing-unreal-engine-to-ipfs.md
 - src/_blog/a-brave-new-wallet-the-future-of-the-browser-wallet.md
 - src/_blog/a-guide-to-ipfs-connectivity-in-web-browsers.md
@@ -161,6 +163,7 @@ pages:
 - src/_blog/announcing-the-second-ever-ipfs-camp.md
 - src/_blog/audius-uses-ipfs-for-content-streaming-storage-to-empower-artists-creators-worldwide.md
 - src/_blog/aug-20-ipfs.io-gateway-outage-resolution-next-steps.md
+- src/_blog/bacalhau-beta-v1.md
 - src/_blog/browsers-3000-winners-18k-in-prizes-goes-to-security-cryptography-and-gaming-applications.md
 - src/_blog/building-web3-berty.md
 - src/_blog/building-web3-pinata.md
@@ -252,6 +255,7 @@ pages:
 - src/_blog/welcome-to-ipfs-news-187.md
 - src/_blog/welcome-to-ipfs-news-188.md
 - src/_blog/welcome-to-ipfs-news-189.md
+- src/_blog/welcome-to-ipfs-news-190.md
 - src/_blog/welcome-to-ipfs-weekly-119.md
 - src/_blog/welcome-to-ipfs-weekly-120.md
 - src/_blog/welcome-to-ipfs-weekly-121.md
