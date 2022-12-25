@@ -4,6 +4,15 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: WebTransport in libp2p
+  date: 2022-12-19
+  publish_date: 
+  path: https://blog.libp2p.io/2022-12-19-libp2p-webtransport/
+  card_image: "/libp2p_WebTransport_Blog_Header.png"
+  tags:
+  - libp2p
+  - browser
+  - transport
 - title: Why the Internet Needs the Interplanetary File System
   date: 2022-10-09
   publish_date: 
