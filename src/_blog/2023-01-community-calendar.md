@@ -1,9 +1,9 @@
 ---
-title: Announcing the New IPFS Community Calendar
+title: New Year, New IPFS Community Calendar
 description: 'Check out the new IPFS community calendar where you can you can discover and register for IPFS community events, working group meetings, and more.'
 author: Daniel Norman
-date: 2022-12-15
-permalink: '/2022-12-ipfs-community-calendar/'
+date: 2023-01-03
+permalink: '/2023-01-ipfs-community-calendar/'
 header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
 tags:
   - 'community'
@@ -19,7 +19,6 @@ This reflects an important shift for the IPFS project — **IPFS is now driven b
 
 This shift is evident on several fronts: the sheer number of working groups regularly meeting, the scope and breadth of new projects (expanding IPFS into compute with [Bacalhau](https://www.bacalhau.org/), and activity in the [IPFS specifications repo](https://github.com/ipfs/specs/) which has spiked in the last year.
 
-<!-- ![Contributions to the IPFS Specs](../assets/ipfs-calendar/ipfs-specs-github-contributors.png) -->
 
 ## The New IPFS Community Calendar
 
@@ -33,7 +32,7 @@ We created this for you and are keen to have you join us.
 
 ## Events for everyone
 
-The versatility of IPFS attracts a variety of community members such as application developers, low-level protocol developers, service providers, and artists and creatives.
+The versatility of IPFS attracts a variety of community members such as application developers, game developers, low-level protocol developers, service providers, and artists and creatives.
 
 The community calendar should serve as the event hub for all these different groups. We already have events covering a wide spectrum of levels and areas of interest to cater to both newcomers and long standing members of the community:
 
