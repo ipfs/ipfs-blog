@@ -25,7 +25,7 @@ tags:
 }
 </style>
 
-![Screenshot of Disco Chat](https://github.com/TheDiscordian/disco-chat/raw/master/preview.png)
+![Screenshot of Disco Chat](../assets/interplanetary-apps-disco-chat/preview.png)
 <span style="position:relative;top:-1em;">*A peer-to-peer chat application built using Tauri, JavaScript, and HTML.*</span>
 
 ### Table of Contents
