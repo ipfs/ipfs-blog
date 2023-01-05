@@ -44,7 +44,7 @@ The community calendar should serve as the event hub for all these different gro
 - [IPFS Thing 2023](https://lu.ma/ipfsthing-preregistration) - an in-person event bringing together maintainers or core contributors of an IPFS implementation, ranging from production usage to working demo.
 - [Move the Bytes Working Group](https://lu.ma/8kk9i628) - work group focused on shipping a more efficient data transfer protocol for IPFS to replace Bitswap.
 - [ProbeLab IPFS Network Measurements Office Hours](https://lu.ma/ipfs-network-measurements) - for anyone interested in IPFS network measurements in the IPFS
-- [This month in IPFS](https://lu.ma/ipfs-live) - a monthly live stream exploring news and projects in the IPFS ecosystem.
+- [This month in IPFS](https://lu.ma/ipfs-live) - a monthly community-oriented live stream to discuss everything going on in the IPFS ecosystem.
 
 We couldn't be more excited to welcome you to join IPFS events that interest you!
 
