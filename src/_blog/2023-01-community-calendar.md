@@ -22,7 +22,7 @@ This shift is evident on several fronts: the sheer number of working groups regu
 
 ## The New IPFS Community Calendar
 
-Today, we're excited to share the new [IPFS Community Calendar](https://ipfs.fyi/calendar) as a hub for all IPFS community events — both offline and online.
+Today, in the spirit of the new year, we're excited to share the new [IPFS Community Calendar](https://ipfs.fyi/calendar) as a hub for all IPFS community events — both offline and online.
 
 We created this for you and are keen to have you join us.
 
