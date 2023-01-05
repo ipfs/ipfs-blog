@@ -2,7 +2,7 @@
 title: New Year, New IPFS Community Calendar
 description: 'Check out the new IPFS community calendar where you can you can discover and register for IPFS community events, working group meetings, and more.'
 author: Daniel Norman
-date: 2023-01-03
+date: 2023-01-05
 permalink: '/2023-01-ipfs-community-calendar/'
 header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
 tags:
