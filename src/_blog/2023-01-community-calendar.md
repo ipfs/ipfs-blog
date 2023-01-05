@@ -19,7 +19,6 @@ This reflects an important shift for the IPFS project — **IPFS is now driven b
 
 This shift is evident on several fronts: the sheer number of working groups regularly meeting, the scope and breadth of new projects (expanding IPFS into compute with [Bacalhau](https://www.bacalhau.org/), and activity in the [IPFS specifications repo](https://github.com/ipfs/specs/) which has spiked in the last year.
 
-
 ## The New IPFS Community Calendar
 
 Today, in the spirit of the new year, we're excited to share the new [IPFS Community Calendar](https://ipfs.fyi/calendar) as a hub for all IPFS community events — both offline and online.
@@ -29,6 +28,11 @@ We created this for you and are keen to have you join us.
 🗓 Subscribe to the calendar to be informed about any new events added to the calendar
 🗳 Register for specific events (and event series for recurring events) in the calendar
 🎫 If you're organising a meetup or event related to IPFS, submit it for inclusion using the "**Submit** Event" button on [the calendar](https://ipfs.fyi/calendar). Once submitted we'll review it and publish it (assuming it's relevant.)
+
+<br />
+<a href="https://ipfs.fyi/calendar" class="cta-button">
+  Subscribe to the IPFS Community Calendar
+</a>
 
 ## Events for everyone
 
@@ -49,3 +53,8 @@ The community calendar should serve as the event hub for all these different gro
 We couldn't be more excited to welcome you to join IPFS events that interest you!
 
 If you're interested in hosting an event, feel free to submit it for inclusion or [reach out to us](mailto:devrel@ipfs.tech) if you have any questions.
+
+<br />
+<a traget="_blank" href="https://ipfs.fyi/calendar" class="cta-button">
+  Subscribe to the IPFS Community Calendar
+</a>
