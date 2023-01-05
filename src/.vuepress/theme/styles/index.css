@@ -1,5 +1,6 @@
 @import './fonts/index.css';
 @import './tailwind.css';
+@import './prism-okaidia.min.css';
 
 body {
   @apply bg-gray-light antialiased;
