@@ -16,7 +16,7 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 There are 2 ways to create a new blog post:
 - Via the [Forestry](https://forestry.io) editor
-- Via a [manual pull request](#creating-a-new-blog-post-using-the-repo)
+- Via a [manual pull request](#creating-a-new-blog-post-via-github-pull-request)
 
 ### Creating a new blog post using Forestry
 Forestry is a content management system (CMS) that automatically creates and manages Github PRs for each new post. Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're a regular contributor to the IPFS blog and would like to request Forestry access, contact Emily Vaughan.
