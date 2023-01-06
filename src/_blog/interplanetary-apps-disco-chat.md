@@ -48,7 +48,7 @@ At it's core Disco Chat uses IPFS & libp2p, powered by a [Kubo](https://github.c
 
 ## What is Disco Chat?
 
-As mentioned previously, Disco Chat is a peer-to-peer chat application primarily focused on showing developers how to build applications like it. **It's also a passion project of mine**, Discordian.
+As mentioned previously, Disco Chat is a peer-to-peer chat application primarily focused on showing developers how to build peer-to-peer applications with IPFS and Libp2p. **It's also a passion project of mine**, Discordian.
 
 Disco Chat is **meant to demonstrate the most simple yet fully-featured peer-to-peer chat application**. Ultimately it should support full syncing backlog with peers, distributed IPNS profile persistance, offline chatting, end-to-end encryption for DMs, relaying messages to peers who can't connect directly to each-other, and it should be comfortable. Today, most of those features work well, though sadly mobile is currently unsupported (but used to be!).
 
