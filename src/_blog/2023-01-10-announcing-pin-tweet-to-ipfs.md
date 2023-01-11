@@ -34,13 +34,13 @@ We are using tools from the [WebRecorder](https://webrecorder.net/) team to crea
 
 ### Where is it available?
 
-Pin Tweet to IPFS is currently available in [Chrome web store](https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn) and the [Microsoft Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/pintweettoipfs/gimajpahenimjjgobbjjidlljnapmfgf).
+Pin Tweet to IPFS is currently available in the [Chrome web store](https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn) and [Microsoft Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/pintweettoipfs/gimajpahenimjjgobbjjidlljnapmfgf).
 
 <br />
 <a href="https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn" class="cta-button">
   Get Pin Tweet to IPFS for Chrome
 </a>
-<a href="https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn" class="cta-button">
+<a href="https://microsoftedge.microsoft.com/addons/detail/pintweettoipfs/gimajpahenimjjgobbjjidlljnapmfgf" class="cta-button">
   Get Pin Tweet to IPFS for Microsoft Edge
 </a>
 
