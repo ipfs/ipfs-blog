@@ -20,12 +20,10 @@ If we take a look at some recent studies, this centralized content becomes harde
 
 
 > One study estimates that about two percent of the Web disappears from its current location every week
-
-*https://sites.harding.edu/fmccown/pubs/lost-website-survey-cacm-all-in-one.pdf*
+> [*source*](https://sites.harding.edu/fmccown/pubs/lost-website-survey-cacm-all-in-one.pdf)
 
 > The 67.2M collected tweets consist of approximately 65.6M (97.6%) undeleted tweets and 1.6M (2.4%) deleted tweets.
-
-*https://www.heinz.cmu.edu/~acquisti/papers/Acquisti_Large-Scale_Quantitative_Analysis_of_Deleted_Tweets.pdf*
+> [*source*](https://www.heinz.cmu.edu/~acquisti/papers/Acquisti_Large-Scale_Quantitative_Analysis_of_Deleted_Tweets.pdf)
 
 *Pin Tweet to IPFS* aims to help users archive these posts in a verifiable way, publishing to the IPFS network through a [pinning service](https://medium.com/pinata/what-is-an-ipfs-pinning-service-f6ed4cd7e475) so that the content can live on verbatim.
 
@@ -36,8 +34,15 @@ We are using tools from the [WebRecorder](https://webrecorder.net/) team to crea
 
 ### Where is it available?
 
-Pin Tweet to IPFS is currently available in [chrome web store](https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn) and the [Microsoft Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/pintweettoipfs/gimajpahenimjjgobbjjidlljnapmfgf).
+Pin Tweet to IPFS is currently available in [Chrome web store](https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn) and the [Microsoft Edge Add-ons store](https://microsoftedge.microsoft.com/addons/detail/pintweettoipfs/gimajpahenimjjgobbjjidlljnapmfgf).
 
+<br />
+<a href="https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn" class="cta-button">
+  Get Pin Tweet to IPFS for Chrome
+</a>
+<a href="https://chrome.google.com/webstore/detail/pin-tweet-to-ipfs/bkbejdaeamaehgpodkjdbkhkofpijagn" class="cta-button">
+  Get Pin Tweet to IPFS for Microsoft Edge
+</a>
 
 ### What's next?
 
