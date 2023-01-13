@@ -66,7 +66,7 @@ One day I'd love to see the browser version return, but for now we can continue 
 
 ### Disco Chat Today
 
-I **wanted to keep Disco Chat in the browser** as it's easy to create graphical applications that work cross-platform, not to mention the current popularity of Javascript. First I looked at Electron, but I'm haunted by many complaints developers and users have about the behemoth (not to mention it's quite large). After some searching I **found Tauri, a very thin/lightweight browser view** tied together with Rust.
+I **wanted to keep Disco Chat in the browser** as it's easy to create graphical applications that work cross-platform, not to mention the current popularity of Javascript. First I looked at Electron, but I'm haunted by many complaints developers and users have about the behemoth (not to mention it's quite large). After some searching I **found [Tauri](https://tauri.app/), a very thin/lightweight browser view** tied together with Rust.
 
 From there I **created [native-ipfs-building-blox](https://github.com/TheDiscordian/native-ipfs-building-blox)** to assist in creating desktop applications with a webview powered by a Kubo node in the background. The API on the Javascript side is exactly the same, but by using [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) it's **Kubo handling all the heavy lifting** like running the IPFS node instead of js-ipfs. This **gives us a lot of powers like advanced hole punching techniques** using CircuitRelayV2 and being able to listen on a socket in general.
 
