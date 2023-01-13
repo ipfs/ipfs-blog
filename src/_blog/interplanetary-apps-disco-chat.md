@@ -44,7 +44,7 @@ tags:
 
 [**Disco Chat**](https://github.com/TheDiscordian/disco-chat) is a fun, easy-to-use peer-to-peer desktop chat application with custom profiles, end-to-end encryption, offline chat sync, and more! It's meant to show developers how to build a simple peer-to-peer application with IPFS and libp2p. This blog post will take you on a tour through Disco Chat's design and implementation.
 
-At it's core Disco Chat uses IPFS & libp2p, powered by a [Kubo](https://github.com/ipfs/kubo) node. It's **written in mostly JavaScript** with the **interface in HTML/CSS** to hopefully make it easy-to-use for most developers today. There's a **Rust component from [Tauri](https://tauri.app/)** which allows us to have a thin browser to work with on the desktop (and mobile in the future!), **giving us the full power of Kubo**, JavaScript, HTML, and CSS in a single application.
+At its core Disco Chat uses IPFS & libp2p, powered by a [Kubo](https://github.com/ipfs/kubo) node. It's **written in mostly JavaScript** with the **interface in HTML/CSS**. There's a **Rust component from [Tauri](https://tauri.app/)** which allows us to have a thin browser to work with on the desktop (and mobile in the future!), **giving us the full power of Kubo**, JavaScript, HTML, and CSS in a single application.
 
 ## What is Disco Chat?
 
