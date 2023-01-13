@@ -95,7 +95,7 @@ Previously, in the chat example a user's nickname was sent over with each messag
 
 #### Technical breakdown
 
-The meat of the IPNS Profiles code lives in [ui/peers/ipns.js](https://github.com/TheDiscordian/disco-chat/blob/master/ui/peers/ipns.js), here's a *slightly* modified example, which might be **easier to snatch up as a snippet:**
+The meat of the IPNS Profiles code lives in [ui/peers/ipns.js](https://github.com/TheDiscordian/disco-chat/blob/master/ui/peers/ipns.js). Here's a *slightly* modified example, which might be **easier to snatch up as a snippet:**
 
 ```js
 // fetchPeerInfo will try to resolve a PeerID over IPNS to get their profile information, returning it as an object
