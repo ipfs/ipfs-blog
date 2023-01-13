@@ -82,7 +82,7 @@ Disco Chat has many features, some notable ones:
 - Image sharing
 - Video sharing
 
-And these are cool, but nothing that stands out as special in the web3 space (except maybe serverless & chainless chat rooms). To make Disco Chat stand out with some useful features other devs could learn from I did some brainstorming and reading with the community and my fellow teammates. I concluded many **devs get hung up on at least these two things** in a distributed and chainless/consensusless environment:
+To make Disco Chat stand out with some useful features other devs could learn from, I did some brainstorming and reading with the community and my fellow teammates. I concluded many **devs get hung up on at least these two things** in a distributed and chainless/consensusless environment:
 
 1. **How to have mutable data beyond just a website / redirect**
 2. **How to encrypt or hide data**
