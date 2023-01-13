@@ -182,7 +182,7 @@ Disco Chat's encryption example lives in [ui/crypto.js](https://github.com/TheDi
 - [aes-js](https://www.npmjs.com/package/aes-js) - to handle symmetric encryption
 - [bs58](https://www.npmjs.com/package/bs58) - to decode PeerIDs
 
-To decrypt a message all a reciever needs is the nonce used to generate the encrypted message, and the encrypted message itself. Here's a code snippet:
+To decrypt a message, all a receiver needs is the nonce used to generate the encrypted message and the encrypted message itself. Here's a code snippet:
 
 ```js
 // decryptMsg is called by the receiver to decrypt the message. It takes the
