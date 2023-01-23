@@ -4,7 +4,7 @@ description: 'Check out Disco Chat, a peer-to-peer chat application built to dem
 author: Discordian
 date: 2023-01-12
 permalink: '/interplanetary-apps-disco-chat/'
-header_image: '/interplanetary-apps-cover.png'
+header_image: '/ipfs-blog-gateway-5.jpg'
 tags:
   - 'ipfs'
   - 'tutorial'
