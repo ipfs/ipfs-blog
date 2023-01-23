@@ -74,7 +74,7 @@ After this I **just dropped the browser-based Disco Chat into the [ui directory]
 
 ## Disco Chat's Features
 
-Disco Chat has many features, some notable ones:
+Disco Chat has many features, all of which operate peer-to-peer, some notable ones:
 
 - Chat rooms
 - Emojis
