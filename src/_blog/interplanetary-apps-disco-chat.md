@@ -70,7 +70,7 @@ I **wanted to keep Disco Chat in the browser** as it's easy to create graphical 
 
 From there I **created [native-ipfs-building-blox](https://github.com/TheDiscordian/native-ipfs-building-blox)** to assist in creating desktop applications with a webview powered by a Kubo node in the background. The API on the Javascript side is exactly the same, but by using [ipfs-http-client](https://www.npmjs.com/package/ipfs-http-client) it's **Kubo handling all the heavy lifting** like running the IPFS node instead of js-ipfs. This **gives us a lot of powers like advanced hole punching techniques** using CircuitRelayV2 and being able to listen on a socket in general.
 
-After this I **just dropped the browser-based Disco Chat into the [ui directory](https://github.com/TheDiscordian/disco-chat/tree/master/ui) with some tweaks** to make it work correctly with some of the js-ipfs API changes. After this I cleaned up that ui directory, added a boatload of comments, added IPNS-based profiles and end-to-end encryption.
+After this I **just dropped the browser-based Disco Chat into the [ui directory](https://github.com/TheDiscordian/disco-chat/tree/master/ui) with some tweaks**. The browser version of Disco Chat used js-ipfs in the browser which was no longer needed in the new Disco Chat which uses Kubo and Kubo RPC API. After this, I cleaned up that ui directory, added a boatload of comments, and implemented IPNS-based profiles and end-to-end encryption.
 
 ## Disco Chat's Features
 
