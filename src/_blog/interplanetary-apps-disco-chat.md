@@ -2,7 +2,7 @@
 title: 'InterPlanetary Applications: Disco Chat'
 description: 'Check out Disco Chat, a peer-to-peer chat application built to demonstrate the power of peer-to-peer while enabling other developers to do the same.'
 author: Discordian
-date: 2023-02-02
+date: 2023-01-02
 permalink: '/interplanetary-apps-disco-chat/'
 header_image: '/interplanetary-apps-cover.png'
 tags:
