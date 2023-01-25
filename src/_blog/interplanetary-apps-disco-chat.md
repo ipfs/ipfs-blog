@@ -42,15 +42,14 @@ tags:
 - [Links](#links)
 
 
-**Disco Chat** is a fun, easy-to-use peer-to-peer chat application sporting custom profiles, end-to-end encryption, offline chat sync, and more! It's meant to help show developers how to build applications like it. If you'd like to join in the fun (even if you're not very technical), head over to the [Disco Chat Releases](https://github.com/TheDiscordian/disco-chat/releases) page to grab a binary.
+In this post we'll go over what Disco Chat is, and the journey of how and why Disco Chat was built. I'll also highlight some of the challenges that were encountered along the way. Having some familiarity with web development will be handy for following along with the technical sections. There's also a Rust component of the application too, but knowledge of Rust isn't necessary to follow along.
 
-At it's core Disco Chat uses IPFS & libp2p, powered by a [Kubo](https://github.com/ipfs/kubo) node. It's **written in mostly JavaScript** with the **interface in HTML/CSS** to hopefully make it easy-to-use for most developers today. There's a **Rust component from [Tauri](https://tauri.app/)** which allows us to have a thin browser to work with on the desktop (and mobile in the future!), **giving us the full power of Kubo**, JavaScript, HTML, and CSS in a single application.
 
 ## What is Disco Chat?
 
-As mentioned previously, Disco Chat is a peer-to-peer chat application primarily focused on showing developers how to build applications like it. **It's also a passion project of mine**, Discordian.
+**Disco Chat** is a fun, easy-to-use peer-to-peer chat application sporting custom profiles, end-to-end encryption, offline chat sync, and more! It's meant to help show developers how to build applications like it. If you'd like to join in the fun (even if you're not very technical), head over to the [Disco Chat Releases](https://github.com/TheDiscordian/disco-chat/releases) page to grab a binary.
 
-Disco Chat is **meant to demonstrate the most simple yet fully-featured peer-to-peer chat application**. Ultimately it should support full syncing backlog with peers, distributed IPNS profile persistance, offline chatting, end-to-end encryption for DMs, relaying messages to peers who can't connect directly to each-other, and it should be comfortable. Today, most of those features work well, though sadly mobile is currently unsupported (but used to be!).
+At it's core Disco Chat uses IPFS & libp2p, powered by a [Kubo](https://github.com/ipfs/kubo) node. It's **written in mostly JavaScript** with the **interface in HTML/CSS** to hopefully make it easy-to-use for most developers today. There's also a **Rust component from [Tauri](https://tauri.app/)** which allows us to have a thin browser to work with on the desktop (and mobile in the future!), **giving us the full power of Kubo**, JavaScript, HTML, and CSS in a single application.
 
 Disco Chat is based upon [native-ipfs-building-blox](https://github.com/TheDiscordian/native-ipfs-building-blox), which is a great kit for getting started on building desktop IPFS applications using HTML/Javascript (Rust too if you like). If you're looking at taking some code snippets from Disco Chat for a totally different idea, **I highly recommend using native-ipfs-building-blox as a base**.
 
@@ -60,7 +59,7 @@ Disco Chat had its **beginnings as a truely minimal in-browser chat application*
 
 From there Disco Chat was born! After building the framework I thought it'd be fun to make my own chat application and see what struggles are involved with it. At this point Disco Chat still worked in a browser, complete with multiple-rooms, markdown, image sharing, video sharing, emojis, multi-line text, and more! It was **exciting opening up a web page that instantly connects you to a serverless chatroom** with other peers.
 
-Disco Chat, and the original chat example relied on [CircuitRelayV1](https://github.com/libp2p/specs/blob/master/relay/circuit-v1.md) and [libp2p-webrtc-star](https://github.com/libp2p/js-libp2p-webrtc-star). Unfortunately these days it's **much harder to achieve relaying in a browser** with the deprecation of CirvuitRelayV1 in Kubo. On top of this, the **browser environments practically strangle most p2p techniques** making things like hole-punching very hard. That was already enough to convince me to persue other avenues, but now libp2p-webrtc-star is also deprecated. So continuing on the browser wasn't really feasible for the time being.
+Disco Chat, and the original chat example relied on [CircuitRelayV1](https://github.com/libp2p/specs/blob/master/relay/circuit-v1.md) and [libp2p-webrtc-star](https://github.com/libp2p/js-libp2p-webrtc-star). Unfortunately these days it's **much harder to achieve relaying in a browser** with the deprecation of CirvuitRelayV1 in Kubo. On top of this, the **browser environments practically strangle most p2p techniques** making things like hole-punching very hard. That was already enough to convince me to persue other avenues, but now libp2p-webrtc-star is also deprecated in favour of an [upcoming libp2p WebRTC browser-to-browser specification](https://github.com/libp2p/specs/pull/497). So continuing on the browser wasn't really feasible for the time being.
 
 One day I'd love to see the browser version return, but for now we can continue work in a pseudo-browser environment so **porting it back to browser should be relatively straight-forward**.
 
@@ -76,7 +75,8 @@ After this I **just dropped the browser-based Disco Chat into the [ui directory]
 
 Disco Chat has many features, all of which operate peer-to-peer, some notable ones:
 
-- Chat rooms
+- Chat rooms (not encrypted)
+- Encrypted direct messages
 - Emojis
 - Markdown
 - Image sharing
@@ -87,7 +87,7 @@ And these are cool, but nothing that stands out as special in the web3 space (ex
 1. **How to have mutable data beyond just a website / redirect**
 2. **How to encrypt or hide data**
 
-So to assist with those problems, I created **IPNS-based profiles** for Disco Chat - to show off mutable data, and a **simple end-to-end encryption** feature - to show the basics of how to hide or encrypt data over IPFS (or any public room).
+So to assist with those problems, I created **IPNS-based profiles** for Disco Chat - to show off mutable data, and a **simple end-to-end encryption** feature - to show the basics of how to hide or encrypt data over IPFS (or any public room). This was made possible as each IPFS node has a unique identifier known as a PeerID which is generated via a keypair. I utilise the PeerID as the IPNS name for profile lookups, and the keypair to generate a secret used for data encryption.
 
 ### IPNS Profiles
 
@@ -169,7 +169,7 @@ console.log("Got peer info: " + JSON.stringify(peerInfo));
 
 ### End-To-End Encryption
 
-I often see questions along the lines of "How do I hide the data in a CID?" or sometimes more bluntly "How do I encrypt the data before I add it to IPFS?". For Disco Chat I implemented **one simple scheme** anyone can use. It will **encrypt any data you want** for a specific peer. Meaning, you and the peer you encrypt the data for can decrypt it, but no other peer can.
+I often see questions along the lines of "How do I hide the data in a CID?" or sometimes "How do I encrypt the data before I add it to IPFS?". For Disco Chat I implemented **one simple scheme** anyone can use. It will **encrypt any data you want** for a specific peer. This ensures you and the peer you're communicating with are the only two people who can decrypt the data.
 
 #### Technical breakdown
 
@@ -267,9 +267,14 @@ console.log(decryptedMessage); // "hello world"
 
 ## Wrapping Up
 
-One day hopefully Disco Chat can end up back in a browser, and have a mobile version again. Today though, I feel it's fun to use and demonstrates some examples for mutable data and end-to-end encryption. If you're experienced with Tauri, or are just feeling adventurous [I'd love some help with building some Disco Chat binares](https://github.com/TheDiscordian/disco-chat/issues/20).
+Today Disco Chat is one of the best examples to help get developers started building peer-to-peer applications with distributed profiles and encrypted data. It's also a fully-featured chat application that anyone can use. Below I have a couple buttons to grab your own copy of Disco Chat, as well as some links to learn more about libp2p and IPFS. Let's all build and use the future of the web together, today.
 
-I hope this article was interesting to you, if it wasn't then at the very least I hope the above code examples help you. Let's all build the future of the web together, today.
+ <a href="https://github.com/TheDiscordian/disco-chat/releases" class="cta-button"> 
+   Download DiscoChat
+ </a> 
+ <a href="https://github.com/TheDiscordian/disco-chat" class="cta-button"> 
+   Explore the code on GitHub
+ </a> 
 
 ## Links
 
