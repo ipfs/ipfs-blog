@@ -177,7 +177,7 @@ I often see questions along the lines of "How do I hide the data in a CID?" or s
 I highly recommend studying the <span style="font-weight:bold;">security implications</span> of using encryption in the wild or seeking consulting on the subject before using a specific scheme.
 </div>
 
-Disco Chat's encryption example lives in [ui/crypto.js](https://github.com/TheDiscordian/disco-chat/blob/master/ui/crypto.js). **After reading the above warning**, you'll need a few libraries this example depends on to get started:
+Disco Chat's encryption example lives in [ui/crypto.js](https://github.com/TheDiscordian/disco-chat/blob/master/ui/crypto.js). You'll need these libraries to get started:
 - [noble-ed25519](https://www.npmjs.com/package/@noble/ed25519) - to work with ed25519 keys
 - [aes-js](https://www.npmjs.com/package/aes-js) - to handle symmetric encryption
 - [bs58](https://www.npmjs.com/package/bs58) - to decode PeerIDs
