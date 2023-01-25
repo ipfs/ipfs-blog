@@ -268,7 +268,7 @@ console.log(decryptedMessage); // "hello world"
 ## Wrapping Up
 
 Today Disco Chat is one of the best examples to help get developers started building peer-to-peer applications with distributed profiles and encrypted data. It's also a fully-featured chat application that anyone can use. Below I have a couple buttons to grab your own copy of Disco Chat, as well as some links to learn more about libp2p and IPFS. Let's all build and use the future of the web together, today.
-
+<br />
  <a href="https://github.com/TheDiscordian/disco-chat/releases" class="cta-button"> 
    Download DiscoChat
  </a> 
