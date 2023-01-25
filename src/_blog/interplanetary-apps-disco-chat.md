@@ -2,7 +2,7 @@
 title: 'InterPlanetary Applications: Disco Chat'
 description: 'Check out Disco Chat, a peer-to-peer chat application built to demonstrate the power of peer-to-peer while enabling other developers to do the same.'
 author: Discordian
-date: 2023-01-02
+date: 2023-01-26
 permalink: '/interplanetary-apps-disco-chat/'
 header_image: '/interplanetary-apps-cover.png'
 tags:
@@ -26,7 +26,7 @@ tags:
 </style>
 
 ![Screenshot of Disco Chat](../assets/interplanetary-apps-disco-chat/preview.png)
-<span style="position:relative;top:-1em;">*A peer-to-peer chat application built using Tauri, JavaScript, and HTML.*</span>
+<span style="position:relative;top:-1em;">*Disco Chat is a peer-to-peer chat application built using Tauri, JavaScript, and HTML.*</span>
 
 ### Table of Contents
 
@@ -34,10 +34,10 @@ tags:
   - [Disco Chat's Journey](#disco-chat-s-journey)
   - [Disco Chat Today](#disco-chat-today)
 - [Disco Chat's Features](#disco-chat-s-features)
-  - [IPNS Profiles](#ipns-profiles)
-    - [Technical breakdown](#technical-breakdown)
-  - [End-To-End Encryption](#end-to-end-encryption)
-    - [Technical breakdown](#technical-breakdown-2)
+  - [How Disco Chat Uses IPNS for Mutable Profiles](#how-disco-chat-uses-ipns-for-mutable-profiles)
+    - [IPNS Profiles Technical Breakdown](#ipns-profiles-technical-breakdown)
+  - [How Disco Chat Implements End-to-End Encryption](#how-disco-chat-implements-end-to-end-encryption)
+    - [End-to-End Encryption Technical Breakdown](#end-to-end-encryption-technical-breakdown)
 - [Wrapping Up](#wrapping-up)
 - [Links](#links)
 
@@ -89,11 +89,11 @@ And these are cool, but nothing that stands out as special in the web3 space (ex
 
 So to assist with those problems, I created **IPNS-based profiles** for Disco Chat - to show off mutable data, and a **simple end-to-end encryption** feature - to show the basics of how to hide or encrypt data over IPFS (or any public room). This was made possible as each IPFS node has a unique identifier known as a PeerID which is generated via a keypair. I utilise the PeerID as the IPNS name for profile lookups, and the keypair to generate a secret used for data encryption.
 
-### IPNS Profiles
+### How Disco Chat Uses IPNS for Mutable Profiles
 
 Previously, in the chat example a user's nickname was sent over with each message send. As it evolved into Disco Chat, a CID linking to a profile picture was also sent over with each message. Now, the **profile information isn't sent over at all**! Instead a CID of the profile info itself is published via [IPNS](https://docs.ipfs.tech/concepts/ipns/) using the user's PeerID (also known as their `self` key!). This means if a peer user wants to look another peer up, they already know the peer's PeerID thanks to libp2p, so they **only need to do an IPNS lookup on it to retrieve the profile info as needed / desired**.
 
-#### Technical breakdown
+#### IPNS Profiles Technical Breakdown
 
 The meat of the IPNS Profiles code lives in [ui/peers/ipns.js](https://github.com/TheDiscordian/disco-chat/blob/master/ui/peers/ipns.js), here's a *slightly* modified example, which might be **easier to snatch up as a snippet:**
 
@@ -167,11 +167,11 @@ let peerInfo = await fetchPeerInfo(ipfs, me);
 console.log("Got peer info: " + JSON.stringify(peerInfo));
 ```
 
-### End-To-End Encryption
+### How Disco Chat Implements End-to-End Encryption
 
 I often see questions along the lines of "How do I hide the data in a CID?" or sometimes "How do I encrypt the data before I add it to IPFS?". For Disco Chat I implemented **one simple scheme** anyone can use. It will **encrypt any data you want** for a specific peer. This ensures you and the peer you're communicating with are the only two people who can decrypt the data.
 
-#### Technical breakdown
+#### End-to-End Encryption Technical Breakdown
 
 <div style="border-left:4px solid #e7c000;border-color:#e7c000;padding:1rem 1.5rem;margin:1rem 0;background-color:#fff7d2">
 I highly recommend studying the <span style="font-weight:bold;">security implications</span> of using encryption in the wild or seeking consulting on the subject before using a specific scheme.
