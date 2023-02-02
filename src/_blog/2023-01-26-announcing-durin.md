@@ -22,13 +22,13 @@ The transport-agnostic nature of IPFS content addresses means there are many way
 
 We do this in Durin by connecting to multiple HTTP gateways to the IPFS network. On app launch, Durin pings a list of public gateways, and determines which route is the most reliable and fastest way to access the network. This approach is functional but not optimal. We're working on specifications for multi-gateway connectivity patterns which balance a number of factors - such as verifiability guarantees, reader privacy, and not overloading gateways.
 
-![Gateway list](../assets/announcing-durin-ipfs/gateway-durin.png)
+<img src="../assets/announcing-durin-ipfs/gateway-durin.png" alt="gateway list" width="350">
 
 IPFS addresses are not natively supported in most web browsers or any mobile operating systems today. Durin registers as an `ipfs` scheme handler so that addresses are handled when encountered in applications and on the web.
 
 For example, when browsing on iOS Safari ([sorry Chrome users](https://bugs.chromium.org/p/chromium/issues/detail?id=178097&q=protocol%20handler%20mobile&can=2)) `ipfs://` protocol links will be redirected to Durin, where the app will translate and redirect the user to the fastest public gateway, making the content available on mobile.
 
-![redirect functionality on mobile safari](../assets/announcing-durin-ipfs/durin-redirect.gif)
+<img src="../assets/announcing-durin-ipfs/durin-redirect.gif" alt="redirect functionality on mobile safari" width="350">
 
 ## Sharing to IPFS from Mobile
 
@@ -38,7 +38,7 @@ We currently rely on [web3.storage](https://web3.storage/) for file uploads. `we
 
 Durin also saves a local history of uploads already shared.
 
-![uploaded files list](../assets/announcing-durin-ipfs/filelist-durin.png)
+<img src="../assets/announcing-durin-ipfs/filelist-durin.png" alt="uploaded files list" width="350">
 
 :warning: (screenshot) TODO :warning:
 
