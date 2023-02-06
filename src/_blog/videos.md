@@ -4,6 +4,14 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'This Month in IPFS - January 2023'
+  date: 2023-01-26
+  publish_date: 2023-02-06T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=kRzNohHeRaM
+  tags:
+  - community
+  - demo
+  - interview
 - title: 'Meet the Web3 Builders: Pinata'
   date: 2021-07-26
   publish_date: 2021-07-26T12:00:00+00:00
