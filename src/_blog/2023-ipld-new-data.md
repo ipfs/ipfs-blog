@@ -3,6 +3,7 @@ title: 'IPLD: The Data Layer of the Decentralized Web'
 description: 'How IPLD and content addressing provide the foundation for the decentralized web'
 author: Mikeal Rogers
 date: 2023-02-09
+canonicalUrl: https://medium.com/@mikeal/the-new-data-d6b5e392da43
 permalink: '/ipld-the-new-data/'
 header_image: '/ipld-new-data.jpeg'
 tags:
@@ -68,3 +69,5 @@ Data in IPLD is not captured and controlled by a provider, it’s accessible to 
 This opens the door to a world in which Open Source communities really can develop and maintain important everyday applications that persist Open Source freedoms all the way to the user in a way that we’ve failed to do with licensing as our only weapon.
 
 There’s a real future here, but one that many people need to participate in for it to be realized and I hope to see all your faces as this community continues to grow.
+
+> Note: This blog post was originally published on [Medium](https://medium.com/@mikeal/the-new-data-d6b5e392da43) and adapted for the IPFS Blog.
