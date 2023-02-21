@@ -14,7 +14,7 @@ tags:
 
 What is data? The question is more philosophical than practical, but the definition we seem to be able to agree on is that data is a medium for expression.
 
-You can express a lot with data, almost anything, but like a painting, the meaning of that expression is subjective and depends on the context you have around it. A pollster publishes data they believe accurately captures the state of mind of a people, but to Nate Silver this data is only one point in a more complex answer to the same question.
+You can express a lot with data, almost anything, but like a painting, the meaning of that expression is subjective and depends on the context you have around it. A pollster publishes data they believe accurately captures the state of mind of a people, but to the statistician [Nate Silver](https://en.wikipedia.org/wiki/Nate_Silver) this data is only one point in a more complex answer to the same question.
 
 We add meaning to data by altering its context. We link to and from pieces of data to accumulate greater context and therefore greater meaning. We have many means of linking data. A social network captures the expressions of many individuals and connects those expressions with others in a large relational database. The Web connects pages by way of URL links, either within the same site or between any sites on the Web. Nate Silver collects data and links it into a complex model that weights different data points into probabilistic metrics.
 
@@ -56,7 +56,7 @@ For the last few years, the [IPLD](https://ipld.io/) project has provided toolin
 
 IPLD isn’t just a means of **representing** data, it’s a means of **linking** data together. You can even link between encoding formats using different hashing methods. The project has substantially matured, and it’s time to start building databases and thinking about how everyday applications can be adapted to these new patterns.
 
-> **Note:** IPLD can be thought of as a generalization of [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs), the default Protocol Buffers based format for representing files and directories in IPFS.
+> **Note:** IPLD can be thought of as a generalization of [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs), the default Protocol Buffers based format for representing files and directories in IPFS. In other words, IPLD is a superset of UnixFS and can be used to represent any arbitrary linked data.
 
 ## The Web of Data
 
