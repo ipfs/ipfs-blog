@@ -2,7 +2,7 @@
 title: 'IPLD: The Data Layer of the Decentralized Web'
 description: 'How IPLD and content addressing provide the foundation for the decentralized web'
 author: Mikeal Rogers
-date: 2023-02-09
+date: 2023-02-21
 canonicalUrl: https://medium.com/@mikeal/the-new-data-d6b5e392da43
 permalink: '/ipld-the-new-data/'
 header_image: '/ipld-new-data.png'
