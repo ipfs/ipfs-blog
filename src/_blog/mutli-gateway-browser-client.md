@@ -169,6 +169,7 @@ If you'd just like to see it in action, here are the links I use in the video be
 * [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
 
 ![](../assets/tryitout.webm "tryitout.webm")
+![](https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.mp4 "tryitout.mp4")
 
 ## Who?
 
