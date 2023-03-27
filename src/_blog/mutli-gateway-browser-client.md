@@ -28,9 +28,9 @@ ipfs://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4
 might become  
 http://localhost:8080/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/  
 if you have an HTTP gateway running locally. Or maybe it could become  
-https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/  
+[https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/](https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/ "https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/")  
 or preferably  
-https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/
+[https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/]()
 
 In each case, you're delegating all the "IPFS stuff" to a particular node. This is quite effective, but has some trade-offs.
 
