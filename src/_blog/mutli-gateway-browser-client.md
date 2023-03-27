@@ -160,15 +160,16 @@ If you want to try this yourself today, you need to [build it](https://github.co
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
-* [ipfs://bafybeifqe5537vtvhlce4ix7jgbrzij325mlkm47svwotdnaarmtxgnvse/]() - an old snapshot of this blog post
-* [ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/]() - a mutable pointer to the current version of this blog
-* [ipns://en.wikipedia-on-ipfs.org/wiki/]() - Wikipedia, as a DNS Link
-* [ipns://ipfs.io/]() - an unusual case: a DNSLink another DNSLink
-* [https://littlebearlabs.io]() - an HTTPs URL for comparison.
+* [ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/](ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/) - a snapshot of this blog post
+* [ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/](ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/) - a mutable pointer to the current version of this blog
+* [ipns://docs.ipfs.tech](ipns://docs.ipfs.tech) - The IPFS documentation.
+* [ipns://en.wikipedia-on-ipfs.org/wiki/](ipns://en.wikipedia-on-ipfs.org/wiki/) - Wikipedia, as a DNS Link
+* [ipns://ipfs.io/](ipns://ipfs.io/) - an unusual case: a DNSLink another DNSLink
+* [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
 
-[tryitout.webm](tryitout.webm)
+[tryitout.webm](https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.webm)
 
-<video style="width:70%" controls autoplay loop playsinline><source src="tryitout.webm" /><source src="tryitout.mkv" /><source src="tryitout.mp4" /></video>
+<video style="width:70%" controls autoplay loop playsinline><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.webm" /><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.mkv" /><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.mp4" /></video>
 
 ## Who?
 
