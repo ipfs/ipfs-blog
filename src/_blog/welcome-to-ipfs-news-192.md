@@ -22,7 +22,7 @@ For those attending, you can also [submit a talk or track online.](https://2023.
 
 The IPFS Implementations Fund is empowering the community to vote in its upcoming Impact Evaluator round! [IPFS Impact Evaluator Round 2](https://www.notion.so/IPFS-Implementations-Fund-bbfc194daaa64bed98874b23387970c8) will give engaged community members an opportunity to nominate and vote on the most valuable contributions to the ecosystem from the past six months! 
 
-We’re looking for community members to **submit** [**this eligibility form**](https://airtable.com/shrXvfDLEoYjFGWV9) if you...
+We’re looking for community members to [**submit this eligibility form**](https://airtable.com/shrXvfDLEoYjFGWV9) if you meet any of these criteria:
 
 * Attended IPFS þing 2022
 * Contributed to the Kubo, Helia, Nabu, or Iroh repos prior to 2022.03.22
