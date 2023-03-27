@@ -169,7 +169,9 @@ If you'd just like to see it in action, here are the links I use in the video be
   * However, if you start with ipns://ipfs.tech, that DNSLink points directly to the IPFS CID, making it a less challenging test case.
 * [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
 
-[tryitout.webm](tryitout.webm)
+[tryitout.webm](https://human.mypinata.cloud/ipfs/bafybeig2os7ejt7befsejtvw5a6254h5rluvzgcir5t3eydqzfg4gikzdm/tryitout.webm)
+
+![](https://human.mypinata.cloud/ipfs/bafybeig2os7ejt7befsejtvw5a6254h5rluvzgcir5t3eydqzfg4gikzdm/tryitout.webm)
 
 <video style="width:70%" controls autoplay loop playsinline><source src="tryitout.webm" /><source src="tryitout.mkv" /><source src="tryitout.mp4" /></video>
 
