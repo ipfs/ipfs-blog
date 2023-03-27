@@ -160,18 +160,13 @@ If you want to try this yourself today, you need to [build it](https://github.co
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
-* [ipfs://bafybeieqgbl6ln66mwuyinwl3gj5gegbahce5ktl3v4hm2bl7ghveiwyce/blog.html](ipfs://bafybeieqgbl6ln66mwuyinwl3gj5gegbahce5ktl3v4hm2bl7ghveiwyce/blog.html) - an old snapshot of this blog post
-  * It has to be an old snapshot and not current state, as the act of updating this link changes the document and therefore the link.
-  * This is a rather obvious use case for ipns, and that will be added as a demo use case when IPNS is implemented here.
-* [ipns://en.wikipedia-on-ipfs.org/wiki/](ipns://en.wikipedia-on-ipfs.org/wiki/) - Wikipedia, as a DNS Link
-* [ipns://ipfs.io/](ipns://ipfs.io/) - a DNSLink to ipns://website.ipfs.io which is a DNSLink to an IPFS CID
-  * One might note that in HTTP world, your browser will take you to ipfs.tech anyhow.
-  * However, if you start with ipns://ipfs.tech, that DNSLink points directly to the IPFS CID, making it a less challenging test case.
-* [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
+* [ipfs://bafybeifqe5537vtvhlce4ix7jgbrzij325mlkm47svwotdnaarmtxgnvse/]() - an old snapshot of this blog post
+* [ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/]() - a mutable pointer to the current version of this blog
+* [ipns://en.wikipedia-on-ipfs.org/wiki/]() - Wikipedia, as a DNS Link
+* [ipns://ipfs.io/]() - an unusual case: a DNSLink another DNSLink
+* [https://littlebearlabs.io]() - an HTTPs URL for comparison.
 
-[tryitout.webm](https://human.mypinata.cloud/ipfs/bafybeig2os7ejt7befsejtvw5a6254h5rluvzgcir5t3eydqzfg4gikzdm/tryitout.webm)
-
-![](https://human.mypinata.cloud/ipfs/bafybeig2os7ejt7befsejtvw5a6254h5rluvzgcir5t3eydqzfg4gikzdm/tryitout.webm)
+[tryitout.webm](tryitout.webm)
 
 <video style="width:70%" controls autoplay loop playsinline><source src="tryitout.webm" /><source src="tryitout.mkv" /><source src="tryitout.mp4" /></video>
 
