@@ -167,9 +167,7 @@ If you'd just like to see it in action, here are the links I use in the video be
 * [ipns://ipfs.io/](ipns://ipfs.io/) - an unusual case: a DNSLink another DNSLink
 * [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
 
-[tryitout.webm](https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.webm)
-
-<video style="width:70%" controls autoplay loop playsinline><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.webm" /><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.mkv" /><source src="https://human.mypinata.cloud/ipfs/bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/tryitout.mp4" /></video>
+![](../assets/tryitout.webm "tryitout.webm")
 
 ## Who?
 
