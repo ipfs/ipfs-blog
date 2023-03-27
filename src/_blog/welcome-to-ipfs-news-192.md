@@ -1,6 +1,7 @@
 ---
 title: Welcome to IPFS News 192!
-description: News about IPFS Thing 2023, Impact Evaluator Awards, and much more!
+description: Learn about IPFS Thing 2023, Community Impact Awards, and much more in
+  this month's round-up of IPFS news.
 author: ''
 date: 2023-03-27
 permalink: "/newsletter-192"
