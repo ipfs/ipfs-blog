@@ -30,13 +30,6 @@ sections:
   - newslinks
 - type: directory
   path: src/_blog
-  label: News coverage
-  create: none
-  match: "**/newscoverage.md"
-  templates:
-  - newslinks
-- type: directory
-  path: src/_blog
   label: Release notes
   create: none
   match: "**/releasenotes.md"
