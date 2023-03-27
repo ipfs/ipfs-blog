@@ -138,12 +138,13 @@ This is for directories with just too many entries in them. The links from this 
 ### Dealing with ipns:// links
 
 The first path element after ipns:// is the "name".
-* If the name is formatted as a CIDv1, ipfs-client will retrieve a signed record of what it points at from a gateway, and then load that content.
-	- 
-* If the link's scheme is ipns://, a DNS request is created for the proper TXT record to resolve it as a DNSLink.
-* We're not supporting regular (public key) ipns URIs at the moment.
-* If it resolves to another DNSLink, do the substitution into the URI and repeat.
-* If it resolves to /ipfs/, do the substitution into the URI and hand off to the class that handles an ipfs:// URI as above.
+
+* If the name is formatted as a CIDv1, and has its codec set to "libp2p-key", ipfs-client will retrieve a signed record of what it points at from a gateway, and then load that content.
+  * Today it does not verify the signature, this is planned for the near future.
+  * Note: not all CID multibase encodings are supported yet.
+* If it's not, a DNS request is created for the appropriate TXT record to resolve it as a DNSLink.
+
+IPNS names may point to other IPNS names, in which case this process repeats. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content.
 
 ## Bottom Line
 
@@ -151,7 +152,7 @@ So, in the end, the user gets to treat ipfs:// links to snapshotted data like an
 
 ipns:// URIs of the DNSLink variety rely only on DNS being accurate.
 
-When we've implemented regular ipns:// URIs, they will be verified by the cryptographically signed [record](https://github.com/ipfs/kubo/pull/9399).
+Regular ipns:// URIs will be verified by the cryptographically signed [record](https://github.com/ipfs/kubo/pull/9399).
 
 ## Trying it out
 
