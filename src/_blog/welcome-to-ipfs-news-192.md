@@ -14,7 +14,7 @@ tags:
 
 We’re only a few weeks away from this year’s week-long gathering for the IPFS implementors community. [IPFS Thing 2023](https://2023.ipfs-thing.io/) is happening from **April 15-19 in Brussels, Belgium** and will include everything from talks, workshops, discussion circles, hacking time, and more — all focused on advancing IPFS implementations.
 
-Grab your tickets today before time runs out! Use code “THING23” at checkout by March 31 to get them for only $299.
+[**Grab your tickets today before time runs out!**](https://2023.ipfs-thing.io/) Use code “THING23” at checkout by March 31 to get them for only $299.
 
 For those attending, you can also [submit a talk or track online.](https://2023.ipfs-thing.io/submit/)
 
