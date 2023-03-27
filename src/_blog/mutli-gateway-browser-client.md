@@ -1,12 +1,13 @@
 ---
 title: Mutli-Gateway Browser Client
 description: A new approach to using ipfs:// and ipns:// links in a browser.
-author: ''
+author: John Turpish
 date: 2023-03-26
 permalink: "/2023-04-03-multigateway-browser-client/"
 translationKey: 2023-04-03-multigateway-browser-client
 header_image: "/2023-04-03-multigateway-browser-client-header.png"
-tags: []
+tags:
+- browsers
 
 ---
 [IPFS](https://ipfs.io) is the preeminent protocol suite for [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a node and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)!
