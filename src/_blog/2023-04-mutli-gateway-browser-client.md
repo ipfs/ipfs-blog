@@ -101,7 +101,7 @@ That's ProtoBuf-encoded Directed Acyclic Graph. A block of this type is a node i
 
 ##### UnixFS Node
 
-The payload of these nodes have another ProtoBuf layer, and the DAG functions conceptually similar to a read-only file system.
+The payload of these nodes have another ProtoBuf layer, and the DAG functions in a conceptually similar way to a read-only file system.
 
 Not all kinds of UnixFS nodes are fully handled yet, but we cover these:
 
