@@ -15,9 +15,13 @@ tags:
 
 ## Announcing the Content Tracks for IPFS Thing 2023
 
-The IPFS implementers community will be gathering together in Brussels, Belgium in just a few weeks to connect, collaborate, and share knowledge… all in the pursuit of advancing IPFS implementations.
+The IPFS implementers community will be gathering together in Brussels, Belgium in just a few weeks for [IPFS Thing 2023](https://2023.ipfs-thing.io/submit/).
 
 Today we’re excited to finally share the final list of the content tracks so you can know what to expect! Each track will have a variety of talks and discussions from members of the community.
+
+If you haven’t registered yet, head on over to [the event website](https://2023.ipfs-thing.io/) to grab your tickets today! [IPFS Thing 2023](https://2023.ipfs-thing.io/) is happening from **April 15-19 in Brussels, Belgium** and will include everything from talks, workshops, discussion circles, hacking time, and more.
+
+For those attending, you can also [submit a talk online.](https://2023.ipfs-thing.io/submit/)
 
 ### Opening Keynotes
 
@@ -70,9 +74,3 @@ How do we deliver IPFS content to the masses? In this track, we'll dive into the
 ### Roadmapping Next Steps out of the IPFS þing
 
 A discussion / breakout-oriented workshop for defining and committing to next steps out of the week's conversations, which we can land and celebrate at upcoming IPFS events in Q3 / Q4 2023.
-
-## Register for IPFS Thing 2023
-
-If you haven’t registered yet, head on over to [the event website](https://2023.ipfs-thing.io/) to grab your tickets today! [IPFS Thing 2023](https://2023.ipfs-thing.io/) is happening from **April 15-19 in Brussels, Belgium** and will include everything from talks, workshops, discussion circles, hacking time, and more.
-
-For those attending, you can also [submit a talk online.](https://2023.ipfs-thing.io/submit/)
