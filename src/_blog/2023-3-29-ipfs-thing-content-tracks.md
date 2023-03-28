@@ -5,7 +5,7 @@ description: 'An overview of the content tracks that the community will convene 
 author:
 date: 2023-3-28
 permalink: '/2023-3-29-ipfs-thing-content-tracks/'
-header_image: 'src/assets/2023-3-29-ipfs-thing-content-tracks.jpg'
+header_image: '/2023-3-29-ipfs-thing-content-tracks.jpg'
 tags:
 
 - 'ipfs thing'
