@@ -145,7 +145,7 @@ The first path element after ipns:// is the "name".
   * Note: not all CID multibase encodings are supported yet.
 * If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a DNSLink.
 
-IPNS names may point to other IPNS names, in which case this process repeats. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content.
+IPNS names may point to other IPNS names, in which case this process recurses. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content as described above.
 
 ## Bottom Line
 
