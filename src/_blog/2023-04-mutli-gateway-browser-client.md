@@ -1,5 +1,5 @@
 ---
-title: Mutli-Gateway Browser Client
+title: Multi-Gateway Browser Client
 description: A new approach to using ipfs:// and ipns:// links in a browser.
 author: John Turpish
 date: 2023-04-03
