@@ -115,7 +115,7 @@ In UnixFS a node can represent a file as the concatenation of other file nodes, 
 
 * Data deduplication (it's possible the same sequences of bytes, and thus same CID, appears in multiple files or even within the same file)
 * In the case that a gateway were malicious, we wouldn't want to wait until a file of potentially unbounded size finishes downloading before we verify that it's correct. It is worth mentioning that as of today ipfs-chromium does not enforce this limit.
-* It enables the possibility that one could concurrent fetch different parts of the file from different gateways.
+* It enables the possibility that one could concurrently fetch different parts of the file from different gateways.
 
 If we have all the nodes linked-to already, we can concatenate their data together and make a response body out of it. If we don't, we'll convert the missing links to CIDs and request them from gateways.
 
