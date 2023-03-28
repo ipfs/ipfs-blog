@@ -143,7 +143,7 @@ The first path element after ipns:// is the "name".
 * If the name is formatted as a CIDv1, and has its codec set to "libp2p-key", ipfs-client will retrieve a signed record of what it points at from a gateway, and then load that content.
   * Today it does not verify the signature, this is planned for the near future.
   * Note: not all CID multibase encodings are supported yet.
-* If it's not, a DNS request is created for the appropriate TXT record to resolve it as a DNSLink.
+* If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a DNSLink.
 
 IPNS names may point to other IPNS names, in which case this process repeats. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content.
 
