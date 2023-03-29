@@ -149,7 +149,7 @@ IPNS names may point to other IPNS names, in which case this process recurses. M
 
 ## Bottom Line
 
-So, in the end, the user gets to treat ipfs:// links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data, without being very easily tracked.
+So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data.
 
 ipns:// URIs of the DNSLink variety rely only on DNS being accurate.
 
