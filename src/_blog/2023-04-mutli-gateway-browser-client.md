@@ -133,7 +133,7 @@ This is for directories with just too many entries in them. The links from this 
 
 * If you're coming in from another HAMT node, you might have some unused bits of the hash to select the next child.
 * If you have a path, hash the name of the item you're looking for, pop the correct number of bits off the hash, and use it to select which element you're going to next.
-* If you don't have a path, we'll assume you want index.html.
+* If you don't have a path, we'll assume you want `index.html`.
 * We don't generate listings of sharded directories today, and this isn't a high-priority as it's an unreasonable use case.
 
 ### Dealing with ipns:// links
