@@ -21,7 +21,7 @@ Today we’re excited to finally share the final list of the content tracks so y
 
 If you haven’t registered yet, head on over to [the event website](https://2023.ipfs-thing.io/) to grab your tickets today! [IPFS Thing 2023](https://2023.ipfs-thing.io/) is happening from **April 15-19 in Brussels, Belgium** and will include everything from talks, workshops, discussion circles, hacking time, and more.
 
-For those attending, you can also [submit a talk online.](https://2023.ipfs-thing.io/submit/)
+Have a talk or workshop to share? You can also [submit a talk](https://2023.ipfs-thing.io/submit/) though April 5.
 
 ### Opening Keynotes
 
