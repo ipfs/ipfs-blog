@@ -51,13 +51,9 @@ A data-driven approach to the design and operation of IPFS and libp2p through ri
 
 The world wide web is both the biggest deployment vector and least tractable surface for IPFS. There are opportunities and major challenges to bringing IPFS support in web rendering engines and browsers, to web content served through gateways, to IPFS network access from HTTP web apps and browser extensions. This track will have talks on: current and future browser implementations, approaches to managing and publishing IPFS content on the web, building apps that connect to the IPFS from within HTTP contexts, culminating in planning for group working sessions around on specific IPFS+Web challenges on day 4 & 5 of IPFS Thing.
 
-### Identity: UCAN TOO
+### Integrating IPFS
 
-User Controlled Authorization Networks (UCANs) are the decentralized, user-controlled alternative to OAuth and they're becoming fundamental building blocks of the next-gen interplanetary stack. In this track, we'll share tools, protocols, and projects built with UCANs.
-
-### Decentralized Device Networks
-
-People talk about the Internet of Things, but when are we going to talk about the IPFSNet of Things? Embedded devices and their networks provide interesting opportunities to explore the capabilities of IPFS and muse on what IPFS even is. We’ll hear from folks on what they’re doing, what’s working, and ponder how far we can flex IPFS to fit these hard to reach places.
+IPFS is not an island - it exists in diverse environments, manifesting in different ways depending on the use-case, ranging from mobile devices to blockchains to naming systems, even soon in space. These integration points provide interesting opportunities to explore the capabilities of IPFS and muse on what IPFS even is. We’ll hear from folks on what they’re doing, what’s working, and ponder how far we can flex IPFS to fit the multitude of places it needs to be.
 
 ### Decentralized Compute & AI
 
