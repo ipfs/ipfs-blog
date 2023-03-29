@@ -29,7 +29,9 @@ During this opening session, we'll hear an overview of the latest implementation
 
 ### Standards, Governance, and DWeb Policy
 
-This track sits at the intersection of IPFS standards, governance, and dweb and regulation. What's the latest on the IPFS protocol and governance? What specific problems do we face regarding existing regulation? What new regulation or changes could be helpful? Are there interesting policy angles that we can surface, develop, and advocate for? How do we make the dweb a robust, sustainable commons?
+This track sits at the intersection of IPFS standards, governance, and dweb and regulation. What's the latest on the IPFS protocol and governance? What specific problems do we face regarding existing regulation? What new regulation or changes could be helpful? Are there interesting policy angles that we can surface, develop, and advocate for? How do we make the dweb a robust, sustainable commons? (Track lead: Robin Berjon)
+
+
 
 ### IPFS Deployments + Operators
 
