@@ -16,7 +16,7 @@ But what about people who don't know about IPFS, and just run across a link? Wha
 
 ## What?
 
-Most IPFS clients talk to one particular node's http gateway. [Multi-Gateway Clients](https://github.com/ipfs/specs/blob/e2e80a8d8de96f4ab931b0622100a644b13709f1/integrations/MULTI_GATEWAY_CLIENT.md) split your requests to multiple gateways.
+Most IPFS clients talk to one particular node's HTTP gateway. [Multi-Gateway Clients](https://github.com/ipfs/specs/blob/e2e80a8d8de96f4ab931b0622100a644b13709f1/integrations/MULTI_GATEWAY_CLIENT.md) split your requests to multiple gateways.
 
 Here we're talking about [IPFS-Chromium](https://github.com/little-bear-labs/ipfs-chromium), which is an experimental racing multi-gateway client, which means the same request might get sent to multiple gateways, and the first one to get the result verified wins. And it's built into a custom-patched build of Chromium.
 
