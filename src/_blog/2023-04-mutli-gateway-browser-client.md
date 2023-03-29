@@ -136,7 +136,7 @@ This is for directories with just too many entries in them. The links from this 
 * If you don't have a path, we'll assume you want `index.html`.
 * We don't generate listings of sharded directories today, and this isn't a high-priority as it's an unreasonable use case.
 
-### Dealing with ipns:// links
+### Dealing with `ipns://` links
 
 The first path element after ipns:// is the "name".
 
