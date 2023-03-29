@@ -124,7 +124,7 @@ If we have all the nodes linked-to already, we can concatenate their data togeth
 In this case the 'data' isn't really important to us. The links, however, represent items in the directory.
 
 * If your URI has a path, find the link matching the first element in the path, and repeat the whole process with that link's CID and the remainder of the path.
-* If you don't have a path, we'll assume you want index.html
+* If you don't have a path, we'll assume you want `index.html`
   * If there's no index.html we'll generate an directory listing HTML file for you.
 
 ###### [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) (sharded) Directory
