@@ -26,7 +26,7 @@ This is by no means the first time IPFS has been usable in a browser, or even Ch
 
 Most of them share in common the idea of translating IPFS and IPNS requests, 1:1, into HTTP requests. For example, something like  
 ipfs://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4  
-might become  
+might be fetched from  
 http://localhost:8080/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/  
 if you have an HTTP gateway running locally. Or maybe it could become  
 [https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/](https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/ "https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/")  
