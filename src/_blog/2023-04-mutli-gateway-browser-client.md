@@ -33,7 +33,7 @@ if you have an HTTP gateway running locally. Or maybe it could become
 or preferably  
 [https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/](https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/)
 
-In each case, you're delegating all the "IPFS stuff" to a particular node. This is quite effective, but has some trade-offs.
+In each case, you're delegating all the "IPFS stuff" to a particular node. This is quite effective and has the advantage that it makes it easy to integrate with the IPFS ecosystem with relatively limited effort, but it involves some trade-offs.
 
 ### Performance
 
