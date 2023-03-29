@@ -151,7 +151,7 @@ IPNS names may point to other IPNS names, in which case this process recurses. M
 
 So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data.
 
-ipns:// URIs of the DNSLink variety rely only on DNS being accurate.
+`ipns://` URLs of the DNSLink variety rely only on DNS being accurate.
 
 Regular ipns:// URIs will be verified by the cryptographically signed [record](https://github.com/ipfs/kubo/pull/9399).
 
