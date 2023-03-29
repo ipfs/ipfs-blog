@@ -73,7 +73,7 @@ Those who embed Chromium into another application generally provide an implement
 
 ### Hooking into Chromium
 
-* The ipfs and ipns schemes are registered in [ContentClient::AddAdditionalSchemes](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
+* The ipfs and ipns schemes are registered in [`ContentClient::AddAdditionalSchemes`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
 * An interceptor is created in [ContentBrowserClient::WillCreateURLLoaderRequestInterceptors](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so that ipfs:// and ipns:// navigation requests will be handled by components/ipfs.
 * URL loader factories created for ipfs and ipns schemes in [ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so that in-page resources with ipfs/ipns URIs (or relative URLs on a page loaded as ipfs://), will also be handled by components/ipfs.
 
