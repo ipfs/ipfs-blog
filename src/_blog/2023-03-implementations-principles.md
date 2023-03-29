@@ -1,5 +1,5 @@
 ---
-title: IPFS Implementations: It’s Definitely A Thing
+title: 'IPFS Implementations: It’s Definitely A Thing'
 description: 'IPFS implementations vary wildly in order to adapt to as many situations as possible, and more keep being created. To bring clarity to the ecosystem, we look at some principles that make IPFS what it is.'
 author: Robin Berjon
 date: 2023-03-31
