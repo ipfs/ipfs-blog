@@ -99,7 +99,7 @@ Today's IPFS ecosystem is larger than most people realize, and most of us only w
 a subset of it. This makes it easy to develop a restrictive intuition of what IPFS is.
 
 For instance, it can be tempting to reach the conclusion that supporting IPFS means being
-interoperable with Kubo or supporting everything that Kubo does. Kubo is, of course, an
+interoperable with [Kubo](https://github.com/ipfs/kubo) or supporting everything that Kubo does. Kubo is, of course, an
 outstanding implementation but there are excellent reasons to make different decisions
 if you're targeting different contexts or optimizing for different goals. This is
 notably true when considering Filecoin: making the data stored by Filecoin storage
