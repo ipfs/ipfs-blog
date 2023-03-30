@@ -237,7 +237,7 @@ enable.
 Put together, content-addressing using CIDs and robust transport-agnosticity are what
 make IPFS what it is. An IPFS implementation that doesn't build atop the
 excellent [libp2p](https://libp2p.io/), that doesn't do everything that Kubo does, or
-that only retrieves content via HTTP gateways is still an IPFS implementation.
+that only retrieves verifiable content via HTTP gateways is still an IPFS implementation.
 
 In order to help clarify both this foundation and everything that sits on top of it we've
 progressively been [developing better specs](https://github.com/ipfs/specs/), including
