@@ -10,6 +10,39 @@ tags:
   - 'ipfs thing'
   - 'event'
 ---
+<style>
+.type-rich li + li {
+  margin-top:0em;
+}
+.type-rich h3 {
+  font-weight: bold;
+}
+
+.type-rich h4 {
+  font-weight: bold;
+}
+.type-rich li > ul {
+  padding-top:0;
+}
+table {
+  background: #fff;
+}
+thead {
+  background: #34797d;
+  color: #fff;
+}
+td, th {
+  text-align: left;
+  padding: 0.25em 0.5em;
+  vertical-align: top;
+}
+tbody tr:nth-of-type(even) {
+  background: rgba(245, 246, 247, var(--tw-bg-opacity));
+}
+tbody tr td:first-of-type {
+  white-space: nowrap;
+}
+</style>
 
 If all you had ever seen were roses, daffodils, and violets, you would probably have a simplistic intuition of what a flower is. But as you discovered more examples of the bountiful world of flowering plants, including some more unusual varieties like the [Hydnora Africana](https://en.wikipedia.org/wiki/Hydnora_africana) sci-fi monsters, the absolutely massive [Corpse Flower](https://en.wikipedia.org/wiki/Amorphophallus_titanum), or perhaps more cutely the [Swaddled Babies](https://gardenofeaden.blogspot.com/2020/03/the-swaddled-babies-orchid-anguloa.html) or the laughing [Bee Orchids](https://www.thehallofeinar.com/2017/06/bee-orchids-with-no-bees-to-love-them/) then your idea of flower would have to grow, until at some point you might start wondering if you really know what counts as a flower.
 
