@@ -11,9 +11,6 @@ tags:
   - 'event'
 ---
 
-
-# IPFS Implementations: It’s Definitely A Thing
-
 If all you had ever seen were roses, daffodils, and violets, you would probably have a
 simplistic intuition of what a flower is. But as you discovered more examples of the
 bountiful world of flowering plants, including some more unusual varieties like the
@@ -41,6 +38,17 @@ And in the nine months since, that's exactly what has happened: it's springtime 
 With so much efflorescence, it's worth taking a step back from this
 [thriving broader ecosystem](https://ecosystem.ipfs.tech/) and looking at the principles
 that make IPFS what it is.
+
+### Table of Contents
+- [What is IPFS?](#what-is-ipfs)
+- [IPFS Implementations Today](#ipfs-implementations-today)
+- [A Broader View](#a-broader-view)
+- [IPFS Principles](#ipfs-principles)
+  - [Content Addressing](#content-addressing)
+  - [Robustly Transport-Agnostic](#robustly-transport-agnostic)
+- [Clearer Foundations](#clearer-foundations)
+- [See You Soon!](#see-you-soon)
+- [Appendix: Implementations](#appendix-implementations)
 
 ## What is IPFS?
 
