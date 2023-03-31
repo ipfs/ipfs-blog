@@ -88,7 +88,7 @@ IPFS implementations vary widely, from OS-level daemons living long and fulfilli
 
 When developers have maximal control of an environment, they can implement IPFS to match the ideal of the vision articulated in the [original white paper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf). When the deployment environment is very far from being able to achieve that ideal, or when the use case at hand is too different, implementing IPFS often means reliably getting content-addressed data in or out of that system by whatever means necessary.
 
-The diversity this demands can be seen in our implementation ecosystem. For instance, we have implementations in [Go](https://github.com/ipfs/kubo), in [Java](https://github.com/Peergos/nabu), and in [JavaScript](https://github.com/ipfs/helia), as well as [one in Rust](https://github.com/n0-computer/iroh) that optimizes for extreme efficiency. We have some targeting [clusters](https://github.com/ipfs-cluster/ipfs-cluster) or [Filecoin](https://github.com/filecoin-project/lotus), meant to work in [mobile](https://github.com/ipfs-shipyard/gomobile-ipfs) or in other [embedded environments](https://github.com/ipfs-rust/ipfs-embed) as well as [for the cloud](https://github.com/elastic-ipfs/elastic-ipfs). And [the list keeps growing](https://docs.ipfs.tech/concepts/ipfs-implementations/).
+The diversity this demands can be seen in our implementation ecosystem. For instance, we have implementations in [Go](https://github.com/ipfs/kubo), in [Java](https://github.com/Peergos/nabu), and in [JavaScript](https://github.com/ipfs/helia), as well as [one in Rust](https://github.com/n0-computer/iroh) that optimizes for extreme efficiency. We have some targeting [clusters](https://ipfscluster.io/) or [Filecoin](https://github.com/filecoin-project/lotus), meant to work in [mobile](https://github.com/ipfs-shipyard/gomobile-ipfs) or in other [embedded environments](https://github.com/ipfs-rust/ipfs-embed) as well as [for the cloud](https://github.com/elastic-ipfs/elastic-ipfs). And [the list keeps growing](https://docs.ipfs.tech/concepts/ipfs-implementations/).
 
 ## A Broader View
 
@@ -149,7 +149,7 @@ Put together, content-addressing using CIDs and robust transport-agnosticity are
 
 In order to help clarify both this foundation and everything that sits on top of it we've progressively been [developing better specs](https://github.com/ipfs/specs/), including a [fresh evolution of the IPIP process](https://github.com/ipfs/specs/commits/main/IPIP_PROCESS.md) and a [brand new specs site](https://specs.ipfs.tech/) (and [a IPFS Thing 2023 track to go with](https://2023.ipfs-thing.io/#Standards-Governance-and-DWeb-Policy)!)
 
-Part of that specification work is this proposal for [a standardized description of the principles that define IPFS](https://github.com/ipfs/specs/pull/390). If you are curious to read a more detailed description of the principles described in this post, I encourage you to read it.
+Part of that specification work is this proposal for [a standardized description of the principles that define IPFS](https://specs.ipfs.tech/architecture/principles/). If you are curious to read a more detailed description of the principles described in this post, I encourage you to read it.
 
 ## See You Soon!
 
@@ -164,7 +164,7 @@ The [table of implementations at docs.ipfs.tech](https://docs.ipfs.tech/concepts
 | [Elastic provider](https://github.com/ipfs-elastic-provider/ipfs-elastic-provider) | javascript, typescript | Scalable cloud-native implementation. |
 | [Estuary](https://github.com/application-research/estuary/) | go | Daemon oriented service to pin and onboard IPFS data into Filecoin. |
 | [Kubo](https://github.com/ipfs/kubo) | go | Generalist daemon oriented IPFS implementation with an [extensive HTTP RPC API](https://docs.ipfs.tech/reference/kubo/rpc/) and [HTTP Gateway API](https://docs.ipfs.tech/reference/http/gateway/). |
-| [ipfs cluster](https://github.com/ipfs/ipfs-cluster) | go | Orchestration for multiple Kubo nodes via CRDT / Raft consensus |
+| [ipfs cluster](https://ipfscluster.io/) | go | Orchestration for multiple Kubo nodes via CRDT / Raft consensus |
 | [iroh](https://github.com/n0-computer/iroh) | rust | Extreme-efficiency oriented IPFS implementation. |
 | [Lotus](https://github.com/filecoin-project/lotus) | go | Filecoin node handling consensus, storage providing, making storage deals, importing data, ... |
 | [Nabu](https://github.com/Peergos/nabu) | java | A minimal Java implementation of IPFS |
