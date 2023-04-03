@@ -10,15 +10,16 @@ tags:
 - browsers
 
 ---
+
 [IPFS](https://ipfs.io) is the preeminent protocol suite for [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a [node](https://docs.ipfs.tech/concepts/glossary/#node) and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)! 
 
 The most important thing to get: with IPFS you can fetch something based on its Content ID ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)), which tells the computer what it is, not where it's coming from.
 
-The other way of fetching things from the IFPS ecosystem is through [IPNS](https://docs.ipfs.tech/concepts/ipns/#mutability-in-ipfs), which allows someone to cryptographically sign a reference to a CID, then you can request whatever content that person/organization is currently pointing to as their site.   
+The other way of fetching things from the IPFS ecosystem is through [IPNS](https://docs.ipfs.tech/concepts/ipns/#mutability-in-ipfs), which allows someone to cryptographically sign a reference to a CID, then you can request whatever content that person/organization is currently pointing to as their site.
 
 Essentially, `http://` specifies "where" to find it, `ipfs://` specifies "what" to find, and `ipns://` specifies "whose" content to find.
 
-What about people who don't know about IPFS, and just run across a [link](https://docs.ipfs.tech/concepts/glossary/#link)? What if they'd like to be able to use that link in their browser? This is what we mean by clients - software that can talk to nodes to fetch the content they want, but without running one yourself.
+What about people who don't know about IPFS, and just run across a [link](https://docs.ipfs.tech/concepts/glossary/#link)? What if they'd like to be able to use that link in their browser? This is where a "client" fits in - software that can talk to nodes to fetch the content they want, but without running one yourself.
 
 ## What?
 
@@ -67,7 +68,7 @@ The public IPFS gateways today appear to be consistently and reliably returning 
 
 ## Where (is the code)?
 
-In the repo you'll see separation between "component" and "library", where the former contains Chromium-specific code, and the latter contains code that helps with IPFS implementation details that can build without Chromium.
+In the repo you'll see separation between [component](https://github.com/little-bear-labs/ipfs-chromium/tree/main/component) and [library](https://github.com/little-bear-labs/ipfs-chromium/tree/main/library), where the former contains Chromium-specific code, and the latter contains code that helps with IPFS implementation details that can build without Chromium.
 
 This distinction disappears when you switch over to the Chromium build. Both sets of source are dumped into a component (basically a submodule) called "ipfs", that implements the handling of `ipfs://` and `ipns://` URLs.
 
@@ -153,7 +154,7 @@ IPNS names may point to other IPNS names, in which case this process recurses. M
 
 ## Bottom Line
 
-So, in the end, the user gets to treat ipfs:// links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data, without being very easily tracked.
+So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data, without being very easily tracked.
 
 `ipns://` URLs of the DNSLink variety rely only on DNS being accurate.
 Regular `ipns://` URLs, however, will be verified by the cryptographically signed [record](https://github.com/ipfs/kubo/pull/9399).
