@@ -3,18 +3,18 @@ tags:
 - Durin
 title: "Announcing Durin"
 description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
-date: 2023-01-26
+date: 2023-04-11
 permalink: "/announcing-durin/"
 translationKey: ''
 header_image: /announcing-durin-ipfs/header.png
 author: David Justice
 ---
 
-Today we are excited to announce a new way to read and share with IPFS on your mobile device - Durin, a native mobile application for iOS and Android.
+Today we are excited to announce Durin, a native mobile application for iOS and Android, built to give users a new way to read and share with IPFS and a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
 
 ## Background
 
-To date, it's been difficult to access, upload and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo), the initial implementation of the protocol was simply not built with mobile in mind. We wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
+To date, it's been difficult to access, upload and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo), the initial implementation of the protocol was simply not built with mobile in mind. The IPFS approach to P2P for many years was about running servers, and [that has changed](https://blog.ipfs.tech/2023-03-implementation-principles/). In the meantime, we wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
 
 ## Accessing IPFS Content
 
@@ -26,7 +26,7 @@ We do this in Durin by connecting to multiple HTTP gateways to the IPFS network.
 
 IPFS addresses are not natively supported in most web browsers or any mobile operating systems today. Durin registers as an `ipfs` scheme handler so that addresses are handled when encountered in applications and on the web.
 
-For example, when browsing on iOS Safari ([sorry Chrome users](https://bugs.chromium.org/p/chromium/issues/detail?id=178097&q=protocol%20handler%20mobile&can=2)) `ipfs://` protocol links will be redirected to Durin, where the app will translate and redirect the user to the fastest public gateway, making the content available on mobile.
+On iOS Safari `ipfs://` protocol links will be redirected to Durin, where the app will translate and redirect the user to the fastest public gateway, making the content available on mobile. Unfortunately the auto-redirects do not work using Chrome's android app. They have not yet [implemented `registerProtocolHandler`](https://bugs.chromium.org/p/chromium/issues/detail?id=178097&q=protocol%20handler%20mobile&can=2)). 
 
 <img src="../assets/announcing-durin-ipfs/durin-redirect.gif" alt="redirect functionality on mobile safari" width="350">
 
@@ -58,10 +58,20 @@ Durin is available now for mobile phones in the iOS app store and Google Play st
 
 ## The Future
 
-Durin is an experiment in learning how to expose and integrate IPFS features into mobile operating systems in ways which align optimally with those environments. We'd love to hear your ideas and feedback, and have you participate!
+Durin is an experiment in learning how to expose and integrate IPFS features into mobile operating systems in ways which align optimally with those environments. We're trying out variety of ideas from contacts integration, photo sync & backup, filecoin storage, peer to peer bluetooth connectivity.
+
+We'd love to hear your ideas and feedback, and have you participate!
 
 * [ipfs-shipyard/durin on Github](https://github.com/ipfs-shipyard/durin)
 * [HackMd project document](https://hackmd.io/XtxGZoxqQ46X1GO7srrhMQ)
 * [Feedback link](https://github.com/ipfs-shipyard/durin/issues)
 
 Join the #browsers-and-platforms channel which is bridged across the [Filecoin Slack](https://filecoin.io/slack/), [IPFS Discord](https://discord.gg/vZTcrFePpt) and [Element/Matrix](https://matrix.to/#/#browsers-and-standards:ipfs.io).
+
+## Shoutout
+
+Shout out to [Trigram](https://www.trigram.co/) for continued work on Durin. 
+
+## See You Soon!
+
+The next [IPFS Thing](https://2023.ipfs-thing.io/) is rapidly approaching, April 15th-19th, in Brussels. As a community, we'll be using that opportunity to share, discuss, and blaze forward with many new IPFS capabilities and implementations. 
