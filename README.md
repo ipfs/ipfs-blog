@@ -98,7 +98,7 @@ Now edit the metadata at the top of the file.
 
 Each post can have a custom image that is shown on the [blog homepage](https://blog.ipfs.tech/). To set an image:
 
-1. Add the image into `static\header_images`. Typically the image is `2048×1152px` in jpg/png.
+1. Add the image into `assets\header_images`. Typically the image is `2048×1152px` in jpg/png.
 1. Rename the image to match the file name of your post. For example, the `2022-12-community-calendar.md` post uses `2022-12-community-calendar.png` as the header.
 1. In the post markdown, edit the front-matter to include the `header_image` variable:
 
