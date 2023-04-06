@@ -27,7 +27,7 @@ This track sits at the intersection of IPFS standards, governance, and dweb and 
 
 ## IPFS Deployments + Operators
 
-From best practices to the mistakes made along the way, this track is a chance to highlight how members of the community are running IPFS nodes at scale. Let's share what's working well and what implementations can do to make things even better! (Track lead: [James Walker](twitter.com/walkah))
+From best practices to the mistakes made along the way, this track is a chance to highlight how members of the community are running IPFS nodes at scale. Let's share what's working well and what implementations can do to make things even better! (Track lead: [James Walker](https://twitter.com/walkah))
 
 ## Interplanetary Databases
 
@@ -63,7 +63,7 @@ How do we deliver IPFS content to the masses? In this track, we'll dive into the
 
 ## Roadmapping Next Steps out of the IPFS þing
 
-A discussion / breakout-oriented workshop for defining and committing to next steps out of the week's conversations, which we can land and celebrate at upcoming IPFS events in Q3 / Q4 2023. (Track lead: [Molly Mackinlay](https://twitter.com/momack28?s=20))
+A discussion / breakout-oriented workshop for defining and committing to next steps out of the week's conversations, which we can land and celebrate at upcoming IPFS events in Q3 / Q4 2023. (Track lead: [Molly Mackinlay](https://twitter.com/momack28))
 
 ---
 
