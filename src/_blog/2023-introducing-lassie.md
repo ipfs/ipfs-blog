@@ -10,7 +10,7 @@ tags:
 - 'retrieval'
 ---
 
-We’re excited to share that you can now use a simple retrieval client, named Lassie, to get your data from IPFS and Filecoin. Lassie makes it easy to fetch your data from both the IPFS and Filecoin Network - it will find and fetch content over the best retrieval protocols available. 
+We’re excited to share that you can now use a simple retrieval client, named [Lassie](https://github.com/filecoin-project/lassie), to get your data from IPFS and Filecoin. Lassie makes it easy to fetch your data from both the IPFS and Filecoin Network - it will find and fetch content over the best retrieval protocols available. 
 
 For end users and clients, this means you can easily retrieve your content addressed data (using CIDs) from IPFS or Filecoin using the Lassie client, without having to run your own IPFS node or Filecoin node. Simply download the Lassie binary and start retrieving your data with the simple command -
 
