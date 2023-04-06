@@ -4,7 +4,7 @@ description: 'An overview of the content tracks that the community will convene 
 author:
 date: 2023-4-6
 permalink: '/2023-introducing-lassie/'
-header_image: ''
+header_image: '/Lassie.png'
 tags:
 - 'filecoin'
 - 'retrieval'
