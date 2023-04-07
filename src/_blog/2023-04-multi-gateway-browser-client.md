@@ -2,10 +2,10 @@
 title: Multi-Gateway Browser Client
 description: A new approach to using ipfs:// and ipns:// links in a browser.
 author: John Turpish
-date: 2023-04-03
-permalink: "/2023-04-03-multigateway-browser-client/"
-translationKey: 2023-04-03-multigateway-browser-client
-header_image: "/2023-04-03-multigateway-browser-client-header.png"
+date: 2023-04-10
+permalink: "/2023-04-10-multigateway-browser-client/"
+translationKey: 2023-04-10-multigateway-browser-client
+header_image: "/2023-04-10-multigateway-browser-client-header.png"
 tags:
 - browsers
 
@@ -44,7 +44,7 @@ In each case, you're delegating all the "IPFS stuff" to a particular node. This 
 
 ### Performance
 
-If the gateway you've chosen happens to have the data you're seeking already on-hand, your performance will be great, since it can simply return to you what it already has. Better, in fact, than the multi-gateway client likely would be since it would have wasted requests. However, if you chose poorly, that gateway will have to spend quite a bit of time querying its peers to try to find the data you request before the timeout. The ideal choice may very well depend on what you happen to be doing at the moment - and may differ from one of your tabs to another. A multi-gateway client will have very bad performance more rarely.
+If the gateway you've on happens to have the data you're seeking already on-hand, your performance will be great, since it can simply return to you what it already has. Better, in fact, than the multi-gateway client likely would be since it would have wasted requests. However, if you were unlucky, that gateway will have to spend quite a bit of time querying its peers to try to find the data you request before the timeout. The ideal gateway may very well depend on what you happen to be doing at the moment - and may differ from one of your tabs to another. A multi-gateway client will have very bad performance more rarely.
 
 It's also conceivable that for a sufficiently large file which exists on multiple gateways you're talking to, a verifying multi-gateway client might be able to beat a single-gateway client, since you might be pulling down parts of the file from different sources concurrently. [RAPIDE](https://pl-strflt.notion.site/RAPIDE-3c4fb9e159ae471bb426bb81855cee16) is a more advanced client which also makes use of this principle (along with other things).
 

@@ -6,7 +6,7 @@
     <div class="flex-shrink lg:max-w-sm xl:max-w-xl mb-4 lg:mb-0">
       <h2 class="type-h2">Stay informed</h2>
       <p class="mt-2 mr-2">
-        Sign up for the IPFS newsletter (<router-link
+        Sign up for the IPFS Weekly newsletter (<router-link
           :to="latestWeeklyPost ? latestWeeklyPost.path : ''"
           class="text-blueGreenLight hover:underline"
           >example</router-link

@@ -26,7 +26,7 @@
         class="text-blueGreen hover:underline"
         href="#newsletter-form"
         @click="blockLazyLoad()"
-        >newsletter</a
+        >weekly newsletter</a
       >{{ `, ` }}
       <a
         class="text-blueGreen hover:underline"
