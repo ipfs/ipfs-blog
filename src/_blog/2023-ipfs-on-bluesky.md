@@ -4,7 +4,7 @@ description: 'We’re excited to share that IPFS now has an official presence on
 author: 
 date: 2023-04-12
 permalink: '/2023-ipfs-on-bluesky/'
-header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
+header_image: '/2023-ipfs-on-bluesky.png'
 tags:
   - 'social media'
 ---
@@ -17,4 +17,4 @@ We chose to start with Bluesky because it shares many of the same values and goa
 
 @[youtube](jGbBZbl-V8Y)
 
-It’s still very early days at Bluesky (and it’s still in private beta), but it has shown early promise in solving some of the critical problems the social web has been plagued with. If you’re on Bluesky and would like to keep up with IPFS there, [then give the new profile a follow](https://staging.bsky.app/profile/ipfs.bsky.social)!
+It’s still very early days at Bluesky (and it’s still in private beta), but it has shown early promise in solving some of the critical problems the social web has been plagued with. If you’re on Bluesky and want to keep up with IPFS there, [then give the new profile a follow](https://staging.bsky.app/profile/ipfs.bsky.social)!
