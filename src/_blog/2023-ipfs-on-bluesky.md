@@ -2,7 +2,7 @@
 title: IPFS is now on Bluesky!
 description: 'We’re excited to share that IPFS now has an official presence on Bluesky, a new decentralized social network that recently spun out of Twitter.'
 author: 
-date: 2023-04-12
+date: 2023-04-17
 permalink: '/2023-ipfs-on-bluesky/'
 header_image: '/2023-ipfs-on-bluesky.png'
 tags:
