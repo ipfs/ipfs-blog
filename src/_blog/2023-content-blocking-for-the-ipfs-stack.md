@@ -13,7 +13,7 @@ tags:
   - 'content-moderation'
 ---
 
-Bifrost (the NetOps team responsible for the IPFS.io HTTP gateways) is happy to announce that content blocking can now be enabled in Kubo and other tools in the IPFS stack.
+Bifrost (the Protocol Labs NetOps team responsible for the IPFS.io HTTP gateways) is happy to announce that content blocking can now be enabled in Kubo and other tools in the IPFS stack.
 
 Traditionally, content blocking has been performed only at the IPFS gateway level and directly in Nginx, using the original [Badbits denylist](https://badbits.dwebops.pub/denylist.json). This had a few issues: content on the denylist was not blocked on Kubo and was still available via Bitswap. Additionally, blocking affected concrete CID strings, but not equivalent ones (i.e. those with a different base encoding).
 
