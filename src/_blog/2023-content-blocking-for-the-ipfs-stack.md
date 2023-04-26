@@ -2,7 +2,7 @@
 title: Content Blocking for the IPFS stack is finally here!
 description: 'We’re excited to share that content blocking can now be enabled in Kubo and other tools in the IPFS stack.'
 author: The Bifrost Team
-date: 2023-04-28
+date: 2023-04-26
 permalink: '/2023-content-blocking-for-the-ipfs-stack/'
 header_image: '/release-notes-placeholder.png'
 tags:
