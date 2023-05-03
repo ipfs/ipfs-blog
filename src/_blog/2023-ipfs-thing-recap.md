@@ -4,7 +4,7 @@ description: 'Highlights, photos, and videos from the annual gathering of the IP
 author:
 date: 2023-05-03
 permalink: '/2023-ipfs-thing-recap/'
-header_image: '/src/assets/ipfs-thing-2023-recap/ipfs-2023-recap-featured-image.jpg'
+header_image: '/ipfs-thing-2023-recap/ipfs-2023-recap-featured-image.jpg'
 tags:
   - 'thing'
   - 'þing'
