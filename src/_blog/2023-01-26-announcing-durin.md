@@ -20,7 +20,7 @@ To date, it's been difficult to access, upload and share IPFS content using a mo
 
 The transport-agnostic nature of IPFS content addresses means there are many ways to find and retrieve content on the IPFS public network. On a mobile device, the best balance of decentralization and device performance is to align with the network model of the device OS - transient connectivity.
 
-We do this in Durin by connecting to multiple HTTP gateways to the IPFS network. On app launch, Durin pings a list of public gateways, and determines which route is the most reliable and fastest way to access the network. This approach is functional but not optimal. We're working on specifications for multi-gateway connectivity patterns which balance a number of factors - such as verifiability guarantees, reader privacy, and not overloading gateways.
+We do this in Durin by connecting to the IPFS network via multiple HTTP gateways. On app launch, Durin pings a list of public gateways, and determines which route is the most reliable and fastest way to access the network. This approach is functional but not optimal. We're working on specifications for multi-gateway connectivity patterns which balance a number of factors - such as verifiability guarantees, reader privacy, and not overloading gateways.
 
 <img src="../assets/announcing-durin-ipfs/gateway-durin.png" alt="gateway list" width="350">
 
@@ -39,8 +39,6 @@ We currently rely on [web3.storage](https://web3.storage/) for file uploads. `we
 Durin also saves a local history of uploads already shared.
 
 <img src="../assets/announcing-durin-ipfs/filelist-durin.png" alt="uploaded files list" width="350">
-
-:warning: (screenshot) TODO :warning:
 
 Using a single remote service is a usable first step, but doesn't provide long term user control of the data published. We're looking at tighter integration with local OS data storage, local sharing between devices when possible, and pluggable remote service support.
 
@@ -68,10 +66,10 @@ We'd love to hear your ideas and feedback, and have you participate!
 
 Join the #browsers-and-platforms channel which is bridged across the [Filecoin Slack](https://filecoin.io/slack/), [IPFS Discord](https://discord.gg/vZTcrFePpt) and [Element/Matrix](https://matrix.to/#/#browsers-and-standards:ipfs.io).
 
+Checkout the IPFS Thing talk, discussing Durin's role and some future ideas for the app.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QkhnKm-fCs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Shoutout
 
 Shout out to [Trigram](https://www.trigram.co/) for continued work on Durin. 
-
-## See You Soon!
-
-The next [IPFS Thing](https://2023.ipfs-thing.io/) is rapidly approaching, April 15th-19th, in Brussels. As a community, we'll be using that opportunity to share, discuss, and blaze forward with many new IPFS capabilities and implementations. 
