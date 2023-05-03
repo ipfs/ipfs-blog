@@ -2,9 +2,9 @@
 title: IPFS þing 2023 Recap
 description: 'Highlights, photos, and videos from the annual gathering of the IPFS implementers community.'
 author:
-date: 2023-05-04
+date: 2023-05-03
 permalink: '/2023-ipfs-thing-recap/'
-header_image: '/release-notes-placeholder.png'
+header_image: '/src/assets/ipfs-thing-2023-recap/featured-image.jpg'
 tags:
   - 'thing'
   - 'þing'
@@ -14,7 +14,7 @@ tags:
 
 The IPFS implementers community recently came together in Brussels, Belgium for the second year of IPFS þing, an annual gathering dedicated to advancing IPFS implementation. With 12 tracks and over 75 talks, demos, and sessions, the 5-day summit that occurred in April 2023 was a showcase of recent advances across IPFS, a forum for sharing needs from the protocol, and an opportunity to chart new directions for the future of IPFS. 
 
-![photo](/assets/images/placeholder.png)
+![photo](/src/assets/ipfs-thing-2023-recap/group-collage.jpg) 
 
 Over 130 participants joined for a collection of talks, workshops, discussion circles, hacking time, and many many many hallway conversations. Here are a few memorable highlights:
 
@@ -25,15 +25,15 @@ Over 130 participants joined for a collection of talks, workshops, discussion ci
 * **Integrating IPFS:** IPFS is used in environments ranging from tiny IoT sensor platforms to mobile devices to satellites in space. In this track, participants learned how IPFS is being implemented in space, on mobile devices running  iOS or Android, and in higher level application constructs like “accounts”! We even learned what an “ipfs run” command would look like for distributed functions. ([YouTube playlist](https://www.youtube.com/watch?v=drvFcbykHYY&list=PLuhRWgmPaHtTI0MS6ZjSJjBxZp7rcjSS_))
 * **Content Routing:** mThe first step to exchange “content” over the IPFS network is to either 1) find the given content by using a Content ID (CID), or 2) publish the given content by making its CID known. The Content Routing track covered a holistic view of the content routing evolution since the inception of IPFS and showcased the latest advancements in this simple yet paramount operation in the IPFS ecosystem. This track provided an overview of the InterPlanetary Network Indexer (IPNI), and expanded on how it enables mass publication and lookup of content across hundreds of billions of CIDs. The latest developments in reader privacy preservation, a mechanism that enables private lookups of content both on the IPFS DHT and IPNI, was also presented. ([YouTube playlist](https://www.youtube.com/watch?v=oe7fjOl-q0s&list=PLuhRWgmPaHtRBWV3SvInC5ATS8aKV3lsW))
 
-![photo](/assets/images/placeholder.png)
+![photo](/src/assets/ipfs-thing-2023-recap/ipfs-thing-1.png)
 
 IPFS þing isn’t just about getting things done though… it’s also about doing things together. Because we were in the beating bureaucratic heart of the European Union, we had to ~~flaunt the rules~~ pay respect to the culture and history of the region by visiting the [Atomium](https://atomium.be/home/Index) for dinner on one night and the [Comics Art Museum](https://www.comicscenter.net/en/home) on another. We also held a game night featuring IPFS trivia that you will never be able to guess the answers to, but you may get a chance soon by following IPFS on [Twitter (@ipfs)](https://twitter.com/ipfs) or [Bluesky (@ipfs.tech)](https://staging.bsky.app/profile/ipfs.tech)…
 
-![atomium/fun photos](/assets/images/placeholder.png)
+![atomium/fun photos](/src/assets/ipfs-thing-2023-recap/atomium-collage.jpg)
 
 The closing session of IPFS þing was kicked off by a rousing call to action from [Danny O’Brien](https://twitter.com/mala) highlighting the importance of daily use of IPFS software within the community. This was followed by a group retrospective on the event itself run by IPFS inventor Juan Benet, collecting feedback in real time from all attendees as input into the next one.
 
-![side by side photos: danny on stage, and juan running the retro](/assets/images/placeholder.png)
+![side by side photos: danny on stage, and juan running the retro](/src/assets/ipfs-thing-2023-recap/danny-juan-1.jpg)
 
 The event would not have been possible without the dedication of our awesome track leaders, the 75+ speakers and sessions, the 5 IPFS þing Scholars who brought their unique perspectives and experiences to the event, and of course, everyone who traveled from over 30 countries to participate. Thank you to our incredible community for making IPFS þing 2023 an amazing experience, and see you next time!
 
@@ -51,6 +51,6 @@ Check out the full list of talks on the [IPFS YouTube channel](https://www.youtu
 * [Integrating IPFS](https://www.youtube.com/watch?v=drvFcbykHYY&list=PLuhRWgmPaHtTI0MS6ZjSJjBxZp7rcjSS_)
 * [Community & Governance](https://www.youtube.com/watch?v=U2qvvQxIdws&list=PLuhRWgmPaHtTIFbOVO5YfXkoFg6wIGbBN)
 
-![mini photo collage of some of the track leads and speakers on stage](/assets/images/placeholder.png)
+![mini photo collage of some of the track leads and speakers on stage](/src/assets/ipfs-thing-2023-recap/speaker-collage.jpg)
 
 Subscribe to the [IPFS Community Calendar](https://lu.ma/ipfs) to be the first to know about both online and in-person events, including pre-registration for our community-wide [IPFS Camp](https://ipfs.camp/) in autumn 2023!
