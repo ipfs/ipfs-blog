@@ -51,6 +51,6 @@ Check out the full list of talks on the [IPFS YouTube channel](https://www.youtu
 * [Integrating IPFS](https://www.youtube.com/watch?v=drvFcbykHYY&list=PLuhRWgmPaHtTI0MS6ZjSJjBxZp7rcjSS_)
 * [Community & Governance](https://www.youtube.com/watch?v=U2qvvQxIdws&list=PLuhRWgmPaHtTIFbOVO5YfXkoFg6wIGbBN)
 
-![](../assets/ipfs-thing-2023-recap/speaker-collage.jpg)
-
 Subscribe to the [IPFS Community Calendar](https://lu.ma/ipfs) to be the first to know about both online and in-person events, including pre-registration for our community-wide [IPFS Camp](https://ipfs.camp/) in autumn 2023!
+
+![](../assets/ipfs-thing-2023-recap/speaker-collage.jpg)
