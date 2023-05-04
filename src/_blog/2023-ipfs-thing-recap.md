@@ -2,7 +2,7 @@
 title: IPFS þing 2023 Recap
 description: 'Highlights, photos, and videos from the annual gathering of the IPFS implementers community.'
 author:
-date: 2023-05-03
+date: 2023-05-04
 permalink: '/2023-ipfs-thing-recap/'
 header_image: '/ipfs-thing-2023-recap/ipfs-2023-recap-featured-image.jpg'
 tags:
