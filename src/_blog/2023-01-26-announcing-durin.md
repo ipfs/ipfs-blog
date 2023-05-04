@@ -1,6 +1,13 @@
 ---
 tags:
 - Durin
+- mobile
+- ios
+- android
+- app store
+- web3 storage
+- web3
+
 title: "Announcing Durin"
 description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
 date: 2023-04-11
@@ -14,7 +21,7 @@ Today we are excited to announce Durin, a native mobile application for iOS and 
 
 ## Background
 
-To date, it's been difficult to access, upload and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo), the initial implementation of the protocol was simply not built with mobile in mind. The IPFS approach to P2P for many years was about running servers, and [that has changed](https://blog.ipfs.tech/2023-03-implementation-principles/). In the meantime, we wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
+To date, it's been difficult to access, upload and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo), the initial implementation of the protocol was simply not built with mobile in mind. The IPFS approach to P2P for many years was about running servers, and [that is changing](https://blog.ipfs.tech/2023-03-implementation-principles/). In the meantime, we wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
 
 ## Accessing IPFS Content
 
@@ -38,7 +45,7 @@ On iOS Safari `ipfs://` protocol links will be redirected to Durin, where the ap
 
 Mobile devices are transiently connected and low-powered, so they do not make good servers. For sharing files and data to IPFS, Durin uses a [pinning service](https://docs.ipfs.tech/concepts/persistence/#persistence-permanence-and-pinning) to do this on behalf of the user.
 
-We currently rely on [web3.storage](https://web3.storage/) for file uploads. `web3.storage` is a service that makes decentralized file storage accessible by hosting data on IPFS for the user, the way a web host does for HTTP today. 
+We currently rely on [web3.storage](https://web3.storage/) for file uploads. `web3.storage` is a service that makes decentralized file storage accessible by hosting data on IPFS for the user, the way a web host does for HTTP today. NOTE: _Using a single service like this is not ideal, as users don’t hold those keys. We plan to experiment with approaches to ensuring maximal user ownership of their data while also providing remote storage and data availability._
 
 Durin also saves a local history of uploads already shared.
 
