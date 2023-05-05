@@ -11,8 +11,6 @@ tags:
   - 'resource manager'
 ---
 
-![ipfs-disruption.jpeg](unresponsive-nodes-incident-202305/ipfs-disruption.jpeg)
-
 It depends on what type of system/network you’re running. In 90% of networks, or networked systems, this is a grand-scale disaster. Alerts are popping up everywhere, engineers go far beyond “day-time work” to get things back to normal, customers are panicking and potentially leaving the platform and the customer care lines are on fire. Half of the network is a large fraction, but I would bet that the same would happen even when 10% or 20% of the network experiences outage, or malfunction.
 
 It’s not like that when you run your services on a decentralized, distributed P2P network, such as IPFS! At the beginning of 2023 a central component of the IPFS network, namely the public IPFS DHT experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).* Interestingly, no content became unreachable and almost nothing in the network looked like the majority of the network was basically down. We did observe a significant increase in the content routing/resolution latency, in the order of 25% initially, but this definitely didn’t reflect the scale of the event.
