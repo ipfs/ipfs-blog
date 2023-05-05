@@ -1,6 +1,6 @@
 ---
 title: What happens when half of the nodes in your network are unresponsive?
-description: 'The IPFS DHT experienced a serious incident in the beginning of 2023 and users hardly noticed - that's the power of a decentralized network!'.
+description: 'The IPFS DHT experienced a serious incident in the beginning of 2023 and users hardly noticed - that's the power of a decentralized network!'
 author: Yiannis Psaras
 date: 2023-05-05
 permalink: '/2023-ipfs-dht-unresponsive-nodes-incident/'
