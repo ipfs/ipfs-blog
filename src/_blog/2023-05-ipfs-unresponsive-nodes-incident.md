@@ -4,7 +4,7 @@ description: 'The IPFS DHT experienced a serious incident in the beginning of 20
 author: 
 date: 2023-05-05
 permalink: '/ipfs-unresponsive-nodes-incident/'
-header_image: '/unresponsive-nodes-incident-202305/ipfs-disruption.jpeg'
+header_image: '/2023-05-ipfs-unresponsive-nodes-incident.jpeg'
 tags:
   - 'ipfs dht'
   - 'incident'
