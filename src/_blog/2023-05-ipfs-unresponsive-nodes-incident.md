@@ -56,7 +56,7 @@ Through a combination of crawling the network and attempting connections to all 
     
     A GET request that hits one of the affected, unresponsive nodes would get the connection shut down by the remote, but would get stuck there until it timed out, at which point it would re-issue the request to another peer. The relatively high concurrency factor of the IPFS DHT (`alpha = 10`) helps in this case, as it means that for any given request up to 10 concurrent requests can be in flight. This helps a lot even with a high percentage of unresponsive nodes as it means that at least one of the 10 peers contacted will respond.
     
-    > This is because the DHT lookup from the GET operation terminates when it hits one of the 20 closest peers to the target key, and the PUT operation terminates when it has found all the 20 closest peers.
+    > This is because the DHT lookup from the GET operation terminates when it hits one of the 20 closest peers to the target key, when the PUT operation terminates when it has found all the 20 closest peers.
     > 
     
     In the meantime, we estimated that a non negligible number of GET requests were hitting at least one unresponsive node during the lookup process. This event results in a timeout and significantly increases the request latency. There is a high probability that an unresponsive node is encountered during the last hops of the DHT walk because unresponsive peers are mostly present in higher buckets as the above figure shows.
