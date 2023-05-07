@@ -89,7 +89,7 @@ The team’s immediate focus became:
 
 In parallel, we kept monitoring the situation by instrumenting a PUT and GET measurement experiment that was running since before the `kubo-v0.18.1` update, when the affected nodes started updating gradually.
 
-`kubo-v0.18.1` was [released on the 30th January 2023](https://github.com/ipfs/kubo/releases/tag/v0.18.1) and within the first 10 days, more than 8.5k nodes updated to this release. Our monitoring software allowed us to have an accurate view of the state of the network and observed that the update to the new kubo release brought significant performance increase for the GET operation - more than 40% at the 95th percentile on a sample of ~2k requests, compared to the situation before the `kubo-v0.18.1` release.
+`kubo-v0.18.1` was [released on the 2023-01-30](https://github.com/ipfs/kubo/releases/tag/v0.18.1) and within the first 10 days, more than 8.5k nodes updated to this release. Our monitoring software allowed us to have an accurate view of the state of the network and observed that the update to the new kubo release brought significant performance increase for the GET operation - more than 40% at the 95th percentile on a sample of ~2k requests, compared to the situation before the `kubo-v0.18.1` release.
 
 ![output.png](../assets/ipfs-unresponsive-nodes-incident/output%202.png)
 
