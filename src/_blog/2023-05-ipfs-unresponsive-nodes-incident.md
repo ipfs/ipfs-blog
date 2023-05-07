@@ -46,7 +46,7 @@ As mentioned earlier, the GET and PUT operations were completing successfully, s
 - what percentage of nodes in the network were affected,
 - if there is a performance penalty in either the PUT or the GET operation, or both.
 
-Through a combination of crawling the network and attempting connections to all DHT Server nodes (i.e., those that store and serve provider records and content), we found that close to 60% of the network has been affected by this misconfiguration. Clearly this is a very large percentage of the network, which made it urgent to look into the performance impact. We followed the below methodology:
+Through a combination of crawling the network and attempting connections to all ~50k DHT Server nodes (i.e., those that store and serve provider records and content), we found that close to 60% of the network has been affected by this misconfiguration. Clearly this is a very large percentage of the network, which made it urgent to look into the performance impact. We followed the below methodology:
 
 1. As a first step, we wanted to figure out which buckets in the nodes’ routing tables do the affected nodes occupy. We found that they occupied the higher buckets of the nodes’ routing tables, which further meant that most likely PUTs would get slower, but GETs should not be affected too much. This is because the DHT lookup from the GET operation terminates when it hits *one* of the 20 closest peers to the target key, and the PUT operation terminates when it has found all the 20 closest peers. Since a significant portion of the network is unresponsive, the PUT operation certainly hits at least one unresponsive node, but the GET operation has good chances of finding at least one responsive node within the 20 closest.
     
