@@ -15,7 +15,7 @@ It depends on what type of system/network you’re running. In 90% of networks, 
 
 It’s not like that when you run your services on a decentralized, distributed P2P network, such as IPFS! At the beginning of 2023 a critical component of the IPFS network, namely the public IPFS DHT, experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).* Interestingly, no content became unreachable and almost nothing in the network looked like the majority of the network was basically down. We did observe a significant increase in the content routing/resolution latency, in the order of 25% initially, but this definitely didn’t reflect the scale of the event.
 
-In this blogpost we’ll go through the timeline of the event from “Incident Detection” to “Root Cause Analysis” and give details of the engineering team’s response, as well as of the items that the team has been monitoring throughout the incident.
+In this blogpost we’ll go through the timeline of the event from “Incident Detection” to “Root Cause Analysis” and give details of the engineering team’s response, as well as of the items that the team has been monitoring throughout the incident. A summarizing talk on the content of this blogpost was given at [IPFS Thing 2023](https://2023.ipfs-thing.io/) and can be found [here](https://youtu.be/8cGEjdCfm14).
 
 ## Incident Detection: we’ve got a problem❗️
 
