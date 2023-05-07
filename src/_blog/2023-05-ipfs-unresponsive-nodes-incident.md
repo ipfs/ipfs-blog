@@ -19,7 +19,7 @@ In this blogpost we’ll go through the timeline of the event from “Incident D
 
 ## Incident Detection: we’ve got a problem❗️
 
-> At the beginning of 2023 a central component of the IPFS network, namely the public IPFS DHT experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).*
+> At the beginning of 2023 a central component of the IPFS network, namely the public IPFS DHT, experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).*
 > 
 
 Unresponsive here means that nodes would seem to be online, they would accept connections from other nodes, but they wouldn’t reply to requests. Basically, when a node would try to write to one of the unresponsive nodes, the unresponsive node would terminate the connection immediately.
