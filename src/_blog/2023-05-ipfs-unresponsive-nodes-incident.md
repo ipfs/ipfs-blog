@@ -31,8 +31,8 @@ The problem was all down to a misconfiguration of the go-libp2p resource manager
 Content was still findable through kubo, so no alarms were raised. However, some of our research teams have been observing unusual error messages:
 
 ```go
-**> Application error 0x0 (remote): conn-22188077: system: cannot reserve inbound
-connection: resource limit exceeded**
+> Application error 0x0 (remote): conn-22188077: system: cannot reserve inbound
+connection: resource limit exceeded
 ```
 
 The error didn’t seem like one that would trigger widespread panic, since PUT and GET operations were completing successfully. We were seeing slower performance than normal and had been investigating whether [recent changes with Hydra boosters](https://discuss.ipfs.tech/t/dht-hydra-peers-dialling-down-non-bridging-functionality-on-2022-12-01/15567) had bigger impact than we were expecting. That was until a physical meeting of our engineering teams, where we allocated some “hack time” to play around with the codebase and one of the items on the agenda was to figure out where this error comes from.
@@ -56,22 +56,29 @@ Through a combination of crawling the network and attempting connections to all 
     
     A GET request that hits one of the affected, unresponsive nodes would get the connection shut down by the remote, but would get stuck there until it timed out, at which point it would re-issue the request to another peer. The relatively high concurrency factor of the IPFS DHT (`alpha = 10`) helps in this case, as it means that for any given request up to 10 concurrent requests can be in flight. This helps a lot even with a high percentage of unresponsive nodes as it means that at least one of the 10 peers contacted will respond.
     
+    
     > This is because the DHT lookup from the GET operation terminates when it hits one of the 20 closest peers to the target key, when the PUT operation terminates when it has found all the 20 closest peers.
     > 
     
-    In the meantime, we estimated that a non negligible number of GET requests were hitting at least one unresponsive node during the lookup process. This event results in a timeout and significantly increases the request latency. There is a high probability that an unresponsive node is encountered during the last hops of the DHT walk because unresponsive peers are mostly present in higher buckets as the above figure shows.
     
+    In the meantime, we estimated that a non negligible number of GET requests were hitting at least one unresponsive node during the lookup process. This event results in a timeout and significantly increases the request latency. There is a high probability that an unresponsive node is encountered during the last hops of the DHT walk because unresponsive peers are mostly present in higher buckets as the above figure shows.
+
+
 3. To quantify the impact, we crawled the network and gathered the PeerIDs of unresponsive nodes. We set up six kubo nodes in several locations around the globe and attempted to: i) publish content (PUT), and, ii) retrieve content (GET) for two cases: i) when interacting with all nodes in the network, and, ii) when ignoring all responses from the unresponsive peers, whose PeerIDs we knew and were cross-checking with in real time.
+
     - The results we found were as follows:
-        
-        The PUT operation was slowed down by approximately 10%
+      - The PUT operation was slowed down by approximately 10%
+
         
         ![output2.png](../assets/ipfs-unresponsive-nodes-incident/output2.png)
         
-    
-    The GET operation was also disrupted (in contrast to our initial assumption) and was slowed down by approximately 15%, at times reaching closer to 20%.
+
+
+      - The GET operation was also disrupted (in contrast to our initial assumption) and was slowed down by approximately 15%, at times reaching closer to 20%.
+
     
     ![output.png](../assets/ipfs-unresponsive-nodes-incident/output_1.png)
+
     
 4. We also experimented with even higher concurrency factors, in particular with `alpha = 20`, as a potential mitigation strategy. We repeated the same experiment with one extra set of runs: the case where we interact with all nodes in the network (i.e., we do not ignore unresponsive peers), but have higher concurrency factor.
     
