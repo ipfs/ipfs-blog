@@ -71,7 +71,7 @@ Through a combination of crawling the network and attempting connections to all 
     
     The GET operation was also disrupted (in contrast to our initial assumption) and was slowed down by approximately 15%, at times reaching closer to 20%.
     
-    ![output.png](../assets/ipfs-unresponsive-nodes-incident/output%201.png)
+    ![output.png](../assets/ipfs-unresponsive-nodes-incident/output_1.png)
     
 4. We also experimented with even higher concurrency factors, in particular with `alpha = 20`, as a potential mitigation strategy. We repeated the same experiment with one extra set of runs: the case where we interact with all nodes in the network (i.e., we do not ignore unresponsive peers), but have higher concurrency factor.
     
@@ -91,11 +91,11 @@ In parallel, we kept monitoring the situation by instrumenting a PUT and GET mea
 
 `kubo-v0.18.1` was [released on the 2023-01-30](https://github.com/ipfs/kubo/releases/tag/v0.18.1) and within the first 10 days, more than 8.5k nodes updated to this release. Our monitoring software allowed us to have an accurate view of the state of the network and observed that the update to the new kubo release brought significant performance increase for the GET operation - more than 40% at the 95th percentile on a sample of ~2k requests, compared to the situation before the `kubo-v0.18.1` release.
 
-![output.png](../assets/ipfs-unresponsive-nodes-incident/output%202.png)
+![output.png](../assets/ipfs-unresponsive-nodes-incident/output_2.png)
 
 We also monitored the situation compared to the pre-incident performance by running the experiment where we ignored the set of PeerIDs that were identified as affected by the misconfiguration. As a sample from more than 20k GET operations, in the figure below we show that the impact has reduced to ~5% (mid-February 2023).
 
-![output.png](../assets/ipfs-unresponsive-nodes-incident/output%203.png)
+![output.png](../assets/ipfs-unresponsive-nodes-incident/output_3.png)
 
 ## Addressing the Root Cause 🔧
 
