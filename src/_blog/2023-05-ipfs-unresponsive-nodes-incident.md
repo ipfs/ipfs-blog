@@ -85,7 +85,7 @@ The team’s immediate focus became:
 1. [Adding/updating documentation on Kubo’s resource manager integration](https://github.com/ipfs/kubo/blob/master/docs/libp2p-resource-management.md)
 2. Triaging and responding to user questions/issues ([example](https://github.com/ipfs/kubo/issues/9432))
 3. Preparing a new kubo release (`v0.18.1`), where the default settings for the resource manager were set to more appropriate values. This reduced the likelihood that someone would need to adjust the resource manager configuration manually, thus avoiding the configuration “footguns”.    
-4. Encouraging as many nodes as possible to upgrade through public forums and direct relationships with known larger scale operators
+4. Encouraging as many nodes as possible to upgrade through public forums and direct relationships with known larger scale operators.
 
 In parallel, we kept monitoring the situation by instrumenting a PUT and GET measurement experiment that was running since before the `kubo-v0.18.1` update, when the affected nodes started updating gradually.
 
