@@ -4,7 +4,7 @@ description: 'Track recap with links and serious analysis for the IPFS on the We
 author: Dietrich Ayala
 date: 2023-05-08
 permalink: '/2023-ipfs-thing-web-track/'
-header_image: '/ipfs-thing-2023-recap/ipfs-on-the-web-featured-image.jpeg'
+header_image: '/ipfs-thing-2023-recap/ipfs-on-the-web-featured-image-2.jpg'
 tags:
   - 'thing'
   - 'þing'
