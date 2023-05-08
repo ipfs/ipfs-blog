@@ -17,7 +17,7 @@ It’s not like that when you run your services on a decentralized, distributed 
 
 In this blogpost we’ll go through the timeline of the event from “Incident Detection” to “Root Cause Analysis” and give details of the engineering team’s response, as well as of the items that the team has been monitoring throughout the incident. A summarizing talk on the content of this blogpost was given at [IPFS Thing 2023](https://2023.ipfs-thing.io/) and can be found [here](https://youtu.be/8cGEjdCfm14).
 
-## Incident Detection: we’ve got a problem❗️
+## ❗️ Incident Detection: we’ve got a problem
 
 > At the beginning of 2023 a central component of the IPFS network, namely the public IPFS DHT, experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).*
 > 
@@ -37,9 +37,9 @@ connection: resource limit exceeded
 
 The error didn’t seem like one that would trigger widespread panic, since PUT and GET operations were completing successfully. We were seeing slower performance than normal and had been investigating whether [recent changes with Hydra boosters](https://discuss.ipfs.tech/t/dht-hydra-peers-dialling-down-non-bridging-functionality-on-2022-12-01/15567) had bigger impact than we were expecting. That was until a physical meeting of our engineering teams, where we allocated some “hack time” to play around with the codebase and one of the items on the agenda was to figure out where this error comes from.
 
-## Incident Diagnosis: what is happening ⁉️
+## ❓ Incident Diagnosis: what is happening
 
-We quickly realized that this was a resource manager issue where the remote node is hitting a limit and closing the connection. After some more digging and looking into the details of the resource manager and the error itself (i.e., `cannot reserve **in**bound connection`), we understood the root cause of the issue within the resource manager and that it was related to the remote node. It turns out that the resource manager was manually misconfigured by a very large percentage of nodes to values that were not in the default configuration by the “vanilla” version of the resource manager that shipped with `kubo-v0.17`.
+We quickly realized that [this was a resource manager issue where the remote node is hitting a limit and closing the connection](https://github.com/libp2p/go-libp2p/issues/1928). After some more digging and looking into the details of the resource manager and the error itself (i.e., `cannot reserve **in**bound connection`), we understood the root cause of the issue within the resource manager and that it was related to the remote node. It turns out that the resource manager was manually misconfigured by a very large percentage of nodes to values that were not in the default configuration by the “vanilla” version of the resource manager that shipped with `kubo-v0.17`.
 
 As mentioned earlier, the GET and PUT operations were completing successfully, so the next step was to identify the scale of the problem. Our main goals were to figure out:
 
@@ -64,7 +64,7 @@ Through a combination of crawling the network and attempting connections to all 
     In the meantime, we estimated that a non negligible number of GET requests were hitting at least one unresponsive node during the lookup process. This event results in a timeout and significantly increases the request latency. There is a high probability that an unresponsive node is encountered during the last hops of the DHT walk because unresponsive peers are mostly present in higher buckets as the above figure shows.
 
 
-3. To quantify the impact, we crawled the network and gathered the PeerIDs of unresponsive nodes. We set up six kubo nodes in several locations around the globe and attempted to: i) publish content (PUT), and, ii) retrieve content (GET) for two cases: i) when interacting with all nodes in the network, and, ii) when ignoring all responses from the unresponsive peers, whose PeerIDs we knew and were cross-checking with in real time.
+3. To quantify the impact, we crawled the network and gathered the PeerIDs of unresponsive nodes. We set up six kubo nodes in several locations around the globe and attempted to: i) publish content (PUT), and, ii) retrieve content (GET) for two cases: 1) when interacting with all nodes in the network, and, 2) when ignoring all responses from the unresponsive peers, whose PeerIDs we knew and were cross-checking with in real time.
 
     - The results we found were as follows:
       - The PUT operation was slowed down by approximately 10%
@@ -82,10 +82,10 @@ Through a combination of crawling the network and attempting connections to all 
     
 4. We also experimented with even higher concurrency factors, in particular with `alpha = 20`, as a potential mitigation strategy. We repeated the same experiment with one extra set of runs: the case where we interact with all nodes in the network (i.e., we do not ignore unresponsive peers), but have higher concurrency factor.
     
-    We found that the performance indeed increases and goes back to pre-incident levels. However, it was decided that we do *not* go down this path, as the increased concurrency factor would: i) increase significantly the overhead/traffic in the DHT network, and, ii) stick with nodes that do not upgrade later on (when the incident is resolved) giving a clear advantage advantage to those nodes.
+    We found that the performance indeed increases and goes back to pre-incident levels. However, it was decided *not* to go down this path, as the increased concurrency factor would: i) increase significantly the overhead/traffic in the DHT network, and, ii) stick with nodes that do not upgrade later on (when the incident is resolved) giving a clear advantage advantage to those nodes.
     
 
-## Event Mitigation: stop the bleeding 🚑
+## 🚑 Event Mitigation: stop the bleeding
 
 The team’s immediate focus became:
 
@@ -104,14 +104,14 @@ We also monitored the situation compared to the pre-incident performance by runn
 
 ![output.png](../assets/ipfs-unresponsive-nodes-incident/output_3.png)
 
-## Addressing the Root Cause 🔧
+## 🔧 Addressing the Root Cause 
 
 Our immediate actions managed to stop the bleeding and bring the network back to normal pretty quickly. However, it was clear that we had to implement longer term fixes to protect the nodes’ routing tables from unresponsive peers and to avoid inadvertently making nodes unresponsive.  Specifically this translated to:
 
 1. Revamped the Kubo resource manager UX to further reduce the likelihood of catastrophic misconfiguration.  This was completed in [Kubo 0.19](https://github.com/ipfs/kubo/releases/tag/v0.19.0#improving-the-libp2p-resource-management-integration).
 2. Only add peers to the routing table that are responsive requests [during the routing table refresh](https://github.com/libp2p/go-libp2p-kad-dht/pull/810) (done) and [upon adding a node to the routing table](https://github.com/libp2p/go-libp2p-kad-dht/issues/811) (in progress - targeting [Kubo 0.21 in May](https://github.com/ipfs/kubo/issues/9814)).
 
-## Lessons Learned 📖
+## 📖 Lessons Learned
 
 There are several lessons to be learned from this incident.
 
