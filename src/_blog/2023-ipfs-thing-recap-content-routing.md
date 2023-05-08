@@ -13,7 +13,6 @@ tags:
   - 'track'
   - 'content'
   - 'routing'
-
 ---
 
 # Content Routing Track @ IPFS þing 2023
@@ -38,49 +37,49 @@ The full playlist of talks at the IPFS þing 2023 Content Routing track can be f
 
 [Masih](https://derkani.org/) presented an overview of Content Routing as a concept, its evolution over time, along with the evolutionary trends of content routing in the IPFS ecosystem. The talk illustrated what routing content in the IPFS network looks like today, how the mesh of content providers of different sizes interconnects, and the sub-systems that enable content routing to "just work", regardless of where the data resides.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oe7fjOl-q0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](oe7fjOl-q0s)
 
 ## Opening the DHT to large content providers by Guillaume Michel
 
 How does a 1M x reduction in opened connections sound? That's right; providing data via the DHT is becoming much more efficient for large content providers thanks to "regions". [Gui](https://github.com/guillaumemichel) presented the latest research on how the DHT key space can be divided across regions to reduce the number of connections as well as messages sent to make content discoverable via the IPFS DHT.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bXaL64fp55c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](bXaL64fp55c)
 
 ## IPNI: the InterPlanetary Network Indexer by Masih Derkani
 
 Talking of large content providers, IPNI, the InterPlanetary Network Indexer, is an alternative routing system designed from scratch to provide content by the bucket load. [Masih](https://derkani.org/) presented how IPNI achieves this by betting on storage becoming cheaper and using replicas to reduce the need for trust to provide single hop lookup for trillions of CIDs. He explained how IPNI handles changes in the subset of CIDs advertised by content providers in a super-efficient protocol. IPNI as a concept has been around for about a year; it is the same protocol that makes FileCoin content discoverable over the IPFS network. As a protocol, it has now grown large enough to deserve its own "InterPlanetary" acronym and a growing set of [specifications](https://github.com/ipni/specs).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_EDJXeDtcX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](_EDJXeDtcX4)
 
 ## cid.contact: one year on by Masih Derkani
 
 Having made the distinction between "protocol" and "implementation", [Masih](https://derkani.org/) presented a second talk on [`cid.contact`](https://cid.contact), the largest most mature IPNI cluster. `cid.contact` is built into [Kubo](https://github.com/ipfs/kubo) as a default routing system since version [`0.18.0`](https://github.com/ipfs/kubo/releases/tag/v0.18.0) and is the content router of choice for [Lassie](https://youtu.be/d5SzSm8NkUU) used by [Rhea](https://youtu.be/p89i9_AskIw). The talk covered the latest architecture of `cid.contact` and the newest features, such as cascading lookup over IPFS DHT and BitSwap, that make it a one-stop content router, tuned to find content no matter where it might be. `cid.contact` has ingested over 1.3 trillion CIDs from hundreds of providers, and just turned one this April. Happy 1st birthday! 🎂
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CPlOdNqJ8og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](CPlOdNqJ8og)
 
 ## IPFS Content Routing Workgroup, an introduction by Torfinn Olsen
 
 Ever wondered where the content routers meet? 🧙 Look no further; the Content Routing Workgroup is it! [Torfinn](https://github.com/TorfinnOlsen) provided an overview of what the workgroup aims for, how community decisions are made, and how things get prioritized in the pipeline. He presented the roadmap ahead for the workgroup and invited the community to join. The workgroup meetings are public and open to all. You can find recordings of the previous meetups [here](https://www.youtube.com/watch?v=LsCH8xw3__c&list=PLuhRWgmPaHtRP5lVouK_eqhC98xaej6Px). Whether it's the next big idea you'd like to propose or just to observe what content routers get up to all day, you are most welcome.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MagS8ly_YXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](MagS8ly_YXE)
 
 ## DHT ~~Double Hashing~~ Reader Privacy Updates & Migration Plan by Yiannis Psaras
 
 It was at the first IPFS þing in Reykjavík where [Gui](https://github.com/guillaumemichel) presented the idea of [Double Hashing](https://www.youtube.com/watch?v=ZPIDU1-JnVc) in the context of Content Routing. Yep; we love hashes so much we're gonna do it twice! In this technique, rather than looking up a CID straight up, it is hashed again and its "double-hashed" value is the key that's used for lookup. In turn, the lookup results are then returned in encrypted form using the original CID as the encryption key. Pretty nifty, right?! Gui presented two follow-up talks on this at IPFS Camp 2022 further [explaining the core idea](https://youtu.be/VBlx-VvIZqU) and what [transitioning to it would mean for content routing](https://youtu.be/m-6_VZ8e1tk). At Brussels, [Yiannis](https://github.com/yiannisbot) walked us through the latest updates in the rollout of ~~Double Hashing~~ Reader Privacy to the IPFS DHT, one of the routing systems in use today. The initial phase of privacy preservation focuses on the "reader" side, where an external observer cannot know what a user is looking up without knowing the original CID. Later work will build on this to expand the privacy benefits to the "writer" side, i.e., content providers.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FP4kKemco4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](FP4kKemco4w)
 
 ## Double Hashing in IPNI: Reader Privacy at scale by Ivan Schasny
 
 Privacy preservation is a quality that cuts right across routing systems. ✂️ This means no matter how the content is advertised or found we _want to_ preserve the user's privacy. In this talk [Ivan](https://github.com/ischasny) walked us through what this means for IPNI and how it is changing the architecture of `cid.contact` to incorporate reader privacy at its very core: `cid.contact` is moving to _only_ store encrypted provider records which means even the servers do not know what CIDs are being looked up. He expanded on how this big change is being rolled out garcefully, in stages and what's to come in the near future. Watch the [`#ipni` channel on FileCoin Slack](https://filecoinproject.slack.com/archives/C02T827T9N0) for the latest updates.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q46zJ_mai2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](Q46zJ_mai2c)
 
 ## Private data: state of the art by Ian Preston
 
 Taking things one step further on the privacy front, [Ian](https://peergos.org/about#ian_) and his team have been busy building privacy deep at the heart of [Peergos](https://peergos.org/). How does it work? The talk takes a deep dive into the Peergos architecture and how it utilizes `cryptree+`, BATs, and Capabilities to enable post-quantum ciphertext-level access control with improved metadata preservation and better performance. Ian walked us through the challenges they faced, such as garbage collection, and how the team overcame them to make application sandboxing a piece of cake. 🍰 As for the icing, check out Ian's slides shared right from Peergos [here](https://peergos.net/public/demo/talks/2023/ipfs-thing/private-data/web/index.html?open=true).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HVyrVUI2-RA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](HVyrVUI2-RA)
 
 ## Content Advertisement Mirroring by Andrew Gillis
 
@@ -88,7 +87,7 @@ As the adoption of IPNI as an alternative content routing protocol continues to 
 
 The talk was followed by a discussion on a set of open questions as we scale the IPNI network. Take a look and get involved right from where we left off at the next Content Routing Workgroup meeting!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6l0i8DjhpLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+@[youtube](6l0i8DjhpLg)
 
 ## A Massive Shout-out
 
