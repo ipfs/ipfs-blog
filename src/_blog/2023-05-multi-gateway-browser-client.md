@@ -1,19 +1,21 @@
+# chromium post draft
+
 ---
-title: Multi-Gateway Browser Client
-description: A new approach to using ipfs:// and ipns:// links in a browser.
+title: IPFS Multi-Gateway Experiment in Chromium
+description: A new approach to implementing ipfs:// and ipns:// support natively in the browser, using a client-only approach and fetching from multiple HTTP gateways.
 author: John Turpish
 date: 2023-05-09
-permalink: "/2023-05-multigateway-browser-client/"
-translationKey: 2023-05-multigateway-browser-client
-header_image: "/2023-05-multigateway-browser-client-header.png"
+permalink: "/2023-05-multigateway-chromium-client/"
+translationKey: 2023-05-multigateway-chromium-client
+header_image: "/2023-05-multigateway-chromium-client-header.png"
 tags:
 - browsers
 
 ---
 
-[IPFS](https://ipfs.io) is the preeminent protocol suite for [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a [node](https://docs.ipfs.tech/concepts/glossary/#node) and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)! 
+[IPFS](https://ipfs.io) is a protocol suite for a [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a [node](https://docs.ipfs.tech/concepts/glossary/#node) and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)! 
 
-The most important thing to get: with IPFS you can fetch something based on its Content ID ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)), which tells the computer what it is, not where it's coming from.
+The most important thing to get: With IPFS you can fetch something by a Content ID ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)), which represents what it is, not where it's coming from.
 
 The other way of fetching things from the IPFS ecosystem is through [IPNS](https://docs.ipfs.tech/concepts/ipns/#mutability-in-ipfs), which allows someone to cryptographically sign a reference to a CID, then you can request whatever content that person/organization is currently pointing to as their site.
 
@@ -21,52 +23,63 @@ Essentially, `http://` specifies "where" to find it, `ipfs://` specifies "what" 
 
 What about people who don't know about IPFS, and just run across a [link](https://docs.ipfs.tech/concepts/glossary/#link)? What if they'd like to be able to use that link in their browser? This is where a "client" fits in - software that can talk to nodes to fetch the content they want, but without running one yourself.
 
-## What?
+## What is this all about?
 
-Most IPFS clients talk to one particular node's http [gateway](https://docs.ipfs.tech/concepts/glossary/#gateway). [Multi-Gateway Clients](https://github.com/ipfs/specs/blob/e2e80a8d8de96f4ab931b0622100a644b13709f1/integrations/MULTI_GATEWAY_CLIENT.md) split your requests to multiple gateways.
+Most IPFS clients talk to a particular http [gateway](https://docs.ipfs.tech/concepts/glossary/#gateway). [Multi-Gateway Clients](https://github.com/ipfs/specs/blob/e2e80a8d8de96f4ab931b0622100a644b13709f1/integrations/MULTI_GATEWAY_CLIENT.md) fulfill your requests using multiple gateways. This gives you more resilience, as you're not dependent on a single HTTP endpoint. It also can result in better performance, as you can multiplex requests that would typically run through a single server.
 
-Here we're talking about [IPFS-Chromium](https://github.com/little-bear-labs/ipfs-chromium), which is an experimental racing multi-gateway client, which means the same request might get sent to multiple gateways, and the first one to get the result verified wins. And it's built into a custom-patched build of Chromium.
+Here we're talking about [an project to implement IPFS in Chromium](https://github.com/little-bear-labs/ipfs-chromium). The result is an experimental racing multi-gateway client built directly into the browser, which means the same request might get sent to multiple gateways, and the first one to get the result verified wins. And it's built into a custom-patched build of Chromium.
 
-## Why?
+## Why build this?
 
-This is by no means the first time IPFS has been usable in a browser, or even Chromium-based browsers in particular. Javier Fernández at Igalia has written some good explanations of other approaches that have been taken over at [his blog](https://blogs.igalia.com/jfernandez/), for example [Discovering Chrome’s pre-defined Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/).
+This is by no means the first time IPFS has been usable in a browser, or even Chromium-based browsers in particular. Javier Fernández at Igalia has written some good explanations of other approaches that have been taken over at his blog in his post *[Discovering Chrome’s pre-defined Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/)*, there's an [overview on the IPFS blog](https://blog.ipfs.tech/14-11-2022-igalia-chromium/) as well.
 
-Most of them share in common the idea of translating IPFS and [IPNS](https://docs.ipfs.tech/concepts/glossary/#ipns) requests, 1:1, into HTTP requests. For example, something like  
-ipfs://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4  
-might become  
-http://localhost:8080/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/  
-if you have an HTTP gateway running locally. Or maybe it could become  
-[https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/](https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/ "https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/")  
-or preferably  
-[https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/](https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/)
+Most of these approaches share in common the idea of translating IPFS and [IPNS](https://docs.ipfs.tech/concepts/glossary/#ipns) requests, 1:1, into HTTP requests. For example, if you have an HTTP gateway running locally on your machine,something like:
 
-In each case, you're delegating all the "IPFS stuff" to a particular node. This is quite effective, but has some trade-offs.
+> ipfs://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4
+
+might become:
+
+> http://localhost:8080/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/
+
+Or maybe it could become
+
+>[https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/](https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/)
+
+Or preferably:
+
+>[https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/](https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/)
+
+In each case, you're delegating all the "IPFS stuff" to a particular node. This is effective for completing requests, but has some trade-offs.
 
 ### Performance
 
-If the gateway you've on happens to have the data you're seeking already on-hand, your performance will be great, since it can simply return to you what it already has. Better, in fact, than the multi-gateway client likely would be since it would have wasted requests. However, if you were unlucky, that gateway will have to spend quite a bit of time querying its peers to try to find the data you request before the timeout. The ideal gateway may very well depend on what you happen to be doing at the moment - and may differ from one of your tabs to another. A multi-gateway client will have very bad performance more rarely.
+If the gateway you're using happens to have the data you're seeking already on-hand, your performance will be great, since it can simply return to you what it already has. Perforance might even be better than the multi-gateway client, since no extraneous requests would be made. However, if you were unlucky, that gateway will have to spend more time querying the IPFS network to try to find the data you request before it gives up. The ideal gateway to use may very well depend on what you happen to be doing at the moment - and may differ from one of your tabs to another. A multi-gateway client will have the worst case performance more rarely.
 
 It's also conceivable that for a sufficiently large file which exists on multiple gateways you're talking to, a verifying multi-gateway client might be able to beat a single-gateway client, since you might be pulling down parts of the file from different sources concurrently. [RAPIDE](https://pl-strflt.notion.site/RAPIDE-3c4fb9e159ae471bb426bb81855cee16) is a more advanced client which also makes use of this principle (along with other things).
 
+And while we've been talking about "files" for the most part, IPFS breaks larger files down into "blocks". You can apply these same techniques at the block level. Rapide is an implementation of this which is showing promising results - watch a [recent talk from IPFS Thing by Jorropo](https://www.youtube.com/watch?v=Cv01ePa0G58) on it. Perhaps native browser implementations could integrate these approaches for further improving performance - perhaps even beating regular HTTP web performance.
+
 ### Installation (vs. local gateway)
 
-If you're reading this, installing a local node might seem like no big deal to you. However, we want to be able to reach out to people who haven't heard of IPFS, and make it easy for them to click a link, without having to think about what protocol-handling software they have installed ahead of time.
+If you're reading this, installing a local node might seem like no big deal to you. However, we want IPFS to be accessible to people who haven't heard of it, and make it easy for them to click a link without having to think about which protocol-handling software they have installed ahead of time.
 
-One approach to this is to have the browser install and start its own node. This is a pretty reasonable approach, but it can raise questions about when to dedicate resources to installation or the node's [daemon](https://docs.ipfs.tech/concepts/glossary/#daemon). The most notable example of this approach is [Brave](https://brave.com/ipfs-support/).
+One approach is to have the browser install and start its own IPFS node. This is a pretty reasonable approach, but it can raise questions about when to dedicate resources to installation or the node's [daemon](https://docs.ipfs.tech/concepts/glossary/#daemon). The most notable example of this approach is [Brave](https://brave.com/ipfs-support/).
 
 ![Brave IPFS Choice](/brave-choice.png)
 
-Including client-only IPFS capabilities in a Chromium-based browser doesn't change the installation experience in a noticeable way.
+However, regardless of whether the browser manages a Kubo node as Brave does or implements IPFS natively, the architecture of the application has changed in a significant way - *from being strictly a client, to being a server*.
 
-### Security (vs. 1 public gateway)
+Including HTTP-client-only IPFS capabilities in a Chromium-based browser doesn't change the installation experience in a noticeable way, nor require any major rethink of the browser security model.
+
+### Security (vs. single public gateway)
 
 Content-addressed networking involves a validation step to make sure that the data you received matches the [hash](https://docs.ipfs.tech/concepts/glossary/#hash) requested (it's a part of the CID). When you're requesting a file from an HTTP gateway, the verification of the content is delegated to the node running the gateway. Further, if you receive the file in its final form as a response to a single request, naively using just an HTTP client, it's no longer possible to verify locally.
 
-This is probably fine if the gateway you're talking to is one you're running locally. Presumably you trust that software as much as you trust your own browser.   
+This is probably fine if the gateway you're talking to is one you're running locally. Presumably you trust that software as much as you trust your own browser.
 
-The public IPFS gateways today appear to be consistently and reliably returning the correct results. Nonetheless the possibility exists, and it would be preferable if we didn't have to trust. That's why ipfs-chromium uses the [trustless gateway](https://github.com/ipfs/specs/blob/main/http-gateways/TRUSTLESS_GATEWAY.md) API and verifies the retrieved content locally.
+The public IPFS gateways today appear to be consistently and reliably returning the correct results. Nonetheless the possibility exists, and it would be preferable if we didn't have to trust. That's why this experimental Chromium implementation uses the [trustless gateway](https://github.com/ipfs/specs/blob/main/http-gateways/TRUSTLESS_GATEWAY.md) API and verifies the retrieved content locally.
 
-## Where (is the code)?
+## Where is the code?
 
 In the repo you'll see separation between [component](https://github.com/little-bear-labs/ipfs-chromium/tree/main/component) and [library](https://github.com/little-bear-labs/ipfs-chromium/tree/main/library), where the former contains Chromium-specific code, and the latter contains code that helps with IPFS implementation details that can build without Chromium.
 
@@ -174,10 +187,10 @@ If you'd just like to see it in action, here are the links I use in the video be
 
 <video style="width:70%" controls playsinline><source src="../assets/tryitout.webm" /><source src="../assets/tryitout.mkv" /><source src="../assets/tryitout.mp4" /></video>
 
-## When?  
+## When could this be widespread?  
 
 This is very experimental, and will not be in mainstream browsers tomorrow. Feel free to vote for [the issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1440503) where we discuss it's future.
 
-## Who?
+## Who is doing this?
 
 [Little Bear Labs](https://littlebearlabs.io) and [Protocol Labs](https://protocol.ai)
