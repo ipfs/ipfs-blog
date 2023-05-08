@@ -2,7 +2,7 @@
 title: What happens when half of the network is down?
 description: "The IPFS DHT experienced a serious incident in the beginning of 2023, but users hardly noticed thanks to the power of a decentralized network!"
 author: Yiannis Psaras
-date: 2023-05-05
+date: 2023-05-08
 permalink: '/2023-ipfs-unresponsive-nodes/'
 header_image: '/2023-05-ipfs-unresponsive-nodes-incident.jpeg'
 tags:
