@@ -1,5 +1,5 @@
 ---
-title: Content Routing Track @ IPFS þing 2023
+title: 'Recap: Content Routing (þing 2023)'
 description: 'Recap of the content routing track at IPFS þing 2023 including short summary of topics covered, highlights and things to watch out for at the next event.'
 author: Masih Derkani
 date: 2023-05-08
@@ -14,10 +14,6 @@ tags:
   - 'content'
   - 'routing'
 ---
-
-# Content Routing Track @ IPFS þing 2023
-
-![](../assets/ipfs-thing-2023-recap/content-routing/content-routing-recap-slides.png)
 
 The term "content" is ubiquitous in discussions about knowledge sharing, regardless of the platform used. IPFS takes this term to a new level by defining content as an immutable piece of information, identified by a cryptographic hash that defines its identity. Any change in the information results in a different identity, making the content immutable. This property has a subtle yet powerful advantage: a receiver of a piece of information can verify its authenticity based on its identifier. This simple concept leads to an important question: how can one locate shared content using its identity? 🤔 This is where "Content Routing" comes in.
 
