@@ -4,6 +4,14 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Brave announces automatic NFT backups and enhanced IPFS/Filecoin support in Brave Wallet
+  date: 2023-05-02
+  publish_date: 
+  path: https://brave.com/nft-pinning/
+  tags:
+  - NFTs
+  - Brave
+  - pinning
 - title: WebTransport in libp2p
   date: 2022-12-19
   publish_date: 
