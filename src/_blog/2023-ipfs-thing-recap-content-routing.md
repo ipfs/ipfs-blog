@@ -4,7 +4,7 @@ description: 'Recap of the content routing track at IPFS þing 2023 including sh
 author: Masih Derkani
 date: 2023-05-08
 permalink: '/2023-ipfs-thing-content-routing-track/'
-header_image: '/ipfs-thing-2023-recap/ipfs-2023-recap-featured-image.jpg'
+header_image: '/ipfs-thing-2023-recap/content-routing/content-routing-recap-slides.png'
 tags:
   - 'thing'
   - 'þing'
