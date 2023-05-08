@@ -1,6 +1,6 @@
 ---
-title: What happens when half of the nodes are unresponsive?
-description: "The IPFS DHT experienced a problem in the beginning of 2023, but users hardly noticed thanks to the power of a decentralized network!"
+title: What happens when half of the network is down?
+description: "The IPFS DHT experienced a serious incident in the beginning of 2023, but users hardly noticed thanks to the power of a decentralized network!"
 author: Yiannis Psaras
 date: 2023-05-05
 permalink: '/2023-ipfs-unresponsive-nodes/'
@@ -14,11 +14,11 @@ tags:
 
 It depends on what type of system/network you’re running. In 90% of networks, or networked systems, this is a grand-scale disaster. Alerts are popping up everywhere, engineers go far beyond “day-time work” to get things back to normal, customers are panicking and potentially leaving the platform and the customer care lines are on fire. Half of the network is a large fraction, but I would bet that the same would happen even when 10% or 20% of the network experiences an outage.
 
-It’s not like that when you run your services on a decentralized, distributed P2P network, such as IPFS! At the beginning of 2023, a critical component of the IPFS network, namely the public IPFS DHT, experienced a large-scale malfunction. *During this situation, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).* Interestingly, **no content became unreachable and almost nothing in the network looked like the majority of the network was basically down**. We did observe a significant increase in the content routing/resolution latency (in the order of 25% initially), but this in no way reflected the scale of the event.
+It’s not like that when you run your services on a decentralized, distributed P2P network, such as IPFS! At the beginning of 2023, a critical component of the IPFS network, namely the public IPFS DHT, experienced a large-scale incident. *During this incident, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).* Interestingly, **no content became unreachable and almost nothing in the network looked like the majority of the network was basically down**. We did observe a significant increase in the content routing/resolution latency (in the order of 25% initially), but this in no way reflected the scale of the event.
 
 In this blog post, we’ll go through the timeline of the event from “Detection” to “Root Cause Analysis” and give details about the engineering team’s response. A summarizing talk on the content of this blog post was given at [IPFS Thing 2023](https://2023.ipfs-thing.io/) and can be found [on YouTube](https://youtu.be/8cGEjdCfm14).
 
-## ❗️ Detection: we found a problem!
+## ❗️Detection: we've got a problem!
 
 > At the beginning of 2023, a critical component of the IPFS network, namely the public IPFS DHT, experienced a large-scale malfunction. *During this situation, [60% of the IPFS DHT Server nodes became unresponsive](https://github.com/protocol/network-measurements/blob/master/reports/2023/calendar-week-04/ipfs/plots/crawl-unresponsive.png).*
 > 
