@@ -1,10 +1,10 @@
 ---
-title: Recap: IPFS on the Web (IPFS þing 2023)
+title: 'Recap: IPFS on the Web (þing 2023)'
 description: 'Track recap with links and serious analysis for the IPFS on the Web track at IPFS þing 2023'
 author: Dietrich Ayala
 date: 2023-05-08
 permalink: '/2023-ipfs-thing-web-track/'
-header_image:
+header_image: '/ipfs-thing-2023-recap/ipfs-on-the-web-featured-image.jpeg'
 tags:
   - 'thing'
   - 'þing'
@@ -13,10 +13,6 @@ tags:
   - 'track'
   - 'web'
 ---
-
-# IPFS on the Web (IPFS Thing 2023 Track Recap)
-
-![](https://i.imgur.com/NKLh0BF.jpg)
 
 The world wide web is both the biggest deployment vector and least controllable surface for IPFS. There are opportunities and challenges with bringing IPFS support to rendering engines, browsers, gateway-served content, web apps, and browser extensions. It is these unique dynamics that motivated us to organize a dedicated content track for them at the annual gathering of IPFS implementers known as IPFS Thing.
 
