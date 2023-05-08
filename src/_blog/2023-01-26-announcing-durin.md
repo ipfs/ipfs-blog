@@ -1,4 +1,10 @@
 ---
+title: "Announcing Durin: a New Mobile App for the IPFS Network"
+description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
+date: 2023-04-11
+permalink: "/announcing-durin/"
+header_image: '/durin-featured-image.png'
+author: David Justice
 tags:
 - Durin
 - mobile
@@ -7,14 +13,6 @@ tags:
 - app store
 - web3 storage
 - web3
-
-title: "Announcing Durin"
-description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
-date: 2023-04-11
-permalink: "/announcing-durin/"
-translationKey: ''
-header_image: /announcing-durin-ipfs/header.png
-author: David Justice
 ---
 
 Today we are excited to announce Durin, a native mobile application for iOS and Android, built to give users a new way to read and share with IPFS and a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
