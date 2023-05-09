@@ -54,7 +54,7 @@ The IPFS implementers community recently gathered in Brussels, Belgium for the s
 * [Brave announces automatic NFT backups and enhanced Filecoin support in Brave Wallet](https://brave.com/nft-pinning/)
     * We're excited to share that the latest version of Brave’s web browser introduces automatic NFT backups to IPFS. Brave Wallet users can avoid the permanent loss of NFT metadata and gain peace of mind thanks to this new feature. [Check it out!](https://brave.com/nft-pinning/)
 * [Introducing Lassie - a retrieval client for IPFS and Filecoin](https://blog.ipfs.tech/2023-introducing-lassie/)
-    * Introducing... Lassie — A new retrieval client for IPFS and Filecoin. Lassie makes it easy to fetch your data from both the IPFS and Filecoin Network - it will find and fetch content over the best retrieval protocols available. [Read more about it on the IPFS blog](https://blog.ipfs.tech/2023-introducing-lassie/)!
+    * Lassie makes it easy to fetch your data from both the IPFS and Filecoin Network - it will find and fetch content over the best retrieval protocols available. [Read more about it on the IPFS blog](https://blog.ipfs.tech/2023-introducing-lassie/)!
 * [IPFS Implementations: It’s Definitely A Thing](https://blog.ipfs.tech/2023-03-implementation-principles/)
     * In a new blog post,[ Robin Berjon](https://twitter.com/robinberjon) talks about how the world of IPFS implementations has diversified greatly over the past 9 months: “Springtime in the distributed hemisphere and we are frolicking across fields of tantalizing IPFS flowers.” [Read the entire blog post](https://blog.ipfs.tech/2023-03-implementation-principles/)!
 * [IPFS Open Metaverse Base Camp Accelerator](https://outlierventures.io/ipfs-open-metaverse-base-camp/)
