@@ -1,7 +1,7 @@
 ---
 title: "Announcing Durin: a New Mobile App for the IPFS Network"
 description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
-date: 2023-04-11
+date: 2023-05-11
 permalink: "/announcing-durin/"
 header_image: '/durin-featured-image.png'
 author: David Justice
@@ -56,7 +56,6 @@ Using a single remote service is a usable first step, but doesn't provide long t
 ## Install Durin
 
 Durin is available now for mobile phones in the iOS app store and Google Play store.
-
 <br /> 
 <a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> 
   Get Durin in App Store 
