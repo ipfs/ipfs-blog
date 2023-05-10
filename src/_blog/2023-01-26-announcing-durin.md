@@ -15,7 +15,7 @@ tags:
 - web3
 ---
 
-Today we are excited to announce **Durin**, a native mobile application for iOS and Android built to give users a new way to read and share with IPFS. It also serves as a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
+Today we are excited to announce **Durin**, a native mobile application for [iOS](https://apps.apple.com/us/app/durin/id1613391995) and [Android](https://play.google.com/store/apps/details?id=ai.protocol.durin) built to give users a new way to read and share with IPFS. It also serves as a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
 
 ## Background
 
@@ -57,7 +57,8 @@ Using a single remote service is a usable first step, but doesn't provide long t
 
 Durin is available now for mobile phones in the iOS app store and Google Play store.
 <br /> 
-<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> Get Durin in App Store </a> 
+<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> Get Durin in App Store </a>
+<br />
 <a href="https://play.google.com/store/apps/details?id=ai.protocol.durin" class="cta-button"> Get Durin in Google Play Store</a>
 
 ## The Future
