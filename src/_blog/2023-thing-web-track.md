@@ -2,7 +2,7 @@
 title: 'Recap: IPFS on the Web (þing 2023)'
 description: 'Track recap with links and serious analysis for the IPFS on the Web track at IPFS þing 2023'
 author: Dietrich Ayala
-date: 2023-05-08
+date: 2023-05-10
 permalink: '/2023-ipfs-thing-web-track/'
 header_image: '/ipfs-thing-2023-recap/ipfs-on-the-web-featured-image-2.jpg'
 tags:
