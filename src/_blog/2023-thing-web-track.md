@@ -42,7 +42,7 @@ Good morning. Have you had a coffee yet? Ok great because you're going to need i
 
 [Peergos](https://peergos.org/) has been building *your* private space online for half a decade, and it shows: [Ian](https://peergos.org/about#ian_) and team have built a mostly exilfiltration-proof application platform on IPFS which works in the browsers of today. The idea of web content that can't phone home might make you say "hmmm", but it could just be the antidote to the surveillance-is-required-to-pay-the-bills version of the web we have today.
 
-@[youtube](s878bm15mrk)
+@[youtube](mSElk2jcFqY)
 
 ## WNFS: Versioned and Encrypted Data on IPFS - Philipp Krüger
 
