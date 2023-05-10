@@ -15,11 +15,11 @@ tags:
 - web3
 ---
 
-Today we are excited to announce Durin, a native mobile application for iOS and Android, built to give users a new way to read and share with IPFS and a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
+Today we are excited to announce **Durin**, a native mobile application for iOS and Android built to give users a new way to read and share with IPFS. It also serves as a sandbox for the Browsers & Platforms team to experiment with IPFS in a mobile environment.
 
 ## Background
 
-To date, it's been difficult to access, upload and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo), the initial implementation of the protocol was simply not built with mobile in mind. The IPFS approach to P2P for many years was about running servers, and [that is changing](https://blog.ipfs.tech/2023-03-implementation-principles/). In the meantime, we wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
+To date, it's been difficult to access, upload, and share IPFS content using a mobile device. This is for a number of reasons, one of which is that [Kubo](https://github.com/ipfs/kubo)(the initial implementation of the protocol) was simply not built with mobile in mind. The IPFS approach to P2P for many years was about running servers, but [that is changing](https://blog.ipfs.tech/2023-03-implementation-principles/). In the meantime, we wanted to provide a quick and easy way for users to access basic IPFS features on mobile and set up a testing ground for future explorations.
 
 ## Accessing IPFS Content
 
@@ -57,12 +57,8 @@ Using a single remote service is a usable first step, but doesn't provide long t
 
 Durin is available now for mobile phones in the iOS app store and Google Play store.
 <br /> 
-<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> 
-  Get Durin in App Store 
-</a> 
-<a href="https://play.google.com/store/apps/details?id=ai.protocol.durin" class="cta-button"> 
-  Get Durin in Google Play Store
-</a>
+<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> Get Durin in App Store </a> 
+<a href="https://play.google.com/store/apps/details?id=ai.protocol.durin" class="cta-button"> Get Durin in Google Play Store</a>
 
 ## The Future
 
