@@ -1,6 +1,6 @@
 ---
 title: IPFS Multi-Gateway Experiment in Chromium
-description: A new approach to implementing ipfs:// and ipns:// support natively in the browser, using a client-only approach and fetching from multiple HTTP gateways.
+description: A new approach to implementing ipfs:// and ipns:// support natively in the browser, using a client-only approach and fetching verifiable responses from multiple HTTP gateways.
 author: John Turpish
 date: 2023-05-16
 permalink: "/2023-05-multigateway-chromium-client/"
@@ -11,7 +11,7 @@ tags:
 
 ---
 
-[IPFS](https://ipfs.io) is a protocol suite for a [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a [node](https://docs.ipfs.tech/concepts/glossary/#node) and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)! 
+[IPFS](https://ipfs.tech) is a protocol suite for a [content-addressed networking](https://en.wikipedia.org/wiki/Content-addressable_network). If you'd like to run a [node](https://docs.ipfs.tech/concepts/glossary/#node) and participate in the peer-to-peer network, by all means [give it a try](https://ipfs.tech/#install)! 
 
 The most important thing to get: With IPFS you can fetch something by a Content ID ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)), which represents what it is, not where it's coming from.
 
@@ -65,7 +65,7 @@ One approach is to have the browser install and start its own IPFS node. This is
 
 ![Brave IPFS Choice](/brave-choice.png)
 
-However, regardless of whether the browser manages a Kubo node as Brave does or implements IPFS natively, the architecture of the application has changed in a significant way - *from being strictly a client, to being a server*.
+However, regardless of whether the browser manages a [Kubo](https://github.com/ipfs/kubo#readme) node as Brave does or implements IPFS natively, the architecture of the application has changed in a significant way - *from being strictly a client, to being a server*.
 
 Including HTTP-client-only IPFS capabilities in a Chromium-based browser doesn't change the installation experience in a noticeable way, nor require any major rethink of the browser security model.
 
@@ -81,17 +81,17 @@ The public IPFS gateways today appear to be consistently and reliably returning 
 
 In the repo you'll see separation between [component](https://github.com/little-bear-labs/ipfs-chromium/tree/main/component) and [library](https://github.com/little-bear-labs/ipfs-chromium/tree/main/library), where the former contains Chromium-specific code, and the latter contains code that helps with IPFS implementation details that can build without Chromium.
 
-This distinction disappears when you switch over to the Chromium build. Both sets of source are dumped into a component (basically a submodule) called "ipfs", that implements the handling of `ipfs://` and `ipns://` URLs.
+This distinction disappears when you switch over to the Chromium build. Both sets of source are dumped into a component (basically a submodule) called `ipfs`, that implements the handling of `ipfs://` and `ipns://` URLs.
 
-Those who embed Chromium into another application generally provide an implementation of a couple of interfaces, namely `ContentClient` and `ContentBrowserClient`. They would need to add a little code to their implementations to use the ipfs component. Our repo contains a patch file which alters Chrome's implementations of these two as a demonstration to show how usage might work. That patch file might be useful as-is to someone who uses a patching approach to make a Chromium-derived browser.
+Those who embed Chromium into another application generally provide an implementation of a couple of interfaces, namely `ContentClient` and `ContentBrowserClient`. They would need to add a little code to their implementations to use the `ipfs` component. Our repo contains a patch file which alters Chrome's implementations of these two as a demonstration to show how usage might work. That patch file might be useful as-is to someone who uses a patching approach to make a Chromium-derived browser.
 
 ## How (in more detail)?
 
 ### Hooking into Chromium
 
-* The ipfs and ipns schemes are registered in [ContentClient::AddAdditionalSchemes](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
-* An interceptor is created in [ContentBrowserClient::WillCreateURLLoaderRequestInterceptors](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so that ipfs:// and ipns:// navigation requests will be handled by components/ipfs.
-* URL loader factories created for ipfs and ipns schemes in [ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so that in-page resources with ipfs/ipns URLs (or relative URLs on a page loaded as ipfs://), will also be handled by components/ipfs.
+* The `ipfs://` and `ipns://` schemes are registered in [ContentClient::AddAdditionalSchemes](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
+* An interceptor is created in [`ContentBrowserClient::WillCreateURLLoaderRequestInterceptors`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so that `ipfs://` and `ipns://` navigation requests will be handled by `components/ipfs`.
+* URL loader factories created for `ipfs` and `ipns` schemes in [`ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so that in-page resources with `ipfs://` / `ipns://` URLs (or relative URLs on a page loaded as `ipfs://`), will also be handled by `components/ipfs`.
 
 ### Issuing http(s) requests to gateways
 
@@ -123,11 +123,11 @@ Not all kinds of UnixFS nodes are fully handled yet, but we cover these:
 
 ###### File (simple case)
 
-These nodes each have a data byte array that is the contents of a file. We'll use those bytes as the body of a response.
+These nodes each have a `data` byte array that is the contents of a file. We'll use those bytes as the body of a response.
 
 ###### File (multi-node)
 
-In UnixFS a node can represent a file as the concatenation of other file nodes, to which it has links. The decision to use this kind of node generally has to do with the size of the file. A single node can't be much more than a megabyte, so files larger than that get cut into chunks and handled as a tree of nodes. There are a couple of reasons for that:
+In UnixFS a node can represent a file as the concatenation of other file nodes, to which it has `links`. The decision to use this kind of node generally has to do with the size of the file. A single node can't be much more than a megabyte, so files larger than that get cut into chunks and handled as a tree of nodes. There are a couple of reasons for that:
 
 * Data deduplication (it's possible the same sequences of bytes, and thus same CID, appears in multiple files or even within the same file)
 * In the case that a gateway were malicious, we wouldn't want to wait until a file of potentially unbounded size finishes downloading before we verify that it's correct. It is worth mentioning that as of today ipfs-chromium does not enforce this limit.
@@ -137,11 +137,11 @@ If we have all the nodes linked-to already, we can concatenate their data togeth
 
 ###### Directory (normal)
 
-In this case the 'data' isn't really important to us. The links, however, represent items in the directory.
+In this case the `data` field isn't really important to us. The `links`, however, represent items in the directory.
 
-* If your URL has a path, find the link matching the first element in the path, and repeat the whole process with that link's CID and the remainder of the path.
-* If you don't have a path, we'll assume you want index.html
-  * If there's no index.html we'll generate an directory listing HTML file for you.
+* If your URL has a path, find the `link` matching the first element in the path, and repeat the whole process with that `link`'s CID and the remainder of the path.
+* If you don't have a path, we'll assume you want `index.html`
+  * If there's no `index.html` we'll generate an directory listing HTML file for you.
 
 ###### [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) (sharded) Directory
 
@@ -149,17 +149,17 @@ This is for directories with just too many entries in them. The links from this 
 
 * If you're coming in from another HAMT node, you might have some unused bits of the hash to select the next child.
 * If you have a path, hash the name of the item you're looking for, pop the correct number of bits off the hash, and use it to select which element you're going to next.
-* If you don't have a path, we'll assume you want index.html.
+* If you don't have a path, we'll assume you want `index.html`.
 * We don't generate listings of sharded directories today, and this isn't a high-priority as it's an unreasonable use case.
 
 ### Dealing with ipns:// links
 
-The first element after `ipns://` is the "name".
+The first element after `ipns://` is the "[ipns-name](https://specs.ipfs.tech/ipns/ipns-record/#ipns-name)".
 
-* If the name is formatted as a CIDv1, and has its codec set to "libp2p-key", ipfs-client will retrieve a signed record of what it points at from a gateway, and then load that content.
-  * The cryptographic signature in the record is verified using the public key, which corresponds to the "name"
+* If the name is formatted as a CIDv1, and has its codec set to `libp2p-key` (`0x72`), ipfs-client will retrieve a [signed IPNS record](https://specs.ipfs.tech/ipns/ipns-record/#ipns-record) of what it points at from a gateway, and then load that content.
+  * The cryptographic signature in the record is verified using the public key, which corresponds to the "ipns-name"
   * Note: not all CID [multibase](https://docs.ipfs.tech/concepts/glossary/#multibase) encodings are supported yet.
-* If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a DNSLink.
+* If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a [DNSLink](https://dnslink.dev/).
 
 IPNS names may point to other IPNS names, in which case this process recurses. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content as described above.
 
@@ -168,18 +168,18 @@ IPNS names may point to other IPNS names, in which case this process recurses. M
 So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data, without being very easily tracked.
 
 `ipns://` URLs of the DNSLink variety rely only on DNS being accurate.
-Regular `ipns://` URLs, however, are verified by the cryptographically signed [record](https://github.com/ipfs/kubo/pull/9399).
+Regular `ipns://` URLs, however, are verified by the cryptographically signed [record](https://specs.ipfs.tech/ipns/ipns-record/).
 
 ## Trying it out
 
-If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/tag/0.0.0.1) or [an IPFS gateway](https://human.mypinata.cloud/ipfs/bafybeiejovt6ykqitq5senanjrizhk7ce3ynij4ckmoc5tod4jyz6umyp4).
+If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built v0.0.0.1 binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/tag/0.0.0.1) or [an IPFS gateway](https://ipfs.io/ipfs/bafybeiejovt6ykqitq5senanjrizhk7ce3ynij4ckmoc5tod4jyz6umyp4).
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
 * [ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/](ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/) - a snapshot of this blog post
 * [ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/](ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/) - a mutable pointer to the current version of this blog
 * [ipns://docs.ipfs.tech](ipns://docs.ipfs.tech) - The IPFS documentation.
-* [ipns://en.wikipedia-on-ipfs.org/wiki/](ipns://en.wikipedia-on-ipfs.org/wiki/) - Wikipedia, as a DNS Link
+* [ipns://en.wikipedia-on-ipfs.org/wiki/](ipns://en.wikipedia-on-ipfs.org/wiki/) - Wikipedia, as a big HAMT + DNSLink
 * [ipns://ipfs.io/](ipns://ipfs.io/) - an unusual case: a DNSLink to another DNSLink
 * [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
 
