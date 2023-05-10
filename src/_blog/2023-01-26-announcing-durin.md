@@ -1,7 +1,7 @@
 ---
 title: "Announcing Durin: a New Mobile App for the IPFS Network"
 description: "Durin is a native mobile application for iOS and Android that lets you read and share content on the IPFS network"
-date: 2023-05-10
+date: 2023-05-11
 permalink: "/announcing-durin/"
 header_image: '/durin-featured-image.png'
 author: David Justice
