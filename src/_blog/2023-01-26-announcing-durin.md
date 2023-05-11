@@ -57,7 +57,7 @@ Using a single remote service is a usable first step, but doesn't provide long t
 
 Durin is available now for mobile phones in the iOS app store and Google Play store.
 <br /> 
-<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> Get Durin in App Store </a>
+<a href="https://apps.apple.com/us/app/durin/id1613391995" class="cta-button"> Get Durin in iOS App Store </a>
 <br />
 <a href="https://play.google.com/store/apps/details?id=ai.protocol.durin" class="cta-button"> Get Durin in Google Play Store</a>
 
