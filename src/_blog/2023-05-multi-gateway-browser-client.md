@@ -2,7 +2,7 @@
 title: IPFS Multi-Gateway Experiment in Chromium
 description: A new approach to implementing ipfs:// and ipns:// support natively in the browser, using a client-only approach and fetching verifiable responses from multiple HTTP gateways.
 author: John Turpish
-date: 2023-05-16
+date: 2023-05-23
 permalink: "/2023-05-multigateway-chromium-client/"
 translationKey: 2023-05-multigateway-chromium-client
 header_image: "/2023-05-multigateway-chromium-client-header.png"
@@ -184,11 +184,11 @@ If you'd just like to see it in action, here are the links I use in the video be
 * `https://littlebearlabs.io` - an HTTPs URL for comparison.
 
 
-<iframe width="70%" src="https://youtu.be/j0qcAoZPJQ8" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="70%" src="https://www.youtube.com/embed/j0qcAoZPJQ8" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## When could this be widespread?  
 
-This is very experimental, and will not be in mainstream browsers tomorrow. Feel free to vote for [the issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1440503) where we discuss it's future.
+This is very experimental, and will not be in mainstream browsers tomorrow. Feel free to vote for [the issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1440503) where we discuss its future.
 
 ## Who is doing this?
 
