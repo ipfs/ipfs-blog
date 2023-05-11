@@ -183,7 +183,8 @@ If you'd just like to see it in action, here are the links I use in the video be
 * `ipns://ipfs.io` - an unusual case: a DNSLink to another DNSLink
 * `https://littlebearlabs.io` - an HTTPs URL for comparison.
 
-<video style="width:70%" controls playsinline><source src="../assets/tryitout.webm" /><source src="../assets/tryitout.mkv" /><source src="../assets/tryitout.mp4" /></video>
+
+<iframe width="70%" src="https://youtu.be/j0qcAoZPJQ8" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## When could this be widespread?  
 
