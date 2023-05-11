@@ -43,7 +43,7 @@ Or maybe it could become
 
 >[https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/](https://ipfs.io/ipfs/bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4/)
 
-Or preferably:
+Or preferably (when [Origin isolation](https://en.wikipedia.org/wiki/Same-origin_policy) matters):
 
 >[https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/](https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/)
 
