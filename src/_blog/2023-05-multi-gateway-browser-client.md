@@ -176,12 +176,12 @@ If you want to try this yourself today, you can [build it](https://github.com/li
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
-* [ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/](ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/) - a snapshot of this blog post
-* [ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/](ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/) - a mutable pointer to the current version of this blog
-* [ipns://docs.ipfs.tech](ipns://docs.ipfs.tech) - The IPFS documentation.
-* [ipns://en.wikipedia-on-ipfs.org/wiki/](ipns://en.wikipedia-on-ipfs.org/wiki/) - Wikipedia, as a big HAMT + DNSLink
-* [ipns://ipfs.io/](ipns://ipfs.io/) - an unusual case: a DNSLink to another DNSLink
-* [https://littlebearlabs.io](https://littlebearlabs.io) - an HTTPs URL for comparison.
+* `ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/` - a snapshot of this blog post
+* `ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/` - a mutable pointer to the current version of this blog
+* `ipns://docs.ipfs.tech` - The IPFS documentation.
+* `ipns://en.wikipedia-on-ipfs.org/wiki/` - Wikipedia, as a big HAMT + DNSLink
+* `ipns://ipfs.io` - an unusual case: a DNSLink to another DNSLink
+* `https://littlebearlabs.io` - an HTTPs URL for comparison.
 
 <video style="width:70%" controls playsinline><source src="../assets/tryitout.webm" /><source src="../assets/tryitout.mkv" /><source src="../assets/tryitout.mp4" /></video>
 
