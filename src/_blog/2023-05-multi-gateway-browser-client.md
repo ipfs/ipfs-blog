@@ -23,7 +23,7 @@ What about people who don't know about IPFS, and just run across a [link](https:
 
 ## What is this all about?
 
-Most IPFS clients talk to a particular http [gateway](https://docs.ipfs.tech/concepts/glossary/#gateway). [Multi-Gateway Clients](https://github.com/ipfs/specs/blob/e2e80a8d8de96f4ab931b0622100a644b13709f1/integrations/MULTI_GATEWAY_CLIENT.md) fulfill your requests using multiple gateways. This gives you more resilience, as you're not dependent on a single HTTP endpoint. It also can result in better performance, as you can multiplex requests that would typically run through a single server.
+Most IPFS clients talk to a particular HTTP [gateway](https://docs.ipfs.tech/concepts/glossary/#gateway). Multi-Gateway Clients proposed in [IPIP-359](https://github.com/ipfs/specs/pull/359) fulfill your requests using multiple [Trustless Gateways](https://specs.ipfs.tech/http-gateways/trustless-gateway/). This gives you more resilience, as you're not dependent on a single HTTP endpoint that can be censored or blocked by your ISP. It also can result in better performance, as you can multiplex requests that would typically run through a single server.
 
 Here we're talking about [an project to implement IPFS in Chromium](https://github.com/little-bear-labs/ipfs-chromium). The result is an experimental racing multi-gateway client built directly into the browser, which means the same request might get sent to multiple gateways, and the first one to get the result verified wins. And it's built into a custom-patched build of Chromium.
 
