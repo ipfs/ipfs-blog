@@ -19,25 +19,25 @@ The term "content" is ubiquitous in discussions about knowledge sharing, regardl
 
 Content Routing is the crucial first step in exchanging content within the IPFS network. Once a Content Identifier (CID) is generated from a piece of information, Content Routing enables the information to be both discoverable and discovered. In other words, it involves telling the network, "Hey, I have content, and here is its CID," as well as answering peer questions such as "Who has this CID?".
 
-This seemingly simple yet paramount functionality enables the network to share immutable and verifiable pieces of information. Since the inception of IPFS as a protocol, Content Routing has taken various forms and utilized several techniques to fulfill its promise of sharing knowledge. It remains an essential component of the IPFS ecosystem, as evidenced by its dedicated track at the IPFS þing 2023 in Brussels, Belgium, last month. 
+This seemingly simple yet paramount functionality enables the network to share immutable and verifiable pieces of information. Since the inception of IPFS as a protocol, Content Routing has taken various forms and utilized several techniques to fulfill its promise of sharing knowledge. It remains an essential component of the IPFS ecosystem, as evidenced by its dedicated track at IPFS þing 2023 in Brussels, Belgium, last month. 
 
-At the IPFS þing 2022 in Reykjavík, Iceland, Content Routing was divided into two tracks: [Privacy](https://www.youtube.com/watch?v=VLU44qtXypE&list=PLuhRWgmPaHtTegfLTVFYtTtqTKQEtDvxW) and [Performance](https://www.youtube.com/watch?v=AWbobt9oHZ0&list=PLuhRWgmPaHtSF3oIY3TzrM-Nq5IU_RTXb). This year, both tracks were combined into one glorious Content Routing track that covered both areas. We had the privilege of hosting talks from community leaders who discussed the impressive improvements in performance and scalability of content routing systems, the privacy preservation techniques that cut across different systems, as well as community call-outs and discussions on how to get involved and build a better decentralized web together.
+At IPFS þing 2022 a year ago, Content Routing was divided into two tracks: [Privacy](https://www.youtube.com/watch?v=VLU44qtXypE&list=PLuhRWgmPaHtTegfLTVFYtTtqTKQEtDvxW) and [Performance](https://www.youtube.com/watch?v=AWbobt9oHZ0&list=PLuhRWgmPaHtSF3oIY3TzrM-Nq5IU_RTXb). This year, both tracks were combined into one glorious Content Routing track that covered both areas. We had the privilege of hosting talks from community leaders who discussed the impressive improvements in performance and scalability of content routing systems, the privacy preservation techniques that cut across different systems, as well as community call-outs and discussions on how to get involved and build a better decentralized web together.
 
 The track offered a comprehensive view of the content routing evolution since the inception of IPFS and showcased the latest advancements in the IPFS ecosystem. It provided an overview of the [InterPlanetary Network Indexer (IPNI)](https://github.com/ipni) and explained how it enables the mass publication and lookup of content across hundreds of billions of CIDs. The latest developments in reader privacy preservation, a mechanism that allows private lookups of content on both the IPFS DHT and IPNI, were also presented.
 
-The rest of this blog offers highlights, links, and a brief commentary on the talks.
+The rest of this blog post offers highlights, links, and a brief commentary on the talks.
 
 The full playlist of talks at the IPFS þing 2023 Content Routing track can be found [here](https://www.youtube.com/watch?v=oe7fjOl-q0s&list=PLuhRWgmPaHtRBWV3SvInC5ATS8aKV3lsW). To learn more about Content Routing, check out the previous tracks at [IPFS Camp 2022](https://www.youtube.com/watch?v=7nb5oEpURCU&list=PLuhRWgmPaHtRqhFZ-CAstJ0RIq7Vs-4eO) and the [IPFS YouTube channel](https://www.youtube.com/@IPFSbot/playlists).
 
 ## Content Routing Track Introduction by Masih Derkani
 
-[Masih](https://derkani.org/) presented an overview of Content Routing as a concept, its evolution over time, along with the evolutionary trends of content routing in the IPFS ecosystem. The talk illustrated what routing content in the IPFS network looks like today, how the mesh of content providers of different sizes interconnects, and the sub-systems that enable content routing to "just work", regardless of where the data resides.
+[Masih](https://derkani.org/) presented an overview of Content Routing as a concept, its evolution over time, along with the evolutionary trends of content routing in the IPFS ecosystem. The talk illustrated what routing content in the IPFS network looks like today and explained how the mesh of content providers of different sizes interconnects. It also showcased the sub-systems that enable content routing to "just work", regardless of where the data resides.
 
 @[youtube](oe7fjOl-q0s)
 
 ## Opening the DHT to large content providers by Guillaume Michel
 
-How does a 1M x reduction in opened connections sound? That's right; providing data via the DHT is becoming much more efficient for large content providers thanks to "regions". [Gui](https://github.com/guillaumemichel) presented the latest research on how the DHT key space can be divided across regions to reduce the number of connections as well as messages sent to make content discoverable via the IPFS DHT.
+How does a 1M x reduction in opened connections sound? That's right, providing data via the DHT is becoming much more efficient for large content providers thanks to "regions". [Gui](https://github.com/guillaumemichel) presented the latest research on how the DHT key space can be divided across regions to reduce the number of connections as well as messages sent to make content discoverable via the IPFS DHT.
 
 @[youtube](bXaL64fp55c)
 
@@ -87,7 +87,7 @@ The talk was followed by a discussion on a set of open questions as we scale the
 
 ## A Massive Shout-out
 
-It's great to see the IPFS community coming together and celebrating the latest advancements in the field. A big thank you to all who attended the track at Brussels and to the speakers who presented and helped generate questions. Last but not least a massive shout-out to the community that tirelessly drives the vision that is, a better web for all, forward. 🙇
+It's great to see the IPFS community coming together and celebrating the latest advancements in the field. A big thank you to all who attended the track at Brussels and to the speakers who presented and helped generate questions. Last but not least, a massive shout-out to the community that tirelessly drives the vision (a better web for all) forward. 🙇
 
 And there's more to look forward to! The dates for [IPFS Camp 2023](https://lu.ma/ipfscamp23-prereg) in Bangalore, India have already been announced for early November. It's never too early to start preparing your talks and presentations. 😊
 
