@@ -2,7 +2,7 @@
 title: 'Recap: Content Routing (þing 2023)'
 description: 'Recap of the content routing track at IPFS þing 2023 including short summary of topics covered, highlights and things to watch out for at the next event.'
 author: Masih Derkani
-date: 2023-05-08
+date: 2023-05-15
 permalink: '/2023-ipfs-thing-content-routing-track/'
 header_image: '/ipfs-thing-2023-recap/content-routing/content-routing-recap-slides.png'
 tags:
