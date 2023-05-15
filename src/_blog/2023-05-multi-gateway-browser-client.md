@@ -158,7 +158,7 @@ The first element after `ipns://` is the "[ipns-name](https://specs.ipfs.tech/ip
 
 * If the name is formatted as a CIDv1, and has its codec set to `libp2p-key` (`0x72`), ipfs-client will retrieve a [signed IPNS record](https://specs.ipfs.tech/ipns/ipns-record/#ipns-record) of what it points at from a gateway, and then load that content.
   * The cryptographic signature in the record is verified using the public key, which corresponds to the "ipns-name"
-  * Note: not all CID [multibase](https://docs.ipfs.tech/concepts/glossary/#multibase) encodings are supported yet.
+  * Note: only two [multibase](https://docs.ipfs.tech/concepts/glossary/#multibase) encodings are fully supported for now: base36 and base32. If your IPNS or DNSLink record points to something base58 that should work, but otherwise avoid it (don't use it in the address bar!).
 * If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a [DNSLink](https://dnslink.dev/).
 
 IPNS names may point to other IPNS names, in which case this process recurses. More commonly they point at an IPFS DAG, in which case ipfs-chromium will then load that content as described above.
@@ -176,8 +176,8 @@ If you want to try this yourself today, you can [build it](https://github.com/li
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
-* `ipfs://bafybeifufjbspyjxki5bv62caao4kz5uqlpd73pcfytfdhwsa63sobmqlm/` - a snapshot of this blog post
-* `ipns://bafzaajaiaejcaxykhmgsz2mhscluhm6bkliibattya2l2lld7scqr64c4ine2u7c/` - a mutable pointer to the current version of this blog
+* `ipfs://bafybeigchjo5f3jyzfjwmbavhr27jwdhu6wwhsodxg4qq4x72aasxewp64/blog.html` - a snapshot of this blog post
+* `ipns://k51qzi5uqu5dkq4jxcqvujfm2woh4p9y6inrojofxflzdnfht168zf8ynfzuu1/blog.html` - a mutable pointer to the current version of this blog
 * `ipns://docs.ipfs.tech` - The IPFS documentation.
 * `ipns://en.wikipedia-on-ipfs.org/wiki/` - Wikipedia, as a big HAMT + DNSLink
 * `ipns://ipfs.io` - an unusual case: a DNSLink to another DNSLink
