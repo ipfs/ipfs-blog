@@ -1,9 +1,9 @@
 ---
-title: 'Hosting Dynamic Content on IPFS'
+title: 'How to Host Dynamic Content on IPFS'
 description: 'Description goes here'
 author: tabcat
 date: 2023-05-16
-permalink: '/2023-hosting-dynamic-content-on-ipfs/'
+permalink: '/2023-how-to-host-dynamic-content-on-ipfs/'
 header_image: '/ipfs-thing-2023-recap/content-routing/content-routing-recap-slides.png'
 tags:
   - 'dynamic-content'
