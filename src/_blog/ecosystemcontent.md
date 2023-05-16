@@ -1,6 +1,6 @@
 ---
-title: Ecosystem Content
-type: Ecosystem Content
+title: Ecosystem content
+type: Ecosystem content
 sitemap:
   exclude: true
 data:
