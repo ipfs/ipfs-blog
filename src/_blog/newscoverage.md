@@ -4,6 +4,12 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: 'libp2p at IPFS þing 2023 Recap'
+  date: 2023-05-11
+  publish_date:
+  path: https://blog.libp2p.io/2023-libp2p-IPFS-Thing-recap/
+  tags:
+    - libp2p
 - title: Brave announces automatic NFT backups and enhanced IPFS/Filecoin support in Brave Wallet
   date: 2023-05-02
   publish_date: 
