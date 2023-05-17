@@ -294,7 +294,7 @@ Unfortunately, there are no official plans to add this feature.
 
 This example shows dynamic-content replication using IPLD, IPNS, and Provider Records. There are 3 [helia](https://github.com/ipfs/helia) (IPFS) nodes running in a single script, named `client1`, `client2`, and `server`. `client1` and `client2` dial `server` and use the `/ipfs/kad/1.0.0` protocol. After dialing, clients can add IPNS and Provider records to the DHT server. Clients also add IPLD data to `server` programmatically.
 
-![mermaid2](../assets/hosting-dynamic-content-mermaid-2.png)
+![](../assets/hosting-dynamic-content-mermaid-3.png)
 
 ---
 > **`client1`, `client2`, and `server ` are all in memory Helia nodes created by a single script.**
@@ -339,7 +339,7 @@ The `server` represents a reliable machine used as a
 The clients are unreliable machines used to read and write dynamic content.
 In the example, `client1` does all the writing, and `client2` does all the reading.
 
-![mermaid1](../assets/hosting-dynamic-content-mermaid-1.png)
+![](../assets/hosting-dynamic-content-mermaid-4.png)
 
 <br/>
 
