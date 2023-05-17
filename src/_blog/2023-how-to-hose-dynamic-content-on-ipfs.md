@@ -1,8 +1,8 @@
 ---
 title: 'How to Host Dynamic Content on IPFS'
-description: 'Description goes here'
+description: 'This article presents a design for hosting dynamic content on IPFS using IPLD, IPNS, and DHT Provider Records.'
 author: tabcat
-date: 2023-05-16
+date: 2023-05-17
 permalink: '/2023-how-to-host-dynamic-content-on-ipfs/'
 header_image: '/hosting-dynamic-content.png'
 tags:
