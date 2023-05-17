@@ -195,7 +195,33 @@ This document format is not formally specified, but included below is a specific
 
 `param`: a key value map for exclusive use by the `protocol`
 
-https://github.com/tabcat/dynamic-content/blob/e4df337d4f806ba530efa94b01e7bda2432ffa8d/src/dynamic-content.ts#L7-L30
+```js
+// takes description of the dynamic content (protocol + params) 
+ // returns manifest (Block) and dynamic-content id (CID) 
+ export async function DynamicContent ( 
+   { protocol, param }: { protocol: string, param: any } 
+ ): 
+   Promise<{ id: CID, manifest: BlockView }> 
+ { 
+  
+   // create manifest 
+   const manifest = await Block.encode({ value: { protocol, param }, codec, hasher }) 
+  
+   // create dcid 
+   const dynamic = new TextEncoder().encode('dynamic') 
+   const bytes = new Uint8Array(dynamic.length + manifest.cid.multihash.digest.length) 
+   bytes.set(dynamic) 
+   bytes.set(manifest.cid.multihash.digest, dynamic.length) 
+   const dcid = CID.create( 
+     manifest.cid.version, 
+     manifest.cid.code, 
+     await hasher.digest(bytes) 
+   ) 
+  
+   return { id: dcid, manifest } 
+ } 
+ ```
+
 
 Above is a code block from the example attached to this article.
 It shows a manifest document "describing" the dynamic content using the `protocol` and `param` properties.
