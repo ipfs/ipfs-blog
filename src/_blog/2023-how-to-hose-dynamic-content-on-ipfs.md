@@ -292,16 +292,9 @@ Unfortunately, there are no official plans to add this feature.
 > **USES HELIA 😲🤩 !!!! DHT IN 😵‍💫 JAVASCRIPT 😵‍💫 😵 !! DYNAMIC CONTENT ON IPFS!?🧐!?**
 ---
 
-This example shows dynamic-content replication using IPLD, IPNS, and Provider Records.
-There are 3 [helia](https://github.com/ipfs/helia) (IPFS) nodes running in a single script, named `client1`, `client2`, and `server`.
-`client1` and `client2` dial `server` and use the `/ipfs/kad/1.0.0` protocol.
-After dialing, clients can add IPNS and Provider records to the DHT server.
-Clients also add IPLD data to `server` programmatically.
+This example shows dynamic-content replication using IPLD, IPNS, and Provider Records. There are 3 [helia](https://github.com/ipfs/helia) (IPFS) nodes running in a single script, named `client1`, `client2`, and `server`. `client1` and `client2` dial `server` and use the `/ipfs/kad/1.0.0` protocol. After dialing, clients can add IPNS and Provider records to the DHT server. Clients also add IPLD data to `server` programmatically.
 
-```mermaid
-flowchart LR
-    A[client1] & B[client2] ---->|tcp\n/ipfs/kad/1.0.0| C[server]
-```
+![mermaid2](../assets/hosting-dynamic-content-mermaid-2.png)
 
 ---
 > **`client1`, `client2`, and `server ` are all in memory Helia nodes created by a single script.**
@@ -346,21 +339,7 @@ The `server` represents a reliable machine used as a
 The clients are unreliable machines used to read and write dynamic content.
 In the example, `client1` does all the writing, and `client2` does all the reading.
 
-```mermaid
-sequenceDiagram
-    client1->>client1: update replica
-    client1->>server: push replica data
-    client1->>server: IPNS publish replica CID
-    client1->>server: add IPNS as a provider of DCID
-
-    client2->>server: find providers for DCID
-    server-->>client2: client1 is provider
-    client2->>server: resolve client1 IPNS
-    server-->>client2: resolves to CID
-    client2->>server: resolve CID to data
-    server-->>client2: data
-    client2->>client2: merge replica
-```
+![mermaid1](../assets/hosting-dynamic-content-mermaid-1.png)
 
 <br/>
 
