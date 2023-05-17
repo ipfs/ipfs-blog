@@ -4,7 +4,7 @@ description: 'Description goes here'
 author: tabcat
 date: 2023-05-16
 permalink: '/2023-how-to-host-dynamic-content-on-ipfs/'
-header_image: '/ipfs-thing-2023-recap/content-routing/content-routing-recap-slides.png'
+header_image: '/hosting-dynamic-content.png'
 tags:
   - 'dynamic-content'
   - 'hosting'
