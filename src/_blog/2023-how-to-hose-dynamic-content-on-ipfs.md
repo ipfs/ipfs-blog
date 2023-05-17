@@ -195,7 +195,33 @@ This document format is not formally specified, but included below is a specific
 
 `param`: a key value map for exclusive use by the `protocol`
 
-https://github.com/tabcat/dynamic-content/blob/e4df337d4f806ba530efa94b01e7bda2432ffa8d/src/dynamic-content.ts#L7-L30
+```js
+// takes description of the dynamic content (protocol + params) 
+ // returns manifest (Block) and dynamic-content id (CID) 
+ export async function DynamicContent ( 
+   { protocol, param }: { protocol: string, param: any } 
+ ): 
+   Promise<{ id: CID, manifest: BlockView }> 
+ { 
+  
+   // create manifest 
+   const manifest = await Block.encode({ value: { protocol, param }, codec, hasher }) 
+  
+   // create dcid 
+   const dynamic = new TextEncoder().encode('dynamic') 
+   const bytes = new Uint8Array(dynamic.length + manifest.cid.multihash.digest.length) 
+   bytes.set(dynamic) 
+   bytes.set(manifest.cid.multihash.digest, dynamic.length) 
+   const dcid = CID.create( 
+     manifest.cid.version, 
+     manifest.cid.code, 
+     await hasher.digest(bytes) 
+   ) 
+  
+   return { id: dcid, manifest } 
+ } 
+ ```
+
 
 Above is a code block from the example attached to this article.
 It shows a manifest document "describing" the dynamic content using the `protocol` and `param` properties.
@@ -266,16 +292,9 @@ Unfortunately, there are no official plans to add this feature.
 > **USES HELIA 😲🤩 !!!! DHT IN 😵‍💫 JAVASCRIPT 😵‍💫 😵 !! DYNAMIC CONTENT ON IPFS!?🧐!?**
 ---
 
-This example shows dynamic-content replication using IPLD, IPNS, and Provider Records.
-There are 3 [helia](https://github.com/ipfs/helia) (IPFS) nodes running in a single script, named `client1`, `client2`, and `server`.
-`client1` and `client2` dial `server` and use the `/ipfs/kad/1.0.0` protocol.
-After dialing, clients can add IPNS and Provider records to the DHT server.
-Clients also add IPLD data to `server` programmatically.
+This example shows dynamic-content replication using IPLD, IPNS, and Provider Records. There are 3 [helia](https://github.com/ipfs/helia) (IPFS) nodes running in a single script, named `client1`, `client2`, and `server`. `client1` and `client2` dial `server` and use the `/ipfs/kad/1.0.0` protocol. After dialing, clients can add IPNS and Provider records to the DHT server. Clients also add IPLD data to `server` programmatically.
 
-```mermaid
-flowchart LR
-    A[client1] & B[client2] ---->|tcp\n/ipfs/kad/1.0.0| C[server]
-```
+![](../assets/hosting-dynamic-content-mermaid-3.png)
 
 ---
 > **`client1`, `client2`, and `server ` are all in memory Helia nodes created by a single script.**
@@ -320,21 +339,7 @@ The `server` represents a reliable machine used as a
 The clients are unreliable machines used to read and write dynamic content.
 In the example, `client1` does all the writing, and `client2` does all the reading.
 
-```mermaid
-sequenceDiagram
-    client1->>client1: update replica
-    client1->>server: push replica data
-    client1->>server: IPNS publish replica CID
-    client1->>server: add IPNS as a provider of DCID
-
-    client2->>server: find providers for DCID
-    server-->>client2: client1 is provider
-    client2->>server: resolve client1 IPNS
-    server-->>client2: resolves to CID
-    client2->>server: resolve CID to data
-    server-->>client2: data
-    client2->>client2: merge replica
-```
+![](../assets/hosting-dynamic-content-mermaid-4.png)
 
 <br/>
 
