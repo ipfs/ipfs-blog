@@ -75,7 +75,7 @@ Content-addressed networking involves a validation step to make sure that the da
 
 This is probably fine if the gateway you're talking to is one you're running locally. Presumably you trust that software as much as you trust your own browser.
 
-The public IPFS gateways today appear to be consistently and reliably returning the correct results. Nonetheless the possibility exists, and it would be preferable if we didn't have to trust. That's why this experimental Chromium implementation uses the [trustless gateway](https://github.com/ipfs/specs/blob/main/http-gateways/TRUSTLESS_GATEWAY.md) API and verifies the retrieved content locally.
+The public IPFS gateways today appear to be consistently and reliably returning the correct results. Nonetheless the possibility exists, and it would be preferable if we didn't have to trust. That's why this experimental Chromium implementation uses the [Trustless Gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/) API and verifies the retrieved content locally.
 
 ## Where is the code?
 
@@ -89,29 +89,29 @@ Those who embed Chromium into another application generally provide an implement
 
 ### Hooking into Chromium
 
-* The `ipfs://` and `ipns://` schemes are registered in [ContentClient::AddAdditionalSchemes](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
+* The `ipfs://` and `ipns://` schemes are registered in [`ContentClient::AddAdditionalSchemes`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
 * An interceptor is created in [`ContentBrowserClient::WillCreateURLLoaderRequestInterceptors`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so that `ipfs://` and `ipns://` navigation requests will be handled by `components/ipfs`.
 * URL loader factories created for `ipfs` and `ipns` schemes in [`ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so that in-page resources with `ipfs://` / `ipns://` URLs (or relative URLs on a page loaded as `ipfs://`), will also be handled by `components/ipfs`.
 
-### Issuing http(s) requests to gateways
+### Issuing HTTP(S) requests to Trustless Gateways
 
 The detailed steps of the algorithm are laid out in [the design doc](https://github.com/little-bear-labs/ipfs-chromium/blob/main/DESIGN.md), but here's the basic idea:
 
 * An IPFS link will have a CID in the URL. This is the [root](https://docs.ipfs.tech/concepts/glossary/#root) of its [DAG](https://en.wikipedia.org/wiki/Merkle_tree), which contains directly or indirectly all the info needed to get all the files related to the site, and will be the first [block](https://docs.ipfs.tech/concepts/glossary/#block) needed to access the file/resource.
-* For any given block that is known to be needed, but not present in-memory, send requests to several gateways which haven't responded with an error for this CID yet and don't currently have pending requests to them. These requests have `?format=raw` so that we'll get just the one block, not the whole file.
+* For any given block that is known to be needed, but not present in-memory, send requests to several gateways which haven't responded with an error for this CID yet and don't currently have pending requests to them. These requests have `?format=raw` so that we'll get just the one block (with `Content-Type` [application/vnd.ipld.raw](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw)), not the whole file.
 * When a response comes from a gateway, hash it according to the algo specified in the CID's [multihash](https://docs.ipfs.tech/concepts/glossary/#multihash). Right now, that has to be sha-256, and luckily it generally is. If the hashes don't match, the gateway's response gets treated much like an error - the gateway gets reduced in priority, and a new request goes out to a gateway that hasn't yet received this request.
 * If the hashes are equal, store the block, process the block as described in Codecs (below). If the new node includes links to more blocks we also need, send requests for those blocks.
 * When the browser has all the blocks needed, piece together the full file/resource and create an HTTP response and return it, as if it had been a single HTTP request all along.
 
 ### Codecs
 
-If a CID is V0, we assume the [codec](https://docs.ipfs.tech/concepts/glossary/#codec) is [PB-DAG](https://docs.ipfs.tech/concepts/glossary/#dag-pb) (see below). Other CIDs specify the codec, and right now we support these 2:
+If a CID is V0, we assume the [codec](https://docs.ipfs.tech/concepts/glossary/#codec) is [`dag-pb`](https://docs.ipfs.tech/concepts/glossary/#dag-pb) (see below). Other CIDs specify the codec, and right now we support these 2:
 
-#### RAW
+#### `raw` (`0x55`)
 
 A block of this type is a blob - a bunch of bytes. We'll populate the body of the response with it.
 
-#### PB-DAG
+#### `dag-pb` (`0x70`)
 
 That's [ProtoBuf](https://protobuf.dev/)-encoded [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph). A block of this type is a node in a DAG, and contains some bytes to let you know what kind of node it is. There is one very special and important type of node ipfs-chromium deals with a lot:
 
