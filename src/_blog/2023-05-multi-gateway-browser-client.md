@@ -130,7 +130,7 @@ These nodes each have a `data` byte array that is the contents of a file. We'll 
 In UnixFS a node can represent a file as the concatenation of other file nodes, to which it has `links`. The decision to use this kind of node generally has to do with the size of the file. A single node can't be much more than a megabyte, so files larger than that get cut into chunks and handled as a tree of nodes. There are a couple of reasons for that:
 
 * Data deduplication (it's possible the same sequences of bytes, and thus same CID, appears in multiple files or even within the same file)
-* In the case that a gateway were malicious, we wouldn't want to wait until a file of potentially unbounded size finishes downloading before we verify that it's correct. It is worth mentioning that as of today ipfs-chromium does not enforce this limit.
+* In the case that a gateway were malicious, we wouldn't want to wait until a file of potentially unbounded size finishes downloading before we verify that it's correct. "ipfs-chromium" enforces a limit of 2MB per block.
 * It enables the possibility that one could concurrently fetch different parts of the file from different gateways.
 
 If we have all the nodes linked-to already, we can concatenate their data together and make a response body out of it. If we don't, we'll convert the missing links to CIDs and request them from gateways.
