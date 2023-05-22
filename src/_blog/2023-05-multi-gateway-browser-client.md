@@ -145,7 +145,7 @@ In this case the `data` field isn't really important to us. The `links`, however
 
 ###### [HAMT](https://en.wikipedia.org/wiki/Hash_array_mapped_trie) (sharded) Directory
 
-This is for directories with just too many entries in them. The links from this directory node might be entries in the directory or they might be other HAMT nodes referring to the same directory (basically, the directory itself is getting split up over a tree of nodes).
+This is for directories with just too many entries in them to fit in a single block. The links from this directory node might be entries in the directory or they might be other HAMT nodes referring to the same directory (basically, the directory itself is getting split up over a tree of nodes).
 
 * If you're coming in from another HAMT node, you might have some unused bits of the hash to select the next child.
 * If you have a path, hash the name of the item you're looking for, pop the correct number of bits off the hash, and use it to select which element you're going to next.
