@@ -71,7 +71,7 @@ Including HTTP-client-only IPFS capabilities in a Chromium-based browser doesn't
 
 ### Security (vs. single public gateway)
 
-Content-addressed networking involves a validation step to make sure that the data you received matches the [hash](https://docs.ipfs.tech/concepts/glossary/#hash) requested (it's a part of the CID). When you're requesting a file from an HTTP gateway, the verification of the content is delegated to the node running the gateway. Further, if you receive the file in its final form as a response to a single request, naively using just an HTTP client, it's no longer possible to verify locally.
+Content-addressed networking involves a validation step to make sure that the data you received matches the [hash](https://docs.ipfs.tech/concepts/glossary/#hash) requested (it's a part of the CID). When you're requesting a file from an HTTP gateway, by default, the verification of the content is delegated to the node running the gateway. Further, if you receive the file in its final deserialized form as a response to a single request, naively using just an HTTP client, it's no longer possible to verify locally.
 
 This is probably fine if the gateway you're talking to is one you're running locally. Presumably you trust that software as much as you trust your own browser.
 
