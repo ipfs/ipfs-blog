@@ -47,7 +47,7 @@ Or preferably (when [Origin isolation](https://en.wikipedia.org/wiki/Same-origin
 
 >[https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/](https://bafybeihpy2n6vwt2jjq5gusv23ajtilzbao3ekfb2hiev2xvuxscdxqcp4.ipfs.dweb.link/)
 
-In each case, you're delegating all the "IPFS stuff" to a particular node. This is effective for completing requests, but has some trade-offs.
+In each case, you're delegating all the "IPFS stuff", including CID (hash) verification, to a particular node. This is effective for completing requests, but has some trade-offs, including the privacy and integrity risks when using a remote gateway provided by a third-party.
 
 ### Performance
 
