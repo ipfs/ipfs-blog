@@ -4,7 +4,7 @@ description: 'Description'
 author: Boris Mann and Robin Berjon
 date: 2023-05-23
 permalink: '/2023-ipfs-community-governance/'
-header_image: '/hosting-dynamic-content.png'
+header_image: '/community-governance-recap.jpg'
 tags:
   - 'thing'
   - 'þing'
