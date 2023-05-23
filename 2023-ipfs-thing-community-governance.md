@@ -3,7 +3,7 @@ title: 'Recap: Community & Governance (þing 2023)'
 description: 'Description'
 author: Boris Mann & Robin Berjon
 date: 2023-05-10
-permalink: '/2023-ipfs-thing-web-track/'
+permalink: '/2023-ipfs-community-governance/'
 header_image: '/ipfs-thing-2023-recap/header.jpg'
 tags:
   - 'thing'
