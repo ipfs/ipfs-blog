@@ -4,7 +4,7 @@ description: 'Description'
 author: Boris Mann & Robin Berjon
 date: 2023-05-10
 permalink: '/2023-ipfs-community-governance/'
-header_image: '/ipfs-thing-2023-recap/header.jpg'
+header_image:
 tags:
   - 'thing'
   - 'þing'
@@ -14,9 +14,6 @@ tags:
   - 'community'
   - 'governance'
 ---
-
-
-# Recap: Community & Governance (þing 2023)
 
 Governance and community are two ideas that vibe like they wouldn't live in the same part of
 town if their lives dependended on it. Community is warm, fun, and fuzzy if probably chaotic 
