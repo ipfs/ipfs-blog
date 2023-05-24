@@ -4,7 +4,7 @@ description: 'A recap of the new HTTP Gateways track including summaries, links,
 author: Will Scott
 date: 2023-05-24
 permalink: '/2023-http-gateways-recap/'
-header_image: ''
+header_image: '/http-gateways-recap.jpg'
 tags:
   - 'thing'
   - 'þing'
