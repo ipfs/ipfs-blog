@@ -8,6 +8,7 @@ translationKey: 2023-05-multigateway-chromium-client
 header_image: "/2023-05-multigateway-chromium-client-header.png"
 tags:
 - browsers
+- chromium
 
 ---
 
@@ -63,7 +64,7 @@ If you're reading this, installing a local node might seem like no big deal to y
 
 One approach is to have the browser install and start its own IPFS node. This is a pretty reasonable approach, but it can raise questions about when to dedicate resources to installation or the node's [daemon](https://docs.ipfs.tech/concepts/glossary/#daemon). The most notable example of this approach is [Brave](https://brave.com/ipfs-support/).
 
-![Brave IPFS Choice](/brave-choice.png)
+![Brave IPFS Choice](../assets/brave-choice.png)
 
 However, regardless of whether the browser manages a [Kubo](https://github.com/ipfs/kubo#readme) node as Brave does or implements IPFS natively, the architecture of the application has changed in a significant way - *from being strictly a client, to being a server*.
 
