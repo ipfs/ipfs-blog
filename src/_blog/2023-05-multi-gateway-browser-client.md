@@ -172,7 +172,7 @@ Regular `ipns://` URLs, however, are verified by the cryptographically signed [r
 
 ## Trying it out
 
-If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built v0.0.0.1 binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/tag/0.0.0.1) or [an IPFS gateway](https://ipfs.io/ipfs/bafybeiejovt6ykqitq5senanjrizhk7ce3ynij4ckmoc5tod4jyz6umyp4).
+If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built v0.0.0.1 binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/) or [an IPFS gateway](https://ipfs.io/ipfs/bafybeiejovt6ykqitq5senanjrizhk7ce3ynij4ckmoc5tod4jyz6umyp4).
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
