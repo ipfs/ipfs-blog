@@ -4,7 +4,7 @@ description: 'js-IPFS is being deprecated, and has been superseded by Helia.'
 author: Alex Potsides (@achingbrain)
 date: 2023-05-26
 permalink: '/202305-js-ipfs-deprecation-for-helia/'
-header_image: '/header-image-js-ipfs-placeholder.png'
+header_image: '/2023-05-js-ipfs-deprecation-for-helia-header-image.png'
 tags:
   - 'helia'
   - 'js-ipfs'
