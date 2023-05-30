@@ -30,7 +30,7 @@ Here we're talking about [an project to implement IPFS in Chromium](https://gith
 
 ## Why build this?
 
-This is by no means the first time IPFS has been usable in a browser, or even Chromium-based browsers in particular. Javier Fernández at Igalia has written some good explanations of other approaches that have been taken over at his blog in his post *[Discovering Chrome’s pre-defined Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/)*, there's an [overview on the IPFS blog](https://blog.ipfs.tech/14-11-2022-igalia-chromium/) as well.
+This is by no means the first time IPFS has been usable in a browser, or even Chromium-based browsers in particular. Javier Fernández at Igalia has written some good explanations of other approaches that have been taken over at his blog in his post *[Discovering Chrome’s pre-defined Custom Handlers](https://blogs.igalia.com/jfernandez/2022/11/14/discovering-chromes-pre-defined-custom-handlers/)*, and there's an [overview on the IPFS blog](https://blog.ipfs.tech/14-11-2022-igalia-chromium/) as well.
 
 Most of these approaches share in common the idea of translating IPFS and [IPNS](https://docs.ipfs.tech/concepts/glossary/#ipns) requests, 1:1, into HTTP requests. For example, if you have an HTTP gateway running locally on your machine,something like:
 
