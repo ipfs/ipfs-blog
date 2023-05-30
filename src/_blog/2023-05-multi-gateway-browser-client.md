@@ -54,9 +54,7 @@ In each case, you're delegating all the "IPFS stuff", including CID (hash) verif
 
 If the gateway you're using happens to have the data you're seeking already on-hand, your performance will be great, since it can simply return to you what it already has. Perforance might even be better than the multi-gateway client, since no extraneous requests would be made. However, if you were unlucky, that gateway will have to spend more time querying the IPFS network to try to find the data you request before it gives up. The ideal gateway to use may very well depend on what you happen to be doing at the moment - and may differ from one of your tabs to another. A multi-gateway client will have the worst case performance more rarely.
 
-It's also conceivable that for a sufficiently large file which exists on multiple gateways you're talking to, a verifying multi-gateway client might be able to beat a single-gateway client, since you might be pulling down parts of the file from different sources concurrently. [RAPIDE](https://github.com/ipfs/go-libipfs-rapide/issues/12) is a more advanced in development client which also makes use of this principle (along with other things).
-
-And while we've been talking about "files" for the most part, IPFS breaks larger files down into "blocks". You can apply these same techniques at the block level. Rapide is an implementation of this which is showing promising results - watch a [recent talk from IPFS Thing by Jorropo](https://www.youtube.com/watch?v=Cv01ePa0G58) on it. Perhaps native browser implementations could integrate these approaches for further improving performance - perhaps even beating regular HTTP web performance.
+And while we've been talking about "files" for the most part, IPFS breaks larger files down into "blocks". So you can apply these same techniques at the block level, and it's also conceivable that for a sufficiently large file which exists on multiple gateways you're talking to, a verifying multi-gateway client might be able to be faster than a single-gateway client, since you might be pulling down parts of the file from different sources concurrently. [RAPIDE](https://github.com/ipfs/go-libipfs-rapide/issues/12) is a more advanced in-development client which also makes use of this principle (along with other things). And it's showing promising results - watch a [recent talk from IPFS Thing by Jorropo](https://www.youtube.com/watch?v=Cv01ePa0G58) on it!
 
 ### Installation (vs. local gateway)
 
@@ -90,9 +88,9 @@ Those who embed Chromium into another application generally provide an implement
 
 ### Hooking into Chromium
 
-* The `ipfs://` and `ipns://` schemes are registered in [`ContentClient::AddAdditionalSchemes`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so that the origin will be handled properly.
-* An interceptor is created in [`ContentBrowserClient::WillCreateURLLoaderRequestInterceptors`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so that `ipfs://` and `ipns://` navigation requests will be handled by `components/ipfs`.
-* URL loader factories created for `ipfs` and `ipns` schemes in [`ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so that in-page resources with `ipfs://` / `ipns://` URLs (or relative URLs on a page loaded as `ipfs://`), will also be handled by `components/ipfs`.
+* The `ipfs://` and `ipns://` schemes are registered in [`ContentClient::AddAdditionalSchemes`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_client.h;l=156?q=AddAdditionalSchemes), so the origin will be handled properly.
+* An interceptor is created in [`ContentBrowserClient::WillCreateURLLoaderRequestInterceptors`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1733?q=WillCreateURLLoaderRequestInterceptors), which just checks the scheme, so `ipfs://` and `ipns://` navigation requests will be handled by `components/ipfs`.
+* URL loader factories created for `ipfs` and `ipns` schemes in [`ContentBrowserClient::RegisterNonNetworkSubresourceURLLoaderFactories`](https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/content_browser_client.h;l=1503?q=RegisterNonNetworkSubresourceURLLoaderFactories), so in-page resources with `ipfs://` / `ipns://` URLs (or relative URLs on a page loaded as `ipfs://`), will also be handled by `components/ipfs`.
 
 ### Issuing HTTP(S) requests to Trustless Gateways
 
@@ -157,7 +155,7 @@ This is for directories with just too many entries in them to fit in a single bl
 
 The first element after `ipns://` is the "[ipns-name](https://specs.ipfs.tech/ipns/ipns-record/#ipns-name)".
 
-* If the name is formatted as a CIDv1, and has its codec set to `libp2p-key` (`0x72`), ipfs-client will retrieve a [signed IPNS record](https://specs.ipfs.tech/ipns/ipns-record/#ipns-record) of what it points at from a gateway, and then load that content.
+* If the name is formatted as a CIDv1, and has its codec set to `libp2p-key` (`0x72`), ipfs-chromium will retrieve a [signed IPNS record](https://specs.ipfs.tech/ipns/ipns-record/#ipns-record) of what it points at from a gateway, and then load that content.
   * The cryptographic signature in the record is verified using the public key, which corresponds to the "ipns-name"
   * Note: only two [multibase](https://docs.ipfs.tech/concepts/glossary/#multibase) encodings are fully supported for now: base36 and base32. If your IPNS or DNSLink record points to something base58 that should work, but otherwise avoid it (don't use it in the address bar!).
 * If the name is not formatted as a CIDv1, a DNS request is created for the appropriate TXT record to resolve it as a [DNSLink](https://dnslink.dev/).
@@ -166,14 +164,14 @@ IPNS names may point to other IPNS names, in which case this process recurses. M
 
 ## Bottom Line
 
-So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data, without being very easily tracked.
+So, in the end, the user gets to treat `ipfs://` links to snapshotted data like any other link, gets the result in a reasonable timeframe, and can rely on the data they get back being the correct data.
 
 `ipns://` URLs of the DNSLink variety rely only on DNS being accurate.
 Regular `ipns://` URLs, however, are verified by the cryptographically signed [record](https://specs.ipfs.tech/ipns/ipns-record/).
 
 ## Trying it out
 
-If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built v0.0.0.1 binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/) or [an IPFS gateway](https://ipfs.io/ipfs/bafybeiejovt6ykqitq5senanjrizhk7ce3ynij4ckmoc5tod4jyz6umyp4).
+If you want to try this yourself today, you can [build it](https://github.com/little-bear-labs/ipfs-chromium/blob/main/BUILDING.md) from source, or you may install a pre-built binary from [GitHub releases](https://github.com/little-bear-labs/ipfs-chromium/releases/) or [an IPFS gateway](https://gateway.ipfs.io/ipfs/QmdsmW9pSM8kQsnwFpHrqQFskv6H26XzhnZWYHGVdAfcbm).
 
 If you'd just like to see it in action, here are the links I use in the video below:
 
