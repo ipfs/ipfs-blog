@@ -2,10 +2,10 @@
 title: IPFS Multi-Gateway Experiment in Chromium
 description: A new approach to implementing ipfs:// and ipns:// support natively in the browser, using a client-only approach and fetching verifiable responses from multiple HTTP gateways.
 author: John Turpish
-date: 2023-05-23
+date: 2023-06-01
 permalink: "/2023-05-multigateway-chromium-client/"
 translationKey: 2023-05-multigateway-chromium-client
-header_image: "/2023-05-multigateway-chromium-client-header.png"
+header_image: "/multi-gateway-experiment.png"
 tags:
 - browsers
 - chromium
