@@ -46,7 +46,7 @@ Let’s dive in…
 
 - A thin library embedding Lassie via CGo and FFI. With Rusty-Lassie, you can easily embed Lassie in your Rust project, start a Lassie HTTP server in a background thread, and retrieve CAR content using any HTTP client. [Learn more about the project here](https://crates.io/crates/lassie)!
 
-## IPFS Thing Track Recaps 📝
+## **IPFS Thing Track Recaps 📝**
 
 [Recap: Content Routing (þing 2023)](https://blog.ipfs.tech/2023-ipfs-thing-content-routing-track/)
 
