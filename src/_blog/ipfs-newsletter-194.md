@@ -10,8 +10,6 @@ tags:
 - newsletter
 ---
 
-Welcome to IPFS Newsletter 194!
-
 The month of May was packed full of new blog posts, þing 2023 recaps, and exciting milestones in the continued growth of IPFS. This edition of the newsletter covers everything from the launch of a new mobile app called Durin to a blog post explaining how to host dynamic content on IPFS using Helia.
 
 Let’s dive in…
@@ -85,3 +83,5 @@ Let’s dive in…
 - Launchpad is a blend of two key components: a dynamic four-week virtual learning cohort, where residents actively participate in remote learning seminars, and an unforgettable one-week in-person “colo” Summit. [Learn more on the Protocol Labs blog](https://protocol.ai/blog/launchpad-summit-paris-2023/)!
 
 [HackFS kicked off on June 2](https://ethglobal.com/events/hackfs2023)
+
+- Late last week, EthGlobal and Protocol Labs kicked off HackFS 2023 with an incredible summit featuring fireside chats on FVM, presentations on the Protocol Labs builders funnel, and even a talk from a surprise guest. [Check out the event's website to catchup](https://ethglobal.com/events/hackfs2023)!
