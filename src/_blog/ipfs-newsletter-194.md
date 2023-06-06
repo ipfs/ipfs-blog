@@ -85,3 +85,5 @@ Let’s dive in…
 - Launchpad is a blend of two key components: a dynamic four-week virtual learning cohort, where residents actively participate in remote learning seminars, and an unforgettable one-week in-person “colo” Summit. [Learn more on the Protocol Labs blog](https://protocol.ai/blog/launchpad-summit-paris-2023/)!
 
 [HackFS kicked off on June 2](https://ethglobal.com/events/hackfs2023)
+
+- Late last week, EthGlobal and Protocol Labs kicked off HackFS 2023 with an incredible summit featuring fireside chats on FVM, presentations on the Protocol Labs builders funnel, and even a talk from a surprise guest. [Check out the event's website to catchup](https://ethglobal.com/events/hackfs2023)!
