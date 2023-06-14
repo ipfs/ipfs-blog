@@ -14,4 +14,8 @@ updates:
     assignees:
       - 'zebateira'
     labels:
-      - 'dependencies'
+      - 'dependencies'            
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
