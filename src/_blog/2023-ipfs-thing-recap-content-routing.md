@@ -89,6 +89,4 @@ The talk was followed by a discussion on a set of open questions as we scale the
 
 It's great to see the IPFS community coming together and celebrating the latest advancements in the field. A big thank you to all who attended the track at Brussels and to the speakers who presented and helped generate questions. Last but not least, a massive shout-out to the community that tirelessly drives the vision (a better web for all) forward. 🙇
 
-And there's more to look forward to! The dates for [IPFS Camp 2023](https://lu.ma/ipfscamp23-prereg) in Bangalore, India have already been announced for early November. It's never too early to start preparing your talks and presentations. 😊
-
 See you on the decentralised web! ✊
