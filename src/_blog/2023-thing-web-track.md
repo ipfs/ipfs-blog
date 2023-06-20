@@ -114,9 +114,7 @@ The Browsers, Platforms and Standards team wants to share our thoughts early and
 
 Thanks to all the speakers for the day and also to the rad people who joined and asked great questions.
 
-IPFS Camp is already in planning for early November... in BANGALORE INDIA! So block your calendars and start thinking about the web you want to see exist, so you can submit a talk there. 😄
-
-Until then, come hang out in our superbridged megachannel:
+Until our next event, come hang out in our superbridged megachannel:
 
 * #browsers-and-platforms on Filecoin Slack ([join](https://filecoin.io/slack))
 * #browsers-and-standards on Element/Matrix ([join](https://matrix.to/#/#browsers-and-standards:ipfs.io))
