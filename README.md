@@ -12,11 +12,6 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 **If you just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
 
-Tips (Add more here)
-- Want to embed a YouTube video in a blog post? Switch to raw markdown view and use `@[youtube](videoID)`, substituting the video's unique ID from the URL (e.g. `https://www.youtube.com/watch?v=eFbKKsEoQNg`) for `videoID`.
-- Making sure to name the blog post file with the .md extension
-- Don't include an H1 title header in the body of the post. The posts title will automatically be pulled from the YAML metadata area.
-
 ### Creating a new blog post via Github pull request
 
 Each blog post is a markdown file in the [`src/_blog`](./src/_blog) folder, with a little metadata at the top (known as YAML frontmatter) to help us create the post index page.
@@ -75,7 +70,7 @@ Each post can have a custom image that is shown on the [blog homepage](https://b
 
 To create a pull request, you will need to fork this repository. See the GitHub docs on [how to create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). If you have the [GitHub CLI](https://cli.github.com/) installed, you can use the [`gh pr create` command](https://cli.github.com/manual/gh_pr_create) from the terminal to conveniently create a pull request.
 
-Once you create the pull request, await review.
+Once you create the pull request, await review. If you have permissions to merge, always preview the post first to ensure everything looks right. You can do this by clicking on the "Details" link next to the **fleek/build** check that runs automatically. Clicking this link will take you to a staging site where you will then need to click on the intended post in the feed to see it.
 
 ### To add a URL redirect for a blog post
 
