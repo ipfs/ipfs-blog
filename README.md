@@ -12,46 +12,6 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 **If you just want to submit a link (event, academic paper, tutorial, video or news coverage) to add to the site, [use this easy form](https://airtable.com/shrNH8YWole1xc70I)!**
 
-## For post authors/editors
-
-There are 2 ways to create a new blog post:
-- Via the [Forestry](https://forestry.io) editor
-- Via a [manual pull request](#creating-a-new-blog-post-via-github-pull-request)
-
-### Creating a new blog post using Forestry
-Forestry is a content management system (CMS) that automatically creates and manages Github PRs for each new post. Using Forestry offers you WYSIWYG editing (in addition to raw markdown mode), easy image upload/crop tools, and instant previews. If you're a regular contributor to the IPFS blog and would like to request Forestry access, contact Emily Vaughan.
-
-Forestry uses the `staging` branch as a work-in-progress scratchpad for blog content. Once content in `staging` is approved, it can be merged into `main`, which is the branch that feeds the production site at blog.ipfs.tech. Merges into `main` are _automatically deployed_ to the production site using [Fleek](https://fleek.co/).
-
-### Forestry authoring/editing tips
-
-- Use the "Content Types" section of Forestry's left-hand menu to drill down to the type of item (blog post, video, news coverage, event) you want to create/edit.
-- For card and blog post header images, **be sure to use the [image crop/scale tool](https://blog.ipfs.tech/image-crop/)** to resize and save images so they're the correct dimensions. (Don't have an image? Don't worry, there are generic fallback images.)
-- Want to embed a YouTube video in a blog post? Switch to raw markdown view and use `@[youtube](videoID)`, substituting the video's unique ID from the URL (e.g. `https://www.youtube.com/watch?v=eFbKKsEoQNg`) for `videoID`.
-- To switch between WYSIWYG and raw markdown while writing a blog post, choose "Raw Editor" or "WYSIWYG Editor" from the dots menu at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036257-fbe93e00-7cf9-11eb-935c-a70f9d21c14f.png)
-
-### Forestry build preview tips
-
-While WYSIWYG mode usually gives you a good enough idea of what a blog post will look like, you can also load Forestry's own _build preview_ in a new tab by clicking the eye icon at the top right of the page:<br/>![image](https://user-images.githubusercontent.com/1507828/110036918-f4766480-7cfa-11eb-9cf3-a0082e61a7a0.png)
-
-This build preview lets you preview changes to any content type (not just blog posts), and _does not_ require you to save your changes in order to see them.
-
-A few tips:
-
-- Click the eye icon to _regenerate_ a build preview at any time from a Forestry edit page. You may need to reload the build preview tab if you don't see changes come through immediately.
-- Occasionally, a build preview page gets stuck at a URL ending in `forestry/pending` or simply won't load. In this case, try the following:
-  - Remove `forestry/pending` from the URL and try again.
-  - Check the Previews section of Forestry's [`Site > Settings` page](https://app.forestry.io/sites/lg5t7mxcqbr-da/#/settings/previews) to see the preview server's current status, start/stop/restart the server, or examine the logs for errors. Simply restarting the preview server can fix many problems.
-  - If all else fails, save your changes, wait a few minutes, and take a look at [Fleek's build of the latest version of the `staging` branch](https://ipfs-blog-staging.on.fleek.co/). It's a considerably slower build/deploy time, but does reflect the latest changes once it finishes deploying.
-
-### To deploy to the live site
-
-Changes you _save_ in Forestry are written directly to the `staging` branch and automatically generate a staging preview at https://ipfs-blog-staging.on.fleek.co/.
-
-**Once a staged post is ready to go live, please PR `staging` to `main` using [this handy shortcut](https://github.com/ipfs/ipfs-blog/compare/main...staging?expand=1).** Give your PR a title explaining what changes are inside (the default just says "Staging", which isn't helpful.) _Note that if multiple posts are in-flight in staging and only one is approved to go live, your PR may need some massaging by a reviewer._
-
-_Note for PR reviewers: While we continue to dogfood Forestry, please leave your edits in comments rather than making additional commits._ As our overall workflow continues to solidify, this direction may change.
-
 ### Creating a new blog post via Github pull request
 
 Each blog post is a markdown file in the [`src/_blog`](./src/_blog) folder, with a little metadata at the top (known as YAML frontmatter) to help us create the post index page.
@@ -110,7 +70,7 @@ Each post can have a custom image that is shown on the [blog homepage](https://b
 
 To create a pull request, you will need to fork this repository. See the GitHub docs on [how to create a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). If you have the [GitHub CLI](https://cli.github.com/) installed, you can use the [`gh pr create` command](https://cli.github.com/manual/gh_pr_create) from the terminal to conveniently create a pull request.
 
-Once you create the pull request, await review.
+Once you create the pull request, await review. If you have permissions to merge, always preview the post first to ensure everything looks right. You can do this by clicking on the "Details" link next to the **fleek/build** check that runs automatically. Clicking this link will take you to a staging site where you will then need to click on the intended post in the feed to see it.
 
 ### To add a URL redirect for a blog post
 
