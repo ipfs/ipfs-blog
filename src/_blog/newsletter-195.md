@@ -37,7 +37,7 @@ Let’s jump in!
 
 [js-IPFS Deprecation Reminder: Move to Helia!](https://blog.ipfs.tech/202305-js-ipfs-deprecation-for-helia/)
 
-- **js-IPFS is in the process of being deprecated** so you should port your apps to Helia to receive bug fixes, features, and performance improvements moving forwards.
+- **js-IPFS is in the process of being deprecated** so you should port your apps to Helia to receive bug fixes, features, and performance improvements moving forwards. [Read more about it here!](https://blog.ipfs.tech/202305-js-ipfs-deprecation-for-helia/)
 
 ## **Around the Ecosystem 🌎**
 
