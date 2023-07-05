@@ -1,8 +1,8 @@
 ---
 title: Welcome to IPFS News 195!
-description: Featuring Durin, Helia advancements, recaps of IPFS Thing 2023 from individual track leads, and much more!
+description: Featuring a deep-dive into the challenges of measuring decentralized networks + more!
 author: ''
-date: 2023-06-06
+date: 2023-07-05
 permalink: "/newsletter-195"
 translationKey: ''
 header_image: "/ipfsnews.png"
@@ -10,33 +10,9 @@ tags:
 - newsletter
 ---
 
-Welcome to IPFS Newsletter 195!
-
 As we enter into the summer months, things are slowing down just a bit as people go on holiday or get some much needed R&R, but that doesn’t mean we don’t have plenty of things to share with you! From a deep-dive into [the challenges of measuring decentralized networks](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system) to news about Fission adding redirect support of IPFS, this month’s newsletter will keep you in the loop whether this email finds you in the office, at home, or on the beach. 🏖️
 
 Let’s jump in!
-
-## HackFS Winners 🏅
-
-This year’s [HackFS hackathon](https://ethglobal.com/events/hackfs2023) has come to a close, and several projects were selected as winners for the IPFS category. If you missed it, [learn more about HackFS here](https://ethglobal.com/events/hackfs2023).
-
-Introducing the HackFS 2023 winners for IPFS…
-
-[Web3Stash](https://ethglobal.com/showcase/web3stash-mn6iu) by [@mbcse50](https://twitter.com/mbcse50)
-
-- Web3Stash is a standard library to get a single API to connect to multiple decentralized storage service providers. [Check it out here!](https://ethglobal.com/showcase/web3stash-mn6iu)
-
-[unid.store](https://t.co/xbh9zYbjm9) by [@_Difint_](https://twitter.com/_Difint_)and [@mr13tech](https://twitter.com/mr13tech)
-
-- Super simple file sharing - decentralized, quick, and without registration. [Take a look here!](https://ethglobal.com/showcase/unid-store-2yukr)
-
-[Fileblox](https://ethglobal.com/showcase/fileblox-y0rjm) by [@Lycaoncreatives](https://twitter.com/LycaonCreatives), [@raldblox](https://twitter.com/raldblox), and [@luckscientist](https://twitter.com/luckscientist)
-
-- FileBlox enables the creation of encrypted NFTs. It solves the right-click-and-save problem for our content creators while letting them get all the benefits of tokenization. [Learn more here!](https://ethglobal.com/showcase/fileblox-y0rjm)
-
-[Star Streamer](https://ethglobal.com/showcase/star-streamer-huakw) by [@msakiart](https://twitter.com/msakiart)
-
-- P2P video streaming service for decentralized content sharing with libp2p, ipfs and hypercore. [Check it out here!](https://ethglobal.com/showcase/star-streamer-huakw)
 
 ## **Brand New on IPFS ✨**
 
@@ -53,7 +29,7 @@ Introducing the HackFS 2023 winners for IPFS…
 
 [The Challenges of Measuring Decentralized Networks: The Case of the InterPlanetary File System](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
 
-- In this new blog post on the Internet Society, Yiannis Psaras of ProbeLab shares their ********experience measuring the stability, performance, and cartography of InterPlanetary File System (IPFS), one of the largest decentralized, P2P networks in operation. [Read it here!](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
+- In this new blog post on the Internet Society, Yiannis Psaras of ProbeLab shares their experience measuring the stability, performance, and cartography of InterPlanetary File System (IPFS), one of the largest decentralized, P2P networks in operation. [Read it here!](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
 
 [June Protocol Labs EngRes All Hands [Video]](https://www.youtube.com/watch?v=7fbhniQJjDw)
 
@@ -96,3 +72,25 @@ Introducing the HackFS 2023 winners for IPFS…
 [Accelerate your Web3 journey: Protocol Labs Launchpad Summit on July 16-21](https://protocol.ai/blog/launchpad-summit-paris-2023/)
 
 - Launchpad is a blend of two key components: a dynamic four-week virtual learning cohort, where residents actively participate in remote learning seminars, and an unforgettable one-week in-person “colo” Summit. **[Learn more on the Protocol Labs blog](https://protocol.ai/blog/launchpad-summit-paris-2023/)**
+
+## HackFS Winners 🏅
+
+This year’s [HackFS hackathon](https://ethglobal.com/events/hackfs2023) has come to a close, and several projects were selected as winners for the IPFS category. If you missed it, [learn more about HackFS here](https://ethglobal.com/events/hackfs2023).
+
+Introducing the HackFS 2023 winners for IPFS…
+
+[Web3Stash](https://ethglobal.com/showcase/web3stash-mn6iu) by [@mbcse50](https://twitter.com/mbcse50)
+
+- Web3Stash is a standard library to get a single API to connect to multiple decentralized storage service providers. [Check it out here!](https://ethglobal.com/showcase/web3stash-mn6iu)
+
+[unid.store](https://t.co/xbh9zYbjm9) by [@_Difint_](https://twitter.com/_Difint_)and [@mr13tech](https://twitter.com/mr13tech)
+
+- Super simple file sharing - decentralized, quick, and without registration. [Take a look here!](https://ethglobal.com/showcase/unid-store-2yukr)
+
+[Fileblox](https://ethglobal.com/showcase/fileblox-y0rjm) by [@Lycaoncreatives](https://twitter.com/LycaonCreatives), [@raldblox](https://twitter.com/raldblox), and [@luckscientist](https://twitter.com/luckscientist)
+
+- FileBlox enables the creation of encrypted NFTs. It solves the right-click-and-save problem for our content creators while letting them get all the benefits of tokenization. [Learn more here!](https://ethglobal.com/showcase/fileblox-y0rjm)
+
+[Star Streamer](https://ethglobal.com/showcase/star-streamer-huakw) by [@msakiart](https://twitter.com/msakiart)
+
+- P2P video streaming service for decentralized content sharing with libp2p, ipfs and hypercore. [Check it out here!](https://ethglobal.com/showcase/star-streamer-huakw)
