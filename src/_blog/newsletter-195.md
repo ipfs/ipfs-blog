@@ -2,7 +2,7 @@
 title: Welcome to IPFS News 195!
 description: Featuring a deep-dive into the challenges of measuring decentralized networks + more!
 author: ''
-date: 2023-07-05
+date: 2023-07-06
 permalink: "/newsletter-195"
 translationKey: ''
 header_image: "/ipfsnews.png"
