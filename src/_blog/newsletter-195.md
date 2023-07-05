@@ -33,7 +33,7 @@ Let’s jump in!
 
 [June Protocol Labs EngRes All Hands [Video]](https://www.youtube.com/watch?v=7fbhniQJjDw)
 
-- The PL Engineering and Research (EngRes) Workgroup is formed by teams of core protocol developers, network researchers, and experienced contributors in the Protocol Labs Network. The PL EngRes WG mission is to scale and unlock new opportunities for IPFS, Filecoin, libp2p + IPLD, drive breakthroughs in protocol utility & capability, and scale network-native research & development across the PL Network. The PL EngRes WG hosts monthly all hands meetings to check in on progress, and showcase the growth and new capabilities being unlocked by these research & development teams.
+- The PL Engineering and Research (EngRes) Workgroup is formed by teams of core protocol developers, network researchers, and experienced contributors in the Protocol Labs Network. The PL EngRes WG mission is to scale and unlock new opportunities for IPFS, Filecoin, libp2p + IPLD, drive breakthroughs in protocol utility & capability, and scale network-native research & development across the PL Network. The PL EngRes WG hosts monthly all hands meetings to check in on progress, and showcase the growth and new capabilities being unlocked by these research & development teams. [Watch it here!](https://www.youtube.com/watch?v=7fbhniQJjDw)
 
 [js-IPFS Deprecation Reminder: Move to Helia!](https://blog.ipfs.tech/202305-js-ipfs-deprecation-for-helia/)
 
