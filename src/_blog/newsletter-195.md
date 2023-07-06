@@ -29,7 +29,7 @@ Let’s jump in!
 
 [The Challenges of Measuring Decentralized Networks: The Case of the InterPlanetary File System](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
 
-- In this new blog post on the Internet Society, Yiannis Psaras of ProbeLab shares their experience measuring the stability, performance, and cartography of InterPlanetary File System (IPFS), one of the largest decentralized, P2P networks in operation. [Read it here!](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
+- In this new blog post from the Internet Society's (ISOC) Pulse project, Yiannis Psaras of ProbeLab shares their experience measuring the stability, performance, and cartography of InterPlanetary File System (IPFS), one of the largest decentralized, P2P networks in operation. [Read it here!](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system)
 
 [June Protocol Labs EngRes All Hands [Video]](https://www.youtube.com/watch?v=7fbhniQJjDw)
 
