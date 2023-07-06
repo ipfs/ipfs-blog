@@ -10,7 +10,7 @@ tags:
 - newsletter
 ---
 
-As we enter into the summer months, things are slowing down just a bit as people go on holiday or get some much needed R&R, but that doesn’t mean we don’t have plenty of things to share with you! From a deep-dive into [the challenges of measuring decentralized networks](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system) to news about Fission adding redirect support of IPFS, this month’s newsletter will keep you in the loop whether this email finds you in the office, at home, or on the beach. 🏖️
+As we enter into the summer months, things are slowing down just a bit as people go on holiday or get some much needed R&R, but that doesn’t mean we don’t have plenty of things to share with you! From a deep-dive into [the challenges of measuring decentralized networks](https://pulse.internetsociety.org/blog/the-challenges-of-measuring-decentralized-networks-the-case-of-the-interplanetary-file-system) to news about Fission adding redirect support of IPFS, this month’s newsletter will keep you in the loop whether this edition finds you in the office, at home, or on the beach. 🏖️
 
 Let’s jump in!
 
