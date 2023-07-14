@@ -13,12 +13,21 @@ tags:
 # Summary
 
 Since 2023-07-13 one of the 4 IPFS bootstrap nodes is running [rust-libp2p](https://github.com/libp2p/rust-libp2p) instead of [Kubo](https://github.com/ipfs/kubo).
+We run both Kubo and rust-libp2p based IPFS bootstrap nodes to increase resilience against bugs and attacks. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p than Kubo alone. Further we gain experience running large rust-libp2p based deployments on the IPFS network.
+
+TODO: Add UTC time as well?
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
+TODO: Make the graph UTC?
 
 # Bootstrap nodes
 
+> A Bootstrap Node is a trusted peer on the IPFS network through which an IPFS node learns about other peers on the network. [...]
+
+https://docs.ipfs.tech/concepts/glossary/#bootstrap-node
+
 - What are IPFS bootstrap nodes?
+  - Allows new nodes to join the IPFS network
 
 - How does bootstrapping on IPFS work
   - connect to the bootstrap node
@@ -103,20 +112,28 @@ Protocols:
         - /libp2p/dcutr
 ```
 
+Note the `Agent version: "kubo/0.20.0/b8c4725"`.
+
 # Motivation
 
 - Implementation diversity
+  - More stability
+  - Security i.e. attack resilience
+  - Bug or vulnerability is less likely to occur in both Kubo and rust-libp2p
 - Rust in the IPFS network
 - large scale rust-libp2p deployment
+  - Other large deployments are Polkadot and Ethereum
 
 # rust-libp2p in action
 
-- Show rust-libp2p-server repository
-- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
-- Publish Grafana dashboard
-  - Stress number of connections and memory usage
-- Majority is QUIC connections
-- Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
+Now deployed on IPFS bootstrap node `ny5`.
+
+Show graphs
+- Connection establishment
+- Memory usage
+- Mention bytes per connection
+- Incoming Kademlia requests
+
 
 ```
 libp2p-lookup direct --address /dnsaddr/ny5.bootstrap.libp2p.io
@@ -150,3 +167,19 @@ Protocols:
         - /ipfs/id/1.0.0
         - /libp2p/circuit/relay/0.2.0/hop
 ```
+
+Note the `Agent version: "rust-libp2p-server/0.12.0"`.
+
+- Show rust-libp2p-server repository
+  - Thin wrapper around rust-libp2p
+  - Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
+- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+- Publish Grafana dashboard
+  - Stress number of connections and memory usage
+- Majority is QUIC connections
+
+FAQ:
+
+- Do we plan to run rust-libp2p-server on all IPFS bootstrap nodes?
+
+  No.
