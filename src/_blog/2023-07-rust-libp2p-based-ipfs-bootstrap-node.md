@@ -3,8 +3,8 @@ title: A Rusty Bootstrapper
 description: 'Deploying a rust-libp2p based IPFS bootstrap node.'
 author: Max Inden (@mxinden)
 date: 2023-07-14
-permalink: '/2023-ipfs-thing-recap/'
-header_image: '/ipfs-thing-2023-recap/ipfs-2023-recap-featured-image.jpg'
+permalink: '/2023-rust-libp2p-based-ipfs-bootstrap-node/'
+header_image: ''
 tags:
   - 'Kademlia'
   - 'Rust'
