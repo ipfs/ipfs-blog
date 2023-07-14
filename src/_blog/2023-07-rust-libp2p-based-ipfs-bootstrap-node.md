@@ -1,6 +1,6 @@
 ---
 title: A Rusty Bootstrapper
-description: 'Deploying a rust-libp2p based IPFS bootstrap node.'
+description: 'Running rust-libp2p-server on one out of four IPFS bootstrap node.'
 author: Max Inden (@mxinden)
 date: 2023-07-14
 permalink: '/2023-rust-libp2p-based-ipfs-bootstrap-node/'
@@ -12,15 +12,13 @@ tags:
 
 # Summary
 
-Since 2023-07-13 one of the 4 IPFS bootstrap nodes is running [rust-libp2p](https://github.com/libp2p/rust-libp2p) instead of [Kubo](https://github.com/ipfs/kubo).
-We run both Kubo and rust-libp2p based IPFS bootstrap nodes to increase resilience against bugs and attacks. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p than Kubo alone. Further we gain experience running large rust-libp2p based deployments on the IPFS network.
-
-TODO: Add UTC time as well?
+Since 2023-07-13 one of the four IPFS bootstrap nodes is running [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server) instead of [Kubo](https://github.com/ipfs/kubo). rust-libp2p-server is a thin wrapper around [rust-libp2p](https://github.com/libp2p/rust-libp2p). We run both Kubo and rust-libp2p-server on IPFS bootstrap nodes to increase resilience against bugs and attacks. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p-server than Kubo alone. Further we gain experience running large rust-libp2p based deployments on the IPFS network.
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
-TODO: Make the graph UTC?
 
-# Bootstrap nodes
+# IPFS Bootstrap nodes
+
+_What is an IPFS bootstrap node?_
 
 > A Bootstrap Node is a trusted peer on the IPFS network through which an IPFS node learns about other peers on the network. [...]
 
@@ -116,6 +114,8 @@ Note the `Agent version: "kubo/0.20.0/b8c4725"`.
 
 # Motivation
 
+_Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
+
 - Implementation diversity
   - More stability
   - Security i.e. attack resilience
@@ -124,15 +124,17 @@ Note the `Agent version: "kubo/0.20.0/b8c4725"`.
 - large scale rust-libp2p deployment
   - Other large deployments are Polkadot and Ethereum
 
-# rust-libp2p in action
+# rust-libp2p-server in action
+
+_What exactly is rust-libp2p(-server) and how does it behave as an IPFS bootstrap node?_
+
+
+- Show rust-libp2p-server repository
+  - Thin wrapper around rust-libp2p
+  - Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
+- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
 
 Now deployed on IPFS bootstrap node `ny5`.
-
-Show graphs
-- Connection establishment
-- Memory usage
-- Mention bytes per connection
-- Incoming Kademlia requests
 
 
 ```
@@ -170,13 +172,17 @@ Protocols:
 
 Note the `Agent version: "rust-libp2p-server/0.12.0"`.
 
-- Show rust-libp2p-server repository
-  - Thin wrapper around rust-libp2p
-  - Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
-- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+Show graphs
+- Connection establishment
+- Memory usage
+- Mention bytes per connection
+- Incoming Kademlia requests
+
 - Publish Grafana dashboard
   - Stress number of connections and memory usage
 - Majority is QUIC connections
+
+Thanks to [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team.
 
 FAQ:
 
