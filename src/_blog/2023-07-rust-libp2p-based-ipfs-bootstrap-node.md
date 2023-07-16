@@ -92,16 +92,19 @@ Note the `Agent version: "kubo/0.20.0/b8c4725"` and the supported protocols `Pro
 
 _Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
 
-- Implementation diversity
-  - More stability
-  - Security i.e. attack resilience
-  - Bug or vulnerability is less likely to occur in both Kubo and rust-libp2p
-  - For example a recent bug affecting the Kubo IPFS bootstrap nodes is https://github.com/protocol/bifrost-infra/issues/2601. Running both Kubo and rust-libp2p-server makes sure nodes joining the network can bootstrap.
-- large scale rust-libp2p deployment
-  - Software behaves different on large scales. Difficult to predict. Easier to just experiment.
-  - Other large deployments are Polkadot and Ethereum
-- Rust in the IPFS network
-  - Running a rust-libp2p bootstrap node might motivate others to build IPFS based applications using rust-libp2p. The more the merrier.
+This choice is influenced by three main areas: the benefit of diverse implementation, the opportunity to test rust-libp2p at large scale, and the presence of Rust in the IPFS network.
+
+## Implementation Diversity
+
+Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network in the face of difficulties.
+
+## Testing Rust-Libp2p at Large Scale
+
+Our use of rust-libp2p-server also provides a valuable opportunity to examine how it behaves at a larger scale. Software performance can vary depending on scale, and these differences are hard to predict without actual real-world deployments. Now we can gain insights similar to those we acquired from other large deployments such as Polkadot and Ethereum.
+
+## Encouraging Rust in the IPFS Network
+
+Lastly, by operating a rust-libp2p bootstrap node, we hope to motivate other developers to build IPFS-based applications using rust-libp2p. This could lead to an increase in the use of Rust, fostering a more diverse and vibrant ecosystem.
 
 # rust-libp2p-server in action
 
