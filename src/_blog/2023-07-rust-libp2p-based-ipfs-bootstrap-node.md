@@ -12,7 +12,7 @@ tags:
 
 # Summary
 
-Since 2023-07-13 one of the four IPFS bootstrap nodes is running [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server) instead of [Kubo](https://github.com/ipfs/kubo). rust-libp2p-server is a thin wrapper around [rust-libp2p](https://github.com/libp2p/rust-libp2p). We run both Kubo and rust-libp2p-server on IPFS bootstrap nodes to increase resilience against bugs and attacks. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p-server than Kubo alone. Further we gain experience running large rust-libp2p based deployments on the IPFS network.
+Since 2023-07-13 one of the four IPFS bootstrap nodes is running [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server) instead of [Kubo](https://github.com/ipfs/kubo). rust-libp2p-server is a thin wrapper around [rust-libp2p](https://github.com/libp2p/rust-libp2p). We run both Kubo and rust-libp2p-server on IPFS bootstrap nodes to increase resilience. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p-server than Kubo alone. In addition to increasing resilience we gain experience running large rust-libp2p based deployments on the IPFS network.
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
 
@@ -22,14 +22,14 @@ _What is an IPFS bootstrap node?_
 
 > A Bootstrap Node is a trusted peer on the IPFS network through which an IPFS node learns about other peers on the network. [...]
 
-https://docs.ipfs.tech/concepts/glossary/#bootstrap-node
+See [IPFS Glossary](https://docs.ipfs.tech/concepts/glossary/#bootstrap-node).
 
-More specifically a new node trying to join the IPFS network, i.e. trying to bootstrap, will:
+A new node trying to join the IPFS network, i.e. trying to bootstrap, will:
 
 1. Connect to its (pre-) configured bootstrap nodes.
 2. Run some variation of the [Kademlia bootstrap process](https://github.com/libp2p/specs/tree/master/kad-dht#bootstrap-process) which boils down to iteratively:
-   1. Generating random IDs.
-   2. Asking already discovered nodes whether they know anyone closer to those IDs.
+  1. Generating random IDs.
+  2. Asking already discovered nodes whether they know anyone closer to those IDs.
 
 Thus the only thing that an IPFS bootstrap node needs to do is:
 
@@ -59,21 +59,13 @@ One can translate those `/dnsaddr/...` through iterative DNS queries. For exampl
 ```
 dig +short -t txt _dnsaddr.bootstrap.libp2p.io
 "dnsaddr=/dnsaddr/am6.bootstrap.libp2p.io/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/dnsaddr/sv15.bootstrap.libp2p.io/p2p/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN"
-"dnsaddr=/dnsaddr/sg1.bootstrap.libp2p.io/p2p/QmcZf59bWwK5XFi76CZX8cbJ4BhTzzA3gU1ZjYZcYW3dwt"
-"dnsaddr=/dnsaddr/ny5.bootstrap.libp2p.io/p2p/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa"
+[...]
 ```
 
 ```
 dig +short -t txt _dnsaddr.am6.bootstrap.libp2p.io
 "dnsaddr=/ip6/2604:1380:4602:5c00::3/udp/4001/quic-v1/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/ip6/2604:1380:4602:5c00::3/tcp/4001/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/ip4/147.75.87.27/udp/4001/quic/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/dns4/am6.bootstrap.libp2p.io/tcp/443/wss/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/ip4/147.75.87.27/tcp/4001/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/ip6/2604:1380:4602:5c00::3/udp/4001/quic/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/ip4/147.75.87.27/udp/4001/quic-v1/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
-"dnsaddr=/dns6/am6.bootstrap.libp2p.io/tcp/443/wss/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
+[...]
 ```
 
 Finally connecting to the bootrap node shows us the protocols it supports.
@@ -104,15 +96,22 @@ _Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
   - More stability
   - Security i.e. attack resilience
   - Bug or vulnerability is less likely to occur in both Kubo and rust-libp2p
-- Rust in the IPFS network
+  - For example a recent bug affecting the Kubo IPFS bootstrap nodes is https://github.com/protocol/bifrost-infra/issues/2601. Running both Kubo and rust-libp2p-server makes sure nodes joining the network can bootstrap.
 - large scale rust-libp2p deployment
+  - Software behaves different on large scales. Difficult to predict. Easier to just experiment.
   - Other large deployments are Polkadot and Ethereum
+- Rust in the IPFS network
+  - Running a rust-libp2p bootstrap node might motivate others to build IPFS based applications using rust-libp2p. The more the merrier.
 
 # rust-libp2p-server in action
 
 _What exactly is rust-libp2p(-server) and how does it behave as an IPFS bootstrap node?_
 
-
+- Explain rust-libp2p
+  - Implementation of the libp2p specification in Rust
+  - since ~2018
+  - Powers eth2 lighthouse and Polkadot and its ecosystem
+  - See also https://github.com/libp2p/rust-libp2p#notable-users
 - Show rust-libp2p-server repository
   - Thin wrapper around rust-libp2p
   - Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
