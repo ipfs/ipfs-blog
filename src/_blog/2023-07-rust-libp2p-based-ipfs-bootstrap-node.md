@@ -157,7 +157,7 @@ In case you want to learn more:
 - Dive deeper into the details of this undertaking https://github.com/protocol/bifrost-infra/issues/2622
 - And lastly, the weekly IPFS measurement reports are always a good read https://github.com/protocol/network-measurements/tree/master/reports/2023
 
-A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team, who has handled the deployment and ongoing operation of the new node. Thanks, [@mcamou](https://github.com/mcamou)!
+A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team. Mario has handled the deployment and the team is operating the bootstrap nodes as a whole. Thanks, [@mcamou](https://github.com/mcamou) and team!
 
 FAQ:
 
