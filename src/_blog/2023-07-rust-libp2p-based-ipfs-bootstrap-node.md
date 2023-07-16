@@ -106,21 +106,19 @@ Our use of rust-libp2p-server also provides a valuable opportunity to examine ho
 
 Lastly, by operating a rust-libp2p bootstrap node, we hope to motivate other developers to build IPFS-based applications using rust-libp2p. This could lead to an increase in the use of Rust, fostering a more diverse and vibrant ecosystem.
 
-# rust-libp2p-server in action
+# rust-libp2p(-server) in action
 
-_What exactly is rust-libp2p(-server) and how does it behave as an IPFS bootstrap node?_
+_What is rust-libp2p(-server) and how does it operate as an IPFS bootstrap node?_
 
-- Explain rust-libp2p
-  - Implementation of the libp2p specification in Rust
-  - since ~2018
-  - Powers eth2 lighthouse and Polkadot and its ecosystem
-  - See also https://github.com/libp2p/rust-libp2p#notable-users
-- Show rust-libp2p-server repository
-  - Thin wrapper around rust-libp2p
-  - Stress that rust-libp2p-server is a stripped down IPFS only, i.e. that it only does Kademlia.
-- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+## rust-libp2p
 
-Now deployed on IPFS bootstrap node `ny5`.
+Rust-libp2p is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum it's Rust implementation Lighthouse and Polkadot along with the Substrate ecosystem. You can explore more about its uses [here](https://github.com/libp2p/rust-libp2p#notable-users).
+
+## rust-libp2p-server
+
+Rust-libp2p-server is just thin wrapper around rust-libp2p. It combines rust-libp2p's TCP, QUIC and Kademlia-DHT implementation into a single binary.
+
+Looking up the new rust-libp2p-server IPFS bootstrap node `ny5` via [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) confirms just that. Note the `Agent version: "rust-libp2p-server/0.12.0"`. and `Protocols: - /ipfs/kad/1.0.0`.
 
 
 ```
@@ -137,7 +135,7 @@ Protocols:
         - [...]
 ```
 
-Note the `Agent version: "rust-libp2p-server/0.12.0"`.
+## Some numbers
 
 Show graphs
 - Connection establishment
@@ -149,7 +147,13 @@ Show graphs
   - Stress number of connections and memory usage
 - Majority is QUIC connections
 
-Thanks to [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team.
+# Closing
+
+If you want to learn more.
+
+link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+
+Thanks to [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team, deploying the new node and for most keeping the service running.
 
 FAQ:
 
