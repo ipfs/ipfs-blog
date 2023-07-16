@@ -94,17 +94,11 @@ _Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
 
 This choice is influenced by three main areas: the benefit of diverse implementation, the opportunity to test rust-libp2p at large scale, and the presence of Rust in the IPFS network.
 
-## Implementation Diversity
+Implementation Diversity: Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network in the face of difficulties.
 
-Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network in the face of difficulties.
+Testing Rust-Libp2p at Large Scale: Our use of rust-libp2p-server also provides a valuable opportunity to examine how it behaves at a larger scale. Software performance can vary depending on scale, and these differences are hard to predict without actual real-world deployments. Now we can gain insights similar to those we acquired from other large deployments such as Polkadot and Ethereum.
 
-## Testing Rust-Libp2p at Large Scale
-
-Our use of rust-libp2p-server also provides a valuable opportunity to examine how it behaves at a larger scale. Software performance can vary depending on scale, and these differences are hard to predict without actual real-world deployments. Now we can gain insights similar to those we acquired from other large deployments such as Polkadot and Ethereum.
-
-## Encouraging Rust in the IPFS Network
-
-Lastly, by operating a rust-libp2p bootstrap node, we hope to motivate other developers to build IPFS-based applications using rust-libp2p. This could lead to an increase in the use of Rust, fostering a more diverse and vibrant ecosystem.
+Encouraging Rust in the IPFS Network: Lastly, by operating a rust-libp2p bootstrap node, we hope to motivate other developers to build IPFS-based applications using rust-libp2p. This could lead to an increase in the use of Rust, fostering a more diverse and vibrant ecosystem.
 
 # rust-libp2p(-server) in action
 
@@ -112,13 +106,11 @@ _What is rust-libp2p(-server) and how does it operate as an IPFS bootstrap node?
 
 ## rust-libp2p
 
-Rust-libp2p is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum it's Rust implementation Lighthouse and Polkadot along with the Substrate ecosystem. You can explore more about its uses [here](https://github.com/libp2p/rust-libp2p#notable-users).
+Rust-libp2p is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum through its Rust implementation [Lighthouse](https://github.com/sigp/lighthouse) and [Polkadot](github.com/paritytech/polkadot/) along with the [Substrate](https://github.com/paritytech/substrate/) ecosystem. You can find more rust-libp2p users [here](https://github.com/libp2p/rust-libp2p#notable-users).
 
 ## rust-libp2p-server
 
-Rust-libp2p-server is just thin wrapper around rust-libp2p. It combines rust-libp2p's TCP, QUIC and Kademlia-DHT implementation into a single binary.
-
-Looking up the new rust-libp2p-server IPFS bootstrap node `ny5` via [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) confirms just that. Note the `Agent version: "rust-libp2p-server/0.12.0"`. and `Protocols: - /ipfs/kad/1.0.0`.
+[rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server/) is just thin wrapper around rust-libp2p. It combines rust-libp2p's TCP, QUIC and Kademlia-DHT implementation into a single binary. Looking up the new rust-libp2p-server IPFS bootstrap node `ny5` via [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) confirms just that. Note the `Agent version: "rust-libp2p-server/0.12.0"`. and `Protocols: - /ipfs/kad/1.0.0`.
 
 
 ```
@@ -151,9 +143,12 @@ Show graphs
 
 If you want to learn more.
 
-link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+- https://libp2p.io/
+- https://github.com/libp2p/rust-libp2p
+- https://github.com/mxinden/rust-libp2p-server/
+- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
 
-Thanks to [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team, deploying the new node and for most keeping the service running.
+A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team, who has handled the deployment and ongoing operation of the new node. Thanks, [@mcamou](https://github.com/mcamou)!
 
 FAQ:
 
