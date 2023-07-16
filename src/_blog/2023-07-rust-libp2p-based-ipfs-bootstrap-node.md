@@ -1,6 +1,6 @@
 ---
 title: A Rusty Bootstrapper
-description: 'Running rust-libp2p-server on one out of four IPFS bootstrap node.'
+description: 'Running rust-libp2p-server on one of our four IPFS bootstrap nodes.'
 author: Max Inden (@mxinden)
 date: 2023-07-14
 permalink: '/2023-rust-libp2p-based-ipfs-bootstrap-node/'
@@ -104,11 +104,7 @@ Encouraging Rust in the IPFS Network: Lastly, by operating a rust-libp2p bootstr
 
 _What is rust-libp2p(-server) and how does it operate as an IPFS bootstrap node?_
 
-## rust-libp2p
-
-Rust-libp2p is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum through its Rust implementation [Lighthouse](https://github.com/sigp/lighthouse) and [Polkadot](github.com/paritytech/polkadot/) along with the [Substrate](https://github.com/paritytech/substrate/) ecosystem. You can find more rust-libp2p users [here](https://github.com/libp2p/rust-libp2p#notable-users).
-
-## rust-libp2p-server
+[rust-libp2p](https://github.com/libp2p/rust-libp2p) is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum through its Rust implementation [Lighthouse](https://github.com/sigp/lighthouse) and [Polkadot](github.com/paritytech/polkadot/) along with the [Substrate](https://github.com/paritytech/substrate/) ecosystem. You can find more rust-libp2p users [here](https://github.com/libp2p/rust-libp2p#notable-users).
 
 [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server/) is just thin wrapper around rust-libp2p. It combines rust-libp2p's TCP, QUIC and Kademlia-DHT implementation into a single binary. Looking up the new rust-libp2p-server IPFS bootstrap node `ny5` via [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) confirms just that. Note the `Agent version: "rust-libp2p-server/0.12.0"`. and `Protocols: - /ipfs/kad/1.0.0`.
 
@@ -129,24 +125,37 @@ Protocols:
 
 ## Some numbers
 
-Show graphs
-- Connection establishment
-- Memory usage
-- Mention bytes per connection
-- Incoming Kademlia requests
+On the new bootstrap node we see around 15 new inbound connections per second. The majority of these connections are established via QUIC (see `ip4/udp/quic`).
 
-- Publish Grafana dashboard
-  - Stress number of connections and memory usage
-- Majority is QUIC connections
+![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-new-incoming-connections.png)
+
+The node is handling > 30k connections concurrently, thus being connected to most of the network at any given point in time.
+
+![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
+
+Across these connections the node handles around 40 Kademlia requests per second, most of which are Kademlia `FIND_NODE` requests.
+
+![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-new-incoming-kademlia-requests.png)
+
+The number of connections does not have a significant impact on CPU usage of the underlying machine.
+
+![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-cpu.png)
+
+The node uses `< 300 kbyte` of memory per connection.
+
+![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-memory.png)
+
+A small tangent: in case you are interested in more IPFS network related metrics, take a look at the [weekly IPFS measurement reports](https://github.com/protocol/network-measurements/tree/master/reports/2023).
 
 # Closing
 
-If you want to learn more.
+In case you want to learn more:
 
-- https://libp2p.io/
-- https://github.com/libp2p/rust-libp2p
-- https://github.com/mxinden/rust-libp2p-server/
-- link to tracking issue https://github.com/protocol/bifrost-infra/issues/2622
+- Read up on the libp2p project https://libp2p.io/
+- Explore the rust-libp2p implementation https://github.com/libp2p/rust-libp2p
+- See the think rust-libp2p wrapper https://github.com/mxinden/rust-libp2p-server/
+- Dive deeper into the details of this undertaking https://github.com/protocol/bifrost-infra/issues/2622
+- And lastly, the weekly IPFS measurement reports are always a good read https://github.com/protocol/network-measurements/tree/master/reports/2023
 
 A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team, who has handled the deployment and ongoing operation of the new node. Thanks, [@mcamou](https://github.com/mcamou)!
 
