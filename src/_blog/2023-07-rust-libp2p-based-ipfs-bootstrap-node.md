@@ -153,7 +153,7 @@ A small tangent: in case you are interested in more IPFS network related metrics
 In case you want to learn more:
 
 - Read up on the libp2p project https://libp2p.io/
-- Explore the rust-libp2p implementation https://github.com/libp2p/rust-libp2p
+- Explore the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p)
 - See the think rust-libp2p wrapper https://github.com/mxinden/rust-libp2p-server/
 - Dive deeper into the [details of this undertaking](https://github.com/protocol/bifrost-infra/issues/2622)
 - And lastly, the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/) are always a good read
