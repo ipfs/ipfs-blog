@@ -95,7 +95,7 @@ _Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
 
 This choice is influenced by three main areas: the benefit of diverse implementation, the opportunity to test rust-libp2p at large scale, and the presence of Rust in the IPFS network.
 
-Implementation Diversity: Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network in the face of difficulties.
+Implementation Diversity: Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network, even if one set of bootstrap nodes is unavailable.
 
 Testing Rust-Libp2p at Large Scale: Our use of rust-libp2p-server also provides a valuable opportunity to examine how it behaves at a larger scale. Software performance can vary depending on scale, and these differences are hard to predict without actual real-world deployments. Now we can gain insights similar to those we acquired from other large deployments such as [Polkadot](github.com/paritytech/polkadot/) and [Ethereum](https://blog.libp2p.io/libp2p-and-ethereum/).
 
@@ -152,15 +152,19 @@ A small tangent: in case you are interested in more IPFS network related metrics
 
 In case you want to learn more:
 
-- Read up on the libp2p project https://libp2p.io/
+- Read up on the [libp2p project](https://libp2p.io/)
 - Explore the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p)
-- See the think rust-libp2p wrapper https://github.com/mxinden/rust-libp2p-server/
+- See the thin rust-libp2p wrapper at [mxinden/rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server/)
 - Dive deeper into the [details of this undertaking](https://github.com/protocol/bifrost-infra/issues/2622)
 - And lastly, the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/) are always a good read
 
 A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team. Mario has handled the deployment and the team is operating the bootstrap nodes as a whole. Thanks, [@mcamou](https://github.com/mcamou) and team!
 
 FAQ:
+
+- Do I have to use the default bootstrap nodes?
+
+  No, you don't have to use `/dnsaddr/bootstrap.libp2p.io`. You can remove Protocol Labs' default nodes and add your own or use both for better reliability.
 
 - Do we plan to run rust-libp2p-server on all IPFS bootstrap nodes?
 
