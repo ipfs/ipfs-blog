@@ -37,7 +37,7 @@ Thus the only thing that an IPFS bootstrap node needs to do is:
 - Maintain a healthy Kademlia routing table.
 - Reply to Kademlia `FIND_NODE` requests based on nodes in its routing table.
 
-Let's dive a bit deeper. In the case of Kubo the addresses of the IPFS bootstrap nodes are shipped within the release binary.
+Let's dive a bit deeper. In the case of Kubo the [DNSAddr](https://github.com/multiformats/multiaddr/blob/master/protocols/DNSADDR.md) addresses of the IPFS bootstrap nodes are shipped within the release binary.
 
 ``` go
 // DefaultBootstrapAddresses are the hardcoded bootstrap addresses
