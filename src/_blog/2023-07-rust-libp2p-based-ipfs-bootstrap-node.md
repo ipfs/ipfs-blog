@@ -146,7 +146,7 @@ The node uses `< 300 kbyte` of memory per connection.
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-memory.png)
 
-A small tangent: in case you are interested in more IPFS network related metrics, take a look at the [weekly IPFS measurement reports](https://github.com/protocol/network-measurements/tree/master/reports/2023).
+A small tangent: in case you are interested in more IPFS network related metrics, take a look at the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/README.md).
 
 # Closing
 
