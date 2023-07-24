@@ -69,6 +69,7 @@ dig +short -t txt _dnsaddr.am6.bootstrap.libp2p.io
 ```
 
 Finally connecting to the bootrap node shows us the protocols it supports.
+Below example uses [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) but `ipfs swarm connect` followed by `ipfs id` can be used instead.
 
 
 ```
