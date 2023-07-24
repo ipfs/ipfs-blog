@@ -52,7 +52,7 @@ var DefaultBootstrapAddresses = []string{
 }
 ```
 
-See [`bootstrap_peers.go` on github.com/ipfs/kubo](https://github.com/ipfs/kubo/blob/4a5e99d7eaeada5596a0686fe93d4fa2da212452/config/bootstrap_peers.go#L11C1-L24C2).
+See [`bootstrap_peers.go` on github.com/ipfs/kubo](https://github.com/ipfs/kubo/blob/v0.21.0/config/bootstrap_peers.go#L11C1-L24C2).
 
 One can translate those `/dnsaddr/...` through iterative DNS queries. For example below for the node with the peer ID `QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb`. This IPFS bootstrap node is running Kubo.
 
