@@ -28,8 +28,8 @@ A new node trying to join the IPFS network, i.e. trying to bootstrap, will:
 
 1. Connect to its (pre-) configured bootstrap nodes.
 2. Run some variation of the [Kademlia bootstrap process](https://github.com/libp2p/specs/tree/master/kad-dht#bootstrap-process) which boils down to iteratively:
-  1. Generating random IDs.
-  2. Asking already discovered nodes whether they know anyone closer to those IDs.
+    1. Generating random IDs.
+    2. Asking already discovered nodes whether they know anyone closer to those IDs.
 
 Thus the only thing that an IPFS bootstrap node needs to do is:
 
