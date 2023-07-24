@@ -2,7 +2,7 @@
 title: A Rusty Bootstrapper
 description: 'Running rust-libp2p-server on one of our four IPFS bootstrap nodes.'
 author: Max Inden (@mxinden)
-date: 2023-07-14
+date: 2023-07-24
 permalink: '/2023-rust-libp2p-based-ipfs-bootstrap-node/'
 header_image: ''
 tags:
