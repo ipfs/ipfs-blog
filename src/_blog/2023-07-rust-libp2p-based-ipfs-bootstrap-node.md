@@ -155,7 +155,7 @@ In case you want to learn more:
 - Read up on the [libp2p project](https://libp2p.io/)
 - Explore the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p)
 - See the thin rust-libp2p wrapper at [mxinden/rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server/)
-- And lastly, the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/) are always a good read
+- And lastly, the [public IPFS DHT measurements](https://probelab.io/ipfsdht/) are always a good read
 
 A lot of this work was done by [@mcamou](https://github.com/mcamou) from the [Protocol Labs EngRes Bifrost team](https://pl-strflt.notion.site/Bifrost-2423fee6b15243158e85e35d8e22241d?pvs=4). Mario has handled the deployment and the team is operating the bootstrap nodes as a whole. Thanks, [@mcamou](https://github.com/mcamou) and team!
 
