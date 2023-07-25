@@ -130,7 +130,7 @@ On the new bootstrap node we see around 15 new inbound connections per second. T
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-new-incoming-connections.png)
 
-The node is handling > 30k connections concurrently, thus being connected to most of the network at any given point in time.
+The node is handling > 30k connections concurrently, thus being connected to roughly [15% of nodes of the public IPFS DHT](https://probelab.io/ipfsdht/#client-vs-server-node-estimate).
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
 
