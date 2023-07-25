@@ -24,7 +24,7 @@ _What is an IPFS bootstrap node?_
 
 See [IPFS Glossary](https://docs.ipfs.tech/concepts/glossary/#bootstrap-node).
 
-A new node trying to join the IPFS network, i.e. trying to bootstrap, will:
+A new node trying to join the "[public IPFS DHT](https://github.com/ipfs/ipfs/discussions/473)", i.e. trying to bootstrap, will:
 
 1. Connect to its (pre-) configured bootstrap nodes.
 2. Run some variation of the [Kademlia bootstrap process](https://github.com/libp2p/specs/tree/master/kad-dht#bootstrap-process) which boils down to iteratively:
@@ -54,7 +54,7 @@ var DefaultBootstrapAddresses = []string{
 
 See [`bootstrap_peers.go` on github.com/ipfs/kubo](https://github.com/ipfs/kubo/blob/v0.21.0/config/bootstrap_peers.go#L11C1-L24C2).
 
-One can translate those `/dnsaddr/...` through iterative DNS queries. For example below for the node with the peer ID `QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb`. This IPFS bootstrap node is running Kubo.
+One can resolve those `/dnsaddr/...` through iterative DNS queries. Below  is an example for the node with the peer ID `QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb`. This IPFS bootstrap node is running Kubo.
 
 ```
 dig +short -t txt _dnsaddr.bootstrap.libp2p.io
@@ -93,7 +93,7 @@ Note the `Agent version: "kubo/0.20.0/b8c4725"` and the supported protocols `Pro
 
 _Why run both Kubo and rust-libp2p2-server bootstrap nodes?_
 
-This choice is influenced by three main areas: the benefit of diverse implementation, the opportunity to test rust-libp2p at large scale, and the presence of Rust in the IPFS network.
+This choice is influenced by three main areas: the benefit of diverse implementations, the opportunity to test rust-libp2p at large scale, and the presence of Rust in the IPFS network.
 
 Implementation Diversity: Operating both Kubo and rust-libp2p-server bootstrap nodes contributes to the network's overall resilience and security. It's like having a second line of defense; if one system encounters an issue, the other is there to continue functioning. For instance, a recent bug impacted Kubo IPFS bootstrap nodes ([GitHub issue #2601](https://github.com/protocol/bifrost-infra/issues/2601)). By using both Kubo and rust-libp2p-server, we ensure that nodes can still join the network, even if one set of bootstrap nodes is unavailable.
 
@@ -105,7 +105,7 @@ Encouraging Rust in the IPFS Network: Lastly, by operating a rust-libp2p bootstr
 
 _What is rust-libp2p(-server) and how does it operate as an IPFS bootstrap node?_
 
-[rust-libp2p](https://github.com/libp2p/rust-libp2p) is an implementation of the libp2p specification in Rust. Rust is a popular systems programming language. The rust-libp2p project was initiated around 2018 and since then, it has powered network like Ethereum through its Rust implementation [Lighthouse](https://github.com/sigp/lighthouse) and [Polkadot](github.com/paritytech/polkadot/) along with the [Substrate](https://github.com/paritytech/substrate/) ecosystem. You can find more rust-libp2p users [here](https://github.com/libp2p/rust-libp2p#notable-users).
+[rust-libp2p](https://github.com/libp2p/rust-libp2p) is an implementation of the libp2p specification in Rust, a popular systems programming language. The rust-libp2p project was [initiated around 2018](https://www.parity.io/blog/why-libp2p) and since then, it has powered network like Ethereum through its Rust implementation [Lighthouse](https://github.com/sigp/lighthouse) and [Polkadot](github.com/paritytech/polkadot/) along with the [Substrate](https://github.com/paritytech/substrate/) ecosystem. You can find more rust-libp2p users [here](https://github.com/libp2p/rust-libp2p#notable-users).
 
 [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server/) is just thin wrapper around rust-libp2p. It combines rust-libp2p's TCP, QUIC and Kademlia-DHT implementation into a single binary. Looking up the new rust-libp2p-server IPFS bootstrap node `ny5` via [`libp2p-lookup`](https://github.com/mxinden/libp2p-lookup/) confirms just that. Note the `Agent version: "rust-libp2p-server/0.12.0"`. and `Protocols: - /ipfs/kad/1.0.0`.
 
@@ -146,7 +146,7 @@ The node uses `< 300 kbyte` of memory per connection.
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-memory.png)
 
-A small tangent: in case you are interested in more IPFS network related metrics, take a look at the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/README.md).
+A small tangent: in case you are interested in more IPFS public DHT metrics, take a look at the [probelab DHT metrics and reports](https://probelab.io/ipfsdht/).
 
 # Closing
 
@@ -158,7 +158,7 @@ In case you want to learn more:
 - Dive deeper into the [details of this undertaking](https://github.com/protocol/bifrost-infra/issues/2622)
 - And lastly, the [weekly IPFS measurement reports](https://github.com/plprobelab/network-measurements/blob/master/reports/) are always a good read
 
-A lot of this work was done by [@mcamou](https://github.com/mcamou) from the Protocol Labs Bifrost team. Mario has handled the deployment and the team is operating the bootstrap nodes as a whole. Thanks, [@mcamou](https://github.com/mcamou) and team!
+A lot of this work was done by [@mcamou](https://github.com/mcamou) from the [Protocol Labs EngRes Bifrost team](https://pl-strflt.notion.site/Bifrost-2423fee6b15243158e85e35d8e22241d?pvs=4). Mario has handled the deployment and the team is operating the bootstrap nodes as a whole. Thanks, [@mcamou](https://github.com/mcamou) and team!
 
 FAQ:
 
