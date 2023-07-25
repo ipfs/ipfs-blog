@@ -16,7 +16,7 @@ As of July 13, 2023, one of the four "public good" IPFS bootstrap nodes operated
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
 
-# IPFS Bootstrap nodes
+# IPFS Public DHT Bootstrap Nodes
 
 _What is an IPFS bootstrap node?_
 
@@ -101,7 +101,7 @@ Testing Rust-Libp2p at Large Scale: Our use of rust-libp2p-server also provides 
 
 Encouraging Rust in the IPFS Network: Lastly, by operating a rust-libp2p bootstrap node, we hope to motivate other developers to build IPFS-based applications using rust-libp2p. This could lead to an increase in the use of Rust, fostering a more diverse and vibrant ecosystem.
 
-# rust-libp2p(-server) in action
+# rust-libp2p(-server) in Action
 
 _What is rust-libp2p(-server) and how does it operate as an IPFS bootstrap node?_
 
@@ -124,7 +124,7 @@ Protocols:
         - [...]
 ```
 
-## Some numbers
+## Some Numbers
 
 On the new bootstrap node we see around 15 new inbound connections per second. The majority of these connections are established via QUIC (see `ip4/udp/quic`).
 
