@@ -150,7 +150,7 @@ A small tangent: in case you are interested in more IPFS public DHT metrics, tak
 
 # Closing
 
-In case you want to learn more:
+If you want to learn more:
 
 - Read up on the [libp2p project](https://libp2p.io/)
 - Explore the [rust-libp2p implementation](https://github.com/libp2p/rust-libp2p)
