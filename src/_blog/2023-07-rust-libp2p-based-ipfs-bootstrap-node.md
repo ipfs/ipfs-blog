@@ -12,7 +12,7 @@ tags:
 
 # Summary
 
-As of July 13, 2023, one of the four "public good" IPFS bootstrap nodes operated by Protocol Labs has been running [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server) instead of [Kubo](https://github.com/ipfs/kubo), which uses [go-libp2p](https://github.com/libp2p/go-libp2p/). rust-libp2p-server is a thin wrapper around [rust-libp2p](https://github.com/libp2p/rust-libp2p). We run both Kubo and rust-libp2p-server on IPFS bootstrap nodes to increase resilience. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p-server than Kubo alone. In addition to increasing resilience we gain experience running large rust-libp2p based deployments on the IPFS network.
+As of July 13, 2023, one of the four "public good" IPFS bootstrap nodes operated by Protocol Labs has been running [rust-libp2p-server](https://github.com/mxinden/rust-libp2p-server) instead of [Kubo](https://github.com/ipfs/kubo), which uses [go-libp2p](https://github.com/libp2p/go-libp2p/). rust-libp2p-server is a thin wrapper around [rust-libp2p](https://github.com/libp2p/rust-libp2p). We run both Kubo and rust-libp2p-server on IPFS bootstrap nodes to increase resilience. A bug or vulnerability is less likely to be in both Kubo and rust-libp2p-server than Kubo alone. In addition to increasing resilience, we gain experience running large rust-libp2p based deployments on the IPFS network.
 
 ![rust-libp2p bootstrap node establishing its first connections](../assets/2023-07-rust-libp2p-based-ipfs-bootstrap-node-connections-established.png)
 
