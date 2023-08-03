@@ -95,7 +95,7 @@ To build a local copy, run the following:
 1. Move into the `ipfs-blog` folder and install the npm dependencies:
 
    ```bash
-   cd ipfs-docs
+   cd ipfs-blog
    npm install
    ```
 
