@@ -4,7 +4,7 @@ description: 'The ProbeLab team has built a resilient and fully-automated infras
 author: Yiannis Psaras (@yiannisbot)
 date: 2023-08-03
 permalink: '/2023-ipfs-observatory/'
-header_image: ''
+header_image: '/blog-post-probelabio.png'
 tags:
   - measurements
   - DHT
