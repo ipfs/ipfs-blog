@@ -14,9 +14,9 @@ tags:
 
 We're excited to share that the ProbeLab team has worked hard over the past year to build a resilient and fully-automated infrastructure to monitor the performance of core IPFS stack protocols. The debut of this new measurement platform is big news, and you can learn all about it in a new post on the IPFS blog.
 
-[Button] (see Durin post for button formatting)
+<a href="https://blog.ipfs.tech/2023-ipfs-observatory/" class="cta-button">Read the blog post</a>
 
-[image]
+![](../assets/probelab.png)
 
 ## **Brand New on IPFS ✨**
 
