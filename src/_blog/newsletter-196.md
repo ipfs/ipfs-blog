@@ -1,6 +1,6 @@
 ---
 title: Welcome to IPFS News 196!
-description: Featuring news about a resilient and full-automated infrastructure to monitor the performance of the IPFS network.
+description: Featuring news about a resilient and fully-automated infrastructure to monitor the performance of the IPFS network.
 author: ''
 date: 2023-08-08
 permalink: "/newsletter-196"
