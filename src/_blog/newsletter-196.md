@@ -67,3 +67,7 @@ We're excited to share that the ProbeLab team has worked hard over the past year
 [Open Data Hackathon](https://www.encode.club/open-data-hack)
 
 - This upcoming hackathon features a $1,000 IPFS bounty. [Learn more and get involved here!](https://www.encode.club/open-data-hack)https://www.encode.club/open-data-hack
+
+[The Evolution of Filecoin and IPFS: An Overview of Challenges and Future Opportunities](https://medium.com/filemarket-xyz/the-evolution-of-filecoin-and-ipfs-an-overview-of-challenges-and-future-opportunities-795ce237c4b6)
+
+- A new article on FileMarket about the evolution of Filecoin and IPFS that is based on an AMA with Juan Benet during Filecoin Unleashed Paris 2023. Read through it here!
