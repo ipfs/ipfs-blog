@@ -2,7 +2,7 @@
 title: Welcome to IPFS News 196!
 description: Featuring news about a resilient and fully-automated infrastructure to monitor the performance of the IPFS network.
 author: ''
-date: 2023-08-08
+date: 2023-08-09
 permalink: "/newsletter-196"
 translationKey: ''
 header_image: "/ipfsnews.png"
