@@ -16,7 +16,7 @@ We're excited to share that the ProbeLab team has worked hard over the past year
 
 <a href="https://blog.ipfs.tech/2023-ipfs-observatory/" class="cta-button">Read the blog post</a>
 
-![](../assets/probelab.png)
+![[](../assets/probelab.png)](https://blog.ipfs.tech/2023-ipfs-observatory/)
 
 ## **Brand New on IPFS ✨**
 
