@@ -30,7 +30,7 @@ We're excited to share that the ProbeLab team has worked hard over the past year
 
 [IPFS Events Planning Meeting](https://lu.ma/ipfseventsplanning)
 
-- The events team is kicking off a new Events Planning Call next week. If you're interested in joining or participating, you can find these meetings on the IPFS Community Calendar, or you can register directly at lu.ma/ipfseventsplanning.This Wednesday's Agenda will be to discuss timing for IPFS Camp and Thing for 2024. Timing will affect the locations that make the shortlist. [Join us here!](https://lu.ma/ipfseventsplanning)
+- The events team is kicking off a new Events Planning Call today. If you're interested in joining or participating, you can find these meetings on the IPFS Community Calendar, or you can register directly at lu.ma/ipfseventsplanning. Today's agenda will be to discuss timing for IPFS Camp and Thing for 2024. Timing will affect the locations that make the shortlist. [Join us here!](https://lu.ma/ipfseventsplanning)
 
 [Boxo v0.11.0](https://github.com/ipfs/boxo/blob/release-v0.11.0/CHANGELOG.md)
 
