@@ -27,4 +27,4 @@ As we continue to make progress towards these goals, we will provide updates and
 
 **Have comments, questions, or concerns?** Please join us in discussion in the comments section below, via the [Ecosystem section of the IPFS Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15), or the various chat links that follow – together let’s work on making IPFS thrive!
 
-[Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15)https://discuss.ipfs.tech/c/communities/ecosystem/15 | [Discord](https://discord.com/channels/806902334369824788/1146489977174233098)https://discord.com/channels/806902334369824788/1146489977174233098 | [Slack](https://filecoinproject.slack.com/archives/C05PGBP697E)https://filecoinproject.slack.com/archives/C05PGBP697E | [Matrix](https://app.element.io/#/room/#ipfs-ecosystem:ipfs.io)https://app.element.io/#/room/#ipfs-ecosystem:ipfs.io
+[Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15) | [Discord](https://discord.com/channels/806902334369824788/1146489977174233098) | [Slack](https://filecoinproject.slack.com/archives/C05PGBP697E) | [Matrix](https://app.element.io/#/room/#ipfs-ecosystem:ipfs.io)
