@@ -12,7 +12,7 @@ tags:
 
 Since its initial release over 9 years ago, IPFS has been stewarded by a variety of teams and individual contributors, both within and outside of Protocol Labs. More recently though, it has lacked a dedicated team focused on nothing other than the success of the IPFS ecosystem. It is with this reality in mind that we are excited to announce the formation of **the brand new IPFS Ecosystem Working Group!**
 
-At launch, the IPFS Ecosystem WG consists of Protocol Labs team members, but we are forming with the explicit purpose of spinning out into our own independent entity over the coming months. We believe that this working group and its autonomy will be critical in helping propel IPFS toward a better and even brighter future. 
+At launch, the IPFS Ecosystem WG consists of Protocol Labs contributors, but we are forming with the explicit purpose of spinning out into our own independent entity over the coming months. We believe that this working group and its autonomy will be critical in helping propel IPFS toward a better and even brighter future. 
 
 Initially, we have four core goals:
 
