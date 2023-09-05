@@ -25,6 +25,6 @@ The future of IPFS requires greater degrees of decentralization, so you can expe
 
 As we continue to make progress towards these goals, we will provide updates and work in the open so as to keep the entire community in-the-loop with what we’re doing. A thriving ecosystem requires care and attention, and we believe that this new initiative and nimble team will be able to deliver on exactly that. But our work is only part of the story: community ownership means that your voice as IPFS users, operators, or contributors needs to be heard just as much as ours. 
 
-**Have comments, questions, or concerns?** Please join us in discussion in the comments section below, via the [Ecosystem section of the IPFS Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15), or the various chat links that follow – together let’s work on making IPFS thrive!
+So if you have comments, questions, or concerns, then please join the discussion in the comments section below, via the [Ecosystem section of the IPFS Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15), or the various chat links that follow – together let’s work on making IPFS thrive!
 
 [Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15) | [Discord](https://discord.com/channels/806902334369824788/1146489977174233098) | [Slack](https://filecoinproject.slack.com/archives/C05PGBP697E) | [Matrix](https://app.element.io/#/room/#ipfs-ecosystem:ipfs.io)
