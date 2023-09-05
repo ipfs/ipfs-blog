@@ -10,7 +10,7 @@ tags:
   - 'Working Group'
 ---
 
-Since its initial release over 9 years ago, IPFS has been stewarded by a variety of teams and individual contributors, both within and outside of Protocol Labs. More recently though, it has lacked a dedicated team focused on nothing other than the success of the IPFS ecosystem. It is with this reality in mind that we are excited to announce the formation of the brand new IPFS Ecosystem Working Group!
+Since its initial release over 9 years ago, IPFS has been stewarded by a variety of teams and individual contributors, both within and outside of Protocol Labs. More recently though, it has lacked a dedicated team focused on nothing other than the success of the IPFS ecosystem. It is with this reality in mind that we are excited to announce the formation of **the brand new IPFS Ecosystem Working Group!**
 
 At launch, the IPFS Ecosystem WG consists of Protocol Labs employees, but we are forming with the explicit purpose of spinning out into our own independent entity over the coming months. We believe that this working group and its autonomy will be critical in helping propel IPFS toward a better and even brighter future. 
 
@@ -25,4 +25,4 @@ The future of IPFS requires greater degrees of decentralization, so you can expe
 
 As we continue to make progress towards these goals, we will provide updates and work in the open so as to keep the entire community in-the-loop with what we’re doing. A thriving ecosystem requires care and attention, and we believe that this new initiative and nimble team will be able to deliver on exactly that. But our work is only part of the story: community ownership means that your voice as IPFS users, operators, or contributors needs to be heard just as much as ours. 
 
-Have comments, questions, or concerns? Please join us in discussion in the comments section below or via the [Ecosystem section of the IPFS Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15) – together let’s work on making IPFS thrive!
+**Have comments, questions, or concerns?** Please join us in discussion in the comments section below or via the [Ecosystem section of the IPFS Forums](https://discuss.ipfs.tech/c/communities/ecosystem/15) – together let’s work on making IPFS thrive!
