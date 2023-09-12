@@ -1,6 +1,6 @@
 ---
 title: Welcome to IPFS News 197!
-description: 
+description: Featuring an announcement about the new Ecosystem Working Group and Kubo v0.22.0
 author: ''
 date: 2023-09-12
 permalink: "/newsletter-197"
