@@ -35,8 +35,7 @@ module.exports = [
     {
       defer: true,
       'data-domain': 'blog.ipfs.tech',
-      'data-api': 'https://proxy.daas.workers.dev/api/event',
-      src: 'https://proxy.daas.workers.dev/js/script.js',
+      src: 'https://plausible.io/js/plausible.js',
     },
   ],
 ].concat(favicons)
