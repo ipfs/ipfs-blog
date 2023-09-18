@@ -2,7 +2,7 @@
 ---
 title: Take the IPFS Events 2024 Survey Today!
 description: We need your help! Make your voice heard about upcoming IPFS Events.
-author: ''
+author: 'The IPFS Events Team'
 date: 2023-09-18
 permalink: ''
 translationKey: ''
