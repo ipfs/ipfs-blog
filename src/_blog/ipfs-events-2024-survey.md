@@ -6,7 +6,7 @@ author: ''
 date: 2023-09-18
 permalink: "ipfs-events-2024-survey.md"
 translationKey: ''
-header_image:
+header_image: ''
 tags:
 - survey
 - events
