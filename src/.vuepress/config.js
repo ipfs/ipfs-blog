@@ -43,6 +43,8 @@ const themeConfigDefaults = {
   footerLegal: '',
   headerLinks: [
     { text: 'About', link: 'https://ipfs.tech/' },
+    { text: 'Community', link: 'https://ipfs.tech/community/' },
+    { text: 'Developers', link: 'https://ipfs.tech/developers/' },
     { text: 'Docs', link: 'https://docs.ipfs.tech/' },
     { text: 'Team', link: 'https://ipfs.tech/team' },
     { text: 'Blog', link: '/' },
@@ -50,6 +52,8 @@ const themeConfigDefaults = {
   ],
   mobileNavLinks: [
     { text: 'About', link: 'https://ipfs.tech/' },
+    { text: 'Community', link: 'https://ipfs.tech/community/' },
+    { text: 'Developers', link: 'https://ipfs.tech/developers/' },
     { text: 'Docs', link: 'https://docs.ipfs.tech/' },
     { text: 'Team', link: 'https://ipfs.tech/team' },
     { text: 'Blog', link: '/' },
@@ -111,6 +115,8 @@ module.exports = {
         ],
         headerLinks: [
           { text: 'About', link: 'https://ipfs.tech/' },
+          { text: 'Community', link: 'https://ipfs.tech/community/' },
+          { text: 'Developers', link: 'https://ipfs.tech/developers/' },
           { text: 'Docs', link: 'https://docs.ipfs.tech/' },
           { text: 'Team', link: 'https://ipfs.tech/team' },
           { text: 'Blog', link: '/zh-cn' },
@@ -118,6 +124,8 @@ module.exports = {
         ],
         mobileNavLinks: [
           { text: 'About', link: 'https://ipfs.tech/' },
+          { text: 'Community', link: 'https://ipfs.tech/community/' },
+          { text: 'Developers', link: 'https://ipfs.tech/developers/' },
           { text: 'Docs', link: 'https://docs.ipfs.tech/' },
           { text: 'Team', link: 'https://ipfs.tech/team' },
           { text: 'Blog', link: '/zh-cn/' },
