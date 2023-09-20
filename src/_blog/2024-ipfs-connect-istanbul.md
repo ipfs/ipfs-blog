@@ -2,7 +2,7 @@
 title: Announcing IPFS Connect Istanbul 2023
 description: 'Join the IPFS Community for a full day of workshops, lightning talks, and demos showcasing technology, tools, and innovative projects in the IPFS ecosystem.'
 date: 2023-09-20
-header_image: 'https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=960,height=480/event-covers/65/4b777b01-bd08-4497-a3aa-6e6c14598141'
+header_image: ''
 tags:
 - events
 ---
