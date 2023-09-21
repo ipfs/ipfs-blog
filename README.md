@@ -14,6 +14,7 @@ This repository contains code and content for the [IPFS Blog & News](https://blo
 
 ### Creating a new blog post via Github pull request
 
+
 Each blog post is a markdown file in the [`src/_blog`](./src/_blog) folder, with a little metadata at the top (known as YAML frontmatter) to help us create the post index page.
 
 A blog post looks like this:
