@@ -1,7 +1,7 @@
 ---
-title: Simple Site Building and IPFS Deployment with dAppling
+title: Launch Your First IPFS Site with dAppling in Minutes
 description: Introducing a seamless way to launch your code on IPFS, featuring straightforward setup, automatic deployments, and more.
-author: 🙏 namaskar@dAppling.network
+author: 🙏 namaskar
 date: 2023-09-20
 header_image: '/2023-09-introducing-dappling-header.png'
 tags:
@@ -44,13 +44,13 @@ If you can't think of a project, I would recommend forking [a nice blog template
 
 ![The bliss blog template repository on GitHub.](../assets/2023-09-introducing-dappling-blog-template.png)
 
-Name your new blog something. I chose thoughts because one of my favorite quotes is "Thoughts become things". I also decided to make it public, but you can make it private if you'd like. Then click "Create repository". This will take you to the repository page, but we should head back to [dAppling.network](https://dappling.network).
+Name your new blog something. I chose thoughts because one of my favorite quotes is "Thoughts become things". I also decided to make it public, but you can make it private if you'd like. Then click "Create repository". After a few seconds, your newly created repository will appear. How exciting!
 
 ![A GitHub page allowing you to fork the bliss blog template's repository.](../assets/2023-09-introducing-dappling-create-repository.png)
 
 ## Create your First dAppling Project
 
-Now that we have the code to use, head over to [dAppling.network](https://dappling.network) and click on "Deploy Frontend". This will take you to the page to log in to GitHub.
+Now that we have the code to use, head over to [dAppling.network](https://dappling.network) and click on "Deploy Frontend". This will take you to a page to log in to GitHub.
 
 ![The dAppling landing page shows a hero: "100% uptime with alternative frontends".](../assets/2023-09-introducing-dappling-homepage.png)
 
