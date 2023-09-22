@@ -75,8 +75,7 @@ You can watch a recording from [IPFS Thing 2023](https://2023.ipfs-thing.io/) ex
 | Number of DHT lookups | #CIDs | ~1/20 * #DHT_SERVERs |
 | Number of connections to open | 20 * #CIDs | #DHT_SERVERs |
 
-| #CIDs published | Improvement 
-(#connections, #DHT Lookups) |
+| #CIDs published | Improvement (#connections, #DHT Lookups) |
 | --- | --- |
 | $\leq$ 1K | - |
 | 25K | 20x |
