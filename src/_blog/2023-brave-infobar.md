@@ -2,13 +2,16 @@
 title: Brave Browser's New IPFS Infobar
 description: 'We’re excited to share a new IPFS-related feature that appears in the most recent version of Brave.'
 date: 2023-09-22
-header_image: '/ipfsconnect2023.jpg'
+header_image: '/brave_infobar_1.png'
 tags:
 - brave
 - browsers
 ---
 
 We’re excited to share a new IPFS-related feature that appears in the most recent version of [Brave’s web browser](https://brave.com/). A new IPFS Infobar will appear at the top of the browser when you visit an IPFS compatible resource or web page. By using the IPFS Infobar, you can choose whether you would like to switch to loading the IPFS version of the content. Selections can be made to always load via IPFS or only load it in a specific instance.
+
+![](../assets/brave_infobar_2.jpg)
+![](../assets/brave_infobar_3.png)
 
 This new feature will increase visibility of IPFS content when it exists and contribute to greater awareness for the benefits that can be had from utilizing content addressing.
 
