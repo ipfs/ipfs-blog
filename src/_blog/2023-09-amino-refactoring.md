@@ -77,7 +77,7 @@ You can watch a recording from [IPFS Thing 2023](https://2023.ipfs-thing.io/) ex
 
 | #CIDs published | Improvement (#connections, #DHT Lookups) |
 | --- | --- |
-| $\leq$ 1K | - |
+| > 1K | - |
 | 25K | 20x |
 | 100K | 80x |
 | 500K | 400x |
