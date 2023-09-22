@@ -15,7 +15,7 @@ Two major items are being announced in this blogpost, both of which are equally 
 
 ## Why Amino?
 
-The “Public IPFS DHT” will henceforth going to be called **“Amino”**. This follows along with the trend from 2022 in the IPFS ecosystem to use more precise language to create space for alternative options (i.e., other DHTs). Just as there isn’t one IPFS implementation, there isn’t one content routing system or DHT. “Amino” was chosen from Amino acids - the building block for larger, stronger structures, which is what we believe will happen with this network. There can be several IPFS DHT networks, and they can choose to borrow functionality from the “Amino” network. More context on the naming can be found [here](https://github.com/ipfs/ipfs/discussions/473).
+The “Public IPFS DHT” is henceforth going to be called **“Amino”**. This follows along with the trend from 2022 in the IPFS ecosystem to use more precise language to create space for alternative options (i.e., other DHTs). Just as there isn’t one IPFS implementation, there isn’t one content routing system or DHT. “Amino” was chosen from Amino acids - the building block for larger, stronger structures, which is what we believe will happen with this network. There can be several IPFS DHT networks, and they can choose to borrow functionality from the “Amino” network. More context on the naming can be found [here](https://github.com/ipfs/ipfs/discussions/473).
 
 ## Refactoring of `go-libp2p-kad-dht` codebase
 
