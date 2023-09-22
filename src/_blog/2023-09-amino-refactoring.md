@@ -11,7 +11,7 @@ tags:
   - 'Reprovide Sweep'
 ---
 
-Two major items are being announced in this blogpost, both of which equally exciting and both of which relate to “the Public IPFS DHT” (the [public Kademlia-based DHT](https://docs.ipfs.tech/concepts/dht/#dual-dht) that [Kubo (and other implementations) default to bootstrapping into](https://docs.ipfs.tech/how-to/modify-bootstrap-list/) with the libp2p protocol `/ipfs/kad/[1.0.0`.](https://www.google.com/url?q=http://1.0.0.&sa=D&source=docs&ust=1694209168222392&usg=AOvVaw1AMnhRKOb9e_kzS8r00lyx)), which is henceforth going to be called **“Amino”**. The first relates to a major refactoring of the Amino codebase and the second is an optimization of the publish operation of the protocol, so that providing content to Amino is made much faster and resource-efficient.
+Two major items are being announced in this blogpost, both of which equally exciting and both of which relate to “the Public IPFS DHT” (the [public Kademlia-based DHT](https://docs.ipfs.tech/concepts/dht/#dual-dht) that [Kubo (and other implementations) default to bootstrapping into](https://docs.ipfs.tech/how-to/modify-bootstrap-list/) with the libp2p protocol `/ipfs/kad/1.0.0`), which is henceforth going to be called **“Amino”**. The first relates to a major refactoring of the Amino codebase and the second is an optimization of the publish operation of the protocol, so that providing content to Amino is made much faster and resource-efficient.
 
 ## Why Amino?
 
