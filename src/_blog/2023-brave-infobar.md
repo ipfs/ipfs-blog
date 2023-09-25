@@ -8,7 +8,9 @@ tags:
 - browsers
 ---
 
-We’re excited to share a new IPFS-related feature that appears in the most recent version of [Brave’s web browser](https://brave.com/). A new IPFS Infobar will appear at the top of the browser when you visit an IPFS compatible resource or web page. By using the IPFS Infobar, you can choose whether you would like to switch to loading the IPFS version of the content. Selections can be made to always load via IPFS or only load it in a specific instance.
+We’re excited to share a new IPFS-related feature that appears in the most recent version of [Brave’s web browser](https://brave.com/). A new IPFS Infobar will appear at the top of the browser when you visit an IPFS compatible resource such as a [CID on a public gateway](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#http-gateways)  or a website with a [DNSLink](https://docs.ipfs.tech/concepts/dnslink/). 
+
+By using the IPFS Infobar, you can choose whether you would like to switch to loading the IPFS version of the content. Selections can be made to always load via IPFS or only load it in a specific instance.
 
 ![](../assets/brave_infobar_2.jpg)
 ![](../assets/brave_infobar_3.png)
