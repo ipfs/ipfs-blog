@@ -19,7 +19,7 @@ This new feature will increase visibility of IPFS content when it exists and con
 
 Brave’s IPFS Infobar is a small but mighty new feature that we are excited to see in the wild!
 
-In addition to the Infobar, there are more tools currently being developed for [Brave](https://brave.com/) by others such as David Justice that are worth noting. We are prototyping a suite of tools for publishing to IPFS in Brave. Some of the prototypes include: Markdown/Wysiwyg webpage creator, Link In Bio/Link List site creator, and the ability to password protect webpages with many more ideas in the works.
+In addition to the Infobar, there are more tools currently being developed for [Brave](https://brave.com/) by others such as [David Justice](https://github.com/JusticeEngineering) that are worth noting. Some of the prototypes include: Markdown/Wysiwyg webpage creator, Link In Bio/Link List site creator, and the ability to password protect webpages with many more ideas in the works.
 
 [https://github.com/JusticeEngineering/markdown-publish](https://github.com/JusticeEngineering/markdown-publish)
  
