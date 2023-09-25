@@ -1,7 +1,7 @@
 ---
 title: Brave Browser's New IPFS Infobar
 description: 'We’re excited to share a new IPFS-related feature that appears in the most recent version of Brave.'
-date: 2023-09-22
+date: 2023-09-25
 header_image: '/braveinfobar2.png'
 tags:
 - brave
