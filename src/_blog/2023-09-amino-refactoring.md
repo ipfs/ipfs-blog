@@ -88,7 +88,7 @@ You can watch a recording from [IPFS Thing 2023](https://2023.ipfs-thing.io/) ex
 
 We are very excited about this change because it will enable large content providers to start using the most resilient and decentralized component of the IPFS network.
 
-**This change is a client side optmization and doesn’t involve any protocol alteration.** As such, it allows users to immediately benefit from the feature. The interface between `go-libp2p-kad-dht` and `[boxo](https://github.com/ipfs/boxo)`, which Kubo uses, must be updated in order to enable the DHT client to take on the responsibility of managing the reprovide operation.
+**This change is a client side optmization and doesn’t involve any protocol alteration.** As such, it allows users to immediately benefit from the feature. The interface between `go-libp2p-kad-dht` and [`boxo`](https://github.com/ipfs/boxo), which Kubo uses, must be updated to enable the DHT client to take on the responsibility of managing the reprovide operation.
 
 The PL EngRes IPFS Stewards team is currently working to define the spec for `ReprovideSweep`, which we hope to have ready in the beginning of October, and we anticipate rolling out this enhancement during Q4’23. We will update the community with a new blogpost or discussion forum post closer to the time. Until then, you can follow developments on this front through this GH issue: [https://github.com/libp2p/go-libp2p-kad-dht/issues/824](https://github.com/libp2p/go-libp2p-kad-dht/issues/824).
 
