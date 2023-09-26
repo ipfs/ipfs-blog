@@ -94,7 +94,7 @@ The PL EngRes IPFS Stewards team is currently working to define the spec for `Re
 
 ## What’s next
 
-We believe the above lays the groundwork for more exciting DHT innovation ahead. We have some ideas that we’d love to be talking about and working with the community. We’re still figuring out the best place to this conversation, but subscribe [here](https://discuss.ipfs.tech/t/dht-discussion-and-contribution-opportunities-in-2023q4/16937) if you’re interested in learning about upcoming DHT discussion areas (e.g., at [LabWeek](https://labweek.plnetwork.io/)/[DevConnect](https://devconnect.org/), DHT working group).
+We believe the above lays the groundwork for more exciting DHT innovation ahead. We have some ideas that we’d love to be talking about and working with the community. We’re still figuring out the best place for this conversation, but subscribe [here](https://discuss.ipfs.tech/t/dht-discussion-and-contribution-opportunities-in-2023q4/16937) if you’re interested in learning about upcoming DHT discussion areas (e.g., at [LabWeek](https://labweek.plnetwork.io/)/[DevConnect](https://devconnect.org/), DHT working group). You can also join the team's Office Hours by subscribing at: [https://lu.ma/ipfs-network-measurements](https://lu.ma/ipfs-network-measurements).
 
 ## How to get involved
 
