@@ -104,7 +104,7 @@ As always, help is more than welcome to accelerate development and make the desi
     - DHT Refactoring: [https://github.com/plprobelab/go-kademlia/](https://github.com/plprobelab/go-kademlia/)
     - Reprovide Sweep: [https://github.com/libp2p/go-libp2p-kad-dht/issues/824](https://github.com/libp2p/go-libp2p-kad-dht/issues/824)
 - Slack channel:
-    - `#probe-lab` in FIL Slack or IPFS Discord (bridged channel), or
+    - `#probe-lab` in [FIL Slack](https://filecoin.io/slack) or [IPFS Discord](https://discord.gg/vj7qWuAyHY) (bridged channel), or
     - `#kubo-boxo-dev` in FIL Slack
 - IPFS Discussion forum:
     - DHT Refactoring and future planning: [https://discuss.ipfs.tech/t/dht-discussion-and-contribution-opportunities-in-2023q4/16937](https://discuss.ipfs.tech/t/dht-discussion-and-contribution-opportunities-in-2023q4/16937)
