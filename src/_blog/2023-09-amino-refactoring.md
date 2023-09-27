@@ -2,7 +2,7 @@
 title: Amino (the Public IPFS DHT) is getting a facelift
 description: 'The ProbeLab team is working on a major refactoring of the Public IPFS DHT (henceforth called Amino) and a new feature which will accellerate the provide operation by several orders of magnitude. Read through to find out the details and how to get involved.'
 author: ProbeLab
-date: 2023-09-27
+date: 2023-09-26
 permalink: '/2023-09-amino-refactoring/'
 header_image: '/2023-09-amino-refactoring.png'
 tags:
