@@ -1,6 +1,6 @@
 ---
 title: Welcome to IPFS News 198!
-description: Featuring announcements about IPFS Connect, Amino, and Brave's New IPFS Infobar
+description: Featuring announcements about Brave's New IPFS Infobar, Amino, and IPFS Connect!
 date: 2023-10-03
 permalink: "/newsletter-198"
 header_image: "/ipfsnews.png"
@@ -71,3 +71,4 @@ There are several opportunities for you to get involved with this event whether 
 ## **Have something you want featured? 📥**
 
 As part of our ongoing efforts to empower and promote community contributors, we're providing a new way for you to have a chance to influence the monthly IPFS newsletter! If you have something exciting or important that you think the IPFS community should know about, then you can [submit this form](https://airtable.com/appjqlMYucNiOYHl7/shrfPrKe112FW3ucv) to have it be considered for promotion via IPFS communication channels.
+
