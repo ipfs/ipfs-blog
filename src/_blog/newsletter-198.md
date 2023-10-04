@@ -64,6 +64,10 @@ There are several opportunities for you to get involved with this event whether 
 
 - "How [do I] set up my own bootstrap nodes to enable discovery and connection between nodes with public IP and nodes on a local network?" [Read the discussion.](https://discuss.ipfs.tech/t/how-to-set-up-my-own-bootstrap-nodes-to-enable-discovery-and-connection-between-nodes-with-public-ip-and-nodes-on-a-local-network/16910)
 
+[Job Alert: Filebase is hiring a Senior Digital Marketing Strategist](https://wellfound.com/jobs/2807523-senior-digital-marketing-strategist)
+
+- "Are you a creative and strategic thinker with a passion for driving digital marketing excellence? Do you thrive in dynamic, cutting-edge environments and have a deep understanding of the tech industry? Join us at Filebase, a leading player in the decentralized storage revolution, as a Senior Digital Marketing Strategist." [Learn more here!](https://wellfound.com/jobs/2807523-senior-digital-marketing-strategist)
+
 [LabWeek23 is happening November 13-17](https://23.labweek.io/)
 
 - Have you booked your travel yet? LabWeek23 is happening in Istanbul, Türkiye, from November 13-17, alongside Devconnect! This is your chance to connect and collaborate with visionaries and teams that are domain leaders in ZK Proofs, AI and blockchain, DeSci, decentralized storage, gaming in Web3, public goods funding, cryptoeconomics, and much more. [Learn more about it here!](https://23.labweek.io/)
