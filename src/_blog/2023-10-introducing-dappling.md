@@ -42,7 +42,7 @@ We want to make it as easy as possible to get your code hosted. After that, we w
 
 We simplify the setup process by automatically detecting your app's configuration. If something does go wrong, we have easy to use debugging tools.
 
-## Simple Setup
+#### Simple Setup
 
 Since we have access to your code, we look at a few things like what package manager you use, what sort of framework the project is built with, and certain configuration files. We use this information to prefill the configuration form, so you don't have to.
 
@@ -78,7 +78,7 @@ Since we store the on our `dappling.eth` ENS name, you can also fetch the conten
 
 Even simpler would be using the existing DNS system either using our custom `*.dappling.network` subdomain that we created for you. We also allow adding your custom domain like `ipfs.crypto-protocol.app`.
 
-### Future
+## Future
 
 We plan to be constantly upgrading the platform as new decentralization techniques appear. As a user, you will notice more points of access, quicker speeds, and features to make usage easier. We hope to increase decentralization
 
@@ -89,6 +89,6 @@ We plan to be constantly upgrading the platform as new decentralization techniqu
 
 As we continue to improve, we're always looking for user feedback to guide us. Our focus remains on providing a platform that is not just decentralized but also highly performant and user-friendly.
 
-If you run into **any** problems, want to connect, or just say hi, my DMs are open on [𝕏](https://x.com/0xBookland). I would love to hear your feedback and help you get your projects deployed as we transition to the infrastructure of the future.
+If you run into **any** problems, want to connect, or just say hi, my DMs are open on [𝕏](https://x.com/0xBookland). I would love to hear your feedback and help you get all of your projects deployed as we transition to the infrastructure of the future.
 
 🙏
