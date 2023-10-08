@@ -11,11 +11,24 @@ tags:
 
 # IPFS URI support in CURL
 
-[CURL 8.4.0](https://github.com/curl/curl/releases/tag/curl-8_4_0) shipped with built-in support for ipfs:// and ipns:// addresses.  It implements conventions from [IPIP-280](https://github.com/ipfs/specs/pull/280) and will respect user's gateway choice made via `IPFS_GATEWAY` environment variable or presence of `gateway` file.
+[CURL 8.4.0](https://github.com/curl/curl/releases/tag/curl-8_4_0) shipped with built-in support for `ipfs://` and `ipns://` addresses.
 
-In this blog post we'll go over a brief history of implementing support for IPFS URIs in CURL. Why this is an important feature to have and what you can do with it. We'll see how distributed data access can be clean and we'll find out when we can use this.
+This enables `curl` to seamlessly integrate with the user's preferred [IPFS gateway](https://docs.ipfs.tech/reference/http/gateway/) through the `IPFS_GATEWAY` environment variable or a `gateway` file. Best of all, these capabilities are available for immediate use today:
+
+```bash
+$ export IPFS_GATEWAY="http://127.0.0.1:8080" # local gateway provided by ipfs daemon like Kubo
+$ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey -s -L
+hello from IPFS
+```
+
+In this blog post, we will:
+- explore the journey of implementing IPFS URI support in CURL,
+- delve into the mechanics of [how CURL locates an IPFS gateway](#how-does-curl-find-an-ipfs-gateway),
+- learn how to be immune to [malicious gateways](#malicious-gateways-and-data-integrity),
+- and finally, provide [practical CURL examples](#curl-examples) for leveraging IPFS URIs for either deserialized or verifiable responses.
 
 ## A brief history
+
 Supporting IPFS in CURL has been attempted [before](https://github.com/curl/curl/pull/8468) as a CURL library feature. Some discussions lead to a belief that this should be implemented in the CURL tool itself, not it's library. A renewed [implementation attempt](https://github.com/curl/curl/pull/8805) took the tool-side approach which ultimately was accepted and is available right now in CURL 8.4.0!
 
 The support of IPFS in CURL is effectively consisting of two implementation details.
@@ -30,7 +43,7 @@ will just work.
 ## Why ipfs:// URI support is so important?
 
 This question keeps coming up. Why-o-why do we find it so important to have IPFS support in CURL, even if it's just a fancy URL rewriter?
-
+ 
 Why isn't `https://ipfs.io/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` equally acceptable? Or why isn't a local url like `http://localhost:8080/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` fine?
 
 I'll have to repeat one of the core concepts of IPFS here. IPFS is a distributed network in which you access content. It shouldn't matter where that content is. The "where" part should not be provided. If you do proovide this where part (a gateway is a central point of entry, the where part) then you limit your access to IPFS through that one point of entry.
@@ -65,16 +78,22 @@ Note that you can just specify any gateway in any of these places, it's highly r
 
 ## Malicious gateways and data integrity?
 
-Technically it's possible that a gateway is malicious. Or that a known well used gateway is hacked and changed to give you data that is malicious. How do you protect against that?
+Requesting deserialized responses and delegating hash verification to a third-party gateway comes with risks. It is possible that a public gateway is malicious. Or, that a well-known and respected gateway gets hacked and changed to return payload that does not match requested CID. How can one protect themselves against that?
 
-The easiest fix - by far - is to run your own local node that has support for [IPIP-280](https://github.com/ipfs/specs/pull/280). Every block of data you get though your own local node is verified internally in Kubo. Therefore, if you want the most flexibility and security, run that node!
+If deserialized responses are necessary, one should run own gateway in a local, controlled environment. Every block of data retrieved though self-hosted IPFS gateway is verified to match the hash from CID.  For the maximum flexibility and security, find implementation that provides the gateway endpoint (i.e. [Kubo](https://docs.ipfs.tech/install/command-line/)) and run it yourself!
 
-Alternativly if you want to use a gateway that you can't trust, use CAR archives instead. CAR allows you to locally verify if the data you get is the data you expect. How to use CAR and verify your data is beyond the scope of this blog, but [here's](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval) a good starting point.
+When using a third-party gateway that one can't fully trust, the only secure option is to [request verifiable response types](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval) such as [application/vnd.ipld.raw](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw) (a single block) or [application/vnd.ipld.car](https://www.iana.org/assignments/media-types/application/vnd.ipld.car) (multiple blocks in CAR archive). Both allow to locally verify if the data returned by gateway match the requested CID, removing the surface for [Man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
 ## CURL Examples
 
-Technically nothing is truly new here as everything is already possible with full URL's.
-There's one caveat to keep in mind with CURL usage. The implementation in curl assumes the [path-style](https://docs.ipfs.tech/concepts/ipfs-gateway/#path) gateway. If your gateway redirects to [subdomain-style](https://docs.ipfs.tech/concepts/ipfs-gateway/#subdomain) (like `https://dweb.link` and the gateway provided by your local Kubo node) then you have to pass `-L` in the curl command to follow that redirect.
+::: callout
+
+**NOTE on HTTP redirects**
+
+The URI resolution in `curl` does not follow redirects by default and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/) or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
+When pointing `curl` at a [subdomain gateway](https://specs.ipfs.tech/http-gateways/subdomain-gateway) (like `https://dweb.link` or the `http://localhost:8080` provided by a local Kubo node) one has to pass `-L` in the curl command to follow the redirect.
+
+:::
 
 ### Playing Big Buck Bunny (CURL + ffplay)
 ```
@@ -82,24 +101,24 @@ curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi | ffplay
 ```
 
 ### Downloading a file from IPFS with CURL
-```
+```bash
 curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi -o bbb.webm
 ```
 
 ### Explicitly specifying a gateway
-```
+```bash
 IPFS_GATEWAY=http://localhost:8080 curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi
 ```
 
 ### Handling redirects
 You have to explicitly tell curl to handle redirects for security reasons.
-```
+```bash
 curl -L ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi
 ```
 
 ### Piping data and follow redirect
 In this case the data is piped to the `file` utility in linux. We need to tell curl to be silent `-s` and to follow the redirects `-L`:
-```
+```bash
 IPFS_GATEWAY=https://dweb.link curl -s -L ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi | file -
 ```
 
