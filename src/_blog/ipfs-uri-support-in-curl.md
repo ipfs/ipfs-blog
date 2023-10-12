@@ -7,6 +7,9 @@ permalink: '/ipfs-uri-support-in-curl/'
 header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
 tags:
   - 'community'
+  - 'URI'
+  - 'HTTP'
+  - 'curl'
 ---
 
 # IPFS URI support in CURL
@@ -69,12 +72,12 @@ Any IPFS implementation that has support for [IPIP-280](https://github.com/ipfs/
 CURL 8.4.0 and greater looks for a gateway in the following order:
 
 1. `IPFS_GATEWAY`, if set it's used.
-2. The `--ipfs-gateway` argument.
-3. The `~/.ipfs/gateway` file where it reads the first line.
+2. The `--ipfs-gateway` CLI argument.
+3. The `~/.ipfs/gateway` file, where it reads the first line.
 
-If a gateway is found at any of those places, and if that is a valid http(s) URL then CURL will use it. If not then you'll be getting an arror message pointing to the [CURL documentation related to IPFS](https://curl.se/docs/ipfs.html) to help you further.
+If a gateway hint is found at any of those places, and if that is a valid HTTP URL then CURL will use it. If not then you'll be getting an error message pointing to the [CURL documentation related to IPFS](https://curl.se/docs/ipfs.html) to help you further.
 
-Note that you can just specify any gateway in any of these places, it's highly recommended to use a local gateway!
+One can specify any IPFS gateway that is in compliance with [Gateway Specifications](https://specs.ipfs.tech/http-gateways/). It is highly recommended using a local gateway, as it provides the best security guarantees.
 
 ## Malicious gateways and data integrity?
 
@@ -129,11 +132,10 @@ Which tells us:
 
 ## What's next?
 
-integration. Everyone can integrate `ipfs://` and `ipns://` URI support into their application. See [IPIP-280](https://github.com/ipfs/specs/pull/280) for details. We are [tracking potential project](https://github.com/ipfs/integrations/issues) where an integration makes sense! If you feel up to the challenge, don't hesitate to drop a comment in one of the [potential projects](https://github.com/ipfs/integrations/issues) for IPFS URI integration or find us on:
+More places supporting IPFS addresses. Everyone can integrate `ipfs://` and `ipns://` URI support into their application. See specifications proposed in [IPIP-280](https://github.com/ipfs/specs/pull/280) for technical details. We are [tracking potential project](https://github.com/ipfs/integrations/issues) where an integration makes sense! If you feel up to the challenge, don't hesitate to drop a comment in one of the [potential projects](https://github.com/ipfs/integrations/issues) for IPFS URI integration or find us on:
 
-* [Slack](https://filecoin.io/slack)
-* [Discord](https://discord.com/invite/ipfs)
-* [Forum](https://discuss.ipfs.tech/)
+* [Matrix](https://matrix.to/#/#ipfs-space:ipfs.io), [Discord](https://discord.com/invite/ipfs) or [Slack](https://filecoin.io/slack)
+* [Discussion Forum](https://discuss.ipfs.tech/)
 
 Or one of the other many places where the [IPFS comunity](https://docs.ipfs.tech/community/) is active.
 
