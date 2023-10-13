@@ -12,14 +12,14 @@ tags:
   - 'curl'
 ---
 
-# IPFS URI support in CURL
+# `ipfs://` URI support in `curl`
 
 [CURL 8.4.0](https://github.com/curl/curl/releases/tag/curl-8_4_0) shipped with built-in support for `ipfs://` and `ipns://` addresses.
 
 This enables `curl` to seamlessly integrate with the user's preferred [IPFS gateway](https://docs.ipfs.tech/reference/http/gateway/) through the `IPFS_GATEWAY` environment variable or a `gateway` file. Best of all, these capabilities are available for immediate use today:
 
 ```bash
-$ export IPFS_GATEWAY="http://127.0.0.1:8080" # local gateway provided by ipfs daemon like Kubo
+$ export IPFS_GATEWAY="http://127.0.0.1:8080" # local (trusted) gateway provided by ipfs daemon like Kubo
 $ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey -s -L
 hello from IPFS
 ```
@@ -39,31 +39,34 @@ The support of IPFS in CURL is effectively consisting of two implementation deta
 1. CURL tries to find a locally installed or [configured gateway](#how-does-curl-find-an-ipfs-gateway).
 2. It then rewrites an `ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` to a gateway URL. This is how curl handles it internally, you see nothing of this URL rewriting.
 
-If you have IPFS installed locally then running:
-`curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi`
-will just work.
+If you have IPFS installed locally then running `curl ipfs://` will Just Work™. If not, CURL will return an error with details how to set up the gateway preference. This ensures the user agency is respected, no third-party gateway is used as implicit default.
 
-## Why ipfs:// URI support is so important?
+## Why `ipfs://` URI support is so important?
 
-This question keeps coming up. Why-o-why do we find it so important to have IPFS support in CURL, even if it's just a fancy URL rewriter?
- 
-Why isn't `https://ipfs.io/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` equally acceptable? Or why isn't a local url like `http://localhost:8080/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` fine?
+Why isn't `https://ipfs.io/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` equally acceptable?
+Or why isn't a local URL `http://localhost:8080/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` fine?
 
-I'll have to repeat one of the core concepts of IPFS here. IPFS is a distributed network in which you access content. It shouldn't matter where that content is. The "where" part should not be provided. If you do proovide this where part (a gateway is a central point of entry, the where part) then you limit your access to IPFS through that one point of entry.
+Both addresses are tied to a specific _location_.
+
+IPFS is a modular suite of protocols purpose built for the organization and transfer of [content-addressed](https://docs.ipfs.tech/concepts/content-addressing) data. It shouldn't matter where the content is. Content Identifier ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)) is all that is required. The "where" part is implementation detail an IPFS system takes care of. Hardcoding a location in addition to a CID (like a specific HTTP gateway) limits end user to IPFS resources available through that one specific, centralized point of entry.
 
 If we pull the URL apart we see:
 
 ![](https://hackmd.io/_uploads/Bk2MV-9ea.png)
 
-As a user of IPFS you should not care about the **where** part because you're now limited to however available that central access point is.
+Users of IPFS system should not care about the _where_ part, nor be coerced to use a specific, hard-coded entry point into the system.
 
-An example of a direct limitation. There are gateways out there that don't allow playback of video through their gateway or that bandwidth-throttle such content. This isn't a limitation of IPFS but is purely a limitation a gateway has set through custom configuration. You have no such limitation if you were to be using your own local node with a local gateway.
+Public gateways like `ipfs.io` are always owned by some entity and could get censored or shut down at any time. Many gateways will not allow playback of deserialized videos or only respond to  CIDs from allowlists to reduce costs. Other gateways will block specific CIDs from resolving in specific jurisdictions for legal reasons. Community-run public gateways will have limits and throttle usage.
 
-Another example. Say you use `ipfs.io` as gateway. Now if that gateway starts throttling users, or gets sensored by ISPs then to you it looks like "IPFS isn't working" while the data might be well accessible, just not momentarily via that gateway. Even though gateways like `ipfs.io` and `dweb.link` are themselves connected to vast numbers of peers, it's worth nothing if the http gateway endpoint has a momentarily hiccup. Beyond the connectivity aspect, a gateway is hosted by someone. If you use a gateway you use their resources and bandwidth!
+These are not limitations of IPFS but purely a limitation a specific gateway has set through custom configuration. IPFS user should always have ability to avoid such limitations if they choose to self-host and [run their own IPFS node with a local gateway](https://docs.ipfs.tech/install/).
+
+<!-- TODO: remove? feels like duplicate of we already say in this and "malicious" sections, but mentioning ffmpeg blogpost feels like something we should  keep somewhere
 
 This is why running a local node (and therefore a local gateway, it's part of a node) is so important. Even though you still effectively use `http://localhost:8080` as gateway, it's hosted by you locally backed by the many peers your node is connected with. Your experience in using IPFS is going to be best and fastest with a local node. Even when your local gateway isn't working it's easy for you to restart your node and get that gateway back and running. You can't do that on public gateways that you don't control.
 
 One of the many reasons why we're putting in the effort to make applications recognize IPFS URIs (like [ffmpeg](https://blog.ipfs.tech/2022-08-01-ipfs-and-ffmpeg/)) `ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` is to let the application in the background find that gateway you're running and giving you the freedom of being truly distributed! This also allows url's to be shared as IPFS url's (like `ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi`) without any trace of a (central) gateway and bring us one step closer to a distributed world where it doesn't matter anymore where that data is located.
+
+-->
 
 ## How does CURL find an IPFS Gateway?
 
@@ -93,8 +96,8 @@ When using a third-party gateway that one can't fully trust, the only secure opt
 
 **NOTE on HTTP redirects**
 
-The URI resolution in `curl` does not follow redirects by default and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/) or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
-When pointing `curl` at a [subdomain gateway](https://specs.ipfs.tech/http-gateways/subdomain-gateway) (like `https://dweb.link` or the `http://localhost:8080` provided by a local Kubo node) one has to pass `-L` in the curl command to follow the redirect.
+By default, the URI resolution in `curl` does not follow HTTP redirects and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/), or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
+When pointing `curl` at a [subdomain gateway](https://specs.ipfs.tech/http-gateways/subdomain-gateway) (like `https://dweb.link` or the `http://localhost:8080` provided by a [local Kubo node](https://docs.ipfs.tech/how-to/command-line-quick-start/)) one has to pass `-L` in the curl command to follow the redirect.
 
 :::
 
