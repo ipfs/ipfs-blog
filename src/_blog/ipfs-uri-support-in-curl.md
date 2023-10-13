@@ -4,7 +4,7 @@ description: 'CURL 8.4.0 shipped with built-in support for ipfs:// and ipns:// a
 author: Mark Gaiser
 date: 2023-10-7
 permalink: '/ipfs-uri-support-in-curl/'
-header_image: '/ipfs-calendar/ipfs-calendar-cover.png'
+header_image: '/curl.png'
 tags:
   - 'community'
   - 'URI'
