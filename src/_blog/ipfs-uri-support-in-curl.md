@@ -32,14 +32,14 @@ In this blog post, we will:
 
 ## A brief history
 
-Supporting IPFS in CURL has been attempted [before](https://github.com/curl/curl/pull/8468) as a CURL library feature. Some discussions lead to a belief that this should be implemented in the CURL tool itself, not it's library. A renewed [implementation attempt](https://github.com/curl/curl/pull/8805) took the tool-side approach which ultimately was accepted and is available right now in CURL 8.4.0!
+Supporting IPFS in CURL has been attempted [before](https://github.com/curl/curl/pull/8468) as a CURL library feature. Some discussions lead to a belief that this should be implemented in the CURL tool itself, not its library. A renewed [implementation attempt](https://github.com/curl/curl/pull/8805) took the tool-side approach which ultimately was accepted and is available right now in CURL 8.4.0!
 
 The support of IPFS in CURL is effectively consisting of two implementation details.
 
 1. CURL tries to find a locally installed or [configured gateway](#how-does-curl-find-an-ipfs-gateway).
 2. It then rewrites an `ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` to a gateway URL. This is how curl handles it internally, you see nothing of this URL rewriting.
 
-If you have IPFS installed locally then running `curl ipfs://` will Just Work™. If not, CURL will return an error with details how to set up the gateway preference. This ensures the user agency is respected, no third-party gateway is used as implicit default.
+If you have IPFS installed locally then running `curl ipfs://` will Just Work™. If not, CURL will return an error with details about how to set up the gateway preference. This ensures the user agency is respected, no third-party gateway is used as implicit default.
 
 ## Why `ipfs://` URI support is so important?
 
@@ -48,15 +48,15 @@ Or why isn't a local URL `http://localhost:8080/ipfs/bafybeigagd5nmnn2iys2f3doro
 
 Both addresses are tied to a specific _location_.
 
-IPFS is a modular suite of protocols purpose built for the organization and transfer of [content-addressed](https://docs.ipfs.tech/concepts/content-addressing) data. It shouldn't matter where the content is. Content Identifier ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)) is all that is required. The "where" part is implementation detail an IPFS system takes care of. Hardcoding a location in addition to a CID (like a specific HTTP gateway) limits end user to IPFS resources available through that one specific, centralized point of entry.
+IPFS is a modular suite of protocols purpose built for the organization and transfer of [content-addressed](https://docs.ipfs.tech/concepts/content-addressing) data. It shouldn't matter where the content is. Content Identifier ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)) is all that is required. The "where" part is implementation detail an IPFS system takes care of. Hardcoding a location in addition to a CID (like a specific HTTP gateway) limits end users to IPFS resources available through that one specific, centralized point of entry.
 
 If we pull the URL apart we see:
 
 ![](https://hackmd.io/_uploads/Bk2MV-9ea.png)
 
-Users of IPFS system should not care about the _where_ part, nor be coerced to use a specific, hard-coded entry point into the system.
+Users of the IPFS system should not care about the _where_ part, nor be coerced to use a specific, hard-coded entry point into the system.
 
-Public gateways like `ipfs.io` are always owned by some entity and could get censored or shut down at any time. Many gateways will not allow playback of deserialized videos or only respond to  CIDs from allowlists to reduce costs. Other gateways will block specific CIDs from resolving in specific jurisdictions for legal reasons. Community-run public gateways will have limits and throttle usage.
+Public gateways like `ipfs.io` are always owned by some entity and could get censored or shut down at any time. Many gateways will not allow playback of deserialized videos or only respond to CIDs from allowlists to reduce costs. Other gateways will block specific CIDs from resolving in specific jurisdictions for legal reasons. Community-run public gateways will have limits and throttle usage.
 
 These are not limitations of IPFS but purely a limitation a specific gateway has set through custom configuration. IPFS user should always have ability to avoid such limitations if they choose to self-host and [run their own IPFS node with a local gateway](https://docs.ipfs.tech/install/).
 
@@ -78,15 +78,15 @@ CURL 8.4.0 and greater looks for a gateway in the following order:
 2. The `--ipfs-gateway` CLI argument.
 3. The `~/.ipfs/gateway` file, where it reads the first line.
 
-If a gateway hint is found at any of those places, and if that is a valid HTTP URL then CURL will use it. If not then you'll be getting an error message pointing to the [CURL documentation related to IPFS](https://curl.se/docs/ipfs.html) to help you further.
+If a gateway hint is found at any of those places, and if that is a valid HTTP URL, then CURL will use it. If not, then you'll be getting an error message pointing to the [CURL documentation related to IPFS](https://curl.se/docs/ipfs.html) to help you further.
 
-One can specify any IPFS gateway that is in compliance with [Gateway Specifications](https://specs.ipfs.tech/http-gateways/). It is highly recommended using a local gateway, as it provides the best security guarantees.
+One can specify any IPFS gateway that is in compliance with [Gateway Specifications](https://specs.ipfs.tech/http-gateways/). It is highly recommended to use a local gateway, as it provides the best security guarantees.
 
 ## Malicious gateways and data integrity?
 
 Requesting deserialized responses and delegating hash verification to a third-party gateway comes with risks. It is possible that a public gateway is malicious. Or, that a well-known and respected gateway gets hacked and changed to return payload that does not match requested CID. How can one protect themselves against that?
 
-If deserialized responses are necessary, one should run own gateway in a local, controlled environment. Every block of data retrieved though self-hosted IPFS gateway is verified to match the hash from CID.  For the maximum flexibility and security, find implementation that provides the gateway endpoint (i.e. [Kubo](https://docs.ipfs.tech/install/command-line/)) and run it yourself!
+If deserialized responses are necessary, one should run their own gateway in a local, controlled environment. Every block of data retrieved though self-hosted IPFS gateway is verified to match the hash from CID. For the maximum flexibility and security, find an implementation that provides the gateway endpoint (i.e. [Kubo](https://docs.ipfs.tech/install/command-line/)) and run it yourself!
 
 When using a third-party gateway that one can't fully trust, the only secure option is to [request verifiable response types](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval) such as [application/vnd.ipld.raw](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw) (a single block) or [application/vnd.ipld.car](https://www.iana.org/assignments/media-types/application/vnd.ipld.car) (multiple blocks in CAR archive). Both allow to locally verify if the data returned by gateway match the requested CID, removing the surface for [Man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
