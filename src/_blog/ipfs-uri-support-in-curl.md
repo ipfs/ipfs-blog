@@ -20,7 +20,7 @@ This enables `curl` to seamlessly integrate with the user's preferred [IPFS gate
 
 ```bash
 $ export IPFS_GATEWAY="http://127.0.0.1:8080" # local (trusted) gateway provided by ipfs daemon like Kubo
-$ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey -s -L
+$ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey
 hello from IPFS
 ```
 
@@ -92,45 +92,95 @@ When using a third-party gateway that one can't fully trust, the only secure opt
 
 ## CURL Examples
 
+### Deserialized responses
+
 ::: callout
 
-**NOTE on HTTP redirects**
+By default, a trusted local gateway acts as a bridge between traditional HTTP clients and IPFS.
+
+It performs necessary hash verification, UnixFS _deserialization_ and return reassembled files to the client, as if they were stored in a traditional HTTP server. This means all validation happens on the gateway, and clients trust that the gateway is correctly validating content-addressed data before returning it to them.
+
+:::
+
+#### Downloading a file from IPFS with CURL
+
+```bash
+$ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey -o out.txt
+```
+
+If curl responds with `curl: IPFS automatic gateway detection failure`, make sure `IPFS_GATEWAY` is set (see examples below).
+
+#### Explicitly specifying a gateway
+
+To use local gateway on custom port 48080:
+
+```bash
+$ export IPFS_GATEWAY=http://127.0.0.1:48080
+$ curl ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey
+hello from IPFS
+```
+
+When setting environment variable is not feasible, one can use `--ipfs-gateway` instead:
+
+```bash
+$ curl --ipfs-gateway http://127.0.0.1:48080 ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey
+hello from IPFS
+```
+
+#### Following subdomain redirects
+
+::: callout
 
 By default, the URI resolution in `curl` does not follow HTTP redirects and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/), or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
 When pointing `curl` at a [subdomain gateway](https://specs.ipfs.tech/http-gateways/subdomain-gateway) (like `https://dweb.link` or the `http://localhost:8080` provided by a [local Kubo node](https://docs.ipfs.tech/how-to/command-line-quick-start/)) one has to pass `-L` in the curl command to follow the redirect.
 
 :::
 
-### Playing Big Buck Bunny (CURL + ffplay)
-```
-curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi | ffplay -
-```
-
-### Downloading a file from IPFS with CURL
 ```bash
-curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi -o bbb.webm
+$ IPFS_GATEWAY=https://localhost:8080 curl -s -L ipfs://bafkreih3wifdszgljcae7eu2qtpbgaedfkcvgnh4liq7rturr2crqlsuey
+hello from IPFS
 ```
 
-### Explicitly specifying a gateway
+#### Piping and streaming responses
+
+Deserialized response returned by CURL can be piped directly to a video player:
+
+```
+$ curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi | ffplay -
+```
+
+### Verifiable responses
+
+::: callout
+
+By explicitly requesting [application/vnd.ipld.raw](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw) (a block) or [application/vnd.ipld.car](https://www.iana.org/assignments/media-types/application/vnd.ipld.car) (a stream of blocks) responses, by means defined in [Trustless Gateway Specification](https://specs.ipfs.tech/http-gateways/trustless-gateway/), the user is able to fetch raw content-addressed data and [perform hash verification themselves](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval).
+
+:::
+
+#### Fetching and verifying a directory from an untrusted gateway
+
+Requesting [trustless and verifiable](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval) CAR response via `Accept` HTTP header:
+
 ```bash
-IPFS_GATEWAY=http://localhost:8080 curl ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi
+$ export IPFS_GATEWAY="https://ipfs.io" # using untrusted public gateway
+$ curl -H "Accept: application/vnd.ipld.car" "ipfs://bafybeiakou6e7hnx4ms2yangplzl6viapsoyo6phlee6bwrg4j2xt37m3q" > dag.car
 ```
 
-### Handling redirects
-You have to explicitly tell curl to handle redirects for security reasons.
+Then, CAR can be moved around and imported into some other IPFS node:
+
 ```bash
-curl -L ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi
+$ ipfs dag import dag.car
 ```
 
-### Piping data and follow redirect
-In this case the data is piped to the `file` utility in linux. We need to tell curl to be silent `-s` and to follow the redirects `-L`:
-```bash
-IPFS_GATEWAY=https://dweb.link curl -s -L ipfs://bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi | file -
-```
+or verified and unpacked locally, without having to run a full IPFS node, with tools like [go-car](https://github.com/ipld/go-car/tree/master/cmd/car#readme) or [ipfs-car](https://www.npmjs.com/package/ipfs-car):
 
-Which tells us:
 ```
-/dev/stdin: WebM
+$ npm i -g ipfs-car
+$ ipfs-car unpack dag.car --output dag.out
+$ ls dag.out
+1007 - Sustainable - alt.txt
+1007 - Sustainable - transcript.txt
+1007 - Sustainable.png
 ```
 
 ## What's next?
