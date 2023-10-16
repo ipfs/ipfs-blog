@@ -190,5 +190,5 @@ More places supporting IPFS addresses. Everyone can integrate `ipfs://` and `ipn
 * [Matrix](https://matrix.to/#/#ipfs-space:ipfs.io), [Discord](https://discord.com/invite/ipfs) or [Slack](https://filecoin.io/slack)
 * [Discussion Forum](https://discuss.ipfs.tech/)
 
-Or one of the other many places where the [IPFS comunity](https://docs.ipfs.tech/community/) is active.
+Or one of the other many places where the [IPFS community](https://docs.ipfs.tech/community/) is active.
 
