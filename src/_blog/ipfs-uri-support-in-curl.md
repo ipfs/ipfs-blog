@@ -1,5 +1,5 @@
 ---
-title: IPFS URI support in CURL
+title: IPFS URL support in CURL
 description: 'CURL 8.4.0 shipped with built-in support for ipfs:// and ipns:// addresses.'
 author: Mark Gaiser
 date: 2023-10-16
@@ -8,11 +8,12 @@ header_image: '/curl.png'
 tags:
   - 'community'
   - 'URI'
+  - 'URL'
   - 'HTTP'
   - 'curl'
 ---
 
-# `ipfs://` URI support in `curl`
+# `ipfs://` URL support in `curl`
 
 [CURL 8.4.0](https://github.com/curl/curl/releases/tag/curl-8_4_0) shipped with built-in support for `ipfs://` and `ipns://` addresses.
 
@@ -28,7 +29,7 @@ In this blog post, we will:
 - explore the journey of implementing IPFS URI support in CURL,
 - delve into the mechanics of [how CURL locates an IPFS gateway](#how-does-curl-find-an-ipfs-gateway),
 - learn how to be immune to [malicious gateways](#malicious-gateways-and-data-integrity),
-- and finally, provide [practical CURL examples](#curl-examples) for leveraging IPFS URIs for either deserialized or verifiable responses.
+- and finally, provide [practical CURL examples](#curl-examples) for leveraging IPFS URLs for either deserialized or verifiable responses.
 
 ## A brief history
 
@@ -41,7 +42,7 @@ The support of IPFS in CURL is effectively consisting of two implementation deta
 
 If you have IPFS installed locally then running `curl ipfs://` will Just Work™. If not, CURL will return an error with details about how to set up the gateway preference. This ensures the user agency is respected, no third-party gateway is used as implicit default.
 
-## Why `ipfs://` URI support is so important?
+## Why `ipfs://` URL support is so important?
 
 Why isn't `https://ipfs.io/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` equally acceptable?
 Or why isn't a local URL `http://localhost:8080/ipfs/bafybeigagd5nmnn2iys2f3doro7ydrevyr2mzarwidgadawmamiteydbzi` fine?
@@ -131,7 +132,7 @@ hello from IPFS
 
 ::: callout
 
-By default, the URI resolution in `curl` does not follow HTTP redirects and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/), or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
+By default, the URL resolution in `curl` does not follow HTTP redirects and assumes the endpoint implements deserializing [path gateway](https://specs.ipfs.tech/http-gateways/path-gateway/), or at the very least, the [trustless gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/).
 When pointing `curl` at a [subdomain gateway](https://specs.ipfs.tech/http-gateways/subdomain-gateway) (like `https://dweb.link` or the `http://localhost:8080` provided by a [local Kubo node](https://docs.ipfs.tech/how-to/command-line-quick-start/)) one has to pass `-L` in the curl command to follow the redirect.
 
 :::
@@ -185,7 +186,7 @@ $ ls dag.out
 
 ## What's next?
 
-More places supporting IPFS addresses. Everyone can integrate `ipfs://` and `ipns://` URI support into their application. See specifications proposed in [IPIP-280](https://github.com/ipfs/specs/pull/280) for technical details. We are [tracking potential project](https://github.com/ipfs/integrations/issues) where an integration makes sense! If you feel up to the challenge, don't hesitate to drop a comment in one of the [potential projects](https://github.com/ipfs/integrations/issues) for IPFS URI integration or find us on:
+More places supporting IPFS addresses. Everyone can integrate `ipfs://` and `ipns://` URL support into their application. See specifications proposed in [IPIP-280](https://github.com/ipfs/specs/pull/280) for technical details. We are [tracking potential project](https://github.com/ipfs/integrations/issues) where an integration makes sense! If you feel up to the challenge, don't hesitate to drop a comment in one of the [potential projects](https://github.com/ipfs/integrations/issues) for IPFS URL integration or find us on:
 
 * [Matrix](https://matrix.to/#/#ipfs-space:ipfs.io), [Discord](https://discord.com/invite/ipfs) or [Slack](https://filecoin.io/slack)
 * [Discussion Forum](https://discuss.ipfs.tech/)
