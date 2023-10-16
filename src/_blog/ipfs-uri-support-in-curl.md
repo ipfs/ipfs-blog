@@ -52,7 +52,7 @@ IPFS is a modular suite of protocols purpose built for the organization and tran
 
 If we pull the URL apart we see:
 
-![](https://hackmd.io/_uploads/Bk2MV-9ea.png)
+![](../assets/ipfs_uri_where_protocol_what.png)
 
 Users of the IPFS system should not care about the _where_ part, nor be coerced to use a specific, hard-coded entry point into the system.
 
