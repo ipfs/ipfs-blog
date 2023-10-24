@@ -74,7 +74,7 @@ You will receive a new CID every time your site is re-built because the resultin
 
 The most straightforward way to fetch your content would be directly from an [IPFS node](https://docs.ipfs.tech/concepts/nodes/). Since not everyone is running an IPFS node (yet), you can instead use an [IPFS gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/) in which a third party fetches the content from their node and serves it over HTTPS.
 
-Since we store the on our `dappling.eth` ENS name, you can also fetch the content through a service like [eth.limo](https://eth.limo). This service first reads the IPNS key that we set, resolves it to a CID, and then serves the content like a gateway.
+Since we store the auto-updating key on a custom `*.dappling.eth` ENS subname, you can also fetch the content through a service like [eth.limo](https://eth.limo). This service first reads the IPNS key that we set, resolves it to a CID, and then serves the content like a gateway.
 
 Even simpler would be using the existing DNS system either using our custom `*.dappling.network` subdomain that we created for you. We also allow adding your custom domain like `ipfs.crypto-protocol.app`.
 
