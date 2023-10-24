@@ -14,7 +14,7 @@ Welcome! I would love to share what I'm building at dAppling, a platform that ai
 
 ## A Bit about Us
 
-I'm Kyle. My co-founder Russell and I have been professional developers (whatever that means) for the last 7 years. We've worked at startups, big tech, and things in between. The last 2 of those years has been in the web3 space; started with the creation of a DeFi protocol. We're excited to now be building tools for developers working on the next generation of the web.
+I'm Kyle. My co-founder Russell and I have been professional developers (whatever that means) for the last 7 years. We've worked at startups, big tech, and things in between. The last 2 of those years has been in the web3 space where we started with the creation of a DeFi protocol. We're excited to now be building tools for developers working on the next generation of the web.
 
 ## A Bit about dAppling
 
@@ -24,7 +24,7 @@ Basically, we fetch your code, build it into html/css/js files, and host those f
 
 ## A Bit about What You Get
 
-When you add a project dAppling, you will tell us where the code is and what commands to use. After it's built you will get:
+When you add a project to dAppling, you will tell us where the code is and what commands to use. After it's built you will get:
 
 - automatic updates when your code on **GitHub** changes
 - hosting on the **InterPlanetary File System** (IPFS)
@@ -52,7 +52,7 @@ Additionally, we have easy to use dropdowns for what GitHub branch to use as wel
 
 #### Simple Debugging
 
-Try as we might, projects fail to build. Quite a bit! From a linting error to a missing dependency, seeing the error screen seems inevitable. We want to make it as easy as possible to understand what went wrong and how to fix it. We parse the logs and show you the error in, what I think, is a pretty readable format.
+Try as we might, projects fail to build. Quite a bit! From a linting error to a missing dependency, seeing the error screen seems inevitable. We want to make it as easy as possible to understand what went wrong and how to fix it. We parse the logs and show you the error in, what we think, is a pretty readable format.
 
 ![Readable Error Logs](../assets/2023-10-introducing-dappling-error.png)
 
@@ -72,7 +72,7 @@ There are a couple of ways to access your site. When the code is built and uploa
 
 You will receive a new CID every time your site is re-built because the resulting files have changed. Luckily, we use the [InterPlanetary Name System (IPNS)](https://docs.ipfs.tech/concepts/ipns/) to create a key that will always point to the most recent CID.
 
-So the most straightforward way to fetch your content would be directly from an [IPFS node](https://docs.ipfs.tech/concepts/nodes/). Since not everyone is running an IPFS node (yet), you can instead use an [IPFS gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/) in which a third party fetches the content from their node and serves it over HTTPS.
+The most straightforward way to fetch your content would be directly from an [IPFS node](https://docs.ipfs.tech/concepts/nodes/). Since not everyone is running an IPFS node (yet), you can instead use an [IPFS gateway](https://docs.ipfs.tech/concepts/ipfs-gateway/) in which a third party fetches the content from their node and serves it over HTTPS.
 
 Since we store the on our `dappling.eth` ENS name, you can also fetch the content through a service like [eth.limo](https://eth.limo). This service first reads the IPNS key that we set, resolves it to a CID, and then serves the content like a gateway.
 
@@ -80,7 +80,7 @@ Even simpler would be using the existing DNS system either using our custom `*.d
 
 ## Future
 
-We plan to be constantly upgrading the platform as new decentralization techniques appear. As a user, you will notice more points of access, quicker speeds, and features to make usage easier. We hope to increase decentralization
+We plan to be constantly upgrading the platform as new decentralization techniques appear. As a user, you will notice more points of access, quicker speeds, and features to make usage easier. We hope to increase decentralization through...
 
 - SSR: Serverless applications are popular on platforms like Next.js and we will be using decentralized compute to increase the types of applications we support.
 - Collaboration: The more participants in a project the better the decentralizaton becomes. We are working on tools to allow multiple people configure the project.
@@ -89,6 +89,6 @@ We plan to be constantly upgrading the platform as new decentralization techniqu
 
 As we continue to improve, we're always looking for user feedback to guide us. Our focus remains on providing a platform that is not just decentralized but also highly performant and user-friendly.
 
-If you run into **any** problems, want to connect, or just say hi, my DMs are open on [𝕏](https://x.com/0xBookland). I would love to hear your feedback and help you get all of your projects deployed as we transition to the infrastructure of the future.
+If you run into **any** problems, want to connect or just say hi, our DMs are open on [𝕏](https://x.com/0xBookland). We would love to hear your feedback and help you get all of your projects deployed as we transition to the infrastructure of the future.
 
 🙏
