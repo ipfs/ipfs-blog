@@ -105,6 +105,12 @@ To build a local copy, run the following:
    npm start
    ```
 
+1. On the latest version of Node (>=18) you'll encounter `ERR_OSSL_EVP_UNSUPPORTED` errors. To fix this, either use Node 16 or:
+
+   ```bash
+   NODE_OPTIONS=--openssl-legacy-provider npm start
+   ```
+
 1. Open [localhost:8080](http://localhost:8080) in your browser.
 
 You can close the local server with `CTRL` + `c`. To restart the local server, run `npm start` from inside the `ipfs-blog` directory.
