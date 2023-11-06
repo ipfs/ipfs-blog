@@ -26,7 +26,7 @@ We are the PL IPFS implementers and network infrastructure operators, working on
 Your input matters! We would be thrilled to connect with as many of our current and prospective users as possible during these upcoming events. Your thoughts and experiences will help us understand your needs and use cases, ultimately guiding our plans for 2024.
 
 
-👂 We're Eager to Listen
+##👂 We're Eager to Listen
 
 Are you planning to attend any of these events? If so, we would love to connect with you and learn more about your experiences with IPFS. Whether you have feedback, insights, or simply want to share your thoughts, we're all ears. Your feedback will help us figure out how to make the most of our time and resources for the IPFS community.
 
