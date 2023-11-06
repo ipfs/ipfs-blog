@@ -11,10 +11,6 @@ tags:
   - 'bitswap'
 ---
 
-[<center><img src="../assets/nabu/nabu-logo.png" width="200" height="200"/></center>](../assets/nabu/nabu-logo.png)
-
-# Introducing Nabu: Unleashing IPFS on the JVM
-
 Greetings from the [Peergos](https://peergos.org) team! We are thrilled to unveil what we've been working on this year: [Nabu](https://github.com/peergos/nabu) – our sleek and versatile Java implementation of IPFS. Named after the ancient Mesopotamian god of literacy, rational arts, and wisdom, Nabu makes decentralised data storage and retrieval available to the large JVM ecosystem. It's now *production ready*, as we are using it in Peeergos - a decentralised, secure file storage, sharing and social network.
 
 ## Introducing Nabu: Empowering Java with IPFS Magic
