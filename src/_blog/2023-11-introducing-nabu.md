@@ -4,7 +4,7 @@ description: 'Learn about a new fast IPFS implementation in Java'
 author: Ian Preston
 date: 2023-11-06
 permalink: '/2023-11-introducing-nabu/'
-header_image: 'nabu-banner-2023.png'
+header_image: '/nabu-banner-2023.png'
 tags:
   - 'ipfs'
   - 'nabu'
