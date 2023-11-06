@@ -16,7 +16,7 @@ tags:
 Hello, IPFS enthusiasts and users! We want to connect with you and hear your thoughts as we shape the future of IPFS for 2024. Your input is invaluable in guiding our efforts, so we're inviting you to meet with us in Istanbul and Prague at two exciting events: DevConnect / IPFS Connect in Istanbul 🇹🇷 and DCxPrague in Prague 🇨🇿.
 
 
-🌐 Who We Are: The PL IPFS Implementers and Network Infrastructure Operators
+## 🌐 Who We Are: The PL IPFS Implementers and Network Infrastructure Operators
 
 We are the PL IPFS implementers and network infrastructure operators, working on projects like Kubo, Helia, and managing the IPFS.io gateway. Our goal is to create a better IPFS ecosystem, and your insights are a crucial part of this journey.
 
