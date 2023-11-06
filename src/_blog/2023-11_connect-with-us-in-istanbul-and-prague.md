@@ -4,7 +4,7 @@ description: 'Connect with the PL IPFS Implementers in Istanbul and Prague for D
 author: Cameron Wood
 date: 2023-11-06
 permalink:
-header_image: '/release-notes-placeholder.png'
+header_image: ''
 tags:
   - 'ipfs'
   - 'kubo'
