@@ -33,7 +33,11 @@ Are you planning to attend any of these events? If so, we would love to connect 
 
 ##❓ How Can You Get Involved?
 
-If you're interested in sharing your thoughts and connecting with us during these events, please fill out this form, https://forms.gle/CxUQPsEUg2CGkLgh6. We're eager to schedule time to meet with you to discuss your current IPFS challenges, needs, and hopes.
+If you're interested in sharing your thoughts and connecting with us during these events, please fill out [this form](https://forms.gle/CxUQPsEUg2CGkLgh6). We're eager to schedule time to meet with you to discuss your current IPFS challenges, needs, and hopes.
+
+
+<br />
+<a href="https://forms.gle/CxUQPsEUg2CGkLgh6" class="cta-button"> Fill out this form to connect</a>
 
 
 🙏 Thank You!
