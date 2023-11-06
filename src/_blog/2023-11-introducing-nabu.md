@@ -1,5 +1,5 @@
 ---
-title: Introducing Nabu: Unleashing IPFS on the JVM
+title: 'Introducing Nabu: Unleashing IPFS on the JVM'
 description: 'Learn about a new fast IPFS implementation in Java'
 author: Ian Preston
 date: 2023-11-06
