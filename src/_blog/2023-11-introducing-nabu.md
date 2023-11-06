@@ -11,7 +11,7 @@ tags:
   - 'bitswap'
 ---
 
-[<center><img src="nabu-logo.png" width="200" height="200"/></center>](nabu-logo.png)
+[<center><img src="../assets/nabu/nabu-logo.png" width="200" height="200"/></center>](../assets/nabu/nabu-logo.png)
 
 # Introducing Nabu: Unleashing IPFS on the JVM
 
@@ -27,7 +27,7 @@ Our journey in crafting Nabu involved the implementation of additional libp2p pr
 
 We built upon the solid foundation of [jvm-libp2p](https://github.com/libp2p/jvm-libp2p). As we delved deeper, we realized the need to implement several crucial components. These include the [yamux muxer](https://github.com/libp2p/jvm-libp2p/tree/develop/libp2p/src/main/kotlin/io/libp2p/mux/yamux), the [TLS security provider](https://github.com/libp2p/jvm-libp2p/blob/develop/libp2p/src/main/kotlin/io/libp2p/security/tls/TLSSecureChannel.kt) (complete with ALPN early muxer negotiation), and a substantial portion of a quic transport (still a work in progress). While much of this effort started in a fork, we collaborated with [Consensys](https://consensys.io) to upstream our contributions into the main project which has now released [v1.0.0](https://github.com/libp2p/jvm-libp2p/releases/tag/1.0.0) as a result. This is used in [Teku](https://github.com/ConsenSys/teku), a Java Ethereum 2 implementation. 
 
-[<img src="modules.png" width="500" height="300"/>](modules.png)
+[<img src="../assets/nabu/modules.png" width="500" height="300"/>](../assets/nabu/modules.png)
 
 Nabu's API empowers developers with the following methods:
 * [id](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-id)
@@ -58,7 +58,7 @@ Let's shed some light on the first of these gems – the P2P HTTP proxy. A compo
 
 Its function is simple yet transformative: it proxies incoming HTTP requests to the specified $peerid while trimming the preceding "/p2p/$peerid/http" path. On the other end, the setup forwards incoming requests to a designated endpoint. This paradigm grants the convenience of traditional HTTP-based architecture, sans the complexities of DNS and TLS certificate authorities. By addressing the node using its public key, secure connections become effortlessly achievable. The diagram below illustrates how we use this proxy in Peergos.
 
-[<img src="p2p-http-proxy.png" width="640" height="340"/>](p2p-http-proxy.png)
+[<img src="../assets/nabu/p2p-http-proxy.png" width="640" height="340"/>](../assets/nabu/p2p-http-proxy.png)
 
 For a simpler example of using this, see our single file demo [chat app](https://github.com/Peergos/nabu-chat/blob/main/src/main/java/chat/Chat.java).
 
@@ -74,13 +74,13 @@ This leads us to the next optimisation, enabled by only sending block requests t
 ### Benchmark
 We benchmarked Nabu against a real-world dataset – the Peergos PKI – consisting of a [CHAMP](https://blog.acolyer.org/2015/11/27/hamt/) structure with six layers, 6000 blocks, and a total size of ~2 MiB. The results speak volumes: while standard Kubo took 120 seconds to retrieve this dataset using the pin command, Nabu accomplished the task in a mere 5 seconds. And, this was achieved without any significant optimization or parallelisation, leaving much room for further enhancement.
 
-[<img src="nabu-speed.png" width="604" height="340"/>](nabu-speed.png)
+[<img src="../assets/nabu/nabu-speed.png" width="604" height="340"/>](../assets/nabu/nabu-speed.png)
 
 ## Compatibility
 
 Ensuring seamless integration, we subjected Nabu to a suite of interoperability tests against all libp2p implementations, including go-libp2p, rust-libp2p, js-libp2p, and nim-libp2p across historical versions. The results of these tests are documented [here](https://github.com/libp2p/test-plans/actions/runs/5671451848/attempts/1#summary-15368587233). Some of the results are below.
 
-[<img src="nabu-interop.png" width="808" height="340"/>](nabu-interop.png)
+[<img src="../assets/nabu/nabu-interop.png" width="808" height="340"/>](../assets/nabu/nabu-interop.png)
 
 ## Bringing Nabu to Life: Integration and Usage
 Getting started with Nabu is simple. Choose between utilizing it through the HTTP API or embedding it directly into your process. Here's a compilable example of the embedding process in Java:
