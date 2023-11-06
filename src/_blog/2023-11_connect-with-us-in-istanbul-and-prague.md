@@ -1,6 +1,6 @@
 ---
 title: "Connect with us in Istanbul and Prague"
-description: 'We’re excited to share that content blocking can now be enabled in Kubo and other tools in the IPFS stack.'
+description: 'Connect with the PL IPFS Implementers in Istanbul and Prague for DevConnect and DCxPrague! 🇹🇷🇨🇿 We want to hear from IPFS users to shape our 2024 plans.'
 author: Cameron Wood
 date: 2023-11-07
 permalink: '/2023-content-blocking-for-the-ipfs-stack/'
