@@ -127,4 +127,4 @@ None of this would have been possible without the support of the [IPFS Implement
 ## Experience Nabu Today!
 We invite you to embark on an exploration of Nabu's capabilities. Feel free to give it a whirl, and we eagerly await your feedback and suggestions for improving Nabu. The easiest route is to open an issue on the github repo.
 
-[Discover Nabu on GitHub](https://github.com/peergos/nabu) and unlock a world of decentralized possibilities.
+[Discover Nabu on GitHub](https://github.com/peergos/nabu) and unlock a world of decentralized possibilities. 
