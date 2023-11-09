@@ -1,7 +1,7 @@
 ---
 title: Welcome to IPFS News 199!
 description: Featuring CURL supporting IPFS and a new IPFS implementation called Nabu.
-date: 2023-10-03
+date: 2023-11-09
 permalink: "/newsletter-199"
 header_image: "/ipfsnews.png"
 tags:
