@@ -3,7 +3,7 @@ title: 'Connect with us in Istanbul and Prague'
 description: 'Connect with the PL IPFS Implementers in Istanbul and Prague for DevConnect and DCxPrague! We want to hear from IPFS users to shape our 2024 plans.'
 author: Cameron Wood
 date: 2023-11-06
-permalink: ''
+permalink: '/2023-11-connect-in-istanbul-and-prauge'
 header_image: ''
 tags:
   - 'ipfs'
