@@ -15,8 +15,9 @@ This was initially planned as a talk for [IPFS Connect](https://istanbul2023.ipf
 
 - Vendor-agnostic HTTP API for content routing, peer routing, naming
 - HTTP = maximized compatibility with standard tools
-- Enables large routing providers
-- Enables offloading for light IPFS implementations
+- Enables large routing providers to announce more data than DHT can handle
+- Enables offloading for light IPFS implementations, helps with dial limits and throttling present in browsers, and provides redundancy
+- Decouples routing from retrieval services, which enables smarter backend scaling, reducing cost
 
 ## ****Have you got standards?****
 
