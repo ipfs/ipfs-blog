@@ -9,42 +9,27 @@ tags:
   - 'HTTP'
 ---
 
-This was initially planned as a talk for [IPFS Connect](https://istanbul2023.ipfsconnect.org/) in Istanbul. Unfortunately, I did not go for a few reasons, but that’s no reason to let this talk go to waste. In this blog post, we will dive a bit into the `/routing/v1` endpoint, what is, how it can be used, as well as which libraries are available.
+This was initially planned as a talk for [IPFS Connect](https://istanbul2023.ipfsconnect.org/) in Istanbul. Unfortunately, I was not able to go, but that’s no reason to let this talk go to waste. In this blog post, we will dive a bit into the `/routing/v1` endpoint, what is, how it can be used, as well as which libraries are available.
 
-## ****What is the Delegated Routing API?****
+## What is the Delegated Routing API?
 
-- Vendor-agnostic HTTP API for content routing, peer routing, naming
-- HTTP = maximized compatibility with standard tools
-- Enables large routing providers to announce more data than DHT can handle
-- Enables offloading for light IPFS implementations, helps with dial limits and throttling present in browsers, and provides redundancy
-- Decouples routing from retrieval services, which enables smarter backend scaling, reducing cost
+First of all, what is this `/routing/v1` thing? The Delegated Routing API is a vendor-agnostic HTTP API for content and peer routing, as well as IPNS naming resolution. It is an open API and its specifications are [available](https://specs.ipfs.tech/routing/http-routing-v1/). By using HTTP, it maximizes the compatibility with standard tools, such as state of the art caching tools. Additionally, by decoupling routing from retrieval services, we enable smarter backend scaling, reducing costs. It also enables large routing providers to announce more data than the DHT could handle.
 
-## ****Have you got standards?****
+In addition, an HTTP Delegated Routing API is important for light IPFS implementations. These implementations can then offload the routing requirements to an external server that speaks a common language, HTTP. Moreover, it helps with dial limits and throttling present in web browsers, as well as redundancy.
 
-🔥[xkcd.com/927](https://xkcd.com/927/) 🔥
+## Delegated Routing and Kubo
 
-🪩 [specs.ipfs.tech/routing/http-routing-v1](https://specs.ipfs.tech/routing/http-routing-v1/) 🪩
+[Kubo](https://github.com/ipfs/kubo) is the first implementation of IPFS, written in Go. At the moment, it is also the most widely used IPFS implementation. It can currently act both as a Delegated Routing V1 server, or client, taking both advantage of others exposing their APIs, as well as providing its API to others.
 
-## What is Kubo?
+### Kubo as a `/routing/v1` client
 
-- The first and most widely used IPFS implementation, written in Go.
-- Can act both as a Delegated Routing V1 server, or client, taking both advantage of others exposing their APIs, and providing their API to others.
+Kubo can connect to other `/routing/v1` endpoints in order to discover content providers, other peers, as well as resolve IPNS names. It can be configured to use different endpoints for the different needs: content, peer, naming.
 
-🔥[github.com/ipfs/kubo](https://github.com/ipfs/kubo) 🔥
+### Kubo as a `/routing/v1` server
 
-### ****Kubo as a `/routing/v1` client**
+Kubo can expose its own `/routing/v1` endpoint for others to use. For example, light clients can connect to this endpoint for any routing need without having to connect to the Amino DHT themselves. This allows these light clients to offload all this processing to another service. It can be quickly enabled with the following command:
 
-- Connects to other /routing/v1 endpoints to help discover content providers, peers, and resolve IPNS names.
-- Can use different endpoints for different needs (content, peer, naming).
-
-## ****Kubo as a `/routing/v1` server**
-
-- Exposes its own /routing/v1 endpoint for others to use.
-- Light clients can connect to this endpoint for any routing needs without having to connect to the Amino DHT themselves.
-
-**Can be enabled via:**
-
-```
+```console
 $ ipfs config --json Gateway.ExposeRoutingAPI true
 ```
 
@@ -52,19 +37,33 @@ $ ipfs config --json Gateway.ExposeRoutingAPI true
 
 https://github.com/protocol/bifrost-infra/issues/2758#issuecomment-1716761794 - @lidel
 
-## What is Boxo?
+```nginx
+location /routing/v1 {
+  proxy_pass http://your_backend_server;
+  proxy_cache my_cache;
 
-- Set of reference libraries for building IPFS applications and implementations in Go.
-- Includes building blocks for writing your own /routing/v1 endpoint.
-- Includes client to connect to other /routing/v1 endpoints.
+  proxy_cache_valid 404 5s; 
+  proxy_cache_valid 200 1m;
 
-### ****Boxo as a `/routing/v1` client**
+  proxy_connect_timeout 15s;
+  proxy_cache_use_stale updating error timeout http_500 http_502 http_503 http_504;
+  proxy_cache_background_update on;
+  proxy_cache_lock on;
+  ...
+}
+```
+
+## Delegated Routing and Boxo
+
+[Boxo](https://github.com/ipfs/boxo) is a set of reference libraries for building IPFS applications and implementations in Go. Kubo is one of its users. It includes the building blocks for writing your own `/routing/v1` endpoint, as well as a client to conncet to other endpoints.
+
+### Boxo as a `/routing/v1` client
 
 **Documentation:** [pkg.go.dev/github.com/ipfs/boxo/routing/http/client](https://pkg.go.dev/github.com/ipfs/boxo/routing/http/client)
 
 **Example**: [github.com/ipfs/boxo/tree/main/examples/routing/delegated-routing-client](https://github.com/ipfs/boxo/tree/main/examples/routing/delegated-routing-client)
 
-### ****Boxo as a `/routing/v1` server**
+### Boxo as a `/routing/v1` server
 
 **Documentation:** [pkg.go.dev/github.com/ipfs/boxo/routing/http/server](https://pkg.go.dev/github.com/ipfs/boxo/routing/http/server)
 
