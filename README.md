@@ -50,8 +50,8 @@ Now edit the metadata at the top of the file.
 - `description` - used as the meta description tag on the post-page. **required**
 - `date` - the "_published at_" date, shown on the [blog index page](https://blog.ipfs.io), please update at posting time to reflect current date - **required** (posts will not be displayed until this date on the live blog, but you will see them locally when using `make dev`)
 - `author` - used to give you credit for your words - **required**
+- `permalink` - the path to the blog post. Please start and end URLs with a `/` (`/my/url/`). **required**
 - `tags` - used to categorize the blog post
-- `permalink` - can be used to override the post URL if needed. Please start and end URLs with a `/` (`/my/url/`).
 - `header_image` - name of the image displayed on the [blog homepage](https://blog.ipfs.tech/). See [Custom header image](#custom-header-image) for more details.
 
 #### Custom header image
