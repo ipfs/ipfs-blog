@@ -9,6 +9,7 @@ data:
   publish_date: 2023-11-13T12:00:00+00:00
   path: https://www.youtube.com/watch?v=K3U6A4sgKo4
   tags:
+  - Built with IPFS
   - demo
   - interview
   - deep-dive
@@ -17,6 +18,7 @@ data:
   publish_date: 2023-03-23T12:00:00+00:00
   path: https://www.youtube.com/watch?v=_vn52temkDU
   tags:
+  - This Month in IPFS
   - community
   - demo
   - interview
@@ -25,6 +27,7 @@ data:
   publish_date: 2023-02-23T12:00:00+00:00
   path: https://www.youtube.com/watch?v=Cflrlv31oW8
   tags:
+  - This Month in IPFS
   - community
   - demo
   - interview
@@ -33,6 +36,7 @@ data:
   publish_date: 2023-02-06T12:00:00+00:00
   path: https://www.youtube.com/watch?v=kRzNohHeRaM
   tags:
+  - This Month in IPFS
   - community
   - demo
   - interview
