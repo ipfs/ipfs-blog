@@ -5,7 +5,7 @@ sitemap:
   exclude: true
 data:
 - title: Advancing IPFS and libp2p Governance
-  date: 2023-10-14
+  date: 2023-11-14
   publish_date: 
   path: https://protocol.ai/blog/advancing-ipfs-and-libp2p-governance/
   tags:
