@@ -11,7 +11,9 @@ tags:
 
 Nearly two years ago, the IPFS Dev Grants program funded the first grant for Omnilingo to explore how IPFS could meet the needs of their users - groups with limited bandwidth and applications which work offline-first, allowing full user control of data. You can read the [original post from 2021](https://blog.ipfs.tech/2021-12-17-omnilingo/), and several iterations of the grant later (generously provided by the Filecoin Foundation) we're happy to share an update.
 
-The mission of Omnilingo is inspiring, and its authors are an incredible team who are pushing on a lot of hard problems all at once, including new approaches to consent-driven data access and revocation patterns. This is critical work and an extraordinarily important use of IPFS that we are happy to shine a light on. - Dietrich Ayala, technical grant advisor to Omnilingo
+The mission of Omnilingo is inspiring, and its authors are an incredible team who are pushing on a lot of hard problems all at once, including new approaches to consent-driven data access and revocation patterns. This is critical work and an extraordinarily important use of IPFS that we are happy to shine a light on. 
+
+- Dietrich Ayala, technical grant advisor to Omnilingo
 
 ## Project Update: Omnilingo
 
