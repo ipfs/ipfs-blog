@@ -2,6 +2,7 @@
 title: Introducing Major Improvements to Omnilingo
 description: 'We’re happy to introduce some major improvements to Omnilingo, the decentralised language learning platform designed with special attention to small and marginalised language communities.'
 date: 2023-11-20
+permalink: '/major-improvements-to-omnilingo/'
 header_image: "/omnilingo-x-ipfs.jpg"
 tags:
 - omnilingo
