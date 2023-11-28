@@ -14,7 +14,7 @@ Nearly two years ago, the IPFS Dev Grants program funded the first grant for Omn
 
 The mission of Omnilingo is inspiring, and its authors are an incredible team who are pushing on a lot of hard problems all at once, including new approaches to consent-driven data access and revocation patterns. This is critical work and an extraordinarily important use of IPFS that we are happy to shine a light on. 
 
-— Dietrich Ayala, technical grant advisor to Omnilingo
+-- Dietrich Ayala, technical grant advisor to Omnilingo
 
 ## Project Update: Omnilingo
 
