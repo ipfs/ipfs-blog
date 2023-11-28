@@ -11,7 +11,7 @@ tags:
   - 'ipns'
 ---
 
-Welcome! I would love to share what I'm building at dAppling, a platform that aims to simplify the build and deployment process for sites hosted on IPFS. I'll share a bit about us, a bit about the platform, and a bit about what you will get. By the end, it should be clear if dAppling is a tool you'll want to add to your developer toolbox.
+Welcome! I would love to share what I'm building at [dAppling](https://dappling.network), a platform that aims to simplify the build and deployment process for sites hosted on IPFS. I'll share a bit about us, a bit about the platform, and a bit about what you will get. By the end, it should be clear if [dAppling](https://dappling.network) is a tool you'll want to add to your developer toolbox.
 
 ## A Bit about Us
 
@@ -19,13 +19,13 @@ I'm Kyle. My co-founder Russell and I have been professional developers (whateve
 
 ## A Bit about dAppling
 
-The first of those tools is dAppling. The word is a portmanteau of "dApp", a term short for decentralized application, and "sapling," because nature is wonderful 🌱. However, we support all kinds of web projects, not just [dApps](https://app.gogopool.com.dappling.eth.limo/): [landing pages](https://arbor-landing.dappling.eth.limo/), [blogs](https://blog.dappling.network), or even a simple page of content arguing against the [usage of acronyms](https://nomoreacronyms-xczmz4.dappling.org).
+The first of those tools is dAppling. The word is a portmanteau of "dApp", a term short for decentralized application, and "sapling," because nature is wonderful 🌱. However, we support all kinds of web projects, not just [dApps](https://app.gogopool.com.dappling.eth.limo/): [landing pages](https://arbor-landing.dappling.eth.limo/), [blogs](https://blog.dappling.network), or even a simple page of content arguing against the [usage of acronyms](https://nomoreacronyms-0u5spi.dappling.network).
 
-Basically, we fetch your code, build it into html/css/js files, and host those files on IPFS. What makes us special are the features we provide to make your experience easier. Even if you have an existing site, you can use dAppling to create a resilient "alternative frontend" that is hosted on IPFS.
+Basically, we fetch your code, build it into html/css/js files, and host those files on IPFS. What makes us special are the features we provide to make your experience easier. Even if you have an existing site, you can use [dAppling](https://dappling.network) to create a resilient "alternative frontend" that is hosted on IPFS.
 
 ## A Bit about What You Get
 
-When you add a project dAppling, you will tell us where the code is and what commands to use. After it's built you will get:
+When you add a project to [dAppling](https://dappling.network), you will tell us where the code is and what commands to use. After it's built you will get:
 
 - automatic updates when your code on **GitHub** changes
 - hosting on the **InterPlanetary File System** (IPFS)
@@ -35,7 +35,7 @@ When you add a project dAppling, you will tell us where the code is and what com
 
 ## Our Focuses
 
-We have two major focuses at dAppling: **simplicity** and **access**.
+We have two major focuses at [dAppling](https://dappling.network): **simplicity** and **access**.
 
 We want to make it as easy as possible to get your code hosted. After that, we want it to be accessible and fast. What we want to avoid is a first-time experience where you only see an error screen or have your users waiting forever to load your site.
 
@@ -88,8 +88,8 @@ We plan to be constantly upgrading the platform as new decentralization techniqu
 
 ## Get Involved
 
-As we continue to improve, we're always looking for user feedback to guide us. Our focus remains on providing a platform that is not just decentralized but also highly performant and user-friendly.
+As we continue to improve [dAppling](https://dappling.network), we're always looking for user feedback to guide us. Our focus remains on providing a platform that is not just decentralized but also highly performant and user-friendly.
 
-If you run into **any** problems, want to connect, or just say hi, my DMs are open on [𝕏](https://x.com/0xBookland). I would love to hear your feedback and help you get all of your projects deployed as we transition to the infrastructure of the future.
+[Deploy a site](https://dappling.network), and if you run into **any** problems, want to connect, or just say hi, my DMs are open on [𝕏](https://x.com/0xBookland). I would love to hear about what you're building and help you get all of your projects deployed as we transition to the infrastructure of the future.
 
 🙏
