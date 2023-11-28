@@ -3,6 +3,7 @@ title: dAppling - a New Way to Deploy IPFS Sites in Minutes
 description: Introducing a seamless way to launch your code on IPFS, featuring straightforward setup, automatic deployments, and more.
 author: 🙏 namaskar
 date: 2023-11-28
+permalink: '/2023-11-dappling/'
 header_image: '/2023-12-introducing-dappling-header.png'
 tags:
   - 'web3'
