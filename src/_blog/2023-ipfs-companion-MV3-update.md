@@ -60,7 +60,7 @@ The migration was done in multiple steps:
 - This was followed by a series of bug fixes which is a list item in the original [migration plan](https://github.com/ipfs/ipfs-companion/issues/1152).
 - It was also decided that it would be the right time to deprecate `js-ipfs` based embedded node support, as `js-ipfs` had been superseded by [`helia`](https://helia.io) and it will eventually be replaced. This was done in [PR #1225](https://github.com/ipfs/ipfs-companion/pull/1225).
 - Apart from the plethora of UX regression fixes around context menus (because MV3 changed how context menus were handled) and timing issues between observing a request and actually adding a rule to block those. The most important PR was the test migration, which affirmed, the solution handled all the scenarios that were covered in the MV2 world. This was done in [PR #1236](https://github.com/ipfs/ipfs-companion/pull/1236)
-- One of the last fixes was to add an additional permission check for requesting [`host_permissions`](https://github.com/ipfs/ipfs-companion/pull/1250) on firefox which allowed the actual blocking of requests on firefox.
+- One of the last fixes was to add an additional permission check for requesting [`host_permissions`](https://github.com/ipfs/ipfs-companion/pull/1250) on firefox which allowed the actual blocking of requests on Firefox.
 
 ## The learnings
 
