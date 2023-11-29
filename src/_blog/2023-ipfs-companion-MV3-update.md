@@ -40,7 +40,7 @@ This type of additional complexity is necessary in MV3 world if a genuine extens
 
 ## The Plan
 
-The discussions around this topic started soon after MV3 was announced. There is tons of scenarios and information in [Issue #666](https://github.com/ipfs/ipfs-companion/issues/666). The first step was to spike out a rudimentary version of the extension using the MV3 APIs and see if it was possible to achieve comparable functionality. This was done in [PR #1078](https://github.com/ipfs/ipfs-companion/pull/1078) by [@MeAndDaveJustice](https://github.com/meandavejustice) that helped a lot in understanding the challenges.
+The discussions around this topic started soon after the announcement of MV3. There are many scenarios and information in [Issue #666](https://github.com/ipfs/ipfs-companion/issues/666). The first step was to prototype a rudimentary version of the extension using the MV3 APIs and see if the MV3 version could achieve comparable functionality. That work was done in [PR #1078](https://github.com/ipfs/ipfs-companion/pull/1078) by [@MeanDaveJustice](https://github.com/meandavejustice), which helped a lot in understanding the challenges.
 
 Based on both of these a detailed migration plan was laid out in [Issue #1152](https://github.com/ipfs/ipfs-companion/issues/1152), a few important points from the plan were:
 
