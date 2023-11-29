@@ -72,7 +72,7 @@ It took more than 6 months to plan, implement and test the migration, over 40 PR
 
 ## Current status
 
-MV3 changes went live towards the end of September when the collector-branch was merged to main and released on both the [chrome webstore](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) and [firefox add-ons](https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) we've not seen any major issues so far. The extension is working as expected and the user base is consistent. There were some minor regressions and bugs reported, but nothing that's a show-stopper. Those are being fixed as they are reported.
+MV3 changes went live towards the end of September 2023 when the collector-branch was merged to main and released on both the [Chrome Web Store](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) and [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) we've not seen any major issues so far. The extension is working as expected and the user base is consistent. There were some minor regressions and bugs reported, but nothing that's a show-stopper. Those are being fixed as they are reported.
 
 ## What's next?
 
