@@ -24,7 +24,9 @@ MV3, or Manifest V3, is the latest iteration of the manifest file format used by
 
 Both [Chrome](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/) and [Firefox](https://extensionworkshop.com/documentation/develop/manifest-v3-migration-guide/) have published documentation on the changes and how to migrate your extension to MV3, but both of them are pretty recent and are still evolving. They also don't seem to agree on how the background scripts should behave or the `host_permissions` should be handled, which makes it even more challenging to build a cross-browser extension.
 
-Chrome's changes have been much more invasive, as they push for the use of background service workers and the adoption of the `declarativeNetRequest` API. Firefox, on the other hand, has been more conservative and has been trying to keep the extension ecosystem as close to MV2 as possible, with the exception of the `host_permissions` change. However, Chrome and other chromium based browsers make up ~90% of the IPFS-Companion user base, so Chrome's changes are the ones that matter the most, while making sure that the extension continues to work on Firefox without regressions.
+Chrome's changes have been much more invasive, as they remove support for blocking `webRequest` API, push for the use of background service workers and the adoption of the `declarativeNetRequest` API. Firefox, on the other hand, has been more conservative and has been trying to keep the extension ecosystem as close to MV2 as possible, with the exception of the `host_permissions` change. 
+
+While we are making sure that the extension continues to work on Firefox without regressions, Chromium-based browsers make up ~90% of the IPFS-Companion user base, which makes Chrome's implementation of MV3 the lowest common denominator that informs our design decisions and feature set.
 
 ## What's the fuss around `declarativeNetRequest` API?
 
