@@ -42,7 +42,7 @@ The discussions around this topic started soon after MV3 was announced. There is
 
 Based on both of these a detailed migration plan was laid out in [Issue #1152](https://github.com/ipfs/ipfs-companion/issues/1152) a few important points from the plan are:
 
-- Implementing request manipulation logic in the browser to support both chrome and firefox. The extension will need to identify the capabilities of the browser and use the appropriate logic.
+- Implementing request manipulation logic in the browser to support both Chromium and Firefox. The extension will need to identify capabilities of the browser runtime and use the appropriate logic.
 - Patching packages that now need to account to the new `ServiceWorker` scope. Packages like [`debug`](https://www.npmjs.com/package/debug) and [`countly-sdk-web`](https://www.npmjs.com/package/countly-sdk-web) rely on `window`, `localStorage`, `XMLHttpRequest`, etc which are not available in the service worker scope.
 - Implementing a collector branch to collect all changes, because the transition in this case could not be done incrementally and instead had to be done in one go. This meant that the collector branch would have to be maintained for a while until the migration was complete. In the meanwhile the `main` branch was still being used to ship security and bug fixes.
 - Migrating all of the existing battery of tests that used to test various scenarios collected over the years in the MV2 world, over to the MV3 world. This was a huge task and took a lot of time and effort. The tests had to be refactored as such that it would work for browsers that supported request blocking (firefox) and those that didn't (chrome).
