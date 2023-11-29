@@ -40,7 +40,7 @@ This type of additional complexity is necessary in MV3 world if a genuine extens
 
 The discussions around this topic started soon after MV3 was announced. There is tons of scenarios and information in [Issue #666](https://github.com/ipfs/ipfs-companion/issues/666). The first step was to spike out a rudimentary version of the extension using the MV3 APIs and see if it was possible to achieve comparable functionality. This was done in [PR #1078](https://github.com/ipfs/ipfs-companion/pull/1078) by [@MeAndDaveJustice](https://github.com/meandavejustice) that helped a lot in understanding the challenges.
 
-Based on both of these a detailed migration plan was laid out in [Issue #1152](https://github.com/ipfs/ipfs-companion/issues/1152) a few important points from the plan are:
+Based on both of these a detailed migration plan was laid out in [Issue #1152](https://github.com/ipfs/ipfs-companion/issues/1152), a few important points from the plan were:
 
 - Implementing request manipulation logic in the browser to support both Chromium and Firefox. The extension will need to identify capabilities of the browser runtime and use the appropriate logic.
 - Patching packages that now need to account to the new `ServiceWorker` scope. Packages like [`debug`](https://www.npmjs.com/package/debug) and [`countly-sdk-web`](https://www.npmjs.com/package/countly-sdk-web) rely on `window`, `localStorage`, `XMLHttpRequest`, etc which are not available in the service worker scope.
