@@ -14,7 +14,7 @@ tags:
   - 'ipfs-companion'
 ---
 
-[IPFS companion](https://docs.ipfs.tech/install/ipfs-companion/#install) is a browser extension one of the key tools that enhances the IPFS experience in the browser. It is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) and [Chrome/Brave](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) and is used by thousands of people every day.
+[IPFS companion](https://docs.ipfs.tech/install/ipfs-companion/#install) is a browser extension one of the key tools that enhances the IPFS experience in the browser. It is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ipfs-companion/) and [Chrome/Brave/Opera/Edge](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch) (and all other Chromium-based browsers) and is used by thousands of people every day.
 
 In September, IPFS-Companion built on MV3 (Manifest V3) was shipped on the main channel, which brings exciting improvements and changes the way you interact with this powerful tool. This blog post will give you a quick overview of the journey, changes and what to expect.
 
