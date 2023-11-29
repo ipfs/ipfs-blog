@@ -34,7 +34,7 @@ However, it turns out that the `declarativeNetRequest` API is not as secure as i
 
 ![declarativeNetRequest API](../assets/ipfs-companion-mv3-declarativenetrequest.png)
 
-This becomes an issue for genuine extensions like IPFS-Companion, which used the `webRequest` API to intercept requests to a given IPFS resource and redirect those to be loaded via the local gateway. This is a key feature of the extension, as it allows users to access the content via the local gateway instead of the public HTTP gateway, which is a centralized service.
+This type of additional complexity is necessary in MV3 world if a genuine extension like IPFS-Companion wants to intercept requests to a given IPFS resource and redirect those to be loaded via the local gateway. This is a key feature of the extension, as it allows users to access the content via the local gateway instead of delegating trust to the public HTTP gateway, which is a centralized service.
 
 ## The Plan
 
