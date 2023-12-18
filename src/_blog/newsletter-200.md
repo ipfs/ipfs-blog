@@ -14,7 +14,7 @@ We have some exciting news to share! IPFS and libp2p are officially taking big s
 
 <a href="https://protocol.ai/blog/advancing-ipfs-and-libp2p-governance/" class="cta-button">Read the blog post</a>
 
-## **Brand New on IPFS ✨**=
+## **Brand New on IPFS ✨**
 
 [Videos: IPFS Connect Istanbul Talks](https://www.youtube.com/playlist?list=PLfW9my7NCey-y5_j6QGCtGoigQuVlZ3Bj)
 
