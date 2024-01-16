@@ -4,6 +4,14 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Filecoin Foundation Successfully Deploys IPFS in Space
+  date: 2024-01-16
+  publish_date: 
+  path: https://fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/
+  tags:
+  - space
+  - IPFS
+  - satellite
 - title: Advancing IPFS and libp2p Governance
   date: 2023-11-14
   publish_date: 
