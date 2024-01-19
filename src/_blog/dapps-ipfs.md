@@ -7,8 +7,11 @@ author: Daniel Norman
 header_image: /dapps-ipfs/header.png
 tags:
   - ipfs
+  - dapps
   - Helia
   - js-ipfs
+  - ipns
+  - ens
 ---
 
 ## Preface <!-- omit from toc -->
@@ -407,13 +410,13 @@ Check out the [Helia service worker gateway repo](https://github.com/ipfs-shipya
 
 The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser.The local app installer consists of PWA and utilises a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1884aa35-38d5-4c13-8628-c63c82cbfb68/c998b7cb-dc45-42a8-945d-61df4d40c54c/Untitled.png)
+![Local-app-installer](../assets/dapps-ipfs/local-installer.png)
 
 Top level integrity remains a challenge for verifying the initial installer PWA code. To address this, the Liquity team is exploring packaging the installer as part of a browser extension.
 
 It’s worth pointing out that in this approach, each locally installed dapp must still be isolated into its own origin. The challenge here is that the initial payload (for the first load) for each origin, must still come from somewhere, i.e. a trusted server. Following initial payload, the frontend must only be fetched and verified once because it’s locally cached by the service worker.
 
-For this reason, along with the inherent challenges of the web security model laid out earlier in this post, it’s useful to think about trust as a spectrum. In this approach trust is minimised to the initial interaction. To delve deeper into this approach, check out the Liquity’s blog [post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors).
+For this reason, along with the inherent challenges of the web security model laid out earlier in this post, it’s useful to think about trust as a spectrum. In this approach trust is minimised to the initial interaction. To delve deeper into this approach, check out the Liquity’s blog [post](https://www.liquity.org/blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors).
 
 ## Most users don’t use CIDs directly
 
