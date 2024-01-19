@@ -1,8 +1,8 @@
 ---
 date: 2024-01-01
 permalink: /dapps-ipfs/
-title: 'The State of Dapps on IPFS'
-description: 'TODO'
+title: 'The State of Dapps on IPFS - Trust vs. Verification'
+description: 'Overview of the current landscape of dapps on IPFS through the lens of trust and verifiability'
 author: Daniel Norman
 header_image: /dapps-ipfs/header.png
 tags:
@@ -304,12 +304,11 @@ An important distinction to make in web applications is between top-level pages,
 
 Let’s look at a real-world example, and how you could add Helia (or another library) to add verification. The Uniswap frontend makes a bunch of trusted async fetch requests Cloudflare IPFS gateway without verifying the response.
 
-One of them is to the following URL: `https://cloudflare-ipfs.com/ipns/tokens.uniswap.org` whose response is a JSON object of the tokens supported by Uniswap. This URL contains a [DNSlink](#dnslink) (which is covered in more detail below) to resolve to a CID. For the sake of simplicity, let's assume that we already have the resolved CID: `bafybeia5ci747h54m2ybc4rf6yqdtm6nzdisxv57pk66fgubjsnnja6wq4`. 
+One of them is to the following URL: `https://cloudflare-ipfs.com/ipns/tokens.uniswap.org` whose response is a JSON object of the tokens supported by Uniswap. This URL contains a [DNSlink](#dnslink) (which is covered in more detail below) to resolve to a CID. For the sake of simplicity, let's assume that we already have the resolved CID: `bafybeia5ci747h54m2ybc4rf6yqdtm6nzdisxv57pk66fgubjsnnja6wq4`.
 
 The code for for fetching this token list JSON from a trusted gateway looks along the lines of :
 
 ```jsx
-
 const fetchJsonFromGateway = async (url) => {
   const response = await fetch(url)
 
@@ -329,7 +328,7 @@ const tokenList = await fetchJsonFromGateway(tokenListUrl)
 With Helia, fetching and verifying the CID could look as follows:
 
 ```ts
-import { createHeliaHTTP } from "@helia/http";
+import { createHeliaHTTP } from '@helia/http'
 import { CID } from 'multiformats'
 import { unixfs } from '@helia/unixfs'
 
@@ -353,28 +352,28 @@ const tokenListCid = `bafybeia5ci747h54m2ybc4rf6yqdtm6nzdisxv57pk66fgubjsnnja6wq
 const tokenList = await verifiedFetch()
 ```
 
-The example above more convoluted than necessary because the JSON is encoded as UnixFS, which is the default encoding for files and directories in IPFS. When working with JSON, it's better to to encode the data with one of `json`, `dag-json`, or `dag-cbor` codecs which are more suitable and provide better ergonomics for working with JSON data. 
+The example above more convoluted than necessary because the JSON is encoded as UnixFS, which is the default encoding for files and directories in IPFS. When working with JSON, it's better to to encode the data with one of `json`, `dag-json`, or `dag-cbor` codecs which are more suitable and provide better ergonomics for working with JSON data.
 
 To demonstrate, here's an example with the same token list JSON encoded as `json` which has the CID `bagaaieracglt4ey6qsxtvzqsgwnsw3b6p2tb7nmx5wdgxur2zia7q6nnzh7q`
 
 ```ts
-
-import { CID } from "multiformats";
-import { createHeliaHTTP } from "@helia/http";
-import { json } from "@helia/json";
+import { CID } from 'multiformats'
+import { createHeliaHTTP } from '@helia/http'
+import { json } from '@helia/json'
 
 const fetchJsonCid = async (cid: string) => {
-  const helia = await createHeliaHTTP();
-  const j = json(helia);
+  const helia = await createHeliaHTTP()
+  const j = json(helia)
 
-  return await j.get(CID.parse(cid));
-};
+  return await j.get(CID.parse(cid))
+}
 
 const tokenListCid = `bagaaieracglt4ey6qsxtvzqsgwnsw3b6p2tb7nmx5wdgxur2zia7q6nnzh7q`
 const tokenList = await fetchJsonCid(tokenListCid)
 ```
 
-See how these two compare below: 
+See how these two compare below:
+
 <iframe src="https://codesandbox.io/embed/cstphn?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.ts"
      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
      title="helia-json-vs-unixfs-fetch"
@@ -390,12 +389,11 @@ To make it easier for developers to adopt Helia in dapps that lean heavily on ga
 
 - [Configurable block brokers](https://github.com/ipfs/helia/pull/280): a generic interface for resolving CIDs to blocks. Allows developers to choose (and even implement their own) block fetching approach for their app, e.g. Trustless Gateways, Bitswap, or a combination of the two. [Released in Helia v2.1.0](https://github.com/ipfs/helia/releases/tag/helia-v2.1.0)
 - [@helia/http](https://github.com/ipfs/helia/issues/289): A browser optimised version of Helia that leans on trustless gateways to enable verified retrieval. This was the package that was used in the examples above.
-- [@helia/verified-fetch](https://github.com/ipfs/helia/issues/348): A library that would provide a similar interface to the Fetch Web API 
-
+- [@helia/verified-fetch](https://github.com/ipfs/helia/issues/348): A library that would provide a similar interface to the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and accept native `ipfs://` and `ipns://` URIs and function like an IPFS gateway. We intend for it to serve as a drop-in replacement for `fetch` requests to trusted gateways.
 
 ### Helia in a Service Worker
 
-Another approach involves a [Service Worker](https://github.com/w3c/ServiceWorker/blob/main/explainer.md) registered by the app that intercepts CID requests to gateways (that are unverified) and uses Helia to fetch and verify. This works for sub-resources and async data and assumes that the app already fetches CIDs from a trusted IPFS gateway, e.g. `fetch('/ipfs/[CID]')...` , because they can be detected and handled by the service worker.
+Another thread of work involves a [Service Worker](https://github.com/w3c/ServiceWorker/blob/main/explainer.md) registered by the app that intercepts CID requests to gateways (that are unverified) and uses Helia to fetch and verify. This works for sub-resources and async data and assumes that the app already fetches CIDs from a trusted IPFS gateway, e.g. `fetch('/ipfs/[CID]')...` , because they can be detected and handled by the service worker.
 
 From a technical perspective, the service worker is tied to the app’s origin and registered by the app’s code. Helia is imported and handles CID requests by fetching the raw blocks of the requested CID from trustless gateways (or directly from peers with supported transports), verifying, and caching.
 
@@ -403,13 +401,11 @@ It’s worth noting that caching is one of the primary reasons that service work
 
 The benefit of this approach is that it can be adopted by apps that already rely on trusted gateways without significant architectural changes.
 
-However, while this approach is technically feasible with Helia today, it hasn’t been tried out enough to be considered production-ready.
-
 Check out the [Helia service worker gateway repo](https://github.com/ipfs-shipyard/helia-service-worker-gateway) to learn more about this approach or try it out on https://helia-service-worker-gateway.on.fleek.co/.
 
 ### Local app installer
 
-The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser. The local app installer consists of static PWA and utilises a service worker to perform integrity checks on installed frontends, ensuring they haven’t been tampered with.
+The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser.The local app installer consists of PWA and utilises a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1884aa35-38d5-4c13-8628-c63c82cbfb68/c998b7cb-dc45-42a8-945d-61df4d40c54c/Untitled.png)
 
@@ -448,10 +444,10 @@ There are three common approaches to this problem that provide a **stable identi
   - **What are they:** mutable pointers based on public keys and signed IPNS records pointing to a CID. Typically published to the DHT, though IPNS is transport agnostic and can be resolved and advertised using the delegated routing HTTP API.
   - **Human friendly:** 👎
   - **Verifiable:** 👍
-  - **Example name:** `k51qzi5uqu5dlvj2baxnqndepeb86cbk3ng7n3i46uzyxzyqj2xjonzllnv0v8`
+  - **Example name:** `k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s`
   - **Integration with the IPFS:** through IPFS gateways
-    - Path resolution: `https://cloudflare-ipfs.com/ipns/51qzi5uqu5dlvj2baxnqndepeb86cbk3ng7n3i46uzyxzyqj2xjonzllnv0v8`
-    - Subdomain resolution : `https://k51qzi5uqu5dlvj2baxnqndepeb86cbk3ng7n3i46uzyxzyqj2xjonzllnv0v8.ipns.dweb.link/`
+    - Path resolution: `https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s`
+    - Subdomain resolution : `https://k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s.ipns.dweb.link/`
 
 Some of these approaches can be combined, and there are some crucial security implications to each of the approaches and the way they are implemented.
 
@@ -494,22 +490,24 @@ To address this challenge, several solutions have emerged to allow easily resolv
 
 The fact that ENS domains are registered is on-chain makes them verifiable in principle. However, in the solutions laid out above, trust is delegated to the a trusted server which handles the resolution of the ENS name to the CID, e.g. [eth.limo](http://eth.limo).
 
-ENS name can be resolved in the browser using the Ethereum RPC API by retrieving the state from the chain, howerver, trust is just shifted to the Ethereum RPC API endpoint. 
+ENS name can be resolved in the browser using the Ethereum RPC API by retrieving the state from the chain, howerver, trust is just shifted to the Ethereum RPC API endpoint.
 
 A more verifiable approach would be to use an Ethereum light client, like [Helios](https://github.com/a16z/helios) or [eth-verifiable-rpc](https://github.com/dappnetbby/eth-verifiable-rpc), to verify ENS state using merkle proofs and the Ethereum state root hash, though this is still experimental and far from a common pattern in dapps.
 
 ### IPNS
 
-The InterPlanetary Name System (IPNS) is a system for creating cryptographically verifiable mutable pointers to CIDs known as **IPNS names**. IPNS names can be thought of as links that can be updated over time.
+IPNS is a system for creating cryptographically verifiable mutable pointers to CIDs known as **IPNS names**. IPNS names can be thought of as links that can be updated over time.
 
-IPNS names are in essence public keys and are not human-friendly (like DNS and ENS), so while they offer a stable pointer that can change over time, you still need to get the IPNS name from *somewhere*.
+IPNS names are key pairs which are not human-friendly (like DNS and ENS), so while they offer a stable pointer that can change over time, you still need to get the IPNS name from _somewhere_.
 
+A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by putting pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
 
+Like CIDs, IPNS names can be resolved using IPFS gateways, either in a verifiable or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.cm/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit more involved, but can be done with [Helia in the browser](https://codesandbox.io/p/sandbox/helia-ipns-f59ttx?file=%2Fsrc%2Findex.ts).
 
 ## Conclusion
 
-If you’re a dapp developer or user using IPFS, your input is valuable. We invite you to get involved and help us shape the future of Dapps on IPFS.
+If you reached this far, congratulations. Hopefully this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to improve the status quo.
 
-- Get involved
-- Join the working group
--
+As we make more progress on the `@helia/verified-fetch` library, we will publish more guides and examples demonstrating its broad applicability in dapps.
+
+If you’re a dapp developer or user using IPFS, your input is valuable. We invite you to join the [IPFS Dapps Working Group](https://ipfs.fyi/dapps-wg) and help us shape the future of dapps on IPFS.
