@@ -17,7 +17,8 @@ tags:
 ## Preface <!-- omit from toc -->
 
 This blog post provides a comprehensive overview of the current landscape of dapps on IPFS through the lens of trust and verifiability. Given the nuance and breadth of this topic, this blog post is rather long.
-For easier navigation, use the [table of contents](#contents)
+
+For easier navigation, use the [table of contents](#contents).
 
 ## Contents <!-- omit from toc -->
 
@@ -88,7 +89,7 @@ The rapidly evolving nature of web application architectures has given birth to 
 
 ### The client-server spectrum
 
-Today’s web applications can be seen as being positioned somewhere on a **server-client spectrum** regarding where the logic (rendering, authorization, processing user input) lives. On the server end of the spectrum, you have server-rendered apps where most logic is encapsulated in the server, e.g. WordPress, Laravel, and Ruby on Rail apps. On the client end, you have Single Page Applications (SPA), where all routing and rendering logic is client side. SPAs typically have a single entry index.html with a JavaScript bundle that all routes use, and once the JS is loaded, it takes over rendering, navigation, and network (asynchronously submitting user input) responsibilities. Another approach that sits somewhere in the middle is the multi-page application (MPA) with a pre-rendered HTML file per route that typically contains only the necessary JS for the given route.
+Today’s web applications can be seen as being positioned somewhere on a **server-client spectrum** regarding where the logic (rendering, authorization, processing user input) lives. On the server end of the spectrum, you have server-rendered apps where most logic is encapsulated in the server, e.g. WordPress, Laravel, and Ruby on Rail apps. On the client end, you have Single Page Applications (SPA), where all routing and rendering logic is client side. SPAs typically have a single entry index.html with a JavaScript bundle that routes all use. Once the JS is loaded, it takes over rendering, navigation, and network (asynchronously submitting user input) responsibilities. Another approach that sits somewhere in the middle is the multi-page application (MPA) with a pre-rendered HTML file per route that typically contains only the necessary JS for the given route.
 
 It’s worth noting that many modern web development frameworks support more than one architecture and even the blending of different approaches on a per-route basis. For example, a [Next.js supports both MPAs with Static Exports](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) and server-side rendering.
 
@@ -106,7 +107,7 @@ The key thing to understand is that what makes an app a PWA (web app manifest an
 
 ### Dapps
 
-Dapps, short for Decentralised Apps is an umbrella term for applications deployed as a smart contract to a blockchain. Since interacting with smart contracts directly can be a clunky experience, dapps are typically comprised of two components:
+Dapps, short for Decentralised Apps, is an umbrella term for applications deployed as a smart contract to a blockchain. Since interacting with smart contracts directly can be a clunky experience, dapps are typically comprised of two components:
 
 - Smart contracts deployed to a smart contract blockchain like Ethereum (and other EVM chains, e.g. Filecoin).
 - A frontend to interact with those contracts from the web browser. Typically the frontend will be a static app (SPA/MPA) that is deployed to a CDN and/or published to IPFS.
@@ -126,7 +127,7 @@ One thing to note is that the degree of decentralization of a Dapp can vary base
 
 **As a general rule of thumb, it’s only as decentralized as the least decentralized component.**
 
-This blog post is mostly concerned with the frontend component and the different ways that IPFS enables maximizing decentralization of its distribution and trustlessness. Throughout the post, we’ll be looking at Uniswap as an example, given its importance and the amount of money it secures, however, the insights apply to any DApp of this structure.
+This blog post is mostly concerned with the frontend component and the different ways that IPFS enables maximizing decentralization of its distribution and trustlessness. Throughout the post, we’ll be looking at Uniswap as an example, given its importance and the amount of money it secures. That being said, the insights apply to any DApp of this structure.
 
 ## Publishing dapps: approaches and trade-offs
 
@@ -146,7 +147,7 @@ You have no way to verify the source of the frontend. Moreover, the reliance on 
 
 #### At the mercy of multiple authorities
 
-Another thing to consider about the deploying without IPFS is that the app must comply with the terms of service of multiple authorities:
+Another thing to consider about deploying without IPFS is that the app must comply with the terms of service of multiple authorities:
 
 1. “.org” TLD owner
 2. “uniswap.org” DNS Registrar
@@ -157,9 +158,9 @@ Another thing to consider about the deploying without IPFS is that the app must 
 
 ### Publishing to IPFS
 
-From the perspective of a DApp developer, publishing to IPFS is pretty straightforward. You take your frontend build and add it to your IPFS node or to a pinning service. Publishing to IPFS results in a CID which represents that version the frontend.
+From the perspective of a DApp developer, publishing to IPFS is pretty straightforward. You take your frontend build and add it to your IPFS node or to a pinning service. Publishing to IPFS results in a CID which represents that version of the frontend.
 
-Uniswap, for example, has automated publishing to Pinata as part of their build process and publish the CID for each version in the release:
+Uniswap, for example, has automated publishing to Pinata as part of their build process, and they publish the CID for each version in the release:
 
 ![Uniswap release on GitHub](../assets/dapps-ipfs/uniswap-release.png)
 
@@ -179,7 +180,7 @@ https://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.cf-ipfs
 
 The problem with this approach is that you haven’t verified the response, so you don’t know if you the response **matches the cid.** In effect, you are **trusting the gateway** to return the correct response.
 
-Another minor challenge that arises is that each version you load and each gateway you load it from will have a different origin, so any local state the dapp relies on in localStorage or IndexedDB will be tied to that specific version of the dapp (CID) at that specific gateway, i.e., `bafy1.ipfs.cf-ipfs.io` is a different origin to `bafy1.ipfs.dweb.link` even though are the same CID.
+Another minor challenge that arises is that each version you load and each gateway you load it from will have a different origin, so any local state the dapp relies on in localStorage or IndexedDB will be tied to that specific version of the dapp (CID) at that specific gateway, i.e., `bafy1.ipfs.cf-ipfs.io` is a different origin to `bafy1.ipfs.dweb.link` even though they are the same CID.
 
 - **Verifiable:** ❌
 - **UX:** ⭐️⭐️
@@ -191,7 +192,9 @@ Note that some Dapp developers will run their own dedicated gateways either on t
 
 ### With a local IPFS node
 
-If you have a local IPFS node, e.g. [Kubo](https://docs.ipfs.tech/install/command-line/) or [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/), installed you can use the IPFS gateway exposed by your local node and looks as follows: http://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.localhost:8080/ Note that it will only work if you are running an IPFS node with the gateway listening on port 8080)
+If you have a local IPFS node installed, e.g. [Kubo](https://docs.ipfs.tech/install/command-line/) or [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/), then you can use the IPFS gateway exposed by your local node. It looks as follows: http://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.localhost:8080/ 
+
+Note that it will only work if you are running an IPFS node with the gateway listening on port 8080)
 
 When you open this URL, the local IPFS node will handle content routing (finding providers for the CID), fetching the content, and verification.
 
@@ -219,7 +222,7 @@ Under the hood, IPFS companion handles IPFS URLs and redirects them to the gatew
 | UX          | ⭐️⭐️ |
 | Performance | ⭐️    |
 
-IPFS Companion also supports [DNSLink](https://dnslink.dev/) resolution (DNSLink is covered in more detail at the bottom of the aritlce). When a user visits a URL, Companion will check for a [DNSLink](https://dnslink.dev/) DNS record for the hostname and if found, will load the dapp from the local gateway instead of the remote origin. In this instance, trust is only delegated for the DNS resolution (hostname → CID).
+IPFS Companion also supports [DNSLink](https://dnslink.dev/) resolution (DNSLink is covered in more detail at the bottom of the article). When a user visits a URL, Companion will check for a [DNSLink](https://dnslink.dev/) DNS record for the hostname and, if found, will load the dapp from the local gateway instead of the remote origin. In this instance, trust is only delegated for the DNS resolution (hostname → CID).
 
 ### With the Brave browser
 
@@ -233,7 +236,7 @@ IPFS Companion also supports [DNSLink](https://dnslink.dev/) resolution (DNSLink
 
 ## When running a Kubo node is not an option
 
-All the previous examples that are verifiable depend on the user running IPFS node, typically Kubo, a Go-based implementation of IPFS that runs as a separate process to the browser. Having a separate process frees you from the constraints imposed by browsers and affords more resources for the node to establish more connectivity to other IPFS nodes.
+All the previous examples that are verifiable depend on the user running an IPFS node, typically Kubo, a Go-based implementation of IPFS that runs as a separate process to the browser. Having a separate process frees you from the constraints imposed by browsers and affords more resources for the node to establish more connectivity to other IPFS nodes.
 
 ![Local kubo gateway](../assets/dapps-ipfs/local-kubo-node.png)
 
@@ -247,7 +250,7 @@ Content addressing is a paradigm shift to security on the web that is rooted in 
 
 Browser vendors tend to be defensive about adding new browser APIs and implementing specs for a myriad of reasons: maintenance burden, security risks, and lack of financial incentive.
 
-At a minimum, native IPFS support would involve the ability for the web browser itself to verify the integrity of content-addressed sites. A glimpse at that future is presented by `ipfs://` and `ipns://` in [Brave](https://brave.com/ipfs-support/) and [ipfs-chromium](https://github.com/little-bear-labs/ipfs-chromium/). It may arrive sooner in mainstream browsers if WebExtensions like IPFS Companion can [register a protocol handler that is backed by a Service Worker](https://github.com/ipfs/in-web-browsers/issues/212).
+At a minimum, native IPFS support would involve the ability for the web browser itself to verify the integrity of content-addressed sites. A glimpse into that future is presented by `ipfs://` and `ipns://` in [Brave](https://brave.com/ipfs-support/) and [ipfs-chromium](https://github.com/little-bear-labs/ipfs-chromium/). It may arrive sooner in mainstream browsers if WebExtensions like [IPFS Companion](https://github.com/ipfs/ipfs-companion) can [register a protocol handler that is backed by a Service Worker](https://github.com/ipfs/in-web-browsers/issues/212).
 
 ![ipfs protocol handler backed by a service worker](../assets/dapps-ipfs/service-worker-gateway.png)
 
@@ -262,8 +265,8 @@ To understand the emerging landscape of approaches to IPFS in the browser, it’
 Browsers are sandboxed runtime environments that place critical constraints for using IPFS:
 
 - Limits on the type (WebSockets, WebRTC, WebTransport) and number of connections a browser tab can open. This can hinder content routing DHT traversals and content retrieval connections.
-- If a website is in a secure context when served over HTTPS, like most websites today, you are constrained to only opening connections to origins with a CA-signed TLS certificate, something that peers in the IPFS network rarely have. As you’ll see, there are two exceptions to this, that we’ll look into in the section.
-- Limits on the resources an inactive browser tab consumes, i.e., when you keep a tab open but inactive by moving to a different tab.
+- If a website is in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) when served over HTTPS, like most websites today, you are constrained to only opening connections to origins with a CA-signed TLS certificate, something that peers in the IPFS network rarely have. As you’ll see, there are two exceptions to this, namely WebTransport and WebRTC, that we’ll look into in the next section.
+- Limits on the resources an inactive browser tab consumes, i.e., when you keep a tab open but it becomes inactive by moving to a different tab.
 
 ### Approaches to IPFS in the browser
 
@@ -271,8 +274,8 @@ From a high level, several threads of work remove the need to run a Kubo node:
 
 - **Trustless Gateway**: a *subset* of [path-gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ref-path-gateway) that allows for light IPFS clients to retrieve both the CIDs bytes and verification metadata (the Merkle DAG), thereby allowing you to [verify its integrity without trusting the gateway](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval).
 - [Delegated routing](https://docs.ipfs.tech/concepts/how-ipfs-works/#how-content-routing-works-in-ipfs): a mechanism for IPFS implementations to use for offloading content routing, peer routing, and naming to another server over HTTP. This allows browsers to skip traversing the DHT and opening many connections in the process.
-- [WebTransport](https://connectivity.libp2p.io/#webtransport): a new browser API to open persistent duplex connections from the browser in a similar fashion to WebSockets. But in contrast with WebSocket, [WebTransport supports self-signed certificates](https://connectivity.libp2p.io/#webtransport?tab=certificate-hashes), allowing its use in a p2p setting without reliance on certificate authorities. WebTransport support was also added to Kubo over a year ago, which in theory means that browsers should be able to connect to any arbitrary Kubo node even in secure context.
-- WebRTC Direct: though WebRTC was designed for browser-to-browser, it can also be used for [browser-to-server connectivity](https://connectivity.libp2p.io/#webrtc?tab=browser-to-standalone-node) without trusted TLS certificates (see [spec](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md)). Useful in browsers like Safari and Firefox where WebTransport might not be available (as of Q1 2024).
+- [WebTransport](https://connectivity.libp2p.io/#webtransport): a new browser API to open persistent duplex connections from the browser in a similar fashion to WebSockets. But in contrast with WebSocket, [WebTransport supports self-signed certificates](https://connectivity.libp2p.io/#webtransport?tab=certificate-hashes), allowing its use in a p2p setting without reliance on certificate authorities. WebTransport support was also added to Kubo over a year ago, which in theory means that browsers should be able to connect to any arbitrary Kubo node even in a [Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
+- WebRTC Direct: though WebRTC was designed for browser-to-browser, it can also be used for [browser-to-server connectivity](https://connectivity.libp2p.io/#webrtc?tab=browser-to-standalone-node) without trusted TLS certificates (see [spec](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md)). This is useful in browsers like Safari and Firefox where WebTransport might not be available (as of Q1 2024).
 - [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): a browser API that allows, among other things, intercepting network requests in web applications for either caching or providing offline functionality. Service workers can be used to implement a caching and verification layer by intercepting HTTP requests to IPFS gateways in existing apps that already use IPFS gateways without verifying.
 
 [**Helia**](https://helia.io/) is where most of the active work is happening and implements many of these approaches for better IPFS support in the browser.
@@ -297,19 +300,19 @@ An important distinction to make in web applications is between top-level pages,
 - **Sub-resources** refer to resources loaded after the initial HTML of the page was loaded, like a JS, CSS, and image files files that are included in script tags of the initial HTML. These resources may be from the same or other origins (unless explicitly prohibited by the [Content security policy](https://web.dev/articles/csp) set by the server).
   **Verification:** Either by loading the top level CID from a local gateway and ensuring that sub-resources are also loaded from the local node by using relative path.
   Another way relies on a feature called [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) that ensures the browser verifies the hash of `<script>` and `<link>` elements with the integrity attribute, however, this has limited utility for CIDs since the SHA256 hash matches the hash in the CID only if the resources were encoded with raw leaves and fit into a single IPFS Block; because [IPFS chunks files before hashing and may result in different hashes](https://docs.ipfs.tech/concepts/faq/#why-doesn-t-my-sha-hash-match-my-cid).
-  Another way, which is explored in more detail below is by abstracting much of the verification and fetching of CIDs into service workers, which allows you to intercept network requests and verify resources.
-- **Async data** refers to data that is fetched during asynchronously during the runtime of the app with the `fetch` API, e.g. JSON returned from an API.
-  **Verification:** possible by using Helia or one of the abstractions on top of Helia to fetch CIDs**.** Like sub-resources, this can be abstracted into in a service worker, so that the application code is just making fetch requests to relative path style gateways, e.g. `/ipfs/[CID]` in the app.
+  Another way, which is explored in more detail below, is to abstract much of the verification and fetching of CIDs into service workers, which allows you to intercept network requests and verify resources.
+- **Async data** refers to data that is fetched asynchronously during the runtime of the app with the `fetch` API, e.g. JSON returned from an API.
+  **Verification:** possible by using Helia or one of the abstractions on top of Helia to fetch CIDs. Like sub-resources, this can be abstracted into a service worker, so that the application code is just making fetch requests to relative path style gateways, e.g. `/ipfs/[CID]` in the app.
 
 ℹ️ **Today, Helia can fetch and verify async data and sub-resources. However, top-level verification without deeper browser integration remains an open engineering problem that the [IPFS Dapps working group](https://ipfs.fyi/dapps-wg) is working on.**
 
 ### Verified retrieval data with Helia
 
-Let’s look at a real-world example, and how you could add Helia (or another library) to add verification. The Uniswap frontend makes a bunch of trusted async fetch requests Cloudflare IPFS gateway without verifying the response.
+Let’s look at a real-world example, and how you could add Helia (or another library) to add verification. The Uniswap frontend makes a bunch of trusted async fetch requests to the Cloudflare IPFS gateway without verifying the response.
 
 One of them is to the following URL: `https://cloudflare-ipfs.com/ipns/tokens.uniswap.org` whose response is a JSON object of the tokens supported by Uniswap. This URL contains a [DNSlink](#dnslink) (which is covered in more detail below) to resolve to a CID. For the sake of simplicity, let's assume that we already have the resolved CID: `bafybeia5ci747h54m2ybc4rf6yqdtm6nzdisxv57pk66fgubjsnnja6wq4`.
 
-The code for for fetching this token list JSON from a trusted gateway looks along the lines of :
+The code for fetching this token list JSON from a trusted gateway looks along the lines of :
 
 ```jsx
 const fetchJsonFromGateway = async (url) => {
@@ -355,7 +358,7 @@ const tokenListCid = `bafybeia5ci747h54m2ybc4rf6yqdtm6nzdisxv57pk66fgubjsnnja6wq
 const tokenList = await verifiedFetch()
 ```
 
-The example above more convoluted than necessary because the JSON is encoded as UnixFS, which is the default encoding for files and directories in IPFS. When working with JSON, it's better to to encode the data with one of `json`, `dag-json`, or `dag-cbor` codecs which are more suitable and provide better ergonomics for working with JSON data.
+The example above is more convoluted than necessary because the JSON is encoded as UnixFS, which is the default encoding for files and directories in IPFS. When working with JSON, it's better to to encode the data with one of `json`, `dag-json`, or `dag-cbor` codecs which are more suitable and provide better ergonomics for working with JSON data.
 
 To demonstrate, here's an example with the same token list JSON encoded as `json` which has the CID `bagaaieracglt4ey6qsxtvzqsgwnsw3b6p2tb7nmx5wdgxur2zia7q6nnzh7q`
 
@@ -408,7 +411,7 @@ Check out the [Helia service worker gateway repo](https://github.com/ipfs-shipya
 
 ### Local app installer
 
-The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser.The local app installer consists of PWA and utilises a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally.
+The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser. The local app installer consists of PWA and utilizes a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally.
 
 ![Local-app-installer](../assets/dapps-ipfs/local-installer.png)
 
@@ -416,7 +419,7 @@ Top level integrity remains a challenge for verifying the initial installer PWA 
 
 It’s worth pointing out that in this approach, each locally installed dapp must still be isolated into its own origin. The challenge here is that the initial payload (for the first load) for each origin, must still come from somewhere, i.e. a trusted server. Following initial payload, the frontend must only be fetched and verified once because it’s locally cached by the service worker.
 
-For this reason, along with the inherent challenges of the web security model laid out earlier in this post, it’s useful to think about trust as a spectrum. In this approach trust is minimised to the initial interaction. To delve deeper into this approach, check out the Liquity’s blog [post](https://www.liquity.org/blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors).
+For this reason, along with the inherent challenges of the web security model laid out earlier in this post, it’s useful to think about trust as a spectrum. In this approach trust is minimised to the initial interaction. To delve deeper into this approach, check out Liquity’s blog [post](https://www.liquity.org/blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors).
 
 ## Most users don’t use CIDs directly
 
@@ -491,9 +494,9 @@ To address this challenge, several solutions have emerged to allow easily resolv
 
 #### Verifiability of ENS
 
-The fact that ENS domains are registered is on-chain makes them verifiable in principle. However, in the solutions laid out above, trust is delegated to the a trusted server which handles the resolution of the ENS name to the CID, e.g. [eth.limo](http://eth.limo).
+The fact that ENS domains are registered is on-chain makes them verifiable in principle. However, in the solutions laid out above, trust is delegated to a trusted server which handles the resolution of the ENS name to the CID, e.g. [eth.limo](http://eth.limo).
 
-ENS name can be resolved in the browser using the Ethereum RPC API by retrieving the state from the chain, howerver, trust is just shifted to the Ethereum RPC API endpoint.
+ENS names can be resolved in the browser using the Ethereum RPC API by retrieving the state from the chain, howerver, trust is just shifted to the Ethereum RPC API endpoint.
 
 A more verifiable approach would be to use an Ethereum light client, like [Helios](https://github.com/a16z/helios) or [eth-verifiable-rpc](https://github.com/dappnetbby/eth-verifiable-rpc), to verify ENS state using merkle proofs and the Ethereum state root hash, though this is still experimental and far from a common pattern in dapps.
 
