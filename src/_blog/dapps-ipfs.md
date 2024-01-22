@@ -135,15 +135,16 @@ This blog post is mostly concerned with the frontend component and the different
 
 The most naive and common approach is to just deploy the dapp to a web server or CDN like Vercel, AWS, Netlify, and Cloudflare.
 
-For example, [Uniswap deploys](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:11:1) their frontend to Cloudflare (in addition to [IPFS using Pinata](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:8:21)) and makes the latest version available at https://app.uniswap.org.
+For example, [Uniswap deploys](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:11:1) their frontend to Cloudflare Pages (as well as IPFS as we'll see in the section below) and makes the latest version available at https://app.uniswap.org.
 
 From the perspective of a user, this is arguably the most user-friendly and performant (with Cloudflare’s CDN), at the cost of being the least verifiable.
 
 You have no way to verify the source of the frontend. Moreover, the reliance on DNS comes with its risk surface like fat finger human errors and other DNS attacks, e.g. DNS takeovers — these are admittedly unlikely but important to consider.
 
-- **Verifiable:** ❌
-- **UX:** ⭐️⭐️⭐️
-- **Resilience/Censorship resistance:** ❌
+|                                  | Rating |
+| -------------------------------- | ------ |
+| Verifiable                       | ❌     |
+| Resilience/Censorship resistance | ❌     |
 
 #### At the mercy of multiple authorities
 
@@ -160,13 +161,18 @@ Another thing to consider about deploying without IPFS is that the app must comp
 
 From the perspective of a DApp developer, publishing to IPFS is pretty straightforward. You take your frontend build and add it to your IPFS node or to a pinning service. Publishing to IPFS results in a CID which represents that version of the frontend.
 
-Uniswap, for example, has automated publishing to Pinata as part of their build process, and they publish the CID for each version in the release:
+Uniswap, for example, has automated [publishing to IPFS with Pinata](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:8:21) as part of their build process, and they publish the CID for each version in the release:
 
 ![Uniswap release on GitHub](../assets/dapps-ipfs/uniswap-release.png)
 
 One thing to consider here is where the CID is generated. In the ideal case, this should happen in the build process, e.g. by packing the build outputs into a CAR file with a CID in the build process. If you upload the raw files to a pinning service, you are trusting the pinning service to generate the CID for the input data.
 
-To increase the resilience and censorship resistance of your deployed app, you can pin the CID to more than one pinning service.
+To increase the resilience and censorship resistance of your deployed app, you can pin the CID to more than one pinning service or IPFS node.
+
+|                                  | Rating |
+| -------------------------------- | ------ |
+| Verifiable                       | 👍     |
+| Resilience/Censorship resistance | 👍     |
 
 ## Loading dapps from IPFS: approaches and trade-offs
 
@@ -182,17 +188,18 @@ The problem with this approach is that you haven’t verified the response, so y
 
 Another minor challenge that arises is that each version you load and each gateway you load it from will have a different origin, so any local state the dapp relies on in localStorage or IndexedDB will be tied to that specific version of the dapp (CID) at that specific gateway, i.e., `bafy1.ipfs.cf-ipfs.io` is a different origin to `bafy1.ipfs.dweb.link` even though they are the same CID.
 
-- **Verifiable:** ❌
-- **UX:** ⭐️⭐️
-- **Performance:** ⭐️
+|                                  | Rating              |
+| -------------------------------- | ------------------- |
+| Verifiable                       | ❌                  |
+| Resilience/Censorship resistance | 👍 (other gateways) |
 
-> **Note:** Performance depends on whether the gateway has it cached and the number of providers/copies on the network
+> **Note:** Resilience depends on whether the content has it cached and the number of providers/copies on the network
 
 Note that some Dapp developers will run their own dedicated gateways either on their infrastructure or by using a dedicated gateway service, e.g. Pinata, Filebase. This can result in better performance. As for trust, it shifts it around, and without verification, the users are left to decide whether they trust the gateway operator.
 
 ### With a local IPFS node
 
-If you have a local IPFS node installed, e.g. [Kubo](https://docs.ipfs.tech/install/command-line/) or [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/), then you can use the IPFS gateway exposed by your local node. It looks as follows: http://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.localhost:8080/ 
+If you have a local IPFS node installed, e.g. [Kubo](https://docs.ipfs.tech/install/command-line/) or [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/), then you can use the IPFS gateway exposed by your local node. It looks as follows: http://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.localhost:8080/
 
 Note that it will only work if you are running an IPFS node with the gateway listening on port 8080)
 
@@ -202,11 +209,10 @@ The main hurdle with this approach is that it requires running an IPFS node in a
 
 From a performance perspective, it may be slow on the first load, but once fetched and cached locally, a given CID will essentially load instantly.
 
-|             | Rating |
-| ----------- | ------ |
-| Verifiable  | ✅     |
-| UX          | ⭐️    |
-| Performance | ⭐️    |
+|                                  | Rating |
+| -------------------------------- | ------ |
+| Verifiable                       | 👍     |
+| Resilience/Censorship resistance | 👍     |
 
 (Depends on whether the gateway has it cached and the number of providers/copies on the network)
 
@@ -216,11 +222,10 @@ From a performance perspective, it may be slow on the first load, but once fetch
 
 Under the hood, IPFS companion handles IPFS URLs and redirects them to the gateway of the local IPFS node.
 
-|             | Rating |
-| ----------- | ------ |
-| Verifiable  | ✅     |
-| UX          | ⭐️⭐️ |
-| Performance | ⭐️    |
+|                                  | Rating |
+| -------------------------------- | ------ |
+| Verifiable                       | 👍     |
+| Resilience/Censorship resistance | 👍     |
 
 IPFS Companion also supports [DNSLink](https://dnslink.dev/) resolution (DNSLink is covered in more detail at the bottom of the article). When a user visits a URL, Companion will check for a [DNSLink](https://dnslink.dev/) DNS record for the hostname and, if found, will load the dapp from the local gateway instead of the remote origin. In this instance, trust is only delegated for the DNS resolution (hostname → CID).
 
@@ -228,11 +233,10 @@ IPFS Companion also supports [DNSLink](https://dnslink.dev/) resolution (DNSLink
 
 [Brave Browser](https://brave.com/ipfs-support/) comes with native support for IPFS URLs that can be resolved by a public gateway or the built-in IPFS node. The latter is practically the same as the previous approach with a local IPFS node and the IPFS companion browser extension, though the user experience is better because it works out of the box.
 
-|             | Rating |
-| ----------- | ------ |
-| Verifiable  | ✅     |
-| UX          | ⭐️⭐️ |
-| Performance | ⭐️    |
+|                                  | Rating |
+| -------------------------------- | ------ |
+| Verifiable                       | 👍     |
+| Resilience/Censorship resistance | 👍     |
 
 ## When running a Kubo node is not an option
 
@@ -436,7 +440,7 @@ There are three common approaches to this problem that provide a **stable identi
   - **Human friendly:** 👍
   - **Verifiable:** 👎
   - **Example name:** `[blog.ipfs.tech](http://blog.ipfs.tech)` (technically `_dnslink.blog.ipfs.tech`)
-  - **Integration with the IPFS:** through IPFS gateways under the `/ipns` namespace: `[ipfs.io/ipns/blog.ipfs.tech/](http://ipfs.io/ipns/DNS.NAME)` or using subdomain resolution: https://blog-ipfs-tech.ipns.cf-ipfs.com/
+  - **Integration with the IPFS:** through IPFS gateways under the `/ipns` namespace: [`ipfs.io/ipns/blog.ipfs.tech/`](http://ipfs.io/ipns/DNS.NAME) or using subdomain resolution: https://blog-ipfs-tech.ipns.cf-ipfs.com/
 - **Ethereum Name System** (**ENS):**
   - **What are they:** records for a `.ETH` name are stored on-chain and can point to any URL or CID, e.g. `ipfs://bafy...`
   - **Human friendly:** 👍
