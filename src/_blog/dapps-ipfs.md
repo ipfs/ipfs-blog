@@ -398,7 +398,7 @@ This is more involved than the `fetch` API, but comes with all the benefits of I
 To make it easier for developers to adopt Helia in dapps that lean heavily on gateways, we've been working on a couple of improvements:
 
 - [Configurable block brokers](https://github.com/ipfs/helia/pull/280): a generic interface for resolving CIDs to blocks. Allows developers to choose (and even implement their own) block fetching approach for their app, e.g. Trustless Gateways, Bitswap, or a combination of the two. [Released in Helia v2.1.0](https://github.com/ipfs/helia/releases/tag/helia-v2.1.0)
-- [@helia/http](https://github.com/ipfs/helia/issues/289): A browser optimised version of Helia that leans on trustless gateways to enable verified retrieval. This was the package that was used in the examples above.
+- [@helia/http](https://github.com/ipfs/helia/issues/289): A browser optimised version of Helia that leans on trustless gateways and delegated routing to enable verified retrieval. This was the package that was used in the examples above.
 - [@helia/verified-fetch](https://github.com/ipfs/helia/issues/348): A library that would provide a similar interface to the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and accept native `ipfs://` and `ipns://` URIs and function like an IPFS gateway. We intend for it to serve as a drop-in replacement for `fetch` requests to trusted gateways.
 
 ### Helia in a Service Worker
@@ -439,8 +439,8 @@ There are three common approaches to this problem that provide a **stable identi
   - **What are they:** A DNS TXT record points to a specific CID.
   - **Human friendly:** 👍
   - **Verifiable:** 👎
-  - **Example name:** `[blog.ipfs.tech](http://blog.ipfs.tech)` (technically `_dnslink.blog.ipfs.tech`)
-  - **Integration with the IPFS:** through IPFS gateways under the `/ipns` namespace: [`ipfs.io/ipns/blog.ipfs.tech/`](http://ipfs.io/ipns/DNS.NAME) or using subdomain resolution: https://blog-ipfs-tech.ipns.cf-ipfs.com/
+  - **Example name:** [`blog.ipfs.tech`](http://blog.ipfs.tech) (technically `_dnslink.blog.ipfs.tech`)
+  - **Integration with the IPFS:** through IPFS gateways under the `/ipns` namespace: [`ipfs.io/ipns/blog.ipfs.tech/`](http://ipfs.io/ipns/DNS.NAME) or using subdomain resolution: [`https://blog-ipfs-tech.ipns.cf-ipfs.com/`](https://blog-ipfs-tech.ipns.cf-ipfs.com/)
 - **Ethereum Name System** (**ENS):**
   - **What are they:** records for a `.ETH` name are stored on-chain and can point to any URL or CID, e.g. `ipfs://bafy...`
   - **Human friendly:** 👍
@@ -516,7 +516,9 @@ Like CIDs, IPNS names can be resolved using IPFS gateways, either in a verifiabl
 
 ## Conclusion
 
-If you reached this far, congratulations. Hopefully this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to improve the status quo.
+If you reached this far, congratulations. Hopefully this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to make verification of CIDs the norm.
+
+While trust remains central to the web, leaning on the verifiability of CIDs is a net win for both dapp develoeprs and users.
 
 As we make more progress on the `@helia/verified-fetch` library, we will publish more guides and examples demonstrating its broad applicability in dapps.
 
