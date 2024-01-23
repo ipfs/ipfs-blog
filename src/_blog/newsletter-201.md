@@ -18,7 +18,7 @@ The Filecoin Foundation (FF) successfully completed a first-of-its-kind mission 
 
 [Decentralizing DeFi frontends: protecting users and protocol authors](https://www.liquity.org/blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors)
 
-- A blog post from Liquity that features IPFS and talks about the need for decentralized frontends that are trustless and verifiable. Read the post here!
+- A blog post from Liquity that features IPFS and talks about the need for decentralized frontends that are trustless and verifiable. [Read the post here!](https://www.liquity.org/blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors)
 
 [New Release: Kubo v0.26.0](https://github.com/ipfs/kubo/releases/tag/v0.26.0)
 
