@@ -51,6 +51,23 @@ The Filecoin Foundation (FF) successfully completed a first-of-its-kind mission 
 
 ## **Around the Ecosystem 🌎**
 
+[Sendme, built on iroh](https://iroh.computer/sendme)
+
+- It's like scp without needing to know the IP address. Add some files to sendme, and it will give you a pastable ticket that you can give to anyone who needs your files. Sendme will connect your devices directly & transfer the data without any accounts or configuration. [Learn more here!](https://iroh.computer/sendme)
+
+[All-in-one Docker image with IPFS node best practices](https://discuss.ipfs.tech/t/all-in-one-docker-image-with-ipfs-node-best-practices/17408)
+
+- A post in the IPFS community forum about putting together an all-in-one docker image for self hosting an IPFS node / gateway. [Read the forum thread here!](https://discuss.ipfs.tech/t/all-in-one-docker-image-with-ipfs-node-best-practices/17408)
+
+[What's IPFS and how it compares to BitTorrent](https://norman.life/posts/ipfs-bittorrent)
+
+- A new blog post from Daniel Norman, Developer Advocate for IPFS, about the differences between IPFS and BitTorrent. [Read the entire post here!](https://norman.life/posts/ipfs-bittorrent)
+
+[Encrypted Blockstore from Fireproof](https://www.npmjs.com/package/@fireproof/encrypted-blockstore)
+
+- Multi-writer self-hosted local-first IPFS-compatible blockstore with end-to-end encryption. [Learn more here!](https://www.npmjs.com/package/@fireproof/encrypted-blockstore)
+
+[Community contribution of nfs mounting as an alternative to fuse in kubo](https://www.youtube.com/watch?v=19FkIxTzavY)
 
 ## **Have something you want featured? 📥**
 
