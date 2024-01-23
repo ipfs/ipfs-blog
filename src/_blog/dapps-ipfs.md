@@ -1,7 +1,7 @@
 ---
 date: 2024-01-01
 permalink: /dapps-ipfs/
-title: 'The State of Dapps on IPFS - Trust vs. Verification'
+title: 'The State of Dapps on IPFS: Trust vs. Verification'
 description: 'Overview of the current landscape of dapps on IPFS through the lens of trust and verifiability'
 author: Daniel Norman
 header_image: /dapps-ipfs/header.png
@@ -139,7 +139,7 @@ For example, [Uniswap deploys](https://github.com/Uniswap/interface/actions/runs
 
 From the perspective of a user, this is arguably the most user-friendly and performant (with Cloudflare’s CDN), at the cost of being the least verifiable.
 
-You have no way to verify the source of the frontend. Moreover, the reliance on DNS comes with its risk surface like fat finger human errors and other DNS attacks, e.g. DNS takeovers — these are admittedly unlikely but important to consider.
+Dapp users have no way to verify that the source of the frontend matches the original code published on GitHub. Moreover, the reliance on DNS comes with risks such as fat finger human errors and other DNS attacks, e.g. DNS takeovers — these are admittedly unlikely but important to consider.
 
 |                                  | Rating |
 | -------------------------------- | ------ |
@@ -148,7 +148,7 @@ You have no way to verify the source of the frontend. Moreover, the reliance on 
 
 #### At the mercy of multiple authorities
 
-Another thing to consider about deploying without IPFS is that the app must comply with the terms of service of multiple authorities:
+Another thing to consider about deploying without IPFS is that the app must comply with **the terms of service of multiple authorities**:
 
 1. “.org” TLD owner
 2. “uniswap.org” DNS Registrar
@@ -184,16 +184,16 @@ https://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.dweb.li
 
 https://bafybeihwj3n7fgccypsiisijwuklg3souaoiqs7yosk5k5lc6ngnhnmnu4.ipfs.cf-ipfs.com/
 
-The problem with this approach is that you haven’t verified the response, so you don’t know if you the response **matches the cid.** In effect, you are **trusting the gateway** to return the correct response.
+The problem with this approach is that you haven’t verified the response, so you don’t know if you the response **matches the CID.** In effect, you are **trusting the gateway** to return the correct response.
 
-Another minor challenge that arises is that each version you load and each gateway you load it from will have a different origin, so any local state the dapp relies on in localStorage or IndexedDB will be tied to that specific version of the dapp (CID) at that specific gateway, i.e., `bafy1.ipfs.cf-ipfs.io` is a different origin to `bafy1.ipfs.dweb.link` even though they are the same CID.
+Another minor challenge that arises is that each version you load and each gateway you load it from will have a different origin, so any local state the dapp relies on in localStorage or IndexedDB will be tied to that specific version of the dapp (CID) at that specific gateway, i.e., `bafy1.ipfs.cf-ipfs.com` is a different origin to `bafy1.ipfs.dweb.link` even though they are the same CID.
 
 |                                  | Rating              |
 | -------------------------------- | ------------------- |
 | Verifiable                       | ❌                  |
 | Resilience/Censorship resistance | 👍 (other gateways) |
 
-> **Note:** Resilience depends on whether the content has it cached and the number of providers/copies on the network
+> **Note:** Resilience depends on whether the content has been cached and the number of providers/copies on the network
 
 Note that some Dapp developers will run their own dedicated gateways either on their infrastructure or by using a dedicated gateway service, e.g. Pinata, Filebase. This can result in better performance. As for trust, it shifts it around, and without verification, the users are left to decide whether they trust the gateway operator.
 
@@ -268,7 +268,7 @@ To understand the emerging landscape of approaches to IPFS in the browser, it’
 
 Browsers are sandboxed runtime environments that place critical constraints for using IPFS:
 
-- Limits on the type (WebSockets, WebRTC, WebTransport) and number of connections a browser tab can open. This can hinder content routing DHT traversals and content retrieval connections.
+- Limits on the type (WebSockets, WebRTC, WebTransport) and number of connections a browser tab can open and/or [fail to dial before being blocked or throttled](https://github.com/ipfs/in-web-browsers/issues/211). This can hinder content routing DHT traversals and content retrieval connections.
 - If a website is in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) when served over HTTPS, like most websites today, you are constrained to only opening connections to origins with a CA-signed TLS certificate, something that peers in the IPFS network rarely have. As you’ll see, there are two exceptions to this, namely WebTransport and WebRTC, that we’ll look into in the next section.
 - Limits on the resources an inactive browser tab consumes, i.e., when you keep a tab open but it becomes inactive by moving to a different tab.
 
@@ -276,8 +276,8 @@ Browsers are sandboxed runtime environments that place critical constraints for 
 
 From a high level, several threads of work remove the need to run a Kubo node:
 
-- **Trustless Gateway**: a *subset* of [path-gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ref-path-gateway) that allows for light IPFS clients to retrieve both the CIDs bytes and verification metadata (the Merkle DAG), thereby allowing you to [verify its integrity without trusting the gateway](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval).
-- [Delegated routing](https://docs.ipfs.tech/concepts/how-ipfs-works/#how-content-routing-works-in-ipfs): a mechanism for IPFS implementations to use for offloading content routing, peer routing, and naming to another server over HTTP. This allows browsers to skip traversing the DHT and opening many connections in the process.
+- [**Trustless Gateway**](https://specs.ipfs.tech/http-gateways/trustless-gateway/): a *subset* of the [path-gateway](https://specs.ipfs.tech/http-gateways/path-gateway/) that allows for light IPFS clients to retrieve both the CIDs bytes and verification metadata (the Merkle DAG), thereby allowing you to [verify its integrity without trusting the gateway](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval).
+- [Delegated routing](https://docs.ipfs.tech/concepts/how-ipfs-works/#how-content-routing-works-in-ipfs): a mechanism for IPFS implementations to use for [offloading content routing, peer routing, and naming to another server over HTTP](https://specs.ipfs.tech/routing/http-routing-v1/). This allows browsers to skip traversing the DHT and opening many connections in the process.
 - [WebTransport](https://connectivity.libp2p.io/#webtransport): a new browser API to open persistent duplex connections from the browser in a similar fashion to WebSockets. But in contrast with WebSocket, [WebTransport supports self-signed certificates](https://connectivity.libp2p.io/#webtransport?tab=certificate-hashes), allowing its use in a p2p setting without reliance on certificate authorities. WebTransport support was also added to Kubo over a year ago, which in theory means that browsers should be able to connect to any arbitrary Kubo node even in a [Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
 - WebRTC Direct: though WebRTC was designed for browser-to-browser, it can also be used for [browser-to-server connectivity](https://connectivity.libp2p.io/#webrtc?tab=browser-to-standalone-node) without trusted TLS certificates (see [spec](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md)). This is useful in browsers like Safari and Firefox where WebTransport might not be available (as of Q1 2024).
 - [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): a browser API that allows, among other things, intercepting network requests in web applications for either caching or providing offline functionality. Service workers can be used to implement a caching and verification layer by intercepting HTTP requests to IPFS gateways in existing apps that already use IPFS gateways without verifying.
@@ -448,8 +448,8 @@ There are three common approaches to this problem that provide a **stable identi
   - **Example name:** `vitalik.eth`
   - **Integration with the IPFS:**
     - **IPFS path gateways:** under the `/ipns` namespace: [ipfs.io/ipns/vitalik.eth](http://ipfs.io/ipns/vitalik.eth)`
-    - **Subdomain gateways:** subdomain resolution (dots become dashes): https://vitalik-eth.ipns.dweb.link/
-    - Using an ENS resolver like [eth.link](http://eth.link) or eth.limo
+    - **Subdomain gateways:** subdomain resolution (dots become dashes): [vitalik-eth.ipns.dweb.link](https://vitalik-eth.ipns.dweb.link/)
+    - Using an ENS resolver like [eth.link](http://eth.link) or eth.limo: [vitalik.eth.limo](https://vitalik.eth.limo)
 - **IPNS**
   - **What are they:** mutable pointers based on public keys and signed IPNS records pointing to a CID. Typically published to the DHT, though IPNS is transport agnostic and can be resolved and advertised using the delegated routing HTTP API.
   - **Human friendly:** 👎
@@ -467,7 +467,7 @@ In the next paragraph, we’ll dive into the details and trade-offs of how each 
 
 [DNSLink](https://dnslink.dev/) uses DNS [TXT](https://en.wikipedia.org/wiki/TXT_record) records in the `_dnslink` subdomain to map a DNS name, such as `blog.ipfs.tech` to an IPFS path, e.g. `/ipfs/bafy..`
 
-The main benefit of DNSLink is that it relies on all existing DNS infrastructure and tooling to provide stable human-friendly names that can be updated. The main drawback of DNSLink is that it comes with the same risks and attack surface associated with DNS records mentioned earlier in the post, most notably is the lack of verifiability. This can potentially be addressed by things like DNSSec and querying multiple
+The main benefit of DNSLink is that it relies on all existing DNS infrastructure and tooling to provide stable human-friendly names that can be updated. The main drawback of DNSLink is that it comes with the same risks and attack surface associated with DNS records mentioned earlier in the post, most notably is the lack of verifiability. This can potentially be addressed by things like DNSSec and querying multiple DNS resolvers.
 
 For example, the Spark UI from the MakerDAO ecosystem is published to IPFS and uses DNSLink. Their DNSLink TXT record is `_dnslink.app.spark.fi` and has the value set to (at the time of writing):
 
@@ -492,13 +492,13 @@ To address this challenge, several solutions have emerged to allow easily resolv
   Under the hood, eth.link uses EthDNS to access information from ENS via DNS. In other words, it provides a DNS interface to the on-chain ENS registry. eth.link also provides a [DNS-over-HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS) endpoint to perform DNS resolution of .eth records: `https://eth.link/dns-query`. For example, `curl -s -H "accept: application/dns-json" "https://eth.link/dns-query?name=vitalik.eth&type=TXT"` will return the ENS records of `vitalik.eth`.
 - [Eth.limo](http://Eth.limo) is a similar service to [eth.link](http://eth.link) that functions similarly, e.g. [vitalik.eth.limo](http://vitalik.eth.limo).
 - Using an IPFS gateway, under the `ipns` namespace, e.g. [ipfs.io/ipns/vitalik.eth](http://ipfs.io/ipns/vitalik.eth) (path resolution) or [vitalik-eth.ipns.dweb.link](http://vitalik-eth.ipns.dweb.link) for subdomain resolution (when using the subdomain gateway, dots are converted to dashes to avoid origin and TLS certificate complexity).
-  Under the hood, the IPFS gateway treats these the same way as DNSLink that are resolved with the ENSDNS bridges ([configurable in Kubo](https://github.com/ipfs/kubo/blob/master/docs/config.md#dnsresolvers)).
+  Under the hood, the IPFS gateway treats these the same way as DNSLink, but resolves `.eth` TLD via special ENS2DNS bridges (the default one is DoH at `resolver.cloudflare-eth.com`, [configurable in Kubo](https://github.com/ipfs/kubo/blob/master/docs/config.md#dnsresolvers)).
 - The Metamask browser plugin will automatically redirect .eth addresses to an IPFS gateway, as described above.
 - The Brave browser supports `.eth` domains and resolves them using the Cloudflare EthDNS resolver.
 
 #### Verifiability of ENS
 
-The fact that ENS domains are registered is on-chain makes them verifiable in principle. However, in the solutions laid out above, trust is delegated to a trusted server which handles the resolution of the ENS name to the CID, e.g. [eth.limo](http://eth.limo).
+The fact that ENS domains are registered is on-chain makes them verifiable in principle. However, in the solutions laid out above, trust is delegated to a trusted server which handles the resolution of the ENS name to the CID, e.g. [eth.limo](http://eth.limo), or the DoH resolver at https://resolver.cloudflare-eth.com/dns-query.
 
 ENS names can be resolved in the browser using the Ethereum RPC API by retrieving the state from the chain, howerver, trust is just shifted to the Ethereum RPC API endpoint.
 
@@ -506,19 +506,19 @@ A more verifiable approach would be to use an Ethereum light client, like [Helio
 
 ### IPNS
 
-IPNS is a system for creating cryptographically verifiable mutable pointers to CIDs known as **IPNS names**. IPNS names can be thought of as links that can be updated over time.
+IPNS is a system for creating [cryptographically verifiable mutable pointers](https://specs.ipfs.tech/ipns/ipns-record/) to CIDs known as **IPNS names**. IPNS names can be thought of as links that can be updated over time.
 
 IPNS names are key pairs which are not human-friendly (like DNS and ENS), so while they offer a stable pointer that can change over time, you still need to get the IPNS name from _somewhere_.
 
 A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by putting pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
 
-Like CIDs, IPNS names can be resolved using IPFS gateways, either in a verifiable or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.cm/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit more involved, but can be done with [Helia in the browser](https://codesandbox.io/p/sandbox/helia-ipns-f59ttx?file=%2Fsrc%2Findex.ts).
+Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with [Helia in the browser](https://codesandbox.io/p/sandbox/helia-ipns-f59ttx?file=%2Fsrc%2Findex.ts).
 
 ## Conclusion
 
 If you reached this far, congratulations. Hopefully this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to make verification of CIDs the norm.
 
-While trust remains central to the web, leaning on the verifiability of CIDs is a net win for both dapp develoeprs and users.
+While trust remains central to the web, leaning on the verifiability of CIDs is a net win for both dapp developers and users.
 
 As we make more progress on the `@helia/verified-fetch` library, we will publish more guides and examples demonstrating its broad applicability in dapps.
 
