@@ -1,5 +1,5 @@
 ---
-date: 2024-01-01
+date: 2024-01-24
 permalink: /dapps-ipfs/
 title: 'The State of Dapps on IPFS: Trust vs. Verification'
 description: 'Overview of the current landscape of dapps on IPFS through the lens of trust and verifiability'
@@ -127,7 +127,7 @@ One thing to note is that the degree of decentralization of a Dapp can vary base
 
 **As a general rule of thumb, it’s only as decentralized as the least decentralized component.**
 
-This blog post is mostly concerned with the frontend component and the different ways that IPFS enables maximizing decentralization of its distribution and trustlessness. Throughout the post, we’ll be looking at Uniswap as an example, given its importance and the amount of money it secures. That being said, the insights apply to any DApp of this structure.
+This blog post is mostly concerned with the frontend component and the different ways that IPFS enables maximizing decentralization of its distribution and trustlessness. Throughout the post, we’ll be looking at Uniswap as an example, given its importance and the amount of money it secures. That being said, the insights apply to any Dapp of this structure.
 
 ## Publishing dapps: approaches and trade-offs
 
@@ -135,7 +135,7 @@ This blog post is mostly concerned with the frontend component and the different
 
 The most naive and common approach is to just deploy the dapp to a web server or CDN like Vercel, AWS, Netlify, and Cloudflare.
 
-For example, [Uniswap deploys](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:11:1) their frontend to Cloudflare Pages (as well as IPFS as we'll see in the section below) and makes the latest version available at https://app.uniswap.org.
+For example, [the Uniswap team deploys](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:11:1) their frontend to Cloudflare Pages (as well as IPFS as we'll see in the section below) and makes the latest version available at https://app.uniswap.org.
 
 From the perspective of a user, this is arguably the most user-friendly and performant (with Cloudflare’s CDN), at the cost of being the least verifiable.
 
@@ -159,7 +159,7 @@ Another thing to consider about deploying without IPFS is that the app must comp
 
 ### Publishing to IPFS
 
-From the perspective of a DApp developer, publishing to IPFS is pretty straightforward. You take your frontend build and add it to your IPFS node or to a pinning service. Publishing to IPFS results in a CID which represents that version of the frontend.
+From the perspective of a Dapp developer, publishing to IPFS is pretty straightforward. You take your frontend build and add it to your IPFS node or to a pinning service. Publishing to IPFS results in a CID which represents that version of the frontend.
 
 Uniswap, for example, has automated [publishing to IPFS with Pinata](https://github.com/Uniswap/interface/actions/runs/7036990525/job/19150799879#step:8:21) as part of their build process, and they publish the CID for each version in the release:
 
@@ -506,17 +506,17 @@ A more verifiable approach would be to use an Ethereum light client, like [Helio
 
 ### IPNS
 
-IPNS is a system for creating [cryptographically verifiable mutable pointers](https://specs.ipfs.tech/ipns/ipns-record/) to CIDs known as **IPNS names**. IPNS names can be thought of as links that can be updated over time.
+IPNS is a system for creating [cryptographically verifiable mutable pointers](https://specs.ipfs.tech/ipns/ipns-record/) to CIDs known as **IPNS names**, for example, [`k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s`](https://cid.ipfs.tech/#k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s) is a base36-encoded IPNS name with its public key in-line. The public key can be used to verify corresponding IPNS records, which point to a CID and are signed by the private key. In other words, an IPNS name can be thought of as stable link that can be updated over time.
 
-IPNS names are key pairs which are not human-friendly (like DNS and ENS), so while they offer a stable pointer that can change over time, you still need to get the IPNS name from _somewhere_.
+IPNS names are key pairs that are not human-friendly (like DNS and ENS), so while they offer a stable pointer that can change over time, you still need to get the IPNS name from _somewhere_.
 
-A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by putting pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
+A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
 
 Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with [Helia in the browser](https://codesandbox.io/p/sandbox/helia-ipns-f59ttx?file=%2Fsrc%2Findex.ts).
 
 ## Conclusion
 
-If you reached this far, congratulations. Hopefully this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to make verification of CIDs the norm.
+If you reached this far, congratulations. Hopefully, this blog post gave you an overview of the state of dapps on IPFS and the ongoing efforts to make verified retrieval of CIDs the norm.
 
 While trust remains central to the web, leaning on the verifiability of CIDs is a net win for both dapp developers and users.
 
