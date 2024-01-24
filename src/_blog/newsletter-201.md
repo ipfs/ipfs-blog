@@ -1,6 +1,6 @@
 ---
-title: Welcome to IPFS News 201!
-description: Featuring...
+title: IPFS News Issue 201
+description: Featuring the announcement of a recent demonstration of the InterPlanetary File System (IPFS) in space!
 date: 2024-01-23
 permalink: "/newsletter-201"
 header_image: "/ipfsnews.png"
