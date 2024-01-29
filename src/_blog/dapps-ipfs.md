@@ -527,6 +527,6 @@ If you reached this far, congratulations. Hopefully, this blog post gave you an 
 
 While trust remains central to the web, leaning on the verifiability of CIDs is a net win for both dapp developers and users.
 
-As we make more progress on the `@helia/verified-fetch` library, we will publish more guides and examples demonstrating its broad applicability in dapps.
+As we make more progress on the [`@helia/verified-fetch`](https://github.com/ipfs/helia/pull/392) library, we will publish more guides and examples demonstrating its broad applicability in dapps.
 
 If you’re a dapp developer or user using IPFS, your input is valuable. We invite you to join the [IPFS Dapps Working Group](https://ipfs.fyi/dapps-wg) and help us shape the future of dapps on IPFS.
