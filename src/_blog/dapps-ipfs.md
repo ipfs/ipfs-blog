@@ -384,9 +384,9 @@ const tokenList = await fetchJsonCid(tokenListCid)
 
 See how these two compare below:
 
-<iframe src="https://codesandbox.io/embed/cstphn?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.ts"
+<iframe src="https://codesandbox.io/embed/qx7tw3?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.ts"
      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="helia-json-vs-unixfs-fetch"
+     title="helia-json-vs-unixfs-fetch (@helia/http@1)"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
@@ -512,7 +512,14 @@ IPNS names are key pairs that are not human-friendly (like DNS and ENS), so whil
 
 A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
 
-Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with [Helia in the browser](https://codesandbox.io/p/sandbox/helia-ipns-f59ttx?file=%2Fsrc%2Findex.ts).
+Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with Helia in the browser as follows:
+
+<iframe src="https://codesandbox.io/embed/f59ttx?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.ts"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Helia-ipns"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ## Conclusion
 
