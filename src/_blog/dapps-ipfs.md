@@ -1,5 +1,5 @@
 ---
-date: 2024-01-24
+date: 2024-01-29
 permalink: /dapps-ipfs/
 title: 'The State of Dapps on IPFS: Trust vs. Verification'
 description: 'Overview of the current landscape of dapps on IPFS through the lens of trust and verifiability'
