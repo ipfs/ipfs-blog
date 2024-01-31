@@ -512,7 +512,7 @@ IPNS names are key pairs that are not human-friendly (like DNS and ENS), so whil
 
 A pretty common pattern is for ENS names to point to an IPNS name. Since updating ENS names requires paying gas for the on-chain transaction, this can be avoided by pointing the ENS name to an IPNS name, and updating the IPNS name to a new CID, upon new releases or updates.
 
-Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with Helia in the browser as follows:
+Like CIDs, IPNS names can be resolved using IPFS gateways, either in a [verifiable](https://specs.ipfs.tech/http-gateways/trustless-gateway/#ipns-record-responses-application-vnd-ipfs-ipns-record) or trusted way. Trusted resolution is as simple as adding the name to the URL: `https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dhp48cti0590jyvwgxssrii0zdf19pyfsxwoqomqvfg6bg8qj3s`. Verified IPNS resolution is a bit [more involved](https://specs.ipfs.tech/ipns/ipns-record/#record-verification), but can be done end-to-end with Helia in the browser as follows:
 
 <iframe src="https://codesandbox.io/embed/f59ttx?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.ts"
      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
