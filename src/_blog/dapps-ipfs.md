@@ -415,7 +415,7 @@ Check out the [Helia service worker gateway repo](https://github.com/ipfs-shipya
 
 ### Local app installer
 
-The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser. The local app installer consists of PWA and utilizes a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally.
+The local app installer approach was recently laid out in a [blog post](https://www.liquity.org//blog/decentralizing-defi-frontends-protecting-users-and-protocol-authors) by the Liquity team. The idea is that you have a static web app that serves as a local installer which facilitates the fetching and verifying of dapps directly in the browser. The [local app installer](https://github.com/edmulraney/nohost) consists of PWA and utilizes a service worker with the ENS client library and Helia to resolve ENS names, download and verify dapps and cache them locally. The local app installer is developed in the [nohost](https://github.com/edmulraney/nohost) repository.
 
 ![Local-app-installer](../assets/dapps-ipfs/local-installer.png)
 
