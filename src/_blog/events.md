@@ -4,6 +4,13 @@ type: Event
 sitemap:
   exclude: true
 data:
+- title: Pre-register for IPFS Camp 2024
+  date: 2024-02-21
+  publish_date: 
+  path: https://lu.ma/preregcamp24
+  card_image: "/ipfs-camp-2024.png"
+  tags:
+  - camp
 - title: HackFS 2021
   date: 2021-07-30
   publish_date: 
