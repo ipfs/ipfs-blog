@@ -23,7 +23,7 @@ Snapshot is an open-source voting platform for Web3 projects, DAOs, and communit
 
 1. [IPFS Camp 2022](https://2022.ipfs.camp/) is back! Join the community in Lisbon on October 28th-30th for an event focused on celebrating and advancing IPFS, more details coming soon.
 2. Kubo (formerly go-ipfs) v0.15.0 is live. Review all the library updates and bug fixes, Blake3 support, Fx Options plugin, and more on [Github](https://github.com/ipfs/kubo/releases/tag/v0.15.0).
-3. Kubo v0.14.0 now [supports](https://github.com/ipfs/kubo/releases/tag/v0.14.0#delegated-routing) [Reframe](https://github.com/ipfs/specs/tree/main/reframe#readme), a tool for delegated routing. Learn more about it on the IPFS [blog](https://blog.ipfs.tech/2022-09-02-introducing-reframe/).
+3. Kubo v0.14.0 now [supports](https://github.com/ipfs/kubo/releases/tag/v0.14.0#delegated-routing) experimental protocol for delegated routing. Learn more about it on the IPFS [blog](https://blog.ipfs.tech/2022-09-02-introducing-reframe/).
 4. Check out [Opensquare Art](https://t.co/TrdDYttxkq)’s new Shop Builder for launching no-code minting websites that store NFTs on IPFS and Filecoin via [NFT.Storage](https://nft.storage/).
 
 ## **Around the ecosystem 🌎**

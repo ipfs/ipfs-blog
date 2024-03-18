@@ -174,13 +174,13 @@ We’ll lean into realizing these breakthroughs and remove the more convoluted m
 
 ### Support Fully Speced Delegated Routing Protocols and Endpoints
 
-While it will be possible from a connectivity perspective to make DHT queries from a browser, we expect various applications will want to still delegate out routing. [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) is a protocol for delegated routing that other IPFS implementations like Kubo have implemented. While it currently uses HTTP as a transport, it is speced and not tied to the Kubo RPC API. If/when there is a speced protocol for ambient discovery of “Limited Delegated Routers” provided by libp2p, we will support that as well.
+While it will be possible from a connectivity perspective to make DHT queries from a browser, we expect various applications will want to still delegate out routing. <del>[Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/)</del> [HTTP Routing V1](https://specs.ipfs.tech/routing/http-routing-v1/) is a protocol for delegated routing that other IPFS implementations like Kubo have implemented. While it currently uses HTTP as a transport, it is [speced](https://specs.ipfs.tech/routing/http-routing-v1/) and not tied to the Kubo RPC API. If/when there is a speced protocol for ambient discovery of “Limited Delegated Routers” provided by libp2p, we will support that as well.
 
 ### PL Delegate and Preload Nodes Will Be Shutting Down
 
 Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy delegate/preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](#js-ipfs-in-a-browser-context). This yields a simpler setup for one’s application and removes centralized infrastructure.
 
-For delegated routing, one can configure [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
+For delegated routing, one can configure [`/routing/v1`](https://specs.ipfs.tech/routing/http-routing-v1/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
 
 ### Release Helia in 2023
 
