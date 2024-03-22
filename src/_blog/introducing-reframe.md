@@ -11,6 +11,9 @@ tags:
 - CID
 
 ---
+
+**Update (2024Q1): This is an old blogpost. [Reframe was deprecated in 2022](https://github.com/ipfs/kubo/issues/9479) and ecosystem replaced it with modern [Delegated Routing V1 HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) (`/routing/v1`) which is also [supported by Kubo](https://github.com/ipfs/kubo/blob/master/docs/delegated-routing.md) and [Someguy](https://github.com/ipfs-shipyard/someguy).**
+
 [kubo v0.14.0 added support](https://github.com/ipfs/kubo/releases/tag/v0.14.0#delegated-routing) for the [Reframe protocol](https://github.com/ipfs/specs/tree/main/reframe#readme), which enables users to configure how their kubo node discovers content, peers, and handles IPNS records by just adding an HTTP endpoint to their config file. This means if you have a new content routing system you’d like to try out next to, or instead of, the IPFS Public DHT it’s now simple to do so. Similarly, Reframe starts enabling applications like public IPFS HTTP Gateways to decouple their DHT nodes from their content serving nodes so that they can be scaled and load-balanced independently.
 
 You can see more information and a demo utilizing Reframe in this [presentation](https://www.youtube.com/watch?v=lpphD7OJ28U&list=PLuhRWgmPaHtSF3oIY3TzrM-Nq5IU_RTXb) from IPFS Thing 2022.
@@ -166,3 +169,5 @@ For example, support for querying the endpoint at [cid.contact](http://cid.conta
 See [https://github.com/ipfs/kubo/blob/master/docs/config.md#routing](https://github.com/ipfs/kubo/blob/master/docs/config.md#routing "https://github.com/ipfs/kubo/blob/master/docs/config.md#routing") for more details.
 
 Note: further work to homogenize routing configuration across the multiple routing systems used in Kubo including the IPFS Public DHT and various Reframe endpoints is happening [here](https://github.com/ipfs/kubo/issues/9150).
+
+**Update (2024Q1):** [Reframe was deprecated in 2022](https://github.com/ipfs/kubo/issues/9479) and ecosystem replaced it with modern [Delegated Routing V1 HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) (`/routing/v1`) which is also [supported by Kubo](https://github.com/ipfs/kubo/blob/master/docs/delegated-routing.md) and [Someguy](https://github.com/ipfs-shipyard/someguy).
