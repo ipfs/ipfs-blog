@@ -64,6 +64,13 @@ Our current set of implementations maintained by Shipyard include:
   <tr></tr>
 </table>
 
+We have an extensive [initiative roadmap](https://ipshipyard.com/initiative-roadmap) and are eager to get more input from the developer community. To shout out just a few ideas we’re working on:
+
+* [Reliable, decentralized, and verified retrieval of CIDs](https://ipshipyard.com/initiative-roadmap/reliable-decentralized-and-trustless-browser-fetching-of-ipfs-content) (content identifiers) in browsers. The idea is to allow web browsers to fetch CIDs in a verifiable and trustless manner without being vulnerable to centralized chokepoints. You can participate and follow along with this work in the [IPFS dApps Working Group](https://lu.ma/ipfs-dapps).
+* [IPFS for pioneers](https://ipshipyard.com/initiative-roadmap/ipfs-for-pioneers-enable-building-interoperable-ipfs-systems-using-http-protocols). We aim to enable the building of interoperable IPFS systems using extremely minimal HTTP-based protocols so that building IPFS-compatible tooling in something like Python (that doesn’t have much IPFS or libp2p tooling today) is super easy and appealing.
+* [Self-service tooling for debugging IPFS request handling](https://ipshipyard.com/initiative-roadmap/self-service-tooling-for-debugging-ipfs-request-handling). The idea here is that a user can hit a Boxo-based HTTP gateway and if they experience an error, get a link to download an IPFS request trace. They can then use easy tooling locally or centrally hosted to pinpoint the issue.
+
+**About Shipyard**
 IPFS is a big project with big ambitions of being the essential content addressing layer for the next generation of the internet. That ecosystem comes with a sprawling set of resources that IPFS users today depend on in some way, including:
 
 * People and expertise
@@ -91,17 +98,10 @@ We want to let the community decide. We believe putting control of the IPFS stac
 
 Not quite. Better to think of Shipyard as an independent entity in the Protocol Labs Network.
 
-**What’s on deck for Shipyard?**
-
-We have an extensive [initiative roadmap](https://ipshipyard.com/initiative-roadmap) and are eager to get more input from the developer community. To shout out just a few ideas we’re working on:
-
-* [Reliable, decentralized, and verified retrieval of CIDs](https://ipshipyard.com/initiative-roadmap/reliable-decentralized-and-trustless-browser-fetching-of-ipfs-content) (content identifiers) in browsers. The idea is to allow web browsers to fetch CIDs in a verifiable and trustless manner without being vulnerable to centralized chokepoints.
-* [IPFS for pioneers](https://ipshipyard.com/initiative-roadmap/ipfs-for-pioneers-enable-building-interoperable-ipfs-systems-using-http-protocols). We aim to enable the building of interoperable IPFS systems using extremely minimal HTTP-based protocols so that building IPFS-compatible tooling in something like Python (that doesn’t have much IPFS or libp2p tooling today) is super easy and appealing.
-* [Self-service tooling for debugging IPFS request handling](https://ipshipyard.com/initiative-roadmap/self-service-tooling-for-debugging-ipfs-request-handling). The idea here is that a user can hit a Boxo-based HTTP gateway and if they experience an error, get a link to download an IPFS request trace. They can then use easy tooling locally or centrally hosted to pinpoint the issue.
-
 **Who maintains and funds this work?**
 
-We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’ve also secured significant commitments from other big3 web3 foundations in support of public goods funding to maintain IPFS and libp2p. We’re thankful as well to our early ecosystem supporters and patrons including CoopHive, Pinata, and Fission.
+We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’ve also secured significant commitments from other notable web3 foundations in support of public goods funding to maintain IPFS and libp2p. We’re thankful as well to our early ecosystem supporters and patrons including CoopHive, Pinata, and Fission.
+
 
 We’re exploring multiple avenues for financial support, and in keeping with our new community collective approach, we’re thinking in public about what those avenues could be: public goods funding, community grants, commercial services, crypto-native funding, and more. 
 
@@ -111,7 +111,8 @@ We’re exploring multiple avenues for financial support, and in keeping with ou
 * **Support Public Goods Maintenance** \
 If you or your project depends upon IPFS or libp2p, we invite you to consider contributing toward the ongoing maintenance of these important protocols as a public good. You can donate directly to IPFS or libp2p through the [Open Internet Foundation](https://openimpact.foundation/).
 * **Hire Shipyard for Commercial Services** \
-In addition to public good funding, we are also beginning to support commercial service agreements for our core users, including service tiers, contracted support, and other embedded engineering work. You can check out our [commercial services tiers](https://ipshipyard.com/) or reach out directly if you have a project you’d like to collaborate with us on.
+In addition to public good funding, we are also beginning to support commercial service agreements for our core users, including service tiers, contracted support, and other embedded engineering work. You can check out our [commercial services tiers](https://ipshipyard.gitwallet.co/) or reach out directly if you have a project you’d like to collaborate with us on.
+
 
 We’re so excited to watch the ecosystem of the Shipyard “docks” flourish with more projects, partnerships, and input from a community that will now have more say than ever in shaping the future of the entire Interplanetary stack.
 
