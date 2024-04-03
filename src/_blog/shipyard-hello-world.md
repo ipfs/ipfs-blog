@@ -98,6 +98,7 @@ We want to let the community decide. We believe putting control of the IPFS stac
 
 Not quite. Better to think of Shipyard as an independent entity in the Protocol Labs Network.
 
+
 **Who maintains and funds this work?**
 
 We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’ve also secured significant commitments from other notable web3 foundations in support of public goods funding to maintain IPFS and libp2p. We’re thankful as well to our early ecosystem supporters and patrons including CoopHive, Pinata, and Fission.
@@ -114,5 +115,5 @@ If you or your project depends upon IPFS or libp2p, we invite you to consider co
 In addition to public good funding, we are also beginning to support commercial service agreements for our core users, including service tiers, contracted support, and other embedded engineering work. You can check out our [commercial services tiers](https://ipshipyard.gitwallet.co/) or reach out directly if you have a project you’d like to collaborate with us on.
 
 
-We’re so excited to watch the ecosystem of the Shipyard “docks” flourish with more projects, partnerships, and input from a community that will now have more say than ever in shaping the future of the entire Interplanetary stack.
+We're excited for Shipyard's opportunity to strengthen the IPFS and libp2p ecosystems through community feedback and patronage. If you would like to get more involved we're in the [IPFS](https://docs.ipfs.tech/community/#get-involved) and [libp2p](https://discuss.libp2p.io/) forums, and you can reach us at contact@ipshipyard.com. 
 
