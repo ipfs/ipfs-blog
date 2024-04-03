@@ -2,7 +2,8 @@
 title: 'IPFS & libp2p Devs Go Independent: Meet Interplanetary Shipyard'
 
 description: 'Check out the new IPFS community calendar where you can participate and contribute to one of the many working groups advancing IPFS.'
-author: Bethany Crystal
+author: Adin Schmahmann
+
 date: 2024-03-29
 permalink: '/shipyard-hello-world/'
 header_image: '/shipyard-hello-world.png'
@@ -13,11 +14,16 @@ tags:
   - 'interplanetary shipyard'
 ---
 
-Since its release nearly ten years ago, IPFS has become the connective tissue that powers the infrastructure layer for the decentralized web and connects web2 to web3. Well over 50 million monthly active users access IPFS-based applications, from ENS addresses (~90% of content hashes) to NFTs to blockchains to IoT to enterprise applications. IPFS has always been an open, decentralized, censorship-resistant protocol. But its developers and maintainers were employees of Protocol Labs. 
+*Last November, Protocol Labs, where IPFS was invented and incubated, [announced its commitment to decentralizing project governance](https://protocol.ai/blog/advancing-ipfs-and-libp2p-governance/). In this post, you'll hear from Adin Schmahmann of Interplanetary Shipyard, introducing the new team, its roadmap, and what this means for the IPFS community.*
 
-Now we’re delighted to announce our own “exit to community”: [Interplanetary Shipyard](https://ipshipyard.com/), an **independent collective of many of the most popular implementations in the IPFS and libp2p ecosystem**. 
+Since its release nearly ten years ago, IPFS has become the connective tissue that powers the infrastructure layer for the decentralized web and connects web2 to web3. Well over 50 million monthly active users access IPFS-based applications, from ENS addresses (~90% of content hashes) to NFTs to blockchains to IoT to enterprise applications. IPFS has always been an open, decentralized, censorship-resistant protocol, and now the project itself is increasingly decentralized too.
 
-Many of the core maintainers of IPFS and libp2p implementations are now part of Shipyard, a newly created Delaware-based non-stock entity. Shipyard is laser-focused on supporting users of the open-source projects in the Interplanetary stack. We are committed to building bridges between web2 and web3 through open-source innovation.
+
+Now we’re delighted to announce our own "exit to community": [Interplanetary Shipyard](https://ipshipyard.com/), an **independent collective of people maintaining many of the most popular implementations in the IPFS and libp2p ecosystem**. 
+
+
+Our founding team includes many longtime maintainers of widely-used IPFS and libp2p implementations and tools. Shipyard is laser-focused on supporting users of the open-source projects in the Interplanetary stack. We are committed to building bridges between web2 and web3 through open-source innovation. We work directly with teams building on IPFS and libp2p, both to troubleshoot and improve current implementations, and also to inform our public goods roadmap. We are registered as a Delaware nonstock corporation.
+
 
 Our current set of implementations maintained by Shipyard include:
 
@@ -76,7 +82,8 @@ So, a few questions might arise next.
 
 The set of projects leveraging IPFS and libp2p is now so broad and diverse that it exceeds the purview of one company. Open-source projects need to be managed and owned by their community. 
 
-Consider the precariousness of core IPFS development being tied to a single company, and thus a single funding source. What if that company experiences a crisis? What if that funding source decides to prioritize something different from what the IPFS developers believe is most important? In web2, the model for supporting and promoting open-source projects was to get the largest centralized players to pay their own employees to maintain the tooling. What does that model look like for the next generation of the internet? 
+Consider the precariousness of core IPFS development being tied to a single company, and thus a single funding source. What if that company experiences a change in strategy? What if that funding source decides to prioritize something different from what the IPFS community believes is most important? In web2, the model for supporting and promoting open-source projects was to get the largest centralized players to pay their own employees to maintain the tooling. What does that model look like for the next generation of the internet? 
+
 
 We want to let the community decide. We believe putting control of the IPFS stack in the hands of an independent collective will foster better resiliency, transparency, open-protocol governance, and long-term future health. By **operating independently while collaborating publicly**, we will build alongside other technical teams that rely on this essential infrastructure. 
 
@@ -96,7 +103,8 @@ We have an extensive [initiative roadmap](https://ipshipyard.com/initiative-road
 
 We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’ve also secured significant commitments from other big3 web3 foundations in support of public goods funding to maintain IPFS and libp2p. We’re thankful as well to our early ecosystem supporters and patrons including CoopHive, Pinata, and Fission.
 
-We’re exploring multiple avenues for financial support, and in keeping with our new community collective approach, we’re thinking in public about what those avenues could be: public goods funding, community grants, or even token splits. 
+We’re exploring multiple avenues for financial support, and in keeping with our new community collective approach, we’re thinking in public about what those avenues could be: public goods funding, community grants, commercial services, crypto-native funding, and more. 
+
 
 **Our team is raising an additional $3 million in community contributions to sustain our work as technical stewards in 2024**. Here’s how you can support Shipyard: 
 
