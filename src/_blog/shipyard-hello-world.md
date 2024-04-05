@@ -27,38 +27,38 @@ Our founding team includes many longtime maintainers of widely-used IPFS and lib
 
 Our current set of implementations maintained by Shipyard include:
 
-<table style="width: 100%; border-collapse: collapse;">
-  <tr style="border-width: thin; border-color: black; text-align: center;">
-    <td colspan="2" style="border-width: thin; border-color: black;"><strong>IPFS</strong></td>
-    <td style="border-width: thin; border-color: black; text-align: center;"><strong>libp2p</strong></td>
+  <table style="width: 100%; border-collapse: collapse;">
+  <tr style="border-width: thin; border-color: #888; text-align: center;">
+    <td colspan="2" style="border-width: thin; border-color: #888;"><strong>IPFS</strong></td>
+    <td style="border-width: thin; border-color: #888; text-align: center;"><strong>libp2p</strong></td>
   </tr>
   <tr>
-    <td rowspan="2" style="border-width: thin; border-color: black;">
-      <p>Boxo</p>
-      <p>Rainbow</p>
-      <p>Someguy</p>
-      <p>ipfs.io</p>
-      <p>dweb.link</p>
-      <p>trustless-gateway.link</p>
-      <p>delegated-ipfs.dev</p>
-      <p>Kubo</p>
-      <p>Badbits</p>
+    <td rowspan="2" style="border-width: thin; border-color: #888; padding: .5rem;">
+      <p><a href="https://github.com/ipfs/boxo/#readme">Boxo</a> <small>(GO SDK)</small></p>
+      <p><a href="https://github.com/ipfs/kubo/#readme">Kubo</a> <small>(Server, Desktop, Brave)</small></p>
+      <p><a href="https://github.com/ipfs/rainbow/#readme">Rainbow</a> <small>(Gateway impl.)</small></p>
+      <p><a href="https://github.com/ipfs/someguy#readme">Someguy</a> <small>(Router impl.)</small></p>
+      <p><a href="https://github.com/ipfs/helia#readme">Helia</a> <small>(JS SDK)</small></p>
+      <p><a href="https://github.com/ipfs/helia-verified-fetch#readme">verified-fetch</a> <small>(Web API for JS)</small></p>
+      <p><a href="https://github.com/ipfs-shipyard/service-worker-gateway#readme">Service Worker Gateway</a> <small>(impl. WIP)</small></p>
+      <p><a href="https://badbits.dwebops.pub/">Bad Bits Denylist</a> <s</p>
     </td>
-    <td rowspan="2" style="border-width: thin; border-color: black;">
-      <p>Amino DHT</p>
-      <p>IPFS Companion</p>
-      <p>IPFS Measurements</p>
-      <p>IPFS Desktop</p>
+    <td rowspan="2" style="border-width: thin; border-color: #888; padding: .5rem;">
+      <p><a href="https://github.com/ipfs/ipfs-companion#readme">IPFS Companion</a> <small>(browser extension)</small></p>
+      <p><a href="https://github.com/ipfs/ipfs-desktop#readme">IPFS Desktop</a> <small>(Windows/macOS/Linux)</small></p>
+      <p><a href="https://ipfscluster.io/">IPFS Cluster</a> <small>(on hold)</small></p>
+      <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">ipfs.io</a> <small>(public utility)</small></p>
+      <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">dweb.link</a> <small>(public utility)</small>)</p>
+      <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">trustless-gateway.link</a> <small>(public utility)</small></p>
+      <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing">delegated-ipfs.dev</a> <small>(public utility)</small></p>
+      <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#amino-dht-bootstrappers">Amino DHT</a> <small>(public utility)</small></p>
+      <p><a href="https://stats.ipfs.network">IPFS Measurements</a></p>
+    </td>
+    <td rowspan="2" style="border-width: thin; border-color: #888; padding: .5rem;">
+      <p><a href="https://github.com/libp2p/go-libp2p#readme">go-libp2p</a></p>
+      <p><a href="https://github.com/libp2p/js-libp2p#readme">js-libp2p</a></p>
+      <p><a href="https://github.com/libp2p/rust-libp2p#readme">rust-libp2p</a></p>
       <p>libp2p Measurements</p>
-      <p>Helia</p>
-      <p>service-worker-gateway</p>
-      <p>@helia/verified-fetch</p>
-      <p>IPFS Cluster <em>(on hold)</em></p>
-    </td>
-    <td rowspan="2" style="border-width: thin; border-color: black;">
-      <p>go-libp2p</p>
-      <p>js-libp2p</p>
-      <p>rust-libp2p</p>
     </td>
   </tr>
   <tr></tr>
