@@ -96,7 +96,8 @@ We want to let the community decide. We believe putting control of the IPFS stac
 
 **Who maintains and funds this work?**
 
-We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’ve also secured significant commitments from other notable web3 foundations in support of public goods funding to maintain IPFS and libp2p. We’re thankful as well to our early ecosystem supporters and patrons including CoopHive, Pinata, and Fission.
+We're grateful to Protocol Labs, our anchor financial partner for 2024-2025, for its continued support. We’re thankful as well to our early ecosystem supporters and patrons including Optimism's RetroPGF grants, Cloudflare, Pinata, Fission, and CoopHive.
+
 
 
 We’re exploring multiple avenues for financial support, and in keeping with our new community collective approach, we’re thinking in public about what those avenues could be: public goods funding, community grants, commercial services, crypto-native funding, and more. 
