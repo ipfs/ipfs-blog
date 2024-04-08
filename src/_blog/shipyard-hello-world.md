@@ -50,7 +50,6 @@ Our current set of implementations maintained by Shipyard include:
       <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">ipfs.io</a> <small>(public utility)</small></p>
       <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">dweb.link</a> <small>(public utility)</small></p>
       <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways">trustless-gateway.link</a> <small>(public utility)</small></p>
-
       <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing">delegated-ipfs.dev</a> <small>(public utility)</small></p>
       <p><a href="https://docs.ipfs.tech/concepts/public-utilities/#amino-dht-bootstrappers">Amino DHT</a> <small>(public utility)</small></p>
       <p><a href="https://stats.ipfs.network">IPFS Measurements</a></p>
