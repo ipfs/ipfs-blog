@@ -106,7 +106,7 @@ We’re exploring multiple avenues for financial support, and in keeping with ou
 **Our team is raising an additional $3 million in community contributions to sustain our work as technical stewards in 2024**. Here’s how you can support Shipyard: 
 
 * **Support Public Goods Maintenance** \
-If you or your project depends upon IPFS or libp2p, we invite you to consider contributing toward the ongoing maintenance of these important protocols as a public good. You can donate directly to IPFS or libp2p through the [Open Internet Foundation](https://openimpact.foundation/).
+If you or your project depends upon IPFS or libp2p, we invite you to consider contributing toward the ongoing maintenance of these important protocols as a public good. You can donate directly to IPFS or libp2p through the [Open Impact Foundation](https://openimpact.foundation/).
 * **Hire Shipyard for Commercial Services** \
 In addition to public good funding, we are also beginning to support commercial service agreements for our core users, including service tiers, contracted support, and other embedded engineering work. You can check out our [commercial services tiers](https://ipshipyard.gitwallet.co/) or reach out directly if you have a project you’d like to collaborate with us on.
 
