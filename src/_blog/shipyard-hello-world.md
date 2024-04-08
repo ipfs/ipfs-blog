@@ -4,7 +4,7 @@ title: 'IPFS & libp2p Devs Go Independent: Meet Interplanetary Shipyard'
 description: 'Check out the new IPFS community calendar where you can participate and contribute to one of the many working groups advancing IPFS.'
 author: Adin Schmahmann
 
-date: 2024-03-29
+date: 2024-04-08
 permalink: '/shipyard-hello-world/'
 header_image: '/shipyard-hello-world.png'
 tags:
