@@ -1,5 +1,5 @@
 ---
-date: 2024-03-26
+date: 2024-04-11
 permalink: /verified-fetch/
 title: 'Verified and Resilient IPFS Retrieval with Verified Fetch'
 description: ''
@@ -33,10 +33,9 @@ Trusted IPFS Gateways abstract much of the complexity (peer-to-peer connectivity
 
 <img alt="gateway architecture diagram" src="../assets/verified-fetch/gateways.png" width="500">
 
-The beauty of IPFS Gateways is in how simple they are to use: you append the CID to the URL of the Gateway and all IPFS magic is handled by the gateway for you. 
+The beauty of IPFS Gateways is in how simple they are to use: you append the CID to the URL of the Gateway and all IPFS magic is handled by the gateway for you.
 
 For example, fetching an image with the CID: [`bafk...beom`](https://cid.ipfs.tech/#bafkreie7ohywtosou76tasm7j63yigtzxe7d5zqus4zu3j6oltvgtibeom) is as simple as constructing the URL: `https://ipfs.io/ipfs/bafkreie7ohywtosou76tasm7j63yigtzxe7d5zqus4zu3j6oltvgtibeom` which can be passed to the `src` attribute of an `<img>`, as follows:
-
 
 <img class="py-4" alt="image loaded from an IPFS gateway" src="https://ipfs.io/ipfs/bafkreie7ohywtosou76tasm7j63yigtzxe7d5zqus4zu3j6oltvgtibeom" width="350">
 
@@ -62,7 +61,7 @@ Trustless IPFS Gateways are useful for browsers because they can be composed in 
 
 [`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified retrieval from trustless gateways easy.
 
-It's the culmination of multiple streams of work we undertook to bring deeper IPFS integrations to browsers and improve the development experience with IPFS. 
+It's the culmination of multiple streams of work we undertook to bring deeper IPFS integrations to browsers and improve the development experience with IPFS.
 
 <!-- These efforts include:
 - [Delegated routing over HTTP](https://specs.ipfs.tech/routing/http-routing-v1/) and [hosted someguy](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing)
@@ -72,14 +71,15 @@ It's the culmination of multiple streams of work we undertook to bring deeper IP
 
 ### Familiar, like the Fetch API
 
-Verified Fetch is modeled after the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and returns [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response) making it easy to adopt. 
-
+Verified Fetch is modeled after the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and returns [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response) making it easy to adopt.
 
 For example, fetching the CID of a JSON object is as simple
 
 ```ts
 import { verifiedFetch } from '@helia/verified-fetch'
-const resp = await verifiedFetch('ipfs://baguqeeradnk3742vd3jxhurh22rgmlpcbzxvsy3vc5bzakwiktdeplwer6pa')
+const resp = await verifiedFetch(
+  'ipfs://baguqeeradnk3742vd3jxhurh22rgmlpcbzxvsy3vc5bzakwiktdeplwer6pa'
+)
 const obj = await resp.json()
 ```
 
@@ -96,12 +96,11 @@ Under the hood, Verified Fetch will handle both fetching from trustless gateways
 
 Verified Fetch supports retrieval from multiple trustless gateways, ensuring both performance and resilience. It comes [pre-configured with three default gateways](https://github.com/ipfs/helia/blob/b67ac5f16eca1df5534c985045250bdb334a85cf/packages/block-brokers/src/trustless-gateway/index.ts#L6-L15), but can be easily customized:
 
-
 ```ts
 import { createVerifiedFetch } from '@helia/verified-fetch'
 
 const verifiedFetch = await createVerifiedFetch({
-  gateways: ['https://trustless-gateway.link', 'https://cloudflare-ipfs.com']
+  gateways: ['https://trustless-gateway.link', 'https://cloudflare-ipfs.com'],
 })
 ```
 
@@ -109,7 +108,7 @@ const verifiedFetch = await createVerifiedFetch({
 
 Mutable pointers are a powerful way to have a stable pointer that can be updated over time. In the IPFS ecosystem, there are two approaches to this: [IPNS](https://docs.ipfs.tech/concepts/ipns/) and [DNSLink](https://docs.ipfs.tech/concepts/dnslink/).
 
-Verified Fetch can resolve, fetch and verify both using the `ipns://` path prefix. 
+Verified Fetch can resolve, fetch and verify both using the `ipns://` path prefix.
 
 ### Resolving IPNS names
 
@@ -121,7 +120,7 @@ IPNS names are resolved using the [Delegated routing over HTTP](https://specs.ip
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-Note that you can deploy and configure your own [someguy](https://github.com/ipfs/someguy) instance or Delegated Routing endpoint. 
+Note that you can deploy and configure your own [someguy](https://github.com/ipfs/someguy) instance or Delegated Routing endpoint.
 
 To configure it, pass the endpoint to the `routers` config option:
 
@@ -129,7 +128,7 @@ To configure it, pass the endpoint to the `routers` config option:
 import { createVerifiedFetch } from '@helia/verified-fetch'
 
 const verifiedFetch = await createVerifiedFetch({
-  routers: ['https://delegated-ipfs.dev']
+  routers: ['https://delegated-ipfs.dev'],
 })
 ```
 
@@ -143,8 +142,7 @@ DNSLink domains are resolved using configurable DNS over HTTPS endpoint:
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-### ENS names are also supported with DNSLink 
+### ENS names are also supported with DNSLink
 
 Verified Fetch can also resolve [ENS names](https://ens.domains/) that have the [Contenthash record](https://docs.ens.domains/ensip/7) set with the help of [EthDNS](https://eth.link/) (provides a DNS bridge to ENS names). To do so, pass a DNS over HTTP EthDNS endpoint to the `dnsResolvers` option, like the [one provided by eth.limo](https://github.com/ethlimo/documentation/blob/master/dns-over-https/doh.md):
 
@@ -169,6 +167,23 @@ The following example uses Verified Fetch to fetch and verify an image from Vita
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+### Supports a wide range of data types
+
+As you may have noticed, you can use Verified Fetch to fetch a wide range of data types. Verified Fetch abstracts much of the complexity of IPLD codecs, supporting [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs), dag-cbor, and dag-json out of the box. This frees you to focus on your application. The `text()`, `.blob()`, and .`arrayBuffer()` methods will work as expected without a detailed content type.
+
+By default, if the response can be parsed as JSON, Verified Fetch sets the `Content-Type` header of the Response object to as `application/json`, otherwise it sets it as application/octet-stream.
+
+[You can also pass the `Accept` header](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#the-accept-header) to override certain response processing, or to ensure that the final Content-Type of the response is the one that is expected.
+
+### Customizable
+
+By default, Verified Fetch uses [Helia/http](https://github.com/ipfs/helia/tree/main/packages/http): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can pass an instance of Helia that is customized to your needs. A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
+
+### 📕 Docs & Examples
+
+In addition to the embedded examples above, check out the [README](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch) for a more elaborate overview of usage patterns and reconfigurability.
+
+We also have a [ready-to-run example](https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-browser-verified-fetch) showing `@helia/verified-fetch` in the browser with different content types.
 
 ## Outline
 
@@ -206,6 +221,5 @@ The following example uses Verified Fetch to fetch and verify an image from Vita
  - optimisations (car retrieval, gateway heuristics, caching)
 
  -->
-
 
 ## Conclusion
