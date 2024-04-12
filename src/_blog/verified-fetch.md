@@ -183,11 +183,17 @@ By default, Verified Fetch uses [Helia/http](https://github.com/ipfs/helia/tree/
 
 In addition to the embedded examples above, check out the [README](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch) for a more elaborate overview of usage patterns and reconfigurability.
 
-We also have a [ready-to-run example](https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-browser-verified-fetch) showing `@helia/verified-fetch` in the browser with different content types.
+We also have a [ready-to-run example](https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-browser-verified-fetch) showing `@helia/verified-fetch` in the browser handling different content types.
 
-## Outline
 
-<!--
+## Try it out today
+
+-
+
+<!--=
+OUTLINE
+-------
+
 - Problem: Fetching from trusted gateways in not IPFS.
   - Fragile
   - Too trusty
@@ -221,5 +227,3 @@ We also have a [ready-to-run example](https://github.com/ipfs-examples/helia-exa
  - optimisations (car retrieval, gateway heuristics, caching)
 
  -->
-
-## Conclusion
