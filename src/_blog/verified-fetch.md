@@ -15,9 +15,9 @@ tags:
 
 ## Announcing @helia/verified-fetch
 
-The Shipyard team is thrilled to announce **`@helia/verified-fetch`** is now ready for broader adoption. Verified Fetch is a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)-like library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support IPNS, and DNSLink resolution. [Try it out](https://www.npmjs.com/package/@helia/verified-fetch) and let us know what you think.
+The Shipyard team is thrilled to announce **`@helia/verified-fetch`** is now ready for broader adoption. Verified Fetch is a [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)-like library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution. [Try it out](https://www.npmjs.com/package/@helia/verified-fetch) and let us know what you think.
 
-This blog post covers the challenges of IPFS retrieval in browsers and how @helia/verified-fetch addresses them with runable examples. Feel free to jump ahead to [Solution: Verified Fetch](#solution-verified-fetch)
+This blog post covers the challenges of IPFS retrieval in browsers and how `@helia/verified-fetch` addresses them with runable examples. Feel free to jump ahead to [Solution: Verified Fetch](#solution-verified-fetch)
 
 ## Problem: Verified IPFS retrieval on the web is hard
 
@@ -41,7 +41,7 @@ For example, fetching an image with the CID: [`bafk...beom`](https://cid.ipfs.te
 
 ### Trusting an IPFS Gateway without verifying is an anti-pattern
 
-**Nonetheless, fetching from a trusted IPFS gateway without verifying is an anti-pattern** and goes against [the principles of IPFS](https://specs.ipfs.tech/architecture/principles/#verification-matters).
+**Nonetheless, fetching from a third-party IPFS gateway without verifying is an anti-pattern** and goes against [the principles of IPFS](https://specs.ipfs.tech/architecture/principles/#verification-matters).
 
 Content addressing in IPFS frees you from the model of a single canonical source for data. This is a powerful concept and the root of IPFS' benefits: resilience, censorship resistance, and trustlessness. But, **fully reaping the benefits of IPFS requires verification**.
 
@@ -56,7 +56,7 @@ This comes with the downstream benefit of resilience: if one provider or gateway
 [Trustless IPFS Gateways](https://specs.ipfs.tech/http-gateways/trustless-gateway/) have been gaining steam as a means of enabling verification and its downstream benefits with the simplicity of IPFS Gateways over HTTP.
 
 
-Trustless IPFS Gateways' response types are fully and incrementally verifiable: clients can decide between a [raw block](https://docs.ipfs.tech/concepts/glossary/#block) or a [CAR stream](https://docs.ipfs.tech/concepts/glossary/#car).
+Trustless IPFS Gateways' response types are [fully and incrementally verifiable](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval): clients can decide between a [raw block](https://docs.ipfs.tech/concepts/glossary/#block) ([`application/vnd.ipld.raw`](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw)) or a [CAR stream](https://docs.ipfs.tech/concepts/glossary/#car) ([`application/vnd.ipld.car`](https://www.iana.org/assignments/media-types/application/vnd.ipld.car)).
 
 Trustless IPFS Gateways are useful for browsers because they can be composed in a way that unleashes many of the aforementioned benefits of IPFS and content addressing.
 
@@ -76,7 +76,7 @@ It's the culmination of multiple streams of work we undertook to bring seamless 
 
 ### Familiar, like the Fetch API
 
-Verified Fetch is modeled after the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and returns [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response) making it easy to adopt and reason about.
+Verified Fetch is modeled after the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and returns [`Response` object](https://developer.mozilla.org/en-US/docs/Web/API/Response) making it easy to adopt and reason about.
 
 For example, fetching the CID of a JSON object is as simple as:
 
@@ -171,15 +171,15 @@ The following example uses Verified Fetch to fetch and verify an image from Vita
 
 ### Supports a wide range of data types
 
-As you may have noticed, you can use Verified Fetch to fetch a wide range of data types. Verified Fetch abstracts much of the complexity of IPLD codecs, supporting [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs), dag-cbor, and dag-json out of the box. This frees you to focus on your application. The `text()`, `.blob()`, and .`arrayBuffer()` methods will work as expected without a detailed content type.
+As you may have noticed, you can use Verified Fetch to fetch a wide range of data types. Verified Fetch abstracts much of the complexity of IPLD codecs, supporting [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs), [dag-cbor](https://ipld.io/specs/codecs/dag-cbor/), and [dag-json](https://ipld.io/specs/codecs/dag-json/) out of the box. This frees you to focus on your application. The `text()`, `.blob()`, and .`arrayBuffer()` methods will work as expected without a detailed content type.
 
-By default, if the response can be parsed as JSON, Verified Fetch sets the `Content-Type` header of the Response object to as `application/json`, otherwise it sets it as application/octet-stream.
+By default, if the response can be parsed as JSON, Verified Fetch sets the `Content-Type` header of the Response object to as `application/json`, otherwise it sets it as `application/octet-stream`.
 
 [You can also pass the `Accept` header](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#the-accept-header) to override certain response processing, or to ensure that the final Content-Type of the response is the one that is expected.
 
 ### Customizable
 
-By default, Verified Fetch uses [Helia/http](https://github.com/ipfs/helia/tree/main/packages/http): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can pass an instance of Helia that is customized to your needs. A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
+By default, Verified Fetch uses [`@helia/http`](https://github.com/ipfs/helia/tree/main/packages/http#heliahttp): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can pass an instance of Helia that is customized to your needs. A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
 
 ### 📕 Docs & Examples
 
