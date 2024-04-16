@@ -17,7 +17,7 @@ tags:
 
 The Shipyard team is thrilled to announce **`@helia/verified-fetch`** is now ready for broader adoption. Verified Fetch is a [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)-like library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution. [Try it out](https://www.npmjs.com/package/@helia/verified-fetch) and let us know what you think.
 
-This blog post covers the challenges of IPFS retrieval in browsers and how `@helia/verified-fetch` addresses them with runable examples. Feel free to jump ahead to [Solution: Verified Fetch](#solution-verified-fetch)
+This blog post covers the challenges of IPFS retrieval in browsers and how `@helia/verified-fetch` addresses them with runnable examples. Feel free to jump ahead to [Solution: Verified Fetch](#solution-verified-fetch)
 
 ## Problem: Verified IPFS retrieval on the web is hard
 
@@ -47,32 +47,25 @@ Content addressing in IPFS frees you from the model of a single canonical source
 
 ### Verification facilitates resilience multi-source retrieval
 
-Verifying IPFS content as part of the retrieval process allows you to fetch it from multiple sources –either providers or gateways– without trusting them, because verification ensures the integrity of the data.
+Verifying IPFS content as part of the retrieval process allows you to fetch it from multiple sources –either providers or gateways– without trusting them because verification ensures the integrity of the data.
 
-This comes with the downstream benefit of resilience: if one provider or gateway is unavailable, unreachable, or censored, you can still retrieve the CID from another (as long as other providers are available).
+This comes with the downstream benefit of resilience: if one provider or gateway is unavailable, unreachable, or censored, you can still retrieve the CID from another (as long as other providers are available). A [recent outage of the Unpkg CDN](https://www.theverge.com/2024/4/12/24128276/open-source-unpkg-cdn-down) is a great example of why multi-source retrieval is useful.
 
 ### Trustless IPFS Gateways enable verification in browsers
 
-[Trustless IPFS Gateways](https://specs.ipfs.tech/http-gateways/trustless-gateway/) have been gaining steam as a means of enabling verification and its downstream benefits with the simplicity of IPFS Gateways over HTTP.
-
+[Trustless IPFS Gateways](https://specs.ipfs.tech/http-gateways/trustless-gateway/) have been gaining steam as a means of enabling verification and its downstream benefits with the simplicity of IPFS Gateways over HTTP. In fact, at the time of writing, most [public gateways](https://ipfs.fyi/gateways) support Trustless Gateway responses.
 
 Trustless IPFS Gateways' response types are [fully and incrementally verifiable](https://docs.ipfs.tech/reference/http/gateway/#trustless-verifiable-retrieval): clients can decide between a [raw block](https://docs.ipfs.tech/concepts/glossary/#block) ([`application/vnd.ipld.raw`](https://www.iana.org/assignments/media-types/application/vnd.ipld.raw)) or a [CAR stream](https://docs.ipfs.tech/concepts/glossary/#car) ([`application/vnd.ipld.car`](https://www.iana.org/assignments/media-types/application/vnd.ipld.car)).
 
 Trustless IPFS Gateways are useful for browsers because they can be composed in a way that unleashes many of the aforementioned benefits of IPFS and content addressing.
 
-> **Note:** Browser constraints prevent you from opening connections to "random" addresses that don't have a CA signed certificate, making it hard to build IPFS clients for browsers that go straight to providers. Newer transport such as [WebTransport](https://docs.libp2p.io/concepts/transports/webtransport/) and [WebRTC-direct](https://docs.libp2p.io/concepts/transports/webrtc/) are addressaing this challenge in a way that may be able to reduce dependency on IPFS Gateways.
+> **Note:** Browser constraints prevent you from opening connections to "random" addresses that don't have a CA signed certificate, making it hard to build IPFS clients for browsers that go straight to providers. Newer transport such as [WebTransport](https://docs.libp2p.io/concepts/transports/webtransport/) and [WebRTC-direct](https://docs.libp2p.io/concepts/transports/webrtc/) address this challenge in a way that may be able to reduce dependency on IPFS Gateways in the future.
 
 ## Solution: Verified Fetch
 
-[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified retrieval from trustless gateways easy.
+[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new JavaScript library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified IPFS retrieval from trustless gateways easy. It's written in TypeScript with Web APIs so you can run it on any modern JS runtime.
 
 It's the culmination of multiple streams of work we undertook to bring seamless and deeper IPFS integrations to browsers and improve the development experience with IPFS.
-
-<!-- These efforts include:
-- [Delegated routing over HTTP](https://specs.ipfs.tech/routing/http-routing-v1/) and [hosted someguy](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing)
-- [Trustless Gateway](https://specs.ipfs.tech/http-gateways/trustless-gateway/)
-- [Helia](https://github.com/ipfs/helia/): lean, modular, and modern TypeScript implementation of IPFS for the prolific JS and browser environments.
-- [Helia/http](https://github.com/ipfs/helia/tree/main/packages/http): A lightweight version of Helia on IPFS over HTTP with Trustless Gateways -->
 
 ### Familiar, like the Fetch API
 
@@ -120,7 +113,6 @@ IPNS names are resolved using the [Delegated routing over HTTP](https://docs.ipf
 <iframe height="300" style="width: 100%;" scrolling="no" title="Resolving and Fetching a DNSLink with @helia/verified-fetch example" src="https://codepen.io/2color/embed/BaEVMWW?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/2color/pen/BaEVMWW">
   Resolving and Fetching a DNSLink with @helia/verified-fetch example</a> by Daniel Norman (<a href="https://codepen.io/2color">@2color</a>)
-  on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 Note that you can deploy and configure your own Delegated Routing endpoint with [someguy](https://github.com/ipfs/someguy).
@@ -155,18 +147,19 @@ import { dnsJsonOverHttps } from '@multiformats/dns/resolvers'
 const verifiedFetch = await createVerifiedFetch({
   dnsResolvers: {
     'eth.': dnsJsonOverHttps('https://dns.eth.limo/dns-query'),
-    '.': dnsJsonOverHttps('https://cloudflare-dns.com/dns-query')
-  }
+    '.': dnsJsonOverHttps('https://cloudflare-dns.com/dns-query'),
+  },
 })
-const resp = await verifiedFetch('ipns://vitalik.eth/images/scaling-files/cryptokitties.png')
+const resp = await verifiedFetch(
+  'ipns://vitalik.eth/images/scaling-files/cryptokitties.png'
+)
 ```
 
-The following example uses Verified Fetch to fetch and verify an image from Vitalik's website:
+The following example uses Verified Fetch to [resolve `vitalik.eth`](https://app.ens.domains/vitalik.eth?tab=records) to a CID, fetch the CID, and verify the bytes of the image from Vitalik's website:
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="Resolving and Fetching a DNSLink with @helia/verified-fetch and custom DoH endpoint example" src="https://codepen.io/2color/embed/wvZXRPa?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/2color/pen/wvZXRPa">
   Resolving and Fetching a DNSLink with @helia/verified-fetch and custom DoH endpoint example</a> by Daniel Norman (<a href="https://codepen.io/2color">@2color</a>)
-  on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 ### Supports a wide range of data types
@@ -179,59 +172,29 @@ By default, if the response can be parsed as JSON, Verified Fetch sets the `Cont
 
 ### Customizable
 
-By default, Verified Fetch uses [`@helia/http`](https://github.com/ipfs/helia/tree/main/packages/http#heliahttp): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can pass an instance of Helia that is customized to your needs. A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
+By default, Verified Fetch uses [`@helia/http`](https://github.com/ipfs/helia/tree/main/packages/http#heliahttp): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can [pass an instance of Helia that is customized to your needs](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#usage-with-customized-helia). A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
 
 ### 📕 Docs & Examples
 
 In addition to the embedded examples above, check out the [README](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch) for a more elaborate overview of usage patterns and reconfigurability.
 
-We also have a [ready-to-run example](https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-browser-verified-fetch) showing `@helia/verified-fetch` in the browser handling different content types.
+We also have a [ready-to-run example](<https://github.com/ipfs-examples/[text](https://inbrowser.dev/ipns/example.ipfs.garden)helia-examples/tree/main/examples/helia-browser-verified-fetch>) showing `@helia/verified-fetch` in the browser handling different content types.
 
+## What's next for Verified Fetch?
+
+This release of Verified Fetch leans heavily on IPFS Gateways. But the journey doesn't end there. Our long-term vision is to [enable direct retrieval from content providers, e.g. Kubo nodes](https://github.com/ipfs/helia/issues/255), which would further increase the resilience of retrievals.
+
+Verified Fetch is already powering IPFS retrieval in the [Service Worker Gateway](https://github.com/ipfs-shipyard/service-worker-gateway), an experimental approach to in-browser gateways. This has given us the chance to dogfood and refine Verified Fetch.
 
 ## Try it out today
 
-- Relevant links
-  - Dapps WG
-  - Helia WG
-  - Forums
-  - ip-js Discord channel
-- What's next (tease service worker GW and usage in SW in general)
+We built Verified Fetch with app developers in mind. We understand that for developers to be productive with IPFS, you need good abstractions.
 
+We invite you to try it out and share your feedback. We can't wait to see what you build with it 🚢.
 
-<!--=
-OUTLINE
--------
+For questions, discussions, and feedback join the [IPFS Forums](https://discuss.ipfs.tech/) or the [#ip-js](https://discord.com/channels/806902334369824788/1136320721044381706) channel in the [IPFS Discord](https://discord.com/invite/ipfs). Finally, the [Helia and Dapps Working Groups](https://lu.ma/ipfs?tag=helia) meet regularly to coordinate and discuss the development of the Helia and advance the tooling for Dapps in the IPFS ecosystem.
 
-- Problem: Fetching from trusted gateways in not IPFS.
-  - Fragile
-  - Too trusty
-  - But there's good reasons for this. Doing IPFS retrieval and verification in a way that works on all js runtimes is tricky.
-- Solution: @helia/verified fetch: like fetch, but for CIDs (and IPNS and DNSLink)
-  - Resilient:
-    - no more dead links with multiple gateways
-    - As long as one of the gateways has it cached
-  - Trustless: All content is retrieved in a trustless manner, meaning that the integrity of all bytes is verified by comparing hashes of the data
-  - Runs everywhere JS does! Built on top of Web APIs and published as an ESM module.
-  - DX: developer friendly!
-    - modelled after the Fetch  API
-    - Fully typed with TypeScript
-    - Well documented
-    - Customisable
-      - By default: trustless gateways
-      - Pass a custom Helia instance
-  - platform-agnostic way to distribute JS code
-  - The culmination of many streams of works:
-    - delegated routing over HTTP and hosted someguy
-    - trustless-gateway
-    - Helia as the canonical IPFS implementation with TypeScript
-    - Helia/http
-- Try it today
-  - npm package
-  - configurable gateways and routers
-  - examples
-- What's next
-  - direct retrieval from peers using delegated routing
-  -
- - optimisations (car retrieval, gateway heuristics, caching)
-
- -->
+<br />
+<a href="https://npmjs.com/package/@helia/verified-fetch" class="cta-button">
+  @helia/verified-fetch docs
+</a>
