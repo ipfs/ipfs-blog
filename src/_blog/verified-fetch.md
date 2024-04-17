@@ -63,7 +63,7 @@ Trustless IPFS Gateways are useful for browsers because they can be composed in 
 
 ## Solution: Verified Fetch
 
-[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new JavaScript library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified IPFS retrieval from trustless gateways easy. It's written in TypeScript with Web APIs so you can run it on any modern JS runtime.
+[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new JavaScript library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified IPFS retrieval from trustless gateways easy. It's written in TypeScript with Web APIs so you can run it in browsers as well as modern JS runtime.
 
 It's the culmination of multiple streams of work we undertook to bring seamless and deeper IPFS integrations to browsers and improve the development experience with IPFS.
 
@@ -168,7 +168,20 @@ As you may have noticed, you can use Verified Fetch to fetch a wide range of dat
 
 By default, if the response can be parsed as JSON, Verified Fetch sets the `Content-Type` header of the Response object to as `application/json`, otherwise it sets it as `application/octet-stream`.
 
-[You can also pass the `Accept` header](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#the-accept-header) to override certain response processing, or to ensure that the final Content-Type of the response is the one that is expected.
+[You can also pass the `Accept` header](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#the-accept-header) to override [certain](https://github.com/ipfs/helia-verified-fetch/blob/089635d6cd5b10aefbed013e95637ddb90b166e5/packages/verified-fetch/src/utils/select-output-type.ts#L12-L62) response processing to modify the `Content-Type` of the response. For example, you may want to fetch a `dag-cbor` CID with the `Accept` header set to `application/vnd.ipld.dag-json` for easier handling in JavaScript:
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Fetching a CID with @helia/verified-fetch example" src="https://codepen.io/2color/embed/ExJdayy?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/2color/pen/ExJdayy">
+  Fetching a CID with @helia/verified-fetch example</a> by Daniel Norman (<a href="https://codepen.io/2color">@2color</a>)
+</iframe>
+
+Finally, since you can store **any** kind of file with UnixFS, if you want the `Content-Type` header of the `Response` object to be sniffed on the [Magic Bytes of the retrieved binary data](https://en.wikipedia.org/wiki/Content_sniffing), you can pass the `contentTypeParser` option as follows:
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Content-Type sniffing with contentTypeParser @helia/verified-fetch example" src="https://codepen.io/2color/embed/JjVmoLy?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/2color/pen/JjVmoLy">
+  Content-Type sniffing with contentTypeParser @helia/verified-fetch example</a> by Daniel Norman (<a href="https://codepen.io/2color">@2color</a>)
+</iframe>
+
 
 ### Customizable
 
