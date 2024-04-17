@@ -2,7 +2,7 @@
 date: 2024-04-11
 permalink: /verified-fetch/
 title: 'Verified IPFS Retrieval in Browsers with @helia/verified-fetch'
-description: 'Verified Fetch is library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution'
+description: 'Verified Fetch is a library for streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution'
 author: Daniel Norman
 header_image: /verified-fetch/header.png
 tags:
