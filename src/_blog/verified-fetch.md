@@ -63,7 +63,7 @@ Trustless IPFS Gateways are useful for browsers because they can be composed in 
 
 ## Solution: Verified Fetch
 
-[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new JavaScript library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified IPFS retrieval from trustless gateways easy. It's written in TypeScript with Web APIs so you can run it in browsers as well as modern JS runtime.
+[`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) or simply **Verified Fetch** is a new JavaScript library by [The Shipyard team](https://blog.ipfs.tech/shipyard-hello-world/) that makes verified IPFS retrieval from trustless gateways easy. It's written in TypeScript with Web APIs so you can run it in browsers as well as modern JS runtimes.
 
 It's the culmination of multiple streams of work we undertook to bring seamless and deeper IPFS integrations to browsers and improve the development experience with IPFS.
 
