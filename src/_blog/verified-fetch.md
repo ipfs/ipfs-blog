@@ -1,5 +1,5 @@
 ---
-date: 2024-04-17
+date: 2024-04-18
 permalink: /verified-fetch/
 title: 'Verified IPFS Retrieval in Browsers with @helia/verified-fetch'
 description: 'Verified Fetch is a library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution'
@@ -207,7 +207,7 @@ We also have a [ready-to-run example](<https://github.com/ipfs-examples/[text](h
 
 This release of Verified Fetch leans heavily on IPFS Gateways. But the journey doesn't end there. Our long-term vision is to [enable direct retrieval from content providers, e.g. Kubo nodes](https://github.com/ipfs/helia/issues/255), which would further increase the resilience of retrievals.
 
-Verified Fetch is already powering IPFS retrieval in the [Service Worker Gateway](https://github.com/ipfs-shipyard/service-worker-gateway), an experimental approach to in-browser gateways. This has given us the chance to dogfood and refine Verified Fetch.
+Verified Fetch is already powering IPFS retrieval in the [Service Worker Gateway](https://github.com/ipfs-shipyard/service-worker-gateway), a novel approach to in-browser IPFS gateways. This has given us the chance to dogfood and refine Verified Fetch.
 
 ## Try it out today
 
