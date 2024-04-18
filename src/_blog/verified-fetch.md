@@ -2,7 +2,7 @@
 date: 2024-04-17
 permalink: /verified-fetch/
 title: 'Verified IPFS Retrieval in Browsers with @helia/verified-fetch'
-description: 'Verified Fetch is a library for streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution'
+description: 'Verified Fetch is a library streamlining verified retrieval of IPFS content in browsers and JS runtimes, with native support for IPNS, and DNSLink resolution'
 author: Daniel Norman
 header_image: /verified-fetch/header.png
 tags:
@@ -19,11 +19,11 @@ The Shipyard team is thrilled to announce **`@helia/verified-fetch`** is now rea
 
 This blog post covers the challenges of IPFS retrieval in browsers and how `@helia/verified-fetch` addresses them with runnable examples. Feel free to jump ahead to [Solution: Verified Fetch](#solution-verified-fetch)
 
-## Problem: Verified IPFS retrieval on the web is hard
+## Problem: Verified IPFS retrieval in browsers is hard
 
-IPFS stands out as the leading decentralized network for distributing content-addressed data, spanning a wide range of use cases such as off-chain voting, NFTs, [censorship-resistant Wikipedia](https://blog.ipfs.tech/24-uncensorable-wikipedia/), and dapp distribution.
+IPFS stands out as the leading decentralized network for distributing content-addressed data (with CIDs), spanning a wide range of use cases such as [off-chain voting](https://docs.ipfs.tech/case-studies/snapshot/), NFTs, [censorship-resistant Wikipedia](https://blog.ipfs.tech/24-uncensorable-wikipedia/), and [dapp distribution](https://blog.ipfs.tech/dapps-ipfs/).
 
-However, developing web applications for the browser with an IPFS implementation capable of verified content retrieval has been an ongoing challenge for developers. There are several reasons: inherent constraints of the Web Platform, the apparent complexity of IPFS, and the historical lack of focused tooling for verified IPFS retrieval on the Web.
+However, developing web applications for the browser with an IPFS implementation capable of verified content retrieval has been an ongoing challenge for developers. The main reason lies in the inherent constraints of the Web Platform: TCP connections aren't allowed, and Certificate Authority signed certificates are required in Secure Contexts which increases the overhead to peer-to-peer retrieval. Other reasons include the apparent complexity of IPFS and the historical lack of focused tooling for verified IPFS retrieval on the Web.
 
 For this reason, many developers use a **trusted gateway** and call it a day. That's understandable and speaks to the ease and utility of gateways as an abstraction of IPFS.
 
@@ -185,7 +185,17 @@ Finally, since you can store **any** kind of file with UnixFS, if you want the `
 
 ### Customizable
 
-By default, Verified Fetch uses [`@helia/http`](https://github.com/ipfs/helia/tree/main/packages/http#heliahttp): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can [pass an instance of Helia that is customized to your needs](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#usage-with-customized-helia). A common use-case might be when running on Node.js where you might want to lean more heavily on direct retrieval using Bitswap over TCP.
+By default, Verified Fetch uses [`@helia/http`](https://github.com/ipfs/helia/tree/main/packages/http#heliahttp): a lightweight version of Helia on IPFS over HTTP with Trustless Gateways. However, you can [pass an instance of Helia that is customized to your needs](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch#usage-with-customized-helia). A common use-case might be when running on Node.js where you might want to lean more heavily on peer-to-peer retrieval using Bitswap over TCP. In that case, you would likely be better served by a Helia instance backed by libp2p as follows:
+
+```ts
+import { createHelia } from 'helia'
+import { createVerifiedFetch } from '@helia/verified-fetch'
+
+const verifiedFetch = await createVerifiedFetch(
+  // Create a Helia instance instance backed by js-libp2p
+  await createHelia()
+)
+```
 
 ### 📕 Docs & Examples
 
