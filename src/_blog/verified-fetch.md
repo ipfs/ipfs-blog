@@ -213,11 +213,22 @@ Verified Fetch is already powering IPFS retrieval in the [Service Worker Gateway
 
 We built Verified Fetch with app developers in mind. We understand that for developers to be productive with IPFS, you need good abstractions.
 
-We invite you to try it out and share your feedback. We can't wait to see what you build with it 🚢.
-
-For questions, discussions, and feedback join the [IPFS Forums](https://discuss.ipfs.tech/) or the [#ip-js](https://discord.com/channels/806902334369824788/1136320721044381706) channel in the [IPFS Discord](https://discord.com/invite/ipfs). Finally, the [Helia and Dapps Working Groups](https://lu.ma/ipfs?tag=helia) meet regularly to coordinate and discuss the development of the Helia and advance the tooling for Dapps in the IPFS ecosystem.
+We invite you to try it out and can't wait to see what you build with it 🚢.
 
 <br />
 <a href="https://npmjs.com/package/@helia/verified-fetch" class="cta-button">
   @helia/verified-fetch docs
+</a>
+
+## Share your feedback
+
+If you are new to Helia and mostly interested in retrievals, `@helia/verified-fetch` is a great place to get started.
+
+For questions, discussions, and feedback join the [IPFS Forums](https://discuss.ipfs.tech/) or the [#ip-js](https://discord.com/channels/806902334369824788/1136320721044381706) channel in the [IPFS Discord](https://discord.com/invite/ipfs). Finally, the [Helia and Dapps Working Groups](https://lu.ma/ipfs?tag=helia) meet regularly to coordinate and discuss the development of the Helia and advance the tooling for Dapps in the IPFS ecosystem.
+
+If you've already been using [Helia](https://github.com/ipfs/helia/), please take a moment to [fill out the Helia feedback survey](https://ipfs.fyi/helia-feedback). Your feedback will help us understand developer needs and challenges as well as inform our priorities and shape Helia’s roadmap.
+
+<br />
+<a href="https://ipfs.fyi/helia-feedback" class="cta-button">
+  Helia Feedback Survey
 </a>
