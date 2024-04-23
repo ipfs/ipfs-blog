@@ -45,11 +45,11 @@ For example, fetching an image with the CID: [`bafk...beom`](https://cid.ipfs.te
 
 Content addressing in IPFS frees you from the model of a single canonical source for data. This is a powerful concept and the root of IPFS' benefits: resilience, censorship resistance, and trustlessness. But, **fully reaping the benefits of IPFS requires verification**.
 
-### Verification facilitates resilience and multi-source retrieval
+### Verification facilitates resilience and peer-to-peer retrieval
 
 Verifying IPFS content as part of the retrieval process allows you to fetch it from multiple sources –either providers or gateways– without trusting them because verification ensures the integrity of the data.
 
-This comes with the downstream benefit of resilience: if one provider or gateway is unavailable, unreachable, or censored, you can still retrieve the CID from another (as long as other providers are available). A [recent outage of the Unpkg CDN](https://www.theverge.com/2024/4/12/24128276/open-source-unpkg-cdn-down) is a great example of why multi-source retrieval is useful.
+This comes with the downstream benefit of resilience: if one provider or gateway is unavailable, unreachable, or censored, you can still retrieve the CID from another (as long as other providers are available). A [recent outage of the Unpkg CDN](https://www.theverge.com/2024/4/12/24128276/open-source-unpkg-cdn-down) is a great example of why peer-to-peer retrieval is useful.
 
 ### Trustless IPFS Gateways enable verification in browsers
 
