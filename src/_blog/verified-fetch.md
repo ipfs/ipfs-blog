@@ -45,7 +45,7 @@ For example, fetching an image with the CID: [`bafk...beom`](https://cid.ipfs.te
 
 Content addressing in IPFS frees you from the model of a single canonical source for data. This is a powerful concept and the root of IPFS' benefits: resilience, censorship resistance, and trustlessness. But, **fully reaping the benefits of IPFS requires verification**.
 
-### Verification facilitates resilience multi-source retrieval
+### Verification facilitates resilience and multi-source retrieval
 
 Verifying IPFS content as part of the retrieval process allows you to fetch it from multiple sources –either providers or gateways– without trusting them because verification ensures the integrity of the data.
 
