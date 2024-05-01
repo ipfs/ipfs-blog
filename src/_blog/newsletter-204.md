@@ -1,6 +1,6 @@
 ---
 title: IPFS News Issue 204
-description: Welcome to IPFS News 204! Featuring @helia/verified-fetch and the IPFS Camp 2024 track list.
+description: "Welcome to IPFS News 204! Featuring @helia/verified-fetch and the IPFS Camp 2024 track list."
 date: 2024-04-30
 permalink: "/newsletter-204"
 header_image: "/ipfsnews.png"
