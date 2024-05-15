@@ -4,6 +4,15 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Cloudflare’s public IPFS gateways and supporting Interplanetary Shipyard
+  date: 2024-05-14
+  publish_date: 
+  path: https://blog.cloudflare.com/cloudflares-public-ipfs-gateways-and-supporting-interplanetary-shipyard
+  tags:
+  - Cloudflare
+  - IPFS
+  - gateway
+  - IPShipyard
 - title: Filecoin Foundation Successfully Deploys IPFS in Space
   date: 2024-01-16
   publish_date: 
