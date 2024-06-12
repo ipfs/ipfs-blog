@@ -6,8 +6,9 @@ sitemap:
 data:
 - title: Browser P2P Connectivity With WebRTC and js-libp2p
   date: 2024-07-12
-  publish_date:
+  publish_date: 
   path: https://docs.libp2p.io/guides/getting-started/webrtc/
+  card_image: "/libp2p-webrtc.png"
   tags:
   - libp2p
   - WebRTC
