@@ -111,5 +111,5 @@ If you or your project depends upon IPFS or libp2p, we invite you to consider co
 In addition to public good funding, we are also beginning to support commercial service agreements for our core users, including service tiers, contracted support, and other embedded engineering work. You can check out our [commercial services tiers](https://ipshipyard.gitwallet.co/) or reach out directly if you have a project you’d like to collaborate with us on.
 
 
-We're excited for Shipyard's opportunity to strengthen the IPFS and libp2p ecosystems through community feedback and patronage. If you would like to get more involved we're in the [IPFS](https://docs.ipfs.tech/community/#get-involved) and [libp2p](https://discuss.libp2p.io/) forums, and you can reach us at contact@ipshipyard.com. 
+We're excited for Shipyard's opportunity to strengthen the IPFS and libp2p ecosystems through community feedback and patronage. If you would like to get more involved we're in the [IPFS](https://docs.ipfs.tech/community/#get-involved) and [libp2p](https://discuss.libp2p.io/) forums, and you can reach us at `contact [AT] ipshipyard.com`.
 
