@@ -1,5 +1,5 @@
 ---
-title: 'Migrating From Brave to Desktop App'
+title: 'Migrating From Brave to IPFS Desktop'
 description: ' Complete Guide to Migrating Your IPFS Data'
 date: 2024-08-13
 header_image: '/braveinfobar2.png'
