@@ -20,7 +20,7 @@ Brave to IPFS Desktop, ensuring you don't lose any of your important files.
 
 ## Prerequisites
 
-Before we begin, you'll need to install two key components that will replace Brave.
+Before we begin, you'll need to install two key components that will replace the functionality that was in Brave with an IPFS stack that will work in Brave, and most other browsers.
 
 ### IPFS Desktop
 
