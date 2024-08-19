@@ -51,9 +51,9 @@ This is the simplest way of migrating your node, all data, pins, IPNS keys, addr
 First, we need to locate your Brave IPFS repository:
 
 <!-- TODO: confirm these paths are valid -->
-- Windows: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\ipfs`
-- macOS: `~/Library/Application Support/BraveSoftware/Brave-Browser/Default/ipfs`
-- Linux: `~/.config/BraveSoftware/Brave-Browser/Default/ipfs`
+- Windows: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\brave_ipfs/`
+- macOS: `~/Library/Application Support/BraveSoftware/Brave-Browser/Default/brave_ipfs/`
+- Linux: `~/.config/BraveSoftware/Brave-Browser/brave_ipfs/`
 
 Now, we'll move this repository to the default location for IPFS Desktop:
 
@@ -65,13 +65,13 @@ To move the directory, you can use the following commands in your terminal or co
 For Windows:
 
 ```
-move "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\ipfs" "%USERPROFILE%\.ipfs"
+move "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\brave_ipfs" "%USERPROFILE%\.ipfs"
 ```
 
 For macOS and Linux:
 
 ```
-mv ~/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/ipfs ~/.ipfs
+mv ~/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/brave_ipfs ~/.ipfs
 ```
 
 <!-- TODO: decide if we even go here
