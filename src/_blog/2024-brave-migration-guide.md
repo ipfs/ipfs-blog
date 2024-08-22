@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Brave browser users who have been relying on the built-in IPFS node functionality will soon need to find an alternative solution. Brave has [announced](https://github.com/brave/brave-browser/issues/37735) the removal of support for running IPFS nodes on behalf of users, which will be implemented in an upcoming stable release (v1.69.x). While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
+Brave browser users who have been relying on the built-in IPFS node functionality will soon need to find an alternative solution. Brave has [announced](https://github.com/brave/brave-browser/issues/37735) the removal of support for running IPFS nodes on behalf of users, which will be implemented in an upcoming stable release ([v1.69.153](https://github.com/brave/brave-browser/blob/56f6418ac301a4b015c1188786f6f4497b6ac393/CHANGELOG_DESKTOP.md#169153)). While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
 
 This guide will walk you through the process of moving your IPFS data from Brave to IPFS Desktop, ensuring you don't lose any of your important files, and keep access to IPFS resources in your browser.
 
