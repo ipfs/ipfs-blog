@@ -79,6 +79,13 @@ Once move is completed, you can confirm it was successful if `.ipfs/config` exis
 
 If `.ipfs/config` exists, you can now start IPFS Desktop. If everything went as expected, your IPFS node should start and run without Brave.
 
+## Updating RPC URL in IPFS Companion
+
+Brave used custom ports: `45001` for RPC and `48080` for Gateway. If IPFS Companion browser extension does not detect your node after migrating repository from Brave, you need to update RPC and Gateway URLs in Companion preferences.
+
+- Change the **Kubo RPC URL** from `http://127.0.0.1:5001` to `http://127.0.0.1:45001`
+- Change the **Local Gateway** from `http://127.0.0.1:8080` to `http://127.0.0.1:48080`
+
 ## Conclusion
 
 Congratulations! You've successfully migrated your IPFS data from Brave to IPFS Desktop.
