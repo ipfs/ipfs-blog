@@ -3,6 +3,7 @@ date: 2021-01-19
 permalink: '/2021-01-19-ipfs-in-brave/'
 translationKey: ''
 tags:
+  - brave
   - browsers
 header_image: '/2021-01-19-ipfs-in-brave.png'
 title: IPFS in Brave - Native Access to the Distributed Web
