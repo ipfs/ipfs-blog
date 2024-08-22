@@ -10,13 +10,13 @@ tags:
 ---
 
 
-Brave browser users who have been relying on the built-in IPFS node functionality will soon need to find an alternative solution. Brave has [announced](https://github.com/brave/brave-browser/issues/37735) the removal of support for running IPFS nodes on behalf of users, which will be implemented in an upcoming stable release. While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
+Brave browser users who have been relying on the built-in IPFS node functionality will soon need to find an alternative solution. Brave has [announced](https://github.com/brave/brave-browser/issues/37735) the removal of support for running IPFS nodes on behalf of users, which will be implemented in an upcoming stable release (v1.69.x). While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
 
 This guide will walk you through the process of moving your IPFS data from Brave to IPFS Desktop, ensuring you don't lose any of your important files, and keep access to IPFS resources in your browser.
 
 ## Why Migrate?
 
-- **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368). To ensure uninterrupted access to your IPFS data, migration is necessary, especially if you pinned something, or published with IPNS.
+- **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368) and will happen once v1.69.122 or later is released ([schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates)). To ensure uninterrupted access to your IPFS data, migration is necessary, especially if you pinned something, or published with IPNS.
 - **Limitations of the Brave Implementation:** The Brave-integrated IPFS node had some drawbacks. The access to WebUI was hidden behind `brave://ipfs-internal`. DNSLink detection was based on HTTP header rather than DNS TXT lookup. Running IPFS node required the Brave browser to be open for content and IPNS announcements to function, and in early days did not even start `ipfs daemon` before `ipfs://` was used for the first time, leading to content from local repository not being provided to IPFS Mainnet peers.
 - **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages: (1) Automatic security and performance updates without relying on browser updates. (2)  Ability to customize your IPFS node configuration, no vendor-specific overrides. (3) Browser-agnostic background service, allowing your node to run independently of any specific browser. (4) Easy access to your files in WebUI via system status bar icon.
 
