@@ -145,9 +145,12 @@ Then, it can be imported on another node and added to MFS there:
 
 ```
 $ export IPFS_PATH=/path/to/some/other/.ipfs
-$ ipfs dag import --pin-roots=false ./mfs-backup.car
+$ ipfs dag import ./mfs-backup.car
 $ ipfs files cp /ipfs/$MFS_ROOT /brave_mfs_backup
+$ ipfs pin rm $MFS_ROOT
 ```
+
+Note: low-level pin (created by `dag import`) can be removed (`pin rm`) after import because presence in MFS is enough to protect data from garbage-collection.
 
 ### How to manually migrate my IPNS names with Kubo CLI?
 
