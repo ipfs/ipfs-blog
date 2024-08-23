@@ -132,12 +132,26 @@ See [github.com/ipfs/ipfs-desktop/#faq--troubleshooting](https://github.com/ipfs
 
 Yes, advanced users who are comfortable with command-line can use [Kubo](https://docs.ipfs.tech/install/command-line/) instead of IPFS Desktop, and run it against a custom `IPFS_PATH` to run a headless daemon, or perform selective manual migration via CLI.
 
-For example, to export contents of MFS to a CAR, one could:
+### How to export my Files (MFS) with Kubo CLI?
+
+To export contents of MFS to a CAR, one could:
 ```
-$ export IPFS_PATH=/path/to/.ipfs
-$ ipfs dag export "$(ipfs files stat / | head -1)" > mfs-backup.car
-$ [etc]
+$ export IPFS_PATH=/path/to/brave_ipfs
+$ export MFS_ROOT="$(ipfs files stat / | head -1)"
+$ ipfs dag export $MFS_ROOT > mfs-backup.car
 ```
+
+Then, it can be imported on another node and added to MFS there:
+
+```
+$ export IPFS_PATH=/path/to/some/other/.ipfs
+$ ipfs dag import --pin-roots=false ./mfs-backup.car
+$ ipfs files cp /ipfs/$MFS_ROOT /brave_mfs_backup
+```
+
+### How to manually migrate my IPNS names with Kubo CLI?
+
+To export IPNS keys, and re-publish with them, see `ipfs key --help` and `ipfs name --help`.
 
 ### How to fix `Error: ipfs repo needs migration, please run migration tool.` ?
 
