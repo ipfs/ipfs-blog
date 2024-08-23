@@ -18,7 +18,11 @@ This guide will walk you through the process of moving your IPFS data from Brave
 
 - **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368) and will happen once v1.69.122 or later is released ([schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates)). To ensure uninterrupted access to your IPFS data, migration is necessary, especially if you pinned something, or published with IPNS.
 - **Limitations of the Brave Implementation:** The Brave-integrated IPFS node had some drawbacks. The access to WebUI was hidden behind `brave://ipfs-internal`. DNSLink detection was based on HTTP header rather than DNS TXT lookup. Running IPFS node required the Brave browser to be open for content and IPNS announcements to function, and in early days did not even start `ipfs daemon` before `ipfs://` was used for the first time, leading to content from local repository not being provided to IPFS Mainnet peers.
-- **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages: (1) Automatic security and performance updates without relying on browser updates. (2)  Ability to customize your IPFS node configuration, no vendor-specific overrides. (3) Browser-agnostic background service, allowing your node to run independently of any specific browser. (4) Easy access to your files in WebUI via system status bar icon.
+- **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages: 
+  1. Automatic security and performance updates without relying on browser updates.
+  2. Ability to customize your IPFS node configuration, no vendor-specific overrides.
+  3. Browser-agnostic background service, allowing your node to run independently of any specific browser.
+  4. Easy access to your files in WebUI via system status bar icon.
 
 ### Time Investment
 
@@ -28,12 +32,12 @@ Migrating your IPFS node is a relatively quick process. Most users can complete 
 
 Before we begin, you'll need to install two key components that will replace the functionality that was in Brave with an IPFS stack that will still work in Brave, but also in most other browsers.
 
-- [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) is a full node application that runs on your computer, managing your IPFS repository and providing a graphical interface for IPFS operations. Download IPFS Desktop by following the [install guide here](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions). Choose the appropriate version for your operating system ([Windows](https://docs.ipfs.tech/install/ipfs-desktop/#windows), [macOS](https://docs.ipfs.tech/install/ipfs-desktop/#macos), or [Linux](https://docs.ipfs.tech/install/ipfs-desktop/#ubuntu)) and follow the installation instructions.
+- [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) is a full node application that runs [Kubo](https://github.com/ipfs/kubo/) on your computer, managing your IPFS repository and providing a graphical interface for IPFS operations. Download IPFS Desktop by following the [install guide here](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions). Choose the appropriate version for your operating system ([Windows](https://docs.ipfs.tech/install/ipfs-desktop/#windows), [macOS](https://docs.ipfs.tech/install/ipfs-desktop/#macos), or [Linux](https://docs.ipfs.tech/install/ipfs-desktop/#ubuntu)) and follow the installation instructions.
 - [IPFS Companion](https://docs.ipfs.tech/install/ipfs-companion/) is a browser extension that allows you to interact with IPFS content directly from your web browser, load it from your local IPFS node, and keep provisional support for `ipfs://` and `ipns://` in address bar. The easiest way to install IPFS Companion is through your browser's specific [extensions and add-ons store](https://docs.ipfs.tech/install/ipfs-companion/#install).
 
 ## Moving the Brave IPFS Repository
 
-The IPFS repository, often referred to as `$IPFS_PATH` (aka `.ipfs`), contains all your IPFS data, IPNS keys, and PeerID identify of your IPFS node. Brave used the same repository format as Kubo, making migration to IPFS Desktop relatively easy.
+The IPFS repository, often referred to as `$IPFS_PATH` (aka `.ipfs`), contains all your IPFS data, IPNS keys, and PeerID identify of your IPFS node. Brave's IPFS Node used the same repository format as Kubo, making migration to IPFS Desktop relatively easy.
 
 If you did not use IPFS Desktop before, you can simply swap `.ipfs` created by IPFS Desktop with the one from your Brave node. This is the simplest way of migrating your node, all data, pins, IPNS keys, addresses and PeerID will remain the same and IPNS publishing will continue working.
 
@@ -75,7 +79,7 @@ test ! -d ~/.ipfs && mv ~/.config/BraveSoftware/Brave-Browser/brave_ipfs ~/.ipfs
 
 ## Starting IPFS Desktop with Migrated IPFS Repository
 
-Once move is completed, you can confirm it was successful if `.ipfs/config` exists, and includes `PeerID` of your Brave node.
+Once move is completed, you can confirm it was successful if `.ipfs/config` exists in your home directory, and includes `PeerID` of your Brave node.
 
 If `.ipfs/config` exists, you can now start IPFS Desktop. If everything went as expected, your IPFS node should start and run without Brave.
 
