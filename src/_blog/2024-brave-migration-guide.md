@@ -17,12 +17,11 @@ This guide will walk you through the process of moving your IPFS data from Brave
 ## Why Migrate?
 
 - **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368) and will happen once you update to v1.69.153 or later. To ensure uninterrupted access to your IPFS data, migration is necessary, especially if you pinned something, or published with IPNS.
-- **Limitations of the Brave Implementation:** The Brave-integrated IPFS node had some drawbacks. The access to WebUI was hidden behind `brave://ipfs-internal`. DNSLink detection was based on HTTP header rather than DNS TXT lookup. Running IPFS node required the Brave browser to be open for content and IPNS announcements to function, and in early days did not even start `ipfs daemon` before `ipfs://` was used for the first time, leading to content from local repository not being provided to IPFS Mainnet peers.
-- **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages: 
+- **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages:
   1. Automatic security and performance updates without relying on browser updates.
   2. Ability to customize your IPFS node configuration, no vendor-specific overrides.
   3. Browser-agnostic background service, allowing your node to run independently of any specific browser.
-  4. Easy access to your files in WebUI via system status bar icon.
+  4. Easy access to your files in WebUI via system status bar icon, and right-click file manager integration (on Windows).
 
 ### Time Investment
 
@@ -83,12 +82,33 @@ Once move is completed, you can confirm it was successful if `.ipfs/config` exis
 
 If `.ipfs/config` exists, you can now start IPFS Desktop. If everything went as expected, your IPFS node should start and run without Brave.
 
-## Updating RPC URL in IPFS Companion
+## Optional: Adjusting Configuration
 
-Brave used custom ports: `45001` for RPC and `48080` for Gateway. If IPFS Companion browser extension does not detect your node after migrating repository from Brave, you need to update RPC and Gateway URLs in Companion preferences.
+Brave-integrated IPFS node had some drawbacks. The access to WebUI was hidden behind `brave://ipfs-internal`. DNSLink detection was based on HTTP header rather than DNS TXT lookup. Running IPFS node required the Brave browser to be open for content and IPNS announcements to function, and in early days did not even start `ipfs daemon` before `ipfs://` was used for the first time, leading to content from local repository not being provided to IPFS Mainnet peers. Repository cache was artificaially limited to 1GiB in size, and evicted along with browser cache, degrading the utility of peers cohosting casually browsed data.
+
+Switching to IPFS Desktop+Companion solves most of these shortcomings, however you may need to adjust some settings to get full benefit of a standalone IPFS node.
+
+### Updating Cache Size
+
+[`Datastore.StorageMax`](https://github.com/ipfs/kubo/blob/master/docs/config.md#datastorestoragemax) controls how much space is allocated to data that is not pinned, such as visited IPFS websites, or other content you've viewed but do not want to pin forever. Having a bigger cache improves the data availability on the network, making websites more resilient.
+
+To increase IPFS block cache size ([`Datastore.StorageMax`](https://github.com/ipfs/kubo/blob/master/docs/config.md#datastorestoragemax)) from 1GB to at least 100GB (the current default in Kubo):
+```
+$ ipfs config Datastore.StorageMax
+1GB
+$ ipfs config Datastore.StorageMax 100GB                                                                                                                                                   ~
+```
+
+### Updating RPC URL in IPFS Companion
+
+Brave used custom ports: `45001` for RPC and `48080` for Gateway.
+
+If IPFS Companion browser extension does not detect your node after migrating repository from Brave, you need to update RPC and Gateway URLs in Companion preferences.
 
 - Change the **Kubo RPC URL** from `http://127.0.0.1:5001` to `http://127.0.0.1:45001`
 - Change the **Local Gateway** from `http://127.0.0.1:8080` to `http://127.0.0.1:48080`
+
+Alternative is to update `.ipfs/config` and replace all occurences of `45001` with `5001` and `48080` with `8080`. Make sure you do not have anything listening on these ports before you make the change.
 
 ## Conclusion
 
@@ -102,6 +122,12 @@ If you encountered any challenges during the migration process or need further a
 
 Yes, but one needs to set `IPFS_PATH` environment variable before running IPFS Desktop to point at the new location.
 
+See [How does IPFS Desktop select the IPFS repo location?](https://github.com/ipfs/ipfs-desktop/?tab=readme-ov-file#how-does-ipfs-desktop-select-the-ipfs-repo-location)
+
+### Where can I find FAQ/Troubleshooting for IPFS Desktop?
+
+See [github.com/ipfs/ipfs-desktop/#faq--troubleshooting](https://github.com/ipfs/ipfs-desktop/?tab=readme-ov-file#faq--troubleshooting)
+
 ### Can Kubo be used instead?
 
 Yes, advanced users who are comfortable with command-line can use [Kubo](https://docs.ipfs.tech/install/command-line/) instead of IPFS Desktop, and run it against a custom `IPFS_PATH` to run a headless daemon, or perform selective manual migration via CLI.
@@ -112,3 +138,8 @@ $ export IPFS_PATH=/path/to/.ipfs
 $ ipfs dag export "$(ipfs files stat / | head -1)" > mfs-backup.car
 $ [etc]
 ```
+
+### How to fix `Error: ipfs repo needs migration, please run migration tool.` ?
+
+IPFS Desktop should run migrations the first time you start, but if you use Kubo CLI
+you may need to run `ipfs daemon --migrate=true` once, to upgrade to latest version.
