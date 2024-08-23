@@ -40,19 +40,26 @@ The IPFS repository, often referred to as `$IPFS_PATH` (aka `~/.ipfs`), contains
 
 If you did not use IPFS Desktop before, you can simply swap `.ipfs` created by IPFS Desktop with the one from your Brave node. This is the simplest way of migrating your node, all data, pins, IPNS keys, addresses and PeerID will remain the same and IPNS publishing will continue working.
 
-First, we need to locate your Brave IPFS repository:
+First, we need to locate your Brave IPFS repository. The configuration directory for the Brave managed IPFS node can be found in the browser’s profile directory in a subfolder named `brave_ipfs`. You can find your IPFS directory by opening `brave://version/`, finding "Profile Path", and replacing `/Default` with `/brave_ipfs`:
 
 <!-- TODO: confirm these paths are valid -->
-- Windows: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\brave_ipfs`
-- macOS: `~/Library/Application Support/BraveSoftware/Brave-Browser/Default/brave_ipfs`
+- Windows: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\brave_ipfs`
+  - example: `C:\Users\YOURUSERNAME\AppData\Local\BraveSoftware\Brave-Browser\User Data\brave_ipfs`
+- macOS: `~/Library/Application Support/BraveSoftware/Brave-Browser/brave_ipfs`
+  - example: `/Users/YOURUSERNAME/Library/Application Support/BraveSoftware/Brave-Browser/brave_ipfs`
 - Linux: `~/.config/BraveSoftware/Brave-Browser/brave_ipfs`
+  - example: `/home/YOURUSERNAME/.config/BraveSoftware/Brave-Browser/brave_ipfs`
 
-To conform you've found the right directory, open `brave_ipfs/config` and write down the value of `PeerID`, it will act as unique identifier of your Brave repository.
+To confirm you've found the right directory, open `brave_ipfs/config` and write down the value of `PeerID`, it will act as unique identifier of your Brave repository.
 
 Now, we'll move this repository to the default location for IPFS Desktop:
 
 - Windows: `%USERPROFILE%/.ipfs`
-- macOS and Linux: `~/.ipfs`
+  - example: `C:\Users\YOURUSERNAME\.ipfs`
+- macOS: `~/.ipfs`
+  - example: `/Users/YOURUSERNAME/.ipfs`
+- Linux: `~/.ipfs`
+  - example: `/home/YOURUSERNAME/.ipfs`
 
 Before proceeding, make sure the `.ipfs` directory does not exist at the destination. If you already had `.ipfs`, shut down IPFS Desktop and rename `.ipfs` to `.ipfs.old` as a precaution to avoid data loss.
 
@@ -63,12 +70,12 @@ You can use the following commands in your terminal or command prompt:
 For Windows:
 
 ```
-IF NOT EXIST "%USERPROFILE%\.ipfs" MOVE "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\brave_ipfs" "%USERPROFILE%\.ipfs"
+IF NOT EXIST "%USERPROFILE%\.ipfs" MOVE "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\brave_ipfs" "%USERPROFILE%\.ipfs"
 ```
 
 For macOS:
 ```
-test ! -d ~/.ipfs && mv ~/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/brave_ipfs ~/.ipfs
+test ! -d ~/.ipfs && mv ~/Library/Application\ Support/BraveSoftware/Brave-Browser/brave_ipfs ~/.ipfs
 ```
 
 Linux:
