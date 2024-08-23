@@ -36,7 +36,7 @@ Before we begin, you'll need to install two key components that will replace the
 
 ## Moving the Brave IPFS Repository
 
-The IPFS repository, often referred to as `$IPFS_PATH` (aka `.ipfs`), contains all your IPFS data, IPNS keys, and PeerID identify of your IPFS node. Brave's IPFS Node used the same repository format as Kubo, making migration to IPFS Desktop relatively easy.
+The IPFS repository, often referred to as `$IPFS_PATH` (aka `~/.ipfs`), contains all your IPFS data, IPNS keys, and PeerID identify of your IPFS node. Brave's IPFS Node used the same repository format as Kubo, making migration to IPFS Desktop relatively easy.
 
 If you did not use IPFS Desktop before, you can simply swap `.ipfs` created by IPFS Desktop with the one from your Brave node. This is the simplest way of migrating your node, all data, pins, IPNS keys, addresses and PeerID will remain the same and IPNS publishing will continue working.
 
@@ -54,7 +54,7 @@ Now, we'll move this repository to the default location for IPFS Desktop:
 - Windows: `%USERPROFILE%/.ipfs`
 - macOS and Linux: `~/.ipfs`
 
-Before proceeding, make sure the `.ipfs` does not exist at the destination. If you already had `.ipfs`, shut down IPFS Desktop and rename `.ipfs` to `.ipfs.old` as a precaution to avoid data loss.
+Before proceeding, make sure the `.ipfs` directory does not exist at the destination. If you already had `.ipfs`, shut down IPFS Desktop and rename `.ipfs` to `.ipfs.old` as a precaution to avoid data loss.
 
 Now, move the `brave_ipfs` directory from Brave profile, to the location expected by IPFS Desktop.
 
