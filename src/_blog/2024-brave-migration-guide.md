@@ -25,7 +25,7 @@ This guide will walk you through the process of moving your IPFS data from Brave
   1. Automatic security and performance updates without relying on browser updates.
   2. Ability to customize your IPFS node configuration, no vendor-specific overrides.
   3. Browser-agnostic background service, allowing your node to run independently of any specific browser.
-  4. Easy access to your files in WebUI via system status bar icon, and right-click file manager integration (on Windows).
+  4. Easy access to your files in [WebUI](https://github.com/ipfs/ipfs-webui/#readme) via system status bar icon, and right-click file manager integration (on Windows).
 
 ### Time Investment
 
