@@ -1,6 +1,7 @@
 ---
 title: 'Migrating from Brave to IPFS Desktop'
 description: 'Complete Guide to Migrating Your IPFS Data'
+permalink: '/2024-brave-migration-guide/'
 date: 2024-08-26
 header_image: '/brave2desktop.jpg'
 tags:
