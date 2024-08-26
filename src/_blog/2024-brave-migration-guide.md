@@ -16,7 +16,7 @@ After over three years, the Brave team [decided](https://github.com/brave/brave-
 
 While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
 
-This guide will walk you through the process of moving your IPFS data from Brave to IPFS Desktop, ensuring you don't lose any of your important files, and keep access to IPFS resources in your browser.
+This guide will walk you through the process of moving your IPFS data from Brave to [IPFS Desktop](https://github.com/ipfs/ipfs-desktop), ensuring you don't lose any of your important files, and keep access to IPFS resources in your browser.
 
 ## Why Migrate?
 
