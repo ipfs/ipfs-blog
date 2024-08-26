@@ -10,13 +10,17 @@ tags:
 ---
 
 
-Brave browser users who have been relying on the built-in IPFS node functionality will soon need to find an alternative solution. We could not find a mutually agreeable set of terms, and Brave has [announced](https://github.com/brave/brave-browser/issues/37735) the removal of support for running IPFS nodes on behalf of users. This change was implemented in the latest stable release ([v1.69.153](https://github.com/brave/brave-browser/blob/56f6418ac301a4b015c1188786f6f4497b6ac393/CHANGELOG_DESKTOP.md#169153)) which shipped on Aug 22nd. While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
+In [2021](https://brave.com/blog/ipfs-support/), IPFS maintainers worked with the Brave team to add native support for IPFS in the Brave Browser. This was the first deep integration of an IPFS node in a browser.
+
+After over three years, the Brave team [decided](https://github.com/brave/brave-browser/issues/37735) remove support for running IPFS node as we could not find a mutually agreeable set of terms to make this integration sustainable. The removal was implemented in the latest stable release ([v1.69.153](https://github.com/brave/brave-browser/blob/56f6418ac301a4b015c1188786f6f4497b6ac393/CHANGELOG_DESKTOP.md#169153)) which shipped on Aug 22nd. 
+
+While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
 
 This guide will walk you through the process of moving your IPFS data from Brave to IPFS Desktop, ensuring you don't lose any of your important files, and keep access to IPFS resources in your browser.
 
 ## Why Migrate?
 
-- **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368) and will happen once you update to v1.69.153 or later. To ensure uninterrupted access to your IPFS data, migration is necessary, especially if you pinned something, or published with IPNS.
+- **Imminent Removal:** The IPFS node feature in Brave is being [phased out](https://github.com/brave/brave-browser/issues/37735#issuecomment-2247764368) and will happen once you update to v1.69.153 or later. Although upgrading will not delete data associated with the IPFS node, migration is necessary to ensure uninterrupted access to your IPFS data, especially if you pinned something, or published with IPNS.
 - **Improved Functionality:** Migrating to a standalone IPFS solution like IPFS Desktop offers several advantages:
   1. Automatic security and performance updates without relying on browser updates.
   2. Ability to customize your IPFS node configuration, no vendor-specific overrides.
@@ -127,7 +131,7 @@ If you encountered any challenges during the migration process or need further a
 
 ### Is it possible to move `brave_ipfs` to a different location than `.ipfs`?
 
-Yes, but one needs to set `IPFS_PATH` environment variable before running IPFS Desktop to point at the new location.
+Yes, but you need to set the `IPFS_PATH` environment variable before running IPFS Desktop to point at the new location.
 
 See [How does IPFS Desktop select the IPFS repo location?](https://github.com/ipfs/ipfs-desktop/?tab=readme-ov-file#how-does-ipfs-desktop-select-the-ipfs-repo-location)
 
@@ -141,7 +145,7 @@ Yes, advanced users who are comfortable with command-line can use [Kubo](https:/
 
 ### How to export my Files (MFS) with Kubo CLI?
 
-To export contents of MFS to a CAR, one could:
+To export contents of MFS to a CAR, run the following commands:
 ```
 $ export IPFS_PATH=/path/to/brave_ipfs
 $ export MFS_ROOT="$(ipfs files stat / | head -1)"
