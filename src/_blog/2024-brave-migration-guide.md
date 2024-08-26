@@ -12,7 +12,7 @@ tags:
 
 In [2021](https://brave.com/blog/ipfs-support/), IPFS maintainers worked with the Brave team to add native support for IPFS in the Brave Browser. This was the first deep integration of an IPFS node in a browser.
 
-After over three years, the Brave team [decided](https://github.com/brave/brave-browser/issues/37735) remove support for running IPFS node as we could not find a mutually agreeable set of terms to make this integration sustainable. The removal was implemented in the latest stable release ([v1.69.153](https://github.com/brave/brave-browser/blob/56f6418ac301a4b015c1188786f6f4497b6ac393/CHANGELOG_DESKTOP.md#169153)) which shipped on Aug 22nd. 
+After over three years, the Brave team [decided](https://github.com/brave/brave-browser/issues/37735) to remove support for running IPFS node as we could not find a mutually agreeable set of terms to make this integration sustainable. The removal was implemented in the latest stable release ([v1.69.153](https://github.com/brave/brave-browser/blob/56f6418ac301a4b015c1188786f6f4497b6ac393/CHANGELOG_DESKTOP.md#169153)) which shipped on Aug 22nd. 
 
 While this change may be disappointing for some, it presents an opportunity to adopt a more robust and flexible IPFS setup.
 
