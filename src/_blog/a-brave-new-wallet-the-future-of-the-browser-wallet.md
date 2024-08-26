@@ -8,6 +8,7 @@ permalink: brave-new-wallet
 translationKey: ''
 header_image: "/ipfs-blog-brave-2021-07-23.jpg"
 tags:
+- brave
 - browsers
 - API
 
