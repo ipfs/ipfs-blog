@@ -5,8 +5,8 @@ sitemap:
   exclude: true
 data:
 - title: 'Debugging CID Retrievability With IPFS Check'
-  date: 2024-09-05
-  publish_date: 2024-09-05T12:00:00+00:00
+  date: 2024-09-04
+  publish_date: 2024-09-04T12:00:00+00:00
   path: https://www.youtube.com/watch?v=XeNOQDOrdC0
   tags:
   - IPFS Check
