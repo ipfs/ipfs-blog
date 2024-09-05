@@ -4,6 +4,15 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'Debugging CID Retrievability With IPFS Check'
+  date: 2024-09-05
+  publish_date: 2024-09-05T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=XeNOQDOrdC0
+  tags:
+  - IPFS Check
+  - debugging
+  - tutorial
+  - guide
 - title: 'Built with IPFS - Mintter and The Hypermedia Protocol'
   date: 2023-11-13
   publish_date: 2023-11-13T12:00:00+00:00
