@@ -1,5 +1,5 @@
 ---
-date: 2024-04-18
+date: 2024-09-27
 permalink: /ipfs-check/
 title: 'Improved debugging with IPFS Check'
 description: 'IPFS Check is a debugging tool for IPFS Mainnet. It helps you check if data is routable and retrievable by CID on IPFS Mainnet.'
