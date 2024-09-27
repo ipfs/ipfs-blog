@@ -33,7 +33,7 @@ Moreover, with the advent of [Delegated Routing](https://docs.ipfs.tech/concepts
 
 The result is that the likelihood of encountering an error when retrieving data is dependent on the availability of providers, which can constantly change, and vary depending on the network conditions of both the client and the providers. And whether they've successfully announced their CIDs to the DHT or the Network Indexer.
 
-![](../assets/ipfs-check-network.png)
+![diagram illustrating multiple providers for cids](../assets/ipfs-check-network.png)
 
 As a user looking to retrieve data by CID, you may experience different things, depending on the CID you are looking for, and the network conditions when you try to retrieve it.
 
