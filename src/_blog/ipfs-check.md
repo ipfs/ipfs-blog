@@ -39,7 +39,7 @@ As a user looking to retrieve data by CID, you may experience different things, 
 
 Up until now, there was no easy way to get a detailed overview of whether a given CID is retrievable, and if not, why.
 
-## 🔍 IPFS Check helps you debug IPFS Mainnet
+## 🔍 IPFS Check helps you debug  IPFS Mainnet
 
 IPFS Check fills a gap in the IPFS ecosystem: the ability to easily check if data is routable and retrievable by CID on IPFS Mainnet.
 
@@ -60,4 +60,4 @@ As part of the recent overhaul, we've landed several improvements to IPFS Check:
 
 We hope you find it useful!
 
-If you have any questions or feedback, open an issue or a discussion in the [github repo](https://github.com/ipfs/ipfs-check/).
+If you have any questions or feedback, open an issue or a discussion in the [GitHub repo](https://github.com/ipfs/ipfs-check/).
