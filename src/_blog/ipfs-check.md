@@ -13,7 +13,7 @@ tags:
   - dht
 ---
 
-## 🎉 Improved debugging with IPFS Check
+## 🎉 Improved retrievability debugging with IPFS Check
 
 The [Shipyard team](https://www.ipshipyard.com/) is thrilled to share an overhauled version of [IPFS Check](https://check.ipfs.network), an improved debugging tool for [IPFS Mainnet](https://docs.ipfs.tech/concepts/glossary/#ipfs-mainnet), that is both simpler to use, and more powerful.
 
@@ -39,7 +39,7 @@ As a user looking to retrieve data by CID, you may experience different things, 
 
 Up until now, there was no easy way to get a detailed overview of whether a given CID is retrievable, and if not, why.
 
-## 🔍 IPFS Check helps you debug  IPFS Mainnet
+## 🔍 IPFS Check helps you debug retrievability of data
 
 IPFS Check fills a gap in the IPFS ecosystem: the ability to easily check if data is routable and retrievable by CID on IPFS Mainnet.
 
