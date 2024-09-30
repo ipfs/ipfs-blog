@@ -32,6 +32,7 @@ In IPFS, when you try to fetch a CID, some providers may be online, while others
 Moreover, with the advent of [Delegated Routing](https://docs.ipfs.tech/concepts/how-ipfs-works/#how-content-routing-works-in-ipfs) and the [Network Indexer](https://docs.ipfs.tech/concepts/ipni/), CIDs may be routed by either the DHT or the Network Indexer, or both.
 
 As a result, the likelihood of encountering an error when retrieving data is dependent on several dynamic factors:
+
 1. Provider availability, which can constantly change
 2. Network conditions of both client and providers
 3. Successful announcement of CIDs to the DHT or Network Indexer.
@@ -46,13 +47,13 @@ Up until now, there was no easy way to get a detailed overview of whether a give
 
 [IPFS Check](https://check.ipfs.network/) fills a gap for users and developers working with the IPFS Mainnet public network: the ability to easily check if data is routable and retrievable by CID.
 
-IPFS Check provides insights into accessibility and routing for any data on the IPFS Mainnet public network. It is web app and doesn't require any setup or installation.
+IPFS Check provides insights into accessibility and routing for any data on the IPFS Mainnet public network. It is a web app and doesn't require any setup or installation.
 
 You can use IPFS Check to:
 
-1. Verify if data is routable and retrievable by CID on IPFS Mainnet (and if not, get a detailed explanation of why for each provider)
-2. View the multiaddresses and network transports used to reach providers
-3. Determine if NAT hole punching was necessary
+1. Verify if data is routable and retrievable by CID on IPFS Mainnet (and if not, get a detailed explanation of why for each provider).
+2. View the multiaddresses and network transports used to connect to providers.
+3. Determine if NAT hole punching was necessary.
 
 It's especially useful to get an _outside perspective_ of your IPFS node's network setup, and whether it is correctly configured.
 
@@ -62,7 +63,7 @@ As part of the recent overhaul, we've made several improvements to IPFS Check:
 
 - **Support for CID-only checks**: you can now check whether a CID is available from _any_ provider, without needing to pass a specific provider's multiaddr.
 - **IPNI support**: By default, IPFS Check will search for providers both in the IPNI and the DHT.
-- **NAT traversal**: you can now in the results whether retrieval requires NAT traversal (if there are two successful sonnection multiaddrs and one of them contains `p2p-circuit`)
+- **NAT traversal**: you can now in the results whether retrieval requires NAT traversal (if there are two successful sonnection multiaddrs and one of them contains `p2p-circuit`).
 - **Network Protocol**: you can now see in the results which specific multiaddr was used for the connection, which tells you which network protocol was used, e.g. QUIC.
 
 Give it a try at [check.ipfs.network](https://check.ipfs.network/). We hope you find it useful!
