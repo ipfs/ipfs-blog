@@ -10,16 +10,6 @@ function shouldBeHidden(frontmatter) {
     shouldHide = shouldHide || frontmatter.sitemap.exclude
   }
 
-  // scheduled posts
-  // see auto-publishing of scheduled posts here: https://github.com/ipfs/ipfs-blog/issues/147
-  if (
-    !shouldHide &&
-    frontmatter.permalink && // permalink is unique to posts
-    frontmatter.date
-  ) {
-    shouldHide = shouldHide || isDateInFuture(frontmatter.date)
-  }
-
   // scheduled links (path is unique to links)
   if (!shouldHide && frontmatter.path && frontmatter.publish_date) {
     shouldHide = shouldHide || isDateInFuture(frontmatter.publish_date)
