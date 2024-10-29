@@ -202,7 +202,7 @@ Since the spec was ratified in 2022, it's been positively recieved and gradually
 
 ### How Delegated Routing HTTP API helps IPFS on the web?
 
-The [Distributed Hash Table (DHT)](https://docs.ipfs.tech/concepts/dht/) is the default routing system for IPFS and is used for finding peers and providers for CIDs in the network. Traversing the DHT however requires opening connections to around log₂(N) peers in the network, where N is the total number of peers. For a network such as IPFS, this can easily mean establishing connections  to tens of peers just to find a single provider.
+The [Distributed Hash Table (DHT)](https://docs.ipfs.tech/concepts/dht/) is the default routing system for IPFS and is used for finding peers and providers for CIDs in the network. Traversing the DHT however requires opening connections to around log₂(N) peers in the network, where N is the total number of peers. For a network such as IPFS, this can easily mean establishing connections to tens of peers just to find a single provider.
 
 The Delegated Routing HTTP API empowers resource constrained clients like web browsers by significantly reducing the number of network connections necessary to fetch content addressed data directly from provider peers.
 
