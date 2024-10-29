@@ -27,11 +27,11 @@ The web as a platform has the widest reach of users, and yet it's also the most 
 
 At IPFS Shipyard, we've been tackling this challenge head on with a number of projects to make IPFS on the web a reality:
 
-- **Verified Fetch**: A Fetch-like API for verified retrieval
-- **Service Worker Gateway**:
-- **New browser transports:** WebTransport, WebRTC-direct
-- **Let's encrypt TLS Certs for all public IPFS Nodes without the need for domains**
-- **HTTP Delegated Routing**: A way to expose content routing operations, e.g. find providers for a CID, using HTTP.
+- **Verified Fetch**
+- **Service Worker Gateway**
+- **New browser transports**
+- **AutoTLS with libp2p.direct**
+- **HTTP Delegated Routing**
 
 Let's take a look at each of these projects in more detail.
 
@@ -81,7 +81,6 @@ There's an inherent tradeoff with the Service Worker Gateway: it requires an ini
 - It removes the need for trusted gateways, allowing any publicly dialable IPFS node to act as a provider for the Service Worker Gateway.
 - Offline use: visited pages are cached in the Cache API, are almost instant the second time around. -->
 
-
 ### Service Worker Gateway: What's new
 
 As we embarked on this project, we focused on getting the basics right:
@@ -121,10 +120,9 @@ The following table summarizes the capabilities of each transport:
 | WebRTC           | ✅                       | ❌                                  | ✅               | ❌                        | ✅                 |
 | WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | X                  |
 
-
 ### HTTPS and Secure WebSockets
 
-HTTP is widely supported in browsers and implementations of IPFS. For example, the IPFS HTTP Gateway is a general purpose API for retrival from IPFS peers over HTTP that is broadly used in IPFS implementations, tooling and infrastructure. 
+HTTP is widely supported in browsers and implementations of IPFS. For example, the IPFS HTTP Gateway is a general purpose API for retrival from IPFS peers over HTTP that is broadly used in IPFS implementations, tooling and infrastructure.
 
 Since HTTP is a request/response protocol, it's not well suited for [Bitswap](https://docs.ipfs.tech/concepts/bitswap/) and other libp2p protocols. WebSockets, on the other hand, are a bi-directional streaming protocol and are well suited for libp2p based protocols like Bitswap. What's more, WebSockets are supported in all modern browsers and are compatible with Service Workers.
 
@@ -141,9 +139,11 @@ WebRTC is a browser-to-browser communication protocol, e.g. for video, audio, an
 In the context of IPFS and libp2p, there are two implementations of [WebRTC](https://github.com/libp2p/specs/tree/master/webrtc):
 
 - **WebRTC:** for browser-to-browser communication
-- **WebRTC-Direct:** for browser-to-server communication without the need for trusted TLS certificates. 
+- **WebRTC-Direct:** for browser-to-server communication without the need for trusted TLS certificates.
 
 The spec for [WebRTC for browser-to-browser communication in libp2p](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md) was ratified last year. We've written an [extensive guide](https://docs.libp2p.io/guides/getting-started/webrtc/) to help you get started and also ran a workshop at IPFS Camp. It's also used by [Universal Connectivity](https://github.com/libp2p/universal-connectivity) and [IPFS Share](https://share.ipfs.io) to demonstrate the possibilities of browser-to-browser communication.
+
+It's also worth noting that WebRTC is the only browser transport with a mechanism for NAT hole-punching, which is the process of establishing a direct connection between two peers through a network address translator (NAT). This is a crucial part of establishing a direct connection between two peers in a decentralized network like IPFS.
 
 ### WebRTC-Direct
 
@@ -153,13 +153,18 @@ WebRTC-direct is stable as of [go-libp2p v0.36.1](https://github.com/libp2p/go-l
 
 This is a huge milestone, because it means that browsers can dial publicly reachable IPFS nodes with WebRTC-direct enabled without TLS certificates or domain names. We therefore recommend upgrading to the latest version of Kubo to take advantage of this.
 
-The caveat with WebRTC-direct is that it can't be used in Service Workers.
+### Limits of WebRTC in browsers
+
+There are two caveats with WebRTC in browsers:
+
+- WebRTC isn't available in Service Workers.
+- [Chrome limits the number of WebRTC connections per window to 500](https://issues.chromium.org/issues/41378764) after which it will prevent establishing new connections.
 
 ### WebTransport
 
-[Two years ago, the IPFS and libp2p projects made a bet on the promise WebTransport](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/) and it's been a bumpy road. WebTransport is a promising protocol, especially for libp2p and IPFS, because it allows bi-directional streaming communication with many modern improvements over WebSockets, **without the need for CA-signed certificates and a domain**. This was a game changer, since most peers in the IPFS network do not have a domain name. 
+[Two years ago, the IPFS and libp2p projects made a bet on the promise WebTransport](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/) and it's been a bumpy road. WebTransport is a promising protocol, especially for libp2p and IPFS, because it allows bi-directional streaming communication with many modern improvements over WebSockets, **without the need for CA-signed certificates and a domain**. This was a game changer, since most peers in the IPFS network do not have a domain name.
 
-However, the WebTransport specification is still in draft, and browser implementations have had a [number of bugs and issues](https://github.com/libp2p/js-libp2p/issues/2572). As such, browser compatibility breaks as soon as the interoperability target changes.
+However, the WebTransport specification is still in draft, and browser implementations have had a [number of bugs and issues](https://github.com/libp2p/js-libp2p/issues/2572), that we've worked with the browser vendors to . As such, browser compatibility breaks as soon as the interoperability target changes.
 
 While we still believe in the longer term promise of WebTransport, we've reoriented our immediate priorities to WebRTC-Direct (which is now available) and [AutoTLS](#autotls-with-libp2pdirect). Nonetheless, we continue to work with browser vendors and standard bodies to get WebTransport to a stable and interoperable state.
 
@@ -174,6 +179,7 @@ We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
 AutoTLS enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
 
 Under the hood, the infrastructure behind `libp2p.direct` has two roles:
+
 - An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To so it authenticates PeerIDs requesting certificates and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
 - The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
 
@@ -181,13 +187,50 @@ Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
 AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and will be available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0). We encourage you to try it out and give feedback.
 
-## HTTP Delegated Routing
+## Delegated Routing HTTP API
 
-HTTP Delegated content routing is a mechanism for IPFS nodes to offload content and peer routing to another process/server using an HTTP API. This has been
+The [Delegated Content Routing HTTP API](https://specs.ipfs.tech/ipips/ipip-0337/) allows IPFS nodes to offload content and peer routing to another process/server using an HTTP API. In addition, it allows for composability and experimentation with different routing systems.
 
- This is useful for nodes that do not have the resources to implement routing functionality themselves.
+Since the spec was ratified in 2022, it's been positively recieved and gradually implemented and integrated in the ecosystem:
+
+- The IPFS Foundation provides a public delegated routing endpoint backed by [someguy](https://github.com/ipfs/someguy) with the URL `https://delegated-ipfs.dev/routing/v1` that is operated by Interplanetary Shipyard.
+- The [cid.contact](https://cid.contact) network indexer exposes a [HTTP API](https://cid.contact/api/v1/docs) for finding providers for a CID.
+- Helia has both a [client](https://github.com/ipfs/helia-delegated-routing-v1-http-api/tree/main/packages/client) and a [server implementation](https://github.com/ipfs/helia-delegated-routing-v1-http-api/tree/main/packages/server) of the Delegated Routing HTTP API. The client is configured by default in [Helia](https://github.com/ipfs/helia) with the public Delegated Routing endpoint.
+- js-libp2p also supports the [Delegated Routing HTTP API with the Helia client](https://github.com/libp2p/js-libp2p/blob/main/doc/CONFIGURATION.md#setup-with-delegated-content-and-peer-routing)
+- The [Boxo](https://github.com/ipfs/boxo/tree/main/routing/http) SDK comes with a client and server implementation of the Delegated Routing HTTP API which is used by Kubo
+- Kubo both uses the Delegated Routing HTTP API for querying the IPNI. Additionally, you can expose a delegated routing endpoint since [Kubo v0.23](https://github.com/ipfs/kubo/blob/ecb81c92221c8c563d7d245df193dc96163a76d0/docs/changelogs/v0.23.md#self-hosting-routingv1-endpoint-for-delegated-routing-needs).
+
+### How Delegated Routing HTTP API helps IPFS on the web?
+
+The [Distributed Hash Table (DHT)](https://docs.ipfs.tech/concepts/dht/) is the default routing system for IPFS and is used for finding peers and providers for CIDs in the network. Traversing the DHT however requires opening connections to around log₂(N) peers in the network, where N is the total number of peers. For a network such as IPFS, this can easily mean establishing connections  to tens of peers just to find a single provider.
+
+The Delegated Routing HTTP API empowers resource constrained clients like web browsers by significantly reducing the number of network connections necessary to fetch content addressed data directly from provider peers.
+
+In other words, you can reduce the number of connections to 1 by offloading routing to another process/server using the HTTP API, e.g. the public goods endpoint at `https://delegated-ipfs.dev/routing/v1`.
+
+### Introducing filtering for Provider and Peer records
+
+There are many cases where most of the results from the Delegated Routing HTTP API are not actionable by clients, because the client does not support either the **network transport protocol**, e.g. TCP, or the **transfer protocol**, e.g. GraphSync.
+
+[IPIP-484](https://github.com/ipfs/specs/pull/484) introduces filtering for Provider and Peer records, which allows for more efficient routing. For browsers, IPIP-484 reduces the overhead of unactionable results returned by the API. For Kubo it means less load establishing connections to peer that only support GraphSync. Moreover, it makes [manual debugging easier](https://delegated-ipfs.dev/routing/v1/providers/bafybeicklkqcnlvtiscr2hzkubjwnwjinvskffn4xorqeduft3wq7vm5u4?filter-protocols=transport-bitswap,unknown&filter-addrs=!p2p-circuit,webrtc-direct,wss,tls) with the filters in the query parameters.
+
+IPIP-484 is already implemented in [Boxo](https://github.com/ipfs/boxo/tree/main/routing/http) SDK, [someguy](https://github.com/ipfs/someguy), [Helia](https://github.com/ipfs/helia-delegated-routing-v1-http-api), [Kubo](https://github.com/ipfs/kubo), and [Rainbow](https://github.com/ipfs/rainbow).
 
 
+## Bitswap improvements
+TODO:
+
+
+## Summary
+
+All of the above projects are either complete or nearing completion. This is the result of arduous collaboration across both the libp2p and IPFS stacks in addition to standard bodies and browser vendors.
+
+This breadth and reach of this work is only possible because of the open-source nature of the IPFS and libp2p projects. But it also underscores the important of funding the core team that can shepherd these efforts across the ecosystem.
+
+We're excited to see these projects come to fruition and can't wait to see what the IPFS community builds on top of them.
+
+
+<!--
 ## WIP outline
 
 - SW Gateway and direct retrieval
@@ -216,4 +259,4 @@ HTTP Delegated content routing is a mechanism for IPFS nodes to offload content 
 - Community engagement
   - Canvas
 - Meta note
-  - Stress the importance of having both lbip2p and ipfs expertise @ shipyard
+  - Stress the importance of having both lbip2p and ipfs expertise @ shipyard -->
