@@ -285,6 +285,14 @@ Beyond the obvious benefit of having another bootstrapper as a public good, it a
 
 You can connect to the bootstrapper at `/dnsaddr/va1.bootstrap.libp2p.io/p2p/12D3KooWKnDdG3iXw9eTFijk3EWSunZcFi54Zka4wmtqtt6rPxc8`.
 
+## libp2p over HTTP
+
+TODO:
+
+## WebSockets single encryption
+
+TODO:
+
 ## Summary
 
 All of the above projects are either complete or nearing completion. This is the result of arduous collaboration across both the libp2p and IPFS stacks in addition to standard bodies and browser vendors.
