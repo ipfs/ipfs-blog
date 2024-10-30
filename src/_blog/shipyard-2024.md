@@ -1,19 +1,25 @@
 ---
 date: 2024-10-25
 permalink: /2024-shipyard-improving-ipfs-on-the-web/
-title: 'Shipyard 2024: IPFS on the Web'
+title: 'IPFS on the Web in 2024: Update From Shipyard'
 description: 'Update from the Shipyard team on our efforts to bring IPFS to the Web.'
 author: Daniel Norman
-header_image: /ipfs-check-cover.jpg
+header_image: /ipfs-web-cover.jpg
 tags:
   - ipfs
   - cid
   - 'web platform'
+  - browsers
+  - WebRTC
+  - WebTransport
+  - WebSockets
+  - TLS
+  - Let's Encrypt
 ---
 
 ## Update From Interplanetary Shipyard
 
-Earlier this year, [we introduced Interplanetary Shipyard](https://blog.ipfs.tech/shipyard-hello-world/), as the evolution of the developers leading the open-source development of libp2p and the most popular IPFS implementations, tooling and infrastructure.
+Earlier this year, [we introduced Interplanetary Shipyard](https://blog.ipfs.tech/shipyard-hello-world/), as the evolution of the maintainers leading the open-source development of libp2p and the most popular IPFS implementations, tooling and infrastructure.
 
 As part of that introduction, we shared our roadmap and vision, a key part of which is to bring IPFS Mainnet to the web.
 
@@ -21,17 +27,20 @@ In this blog post, we'll share what we've been up to since then and what we have
 
 ## IPFS on the Web
 
-For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable reliable, decentralized, and verified IPFS content fetching to the web.
+For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable **reliable, decentralized, and verified** IPFS content retrieval to the web.
 
 The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrapencies between browsers.
 
-At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this challenge head on with a number of projects to make IPFS on the web a reality:
+This is why `ipfs.io` and other public gateways are so popular, but they also highlight the challenges of IPFS on the web. Initially conceived as a crutch to bootstrap the network, public gateways have become entrenched as the default way to access IPFS content on the web to the detriment of decentralization.
 
-- **Verified Fetch**
-- **Service Worker Gateway**
-- **New browser transports**
-- **AutoTLS with libp2p.direct**
-- **HTTP Delegated Routing**
+At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this challenge head on with a number of projects across the libp2p and IPFS stacks to make IPFS on the web a reality:
+
+- [**Verified Fetch**](#verified-fetch)
+- [**Service Worker Gateway**](#service-worker-gateway)
+- [**New browser transports**](#browser-transports)
+- [**Browser Developer Tools**](#browser-developer-tools)
+- [**AutoTLS with libp2p.direct**](#autotls-with-libp2pdirect)
+- [**Delegated Routing HTTP API**](#delegated-routing-http-api)
 
 Let's take a look at each of these projects in more detail.
 
@@ -115,7 +124,7 @@ The following table summarizes the capabilities of each transport:
 
 |                  | Bi-directional streaming | Requires TLS Certificate and domain | Widely supported | Useable in Service Worker | Browser-to-Browser |
 | ---------------- | ------------------------ | ----------------------------------- | ---------------- | ------------------------- | ------------------ |
-| HTTPS            | X                        | ✅                                  | ✅               | ✅                        | ❌                 |
+| HTTPS            | ❌                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | Secure WebSocket | ✅                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | WebRTC           | ✅                       | ❌                                  | ✅               | ❌                        | ✅                 |
 | WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | X                  |
@@ -126,7 +135,21 @@ HTTP is widely supported in browsers and implementations of IPFS. For example, t
 
 Since HTTP is a request/response protocol, it's not well suited for [Bitswap](https://docs.ipfs.tech/concepts/bitswap/) and other libp2p protocols. WebSockets, on the other hand, are a bi-directional streaming protocol and are well suited for libp2p based protocols like Bitswap. What's more, WebSockets are supported in all modern browsers and are compatible with Service Workers.
 
-Where things get slightly tricky is TLS for both HTTP and WebSockets, i.e. HTTPS and Secure WebSockets, which are required by Secure Contexts and Service Workers.
+#### HTTP as the blueprint for interoperability
+
+A theme that runs through many of the projects in this blog post is the use of HTTP as the blueprint for interoperability. There are many reasons for this:
+
+- HTTP is ubiquitous in the web ecosystem and is well understood by developers.
+- HTTP is supported in all modern browsers and is compatible with Service Workers.
+- HTTP has powerful caching primitives with wide adoption across both infrastructure providers and open source infrastructure, opening the door to flexible caching which matches well with the immutable nature of content addressed data.
+
+Learn more about this in this talk from IPFS Camp:
+
+@[youtube](4GwxrQ9Z3Bk)
+
+#### TLS certificates for HTTP and WebSockets
+
+Where things get slightly tricky is TLS for **both HTTP and WebSockets**, i.e. HTTPS and Secure WebSockets, which are required by Secure Contexts and Service Workers.
 
 HTTPS and Secure WebSockets require a CA-signed TLS certificate and a domain, which most peers in the IPFS network do not have by default.
 
@@ -141,7 +164,9 @@ In the context of IPFS and libp2p, there are two implementations of [WebRTC](htt
 - **WebRTC:** for browser-to-browser communication
 - **WebRTC-Direct:** for browser-to-server communication without the need for trusted TLS certificates.
 
-The spec for [WebRTC for browser-to-browser communication in libp2p](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md) was ratified last year. We've written an [extensive guide](https://docs.libp2p.io/guides/getting-started/webrtc/) to help you get started and also ran a workshop at IPFS Camp. It's also used by [Universal Connectivity](https://github.com/libp2p/universal-connectivity) and [IPFS Share](https://share.ipfs.io) to demonstrate the possibilities of browser-to-browser communication.
+The spec for [WebRTC for browser-to-browser communication in libp2p](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md) was ratified last year and includes a decentralized signalling mechanism for exchanging SDPs that leverages Circuit Relays. We've written an [extensive guide](https://docs.libp2p.io/guides/getting-started/webrtc/) to help you get started and also ran a workshop at IPFS Camp. It's also used by [Universal Connectivity](https://github.com/libp2p/universal-connectivity) and [IPFS Share](https://share.ipfs.io) to demonstrate the possibilities of browser-to-browser communication.
+
+We've also seen the ecosystem thrive with projects like [Topology](https://www.youtube.com/watch?v=2FFjJ-jBymQ), and [Canvas](https://canvas.xyz/) that rely on js-libp2p and WebRTC as the foundation for their browser-to-browser communication.
 
 It's also worth noting that WebRTC is the only browser transport with a mechanism for NAT hole-punching, which is the process of establishing a direct connection between two peers through a network address translator (NAT). This is a crucial part of establishing a direct connection between two peers in a decentralized network like IPFS.
 
@@ -167,6 +192,20 @@ There are two caveats with WebRTC in browsers:
 However, the WebTransport specification is still in draft, and browser implementations have had a [number of bugs and issues](https://github.com/libp2p/js-libp2p/issues/2572), that we've been working with the browser vendors to address. As such, browser compatibility breaks as soon as the interoperability target changes.
 
 While we still believe in the longer term promise of WebTransport, we've reoriented our immediate priorities to WebRTC-Direct (which is now available) and [AutoTLS](#autotls-with-libp2pdirect). Nonetheless, we continue to work with browser vendors and standard bodies to get WebTransport to a stable and interoperable state.
+
+## Browser Developer Tools
+
+Along with the new browser transports, we've also been working on a number of developer tools to make it easier to debug web applications that rely on libp2p and IPFS. Historically, debugging IPFS and libp2p in the browser meant enabling logging and then grepping through the logs.
+
+We've now released a [browser extension](https://github.com/libp2p/js-libp2p-devtools) that allows you to inspect the libp2p node and interact with it straight from the browser developer tools.
+
+So how does it work? The browser extension pairs with a [metrics implementation](https://github.com/libp2p/js-libp2p/tree/main/packages/metrics-devtools) that you add to your js-libp2p node. The extension then fetches the metrics from the node over RPC and displays them in the browser developer tools.
+
+This relies on the same [metrics interface](https://github.com/libp2p/js-libp2p/blob/main/packages/interface/src/metrics/index.ts) that js-libp2p exposes, which can also be used for monitoring js-libp2p with Prometheus (in Node.js)
+
+Learn more about the browser extension in this talk from IPFS Camp:
+
+@[youtube](JChwfTA6SX0)
 
 ## AutoTLS with libp2p.direct
 
@@ -216,10 +255,35 @@ There are many cases where most of the results from the Delegated Routing HTTP A
 
 IPIP-484 is already implemented in [Boxo](https://github.com/ipfs/boxo/tree/main/routing/http) SDK, [someguy](https://github.com/ipfs/someguy), [Helia](https://github.com/ipfs/helia-delegated-routing-v1-http-api), [Kubo](https://github.com/ipfs/kubo), and [Rainbow](https://github.com/ipfs/rainbow).
 
-
 ## Bitswap improvements
+
 TODO:
 
+## libp2p
+
+Libp2p underpins all of the above projects and is the bedrock of the entire IPFS stack. Evidence of this is the fact that all of the above initiatives rely on libp2p in some way.
+
+Beyond the work mentioned above on transports, we've also been working on a number of improvements and specs to libp2p that support the above projects indirectly:
+
+### AutoNAT v2
+
+[AutoNAT v2](https://github.com/libp2p/specs/blob/autonat-v2/autonat/autonat-v2.md) is a new version of the AutoNAT protocol that provides more precise reachability information for nodes.
+
+It provides higher granularity in determining reachability for the node, e.g. AutoNAT v2 allows us to determine reachability for all combinations of (`ipv4/ipv6`, `tcp/udp`).
+
+AutoNAT v2 is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p/releases/tag/v0.36.1) and already enabled by default in [Kubo v0.30.0](https://github.com/ipfs/kubo/releases/tag/v0.30.0).
+
+### NAT Hole Punching
+
+A number of fixes and improvements to NAT hole punching have been implemented in go-libp2p. These should help improve the reliability of NAT hole punching in the wild.
+
+### js-libp2p Amino DHT Bootstrapper
+
+The [js-libp2p Amino DHT Bootstrapper](https://github.com/libp2p/js-libp2p-amino-dht-bootstrapper) is a new Amino DHT bootstrapper like the ones in go-libp2p and rust-libp2p, but implemented in js-libp2p.
+
+Beyond the obvious benefit of having another bootstrapper as a public good, it also allows us to stress test js-libp2p with high loads. Paried together with Prometheus monitoring, we've been able to find and resolve a number of bugs in several js-libp2p packages.
+
+You can connect to the bootstrapper at `/dnsaddr/va1.bootstrap.libp2p.io/p2p/12D3KooWKnDdG3iXw9eTFijk3EWSunZcFi54Zka4wmtqtt6rPxc8`.
 
 ## Summary
 
@@ -228,7 +292,6 @@ All of the above projects are either complete or nearing completion. This is the
 This breadth and reach of this work is only possible because of the open-source nature of the IPFS and libp2p projects. But it also underscores the important of funding the core team that can shepherd these efforts across the ecosystem.
 
 We're excited to see these projects come to fruition and can't wait to see what the IPFS community builds on top of them.
-
 
 <!--
 ## WIP outline
