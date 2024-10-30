@@ -25,7 +25,7 @@ For as long as IPFS has existed, one of the key goals has been to make it possib
 
 The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrapencies between browsers.
 
-At IPFS Shipyard, we've been tackling this challenge head on with a number of projects to make IPFS on the web a reality:
+At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this challenge head on with a number of projects to make IPFS on the web a reality:
 
 - **Verified Fetch**
 - **Service Worker Gateway**
@@ -122,7 +122,7 @@ The following table summarizes the capabilities of each transport:
 
 ### HTTPS and Secure WebSockets
 
-HTTP is widely supported in browsers and implementations of IPFS. For example, the IPFS HTTP Gateway is a general purpose API for retrival from IPFS peers over HTTP that is broadly used in IPFS implementations, tooling and infrastructure.
+HTTP is widely supported in browsers and implementations of IPFS. For example, the [IPFS HTTP Gateway is a general purpose API for retrieval](https://docs.ipfs.tech/reference/http/gateway/#trusted-vs-trustless) from IPFS peers over HTTP that is broadly used in IPFS implementations, tooling and infrastructure.
 
 Since HTTP is a request/response protocol, it's not well suited for [Bitswap](https://docs.ipfs.tech/concepts/bitswap/) and other libp2p protocols. WebSockets, on the other hand, are a bi-directional streaming protocol and are well suited for libp2p based protocols like Bitswap. What's more, WebSockets are supported in all modern browsers and are compatible with Service Workers.
 
@@ -172,15 +172,15 @@ While we still believe in the longer term promise of WebTransport, we've reorien
 
 As mentioned above, Secure WebSockets are the only streaming transport that works reliably in Service Workers, but requires a TLS certificate and domain.
 
-To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for all publicly dialable Kubo nodes. This way, nodes can use Secure WebSockets without the need for a domain name.
+To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for all publicly dialable Kubo nodes. This way, nodes can use [Secure WebSockets libp2p transport](https://github.com/libp2p/specs/blob/master/websockets/README.md) without the need for a domain name.
 
 We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
 
-AutoTLS enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
+[AutoTLS](https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls) enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
 
 Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
-- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To so it authenticates PeerIDs requesting certificates and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
+- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
 - The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
 
 > **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
@@ -189,12 +189,12 @@ AutoTLS is provided as a public good service and operated by [Interplanetary Shi
 
 ## Delegated Routing HTTP API
 
-The [Delegated Content Routing HTTP API](https://specs.ipfs.tech/ipips/ipip-0337/) allows IPFS nodes to offload content and peer routing to another process/server using an HTTP API. In addition, it allows for composability and experimentation with different routing systems.
+The [Delegated Content Routing HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) allows IPFS nodes to offload content and peer routing to another process/server using an HTTP API. In addition, it allows for composability and experimentation with different routing systems.
 
-Since the spec was ratified in 2022, it's been positively recieved and gradually implemented and integrated in the ecosystem:
+Since the spec was [ratified in 2022](https://specs.ipfs.tech/ipips/ipip-0337/), it's been positively received and gradually implemented and integrated in the ecosystem:
 
-- The IPFS Foundation provides a public delegated routing endpoint backed by [someguy](https://github.com/ipfs/someguy) with the URL `https://delegated-ipfs.dev/routing/v1` that is operated by Interplanetary Shipyard.
-- The [cid.contact](https://cid.contact) network indexer exposes a [HTTP API](https://cid.contact/api/v1/docs) for finding providers for a CID.
+- The IPFS Foundation provides a [public delegated routing endpoint](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing) backed by [someguy](https://github.com/ipfs/someguy) with the URL `https://delegated-ipfs.dev/routing/v1` that is operated by Interplanetary Shipyard.
+- The [cid.contact](https://cid.contact) network indexer exposes a compatible `/routing/v1/providers` endpoint for finding providers for a CID.
 - Helia has both a [client](https://github.com/ipfs/helia-delegated-routing-v1-http-api/tree/main/packages/client) and a [server implementation](https://github.com/ipfs/helia-delegated-routing-v1-http-api/tree/main/packages/server) of the Delegated Routing HTTP API. The client is configured by default in [Helia](https://github.com/ipfs/helia) with the public Delegated Routing endpoint.
 - js-libp2p also supports the [Delegated Routing HTTP API with the Helia client](https://github.com/libp2p/js-libp2p/blob/main/doc/CONFIGURATION.md#setup-with-delegated-content-and-peer-routing)
 - The [Boxo](https://github.com/ipfs/boxo/tree/main/routing/http) SDK comes with a client and server implementation of the Delegated Routing HTTP API which is used by Kubo
@@ -212,7 +212,7 @@ In other words, you can reduce the number of connections to 1 by offloading rout
 
 There are many cases where most of the results from the Delegated Routing HTTP API are not actionable by clients, because the client does not support either the **network transport protocol**, e.g. TCP, or the **transfer protocol**, e.g. GraphSync.
 
-[IPIP-484](https://github.com/ipfs/specs/pull/484) introduces filtering for Provider and Peer records, which allows for more efficient routing. For browsers, IPIP-484 reduces the overhead of unactionable results returned by the API. For Kubo it means less load establishing connections to peer that only support GraphSync. Moreover, it makes [manual debugging easier](https://delegated-ipfs.dev/routing/v1/providers/bafybeicklkqcnlvtiscr2hzkubjwnwjinvskffn4xorqeduft3wq7vm5u4?filter-protocols=transport-bitswap,unknown&filter-addrs=!p2p-circuit,webrtc-direct,wss,tls) with the filters in the query parameters.
+[IPIP-484](https://specs.ipfs.tech/ipips/ipip-0484/) introduces filtering for Provider and Peer records, which allows for more efficient routing. For browsers, IPIP-484 reduces the overhead of unactionable results returned by the API. For Kubo it means less load establishing connections to peer that only support GraphSync. Moreover, it makes [manual debugging easier](https://delegated-ipfs.dev/routing/v1/providers/bafybeicklkqcnlvtiscr2hzkubjwnwjinvskffn4xorqeduft3wq7vm5u4?filter-protocols=transport-bitswap,unknown&filter-addrs=!p2p-circuit,webrtc-direct,wss,tls) with the filters in the query parameters.
 
 IPIP-484 is already implemented in [Boxo](https://github.com/ipfs/boxo/tree/main/routing/http) SDK, [someguy](https://github.com/ipfs/someguy), [Helia](https://github.com/ipfs/helia-delegated-routing-v1-http-api), [Kubo](https://github.com/ipfs/kubo), and [Rainbow](https://github.com/ipfs/rainbow).
 
