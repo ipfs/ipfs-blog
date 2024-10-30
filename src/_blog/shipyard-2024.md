@@ -1,6 +1,6 @@
 ---
 date: 2024-10-25
-permalink: /ipfs-on-the-web/
+permalink: /2024-shipyard-improving-ipfs-on-the-web/
 title: 'Shipyard 2024: IPFS on the Web'
 description: 'Update from the Shipyard team on our efforts to bring IPFS to the Web.'
 author: Daniel Norman
