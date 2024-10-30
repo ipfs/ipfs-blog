@@ -287,11 +287,14 @@ You can connect to the bootstrapper at `/dnsaddr/va1.bootstrap.libp2p.io/p2p/12D
 
 ## libp2p over HTTP
 
+
 TODO:
+@[youtube](CNZBzt5tFvg)
 
 ## WebSockets single encryption
 
 TODO:
+https://github.com/libp2p/specs/pull/625
 
 ## Summary
 
