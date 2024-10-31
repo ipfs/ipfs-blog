@@ -125,7 +125,7 @@ The following table summarizes the capabilities of each transport:
 | HTTPS            | ❌                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | Secure WebSocket | ✅                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | WebRTC           | ✅                       | ❌                                  | ✅               | ❌                        | ✅                 |
-| WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | X                  |
+| WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | ❌                  |
 
 ### HTTPS and Secure WebSockets
 
