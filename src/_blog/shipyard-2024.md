@@ -152,7 +152,7 @@ In the context of IPFS and libp2p, there are two implementations of [WebRTC](htt
 
 The spec for [WebRTC for browser-to-browser communication in libp2p](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md) was ratified last year and includes a decentralized signalling mechanism for exchanging SDPs that leverages Circuit Relays. We've written an [extensive guide](https://docs.libp2p.io/guides/getting-started/webrtc/) to help you get started and also ran a workshop at IPFS Camp. It's also used by [Universal Connectivity](https://github.com/libp2p/universal-connectivity) and [IPFS Share](https://share.ipfs.io) to demonstrate the possibilities of browser-to-browser communication.
 
-We've also seen the ecosystem thrive with projects like [Topology](https://www.youtube.com/watch?v=2FFjJ-jBymQ), and [Canvas](https://canvas.xyz/) that rely on js-libp2p and WebRTC as the foundation for their browser-to-browser communication.
+We've also seen the ecosystem thrive with projects like [Topology](https://www.youtube.com/watch?v=2FFjJ-jBymQ), [OrbitDB](https://github.com/orbitdb/orbitdb), and [Canvas](https://canvas.xyz/) that rely on js-libp2p and WebRTC as the foundation for their browser-to-browser communication.
 
 It's also worth noting that WebRTC is the only browser transport with a mechanism for NAT hole-punching, which is the process of establishing a direct connection between two peers through a network address translator (NAT). This is a crucial part of establishing a direct connection between two peers in a decentralized network like IPFS.
 
