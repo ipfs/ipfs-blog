@@ -4,7 +4,7 @@ permalink: /2024-shipyard-improving-ipfs-on-the-web/
 title: 'IPFS on the Web in 2024: Update From Interplanetary Shipyard'
 description: 'Update from Interplanetary Shipyard on our efforts to make IPFS work on the Web.'
 author: Daniel Norman
-header_image: /ipfs-web-cover.jpg
+header_image: /ipfs-on-the-web-2024/cover.jpg
 tags:
   - ipfs
   - cid
@@ -49,7 +49,7 @@ Let's take a look at each of these projects in more detail.
 
 ### Verified Fetch
 
-Verified Fetch is library for verified retrieval of IPFS content we [released earlier this year](https://blog.ipfs.tech/verified-fetch/). We wanted to make retrieval by CID to be as easy to use as the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) that most developers are already familiar with. We focused on getting a seamless developer experience with a simple API, while abstracting away all the complexities of IPFS: content routing, transports, and verification.
+[Verified Fetch](https://www.npmjs.com/package/@helia/verified-fetch) is a TypeScript library for verified retrieval of IPFS content we [released earlier this year](https://blog.ipfs.tech/verified-fetch/) and built on top of [Helia](https://github.com/ipfs/helia/). We wanted to make retrieval by CID to be as easy to use as the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) that most developers are already familiar with. We focused on getting a seamless developer experience with a simple API, while abstracting away all the complexities of IPFS: content routing, transports, and verification.
 
 Verified Fetch works great for loading content-addressed static assets or sub-resources asynchronously as part of a web app or dapp, for example, images, videos, or JSON.
 
@@ -73,14 +73,18 @@ The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is 
 In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at what it means for a web app to be "on IPFS". This can be summarized as:
 
 - The web app is static, i.e. a folder of files including HTML, JS, CSS, images, etc. that make up the app. This is typically the build output of a frontend framework or a static site generator.
-- The web app's build output is encoded with [UnixFS](https://docs.ipfs.tech/concepts/glossary/#unixfs) and addressed by a [CID](https://docs.ipfs.tech/concepts/content-addressing/#cid) which represents the root of the app.
+- The web app's build outputs are encoded with [UnixFS](https://docs.ipfs.tech/concepts/glossary/#unixfs) and addressed by a [CID](https://docs.ipfs.tech/concepts/content-addressing/#cid) which represents the root of the app (see diagram below).
 - There are IPFS nodes that have the blocks for the CID.
+
+![Encoding a build as UnixFS](../assets/ipfs-on-the-web-2024/encoding-builds-as-unixfs.png)
 
 For example, this blog is statically generated and has a distinct CID for each version. With the help of Fleek, each [build is encoded with UnixFS, given a CID](https://github.com/ipfs/ipfs-blog/runs/31658981603) and provided to the IPFS network. For example, `bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a` is the CID for one version of this blog.
 
 Now, instead of using a trusted gateway, e.g. `https://bafybe...2zf4a.ipfs.dweb.link/`, you can load the blog using the Service Worker Gateway at [bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a.ipfs.inbrowser.link](https://bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a.ipfs.inbrowser.link).
 
 > Note: the example uses a CID for simplicity, but the Service Worker Gateway works with DNSLink IPNS URLs too, e.g. `https://blog-ipfs-tech.ipns.inbrowser.link`.
+
+![Service Worker Gateway Diagram](../assets/ipfs-on-the-web-2024/sw-gw-diagram.png)
 
 There's an inherent trade off with the Service Worker Gateway: it requires an initial upfront cost of fetching and installing the Service Worker –which is akin to a lightweight IPFS node– which then fetches the content. This is why the first load may be slower than using a trusted gateway. On the other hand, you get a few benefits:
 
@@ -92,13 +96,13 @@ There's an inherent trade off with the Service Worker Gateway: it requires an in
 
 As we embarked on this project, we focused on getting the basics right:
 
-- Service Worker lifecycle management with custom gateways and delegated routing configuration
-- Subdomain origin isolation according to the [Subdomain Gateway specification](https://specs.ipfs.tech/http-gateways/subdomain-gateway/)
-- Testing infrastructure to ensure compliance with the specs
-- Basic error handling and fallback to trusted gateways
-- Correct caching of assets
-- Division of responsibilities between the Verified Fetch library and the Service Worker Gateway to ensure they are both useful without duplicating functionality
-- HTTP retrieval from recursive gateways and HTTP gateway providers
+- Service Worker lifecycle management with custom gateways and delegated routing configuration.
+- Subdomain origin isolation according to the [Subdomain Gateway specification](https://specs.ipfs.tech/http-gateways/subdomain-gateway/).
+- Testing infrastructure to ensure compliance with the specs.
+- Basic error handling and fallback to trusted gateways.
+- Correct caching of assets.
+- Division of responsibilities between the Verified Fetch library and the Service Worker Gateway to ensure they are both useful without duplicating functionality.
+- HTTP retrieval from recursive gateways and HTTP gateway providers.
 
 > **Note:** There's a subtle difference between recursive gateways and HTTP gateway providers. Recursive gateways, like `ipfs.io` and `trustless-gateway.link`, will fetch content by CID from providers when the content is not locally available.
 > HTTP gateway providers on the other hand, are IPFS HTTP gateways discovered via the [IPNI](https://docs.ipfs.tech/concepts/ipni/) (with the `transport-ipfs-gateway-http` protocol) that only return blocks for CIDs they have.
@@ -113,10 +117,10 @@ Browser transports (protocols) are the bread and butter of the web and the Achil
 
 Browsers communicate over the internet using a number of transport protocols, each with their own strengths and weaknesses. Assuming a web app is in a [Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), i.e., served over HTTPS as most modern web apps are, the following transport protocols are available:
 
-- **HTTPS**: Request/Response HTTP over TLS
+- **HTTPS**: Request/Response HTTP over TLS.
 - **Secure WebSocket**: Secure bidirectional streaming communication over WebSockets.
 - **WebRTC**: Initially conceived for real-time browser-to-browser communication, e.g. for video, audio, and data streaming.
-- **WebTransport**: A QUIC based replacement for WebSockets
+- **WebTransport**: A QUIC based replacement for WebSockets.
 
 The following table summarizes the capabilities of each transport:
 
@@ -129,9 +133,11 @@ The following table summarizes the capabilities of each transport:
 
 ### HTTPS and Secure WebSockets
 
-HTTP is widely supported in browsers and implementations of IPFS. For example, the [IPFS HTTP Gateway is a general purpose API for retrieval](https://docs.ipfs.tech/reference/http/gateway/#trusted-vs-trustless) from IPFS peers over HTTP that is broadly used in IPFS implementations, tooling and infrastructure.
+HTTP is widely supported in browsers and implementations of IPFS. Perhaps most common is the [IPFS HTTP Gateway](https://docs.ipfs.tech/reference/http/gateway/#trusted-vs-trustless), a general purpose retrieval API with HTTP semantics that is broadly used in IPFS implementations, tooling and infrastructure.
 
-Since HTTP is a request/response protocol, it's not well suited for [Bitswap](https://docs.ipfs.tech/concepts/bitswap/) and other libp2p protocols. WebSockets, on the other hand, are a bi-directional streaming protocol and are well suited for libp2p based protocols like Bitswap. What's more, WebSockets are supported in all modern browsers and are compatible with Service Workers.
+#### Request/Response vs Bi-directional streaming
+
+Request/response protocols like HTTP are not very well suited for streaming protocols like [Bitswap](https://docs.ipfs.tech/concepts/bitswap/). WebSocket (and WebRTC and WebTransport), are bi-directional streaming protocols and are well suited for libp2p based protocols like Bitswap. What's more, WebSockets are supported in all modern browsers and are compatible with Service Workers.
 
 #### TLS certificates for HTTP and WebSockets
 
@@ -147,7 +153,7 @@ WebRTC is a browser-to-browser communication protocol, e.g. for video, audio, an
 
 In the context of IPFS and libp2p, there are two implementations of [WebRTC](https://github.com/libp2p/specs/tree/master/webrtc):
 
-- **WebRTC:** for browser-to-browser communication
+- **WebRTC:** for browser-to-browser communication.
 - **WebRTC-Direct:** for browser-to-server communication without the need for trusted TLS certificates.
 
 The spec for [WebRTC for browser-to-browser communication in libp2p](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md) was ratified last year and includes a decentralized signalling mechanism for exchanging SDPs that leverages Circuit Relays. We've written an [extensive guide](https://docs.libp2p.io/guides/getting-started/webrtc/) to help you get started and also ran a workshop at IPFS Camp. It's also used by [Universal Connectivity](https://github.com/libp2p/universal-connectivity) and [IPFS Share](https://share.ipfs.io) to demonstrate the possibilities of browser-to-browser communication.
@@ -189,7 +195,7 @@ This is driven by the following reasons:
 - HTTP is supported in all modern browsers and is compatible with Service Workers.
 - HTTP has powerful caching primitives with wide adoption across both infrastructure providers and open source infrastructure, opening the door to flexible caching which matches well with the immutable nature of content addressed data.
 
-More about this in this talk from IPFS Camp:
+More about this in a recent talk from IPFS Camp:
 
 @[youtube](4GwxrQ9Z3Bk)
 
@@ -219,7 +225,7 @@ We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
 
 Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
-- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
+- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates, verifies their network reachability and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
 - The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
 
 > **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
@@ -267,9 +273,13 @@ Based on tracing and metrics from the public IPFS Gateways, we've [identified an
 
 ## Libp2p improvements
 
-Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack.
+Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack. It also highlights the role composability plays across the IPFS and libp2p ecosystem.
 
-Beyond the work mentioned above on transports, we've also been working on a number of improvements and specs to libp2p that support the above projects indirectly:
+The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) depends on [Verified Fetch](https://github.com/ipfs/helia-verified-fetch), which depends on [Helia](https://github.com/ipfs/helia) which depends on [js-libp2p](https://github.com/libp2p/js-libp2p).
+
+![Libp2p composability](../assets/ipfs-on-the-web-2024/sw-gw-composability.png)
+
+Beyond the work mentioned earlier on transports, we've also been working on a number of improvements and specs to libp2p that support the above projects indirectly:
 
 ### AutoNAT v2
 
@@ -297,9 +307,9 @@ The bootstrapper supports TCP and Secure WebSockets and can be connected to at `
 
 [Libp2p over HTTP](https://github.com/libp2p/specs/tree/master/http) defines how libp2p nodes can offer and use an HTTP alongside their other transports to support application protocols with HTTP semantics. This allows a wider variety of nodes to participate in the libp2p network.
 
-For example, the backend for the AutoTLS service exposes an HTTP API where requests are authenticated using Peer IDs.
+For example, the [backend for the AutoTLS service](https://github.com/ipshipyard/p2p-forge) exposes an HTTP API where requests are authenticated using Peer IDs.
 
-More on this in this talk from IPFS Camp:
+More on this in a talk from IPFS Camp:
 @[youtube](CNZBzt5tFvg)
 
 ### WebSockets single encryption
