@@ -247,7 +247,7 @@ Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
 AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0).
 
-We're also [working on an AutoTLS client](https://github.com/libp2p/js-libp2p/pull/2798) for js-libp2p and the Helia stack which should be available soon.
+We're also [working on an AutoTLS service](https://github.com/libp2p/js-libp2p/pull/2798) with support in the [WebSocket Transport](https://github.com/libp2p/js-libp2p/pull/2800) in js-libp2p, which would allow the JavaScript ecosystem to also reap the benefits of AutoTLS.
 
 We encourage you to try it out and give feedback.
 
@@ -290,7 +290,7 @@ Based on tracing and metrics from the public IPFS Gateways, we've [identified an
 
 Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack.
 
-Beyond the work mentioned earlier on transports, we've also been working on a number of improvements and specs to libp2p that support the above projects indirectly:
+Beyond the work mentioned earlier on transports, we've also been working on numerous improvements and specs to libp2p that support the above projects. Check out the [js-libp2p Roadmap](https://github.com/libp2p/js-libp2p/blob/main/ROADMAP.md) for more details.
 
 ### AutoNAT v2
 
