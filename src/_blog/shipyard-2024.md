@@ -92,6 +92,15 @@ There's an inherent trade off with the Service Worker Gateway: it requires an in
 - **Trustless:** with local verification, removing the implicit trust in any given gateway or provider.
 - **Offline use:** Visited pages are cached in the Cache API, enabling offline support for every static web app.
 
+
+### Note on composability
+
+The Service Worker Gateway also highlights the focus on composability across the JavaScript/TypeScript implementations of IPFS and libp2p:
+
+The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) depends on [Verified Fetch](https://github.com/ipfs/helia-verified-fetch), which depends on [Helia](https://github.com/ipfs/helia) which depends on [js-libp2p](https://github.com/libp2p/js-libp2p).
+
+![Libp2p composability](../assets/ipfs-on-the-web-2024/sw-gw-composability.png)
+
 ### Service Worker Gateway: What's new
 
 As we embarked on this project, we focused on getting the basics right:
@@ -223,16 +232,22 @@ We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
 
 [AutoTLS](https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls) enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
 
+### How AutoTLS works
+
 Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
 - An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates, verifies their network reachability and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
+
+![AutoTLS part 1](../assets/ipfs-on-the-web-2024/auto-tls-1.svg)
+
 - The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
 
+![AutoTLS part 2](../assets/ipfs-on-the-web-2024/auto-tls-2.svg)
 > **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
 
 AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0).
 
-We're also working on an opt-in version of AutoTLS for js-libp2p and the Helia stack which should be available soon.
+We're also [working on an AutoTLS client](https://github.com/libp2p/js-libp2p/pull/2798) for js-libp2p and the Helia stack which should be available soon.
 
 We encourage you to try it out and give feedback.
 
@@ -273,11 +288,7 @@ Based on tracing and metrics from the public IPFS Gateways, we've [identified an
 
 ## Libp2p improvements
 
-Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack. It also highlights the role composability plays across the IPFS and libp2p ecosystem.
-
-The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) depends on [Verified Fetch](https://github.com/ipfs/helia-verified-fetch), which depends on [Helia](https://github.com/ipfs/helia) which depends on [js-libp2p](https://github.com/libp2p/js-libp2p).
-
-![Libp2p composability](../assets/ipfs-on-the-web-2024/sw-gw-composability.png)
+Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack.
 
 Beyond the work mentioned earlier on transports, we've also been working on a number of improvements and specs to libp2p that support the above projects indirectly:
 
