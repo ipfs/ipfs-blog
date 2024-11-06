@@ -30,7 +30,7 @@ In this blog post, we'll share all the progress we've made since then and what w
 For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable three key properties of IPFS **resilient**, **decentralized**, and **verified** content retrieval to the web.
 
 **Resilient**: Data is retrievable even if some providers go offline.
-**Decentralized**: Data is retrievable by any peer, including browser peers, from any other peer on the network while immune to censorship or chokepoints.
+**Decentralized**: Peers are able to open connections to other peers for content routing and retrieval while immune to censorship and chokepoints that disrupt the network.
 **Verified**: Data is verified, ensuring integrity without assuming trust (aka trustless).
 
 The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrepancies between browsers.
