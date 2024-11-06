@@ -27,7 +27,11 @@ In this blog post, we'll share all the progress we've made since then and what w
 
 ## IPFS on the Web
 
-For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable **reliable, decentralized, and verified** IPFS content retrieval to the web.
+For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable three key properties of IPFS **resilient**, **decentralized**, and **verified** content retrieval to the web.
+
+**Resilient**: Data is retrievable even if some providers go offline.
+**Decentralized**: Data is retrievable by any peer, including browser peers, from any other peer on the network while immune to censorship or chokepoints.
+**Verified**: Data is verified, ensuring integrity without assuming trust (aka trustless).
 
 The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrepancies between browsers.
 
@@ -49,7 +53,7 @@ Let's take a look at each of these projects in more detail.
 
 ### Verified Fetch
 
-[Verified Fetch](https://www.npmjs.com/package/@helia/verified-fetch) is a TypeScript library for verified retrieval of IPFS content we [released earlier this year](https://blog.ipfs.tech/verified-fetch/) and built on top of [Helia](https://github.com/ipfs/helia/). We wanted to make retrieval by CID to be as easy to use as the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) that most developers are already familiar with. We focused on getting a seamless developer experience with a simple API, while abstracting away all the complexities of IPFS: content routing, transports, and verification.
+[Verified Fetch](https://www.npmjs.com/package/@helia/verified-fetch) is a TypeScript library for verified retrieval of IPFS content we [released earlier this year](https://blog.ipfs.tech/verified-fetch/) and built on top of [Helia](https://github.com/ipfs/helia/). We designed it to make IPFS retrieval by CID as easy as the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) that most developers are already familiar with. We focused on getting a seamless developer experience with a simple API, while abstracting away all the complexities of IPFS: **content routing, transports, and verification**.
 
 Verified Fetch works great for loading content-addressed static assets or sub-resources asynchronously as part of a web app or dapp, for example, images, videos, or JSON.
 
@@ -61,6 +65,13 @@ From a developer experience standpoint, Verified Fetch follows the following pat
 This foundational API surface, while simple, enables a wide range of retrieval use-cases while abstracting away the complexities of data types, content routing, transports and verification. Moreover, returning a `Response` object allows for easy integration with the browser's caching mechanisms and use in [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
 
 Verified Fetch is great for loading content-addressed static assets or "sub-resources" asynchronously, for example, images, videos and even IPLD encoded data.
+
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="VwoWWGQ" data-pen-title="@helia/verified-fetch Direct Retrieval with Libp2p" data-preview="true" data-editable="true" data-user="2color" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/2color/pen/VwoWWGQ">
+  @helia/verified-fetch Direct Retrieval with Libp2p</a> by Daniel Norman (<a href="https://codepen.io/2color">@2color</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 But what about loading full dapps or websites from IPFS? Unlike static assets, web apps and websites require a way to resolve standard URLs to their corresponding content addressed resources.
 
@@ -304,7 +315,9 @@ While not directly related to IPFS on the web, AutoNAT v2 improves the network l
 
 ### NAT Hole Punching
 
-A number of fixes and improvements to NAT hole punching have been implemented in go-libp2p which should help improve the reliability of IPFS nodes in the wild
+A number of fixes and improvements to [NAT hole punching](https://blog.ipfs.tech/2022-01-20-libp2p-hole-punching/) have been implemented in go-libp2p which should help improve the reliability of IPFS nodes in the wild.
+
+> **Note:** NAT traversal in browsers is different from NAT traversal in the rest of the network. Browsers use [ICE with STUN servers for WebRTC NAT traversal](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Protocols#ice), while non-browser libp2p peers use [Circuit Relay v2](https://docs.libp2p.io/concepts/nat/circuit-relay-v2/) and [DCUtR](https://docs.libp2p.io/concepts/nat/dcutr/).
 
 ### js-libp2p Amino DHT Bootstrapper
 
@@ -337,6 +350,8 @@ Once ratified and implemented, this optimization will reduce the computational o
 ## Summary
 
 All the above projects are either complete or nearing completion. This is the result of arduous collaboration across both the libp2p and IPFS stacks in addition to standard bodies and browser vendors.
+
+**Resilient, decentralized, and verified** IPFS content retrieval to the web is finally a reality.
 
 This breadth and reach of this work is only possible because of the open-source nature of the IPFS and libp2p projects. But it also underscores the importance of funding the Interplanetary Shipyard team so that we can continue to shepherd these efforts across the ecosystem.
 
