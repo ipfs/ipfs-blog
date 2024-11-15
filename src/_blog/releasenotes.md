@@ -1,9 +1,9 @@
 ---
 data:
-    - title: 'Just released: Kubo 0.32.0!'
-      date: "2024-11-14"
+    - title: 'Just released: Kubo 0.32.1!'
+      date: "2024-11-15"
       publish_date: null
-      path: https://github.com/ipfs/kubo/releases/tag/v0.32.0
+      path: https://github.com/ipfs/kubo/releases/tag/v0.32.1
       tags:
         - go-ipfs
         - kubo
