@@ -46,7 +46,7 @@ At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this 
 - [**New browser transports**](#browser-transports)
 - [**IPFS over HTTP**](#ipfs-over-http)
 - [**Browser Developer Tools**](#browser-developer-tools)
-- [**AutoTLS with libp2p.direct**](#autotls-with-libp2pdirect)
+- [**AutoTLS with libp2p.direct**](#autotls-with-libp2p-direct)
 - [**Delegated Routing HTTP API**](#delegated-routing-http-api)
 - [**Bitswap improvements**](#bitswap-improvements)
 - [**libp2p improvements**](#libp2p-improvements)
@@ -245,9 +245,9 @@ Learn more about the browser extension in this talk from IPFS Camp:
 
 ## AutoTLS with libp2p.direct
 
-As mentioned above, Secure WebSockets are the only streaming transport that works reliably in Service Workers, but requires a TLS certificate and domain.
+As mentioned above, Secure WebSockets is the only streaming transport that works reliably in Service Workers, but requires a TLS certificate and domain.
 
-To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for all publicly dialable Kubo nodes. This way, nodes can use [Secure WebSockets libp2p transport](https://github.com/libp2p/specs/blob/master/websockets/README.md) without the need for a domain name.
+To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for publicly dialable Kubo nodes. This way, nodes can use [Secure WebSockets libp2p transport](https://github.com/libp2p/specs/blob/master/websockets/README.md) without needing to register a domain name.
 
 We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
 
@@ -273,7 +273,7 @@ We're also [working on an AutoTLS service](https://github.com/libp2p/js-libp2p/p
 AutoTLS is available in [Kubo v0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0) and [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases). We encourage you to try it out and share your feedback.
 
 <br />
-<a href="https://github.com/ipfs/kubo/releases/tag/v0.32.0" class="cta-button" target="_blank">Download Kubo</a>
+<a href="https://github.com/ipfs/kubo/releases" class="cta-button" target="_blank">Download the latest Kubo</a>
 
 ## Delegated Routing HTTP API
 
