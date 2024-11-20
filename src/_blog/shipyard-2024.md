@@ -27,11 +27,13 @@ In this blog post, we'll share all the progress we've made since then and what w
 
 ## IPFS on the Web
 
-For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, to enable three key properties of IPFS **resilient**, **decentralized**, and **verified** content retrieval to the web.
+For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, **resilient**, **decentralized**, and **verified** data retrieval on the web, where data can be videos, datasets, or even web sites.
 
-**Resilient**: Data is retrievable even if some providers go offline.
-**Decentralized**: Peers are able to open connections to other peers for content routing and retrieval while immune to censorship and chokepoints that disrupt the network.
-**Verified**: Data is verified, ensuring integrity without assuming trust (aka trustless).
+But what does it mean for IPFS to work on the web?
+
+**Resilient**: Data is retrievable in a browser even if some providers go offline.
+**Decentralized**: You can connect to other peers from a browser for content routing and retrieval while immune to censorship and chokepoints that disrupt the network.
+**Verified**: You verify data locally, ensuring integrity without assuming trust (aka trustless).
 
 The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrepancies between browsers.
 
@@ -73,13 +75,17 @@ Verified Fetch is great for loading content-addressed static assets or "sub-reso
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+
+<br />
+<a href="https://npmjs.com/package/@helia/verified-fetch" class="cta-button" target="_blank"> Install Verified Fetch</a>
+
 But what about loading full dapps or websites from IPFS? Unlike static assets, web apps and websites require a way to resolve standard URLs to their corresponding content addressed resources.
 
 This is where the Service Worker Gateway comes in, which builds on top of Verified Fetch.
 
 ## Service Worker Gateway
 
-The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is a replacement for trusted IPFS gateways. From a technical standpoint, it's an implementation of the [IPFS HTTP Gateway specification](https://specs.ipfs.tech/http-gateways/subdomain-gateway/) in a service worker, whereby the browser acts as a "smart-client" which fetches IPFS content directly from providers on the network in addition to verifying it locally.
+The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is a replacement for trusted IPFS gateways. From a technical standpoint, it's an implementation of the [IPFS HTTP Gateway specification](https://specs.ipfs.tech/http-gateways/subdomain-gateway/) in a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), whereby the browser acts as a "smart-client" which fetches IPFS content directly from providers on the network in addition to verifying it locally.
 
 In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at what it means for a web app to be "on IPFS". This can be summarized as:
 
@@ -103,6 +109,8 @@ There's an inherent trade off with the Service Worker Gateway: it requires an in
 - **Trustless:** with local verification, removing the implicit trust in any given gateway or provider.
 - **Offline use:** Visited pages are cached in the Cache API, enabling offline support for every static web app.
 
+<br />
+<a href="https://inbrowser.link" class="cta-button" target="_blank">Try the Service Worker Gateway</a>
 
 ### Note on composability
 
@@ -150,6 +158,8 @@ The following table summarizes the capabilities of each transport:
 | Secure WebSocket | ✅                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | WebRTC           | ✅                       | ❌                                  | ✅               | ❌                        | ✅                 |
 | WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | ❌                  |
+
+> **Note:** while streaming is technically possible with HTTPS, browsers don't allow reading from the response until the request has been fully sent. See [this issue](https://github.com/whatwg/fetch/issues/1254) for more details.
 
 ### HTTPS and Secure WebSockets
 
@@ -260,7 +270,10 @@ AutoTLS is provided as a public good service and operated by [Interplanetary Shi
 
 We're also [working on an AutoTLS service](https://github.com/libp2p/js-libp2p/pull/2798) with support in the [WebSocket Transport](https://github.com/libp2p/js-libp2p/pull/2800) in js-libp2p, which would allow the JavaScript ecosystem to also reap the benefits of AutoTLS.
 
-We encourage you to try it out and give feedback.
+AutoTLS is available in [Kubo v0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0) and [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases). We encourage you to try it out and share your feedback.
+
+<br />
+<a href="https://github.com/ipfs/kubo/releases/tag/v0.32.0" class="cta-button" target="_blank">Download Kubo</a>
 
 ## Delegated Routing HTTP API
 
@@ -293,13 +306,13 @@ IPIP-484 is already implemented in [Boxo](https://github.com/ipfs/boxo/tree/main
 
 ## Bitswap improvements
 
-Bitswap is the most prevalent data transfer protocol in the IPFS network. Our experience operating the public IPFS Gateways on behalf of the IPFS Foundation gives us an opportunity to observe and optimize Bitswap at scale.
+Bitswap is the most prevalent data transfer protocol in the IPFS network. Our experience operating the public IPFS Gateways on behalf of the IPFS Foundation gives us an opportunity to measure and optimize Bitswap at scale.
 
 Based on tracing and metrics from the public IPFS Gateways, we've [identified and released](https://github.com/ipfs/boxo/blob/main/CHANGELOG.md) a number of performance improvements to the [Go implementation of Bitswap in Boxo](https://github.com/ipfs/boxo/tree/main/bitswap), which is used by Kubo and Rainbow.
 
 ## Libp2p improvements
 
-Libp2p underpins all the above projects and is the bedrock of the entire IPFS stack.
+Libp2p is a dependency of most of the above projects and is the bedrock of the entire IPFS stack.
 
 Beyond the work mentioned earlier on transports, we've also been working on numerous improvements and specs to libp2p that support the above projects. Check out the [js-libp2p Roadmap](https://github.com/libp2p/js-libp2p/blob/main/ROADMAP.md) for more details.
 
@@ -315,9 +328,9 @@ While not directly related to IPFS on the web, AutoNAT v2 improves the network l
 
 ### NAT Hole Punching
 
-A number of fixes and improvements to [NAT hole punching](https://blog.ipfs.tech/2022-01-20-libp2p-hole-punching/) have been implemented in go-libp2p which should help improve the reliability of IPFS nodes in the wild.
+A number of fixes and improvements to [NAT hole punching](https://blog.ipfs.tech/2022-01-20-libp2p-hole-punching/) have been implemented in go-libp2p which should help improve connectivity of IPFS nodes behind NATs.
 
-> **Note:** NAT traversal in browsers is different from NAT traversal in the rest of the network. Browsers use [ICE with STUN servers for WebRTC NAT traversal](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Protocols#ice), while non-browser libp2p peers use [Circuit Relay v2](https://docs.libp2p.io/concepts/nat/circuit-relay-v2/) and [DCUtR](https://docs.libp2p.io/concepts/nat/dcutr/).
+> **Note:** NAT hole punching in browsers is different from NAT hole punching in QUIC and TCP. Browsers use [ICE with STUN servers for WebRTC NAT traversal](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Protocols#ice), while non-browser libp2p peers use [Circuit Relay v2](https://docs.libp2p.io/concepts/nat/circuit-relay-v2/) and [DCUtR](https://docs.libp2p.io/concepts/nat/dcutr/).
 
 ### js-libp2p Amino DHT Bootstrapper
 
@@ -331,7 +344,7 @@ The bootstrapper supports TCP and Secure WebSockets and can be connected to at `
 
 [Libp2p over HTTP](https://github.com/libp2p/specs/tree/master/http) defines how libp2p nodes can offer and use an HTTP alongside their other transports to support application protocols with HTTP semantics. This allows a wider variety of nodes to participate in the libp2p network.
 
-For example, the [backend for the AutoTLS service](https://github.com/ipshipyard/p2p-forge) exposes an HTTP API where requests are authenticated using Peer IDs.
+For example, the [backend for the AutoTLS service](https://github.com/ipshipyard/p2p-forge) exposes an API which uses libp2p over HTTP to authenticate libp2p Peer IDs in HTTP requests.
 
 More on this in a talk from IPFS Camp:
 @[youtube](CNZBzt5tFvg)
@@ -343,16 +356,20 @@ Historically, Secure WebSockets in libp2p involved double encryption:
 - First, a Secure WebSocket connection is secured using a CA-signed TLS certificate tied to a hostname.
 - Then, on the libp2p layer, the connection is authenticated and encrypted again using [Noise](https://noiseprotocol.org/) to prevent [MITM attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) by authenticating the libp2p Peer ID.
 
-While Noise is necessary for Peer ID authentication, it's not actually needed for encryption. Seeing as double encryption is obviously suboptimal in terms of resource consumption, we've been working with the community on an optimization to [introduce opt-in delegation of encryption to TLS](https://github.com/libp2p/specs/pull/625).
+While Noise is necessary for Peer ID authentication, it's not strictly needed for encryption. Seeing as double encryption is obviously suboptimal in terms of resource consumption, we've been working on an optimization to [introduce explicit opt-in delegation of encryption to TLS](https://github.com/libp2p/specs/pull/625).
 
-Once ratified and implemented, this optimization will reduce the computational overhead of each Secure WebSocket connection which can add up when opening many connections.
+At the time of writing, constrainsts in the WebSocket API prevent this from being implemented. If ratified and implemented, this optimization should reduce the computational overhead of each Secure WebSocket connection which can add up when opening many connections.
 
 ## Summary
 
 All the above projects are either complete or nearing completion. This is the result of arduous collaboration across both the libp2p and IPFS stacks in addition to standard bodies and browser vendors.
 
-**Resilient, decentralized, and verified** IPFS content retrieval to the web is finally a reality.
+**Resilient, decentralized, and verified** IPFS retrieval on the web is finally a reality.
 
 This breadth and reach of this work is only possible because of the open-source nature of the IPFS and libp2p projects. But it also underscores the importance of funding the Interplanetary Shipyard team so that we can continue to shepherd these efforts across the ecosystem.
 
 🍎 We're excited to see these projects come to fruition and can't wait to see what the IPFS community builds on top of them.
+
+## Support our work
+
+We're a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
