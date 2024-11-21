@@ -104,14 +104,15 @@ The Service Worker Gateway unleashes new possibilities for decentralized web pub
 - **Trustless:** with local verification, removing the implicit trust in any given gateway or provider.
 - **Offline use:** Visited pages are cached in the Cache API, enabling offline support for every static web app.
 
+<br />
+<a href="https://inbrowser.link" class="cta-button" target="_blank">Try the Service Worker Gateway</a>
+
 For example, the IPFS blog is statically generated and has a distinct CID for each version. With the help of Fleek, each [build is encoded with UnixFS, given a CID](https://github.com/ipfs/ipfs-blog/runs/31658981603) and provided to the IPFS network. The [DNSLink](https://docs.ipfs.tech/concepts/dnslink/) record is also updated to the latest release CID.
 
 Now, instead of using a trusted gateway, e.g. `https://blog-ipfs-tech.ipns.dweb.link/`, you can load the blog using the Service Worker Gateway at [blog-ipfs-tech.ipns.inbrowser.link](https://blog-ipfs-tech.ipns.inbrowser.link).
 
 ![Service Worker Gateway Diagram](../assets/ipfs-on-the-web-2024/sw-gw-diagram.png)
 
-<br />
-<a href="https://inbrowser.link" class="cta-button" target="_blank">Try the Service Worker Gateway</a>
 
 > **Note:** There's an inherent trade off with the Service Worker Gateway: it requires an initial upfront cost of fetching and installing the Service Worker which fetches and verifies data. This is why the first load may be slower than using a trusted gateway.
 
