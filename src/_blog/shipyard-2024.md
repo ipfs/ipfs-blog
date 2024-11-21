@@ -374,7 +374,7 @@ There are several areas where we'll be focusing our efforts in the coming months
 
 - Productionising of AutoTLS infrastructure and integrations in Kubo and other IPFS implementations
 - HTTP Retrieval in Boxo/Kubo
-- Developer experience, examples, documentation, and guides
+- More examples, documentation, and guides
 - Improved error handling in the Service Worker Gateway
 - Integration of the Service Worker Gateway into IPFS Companion
 
