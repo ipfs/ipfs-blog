@@ -27,26 +27,28 @@ In this blog post, we'll share all the progress we've made since then and what w
 
 ## IPFS on the Web
 
-For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, **resilient**, **decentralized**, and **verified** data retrieval on the web, where data can be videos, datasets, or even web sites.
+For as long as IPFS has existed, one of the key goals has been to make it possible to use IPFS on the web. That is, **resilient**, **decentralized**, and **verified** data retrieval on the Web.
 
-But what does it mean for IPFS to work on the web?
+But what does it mean for IPFS to work on the Web?
 
 **Resilient**: Data is retrievable in a browser even if some providers go offline.
 **Decentralized**: You can connect to other peers from a browser for content routing and retrieval while immune to censorship and chokepoints that disrupt the network.
 **Verified**: You verify data locally, ensuring integrity without assuming trust (aka trustless).
 
-The web as a platform has the widest reach of users, and yet it's also the most challenging due to the many constraints imposed by the platform and the discrepancies between browsers.
+Data refers to anything that can be addressed by a CID: files, directories, web apps/dapps, videos, etc.
+
+While the Web platform has by far the widest reach, it's also the most challenging platform to make IPFS work on due to the inherent constraints of the platform and the discrepancies between browsers.
 
 Gateways like `ipfs.io` are a double-edged sword, because they make IPFS content accessible to the web, but they also highlight the challenges of IPFS on the web. Initially conceived as a crutch to bootstrap the network until a more decentralized and resilient solution was in place, public gateways became entrenched as the default to access IPFS content on the web to the detriment of the principles of IPFS.
 
 At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this challenge head on with a number of projects across the libp2p and IPFS stacks to make IPFS on the web a reality:
 
+- [**AutoTLS with libp2p.direct**](#autotls-with-libp2p-direct)
 - [**Verified Fetch**](#verified-fetch)
 - [**Service Worker Gateway**](#service-worker-gateway)
 - [**New browser transports**](#browser-transports)
 - [**IPFS over HTTP**](#ipfs-over-http)
 - [**Browser Developer Tools**](#browser-developer-tools)
-- [**AutoTLS with libp2p.direct**](#autotls-with-libp2p-direct)
 - [**Delegated Routing HTTP API**](#delegated-routing-http-api)
 - [**Bitswap improvements**](#bitswap-improvements)
 - [**libp2p improvements**](#libp2p-improvements)
@@ -75,7 +77,6 @@ Verified Fetch is great for loading content-addressed static assets or "sub-reso
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
 <br />
 <a href="https://npmjs.com/package/@helia/verified-fetch" class="cta-button" target="_blank"> Install Verified Fetch</a>
 
@@ -85,32 +86,34 @@ This is where the Service Worker Gateway comes in, which builds on top of Verifi
 
 ## Service Worker Gateway
 
-The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is a replacement for trusted IPFS gateways. From a technical standpoint, it's an implementation of the [IPFS HTTP Gateway specification](https://specs.ipfs.tech/http-gateways/subdomain-gateway/) in a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), whereby the browser acts as a "smart-client" which fetches IPFS content directly from providers on the network in addition to verifying it locally.
+The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is a Web native IPFS gateway that runs in the browser. It implements the [IPFS Gateway spec](https://specs.ipfs.tech/http-gateways/subdomain-gateway/) in a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and fetches IPFS content directly from providers on the network in addition to verifying it locally.
 
-In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at what it means for a web app to be "on IPFS". This can be summarized as:
+In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at how web publishing with works with IPFS. This can be summarized as:
 
-- The web app is static, i.e. a folder of files including HTML, JS, CSS, images, etc. that make up the app. This is typically the build output of a frontend framework or a static site generator.
+- The web app is static, i.e. just files and directories containing HTML, JS, CSS, images, etc. that make up the app. This is typically the build output of a frontend framework or a static site generator.
 - The web app's build outputs are encoded with [UnixFS](https://docs.ipfs.tech/concepts/glossary/#unixfs) and addressed by a [CID](https://docs.ipfs.tech/concepts/content-addressing/#cid) which represents the root of the app (see diagram below).
-- There are IPFS nodes that have the blocks for the CID.
+- There are IPFS nodes (aka providers) that have the blocks for the CID.
 
 ![Encoding a build as UnixFS](../assets/ipfs-on-the-web-2024/encoding-builds-as-unixfs.png)
 
-For example, this blog is statically generated and has a distinct CID for each version. With the help of Fleek, each [build is encoded with UnixFS, given a CID](https://github.com/ipfs/ipfs-blog/runs/31658981603) and provided to the IPFS network. For example, `bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a` is the CID for one version of this blog.
+### Decentralized Frontends with the Service Worker Gateway
 
-Now, instead of using a trusted gateway, e.g. `https://bafybe...2zf4a.ipfs.dweb.link/`, you can load the blog using the Service Worker Gateway at [bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a.ipfs.inbrowser.link](https://bafybeifocckwnmfu3a4wjn6fkoaufpmzjxjaxs3rf6u5ecthfeli42zf4a.ipfs.inbrowser.link).
+The Service Worker Gateway unleashes new possibilities for decentralized web publishing:
 
-> Note: the example uses a CID for simplicity, but the Service Worker Gateway works with DNSLink IPNS URLs too, e.g. `https://blog-ipfs-tech.ipns.inbrowser.link`.
-
-![Service Worker Gateway Diagram](../assets/ipfs-on-the-web-2024/sw-gw-diagram.png)
-
-There's an inherent trade off with the Service Worker Gateway: it requires an initial upfront cost of fetching and installing the Service Worker –which is akin to a lightweight IPFS node– which then fetches the content. This is why the first load may be slower than using a trusted gateway. On the other hand, you get a few benefits:
-
-- **Resilient:** with peer-to-peer retrieval.
+- **Decentralized:** with peer-to-peer retrieval.
 - **Trustless:** with local verification, removing the implicit trust in any given gateway or provider.
 - **Offline use:** Visited pages are cached in the Cache API, enabling offline support for every static web app.
 
+For example, the IPFS blog is statically generated and has a distinct CID for each version. With the help of Fleek, each [build is encoded with UnixFS, given a CID](https://github.com/ipfs/ipfs-blog/runs/31658981603) and provided to the IPFS network. The [DNSLink](https://docs.ipfs.tech/concepts/dnslink/) record is also updated to the latest release CID.
+
+Now, instead of using a trusted gateway, e.g. `https://blog-ipfs-tech.ipns.dweb.link/`, you can load the blog using the Service Worker Gateway at [blog-ipfs-tech.ipns.inbrowser.link](https://blog-ipfs-tech.ipns.inbrowser.link).
+
+![Service Worker Gateway Diagram](../assets/ipfs-on-the-web-2024/sw-gw-diagram.png)
+
 <br />
 <a href="https://inbrowser.link" class="cta-button" target="_blank">Try the Service Worker Gateway</a>
+
+> **Note:** There's an inherent trade off with the Service Worker Gateway: it requires an initial upfront cost of fetching and installing the Service Worker which fetches and verifies data. This is why the first load may be slower than using a trusted gateway.
 
 ### Note on composability
 
@@ -157,7 +160,7 @@ The following table summarizes the capabilities of each transport:
 | HTTPS            | ❌                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | Secure WebSocket | ✅                       | ✅                                  | ✅               | ✅                        | ❌                 |
 | WebRTC           | ✅                       | ❌                                  | ✅               | ❌                        | ✅                 |
-| WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | ❌                  |
+| WebTransport     | ✅                       | ❌                                  | ❌               | ✅                        | ❌                 |
 
 > **Note:** while streaming is technically possible with HTTPS, browsers don't allow reading from the response until the request has been fully sent. See [this issue](https://github.com/whatwg/fetch/issues/1254) for more details.
 
@@ -215,6 +218,41 @@ However, the WebTransport specification is still in draft, and browser implement
 
 While we still believe in the longer term promise of WebTransport, we've reoriented our immediate priorities to WebRTC-Direct (which is now available) and [AutoTLS](#autotls-with-libp2pdirect). Nonetheless, we continue to work with browser vendors and standard bodies to get WebTransport to a stable and interoperable state.
 
+## AutoTLS with libp2p.direct
+
+AutoTLS is a new feature that significantly improves how browsers (Helia, Service Worker) can connect to Kubo nodes.
+
+As mentioned above, Secure WebSockets is the only streaming transport that works reliably in Service Workers, but requires a TLS certificate and domain.
+
+To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for publicly dialable Kubo nodes. This way, nodes can use [Secure WebSockets libp2p transport](https://github.com/libp2p/specs/blob/master/websockets/README.md) without needing to register a domain name.
+
+We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
+
+[AutoTLS](https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls) enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
+
+### How AutoTLS works
+
+Under the hood, the infrastructure behind `libp2p.direct` has two roles:
+
+- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates, verifies their network reachability and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
+
+![AutoTLS part 1](../assets/ipfs-on-the-web-2024/auto-tls-1.svg)
+
+- The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
+
+![AutoTLS part 2](../assets/ipfs-on-the-web-2024/auto-tls-2.svg)
+
+> **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
+
+AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0).
+
+We're also adding support for AutoTLS in [js-libp2p](https://github.com/libp2p/js-libp2p/pull/2800), which would allow the JavaScript ecosystem to also reap the benefits of AutoTLS.
+
+AutoTLS is available in [Kubo v0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0) or [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases/tag/v0.40.0) (which includes Kubo). We encourage you to try it out and [share your feedback](https://github.com/ipfs/kubo/issues/10560).
+
+<br />
+<a href="https://github.com/ipfs/ipfs-desktop/releases/tag/v0.40.0" class="cta-button" target="_blank">Download IPFS Desktop</a>
+
 ## IPFS over HTTP
 
 A theme that runs through many of the projects in this blog post is the use of HTTP as the blueprint for interoperability.
@@ -242,38 +280,6 @@ This relies on the same [metrics interface](https://github.com/libp2p/js-libp2p/
 Learn more about the browser extension in this talk from IPFS Camp:
 
 @[youtube](JChwfTA6SX0)
-
-## AutoTLS with libp2p.direct
-
-As mentioned above, Secure WebSockets is the only streaming transport that works reliably in Service Workers, but requires a TLS certificate and domain.
-
-To overcome this, the Shipyard team has been working on a project to automate the issuance of wildcard TLS certificates for publicly dialable Kubo nodes. This way, nodes can use [Secure WebSockets libp2p transport](https://github.com/libp2p/specs/blob/master/websockets/README.md) without needing to register a domain name.
-
-We call this service **AutoTLS** and it's powered by the `libp2p.direct` domain.
-
-[AutoTLS](https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls) enables publicly reachable Kubo nodes, i.e. nodes dialable from the public internet, to get a wildcard TLS certificate unique to their PeerID at `*.<PeerID>.libp2p.direct` without needing to register and configure a domain name. This enables direct libp2p connections and direct retrieval of IPFS content from browsers using Secure WebSockets.
-
-### How AutoTLS works
-
-Under the hood, the infrastructure behind `libp2p.direct` has two roles:
-
-- An [ACME DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) broker for getting wildcard TLS certificate for `*.[PeerID].libp2p.direct`. To do so it authenticates PeerIDs requesting certificates, verifies their network reachability and sets the TXT DNS record for the [ACME challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge) at `_acme-challenge.<PeerID>.libp2p.direct`.
-
-![AutoTLS part 1](../assets/ipfs-on-the-web-2024/auto-tls-1.svg)
-
-- The authoritative DNS Server for `*.libp2p.direct`. Notably, the IP addresses it resolves to are encoded in the DNS name, e.g. `1-2-3-4.<peerID>.libp2p.direct` resolves to the A record with the IP `1.1.1.1`. This keeps the DNS server stateless and simple to operate while ensuring that even when a Kubo node's IP address changes, it's resolvable without coordination.
-
-![AutoTLS part 2](../assets/ipfs-on-the-web-2024/auto-tls-2.svg)
-> **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
-
-AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0).
-
-We're also [working on an AutoTLS service](https://github.com/libp2p/js-libp2p/pull/2798) with support in the [WebSocket Transport](https://github.com/libp2p/js-libp2p/pull/2800) in js-libp2p, which would allow the JavaScript ecosystem to also reap the benefits of AutoTLS.
-
-AutoTLS is available in [Kubo v0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0) and [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases). We encourage you to try it out and share your feedback.
-
-<br />
-<a href="https://github.com/ipfs/kubo/releases" class="cta-button" target="_blank">Download the latest Kubo</a>
 
 ## Delegated Routing HTTP API
 
@@ -360,6 +366,22 @@ While Noise is necessary for Peer ID authentication, it's not strictly needed fo
 
 At the time of writing, constrainsts in the WebSocket API prevent this from being implemented. If ratified and implemented, this optimization should reduce the computational overhead of each Secure WebSocket connection which can add up when opening many connections.
 
+## What's next?
+
+As we mark this milestone, we're also looking ahead to the next phase of our work.
+
+There are several areas where we'll be focusing our efforts in the coming months:
+
+- Productionising of AutoTLS infrastructure and integrations in Kubo and other IPFS implementations
+- HTTP Retrieval in Boxo/Kubo
+- Developer experience, examples, documentation, and guides
+- Improved error handling in the Service Worker Gateway
+- Integration of the Service Worker Gateway into IPFS Companion
+
+## Support our work
+
+We're a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
+
 ## Summary
 
 All the above projects are either complete or nearing completion. This is the result of arduous collaboration across both the libp2p and IPFS stacks in addition to standard bodies and browser vendors.
@@ -369,7 +391,3 @@ All the above projects are either complete or nearing completion. This is the re
 This breadth and reach of this work is only possible because of the open-source nature of the IPFS and libp2p projects. But it also underscores the importance of funding the Interplanetary Shipyard team so that we can continue to shepherd these efforts across the ecosystem.
 
 🍎 We're excited to see these projects come to fruition and can't wait to see what the IPFS community builds on top of them.
-
-## Support our work
-
-We're a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
