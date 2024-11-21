@@ -1,5 +1,5 @@
 ---
-date: 2024-10-25
+date: 2024-11-21
 permalink: /2024-shipyard-improving-ipfs-on-the-web/
 title: 'IPFS on the Web in 2024: Update From Interplanetary Shipyard'
 description: 'Update from Interplanetary Shipyard on our efforts to make IPFS work on the Web.'
@@ -13,7 +13,7 @@ tags:
   - WebRTC
   - WebTransport
   - WebSockets
-  - TLS
+  - AutoTLS
   - Let's Encrypt
 ---
 
