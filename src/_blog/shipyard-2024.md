@@ -43,10 +43,10 @@ Gateways like `ipfs.io` are a double-edged sword, because they make IPFS content
 
 At [Interplanetary Shipyard](https://ipshipyard.com/), we've been tackling this challenge head on with a number of projects across the libp2p and IPFS stacks to make IPFS on the web a reality:
 
-- [**AutoTLS with libp2p.direct**](#autotls-with-libp2p-direct)
 - [**Verified Fetch**](#verified-fetch)
 - [**Service Worker Gateway**](#service-worker-gateway)
 - [**New browser transports**](#browser-transports)
+- [**AutoTLS with libp2p.direct**](#autotls-with-libp2p-direct)
 - [**IPFS over HTTP**](#ipfs-over-http)
 - [**Browser Developer Tools**](#browser-developer-tools)
 - [**Delegated Routing HTTP API**](#delegated-routing-http-api)
@@ -112,7 +112,6 @@ For example, the IPFS blog is statically generated and has a distinct CID for ea
 Now, instead of using a trusted gateway, e.g. `https://blog-ipfs-tech.ipns.dweb.link/`, you can load the blog using the Service Worker Gateway at [blog-ipfs-tech.ipns.inbrowser.link](https://blog-ipfs-tech.ipns.inbrowser.link).
 
 ![Service Worker Gateway Diagram](../assets/ipfs-on-the-web-2024/sw-gw-diagram.png)
-
 
 > **Note:** There's an inherent trade off with the Service Worker Gateway: it requires an initial upfront cost of fetching and installing the Service Worker which fetches and verifies data. This is why the first load may be slower than using a trusted gateway.
 
@@ -381,7 +380,7 @@ There are several areas where we'll be focusing our efforts in the coming months
 
 ## Support our work
 
-We're a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
+Interplanetary Shipyard is a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
 
 ## Summary
 
