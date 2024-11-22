@@ -212,7 +212,7 @@ There are two caveats with WebRTC in browsers:
 
 ### WebTransport
 
-[Two years ago, the IPFS and libp2p projects made a bet on the promise WebTransport](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/) and it's been a bumpy road. WebTransport is a promising protocol, especially for libp2p and IPFS, because it allows bi-directional streaming communication with many modern improvements over WebSockets, **without the need for CA-signed certificates and a domain**. This was a game changer, since most peers in the IPFS network do not have a domain name.
+[Two years ago, the IPFS and libp2p projects made a bet on the promise of WebTransport](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/) and it's been a bumpy road. WebTransport is a promising protocol, especially for libp2p and IPFS, because it allows bi-directional streaming communication with many modern improvements over WebSockets, **without the need for CA-signed certificates and a domain**. This was a game changer, since most peers in the IPFS network do not have a domain name.
 
 However, the WebTransport specification is still in draft, and browser implementations have had a [number of bugs and issues](https://github.com/libp2p/js-libp2p/issues/2572), that we've been working with the browser vendors to address. As such, browser compatibility breaks as soon as the interoperability target changes.
 
