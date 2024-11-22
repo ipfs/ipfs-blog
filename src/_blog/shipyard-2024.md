@@ -216,7 +216,7 @@ There are two caveats with WebRTC in browsers:
 
 However, the WebTransport specification is still in draft, and browser implementations have had a [number of bugs and issues](https://github.com/libp2p/js-libp2p/issues/2572), that we've been working with the browser vendors to address. As such, browser compatibility breaks as soon as the interoperability target changes.
 
-While we still believe in the longer term promise of WebTransport, we've reoriented our immediate priorities to WebRTC-Direct (which is now available) and [AutoTLS](#autotls-with-libp2pdirect). Nonetheless, we continue to work with browser vendors and standard bodies to get WebTransport to a stable and interoperable state.
+While we still believe in the longer term promise of WebTransport, we've reoriented our immediate priorities to WebRTC-Direct (which is now available) and Secure WebSockets (see [AutoTLS](#autotls-with-libp2pdirect) below) . Nonetheless, we continue to work with browser vendors and standard bodies to get WebTransport to a stable and interoperable state.
 
 ## AutoTLS with libp2p.direct
 
@@ -244,11 +244,11 @@ Under the hood, the infrastructure behind `libp2p.direct` has two roles:
 
 > **Note:** AutoTLS is not a replacement for Let's Encrypt or other TLS certificate authorities. It's a complementary service for getting a TLS certificate for your Kubo node's unique PeerID without the need for your own domain name.
 
-AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an opt-in basis with [Kubo 0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0).
+AutoTLS is provided as a public good service and operated by [Interplanetary Shipyard](https://ipshipyard.com) and is available on an [opt-in basis with Kubo 0.32.1](https://github.com/ipfs/kubo/blob/v0.32.1/docs/changelogs/v0.32.md#-autotls-automatic-certificates-for-libp2p-websockets-via-libp2pdirect).
 
 We're also adding support for AutoTLS in [js-libp2p](https://github.com/libp2p/js-libp2p/pull/2800), which would allow the JavaScript ecosystem to also reap the benefits of AutoTLS.
 
-AutoTLS is available in [Kubo v0.32.0](https://github.com/ipfs/kubo/releases/tag/v0.32.0) or [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases/tag/v0.40.0) (which includes Kubo). We encourage you to try it out and [share your feedback](https://github.com/ipfs/kubo/issues/10560).
+AutoTLS is available in [Kubo v0.32.1](https://github.com/ipfs/kubo/releases/tag/v0.32.1) or [IPFS Desktop v0.40.0](https://github.com/ipfs/ipfs-desktop/releases/tag/v0.40.0) (which includes Kubo). We encourage you to try it out and [share your feedback](https://github.com/ipfs/kubo/issues/10560).
 
 <br />
 <a href="https://github.com/ipfs/ipfs-desktop/releases/tag/v0.40.0" class="cta-button" target="_blank">Download IPFS Desktop</a>
@@ -312,7 +312,7 @@ IPIP-484 is already implemented in [Boxo](https://github.com/ipfs/boxo/tree/main
 
 ## Bitswap improvements
 
-Bitswap is the most prevalent data transfer protocol in the IPFS network. Our experience operating the public IPFS Gateways on behalf of the IPFS Foundation gives us an opportunity to measure and optimize Bitswap at scale.
+[Bitswap](https://specs.ipfs.tech/bitswap-protocol/) is the most prevalent data transfer protocol in the IPFS network. Our experience operating the public IPFS Gateways on behalf of the IPFS Foundation gives us an opportunity to measure and optimize Bitswap at scale.
 
 Based on tracing and metrics from the public IPFS Gateways, we've [identified and released](https://github.com/ipfs/boxo/blob/main/CHANGELOG.md) a number of performance improvements to the [Go implementation of Bitswap in Boxo](https://github.com/ipfs/boxo/tree/main/bitswap), which is used by Kubo and Rainbow.
 
@@ -328,7 +328,7 @@ Beyond the work mentioned earlier on transports, we've also been working on nume
 
 It provides higher granularity in determining reachability for the node, e.g. AutoNAT v2 allows us to determine reachability for all combinations of (`ipv4/ipv6`, `tcp/udp`).
 
-AutoNAT v2 is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p/releases/tag/v0.36.1) and already enabled by default in [Kubo v0.30.0](https://github.com/ipfs/kubo/releases/tag/v0.30.0).
+AutoNAT v2 is implemented in [go-libp2p](https://github.com/libp2p/go-libp2p/releases/tag/v0.36.1) and [the rollout to the public swarm started in Kubo v0.30.0](https://github.com/ipfs/kubo/blob/v0.30.0/docs/changelogs/v0.30.md#autonat-v2-service-introduced-alongside-v1).
 
 While not directly related to IPFS on the web, AutoNAT v2 improves the network layer of non-browser IPFS nodes, which is a crucial part of the IPFS network infrastructure.
 
