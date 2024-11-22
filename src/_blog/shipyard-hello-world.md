@@ -66,7 +66,8 @@ Our current set of implementations maintained by Shipyard include:
 
 We have an extensive [initiative roadmap](https://ipshipyard.com/initiatives) and are eager to get more input from the developer community. To shout out just a few ideas we’re working on:
 
-* [Reliable, decentralized, and verified retrieval of CIDs](https://ipshipyard.com/initiatives/reliable-decentralized-and-trustless-browser-fetching-of-ipfs-content) (content identifiers) in browsers. The idea is to allow web browsers to fetch CIDs in a verifiable and trustless manner without being vulnerable to centralized chokepoints. You can participate and follow along with this work in the [IPFS dApps Working Group](https://lu.ma/ipfs-dapps).
+* [Reliable, decentralized, and verified retrieval of CIDs](https://ipshipyard.com/initiatives/reliable-decentralized-and-trustless-browser-fetching-of-ipfs-content) (content identifiers) in browsers. The idea is to allow web browsers to fetch CIDs in a verifiable and trustless manner without being vulnerable to centralized chokepoints. You can participate and follow along with this work in the [IPFS dApps Working Group](https://github.com/ipfs/dapps-wg).
+
 * [IPFS for pioneers](https://ipshipyard.com/initiatives/ipfs-for-pioneers-enable-building-interoperable-ipfs-systems-using-http-protocols). We aim to enable the building of interoperable IPFS systems using extremely minimal HTTP-based protocols so that building IPFS-compatible tooling in something like Python (that doesn’t have much IPFS or libp2p tooling today) is super easy and appealing.
 * [Self-service tooling for debugging IPFS request handling](https://ipshipyard.com/initiatives/self-service-tooling-for-debugging-ipfs-request-handling). The idea here is that a user can hit a Boxo-based HTTP gateway and if they experience an error, get a link to download an IPFS request trace. They can then use easy tooling locally or centrally hosted to pinpoint the issue.
 

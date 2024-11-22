@@ -380,7 +380,7 @@ There are several areas where we'll be focusing our efforts in the coming months
 
 ## Support our work
 
-Interplanetary Shipyard is a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider supporting [our work](https://ipshipyard.gitwallet.co/).
+Interplanetary Shipyard is a small team of highly experienced full-time maintainers. If you use IPFS and libp2p, please consider [supporting our work](https://ipshipyard.gitwallet.co/).
 
 ## Summary
 
