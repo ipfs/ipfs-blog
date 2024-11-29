@@ -324,7 +324,7 @@ Beyond the work mentioned earlier on transports, we've also been working on nume
 
 ### AutoNAT v2
 
-[AutoNAT v2](https://github.com/libp2p/specs/blob/autonat-v2/autonat/autonat-v2.md) is a new version of the AutoNAT protocol that provides more precise reachability information for nodes.
+[AutoNAT v2](https://github.com/libp2p/specs/blob/master/autonat/autonat-v2.md) is a new version of the AutoNAT protocol that provides more precise reachability information for nodes.
 
 It provides higher granularity in determining reachability for the node, e.g. AutoNAT v2 allows us to determine reachability for all combinations of (`ipv4/ipv6`, `tcp/udp`).
 
