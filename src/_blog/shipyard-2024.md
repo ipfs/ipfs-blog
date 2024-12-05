@@ -88,7 +88,7 @@ This is where the Service Worker Gateway comes in, which builds on top of Verifi
 
 The [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is a Web native IPFS gateway that runs in the browser. It implements the [IPFS Gateway spec](https://specs.ipfs.tech/http-gateways/subdomain-gateway/) in a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and fetches IPFS content directly from providers on the network in addition to verifying it locally.
 
-In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at how web publishing with works with IPFS. This can be summarized as:
+In a [previous blog post](https://blog.ipfs.tech/dapps-ipfs/), we looked at how web publishing works with IPFS. This can be summarized as:
 
 - The web app is static, i.e. just files and directories containing HTML, JS, CSS, images, etc. that make up the app. This is typically the build output of a frontend framework or a static site generator.
 - The web app's build outputs are encoded with [UnixFS](https://docs.ipfs.tech/concepts/glossary/#unixfs) and addressed by a [CID](https://docs.ipfs.tech/concepts/content-addressing/#cid) which represents the root of the app (see diagram below).
@@ -348,7 +348,7 @@ The bootstrapper supports TCP and Secure WebSockets and can be connected to at `
 
 ### libp2p over HTTP
 
-[Libp2p over HTTP](https://github.com/libp2p/specs/tree/master/http) defines how libp2p nodes can offer and use an HTTP alongside their other transports to support application protocols with HTTP semantics. This allows a wider variety of nodes to participate in the libp2p network.
+[Libp2p over HTTP](https://github.com/libp2p/specs/tree/master/http) defines how libp2p peers can use and expose libp2p protocols over HTTP. This has the benefit of allowing a wider variety of nodes to participate in the libp2p network, in addition to providing more interoperability opportunities. 
 
 For example, the [backend for the AutoTLS service](https://github.com/ipshipyard/p2p-forge) exposes an API which uses libp2p over HTTP to authenticate libp2p Peer IDs in HTTP requests.
 
