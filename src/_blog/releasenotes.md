@@ -1,5 +1,11 @@
 ---
 data:
+    - title: 'Just released: IPFS Desktop 0.41.0 with AutoTLS!'
+      date: "2025-01-31"
+      path: https://github.com/ipfs/ipfs-desktop/releases/tag/v0.41.0
+      tags:
+        - IPFS Desktop
+        - AutoTLS
     - title: 'Just released: Kubo 0.33.0!'
       date: "2025-01-29"
       publish_date: null
