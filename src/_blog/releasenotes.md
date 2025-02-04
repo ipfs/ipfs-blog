@@ -1,5 +1,12 @@
 ---
 data:
+    - title: 'Just released: Kubo 0.33.1!'
+      date: "2025-02-04"
+      publish_date: null
+      path: https://github.com/ipfs/kubo/releases/tag/v0.33.1
+      tags:
+        - go-ipfs
+        - kubo
     - title: 'Just released: IPFS Desktop 0.41.0 with AutoTLS!'
       date: "2025-01-31"
       path: https://github.com/ipfs/ipfs-desktop/releases/tag/v0.41.0
