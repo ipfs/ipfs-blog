@@ -1,7 +1,7 @@
 ---
 data:
     - title: 'Announcing AutoTLS: Bridging IPFS and the Web'
-      date: "2025-02-18"
+      date: "2025-02-17"
       publish_date: null
       path: https://blog.libp2p.io/autotls/
       card_image: "/libp2p_WebTransport_Blog_Header.png"
