@@ -1,5 +1,18 @@
 ---
 data:
+    - title: 'Announcing AutoTLS: Bridging IPFS and the Web'
+      date: "2025-02-18"
+      publish_date: null
+      path: https://blog.libp2p.io/autotls/
+      card_image: "/libp2p_WebTransport_Blog_Header.png"
+      tags:
+        - AutoTLS
+        - IPFS
+        - libp2p
+        - libp2p.direct
+        - Let's Encrypt
+        - TLS
+        - Interplanetary Shipyard
     - title: 'Just released: Kubo 0.33.2!'
       date: "2025-02-14"
       publish_date: null
