@@ -1,6 +1,6 @@
 ---
 date: 2025-02-27
-permalink: /
+permalink: /2025-could-ipfs-prevent-bybit-hack/
 title: 'Could IPFS have prevented the Bybit hack?'
 description: 'IPFS is all about verification. In this blog post, we show '
 author: Daniel Norman
