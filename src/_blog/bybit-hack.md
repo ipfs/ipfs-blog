@@ -2,7 +2,7 @@
 date: 2025-02-28
 permalink: /2025-could-ipfs-prevent-bybit-hack/
 title: 'Could IPFS have prevented the Bybit hack?'
-description: 'An examination of content verification and the role IPFS could have played in preventing the $1.4B Bybit hack, examining layered security and practical solutions for dapp developers.'
+description: 'The Bybit hack revealed several security failures, this post examines the role of IPFS in preventing the hack and practical solutions for dapp developers.'
 author: Daniel Norman
 header_image: /2022-ipfs-gateways-1.png
 tags:
@@ -136,3 +136,9 @@ If you are looking to improve the security of your dapp, we'd love to hear from 
 - Want to sponsor browser improvements to remove dependency on DNS and PKI as trust anchor?
 
 [Let's chat](https://ipshipyard.com/contact-us)!
+
+## Final words
+
+Striking the right balance between security and usability is hard. If there's one takeaway from this post, it's that verification is important at multiple steps of users' interaction with chains.
+
+IPFS is not a silver bullet, but there's a good chance that if the owners of the Bybit Safe multisig loaded the frontend from a local IPFS node, this could have been prevented.
