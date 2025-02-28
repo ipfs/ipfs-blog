@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "vuepress dev src",
-    "build": "vuepress build src && npm run postbuild",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build src && npm run postbuild",
     "postbuild": "./scripts/data/index.js",
     "lint": "prettier --write \"**/*.{json,yaml,md}\" && run-p lint:**",
     "lint:eslint": "eslint --cache \"**/*.{js,vue}\" --fix",
