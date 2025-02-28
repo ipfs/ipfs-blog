@@ -15,9 +15,9 @@ tags:
 
 Bybit's [recent hack](https://www.reuters.com/technology/cybersecurity/cryptos-biggest-hacks-heists-after-15-billion-theft-bybit-2025-02-24/), which resulted in the loss of $1.4, is a reminder of the importance of verification for frontends, especially dapp frontends in the Web3 ecosystem.
 
-Based on what we know at the time of writing, it's apparent that IPFS, through local verification, could have served as a preventive line of defense in this sophisticated hack, potentially preventing this all together.
+Based on what we know at the time of writing, IPFS, through local verification, could have served as a preventive line of defense in this sophisticated hack, potentially preventing it altogether.
 
-In this blog post, we will recap what we know about the hack and share our perspective on the role IPFS has to play, diving into some of the technical efforts we've been spearheading at [Interplanetary Shipyard](https://ipshipyard.com/) to improve the health of the ecosystem.
+In this blog post, we will recap what we know about the hack and share our perspective IPFS' role. diving into some of the technical efforts we've been spearheading at [Interplanetary Shipyard](https://ipshipyard.com/) to improve the health of the ecosystem.
 
 If you are a dapp developer, you can skip the final section where we provide concrete recommendations with links to tooling.
 
@@ -29,7 +29,7 @@ It's not exactly clear how the hackers managed to gain access to the AWS S3 buck
 
 ![conclusions about the Bybit hack](../assets/bybit-hack/conclusions.jpeg)
 
-> [source](https://x.com/benbybit/status/1894768736084885929)
+> [Source](https://x.com/benbybit/status/1894768736084885929)
 
 ## Security is layered
 
@@ -45,7 +45,8 @@ Since IPFS is mainly concerned with the first point, we'll focus on that. The ot
 
 The Ethereum community responded quickly, addressing the second point and released [multiple](https://safeutils.openzeppelin.com/) [tools](https://koeppelmann.github.io/CirclesTools/SafeViewer.html) and [documentation](https://help.safe.global/en/articles/276344-how-to-verify-safe-wallet-transactions-on-a-hardware-wallet) to help users verify transactions before signing them.
 
-![Ethereum community responds to the hack](../assets/bybit-hack/safe-wallet-warning.png)
+![Warning users to verify transactions before signing](../assets/bybit-hack/safe-wallet-warning.png)
+
 
 ## IPFS and frontend verification
 
@@ -59,6 +60,7 @@ End-to-end integrity through verification is not new to many of us in the DWeb, 
 In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternal-safe/eternal-safe) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
 
 ![Gnosis founder sharing the CID of the open-source fork of the Safe frontend](../assets/bybit-hack/eternal-tweet.png)
+> [Source](https://x.com/koeppelmann/status/1893274676756881852)
 
 ### Content addressing vs. Same-origin policy
 
@@ -90,6 +92,7 @@ To make deployments to IPFS as seamless as possible, we recently released [ipfs-
 
 The action is built with open tooling makes no assumption on your build process, so it works with any static site generator. Moreover, it sets the status of the commit with the CID allowing for more visibility and auditability of your deployments.
 
+<br />
 <a href="https://github.com/ipfs/ipfs-deploy-action" class="cta-button">
   Try ipfs-deploy-action
 </a>
@@ -117,6 +120,7 @@ With the CID in hand, users have a few ways to retrieve the frontend:
 - In-browser verification with the [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is getting better, however, it's still tied to an origin which could serve malicious client code if successfully exploited. We are currently investigating how we could package the Service Worker IPFS gateway as a browser extension to improve the user experience.
 - HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, serving unverifiable, deserialized assets can't verified, and should therfore not really IPFS. As the [IPFS Principles](https://specs.ipfs.tech/architecture/principles/#verification-matters) document states, **verification matters**, if you are not verifying, it's not IPFS.
 
+<br />
 <a href="https://github.com/ipfs/ipfs-desktop/releases" class="cta-button">
   Download IPFS Desktop
 </a>
