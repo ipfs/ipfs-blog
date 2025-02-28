@@ -2,27 +2,27 @@
 date: 2025-02-27
 permalink: /2025-could-ipfs-prevent-bybit-hack/
 title: 'Could IPFS have prevented the Bybit hack?'
-description: 'IPFS is all about verification. In this blog post, we show '
+description: 'An examination of content verification and the role IPFS could have played in preventing the $1.4B Bybit hack, examining layered security and practical solutions for dapp developers.'
 author: Daniel Norman
-header_image: /dapps-ipfs/header.png
+header_image: /2022-ipfs-gateways-1.png
 tags:
   - ipfs
   - dapps
-  - Helia
-  - js-ipfs
-  - ipns
-  - ens
+  - security
+
 ---
 
 ## The Bybit Hack and IPFS
 
 Bybit's [recent hack](https://www.reuters.com/technology/cybersecurity/cryptos-biggest-hacks-heists-after-15-billion-theft-bybit-2025-02-24/), which resulted in the loss of $1.4, is a reminder of the importance of verification for frontends, especially dapp frontends in the Web3 ecosystem.
 
-Based on what we know at the time of writing, it's seems apparent that IPFS, through local verification, could have served as a preventive a line of defense in this sophisticated hack, potentially preventing this all together.
+Based on what we know at the time of writing, it's apparent that IPFS, through local verification, could have served as a preventive line of defense in this sophisticated hack, potentially preventing this all together.
 
 In this blog post, we will recap what we know about the hack and share our perspective on the role IPFS has to play, diving into some of the technical efforts we've been spearheading at [Interplanetary Shipyard](https://ipshipyard.com/) to improve the health of the ecosystem.
 
-## So how did the hack happen
+If you are a dapp developer, you can skip the final section where we provide concrete recommendations with links to tooling.
+
+## So how did the hack happen?
 
 The TL;DR is that hackers managed to gain access to the AWS S3 bucket that hosted the Safe frontend served from `app.safe.global` and uploaded a malicious version of the frontend days before the hack. The frontend specifically targeted the Bybit cold wallet, causing owners of the multisig to sign a malicious transaction while obscuring the malicious transaction in the frontend.
 
@@ -30,47 +30,106 @@ It's not exactly clear how the hackers managed to gain access to the AWS S3 buck
 
 ![conclusions about the Bybit hack](../assets/bybit-hack/conclusions.jpeg)
 
+> [source](https://x.com/benbybit/status/1894768736084885929)
+
 ## Security is layered
 
-Security in software systems is approached in layers, often referred to as "defense in depth." This strategy involves implementing multiple security measures rather than relying on a single protective mechanism. If one layer fails, additional layers provide backup protection.
+Security in software systems is approached in layers, often referred to as ["defense in depth."](<https://en.wikipedia.org/wiki/Defense_in_depth_(computing)>) This strategy involves implementing multiple security measures rather than relying on a single protective mechanism. If one layer fails, additional layers provide backup protection. The modern web is a complex ecosystem and as the stakes increase considering the sums of money at play, so does the need for better security measures.
 
-In the context of this hack, there are three obvious failures:
+In the context of this hack, we've identified three failures that made the hack possible:
 
 1. The Safe frontend was unverified
 2. The Safe multisig owners signed a malicious transaction
 3. There were no additional approval layers in the Safe smart contract to prevent the malicious transaction from going through.
 
-Since IPFS is mainly concerned with the first point, we'll focus on that. The other two points bring up broader ecosystem needs—like clear signing (rather than the blind signing often seen across smart contract wallets), improved UX that strengthens security rather than working against it, and more effective tools for verifying transactions.
+Since IPFS is mainly concerned with the first point, we'll focus on that. The other two points bring up broader ecosystem needs like clear signing (rather than the blind signing often seen across smart contract wallets), improved UX that strengthens security rather than working against it, and more effective tools for verifying transactions.
+
+The Ethereum community responded quickly, addressing the second point and released [multiple](https://safeutils.openzeppelin.com/) [tools](https://koeppelmann.github.io/CirclesTools/SafeViewer.html) and [documentation](https://help.safe.global/en/articles/276344-how-to-verify-safe-wallet-transactions-on-a-hardware-wallet) to help users verify transactions before signing them.
+
+![Ethereum community responds to the hack](../assets/bybit-hack/safe-wallet-warning.png)
 
 ## IPFS and frontend verification
 
-The IPFS project has long advocated for wider adoption of client verification. Over a year ago, we published a [blog post](https://blog.ipfs.tech/dapps-ipfs/) discussing the importance of client verification and how IPFS can help:
+The IPFS project has long advocated for wider adoption of client verification. Over a year ago, we published a [blog post](https://blog.ipfs.tech/dapps-ipfs/) discussing the importance of client verification and how IPFS can help.
 
 > End-to-end integrity: as long as a user of your Dapp has the CID you shared, they can be sure they are running the exact code that you published by verifying locally. Local verification is crucial since Dapps interact with a blockchain **and malicious code can lead to loss of user funds**. Integrity is adjacent to trustlessness — because verification eliminates the need to trust the source of data.
 > From [_The State of Dapps on IPFS: Trust vs. Verification (2024)_](https://blog.ipfs.tech/dapps-ipfs/)
 
-The importance of end-to-end integrity through verification is not new to many of us in the DWeb, Web3 and IPFS ecosystems.
+End-to-end integrity through verification is not new to many of us in the DWeb, Web3 and IPFS ecosystems.
 
-In fact, we feel vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called Eternal Safe shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
+In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternal-safe/eternal-safe) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
 
 ![Gnosis founder sharing the CID of the open-source fork of the Safe frontend](../assets/bybit-hack/eternal-tweet.png)
 
-## So where are we today?
+### Content addressing vs. Same-origin policy
 
-There's two sides to this story:
-- How you deploy your frontend to IPFS and safely signal the CID to users
-- How you retrieve the frontend from IPFS and verify it locally
+One of the longest standing goals we've had for the IPFS project is to make client-side verification integrated into browsers, making CIDs first-class citizens. In an ideal world, you should be able to use CIDs in browsers using `ipfs://` without necessrily installing a "full" IPFS node that runs as a separate process on your computer.
 
-- Local node is ideal, but not always possible, as it may be resource intensive.
-- HTTP Gateways that serve unverifiable, deserialized assets just shift the problem without solving it. No verification, not IPFS.
-- In-browser verification with the Service worker IPFS gateway is getting better, however, it's still tied to an origin —an inherent constraint of the web platform— which could serve malicious client code if successfully exploited.
-- Browser extensions, which get distributed through extension stores are better because they are harder to compromise, rollout is staged rather than instant, and vetted code assets can be bundled within the extension itself. Publishing requires the extension to be signed by the author, ensuring that users are installing the extension from a trusted source. We are investigating how we could [package the Service Worker IPFS gateway as a browser extension](https://github.com/ipfs/in-web-browsers/issues/212) to improve the user experience.
+To this end, we've launched multiple projects with varying degrees of success. The main challenge we run into time and time again is browser contraints and the lack of extensibility APIs that would allow shifting trust away from a specific origin from which content is served to a self-certifying identifier like a CID, allowing content to be verified locally, regardless of the source.
 
-## How our ecosystems can improve?
+Browser extensions distributed through extension stores are harder to compromise in comparison to HTTP servers, because rollout is staged rather than instant, and vetted code assets can be bundled within the extension itself. Moreover, publishing mandates signing by the author, ensuring that users are installing the extension from a trusted source. We are investigating how we could [package the Service Worker IPFS gateway as a browser extension](https://github.com/ipfs/in-web-browsers/issues/212) to improve the user experience.
 
-- Ensure every frontend release notes have official CID and a CAR
-  - This allows users to import CAR to their local IPFS node, and load verified  frontend in secure Origin at a local gateway ([`cid.ipfs.localhost`](https://specs.ipfs.tech/http-gateways/subdomain-gateway/)).
+The self-certifying approach with CIDs is in tension with the [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security#same-origin_policy_and_cors): the fundamental security mechanism of the web whereby trust is anchored to an origin using DNS and PKI. Yet, given that [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) allows for hash verification of subresources, we're hopeful that we can work with standard bodies and browser vendors to expand on this foundation and provide mechanisms to verify top-level resources like HTML, JS, CSS, etc.
 
-- No blind signing
+Having said that, we have some concrete recommendations for dapp developers that can be implemented today, while we advance efforts to make CIDs first-class citizens in browsers.
+
+## IPFS for dapp developers
+
+As a dapp developer, there are three key things you need understand and streamline into your development workflows today:
+
+- How to deploy your frontend to IPFS.
+- How to safely signal release CIDs to users.
+- How users can and safely retrieve the frontend and be confident it's the same as the one you published.
+
+Let's take a quick look at the state of the art for each of these.
+
+### Deploying frontend to IPFS
+
+To make deployments to IPFS as seamless as possible, we recently released [ipfs-deploy-action](https://github.com/ipfs/ipfs-deploy-action), a GitHub action that makes it easy to deploy your frontend (or any other static assets for that matter) to IPFS as part of CI/CD pipelines. It encapsulates best practices we've established over the years, like local CID generation and pinning with [CAR files](https://docs.ipfs.tech/concepts/glossary/#car).
+
+![ipfs-deploy-action setting the CID in the commit status](../assets/bybit-hack/cid-commit-status.png)
+
+The action is built with open tooling makes no assumption on your build process, so it works with any static site generator. Moreover, it sets the status of the commit with the CID allowing for more visibility and auditability of your deployments.
+
+<a href="https://github.com/ipfs/ipfs-deploy-action" class="cta-button">
+  Try ipfs-deploy-action
+</a>
+
+
+### Signaling the CID to users
+
+Once you've deployed your frontend to IPFS, you need to signal the CID to users. This can be done in a few ways:
+
+- Publishing the CID in the GitHub release notes, like [Eternal Safe](https://github.com/eternalsafe/wallet/releases/tag/v1) and [Uniswap](https://github.com/Uniswap/interface/releases/).
+- Storing the CID onchain:
+  - Using [ENS](https://ens.domains)
+  - Using [IPCM](https://github.com/PinataCloud/ipcm)
+- Using [IPNS](https://docs.ipfs.tech/concepts/ipns/)
+- Using [DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
+
+Each of these has different security properties and tradeoffs, some of which have been evaluated in the [Dapps on IPFS](https://blog.ipfs.tech/dapps-ipfs/) blog post.
+
+Perhaps the quickest way to get up and running is using the GitHub approach. In this case, Security is inherited from GitHub which has multiple layers of security and auditability.
+
+### Retrieving the frontend
+
+With the CID in hand, users have a few ways to retrieve the frontend:
+
+- Local IPFS node like [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/releases) provides the highest level of security, with local verification and caching, but not always possible, e.g. on mobile devices.
+- Perhaps most commonly used, HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, serve unverifiable, deserialized assets just shift the problem without solving it.
+- In-browser verification with the [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is getting better, however, it's still tied to an origin which could serve malicious client code if successfully exploited. We are currently investigating how we could package the Service Worker IPFS gateway as a browser extension to improve the user experience.
+
+<a href="https://github.com/ipfs/ipfs-desktop/releases" class="cta-button">
+  Download IPFS Desktop
+</a>
 
 ## Collaboration Proposal: Let's work together
+
+[Interplanetary Shipyard](https://ipshipyard.com/), is an **independent collective of people maintaining many of the most popular implementations in the IPFS and libp2p ecosystem**.
+
+If you are a dapp developer looking to of your frontend, we'd love to hear from you at `contact [at] ipshipyard.com`.
+
+- Curious to explore browser extensions for your dapp that enforce frontend security via the Service Worker Gateway and safelisted release CIDs?
+- Want to sponsor browser improvements to remove dependency on DNS and PKI as trust anchor?
+
+Let's chat!
