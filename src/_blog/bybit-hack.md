@@ -127,7 +127,7 @@ With the CID in hand, users have a few ways to retrieve the frontend:
 
 ## Collaboration Proposal: Let's work together
 
-[Interplanetary Shipyard](https://ipshipyard.com/), is an **independent collective of people maintaining many of the most popular implementations in the IPFS and libp2p ecosystem**.
+[Interplanetary Shipyard](https://ipshipyard.com/), is an independent collective of people maintaining many of the most popular implementations in the IPFS and libp2p ecosystem.
 
 If you are a dapp developer looking to of your frontend, we'd love to hear from you at `contact [at] ipshipyard.com`.
 
