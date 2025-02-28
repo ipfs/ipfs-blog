@@ -121,7 +121,8 @@ With the CID in hand, users have a few ways to retrieve the frontend:
 <br />
 <a href="https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions" class="cta-button">
   Download IPFS Desktop
-</a><br/>
+</a>
+<br/><br/>
 <a href="https://docs.ipfs.tech/install/ipfs-companion/" class="cta-button">
   Install IPFS Companion
 </a>
