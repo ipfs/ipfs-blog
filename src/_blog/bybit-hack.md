@@ -1,5 +1,5 @@
 ---
-date: 2025-02-27
+date: 2025-02-28
 permalink: /2025-could-ipfs-prevent-bybit-hack/
 title: 'Could IPFS have prevented the Bybit hack?'
 description: 'An examination of content verification and the role IPFS could have played in preventing the $1.4B Bybit hack, examining layered security and practical solutions for dapp developers.'
@@ -47,7 +47,6 @@ The Ethereum community responded quickly, addressing the second point and releas
 
 ![Warning users to verify transactions before signing](../assets/bybit-hack/safe-wallet-warning.png)
 
-
 ## IPFS and frontend verification
 
 The IPFS project has long advocated for wider adoption of client verification. Over a year ago, we published a [blog post](https://blog.ipfs.tech/dapps-ipfs/) discussing the importance of client verification and how IPFS can help.
@@ -60,9 +59,10 @@ End-to-end integrity through verification is not new to many of us in the DWeb, 
 In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternal-safe/eternal-safe) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
 
 ![Gnosis founder sharing the CID of the open-source fork of the Safe frontend](../assets/bybit-hack/eternal-tweet.png)
+
 > [Source](https://x.com/koeppelmann/status/1893274676756881852)
 
-### Content addressing vs. Same-origin policy
+### Native content addressing on the web
 
 One of the longest standing goals we've had for the IPFS project is to make client-side verification integrated into browsers, making CIDs first-class citizens. In an ideal world, you should be able to use CIDs in browsers using `ipfs://` without necessrily installing a "full" IPFS node that runs as a separate process on your computer.
 
