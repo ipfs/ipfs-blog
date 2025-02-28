@@ -37,11 +37,11 @@ Security in software systems is approached in layers, often referred to as ["def
 
 In the context of this hack, we've identified three failures that made the hack possible:
 
-1. The Safe frontend was unverified
+1. The Safe frontend was unverified (trust was based on _belief_  DNS, TLS PKI and HTTP server are returning valid data)
 2. The Safe multisig owners signed a malicious transaction
 3. There were no additional approval layers in the Safe smart contract to prevent the malicious transaction from going through.
 
-Since IPFS is mainly concerned with the first point, we'll focus on that. The other two points bring up broader ecosystem needs like clear signing (rather than the blind signing often seen across smart contract wallets), improved UX that strengthens security rather than working against it, and more effective tools for verifying transactions.
+Since IPFS is mainly concerned with the first point (ability to verify data by means of [content-addressing](https://docs.ipfs.tech/concepts/content-addressing/)), we'll focus on that. The other two points bring up broader ecosystem needs like clear signing (rather than the blind signing often seen across smart contract wallets), improved UX that strengthens security rather than working against it, and more effective tools for verifying transactions.
 
 The Ethereum community responded quickly, addressing the second point and released [multiple](https://safeutils.openzeppelin.com/) [tools](https://koeppelmann.github.io/CirclesTools/SafeViewer.html) and [documentation](https://help.safe.global/en/articles/276344-how-to-verify-safe-wallet-transactions-on-a-hardware-wallet) to help users verify transactions before signing them.
 
@@ -54,7 +54,7 @@ The IPFS project has long advocated for wider adoption of client verification. O
 > End-to-end integrity: as long as a user of your Dapp has the CID you shared, they can be sure they are running the exact code that you published by verifying locally. Local verification is crucial since Dapps interact with a blockchain **and malicious code can lead to loss of user funds**. Integrity is adjacent to trustlessness — because verification eliminates the need to trust the source of data.
 > From [_The State of Dapps on IPFS: Trust vs. Verification (2024)_](https://blog.ipfs.tech/dapps-ipfs/)
 
-End-to-end integrity through verification is not new to many of us in the DWeb, Web3 and IPFS ecosystems.
+End-to-end integrity through cryptographic hash verification is not new to many of us in the DWeb, Web3 and IPFS ecosystems.
 
 In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternal-safe/eternal-safe) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
 
@@ -102,11 +102,9 @@ The action is built with open tooling makes no assumption on your build process,
 Once you've deployed your frontend to IPFS, you need to signal the CID to users. This can be done in a few ways:
 
 - Publishing the CID in the GitHub release notes, like [Eternal Safe](https://github.com/eternalsafe/wallet/releases/tag/v1) and [Uniswap](https://github.com/Uniswap/interface/releases/).
-- Storing the CID onchain:
-  - Using [ENS](https://ens.domains)
-  - Using [IPCM](https://github.com/PinataCloud/ipcm)
-- Using [IPNS](https://docs.ipfs.tech/concepts/ipns/)
-- Using [DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
+- Publishing the CID onchain with [ENS](https://ens.domains) or [IPCM](https://github.com/PinataCloud/ipcm)
+- Regularly publishing cryptographically-signed [IPNS](https://docs.ipfs.tech/concepts/ipns/) records
+- Leveraging [DNSLink](https://docs.ipfs.tech/concepts/dnslink/) with hardened resolver ([DNSSEC](https://www.cloudflare.com/learning/dns/dnssec/how-dnssec-works/)-only and/or non-ICANN resolver such as [this one for ENS](https://github.com/ethlimo/limo-web3-dns)).
 
 Each of these has different security properties and tradeoffs, some of which have been evaluated in the [Dapps on IPFS](https://blog.ipfs.tech/dapps-ipfs/) blog post.
 
@@ -116,22 +114,25 @@ Perhaps the quickest way to get up and running is using the GitHub approach. In 
 
 With the CID in hand, users have a few ways to retrieve the frontend:
 
-- Local IPFS node like [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/releases) provides the highest level of security, with local verification and caching, but not always possible, e.g. on mobile devices.
-- In-browser verification with the [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is getting better, however, it's still tied to an origin which could serve malicious client code if successfully exploited. We are currently investigating how we could package the Service Worker IPFS gateway as a browser extension to improve the user experience.
-- HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, serving unverifiable, deserialized assets can't verified, and should therfore not really IPFS. As the [IPFS Principles](https://specs.ipfs.tech/architecture/principles/#verification-matters) document states, **verification matters**, if you are not verifying, it's not IPFS.
+- Local IPFS node like [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) together with [IPFS Companion browser extension](https://docs.ipfs.tech/install/ipfs-companion/) provide `ipfs://cid` URI support with the highest level of security, including local CID verification and caching. Great solution for desktops, but doesn't work on mobile.
+- In-browser verification with the [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway#readme) is getting better, however, initial bootstrapping of the worker is still tied to an HTTP server which could serve malicious client code if successfully exploited. We are currently investigating how we could package the Service Worker IPFS gateway as a browser extension to close this gap and improve the user experience.
+- Public Good HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, return deserialized assets which can't verified by end users. As the [IPFS Principles](https://specs.ipfs.tech/architecture/principles/#verification-matters) document states, **verification matters**, if you are not verifying, it's not IPFS. This is a supply chain equivalent of "not your keys, not your cheese".
 
 <br />
-<a href="https://github.com/ipfs/ipfs-desktop/releases" class="cta-button">
+<a href="https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions" class="cta-button">
   Download IPFS Desktop
+</a><br/>
+<a href="https://docs.ipfs.tech/install/ipfs-companion/" class="cta-button">
+  Install IPFS Companion
 </a>
 
 ## Collaboration Proposal: Let's work together
 
 [Interplanetary Shipyard](https://ipshipyard.com/), is an independent collective of people maintaining many of the most popular implementations in the IPFS and libp2p ecosystem.
 
-If you are a dapp developer looking to of your frontend, we'd love to hear from you at `contact [at] ipshipyard.com`.
+If you are looking to improve the security of your dapp, we'd love to hear from you at `contact [at] ipshipyard.com`.
 
 - Curious to explore browser extensions for your dapp that enforce frontend security via the Service Worker Gateway and safelisted release CIDs?
 - Want to sponsor browser improvements to remove dependency on DNS and PKI as trust anchor?
 
-Let's chat!
+[Let's chat](https://ipshipyard.com/contact-us)!
