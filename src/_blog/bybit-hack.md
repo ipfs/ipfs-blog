@@ -114,8 +114,8 @@ Perhaps the quickest way to get up and running is using the GitHub approach. In 
 With the CID in hand, users have a few ways to retrieve the frontend:
 
 - Local IPFS node like [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/releases) provides the highest level of security, with local verification and caching, but not always possible, e.g. on mobile devices.
-- Perhaps most commonly used, HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, serve unverifiable, deserialized assets just shift the problem without solving it.
 - In-browser verification with the [Service Worker Gateway](https://github.com/ipfs/service-worker-gateway) is getting better, however, it's still tied to an origin which could serve malicious client code if successfully exploited. We are currently investigating how we could package the Service Worker IPFS gateway as a browser extension to improve the user experience.
+- HTTP Gateways, e.g. `ipfs.io`, `dweb.link`, and `eth.limo`, serving unverifiable, deserialized assets can't verified, and should therfore not really IPFS. As the [IPFS Principles](https://specs.ipfs.tech/architecture/principles/#verification-matters) document states, **verification matters**, if you are not verifying, it's not IPFS.
 
 <a href="https://github.com/ipfs/ipfs-desktop/releases" class="cta-button">
   Download IPFS Desktop
