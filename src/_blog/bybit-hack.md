@@ -2,7 +2,7 @@
 date: 2025-02-28
 permalink: /2025-could-ipfs-prevent-bybit-hack/
 title: 'Could IPFS have prevented the Bybit hack?'
-description: 'The Bybit hack revealed several security failures, this post examines the role of IPFS in preventing the hack and practical solutions for dapp developers.'
+description: 'The Bybit hack revealed several security failures, this post examines whether IPFS could have helped prevent the hack and practical solutions for dapp developers.'
 author: Daniel Norman
 header_image: /2022-ipfs-gateways-1.png
 tags:
