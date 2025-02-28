@@ -9,7 +9,6 @@ tags:
   - ipfs
   - dapps
   - security
-
 ---
 
 ## The Bybit Hack and IPFS
@@ -94,7 +93,6 @@ The action is built with open tooling makes no assumption on your build process,
 <a href="https://github.com/ipfs/ipfs-deploy-action" class="cta-button">
   Try ipfs-deploy-action
 </a>
-
 
 ### Signaling the CID to users
 
