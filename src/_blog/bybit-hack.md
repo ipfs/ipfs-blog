@@ -140,6 +140,6 @@ If you are looking to improve the security of your dapp, we'd love to hear from 
 
 ## Final words
 
-Striking the right balance between security and usability is hard. If there's one takeaway from this post, it's that verification is important at multiple steps of users' interaction with chains.
+Striking the right balance between security and usability is hard. If there's one takeaway from this post, it's that verification is important at multiple steps of users' interaction with blockchains.
 
 IPFS is not a silver bullet, but there's a good chance that if the owners of the Bybit Safe multisig loaded the frontend from a local IPFS node, this could have been prevented.
