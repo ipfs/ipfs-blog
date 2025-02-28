@@ -108,7 +108,7 @@ Once you've deployed your frontend to IPFS, you need to signal the CID to users.
 
 Each of these has different security properties and tradeoffs, some of which have been evaluated in the [Dapps on IPFS](https://blog.ipfs.tech/dapps-ipfs/) blog post.
 
-Perhaps the quickest way to get up and running is using the GitHub approach. In this case, Security is inherited from GitHub which has multiple layers of security and auditability.
+The quickest way to get up and running is with GitHub, which provides strong security and auditability. At a minimum, reuse GitHub Releases to publish both the original source code and CID. This provides your users with a means to load frontend in a verifiable way.
 
 ### Retrieving the frontend
 
