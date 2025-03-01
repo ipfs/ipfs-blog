@@ -56,7 +56,7 @@ The IPFS project has long advocated for wider adoption of client verification. O
 
 End-to-end integrity through cryptographic hash verification is not new to many of us in the DWeb, Web3 and IPFS ecosystems.
 
-In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternal-safe/eternal-safe) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
+In fact, we feel somewhat vindicated seeing the Gnosis founder share the CID of an open-source fork of the Safe frontend called [Eternal Safe](https://github.com/eternalsafe/wallet) shortly after the hack, while the Safe team conducted a forensic review of their services and frontend:
 
 ![Gnosis founder sharing the CID of the open-source fork of the Safe frontend](../assets/bybit-hack/eternal-tweet.png)
 
