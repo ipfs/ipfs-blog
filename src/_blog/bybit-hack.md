@@ -13,7 +13,7 @@ tags:
 
 ## The Bybit Hack and IPFS
 
-Bybit's [recent hack](https://www.reuters.com/technology/cybersecurity/cryptos-biggest-hacks-heists-after-15-billion-theft-bybit-2025-02-24/), which resulted in the loss of $1.4, is a reminder of the importance of verification for frontends, especially dapp frontends in the Web3 ecosystem.
+Bybit's [recent hack](https://www.reuters.com/technology/cybersecurity/cryptos-biggest-hacks-heists-after-15-billion-theft-bybit-2025-02-24/), which resulted in the loss of $1.4 billion, is a reminder of the importance of verification for frontends, especially dapp frontends in the Web3 ecosystem.
 
 Based on what we know at the time of writing, IPFS, through local verification, could have served as a preventive line of defense in this sophisticated hack, potentially preventing it altogether.
 
