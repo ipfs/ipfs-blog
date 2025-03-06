@@ -15,7 +15,7 @@ Building websites used to be fun. Let’s bring back the joy of putting your wor
 
 ## Why IPFS
 
-Websites are open and accessible for anyone. They are the perfect match for IPFS. IPFS is a peer-to-peer storage protocol that allows anyone to access a piece of content as long as they know the content identifier (cid). This is a perfect match for the open web. It creates a level of availability not possible with traditional website file storage. 
+Websites are open and accessible for anyone. They are the perfect match for IPFS. IPFS is a peer-to-peer storage protocol that allows anyone to access a piece of content as long as they know the content identifier (CID) and there's an online node providing the data. This is a perfect match for the open web. It creates a level of availability not possible with traditional website file storage. 
 
 Additionally, because IPFS is content-addressed, that means each cid references a specific _version_ of a site. This created a built-in versioning system, similar to what you get when you explore the Wayback Machine. 
 
