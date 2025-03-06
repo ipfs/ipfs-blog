@@ -9,6 +9,10 @@ on:
     branches:
       - main
   pull_request:
+  # 👇 is needed to run on PRs from forks with access to secrets.
+  # ⚠️ Should only be used with the repo configured to require workflow approval for all external contributors
+  pull_request_target:
+
 
 jobs:
   build-and-deploy:
