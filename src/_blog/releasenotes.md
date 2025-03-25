@@ -1,6 +1,6 @@
 ---
 data:
-- title: 'Just released: Kubo 0.34.1!'
+    - title: 'Just released: Kubo 0.34.1!'
       date: "2025-03-25"
       publish_date: null
       path: https://github.com/ipfs/kubo/releases/tag/v0.34.1
