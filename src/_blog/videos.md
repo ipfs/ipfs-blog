@@ -6,7 +6,7 @@ sitemap:
 data:
 - title: 'Deploy Static Apps and Websites to IPFS with GitHub Actions'
   date: 2025-04-04
-  publish_date: 2025-04-04T12:00:00+00:00
+  publish_date: 2025-04-04T10:00:00+00:00
   path: https://www.youtube.com/watch?v=ZRrPBqqFKFU
   tags:
   - IPFS Deploy Action
