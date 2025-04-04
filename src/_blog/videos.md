@@ -4,6 +4,16 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'Deploy Static Apps and Websites to IPFS with GitHub Actions'
+  date: 2025-04-04
+  publish_date: 2025-04-04T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=ZRrPBqqFKFU
+  tags:
+  - IPFS Deploy Action
+  - tutorial
+  - guide
+  - dapps
+  - GitHub Actions
 - title: 'Debugging CID Retrievability With IPFS Check'
   date: 2024-09-04
   publish_date: 2024-09-04T12:00:00+00:00
