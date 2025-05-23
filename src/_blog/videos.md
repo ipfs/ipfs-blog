@@ -4,6 +4,16 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'Service Workers for IPFS on the Web'
+  date: 2025-05-21
+  publish_date: 2025-05-21T10:00:00+00:00
+  path: https://youtu.be/qtIJXRgxjVA?feature=shared
+  tags:
+  - IPFS Deploy Action
+  - tutorial
+  - IPFS Gateway
+  - Service Worker Gateway
+  - dapps
 - title: 'Deploy Static Apps and Websites to IPFS with GitHub Actions'
   date: 2025-04-04
   publish_date: 2025-04-04T10:00:00+00:00
