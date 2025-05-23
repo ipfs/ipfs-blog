@@ -7,7 +7,7 @@ data:
 - title: 'Service Workers for IPFS on the Web'
   date: 2025-05-21
   publish_date: 2025-05-21T10:00:00+00:00
-  path: https://youtu.be/qtIJXRgxjVA?feature=shared
+  path: https://www.youtube.com/watch?v=qtIJXRgxjVA
   tags:
   - IPFS Deploy Action
   - tutorial
