@@ -33,7 +33,7 @@ Here's a [drop-in service worker example](https://github.com/ipshipyard/drop-in-
 
 ### IPNI Service Update
 
-The [IPNI](https://docs.ipfs.tech/concepts/ipni/), a content routing index for large content providers, suffered service degredation in April, disrupting the ability to find providers for CIDs. The IPNI team has made hardware and software improvements to avoid future disruptions, and service is improving as the newly-upgraded indexers catch up.
+The [IPNI](https://docs.ipfs.tech/concepts/ipni/), a content routing index for large content providers, suffered service degradation in April, disrupting the ability to find providers for CIDs. The IPNI team has made hardware and software improvements to avoid future disruptions, and service is improving as the newly-upgraded indexers catch up.
 
 In the interim, a [new feature](https://github.com/ipfs/someguy/pull/110) in [Someguy](https://github.com/ipfs/someguy) allows large content providers to run a self-hosted [HTTP delegated routing](https://specs.ipfs.tech/routing/http-routing-v1) endpoint, providing an immediate remedy until IPNI service was restored. 
 
