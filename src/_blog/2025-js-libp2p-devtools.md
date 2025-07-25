@@ -2,7 +2,7 @@
 date: 2025-07-25
 permalink: /2025-js-libp2p-helia-devtools/
 title: 'Debugging superpowers with the new js-libp2p developer tools'
-description: 'Discover the new js-libp2p inspector developer tools from Shipyard that provide real-time debugging capabilities for js-libp2p and Helia nodes in both browser and Node.js environments.'
+description: 'Discover the new js-libp2p developer tools from Shipyard that provide real-time debugging capabilities for js-libp2p and Helia nodes in both browsers and Node.js.'
 author: Daniel Norman
 header_image: /dev-tools.jpg
 tags:
