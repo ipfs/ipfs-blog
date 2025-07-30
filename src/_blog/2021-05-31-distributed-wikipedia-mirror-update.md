@@ -52,7 +52,7 @@ To address this critical need, we [created a mirror of Myanmar Wikipedia](https:
 
 ## How to help co-hosting this?
 
-You can run your own IPFS node and co-host a subset of Wikipedia, store a full copy, or even follow collaborative cluster to pull in future updates automatically.
+You can run your own IPFS node and co-host a subset of Wikipedia, or store a full copy.
 
 It is also possible to donate co-hosting costs by pinning specific CID to a remote service.
 
@@ -70,14 +70,6 @@ A recursive pin will preload the entire mirror to the local datastore.
 Be wary that the English one is far bigger than other ones, and pinning it requires hundreds of gigabytes and may take a very long time.
 
 The size of a specific mirror can be read with `ipfs files stat /ipfs/{cid}`.
-
-### Collaborative cluster
-
-This is an advanced option aimed at server administrators and power users. The `wikipedia` cluster includes all language versions and its size only grows over time.
-
-    $ ipfs-cluster-follow wikipedia run --init wikipedia.collab.ipfscluster.io
-
-See _Instructions_ at [collab.ipfscluster.io](https://collab.ipfscluster.io#instructions).
 
 ### Donate remote pins
 
