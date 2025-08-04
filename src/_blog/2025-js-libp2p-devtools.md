@@ -1,8 +1,9 @@
 ---
 date: 2025-07-25
 permalink: /2025-js-libp2p-helia-devtools/
-title: 'Debugging superpowers with the new js-libp2p developer tools'
+title: 'Debugging Superpowers With the New js-libp2p Developer Tools'
 description: 'Discover the new js-libp2p developer tools from Shipyard that provide real-time debugging capabilities for js-libp2p and Helia nodes in both browsers and Node.js.'
+canonicalUrl: https://ipshipyard.com/blog/2025-js-libp2p-devtools/
 author: Daniel Norman
 header_image: /dev-tools.jpg
 tags:
@@ -15,15 +16,17 @@ tags:
   - Interplanetary Shipyard
 ---
 
+_This blog post originally appeared on the [Interplanetary Shipyard](https://ipshipyard.com/) blog_
+
 [Interplanetary Shipyard](https://ipshipyard.com/) is thrilled to share [js-libp2p inspector](https://github.com/ipshipyard/js-libp2p-inspector/), the new developer tools for debugging and inspecting js-libp2p and Helia, for use both in browsers and Node.js.
 
 Debugging is an essential part of software development, and having the right tools can make all the difference. The new developer tools provide a user-friendly interface to inspect your libp2p nodes in real-time, tightening the feedback loop and making it easier to diagnose issues.
 
-## Inspecting and monitoring throughout the development cycle
+## Inspecting and monitoring throughout the development lifecycle
 
 These new developer tools expand the existing set of metrics implementations for js-libp2p, which include [metrics-prometheus](https://github.com/libp2p/js-libp2p/tree/main/packages/metrics-prometheus) and [metrics-opentelemetry](https://github.com/libp2p/js-libp2p/tree/main/packages/metrics-opentelemetry).
 
-While Prometheus and OpenTelemetry are for monitoring and tracing in production (though not exclusively), the inspector is intended for use during development. Together, these tools provide a comprehensive solution for monitoring and debugging js-libp2p and Helia nodes throughout the development cycle.
+While Prometheus and OpenTelemetry are for monitoring and tracing in production (though not exclusively), the inspector is intended for use during development. Together, these tools provide a comprehensive solution for monitoring and debugging js-libp2p and Helia nodes throughout the development lifecycle.
 
 ## Getting started
 
