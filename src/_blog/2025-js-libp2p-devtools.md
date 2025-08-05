@@ -16,7 +16,7 @@ tags:
   - Interplanetary Shipyard
 ---
 
-_This blog post originally appeared on the [Interplanetary Shipyard](https://ipshipyard.com/) blog_
+_This blog post [originally appeared on the Interplanetary Shipyard blog](https://ipshipyard.com/blog/2025-js-libp2p-devtools/)_
 
 [Interplanetary Shipyard](https://ipshipyard.com/) is thrilled to share [js-libp2p inspector](https://github.com/ipshipyard/js-libp2p-inspector/), the new developer tools for debugging and inspecting js-libp2p and Helia, for use both in browsers and Node.js.
 
