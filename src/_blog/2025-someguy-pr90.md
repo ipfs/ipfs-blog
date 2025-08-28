@@ -1,6 +1,6 @@
 ---
 date: 2025-08-16
-permalink: /2025-delegated-routing-peer-caching/
+permalink: /2025-delegated-routing-cached-router/
 title: 'Improving Peer-to-Peer Retrieval in Browsers Through Improvements to the Delegated Routing HTTP Server'
 description: 'How caching and active peer probing in the Someguy, the Delegated Routing server accelerates peer-to-peer content retrieval in browsers and mobile applications.'
 author: Daniel Norman
