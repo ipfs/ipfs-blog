@@ -1,5 +1,14 @@
 ---
 data:
+    - title: 'Just released: Kubo 0.37.0!'
+      date: "2025-08-27"
+      publish_date: null
+      path: https://github.com/ipfs/kubo/releases/tag/v0.37.0
+      tags:
+        - go-ipfs
+        - kubo
+        - telemetry
+        - autoconf
     - title: 'Just released: Kubo 0.36.0!'
       date: "2025-07-14"
       publish_date: null
