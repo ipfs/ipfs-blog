@@ -1,10 +1,10 @@
 ---
-date: 2025-08-16
+date: 2025-08-28
 permalink: /2025-delegated-routing-cached-router/
-title: 'Improving Peer-to-Peer Retrieval in Browsers Through Improvements to the Delegated Routing HTTP Server'
+title: 'Faster Peer-to-Peer Retrieval in Browsers With Caching in the Delegated Routing HTTP Server'
 description: 'How caching and active peer probing in the Someguy, the Delegated Routing server accelerates peer-to-peer content retrieval in browsers and mobile applications.'
 author: Daniel Norman
-header_image: /release-notes-placeholder.png
+header_image: /someguy-cache/cover.png
 tags:
   - ipfs
   - someguy
@@ -136,9 +136,9 @@ For the instance with the cached address book enabled, we realised that it took 
 
 To determine when the cache was sufficiently warm, we observed the cached address book size [metric](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L80-L85) and waited until it stabilised, which takes around 12 hours, at which point the cache had about 30k peers. This metric continues growing gradually —at a much slower rate— eventually stagnating at ~60k peers, which correlates with metrics [measured by ProbeLab](https://probelab.io/ipfs/kpi/#client-vs-server-node-estimate).
 
-![](../assets/someguy-cache/someguy-cached-addr-book-size.png)
+![cached address book size](../assets/someguy-cache/cached_addr_book_growth.png)
 
-We then piped the last 500k CID that were requested from the public ipfs.io gateway through each instance's `/routing/v1/providers/[CID]` endpoint at a rate of 200 req/second concurrently, and examined the following metrics:
+We then piped the last 500k CID that were requested from the public ipfs.io gateway through each instance's `/routing/v1/providers/[CID]` endpoint at a rate of 100 req/second concurrently, and examined the following metrics:
 
 - [Cache hit rates](#cache-hit-rate)
 - [HTTP request latency](#http-request-latency-and-success-rate)
@@ -154,19 +154,16 @@ While this metric is only available with the cached address book enabled, it ind
 
 In the experiment with the warmed cache, we observed the following results:
 
-| Category         | Count     | Percentage |
+|                  | Lookups   | Percentage |
 | ---------------- | --------- | ---------- |
 | **Cache Used**   | 1,287,619 | 34.4%      |
 | **Cache Unused** | 2,455,120 | 65.6%      |
 | **Total**        | 3,742,739 | 100.0%     |
 
-Of the 34.4% of requests that needed peer addresses, 82.9% were served from cache, with the remaining 17.1% requiring a fresh peer lookup:
+Of the 34.4% of requests that had no peer addresses, we observed the following cache hit rates:
 
-| Metric           | Count     | Percentage |
-| ---------------- | --------- | ---------- |
-| **Cache Hits**   | 1,067,459 | 82.9%      |
-| **Cache Misses** | 220,160   | 17.1%      |
-| **Total**        | 1,287,619 | 100.0%     |
+**Cache Hits**: 82.9%
+**Cache Misses**: 17.1%
 
 In other words, of the all requests that would previously require an additional peer lookup, 82.9% are now served from cache 🎉.
 
@@ -178,14 +175,41 @@ It's worth noting that we didn't expect significant reduction in latency or erro
 
 | Scenario                 | 200s P95 | 404s P95 | Success Rate |
 | ------------------------ | -------- | -------- | ------------ |
-| **Cache Disabled**       | 2.707s   | 7.715s   | 52.0%        |
+| **Cache Disabled**       | 1.913s   | 7.345ss  | 52.0%        |
 | **Cache Enabled (cold)** | 9.368s   | 7.812s   | 53.7%        |
 | **Cache Enabled (warm)** | 1.346s   | 7.459s   | 57.2%        |
 
 ### Key insights
 
 - When the cache is warmed, the P95 latency for 200 responses drops to 1.346s from 2.707s when the cache is disabled! Moreover, success rates improve to 57.2% from 52.0%. It's not entirely clear why this is the case — the Amino DHT is permissionless and undergoes natural churn, and it could be that during the time we ran the experiments, some providers went offline. Another hypothesis is that the active probing in the background accelrates DHT lookups, thereby reducing the latency of DHT lookup. This is an area for further investigation.
-- With the cached address book enabled but not yet warmed, the P95 latency for 200 responses increases significantly to 9.368s. This is far from ideal, though is likely the result of the [accelerated DHT client](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/docs/environment-variables.md#someguy_dht) initiating a full DHT crawl on startup, which increases the load on the libp2p host and saturating libp2p's connection manager limits. This is an area for further investigation and improvement, though reliminary experiemnts suggest that even waiting 15 minutes after startup to start piping the requests results in a major reduction in latency. benefits outweigh the costs within 12 hours at most. P
+- With the cached address book enabled but not yet warmed, the P95 latency for 200 responses increases significantly to 9.368s. This is far from ideal, though is likely the result of the [accelerated DHT client](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/docs/environment-variables.md#someguy_dht) initiating a full DHT crawl on startup, which increases the load on the libp2p host and saturating libp2p's connection manager limits. This is an area for further investigation and improvement, though reliminary experiemnts suggest that even waiting 15 minutes after startup to start piping the requests results in a major reduction in latency. benefits outweigh the costs within 12 hours at most.
+
+<!-- - Running a test 29.8 at 14:50 with cache ENABLED, 15 minutes after starting the instance.
+  - Running a test 28.8 at 16:25 with cache disabled, 15 minutes after starting the instance
+  - Before:
+  ```
+  ubuntu@someguy-sv15:~$ curl -s http://127.0.0.1:8190/debug/metrics/prometheus | grep delegated_routing_server_http_request_duration_seconds_bucket | grep -v ipns | grep -v peer\-id
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="0.1"} 126
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="0.5"} 1530
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="1"} 1929
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="2"} 1968
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="5"} 1973
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="8"} 1981
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="10"} 3050
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="20"} 3119
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="30"} 3124
+delegated_routing_server_http_request_duration_seconds_bucket{code="200",handler="/routing/v1/providers/{cid}",method="GET",service="",le="+Inf"} 3128
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="0.1"} 64
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="0.5"} 554
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="1"} 830
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="2"} 864
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="5"} 944
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="8"} 1002
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="10"} 1018
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="20"} 1022
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="30"} 1040
+delegated_routing_server_http_request_duration_seconds_bucket{code="404",handler="/routing/v1/providers/{cid}",method="GET",service="",le="+Inf"} 1106
+``` -->
 
 ## Configuration
 
@@ -200,6 +224,43 @@ See the [docs](https://github.com/ipfs/someguy/blob/main/docs/environment-variab
 ## Metrics
 
 When the cached address book and active are enabled, Prometheus metrics to monitor the cache and active probing, which can be found in the [metrics docs](https://github.com/ipfs/someguy/blob/main/docs/metrics.md#someguy-caches)
+
+## More than just one cache
+
+This blog post is primarily focused on the caching of peer addresses within Someguy, but it's worth noting that additional caching layers are relevant in the context of the public delegated routing endpoint `https://delegated-ipfs.dev/routing/v1`
+
+- **CDN cache**
+  Caches responses from Someguy at the edge, close to users, based on the `Cache-Control` headers set by Someguy.
+- **Someguy Cache-Control headers**
+  Someguy sets the `Cache-Control` headers as follows:
+
+### Cache-Control header values
+
+- **public**
+  Allows the response to be cached by any cache (browser, proxy, CDN, etc.).
+
+- **max-age**
+
+  - When there are results: **5 minutes** (300 seconds)
+  - When there are no results: **15 seconds**
+    Defines how long the response is considered “fresh” before a cache must revalidate.
+
+- **stale-while-revalidate**
+  - **48 hours** (172,800 seconds)
+    Allows caches to serve a stale response while they asynchronously fetch a fresh one from the origin.
+- **stale-if-error**
+  - **48 hours** (same as above)
+    Lets caches serve a stale response if the origin server is unavailable (e.g., timeout, 500 error).
+
+### How stale-while-revalidate (SWR) works
+
+When cached data becomes stale (past `max-age`), instead of making the user wait, the cache:
+
+1. **Immediately serves the stale response** to the client.
+2. **Fetches a fresh version in the background** from the origin.
+3. **Updates the cache** with the new response for future requests.
+
+This gives fast responses (users see something right away) while keeping data reasonably up to date behind the scenes.
 
 ## Accelerating peer-to-peer retrieval for browsers and mobile devices
 
