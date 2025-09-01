@@ -207,8 +207,8 @@ While the primary focus of this blog post was the caching of peer addresses with
 The `Cache-Control` header is configured as follows:
 
 - **max-age**:
-  - With results: 5 minutes
-  - no results: 15 seconds
+  - Responses with providers: 5 minutes
+  - Responses with no providers: 15 seconds
 - **stale-while-revalidate**
   - **48 hours**
     Allows caches to serve a stale response while they asynchronously fetch a fresh one from the origin.
