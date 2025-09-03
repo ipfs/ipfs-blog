@@ -1,17 +1,17 @@
 ---
-date: 2025-08-28
-permalink: /2025-delegated-routing-cached-router/
 title: 'Faster Peer-to-Peer Retrieval in Browsers With Caching in the Delegated Routing HTTP Server'
 description: 'How caching and active peer probing in the Someguy, the Delegated Routing server accelerates peer-to-peer content retrieval in browsers and mobile applications.'
 author: Daniel Norman
+date: 2025-08-28
+permalink: /2025-delegated-routing-caching/
 header_image: /someguy-cache/cover.png
 tags:
   - ipfs
   - someguy
+  - delegated routing
   - performance
   - mobile
   - browsers
-  - peer-discovery
   - caching
 ---
 
