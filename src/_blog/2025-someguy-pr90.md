@@ -83,10 +83,10 @@ For example, unlike the response above, Someguy would return a response like thi
 
 ### But why are providers returned without peer addresses?
 
-The go-libp2p and go-libp2p-kad-dht libraries have a couple of important constants that control how long provider and peer addresses are cached in memory:
+The widely-used [go-libp2p](https://github.com/libp2p/go-libp2p) and [go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht/) libraries have a couple of important constants that control how long provider and peer addresses are cached in memory:
 
 - `DefaultProvideValidity = 48 * time.Hour`: TTL for provider records mapping between a multihash (from the CID) and peer IDs.
-- `DefaultProviderAddrTTL = 24 * time.Hour`: TTL for the **addresses** of those providers. Therse addresses are returned in DHT RPC requests alongside the provider record. After the addresses expires, clients require an extra lookup, to find the multiaddress associated with the returned peer ID.
+- `DefaultProviderAddrTTL = 24 * time.Hour`: TTL for the **addresses** of those providers. These addresses are returned in DHT RPC requests alongside the provider record. After the addresses expires, clients require an extra lookup, to find the multiaddress associated with the returned peer ID.
 - `RecentlyConnectedAddrTTL = time.Minute * 15`: Time during which a peer's address is kept in memory after a peer disconnects. Applies to any libp2p peer that has been recently connected to.
 
 In other words, DHT servers can return provider records without peer addresses. This happens in the time window 24 hours after the provider record is published until it expires. This was designed to ensure that provider records are not returned with stale addresses. Since reproviding typically happens every 24 hours, DHT servers should always have fresh addresses for providers, but reality is messier.
@@ -106,7 +106,7 @@ The [new cached address book](https://github.com/ipfs/someguy/blob/6cb37a4da3ea3
 - **48-hour cache**: Stores peer addresses for 48 hours, matching the DHT provider record expiration.
 - **1M peer capacity**: This sets an upper limit on memory usage, allowing Someguy to handle a large number of peers without excessive memory consumption.
 - **Memory-efficient**: Uses LRU eviction to keep the most relevant peers readily available
-- **Event driven cache maintennce**: Caches peers by subscribing to the libp2p event bus and caches after successful libp2p identify events, rather than actively polling the DHT for peer addresses, thereby only caching peers based on actual delegated routing requests.
+- **Event driven cache maintenance**: Caches peers by subscribing to the libp2p event bus and caches after successful libp2p identify events, rather than actively polling the DHT for peer addresses, thereby only caching peers based on actual delegated routing requests.
 
 ### Active peer probing in the background
 
@@ -134,7 +134,7 @@ To measure the impact of these changes, we deployed two instances of someguy, on
 
 For the instance with the cached address book enabled, we realised that it took some time for the cached address book to warm up, as peers are only cached [following mututal authentication and running the identify protocol](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L176-L195) that would be initiated as a downstream effect of incoming content and peer routing requests, unless running with the accelerated DHT client, which performs a DHT crawl on startup.
 
-To determine when the cache was sufficiently warm, we observed the cached address book size [metric](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L80-L85) and waited until it stabilised, which takes around 12 hours, at which point the cache had about 30k peers. This metric continues growing gradually —at a much slower rate— eventually stagnating at ~60k peers, which correlates with the number of DHT servers [measured by ProbeLab](https://probelab.io/ipfs/kpi/#client-vs-server-node-estimate).
+To determine when the cache was sufficiently warm, we observed the cached address book size [metric](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L80-L85) and waited until it stabilised, which takes around 12 hours, at which point the cache had about 30k peers. This metric continues growing gradually —at a much slower rate— eventually stagnating at ~60k peers, which correlates with the number of DHT servers [measured by ProbeLab](https://probelab.io/ipfs/kpi/#client-vs-server-node-estimate) (measured in Q3 2025).
 
 ![cached address book size](../assets/someguy-cache/cached_addr_book_growth.png)
 
@@ -144,26 +144,25 @@ We also looked at HTTP request latency, and HTTP success rates to get a fuller p
 
 Note that the list of 500k CIDs was not deduplicated, this was to reflect real-world usage patterns, where popular CIDs are requested more frequently.
 
-### Cache hit rate
+### Peer Address Cache effectiveness
 
-The cache hit rate help us assess the impact of this work, as it indicates how often clients get working peer addresses directly from from the DHT lookup, and if not, how often they are served from cache or require a fresh lookup.
+|                       | Lookups   | Percentage |
+| --------------------- | --------- | ---------- |
+| **Address Cache Used**   | 1,287,619 | 34.4%      |
+| **Address Cache Unused** | 2,455,120 | 65.6%      |
+| **Total**             | 3,742,739 | 100.0%     |
 
-While this metric is only available with the cached address book enabled, it indicates the percentage of requests of requests that return without peer addresses.
+We measured two key metrics to assess the cache impact:
 
-In the experiment with the warmed cache, we observed the following results:
+**(1) How often is the cache needed?**
+In ~66% of requests, the DHT returned provider records with addresses already included. The remaining ~34% returned providers without addresses, requiring either cache lookup or additional peer routing.
 
-|                  | Lookups   | Percentage |
-| ---------------- | --------- | ---------- |
-| **Cache Used**   | 1,287,619 | 34.4%      |
-| **Cache Unused** | 2,455,120 | 65.6%      |
-| **Total**        | 3,742,739 | 100.0%     |
+**(2) When needed, how effective is the cache?**
+For the 34.4% of requests that needed address resolution:
+- Cache hit: **~83%** (addresses found in cache)
+- Cache miss: ~17% (required fresh peer lookup)
 
-Of the 34.4% of requests that had no peer addresses, we observed the following cache hit rates:
-
-**Cache Hits**: 82.9%
-**Cache Misses**: 17.1%
-
-In other words, of the all requests that would previously require an additional peer lookup, 82.9% are now served from cache 🎉.
+**Bottom line:** The cache eliminates ~83% of scenarios where clients would otherwise need to make additional peer routing requests 🎉
 
 ### HTTP request latency and success rate
 
