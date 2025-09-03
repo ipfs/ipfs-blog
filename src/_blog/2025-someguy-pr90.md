@@ -183,7 +183,15 @@ Moreover, every provider lookup results in an HTTP request to the IPNI independe
 
 Another hypothesis is that the active probing in the background accelerates DHT lookups, especially for duplicate requests, thereby reducing the latency of DHT lookup. This is an area for further investigation
 
-Either way, these results indicate that the cached address book and active probing have no negative impact on latency or success rates, and may even improve them.
+### Key insights
+
+With peer address caching enabled, we observed unexpected improvements beyond just address availability:
+- P95 latency for successful responses improved from 1.91s to 1.35s (29% faster)
+- Success rate increased from 52.0% to 57.2%
+
+These improvements likely stem from the active background probing, which pre-validates peer connectivity. When duplicate CIDs are requested, Someguy can immediately return known-good peers from cache, accelerating the routing and avoiding DHT traversal for subsequent lookups of the same content.
+
+The results demonstrate that the cached address book and active probing have no negative impact on latency or success rates, and actually improve both metrics.
 
 ## Configuration
 
