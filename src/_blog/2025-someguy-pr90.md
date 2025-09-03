@@ -21,7 +21,7 @@ Last year we shipped a major improvement to [Someguy](https://github.com/ipfs/so
 
 ## What is Someguy and why it matters?
 
-[Someguy](https://github.com/ipfs/someguy) is a [Delegated Routing HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) for IPFS routing requests to the Amino DHT and the IPNI.
+[Someguy](https://github.com/ipfs/someguy) is a [Delegated Routing HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) for proxying IPFS routing requests to the Amino DHT, IPNI or any other routing system that implements the same API.
 
 Its main purpose is to help IPFS clients find provider peers for CIDs and their network addresses, and expose that as an HTTP API. This is crucial for browsers and mobile applications that need to fetch IPFS content without running a full DHT client, which is often impractical on resource-constrained devices, like mobile phones and web browsers.
 
@@ -37,7 +37,7 @@ The IPFS Foundation provides a public delegated routing endpoint backed by Someg
 
 When Helia or [`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/verified-fetch) fetches content from the IPFS network, it goes through the following process:
 
-1. Helia requests providers for a CID from Someguy: `GET https://delegated-ipfs.dev/routing/v1/providers/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
+1. Helia requests providers for a CID from Someguy using `Accept: application/x-ndjson` header for streaming responses: `GET https://delegated-ipfs.dev/routing/v1/providers/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi`
 2. Someguy traverses the Amino DHT and responds with the providers that have the content, _typically_ along with their network addresses.
    - Example response:
 
@@ -59,13 +59,13 @@ When Helia or [`@helia/verified-fetch`](https://www.npmjs.com/package/@helia/ver
 }
 ```
 
-3. Browser/mobile app connects directly to those peers and fetches the content
+3. Browser/mobile app connects directly to those peers as soon as each provider record arrives in the stream, enabling parallel connection attempts and faster content retrieval
 
 **The performance equation is straightforward**: the faster Someguy can respond with working peer addresses, the quicker browsers and mobile apps can start fetching content peer-to-peer. Every millisecond saved in routing queries directly translates to faster content delivery.
 
 ## The problem: provider records without peer addresses
 
-Before PR #90, Someguy's would often respond with provider records that included peer IDs but not their network addresses. This meant that clients had to make an additional requests to Someguy to get the actual addresses of the peers.
+Before [v0.7](https://github.com/ipfs/someguy/releases/tag/v0.7.0), Someguy would often respond with provider records that included peer IDs but **not** their network addresses. This meant that clients had to make an additional requests to `/routing/v1/peers/{peerid}` to get the actual addresses of each peer.
 
 For example, unlike the response above, Someguy would return a response like this:
 
