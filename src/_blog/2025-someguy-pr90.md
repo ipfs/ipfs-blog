@@ -170,16 +170,16 @@ Here we examine the P95 (95th percentile) latency for HTTP requests to `/routing
 
 It's worth noting that we didn't expect significant reduction in latency or error rates as a result of the cache, because the cached address book is only used to augment results from the DHT, and doesn't change the underlying DHT query process.
 
-| Scenario                     | 200s P95 | 404s P95 | Success Rate |
-| ---------------------------- | -------- | -------- | ------------ |
-| **Cache Disabled**           | 1.91s    | 7.35ss   | 52.0%        |
-| **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        |
+| Scenario                     | 200s P95 | 404s P95 | Success Rate | Latency Improvement |
+  | ---------------------------- | -------- | -------- | ------------ | ------------------- |
+  | **Cache Disabled**           | 1.91s    | 7.35s    | 52.0%        | baseline            |
+  | **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        | -560ms (29% faster) |
 
 ### Key insights
 
 When the cache is enabled, the P95 latency for 200 responses drops to 1.346s! Moreover, success rates improve to 57.2% from 52.0%. It's not entirely clear why this is the case — the Amino DHT is permissionless and undergoes natural churn, and it could be that during the time we ran the experiments, some providers went offline.
 
-Moreover, every providers lookup results in an HTTP request to the IPNI independent of the DHT, and can cause additional latency, skewing the aggregate results.
+Moreover, every provider lookup results in an HTTP request to the IPNI independent of the DHT, and can cause additional latency, skewing the aggregate results.
 
 Another hypothesis is that the active probing in the background accelerates DHT lookups, especially for duplicate requests, thereby reducing the latency of DHT lookup. This is an area for further investigation
 
@@ -199,9 +199,21 @@ See the [docs](https://github.com/ipfs/someguy/blob/main/docs/environment-variab
 
 When the cached address book and active are enabled, Prometheus metrics to monitor the cache and active probing, which can be found in the [metrics docs](https://github.com/ipfs/someguy/blob/main/docs/metrics.md#someguy-caches)
 
-## HTTP caching with Cache-Control headers
+## Additional optimization: HTTP-level caching
 
-While the primary focus of this blog post was the caching of peer addresses within Someguy, it's worth noting that Someguy sets the `Cache-Control` HTTP header on its HTTP responses to enable caching at multiple layers, including browser caches, intermediary proxies, and CDNs.
+Beyond the peer address caching discussed above, Someguy also implements HTTP-level caching through `Cache-Control` headers. This provides a complementary layer of caching that benefits all clients, even those that don't make repeated requests themselves:
+
+**Cache durations:**
+- Provider responses with results: **5 minutes** - fresh enough to catch new providers while reducing duplicate DHT lookups
+- Empty responses (no providers found): **15 seconds** - short duration allows quick discovery if content becomes available
+- `stale-while-revalidate`: **48 hours** - clients can use stale data while fetching updates in the background
+
+This HTTP caching layer works together with the peer address cache:
+- The address cache ensures provider records include dialable addresses
+- HTTP caching prevents redundant requests for the same CID across different clients
+- CDNs and proxies can serve popular content routing responses without hitting Someguy
+
+Together, these caching layers significantly reduce latency and server load while maintaining data freshness.
 
 The `Cache-Control` header is configured as follows:
 
@@ -214,10 +226,10 @@ The `Cache-Control` header is configured as follows:
 
 This configuration strikes a balance between freshness and performance, ensuring that clients can quickly retrieve provider information while still having access to up-to-date data. This approach also helps reduce the load on the Someguy servers by allowing caches to serve repeated requests for the same CID without hitting the origin server every time.
 
-## Accelerating peer-to-peer retrieval for browsers and mobile devices
+## Conclusion
 
-This enhancement is part of the larger effort to enable peer-to-peer retrieval practical even for resource constrained environments like web browsers and mobile devices.
+The addition of peer address caching and active probing to Someguy represents a significant step forward for decentralized content retrieval in constrained environments. By **eliminating ~83% of additional peer lookups** and **reducing P95 latency by ~30%** (~560ms), these improvements make direct peer-to-peer content retrieval noticeably faster for millions of users accessing IPFS through browsers and mobile apps.
 
-Peer caching and active probing are included starting in the [v0.7.0 release](https://github.com/ipfs/someguy/releases/tag/v0.7.0) of Someguy.
+This work is available now in [Someguy releases](https://github.com/ipfs/someguy/releases) starting from v0.7.0 and is already serving production traffic at [public good](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing-endpoint)  `https://delegated-ipfs.dev/routing/v1/providers`.  Anyone can [run their own Someguy instance](https://github.com/ipfs/someguy?tab=readme-ov-file#install) to provide delegated routing for their users or applications. For  operators, the caching feature is enabled by default and can be configured via [environment variables](https://github.com/ipfs/someguy/blob/main/docs/environment-variables.md).
 
-By ensuring that Someguy only returns dialable providers with addresses, we save clients an additional peer routing request, and reduces the time to first byte, thereby accelerating peer-to-peer content retrieval in browsers and mobile applications.
+Looking ahead, we continue to explore ways to make IPFS more accessible and performant for all users, regardless of their device capabilities.
