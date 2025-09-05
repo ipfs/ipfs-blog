@@ -175,13 +175,6 @@ It's worth noting that we didn't expect significant reduction in latency or erro
   | **Cache Disabled**           | 1.91s    | 7.35s    | 52.0%        | baseline            |
   | **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        | -560ms (29% faster) |
 
-### Key insights
-
-When the cache is enabled, the P95 latency for 200 responses drops to 1.346s! Moreover, success rates improve to 57.2% from 52.0%. It's not entirely clear why this is the case — the Amino DHT is permissionless and undergoes natural churn, and it could be that during the time we ran the experiments, some providers went offline.
-
-Moreover, every provider lookup results in an HTTP request to the IPNI independent of the DHT, and can cause additional latency, skewing the aggregate results.
-
-Another hypothesis is that the active probing in the background accelerates DHT lookups, especially for duplicate requests, thereby reducing the latency of DHT lookup. This is an area for further investigation
 
 ### Key insights
 
@@ -222,17 +215,6 @@ This HTTP caching layer works together with the peer address cache:
 - CDNs and proxies can serve popular content routing responses without hitting Someguy
 
 Together, these caching layers significantly reduce latency and server load while maintaining data freshness.
-
-The `Cache-Control` header is configured as follows:
-
-- **max-age**:
-  - Responses with providers: 5 minutes
-  - Responses with no providers: 15 seconds
-- **stale-while-revalidate**
-  - **48 hours**
-    Allows caches to serve a stale response while they asynchronously fetch a fresh one from the origin.
-
-This configuration strikes a balance between freshness and performance, ensuring that clients can quickly retrieve provider information while still having access to up-to-date data. This approach also helps reduce the load on the Someguy servers by allowing caches to serve repeated requests for the same CID without hitting the origin server every time.
 
 ## Conclusion
 
