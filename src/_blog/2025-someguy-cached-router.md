@@ -25,11 +25,11 @@ Last year we shipped a major improvement to [Someguy](https://github.com/ipfs/so
 
 Its main purpose is to help IPFS clients find provider peers for CIDs and their network addresses, and expose that as an HTTP API. This is crucial for browsers and mobile applications that need to fetch IPFS content without running a full DHT client, which is often impractical on resource-constrained devices, like mobile phones and web browsers.
 
-A typical Amino DHT client is stateful. It typically opens hundreds of connections, maintains a constantly updated routing table, and opens multiple network operations to find provider and peer records. The problem is that browsers and mobiles are limited in their networking capabilities — both in terms of the transports they can use and the number of connections they can maintain. They also have limited battery and bandwidth, which makes it impractical to run a full DHT client.
+An Amino DHT client is stateful, and typically opens hundreds of connections to maintain its routing table and find provider and peer records. The problem is that browsers and mobiles are limited in their networking capabilities — both in terms of the **transports** they can use and the **number of connections** they can open. Mobiles also have limited battery and bandwidth, making it impractical to run a full DHT client.
 
 Delegated routing allows these devices to query the DHT for content providers in a single HTTP request, rather than requiring them to maintain complex DHT connections themselves.
 
-To make decentralised retrieval possible for content provided to the DHT, Someguy serves as a helper, allowing these devices to query the DHT in a single request and get back a list of peers that have the content they want. This is done over HTTP, which is universally supported by browsers and mobile apps.
+To make decentralised retrieval possible for content provided to the DHT, Someguy serves as a helper, allowing these devices to query the DHT in a single HTTP request and get back a list of provider peers that have the data for a CID. This is done over HTTP, which is universally supported by browsers and mobile apps.
 
 The IPFS Foundation provides a public delegated routing endpoint backed by Someguy with the URL `https://delegated-ipfs.dev/routing/v1` that is used by [Helia](https://github.com/ipfs/helia/blob/a0cac72e5b440bf7ea7356571b0f244e05c896e0/packages/http/src/utils/libp2p-defaults.ts#L31) by default to accelerate peer-to-peer content retrieval in browsers and mobile applications.
 
@@ -113,7 +113,7 @@ The [new cached address book](https://github.com/ipfs/someguy/blob/6cb37a4da3ea3
 Rather than serving stale addresses, Someguy now tests peer connectivity in the background:
 
 - **Background verification**: Every 15 minutes, tests whether cached peer addresses still work
-- **Exponential backoff**: Stops wasting time on persistently offline peers (1h → 2h → 4h → 48h delays)
+- **Exponential backoff**: Stops wasting time on persistently offline peers
 - **Concurrent testing**: Tests up to 20 peer connections simultaneously
 - **Selective probing**: Only tests peers that haven't been verified recently
 
@@ -146,11 +146,11 @@ Note that the list of 500k CIDs was not deduplicated, this was to reflect real-w
 
 ### Peer Address Cache effectiveness
 
-|                       | Lookups   | Percentage |
-| --------------------- | --------- | ---------- |
+|                          | Lookups   | Percentage |
+| ------------------------ | --------- | ---------- |
 | **Address Cache Used**   | 1,287,619 | 34.4%      |
 | **Address Cache Unused** | 2,455,120 | 65.6%      |
-| **Total**             | 3,742,739 | 100.0%     |
+| **Total**                | 3,742,739 | 100.0%     |
 
 We measured two key metrics to assess the cache impact:
 
@@ -159,6 +159,7 @@ In ~66% of requests, the DHT returned provider records with addresses already in
 
 **(2) When needed, how effective is the cache?**
 For the 34.4% of requests that needed address resolution:
+
 - Cache hit: **~83%** (addresses found in cache)
 - Cache miss: ~17% (required fresh peer lookup)
 
@@ -171,14 +172,14 @@ Here we examine the P95 (95th percentile) latency for HTTP requests to `/routing
 It's worth noting that we didn't expect significant reduction in latency or error rates as a result of the cache, because the cached address book is only used to augment results from the DHT, and doesn't change the underlying DHT query process.
 
 | Scenario                     | 200s P95 | 404s P95 | Success Rate | Latency Improvement |
-  | ---------------------------- | -------- | -------- | ------------ | ------------------- |
-  | **Cache Disabled**           | 1.91s    | 7.35s    | 52.0%        | baseline            |
-  | **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        | -560ms (29% faster) |
-
+| ---------------------------- | -------- | -------- | ------------ | ------------------- |
+| **Cache Disabled**           | 1.91s    | 7.35s    | 52.0%        | baseline            |
+| **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        | -560ms (29% faster) |
 
 ### Key insights
 
 With peer address caching enabled, we observed unexpected improvements beyond just address availability:
+
 - P95 latency for successful responses improved from 1.91s to 1.35s (29% faster)
 - Success rate increased from 52.0% to 57.2%
 
@@ -205,11 +206,13 @@ When the cached address book and active are enabled, Prometheus metrics to monit
 Beyond the peer address caching discussed above, Someguy also implements HTTP-level caching through `Cache-Control` headers. This provides a complementary layer of caching that benefits all clients, even those that don't make repeated requests themselves:
 
 **Cache durations:**
+
 - Provider responses with results: **5 minutes** - fresh enough to catch new providers while reducing duplicate DHT lookups
 - Empty responses (no providers found): **15 seconds** - short duration allows quick discovery if content becomes available
 - `stale-while-revalidate`: **48 hours** - clients can use stale data while fetching updates in the background
 
 This HTTP caching layer works together with the peer address cache:
+
 - The address cache ensures provider records include dialable addresses
 - HTTP caching prevents redundant requests for the same CID across different clients
 - CDNs and proxies can serve popular content routing responses without hitting Someguy
@@ -220,6 +223,6 @@ Together, these caching layers significantly reduce latency and server load whil
 
 The addition of peer address caching and active probing to Someguy represents a significant step forward for decentralized content retrieval in constrained environments. By **eliminating ~83% of additional peer lookups** and **reducing P95 latency by ~30%** (~560ms), these improvements make direct peer-to-peer content retrieval noticeably faster for millions of users accessing IPFS through browsers and mobile apps.
 
-This work is available now in [Someguy releases](https://github.com/ipfs/someguy/releases) starting from v0.7.0 and is already serving production traffic at [public good](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing-endpoint)  `https://delegated-ipfs.dev/routing/v1/providers`.  Anyone can [run their own Someguy instance](https://github.com/ipfs/someguy?tab=readme-ov-file#install) to provide delegated routing for their users or applications. For  operators, the caching feature is enabled by default and can be configured via [environment variables](https://github.com/ipfs/someguy/blob/main/docs/environment-variables.md).
+This work is available now in [Someguy releases](https://github.com/ipfs/someguy/releases) starting from v0.7.0 and is already serving production traffic at [public good](https://docs.ipfs.tech/concepts/public-utilities/#delegated-routing-endpoint) `https://delegated-ipfs.dev/routing/v1/providers`. Anyone can [run their own Someguy instance](https://github.com/ipfs/someguy?tab=readme-ov-file#install) to provide delegated routing for their users or applications. For operators, the caching feature is enabled by default and can be configured via [environment variables](https://github.com/ipfs/someguy/blob/main/docs/environment-variables.md).
 
 Looking ahead, we continue to explore ways to make IPFS more accessible and performant for all users, regardless of their device capabilities.
