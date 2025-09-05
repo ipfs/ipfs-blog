@@ -19,7 +19,7 @@ tags:
 
 Last year we shipped a major improvement to [Someguy](https://github.com/ipfs/someguy/pull/90), the HTTP Delegated Routing API for the Amino DHT and IPNI. The update introduced a cached address book and active peer probing for DHT peers. This change considerably increases the ratio of providers with addresses returned, which in turn accelerates peer-to-peer content retrieval in browsers and mobile applications. It's included in the [v0.7.0 release](https://github.com/ipfs/someguy/releases/tag/v0.7.0) of Someguy. Follow along for the full story.
 
-## What is Someguy and why it matters?
+## What is Someguy and why it matters
 
 [Someguy](https://github.com/ipfs/someguy) is a [Delegated Routing HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) for proxying IPFS routing requests to the Amino DHT, IPNI or any other routing system that implements the same API.
 
@@ -132,7 +132,7 @@ All these improvements are enabled by default in Someguy v0.7.0 and later (see t
 
 To measure the impact of these changes, we deployed two instances of someguy, one with the cached address book and active probing enabled, and the other with it disabled.
 
-For the instance with the cached address book enabled, we realised that it took some time for the cached address book to warm up, as peers are only cached [following mututal authentication and running the identify protocol](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L176-L195) that would be initiated as a downstream effect of incoming content and peer routing requests, unless running with the accelerated DHT client, which performs a DHT crawl on startup.
+For the instance with the cached address book enabled, we realised that it took some time for the cached address book to warm up, as peers are only cached [following mutual authentication and running the identify protocol](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L176-L195) that would be initiated as a downstream effect of incoming content and peer routing requests, unless running with the accelerated DHT client, which performs a DHT crawl on startup.
 
 To determine when the cache was sufficiently warm, we observed the cached address book size [metric](https://github.com/ipfs/someguy/blob/316dbc27f3cfc4df1276a7afcff33f5b4f05688d/cached_addr_book.go#L80-L85) and waited until it stabilised, which takes around 12 hours, at which point the cache had about 30k peers. This metric continues growing gradually —at a much slower rate— eventually stagnating at ~60k peers, which correlates with the number of DHT servers [measured by ProbeLab](https://probelab.io/ipfs/kpi/#client-vs-server-node-estimate) (measured in Q3 2025).
 
@@ -173,7 +173,7 @@ It's worth noting that we didn't expect significant reduction in latency or erro
 
 | Scenario                     | 200s P95 | 404s P95 | Success Rate | Latency Improvement |
 | ---------------------------- | -------- | -------- | ------------ | ------------------- |
-| **Cache Disabled**           | 1.91s    | 7.35s    | 52.0%        | baseline            |
+| **Cache Disabled**           | 1.91s  R  | 7.35s    | 52.0%        | baseline            |
 | **Cache Enabled and Warmed** | 1.35s    | 7.46s    | 57.2%        | -560ms (29% faster) |
 
 ### Key insights
@@ -199,7 +199,7 @@ See the [docs](https://github.com/ipfs/someguy/blob/main/docs/environment-variab
 
 ## Metrics
 
-When the cached address book and active are enabled, Prometheus metrics to monitor the cache and active probing, which can be found in the [metrics docs](https://github.com/ipfs/someguy/blob/main/docs/metrics.md#someguy-caches)
+When the cached address book and active probing are enabled, Prometheus metrics to monitor the cache and active probing, which can be found in the [metrics docs](https://github.com/ipfs/someguy/blob/main/docs/metrics.md#someguy-caches)
 
 ## Additional optimization: HTTP-level caching
 
