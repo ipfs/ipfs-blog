@@ -5,7 +5,7 @@ sitemap:
   exclude: true
 data:
 - title: 'Provide Sweep: Solving the DHT Bottleneck for Self-Hosting IPFS at Scale'
-  date: 2025-11-27
+  date: 2025-11-26
   publish_date:
   card_image: /blog-post-placeholder.png
   path: https://ipshipyard.com/blog/2025-dht-provide-sweep/
