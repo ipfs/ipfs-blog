@@ -50,7 +50,7 @@ function itemToRssEntry(item, category) {
     title: [item.title],
     link: [item.path],
     pubDate: [dayjs(item.date).toDate().toUTCString()],
-    description: [item.title],
+    description: [item.description || item.title],
     category: [category],
     guid: [{ _: item.path, $: { isPermaLink: 'true' } }],
   }

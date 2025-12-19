@@ -4,6 +4,21 @@ type: Ecosystem content
 sitemap:
   exclude: true
 data:
+- title: 'Shipyard 2025: IPFS Year in Review'
+  description: 'Seven Kubo releases made self-hosted IPFS practical. Highlights: DHT Provide Sweep, AutoTLS, HTTP retrieval, and Helia for trustless browser retrieval.'
+  date: 2025-12-19
+  publish_date:
+  card_image: /blog-post-placeholder.png
+  path: https://ipshipyard.com/blog/2025-shipyard-ipfs-year-in-review/
+  tags:
+    - kubo
+    - boxo
+    - helia
+    - gateways
+    - DHT
+    - AutoTLS
+    - delegated routing
+    - browsers
 - title: 'Provide Sweep: Solving the DHT Bottleneck for Self-Hosting IPFS at Scale'
   date: 2025-11-26
   publish_date:
