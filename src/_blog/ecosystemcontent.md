@@ -4,17 +4,6 @@ type: Ecosystem content
 sitemap:
   exclude: true
 data:
-- title: 'Migrating IPFS Project Websites from Fleek to Modular Infrastructure'
-  description: 'After migrating 15+ IPFS Project websites from Fleek, Shipyard explains why modular infrastructure with swappable components is the future-proof approach to content-addressed website hosting.'
-  date: 2026-01-06
-  publish_date:
-  card_image: /2022-ipfs-gateways-1.png
-  path: https://ipshipyard.com/blog/2026-ipfs-self-hosting-migration/
-  tags:
-    - kubo
-    - gateways
-    - fleek
-    - websites
 - title: 'Shipyard 2025: IPFS Year in Review'
   description: 'Seven Kubo releases made self-hosted IPFS practical. Highlights: DHT Provide Sweep, AutoTLS, HTTP retrieval, and Helia for trustless browser retrieval.'
   date: 2025-12-19
