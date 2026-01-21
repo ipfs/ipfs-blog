@@ -1,6 +1,6 @@
 ---
-title: "Migrating IPFS Project Websites from Fleek to Modular Infrastructure"
-description: "After migrating 15+ IPFS Project websites from Fleek, Shipyard explains why modular infrastructure with swappable components is the future-proof approach to content-addressed website hosting."
+title: "How to Migrate IPFS Websites from Fleek to Modular Infrastructure"
+description: "A how-to guide for future-proofing your content-addressed website hosting."
 author: Marcin Rataj
 date: 2026-01-06
 permalink: '/2026-fleek-migration/'
@@ -14,7 +14,7 @@ tags:
 
 _Cross-posted from the [Shipyard blog](https://ipshipyard.com/blog/2026-ipfs-self-hosting-migration/)._
 
-Shipyard migrated 15+ IPFS Project websites to modular infrastructure where each component is independently swappable. This post explains the approach and how to set it up for your project.
+This is a practical guide to hosting websites on both HTTP and IPFS using modular, swappable components. When Fleek announced it was discontinuing hosting, we migrated 15+ IPFS Project websites to a setup designed to survive any single provider shutting down. Whether you're moving off Fleek or just want more resilient hosting, this guide covers the approach and the tools we used.
 
 ## What Changed
 
@@ -31,7 +31,7 @@ All sites now have redundant hosting: traditional HTTP via GitHub Pages and cont
 
 Fleek Hosting was a turn-key solution that combined HTTP CDN with TLS, IPFS pinning, IPFS gateway, DNSLink, IPNS, ENS, and GitHub Actions CI integration in one platform. [Fleek is pivoting to AI](https://web.archive.org/web/20260108212232/https://www.fleek.sh/blog/2026-outlook) and [discontinuing its hosting services on January 31, 2026](https://github.com/ipshipyard/waterworks-community/issues/23).
 
-Fleek's shutdown is not an isolated event. [nft.storage transitioned operations](https://web.archive.org/web/20250915005638/https://nft.storage/blog/nft-storage-operation-transitions-in-2025). [Infura deprecated its IPFS public API and gateway](https://web.archive.org/web/20230206190257/blog.infura.io/post/ipfs-public-api-and-gateway-deprecation). [Scaleway shut down IPFS pinning](https://web.archive.org/web/20251130221548/https://labs.scaleway.com/en/ipfs-pinning/). [Cloudflare sunset its public IPFS gateways](https://web.archive.org/web/20251112005234/https://blog.cloudflare.com/cloudflares-public-ipfs-gateways-and-supporting-interplanetary-shipyard/) (Shipyard took over). This is not a criticism of any particular service. Commercial offerings come and go based on business realities. The lesson: if you rely solely on a third-party service, you inherit their business risk.
+The IPFS service landscape is always evolving. Some providers have shut down or changed focus: [nft.storage transitioned operations](https://web.archive.org/web/20250915005638/https://nft.storage/blog/nft-storage-operation-transitions-in-2025), [Infura deprecated its IPFS public API and gateway](https://web.archive.org/web/20230206190257/blog.infura.io/post/ipfs-public-api-and-gateway-deprecation), and [Scaleway shut down IPFS pinning](https://web.archive.org/web/20251130221548/https://labs.scaleway.com/en/ipfs-pinning/). At the same time, new options have emerged: [Storacha](https://storacha.network/) launched as a successor to web3.storage, Shipyard [took over Cloudflare's public IPFS gateways](https://web.archive.org/web/20251112005234/https://blog.cloudflare.com/cloudflares-public-ipfs-gateways-and-supporting-interplanetary-shipyard/), and pinning services like [Pinata](https://pinata.cloud/) and [Filebase](https://filebase.com/) continue to grow. This isn't a criticism of any particular service — commercial offerings evolve based on business realities. The lesson: design your setup so that no single provider change requires starting over.
 
 ## Modularity as the Future-Proof Approach
 
