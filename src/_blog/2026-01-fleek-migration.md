@@ -4,6 +4,7 @@ description: "A how-to guide for future-proofing your content-addressed website 
 author: Marcin Rataj
 date: 2026-01-06
 permalink: '/2026-fleek-migration/'
+canonicalUrl: https://ipshipyard.com/blog/2026-ipfs-self-hosting-migration/
 header_image: '/2022-ipfs-gateways-1.png'
 tags:
   - kubo
