@@ -6,6 +6,7 @@ author: Adin Schmahmann
 
 date: 2024-04-08
 permalink: '/shipyard-hello-world/'
+canonicalUrl: https://ipshipyard.com/blog/shipyard-hello-world/
 header_image: '/shipyard-hello-world.png'
 tags:
   - 'ipfs'
