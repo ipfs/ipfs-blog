@@ -21,6 +21,12 @@ on:
 env:
   BUILD_PATH: 'blog-build'
 
+# Prevent concurrent deployments to the same target
+# This avoids the "multiple github-pages artifacts" error
+concurrency:
+  group: deploy-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: true
+
 jobs:
   deploy-ipfs:
     if: github.event.workflow_run.conclusion == 'success'
