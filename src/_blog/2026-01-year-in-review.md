@@ -4,7 +4,7 @@ description: "Let's take a look at what happened in content addressing in 2025 â
 author: Robin Berjon
 date: 2026-01-15
 permalink: '/2026-01-year-in-review/'
-header_image: '/sunrise-sea01.jpg'
+header_image: '/2026-01-sunrise-sea01.jpg'
 tags:
   - ecosystem
 ---
