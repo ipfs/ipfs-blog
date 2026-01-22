@@ -13,7 +13,9 @@ It's hard to believe that it was 2025 only two weeks ago, but all the same we'd 
 
 "Content addressing?" you say. "Is there enough going on around content addressing to write a year in review post?" Content addressing has many uses, but two salient ones include trusting that you're getting the data you really want and ensuring that data can be independently verified without relying on the power of a centralized authority. It's easy to see how those two features are key to facing today's challenges. Over the past decade, the IPFS community has been at the forefront of making content addressing practical and accessible. Today, thousands of projects build on it, from decentralized websites and scientific data repositories to verifiable archives and supply chains.
 
-The IPFS project started off from a more integrated full-stack approach including P2P networking but has gradually evolved into a suite of technologies that work well together but make sense independently from one another.
+The IPFS project began as an integrated full stack—content addressing, data formats, and peer-to-peer networking bundled together. Over time, it has evolved into a suite of technologies that work well together but also make sense independently.
+
+This post focuses on one pillar: **content addressing** — the building blocks that let you identify, verify, and link data by what it contains. These tools (IPLD, multiformats, CIDs) are network-agnostic: you can use them with peer-to-peer systems, client-server architectures, or anything in between. The other historic pillar of IPFS, peer-to-peer networking, is a story for a future post.
 
 ## Modularity
 
