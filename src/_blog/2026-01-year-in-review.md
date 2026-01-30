@@ -2,6 +2,7 @@
 title: "Content-Addressing: A Year In Review"
 description: "Let's take a look at what happened in content addressing in 2025 — it's a lot!"
 author: Robin Berjon
+canonicalUrl: https://ipfsfoundation.org/content-addressing-2025-in-review/
 date: 2026-01-15
 permalink: '/2026-01-year-in-review/'
 header_image: '/2026-01-sunrise-sea01.jpg'
