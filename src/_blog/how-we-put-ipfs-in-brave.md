@@ -4,6 +4,7 @@ permalink: '/2021-01-21-how-we-put-ipfs-in-brave/'
 translationKey: ''
 tags:
   - browsers
+  - brave
 header_image: '/2021-01-21-how-we-put-ipfs-in-brave.jpg'
 title: How we put IPFS in Brave
 description:

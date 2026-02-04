@@ -4,6 +4,71 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'Service Workers for IPFS on the Web'
+  date: 2025-05-21
+  publish_date: 2025-05-21T10:00:00+00:00
+  path: https://www.youtube.com/watch?v=qtIJXRgxjVA
+  tags:
+  - IPFS Deploy Action
+  - tutorial
+  - IPFS Gateway
+  - Service Worker Gateway
+  - dapps
+- title: 'Deploy Static Apps and Websites to IPFS with GitHub Actions'
+  date: 2025-04-04
+  publish_date: 2025-04-04T10:00:00+00:00
+  path: https://www.youtube.com/watch?v=ZRrPBqqFKFU
+  tags:
+  - IPFS Deploy Action
+  - tutorial
+  - guide
+  - dapps
+  - GitHub Actions
+- title: 'Debugging CID Retrievability With IPFS Check'
+  date: 2024-09-04
+  publish_date: 2024-09-04T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=XeNOQDOrdC0
+  tags:
+  - IPFS Check
+  - debugging
+  - tutorial
+  - guide
+- title: 'Built with IPFS - Mintter and The Hypermedia Protocol'
+  date: 2023-11-13
+  publish_date: 2023-11-13T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=K3U6A4sgKo4
+  tags:
+  - Built with IPFS
+  - demo
+  - interview
+  - deep-dive
+- title: 'This Month in IPFS - March 2023'
+  date: 2023-03-23
+  publish_date: 2023-03-23T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=_vn52temkDU
+  tags:
+  - This Month in IPFS
+  - community
+  - demo
+  - interview
+- title: 'This Month in IPFS - February 2023'
+  date: 2023-02-23
+  publish_date: 2023-02-23T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=Cflrlv31oW8
+  tags:
+  - This Month in IPFS
+  - community
+  - demo
+  - interview
+- title: 'This Month in IPFS - January 2023'
+  date: 2023-01-26
+  publish_date: 2023-02-06T12:00:00+00:00
+  path: https://www.youtube.com/watch?v=kRzNohHeRaM
+  tags:
+  - This Month in IPFS
+  - community
+  - demo
+  - interview
 - title: 'Meet the Web3 Builders: Pinata'
   date: 2021-07-26
   publish_date: 2021-07-26T12:00:00+00:00

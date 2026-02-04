@@ -37,7 +37,10 @@ export function loadScript() {
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
        })();`
 
-  document.body.appendChild(countlyScript)
+  // Countly was disabled in 2024Q1
+  // https://github.com/ipfs/ipfs-webui/issues/2198
+  // https://github.com/ipfs-shipyard/ignite-metrics/issues/133
+  // document.body.appendChild(countlyScript)
 }
 
 /*

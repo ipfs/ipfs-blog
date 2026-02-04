@@ -30,8 +30,8 @@ This blog entry intends to give an update on what is happening with IPFS develop
   - [Seize and Leverage New Browser-Friendly P2P Transports](#seize-and-leverage-new-browser-friendly-p2p-transports)
   - [Support Fully Speced Delegated Routing Protocols and Endpoints](#support-fully-speced-delegated-routing-protocols-and-endpoints)
   - [PL Delegate and Preload Nodes Will Be Shutting Down](#pl-delegate-and-preload-nodes-will-be-shutting-down)
-  - [Release Pomegranate in 2023](#release-pomegranate-in-2023)
-  - [Pause js-ipfs Maintenance Once Pomegrate Is Released](#pause-js-ipfs-maintenance-once-pomegrate-is-released)
+  - [Release Helia in 2023](#release-helia-in-2023)
+  - [Pause js-ipfs Maintenance Once Helia Is Released](#pause-js-ipfs-maintenance-once-helia-is-released)
   - [A New Name Is Coming](#a-new-name-is-coming)
   - [Doc Updates Galore](#doc-updates-galore)
 - [🗺 Timeline](#%F0%9F%97%BA-timeline)
@@ -42,11 +42,11 @@ This blog entry intends to give an update on what is happening with IPFS develop
 To help with this update, the following names and terms will be used to aid with clarity:
 
 - [Kubo](https://github.com/ipfs/kubo) – This project was formerly known as _go-ipfs_. See [here](https://github.com/ipfs/kubo/issues/8959) for more info.
-- [js-ipfs](https://github.com/ipfs/js-ipfs) - This is the long-standing IPFS implementation written in JS. As described below, we will be deprecating it after Pomegranate is released. We’re currently not planning to rename this implementation [like we did with Kubo](https://github.com/ipfs/ipfs/issues/470) given its limited lifespan.
-- [Pomegranate](https://github.com/ipfs/pomegranate) - This is a [to-be-created IPFS implementation in JS](https://github.com/ipfs/pomegranate/issues/2) that is discussed below. The final name is TBD (to be determined), and you can track the naming effort [here](https://github.com/ipfs/pomegranate/issues/3). While it will use many of the underlying libraries of js-ipfs (e.g., [js-libp2p](https://github.com/libp2p/js-libp2p), [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap)), it is a separate project with a different API.
-- IPFS-in-JS - This refers broadly to the development of IPFS using the JavaScript and TypeScript languages. It doesn’t mean the “js-ipfs” project or “Pomegranate”.
+- [js-ipfs](https://github.com/ipfs/js-ipfs) - This is the long-standing IPFS implementation written in JS. As described below, we will be deprecating it after Helia is released. We’re currently not planning to rename this implementation [like we did with Kubo](https://github.com/ipfs/ipfs/issues/470) given its limited lifespan.
+- [Helia](https://github.com/ipfs/Helia) - This is a [to-be-created IPFS implementation in JS](https://github.com/ipfs/helia/issues/2) that is discussed below. The final name is TBD (to be determined), and you can track the naming effort [here](https://github.com/ipfs/helia/issues/3). While it will use many of the underlying libraries of js-ipfs (e.g., [js-libp2p](https://github.com/libp2p/js-libp2p), [js-ipfs-bitswap](https://github.com/ipfs/js-ipfs-bitswap)), it is a separate project with a different API.
+- IPFS-in-JS - This refers broadly to the development of IPFS using the JavaScript and TypeScript languages. It doesn’t mean the “js-ipfs” project or “Helia”.
 - Delegate nodes - These are nodes that expose the [`/api/v0/dht/*` endpoints of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-dht-findpeer) for delegated routing. Because **js-ipfs** nodes don’t have the DHT enabled by default and wouldn’t make good DHT servers in browsers anyways, they need the help of **delegate** nodes to resolve DHT queries.
-- Preload nodes - These are nodes that expose the `/api/v1/refs` [endpoint of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-refs) which can be called so that the remote node will fetch CIDs (but not pin). This is necessary to ensure that blocks that are added in the browser are *preloaded* onto a long-running IPFS node so that it’s made available to the rest of the network. Preload nodes garbage collect those blocks after a period.
+- Preload nodes - These are nodes that expose the `/api/v0/refs` [endpoint of the Kubo RPC API](https://docs.ipfs.tech/reference/kubo/rpc/#api-v0-refs) which can be called so that the remote node will fetch CIDs (but not pin). This is necessary to ensure that blocks that are added in the browser are *preloaded* onto a long-running IPFS node so that it’s made available to the rest of the network. Preload nodes garbage collect those blocks after a period.
 
 ## ⏳ IPFS-in-JS Development History
 
@@ -158,7 +158,7 @@ We never had full compatibility between Kubo and js-ipfs, we don’t think we ca
 In practical terms, this translates to:
 
 1. ipfs-http-client will remain the RPC-over-HTTP API for controlling js-ipfs (you can also use ipfs-grpc-client over WebSockets). The current js-ipfs RPC APIs will be maintained until js-ipfs support ceases (discussed below).
-2. With investment in Pomegranate, a new RPC API for Pomegranate will emerge.
+2. With investment in Helia, a new RPC API for Helia will emerge.
 3. We won’t test that ipfs-http-client has compatibility with recent versions of Kubo.
 4. If you want to control a Kubo node via JS, use the Kubo-specific library [js-kubo-rpc-client](https://github.com/ipfs/js-kubo-rpc-client) (api).
 
@@ -174,24 +174,24 @@ We’ll lean into realizing these breakthroughs and remove the more convoluted m
 
 ### Support Fully Speced Delegated Routing Protocols and Endpoints
 
-While it will be possible from a connectivity perspective to make DHT queries from a browser, we expect various applications will want to still delegate out routing. [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) is a protocol for delegated routing that other IPFS implementations like Kubo have implemented. While it currently uses HTTP as a transport, it is speced and not tied to the Kubo RPC API. If/when there is a speced protocol for ambient discovery of “Limited Delegated Routers” provided by libp2p, we will support that as well.
+While it will be possible from a connectivity perspective to make DHT queries from a browser, we expect various applications will want to still delegate out routing. <del>[Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/)</del> [HTTP Routing V1](https://specs.ipfs.tech/routing/http-routing-v1/) is a protocol for delegated routing that other IPFS implementations like Kubo have implemented. While it currently uses HTTP as a transport, it is [speced](https://specs.ipfs.tech/routing/http-routing-v1/) and not tied to the Kubo RPC API. If/when there is a speced protocol for ambient discovery of “Limited Delegated Routers” provided by libp2p, we will support that as well.
 
 ### PL Delegate and Preload Nodes Will Be Shutting Down
 
 Given the new browser-friendly p2p transports discussed above, we’ll shut down the complicated “song-and-dance” with the legacy delegate/preload nodes and the Kubo RPC API described in [js-ipfs in a Browser context](#js-ipfs-in-a-browser-context). This yields a simpler setup for one’s application and removes centralized infrastructure.
 
-For delegated routing, one can configure [Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
+For delegated routing, one can configure [`/routing/v1`](https://specs.ipfs.tech/routing/http-routing-v1/) endpoints. When it comes to providing content from a browser node, it will be up to developers to account for user behavior like closing tabs or laptop lids. The general recommendation is to either run your own preload node or upload content explicitly to a pinning service for providing.
 
-### Release Pomegranate in 2023
+### Release Helia in 2023
 
-Pomegranate is the to-be-developed IPFS implementation with all that we’ve learned over the last 8 years while leveraging what is available to us in JS runtime.
+Helia is the to-be-developed IPFS implementation with all that we’ve learned over the last 8 years while leveraging what is available to us in JS runtime.
 
 Some defining attributes include:
 
 1. Web-first isomorphic API - run in browsers, electron, node, deno, bun, etc - no node.js APIs, only standard JavaScript (e.g. web streams, not node streams, Uint8Arrays not Buffers). Node APIs will only be considered for special cases like mDNS.
-2. Leaner API not tied to the legacy “core API” concept - Pomegranate will not have API compatibility with js-ipfs. It will expose a more ergonomic JS-developer-first API than what we have with the js-ipfs “core API” that was heavily influenced by Kubo. (One can also create an adapter from the “core API” to Pomegranate’s API if they want to drop Pomegranate to their existing application using js-ipfs’ ipfs-core.)
+2. Leaner API not tied to the legacy “core API” concept - Helia will not have API compatibility with js-ipfs. It will expose a more ergonomic JS-developer-first API than what we have with the js-ipfs “core API” that was heavily influenced by Kubo. (One can also create an adapter from the “core API” to Helia’s API if they want to drop Helia to their existing application using js-ipfs’ ipfs-core.)
 3. ESM and TypeScript only - There’s no more debate on the utility of these for JS development. We’ll adopt them from day one.
-4. Leverage existing interplanetary libraries - While we’re moving away from the interface and composition in js-ipfs, we’re not abandoning the underlying layers like js-libp2p, js-bitswap, etc. Those libraries have received a lot of maintenance attention in the last 18 months (including TypeScript and ESM updates) and are battle-tested in production. We will depend on them in Pomegranate as well.
+4. Leverage existing interplanetary libraries - While we’re moving away from the interface and composition in js-ipfs, we’re not abandoning the underlying layers like js-libp2p, js-bitswap, etc. Those libraries have received a lot of maintenance attention in the last 18 months (including TypeScript and ESM updates) and are battle-tested in production. We will depend on them in Helia as well.
 5. Unified file API - high-level commands that act like a filesystem and return CIDs. For example:
 
    ```jsx
@@ -205,32 +205,34 @@ Some defining attributes include:
    ```
 
 6. Expose a block API for low-level IPLD operations.
-7. Focus on the browser use case - We won’t do anything that precludes operating in NodeJS or a cloud service worker, but by default, we will prioritize delivery paths that deliver browser functionality sooner. This is because the browser runtime is the unique runtime the Pomegranate IPFS implementation can enable that other implementations can’t. As a result, it means there aren’t plans to invest in things like a JS implementation of the HTTP Gateway spec. We’ll let other implementations like Kubo, Iroh, etc. pursue that use case.
-8. Enable configurable levels of delegation. With routing, retrieval, and providing there will be varying levels of delegating from none (all handled by the local Pomegranate node) to full (all handled by [HTTP Gateways](https://docs.ipfs.tech/reference/http/gateway/) and [Pinning Services](https://docs.ipfs.tech/how-to/work-with-pinning-services)).
+7. Focus on the browser use case - We won’t do anything that precludes operating in NodeJS or a cloud service worker, but by default, we will prioritize delivery paths that deliver browser functionality sooner. This is because the browser runtime is the unique runtime the Helia IPFS implementation can enable that other implementations can’t. As a result, it means there aren’t plans to invest in things like a JS implementation of the HTTP Gateway spec. We’ll let other implementations like Kubo, Iroh, etc. pursue that use case.
+8. Enable configurable levels of delegation. With routing, retrieval, and providing there will be varying levels of delegating from none (all handled by the local Helia node) to full (all handled by [HTTP Gateways](https://docs.ipfs.tech/reference/http/gateway/) and [Pinning Services](https://docs.ipfs.tech/how-to/work-with-pinning-services)).
 
-### Pause js-ipfs Maintenance Once Pomegrate Is Released
+### Pause js-ipfs Maintenance Once Helia Is Released
 
-Shortly after you can add and cat files across the network with Pomegranate, [PL EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) will cease maintenance on js-ipfs. In the absence of an established group with a credible track record to take js-ipfs over, the community is welcome to fork js-ipfs and maintain the fork. (We want to avoid issues that can occur with casually giving away publishing rights.)
+Shortly after you can add and cat files across the network with Helia, [PL EngRes](https://pl-strflt.notion.site/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) will cease maintenance on js-ipfs. In the absence of an established group with a credible track record to take js-ipfs over, the community is welcome to fork js-ipfs and maintain the fork. (We want to avoid issues that can occur with casually giving away publishing rights.)
 
-As discussed before, **we are not** ceasing support and development of many of the libraries that js-ipfs depends on like js-libp2p and js-bitswap. These projects will be actively maintained as core dependencies to Pomegranate and other projects.
+As discussed before, **we are not** ceasing support and development of many of the libraries that js-ipfs depends on like js-libp2p and js-bitswap. These projects will be actively maintained as core dependencies to Helia and other projects.
 
 ### A New Name Is Coming
 
-As outlined [here](https://github.com/ipfs/ipfs/issues/470), Protocol Labs wants to make space for additional IPFS implementations to be made, including in JS. We want to make it clear that js-ipfs is not IPFS and that js-ipfs is not **_the_** IPFS implementation in JS. go-ipfs successfully made this transition earlier in 2022 with its [minimal rename to Kubo](https://github.com/ipfs/kubo/issues/8959). We will certainly not make the same name-squatting mistake with a new implementation like Pomegranate. Details and plans will be shared [here](https://github.com/ipfs/ipfs/issues/470) and in the [IPFS forums](https://discuss.ipfs.tech).
+As outlined [here](https://github.com/ipfs/ipfs/issues/470), Protocol Labs wants to make space for additional IPFS implementations to be made, including in JS. We want to make it clear that js-ipfs is not IPFS and that js-ipfs is not **_the_** IPFS implementation in JS. go-ipfs successfully made this transition earlier in 2022 with its [minimal rename to Kubo](https://github.com/ipfs/kubo/issues/8959). We will certainly not make the same name-squatting mistake with a new implementation like Helia. Details and plans will be shared [here](https://github.com/ipfs/ipfs/issues/470) and in the [IPFS forums](https://discuss.ipfs.tech).
 
 ### Doc Updates Galore
 
-From [dedicated websites](https://js.ipfs.tech/), [examples](https://github.com/ipfs-examples/js-ipfs-examples), to [official docs](https://docs.ipfs.tech/reference/js/api/), and [courses](https://proto.school/course/ipfs), many places will need updating in light of new names and implementations. This is going to be a sizable undertaking that hasn’t been scoped out yet. This will be tracked [here](https://github.com/ipfs/pomegranate/issues/4).
+From [dedicated websites](https://js.ipfs.tech/), [examples](https://github.com/ipfs-examples/js-ipfs-examples), to [official docs](https://docs.ipfs.tech/reference/js/api/), and [courses](https://proto.school/course/ipfs), many places will need updating in light of new names and implementations. This is going to be a sizable undertaking that hasn’t been scoped out yet. This will be tracked [here](https://github.com/ipfs/Helia/issues/4).
 
 ## 🗺 Timeline
 
-The timeline for enacting all of the above is still actively being figured out. We’ll be updating the [proposed roadmap](https://github.com/ipfs/pomegranate/blob/main/ROADMAP.md).
+The timeline for enacting all of the above is still actively being figured out. We’ll be updating the [proposed roadmap](https://github.com/ipfs/Helia/blob/main/ROADMAP.md).
 
 ## 🤝 Ways You Can Help
 
-1. 🗳 Propose a [name for the new “Pomegranate” JS library](https://github.com/ipfs/pomegranate/issues/3) and cast your votes.
-2. 🗣 Give feedback on the [Pomegranate roadmap](https://github.com/ipfs/pomegranate/issues/5). Let us know how you’re using js-ipfs now so we can see if/how your use case would be supported with Pomegranate in the future.
-3. 🫂 Join the team - we’re hiring and need more JavaScript and TypeScript developers who are eager to make the vision above a reality. It’s ideal if you have experience working at the protocol/bytes/streams level. Please learn more [here](https://github.com/ipfs/pomegranate/issues/6).
+1. 🗳 Propose a [name for the new “Helia” JS library](https://github.com/ipfs/Helia/issues/3) and cast your votes.
+2. 🗣 Give feedback on the [Helia roadmap](https://github.com/ipfs/Helia/issues/5). Let us know how you’re using js-ipfs now so we can see if/how your use case would be supported with Helia in the future.
+3. 🫂 Join the team - we’re hiring and need more JavaScript and TypeScript developers who are eager to make the vision above a reality. It’s ideal if you have experience working at the protocol/bytes/streams level. Please learn more [here](https://github.com/ipfs/Helia/issues/6).
 4. ✋ Contribute - Open source contributors welcome. Have a great idea and need some funding? Consider a [grant request](https://github.com/ipfs/devgrants).
 
 Thank you for reading and being on this journey to make IPFS exceptional in JS runtimes!
+
+> Note: An earlier version of this blog post referred to Helia as Pomegranate. The blog post has been updated to reflect the name [chosen by the community.](https://github.com/ipfs/Helia/issues/3#issuecomment-1344434531)

@@ -19,7 +19,14 @@
         :block-lazy-load="blockLazyLoad"
       />
       <div
-        class="grid-margins pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        class="
+          grid-margins
+          pt-8
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-8
+        "
         itemscope
         itemtype="http://schema.org/Blog"
       >
@@ -37,7 +44,17 @@
         class="flex justify-center mt-8 pb-4"
       >
         <button
-          class="px-3 py-2 text-white text-xl bg-blueGreen font-semibold rounded hover:bg-blueGreenScreen transition duration-300"
+          class="
+            px-3
+            py-2
+            text-white text-xl
+            bg-blueGreen
+            font-semibold
+            rounded
+            hover:bg-blueGreenScreen
+            transition
+            duration-300
+          "
           @click="handleLoadMoreClick"
         >
           Load More
@@ -327,7 +344,7 @@ export default {
         (item) =>
           item.frontmatter &&
           item.frontmatter.tags &&
-          item.frontmatter.tags.find((tag) => tag.name === 'weekly')
+          item.frontmatter.tags.find((tag) => tag.name === 'newsletter')
       )
       .sort(
         (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)

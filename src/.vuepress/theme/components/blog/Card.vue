@@ -39,6 +39,7 @@ export default {
         case 'News coverage':
         case 'Release notes':
         case 'Tutorial':
+        case 'Ecosystem content':
         case 'Video':
           return LinkCard
 

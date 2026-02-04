@@ -4,6 +4,39 @@ type: News coverage
 sitemap:
   exclude: true
 data:
+- title: Cloudflare’s public IPFS gateways and supporting Interplanetary Shipyard
+  date: 2024-05-14
+  publish_date: 
+  path: https://blog.cloudflare.com/cloudflares-public-ipfs-gateways-and-supporting-interplanetary-shipyard
+  tags:
+  - Cloudflare
+  - IPFS
+  - gateway
+  - IPShipyard
+- title: Filecoin Foundation Successfully Deploys IPFS in Space
+  date: 2024-01-16
+  publish_date: 
+  path: https://fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/
+  tags:
+  - space
+  - IPFS
+  - satellite
+- title: Advancing IPFS and libp2p Governance
+  date: 2023-11-14
+  publish_date: 
+  path: https://protocol.ai/blog/advancing-ipfs-and-libp2p-governance/
+  tags:
+  - IPFS
+  - libp2p
+  - governance
+- title: Brave announces automatic NFT backups and enhanced IPFS/Filecoin support in Brave Wallet
+  date: 2023-05-02
+  publish_date: 
+  path: https://brave.com/nft-pinning/
+  tags:
+  - NFTs
+  - Brave
+  - pinning
 - title: WebTransport in libp2p
   date: 2022-12-19
   publish_date: 

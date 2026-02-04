@@ -1,0 +1,57 @@
+---
+title: The Static Website Manifesto
+description: 'Building websites used to be fun. Let’s bring back the joy of putting your work online by using open protocols like IPFS.'
+author: Justin Hunter
+date: 2025-03-06
+permalink: '/2025-03-static-web-manifesto/'
+header_image: '/static-website-manifesto-header.png'
+canonicalUrl: https://orbiter.host/blog/the-static-website-manifesto
+tags:
+  - 'community'
+---
+_This article originally appeared on [Orbiter's blog](https://orbiter.host/blog/the-static-website-manifesto)_
+
+Building websites used to be fun. Let’s bring back the joy of putting your work online. This is our manifesto. Orbiter is built on IPFS using [IPCM](https://ipcm.dev) to map sites to Base smart contracts.
+
+## Why IPFS
+
+Websites are open and accessible for anyone. They are the perfect match for IPFS. IPFS is a peer-to-peer storage protocol that allows anyone to access a piece of content as long as they know the content identifier (CID) and there's an online node providing the data. This is a perfect match for the open web. It creates a level of availability not possible with traditional website file storage. 
+
+Additionally, because IPFS is content-addressed, that means each cid references a specific _version_ of a site. This created a built-in versioning system, similar to what you get when you explore the Wayback Machine. 
+
+Orbiter uses IPFS behind the scenes and integrates these concepts seamlessly for people hosting websites on the platform. But beyond that, Orbiter uses these concepts to make the web fun again.
+
+## Bringing Back the Fun of the Web
+
+Remember when putting a website online was as simple as uploading some files? The web used to be a playground for everyone to explore. Sure, there were technical hurdles - services like Geocities and Angelfire or uploading HTML using FTP. While FTP had its problems, it offered a straightforward path to launching a site you owned and controlled.
+
+![geocities](../assets/geocities_old_web.png)
+
+## How We Lost Our Way
+
+Today's web is increasingly locked behind walled gardens. Social media has replaced the individual blogs and personal websites that flourished a decade ago. While changing preferences play a role, convenience is the real culprit. It's far easier to post on Facebook or Twitter than to wrangle with modern web development tools, complex deployment processes, and the challenge of finding an audience.
+
+## The Problem with Modern Web Development
+
+Launching a website today isn't fun anymore. While we have powerful tools at our disposal with incredible capabilities, they come at the cost of simplicity. The basic web stack - HTML for structure, CSS for style, and a sprinkle of JavaScript for interactivity - still works perfectly well. Yet much of web development has shifted toward complex frameworks that can make building even simple sites feel like a chore.
+
+Who wants to wait 80 seconds for their code to build into a deployable package? The modern expectation is that you'll use source control, host your code on GitHub, and implement a full deployment pipeline. These tools are valuable for many projects, but they're overkill for many websites. Sometimes, you just want to take your folder of HTML files, upload them, and call it a day.
+
+## A Return to Simplicity
+
+This philosophy doesn't just apply to personal websites. Static web applications could benefit from returning to the web's simpler roots. A static web app is just a website with more JavaScript - we don't need to complicate it further. While larger projects might benefit from source control and automated deployments, the process should be flexible. Want to use CI/CD and other modern tools? Great! Prefer to simply upload files? That works too.
+
+## Introducing Orbiter
+
+As server-side rendering gains popularity, we're taking a stand for static sites. Orbiter is here for:
+
+*   The people building websites that don't need servers
+*   The developers tired of waiting minutes for builds when they could have a working site in seconds
+*   The web designers writing their first HTML
+*   The marketers moving from WordPress to simple static HTML
+*   The developers creating their own static site generators
+*   Anyone who wants to share their work on the web
+
+Don't feel like learning complex deployment processes? No problem. Orbiter gives you the freedom to work the way you want. We've built the simplest static site hosting platform on the web because we believe in making the web flexible, fun, and fast again.
+
+Ready to make web hosting fun again? [Join us at Orbiter and put your website online in seconds](https://app.orbiter.host?ref=blog).

@@ -35,12 +35,13 @@ export default {
     window.DiscourseEmbed = {
       discourseUrl: 'https://discuss.ipfs.tech/',
       discourseEmbedUrl: safePermalink(this.$frontmatter.permalink, this.$frontmatter.date),
+      discourseReferrerPolicy: 'strict-origin-when-cross-origin', // https://meta.discourse.org/t/embed-discourse-comments-on-another-website-via-javascript/31963#setting-the-referrer-policy-7
     }
     const d = document.createElement('script')
     d.type = 'text/javascript'
     d.async = true
     d.src = window.DiscourseEmbed.discourseUrl + 'javascripts/embed.js'
-    document.getElementsByTagName('body')[0].appendChild(d)
+    ;(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d)
   },
 }
 </script>

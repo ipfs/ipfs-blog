@@ -23,7 +23,7 @@ Today, only a few companies are responsible for serving up most of the web. Thes
 ## **Brand New on IPFS ✨**
 
 1. The IPFS GUI working group is looking to improve the experience on the [**Public Gateway Checker**](https://ipfs.github.io/public-gateway-checker/). [**Book some time**](http://calendly/) to let us know your thoughts and get a swag redemption code.
-2. The new [**Kubo v0.16.0**](https://github.com/ipfs/kubo/releases/tag/v0.16.0) is now live. The release supports a more configurable delegated routing system with [**Reframe protocol**](https://github.com/ipfs/specs/tree/main/reframe#readme). [**See for yourself**](https://github.com/ipfs/kubo/releases/tag/v0.16.0).
+2. The new [**Kubo v0.16.0**](https://github.com/ipfs/kubo/releases/tag/v0.16.0) is now live. The release supports a more configurable experimental delegated routing system. [**See for yourself**](https://github.com/ipfs/kubo/releases/tag/v0.16.0).
 3. Check out [**Capyloon**](https://capyloon.org/), a web-based smartphone OS with a built-in IPFS Rust implementation.
 4. [**Fission**](https://fission.codes/) added a new feature to its SDK called WalletAuth that enables IPFS encrypted storage for any blockchain account. Learn more in this [**thread**](https://twitter.com/FISSIONcodes/status/1573092516873781248).
 

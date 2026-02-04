@@ -8,3 +8,7 @@
     }
   }
 }
+
+.type-rich {
+  @apply text-18
+}
