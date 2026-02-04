@@ -2,6 +2,7 @@
 title: "Content-Addressing: A Year In Review"
 description: "Let's take a look at what happened in content addressing in 2025 — it's a lot!"
 author: Robin Berjon
+canonicalUrl: https://ipfsfoundation.org/content-addressing-2025-in-review/
 date: 2026-01-15
 permalink: '/2026-01-year-in-review/'
 header_image: '/2026-01-sunrise-sea01.jpg'
@@ -35,7 +36,7 @@ We hold monthly virtual meetings for the content addressing community, alternati
 
 One of the joys of working on a truly open ecosystem is that you get genuine surprises. In July a new IPFS client, identifying itself as P2Pd and written in Python, that none of us had ever heard about launched and within only a few days skyrocketed to power 15% of the IPFS public network (Amino), now stabilizing near 10%.	
 
-Also within the Python community, growing number of geospatial projects have been using IPFS and contributing new tooling. One example is the [ORCESTRA Campaign](https://orcestra-campaign.org/intro.html), an international field study of tropical convection over the Atlantic Ocean. It generated large volumes of observational data from aircraft, ships, and ground stations to study how tropical storms form and organize. ORCESTRA chose IPFS as their distributed storage layer to make datasets immediately accessible, verifiable, and resilient to single points of failure — addressing pain points from previous field campaigns where centralized systems were too slow for day-to-day scientific work. [ipfsspec](https://pypi.org/project/ipfsspec/) brings IPFS into the Python data science ecosystem by implementing the [fsspec](https://filesystem-spec.readthedocs.io/) interface, the same abstraction layer used by xarray, pandas, Dask, and Zarr for remote data access.
+Also within the Python community, growing number of geospatial projects have been using IPFS and contributing new tooling. One example is the [ORCESTRA Campaign](https://orcestra-campaign.org/intro.html), an international field study of tropical convection over the Atlantic Ocean. It generated large volumes of observational data from aircraft, ships, and ground stations to study how tropical storms form and organize. ORCESTRA chose IPFS as their distributed storage layer to make datasets immediately accessible, verifiable, and resilient to single points of failure — addressing pain points from previous field campaigns where centralized systems were too slow for day-to-day scientific work. [ipfsspec](https://pypi.org/project/ipfsspec/) brings verified IPFS retrieval to the Python data science ecosystem by implementing the [fsspec](https://filesystem-spec.readthedocs.io/) interface, the same abstraction layer used by xarray, pandas, Dask, and Zarr for remote data access. 
 
 The University of Maryland’s EASIER (Efficient, Accessible, and Sustainable Infrastructure for Extracting Reliable) Data Initiative has also released [ipfs-stac](https://pypi.org/project/ipfs-stac/) v0.2.0, a pivotal tool for onboarding and interfacing with geospatial data via [STAC](https://stacspec.org/en) APIs on IPFS.
 
