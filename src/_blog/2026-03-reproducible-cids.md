@@ -4,6 +4,7 @@ description: "IPIP-0499 makes IPFS CIDs deterministic and consistent across all 
 author: Michelle Lee
 date: 2026-03-09
 permalink: '/2026-03-reproducible-cids/'
+canonicalUrl: https://ipfsfoundation.org/ipip-0499-updating-ipfs-standards-for-consistent-reproducible-cids/
 header_image: '/2026-03-muted-teal-grid.png'
 tags:
   - ipfs
