@@ -18,7 +18,7 @@ _Cross-posted from the [IPFS Foundation blog](https://ipfsfoundation.org/ipip-04
 
 If you've worked with IPFS, you know that a content identifier (CID) is supposed to be a fingerprint for your data: feed in the same data, get the same CID. In practice, that hasn't been true. The same file or directory uploaded with [Kubo](https://github.com/ipfs/kubo), [Helia](https://github.com/ipfs/helia), or [Singularity](https://github.com/data-preservation-programs/singularity) could produce three different CIDs, because each tool uses different settings for how to split files into chunks, how wide to build the internal DAG tree, and when to switch to a HAMT structure for large directories.
 
-To fix this, [IPIP-0499](http://specs.ipfs.tech/ipips/ipip-0499) has been merged into the IPFS specification. It introduces two named configuration profiles — `unixfs-v1-2025` and `unixfs-v0-2015` — each defining a complete set of DAG construction parameters.
+To fix this, [IPIP-0499](https://specs.ipfs.tech/ipips/ipip-0499) has been merged into the IPFS specification. It introduces two named configuration profiles — `unixfs-v1-2025` and `unixfs-v0-2015` — each defining a complete set of DAG construction parameters.
 
 ### Benefits: Predictable CIDs, Faster Verification
 
