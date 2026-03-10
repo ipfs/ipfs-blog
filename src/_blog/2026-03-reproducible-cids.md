@@ -22,7 +22,7 @@ To fix this, [IPIP-0499](http://specs.ipfs.tech/ipips/ipip-0499) has been merged
 
 ### Benefits: Predictable CIDs, Faster Verification
 
-The most immediate benefit is that CIDs are now deterministic. Previously, comparing two CIDs for "the same file" could return a false negative simply because the tools that created them used different chunk sizes or DAG widths. With this update, identical input processed by any (conforming) implementation will always produce the same CID. That's the behavior most developers intuitively expect, and it's what makes content-addressing useful as a verification primitive.
+The most immediate benefit is that CIDs are now deterministic. Previously, comparing two CIDs for "the same file" could return a false negative simply because the tools that created them used different chunk sizes or DAG widths. With this update, identical input processed by any implementation conforming to the same profile will always produce the same CID. That's the behavior most developers intuitively expect, and it's what makes content-addressing useful as a verification primitive.
 
 A second major gain is verification efficiency. Without profile guarantees, confirming that two CIDs represent the same content requires fetching the underlying data and computing and comparing their Merkle DAGs. With deterministic CIDs, you can compare the CIDs directly without fetching the data itself. This matters especially at scale.
 
