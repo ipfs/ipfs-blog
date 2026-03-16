@@ -28,9 +28,17 @@ A second major gain is verification efficiency. Without profile guarantees, conf
 
 Finally, `unixfs-v1-2025` is a more performant default. Switching from 256 KiB chunks to 1 MiB, and from 174 to 1024 links per DAG node, produces shallower trees: a 1 TiB file requires 3 levels of DAG traversal instead of 4, with roughly 4x fewer total nodes. That translates to faster random access and seeking in large files, and fewer CIDs being announced to public routing infrastructure like the Amino DHT.
 
+### Guidance for Implementers
+
+- Implementations *MUST* support the `unixfs-v1-2025` profile.
+- The legacy `unixfs-v0-2015` profile is provided for backward compatibility and *MAY* be supported by implementations that need to produce CIDs matching historical Kubo output.
+- Implementations *SHOULD* allow users to inspect default values and adjust configuration options related to CID generation.
+
+You can read the full specification, including detailed parameter comparison tables, at [specs.ipfs.tech/ipips/ipip-0499](https://specs.ipfs.tech/ipips/ipip-0499/).
+
 ### Current Implementation Support
 
-IPIP-499 is now supported across many implementations in Go ([kubo 0.40](https://github.com/ipfs/kubo/releases/tag/v0.40.0), [boxo 0.37](https://github.com/ipfs/boxo/releases/tag/v0.37.0), [go-ipfs-cmds 0.16](https://github.com/ipfs/go-ipfs-cmds/releases/tag/v0.16.0)) and JS ([helia/unixfs 7.0.3](https://www.npmjs.com/package/@helia/unixfs), [ipfs-unixfs-importer 16.1.1](https://github.com/ipfs/js-ipfs-unixfs/releases/tag/ipfs-unixfs-importer-16.1.1)). You can read the full specification, including detailed parameter comparison tables, at [specs.ipfs.tech/ipips/ipip-0499](https://specs.ipfs.tech/ipips/ipip-0499/).
+IPIP-499 is now supported across many implementations in Go ([kubo 0.40](https://github.com/ipfs/kubo/releases/tag/v0.40.0), [boxo 0.37](https://github.com/ipfs/boxo/releases/tag/v0.37.0), [go-ipfs-cmds 0.16](https://github.com/ipfs/go-ipfs-cmds/releases/tag/v0.16.0)) and JS ([helia/unixfs 7.0.3](https://www.npmjs.com/package/@helia/unixfs), [ipfs-unixfs-importer 16.1.1](https://github.com/ipfs/js-ipfs-unixfs/releases/tag/ipfs-unixfs-importer-16.1.1)).
 
 ### Acknowledgements
 
