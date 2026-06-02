@@ -4,6 +4,15 @@ type: Video
 sitemap:
   exclude: true
 data:
+- title: 'Securing 800,000 Messages a Month For Swiss Healthcare with IPFS'
+  date: 2026-05-29
+  publish_date: 2025-05-29T10:00:00+00:00
+  path: https://youtube.com/watch?v=uHFmRsRrjro
+  tags:
+  - Built with IPFS
+  - interview
+  - case-study
+  - deep-dive
 - title: 'Service Workers for IPFS on the Web'
   date: 2025-05-21
   publish_date: 2025-05-21T10:00:00+00:00
