@@ -43,6 +43,10 @@
   line-height: 32px;
 }
 
+.custom-block.callout p + p {
+  margin-top: 1rem;
+}
+
 
 .custom-block.right {
 	float: right;

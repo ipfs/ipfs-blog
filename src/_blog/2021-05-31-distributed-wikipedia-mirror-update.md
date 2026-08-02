@@ -11,6 +11,18 @@ tags:
 - censorship
 
 ---
+::: callout
+
+**This is a historical post from 2021.** The [ipfs/distributed-wikipedia-mirror](https://github.com/ipfs/distributed-wikipedia-mirror#readme) repo is archived, and the last snapshots were published in 2022. Its README explains why.
+
+Those snapshots stay online for as long as people co-host them, but nothing here is maintained. The domains and links below may no longer work, and the open problems at the end are not being worked on. Use the Kiwix stack instead.
+
+**To read Wikipedia offline today, use [Kiwix](https://www.kiwix.org/en/download/)** with a ZIM archive from [download.kiwix.org](https://download.kiwix.org/zim/wikipedia/), or open one in your browser with [kiwix-js](https://pwa.kiwix.org/). Those archives are rebuilt regularly and cover every language.
+
+Kiwix is a non-profit that runs on donations, so if offline access matters to you, [support their work](https://www.kiwix.org/en/donate/).
+
+:::
+
 * [Distributed Wikipedia Mirror](https://github.com/ipfs/distributed-wikipedia-mirror#readme) and [Kiwix](https://kiwix.org/) projects are happy to the announce **general availability** of **updated** [English](https://en.wikipedia-on-ipfs.org/) and [Turkish](https://tr.wikipedia-on-ipfs.org) mirrors, along with **new languages**: [Myanmar](https://my.wikipedia-on-ipfs.org/), [Arabic](https://ar.wikipedia-on-ipfs.org), [Chinese](https://zh.wikipedia-on-ipfs.org) and [Russian](https://ru.wikipedia-on-ipfs.org).
 * A handy, up-to-date list can be found at [ipfs.kiwix.org](https://ipfs.kiwix.org), and in the [`snapshot-hashes.yml`](https://github.com/ipfs/distributed-wikipedia-mirror/blob/main/snapshot-hashes.yml  "snapshot-hashes.yml") manifest.
 * The idea of a distributed Wikipedia mirror goes back to 2017, when the IPFS Project created a snapshot of English and Turkish languages and put it on IPFS.  To learn why we did it, please read the original [Uncensorable Wikipedia on IPFS](https://blog.ipfs.tech/24-uncensorable-wikipedia/) post.
@@ -95,7 +107,7 @@ We don't have a web-based reader of ZIM archives (yet – more in the next secti
 3. Import snapshot to IPFS
 4. Include original ZIM inside of unpacked IPFS snapshot
 
-While this works, the need for unpacking and customizing the snapshot makes it difficult to reliably produce updates. And including the original ZIM for use with [Kiwix offline reader](https://www.kiwix.org/en/kiwix-reader), partially duplicates the data.
+While this works, the need for unpacking and customizing the snapshot makes it difficult to reliably produce updates. And including the original ZIM for use with [Kiwix offline reader](https://www.kiwix.org/en/download/), partially duplicates the data.
 
 We would love to mirror more languages, and increase the update cadence, but for that to happen we need to remove the need for unpacking ZIM archives. 
 

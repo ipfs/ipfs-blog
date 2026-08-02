@@ -8,7 +8,17 @@ tags:
 - censorship
 
 ---
-_**UPDATE:** There are now [multiple language versions of Wikipedia on IPFS](https://github.com/ipfs/distributed-wikipedia-mirror#readme) in addition to the Turkish verison described below. You can find the latest hashes for all of our Wikipedia snapshots in [this YAML file](https://github.com/ipfs/distributed-wikipedia-mirror/blob/master/snapshot-hashes.yml)_
+::: callout
+
+**This is a historical post from 2017.** The [ipfs/distributed-wikipedia-mirror](https://github.com/ipfs/distributed-wikipedia-mirror#readme) repo is archived, and the last snapshots were published in 2022. Its README explains why.
+
+Those snapshots stay online for as long as people co-host them, but nothing here is maintained, and some links below no longer work.
+
+**To read Wikipedia offline today, use [Kiwix](https://www.kiwix.org/en/download/)** with a ZIM archive from [download.kiwix.org](https://download.kiwix.org/zim/wikipedia/), or open one in your browser with [kiwix-js](https://pwa.kiwix.org/). Those archives are rebuilt regularly and cover every language.
+
+Kiwix is a non-profit that runs on donations, so if offline access matters to you, [support their work](https://www.kiwix.org/en/donate/).
+
+:::
 
 > There is more than one way to burn a book. And the world is full of people running about with lit matches.
 > \-- Ray Bradbury, Fahrenheit 451
