@@ -7,6 +7,11 @@ tags:
 - brave
 - browsers
 ---
+::: callout
+
+**This describes a feature that no longer exists.** Brave [removed its built-in IPFS node](https://github.com/brave/brave-browser/issues/37735) in August 2024. If you still have data in Brave's node, the [migration guide](https://blog.ipfs.tech/2024-brave-migration-guide/) walks through moving it to IPFS Desktop without losing anything.
+
+:::
 
 We’re excited to share a new IPFS-related feature that appears in the most recent version of [Brave’s web browser](https://brave.com/). A new IPFS Infobar will appear at the top of the browser when you visit an IPFS compatible resource such as a [CID on a public gateway](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#http-gateways)  or a website with a [DNSLink](https://docs.ipfs.tech/concepts/dnslink/). 
 

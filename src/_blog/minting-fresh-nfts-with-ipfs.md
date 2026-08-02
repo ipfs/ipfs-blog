@@ -12,6 +12,14 @@ tags:
 - NFTs
 
 ---
+::: callout
+
+**Heads up: the tools this guide relies on are no longer around.** `nftschool.dev` is offline, and the Minty walkthrough it links to has been retired from the IPFS docs.
+
+Content addressing works the same way it did then, so the concepts still carry over. To keep data available, [run your own IPFS node](https://docs.ipfs.tech/how-to/replace-public-gateways-with-self-hosted-ipfs/). It is the only way to be sure your data is still there in a few months.
+
+:::
+
 _The following is a summary of a talk given by Yusef Napora, Researcher at Protocol Labs._ [_Watch the full recording here._](https://www.youtube.com/watch?v=WNukgBtlWeU)
 
 @[youtube](WNukgBtlWeU)

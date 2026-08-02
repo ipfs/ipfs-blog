@@ -14,6 +14,14 @@ tags:
 - NFTs
 
 ---
+::: callout
+
+**Heads up: the service this post is built around no longer takes new uploads.** Classic NFT.Storage stopped accepting them in July 2024, and the migration path it pointed to (web3.storage, later Storacha) has since wound down as well.
+
+If you have data stored this way, keep your own copy. [Running your own IPFS node](https://docs.ipfs.tech/how-to/replace-public-gateways-with-self-hosted-ipfs/) is the only way to be sure it is still there in a few months.
+
+:::
+
 There are two fundamental problems facing the sustainability of content on the internet: addressing and persistence.
 
 _Addressing_ refers to the way in which internet users can find the content that they’re looking for online. Today, the Web leans into location addressing, or finding content by where it is located, as opposed to content addressing, which allows network participants to confidently and consistently ensure their content does not change over time without a clear record of that change. _Persistence_ refers to the ability of those network participants to continue accessing content in perpetuity, without worries of the content disappearing or becoming unavailable for any reason.

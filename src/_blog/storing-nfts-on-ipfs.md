@@ -11,6 +11,14 @@ translationKey: ''
 header_image: "/128-nft-header.png"
 
 ---
+::: callout
+
+**Heads up: the tools this guide relies on are no longer around.** `nftschool.dev` is offline, and the Minty walkthrough it links to has been retired from the IPFS docs.
+
+Content addressing works the same way it did then, so the concepts still carry over. To keep data available, [run your own IPFS node](https://docs.ipfs.tech/how-to/replace-public-gateways-with-self-hosted-ipfs/). It is the only way to be sure your data is still there in a few months.
+
+:::
+
 Permanence and immutability are part of the core value proposition of a non-fungible token (NFT). Unfortunately, many NFTs being targeted at consumers today offer neither of these properties due to fundamental design flaws. It is common to hear claims that NFTs “live on a blockchain forever”, but frequently, due to the cost and space limitations of storing data on a blockchain, only the ownership _record_ is actually stored, with metadata linking to the actual content of the NFT.
 
 All too often, [these links are fragile](https://www.vice.com/en/article/pkdj79/peoples-expensive-nfts-keep-vanishing-this-is-why), and direct the user to a specific _location_ using the HTTP protocol, rather than a specific asset. This means that the content pointed to by the link could change or go offline at any point in the future, leaving the original asset lost forever (and the record of ownership worthless).

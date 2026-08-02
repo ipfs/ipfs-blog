@@ -11,6 +11,11 @@ tags:
 - CID
 
 ---
+::: callout
+
+**Reframe is no longer used.** It was replaced by the [Routing V1 HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/), which is what IPFS implementations speak today. Reframe's IDL, `edelweiss`, is archived.
+
+:::
 
 **Update (2024Q1): This is an old blogpost. [Reframe was deprecated in 2022](https://github.com/ipfs/kubo/issues/9479) and ecosystem replaced it with modern [Delegated Routing V1 HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/) (`/routing/v1`) which is also [supported by Kubo](https://github.com/ipfs/kubo/blob/master/docs/delegated-routing.md) and [Someguy](https://github.com/ipfs-shipyard/someguy).**
 

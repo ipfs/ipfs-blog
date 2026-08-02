@@ -11,6 +11,11 @@ tags:
   - libp2p
   - js-libp2p
 ---
+::: callout
+
+**This snapshot is out of date.** js-IPFS was archived and [replaced by Helia](https://blog.ipfs.tech/202305-js-ipfs-deprecation-for-helia/) in 2023, and Reframe gave way to the [Routing V1 HTTP API](https://specs.ipfs.tech/routing/http-routing-v1/). For IPFS in JavaScript today, use [Helia](https://helia.io/).
+
+:::
 
 ## 🧘‍♀️ Purpose <!-- omit from toc -->
 

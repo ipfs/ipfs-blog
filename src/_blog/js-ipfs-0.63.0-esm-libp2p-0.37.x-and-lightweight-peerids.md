@@ -10,6 +10,12 @@ tags:
 - js-ipfs
 
 ---
+::: callout
+
+**This is a historical release note.** js-IPFS is archived and was [replaced by Helia](https://blog.ipfs.tech/202305-js-ipfs-deprecation-for-helia/) in 2023, so the code and install instructions below no longer work. For IPFS in JavaScript today, use [Helia](https://helia.io/).
+
+:::
+
 # 🔦 Highlights
 
 > switches to ESM only, upgrades to libp2p 0.37.x and brings lightweight PeerIds

@@ -14,6 +14,14 @@ tags:
 - CID
 
 ---
+::: callout
+
+**Heads up: the service in this guide no longer takes new uploads.** Classic NFT.Storage stopped accepting them in July 2024, and the migration path it pointed to (web3.storage, later Storacha) has since wound down as well.
+
+The thinking about metadata and content addressing below still holds. If you have data stored this way, keep your own copy. [Running your own IPFS node](https://docs.ipfs.tech/how-to/replace-public-gateways-with-self-hosted-ipfs/) is the only way to be sure it is still there in a few months.
+
+:::
+
 Why is everyone so preoccupied with NFT metadata? What does it mean, what are the risks affecting it, and how does IPFS help NFT holders secure their digital assets for the long term?
 
 Non-fungible tokens (NFTs) are among the most exciting recent developments in the cryptoverse. For those unaware of these gems, NFTs are like digital collectibles, each unique in its own way and linked to a particular user.

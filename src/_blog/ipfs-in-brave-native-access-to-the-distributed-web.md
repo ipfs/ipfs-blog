@@ -12,6 +12,11 @@ description:
   vision of a native distributed web experience in a modern web browser.
 author: Dietrich Ayala
 ---
+::: callout
+
+**This describes a feature that no longer exists.** Brave [removed its built-in IPFS node](https://github.com/brave/brave-browser/issues/37735) in August 2024. If you still have data in Brave's node, the [migration guide](https://blog.ipfs.tech/2024-brave-migration-guide/) walks through moving it to IPFS Desktop without losing anything.
+
+:::
 
 We are excited to announce that IPFS is now natively supported in the Brave web browser. With [over 20 million users](https://brave.com/20m-mau/), Brave has made the distributed web easily available for the people who need it most. This is the first time a major browser has implemented native support for IPFS, and is a major step towards a more resilient, user-first internet.
 

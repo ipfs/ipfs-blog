@@ -13,6 +13,11 @@ description:
   via web browsers.
 author: Mitch Wagner
 ---
+::: callout
+
+**This describes a feature that no longer exists.** Brave [removed its built-in IPFS node](https://github.com/brave/brave-browser/issues/37735) in August 2024. If you still have data in Brave's node, the [migration guide](https://blog.ipfs.tech/2024-brave-migration-guide/) walks through moving it to IPFS Desktop without losing anything.
+
+:::
 
 You may have heard the news: as of [release 1.19.86](https://github.com/brave/brave-browser/releases/tag/v1.19.86), the Brave browser has officially added [InterPlanetary File System (IPFS)](https://blog.ipfs.tech/2021-01-19-ipfs-in-brave/) support! This work is the result of a multi-year effort to bring the two projects together. In this post, we discuss the process in bringing this collaboration to fruition, and take a look under the hood to see how we accomplished this integration!
 

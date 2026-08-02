@@ -9,6 +9,13 @@ translationKey: ''
 header_image: /2023-01-10-pin-tweet-to-ipfs-article-header.png
 author: David Justice
 ---
+::: callout
+
+**Heads up: this extension can no longer save anything.** It uploads through web3.storage, which has wound down, as has its successor Storacha.
+
+For archiving web pages today, [Webrecorder](https://webrecorder.net/) covers far more than tweets and produces the same WACZ format used here. To keep what you capture available, [run your own IPFS node](https://docs.ipfs.tech/how-to/replace-public-gateways-with-self-hosted-ipfs/).
+
+:::
 
 Today we are announcing a [Web Extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) from the Browsers & Platforms team to enable you to archive tweets in a verifiable way.
 
