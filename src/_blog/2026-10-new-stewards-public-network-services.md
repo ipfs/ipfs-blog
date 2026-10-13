@@ -20,7 +20,7 @@ The public gateways now operate in a new role. Rather than serving content from 
 
 As the network shifts toward direct peer-to-peer retrieval, joining and using it needs to stay easy. The IPFS Project will keep supporting the low-friction on-ramps that make that possible, and operating the key services behind them: the bootstrappers that help new nodes find their first peers, and routing and indexing services like IPNI that help clients locate content across the network.
 
-We've confirmed ongoing stewards for these services, experienced operators and maintainers who know these systems well and are committed to keeping them healthy for the long term.
+We also want to extend a thank you to the Shipyard team, who stewarded much of this infrastructure for years and laid the foundations for many of these transitions. Building on that work, we’ve confirmed ongoing stewards for these services, all experienced operators and maintainers who know these systems well and are committed to keeping them healthy for the long term. 
 
 ## **IPNI and Compass: Keeping Content Discoverable**
 
