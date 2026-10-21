@@ -52,21 +52,9 @@ jobs:
           github-token: ${{ github.token }}
           set-pr-comment: 'true'
           set-github-status: 'true'
-
-      # Filebase unpacks and pins the CAR because of the import=car metadata
-      - name: Upload CAR to Filebase
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.FILEBASE_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.FILEBASE_SECRET_KEY }}
-          AWS_REGION: us-east-1 # AWS CLI needs a region to sign; Filebase ignores it
-          FILEBASE_BUCKET: ${{ secrets.FILEBASE_BUCKET }}
-          CID: ${{ steps.deploy.outputs.cid }}
-          CAR_PATH: ${{ steps.deploy.outputs.car-path }}
-        run: |
-          OBJECT_KEY="${GITHUB_REPOSITORY//\//-}-${GITHUB_SHA:0:7}-${CID}.car"
-          aws --endpoint https://s3.filebase.com s3 cp \
-            "$CAR_PATH" "s3://${FILEBASE_BUCKET}/${OBJECT_KEY}" \
-            --metadata 'import=car'
+          cluster-url: ${{ secrets.IPFS_CLUSTER_URL }}
+          cluster-user: ${{ secrets.IPFS_CLUSTER_USER }}
+          cluster-password: ${{ secrets.IPFS_CLUSTER_PASSWORD }}
 
   dnslink-update:
     runs-on: ubuntu-latest
