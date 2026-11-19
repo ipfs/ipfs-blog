@@ -1,3 +1,4 @@
+---
 title: "Inside the IPFS Stack: Maintainers and What's Next"
 description: "Meet the people maintaining Kubo, Helia, IPLD, and DASL, and read about where each is headed in 2027."
 date: 2026-11-19
@@ -9,7 +10,7 @@ tags:
   - stewardship
 ---
 
-**Inside the IPFS Stack: Maintainers and What’s Next**
+# **Inside the IPFS Stack: Maintainers and What’s Next**
 
 *This is the second in a series of posts on how the IPFS Project is evolving. The first covered the public network’s shared services; this one covers the implementations and libraries developers build on.*
 
@@ -21,13 +22,13 @@ IPFS is often thought of as a single piece of software, but it’s really a set 
 
 [Kubo](https://github.com/ipfs/kubo) is the reference, batteries-included IPFS implementation, the full node most of the network runs. It’s built on [Boxo](https://github.com/ipfs/boxo), the toolkit of reusable Go libraries. Together they bring content addressing to settings that need resilience and verifiability, from healthcare messaging to scientific data to industrial supply chains. Today, we see over 575,000 nodes on the public network, a verifiable, openly accessible layer for public data. An additional 1.5 million nodes are estimated to run on private networks. 
 
-Our **first theme is a node that’s increasingly cheap and dependable** – even boring\! – to run. Kubo has been on a multi-year push to get leaner and more efficient, and it’s paying off with 10x faster publishing, 40% less network overhead, and major memory improvements. The latest step is **faster restarts in Kubo 0.4x**, thanks to persistent routing tables in go-libp2p-kad-dht. Future optimizations will likely target routing-table quality, lookup performance, connection reuse, and peer responsiveness.
+Our **first theme is a node that’s increasingly cheap and dependable** – even boring\! – to run. Kubo has been on a multi-year push to get leaner and more efficient, and it’s paying off with 10x faster publishing, 40% less network overhead, and major memory improvements. The next step is **faster restarts** coming in the next Kubo release, thanks to persistent routing tables in go-libp2p-kad-dht. Future optimizations will likely target routing table quality, lookup performance, connection reuse, and peer responsiveness.
 
 Our **second theme is keeping Kubo and Boxo safe and current** against the onslaught of open-source security vulnerabilities. Finally, we are exploring smoother out-of-the-box integrations for frequently-used capabilities like encryption, orchestration, and permissioning. 
 
-Kubo, Boxo, and the surrounding Go libraries will be maintained by Dennis Trautwein (@dennis-tra) and Ian Davis (@iand) from [ProbeLab](https://probelab.io/), who have spent years measuring and improving the networks Kubo runs on. Dennis built the Nebula crawler that maps the Amino DHT and designed Optimistic Provide. Ian is a longtime IPFS and libp2p contributor with deep experience across the protocols and the needs of the community. They’ll work alongside contributors across the IPFS community and ProbeLab colleagues, including CEO Yiannis Psaras (@yiannisbot). Separately, [go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht), the library at the heart of Kubo’s peer and content routing, continues under its longtime maintainer Guillaume Michel (@guillaumemichel).
+Kubo, Boxo, and the surrounding Go libraries will be maintained by Dennis Trautwein (@dennis-tra) and Ian Davis (@iand) from [ProbeLab](https://probelab.io/), who have spent years measuring and improving the networks Kubo runs on. Dennis built the Nebula crawler that maps the Amino DHT and designed Optimistic Provide. Ian is a longtime IPFS and libp2p contributor with deep experience across the protocols and the needs of the community. They’ll build on years of work led by lidel (@lidel), Kubo’s longtime lead maintainer, and many others at Protocol Labs and Shipyard who built and maintained Kubo over the years. They’ll also work alongside contributors across the IPFS community and ProbeLab colleagues, including CEO Yiannis Psaras (@yiannisbot). Separately, [go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht), the library at the heart of Kubo’s peer and content routing, continues under its longtime maintainer Guillaume Michel (@guillaumemichel).
 
-### **Helia (JavaScript): A Modular Node for the Browsers and Beyond**
+### **Helia (JavaScript): A Modular Node for the Browser and Beyond**
 
 [Helia](https://helia.io/) is the JavaScript implementation of IPFS. Its distinguishing strength is that it runs in the browser, and that matters more each year. As the IPFS public network moves off centralized gateways, Helia is what lets individual users’ browsers fetch content and verify it themselves, rather than trusting a server to do it. Helia’s modular design also makes it a natural fit for teams embedding IPFS directly into their own web and application stacks.
 
@@ -39,9 +40,9 @@ Helia exists because of many people, but most notably Alex Potsides (@achingbrai
 
 [IPLD](https://ipld.io/) is our standard model for content-addressed data. It defines how blocks link to one another by CID, so that data can be read consistently across many different, interoperable systems and protocols, from Ethereum to IPFS to ATProto.
 
-IPLD is now in **stable maintenance**. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security.
+IPLD is now in **stable maintenance**, following [Rust IPLD's shift from monolith to modules](https://ipfsfoundation.org/ipld-2025-in-review/) in late 2025. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security.
 
-IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. Rod Vagg (@rvagg) and Volker Mische (@vmx) are longtime stewards on the Go and Rust sides respectively, and Daniel Thompson (@tabcat) joins on the javascript side.
+IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. Rod Vagg (@rvagg) and Volker Mische (@vmx) are longtime stewards on the Go and Rust sides respectively, and Daniel Thompson (@tabcat) joins on the Javascript side.
 
 ### **DASL: A Growing Spec Family**
 
@@ -49,7 +50,7 @@ IPLD has a maintainer for each language implementation, and they coordinate toge
 
 Much of the current work is driven by real-world use in the AT Protocol ecosystem. Recent additions include [MUXL](https://dasl.ing/muxl.html), for stable video and audio identifiers; [PFP](https://dasl.ing/pfp.html), perceptual hashes that match similar images rather than one exact file; and [STAR](https://dasl.ing/star.html), an efficient way to package streaming content-addressed data. [Web Tiles](https://dasl.ing/tiles.html) reaches beyond data into composable apps that run safely wherever they’re embedded.
 
-Because each spec stands alone, implementations tend to be small, numerous, and community-owned. DASL’s own work focuses on the standards themselves, with Robin Berjon (@darobin) leading stewardship; a [list of implementations](https://dasl.ing/#code) on the DASL website.
+Because each spec stands alone, implementations tend to be small, numerous, and community-owned. DASL’s own work focuses on the standards themselves, with Robin Berjon (@darobin) leading stewardship; a [list of implementations](https://dasl.ing/#code) is on the DASL website.
 
 ### **How You Can Shape IPFS**
 
