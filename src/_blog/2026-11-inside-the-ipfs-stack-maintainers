@@ -1,4 +1,3 @@
----
 title: "Inside the IPFS Stack: Maintainers and What's Next"
 description: "Meet the people maintaining Kubo, Helia, IPLD, and DASL, and read about where each is headed in 2027."
 date: 2026-11-19
@@ -40,7 +39,7 @@ Helia exists because of many people, but most notably Alex Potsides (@achingbrai
 
 [IPLD](https://ipld.io/) is our standard model for content-addressed data. It defines how blocks link to one another by CID, so that data can be read consistently across many different, interoperable systems and protocols, from Ethereum to IPFS to ATProto.
 
-IPLD is now in **stable maintenance**. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security, rather than new features.
+IPLD is now in **stable maintenance**. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security.
 
 IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. Rod Vagg (@rvagg) and Volker Mische (@vmx) are longtime stewards on the Go and Rust sides respectively, and Daniel Thompson (@tabcat) joins on the javascript side.
 
