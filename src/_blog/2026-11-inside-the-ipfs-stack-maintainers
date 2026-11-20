@@ -1,0 +1,61 @@
+---
+title: "Inside the IPFS Stack: Maintainers and What's Next"
+description: "Meet the people maintaining Kubo, Helia, IPLD, and DASL, and read about where each is headed in 2027."
+date: 2026-11-19
+permalink: '/2026-11-inside-the-ipfs-stack/'
+header_image: '/2026-11-inside-the-ipfs-stack-header.jpg'
+tags:
+  - ipfs
+  - implementations
+  - stewardship
+---
+
+# **Inside the IPFS Stack: Maintainers and What’s Next**
+
+*This is the second in a series of posts on how the IPFS Project is evolving. The first covered the public network’s shared services; this one covers the implementations and libraries developers build on.*
+
+In this update, we take a look at how we’re approaching IPFS implementations, who maintains the key libraries, and where they’re headed.
+
+IPFS is often thought of as a single piece of software, but it’s really a set of independent, interoperable parts. Some are full nodes you run, like Kubo. Some are modular libraries you assemble into your own stack, like Helia. And some, like IPLD and DASL, are building blocks for content addressing, usable and interoperable without running a node at all. These parts evolve at their own pace: mature ones like IPLD need mostly careful upkeep, while DASL is actively growing as new use cases arrive.
+
+### **Kubo & Boxo (Go): The Full Node**
+
+[Kubo](https://github.com/ipfs/kubo) is the reference, batteries-included IPFS implementation, the full node most of the network runs. It’s built on [Boxo](https://github.com/ipfs/boxo), a toolkit of reusable Go libraries. Together they bring content addressing to settings that need resilience and verifiability, from healthcare messaging to scientific data to industrial supply chains. Today, we see over 575,000 nodes on the public network, a verifiable, openly accessible layer for public data. An additional 1.5 million nodes are estimated to run on private networks. 
+
+Our **first theme is a node that’s increasingly cheap and dependable** – even boring\! – to run. Kubo has been on a multi-year push to get leaner and more efficient, and it’s paying off with 10x faster publishing, 40% less network overhead, and major memory improvements. The next step is **faster restarts** coming in the next Kubo release, thanks to persistent routing tables in go-libp2p-kad-dht. Future optimizations will likely target routing table quality, lookup performance, connection reuse, and peer responsiveness.
+
+Our **second theme is keeping Kubo and Boxo safe and current** against the onslaught of open-source security vulnerabilities. Finally, we are exploring smoother out-of-the-box integrations for frequently-used capabilities like encryption, orchestration, and permissioning. 
+
+Kubo, Boxo, and the surrounding Go libraries will be maintained by Dennis Trautwein (@dennis-tra) and Ian Davis (@iand) from [ProbeLab](https://probelab.io/), who have spent years measuring and improving the networks Kubo runs on. Dennis built the Nebula crawler that maps the Amino DHT and designed Optimistic Provide. Ian is a longtime IPFS and libp2p contributor with deep experience across the protocols and the needs of the community. They’ll build on years of work led by lidel (@lidel), Kubo’s longtime lead maintainer, and many others at Protocol Labs and Shipyard who built and maintained Kubo over the years. They’ll also work alongside contributors across the IPFS community and ProbeLab colleagues, including CEO Yiannis Psaras (@yiannisbot). Separately, [go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht), the library at the heart of Kubo’s peer and content routing, continues under its longtime maintainer Guillaume Michel (@guillaumemichel).
+
+### **Helia (JavaScript): A Modular Node for the Browser and Beyond**
+
+[Helia](https://helia.io/) is the JavaScript implementation of IPFS. Its distinguishing strength is that it runs in the browser, and that matters more each year. As the IPFS public network moves off centralized gateways, Helia is what lets individual users’ browsers fetch content and verify it themselves, rather than trusting a server to do it. Helia’s modular design also makes it a natural fit for teams embedding IPFS directly into their own web and application stacks.
+
+We’re seeing more organizations move workloads off the cloud, for reasons of cost, control, and data sovereignty, toward infrastructure they own and run themselves. To meet that shift, our near-term focus is **developer experience**: better example code and one-click deployment templates that shorten the path from trying Helia to running it. Alongside that, we’re investing in **quality and reliability across browsers**, keeping Helia dependable and current with the libp2p networking stack it builds on.
+
+Helia exists because of many people, but most notably Alex Potsides (@achingbrain**)**, who built it and led it from the start. Daniel Thompson (@tabcat), a js-libp2p maintainer who has worked extensively across both libp2p and Helia, now also takes on Helia and related libraries, with support from Manu Sheel Gupta (@seetadev) and Johanna Moran.
+
+### **IPLD: The Foundational Data Model**
+
+[IPLD](https://ipld.io/) is our standard model for content-addressed data. It defines how blocks link to one another by CID, so that data can be read consistently across many different, interoperable systems and protocols, from Ethereum to IPFS to ATProto.
+
+IPLD is now in **stable maintenance**, following [Rust IPLD's shift from monolith to modules](https://ipfsfoundation.org/ipld-2025-in-review/) in late 2025. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security.
+
+IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. They are Rod Vagg (@rvagg) on IPLD, Volker Mische (@vmx) on Rust, and Daniel Thompson (@tabcat) on Javascript.
+
+### **DASL: A Growing Spec Family**
+
+[DASL](https://dasl.ing/) (“dazzle”) is a set of small, standard specs for content-addressed, linked data. It keeps a strict, proven core from IPFS, like CID for identifiers and CAR for archiving, and extends it with new specs for specific needs: media, web apps, streaming data, and more.
+
+Much of the current work is driven by real-world use in the AT Protocol ecosystem. Recent additions include [MUXL](https://dasl.ing/muxl.html), for stable video and audio identifiers; [PFP](https://dasl.ing/pfp.html), perceptual hashes that match similar images rather than one exact file; and [STAR](https://dasl.ing/star.html), an efficient way to package streaming content-addressed data. [Web Tiles](https://dasl.ing/tiles.html) reaches beyond data into composable apps that run safely wherever they’re embedded.
+
+Because each spec stands alone, implementations tend to be small, numerous, and community-owned. DASL’s own work focuses on the standards themselves, with Robin Berjon (@darobin) leading stewardship; a [list of implementations](https://dasl.ing/#code) is on the DASL website.
+
+### **How You Can Shape IPFS**
+
+IPFS has always been built by its community, with over 3,000 contributors to date. The next chapter is yours to shape too. Here are a few ways to get involved:
+
+**Let’s talk.** Share and vote on where IPFS should go next on our new [suggestions board](https://userinput.app/s/did:plc:rnt6nsma5ymuxvzfr3n3o4o4/3n24qnne7yd2f), which is itself an ATProto app built with IPFS CIDs. For more specific needs, the [IPFS Forum](https://discuss.ipfs.tech/) is the place.
+
+**Let’s build.** You can contribute to an existing project or start your own. Please read each project’s contributing guide first. For most projects, minor changes are great to PR directly, while major changes are typically discussed via an issue or working-group call first.
