@@ -20,7 +20,7 @@ IPFS is often thought of as a single piece of software, but it’s really a set 
 
 ### **Kubo & Boxo (Go): The Full Node**
 
-[Kubo](https://github.com/ipfs/kubo) is the reference, batteries-included IPFS implementation, the full node most of the network runs. It’s built on [Boxo](https://github.com/ipfs/boxo), the toolkit of reusable Go libraries. Together they bring content addressing to settings that need resilience and verifiability, from healthcare messaging to scientific data to industrial supply chains. Today, we see over 575,000 nodes on the public network, a verifiable, openly accessible layer for public data. An additional 1.5 million nodes are estimated to run on private networks. 
+[Kubo](https://github.com/ipfs/kubo) is the reference, batteries-included IPFS implementation, the full node most of the network runs. It’s built on [Boxo](https://github.com/ipfs/boxo), a toolkit of reusable Go libraries. Together they bring content addressing to settings that need resilience and verifiability, from healthcare messaging to scientific data to industrial supply chains. Today, we see over 575,000 nodes on the public network, a verifiable, openly accessible layer for public data. An additional 1.5 million nodes are estimated to run on private networks. 
 
 Our **first theme is a node that’s increasingly cheap and dependable** – even boring\! – to run. Kubo has been on a multi-year push to get leaner and more efficient, and it’s paying off with 10x faster publishing, 40% less network overhead, and major memory improvements. The next step is **faster restarts** coming in the next Kubo release, thanks to persistent routing tables in go-libp2p-kad-dht. Future optimizations will likely target routing table quality, lookup performance, connection reuse, and peer responsiveness.
 
@@ -42,7 +42,7 @@ Helia exists because of many people, but most notably Alex Potsides (@achingbrai
 
 IPLD is now in **stable maintenance**, following [Rust IPLD's shift from monolith to modules](https://ipfsfoundation.org/ipld-2025-in-review/) in late 2025. It’s mature and widely relied upon, so our priority is careful upkeep, compatibility, and security.
 
-IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. Rod Vagg (@rvagg) and Volker Mische (@vmx) are longtime stewards on the Go and Rust sides respectively, and Daniel Thompson (@tabcat) joins on the Javascript side.
+IPLD has a maintainer for each language implementation, and they coordinate together on the shared specification. They are Rod Vagg (@rvagg) on IPLD, Volker Mische (@vmx) on Rust, and Daniel Thompson (@tabcat) on Javascript.
 
 ### **DASL: A Growing Spec Family**
 
